@@ -99,7 +99,9 @@ for (i in seq_along(pmcids)) {
   )
   
   if (!(i %% 20)){
-    commit_changes(paste0('saved up to ', i))
+    commit_changes(
+      commit_message = paste0('saved up to ', i)
+      )
   }
   
 }
