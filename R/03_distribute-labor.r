@@ -5,7 +5,7 @@ source("R/00_functions.r")
 library(dplyr)
 library(magrittr)
 
-N_FEASIBLE <- 20000
+N_FEASIBLE <- 2e4
 
 REVIEWER_NAMES <-
   c(
@@ -13,7 +13,9 @@ REVIEWER_NAMES <-
     "Ali Jamshidi Kerachi",
     "Fatemeh Zamani Marandi",
     "Pardis Habibi",
-    "Author Five"
+    "Kimia Falamarzi", 
+    "Arashk Mallahzadeh",
+    "Tahereh Something"
   )
 
 
@@ -61,7 +63,3 @@ fs::dir_create(pm_records_w_dir$dir)
 
 pm_records_w_dir %>%
   readr::write_rds("data/02_pmc/pmc.rds")
-
-
-# Highlight colors in HTML files with HTML tags
-

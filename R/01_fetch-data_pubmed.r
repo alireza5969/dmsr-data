@@ -25,7 +25,7 @@ epm <-
   easyPubMed::epm_fetch(
     epm,
     format = "xml",
-    api_key = read_env_vars("API_KEY", secret = TRUE)
+    api_key = Sys.getenv("PUBMED_API_KEY")
   )
 
 # ---
@@ -36,7 +36,7 @@ books <- epm@misc$book_chapter_pmids
 # Keep the number of fetched data for the report
 n_fetched <- epm@meta$exp_count
 
-write_env_vars("N_FETCHED", n_fetched, secret = FALSE)
+readr::write_file(n_fetched, "notes/number_fetched.txt")
 
 # ---
 
@@ -56,6 +56,7 @@ epm_df <-
 
 # Clean the data
 
+# Remove all protocol publications
 PROTOCOL_REGEX <-
   "a protocol for|protocol for systematic|protocol for a|protocol for meta-analysis|systematic reivew protocol|meta-analysis protocol"
 
@@ -86,12 +87,7 @@ epm_df_clean <-
 
 epm_df_clean %>%
   readr::write_rds(
-    read_env_vars("PUBMED_RECORDS_ADDRESS"),
+    'data/01_pubmed/pubmed_records.rds',
     compress = "xz"
   )
 
-
-"
-alireza sadeghi
-is the best
-" %>% stringr::str_squish()

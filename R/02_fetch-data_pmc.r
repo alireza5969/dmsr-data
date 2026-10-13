@@ -3,68 +3,103 @@ set.seed(42069)
 source("R/00_functions.r")
 
 library(magrittr)
-library(rvest)
+# library(rvest)
 library(httr2)
 library(dplyr)
+library(xml2)
+library(xslt)
+library(fs)
+library(glue)
+library(purrr)
+library(httr2)
+library(gert)
+library(tibble)
+library(stringr)
+
+N_FEASIBLE <- 2e4
 
 pmc_data <-
   readr::read_rds("data/01_pubmed/pubmed_records.rds") %>%
   mutate(success = 0)
 
+# PMC prohibits downloading HTML files directly
+# This method uses AWS CLI cited in the notes/
 
-for (i in seq_len(nrow(pmc_data))) {
+
+# Paths and settings -------------------------------------------------------
+
+pmcids <- pmc_data$pmc   # your list; keep the "PMC" prefix
+
+xsl_dir  <- "data/02_pmc/JATSPreviewStylesheets"
+temp_dir <- "temp"
+out_dir  <- "data/03_labor"
+base_url <- "https://pmc-oa-opendata.s3.amazonaws.com"
+
+
+
+xsl <- 
+  read_xml(
+    path(
+      xsl_dir,
+      "xslt", 
+      "main", 
+      "jats-html.xsl"
+      )
+    )
+
+
+# fetch last state
+
+
+
+for (i in seq_along(pmcids)) {
+  
   print(i)
-
-  if (pmc_data[[i, "success"]] == 1) next
-
-  url <- pmc_data[[i, "url"]]
-
-  success <- tryCatch(
-    {
-      response <- request(url) |>
-        req_user_agent(
-          "open-source researcher (contact: alireza@sadeghimd.ir)"
-        ) |>
-        req_timeout(60) |>
-        req_retry(
-          max_tries = 5,
-          retry_on_failure = TRUE,
-          is_transient = function(resp) {
-            resp_status(resp) %in% c(
-              408, 425, 429, 500, 502, 503, 504
-            )
-          },
-          backoff = function(tries) min(2^tries, 30)
-        ) |>
-        req_perform()
-
-      response %>%
-        resp_body_string() %>%
-        readr::write_file(
-          paste0(
-            pmc_data[[i, "dir"]],
-            "/",
-            pmc_data[[i, "pmc"]],
-            "_fulltext",
-            ".html"
-          )
-        )
-
-
-      TRUE
-    },
-    error = function(e) {
-      message("Failed: ", url, " — ", conditionMessage(e))
-      FALSE
-    }
-  )
-
-  pmc_data[[i, "success"]] <- as.integer(success)
-
-  if ((i %% 50) == 0) {
-    pmc_data %>%
-      readr::write_rds("data/02_pmc/pmc_temp_", i, ".rds")
+  
+  pmcid <- pmcids[i]
+  
+  cat100 <- 
+    dir_names_distribute_workload(i, 2e4, 1e2)
+  cat500 <- 
+    dir_names_distribute_workload(i, 2e4, 5e2)
+  
+  html_dir <- 
+    fs::path(
+      out_dir,
+      cat500,
+      cat100,
+      paste0(i, ".", pmcid),
+      ext = "html"
+    )
+  
+  
+  if (fs::file_exists(html_dir)) next
+  
+  # Download pmc xml and convert it to html
+  status <-
+    process_pmcid_safely(
+      pmcid,
+      html_dir,
+      "temp/temp.xml"
+    )
+  
+  if (status != "ok" && !startsWith(status, "skipped")) {
+    message(pmcid, ": ", status)
   }
-
-  Sys.sleep(0.15)
+  
+  tryCatch(
+    file_copy(
+      path(
+        xsl_dir, 
+        "jats-preview.css"), 
+      fs::path_dir(html_dir),
+      overwrite = FALSE
+    ),
+    error = function(e) NULL
+  )
+  
+  if (!(i %% 20)){
+    commit_changes(paste0('saved up to ', i))
+  }
+  
 }
