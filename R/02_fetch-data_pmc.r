@@ -49,22 +49,22 @@ xsl <-
 
 # fetch last state
 
+current_list <- 
+  fs::dir_ls(
+    "data/03_labor/",
+    recurse = TRUE, 
+    glob = "*.html"
+    ) %>%
+  stringr::str_extract("PMC.*.html") %>%
+  stringr::str_remove(".html")
+
+pmc_data <-
+  pmc_data[!(pmc_data %in% current_list)]
 
 for (i in seq_along(pmcids)) {
   print(i)
 
   pmcid <- pmcids[i]
-
-  current_list <- 
-    fs::dir_ls(
-      "data/03_labor/",
-      recurse = TRUE, 
-      glob = "*.html"
-      ) %>%
-    stringr::str_extract("PMC.*.html") %>%
-    stringr::str_remove(".html")
-  
-  if (pmcid %in% current_list) {print("already in repo"); next}
 
   Sys.sleep(.2)
                                       
