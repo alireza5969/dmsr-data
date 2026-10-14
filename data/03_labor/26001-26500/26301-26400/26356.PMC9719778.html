@@ -1,0 +1,2107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Carmo, Ribeiro, Dertkigil, Appenzeller, Lotufo, and Rittner: A Systematic Review of Automated Segmentation Methods and Public Datasets for the Lung and its Lobes and Findings on Computed Tomography Images</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Yearb Med Inform</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Yearb Med Inform</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>2656</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>ymi</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>9312666</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Yearbook of Medical Informatics</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>0943-4747</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2364-0502</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Thieme Medical Publishers</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="10-1055-s-0042-1742517.pdf">10-1055-s-0042-1742517.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>
+IMIA and Thieme. This is an open access article published by Thieme under the terms of the Creative Commons Attribution-NonDerivative-NonCommercial License, permitting copying and reproduction so long as the original work is given appropriate credit. Contents may not be used for commercial purposes, or adapted, remixed, transformed or built upon. (
+<a target="xrefwindow" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" id="id1">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>
+)
+</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022, IMIA and Thieme.</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by-nc-nd/4.0/<p id="id2">This is an open-access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives License, which permits unrestricted reproduction and distribution, for non-commercial purposes only; and use and reproduction, but not distribution, of adapted material for non-commercial purposes only, provided the original work is properly cited.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>04 December 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>August 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>31</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>1<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>422915<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Pages: </span>277-295</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9719778</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9719778.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9719778</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9719778</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>36463886</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1055/s-0042-1742517</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>carmo</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">A Systematic Review of Automated Segmentation Methods and Public Datasets for the Lung and its Lobes and Findings on Computed Tomography Images</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Diedre Carmo<span class="generated">[</span><a href="#AFcarmo-1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#FNcarmo-4">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Jean Ribeiro<span class="generated">[</span><a href="#AFcarmo-1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#FNcarmo-4">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Sergio Dertkigil<span class="generated">[</span><a href="#AFcarmo-2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Simone Appenzeller<span class="generated">[</span><a href="#AFcarmo-2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Roberto Lotufo<span class="generated">[</span><a href="#AFcarmo-1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Leticia Rittner<span class="generated">[</span><a href="#AFcarmo-1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#COcarmo-1"><span class="warning">{ label needed for corresp[@id='COcarmo-1'] }</span></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="AFcarmo-1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>School of Electrical and Computer Engineering, University of Campinas, Brazil</p>
+<p class="metadata-entry"><a id="AFcarmo-2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>School of Medical Sciences, University of Campinas, Brazil</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id9"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="COcarmo-1"><!-- named anchor --></a>Correspondence to: </span><b>Correspondence to: </b>Leticia Rittner Av. Albert Einstein, 400, Cidade Universitária Zeferino Vaz, Barão Geraldo - Campinas - SP 13083-852Brazil<a href="mailto:lrittner@unicamp.br">lrittner@unicamp.br</a></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Summary</h4></div>
+<div class="cell">
+<p id="id10"><b>Objectives</b>
+: Automated computational segmentation of the lung and its lobes and findings in X-Ray based computed tomography (CT) images is a challenging problem with important applications, including medical research, surgical planning, and diagnostic decision support. With the increase in large imaging cohorts and the need for fast and robust evaluation of normal and abnormal lungs and their lobes, several authors have proposed automated methods for lung assessment on CT images. In this paper we intend to provide a comprehensive summarization of these methods.
+</p>
+<p id="id11"><b>Methods</b>
+: We used a systematic approach to perform an extensive review of automated lung segmentation methods. We chose Scopus, PubMed, and Scopus to conduct our review and included methods that perform segmentation of the lung parenchyma, lobes or internal disease related findings. The review was not limited by date, but rather by only including methods providing quantitative evaluation.
+</p>
+<p id="id12"><b>Results</b>
+: We organized and classified all 234 included articles into various categories according to methodological similarities among them. We provide summarizations of quantitative evaluations, public datasets, evaluation metrics, and overall statistics indicating recent research directions of the field.
+</p>
+<p id="id13"><b>Conclusions</b>
+: We noted the rise of data-driven models in the last decade, especially due to the deep learning trend, increasing the demand for high-quality data annotation. This has instigated an increase of semi-supervised and uncertainty guided works that try to be less dependent on human annotation. In addition, the question of how to evaluate the robustness of data-driven methods remains open, given that evaluations derived from specific datasets are not general.
+</p>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="id14"><!-- named anchor --></a><h2 class="main-title">1 Introduction</h2>
+<p id="id15">
+Computed tomography (CT) is one of the most important diagnostic modalities used in different clinical conditions for diagnosis, follow-up, and image-guided procedures [
+<a href="#ORcarmo-1">1</a>
+]. Analysis of digital CT images allows the segmentation of the lungs and their lobes, by identifying the anatomic boundaries, followed by segmentation of abnormal lung tissue according to the underlying pathological process and disease [
+<a href="#ORcarmo-2">2</a>
+]. The ongoing COVID-19 pandemic has highlighted the importance of lung CT in clinical settings and its association not only with medical research and diagnosis but also with prognosis [
+<a href="#ORcarmo-3">3</a>
+]. This generated renewed interest in automated lung assessment using digital CT images since manual segmentation is very time-consuming and poorly reproducible.
+</p>
+<p id="id16">
+For decades, researchers have been attempting to propose robust and accurate computational algorithms to automatically segment the lung parenchyma, its lobes, and internal findings. Recent work has achieved performance comparable to a human radiologist in automated lung parenchyma segmentation [
+<a href="#ORcarmo-4">4</a>
+]. However, some challenges arise due to the variations and complexity of anatomy that appear in diseased lungs (
+<a href="#FIcarmo-1">Figure 1</a>
+), or when focusing the segmentation target on disease-related findings. To solve this problem, different segmentation techniques have been proposed, and are the target of this systematic review.
+</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="FIcarmo-1"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id17">
+Chest CT scan reconstructions displaying findings (from left to right) from COVID-19, cancer, and pneumonia. Yellow arrow: extensive right lung consolidation with permeative ground-glass opacities. Green arrow: spiculated pulmonary nodule (suspected for malignancy). Blue arrow: subpleural bilateral ground glass opacities.
+</p></div>
+</div>
+<p id="id18">
+This review is motivated by the need to assess the literature and the forthcoming directions of segmentation of the lung parenchyma and its radiological findings. In terms of disease related findings, we employ a large search scope including not only COVID-19 related research but also many other diseases, including cancer nodules, chronic obstructive pulmonary disease (COPD), interstitial lung disease (ILD), pleural effusion (PE) and others. Methods for lung fissure and pulmonary lobe segmentation were also included since the identification of lobes also has important applications in medical research, disease assessment, and treatment planning [
+<a href="#ORcarmo-5">5</a>
+,
+<a href="#ORcarmo-6">6</a>
+].
+</p>
+<p id="id19">Such a large scope requires limiting the search keys for the review to be feasible. Therefore, methods are required to be computational, completely automated, and be quantitatively evaluated for the segmentations against well-defined ground truth. Considering COVID-19 as an example, there are several recently publicly available datasets and accompanying classification methods, from a global effort from researchers to aid in the ongoing pandemic. However, these methods are not included in this review, if they do not provide evaluated segmentations.</p>
+<p id="id20">
+This review is organized as follows. In section 2, we describe the methodology of this systematic review in detail, to allow for reproducibility. In section 3, we grouped the methods included in this review into methodology categories, briefly introducing most of the methods within each category. Section 4 presents a summary of our results, including public datasets, highlighted methods per target, and statistics. In sections 5 and 6, we use these results to draw conclusions about the state-of-the-art and discuss what are the current gaps and future directions for the field. The complete tables for the systematic review extraction separated by target and method category are included as
+<a href="#SMcarmo-1">Supplementary Material</a>
+, with useful information and results on all included methods.
+</p>
+</div>
+<div class="section">
+<a id="id21"><!-- named anchor --></a><h2 class="main-title">2 Systematic Review Methodology</h2>
+<p id="id22">
+A systematic review differs from a classic review or survey, following a more deterministic approach. All steps are recorded for ease of reproducibility, to minimize subjective decisions and to reduce author bias [
+<a href="#ORcarmo-9">9</a>
+,
+<a href="#ORcarmo-10">10</a>
+]. The first step consists of defining a research question, being in our case: “What are the quantitatively evaluated, computed, and automated segmentation methods of the lung and its lobes, and the findings, using computed tomography images”. Secondly, it is necessary to define which deterministic online databases to search on. We used Scopus
+<a href="#FNcarmo-1">1</a>
+, Embase
+<a href="#FNcarmo-2">2</a>
+, and PubMed
+<a href="#FNcarmo-3">3</a>
+. The third step is to define search queries and year limitations to be used on these databases. We did not limit the search by year, however, the requirement for quantitative results effectively removed older research. The most recent results were limited to April 30, 2021, the date when we locked our search results to start the systematic methodology.
+</p>
+<p id="id23">
+The search query, composed of a Boolean logic sentence, specified which words or combination of words to look for in the abstract and title of articles [
+<a href="#ORcarmo-10">10</a>
+]. Our final query was the following: (CT OR HRCT OR computed tomography) AND automat* AND (lung OR pulmonary) AND (segment* OR contour*) AND (accuracy OR dice OR hausdorff OR iou OR intersection). The inclusion of the last term of this logic expression was necessary to filter out papers that do not discuss the accuracy of their results. Including more metrics as keywords did not result in increasing the number of included articles. The exact way queries were used as input to each database is included in the
+<a href="#SMcarmo-1">Supplementary Material</a>
+.
+</p>
+<p id="id24">
+The systematic review was carried out using the Covidence platform [
+<a href="#ORcarmo-11">11</a>
+], with two blind reviewers and one senior researcher (tiebreaker). All exclusion and inclusion decisions were made blindly by the two reviewers, with conflicts being resolved by the tiebreaker. The Prisma (
+<a href="#FIcarmo-2">Figure 2</a>
+) details the progression of inclusion and exclusion of the review methodology. After importing all 2,028 resulting references from the searches on Scopus, Embase, and PubMed, 708 duplicate studies were automatically removed from our database by Covidence. Following this, the titles and abstracts of the 1,320 remaining studies were screened for relevance, with 876 being excluded. Exclusion criteria when analyzing titles and abstracts were: methods that did not focus on automated segmentation involving the lung, animal studies, or methods using other imaging modalities. Note that the search key is not enough to avoid the need for these exclusions as it possible that papers may use lung segmentation as a preprocessing step, or even cite it as background while focusing on other aspects such as classification. Those that do not violate these criteria go to the full-text assessment phase.
+</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="FIcarmo-2"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id25">
+Prisma figure extracted from the Covidence tool, summarizing the systematic review process and the number of articles at each step.
+</p></div>
+</div>
+<p id="id26">Even after excluding papers by title and abstract assessment, the inclusion and exclusion criteria needed to be checked again, for the remaining 444 full texts. Only studies with full texts in English were retained. Studies that did not have quantitative results or that did not provide numerical results for the segmentations were excluded, as well as studies that used other imaging modalities other than X-Ray based CT or synthetic data. Publications that only validated but did not propose a methodology were also excluded.</p>
+<p id="id27">Finally, studies for which we could not access the full text even after contacting the authors and duplicates not detected by Covidence were also excluded.</p>
+<p id="id28">
+Finally, the last phase consisted of parallel data extraction and quality assessment [
+<a href="#ORcarmo-10">10</a>
+] of the 257 remaining studies. Details of the extraction form and more information on Covidence are in the
+<a href="#SMcarmo-1">Supplementary Material</a>
+. Here, the authors came to a consensus of which data should be extracted, and forms were customized in the Covidence tool to be filled by both reviewers. This data was used to compute statistics and tables and to guide the discussions accompanying this review. The only criteria we employed for exclusion of papers due to quality reasons was insufficient data variability. We excluded studies that either did not present the number of CT slices or subjects involved in segmentation or had too few slices (&lt;50) or patients (&lt;5). This resulted in the exclusion of research that used many subjects for classification but did not provide segmentation metrics on a significant portion of the data. Finally, no judgments about merit or writing quality were involved in this quality assessment. The final number of papers removed for quality reasons was 34, resulting in a final set of 223 methods.
+</p>
+</div>
+<div class="section">
+<a id="id29"><!-- named anchor --></a><h2 class="main-title">3 Categories and Targets of the Methods</h2>
+<p id="id30">
+From our choice to include methods dealing with multiple different target structures, we proposed four target groups to facilitate analysis. Most methods somehow segment the lung, but the target refers to the main structure that is quantitatively evaluated. These groups are
+<b>lung parenchyma, pulmonary nodules, fissures or lobes,</b>
+and
+<b>other findings.</b>
+Pulmonary nodules get a separate category due to the amount of work focusing on these specific findings. Note, however, that methods that only performed nodule detection without fine segmentation were not included in this review. Examples of diseases affecting subjects on all works included: COPD, PE, ILD, idiopathic pulmonary fibrosis (IPF), cystic fibrosis, COVID-19 pneumonia, tuberculosis, cancer, emphysema, and asthma.
+</p>
+<p id="id31">
+During the full-text screening phase of the review, we investigated if the method categorization proposed by Mansoor
+<i>et al</i>
+., [
+<a href="#ORcarmo-2">2</a>
+] in their 2015 review was still applicable. They proposed the following classification: neighboring anatomy-guided [
+<a href="#ORcarmo-13">13</a>
+]; thresholding [
+<a href="#ORcarmo-12">12</a>
+,
+<a href="#ORcarmo-14">14</a>
+]; region-based [
+<a href="#ORcarmo-2">2</a>
+,
+<a href="#ORcarmo-15">15</a>
+]; shape or model-based [
+<a href="#ORcarmo-16">16</a>
+]; machine learning [
+<a href="#ORcarmo-17">17</a>
+] and hybrids [
+<a href="#ORcarmo-18">18</a>
+]. Hybrids include methods where it is not clear to which category of method it fits, usually because they use a combination of multiple types of approaches [
+<a href="#ORcarmo-18">18</a>
+<a href="#ORcarmo-19">19</a>
+<a href="#ORcarmo-20">20</a>
+<a href="#ORcarmo-21">21</a>
+<a href="#ORcarmo-22">22</a>
+<a href="#ORcarmo-23">23</a>
+<a href="#ORcarmo-24">24</a>
+<a href="#ORcarmo-25">25</a>
+<a href="#ORcarmo-26">26</a>
+<a href="#ORcarmo-27">27</a>
+<a href="#ORcarmo-28">28</a>
+<a href="#ORcarmo-29">29</a>
+<a href="#ORcarmo-30">30</a>
+<a href="#ORcarmo-31">31</a>
+<a href="#ORcarmo-32">32</a>
+]. We concluded that while this classification still applies, we noticed the necessity to separate machine learning into two categories: traditional machine learning and deep learning [
+<a href="#ORcarmo-33">33</a>
+], due to the recent explosion of deep learning methods.
+</p>
+<p id="id32">
+We used seven categories to classify methods during the extraction phase. Although the best effort was given by the two reviewers and the tiebreaker to correctly classify all types of methods, the authors do not claim this classification to be 100% correct for all methods, due to some approaches blurring the line between the proposed categories. The distribution of categories and target structures included in the extraction process highlights the explosion of deep learning methods after the famous UNet paper [
+<a href="#ORcarmo-34">34</a>
+], and a large amount of COVID-19 segmentation research following the start of the pandemic. In the following subsections, all papers are separated into methodology categories, with an overview of the techniques involved in each category. Information on quantitative evaluation and data are present in section 4 and in the
+<a href="#SMcarmo-1">Supplementary Material</a>
+.
+</p>
+<div class="section">
+<a id="id33"><!-- named anchor --></a><h3 class="section-title">3.1 Thresholding-based Methods</h3>
+<p id="id34">
+Thresholding-based methods aim to exploit the known relation between Hounsfield unit (HU) values in CT images and organs [
+<a href="#ORcarmo-1">1</a>
+]. For lung segmentation, the thresholding application is generally adaptive through iterations [
+<a href="#ORcarmo-35">35</a>
+]. Often, vessels, airways, and other internal findings generate noise, which can be solved in some cases by morphological post-processing [
+<a href="#ORcarmo-1">36</a>
+]. In terms of computational efficiency, thresholding-based methods are fast methods, usually taking just a few seconds. Nowadays, however, thresholding is mostly used as a pre-processing or initialization stage, where additional processing from other types of methods is performed later for corrections, as thresholding does not behave well in the presence of abnormalities. Usually, the threshold value is adaptable by some algorithms [
+<a href="#ORcarmo-12">12</a>
+,
+<a href="#ORcarmo-14">14</a>
+,
+<a href="#ORcarmo-37">37</a>
+]. Note that many articles perform lung segmentation by thresholding but do not provide quantitative evaluation of the generated segmentations, and thus were not included in this review.
+</p>
+</div>
+<div class="section">
+<a id="id35"><!-- named anchor --></a><h3 class="section-title">3.2 Region-based Methods</h3>
+<p id="id36">
+Region-based methods focus on the information contained in the neighboring regions of pixels or voxels, such as intensity, color, or texture, being one of the most popular techniques in the literature before the rise of deep learning due to its low computational cost and unsupervised operation. In general, a disadvantage of the region-based methods is that they can be sensitive to noise and pathology, causing segmented regions to have holes [
+<a href="#ORcarmo-38">38</a>
+]. For this reason, most methods include some form of post-processing and refinement. Furthermore, these algorithms tend to fail when the initial step of seed position or initial marker is not close to the real target, which can happen in very abnormal lungs.
+</p>
+<p id="id37">
+Region growing is one of the most popular region-based techniques, where an initial automatically selected seed point is grown into the desired form following some criteria [
+<a href="#ORcarmo-39">39</a>
+<a href="#ORcarmo-40">40</a>
+<a href="#ORcarmo-41">41</a>
+<a href="#ORcarmo-42">42</a>
+]. Watershed transform is also a common technique, either as a pre-processing step or as the core of the method, due to the lung gray-level topology being susceptible to “flooding” approaches, using image features as guidance [
+<a href="#ORcarmo-43">43</a>
+<a href="#ORcarmo-44">44</a>
+<a href="#ORcarmo-45">45</a>
+,
+<a href="#ORcarmo-47">47</a>
+,
+<a href="#ORcarmo-48">48</a>
+]. The fuzzy C-means method attributes clusters to regions based on a pre-defined regional feature calculation [
+<a href="#ORcarmo-49">49</a>
+<a href="#ORcarmo-50">50</a>
+<a href="#ORcarmo-51">51</a>
+<a href="#ORcarmo-52">52</a>
+<a href="#ORcarmo-53">53</a>
+<a href="#ORcarmo-54">54</a>
+<a href="#ORcarmo-55">55</a>
+]. Some methods are based on the wavelet transformation, commonly used to highlight desired frequencies in the image [
+<a href="#ORcarmo-54">46</a>
+,
+<a href="#ORcarmo-54">56</a>
+<a href="#ORcarmo-57">57</a>
+<a href="#ORcarmo-58">58</a>
+<a href="#ORcarmo-59">59</a>
+<a href="#ORcarmo-60">60</a>
+<a href="#ORcarmo-61">61</a>
+<a href="#ORcarmo-62">62</a>
+]. Several methods are mainly based on the region growing principle but include techniques from other types of methods such as Markov random fields, gaussian mixture model, graph cut, unsupervised k-means, Kapur’s entropy, convex hull, random walker and others [
+<a href="#ORcarmo-63">63</a>
+<a href="#ORcarmo-64">64</a>
+<a href="#ORcarmo-65">65</a>
+<a href="#ORcarmo-66">66</a>
+<a href="#ORcarmo-67">67</a>
+<a href="#ORcarmo-68">68</a>
+<a href="#ORcarmo-69">69</a>
+<a href="#ORcarmo-70">70</a>
+<a href="#ORcarmo-71">71</a>
+<a href="#ORcarmo-72">72</a>
+<a href="#ORcarmo-73">73</a>
+<a href="#ORcarmo-74">74</a>
+<a href="#ORcarmo-75">75</a>
+<a href="#ORcarmo-76">76</a>
+<a href="#ORcarmo-77">77</a>
+<a href="#ORcarmo-78">78</a>
+<a href="#ORcarmo-79">79</a>
+<a href="#ORcarmo-80">80</a>
+<a href="#ORcarmo-81">81</a>
+<a href="#ORcarmo-82">82</a>
+<a href="#ORcarmo-83">83</a>
+<a href="#ORcarmo-84">84</a>
+<a href="#ORcarmo-85">85</a>
+<a href="#ORcarmo-86">86</a>
+<a href="#ORcarmo-87">87</a>
+<a href="#ORcarmo-88">88</a>
+<a href="#ORcarmo-89">89</a>
+<a href="#ORcarmo-90">90</a>
+<a href="#ORcarmo-91">91</a>
+<a href="#ORcarmo-92">92</a>
+<a href="#ORcarmo-58">93</a>
+]
+</p>
+</div>
+<div class="section">
+<a id="id38"><!-- named anchor --></a><h3 class="section-title">3.3 Shape or Model-based Methods</h3>
+<p id="id39">
+Model or shape-based methods use a
+<i>priori</i>
+knowledge about the target shape and appearance. They can fit statistical models of lung shape or appearance to the image using an optimization procedure. In general, the expected shape and local gray-level structure of a target object in the image are used to derive the segmentation process in such methods. Model-based approaches follow a top-down strategy modeling on global and local variation in shape and texture. Due to their probabilistic nature during the training phase, model-based methods perform better in treating mild to moderate abnormalities. Obtaining a representative model that represents the region of the organs to be delineated is often difficult, and these approaches can be computationally expensive [
+<a href="#ORcarmo-2">2</a>
+].
+</p>
+<p id="id40">
+Shape-based methods can be specialized to the noticeable line shape of fissures [
+<a href="#ORcarmo-95">95</a>
+<a href="#ORcarmo-96">96</a>
+<a href="#ORcarmo-97">97</a>
+], or the circular nodule shape [
+<a href="#ORcarmo-98">98</a>
+<a href="#ORcarmo-99">99</a>
+<a href="#ORcarmo-100">100</a>
+]. Lung parenchyma segmentation can be modeled using cost functions and probabilistic models, exploring known anatomical landmarks and patient specific shape knowledge [
+<a href="#ORcarmo-16">16</a>
+,
+<a href="#ORcarmo-100">100</a>
+<a href="#ORcarmo-101">101</a>
+<a href="#ORcarmo-102">102</a>
+<a href="#ORcarmo-103">103</a>
+<a href="#ORcarmo-104">104</a>
+<a href="#ORcarmo-105">105</a>
+<a href="#ORcarmo-106">106</a>
+<a href="#ORcarmo-107">107</a>
+<a href="#ORcarmo-108">108</a>
+,
+<a href="#ORcarmo-122">122</a>
+]. Prior contours and shapes can be adapted to the intended target using the active contour approach, where their form is iteratively guided by an energy function [
+<a href="#ORcarmo-15">15</a>
+,
+<a href="#ORcarmo-109">109</a>
+<a href="#ORcarmo-110">110</a>
+<a href="#ORcarmo-111">111</a>
+<a href="#ORcarmo-112">112</a>
+<a href="#ORcarmo-113">113</a>
+]. Also included in this classification are atlas-based methods, where the input is registered in one or multiple atlases representative of the problem [
+<a href="#ORcarmo-16">16</a>
+]. An atlas is made up of a model with CT images and corresponding labels of the thoracic regions. In the case of multiple atlases, label-fusion is also employed [
+<a href="#ORcarmo-114">114</a>
+<a href="#ORcarmo-115">115</a>
+<a href="#ORcarmo-116">116</a>
+<a href="#ORcarmo-117">117</a>
+<a href="#ORcarmo-118">118</a>
+<a href="#ORcarmo-119">119</a>
+<a href="#ORcarmo-120">120</a>
+].
+</p>
+</div>
+<div class="section">
+<a id="id41"><!-- named anchor --></a><h3 class="section-title">3.4 Neighboring Anatomy-guided Methods</h3>
+<p id="id42">
+Neighboring anatomy-guided methods use the spatial context of neighboring anatomic objects of the lung, such as the rib cage, heart or spine [
+<a href="#ORcarmo-13">13</a>
+,
+<a href="#ORcarmo-123">123</a>
+<a href="#ORcarmo-124">124</a>
+<a href="#ORcarmo-125">125</a>
+], for delineating lung regions. For lobes and fissures, internal bronchi from the airway tree and vessels are used as guidance [
+<a href="#ORcarmo-126">126</a>
+<a href="#ORcarmo-127">127</a>
+<a href="#ORcarmo-128">128</a>
+]. The main purpose of this approach is to restrict the search space of the ideal boundary and remove false-positive findings. These methods are well suited in the presence of an extreme abnormality or an imaging artifact
+<a href="#ORcarmo-2">2</a>
+. In contrast, the effectiveness of this approach depends on the assumption that there is no abnormality in the neighboring structures of the lung, which can be difficult to guarantee. Finally, the larger the search space, the slower the algorithm execution time [
+<a href="#ORcarmo-129">129</a>
+].
+</p>
+<p id="id43">
+Some authors used thresholds together with methods based on neighboring anatomy guidance [
+<a href="#ORcarmo-129">129</a>
+,
+<a href="#ORcarmo-130">130</a>
+]. The segmentation of damaged lungs with thresholding and region growing can be improved by prior separation of neighboring air-like voxels [
+<a href="#ORcarmo-131">131</a>
+]. Prior segmentation of neighboring organs such as the spleen, kidneys, trachea, bronchi and liver also helps in lung delineation [
+<a href="#ORcarmo-125">125</a>
+,
+<a href="#ORcarmo-132">132</a>
+]. Distance transforms are commonly used for the separation of lung lobes due to their anatomical relationship to vessels and bronchi within the lung [
+<a href="#ORcarmo-126">126</a>
+<a href="#ORcarmo-127">127</a>
+<a href="#ORcarmo-128">128</a>
+,
+<a href="#ORcarmo-133">133</a>
+]. In lung segmentation, prior segmentation of the human airway tree and ribs can help smooth and constrain lung boundaries and also help with lungs affected by parenchymal diseases [
+<a href="#ORcarmo-123">123</a>
+,
+<a href="#ORcarmo-134">134</a>
+,
+<a href="#ORcarmo-135">135</a>
+]. Statistical models can also consider contextual constraints from neighboring anatomy and internal blood vessels for better segmentation of abnormalities [
+<a href="#ORcarmo-13">13</a>
+,
+<a href="#ORcarmo-124">124</a>
+,
+<a href="#ORcarmo-136">136</a>
+].
+</p>
+</div>
+<div class="section">
+<a id="id44"><!-- named anchor --></a><h3 class="section-title">3.5 Machine Learning-based Methods</h3>
+<p id="id45">
+Machine learning methods attempt to automate the construction of analytical models by learning from data and identifying patterns. New developments since 2015 lead us to diverge from the proposal of Mansoor
+<i>et al</i>
+., [
+<a href="#ORcarmo-124">124</a>
+] regarding the categories of methods for lung assessment in CT and we propose splitting the machine learning category into traditional machine learning and deep learning.
+</p>
+<div class="section">
+<a id="id46"><!-- named anchor --></a><h4 class="subsection-title">Traditional Machine Learning</h4>
+<p id="id47">
+Traditional machine learning uses what has been coined in the literature as learning from “feature engineering”, where expert knowledge is used to propose functions that extract relevant features from regions of the input image. Application of these types of methods for lung imaging started with the idea of texture classification, such as improving a rough k-means initialization with voxel classification of the uncertain border using 3D [
+<a href="#ORcarmo-138">138</a>
+] or 2D [
+<a href="#ORcarmo-139">139</a>
+] gray level co-occurrence matrix (GLCM). Local binary patterns, wavelets and gray level statistics are also features used for voxel-level classification with the objective of segmenting ground-glass nodules [
+<a href="#ORcarmo-140">140</a>
+]. GLCM of texture features together with post-processing based on airway removal as anatomical constraints has been used for lung segmentation of ILD patients [
+<a href="#ORcarmo-141">141</a>
+]. Random forest models have also been proposed for lung tissue classification [
+<a href="#ORcarmo-142">142</a>
+], over a variety of 2D and 3D features [
+<a href="#ORcarmo-17">17</a>
+,
+<a href="#ORcarmo-143">143</a>
+].
+</p>
+</div>
+<div class="section">
+<a id="id48"><!-- named anchor --></a><h4 class="subsection-title">Deep Learning</h4>
+<p id="id49">
+In deep learning [
+<a href="#ORcarmo-145">145</a>
+], input data goes through deep layers, which learn hierarchical features, starting from low-level to more abstract representations. Convolutional neural networks (CNNs), a type of deep neural network, have been widely applied in problems dealing with medical imaging with great success, with the major advantage of not requiring expertly engineered features and providing fast prediction times [
+<a href="#ORcarmo-146">146</a>
+]. The most common application of a CNN for any type of lung assessment is to train encoder-decoder segmentation architectures inspired by UNet [
+<a href="#ORcarmo-147">147</a>
+] with supervision from a large, annotated dataset cohort in an end-to-end fashion, to segment a target structure. This supervision happens in the form of loss function, in most cases related to minimizing overlap between the network output and a ground truth segmentation [
+<a href="#ORcarmo-148">148</a>
+], although voxel classification losses such as cross entropy are also used [
+<a href="#ORcarmo-149">149</a>
+]. A major disadvantage of supervised learning is the necessity of large amounts of varied and annotated data, which results in data augmentation strategies being commonly used to increase the available amount of data [
+<a href="#ORcarmo-150">150</a>
+]. Another disadvantage is the need for expensive computing power and training time on the scale of days. Even considering these disadvantages, deep learning-based methods are the
+<i>de facto</i>
+state of the art in the lung segmentation field, including internal findings. For lung parenchyma segmentation, clinical studies have found no significant difference between expert lung annotation and deep CNN results [
+<a href="#ORcarmo-151">151</a>
+].
+</p>
+<p id="id50">
+Many variations and small modifications of the original UNet architecture have been proposed [
+<a href="#ORcarmo-33">33</a>
+,
+<a href="#ORcarmo-152">152</a>
+<a href="#ORcarmo-153">153</a>
+<a href="#ORcarmo-154">154</a>
+<a href="#ORcarmo-155">155</a>
+<a href="#ORcarmo-156">156</a>
+<a href="#ORcarmo-157">157</a>
+<a href="#ORcarmo-158">158</a>
+<a href="#ORcarmo-159">159</a>
+<a href="#ORcarmo-160">160</a>
+<a href="#ORcarmo-161">161</a>
+<a href="#ORcarmo-162">162</a>
+<a href="#ORcarmo-163">163</a>
+<a href="#ORcarmo-164">164</a>
+<a href="#ORcarmo-165">165</a>
+], including 3D variations coined VNet or 3D UNet [
+<a href="#ORcarmo-166">166</a>
+<a href="#ORcarmo-167">167</a>
+<a href="#ORcarmo-168">168</a>
+<a href="#ORcarmo-169">169</a>
+<a href="#ORcarmo-170">170</a>
+<a href="#ORcarmo-171">171</a>
+<a href="#ORcarmo-172">172</a>
+<a href="#ORcarmo-173">173</a>
+<a href="#ORcarmo-174">174</a>
+<a href="#ORcarmo-175">175</a>
+<a href="#ORcarmo-176">176</a>
+<a href="#ORcarmo-177">177</a>
+<a href="#ORcarmo-178">178</a>
+<a href="#ORcarmo-179">179</a>
+] that are able to process cube patches. Some research fuses features or results from multiple views (2.5D) or multiple 2D and 3D networks attempting to capture information from different angles and dimensionalities [
+<a href="#ORcarmo-180">180</a>
+<a href="#ORcarmo-181">181</a>
+<a href="#ORcarmo-182">182</a>
+<a href="#ORcarmo-183">183</a>
+<a href="#ORcarmo-184">184</a>
+<a href="#ORcarmo-185">185</a>
+<a href="#ORcarmo-186">186</a>
+<a href="#ORcarmo-187">187</a>
+<a href="#ORcarmo-188">188</a>
+<a href="#ORcarmo-189">189</a>
+<a href="#ORcarmo-190">190</a>
+]. Although UNet is prevalent in the literature, different architectures originated from the field of natural imaging segmentation, such as SegNet, DeepLab and Region CNNs, are also employed. Some traditional techniques, such as SVM, K-Means and GMMs, are also sometimes involved [
+<a href="#ORcarmo-191">191</a>
+<a href="#ORcarmo-192">192</a>
+<a href="#ORcarmo-193">193</a>
+<a href="#ORcarmo-194">194</a>
+<a href="#ORcarmo-195">195</a>
+<a href="#ORcarmo-196">196</a>
+<a href="#ORcarmo-197">197</a>
+]. For the input to these methods, most research uses patches of a pre-processed acquisition, normally consisting of HU intensity normalization. However, it is possible to go further by using coarse initial segmentations from other methods and unconventional inputs such as frequency decompositions, multiple HU clipping, coordinates as input and even by allowing for user corrections [
+<a href="#ORcarmo-196">144</a>
+,
+<a href="#ORcarmo-196">198</a>
+<a href="#ORcarmo-199">199</a>
+<a href="#ORcarmo-200">200</a>
+<a href="#ORcarmo-201">201</a>
+<a href="#ORcarmo-202">202</a>
+<a href="#ORcarmo-203">203</a>
+]. Post-processing of the output is also commonly employed, such as with conditional random fields or mathematical morphology [
+<a href="#ORcarmo-204">204</a>
+<a href="#ORcarmo-205">205</a>
+<a href="#ORcarmo-206">206</a>
+].
+</p>
+<p id="id51">
+Most research modifies the original architecture with novel propositions attempting to improve performance. One common modification is to change the type of convolution [
+<a href="#ORcarmo-186">186</a>
+,
+<a href="#ORcarmo-207">207</a>
+<a href="#ORcarmo-208">208</a>
+<a href="#ORcarmo-209">209</a>
+<a href="#ORcarmo-210">210</a>
+<a href="#ORcarmo-211">211</a>
+<a href="#ORcarmo-212">212</a>
+]. Additional residual connections and the use of attention gates [
+<a href="#ORcarmo-213">213</a>
+<a href="#ORcarmo-214">214</a>
+<a href="#ORcarmo-215">215</a>
+<a href="#ORcarmo-216">216</a>
+<a href="#ORcarmo-217">217</a>
+] are also a common modification, and even temporal features in the form of convolutional long short-term memories have been employed to exploit spatial-temporal information [
+<a href="#ORcarmo-218">218</a>
+]. Note however that recent research indicates that all those variations have not been shown to improve the performance of an UNet-like network in all cases, and likely only result in improvements for specific scenarios, with “no new UNet” (nnU-Net) having recently won many medical imaging challenges by only using a traditional well-trained 3D UNet [
+<a href="#ORcarmo-219">219</a>
+]. Recent research has also shown that for lung parenchyma segmentation, the problem is solved more by data diversity than by network architecture [
+<a href="#ORcarmo-4">4</a>
+].
+</p>
+<p id="id52">
+Recent research has also been focused on how to better use annotation data and multiple representations of the same input, with more efficient networks and consideration of low confidence predictions [
+<a href="#ORcarmo-220">220</a>
+<a href="#ORcarmo-221">221</a>
+<a href="#ORcarmo-222">222</a>
+<a href="#ORcarmo-223">223</a>
+<a href="#ORcarmo-224">224</a>
+<a href="#ORcarmo-225">225</a>
+<a href="#ORcarmo-226">226</a>
+]. Generative adversarial networks (GANs) are also gaining space in the literature, where a discriminator performs an auxiliary role in optimization by trying to discern predicted and ground-truth segmentations [
+<a href="#ORcarmo-227">227</a>
+<a href="#ORcarmo-228">228</a>
+<a href="#ORcarmo-229">229</a>
+]. The main disadvantage of the fully supervised approach is the necessity of high quality and quantity of annotated data. This drawback has spurred a recent trend in the field of exploring semi-supervised and self-supervised approaches that try to also learn from uncertainty measures and sources other than manual annotations, attempting to reduce the impact of low-quality annotations [
+<a href="#ORcarmo-230">230</a>
+<a href="#ORcarmo-231">231</a>
+<a href="#ORcarmo-232">232</a>
+<a href="#ORcarmo-233">233</a>
+<a href="#ORcarmo-234">234</a>
+<a href="#ORcarmo-235">235</a>
+<a href="#ORcarmo-236">236</a>
+<a href="#ORcarmo-237">237</a>
+]. Finally, some deep learning medical research and decision support methods have been tested and implemented recently in a real-world context [
+<a href="#ORcarmo-238">238</a>
+<a href="#ORcarmo-239">239</a>
+<a href="#ORcarmo-240">240</a>
+<a href="#ORcarmo-241">241</a>
+], with promising results for the future clinical use of deep learning methods.
+</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="id53"><!-- named anchor --></a><h2 class="main-title">4 Results</h2>
+<p id="id54">
+This section presents some results from highlighted papers, a list of methods with some level of reproducibility and overall statistics. Additionally, we also took note of all used public datasets, to provide a public data reference for future work. Due to the sheer number of articles included in this review and space constraints, full tables containing details of evaluation metrics, all methods, number of involved patients or slices, and extracted quantitative evaluation are provided in the
+<a href="#SMcarmo-1">Supplementary Material</a>
+.
+</p>
+<div class="section">
+<a id="id55"><!-- named anchor --></a><h3 class="section-title">4.1 Public Data</h3>
+<p id="id56">
+During the extraction process, we set forth with the goal of not only extracting quantitative evaluation metrics but also finding which public datasets have been used in the literature (
+<a href="#TBcarmo-1">Table 1</a>
+). Note that some datasets provide 2D slices, while others provide the whole scan. Most methods that used supervised training prepared training and test splits of 80/20% or used cross-validation with k-folds [
+<a href="#ORcarmo-248">248</a>
+]. More recent methods are more likely to involve multiple data sources for more robustness of trained methods [
+<a href="#ORcarmo-4">4</a>
+,
+<a href="#ORcarmo-235">235</a>
+].
+</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="TBcarmo-1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id57">
+Public datasets of thorax CTs, with description, links, and provided annotation. Includes only publicly available datasets mentioned in the reviewed methods, that we could find a working link for.
+</p></div>
+</div>
+</div>
+<div class="section">
+<a id="id58"><!-- named anchor --></a><h3 class="section-title">4.2 Highlighted Methods</h3>
+<p id="id59">
+It is noticeable that better quantitative evaluation metrics [
+<a href="#ORcarmo-247">247</a>
+<a href="#ORcarmo-248">248</a>
+<a href="#ORcarmo-2">249</a>
+<a href="#ORcarmo-250">250</a>
+] are not correlated with robust and well-validated methods and many articles with superior reported metrics used less representative datasets. Therefore, we chose to highlight five papers to represent the state of the art by target structure (
+<a href="#TBcarmo-2">Table 2</a>
+). These are not necessarily the best quantitative values reported, but those that caught our attention in a more subjective manner, with innovative design, extensive validation through large data annotation efforts, and generalization capabilities. The reason for being included in this table is described in the “Highlight” column. Note that metrics are defined, and all other papers have their results and data information in the
+<a href="#SMcarmo-1">Supplementary Material</a>
+.
+</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="TBcarmo-2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id60">
+Highlighted methods selected to represent each target structure group, with the reasoning summarized in the “Highlight” column, data, and evaluation information. ASSD: Average Symmetric Surface Distance, DSC: Dice Similarity Coefficient, HSD: Hausdorff Surface Distance, JSC: Jaccard Similarity Coefficient, LIDC: Lung Image Database Consortium, MSD: Maximum Surface Distance, PR-AUC: Precision-Recall Area under Curve.
+</p></div>
+</div>
+<p id="id61">
+For lung parenchyma segmentation, highlights include Konar
+<i>et al</i>
+., [
+<a href="#ORcarmo-235">235</a>
+], who proposed a new self-supervised quantum activation for shallow learning, Gerard
+<i>et al</i>
+., [
+<a href="#ORcarmo-220">220</a>
+] with an interesting polymorphic training strategy that allows for learning from different annotation complexities of the same target, Hofmanning
+<i>et al</i>
+., [
+<a href="#ORcarmo-4">4</a>
+] with an extensive exploration of the real contribution of architectures, suggesting that data variability is more important. Chen
+<i>et al</i>
+., [
+<a href="#ORcarmo-91">91</a>
+] and Sousa
+<i>et al</i>
+., [
+<a href="#ORcarmo-84">84</a>
+] achieved competitive performance with the state of the art with region-based methods. From the conclusion of many recent methods, automated lung parenchyma segmentation is a solved problem.
+</p>
+<p id="id62">
+For pulmonary nodules, Tavakoli
+<i>et al</i>
+., [
+<a href="#ORcarmo-73">73</a>
+] and Chung
+<i>et al</i>
+., [
+<a href="#ORcarmo-105">105</a>
+] showcased outperforming deep learning methods with region and shape-based methods, respectively. Liu
+<i>et al</i>
+., [
+<a href="#ORcarmo-30">30</a>
+] transferred knowledge from classification learning to segmentation learning. Aresta
+<i>et al</i>
+., [
+<a href="#ORcarmo-203">203</a>
+] provided a way for physicians to correct the result with manual interaction after the automated results, with Cui
+<i>et al</i>
+., [
+<a href="#ORcarmo-178">178</a>
+] being an interesting recent application of VNets with very competitive results in volumetric evaluation. Recent methods achieve between 0.7 and 0.9 DSC.
+</p>
+<p id="id63">
+For fissures or lobes, Konietzke
+<i>et al</i>
+., [
+<a href="#ORcarmo-133">133</a>
+] performed an evaluation with expiration imaging and pediatric imaging using neighboring anatomy guidance. Gerard
+<i>et al</i>
+., [
+<a href="#ORcarmo-221">221</a>
+] used a large amount of annotated data and semi-automatic ways to very high fissure AUC. Ram
+<i>et al</i>
+., [
+<a href="#ORcarmo-232">232</a>
+] had an interesting use of uncertainty for automatic quality assurance of resulting segmentations. Lessmann
+<i>et al</i>
+., [
+<a href="#ORcarmo-240">240</a>
+] besides segmenting the lobes also quantified COVID-19 findings. Zheng
+<i>et al</i>
+. [
+<a href="#ORcarmo-178">178</a>
+] improved the now common VNet architecture with deep supervision and attention. Recent methods achieve upwards of 0.9 DSC.
+</p>
+<p id="id64">
+Mansoor
+<i>et al</i>
+. [
+<a href="#ORcarmo-16">16</a>
+] is still a representative work for direct pleural effusion segmentation using a more traditional spatial context learning shape-based method. A lot of recent works on internal abnormalities of the lung focus on COVID-19 segmentation. Yan
+<i>et al</i>
+., [
+<a href="#ORcarmo-226">226</a>
+] is one of the works that used the largest amount of annotated data. Zheng
+<i>et al</i>
+., [
+<a href="#ORcarmo-136">136</a>
+] used a small amount of data but were able to perform the segmentation in a completely unsupervised manner.
+</p>
+<p id="id65">
+Wang
+<i>et al</i>
+., [
+<a href="#ORcarmo-241">241</a>
+] presented challenges encountered in deploying the segmentation method to a clinical setting. Chatzitofis
+<i>et al</i>
+., [
+<a href="#ORcarmo-217">217</a>
+] besides achieving good segmentation metrics also provided annotations. Recent methods are achieving upwards of 0.7 and 0.8 DSC for abnormal lung findings segmentation, on average.
+</p>
+<p id="id66">
+Finally, we listed methods that provided some form of reproducibility and open-source code (
+<a href="#TBcarmo-3">Table 3</a>
+).
+</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="TBcarmo-3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id67">
+Methods with their respective links to code repositories, evidencing their efforts towards reproducibility.
+</p></div>
+</div>
+<p id="id68">
+Global statistics are able to provide an overview of the literature, such as the fraction of methods that included pathological lungs, COVID-19 patients, publication methods (conference, journal), and data availability (
+<a href="#FIcarmo-3">Fig.3</a>
+). From the 224 articles included in the extraction, in 34 cases the authors worked with datasets including COVID-19 information, not necessarily in all patients in the dataset. In addition, 200 articles used datasets with pathologies in their data. Only two articles did not have pathologies in their datasets and in 22 articles, the authors did not specify whether the data included pathology. Of all the articles, 77 were published in a conference, 146 in a journal. Finally, 86 articles used only public datasets, 101 articles used only private datasets, and in 37 articles, authors used both public and private datasets. The increase in deep learning after 2016 and findings after the start of the COVID-19 pandemic is noticeable, when observing the timelines of the distribution of method categories and target structures over the years (
+<a href="#FIcarmo-4">Fig.4</a>
+).
+</p>
+</div>
+</div>
+<div class="section">
+<a id="id69"><!-- named anchor --></a><h2 class="main-title">5 Discussion</h2>
+<p id="id70">Our systematic methodology has the main advantage of providing a deterministic and reproducible review. With the provided databases, dates, search keys and selection criteria, anyone can reproduce our results. However, this strategy does come with disadvantages. Research that has not been indexed on the chosen databases are not included, including arXiv publications. To keep reproducibility, we cannot use dynamic search databases such as Google Scholar and Semantic Scholar. Also, the extensive manual reviewing, consensus and extraction work required to perform all phases of the methodology also limits the number of papers that can be feasibly included, which led to our decision to limit the search only to automated, computed, and quantitatively evaluated methods. This indirectly eliminated older methods without segmentation ground-truth and favored the inclusion of recent deep learning methods which, by the nature of requiring ground-truth targets for training, tend to provide evaluation with segmentation metrics.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="FIcarmo-3"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id71">
+Statistics by category of method for methods involving COVID-19 patients, publication method, the inclusion of pathological lungs and data availability.
+</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="FIcarmo-4"><!-- named anchor --></a><h5 class="label">Fig. 4</h5>
+<div class="caption"><p class="first" id="id72">
+Timelines of the number of publications included in the extraction phase, for method categories (left) and targets (right).
+</p></div>
+</div>
+<p id="id73">
+From the extraction process, we noticed many points of discussion, now with an overview of past and current segmentation methods. An interesting change in the research workflow can be noted with the rise of data-driven models. While data used to be a secondary focus of the research, only useful for algorithm validation, it is now the central point of many papers. Unfortunately, sharing patient data is complicated in the medical imaging field, which results in studies using in-house acquisitions and annotations from local radiologists not made available to the public. Regarding publicly available data (
+<a href="#TBcarmo-1">Table 1</a>
+), although there are a large number of CT scans available, it is common to annotate a subset of a publicly available dataset without making the annotations public, thus limiting the number of public annotations. The most commonly found public annotations are for lung masks, pulmonary nodules, and now COVID-19 findings. The remainder of this section will discuss methodologies, the state of the art regarding each target, and some gaps and opportunities for future research.
+</p>
+<div class="section">
+<a id="id74"><!-- named anchor --></a><h3 class="section-title">5.1 Methodology Trends</h3>
+<p id="id75">
+Threshold and region-based approaches are relatively easy to run in terms of computation but susceptible to noise and abnormalities. Shape/model, neighboring anatomy and machine learning approaches might be computing heavy and require more pre-definition of models and atlases but are more robust to noise and abnormalities. All these approaches require prior knowledge of the problem and hand-crafted tuning of parameters. Deep learning-based segmentation networks, on the other hand, can achieve better baseline performance and processing speed than more traditional methods, without the need for hand-crafted features, but requiring more data annotation. Note, however, that among the state-of-the-art deep learning-based methods, proper data collection and processing have been shown to be as important as the deep architecture [
+<a href="#ORcarmo-4">4</a>
+].
+</p>
+<p id="id76">
+In general, modifications to encoder-decoder segmentation networks provide the best overall performance. These modifications are often inspired by architecture changes proposed in the natural image segmentation literature. Even though these architectural modifications can bring improvements to the medical imaging segmentation performance, it has been shown that pre-training in natural images does not necessarily translate to better training in medical images. Regarding other types of methods, they are still being proposed and providing competitive performance in all included target structures [
+<a href="#ORcarmo-73">73</a>
+,
+<a href="#ORcarmo-84">84</a>
+,
+<a href="#ORcarmo-246">246</a>
+]. Due to the deep learning requirements for high quality and varied annotated data, traditional techniques are starting to be used again in deep learning pipelines for regularization and semi-supervised learning [
+<a href="#ORcarmo-234">234</a>
+]. More future improvements might come from exploring the benefits of traditional techniques in conjunction with deep learning. Finally, we noticed recent developments in leveraging border uncertainty information in learning [
+<a href="#ORcarmo-232">232</a>
+,
+<a href="#ORcarmo-233">233</a>
+], trying to reap benefits from annotation variability and make learning suffer less from poor quality annotations.
+</p>
+</div>
+<div class="section">
+<a id="id77"><!-- named anchor --></a><h3 class="section-title">5.2 Targets</h3>
+<p id="id78">
+For lung parenchyma segmentation, the literature is at a point where deep learning-based methods are reliably good in many different domains, even when involving diseases that completely change the lung appearance [
+<a href="#ORcarmo-226">226</a>
+], with publicly available command-line interface tools validated by both the authors [
+<a href="#ORcarmo-4">4</a>
+] and the public (
+<a href="#TBcarmo-3">Table 3</a>
+). This stability facilitates the development of future unbiased methods for internal findings that can focus on the lung area, leveraging lung extraction using these publicly available tools and codes.
+</p>
+<p id="id79">
+Pulmonary nodule segmentation is currently following the same trend as deep segmentation networks [
+<a href="#ORcarmo-154">154</a>
+,
+<a href="#ORcarmo-178">178</a>
+], in some cases with pipelines for simultaneous detection and/or classification [
+<a href="#ORcarmo-149">149</a>
+]. Manual volumetric nodule segmentation is still challenging, considering time and reproducibility issues, which resulted in the RECIST nodule evaluation method used in medicine where only one slice is used [
+<a href="#ORcarmo-230">230</a>
+]. For automated segmentation, the achieved overlap metrics have been comparable to human interobserver variability (
+<a href="#TBcarmo-2">Table 2</a>
+) but are not likely to reach upwards of 0.9 DSC in large data cohorts with the current difficulty in manual annotation reproducibility.
+</p>
+<p id="id80">
+Fissure and lobe segmentation has always been a challenge when fissures are not visible due to pathology [
+<a href="#ORcarmo-6">6</a>
+] since most region-based methods do not allow fissures to be seen as edges. However, recent deep learning methods were able to teach networks to extrapolate the location of fissures in diseased lungs by training on large cohorts of data, reaching high lobe overlap metrics [
+<a href="#ORcarmo-221">221</a>
+]. With more robust lobe segmentation methodologies, automated characterization of disease by outcome localization becomes more feasible [
+<a href="#ORcarmo-240">240</a>
+].
+</p>
+<p id="id81">
+In our search, only six publications classified as findings dealt with targets from diseases other than COVID-19 [
+<a href="#ORcarmo-16">16</a>
+,
+<a href="#ORcarmo-42">42</a>
+,
+<a href="#ORcarmo-74">74</a>
+,
+<a href="#ORcarmo-107">107</a>
+,
+<a href="#ORcarmo-111">111</a>
+,
+<a href="#ORcarmo-129">129</a>
+]. Many articles that dealt with diseases such as ILD and pleural effusion have instead focused on lung parenchyma segmentation. This suggests that research in automated segmentation of findings from diseases other than cancer and COVID-19 pneumonia needs further investigation. We have the hypothesis that this is due to the lack of publicly available annotated data (
+<a href="#TBcarmo-1">Table 1</a>
+). For the segmentation of COVID-19 related findings, many studies surfaced with the COVID-19 pandemic (
+<a href="#FIcarmo-4">Figure 4</a>
+), alongside private annotation efforts and some public datasets (
+<a href="#TBcarmo-1">Table 1</a>
+). For now, most methods operating on significant amounts of data achieve upwards of 0.7 to 0.8 findings DSC (
+<a href="#TBcarmo-2">Table 2</a>
+). Studies are required in the interobserver variability between humans providing manual annotations for COVID-19, given the fact that visual inspection of public datasets reveals noticeable differences in annotation protocol. We believe this is one reason why current methods do not achieve higher DSC.
+</p>
+</div>
+<div class="section">
+<a id="id82"><!-- named anchor --></a><h3 class="section-title">5.3 Gaps</h3>
+<p id="id83">Some gaps noticed in the literature are as follows, in the authors’ opinions. Firstly, in many cases data is not described correctly, with missing relevant information such as if the data consists of 2D slices or 3D volumes. Secondly, when reporting evaluation metrics, most authors do not provide information whether they were performed per scan (3D metric) or slice. Additionally, current quantitative evaluation does not allow for quantitative comparisons between methods, unless performed on the same dataset and data split, which is rare. Especially now, when many methods are achieving upwards of 0.9 DSC in some targets, it is important to be able to differentiate if a new methodology is performing well because of overfitting to learned data or if it is robust and general. Perhaps the use of unsupervised, data-independent techniques could provide the robustness that is lacking when most research is based on human-annotated data, especially in cases where annotation variability is high. Annotation efforts need also to be supervised for quality and to follow proper protocols, avoiding poor quality annotations and, as a result, avoiding poor quality models.</p>
+<p id="id84">
+Another point being discussed in many other areas of academic research is that of reproducibility [
+<a href="#ORcarmo-249">249</a>
+]. The great majority of the studies involved in this review did not provide an easy way to reproduce their results, not providing open-source code, private data, nor any details about how public data was used. Recent publications, mostly on deep learning, have improved in this regard (
+<a href="#TBcarmo-3">Table 3</a>
+). However, for medical imaging, there are also subject privacy and ethics to consider, which makes the reproducibility effort even more challenging. We suggest that future contributions aspire to provide open-source implementations and at least validations on known public datasets, with instructions for reproducibility.
+</p>
+<p id="id85">
+Finally, we noted that no method was demonstrated to automatically segment all types of findings at the same time. The articles included in this review all focused on specific tasks generally related to specific datasets or challenges. Therefore, there is no general automated method for lung assessment and segmentation prepared to deal with all common types of lung findings, for example for use in a clinical setting. We are happy to see a recent effort to deploy deep learning-based methods for COVID-19 classification and segmentation in real hospitals and its use in medical research, with promising results [
+<a href="#ORcarmo-238">238</a>
+<a href="#ORcarmo-239">239</a>
+<a href="#ORcarmo-240">240</a>
+<a href="#ORcarmo-241">241</a>
+], but surveys state that deep learning-based methods are not ready for clinical use [
+<a href="#ORcarmo-7">7</a>
+,
+<a href="#ORcarmo-8">8</a>
+].
+</p>
+</div>
+</div>
+<div class="section">
+<a id="id86"><!-- named anchor --></a><h2 class="main-title">6 Conclusion</h2>
+<p id="id87">We presented an extensive systematic review of automated lung segmentation in CT images, answering the research question: “What are the quantitatively evaluated, computed, and automated segmentation methods for the lung and its lobes and findings, using computed tomography images?”. We also grouped all included work into method categories and provided a list of public datasets used by these methods.</p>
+<p id="id88">The state of the art is undoubtedly data-driven deep learning methods, although there are still recent high-quality propositions using traditional methods. During the review process, we noticed that methods should be evaluated based on their robustness and generalizability, rather than on good quantitative metrics. Good metrics can be achieved with methods that are overfitted, due to low variability or quality of annotations.</p>
+<p id="id89">One of the consequences of the rise of data-driven methods is the increased dependence on high-quality data annotation. This has instigated newer methods to strive for semi-supervised approaches such as the use of regularization by unsupervised algorithms and the exploitation of border uncertainty to their advantage. As we approach performance close to annotation by radiologists, how to prove that a method is robust enough for clinical use while considering the variability of manual annotations used as the basis for these methods is an interesting research question for future studies.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id91"><!-- named anchor --></a><h2 class="main-title">Acknowledgments</h2>
+<p id="id90">We thank the support from grant 2019/21964-4, São Paulo Research Foundation (FAPESP), CAPES grants 88887.513444/2020-00 and 88887.506728/2020-00, and CNPq grants 310828/2018-0 and 313598/2020-7.</p>
+</div>
+<div class="back-section">
+<a id="id98"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="FNcarmo-1"><!-- named anchor --></a><p id="id92"><span class="generated">[1]</span> <a target="xrefwindow" href="https://www.elsevier.com/pt-br/solutions/scopus" id="id93">https://www.elsevier.com/pt-br/solutions/scopus</a></p>
+</div>
+<div class="footnote">
+<a id="FNcarmo-2"><!-- named anchor --></a><p id="id94"><span class="generated">[2]</span> <a target="xrefwindow" href="https://www.embase.com" id="id95">https://www.embase.com</a></p>
+</div>
+<div class="footnote">
+<a id="FNcarmo-3"><!-- named anchor --></a><p id="id96"><span class="generated">[3]</span> <a target="xrefwindow" href="https://pubmed.ncbi.nlm.nih.gov" id="id97">https://pubmed.ncbi.nlm.nih.gov</a></p>
+</div>
+</div>
+<div class="back-section">
+<a id="id100"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="FNcarmo-4"><!-- named anchor --></a><p id="id99"><span class="generated">[4]</span> Equal contribution</p>
+</div>
+</div>
+<div class="section">
+<a id="id101"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SMcarmo-1"><!-- named anchor --></a><a id="id102" href="10-1055-s-0042-1742517-scarmo.pdf"><div class="caption"><p class="first" id="id103">Supplementary Material</p></div>
+<div class="caption"><p class="first" id="id104">Supplementary Material</p></div></a>
+</div>
+</div>
+<div class="back-section">
+<a id="id105"><!-- named anchor --></a><div class="section ref-list">
+<a id="id105"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1</span> <a id="ORcarmo-1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id106"><!-- named anchor --></a>Buzug TM. Computed tomography. In: Springer handbook of medical technology. Springer; 2011. p. 311–42.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2</span> <a id="ORcarmo-2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id107"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3</span> <a id="ORcarmo-3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id108"><!-- named anchor --></a>Tabatabaei SMH, Talari H, Moghaddas F, Rajebi H. CT Features and Short-term Prognosis of COVID-19 Pneumonia: A Single-Center Study from Kashan, Iran. Radiol Cardiothorac Imaging 2020 Apr 20;2(2):e200130.10.1148/ryct.2020200130PMC723344933778569</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4</span> <a id="ORcarmo-4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id109"><!-- named anchor --></a>Hofmanninger J, Prayer F, Pan J, Röhrich S, Prosch H, Langs G. Automatic lung segmentation in routine imaging is primarily a data diversity problem, not a methodology problem. Eur Radiol Exp 2020 Aug 20;4(1):50.10.1186/s41747-020-00173-2PMC743841832814998</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5</span> <a id="ORcarmo-5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id110"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6</span> <a id="ORcarmo-6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id111"><!-- named anchor --></a>Doel T, Gavaghan DJ, Grau V. Review of automatic pulmonary lobe segmentation methods from CT. Comput Med Imaging Graph 2015 Mar;40:13-29.10.1016/j.compmedimag.2014.10.00825467805</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7</span> <a id="ORcarmo-7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id112"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8</span> <a id="ORcarmo-8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id113"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9</span> <a id="ORcarmo-9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id114"><!-- named anchor --></a>Biolchini J, Mian PG, Natali ACC, Travassos GH. Systematic review in software engineering. System engineering and computer science department COPPE/UFRJ. Technical Report ES 2005;679(05):45.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10</span> <a id="ORcarmo-10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id115"><!-- named anchor --></a>Boland A, Cherry G, Dickson R, editors. Doing a systematic review: A student’s guide. SAGE Publications; 2017.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11</span> <a id="ORcarmo-11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id116"><!-- named anchor --></a>Babineau J. Product review: Covidence (systematic review software). J Can Health Libr Assoc 2014, 35(2):68-71.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12</span> <a id="ORcarmo-12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id117"><!-- named anchor --></a>Tseng LY, Huang LC. An adaptive thresholding method for automatic lung segmentation in CT images. In: AFRICON2009. IEEE; 2009. p. 1-5.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13</span> <a id="ORcarmo-13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id118"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14</span> <a id="ORcarmo-14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id119"><!-- named anchor --></a>Mohd Noor, N, Mohd Rijal, O, Ming JTC, Rosell FA, Ebrahimian H, Kassim RM, et aä. Segmentation of the lung anatomy for high resolution computed tomography (HRCT) thorax images. In: International Visual Informatics Conference 2013. Cham: Springer; 2013. p. 165-75.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15</span> <a id="ORcarmo-15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id120"><!-- named anchor --></a>Reboucas Filho PP, da Silva Barros AC, Almeida JS, Rodrigues JPC, de Albuquerque VHC. A new effective and powerful medical image segmentation algorithm based on optimum path snakes. Appl Soft Comput 2019;76:649-70.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16</span> <a id="ORcarmo-16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id121"><!-- named anchor --></a>Mansoor A, Casas Jr R, Linguraru MG. Spatial context learning approach to automatic segmentation of pleural effusion in chest computed tomography images. In: Medical Imaging 2016: Computer-Aided Diagnosis, Vol. 9785. International Society for Optics and Photonics; 2016. p. 978514 .</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17</span> <a id="ORcarmo-17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id122"><!-- named anchor --></a>Somasundaram E, Kaufman R, Brady S. Advancements in automated tissue segmentation pipeline for contrast-enhanced CT scans of adult and pediatric patients. In: Medical Imaging 2017: Computer-Aided Diagnosis, Vol. 10134. International Society for Optics and Photonics; 2017. p. 101343.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18</span> <a id="ORcarmo-18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id123"><!-- named anchor --></a>Zhang X, Li S, Zhang B, Dong J, Zhao S, Liu X. Automatic detection and segmentation of lung nodules in different locations from CT images based on adaptivea-hull algorithm and DenseNet convolutional network. Int J Imaging Syst Technol 2021;31(4):1882-93.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19</span> <a id="ORcarmo-19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id124"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20</span> <a id="ORcarmo-20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id125"><!-- named anchor --></a>Wei Y, Shen G, Li JJ. A fully automatic method for lung parenchyma segmentation and repairing. J Digit Imaging. 2013 Jun;26(3):483-95.10.1007/s10278-012-9528-9PMC364906223053904</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21</span> <a id="ORcarmo-21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id126"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22</span> <a id="ORcarmo-22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id127"><!-- named anchor --></a>Wei Q, Hu Y. A hybrid approach to segmentation of diseased lung lobes. IEEE J Biomed Health Inform 2014 Sep;18(5):1696-706.10.1109/JBHI.2014.233295524968339</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23</span> <a id="ORcarmo-23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id128"><!-- named anchor --></a>ill G, Beichel RR. An approach for reducing the error rate in automated lung segmentation. Comput Biol Med 2016 Sep 1;76:143-53.10.1016/j.compbiomed.2016.06.022PMC500717927447897</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24</span> <a id="ORcarmo-24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id129"><!-- named anchor --></a>Dandil E. A Computer-Aided Pipeline for Automatic Lung Cancer Classification on Computed Tomography Scans. J Healthc Eng 2018 Nov 1;2018:9409267.10.1155/2018/9409267PMC623677130515286</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25</span> <a id="ORcarmo-25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id130"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26</span> <a id="ORcarmo-26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id131"><!-- named anchor --></a>Mekali V, Girijamma HA. An Fully Automated CAD System for Juxta-Vacular Nodules Segmentation in CT Scan Images. In: 2019 3rd International Conference on Computing Methodologies and Communication (ICCMC). IEEE; 2019. p. 917-24.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27</span> <a id="ORcarmo-27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id132"><!-- named anchor --></a>Pang T, Guo S, Zhang X, Zhao L. Automatic Lung Segmentation Based on Texture and Deep Features of HRCT Images with Interstitial Lung Disease. Biomed Res Int 2019 Nov 29;2019:2045432.10.1155/2019/2045432PMC690704631871932</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28</span> <a id="ORcarmo-28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id133"><!-- named anchor --></a>Liu C, Pang M, Zhao R. Novel superpixel-based algorithm for segmenting lung images via convolutional neural network and random forest. IET Image Process 2020;14(16):4340-8.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29</span> <a id="ORcarmo-29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id134"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30</span> <a id="ORcarmo-30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id135"><!-- named anchor --></a>Liu C, Zhao R, Pang M. A fully automatic segmentation algorithm for CT lung images based on random forest. Med Phys 2020 Feb;47(2):518-29.10.1002/mp.1393931788807</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31</span> <a id="ORcarmo-31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id136"><!-- named anchor --></a>Fu Y, Ippolito JE, Ludwig DR, Nizamuddin R, Li HH, Yang D. Technical Note: Automatic segmentation of CT images for ventral body composition analysis. Med Phys 2020 Nov;47(11):5723-30.10.1002/mp.1446532969050</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32</span> <a id="ORcarmo-32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id137"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33</span> <a id="ORcarmo-33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id138"><!-- named anchor --></a>Pawar SP, Talbar SN. LungSeg-Net: Lung field segmentation using generative adversarial network. Biomed Signal Process Control 2021;64:102296.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34</span> <a id="ORcarmo-34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id139"><!-- named anchor --></a>Ronneberger O, Fischer P, BroxT. U-net: Convolutional networks for biomedical image segmentation. In: International Conference on Medical Image Computing and Computer-Assisted Intervention 2015 – MICCAI. Cham: Springer; 2015. p. 234-41.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35</span> <a id="ORcarmo-35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id140"><!-- named anchor --></a>Mekali V, Girijamma HA. Fully Automatic Detection and Segmentation Approach for Juxta-Pleural Nodules From CT Images. Int J Healthc Inf Syst Inform 2021;16(2):87-104.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36</span> <a id="ORcarmo-36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id141"><!-- named anchor --></a>Ren YH, Sun XW, Nie SD. A 3D segmentation method of lung parenchyma based on CT image sequences. In: 2010 International Conference on Information, Networking and Automation, Vol 2. IEEE; 2010. p. 332-6.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37</span> <a id="ORcarmo-37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id142"><!-- named anchor --></a>Kumar SP, Latte MV. Fully automated segmentation of lung parenchyma using break and repair strategy. Journal of Intelligent Systems 2019;28(2):275-89.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38</span> <a id="ORcarmo-38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id143"><!-- named anchor --></a>Pham DL, Xu C, Prince JL. Current methods in medical image segmentation. Annu Rev Biomed Eng 2000;2:315-37.10.1146/annurev.bioeng.2.1.31511701515</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39</span> <a id="ORcarmo-39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id144"><!-- named anchor --></a>van Rikxoort EM, de Hoop B, van de Vorst S, Prokop M, van Ginneken B. Automatic segmentation of pulmonary segments from volumetric chest CT scans. IEEE Trans Med Imaging 2009 Apr;28(4):621-30.10.1109/TMI.2008.200896819211346</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40</span> <a id="ORcarmo-40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id145"><!-- named anchor --></a>Zhao JJ, Ji GH, Xia Y, Zhang XL. Cavitary nodule segmentation in computed tomography images based on self–generating neural networks and particle swarm optimisation. International Journal of Bio-Inspired Computation 2015:7(1):62-7.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41</span> <a id="ORcarmo-41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id146"><!-- named anchor --></a>Oliveira AC, Domingues I, Duarte H, Santos J, Abreu PH. Going Back to Basics on Volumetric Segmentation of the Lungs in CT: A Fully Image Processing Based Technique. In: Iberian Conference on Pattern Recognition and Image Analysis 2019. Cham: Springer; 2019. p. 322-34.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42</span> <a id="ORcarmo-42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id147"><!-- named anchor --></a>Bi M, Summers RM, Yao J. Three-dimensional automatic computer-aided evaluation of pleural effusions on chest CT images. In: Medical Imaging 2011: Biomedical Applications in Molecular, Structural, and Functional Imaging, Vol. 7965. SPIE; 2011. p.499-505.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43</span> <a id="ORcarmo-43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id148"><!-- named anchor --></a>Ukil S, Sonka M, Reinhardt JM. Automatic segmentation of pulmonary fissures in X-ray CT images using anatomic guidance. In: Medical Imaging 2006: Image Processing Vol. 6144. SPIE; 2006. p. 213-23.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44</span> <a id="ORcarmo-44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id149"><!-- named anchor --></a>Lassen B, Kuhnigk JM, Friman O, Krass S, Peitgen HO. Automatic segmentation of lung lobes in CT images based on fissures, vessels, and bronchi. In: 2010 IEEE International Symposium on Biomedical Imaging: From Nano to Macro. IEEE; 2010. p. 560-3.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45</span> <a id="ORcarmo-45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id150"><!-- named anchor --></a>Devaki K, Bhaskaran V. A novel approach to detect fissures in lung CT images using marker-based watershed transformation, J Comput Sci 2014;10:896–905.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46</span> <a id="ORcarmo-46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id151"><!-- named anchor --></a>Wei Q, Hu Y, MacGregor J, Gelfand G. Segmentation of lung lobes in clinical CT images. Int J Comput Assist Radiol Surg 2008;3(1):151–63.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47</span> <a id="ORcarmo-47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id152"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48</span> <a id="ORcarmo-48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id153"><!-- named anchor --></a>Sundar A, Anitha JA. 3D Lung Segmentation on CT Images Using Region-Based Method. International Journal of Advanced Trends in Computer Science and Engineering 2019;1156–61.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49</span> <a id="ORcarmo-49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id154"><!-- named anchor --></a>Kakar M, Olsen DR. Automatic segmentation and recognition of lungs and lesion from CT scans of thorax. Comput Med Imaging Graph 2009 Jan;33(1):72-82.10.1016/j.compmedimag.2008.10.00919059759</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50</span> <a id="ORcarmo-50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id155"><!-- named anchor --></a>Abbas Q. Segmentation of differential structures on computed tomography images for diagnosis lung-related diseases. Biomed Signal Process Control 2017;33:325–34.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51</span> <a id="ORcarmo-51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id156"><!-- named anchor --></a>Mao Q, Zhao S, Gong T, Qianqian Z. An Effective Hybrid Windowed Fourier Filtering and Fuzzy C-Mean for Pulmonary Nodule Segmentation. J Med ImagingHealth Inform 2018;8(1):72–7.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52</span> <a id="ORcarmo-52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id157"><!-- named anchor --></a>Khan ZF. Automated Segmentation of Lung Parenchyma Using Colour Based Fuzzy C-Means Clustering. Journal of Electrical Engineering &amp; Technology 2019;14(5):2163–9.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53</span> <a id="ORcarmo-53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id158"><!-- named anchor --></a>Khan ZF. Fully Automated Coronal and Sagittal Chest Segmentation using Colour Features and Fuzzy C-Means Clustering in CT Images. Biomedical and Pharmacology Journal 2019;12(1):259–66.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54</span> <a id="ORcarmo-54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id159"><!-- named anchor --></a>Sahu SP, Agrawal P, Londhe ND, Verma S. A New Hybrid Approach Using Fuzzy Clustering and Morphological Operations for Lung Segmentation in Thoracic CT Images. Biomedical and Pharmacology Journal 2017;10(14):1949–61.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55</span> <a id="ORcarmo-55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id160"><!-- named anchor --></a>Sahu SP, Agrawal P, Londhe ND, Verma S. Lung Segmentation of CT Images Using Fuzzy C-Means for the Detection of Cancer in Early Stages. Advances in Data and Information Sciences 2019:167–76.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56</span> <a id="ORcarmo-56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id161"><!-- named anchor --></a>Sun X, Zhang H, Duan H. 3D computerized segmentation of lung volume with computed tomography. Acad Radiol 2006 Jun;13(6):670-7.10.1016/j.acra.2006.02.03916679268</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57</span> <a id="ORcarmo-57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id162"><!-- named anchor --></a>Korfiatis P, Skiadopoulos S, Sakellaropoulos P, Kalogeropoulou C, Costaridou L. Combining 2D wavelet edge highlighting and 3D thresholding for lung segmentation in thin-slice CT. Br J Radiol 2007 Dec;80(960):996-1004.10.1259/bjr/2086188118065645</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58</span> <a id="ORcarmo-58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id163"><!-- named anchor --></a>Kumar SN, Kavitha V. Automatic segmentation of lung lobes and fissures for surgical planning. In: 2011 International Conference on Emerging Trends in Electrical and Computer Technology. IEEE; 2011. p. 546-50.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59</span> <a id="ORcarmo-59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id164"><!-- named anchor --></a>Wei Q, Hu Y, MacGregor JH, Gelfand G. Segmentation of lung lobes in volumetric CT images for surgical planning of treating lung cancer. In: 2006 International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE 2006. p. 4869-72.10.1109/IEMBS.2006.26055117945864</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60</span> <a id="ORcarmo-60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id165"><!-- named anchor --></a>Wang J, Betke M, Ko JP. Pulmonary fissure segmentation on CT. Med Image Anal 2006 Aug;10(4):530-47.10.1016/j.media.2006.05.003PMC235973016807062</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61</span> <a id="ORcarmo-61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id166"><!-- named anchor --></a>Xiao R, Zhou J. Pulmonary Fissure Detection in 3D CT Images Using a Multiple Section Model. Algorithms 2019;12(4):75.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62</span> <a id="ORcarmo-62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id167"><!-- named anchor --></a>Liu C, Pang M. Automatic lung segmentation based on image decomposition and wavelet transform. Biomed Signal Process Control 2020;61:102032.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63</span> <a id="ORcarmo-63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id168"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64</span> <a id="ORcarmo-64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id169"><!-- named anchor --></a>Ming JTC, Noor NM, Rijal OM, Kassim RM, Yunus A. Enhanced automatic lung segmentation using graph cut for interstitial lung disease. In: 2014 IEEE Conference on Biomedical Engineering and Sciences (IECBES). IEEE; 2014. p. 17-21.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65</span> <a id="ORcarmo-65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id170"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66</span> <a id="ORcarmo-66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id171"><!-- named anchor --></a>Ng CR, Than JCM, Noor NM, Rijal OM, Kassim RM, Yunus A. Preliminary 3D performance evaluation on automatic lung segmentation for interstitial lung disease using high resolution. In: TENCON 2017-2017 IEEE Region 10 Conference. IEEE; 2017. p. 187-91.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67</span> <a id="ORcarmo-67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id172"><!-- named anchor --></a>Khan ZF, Kannan A. Intelligent segmentation of medical images using fuzzy bitplane thresholding. Measurement Science Review 2014;14(2):94.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68</span> <a id="ORcarmo-68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id173"><!-- named anchor --></a>Dong J, Lu K, Dai S, Xue J, Zhai R. Auto-segmentation of pathological lung parenchyma based on region growing method. In: International Conference on Internet Multimedia Computing and Service 2017. Singapore: Springer; 2017. p. 241-51.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69</span> <a id="ORcarmo-69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id174"><!-- named anchor --></a>Chunran Y, Yuanvuan W, Yi G. Automatic detection and segmentation of lung nodule on ct images. In: 2018 11th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI). Springer; 2018. p. 1-6.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70</span> <a id="ORcarmo-70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id175"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71</span> <a id="ORcarmo-71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id176"><!-- named anchor --></a>Sun Y, Wang J. Automatic method for lung segmentation with juxta-pleural nodules from thoracic CT based on border separation and correction. In: 2016 9th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI). IEEE; 2016. p. 330-5.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72</span> <a id="ORcarmo-72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id177"><!-- named anchor --></a>Shakibapour E, Cunha A, Aresta G, Mendonça AM, Campilho A. An unsupervised metaheuristic search approach for segmentation and volume measurement of pulmonary nodules in lung CT scans. Expert Syst Appl 2019;119:415-28.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73</span> <a id="ORcarmo-73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id178"><!-- named anchor --></a>Tavakoli MB, Orooji M, Teimouri M, Shahabifar R. Segmentation of the pulmonary nodule and the attached vessels in the ct scan of the chest using morphological features and topological skeleton of the nodule. IET Image Process 2020;14(8):1520-8.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74</span> <a id="ORcarmo-74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id179"><!-- named anchor --></a>Kumar SP, Latte MV. Lung parenchyma segmentation: fully automated and accurate approach for thoracic CT scan images. IETE J Res 2020;66(3):370-83.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75</span> <a id="ORcarmo-75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id180"><!-- named anchor --></a>Halder A, Chatterjee S, Dey D, Kole S, Munshi S. An adaptive morphology based segmentation technique for lung nodule detection in thoracic CT image. Comput Methods Programs Biomed 2020 Dec;197:105720.10.1016/j.cmpb.2020.10572032877818</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76</span> <a id="ORcarmo-76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id181"><!-- named anchor --></a>Vivanti R, Joskowicz L, Karaaslan OA, Sosna J. Automatic lung tumor segmentation with leaks removal in follow-up CT studies. Int J Comput Assist Radiol Surg 2015 Sep;10(9):1505-14.10.1007/s11548-015-1150-025605297</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77</span> <a id="ORcarmo-77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id182"><!-- named anchor --></a>Devi KY, Sasikala M. Labeling and clustering-based level set method for automated segmentation of lung tumor stages in CT images. J Ambient Intell Humaniz Comput 2021;12(2):2299-309.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78</span> <a id="ORcarmo-78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id183"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79</span> <a id="ORcarmo-79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id184"><!-- named anchor --></a>Yim Y, Hong H. A method for smoothing segmented lung boundary in chest CT images. In: Medical Imaging 2007: Image Processing 6512. SPIE; 2007. p. 1172-8.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80</span> <a id="ORcarmo-80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id185"><!-- named anchor --></a>Pu J, Roos J, Yi CA, Napel S, Rubin GD, Paik DS. Adaptive border marching algorithm: automatic lung segmentation on chest CT images. Comput Med Imaging Graph 2008 Sep;32(6):452-62.10.1016/j.compmedimag.2008.04.005PMC253665518515044</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81</span> <a id="ORcarmo-81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id186"><!-- named anchor --></a>Pulagam AR, Kande GB, Ede VK, Inampudi RB. Automated Lung Segmentation from HRCT Scans with Diffuse Parenchymal Lung Diseases. J Digit Imaging 2016 Aug;29(4):507-19.10.1007/s10278-016-9875-zPMC494239526961983</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82</span> <a id="ORcarmo-82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id187"><!-- named anchor --></a>Dash JK, Madhavi V, Mukhopadhyay S, Khandelwal N, Kumar P. Segmentation of interstitial lung disease patterns in HRCT images. In: Medical Imaging 2015: Computer-Aided Diagnosis 9414. SPIE; 2015. p. 687-92.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83</span> <a id="ORcarmo-83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id188"><!-- named anchor --></a>Wang J, Guo H. Automatic Approach for Lung Segmentation with Juxta-Pleural Nodules from Thoracic CT Based on Contour Tracing and Correction. Comput Math Methods Med 2016;2016:2962047.10.1155/2016/2962047PMC512873127974907</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84</span> <a id="ORcarmo-84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id189"><!-- named anchor --></a>Sousa AM, Martins SB, Falcão AX, Reis F, Bagatin E, Irion K. ALTIS: A fast and automatic lung and trachea CT-image segmentation method. Med Phys 2019 Nov;46(11):4970-82.10.1002/mp.1377331435950</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85</span> <a id="ORcarmo-85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id190"><!-- named anchor --></a>Hua P, Song Q, Sonka M, Hoffman EA, Reinhardt JM. Segmentation of pathological and diseased lung tissue in CT images using a graph-search algorithm. In: 2011 IEEE International Symposium on biomedical imaging: from nano to macro. IEEE; 2011. p. 2072-5.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86</span> <a id="ORcarmo-86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id191"><!-- named anchor --></a>Nimura Y, Hayashi Y, Kitasaka T, Mori K. Automated torso organ segmentation from 3D CT images using structured perceptron and dual decomposition. In: Medical Imaging 2015: Computer-Aided Diagnosis 9414. SPIE; 2015. p. 878-83.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87</span> <a id="ORcarmo-87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id192"><!-- named anchor --></a>Oluyide OM, Tapamo JR, Viriri S. Automatic lung segmentation based on Graph Cut using a distance -constrained energy. IET Computer Vision 2018;12(5):609-15.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">88</span> <a id="ORcarmo-88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id193"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">89</span> <a id="ORcarmo-89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id194"><!-- named anchor --></a>Chama CK, Mukhopadhyay S, Biswas PK, Dhara AK, Madaiah MK, Khandelwal N. Automated lung field segmentation in CT images using mean shift clustering and geometrical features. In: Medical Imaging 2013: Computer-Aided Diagnosis 8670. SPIE; 2013. p. 790-9. SPIE.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">90</span> <a id="ORcarmo-90"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id195"><!-- named anchor --></a>Liao X, Zhao J, Jiao C, Lei L, Qiang Y, Cui Q. A Segmentation Method for Lung Parenchyma Image Sequences Based on Superpixels and a Self-Generating Neural Forest. PLoS One 2016 Aug 17;11(8):e0160556.10.1371/journal.pone.0160556PMC498871427532214</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">91</span> <a id="ORcarmo-91"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id196"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">92</span> <a id="ORcarmo-92"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id197"><!-- named anchor --></a>Dey N, Rajinikanth V, Fong SJ, Kaiser MS, Mahmud M. Social Group Optimization-Assisted Kapur’s Entropy and Morphological Segmentation for Automated Detection of COVID-19 Infection from Computed Tomography Images. Cognit Comput 2020;12(5):1011-23.10.1007/s12559-020-09751-3PMC742909832837591</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">93</span> <a id="ORcarmo-93"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id198"><!-- named anchor --></a>Oulefki A, Agaian S, Trongtirakul T, Kassah Laouar A. Automatic COVID-19 lung infected region segmentation and measurement using CT-scans images. Pattern Recognit 2021 Jun;114:107747.10.1016/j.patcog.2020.107747PMC760575833162612</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">94</span> <a id="ORcarmo-94"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id199"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">95</span> <a id="ORcarmo-95"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id200"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">96</span> <a id="ORcarmo-96"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id201"><!-- named anchor --></a>Xiao C, Stoel BC, Bakker ME, Peng Y, Stolk J, Staring M. Pulmonary Fissure Detection in CT Images Using a Derivative of Stick Filter. IEEE Trans Med Imaging 2016 Jun;35(6):1488-500.10.1109/TMI.2016.251768026766371</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">97</span> <a id="ORcarmo-97"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id202"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">98</span> <a id="ORcarmo-98"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id203"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">99</span> <a id="ORcarmo-99"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id204"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">100</span> <a id="ORcarmo-100"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id205"><!-- named anchor --></a>El-Baz A, Farag A, Gimel’farb G, Falk R, El-Ghar MA, Eldiasty T. A framework for automatic segmentation of lung nodules from low dose chest CT scans. In: 18th International Conference on Pattern Recognition 2006 (ICPR’06) Vol. 3. IEEE; 2006. p. 611-4.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">101</span> <a id="ORcarmo-101"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id206"><!-- named anchor --></a>Gill G, Bauer C, Beichel RR. A method for avoiding overlap of left and right lungs in shape model guided segmentation of lungs in CT volumes. Med Phys 2014 Oct;41(10):101908.10.1118/1.4894817PMC496511025281960</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">102</span> <a id="ORcarmo-102"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id207"><!-- named anchor --></a>Pu J, Paik DS, Meng X, Roos JE, Rubin GD. Shape “break-and-repair” strategy and its application to automated medical image segmentation. IEEE Trans Vis Comput Graph 2011 Jan;17(1):115-24.10.1109/TVCG.2010.56PMC309914021071791</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">103</span> <a id="ORcarmo-103"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id208"><!-- named anchor --></a>Nimura Y, Hayashi Y, Kitasaka T, Misawa K, Mori K. Automated torso organ segmentation from 3D CT images using conditional random field. In: Medical Imaging 2016: Computer-Aided Diagnosis, Vol. 9785. SPIE; 2016. p. 931-6.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">104</span> <a id="ORcarmo-104"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id209"><!-- named anchor --></a>Zhang X, Wang J, Yang Y, Wang B, Gu L. Spline curve deformation model with prior shapes for identifying adhesion boundaries between large lung tumors and tissues around lungs in CT images. Med Phys 2020 Mar;47(3):1011-20.10.1002/mp.1399831883391</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">105</span> <a id="ORcarmo-105"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id210"><!-- named anchor --></a>Chung H, Ko H, Jeon SJ, Yoon KH, Lee J. Automatic Lung Segmentation With Juxta-Pleural Nodule Identification Using Active Contour Model and Bayesian Approach. IEEE J Transl Eng Health Med 2018 May 18;6:1800513.10.1109/JTEHM.2018.2837901PMC600184829910995</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">106</span> <a id="ORcarmo-106"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id211"><!-- named anchor --></a>El-Ba A, Gimel’farb G, Falk R, Holland T, Shaffer T. A new stochastic framework for accurate lung segmentation. Med Image Comput Comput Assist Interv 2008;11(Pt 1):322-30.10.1007/978-3-540-85988-8_3918979763</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">107</span> <a id="ORcarmo-107"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id212"><!-- named anchor --></a>Zhu Y, Tan Y, Hua Y, Zhang G, Zhang J. Automatic segmentation of ground-glass opacities in lung CT images by using Markov random field-based algorithms. J Digit Imaging 2012 Jun;25(3):409-22.10.1007/s10278-011-9435-5PMC334898322089834</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">108</span> <a id="ORcarmo-108"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id213"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">109</span> <a id="ORcarmo-109"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id214"><!-- named anchor --></a>Yao J, Han W, Summers RM. Computer Aided Evaluation of Pleural Effusion Using Chest CT Images. Proc IEEE Int Symp Biomed Imaging 2009;2009:241-4.10.1109/ISBI.2009.5193028PMC285634520407621</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">110</span> <a id="ORcarmo-110"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id215"><!-- named anchor --></a>Sun S, Bauer C, Beichel R. Automated 3-D segmentation of lungs with lung cancer in CT data using a novel robust active shape model approach. IEEE Trans Med Imaging 2012 Feb;31(2):449-60.10.1109/TMI.2011.2171357PMC365776121997248</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">111</span> <a id="ORcarmo-111"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id216"><!-- named anchor --></a>He N, Zhang X, Zhao J, Zhao H, Qiang Y. Pulmonary parenchyma segmentation in thin CT image sequences with spectral clustering and geodesic active contour model based on similarity. In: Ninth International Conference on Digital Image Processing 2017 (ICDIP 2017), Vol. 10420. SPIE; 2017. p. 515-23.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">112</span> <a id="ORcarmo-112"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id217"><!-- named anchor --></a>Zhang W, Wang X, Zhang P, Chen J. Global optimal hybrid geometric active contour for automated lung segmentation on CT images. Comput Biol Med 2017 Dec 1;91:168-80.10.1016/j.compbiomed.2017.10.00529080491</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">113</span> <a id="ORcarmo-113"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id218"><!-- named anchor --></a>Zhang S, Chen X, Zhu Z, Feng B, Chen Y, Long W. Segmentation of small ground glass opacity pulmonary nodules based on Markov random field energy and Bayesian probability difference. Biomed Eng Online 2020 Jun 17;19(1):51.10.1186/s12938-020-00793-0PMC730239132552724</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">114</span> <a id="ORcarmo-114"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id219"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">115</span> <a id="ORcarmo-115"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id220"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">116</span> <a id="ORcarmo-116"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id221"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">117</span> <a id="ORcarmo-117"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id222"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">118</span> <a id="ORcarmo-118"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id223"><!-- named anchor --></a>Agarwala S, Nandi D, Kumar A, Dhara AK, Sadhu SBTA, Bhadra AK. Automated segmentation of lung field in HRCT images using active shape model. In: TENCON 2017-2017 IEEE Region 10 Conference. IEEE; 2017. p. 2516-20.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">119</span> <a id="ORcarmo-119"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id224"><!-- named anchor --></a>Shi C, Cheng Y, Wang J, Wang Y, Mori K, Tamura S. Low-rank and sparse decomposition based shape model and probabilistic atlas for automatic pathological organ segmentation. Med Image Anal 2017 May;38:30-49.10.1016/j.media.2017.02.00828279915</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">120</span> <a id="ORcarmo-120"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id225"><!-- named anchor --></a>Ryan SM, Vestal B, Maier LA, Carlson NE, Muschelli J. Template Creation for High-Resolution Computed Tomography Scans of the Lung in R Software. Acad Radiol 2020 Aug;27(8):e204-e215.10.1016/j.acra.2019.10.030PMC729277831843391</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">121</span> <a id="ORcarmo-121"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id226"><!-- named anchor --></a>Dhalia Sweetlin J, Khanna Nehemiah H, Kannan A. Patient-Specific Model Based Segmentation of Lung Computed Tomographic Images. Journal of Information Science &amp; Engineering 2016;32(5):1373–94.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">122</span> <a id="ORcarmo-122"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id227"><!-- named anchor --></a>Wittenstein O, Hiepe P, Sowa LH, Karsten E, Fandrich I, Dunst J. Automatic image segmentation based on synthetic tissue model for delineating organs at risk in spinal metastasis treatment planning. Strahlenther Onkol 2019 Dec;195(12):1094-103.10.1007/s00066-019-01463-4PMC686811131037351</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">123</span> <a id="ORcarmo-123"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id228"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">124</span> <a id="ORcarmo-124"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id229"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">125</span> <a id="ORcarmo-125"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id230"><!-- named anchor --></a>özsavas EE, Telatar Z, Dirican B, Sager ö, Beyzadeoglu M. Automatic segmentation of anatomical structures from CT scans of thorax for RTP. Comput Math Methods Med 2014;2014:472890.10.1155/2014/472890PMC428147625587349</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">126</span> <a id="ORcarmo-126"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id231"><!-- named anchor --></a>Ukil S, Hoffman EA, Reinhardt JM. Automatic lung lobe segmentation in X-ray CT images by 3D watershed transform using anatomic information from the segmented airway tree. In: Medical Imaging 2005: Image Processing 5747. SPIE; 2005. p. 556-67.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">127</span> <a id="ORcarmo-127"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id232"><!-- named anchor --></a>Qi S, van Triest HJ, Yue Y, Xu M, Kang Y. Automatic pulmonary fissure detection and lobe segmentation in CT chest images. Biomed Eng Online 2014 May 7;13:59.10.1186/1475-925X-13-59PMC402278924886031</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">128</span> <a id="ORcarmo-128"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id233"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">129</span> <a id="ORcarmo-129"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id234"><!-- named anchor --></a>Saad M, Lee IH, Choi TS. Automated delineation of non -small cell lung cancer: A step toward quantitative reasoning in medical decision science. Int J Imaging Syst Technol 2019;29(4):561-76.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">130</span> <a id="ORcarmo-130"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id235"><!-- named anchor --></a>Cai W, Lee EY, Vij A, Mahmood SA, Yoshida H. MDCT for computerized volumetry of pneumothoraces in pediatric patients. Acad Radiol 2011 Mar;18(3):315-23.10.1016/j.acra.2010.11.008PMC307207621216160</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">131</span> <a id="ORcarmo-131"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id236"><!-- named anchor --></a>Gordaliza PM, Muñoz-Barrutia A, Abella M, Desco M, Sharpe S, Vaquero JJ. Unsupervised CT Lung Image Segmentation of a Mycobacterium Tuberculosis Infection Model. Sci Rep 2018 Jun 28;8(1):9802.10.1038/s41598-018-28100-xPMC602388429955159</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">132</span> <a id="ORcarmo-132"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id237"><!-- named anchor --></a>Spanier AB, Joskowicz L. Rule-based ventral cavity multi-organ automatic segmentation in CT scans. In: International MICCAI workshop on medical computer vision 2014. Cham: Springer; 2014. p. 163-70.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">133</span> <a id="ORcarmo-133"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id238"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">134</span> <a id="ORcarmo-134"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id239"><!-- named anchor --></a>Ukil S, Reinhardt JM. Smoothing lung segmentation surfaces in 3D X-ray CT images using anatomic guidance. In: Medical Imaging 2004: Image Processing 5370. SPIE; 2004. p. 1066-75.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">135</span> <a id="ORcarmo-135"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id240"><!-- named anchor --></a>Massoptier L, Misra A, Sowmya A, Casciaro S. Combining Graph-Cut Technique and Anatomical Knowledge for Automatic Segmentation of Lungs Affected By Diffuse Parenchymal Disease in HRCT Images. Int J Image Graph 2011;11(04):509-29.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">136</span> <a id="ORcarmo-136"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id241"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">137</span> <a id="ORcarmo-137"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id242"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">138</span> <a id="ORcarmo-138"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id243"><!-- named anchor --></a>Korfiatis P, Kazantzi A, Kalogeropoulou C, Petsas T, Costaridou L. (2010, November). Optimizing lung volume segmentation by texture classification. ITAB Corfu Greece 2010:1-4.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">139</span> <a id="ORcarmo-139"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id244"><!-- named anchor --></a>Korfiatis, P Kalogeropoulou C, Karahaliou A, Kazantzi A, Skiadopoulos S, Costaridou L. Texture classification-based segmentation of lung affected by interstitial pneumonia in high-resolution CT. Med Phys 2008 Dec;35(12):5290-302.10.1118/1.300306619175088</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">140</span> <a id="ORcarmo-140"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id245"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">141</span> <a id="ORcarmo-141"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id246"><!-- named anchor --></a>Wang J, Li F, Li Q. Usefulness of texture features for segmentation of lungs with severe diffuse interstitial lung disease. In: Medical Imaging 2010: Computer-Aided Diagnosis 7624. SPIE; 2020. p. 824-31.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">142</span> <a id="ORcarmo-142"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id247"><!-- named anchor --></a>Polan DF, Brady SL, Kaufman RA. Tissue segmentation of computed tomography images using a Random Forest algorithm: a feasibility study. Phys Med Biol 2016;61(17):6553.10.1088/0031-9155/61/17/6553PMC503994227530679</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">143</span> <a id="ORcarmo-143"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id248"><!-- named anchor --></a>Somasundaram E, Deaton J, Kaufman R, Brady S. Fully automated tissue classifier for contrast-enhanced CT scans of adult and pediatric patients. Phys Med Biol 2018;63(13):135009.10.1088/1361-6560/aac944PMC618305529851653</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">144</span> <a id="ORcarmo-144"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id249"><!-- named anchor --></a>Zhou Y, Xie L, Shen W, Wang Y, Fishman EK, Yuille AL. A fixed-point model for pancreas segmentation in abdominal CT scans. In International conference on medical image computing and computer-assisted intervention – MICCAI – 2017;10433. Cham: Springer; 2017. p. 693-701.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">145</span> <a id="ORcarmo-145"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id250"><!-- named anchor --></a>Goodfellow I, Bengio Y, Courville A. Deep Learning. MIT Press; 2016.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">146</span> <a id="ORcarmo-146"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id251"><!-- named anchor --></a>Zhu J, Zhang J, Qiu B, Liu Y, Liu X, Chen L. Comparison of the automatic segmentation of multiple organs at risk in CT images of lung cancer between deep convolutional neural network-based and atlas-based techniques. Acta Oncol 2019 Feb;58(2):257-64.10.1080/0284186X.2018.152942130398090</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">147</span> <a id="ORcarmo-147"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id252"><!-- named anchor --></a>Ronneberger O, Fischer P, Brox T. U-net: Convolutional networks for biomedical image segmentation. In: International Conference on Medical image computing and computer-assisted intervention – MICCAI – 2015. Cham: Springer; 2015. p. 234-41.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">148</span> <a id="ORcarmo-148"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id253"><!-- named anchor --></a>Sudre CH, Li W, Vercauteren T, Ourselin S, Jorge Cardoso M. Generalised dice overlap as a deep learning loss function for highly unbalanced segmentations. Deep Learn Med Image Anal Multimodal Learn Clin Decis Support 2017;2017:240-8.10.1007/978-3-319-67558-9_28PMC761092134104926</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">149</span> <a id="ORcarmo-149"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id254"><!-- named anchor --></a>Carvalho JB, Moreira JM, Figueiredo MA, Papanikolaou N. Automatic detection and segmentation of lung lesions using deep residual CNNs. In: 2019 IEEE 19th International Conference on Bioinformatics and Bioengineering (BIBE). IEEE; 2019. p. 977-83.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">150</span> <a id="ORcarmo-150"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id255"><!-- named anchor --></a>Shaziya H, Shyamala K, Zaheer R. Automatic lung segmentation on thoracic CT scans using U-net convolutional network. In: 2018 International conference on communication and signal processing (ICCSP). IEEE; 2018. p. 643-7.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">151</span> <a id="ORcarmo-151"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id256"><!-- named anchor --></a>Zhu J, Liu Y, Zhang J, Wang Y, Chen L. Preliminary Clinical Study of the Differences Between Interobserver Evaluation and Deep Convolutional Neural Network-Based Segmentation of Multiple Organs at Risk in CT Images of Lung Cancer. Front Oncol 2019 Jul 5;9:627.10.3389/fonc.2019.00627PMC662478831334129</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">152</span> <a id="ORcarmo-152"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id257"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">153</span> <a id="ORcarmo-153"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id258"><!-- named anchor --></a>Kunpeng Z, Xin S. Automatic lung field segmentation based on the U-net deep neural network. In: 2019 14th IEEE International Conference on Electronic Measurement &amp; Instruments (ICEMI). IEEE; 2019. p. 1670-6.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">154</span> <a id="ORcarmo-154"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id259"><!-- named anchor --></a>Vinushree S, Gowda RM. Segmentation of Lung Cancer Using Deep Learning. International Journal of Recent Technology and Engineering (IJRTE) 2019;08:1188–92.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">155</span> <a id="ORcarmo-155"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id260"><!-- named anchor --></a>Chen X, Zhao H, Zhou P. Lung Lobe Segmentation Based on Lung Fissure Surface Classification Using a Point Cloud Region Growing Approach. Algorithms 2020;13(10):263.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">156</span> <a id="ORcarmo-156"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id261"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">157</span> <a id="ORcarmo-157"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id262"><!-- named anchor --></a>Ghosh S, Sil S, Gomes RM, Dey M. Using convolutions and image processing techniques to segment lungs from ct data. In: Emerging Technology in Modelling and Graphics. Singapore: Springer; 2020. p. 129-36.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">158</span> <a id="ORcarmo-158"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id263"><!-- named anchor --></a>Lashchenova D, Gromov A, Konushin A, Mesheryakova A. Segmentation of lungs, lesions, and lesion types on chest CT scans of patients with COVID-19. In: 2020 CEUR Workshop Proc. Graphicon-Conference on Computer Graphics and Vision; 2020. p. 20-1.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">159</span> <a id="ORcarmo-159"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id264"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">160</span> <a id="ORcarmo-160"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id265"><!-- named anchor --></a>Shaziya H, Shyamala K. Pulmonary CT Images Segmentation using CNN and UNet Models of Deep Learning. In: 2020 IEEE Pune Section International Conference (PuneCon) 2020. p. 195–201.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">161</span> <a id="ORcarmo-161"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id266"><!-- named anchor --></a>Akila Agnes S, Anitha J, Dinesh Peter J. Automatic lung segmentation in low-dose chest CT scans using convolutional deep and wide network (CDWN). Neural Computing and Applications 2020;32:15845–55.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">162</span> <a id="ORcarmo-162"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id267"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">163</span> <a id="ORcarmo-163"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id268"><!-- named anchor --></a>Iyer TJ, Raj ANJ, Ghildiyal S, Nersisson R. Performance analysis of lightweight CNN models to segment infectious lung tissues of COVID-19 cases from tomographic images. PeerJ Computer Science 2021;7:e368.10.7717/peerj-cs.368PMC795964533817018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">164</span> <a id="ORcarmo-164"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id269"><!-- named anchor --></a>Jalali Y, Fateh M, Rezvani M, Abolghasemi V, Anisi MH. ResBCDU-Net: A Deep Learning Framework for Lung CT Image Segmentation. Sensors (Basel) 2021 Jan 3;21(1):268.10.3390/s21010268PMC779609433401581</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">165</span> <a id="ORcarmo-165"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id270"><!-- named anchor --></a>Saood A, Hatem I. COVID-19 lung CT image segmentation using deep learning methods: U-Net versus SegNet. BMC Med Imaging 2021 Feb 9;21(1):19.10.1186/s12880-020-00529-5PMC787036233557772</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">166</span> <a id="ORcarmo-166"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id271"><!-- named anchor --></a>Imran AAZ, Hatamizadeh A, Ananth SP, Ding X, Terzopoulos D, Tajbakhsh N. Automatic Segmentation of Pulmonary Lobes Using a Progressive Dense V-Network. Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support 2018;: 282–90.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">167</span> <a id="ORcarmo-167"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id272"><!-- named anchor --></a>Ferreira FT, Sousa P, Galdran A, Sousa MR, Campilho A. End-to-End Supervised Lung Lobe Segmentation. In: 2018 International Joint Conference on Neural Networks (IJCNN); 2018. p. 1–8.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">168</span> <a id="ORcarmo-168"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id273"><!-- named anchor --></a>Negahdar M, Beymer D, Syeda-Mahmood T. Automated volumetric lung segmentation of thoracic CT images using fully convolutional neural network. In: Medical Imaging 2018: Computer-Aided Diagnosis; 2018, 10575. p. 356–61.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">169</span> <a id="ORcarmo-169"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id274"><!-- named anchor --></a>Feng X, Qing K, Tustison NJ, Meyer CH, Chen Q. Deep convolutional neural network for segmentation of thoracic organs-at-risk using cropped 3D images. Med Phys 2019 May;46(5):2169-80.10.1002/mp.1346630830685</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">170</span> <a id="ORcarmo-170"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id275"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">171</span> <a id="ORcarmo-171"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id276"><!-- named anchor --></a>Nakano R, Arimura H, Haekal M, Ohga S. Automated segmentation framework of lung gross tumor volumes on 3D planning CT images using dense V-Net deep learning. In: International Forum on Medical Imaging in Asia 2019; 2019, 11050. p. 157–60.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">172</span> <a id="ORcarmo-172"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id277"><!-- named anchor --></a>Sousa P, Galdran A, Costa P, Campilho A. Learning to Segment the Lung Volume from CT Scans Based on Semi-Automatic Ground-Truth. In: 2019 IEEE 16th International Symposium on Biomedical Imaging. ISBI: 2019. p. 1202–6.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">173</span> <a id="ORcarmo-173"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id278"><!-- named anchor --></a>Imran AAZ, Hatamizadeh A, Ananth SP, Ding X, Tajbakhsh N, Terzopoulos D. Fast and automatic segmentation of pulmonary lobes from chest CT using a progressive dense V-network. Comput Methods Biomech Biomed Eng Imaging Vis 2020;8(5):509–18.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">174</span> <a id="ORcarmo-174"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id279"><!-- named anchor --></a>Funke W, Veasey B, Zurada J, Frigui H, Amini A. 3D U-Net for segmentation of pulmonary nodules in volumetric CT scans from multi-annotator truth estimation. In: Medical Imaging 2020: Computer-Aided Diagnosis. SPIE; 2020; 11314:1131429.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">175</span> <a id="ORcarmo-175"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id280"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">176</span> <a id="ORcarmo-176"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id281"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">177</span> <a id="ORcarmo-177"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id282"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">178</span> <a id="ORcarmo-178"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id283"><!-- named anchor --></a>Cui Y, Arimura H, Nakano R, Yoshitake T, Shioyama Y, Yabuuchi H. Automated approach for segmenting gross tumor volumes for lung cancer stereotactic body radiation therapy using CT-based dense V-networks. J Radiat Res 2021 Mar 10;62(2):346-55.10.1093/jrr/rraa132PMC794885233480438</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">179</span> <a id="ORcarmo-179"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id284"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">180</span> <a id="ORcarmo-180"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id285"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">181</span> <a id="ORcarmo-181"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id286"><!-- named anchor --></a>Chen W, Wei H, Peng S, Sun J, Qiao X, Liu X. HSN: Hybrid Segmentation Network for Small Cell Lung Cancer Segmentation. IEEE Access 2019;7:75591–603.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">182</span> <a id="ORcarmo-182"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id287"><!-- named anchor --></a>Tan W, Liu Y, Liu H, Yang J, Yin X, Zhang Y. A Segmentation Method of Lung Parenchyma From Chest CT Images Based on Dual U-Net. In: 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE: 2019. p. 1649–56.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">183</span> <a id="ORcarmo-183"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id288"><!-- named anchor --></a>Prasad JMN, Krishna MV. Segmentation of Lung Ct Images using Cascaded Fully Convolutional Neural Networks. Recent Technology and Engineering 2019;8(2):1–3.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">184</span> <a id="ORcarmo-184"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id289"><!-- named anchor --></a>Li Q, Chen L, Li X, Xia S, Kang Y. An improved random forests approach for interactive lobar segmentation on emphysema detection. Granular Computing 2020;5:1–10.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">185</span> <a id="ORcarmo-185"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id290"><!-- named anchor --></a>Sun Y, Tang J, Lei W, He D. 3D Segmentation of Pulmonary Nodules Based on Multi-View and Semi-Supervised. IEEE Access 2020;8:26457–67.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">186</span> <a id="ORcarmo-186"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id291"><!-- named anchor --></a>Wu Y, Lin L. Automatic Lung Segmentation in CT Images Using Dilated Convolution Based Weighted Fully Convolutional Network. J Phys Conf Ser 2020;1646:12032.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">187</span> <a id="ORcarmo-187"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id292"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">188</span> <a id="ORcarmo-188"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id293"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">189</span> <a id="ORcarmo-189"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id294"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">190</span> <a id="ORcarmo-190"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id295"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">191</span> <a id="ORcarmo-191"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id296"><!-- named anchor --></a>Huang CH, Xiao WT, Chang LG, Tsai WT, Liu WM. Automatic tissue segmentation by deep learning: from colorectal polyps in colonoscopy to abdominal organs in CT exam. In: 2018 IEEE Visual Communications and Image Processing (VCIP). IEEE: 2018. p. 1–4.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">192</span> <a id="ORcarmo-192"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id297"><!-- named anchor --></a>El-Bana S, Al-Kabbany A, Sharkas M. A Two-Stage Framework for Automated Malignant Pulmonary Nodule Detection in CT Scans. Diagnostics (Basel) 2020 Feb 28;10(3):131.10.3390/diagnostics10030131PMC715108532121281</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">193</span> <a id="ORcarmo-193"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id298"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">194</span> <a id="ORcarmo-194"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id299"><!-- named anchor --></a>Huang X, Sun W, Tseng TB, Li C, Qian W. Fast and fully-automated detection and segmentation of pulmonary nodules in thoracic CT scans using deep convolutional neural networks. Comput Med Imaging Graph 2019 Jun;74:25-36.10.1016/j.compmedimag.2019.02.00330954678</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">195</span> <a id="ORcarmo-195"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id300"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">196</span> <a id="ORcarmo-196"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id301"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">197</span> <a id="ORcarmo-197"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id302"><!-- named anchor --></a>Liu C, Pang M. Extracting Lungs from CT Images via Deep Convolutional Neural Network Based Segmentation and Two-Pass Contour Refinement. J Digit Imaging 2020 Dec;33(6):1465-78.10.1007/s10278-020-00388-0PMC772894933057882</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">198</span> <a id="ORcarmo-198"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id303"><!-- named anchor --></a>Tang H, Zhang C, Xie X. Automatic Pulmonary Lobe Segmentation Using Deep Learning. Proc IEEE Int Symp Biomed Imaging 2019:1225-8.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">199</span> <a id="ORcarmo-199"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id304"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">200</span> <a id="ORcarmo-200"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id305"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">201</span> <a id="ORcarmo-201"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id306"><!-- named anchor --></a>George K, Harrison A, Jin D, Xu Z, Mollura D. Pathological Pulmonary Lobe Segmentation from CT Images Using Progressive Holistically Nested Neural Networks and Random Walker. Deep Learn Med Image Anal Multimodal Learn Clin Decis Support 2018:195–203.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">202</span> <a id="ORcarmo-202"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id307"><!-- named anchor --></a>Kumar Singh V, Abdel-Nasser M, Pandey N, Puig D. LungINFseg: Segmenting COVID-19 Infected Regions in Lung CT Images Based on a Receptive-Field-Aware Deep Learning Framework. Diagnostics (Basel) 2021 Jan 22;11(2):158.10.3390/diagnostics11020158PMC791085833498999</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">203</span> <a id="ORcarmo-203"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id308"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">204</span> <a id="ORcarmo-204"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id309"><!-- named anchor --></a>Alves JH, Neto PMM, Oliveira LF. Extracting Lungs from CT Images Using Fully Convolutional Networks. In 2018 International Joint Conference on Neural Networks (IJCNN). IEEE: 2018. p. 1–8.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">205</span> <a id="ORcarmo-205"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id310"><!-- named anchor --></a>Hossain S, Najeeb S, Shahriyar A, Abdullah ZR, Ariful Haque M. A Pipeline for Lung Tumor Detection and Segmentation from CT Scans Using Dilated Convolutional Neural Networks. Proc IEEE Int Conf Acoust Speech Signal Process 2019:1348–52.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">206</span> <a id="ORcarmo-206"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id311"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">207</span> <a id="ORcarmo-207"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id312"><!-- named anchor --></a>Song J, Tian Z, Zhang C, Zheng Y, Yu X, Shi Z. Higher accuracy and lower complexity: convolutional neural network for multi-organ segmentation. In: International Symposium on Artificial Intelligence and Robotics 2020, vol 11574. SPIE: 2020. p. 54–59.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">208</span> <a id="ORcarmo-208"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id313"><!-- named anchor --></a>Javaid U, Dasnoy D, Lee JA. Multi-organ Segmentation of Chest CT Images in Radiation Oncology: Comparison of Standard and Dilated UNet. In: Advanced Concepts for Intelligent Vision Systems; 2018. p. 188–99.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">209</span> <a id="ORcarmo-209"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id314"><!-- named anchor --></a>Oda M, Hayashi Y, Otake Y, Hashimoto M, Akashi T, Mori K. Lung infection and normal region segmentation from CT volumes of COVID-19 cases. In: Medical Imaging 2021: Computer-Aided Diagnosis 2021, vol. 11597. SPIE: 2021. p. 682–7.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">210</span> <a id="ORcarmo-210"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id315"><!-- named anchor --></a>Zhou Y, Chen M, Zhang M, Wang T, Yan F, Xie C. Automatic Segmentation of Lung Noudles using improved U-Net NetWork. In: 2020 Chinese Automation Congress (CAC); 2020. p. 1609–13.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">211</span> <a id="ORcarmo-211"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id316"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">212</span> <a id="ORcarmo-212"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id317"><!-- named anchor --></a>Singh J, Tripathy A, Garg P, Kumar A. Lung tuberculosis detection using anti-aliased convolutional networks. Procedia Computer Science 2020;173:281–90.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">213</span> <a id="ORcarmo-213"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id318"><!-- named anchor --></a>Singadkar G, Mahajan A, Thakur M, Talbar S. Deep Deconvolutional Residual Network Based Automatic Lung Nodule Segmentation. J Digit Imaging 2020 Jun;33(3):678-84.10.1007/s10278-019-00301-4PMC725613632026218</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">214</span> <a id="ORcarmo-214"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id319"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">215</span> <a id="ORcarmo-215"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id320"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">216</span> <a id="ORcarmo-216"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id321"><!-- named anchor --></a>Budak ü, Çibuk M, Cömert Z, Sengür A. Efficient COVID-19 Segmentation from CT Slices Exploiting Semantic Segmentation with Integrated Attention Mechanism. J Digit Imaging 2021 Apr;34(2):263-72.10.1007/s10278-021-00434-5PMC793548033674979</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">217</span> <a id="ORcarmo-217"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id322"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">218</span> <a id="ORcarmo-218"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id323"><!-- named anchor --></a>Kamal U, Rafi AM, Hoque R, Wu J, Hasan Md K. Lung Cancer Tumor Region Segmentation Using Recurrent 3D-DenseUNet. Thoracic Image Analysis 2020:36–47.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">219</span> <a id="ORcarmo-219"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id324"><!-- named anchor --></a>Isensee F, Jaeger PF, Kohl SAA, Petersen J, Maier-Hein KH. nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nat Methods 2021 Feb;18(2):203-11.10.1038/s41592-020-01008-z33288961</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">220</span> <a id="ORcarmo-220"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id325"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">221</span> <a id="ORcarmo-221"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id326"><!-- named anchor --></a>Gerard SE, Patton TJ, Christensen GE, Bayouth JE, Reinhardt JM. FissureNet: A Deep Learning Approach For Pulmonary Fissure Detection in CT Images. IEEE Trans Med Imaging 2019 Jan;38(1):156-66.10.1109/TMI.2018.2858202PMC631801230106711</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">222</span> <a id="ORcarmo-222"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id327"><!-- named anchor --></a>Gerard SE, Reinhardt JM. Pulmonary Lobe Segmentation Using A Sequence of Convolutional Neural Networks For Marginal Learning. Proc IEEE Int Symp Biomed Imaging 2019:1207-11.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">223</span> <a id="ORcarmo-223"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id328"><!-- named anchor --></a>Amyar A, Modzelewski R, Li H, Ruan S. Multi-task deep learning based CT imaging analysis for COVID-19 pneumonia: Classification and segmentation. Comput Biol Med 2020 Nov;126:104037.10.1016/j.compbiomed.2020.104037PMC754379333065387</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">224</span> <a id="ORcarmo-224"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id329"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">225</span> <a id="ORcarmo-225"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id330"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">226</span> <a id="ORcarmo-226"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id331"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">227</span> <a id="ORcarmo-227"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id332"><!-- named anchor --></a>Creswell A, White T, Dumoulin V, Arulkumaran K, Sengupta B, Bharath AA. Generative adversarial networks: An overview. IEEE Signal Process Mag 2018;35(1):53–65.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">228</span> <a id="ORcarmo-228"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id333"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">229</span> <a id="ORcarmo-229"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id334"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">230</span> <a id="ORcarmo-230"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id335"><!-- named anchor --></a>Zhou B, Crawford R, Dogdas B, Goldmacher G, Chen A. A Progressively-Trained Scale-Invariant and Boundary-Aware Deep Neural Network for the Automatic 3D Segmentation of Lung Lesions. IEEE Winter Conf Appl Comput Vis 2019:1–10.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">231</span> <a id="ORcarmo-231"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id336"><!-- named anchor --></a>Liu M, Jiang X, Liu Y, Zhao F, Zhou H. A semi-supervised convolutional transfer neural network for 3D pulmonary nodules detection. Neurocomputing 2020;391:199-209.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">232</span> <a id="ORcarmo-232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id337"><!-- named anchor --></a>Ram S, Humphries SM, Lynch DA, Galban CG, Hatt CR. Lung Lobe Segmentation With Automated Quality Assurance Using Deep Convolutional Neural Networks. In: 2020 IEEE 17th International Symposium on Biomedical Imaging Workshops (ISBI Workshops). IEEE: 2020. p. 1–4.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">233</span> <a id="ORcarmo-233"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id338"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">234</span> <a id="ORcarmo-234"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id339"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">235</span> <a id="ORcarmo-235"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id340"><!-- named anchor --></a>Konar D, Panigrahi BK, Bhattacharyya S, Dey N, Jiang R. Auto-Diagnosis of COVID-19 Using Lung CT Images With Semi-Supervised Shallow Learning Network. IEEE Access 2021;9:28716-28.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">236</span> <a id="ORcarmo-236"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id341"><!-- named anchor --></a>Pezzano G, Ribas Ripoll V, Radeva P. CoLe-CNN: Context-learning convolutional neural network with adaptive loss function for lung nodule segmentation. Comput Methods Programs Biomed 2021 Jan;198:105792.10.1016/j.cmpb.2020.10579233130496</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">237</span> <a id="ORcarmo-237"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id342"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">238</span> <a id="ORcarmo-238"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id343"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">239</span> <a id="ORcarmo-239"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id344"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">240</span> <a id="ORcarmo-240"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id345"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">241</span> <a id="ORcarmo-241"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id346"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">242</span> <a id="ORcarmo-242"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id347"><!-- named anchor --></a>Zhou X, Takayama R, Wang S, Hara T, Fujita H. Deep learning of the sectional appearances of 3D CT images for anatomical structure segmentation based on an FCN voting method. Med Phys 2017 Oct;44(10):5221-33.10.1002/mp.1248028730602</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">243</span> <a id="ORcarmo-243"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id348"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">244</span> <a id="ORcarmo-244"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id349"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">245</span> <a id="ORcarmo-245"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id350"><!-- named anchor --></a>Yu CY, Cheng YC, Kuo C. Early Pulmonary Embolism Detection from Computed Tomography Pulmonary Angiography Using Convolutional Neural Networks. In: 2020 Joint 9th International Conference on Informatics, Electronics Vision (ICIEV) and 2020 4th International Conference on Imaging, Vision Pattern Recognition (icIVPR). IEEE: 2020. p. 1-6.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">246</span> <a id="ORcarmo-246"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id351"><!-- named anchor --></a>Chen Y, Wang Y, Hu F, Wang D. A Lung Dense Deep Convolution Neural Network for Robust Lung Parenchyma Segmentation. IEEE Access 2020;8:93527-47.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">247</span> <a id="ORcarmo-247"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id352"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">248</span> <a id="ORcarmo-248"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id353"><!-- named anchor --></a>Anguita D, Ghelardoni L, Ghio A, Oneto L, Ridella S. The ’K’in K-fold cross validation. In: 20th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN); 2012. p. 441-6.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">249</span> <a id="ORcarmo-249"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id354"><!-- named anchor --></a>Karwoski RA, Bartholmai R, Zavaletta VA, Holmes D, Robb RA. Processing of CT images for analysis of diffuse lung disease in the lung tissue research consortium. In: Medical Imaging 2008: Physiology, Function, and Structure from Medical Images. SPIE 2008;6916:614–91.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">250</span> <a id="ORcarmo-250"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id355"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">251</span> <a id="ORcarmo-251"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id356"><!-- named anchor --></a>LOLA11 Grand Challenge. Lobe and Lung Analysis 2011 (LOLA11); 2011. Available from: https://lola11.grand-challenge.org/ [cited 2022 Jan 30].</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">252</span> <a id="ORcarmo-252"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id357"><!-- named anchor --></a>LUNA16 Grand Challenge. Lung Nodule Analysis 2016; 2016. Available from: https://luna16.grand-challenge.org/. [cited 2022 Jan 30].</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">253</span> <a id="ORcarmo-253"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id358"><!-- named anchor --></a>Yan T. Ccap: A chest Ct Dataset. IEEE DataPort; 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">254</span> <a id="ORcarmo-254"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id359"><!-- named anchor --></a>MedSeg. COVID-19 CT segmentation dataset; 2020. Available from: http://medicalsegmentation.com/covid19/. [cited 2022 Jan 30].</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">255</span> <a id="ORcarmo-255"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id360"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">256</span> <a id="ORcarmo-256"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id361"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">257</span> <a id="ORcarmo-257"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id362"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">258</span> <a id="ORcarmo-258"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id363"><!-- named anchor --></a>Kumar A, Agarwala S, Dhara AK, Nandi D, Thakur SB, Bhadra AK, Sadhu A. Segmentation of lung field in HRCT images using U-net based fully convolutional networks. Med Image Underst Anal 2018; 894:84-93.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">259</span> <a id="ORcarmo-259"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id364"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">260</span> <a id="ORcarmo-260"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id365"><!-- named anchor --></a>VESSEL12 Grand Challenge. Vessel segmentation in the lung 2012 (vessel12); 2012. Available from: https://vessel12.grand-challenge.org. [cited 2022 Jan 30].</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">261</span> <a id="ORcarmo-261"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id366"><!-- named anchor --></a>Langs G, Müller H, Menze B, Hanbury A. VISCERAL: Towards Large Data in Medical Imaging - Challenges and Directions Med Content Based Retr Clin Decis Support 2013:92-8.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">262</span> <a id="ORcarmo-262"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id367"><!-- named anchor --></a>Kaggle Competition. Data Science Bowl 2017 (DSB); 2017. [Online]. Available from: https://www.kaggle.com/c/data-science-bowl-2017. [cited 2022 Jan 30].</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">263</span> <a id="ORcarmo-263"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id368"><!-- named anchor --></a>Kaggle Competition, Finding and Measuring Lungs in CT Data. 2017. [Online]. Available: https://www.kaggle.com/kmader/finding-lungs-in-ct-data. [Accessed on Jan 30, 2022].</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">264</span> <a id="ORcarmo-264"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id369"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">265</span> <a id="ORcarmo-265"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id370"><!-- named anchor --></a>Dicente Cid Y, del Toro OA, Depeursinge A, Müller H. Efficient and fully automatic segmentation of the lungs in CT volumes. In: Proceedings of the VISCERAL Anatomy Grand Challenge at the 2015 IEEE ISBI. IEEE: 2015. p. 31-5.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">266</span> <a id="ORcarmo-266"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id371"><!-- named anchor --></a>Soares E, Angelov P, Biaso S, Froes MH, Abe DK. SARS-CoV-2 CT-scan dataset: A large dataset of real patients CT scans for SARS-CoV-2 identification. medRxiv: 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">267</span> <a id="ORcarmo-267"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id372"><!-- named anchor --></a>Blake G. CT Images in COVID-19. 2021. [Online]. Available from: https://wiki.cancerimagingarchive.net/display/Public/CT+Images+in+COVID-19</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">268</span> <a id="ORcarmo-268"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id373"><!-- named anchor --></a>Taha AA, Hanbury A. Metrics for evaluating 3D medical image segmentation: analysis, selection, and tool. BMC Med Imaging. 2015 Aug 12;15:29.10.1186/s12880-015-0068-xPMC453382526263899</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">269</span> <a id="ORcarmo-269"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id374"><!-- named anchor --></a>Jirapatnakul AC, Mulman YD, Reeves AP, Yankelevitz DF, Henschke CI. Segmentation of juxtapleural pulmonary nodules using a robust surface estimate. Int J Biomed Imaging 2011;2011:632195.10.1155/2011/632195PMC322211322114585</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">270</span> <a id="ORcarmo-270"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id375"><!-- named anchor --></a>Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016 May 26;533(7604):452-4.10.1038/533452a27225100</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">271</span> <a id="ORcarmo-271"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id376"><!-- named anchor --></a>Yeghiazaryan V, Voiculescu I. An Overview of Current Evaluation Methods Used in Medical Image Segmentation. Oxford, UK: 2015.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">272</span> <a id="ORcarmo-272"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id377"><!-- named anchor --></a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">273</span> <a id="ORcarmo-273"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id378"><!-- named anchor --></a>Pulmonary Toolkit [Online]. Available from: https://github.com/tomdoel/pulmonarytoolkit. [cited 2022 Jan 30].</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">274</span> <a id="ORcarmo-274"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id379"><!-- named anchor --></a>3D Slicer, 3D Slicer image computing platform. [Online]. Available from: https://www.slicer.org/. [cited 2022 Jan 30].</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">275</span> <a id="ORcarmo-275"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id380"><!-- named anchor --></a>ITK-SNAP [Online]. Available from: http://www.itksnap.org/pmwiki/pmwiki.php. [cited 2022 Jan 30].</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>Section 12: Sensor, Signal and Imaging Informatics</p>
+<div class="metadata-area"><p class="metadata-entry"><span class="generated">Subject: </span>Survey</p></div>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Lung</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>lung diseases</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>automated pattern recognition</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>x-ray computed tomography</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>medical image segmentation</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY-NC-ND</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
