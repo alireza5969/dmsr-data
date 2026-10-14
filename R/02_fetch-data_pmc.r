@@ -69,9 +69,9 @@ for (i in seq_along(pmcids)) {
   Sys.sleep(.2)
                                       
   cat100 <-
-    dir_names_distribute_workload(i, 2e4, 1e2)
+    dir_names_distribute_workload(length(current_list) + i, 2e4, 1e2)
   cat500 <-
-    dir_names_distribute_workload(i, 2e4, 5e2)
+    dir_names_distribute_workload(length(current_list) + i, 2e4, 5e2)
 
   html_dir <-
     fs::path(
