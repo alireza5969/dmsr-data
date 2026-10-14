@@ -1,0 +1,1853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Casey, Davidson, Poon, Dong, Duma, Grivas, Grover, Suárez-Paniagua, Tobin, Whiteley, Wu, and Alex: A systematic review of natural language processing applied to radiology reports</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>BMC Med Inform Decis Mak</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>BMC Med Inform Decis Mak</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>42</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>bmcmidm</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101088682</p>
+<p class="metadata-entry"><span class="generated">Title: </span>BMC Medical Informatics and Decision Making</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1472-6947</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>BMC</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="12911_2021_Article_1533.pdf">12911_2021_Article_1533.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© The Author(s) 2021</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1"><b>Open Access</b>This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">http://creativecommons.org/licenses/by/4.0/</a>. The Creative Commons Public Domain Dedication waiver (<a target="xrefwindow" href="https://creativecommons.org/publicdomain/zero/1.0/" id="id3">http://creativecommons.org/publicdomain/zero/1.0/</a>) applies to the data made available in this article, unless otherwise stated in a credit line to the data.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>9 February 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>17 May 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>3 June 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>21</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>371844<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>179</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8176715</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8176715.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8176715</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8176715</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>34082729</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1186/s12911-021-01533-7</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>1533</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">A systematic review of natural language processing applied to radiology reports</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Arlene Casey<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Arlene.Casey@ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Emma Davidson<span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Emma.Davidson@ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Michael Poon<span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Michael.Poon@ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Hang Dong<span class="generated">[</span><a href="#Aff3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Hang.Dong@ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Daniel Duma<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Daniel.Duma@gmail.com</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Andreas Grivas<span class="generated">[</span><a href="#Aff5">5</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">agrivas@exseed.ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Claire Grover<span class="generated">[</span><a href="#Aff5">5</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Claire.Grover@ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a>Víctor Suárez-Paniagua<span class="generated">[</span><a href="#Aff3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">vsuarez@exseed.ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id12"><!-- named anchor --></a>Richard Tobin<span class="generated">[</span><a href="#Aff5">5</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">richard@inf.ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id13"><!-- named anchor --></a>William Whiteley<span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff6">6</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">William.Whiteley@ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id14"><!-- named anchor --></a>Honghan Wu<span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff7">7</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Honghan.Wu@ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id15"><!-- named anchor --></a>Beatrice Alex<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff8">8</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">B.Alex@ed.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="Aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>grid.4305.20000 0004 1936 7988School of Literatures, Languages and Cultures (LLC), University of Edinburgh, Edinburgh, Scotland </p>
+<p class="metadata-entry"><a id="Aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>grid.4305.20000 0004 1936 7988Centre for Clinical Brain Sciences, University of Edinburgh, Edinburgh, Scotland </p>
+<p class="metadata-entry"><a id="Aff3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>grid.4305.20000 0004 1936 7988Centre for Medical Informatics, Usher Institute of Population Health Sciences and Informatics, University of Edinburgh, Edinburgh, Scotland </p>
+<p class="metadata-entry"><a id="Aff4"><!-- named anchor --></a><span class="generated">[</span>4<span class="generated">] </span>grid.507332.0Health Data Research UK, London, UK </p>
+<p class="metadata-entry"><a id="Aff5"><!-- named anchor --></a><span class="generated">[</span>5<span class="generated">] </span>grid.4305.20000 0004 1936 7988Institute for Language, Cognition and Computation, School of informatics, University of Edinburgh, Edinburgh, Scotland </p>
+<p class="metadata-entry"><a id="Aff6"><!-- named anchor --></a><span class="generated">[</span>6<span class="generated">] </span>grid.4991.50000 0004 1936 8948Nuffield Department of Population Health, University of Oxford, Oxford, UK </p>
+<p class="metadata-entry"><a id="Aff7"><!-- named anchor --></a><span class="generated">[</span>7<span class="generated">] </span>grid.83440.3b0000000121901201Institute of Health Informatics, University College London, London, UK </p>
+<p class="metadata-entry"><a id="Aff8"><!-- named anchor --></a><span class="generated">[</span>8<span class="generated">] </span>grid.4305.20000 0004 1936 7988Edinburgh Futures Institute, University of Edinburgh, Edinburgh, Scotland </p>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id16"><!-- named anchor --></a><h3 class="section-title">Background</h3>
+<p id="Par1">Natural language processing (NLP) has a significant role in advancing healthcare and has been found to be key in extracting structured information from radiology reports. Understanding recent developments in NLP application to radiology is of significance but recent reviews on this are limited. This study systematically assesses and quantifies recent literature in NLP applied to radiology reports.</p>
+</div>
+<div class="section">
+<a id="id17"><!-- named anchor --></a><h3 class="section-title">Methods</h3>
+<p id="Par2">We conduct an automated literature search yielding 4836 results using automated filtering, metadata enriching steps and citation search combined with manual review. Our analysis is based on 21 variables including radiology characteristics, NLP methodology, performance, study, and clinical application characteristics.</p>
+</div>
+<div class="section">
+<a id="id18"><!-- named anchor --></a><h3 class="section-title">Results</h3>
+<p id="Par3">We present a comprehensive analysis of the 164 publications retrieved with publications in 2019 almost triple those in 2015. Each publication is categorised into one of 6 clinical application categories. Deep learning use increases in the period but conventional machine learning approaches are still prevalent. Deep learning remains challenged when data is scarce and there is little evidence of adoption into clinical practice. Despite 17% of studies reporting greater than 0.85 F1 scores, it is hard to comparatively evaluate these approaches given that most of them use different datasets. Only 14 studies made their data and 15 their code available with 10 externally validating results.</p>
+</div>
+<div class="section">
+<a id="id19"><!-- named anchor --></a><h3 class="section-title">Conclusions</h3>
+<p id="Par4">Automated understanding of clinical narratives of the radiology reports has the potential to enhance the healthcare process and we show that research in this field continues to grow. Reproducibility and explainability of models are important if the domain is to move applications into clinical use. More could be done to share code enabling validation of methods on different institutional data and to reduce heterogeneity in reporting of study properties allowing inter-study comparisons. Our results have significance for researchers in the field providing a systematic synthesis of existing work to build on, identify gaps, opportunities for collaboration and avoid duplication.</p>
+</div>
+<div class="section">
+<a id="id20"><!-- named anchor --></a><h3 class="section-title">Supplementary Information</h3>
+<p id="id21">The online version contains supplementary material available at 10.1186/s12911-021-01533-7.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="Sec1"><!-- named anchor --></a><h2 class="main-title">Background</h2>
+<p id="Par21">Medical imaging examinations interpreted by radiologists in the form of narrative reports are used to support and confirm diagnosis in clinical practice. Being able to accurately and quickly identify the information stored in radiologists’ narratives has the potential to reduce workloads, support clinicians in their decision processes, triage patients to get urgent care or identify patients for research purposes. However, whilst these reports are generally considered more restricted in vocabulary than other electronic health records (EHR), e.g. clinical notes, it is still difficult to access this efficiently at scale [<a href="#CR1">1</a>]. This is due to the unstructured nature of these reports and Natural Language Processing (NLP) is key to obtaining structured information from radiology reports [<a href="#CR2">2</a>].</p>
+<p id="Par22">NLP applied to radiology reports is shown to be a growing field in earlier reviews [<a href="#CR2">2</a>, <a href="#CR3">3</a>]. In recent years there has been an even more extensive growth in NLP research in general and in particular deep learning methods which is not seen in the earlier reviews. A more recent review of NLP applied to radiology-related research can be found but this focuses on one NLP technique only, deep learning models [<a href="#CR4">4</a>]. Our paper provides a more comprehensive review comparing and contrasting all NLP methodologies as they are applied to radiology.</p>
+<p id="Par23">It is of significance to understand and synthesise recent developments specific to NLP in the radiology research field as this will assist researchers to gain a broader understanding of the field, provide insight into methods and techniques supporting and promoting new developments in the field. Therefore, we carry out a systematic review of research output on NLP applications in radiology from 2015 onward, thus, allowing for a more up to date analysis of the area. An additional listing of our synthesis of publications detailing their clinical and technical categories can be found in Additional file <a href="#MOESM1">1</a> and per publication properties can be found in Additional file <a href="#MOESM2">2</a>. Also different to the existing work, we look at both the clinical application areas NLP is being applied in and consider the trends in NLP methods. We describe and discuss study properties, e.g. data size, performance, annotation details, quantifying these in relation to both the clinical application areas and NLP methods. Having a more detailed understanding of these properties allows us to make recommendations for future NLP research applied to radiology datasets, supporting improvements and progress in this domain.</p>
+</div>
+<div class="section">
+<a id="Sec2"><!-- named anchor --></a><h2 class="main-title">Related work</h2>
+<p id="Par24">Amongst pre-existing reviews in this area, [<a href="#CR2">2</a>] was the first that was both specific to NLP on radiology reports and systematic in methodology. Their literature search identified 67 studies published in the period up to October 2014. They examined the NLP methods used, summarised their performance and extracted the studies’ clinical applications, which they assigned to five broad categories delineating their purpose. Since Pons et al.’s paper, several reviews have emerged with the broader remit of NLP applied to electronic health data, which includes radiology reports. [<a href="#CR5">5</a>] conducted a systematic review of NLP systems with a specific focus on coding free text into clinical terminologies and structured data capture. The systematic review by [<a href="#CR6">6</a>] specifically examined machine learning approaches to NLP (2015–2019) in more general clinical text data, and a further methodical review was carried out by [<a href="#CR7">7</a>] to synthesise literature on deep learning in clinical NLP (up to April 2019) although the did not follow the PRISMA guideline completely. With radiology reports as their particular focus, [<a href="#CR3">3</a>] published, the same year as Pons et al.’s review, an instructive narrative review outlining the fundamentals of NLP techniques applied in radiology. More recently, [<a href="#CR4">4</a>] published a systematic review focused on deep learning radiology-related research. They identified 10 relevant papers in their search (up to September 2019) and examined their deep learning models, comparing these with traditional NLP models and also considered their clinical applications but did not employ a specific categorisation. We build on this corpus of related work, and most specifically Pons et al.’s work. In our initial synthesis of clinical applications we adopt their application categories and further expand upon these to reflect the nature of subsequent literature captured in our work. Additionally, we quantify and compare properties of the studies reviewed and provide a series of recommendations for future NLP research applied to radiology datasets in order to promote improvements and progress in this domain.</p>
+</div>
+<div class="section">
+<a id="Sec3"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<p id="Par25">Our methodology followed the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) [<a href="#CR8">8</a>], and the protocol is registered on protocols.io.</p>
+<div class="section">
+<a id="Sec4"><!-- named anchor --></a><h3 class="section-title">Eligibility for literature inclusion and search strategy</h3>
+<p id="Par26">We included studies using NLP on radiology reports of any imaging modality and anatomical region for NLP technical development, clinical support, or epidemiological research. Exclusion criteria included: (1) language not English; (2) wrong publication type (e.g., case reports, reviews, conference abstracts, comments, patents, or editorials) (2) published before 2015; (3) uses radiology images only (no NLP); (4) not radiology reports; (5) no NLP results; (6) year out of range; (7) duplicate, already in the list of publications retrieved; (8) not available in full text.</p>
+<p id="Par27">We used Publish or Perish [<a href="#CR9">9</a>], a citation retrieval and analysis software program, to search Google Scholar. Google Scholar has a similar coverage to other databases [<a href="#CR10">10</a>] and is easier to integrate into search pipelines. We conducted an initial pilot search following the process described here, but the search terms were too specific and restricted the number of publications. For example, we experimented with using specific terms used within medical imaging such at CT, MRI. Thirty-seven papers were found during the pilot search but the same papers also appeared in our final search. We use the following search query restricted to research articles published in English between January 2015 and October 2019. (“radiology” OR “radiologist”) AND (“natural language” OR “text mining” OR “information extraction” OR “document classification” OR “word2vec”) NOT patent. We automated the addition of publication metadata and applied filtering to remove irrelevant publications. These automated steps are described in Tables <a href="#Tab1">1</a> and <a href="#Tab2">2</a>.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id22">Metadata enriching steps undertaken for each publication</p></div>
+<table frame="hsides" rules="groups">
+<a id="id23"><!-- named anchor --></a><thead>
+<a id="id24"><!-- named anchor --></a><tr>
+<a id="id25"><!-- named anchor --></a><th align="left" colspan="2" rowspan="1">
+<a id="id26"><!-- named anchor --></a>Metadata enriching steps</th>
+</tr>
+</thead>
+<tbody>
+<a id="id27"><!-- named anchor --></a><tr>
+<a id="id28"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id29"><!-- named anchor --></a>1. Match the paper with its DOI via the Crossref API [<a href="#CR11">11</a>]</td>
+</tr>
+<tr>
+<a id="id30"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id31"><!-- named anchor --></a>2. If DOI matched, check Semantic Scholar for metadata/abstract [<a href="#CR12">12</a>]</td>
+</tr>
+<tr>
+<a id="id32"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id33"><!-- named anchor --></a>3. If no DOI match and no abstract, search PubMed for abstract</td>
+</tr>
+<tr>
+<a id="id34"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id35"><!-- named anchor --></a>4. Search arXiv [<a href="#CR13">13</a>] (for a pre-print)</td>
+</tr>
+<tr>
+<a id="id36"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id37"><!-- named anchor --></a>5. If no PDF link, search Unpaywall for available open access versions [<a href="#CR14">14</a>]</td>
+</tr>
+<tr>
+<a id="id38"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id39"><!-- named anchor --></a>6. If PDF but no separate abstract via Semantics Scholar/PubMed, extract abstract from the PDF</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id40">Automated filtering steps to remove irrelevant publications</p></div>
+<table frame="hsides" rules="groups">
+<a id="id41"><!-- named anchor --></a><thead>
+<a id="id42"><!-- named anchor --></a><tr>
+<a id="id43"><!-- named anchor --></a><th align="left" colspan="2" rowspan="1">
+<a id="id44"><!-- named anchor --></a>Automated filtering steps</th>
+</tr>
+</thead>
+<tbody>
+<a id="id45"><!-- named anchor --></a><tr>
+<a id="id46"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id47"><!-- named anchor --></a>1. Document language is English</td>
+</tr>
+<tr>
+<a id="id48"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id49"><!-- named anchor --></a>2. Word ’patent’ in title or URL</td>
+</tr>
+<tr>
+<a id="id50"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id51"><!-- named anchor --></a>3. Year of publication out of range (&lt;2015)</td>
+</tr>
+<tr>
+<a id="id52"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id53"><!-- named anchor --></a>4. The words ’review’ or ’overview’ in the title, ’this review’ in the abstract</td>
+</tr>
+<tr>
+<a id="id54"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id55"><!-- named anchor --></a>5. Image keywords in title or abstract with no NLP terminology in abstract</td>
+</tr>
+<tr>
+<a id="id56"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id57"><!-- named anchor --></a>6. No radiology keywords in title or abstract</td>
+</tr>
+<tr>
+<a id="id58"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id59"><!-- named anchor --></a>7. No NLP terminology in abstract</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="Par28">In addition to query search, another method to find papers is to conduct a citation search [<a href="#CR15">15</a>]. The citation search compiled a list of publications that cite the Pons et al. review and the articles cited in the Pons’ review. To do this, we use a snowballing method [<a href="#CR16">16</a>] to follow the forward citation branch for each publication in this list, i.e. finding every article that cites the publications in our list. The branching factor here is large, so we filter at every stage and automatically add metadata. One hundred and seventy-one papers were identified as part of the snowball citation search and of these 84 were in the final 164 papers.</p>
+</div>
+<div class="section">
+<a id="Sec5"><!-- named anchor --></a><h3 class="section-title">Manual review of literature</h3>
+<p id="Par29">Four reviewers (three NLP researchers [AG,DD and HD] and one epidemiologist [MTCP]) independently screened all titles and abstracts with the Rayyan online platform and discussed disagreements. Fleiss’ kappa [<a href="#CR17">17</a>] agreement between reviewers was 0.70, indicating substantial agreement [<a href="#CR18">18</a>]. After this screening process, each full-text article was reviewed by a team of eight (six NLP researchers and two epidemiologists) and double reviewed by a NLP researcher. We resolved any discrepancies by discussion in regular meetings.</p>
+</div>
+<div class="section">
+<a id="Sec6"><!-- named anchor --></a><h3 class="section-title">Data extraction for analysis</h3>
+<p id="Par30">We extracted data on: primary clinical application and technical objective, data source(s), study period, radiology report language, anatomical region, imaging modality, disease area, dataset size, annotated set size, training/validation/test set size, external validation performed, domain expert used, number of annotators, inter-annotator agreement, NLP technique(s) used, best-reported results (recall, precision and F1 score), availability of dataset, and availability of code.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec7"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<p id="Par31">The literature search yielded 4836 possibly relevant publications from which our automated exclusion process removed 4,402, and during both our screening processes, 270 were removed, leaving 164 publications. See Fig. <a href="#Fig1">1</a> for details of exclusions at each step.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig1"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id60">PRISMA diagram for search publication retrieval</p></div>
+</div></p>
+<div class="section">
+<a id="Sec8"><!-- named anchor --></a><h3 class="section-title">General characteristics</h3>
+<p id="Par32">2015 and 2016 saw similar numbers of publications retrieved (22 and 21 respectively) with the volume increasing almost three-fold in 2019 (55), noting 2019 only covers 10 months (Fig. <a href="#Fig2">2</a>). Imaging modality (Table <a href="#Tab3">3</a>) varied considerably and 46 studies used reports from multiple modalities. Of studies focusing on a single modality, the most featured were CT scans (38) followed by MRI (16), X-Ray (8), Mammogram (5) and Ultrasound (4). Forty-seven studies did not specifying scan modality. For the study samples (Table <a href="#Tab4">4</a>), 33 papers specified that they used consecutive patient images, 38 used non-consecutive image sampling and 93 did not clearly specify their sampling strategy. The anatomical regions for scans varied (Table <a href="#Tab5">5</a>) with mixed being the highest followed by Thorax and Head/neck. Disease categories are presented in Table <a href="#Tab6">6</a> with the largest disease category being Oncology. The majority of reports were in English (141) and a small number in other languages e.g., Chinese (5), Spanish (4), German (3) (Table <a href="#Tab7">7</a>). Additional file <a href="#MOESM2">2</a>, CSV format, provides a breakdown of the information in Tables <a href="#Tab3">3</a>, <a href="#Tab4">4</a>, <a href="#Tab5">5</a>, <a href="#Tab6">6</a> and <a href="#Tab7">7</a> per publication.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id61">Scan modality</p></div>
+<table frame="hsides" rules="groups">
+<a id="id62"><!-- named anchor --></a><thead>
+<a id="id63"><!-- named anchor --></a><tr>
+<a id="id64"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>Scan modality</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>No. studies</th>
+</tr>
+</thead>
+<tbody>
+<a id="id67"><!-- named anchor --></a><tr>
+<a id="id68"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id69"><!-- named anchor --></a>Multiple modalities</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id70"><!-- named anchor --></a>46</td>
+</tr>
+<tr>
+<a id="id71"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id72"><!-- named anchor --></a>MRI</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>16</td>
+</tr>
+<tr>
+<a id="id74"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>CT</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id76"><!-- named anchor --></a>38</td>
+</tr>
+<tr>
+<a id="id77"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id78"><!-- named anchor --></a>X-Ray</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id79"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id80"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id81"><!-- named anchor --></a>Mammogram</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id82"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id83"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id84"><!-- named anchor --></a>Ultrasound</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id85"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id86"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id87"><!-- named anchor --></a>Not specified</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id88"><!-- named anchor --></a>47</td>
+</tr>
+<tr>
+<a id="id89"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>Total</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>164</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab4"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<div class="caption"><p class="first" id="id92">Image sampling method</p></div>
+<table frame="hsides" rules="groups">
+<a id="id93"><!-- named anchor --></a><thead>
+<a id="id94"><!-- named anchor --></a><tr>
+<a id="id95"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id96"><!-- named anchor --></a>Sampling method</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id97"><!-- named anchor --></a>No. studies</th>
+</tr>
+</thead>
+<tbody>
+<a id="id98"><!-- named anchor --></a><tr>
+<a id="id99"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id100"><!-- named anchor --></a>Consecutive images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id101"><!-- named anchor --></a>33</td>
+</tr>
+<tr>
+<a id="id102"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id103"><!-- named anchor --></a>Non-consecutive images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id104"><!-- named anchor --></a>38</td>
+</tr>
+<tr>
+<a id="id105"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id106"><!-- named anchor --></a>Not specified</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id107"><!-- named anchor --></a>93</td>
+</tr>
+<tr>
+<a id="id108"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a>Total</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id110"><!-- named anchor --></a>164</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab5"><!-- named anchor --></a><h5 class="label">Table 5</h5>
+<div class="caption"><p class="first" id="id111">Anatomical region scanned</p></div>
+<table frame="hsides" rules="groups">
+<a id="id112"><!-- named anchor --></a><thead>
+<a id="id113"><!-- named anchor --></a><tr>
+<a id="id114"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id115"><!-- named anchor --></a>Anatomical region</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id116"><!-- named anchor --></a>No. studies</th>
+</tr>
+</thead>
+<tbody>
+<a id="id117"><!-- named anchor --></a><tr>
+<a id="id118"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a>Mixed</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id120"><!-- named anchor --></a>43</td>
+</tr>
+<tr>
+<a id="id121"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a>Thorax</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>32</td>
+</tr>
+<tr>
+<a id="id124"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id125"><!-- named anchor --></a>Head/neck</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id126"><!-- named anchor --></a>25</td>
+</tr>
+<tr>
+<a id="id127"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id128"><!-- named anchor --></a>Abdomen</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a>15</td>
+</tr>
+<tr>
+<a id="id130"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id131"><!-- named anchor --></a>Breast</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id132"><!-- named anchor --></a>15</td>
+</tr>
+<tr>
+<a id="id133"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id134"><!-- named anchor --></a>Extremities</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id135"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id136"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id137"><!-- named anchor --></a>Spine</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id139"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id140"><!-- named anchor --></a>Other</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id141"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id142"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id143"><!-- named anchor --></a>Unspecified</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id144"><!-- named anchor --></a>19</td>
+</tr>
+<tr>
+<a id="id145"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id146"><!-- named anchor --></a>Total</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id147"><!-- named anchor --></a>164</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab6"><!-- named anchor --></a><h5 class="label">Table 6</h5>
+<div class="caption"><p class="first" id="id148">Disease category</p></div>
+<table frame="hsides" rules="groups">
+<a id="id149"><!-- named anchor --></a><thead>
+<a id="id150"><!-- named anchor --></a><tr>
+<a id="id151"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id152"><!-- named anchor --></a>Disease category</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id153"><!-- named anchor --></a>No. studies</th>
+</tr>
+</thead>
+<tbody>
+<a id="id154"><!-- named anchor --></a><tr>
+<a id="id155"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id156"><!-- named anchor --></a>Not specific disease related</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id157"><!-- named anchor --></a>40</td>
+</tr>
+<tr>
+<a id="id158"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id159"><!-- named anchor --></a>Oncology</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id160"><!-- named anchor --></a>39</td>
+</tr>
+<tr>
+<a id="id161"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a>Various</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a>20</td>
+</tr>
+<tr>
+<a id="id164"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a>Musculoskeletal</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id166"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id167"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id168"><!-- named anchor --></a>Cerebrovascular</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id169"><!-- named anchor --></a>13</td>
+</tr>
+<tr>
+<a id="id170"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id171"><!-- named anchor --></a>Other</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id172"><!-- named anchor --></a>13</td>
+</tr>
+<tr>
+<a id="id173"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id174"><!-- named anchor --></a>Respiratory</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id175"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id176"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>Trauma</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id178"><!-- named anchor --></a>7</td>
+</tr>
+<tr>
+<a id="id179"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id180"><!-- named anchor --></a>Cardiovascular</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id181"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id182"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a>Gastrointestinal</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id184"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id185"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id186"><!-- named anchor --></a>Hepatobiliary</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id187"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id188"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id189"><!-- named anchor --></a>Genitourinary</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id190"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id191"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id192"><!-- named anchor --></a>Total</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id193"><!-- named anchor --></a>164</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab7"><!-- named anchor --></a><h5 class="label">Table 7</h5>
+<div class="caption"><p class="first" id="id194">Radiology report language</p></div>
+<table frame="hsides" rules="groups">
+<a id="id195"><!-- named anchor --></a><thead>
+<a id="id196"><!-- named anchor --></a><tr>
+<a id="id197"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id198"><!-- named anchor --></a>Report language</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id199"><!-- named anchor --></a>No. studies</th>
+</tr>
+</thead>
+<tbody>
+<a id="id200"><!-- named anchor --></a><tr>
+<a id="id201"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id202"><!-- named anchor --></a>English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id203"><!-- named anchor --></a>141</td>
+</tr>
+<tr>
+<a id="id204"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a>Chinese</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id206"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id207"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id208"><!-- named anchor --></a>Spanish</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id209"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id210"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id211"><!-- named anchor --></a>German</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id212"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id213"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id214"><!-- named anchor --></a>Italian</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id215"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id216"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id217"><!-- named anchor --></a>French</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id218"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id219"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id220"><!-- named anchor --></a>Hebrew</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id221"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id222"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id223"><!-- named anchor --></a>Polish</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id224"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id225"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id226"><!-- named anchor --></a>Brazilian Portuguese</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id227"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id228"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id229"><!-- named anchor --></a>Unspecified</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id230"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id231"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id232"><!-- named anchor --></a>Total</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>164</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab8"><!-- named anchor --></a><h5 class="label">Table 8</h5>
+<div class="caption"><p class="first" id="id234">Clinical application category by technical objective</p></div>
+<table frame="hsides" rules="groups">
+<a id="id235"><!-- named anchor --></a><thead>
+<a id="id236"><!-- named anchor --></a><tr>
+<a id="id237"><!-- named anchor --></a><th align="left" rowspan="2" colspan="1">
+<a id="id238"><!-- named anchor --></a>Application category</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id239"><!-- named anchor --></a>Information extraction</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id240"><!-- named anchor --></a>Report/sentence</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id241"><!-- named anchor --></a>Lexicon/ ontology</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>Clustering</th>
+</tr>
+<tr>
+<a id="id243"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id244"><!-- named anchor --></a>(n = 73)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id245"><!-- named anchor --></a>Classification (n = 81)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id246"><!-- named anchor --></a>Discovery (n = 9)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id247"><!-- named anchor --></a>(n = 1)</th>
+</tr>
+</thead>
+<tbody>
+<a id="id248"><!-- named anchor --></a><tr>
+<a id="id249"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id250"><!-- named anchor --></a>Disease information &amp; Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id251"><!-- named anchor --></a>15</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id252"><!-- named anchor --></a>31</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id253"><!-- named anchor --></a>-</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id254"><!-- named anchor --></a>-</td>
+</tr>
+<tr>
+<a id="id255"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id256"><!-- named anchor --></a>Diagnostic surveillance</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a>28</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>17</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id259"><!-- named anchor --></a>-</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id260"><!-- named anchor --></a>-</td>
+</tr>
+<tr>
+<a id="id261"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id262"><!-- named anchor --></a>Quality compliance</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id263"><!-- named anchor --></a>5</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id264"><!-- named anchor --></a>15</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id265"><!-- named anchor --></a>–</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id266"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id267"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id268"><!-- named anchor --></a>Cohort-Epid.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id269"><!-- named anchor --></a>6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id270"><!-- named anchor --></a>10</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id271"><!-- named anchor --></a>–</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id272"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id273"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id274"><!-- named anchor --></a>Language discovery &amp; knowledge</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id275"><!-- named anchor --></a>13</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id276"><!-- named anchor --></a>4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id277"><!-- named anchor --></a>9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id278"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id279"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id280"><!-- named anchor --></a>Technical NLP</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id281"><!-- named anchor --></a>6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id282"><!-- named anchor --></a>4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id283"><!-- named anchor --></a>–</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id284"><!-- named anchor --></a>–</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec9"><!-- named anchor --></a><h3 class="section-title">Clinical application categories</h3>
+<p id="Par33">In synthesis of the literature each publication was classified by the primary clinical purpose. Pons’ work in 2016 categorised publications into 5 broad categories: Diagnostic Surveillance, Cohort Building for Epidemiological Studies, Query-based Case Retrieval, Quality Assessment of Radiological Practice and Clinical Support Services. We found some changes in this categorisation schema and our categorisation consisted of six categories: <i>Diagnostic Surveillance, Disease information and classification, Quality Compliance, Cohort/Epidemiology, Language Discovery and Knowledge Structure, Technical NLP</i>. The main difference is we found no evidence for a category of <i>Clinical Support Services</i> which described applications that had been integrated into the workflow to assist. Despite the increase in the number of publications, very few were in clinical use with more focus on the category of <i>Disease Information and Classification</i>. We describe each clinical application area in more detail below and where applicable how our categories differ from the earlier findings. A listing of all publications and their corresponding clinical application and technical category can be found in Additional file <a href="#MOESM1">1</a>, MS Word format, and in Additional file <a href="#MOESM2">2</a> in CSV format. Table <a href="#Tab8">8</a> shows the clinical application category by the technical classification and Fig. <a href="#Fig2">2</a> shows the breakdown of clinical application category by publication year. There were more publications in 2019 compared with 2015 for all categories except Language Discovery &amp; Knowledge Structure, which fell by <span class="inline-formula"><span class="tex-math"><span class="generated">[TeX:] </span>\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\approx$$\end{document}</span><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M2"><mml:mo>≈</mml:mo></mml:math></span> 25% (Fig. <a href="#Fig2">2</a>).<div class="fig panel" style="display: float; clear: both">
+<a id="Fig2"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id285">Clinical application of publication by year</p></div>
+</div></p>
+<div class="section">
+<a id="Sec10"><!-- named anchor --></a><h4 class="subsection-title">Diagnostic surveillance</h4>
+<p id="Par34">A large proportion of studies in this category focused on extracting disease information for patient or disease surveillance e.g. investigating tumour characteristics [<a href="#CR19">19</a>, <a href="#CR20">20</a>]; changes over time [<a href="#CR21">21</a>] and worsening/progression or improvement/response to treatment [<a href="#CR22">22</a>, <a href="#CR23">23</a>]; identifying correct anatomical labels [<a href="#CR24">24</a>]; organ measurements and temporality [<a href="#CR25">25</a>]. Studies also investigated pairing measurements between reports [<a href="#CR26">26</a>] and linking reports to monitoring changes through providing an integrated view of consecutive examinations [<a href="#CR27">27</a>]. Studies focused specifically on breast imaging findings investigating aspects, such as BI-RADS MRI descriptors (shape, size, margin) and final assessment categories (benign, malignant etc.) e.g., [<a href="#CR28">28</a>–<a href="#CR33">33</a>]. Studies focused on tumour information e.g., for liver [<a href="#CR34">34</a>] and hepatocellular carcinoma (HPC) [<a href="#CR35">35</a>, <a href="#CR36">36</a>] and one study on extracting information relevant for structuring subdural haematoma characteristics in reports [<a href="#CR37">37</a>].</p>
+<p id="Par35">Studies in this category also investigated incidental findings including on lung imaging [<a href="#CR38">38</a>–<a href="#CR40">40</a>], with [<a href="#CR38">38</a>] additionally extracting the nodule size; for trauma patients [<a href="#CR41">41</a>]; and looking for silent brain infarction and white matter disease [<a href="#CR42">42</a>]. Other studies focused on prioritising/triaging reports, detecting follow-up recommendations, and linking a follow-up exam to the initial recommendation report, or bio-surveillance of infectious conditions, such as invasive mould disease.</p>
+</div>
+<div class="section">
+<a id="Sec11"><!-- named anchor --></a><h4 class="subsection-title">Disease information and classification</h4>
+<p id="Par36"><i>Disease Information and Classification</i> publications use reports to identify information that may be aggregated according to classification systems. These publications focused solely on classifying a disease occurrence or extracting information about a disease with no focus on the overall clinical application. This category was not found in Pons’ work. Methods considered a range of conditions including intracranial haemorrhage [<a href="#CR43">43</a>, <a href="#CR44">44</a>], aneurysms [<a href="#CR45">45</a>], brain metastases [<a href="#CR46">46</a>], ischaemic stroke [<a href="#CR47">47</a>, <a href="#CR48">48</a>], and several classified on types and severity of conditions e.g., [<a href="#CR46">46</a>, <a href="#CR49">49</a>–<a href="#CR52">52</a>]. Studies focused on breast imaging considered aspects such as predicting lesion malignancy from BI-RADS descriptors [<a href="#CR53">53</a>], breast cancer subtypes [<a href="#CR54">54</a>], and extracting or inferring BI-RADS categories, such as [<a href="#CR55">55</a>, <a href="#CR56">56</a>]. Two studies focused on abdominal images and hepatocellular carcinoma (HCC) staging and CLIP scoring. Chest imaging reports were used to detect pulmonary embolism e.g., [<a href="#CR57">57</a>–<a href="#CR59">59</a>], bacterial pneumonia [<a href="#CR60">60</a>], and Lungs-RADS categories [<a href="#CR61">61</a>]. Functional imaging was also included, such as echocardiograms, extracting measurements to evaluate heart failure, including left ventricular ejection fractions (LVEF) [<a href="#CR62">62</a>]. Other studies investigated classification of fractures [<a href="#CR63">63</a>, <a href="#CR64">64</a>] and abnormalities [<a href="#CR65">65</a>] and the prediction of ICD codes from imaging reports [<a href="#CR66">66</a>].</p>
+</div>
+<div class="section">
+<a id="Sec12"><!-- named anchor --></a><h4 class="subsection-title">Language discovery and knowledge structure</h4>
+<p id="Par37"><i>Language Discovery and Knowledge Structure</i> publications investigate the structure of language in reports and how this might be optimised to facilitate decision support and communication. Pons et al. reported on applications of <i>Query-based retrieval</i> which has similarities to <i>Language Discovery and Knowledge Structure</i> but it is not the same. Their category contains studies that retrieve cases and conditions that are not predefined and in some instances could be used for research purposes or are motivated for educational purposes. Our category is broader and encompasses papers that investigated different aspects of language including variability, complexity simplification and normalising to support extraction and classification tasks.</p>
+<p id="Par38">Studies focus on exploring lexicon coverage and methods to support language simplification for patients looking at sources, such as the consumer health vocabulary [<a href="#CR67">67</a>] and the French lexical network (JDM) [<a href="#CR68">68</a>]. Other works studied the variability and complexity of report language comparing free-text and structured reports and radiologists. Also investigated was how ontologies and lexicons could be combined with other NLP methods to represent knowledge that can support clinicians. This work included improving report reading efficiency [<a href="#CR69">69</a>]; finding similar reports [<a href="#CR70">70</a>]; normalising phrases to support classification and extraction tasks, such as entity recognition in Spanish reports [<a href="#CR71">71</a>]; imputing semantic classes for labelling [<a href="#CR72">72</a>], supporting search [<a href="#CR73">73</a>] or to discover semantic relations [<a href="#CR74">74</a>].</p>
+</div>
+<div class="section">
+<a id="Sec13"><!-- named anchor --></a><h4 class="subsection-title">Quality and compliance</h4>
+<p id="Par39"><i>Quality and Compliance</i> publications use reports to assess the quality and safety of practice and reports similar to Pons’ category. Works considered how patient indications for scans adhered to guidance e.g., [<a href="#CR75">75</a>–<a href="#CR80">80</a>] or protocol selection [<a href="#CR81">81</a>–<a href="#CR85">85</a>] or the impact of guideline changes on practice, such as [<a href="#CR86">86</a>]. Also investigated was diagnostic utilisation and yield, based on clinicians or on patients, which can be useful for hospital planning and for clinicians to study their work patterns e.g. [<a href="#CR87">87</a>]. Other studies in this category looked at specific aspects of quality, such as, classification for long bone fractures to support quality improvement in paediatric medicine [<a href="#CR88">88</a>], automatic identification of reports that have critical findings for auditing purposes [<a href="#CR89">89</a>], deriving a query-based quality measure to compare structured and free-text report variability [<a href="#CR90">90</a>], and [<a href="#CR91">91</a>] who describe a method to fix errors in gender or laterality in a report.</p>
+</div>
+<div class="section">
+<a id="Sec14"><!-- named anchor --></a><h4 class="subsection-title">Cohort and epidemiology</h4>
+<p id="Par40">This category is similar to Pons’ earlier review but we treated the studies in this category differently attempting to differentiate which papers described methods for creating cohorts for research purposes, and those which also reported the outcomes of an epidemiological analysis. Ten studies use NLP to create specific cohorts for research purposes and six reported the performance of their tools. Out of these papers, the majority (n = 8) created cohorts for specific medical conditions including fatty liver disease [<a href="#CR92">92</a>, <a href="#CR93">93</a>] hepatocellular cancer [<a href="#CR94">94</a>], ureteric stones [<a href="#CR95">95</a>], vertebral fracture [<a href="#CR96">96</a>], traumatic brain injury [<a href="#CR97">97</a>, <a href="#CR98">98</a>], and leptomeningeal disease secondary to metastatic breast cancer [<a href="#CR99">99</a>]. Five papers identified cohorts focused on particular radiology findings including ground glass opacities (GGO) [<a href="#CR100">100</a>], cerebral microbleeds (CMB) [<a href="#CR101">101</a>], pulmonary nodules [<a href="#CR102">102</a>, <a href="#CR103">103</a>], changes in the spine correlated to back pain [<a href="#CR1">1</a>] and identifying radiological evidence of people having suffered a fall. One paper focused on identifying abnormalities of specific anatomical regions of the ear within an audiology imaging database [<a href="#CR104">104</a>] and another paper aimed to create a cohort of people with any rare disease (within existing ontologies - Orphanet Rare Disease Ontology ORDO and Radiology Gamuts Ontology RGO). Lastly, one paper took a different approach of screening reports to create a cohort of people with contraindications for MRI, seeking to prevent iatrogenic events [<a href="#CR105">105</a>]. Amongst the epidemiology studies there were various analytical aims, but they primarily focused on estimating the prevalence or incidence of conditions or imaging findings and looking for associations of these conditions/findings with specific population demographics, associated factors or comorbidities. The focus of one study differed in that it applied NLP to healthcare evaluation, investigating the association of palliative care consultations and measures of high-quality end-of-life (EOL) care [<a href="#CR99">99</a>].</p>
+</div>
+<div class="section">
+<a id="Sec15"><!-- named anchor --></a><h4 class="subsection-title">Technical NLP</h4>
+<p id="Par41">This category is for publications that have a primary technical aim that is not focused on radiology report outcome, e.g. detecting negation in reports, spelling correction [<a href="#CR106">106</a>], fact checking [<a href="#CR107">107</a>, <a href="#CR108">108</a>] methods for sample selection, crowd source annotation [<a href="#CR109">109</a>]. This category did not occur in Pons’ earlier review.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec16"><!-- named anchor --></a><h3 class="section-title">NLP methods in use</h3>
+<p id="Par42">NLP methods capture the different techniques an author applied broken down into rules, machine learning methods, deep learning, ontologies, lexicons and word embeddings. We discriminate machine learning from deep learning, using the former to represent traditional machine learning methods.</p>
+<p id="Par43">Over half of the studies only applied one type of NLP method and just over a quarter of the studies compared or combined methods in hybrid approaches. The remaining studies either used a bespoke proprietary system or focus on building ontologies or similarity measures (Fig. <a href="#Fig3">3</a>). Rule-based method use remains almost constant across the period, whereas use of machine learning decreases and deep learning methods rises, from five publications in 2017 to twenty-four publications in 2019 (Fig. <a href="#Fig4">4</a>).<div class="fig panel" style="display: float; clear: both">
+<a id="Fig3"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id286">NLP method breakdown</p></div>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="Fig4"><!-- named anchor --></a><h5 class="label">Fig. 4</h5>
+<div class="caption"><p class="first" id="id287">NLP method by year</p></div>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab9"><!-- named anchor --></a><h5 class="label">Table 9</h5>
+<div class="caption"><p class="first" id="id288">Breakdown of NLP method</p></div>
+<table frame="hsides" rules="groups">
+<a id="id289"><!-- named anchor --></a><thead>
+<a id="id290"><!-- named anchor --></a><tr>
+<a id="id291"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id292"><!-- named anchor --></a>ML (n = 74)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id293"><!-- named anchor --></a>No studies</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id294"><!-- named anchor --></a>Deep learning (n = 36)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id295"><!-- named anchor --></a>No studies</th>
+</tr>
+</thead>
+<tbody>
+<a id="id296"><!-- named anchor --></a><tr>
+<a id="id297"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id298"><!-- named anchor --></a>SVM</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id299"><!-- named anchor --></a>34</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id300"><!-- named anchor --></a>RNN variants</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id301"><!-- named anchor --></a>14</td>
+</tr>
+<tr>
+<a id="id302"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id303"><!-- named anchor --></a>Logistic regression</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id304"><!-- named anchor --></a>23</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id305"><!-- named anchor --></a>CNN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id306"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id307"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id308"><!-- named anchor --></a>Random forest</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id309"><!-- named anchor --></a>18</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id310"><!-- named anchor --></a>Other</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id311"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id312"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id313"><!-- named anchor --></a>Naïve Bayes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id314"><!-- named anchor --></a>17</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id315"><!-- named anchor --></a>Compare CNN, RNN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id316"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id317"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id318"><!-- named anchor --></a>Maximum entropy</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id319"><!-- named anchor --></a>7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id320"><!-- named anchor --></a>Combine CNN + RNN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id321"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id322"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id323"><!-- named anchor --></a>Decision trees</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id324"><!-- named anchor --></a>4</td>
+<td align="left" colspan="1" rowspan="1"><a id="id325"><!-- named anchor --></a></td>
+<td align="left" colspan="1" rowspan="1"><a id="id326"><!-- named anchor --></a></td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="Par44">A variety of machine classifier algorithms were used, with SVM and Logistic Regression being the most common (Table <a href="#Tab9">9</a>). Recurrent Neural Networks (RNN) variants were the most common type of deep learning architectures. RNN methods were split between long short-term memory (LSTM) and bidirectional-LSTM (Bi-LSTM), bi-directional gated recurrent unit (Bi-GRU), and standard RNN approaches. Four of these studies additionally added a Conditional Random Field (CRF) for the final label generation step. Convolutional Neural Networks (CNN) were the second most common architecture explored. Eight studies additionally used an attention mechanism as part of their deep learning architecture. Other neural approaches included feed-forward neural networks, fully connected neural networks and a proprietary neural system IBM Watson [<a href="#CR82">82</a>] and Snorkel [<a href="#CR110">110</a>]. Several studies proposed combined architectures, such as [<a href="#CR31">31</a>, <a href="#CR111">111</a>].</p>
+</div>
+<div class="section">
+<a id="Sec17"><!-- named anchor --></a><h3 class="section-title">NLP method features</h3>
+<p id="Par45">Most rule-based and machine classifying approaches used features based on bag-of-words, part-of-speech, term frequency, and phrases with only two studies alternatively using word embeddings. Three studies use feature engineering with deep learning rather than word embeddings. Thirty-three studies use domain-knowledge to support building features for their methods, such as developing lexicons or selecting terms and phrases. Comparison of embedding methods is difficult as many studies did not describe their embedding method. Of those that did, Word2Vec [<a href="#CR112">112</a>] was the most popular (n = 19), followed by GLOVE embeddings [<a href="#CR113">113</a>] (n = 6), FastText [<a href="#CR114">114</a>] (n = 3), ELMo [<a href="#CR115">115</a>] (n = 1) and BERT [<a href="#CR116">116</a>] (n = 1). Ontologies or lexicon look-ups are used in 100 studies; however, even though publications increase over the period in real terms, 20% fewer studies employ the use of ontologies or lexicons in 2019 compared to 2015. The most widely used resources were UMLS [<a href="#CR117">117</a>] (n = 15), Radlex [<a href="#CR118">118</a>] (n = 20), SNOMED-CT [<a href="#CR119">119</a>] (n = 14). Most studies used these as features for normalising words and phrases for classification, but this was mainly those using rule-based or machine learning classifiers with only six studies using ontologies as input to their deep learning architecture. Three of those investigated how existing ontologies can be combined with word embeddings to create domain-specific mappings, with authors pointing to this avoiding the need for large amounts of annotated data. Other approaches looked to extend existing medical resources using a frequent phrases approach, e.g. [<a href="#CR120">120</a>]. Works also used the derived concepts and relations visualising these to support activities, such as report reading and report querying (e.g. [<a href="#CR121">121</a>, <a href="#CR122">122</a>])</p>
+</div>
+<div class="section">
+<a id="Sec18"><!-- named anchor --></a><h3 class="section-title">Annotation and inter-annotator agreement</h3>
+<p id="Par46">Eighty-nine studies used at least two annotators, 75 did not specify any annotation details, and only one study used a single annotator. Whilst 69 studies use a domain expert for annotation (a clinician or radiologist) only 56 studies report the inter-annotator agreement. Some studies mention annotation but do not report on agreement or annotators. Inter-annotator agreement values for Kappa range from 0.43 to perfect agreement at 1. Whilst most studies reported agreement by Cohen’s Kappa [<a href="#CR123">123</a>] some reported precision, and percent agreement. Studies reported annotation data sizes differently, e.g., on the sentence or patient level. Studies also considered ground truth labels from coding schemes such as ICD or BI-RADS categories as annotated data. Of studies which detailed human annotation at the radiology report level, only 45 specified inter-annotator agreement and/or the number of annotators. Annotated report numbers for these studies varies with 15 papers having annotated less than 500, 12 having annotated between 500 and less than 1000, 15 between 1000 and less than 3000, and 3 between 4000 and 8,288 reports. Additional file <a href="#MOESM2">2</a> gives all annotation size information on a per publication basis in CSV format.</p>
+</div>
+<div class="section">
+<a id="Sec19"><!-- named anchor --></a><h3 class="section-title">Data sources and availability</h3>
+<p id="Par47">Only 14 studies reported that their data is available, and 15 studies reported that their code is available. Most studies sourced their data from medical institutions, a number of studies did not specify where their data was from, and some studies used publicly available datasets: MIMIC-III (n = 5), MIMIC-II (n = 1), MIMIC-CXR (n = 1); Radcore (n = 5) or STRIDE (n = 2). Four studies used combined electronic health records such as clinical notes or pathology reports.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab10"><!-- named anchor --></a><h5 class="label">Table 10</h5>
+<div class="caption"><p class="first" id="id327">NLP Method by data size properties, minimum data size, maximum data size and median value, studies reporting in numbers of radiology reports</p></div>
+<table frame="hsides" rules="groups">
+<a id="id328"><!-- named anchor --></a><thead>
+<a id="id329"><!-- named anchor --></a><tr>
+<a id="id330"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id331"><!-- named anchor --></a>NLP method</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id332"><!-- named anchor --></a>Min size</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id333"><!-- named anchor --></a>Max size</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id334"><!-- named anchor --></a>Median</th>
+</tr>
+</thead>
+<tbody>
+<a id="id335"><!-- named anchor --></a><tr>
+<a id="id336"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id337"><!-- named anchor --></a>Compare methods</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id338"><!-- named anchor --></a>513</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id339"><!-- named anchor --></a>2,167,445</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id340"><!-- named anchor --></a>2,845</td>
+</tr>
+<tr>
+<a id="id341"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id342"><!-- named anchor --></a>Hybrid methods</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id343"><!-- named anchor --></a>40</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id344"><!-- named anchor --></a>34,926</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id345"><!-- named anchor --></a>918</td>
+</tr>
+<tr>
+<a id="id346"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id347"><!-- named anchor --></a>Deep learning (Only)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id348"><!-- named anchor --></a>120</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id349"><!-- named anchor --></a>1,567,581</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id350"><!-- named anchor --></a>5000</td>
+</tr>
+<tr>
+<a id="id351"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id352"><!-- named anchor --></a>Machine learning (Only)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id353"><!-- named anchor --></a>101</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id354"><!-- named anchor --></a>2,977,739</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id355"><!-- named anchor --></a>2531</td>
+</tr>
+<tr>
+<a id="id356"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id357"><!-- named anchor --></a>Rules (only)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id358"><!-- named anchor --></a>31</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id359"><!-- named anchor --></a>10,000,000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id360"><!-- named anchor --></a>8000</td>
+</tr>
+<tr>
+<a id="id361"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id362"><!-- named anchor --></a>Other</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id363"><!-- named anchor --></a>25</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id364"><!-- named anchor --></a>12,377,743</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id365"><!-- named anchor --></a>10,000</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab11"><!-- named anchor --></a><h5 class="label">Table 11</h5>
+<div class="caption"><p class="first" id="id366">Grouped data size and number of studies in each group, only for studies reporting in numbers of radiology reports</p></div>
+<table frame="hsides" rules="groups">
+<a id="id367"><!-- named anchor --></a><thead>
+<a id="id368"><!-- named anchor --></a><tr>
+<a id="id369"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id370"><!-- named anchor --></a>Data size group</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id371"><!-- named anchor --></a>No. studies (%)</th>
+</tr>
+</thead>
+<tbody>
+<a id="id372"><!-- named anchor --></a><tr>
+<a id="id373"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id374"><!-- named anchor --></a>&lt;200</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id375"><!-- named anchor --></a>9 (6.7)</td>
+</tr>
+<tr>
+<a id="id376"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id377"><!-- named anchor --></a>200 &lt; 500</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id378"><!-- named anchor --></a>6 (4.4)</td>
+</tr>
+<tr>
+<a id="id379"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id380"><!-- named anchor --></a>500 &lt; 1000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id381"><!-- named anchor --></a>18 (13.3)</td>
+</tr>
+<tr>
+<a id="id382"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id383"><!-- named anchor --></a>1000 &lt; 2000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id384"><!-- named anchor --></a>17 (12.6)</td>
+</tr>
+<tr>
+<a id="id385"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id386"><!-- named anchor --></a>2000 &lt; 5000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id387"><!-- named anchor --></a>17 (12.6)</td>
+</tr>
+<tr>
+<a id="id388"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id389"><!-- named anchor --></a>5000 &lt; 10,000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id390"><!-- named anchor --></a>12 (8.9)</td>
+</tr>
+<tr>
+<a id="id391"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id392"><!-- named anchor --></a>10,000+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id393"><!-- named anchor --></a>53 (39.3)</td>
+</tr>
+<tr>
+<a id="id394"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id395"><!-- named anchor --></a>Unspecified</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id396"><!-- named anchor --></a>3 (2.2)</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab12"><!-- named anchor --></a><h5 class="label">Table 12</h5>
+<div class="caption"><p class="first" id="id397">Studies reporting on total data size used and details on training set size, validation set size, test set size and annotation set size</p></div>
+<table frame="hsides" rules="groups">
+<a id="id398"><!-- named anchor --></a><thead>
+<a id="id399"><!-- named anchor --></a><tr>
+<a id="id400"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id401"><!-- named anchor --></a>Dataset type</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id402"><!-- named anchor --></a>No. of studies</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id403"><!-- named anchor --></a>Comments</th>
+</tr>
+</thead>
+<tbody>
+<a id="id404"><!-- named anchor --></a><tr>
+<a id="id405"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id406"><!-- named anchor --></a>Total dataset size</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id407"><!-- named anchor --></a>151</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id408"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id409"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id410"><!-- named anchor --></a>Training set size</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id411"><!-- named anchor --></a>129</td>
+<td align="left" colspan="1" rowspan="1"><a id="id412"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id413"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id414"><!-- named anchor --></a>Validation set size</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id415"><!-- named anchor --></a>52</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id416"><!-- named anchor --></a>27 report size, 25 report k-fold cross validation</td>
+</tr>
+<tr>
+<a id="id417"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id418"><!-- named anchor --></a>Test set size</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id419"><!-- named anchor --></a>81</td>
+<td align="left" colspan="1" rowspan="1"><a id="id420"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id421"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id422"><!-- named anchor --></a>Annotation set size</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id423"><!-- named anchor --></a>97</td>
+<td align="left" colspan="1" rowspan="1"><a id="id424"><!-- named anchor --></a></td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="Par48">Reporting on total data size differed across studies with some not giving exact data sizes but percentages and others reporting numbers of sentences, reports, patients, or a mixture of these. Where an author was not clear on the type of data they were reporting on, or on the size, we marked this as unspecified. Thirteen studies did not report on total data size. Data size summaries for those reporting at the radiology report level is n = 135 or 82.32% of the studies (Table <a href="#Tab10">10</a>). The biggest variation of data size by NLP Method is in studies that apply other methods or are rule-based. Machine learning also varies in size; however, the median value is lower compared to rule-based methods. The median value for deep learning is considerably higher at 5000 reports compared to machine learning or those that compare or create hybrid methods. Of the studies reporting on radiology reports numbers, 39.3% used over 10,000 reports and this increases to over 48% using more than 5000 reports. However, a small number of studies, 14%, are using comparatively low numbers of radiology reports, less than 500 (Table <a href="#Tab11">11</a>).</p>
+</div>
+<div class="section">
+<a id="Sec20"><!-- named anchor --></a><h3 class="section-title">NLP performance and evaluation measures</h3>
+<p id="Par49">Performance metrics applied for evaluation of methods vary widely with authors using precision (positive predictive value (PPV)), recall (sensitivity), specificity, the area under the curve (AUC) or accuracy. We observed a wide variety in evaluation methodology employed concerning test or validation datasets. Different approaches were taken in generating splits for testing and validation, including k-fold cross-validation. Table <a href="#Tab12">12</a> gives a summary of the number of studies reporting about total data size and splits across train, validation, test, and annotation. This table is for all data types, i.e., reports, sentences, patients or mixed. Eighty-two studies reported on both training and test data splits, of which only 38 studies included a validation set. Only 10 studies validated their algorithm using an external dataset from another institution, another modality, or a different patient population. Additional file <a href="#MOESM2">2</a> gives all data size information on a per publication basis in CSV format. The most widely used metrics for reporting performance were precision (PPV) and recall (sensitivity) reported in 47% of studies. However, even though many studies compared methods and reported on the top-performing method, very few studies carried out significance testing on these comparisons. Issues of heterogeneity make it difficult and unrealistic to compare performance between methods applied, hence, we use summary measures as a broad overview (Fig. <a href="#Fig5">5</a>). Performance reported varies, but both the mean and median values for the F1 score appear higher for methods using rule-based only or deep learning only methods. Whilst differences are less discernible between F1 scores for application areas, <i>Diagnostic Surveillance</i> looks on average lower than other categories.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig5"><!-- named anchor --></a><h5 class="label">Fig. 5</h5>
+<div class="caption"><p class="first" id="id425">Application Category and NLP Method, Mean and Median Summaries. Mean value is indicated by a vertical bar, the box shows error bars and the asterisk is the median value</p></div>
+</div></p>
+</div>
+</div>
+<div class="section">
+<a id="Sec21"><!-- named anchor --></a><h2 class="main-title">Discussion and future directions</h2>
+<p id="Par50">Our work shows there has been a considerable increase in the number of publications using NLP on radiology reports over the recent time period. Compared to 67 publications retrieved in the earlier review of [<a href="#CR2">2</a>], we retrieved 164 publications. In this section we discuss and offer some insight into the observations and trends of how NLP is being applied to radiology and make some recommendations that may benefit the field going forward.</p>
+<div class="section">
+<a id="Sec22"><!-- named anchor --></a><h3 class="section-title">Clinical applications and NLP methods in radiology</h3>
+<p id="Par51">The clinical applications of the publications is similar to the earlier review of Pons et al. but whilst we observe an increase in research output we also highlight that there appears to be even less focus on clinical application compared to their review. Like many other fields applying NLP the use of deep learning has increased, with RNN architectures being the most popular. This is also observed in a review of NLP in clinical text [<a href="#CR7">7</a>]. However, although deep learning use increases, rules and traditional machine classifiers are still prevalent and often used as baselines to compare deep learning architectures against. One reason for traditional methods remaining popular is their interpretability compared to deep learning models. Understanding the features that drive a model prediction can support decision-making in the clinical domain but the complex layers of non-linear data transformations deep learning is composed of does not easily support transparency [<a href="#CR124">124</a>]. This may also help explain why in synthesis of the literature we observed less focus on discussing clinical application and more emphasis on disease classification or information task only. Advances in interpretability of deep learning models are critical to its adoption in clinical practice.</p>
+<p id="Par52">Other challenges exist for deep learning such as only having access to small or imbalanced datasets. Chen et al. [<a href="#CR125">125</a>] review deep learning methods within healthcare and point to these challenges resulting in poor performance but that these same datasets can perform well with traditional machine learning methods. We found several studies highlight this and when data is scarce or datasets imbalanced, they introduced hybrid approaches of rules and deep learning to improve performance, particularly in the <i>Diagnostic Surveillance</i> category. Yang et al. [<a href="#CR126">126</a>] observed rules performing better for some entity types, such as time and size, which are proportionally lower than some of the other entities in their train and test sets; hence they combine a bidirectional-LSTM and CRF with rules for entity recognition. Peng et al. [<a href="#CR19">19</a>] comment that combining rules and the neural architecture complement each other, with deep learning being more balanced between precision and recall, but the rule-based method having higher precision and lower recall. The authors reason that this provides better performance as rules can capture rare disease cases, particularly when multi-class labelling is needed, whilst deep learning architectures perform worse in instances with fewer data points.</p>
+<p id="Par53">In addition to its need for large-scale data, deep learning can be computationally costly. The use of pre-trained models and embeddings may alleviate some of this burden. Pre-trained models often only require fine-tuning, which can reduce computation cost. Language comprehension pre-learned from other tasks can then be inherited from the parent models, meaning fewer domain-specific labelled examples may be needed [<a href="#CR127">127</a>]. This use of pre-trained information also supports generalisability, e.g., [<a href="#CR58">58</a>] show that their model trained on one dataset can generalise to other institutional datasets.</p>
+<p id="Par54">Embedding use has increased which is expected with the application of deep learning approaches but many rule-based and machine classifiers continue to use traditional count-based features, e.g., bag-of-words and n-grams. Recent evidence [<a href="#CR128">128</a>] suggests that the trend to continue to use feature engineering with traditional machine learning methods does produce better performance in radiology reports than using domain-specific word embeddings.</p>
+<p id="Par55">Banerjee et al. [<a href="#CR44">44</a>] found that there was not much difference between a uni-gram approach and a Word2vec embedding, hypothesising this was due to their narrow domain, intracranial haemorrhage. However, the NLP research field has seen a move towards bi-directional encoder representations from transformers (BERT) based embedding models not reflected in our analysis, with only one study using BERT generated embeddings [<a href="#CR46">46</a>]. Embeddings from BERT are thought to be superior as they can deliver better contextual representations and result in improved task performance. Whilst more publications since our review period have used BERT based embeddings with radiology reports e.g. [<a href="#CR127">127</a>, <a href="#CR129">129</a>] not all outperform traditional methods [<a href="#CR130">130</a>]. Recent evidence shows that embeddings generated by BERT fail to show a generalisable understanding of negation [<a href="#CR131">131</a>], an essential factor in interpreting radiology reports effectively. Specialised BERT models have been introduced such as ClinicalBERT [<a href="#CR132">132</a>] or BlueBERT [<a href="#CR129">129</a>]. BlueBERT has been shown to outperform ClinicalBERT when considering chest radiology [<a href="#CR133">133</a>] but more exploration of the performance gains versus the benefits of generalisability are needed for radiology text.</p>
+<p id="Par56">All NLP models have in common that they need large amounts of labelled data for model training [<a href="#CR134">134</a>]. Several studies [<a href="#CR135">135</a>–<a href="#CR137">137</a>] explored combining word embeddings and ontologies to create domain-specific mappings, and they suggest this can avoid a need for large amounts of annotated data. Additionally, [<a href="#CR135">135</a>, <a href="#CR136">136</a>] highlight that such combinations could boost coverage and performance compared to more conventional techniques for concept normalisation.</p>
+<p id="Par57">The number of publications using medical lexical knowledge resources is still relatively low, even though a recent trend in the general NLP field is to enhance deep learning with external knowledge [<a href="#CR138">138</a>]. This was also observed by [<a href="#CR7">7</a>], where only 18% of the deep learning studies in their review utilised knowledge resources. Although pre-training supports learning previously known facts it could introduce unwanted bias, hindering performance. The inclusion of domain expertise through resources such as medical lexical knowledge may help reduce this unwanted bias [<a href="#CR7">7</a>]. Exploration of how this domain expertise can be incorporated with deep learning architectures in future could improve the performance when having access to less labelled data.</p>
+</div>
+<div class="section">
+<a id="Sec23"><!-- named anchor --></a><h3 class="section-title">Task knowledge</h3>
+<p id="Par58">Knowledge about the disease area of interest and how aspects of this disease are linguistically expressed is useful and could promote better performing solutions. Whilst [<a href="#CR139">139</a>] find high variability between radiologists, with metric values (e.g. number of syntactic, clinical terms based on ontology mapping) being significantly greater on free-text than structured reports, [<a href="#CR140">140</a>] who look specifically at anatomical areas find less evidence for variability. Zech et al. [<a href="#CR141">141</a>] suggest that the highly specialised nature of each imaging modality creates different sub-languages and the ability to discover these labels (i.e. disease mentions) reflects the consistency with which labels are referred to. For example, edema is referred to very consistently whereas other labels are not, such as infarction/ischaemic. Understanding the language and the context of entity mentions could help promote novel ideas on how to solve problems more effectively. For example, [<a href="#CR35">35</a>] discuss how the accuracy of predicting malignancy is affected by cues being outside their window of consideration and [<a href="#CR142">142</a>] observe problems of co-reference resolution within a report due to long-range dependencies. Both these studies use traditional NLP approaches, but we observed novel neural architectures being proposed to improve performance in similar tasks specifically capturing long-range context and dependency learning, e.g., [<a href="#CR31">31</a>, <a href="#CR111">111</a>]. This understanding requires close cooperation of healthcare professionals and data scientists, which is different to some other fields where more disconnection is present [<a href="#CR125">125</a>].</p>
+</div>
+<div class="section">
+<a id="Sec24"><!-- named anchor --></a><h3 class="section-title">Study heterogeneity, a need for reporting standards</h3>
+<p id="Par59">Most studies reviewed could be described as a proof-of-concept and not trialled in a clinical setting. Pons et al. [<a href="#CR2">2</a>] hypothesised that a lack of clinical application may stem from uncertainty around minimal performance requirements hampering implementations, evidence-based practice requiring justification and transparency of decisions, and the inability to be able to compare to human performance as the human agreement is often an unknown. These hypotheses are still valid, and we see little evidence that these problems are solved.</p>
+<p id="Par60">Human annotation is generally considered the gold standard at measuring human performance, and whilst many studies reported that they used annotated data, overall, reporting was inconsistent. Steps were undertaken to measure inter-annotator agreement (IAA), but in many studies, this was not directly comparable to the evaluation undertaken of the NLP methods. The size of the data being used to draw experimental conclusions from is important and accurate reporting of these measures is essential to ensure reproducibility and comparison in further studies. Reporting on the training, test and validation splits was varied with some studies not giving details and not using held-out validation sets.</p>
+<p id="Par61">Most studies use retrospective data from single institutions but this can lead to a model over-fitting and, thus, not generalising well when applied in a new setting. Overcoming the problem of data availability is challenging due to privacy and ethics concerns, but essential to ensure that performance of models can be investigated across institutions, modalities, and methods. Availability of data would allow for agreed benchmarks to be developed within the field that algorithm improvements can be measured upon. External validation of applied methods was extremely low, although, this is likely due to the availability of external datasets. Making code available would enable researchers to report how external systems perform on their data. However, only 15 studies reported that their code is available. To be able to compare systems there is a need for common datasets to be available to benchmark and compare systems against.</p>
+<p id="Par62">Whilst reported figures in precision and recall generally look high more evidence is needed for accurate comparison to human performance. A wide variety of performance measures were used, with some studies only reporting one measure, e.g., accuracy or F1 scores, with these likely representing the best performance obtained. Individual studies are often not directly comparable for such measures, but none-the-less clarity and consistency in reporting is desirable. Many studies making model comparisons did not carry out any significance testing for these comparisons.</p>
+</div>
+<div class="section">
+<a id="Sec25"><!-- named anchor --></a><h3 class="section-title">Progressing NLP in radiology</h3>
+<p id="Par63">The value of NLP applied to radiology is clear in that it can support areas such as clinicians in their decision making and reducing workload, add value in terms of automated coding of data, finding missed diagnosis for triage or monitoring quality. However, in recent years labelling disease phenotypes or extracting disease information in reports has been a focus rather than real-world clinical application of NLP within radiology. We believe this is mainly due to the difficulties in accessing data for research purposes. More support is needed to bring clinicians and NLP experts together to promote innovative thinking about how such work can benefit and be trialled in the clinical environment. The challenges in doing so are significant because of the need to work within safe environments to protect patient privacy. In terms of NLP methods, we observe that the general trends of NLP are applied within this research area, but we would emphasise as NLP moves more to deep learning it is particularly important in healthcare to think about how these methods can satisfy explainability. Explainability in artificial intelligence and NLP has become a hot topic in general but it is now also being addressed in the healthcare sector [<a href="#CR143">143</a>, <a href="#CR144">144</a>]. Methodology used is also impacted by data availability with uncommon diseases often being hard to predict with deep learning as data is scarce. If the practical and methodological challenges on data access, privacy and less data demanding approaches can be met there is much potential to increase the value of NLP within radiology. The sharing of tools, practice, and expertise could also ease the real-world application of NLP within radiology.</p>
+<p id="Par64">To help move the field forward, enable more inter-study comparisons, and increase study reproducibility we make the following recommendations for research studies: <div class="list">
+<a id="id426"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="Par65">Clarity in reporting study properties is required: (a) Data characteristics including size and the type of dataset should be detailed, e.g., the number of reports, sentences, patients, and if patients how many reports per patient. The training, test and validation data split should be evident, as should the source of the data. (b) Annotation characteristics including the methodology to develop the annotation should be reported, e.g., annotation set size, annotator details, how many, expertise. (c) Performance metrics should include a range of metrics: precision, recall, F1, accuracy and not just one overall value.</p></li>
+<li><p id="Par66">Significance testing should be carried out when a comparison between methods is made.</p></li>
+<li><p id="Par67">Data and code availability are encouraged. While making data available will often be challenging due to privacy concerns, researchers should make code available to enable inter-study comparisons and external validation of methods.</p></li>
+<li><p id="Par68">Common datasets should be used to benchmark and compare systems.</p></li>
+</ol>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec26"><!-- named anchor --></a><h3 class="section-title">Limitations of study</h3>
+<p id="Par69">Publication search is subject to bias in search methods and it is likely that our search strategy did inevitably miss some publications. Whilst trying to be precise and objective during our review process some of the data collected and categorising publications into categories was difficult to agree on and was subjective. For example, many of the publications could have belonged to more than one category. One of the reasons for this was how diverse in structure the content was which was in some ways reflected by the different domains papers were published in. It is also possible that certain keywords were missed in recording data elements due to the reviewers own biases and research experience.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec27"><!-- named anchor --></a><h2 class="main-title">Conclusions</h2>
+<p id="Par70">This paper presents an systematic review of publications using NLP on radiology reports during the period 2015 to October 2019. We show there has been substantial growth in the field particularly in researchers using deep learning methods. Whilst deep learning use has increased, as seen in NLP research in general, it faces challenges of lower performance when data is scarce or when labelled data is unavailable, and is not widely used in clinical practice perhaps due to the difficulties in interpretability of such models. Traditional machine learning and rule-based methods are, therefore, still widely in use. Exploration of domain expertise such as medial lexical knowledge must be explored further to enhance performance when data is scarce. The clinical domain faces challenges due to privacy and ethics in sharing data but overcoming this would enable development of benchmarks to measure algorithm performance and test model robustness across institutions. Common agreed datasets to compare performance of tools against would help support the community in inter-study comparisons and validation of systems. The work we present here has the potential to inform researchers about applications of NLP to radiology and to lead to more reliable and responsible research in the domain.</p>
+</div>
+<div class="section">
+<a id="id427"><!-- named anchor --></a><h2 class="main-title">Supplementary Information</h2>
+<div class="section">
+<a id="Sec28"><!-- named anchor --></a><p class="first" id="id428"><div class="panel">
+<a id="MOESM1"><!-- named anchor --></a><a id="id429" href="12911_2021_1533_MOESM1_ESM.docx"><div class="caption"><p class="first" id="id430"><b>Additional file 1.</b> Publication list with application and technical categories.</p></div></a>
+</div><div class="panel">
+<a id="MOESM2"><!-- named anchor --></a><a id="id431" href="12911_2021_1533_MOESM2_ESM.csv"><div class="caption"><p class="first" id="id432"><b>Additional file 2.</b> Individual properties for every publication.</p></div></a>
+</div></p>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id482"><!-- named anchor --></a><h4 class="block-title">Abbreviations</h4>
+<div class="def-list">
+<a id="id433"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id434">
+<div class="def-term cell" id="id435"><p>NLP</p></div>
+<div class="def-def cell" id="id436"><p class="first" id="Par5">natural language processing</p></div>
+</div>
+<div class="def-item row" id="id437">
+<div class="def-term cell" id="id438"><p>e.g.</p></div>
+<div class="def-def cell" id="id439"><p class="first" id="Par6">example</p></div>
+</div>
+<div class="def-item row" id="id440">
+<div class="def-term cell" id="id441"><p>ICD</p></div>
+<div class="def-def cell" id="id442"><p class="first" id="Par7">international classification of diseases</p></div>
+</div>
+<div class="def-item row" id="id443">
+<div class="def-term cell" id="id444"><p>BI-RADS</p></div>
+<div class="def-def cell" id="id445"><p class="first" id="Par8">Breast Imaging-Reporting and Data System</p></div>
+</div>
+<div class="def-item row" id="id446">
+<div class="def-term cell" id="id447"><p>IAA</p></div>
+<div class="def-def cell" id="id448"><p class="first" id="Par9">inter-annotator agreement</p></div>
+</div>
+<div class="def-item row" id="id449">
+<div class="def-term cell" id="id450"><p>No.</p></div>
+<div class="def-def cell" id="id451"><p class="first" id="Par10">number</p></div>
+</div>
+<div class="def-item row" id="id452">
+<div class="def-term cell" id="id453"><p>UMLS</p></div>
+<div class="def-def cell" id="id454"><p class="first" id="Par11">unified medical language system</p></div>
+</div>
+<div class="def-item row" id="id455">
+<div class="def-term cell" id="id456"><p>ELMo</p></div>
+<div class="def-def cell" id="id457"><p class="first" id="Par12">embeddings from Language Models</p></div>
+</div>
+<div class="def-item row" id="id458">
+<div class="def-term cell" id="id459"><p>BERT</p></div>
+<div class="def-def cell" id="id460"><p class="first" id="Par13">bidirectional encoder representations from transformers</p></div>
+</div>
+<div class="def-item row" id="id461">
+<div class="def-term cell" id="id462"><p>SVM</p></div>
+<div class="def-def cell" id="id463"><p class="first" id="Par14">support vector machine</p></div>
+</div>
+<div class="def-item row" id="id464">
+<div class="def-term cell" id="id465"><p>CNN</p></div>
+<div class="def-def cell" id="id466"><p class="first" id="Par15">convolutional neural network</p></div>
+</div>
+<div class="def-item row" id="id467">
+<div class="def-term cell" id="id468"><p>LSTM</p></div>
+<div class="def-def cell" id="id469"><p class="first" id="Par16">long short-term memory</p></div>
+</div>
+<div class="def-item row" id="id470">
+<div class="def-term cell" id="id471"><p>Bi-LSTM</p></div>
+<div class="def-def cell" id="id472"><p class="first" id="Par17">bi-directional long short-term memory</p></div>
+</div>
+<div class="def-item row" id="id473">
+<div class="def-term cell" id="id474"><p>RU</p></div>
+<div class="def-def cell" id="id475"><p class="first" id="Par18">bi-directional gated recurrent unit</p></div>
+</div>
+<div class="def-item row" id="id476">
+<div class="def-term cell" id="id477"><p>CRF</p></div>
+<div class="def-def cell" id="id478"><p class="first" id="Par19">conditional random field</p></div>
+</div>
+<div class="def-item row" id="id479">
+<div class="def-term cell" id="id480"><p>GLOVE</p></div>
+<div class="def-def cell" id="id481"><p class="first" id="Par20">Global Vectors for Word Representation</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id486"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id483"><!-- named anchor --></a><p id="id484"><span class="generated">[1]</span> <b>Publisher's Note</b></p>
+<p id="id485">Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id488"><!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
+<p id="id487">Not applicable.</p>
+</div>
+<div class="back-section">
+<a id="id490"><!-- named anchor --></a><h2 class="main-title">Authors' contributions</h2>
+<p id="id489">B.A., W.W. and H.W. conceptualised this study. D.D. carried out the search including automated filtering and designing meta-enriching steps. BA, AG, CG and RT advised on the automatic data collection method devised by DD. M.T.C.P, A.G., H.D. and D.D carried out the first stage review and A.C., E.D., V.S-P, M.T.C.P, A.G., H.D., B.A. and D.D. carried out the second-stage review. A.C. synthesised the data and wrote the main manuscript with contributions from all authors. All authors read and approved the final manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id492"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id491">This research was supported by the Alan Turing Institute, MRC, HDR-UK and the Chief Scientist Office. B.A.,A.C,D.D.,A.G. and C.G. have been supported by the Alan Turing Institute via Turing Fellowships (B.A,C.G.) and Turing project funding (ESPRC Grant EP/N510129/1). A.G. was also funded by a MRC Mental Health Data Pathfinder Award (MRC-MCPC17209). H.W. is MRC/Rutherford Fellow HRD UK (MR/S004149/1). H.D. is supported by HDR UK National Phemomics Resource Project. V.S-P. is supported by the HDR UK National Text Analytics Implementation Project. W.W. is supported by a Scottish Senior Clinical Fellowship (CAF/17/01).</p>
+</div>
+<div class="back-section">
+<a id="id494"><!-- named anchor --></a><h2 class="main-title">Availability of data and materials</h2>
+<p id="id493">All data generated or analysed during this study are included in this published article [and its supplementary information files].</p>
+</div>
+<div class="back-section">
+<a id="id495"><!-- named anchor --></a><h2 class="main-title">Declarations</h2>
+<h3 class="section-title">Ethics approval and consent to participate</h3>
+<p id="Par71">Not applicable.</p>
+<h3 class="section-title">Consent for publication</h3>
+<p id="Par72">Not applicable.</p>
+<h3 class="section-title">Competing interests</h3>
+<p id="Par73">The authors declare that they have no competing interests.</p>
+</div>
+<div class="back-section">
+<a id="Bib1"><!-- named anchor --></a><div class="section ref-list">
+<a id="Bib1"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="CR1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id496"><!-- named anchor --></a>J BatesSJ FodehCA BrandtJA WomackClassification of radiology reports for falls in an HIV study cohortJ Am Med Inform Assoc201623e111311710.1093/jamia/ocv155PMC495463826567329</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="CR2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id497"><!-- named anchor --></a>E PonsLMM BraunMGM HuninkJA KorsNatural language processing in radiology: a systematic reviewRadiology2016279232934310.1148/radiol.1614277027089187</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="CR3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id498"><!-- named anchor --></a>T CaiAA GiannopoulosS YuT KelilB RipleyKK KumamaruFJ RybickiD MitsourasNatural language processing technologies in radiology research and clinical applicationsRadioGraphics201636117619110.1148/rg.201615008026761536PMC4734053</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="CR4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id499"><!-- named anchor --></a>V SorinY BarashE KonenE KlangDeep learning for natural language processing in radiology-fundamentals and a systematic reviewJ Am Coll Radiol202017563964810.1016/j.jacr.2019.12.02632004480</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="CR5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id500"><!-- named anchor --></a>K KreimeyerM FosterA PandeyN AryaG HalfordSF JonesR ForsheeM WalderhaugT BotsisNatural language processing systems for capturing and standardizing unstructured clinical information: a systematic reviewJ Biomed Inform201773142910.1016/j.jbi.2017.07.01228729030PMC6864736</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="CR6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id501"><!-- named anchor --></a>I SpasicG NenadicClinical text data in machine learning: systematic reviewJMIR Med Inform2020831798410.2196/17984PMC715750532229465</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="CR7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id502"><!-- named anchor --></a>S WuK RobertsS DattaJ DuZ JiY SiS SoniQ WangQ WeiY XiangB ZhaoH XuDeep learning in clinical natural language processing: a methodical reviewJ Am Med Inform Assoc202027345747010.1093/jamia/ocz20031794016PMC7025365</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="CR8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id503"><!-- named anchor --></a>D MoherL ShamseerM ClarkeD GhersiA LiberatiM PetticrewP ShekelleLA StewartPreferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statementSyst Rev201541110.1186/2046-4053-4-125554246PMC4320440</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="CR9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id504"><!-- named anchor --></a>Harzing AW. Publish or Perish (2007). Available from <a target="xrefwindow" href="https://harzing.com/resources/publish-or-perish" id="id505">https://harzing.com/resources/publish-or-perish</a>. Accessed 1 Nov 2019.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="CR10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id506"><!-- named anchor --></a>J-F GehannoL RollinS DarmoniIs the coverage of google scholar enough to be used alone for systematic reviewsBMC Med Inform Decis Mak201313710.1186/1472-6947-13-723302542PMC3544576</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="CR11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id507"><!-- named anchor --></a>Wilkinson LJ, REST API. Publication title: crossref type: website. <a target="xrefwindow" href="https://www.crossref.org/education/retrieve-metadata/rest-api/" id="id508">https://www.crossref.org/education/retrieve-metadata/rest-api/</a>. Accessed 26 Jan 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="CR12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id509"><!-- named anchor --></a>For AI AI. Semantic scholar |AI-powered research tool. <a target="xrefwindow" href="https://api.semanticscholar.org/" id="id510">https://api.semanticscholar.org/</a>. Accessed 26 Jan 2021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="CR13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id511"><!-- named anchor --></a>University C. <a target="xrefwindow" href="http://arxiv.org/abs/org" id="id512">arXiv.org</a> e-Print archive. <a target="xrefwindow" href="https://arxiv.org/" id="id513">https://arxiv.org/</a>. Accessed 26 Jan 2021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="CR14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id514"><!-- named anchor --></a>Bearden E, LibGuides: unpaywall: home. <a target="xrefwindow" href="https://library.lasalle.edu/c.php?g=982604&amp;p=7105436" id="id515">https://library.lasalle.edu/c.php?g=982604&amp;p=7105436</a>. Accessed 26 Jan 2021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="CR15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id516"><!-- named anchor --></a>S BriscoeA BethelM RogersConduct and reporting of citation searching in Cochrane systematic reviews: a cross-sectional studyRes Synth Methods202011216918010.1002/jrsm.135531127978PMC7079050</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="CR16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id517"><!-- named anchor --></a>Wohlin C, Guidelines for snowballing in systematic literature studies and a replication in software engineering. In: Proceedings of the 18th international conference on evaluation and assessment in software engineering. EASE ’14. Association for Computing Machinery, New York, NY, USA (2014). 10.1145/2601248.2601268. event-place: London, England, UK. 10.1145/2601248.2601268.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="CR17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id518"><!-- named anchor --></a>JL FleissMeasuring nominal scale agreement among many ratersPsychol Bull197176537838210.1037/h0031619</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="CR18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id519"><!-- named anchor --></a>JR LandisGG KochThe measurement of observer agreement for categorical dataBiometrics197733115917410.2307/2529310843571</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="CR19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id520"><!-- named anchor --></a>Peng Y, Yan K, Sandfort V, Summers R.M, Lu Z. A self-attention based deep learning method for lesion attribute detection from CT reports. In: 2019 IEEE international conference on healthcare informatics (ICHI), pp. 1–5. IEEE Computer Society, Xi’an, China (2019). 10.1109/ICHI.2019.8904668.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="CR20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id521"><!-- named anchor --></a>S BozkurtE AlkimI BanerjeeDL RubinAutomated detection of measurements and their descriptors in radiology reports using a hybrid natural language processing algorithmJ Digit Imaging201932454455310.1007/s10278-019-00237-931222557PMC6646482</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="CR21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id522"><!-- named anchor --></a>S HassanpourG BayCP LanglotzCharacterization of change and significance for clinical findings in radiology reports through natural language processingJ Digit Imaging201730331432210.1007/s10278-016-9931-828050714PMC5422225</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="CR22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id523"><!-- named anchor --></a>KL KehlH ElmarakebyM NishinoEM Van AllenEM LepistoMJ HassettBE JohnsonD SchragAssessment of deep natural language processing in ascertaining oncologic outcomes from radiology reportsJAMA Oncol20195101421142910.1001/jamaoncol.2019.180031343664PMC6659158</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="CR23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id524"><!-- named anchor --></a>P-H ChenH ZafarM Galperin-AizenbergT CookIntegrating natural language processing and machine learning algorithms to categorize oncologic response in radiology reportsJ Digit Imaging201831217818410.1007/s10278-017-0027-x29079959PMC5873468</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="CR24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id525"><!-- named anchor --></a>V CotikH RodríguezJ VivaldiJA Lossio-VenturaD MuñanteH Alatrista-SalasSpanish named entity recognition in the biomedical domainInformation management and big data. Communications in computer and information science2018LimaSpringer233248</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="CR25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id526"><!-- named anchor --></a>M SevensterJ BuurmanP LiuJF PetersPJ ChangNatural language processing techniques for extracting and categorizing finding measurements in narrative radiology reportsAppl Clin Inform201506360061010.4338/ACI-2014-11-RA-0110PMC458634626448801</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="CR26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id527"><!-- named anchor --></a>M SevensterJ BozemanA CowhyW TrostA natural language processing pipeline for pairing measurements uniquely across free-text CT reportsJ Biomed Inform201553364810.1016/j.jbi.2014.08.01525200472</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="CR27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id528"><!-- named anchor --></a>H OberkampfS ZillnerJA OvertonB BauerA CavallaroM UderM HammonSemantic representation of reported measurements in radiologyBMC Med Inform Decis Mak2016161510.1186/s12911-016-0248-926801764PMC4722630</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="CR28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id529"><!-- named anchor --></a>Y LiuL-N ZhuQ LiuC HanX-D ZhangX-Y WangAutomatic extraction of imaging observation and assessment categories from breast magnetic resonance imaging reports with natural language processingChin Med J2019132141673168010.1097/CM9.000000000000030131268905PMC6759110</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="CR29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id530"><!-- named anchor --></a>A GuptaI BanerjeeDL RubinAutomatic information extraction from unstructured mammography reports using distributed semanticsJ Biomed Inform201878788610.1016/j.jbi.2017.12.01629329701</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="CR30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id531"><!-- named anchor --></a>SM CastroE TseytlinO MedvedevaK MitchellS VisweswaranT BekhuisRS JacobsonAutomated annotation and classification of BI-RADS assessment from radiology reportsJ Biomed Inform20176917718710.1016/j.jbi.2017.04.01128428140PMC5706448</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="CR31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id532"><!-- named anchor --></a>RG ShortJ BralichD BogatyNT BeferaComprehensive word-level classification of screening mammography reports using a neural network sequence labeling approachJ Digit Imaging201932568569210.1007/s10278-018-0141-430338478PMC6737114</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="CR32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id533"><!-- named anchor --></a>R LacsonME GoodrichK HarrisP BrawarskyJS HaasAssessing inaccuracies in automated information extraction of breast imaging findingsJ Digit Imaging201730222823310.1007/s10278-016-9927-427844217PMC5359211</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="CR33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id534"><!-- named anchor --></a>R LacsonK HarrisP BrawarskyTD TostesonT OnegaANA TostesonA KayeI GonzalezR BirdwellJS HaasEvaluation of an automated information extraction tool for imaging data elements to populate a breast cancer screening registryJ Digit Imaging201528556757510.1007/s10278-014-9762-425561069PMC4570892</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="CR34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id535"><!-- named anchor --></a>W-W YimSW KwanM YetisgenTumor reference resolution and characteristic extraction in radiology reports for liver cancer stage predictionJ Biomed Inform20166417919110.1016/j.jbi.2016.10.00527729234PMC5136527</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="CR35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id536"><!-- named anchor --></a>W-W YimSW KwanM YetisgenClassifying tumor event attributes in radiology reportsJ Assoc Inform Sci Technol201768112662267410.1002/asi.23937</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="CR36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id537"><!-- named anchor --></a>W YimT DenmanSW KwanM YetisgenTumor information extraction in radiology reports for hepatocellular carcinoma patientsAMIA Summits Transl Sci Proc2016201645546427570686PMC5001784</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="CR37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id538"><!-- named anchor --></a>P PruittA NaidechJ Van OrnamP BorczukW ThompsonA natural language processing algorithm to extract characteristics of subdural hematoma from head CT reportsEmerg Radiol201926330130610.1007/s10140-019-01673-430693414</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="CR38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id539"><!-- named anchor --></a>F FarjahS HalgrimDSM BuistMK GouldSB ZeliadtET LoggersDS CarrellAn automated method for identifying individuals with a lung nodule can be feasibly implemented across health systemseGEMs201641125410.13063/2327-9214.125427668266PMC5013935</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="CR39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id540"><!-- named anchor --></a>Karunakaran B, Misra D, Marshall K, Mathrawala D, Kethireddy S. Closing the loop-finding lung cancer patients using NLP. In: 2017 IEEE international conference on big data (big data), pp. 2452–61. IEEE, Boston, MA (2017). 10.1109/BigData.2017.8258203.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="CR40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id541"><!-- named anchor --></a>WK TanS HassanpourPJ HeagertySD RundellP SuriHT HuhdanpaaK JamesDS CarrellCP LanglotzNL OrganEN MeierKJ ShermanDF KallmesPH LuetmerB GriffithDR NerenzJG JarvikComparison of natural language processing rules-based and machine-learning systems to identify lumbar spine imaging findings related to low back painAcad Radiol201825111422143210.1016/j.acra.2018.03.00829605561PMC6162177</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41.</span> <a id="CR41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id542"><!-- named anchor --></a>G TrivediC HongER DadashzadehRM HandzelH HochheiserS VisweswaranIdentifying incidental findings from radiology reports of trauma patients: an evaluation of automated feature representation methodsInt J Med Inform2019129818710.1016/j.ijmedinf.2019.05.02131445293PMC6717529</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42.</span> <a id="CR42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id543"><!-- named anchor --></a>S FuLY LeungY WangA-O RaulliDF KallmesKA KinsmanKB NelsonMS ClarkPH LuetmerPR KingsburyDM KentH LiuNatural language processing for the identification of silent brain infarcts from neuroimaging reportsJMIR Med Inform2019721210910.2196/12109PMC652445431066686</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43.</span> <a id="CR43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id544"><!-- named anchor --></a>Jnawali K, Arbabshirani MR, Ulloa AE, Rao N, Patel AA. Automatic classification of radiological report for intracranial hemorrhage. In: 2019 IEEE 13th international conference on semantic computing (ICSC), pp. 187–90. IEEE, Newport Beach, CA, USA (2019). 10.1109/ICOSC.2019.8665578.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44.</span> <a id="CR44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id545"><!-- named anchor --></a>Banerjee I, Madhavan S, Goldman RE, Rubin DL. Intelligent Word embeddings of free-text radiology reports. In: AMIA annual symposium proceedings, pp. 411–20 (2017). Accessed 30 Oct 2020.PMC597757329854105</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45.</span> <a id="CR45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id546"><!-- named anchor --></a>Kłos M, Żyłkowski J, Spinczyk D, Automatic classification of text documents presenting radiology examinations. In: Pietka E, Badura P, Kawa J, Wieclawek W, editors. Proceedings 6th international conference information technology in biomedicine (ITIB’2018). Advances in intelligent systems and computing, pp. 495–505. Springer (2018). 10.1007/978-3-319-91211-0-43.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46.</span> <a id="CR46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id547"><!-- named anchor --></a>Deshmukh N, Gumustop S, Gauriau R, Buch V, Wright B, Bridge C, Naidu R, Andriole K, Bizzo B. Semi-supervised natural language approach for fine-grained classification of medical reports. <a target="xrefwindow" href="http://arxiv.org/abs/1910.13573" id="id548">arXiv:1910.13573</a> [cs.LG] (2019). Accessed 30 Oct 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47.</span> <a id="CR47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id549"><!-- named anchor --></a>C KimV ZhuJ ObeidL LenertNatural language processing and machine learning algorithm to identify brain MRI reports with acute ischemic strokePLoS ONE2019142021277810.1371/journal.pone.0212778PMC639497230818342</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48.</span> <a id="CR48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id550"><!-- named anchor --></a>R GargE OhA NaidechK KordingS PrabhakaranAutomating ischemic stroke subtype classification using machine learning and natural language processingJ Stroke Cerebrovasc Dis20192872045205110.1016/j.jstrokecerebrovasdis.2019.02.00431103549</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49.</span> <a id="CR49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id551"><!-- named anchor --></a>Shin B, Chokshi FH, Lee T, Choi JD. Classification of radiology reports using neural attention models. In: 2017 international joint conference on neural networks (IJCNN), pp. 4363–70. IEEE, Anchorage, AK (2017). 10.1109/IJCNN.2017.7966408.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50.</span> <a id="CR50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id552"><!-- named anchor --></a>E WheaterG MairC SudlowB AlexC GroverW WhiteleyA validated natural language processing algorithm for brain imaging phenotypes from radiology reports in UK electronic health recordsBMC Med Inform Decis Mak201919118410.1186/s12911-019-0908-731500613PMC6734359</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51.</span> <a id="CR51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id553"><!-- named anchor --></a>Gorinski P.J, Wu H, Grover C, Tobin R, Talbot C, Whalley H, Sudlow C, Whiteley W, Alex B. Named entity recognition for electronic health records: a comparison of rule-based and machine learning approaches. <a target="xrefwindow" href="http://arxiv.org/abs/1903.03985" id="id554">arXiv:1903.03985</a> [cs.CL] (2019). Accessed 30 Oct 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52.</span> <a id="CR52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id555"><!-- named anchor --></a>B AlexC GroverR TobinC SudlowG MairW WhiteleyText mining brain imaging reportsJ Biomed Semant20191012310.1186/s13326-019-0211-7PMC684916131711539</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53.</span> <a id="CR53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id556"><!-- named anchor --></a>S BozkurtF GimenezES BurnsideKH GulkesenDL RubinUsing automatically extracted information from mammography reports for decision-supportJ Biomed Inform20166222423110.1016/j.jbi.2016.07.00127388877PMC5108519</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54.</span> <a id="CR54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id557"><!-- named anchor --></a>TA PatelM PuppalaRO OguntiJE EnsorT HeJB ShewaleDP AnkerstVG KaklamaniAA RodriguezSTC WongJC ChangCorrelating mammographic and pathologic findings in clinical decision support using natural language processing and data mining methodsCancer2017123111412110.1002/cncr.3024527571243</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55.</span> <a id="CR55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id558"><!-- named anchor --></a>I BanerjeeS BozkurtE AlkimH SagreiyaAW KurianDL RubinAutomatic inference of BI-RADS final assessment categories from narrative mammography report findingsJ Biomed Inform201910.1016/j.jbi.2019.10313730807833PMC6462247</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56.</span> <a id="CR56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id559"><!-- named anchor --></a>S MiaoT XuY WuH XieJ WangS JingY ZhangX ZhangY YangX ZhangT ShanL WangH XuS WangY LiuExtraction of BI-RADS findings from breast ultrasound reports in Chinese using deep learning approachesInt J Med Inform2018119172110.1016/j.ijmedinf.2018.08.00930342682</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57.</span> <a id="CR57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id560"><!-- named anchor --></a>RM DunneIK IpS AbbettEF GershanikAS RajaA HunsakerR KhorasaniEffect of evidence-based clinical decision support on the use and yield of CT pulmonary angiographic imaging in hospitalized patientsRadiology2015276116717410.1148/radiol.1514120825686367PMC4554207</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58.</span> <a id="CR58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id561"><!-- named anchor --></a>I BanerjeeY LingMC ChenSA HasanCP LanglotzN MoradzadehB ChapmanT AmrheinD MongDL RubinO FarriMP LungrenComparative effectiveness of convolutional neural network (CNN) and recurrent neural network (RNN) architectures for radiology text report classificationArtif Intell Med201997798810.1016/j.artmed.2018.11.00430477892PMC6533167</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59.</span> <a id="CR59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id562"><!-- named anchor --></a>MC ChenRL BallL YangN MoradzadehBE ChapmanDB LarsonCP LanglotzTJ AmrheinMP LungrenDeep learning to classify radiology free-text reportsRadiology2017286384585210.1148/radiol.201717111529135365</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60.</span> <a id="CR60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id563"><!-- named anchor --></a>S MeystreR GouripeddiJ TiederJ SimmonsR SrivastavaS ShahEnhancing comparative effectiveness research with automated pediatric pneumonia detection in a multi-institutional clinical repository: a PHIS+ pilot studyJ Med Internet Res201719516210.2196/jmir.6887PMC544782628506958</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61.</span> <a id="CR61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id564"><!-- named anchor --></a>SE BeyerBJ McKeeSM RegisAB McKeeS FlackeG El SaadawiC WaldAutomatic lung-RADSTM classification with a natural language processing systemJ Thorac Dis2017993114312210.21037/jtd.2017.08.1329221286PMC5708435</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62.</span> <a id="CR62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id565"><!-- named anchor --></a>OV PattersonMS FreibergM SkandersonSJ FodehCA BrandtSL DuVallUnlocking echocardiogram measurements for heart disease research through natural language processingBMC Cardiovasc Disord201717115110.1186/s12872-017-0580-828606104PMC5469017</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63.</span> <a id="CR63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id566"><!-- named anchor --></a>C LeeY KimYS KimJ JangAutomatic disease annotation from radiology reports using artificial intelligence implemented by a recurrent neural networkAm J Roentgenol2019212473474010.2214/AJR.18.1986930699011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64.</span> <a id="CR64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id567"><!-- named anchor --></a>Fiebeck J, Laser H, Winther HB, Gerbel S. Leaving no stone unturned: using machine learning based approaches for information extraction from full texts of a research data warehouse. In: Auer S, Vidal M-E, editors. 13th international conference data integration in the life sciences (DILS 2018). Lecture Notes in Computer Science, pp. 50–8. Springer, Hannover, Germany (2018). 10.1007/978-3-030-06016-9_5.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65.</span> <a id="CR65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id568"><!-- named anchor --></a>Hassanzadeh H, Kholghi M, Nguyen A, Chu K. Clinical document classification using labeled and unlabeled data across hospitals. In: AMIA annual symposium proceedings 2018, pp. 545–54 (2018). Accessed 30 Oct 2020.PMC637129830815095</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66.</span> <a id="CR66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id569"><!-- named anchor --></a>GS KrishnanSS KamathOntology-driven text feature modeling for disease prediction using unstructured radiological notesComput Sist201910.13053/cys-23-3-3238</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67.</span> <a id="CR67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id570"><!-- named anchor --></a>B QenamTY KimMJ CarrollM HogarthText simplification using consumer health vocabulary to generate patient-centered radiology reporting: translation and evaluationJ Med Internet Res2017191241710.2196/jmir.8536PMC574847229254915</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68.</span> <a id="CR68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id571"><!-- named anchor --></a>Lafourcade M, Ramadier L. Radiological text simplification using a general knowledge base. In: 18th international conference on computational linguistics and intelligent text processing (CICLing 2017). CICLing 2017. Budapest, Hungary (2017). 10.1007/978-3-319-77116-8_46.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69.</span> <a id="CR69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id572"><!-- named anchor --></a>Y HongJ ZhangInvestigation of terminology coverage in radiology reporting templates and free-text reportsInt J Knowl Content Dev Technol2015551410.5865/IJKCT.2015.5.1.005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70.</span> <a id="CR70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id573"><!-- named anchor --></a>Comelli A, Agnello L, Vitabile S. An ontology-based retrieval system for mammographic reports. In: 2015 IEEE symposium on computers and communication (ISCC), pp. 1001–6. IEEE, Larnaca (2015). 10.1109/ISCC.2015.7405644</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71.</span> <a id="CR71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id574"><!-- named anchor --></a>V CotikD FilippoJ CastanoAn approach for automatic classification of radiology reports in SpanishStud Health Technol Inform201521663463826262128</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72.</span> <a id="CR72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id575"><!-- named anchor --></a>Johnson E, Baughman WC, Ozsoyoglu G. A method for imputation of semantic class in diagnostic radiology text. In: 2015 IEEE international conference on bioinformatics and biomedicine (BIBM), pp. 750–5. IEEE, Washington, DC (2015). 10.1109/BIBM.2015.7359780.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73.</span> <a id="CR73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id576"><!-- named anchor --></a>Mujjiga S, Krishna V, Chakravarthi KJV. Identifying semantics in clinical reports using neural machine translation. In: Proceedings of the AAAI conference on artificial intelligence, vol. 33(01), pp. 9552–7 (2019). 10.1609/aaai.v33i01.33019552. Accessed 30 Oct 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74.</span> <a id="CR74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id577"><!-- named anchor --></a>Lafourcade M, Ramadier L. Semantic relation extraction with semantic patterns: experiment on radiology report. In: Proceedings of the tenth international conference on language resources and evaluation (LREC 2016). LREC 2016 proceedings. european language resources association (ELRA), Portorož, Slovenia (2016). <a target="xrefwindow" href="https://hal.archives-ouvertes.fr/hal-01382320" id="id578">https://hal.archives-ouvertes.fr/hal-01382320</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75.</span> <a id="CR75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id579"><!-- named anchor --></a>SC ShelmerdineM SinghW NormanR JonesNJ SebireOJ ArthursAutomated data extraction and report analysis in computer-aided radiology audit: practice implications from post-mortem paediatric imagingClin Radiol2019749733117331810.1016/j.crad.2019.04.02131160039</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76.</span> <a id="CR76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id580"><!-- named anchor --></a>T MabotuwanaV HombalS DalalCS HallM GunnDetermining adherence to follow-up imaging recommendationsJ Am Coll Radiol2018153, Part A42242810.1016/j.jacr.2017.11.02229502651</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77.</span> <a id="CR77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id581"><!-- named anchor --></a>S DalalV HombalW-H WengG MankovichT MabotuwanaCS HallJ FullerBE LehnertML GunnDetermining follow-up imaging study using radiology reportsJ Digit Imaging202033112113010.1007/s10278-019-00260-w31452006PMC7064667</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78.</span> <a id="CR78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id582"><!-- named anchor --></a>MD BobbinIK IpVA SahniAB ShinagareR KhorasaniFocal cystic pancreatic lesion follow-up recommendations after publication of ACR white paper on managing incidental findingsJ Am Coll Radiol201714675776410.1016/j.jacr.2017.01.04428476609</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79.</span> <a id="CR79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id583"><!-- named anchor --></a>JL KwanD YermakL MarkellNS PaulKJ ShojaniaP CramFollow up of incidental high-risk pulmonary nodules on computed tomography pulmonary angiography at care transitionsJ Hosp Med201914634935210.12788/jhm.312830794133PMC6625441</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80.</span> <a id="CR80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id584"><!-- named anchor --></a>Mabotuwana T, Hall CS, Tieder J, Gunn ML. Improving quality of follow-up imaging recommendations in radiology. In: AMIA annual symposium proceedings, vol. 2017, pp. 1196–204 (2018). Accessed 30 Oct 2020.PMC597760829854188</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81.</span> <a id="CR81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id585"><!-- named anchor --></a>AD BrownTR MarottaA natural language processing-based model to automate MRI brain protocol selection and prioritizationAcad Radiol201724216016610.1016/j.acra.2016.09.01327889399</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82.</span> <a id="CR82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id586"><!-- named anchor --></a>H TrivediJ MesterhazyB LagunaT VuJH SohnAutomatic determination of the need for intravenous contrast in musculoskeletal MRI examinations using IBM Watson’s natural language processing algorithmJ Digit Imaging20183122455110.1007/s10278-017-0021-328924815PMC5873465</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83.</span> <a id="CR83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id587"><!-- named anchor --></a>Zhang AY, Lam SSW, Liu N, Pang Y, Chan LL, Tang PH. Development of a radiology decision support system for the classification of MRI brain scans. In: 2018 IEEE/ACM 5th international conference on big data computing applications and technologies (BDCAT), pp. 107–15 (2018). 10.1109/BDCAT.2018.00021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84.</span> <a id="CR84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id588"><!-- named anchor --></a>AD BrownTR MarottaUsing machine learning for sequence-level automated MRI protocol selection in neuroradiologyJ Am Med Inform Assoc201825556857110.1093/jamia/ocx12529092082PMC7646939</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85.</span> <a id="CR85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id589"><!-- named anchor --></a>Z YanIK IpAS RajaA GuptaJM KosowskyR KhorasaniYield of CT pulmonary angiography in the emergency department when providers override evidence-based clinical decision supportRadiology2016282371772510.1148/radiol.201615198527689922PMC5330300</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86.</span> <a id="CR86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id590"><!-- named anchor --></a>SK KangK GarryR ChungWH MooreE IturrateJL SwartzDC KimLI HorwitzS BleckerNatural language processing for identification of incidental pulmonary nodules in radiology reportsJ Am Coll Radiol201916111587159410.1016/j.jacr.2019.04.02631132331PMC7686874</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87.</span> <a id="CR87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id591"><!-- named anchor --></a>AD BrownJR KachuraNatural language processing of radiology reports in patients with hepatocellular carcinoma to predict radiology resource utilizationJ Am Coll Radiol201916684084410.1016/j.jacr.2018.12.00430833164</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">88.</span> <a id="CR88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id592"><!-- named anchor --></a>RW GrundmeierAJ MasinoTC CasperJM DeanJ BellR EnriquezS DeakyneJM ChamberlainER AlpernIdentification of long bone fractures in radiology reports using natural language processing to support healthcare quality improvementAppl Clin Inform2016741051106810.4338/ACI-2016-08-RA-012927826610PMC5228143</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">89.</span> <a id="CR89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id593"><!-- named anchor --></a>ME HeilbrunBE ChapmanE NarasimhanN PatelD MoweryFeasibility of natural language processing-assisted auditing of critical findings in chest radiologyJ Am Coll Radiol2019169, Part B1299130410.1016/j.jacr.2019.05.03831229439</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">90.</span> <a id="CR90"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id594"><!-- named anchor --></a>ME MarosR WenzA FörsterMF FroelichC GrodenWH SommerSO SchönbergT HenzlerH WenzObjective comparison using guideline-based query of conventional radiological reports and structured reportsIn Vivo201832484384910.21873/invivo.1131829936469PMC6117779</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">91.</span> <a id="CR91"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id595"><!-- named anchor --></a>MJ MinnAR ZandiehRW FiliceImproving radiology report quality by rapidly notifying radiologist of report errorsJ Digit Imaging201528449249810.1007/s10278-015-9781-925694167PMC4501955</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">92.</span> <a id="CR92"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id596"><!-- named anchor --></a>I GoldshteinG ChodickI KochbaN GalM WebbO ShiboletIdentification and characterization of nonalcoholic fatty liver diseaseClin Gastroenterol Hepatol20201881887188910.1016/j.cgh.2019.08.00731404663</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">93.</span> <a id="CR93"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id597"><!-- named anchor --></a>JS RedmanY NatarajanJK HouJ WangM HanifH FengJR KramerR DesiderioH XuHB El-SeragF KanwalAccurate identification of fatty liver disease in data warehouse utilizing natural language processingDig Dis Sci201762102713271810.1007/s10620-017-4721-928861720</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">94.</span> <a id="CR94"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id598"><!-- named anchor --></a>Y SadaJ HouP RichardsonH El-SeragJ DavilaValidation of case finding algorithms for hepatocellular cancer from administrative data and electronic health records using natural language processingMed Care201654291410.1097/MLR.0b013e3182a3037323929403PMC3875602</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">95.</span> <a id="CR95"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id599"><!-- named anchor --></a>AY LiN ElliotNatural language processing to identify ureteric stones in radiology reportsJ Med Imaging Radiat Oncol201963330731010.1111/1754-9485.1286130720244</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">96.</span> <a id="CR96"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id600"><!-- named anchor --></a>Tan WK, Heagerty PJ. Surrogate-guided sampling designs for classification of rare outcomes from electronic medical records data. <a target="xrefwindow" href="http://arxiv.org/abs/1904.00412" id="id601">arXiv:1904.00412</a> [stat.ME] (2019). Accessed 30 Oct 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">97.</span> <a id="CR97"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id602"><!-- named anchor --></a>K YadavE SariogluH-A ChoiWB CartwrightPS HindsJM ChamberlainAutomated outcome classification of computed tomography imaging reports for pediatric traumatic brain injuryAcad Emerg Med201623217117810.1111/acem.1285926766600PMC5338693</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">98.</span> <a id="CR98"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id603"><!-- named anchor --></a>Mahan M, Rafter D, Casey H, Engelking M, Abdallah T, Truwit C, Oswood M, Samadani U. tbiExtractor: a framework for extracting traumatic brain injury common data elements from radiology reports. bioRxiv 585331 (2019). 10.1101/585331. Accessed 05 Dec 2020.10.1371/journal.pone.0214775PMC732912432609723</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">99.</span> <a id="CR99"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id604"><!-- named anchor --></a>K BrizziSN ZupancBV UdelsmanJA TulskyAA WrightH PoortC LindvallNatural language processing to assess palliative care and end-of-life process measures in patients with breast cancer with leptomeningeal diseaseAm J Hosp Palliat Med201937537137610.1177/104990911988558531698921</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">100.</span> <a id="CR100"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id605"><!-- named anchor --></a>RM Van HarenAM CorreaB SepesiDC RiceWL HofstetterRJ MehranAA VaporciyanGL WalshJA RothSG SwisherMB AntonoffGround glass lesions on chest imaging: evaluation of reported incidence in cancer patients using natural language processingAnn Thorac Surg2019107393694010.1016/j.athoracsur.2018.09.01630612991</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">101.</span> <a id="CR101"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id606"><!-- named anchor --></a>N Noorbakhsh-SabetG TsivgoulisS ShahjoueiY HuN GoyalAV AlexandrovR ZandRacial difference in cerebral microbleed burden among a patient population in the mid-south United StatesJ Stroke Cerebrovasc Dis201827102657266110.1016/j.jstrokecerebrovasdis.2018.05.03129945767</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">102.</span> <a id="CR102"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id607"><!-- named anchor --></a>MK GouldT TangI-LA LiuJ LeeC ZhengKN DanforthAE KoscoJL Di FioreDE SuhRecent trends in the identification of incidental pulmonary nodulesAm J Respir Crit Care Med2015192101208121410.1164/rccm.201505-0990OC26214244</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">103.</span> <a id="CR103"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id608"><!-- named anchor --></a>HT HuhdanpaaWK TanSD RundellP SuriFH ChokshiBA ComstockPJ HeagertyKT JamesAL AvinsSS NedeljkovicDR NerenzDF KallmesPH LuetmerKJ ShermanNL OrganB GriffithCP LanglotzD CarrellS HassanpourJG JarvikUsing natural language processing of free-text radiology reports to identify type 1 modic endplate changesJ Digit Imaging2018311849010.1007/s10278-017-0013-328808792PMC5788819</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">104.</span> <a id="CR104"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id609"><!-- named anchor --></a>AJ MasinoRW GrundmeierJW PenningtonJA GermillerEB CrenshawTemporal bone radiology report classification using open source machine learning and natural langue processing librariesBMC Med Inform Decis Mak20161616510.1186/s12911-016-0306-327267768PMC4896018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">105.</span> <a id="CR105"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id610"><!-- named anchor --></a>VI ValtchinovR LacsonA WangR KhorasaniComparing artificial intelligence approaches to retrieve clinical reports documenting implantable devices posing MRI safety risksJ Am Coll Radiol202017227227910.1016/j.jacr.2019.07.01831415740</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">106.</span> <a id="CR106"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id611"><!-- named anchor --></a>J ZechJ FordeJJ TitanoD KajiA CostaEK OermannDetecting insertion, substitution, and deletion errors in radiology reports using neural sequence-to-sequence modelsAnn Transl Med201910.21037/atm.2018.08.1131317003PMC6603352</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">107.</span> <a id="CR107"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id612"><!-- named anchor --></a>Zhang Y, Merck D, Tsai EB, Manning CD, Langlotz CP. Optimizing the factual correctness of a summary: a study of summarizing radiology reports. <a target="xrefwindow" href="http://arxiv.org/abs/1911.02541" id="id613">arXiv:1911.02541</a> [cs.CL] (2019). Accessed 30 Oct 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">108.</span> <a id="CR108"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id614"><!-- named anchor --></a>JM SteinkampC ChambersD LalevicHM ZafarTS CookToward complete structured information extraction from radiology reports using machine learningJ Digit Imaging201932455456410.1007/s10278-019-00234-y31218554PMC6646440</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">109.</span> <a id="CR109"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id615"><!-- named anchor --></a>A CocosT QianC Callison-BurchAJ MasinoCrowd control: effectively utilizing unscreened crowd workers for biomedical data annotationJ Biomed Inform201769869210.1016/j.jbi.2017.04.00328389234</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">110.</span> <a id="CR110"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id616"><!-- named anchor --></a>Ratner A, Hancock B, Dunnmon J, Goldman R, Ré C. Snorkel MeTaL: weak supervision for multi-task learning. In: Proceedings of the second workshop on data management for end-to-end machine learning. DEEM’18, vol. 3, pp. 1–4. ACM, Houston, TX, USA (2018). 10.1145/3209889.3209898. 10.1145/3209889.3209898. Accessed 30 Oct 2020.PMC643683030931438</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">111.</span> <a id="CR111"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id617"><!-- named anchor --></a>Zhu H, Paschalidis IC, Hall C, Tahmasebi A. Context-driven concept annotation in radiology reports: anatomical phrase labeling. In: AMIA summits on translational science proceedings, vol. 2019, pp. 232–41 (2019). Accessed 30 Oct 2020.PMC656808531258975</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">112.</span> <a id="CR112"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id618"><!-- named anchor --></a>Mikolov T, Chen K, Corrado G, Dean J. Efficient estimation of word representations in vector space (2013). <a target="xrefwindow" href="http://arxiv.org/abs/1301.3781" id="id619">http://arxiv.org/abs/1301.3781</a>. Accessed 7 Feb 2021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">113.</span> <a id="CR113"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id620"><!-- named anchor --></a>Pennington J, Socher R, Manning CD. Glove: global vectors for word representation. In: Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP), pp. 1532–43 (2014).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">114.</span> <a id="CR114"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id621"><!-- named anchor --></a>Mikolov T, Grave E, Bojanowski P, Puhrsch C, Joulin A. Advances in pre-training distributed word representations. In: Proceedings of the international conference on language resources and evaluation (LREC 2018) (2018).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">115.</span> <a id="CR115"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id622"><!-- named anchor --></a>Peters M.E, Neumann M, Iyyer M, Gardner M, Clark C, Lee K, Zettlemoyer L. Deep contextualized word representations. CoRR <b>abs/1802.05365</b> (2018). \_eprint: 1802.05365.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">116.</span> <a id="CR116"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id623"><!-- named anchor --></a>Devlin J, Chang M-W, Lee K, Toutanova K. Bert: pre-training of deep bidirectional transformers for language understanding. arXiv preprint <a target="xrefwindow" href="http://arxiv.org/abs/1810.04805" id="id624">arXiv:1810.04805</a> (2018).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">117.</span> <a id="CR117"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id625"><!-- named anchor --></a>National Library of Medicine: Unified medical language system (2021). <a target="xrefwindow" href="https://www.nlm.nih.gov/research/umls/index.html" id="id626">https://www.nlm.nih.gov/research/umls/index.html</a>. Accessed 7 Feb 2021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">118.</span> <a id="CR118"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id627"><!-- named anchor --></a>RSNA: RadLex (2021). <a target="xrefwindow" href="http://radlex.org/" id="id628">http://radlex.org/</a>. Accessed 7 Feb 2021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">119.</span> <a id="CR119"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id629"><!-- named anchor --></a>National Library of Medicine: SNOMED CT, (2021). <a target="xrefwindow" href="https://www.nlm.nih.gov/healthit/snomedct/index.html" id="id630">https://www.nlm.nih.gov/healthit/snomedct/index.html</a>. Accessed 07 Feb 2021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">120.</span> <a id="CR120"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id631"><!-- named anchor --></a>H BuluDA SippoJM LeeES BurnsideDL RubinProposing new RadLex terms by analyzing free-text mammography reportsJ Digit Imaging201831559660310.1007/s10278-018-0064-029560542PMC6148814</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">121.</span> <a id="CR121"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id632"><!-- named anchor --></a>S HassanpourCP LanglotzUnsupervised topic modeling in a large free text radiology report repositoryJ Digit Imaging2016291596210.1007/s10278-015-9823-326353748PMC4722022</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">122.</span> <a id="CR122"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id633"><!-- named anchor --></a>Y ZhaoNJ FesharakiH LiuJ LuoUsing data-driven sublanguage pattern mining to induce knowledge models: application in medical image reports knowledge representationBMC Med Inform Decis Mak20181816110.1186/s12911-018-0645-329980203PMC6035419</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">123.</span> <a id="CR123"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id634"><!-- named anchor --></a>J CohenA coefficient of agreement for nominal scalesEduc Psychol Meas1960201374610.1177/001316446002000104</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">124.</span> <a id="CR124"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id635"><!-- named anchor --></a>B ShickelPJ TigheA BihoracP RashidiDeep EHR: a survey of recent advances in deep learning techniques for electronic health record (EHR) analysisIEEE J Biomed Health Inform20182251589160410.1109/JBHI.2017.276706329989977PMC6043423</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">125.</span> <a id="CR125"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id636"><!-- named anchor --></a>D ChenS LiuP KingsburyS SohnCB StorlieEB HabermannJM NaessensDW LarsonH LiuDeep learning and alternative learning strategies for retrospective real-world clinical datanpj Digit Med2019211510.1038/s41746-019-0122-031304389PMC6550223</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">126.</span> <a id="CR126"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id637"><!-- named anchor --></a>Yang H, Li L, Yang R, Zhou Y. Towards automated knowledge discovery of hepatocellular carcinoma: extract patient information from Chinese clinical reports. In: Proceedings of the 2nd international conference on medical and health informatics. ICMHI ’18, pp. 111–6. ACM, New York, NY, USA (2018). 10.1145/3239438.3239445. Accessed 30 Oct 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">127.</span> <a id="CR127"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id638"><!-- named anchor --></a>Wood D.A, Lynch J, Kafiabadi S, Guilhem E, Busaidi A.A, Montvila A, Varsavsky T, Siddiqui J, Gadapa N, Townend M, Kiik M, Patel K, Barker G, Ourselin S, Cole JH, Booth TC. Automated labelling using an attention model for radiology reports of MRI scans (ALARM). <a target="xrefwindow" href="http://arxiv.org/abs/2002.06588" id="id639">arXiv:2002.06588</a> [cs.CV] (2020). Accessed 03 Dec 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">128.</span> <a id="CR128"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id640"><!-- named anchor --></a>CJ OngA OrfanoudakiR ZhangFPM CaprasseM HutchL MaD FardO BalogunMI MillerM MinnigH SaglamB PrescottDM GreerS SmirnakisD BertsimasMachine learning and natural language processing methods to identify ischemic stroke, acuity and location from radiology reportsPLoS ONE2020156023490810.1371/journal.pone.0234908PMC730462332559211</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">129.</span> <a id="CR129"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id641"><!-- named anchor --></a>Smit A, Jain S, Rajpurkar P, Pareek A, Ng A, Lungren M. Combining automatic labelers and expert annotations for accurate radiology report labeling using BERT. In: Proceedings of the 2020 conference on empirical methods in natural language processing (EMNLP), pp. 1500–19. Association for Computational Linguistics, Online (2020). 10.18653/v1/2020.emnlp-main.117. <a target="xrefwindow" href="https://www.aclweb.org/anthology/2020.emnlp-main.117" id="id642">https://www.aclweb.org/anthology/2020.emnlp-main.117</a>. Accessed 03 Dec 2020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">130.</span> <a id="CR130"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id643"><!-- named anchor --></a>Grivas A, Alex B, Grover C, Tobin R, Whiteley W. Not a cute stroke: analysis of rule- and neural network-based information extraction systems for brain radiology reports. In: Proceedings of the 11th international workshop on health text mining and information analysis (2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">131.</span> <a id="CR131"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id644"><!-- named anchor --></a>A EttingerWhat BERT is not: lessons from a new suite of psycholinguistic diagnostics for language modelsTrans Assoc Comput Linguist20208344810.1162/tacl\_a_00298</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">132.</span> <a id="CR132"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id645"><!-- named anchor --></a>Alsentzer E, Murphy J, Boag W, Weng W-H, Jindi D, Naumann T, McDermott M. Publicly available clinical BERT embeddings. In: Proceedings of the 2nd clinical natural language processing workshop, pp. 72–8. Association for Computational Linguistics, Minneapolis, Minnesota, USA (2019). 10.18653/v1/W19-1909. <a target="xrefwindow" href="https://www.aclweb.org/anthology/W19-1909" id="id646">https://www.aclweb.org/anthology/W19-1909</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">133.</span> <a id="CR133"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id647"><!-- named anchor --></a>Smit A, Jain S, Rajpurkar P, Pareek A, Ng AY, Lungren MP. CheXbert: combining automatic labelers and expert annotations for accurate radiology report labeling using BERT. CoRR <b>abs/2004.09167</b> (2020). \_eprint: 2004.09167.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">134.</span> <a id="CR134"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id648"><!-- named anchor --></a>K YasakaO AbeDeep learning and artificial intelligence in radiology: current applications and future directionsPLOS Med20181511100270710.1371/journal.pmed.1002707PMC626795130500815</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">135.</span> <a id="CR135"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id649"><!-- named anchor --></a>B PerchaY ZhangS BozkurtD RubinRB AltmanCP LanglotzExpanding a radiology lexicon using contextual patterns in radiology reportsJ Am Med Inform Assoc201825667968510.1093/jamia/ocx15229329435PMC5978019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">136.</span> <a id="CR136"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id650"><!-- named anchor --></a>AM TahmasebiH ZhuG MankovichP PrinsenP KlassenS PilatoR van OmmeringP PatelML GunnP ChangAutomatic normalization of anatomical phrases in radiology reports using unsupervised learningJ Digit Imaging201932161810.1007/s10278-018-0116-530076490PMC6382634</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">137.</span> <a id="CR137"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id651"><!-- named anchor --></a>I BanerjeeMC ChenMP LungrenDL RubinRadiology report annotation using intelligent word embeddings: applied to multi-institutional chest CT cohortJ Biomed Inform201877112010.1016/j.jbi.2017.11.01229175548PMC5771955</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">138.</span> <a id="CR138"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id652"><!-- named anchor --></a>T YoungD HazarikaS PoriaE CambriaRecent trends in deep learning based natural language processing [review article]IEEE Comput Intell Mag2018133557510.1109/MCI.2018.2840738</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">139.</span> <a id="CR139"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id653"><!-- named anchor --></a>LF DonnellyR GrzeszczukCV GuimaraesW ZhangGS Bisset IIIUsing a natural language processing and machine learning algorithm program to analyze inter-radiologist report style variation and compare variation between radiologists when using highly structured versus more free text reportingCurr Probl Diagn Radiol201948652453010.1067/j.cpradiol.2018.09.00530391224</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">140.</span> <a id="CR140"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id654"><!-- named anchor --></a>Z XieY YangM WangM LiH HuangD ZhengR ShuT LingIntroducing information extraction to radiology information systems to improve the efficiency on reading reportsMethods Inf Med2019582–039410610.1055/s-0039-169499231514210</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">141.</span> <a id="CR141"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id655"><!-- named anchor --></a>J ZechM PainJ TitanoM BadgeleyJ ScheffleinA SuA CostaJ BedersonJ LeharEK OermannNatural language-based machine learning models for the annotation of clinical radiology reportsRadiology2018287257058010.1148/radiol.201817109329381109</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">142.</span> <a id="CR142"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id656"><!-- named anchor --></a>Yim W, Kwan SW, Johnson G, Yetisgen M. Classification of hepatocellular carcinoma stages from free-text clinical and radiology reports. In: AMIA annual symposium proceedings, vol. 2017, pp. 1858–67 (2018). Accessed 30 Oct 2020.PMC597763829854257</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">143.</span> <a id="CR143"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id657"><!-- named anchor --></a>Payrovnaziri SN, Chen Z, Rengifo-Moreno P, Miller T, Bian J, Chen JH, Liu X, He Z. Explainable artificial intelligence models using real-world electronic health record data: a systematic scoping review. J Am Med Inform Assoc. 2020;27(7):1173–85. 10.1093/jamia/ocaa053.10.1093/jamia/ocaa053PMC764728132417928</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">144.</span> <a id="CR144"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id658"><!-- named anchor --></a>H DongV Suárez-PaniaguaW WhiteleyH WuExplainable automated coding of clinical notes using hierarchical label-wise attention networks and label embedding initialisationJ Biomed Inform202110.1016/j.jbi.2021.10372833711543</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Research</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Natural language processing</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Radiology</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Systematic review</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+<p class="metadata-entry"><span class="generated"><span class="data">issue-copyright-statement</span>: </span>© The Author(s) 2021</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
