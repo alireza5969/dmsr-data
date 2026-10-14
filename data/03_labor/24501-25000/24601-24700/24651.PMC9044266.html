@@ -1,0 +1,1481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Zahid, Rashid, Hussain, Azim, Syed, Saad, and Shang: Recognition of Urdu sign language: a systematic review of the machine learning classification</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>PeerJ Comput Sci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>PeerJ Comput Sci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3966</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>peerjcs</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101660598</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>peerj-cs</p>
+<p class="metadata-entry"><span class="generated">Title: </span>PeerJ Computer Science</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2376-5992</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>PeerJ, Inc</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="peerj-cs-08-883.pdf">peerj-cs-08-883.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="https://peerj.com/articles/cs-883">https://peerj.com/articles/cs-883</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>©2022 Zahid et al.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022, Zahid et al.</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open access article distributed under the terms of the <a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">Creative Commons Attribution License</a>, which permits unrestricted use, distribution, reproduction and adaptation in any medium and for any purpose provided that it is properly attributed. For attribution, the original author(s), title, publication source (PeerJ Computer Science) and either DOI or URL of the article must be cited.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>13 December 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>20 January 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>18 February 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>8</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>398954<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>e883</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9044266</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9044266.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9044266</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9044266</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35494799</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.7717/peerj-cs.883</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>cs-883</p>
+<p class="metadata-entry"><span class="generated">Funding: </span>The authors received no funding for this work.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Recognition of Urdu sign language: a systematic review of the machine learning classification</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Hira Zahid<span class="generated">[</span><a href="#aff-1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">Email: </span><a href="mailto:hira.zahidsh@yahoo.com">hira.zahidsh@yahoo.com</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Munaf Rashid<span class="generated">[</span><a href="#aff-2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Samreen Hussain<span class="generated">[</span><a href="#aff-3">3</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Fahad Azim<span class="generated">[</span><a href="#aff-4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Sidra Abid Syed<span class="generated">[</span><a href="#aff-5">5</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Afshan Saad<span class="generated">[</span><a href="#aff-6">6</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff-1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>Faculty of Engineering Science Technology and Management, Department of Biomedical Engineering and Department of Electrical Engineering, Ziauddin University, Karachi, Pakistan</p>
+<p class="metadata-entry"><a id="aff-2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>Faculty of Engineering Science Technology and Management, Department of Electrical Engineering and Department of Software Engineering, Ziauddin University, Karachi, Pakistan</p>
+<p class="metadata-entry"><a id="aff-3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>HESSA Project, US AID Program, Karachi, Pakistan</p>
+<p class="metadata-entry"><a id="aff-4"><!-- named anchor --></a><span class="generated">[</span>4<span class="generated">] </span>Faculty of Engineering Science Technology and Management, Electrical Engineering Department, Ziauddin University, Karachi, Pakistan</p>
+<p class="metadata-entry"><a id="aff-5"><!-- named anchor --></a><span class="generated">[</span>5<span class="generated">] </span>Faculty of Engineering Science Technology and Management, Department of Biomedical Engineering, Ziauddin University, Karachi, Pakistan</p>
+<p class="metadata-entry"><a id="aff-6"><!-- named anchor --></a><span class="generated">[</span>6<span class="generated">] </span>Computer Science Department, Muhammad Ali Jinnah University, Karachi, Pakistan</p>
+</div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Yilun Shang</p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id10"><!-- named anchor --></a><h3 class="section-title">Background and Objective</h3>
+<p id="id11">Humans communicate with one another using language systems such as written words or body language (movements), hand motions, head gestures, facial expressions, lip motion, and many more. Comprehending sign language is just as crucial as learning a natural language. Sign language is the primary mode of communication for those who have a deaf or mute impairment or are disabled. Without a translator, people with auditory difficulties have difficulty speaking with other individuals. Studies in automatic recognition of sign language identification utilizing machine learning techniques have recently shown exceptional success and made significant progress. The primary objective of this research is to conduct a literature review on all the work completed on the recognition of Urdu Sign Language through machine learning classifiers to date.</p>
+</div>
+<div class="section">
+<a id="id12"><!-- named anchor --></a><h3 class="section-title">Materials and methods</h3>
+<p id="id13">All the studies have been extracted from databases, i.e., PubMed, IEEE, Science Direct, and Google Scholar, using a structured set of keywords. Each study has gone through proper screening criteria, <i>i.e.</i>, exclusion and inclusion criteria. PRISMA guidelines have been followed and implemented adequately throughout this literature review.</p>
+</div>
+<div class="section">
+<a id="id14"><!-- named anchor --></a><h3 class="section-title">Results</h3>
+<p id="id15">This literature review comprised 20 research articles that fulfilled the eligibility requirements. Only those articles were chosen for additional full-text screening that follows eligibility requirements for peer-reviewed and research articles and studies issued in credible journals and conference proceedings until July 2021. After other screenings, only studies based on Urdu Sign language were included. The results of this screening are divided into two parts; (1) a summary of all the datasets available on Urdu Sign Language. (2) a summary of all the machine learning techniques for recognizing Urdu Sign Language.</p>
+</div>
+<div class="section">
+<a id="id16"><!-- named anchor --></a><h3 class="section-title">Conclusion</h3>
+<p id="id17">Our research found that there is only one publicly-available USL sign-based dataset with pictures versus many character-, number-, or sentence-based publicly available datasets. It was also concluded that besides SVM and Neural Network, no unique classifier is used more than once. Additionally, no researcher opted for an unsupervised machine learning classifier for detection. To the best of our knowledge, this is the first literature review conducted on machine learning approaches applied to Urdu sign language.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="id18"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id19">Everything in our world is imperfect, and there is no place for idealism, and many scientific data and figures demonstrate this. In the same way, humans are neither flawless nor ideal. Some people are born differently than others. We describe them as impaired since they are distinct, but in truth, they are unique and have particular requirements. It is estimated that over 72 million people worldwide (<a href="#ref-49">World Federation of the Deaf, 2022</a>) have hearing impairment difficulties, with approximately 10 million people in Pakistan (<a href="#ref-39">Pakistan Association of the Deaf, 2022b</a>) being deaf, as per the International Federation of the Deaf. There is no all-encompassing international system that provides a comprehensive manner for deaf people to talk with one another worldwide. Since the beginning of time, visual communication has conveyed information. Generally, various new types of sign languages are being used worldwide. A sign language is a way of communication that, instead of using sonically transmissible sound patterns, uses visually transmis (<a href="#ref-9">Disabled World, 2017</a>) smoothly. To communicate effectively between the deaf community and the general public without paper and pencil, there are a variety of sign languages available in different countries (<a href="#ref-48">U. S. Department of Justice, 2020</a>), including American Sign Language, British Sign Language, Spanish Sign Language, and probably sign languages throughout every country. Even if you are not fluent in sign language, you have almost certainly come into contact with it, either through witnessing it in action or through using a translator at a seminar or a performance. There is still more sign language than strikes the eye, and several dialects other than American Sign Language (ASL) are used for sign language communication. It is estimated that around 60 sign languages are recognized and utilized worldwide (<a href="#ref-10">Elakkiya, 2020</a>). According to the National Institute on Deafness and Other Communication Disorders (NIDCD), ASL is “a complete and complex language that includes signals generated by moving the hands in conjunction with facial expressions and body postures”. It is more than just a translation of English into hand gestures; it has grammar and pronunciation norms and can handle varied ethnicities and accents (<a href="#ref-4">American Sign Language, 2021</a>).</p>
+<p id="id20">Furthermore, there is a lot of reported in different languages like Chinese (<a href="#ref-28">Jiang et al., 2020</a>), American (<a href="#ref-52">Zafrulla et al., 2011</a>), or Indian (<a href="#ref-19">Gupta &amp; Kumar, 2021</a>) that demonstrate that there is much work has been done on sign language recognition systems globally. The diversity of sign languages seen throughout the world indicates that local and regional language and culture are significant elements in the evolution of sign language, as is true of the development of any spoken language, regardless of its origin. However, many people have wondered why there isn’t a universal sign language for those who sign. This may be analogous to asking why there isn’t a universally accepted spoken language spoken all over the globe (<a href="#ref-10">Elakkiya, 2020</a>).</p>
+<p id="id21">Individuals who are deaf in Pakistan communicate with one another through the Pakistani Sign Language (PSL). It is subject to the rules of linguistics, just like all other sign languages, and, like the spoken Urdu language, it has its grammar, letters and words, and gestures and complex sentences. It also has a distinct vocabulary of signs and a constantly evolving syntax, just like any other sign language system worldwide. PSL has matured into a full-fledged language due to its evolution over time. Many people speak Urdu in South Asia, and it is the official language of Pakistan. Nastaleeq and Naskh are the most popular Urdu writing systems. It is extensively used in old Urdu literature and newspapers to write in the Nastaleeq way. Many other ethnic languages, including Persian, Pashto, Punjabi, Baluchi, and Saraiki, also use the Nastaleeq writing style to write their texts too. Indo-European language Urdu has its roots in India. It is one of the most widely spoken languages on the Indian subcontinent. Urdu is one of India’s 23 official languages and one of Pakistan’s two. Also, Dubai has a large population of people who speak this language. A majority of the world’s population speaks it. This is a written form of Urdu derived from the Persian script, which is evolved from the Arabic script. Urdu is also written from right to left, like Arabic. As a practical medium of interaction for deaf people everywhere, sign languages have emerged as the backbone of individual Deaf cultures. Hearing people who cannot communicate verbally due to a disability or disorder like augmentative and alternative communication or have deaf family members, such as children of deaf adults, utilize signs in addition to those who are deaf or have hearing loss. Furthermore, a blind person can also be benefitted from this work through a text-image to speech technology. If a character in an image is automatically detected through a machine, then converting it in the sound can be life-support to blind people.</p>
+<p id="id22">In contrast to Arabic and Persian, Urdu has more independent letters. Urdu has a more complex script than Arabic or Persian (<a href="#ref-23">Hussain, Ali &amp; Akram, 2015</a>; <a href="#ref-5">Anwar, Wang &amp; Wang, 2006</a>). In <a href="#fig-1">Figs. 1A</a> and <a href="#fig-1">1B</a>, Urdu sign language is represented and labeled with words and numbers.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-1</span><div class="caption"><h4 class="subsection-title">(A) Sign of Huroof-e- tahaji. (B) Sign of numbers (<a href="#ref-39">anonymous, b</a>).</h4></div>
+</div>
+<p id="id23">Gesture recognition has found a significant usage in this field, allowing deaf and mute patients to interact with us more efficiently and effectively. A considerable time and effort have been made in sign recognition worldwide. However, in the case of Urdu Sign Language, no such work could be found. Nearly 0.2 million deaf and mute Pakistani citizens do not have access to assistive and rehabilitative technology. There have been two types of gestures: static gestures are those gestures that incorporate dynamic hand, body, and face motions. Static gestures are those that do not change. During static gestures, the noticeable gesture occurs within a specific period that the performer physically orchestrates. A succession of finger and hand stances are identified and analyzed (<a href="#ref-26">Imtiaz et al., 2015</a>; <a href="#ref-44">Subban &amp; Mishra, 2013</a>). In different parts of the world, other sign languages are used, including British Sign Language (BSL), American Sign Language (ASL), Arabic Sign Language (ArSL), and Spanish Sign Language (<a href="#ref-7">Carol &amp; Humphries, 1988</a>). Each of these sign languages has developed independently of the others. Typically, gestures in sign languages are generated either by signs that are ideographic notional hand movements, such as the thumbs-up, which is frequently used for the word “ok”, or by spelling words letter by letter following specific sign language norms (<a href="#ref-32">Li, Yang &amp; Peng, 2009</a>). Two key technologies are being deployed for hand posture or gesture recognition. There are two approaches: one is based on computer vision, which takes photographs of the signer and converts them into text using image analysis algorithms, and the other is based on machine learning. The third option is the use of a sensor-equipped glove (<a href="#ref-38">Oudah, Al-Naji &amp; Chahl, 2020</a>).</p>
+<p id="id24">Due to various factors, the current state of Sign Language Recognition (SLR) is around 30 years behind voice recognition systems. One of the critical reasons for this is that receiving and detecting two-dimensional video data is far more complex than analyzing linear audio signals. Furthermore, verbal communication lexical and grammatical objects have yet to be fully discovered, and no conventional vocabularies are available. Aside from this, there are no traditional definitions for such a considerable number of signs. Sign language classification and recognition reached a high point in terms of research papers in the early 1990s (<a href="#ref-13">Elakkiya, 2020</a>). The data collecting techniques are critical in categorizing the essential characteristics of various research on SLR. Due to the extreme dependability of sensor-based SLR systems, many studies have investigated data gloves or cyber gloves to extract the properties of the mechanical and non-mechanical components of the signs. Unfortunately, the usage of such sensors is unpleasant and restricting for the signer.</p>
+<p id="id25">Furthermore, due to the high cost of sensors, real deployments of sensor-based SLR devices are impractical. On the other side, vision-based SLR systems have profoundly affected researchers due to their weight and capacity to handle crowded, dynamic heterogeneous situations and fluctuations under varied illuminations and occlusions in the feature extraction stage (<a href="#ref-15">Elakkiya &amp; Selvamani, 2015</a>; <a href="#ref-12">Elakkiya &amp; Selvamani, 2018</a>). The population sampling methods are critical in categorizing various SLR works’ essential aspects. Due to the extreme dependability of sensor-based SLR systems, many researchers have employed electronic gloves or cyber gloves to extract data of the mechanical and non-mechanical components of the signs.</p>
+<p id="id26">Nonetheless, for the signer, the usage of these sensors is somewhat uncomfortable and extremely limiting (<a href="#ref-16">Elakkiya et al., 2012</a>). In addition, due to the high cost of sensors, practical applications of sensor-based SLR systems are impractical. On the other hand, vision-based SLR systems have profoundly affected researchers due to their heaviness and capacity to manage crowded, dynamic heterogeneous surroundings and fluctuations in the segmentation stage under varying illuminations and occlusions (<a href="#ref-14">Elakkiya, Kannan &amp; Selvamani, 2013</a>). The SLR solutions’ standard element automatically allows signer-dependent actions, <i>i.e.,</i> all signers are trained before involving the patient. Signer independence or cross-validation among signers, on the other hand, entails the normalization of features to eliminate signer interactions. The range between some signers and the camera and the signer’s posture and magnification is rarely disclosed. SLR’s early phases were comparable to speech recognition in that they focused on individual signs.</p>
+<p id="id27">Even though various SLR methods for identifying continuous phrases have been created, the detection accuracy has only achieved up to 90% for short dictionaries. The epenthesis motion occurs among adjacent signs in endless sign sentences. Previous studies have not specified if these are directly modeled, indirectly constructed, or just ignored. The action base will be expanded if transition movements are additionally simulated with the signs. Transition motions may be misclassified as signs unless they are modeled or ignored. The current recognition system recognizes a vast vocabulary simply utilizing sensor-based equipment, depending on the state-of-the-art sign language recognition. The classification performance is valid for the confined test situation, and many systems are signer-dependent. There isn’t much information about heftiness in real-time applications of SLR systems.</p>
+<p id="id28">Furthermore, the specific vocabulary collections are unknown, and no common language for such speeches exists. In conclusion, none of the existing recognition systems meet the stringent real-world application requirements (<a href="#ref-11">Elakkiya &amp; Selvamani, 2017</a>). Keeping in mind the following implications of sensor-based SLR systems, the machine learning-based recognition seems too helpful and most effective and accurate.</p>
+<p id="id29">On the other hand, computer vision-based methods use bare hands without colored gloves or sensors. Compared to sensor-based methods, vision-based solutions offer more mobility and normalcy for signers and be more cost-efficient due to a single camera. The classification methods may be divided into two types based on machine learning techniques: supervised learning and unsupervised learning. The SLR system can detect static and dynamic gestures of signs using these methods. For SLR, there are many categorization methods available. Neural networks (NNs), Hidden Markov models, support vector machine (SVM), KNN, K-means clustering, self-organizing maps (SOM), dynamic time warping, finite state machines, Kalman filtering, particle filtering, the condensation algorithm, and Bayesian classifier are some special classification techniques (<a href="#ref-10">Elakkiya, 2020</a>; <a href="#ref-17">Gomes et al., 2016</a>).</p>
+<p id="id30">This literature review is needed to discover which classifiers have been utilized with what claimed accuracies and which sections of Urdu language have not been examined to locate data sources that other researchers have been using. To get insight into how others have defined and measured essential concepts. ‘Contribute to the advancement of knowledge in the area. It is a good idea to go over the literature to see what has been done previously and what worked and didn’t. Because of this, you may uncover gaps in the literature, which you can then seek to fix or address with your study by analyzing previous studies. To help future researchers in Urdu sign language, we have examined the merits and drawbacks of the previous research. This research study provides a literature review of all the previously published research studies in both journals (<i>n</i> = 10) and conference proceedings (<i>n</i> = 10), as shown in <a href="#table-1">Tables 1</a> and <a href="#table-2">2</a>, based on machine learning approaches for recognizing Urdu Sign language. This literature review will look at several published studies regarding their details, findings, and validity. We will explore them, summarize them, analyze them, and discuss them. Until July 2021, we will continue to conduct research based on research publications from databases such as PubMed, IEEE Xplore, ScienceDirect, and Google Scholar. The primary goal of this work is to evaluate the current efficacy of various machine learning approaches used to diagnose voice disorders and examine the development, weaknesses, and difficulties that have been identified and future research requirements. The following are the main contributions of this paper: (1) to review the classifiers, feature extracted, and accuracies of included articles. (2) To review the datasets and their types, no. of images, and accuracies of included articles. (3) Identify the gap.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table-1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<span class="object-id">10.7717/peerjcs.883/table-1</span><div class="caption"><h4 class="subsection-title">Detail conditions that are set for the adding and eliminating of published articles.</h4></div>
+<table frame="hsides" rules="groups">
+<a id="id31"><!-- named anchor --></a><colgroup span="1">
+<a id="id32"><!-- named anchor --></a><col span="1">
+<col span="1">
+</colgroup>
+<thead>
+<a id="id35"><!-- named anchor --></a><tr>
+<a id="id36"><!-- named anchor --></a><th rowspan="1" colspan="1">
+<a id="id37"><!-- named anchor --></a>Conditions to add published articles</th>
+<th rowspan="1" colspan="1">
+<a id="id38"><!-- named anchor --></a>Conditions to eliminate published articles</th>
+</tr>
+</thead>
+<tbody>
+<a id="id39"><!-- named anchor --></a><tr>
+<a id="id40"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id41"><!-- named anchor --></a>Research articles that use Urdu sign language as a language for detection</td>
+<td rowspan="1" colspan="1">
+<a id="id42"><!-- named anchor --></a>Research articles that do not use Urdu sign language for detection.</td>
+</tr>
+<tr>
+<a id="id43"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id44"><!-- named anchor --></a>Research articles that use machine learning classifiers as a problem solution.</td>
+<td rowspan="1" colspan="1">
+<a id="id45"><!-- named anchor --></a>Research articles that do not use machine learning classifiers as a problem solution</td>
+</tr>
+<tr>
+<a id="id46"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id47"><!-- named anchor --></a>Research articles that report quantitative outcomes of machine learning.</td>
+<td rowspan="1" colspan="1">
+<a id="id48"><!-- named anchor --></a>Research articles that do not report quantitative outcomes of machine learning.</td>
+</tr>
+<tr>
+<a id="id49"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id50"><!-- named anchor --></a>Research articles that only uses gesture-based, character bases, or EMG signal-based as a dataset to recognize Urdu Sign Language.</td>
+<td rowspan="1" colspan="1">
+<a id="id51"><!-- named anchor --></a>Research articles that do not use either gesture- based, character-based, or EMG signal-based as a dataset to recognize Urdu Sign Language.</td>
+</tr>
+<tr>
+<a id="id52"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id53"><!-- named anchor --></a>Research articles that are written in the English language</td>
+<td rowspan="1" colspan="1">
+<a id="id54"><!-- named anchor --></a>Research articles that do not write in the English language.</td>
+</tr>
+<tr>
+<a id="id55"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id56"><!-- named anchor --></a>Research articles that are published in Journals or conference proceedings.</td>
+<td rowspan="1" colspan="1">
+<a id="id57"><!-- named anchor --></a>Research articles that are published in either Journals or conference proceedings.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table-2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<span class="object-id">10.7717/peerjcs.883/table-2</span><div class="caption"><h4 class="subsection-title"> Summarized detail of dataset for 20 included articles.</h4></div>
+<table frame="hsides" rules="groups">
+<a id="id58"><!-- named anchor --></a><colgroup span="1">
+<a id="id59"><!-- named anchor --></a><col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+</colgroup>
+<thead>
+<a id="id67"><!-- named anchor --></a><tr>
+<a id="id68"><!-- named anchor --></a><th rowspan="1" colspan="1">
+<a id="id69"><!-- named anchor --></a>Author/Year</th>
+<th rowspan="1" colspan="1">
+<a id="id70"><!-- named anchor --></a>Dataset name</th>
+<th rowspan="1" colspan="1">
+<a id="id71"><!-- named anchor --></a>Dataset type</th>
+<th rowspan="1" colspan="1">
+<a id="id72"><!-- named anchor --></a>Dataset demographics</th>
+<th rowspan="1" colspan="1">
+<a id="id73"><!-- named anchor --></a>Publically available or not?</th>
+<th rowspan="1" colspan="1">
+<a id="id74"><!-- named anchor --></a>No. of images/ signals</th>
+<th rowspan="1" colspan="1">
+<a id="id75"><!-- named anchor --></a>Overall accuracy</th>
+</tr>
+</thead>
+<tbody>
+<a id="id76"><!-- named anchor --></a><tr>
+<a id="id77"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id78"><!-- named anchor --></a><a href="#ref-20">Halim &amp; Abbas (2014)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id79"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id80"><!-- named anchor --></a>PSL signs images</td>
+<td rowspan="1" colspan="1">
+<a id="id81"><!-- named anchor --></a><i>n</i> = 10 (female = 4, male = 6)</td>
+<td rowspan="1" colspan="1">
+<a id="id82"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id83"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id84"><!-- named anchor --></a>91%</td>
+</tr>
+<tr>
+<a id="id85"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id86"><!-- named anchor --></a><a href="#ref-29">Kanwal et al. (2014)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id87"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id88"><!-- named anchor --></a>PSL signs images</td>
+<td rowspan="1" colspan="1">
+<a id="id89"><!-- named anchor --></a><i>n</i> = 30 (female = 15, male = 15)</td>
+<td rowspan="1" colspan="1">
+<a id="id90"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id91"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id92"><!-- named anchor --></a>90%</td>
+</tr>
+<tr>
+<a id="id93"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id94"><!-- named anchor --></a><a href="#ref-35">Nasir et al. (2014)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id95"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id96"><!-- named anchor --></a>PSL signs images</td>
+<td rowspan="1" colspan="1">
+<a id="id97"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id98"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id99"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id100"><!-- named anchor --></a>97% ; 86%</td>
+</tr>
+<tr>
+<a id="id101"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id102"><!-- named anchor --></a><a href="#ref-8">Chandio et al. (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id103"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id104"><!-- named anchor --></a>Text images from environment</td>
+<td rowspan="1" colspan="1">
+<a id="id105"><!-- named anchor --></a>NR</td>
+<td rowspan="1" colspan="1">
+<a id="id106"><!-- named anchor --></a>Yes</td>
+<td rowspan="1" colspan="1">
+<a id="id107"><!-- named anchor --></a>Isolated Urdu character image dataset contains 19901 images; cropped word image dataset contains 14100 words.</td>
+<td rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>95%; 78.13%</td>
+</tr>
+<tr>
+<a id="id109"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id110"><!-- named anchor --></a><a href="#ref-24">Imran et al. (2021a)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id111"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>Signs of 37 characters of Urdu language</td>
+<td rowspan="1" colspan="1">
+<a id="id113"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id114"><!-- named anchor --></a>Yes</td>
+<td rowspan="1" colspan="1">
+<a id="id115"><!-- named anchor --></a>40 images of each letter of Urdu language. 3˘7 x 40 = 1480 images.</td>
+<td rowspan="1" colspan="1">
+<a id="id116"><!-- named anchor --></a>90%</td>
+</tr>
+<tr>
+<a id="id117"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id118"><!-- named anchor --></a><a href="#ref-34">Naseem et al. (2019)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id119"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>Counting from 1 till 10</td>
+<td rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id122"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id123"><!-- named anchor --></a>Each sign’s dataset ranged from 1500 to 2000 images. The total number of imagesk was around 21000.</td>
+<td rowspan="1" colspan="1">
+<a id="id124"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id125"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a><a href="#ref-42">Sagheer et al. (2010)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>CENPARMI</td>
+<td rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>Images of s isolated digits, numeral strings with/without decimal points, five special symbols, 44 isolated characters, 57 Urdu words (mostly financial related),</td>
+<td rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>NR</td>
+<td rowspan="1" colspan="1">
+<a id="id130"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>14,407 samples images</td>
+<td rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>97%</td>
+</tr>
+<tr>
+<a id="id133"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a><a href="#ref-1">Ahmad et al. (2017)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>UPTI</td>
+<td rowspan="1" colspan="1">
+<a id="id136"><!-- named anchor --></a>Images of sentences</td>
+<td rowspan="1" colspan="1">
+<a id="id137"><!-- named anchor --></a>NR</td>
+<td rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>Yes</td>
+<td rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>10063 sentence images</td>
+<td rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>96%; 95%</td>
+</tr>
+<tr>
+<a id="id141"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id142"><!-- named anchor --></a><a href="#ref-31">Khan et al. (2020b)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id143"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>11 phrases of PSL using sEMG</td>
+<td rowspan="1" colspan="1">
+<a id="id145"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id146"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id147"><!-- named anchor --></a>550 EMG signals</td>
+<td rowspan="1" colspan="1">
+<a id="id148"><!-- named anchor --></a>85.4%</td>
+</tr>
+<tr>
+<a id="id149"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id150"><!-- named anchor --></a><a href="#ref-43">Sami et al. (2014)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id151"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id152"><!-- named anchor --></a>37 Urdu alphabets</td>
+<td rowspan="1" colspan="1">
+<a id="id153"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id154"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id155"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>75%</td>
+</tr>
+<tr>
+<a id="id157"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id158"><!-- named anchor --></a><a href="#ref-22">Husnain et al. (2019)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id159"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id160"><!-- named anchor --></a>38 Urdu character and 10 numerals</td>
+<td rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>500 native Urdu speakers</td>
+<td rowspan="1" colspan="1">
+<a id="id162"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>800 images (800 × 10 = 8000 numeral images and<br class="br">800 × 38 = 30,400 Urdu characters)</td>
+<td rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>96.04%; 98.3%</td>
+</tr>
+<tr>
+<a id="id165"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id166"><!-- named anchor --></a><a href="#ref-30">Khan et al. (2020a)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id167"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id168"><!-- named anchor --></a>26 alphabets in PSL using sEMG</td>
+<td rowspan="1" colspan="1">
+<a id="id169"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id170"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id171"><!-- named anchor --></a>30 signals Per alphabet was recorded.</td>
+<td rowspan="1" colspan="1">
+<a id="id172"><!-- named anchor --></a>81%; 63%</td>
+</tr>
+<tr>
+<a id="id173"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id174"><!-- named anchor --></a><a href="#ref-18">Gul et al. (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id176"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id177"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id178"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id179"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id180"><!-- named anchor --></a>92.5%</td>
+</tr>
+<tr>
+<a id="id181"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a><a href="#ref-2">Ahmad et al. (2007)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id184"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id185"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>No</td>
+<td rowspan="1" colspan="1">
+<a id="id187"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id188"><!-- named anchor --></a>93.4%</td>
+</tr>
+<tr>
+<a id="id189"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id190"><!-- named anchor --></a><a href="#ref-6">Arafat &amp; Iqbal (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id191"><!-- named anchor --></a>CLE</td>
+<td rowspan="1" colspan="1">
+<a id="id192"><!-- named anchor --></a>Synthetic image with ligature</td>
+<td rowspan="1" colspan="1">
+<a id="id193"><!-- named anchor --></a>NR</td>
+<td rowspan="1" colspan="1">
+<a id="id194"><!-- named anchor --></a>Yes</td>
+<td rowspan="1" colspan="1">
+<a id="id195"><!-- named anchor --></a>3801 training images and 423 test images.</td>
+<td rowspan="1" colspan="1">
+<a id="id196"><!-- named anchor --></a>94%</td>
+</tr>
+<tr>
+<a id="id197"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a><a href="#ref-3">Ahmed et al. (2017)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id199"><!-- named anchor --></a>UNHD</td>
+<td rowspan="1" colspan="1">
+<a id="id200"><!-- named anchor --></a>Sentences of Urdu language</td>
+<td rowspan="1" colspan="1">
+<a id="id201"><!-- named anchor --></a>500 writers</td>
+<td rowspan="1" colspan="1">
+<a id="id202"><!-- named anchor --></a>Yes</td>
+<td rowspan="1" colspan="1">
+<a id="id203"><!-- named anchor --></a>The dataset consist of 312,000 words written<br class="br">By 500 candidates with total of 10,000 lines.</td>
+<td rowspan="1" colspan="1">
+<a id="id204"><!-- named anchor --></a>92%</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<div class="footnote">
+<a id="table-2fn"><!-- named anchor --></a><p id="id205"><span class="generated">[i]</span> <b>Notes.</b></p>
+</div>
+<div class="footnote">
+<a id="table-2fn1"><!-- named anchor --></a><p id="id206"><span class="generated">[ii]</span> <div class="def-list">
+<a id="dl1"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id207">
+<div class="def-term cell" id="id208"><p>PSL</p></div>
+<div class="def-def cell" id="id209"><p class="first" id="id210">Pakistani Sign Language</p></div>
+</div>
+<div class="def-item row" id="id211">
+<div class="def-term cell" id="id212"><p>NA</p></div>
+<div class="def-def cell" id="id213"><p class="first" id="id214">Not Available</p></div>
+</div>
+<div class="def-item row" id="id215">
+<div class="def-term cell" id="id216"><p>NR</p></div>
+<div class="def-def cell" id="id217"><p class="first" id="id218">Not Required</p></div>
+</div>
+<div class="def-item row" id="id219">
+<div class="def-term cell" id="id220"><p>CENPARMI</p></div>
+<div class="def-def cell" id="id221"><p class="first" id="id222">Centre for Pattern Recognition and Machine Intelligence</p></div>
+</div>
+<div class="def-item row" id="id223">
+<div class="def-term cell" id="id224"><p>UPTI</p></div>
+<div class="def-def cell" id="id225"><p class="first" id="id226">Urdu Printed Text Images</p></div>
+</div>
+<div class="def-item row" id="id227">
+<div class="def-term cell" id="id228"><p>UNHD</p></div>
+<div class="def-def cell" id="id229"><p class="first" id="id230">Urdu-Nasta’liq Handwritten Dataset</p></div>
+</div>
+</div>
+</div></p>
+</div>
+</div>
+</div>
+<p id="id231">The following is a breakdown of the structure of this paper: “Introduction” includes a brief overview of sign language and discusses Urdu Sign Language in detail. The technique used to perform this literature review is described in “Materials and Methods”. The findings of this systematic examination are discussed in greater detail in “Results” of this document. “Discussion” discusses the primary research questions we are pursuing. “Conclusion” contains the conclusion of this entire work, including limitations, research gaps, and suggestions for further exploration.</p>
+</div>
+<div class="section">
+<a id="id232"><!-- named anchor --></a><h2 class="main-title">Materials and Methods</h2>
+<div class="section">
+<a id="id233"><!-- named anchor --></a><h3 class="section-title">Search methodology</h3>
+<p id="id234">For this literature review, the population (P), intervention (I), comparison (C), and outcome (O) base PICO method was taken into consideration which was previously used by <a href="#ref-45">Syed, Rashid &amp; Hussain (2020)</a> and clearly defined the goals and intervention of this literature review and for what population it is intended for. PICO was used to develop the search strategy, which was as follows: Population = deaf people in Pakistan, Intervention = recognition of Urdu Sign Language, Comparison = all the datasets developed for Urdu Sign Language and all the machine learning classifiers implemented on Urdu Sign Language, and Outcome = accuracies reported in the selected study. To construct a set of search strings, the Boolean operator combined relevant analogs and alternative words: AND focuses and limits the search, while OR widens and increases the investigation (<a href="#ref-45">Syed, Rashid &amp; Hussain, 2020</a>). The following search term was created with the assistance of these Boolean operators:</p>
+<div class="list">
+<a id="list-1"><!-- named anchor --></a><ul style="list-style-type: none">
+<li><p id="id235"><span class="label"> •</span> (Pakistani sign language) OR (Urdu sign language) AND (“computer vision” OR “neural network” OR “artificial intelligence” OR “pattern recognition” OR “machine learning”)</p></li>
+<li><p id="id236"><span class="label"> •</span> (Pakistani sign language) AND (“computer vision” OR “neural network” OR “artificial intelligence” OR “pattern recognition” OR “machine learning”)</p></li>
+<li><p id="id237"><span class="label"> •</span> (Urdu sign language) AND (“computer vision” OR “neural network” OR “artificial intelligence” OR “pattern recognition” OR “machine learning”)</p></li>
+<li><p id="id238"><span class="label"> •</span> (Urdu sign language/Pakistani sign language) AND (computer vision)</p></li>
+<li><p id="id239"><span class="label"> •</span> (Urdu sign language/Pakistani sign language) AND (neural network)</p></li>
+<li><p id="id240"><span class="label"> •</span> (Urdu sign language/Pakistani sign language) AND (artificial intelligence)</p></li>
+<li><p id="id241"><span class="label"> •</span> (Urdu sign language/Pakistani sign language) AND (pattern recognition),</p></li>
+<li><p id="id242"><span class="label"> •</span> (Urdu sign language/Pakistani sign language) AND (machine learning)</p></li>
+</ul>
+</div>
+<p id="id243">Searches for peer-reviewed papers were conducted in four large databases: PubMed, IEEE Xplore, Google Scholar, and ScienceDirect (all of which are free to use). Review papers, research articles, conference abstracts, correspondences, data articles, debates, and case reports were the only types of articles that could be found in ScienceDirect. All three databases will be checked until July 2021. These databases have been searched using a set of keywords that have been shown above and utilized to do searches. The search results were found in PubMed (<i>n</i> = 3), IEEE Xplore (<i>n</i> = 9), Google Scholar (<i>n</i> = 11), and ScienceDirect (<i>n</i> = 49), with a total of 72 results when the initial search was performed, as shown in <a href="#fig-2">Fig. 2</a>. In <a href="#fig-3">Fig. 3</a>, it can be seen that most research work for the application of machine learning techniques for Urdu Sign Language Recognition has been conducted and published in the last fifteen years, from 2007 to 2021, which itself exhibits the significance of this investigation.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-2</span><div class="caption"><h3 class="title">Pie Chart depicts the total number of research studies.</h3></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-3"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-3</span><div class="caption"><h3 class="title">Publication trends in the last 17 years.</h3></div>
+</div>
+</div>
+<div class="section">
+<a id="id244"><!-- named anchor --></a><h3 class="section-title">Survey methodology</h3>
+<p id="id245">To declutter the research studies extracted through the PICO search method defined in <a href="#ref-45">Syed, Rashid &amp; Hussain (2020)</a>, PRISMA (<a href="#ref-33">Liberati et al., 2009</a>) protocols were followed. Search results were collected and arranged using the online endnote system, as depicted in <a href="#fig-4">Fig. 4</a>. The endnote web system constructed a data table taken from each selected document. Full texts of articles that were deemed possibly appropriate were uploaded to the Endnote website for viewing (by Clarivate Analytics). In the first attempt, it was necessary to apply the search criteria (<a href="#table-1">Table 1</a>) to each specified database to include the whole document in journals and conferences. There have been thousands of useless results from this approach, and as a result, a decision is taken to limit further the search to only the title and type of material contained within the page.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-4"><!-- named anchor --></a><h5 class="label">Figure 4</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-4</span><div class="caption"><h3 class="title">Flowchart as per PRISMA (<a href="#ref-33">Liberati et al., 2009</a>) guidelines.</h3></div>
+</div>
+<p id="id246">Further research is determined by referring to the sources of the linked studies discovered. Following the collection of leading search research, we evaluated the titles and abstracts of the studies to identify relevant ones. The current investigation results, including a comprehensive text, are being used to assess the relevant studies.</p>
+</div>
+</div>
+<div class="section">
+<a id="id247"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<p id="id248"><a href="#table-2">Table 2</a> depicts the details of all the datasets used in the selected studies, including a character-based, EMG signals-based, and sign images-based dataset. <a href="#fig-5">Figure 5</a> representing that which dataset is the most used and which is the least used and as per the resulting signal based EMG data has only used twice in <a href="#ref-31">Khan et al. (2020b)</a> and <a href="#ref-30">Khan et al. (2020a)</a> whereas dataset which contains the images of sign used four times in <a href="#ref-20">Halim &amp; Abbas (2014)</a>, <a href="#ref-29">Kanwal et al. (2014)</a>, <a href="#ref-35">Nasir et al. (2014)</a> and <a href="#ref-24">Imran et al. (2021a)</a>. The most used type of dataset are the character-based datasets in <a href="#ref-8">Chandio et al. (2020)</a>, <a href="#ref-34">Naseem et al. (2019)</a>, <a href="#ref-42">Sagheer et al. (2010)</a>, <a href="#ref-1">Ahmad et al. (2017)</a>, <a href="#ref-43">Sami, (2014)</a>, <a href="#ref-22">Husnain et al. (2019)</a>, <a href="#ref-18">Gul et al. (2020)</a>
+<a href="#ref-6">Arafat &amp; Iqbal (2020)</a> and <a href="#ref-3">Ahmed et al. (2017)</a>. Also, in <a href="#fig-6">Fig. 6</a>, we can observe that only five datasets are publically available out of four datasets (<a href="#ref-8">Chandio et al., 2020</a>; <a href="#ref-42">Sagheer et al., 2010</a>; <a href="#ref-6">Arafat &amp; Iqbal, 2020</a>; <a href="#ref-3">Ahmed et al., 2017</a>) contain either character, numeral, or sentence-based images. Only one dataset (<a href="#ref-33">Liberati et al., 2009</a>) is publically available, which is based on images of the visually impaired individual making signs of Urdu Language and the highest accuracy reported in publically available datasets is 97% by <a href="#ref-8">Chandio et al. (2020)</a>, which is reported on the text-based dataset and not on sign based dataset which is the actual lackness in this area.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-5"><!-- named anchor --></a><h5 class="label">Figure 5</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-5</span><div class="caption"><h4 class="subsection-title">Pie chart mainly representing the used dataset.</h4></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-6"><!-- named anchor --></a><h5 class="label">Figure 6</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-6</span><div class="caption"><h4 class="subsection-title">Graph of reported accuracies of the publicly available dataset.</h4></div>
+</div>
+<p id="id249">Whereas in <a href="#fig-7">Fig. 7</a>, all the not publically available datasets, the highest reported accuracy 98%, again reported on the text-based dataset and not on the sign-based dataset. In <a href="#table-2">Table 2</a>, <a href="#ref-20">Halim &amp; Abbas (2014)</a>, <a href="#ref-29">Kanwal et al. (2014)</a>, <a href="#ref-35">Nasir et al. (2014)</a> and <a href="#ref-24">Imran et al. (2021a)</a> are the only authors who have used sign based language dataset. Generally, there are two types in recognizing the Urdu language, <i>i.e.,</i> sign-based images and text-based images. Sign language recognition models employ two kinds of input data to extract the essential characteristics: static and dynamic. Several deep-based models using still or sequential inputs have been presented in recent years. While active inputs provide sequential information that might help increase the sign language recognition rate, there are still certain obstacles to overcome, such as the computational cost of input sequences. Dynamic inputs may also be divided into separate dynamical inputs and continuous inputs. Discrete active inputs are utilized at the word level, whereas continual inputs are used at the sentence level. Tokenization of sentences into individual words, identifying the start and conclusion of a phrase, and handling abbreviations and repetitions in the sentence are all issues with continuous dynamic inputs. We’ll go through the sign language recognition algorithms that have utilized these inputs in the following sections.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-7"><!-- named anchor --></a><h5 class="label">Figure 7</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-7</span><div class="caption"><h4 class="subsection-title">Graph of reported accuracies of the dataset that is not publicly available.</h4></div>
+</div>
+<p id="id250"><a href="#table-3">Table 3</a> summarizes all 20 studies that are included in this literature review. This table covers all the important details, <i>i.e.,</i> classifier name, which feature is extracted, reported accuracy, reported sensitivity and reported specificity. The study is either published in a journal or conference. From <a href="#table-3">Table 3</a>, we can analyzed that the SVM (<a href="#ref-8">Chandio et al., 2020</a>; <a href="#ref-24">Imran et al., 2021a</a>; <a href="#ref-42">Sagheer et al., 2010</a>; <a href="#ref-1">Ahmad et al., 2017</a>; <a href="#ref-31">Khan et al., 2020b</a>; <a href="#ref-3">Ahmed et al., 2017</a>; <a href="#ref-25">Imran et al., 2021b</a>) and Neural Network (<a href="#ref-8">Chandio et al., 2020</a>; <a href="#ref-34">Naseem et al., 2019</a>; <a href="#ref-2">Ahmad et al., 2007</a>; <a href="#ref-6">Arafat &amp; Iqbal, 2020</a>; <a href="#ref-41">Sagheer et al., 2009</a>; <a href="#ref-36">Naz et al., 2015</a>; <a href="#ref-46">Ul-Hasan et al., 2013</a>) is the commonly used classifier by researchers for the detection of Urdu Sign Language other than these both rest of the classifiers used only once <i>i.e.,</i> DTW (<a href="#ref-20">Halim &amp; Abbas, 2014</a>), HMM (<a href="#ref-18">Gul et al., 2020</a>).</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table-3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<span class="object-id">10.7717/peerjcs.883/table-3</span><div class="caption"><h4 class="subsection-title">Summarized detail of machine learning classifiers and feature extraction of 20 included articles.</h4></div>
+<table frame="hsides" rules="groups">
+<a id="id251"><!-- named anchor --></a><colgroup span="1">
+<a id="id252"><!-- named anchor --></a><col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+</colgroup>
+<thead>
+<a id="id261"><!-- named anchor --></a><tr>
+<a id="id262"><!-- named anchor --></a><th rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>Author/Year</th>
+<th rowspan="1" colspan="1">
+<a id="id264"><!-- named anchor --></a>Journal/ Conference</th>
+<th rowspan="1" colspan="1">
+<a id="id265"><!-- named anchor --></a>Dataset</th>
+<th rowspan="1" colspan="1">
+<a id="id266"><!-- named anchor --></a>Classification technique</th>
+<th rowspan="1" colspan="1">
+<a id="id267"><!-- named anchor --></a>Feature selection/filter</th>
+<th rowspan="1" colspan="1">
+<a id="id268"><!-- named anchor --></a>Overall accuracy</th>
+<th rowspan="1" colspan="1">
+<a id="id269"><!-- named anchor --></a>Overall sensitivity</th>
+<th rowspan="1" colspan="1">
+<a id="id270"><!-- named anchor --></a>Overall specificity</th>
+</tr>
+</thead>
+<tbody>
+<a id="id271"><!-- named anchor --></a><tr>
+<a id="id272"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id273"><!-- named anchor --></a><a href="#ref-20">Halim &amp; Abbas (2014)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id274"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id275"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id276"><!-- named anchor --></a>DTW</td>
+<td rowspan="1" colspan="1">
+<a id="id277"><!-- named anchor --></a>Normalization of skeleton frame data</td>
+<td rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>91%</td>
+<td rowspan="1" colspan="1">
+<a id="id279"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id280"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id281"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id282"><!-- named anchor --></a><a href="#ref-29">Kanwal et al. (2014)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id283"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id284"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id285"><!-- named anchor --></a>Euclidean Distance</td>
+<td rowspan="1" colspan="1">
+<a id="id286"><!-- named anchor --></a>PCA coefficients</td>
+<td rowspan="1" colspan="1">
+<a id="id287"><!-- named anchor --></a>90%</td>
+<td rowspan="1" colspan="1">
+<a id="id288"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id289"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id290"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id291"><!-- named anchor --></a><a href="#ref-35">Nasir et al. (2014)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id292"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id294"><!-- named anchor --></a>Bagging Ensemble</td>
+<td rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a>Dimension reduction by PCA</td>
+<td rowspan="1" colspan="1">
+<a id="id296"><!-- named anchor --></a>97%; 86%</td>
+<td rowspan="1" colspan="1">
+<a id="id297"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id299"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a><a href="#ref-8">Chandio et al. (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id301"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id303"><!-- named anchor --></a>SVM; RNN-CNN</td>
+<td rowspan="1" colspan="1">
+<a id="id304"><!-- named anchor --></a>HOG, LBP; CTC</td>
+<td rowspan="1" colspan="1">
+<a id="id305"><!-- named anchor --></a>95%; 78.13%</td>
+<td rowspan="1" colspan="1">
+<a id="id306"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id308"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id309"><!-- named anchor --></a><a href="#ref-24">Imran et al. (2021a)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id311"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id312"><!-- named anchor --></a>SVM</td>
+<td rowspan="1" colspan="1">
+<a id="id313"><!-- named anchor --></a>Saturation and Hue components of image</td>
+<td rowspan="1" colspan="1">
+<a id="id314"><!-- named anchor --></a>90%</td>
+<td rowspan="1" colspan="1">
+<a id="id315"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id316"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id317"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a><a href="#ref-34">Naseem et al. (2019)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id319"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id320"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id321"><!-- named anchor --></a>CNN</td>
+<td rowspan="1" colspan="1">
+<a id="id322"><!-- named anchor --></a>Inception V3 architecture</td>
+<td rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id324"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id325"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id326"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a><a href="#ref-42">Sagheer et al. (2010)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id328"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id329"><!-- named anchor --></a>CENPARMI</td>
+<td rowspan="1" colspan="1">
+<a id="id330"><!-- named anchor --></a>SVM</td>
+<td rowspan="1" colspan="1">
+<a id="id331"><!-- named anchor --></a>Structural and gradient features</td>
+<td rowspan="1" colspan="1">
+<a id="id332"><!-- named anchor --></a>97%</td>
+<td rowspan="1" colspan="1">
+<a id="id333"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id334"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id335"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id336"><!-- named anchor --></a><a href="#ref-1">Ahmad et al. (2017)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id337"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id338"><!-- named anchor --></a>UPTI</td>
+<td rowspan="1" colspan="1">
+<a id="id339"><!-- named anchor --></a>ULR-SDA; SVM</td>
+<td rowspan="1" colspan="1">
+<a id="id340"><!-- named anchor --></a>jitter, elastic elongation, threshold and sensitivity</td>
+<td rowspan="1" colspan="1">
+<a id="id341"><!-- named anchor --></a>96%; 95%</td>
+<td rowspan="1" colspan="1">
+<a id="id342"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id343"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id344"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id345"><!-- named anchor --></a><a href="#ref-31">Khan et al. (2020b)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id346"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id347"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id348"><!-- named anchor --></a>Linear SVM</td>
+<td rowspan="1" colspan="1">
+<a id="id349"><!-- named anchor --></a>Time domain, spectral domain, shape, and texture</td>
+<td rowspan="1" colspan="1">
+<a id="id350"><!-- named anchor --></a>85.4%</td>
+<td rowspan="1" colspan="1">
+<a id="id351"><!-- named anchor --></a>85.36%</td>
+<td rowspan="1" colspan="1">
+<a id="id352"><!-- named anchor --></a>85.81%</td>
+</tr>
+<tr>
+<a id="id353"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id354"><!-- named anchor --></a><a href="#ref-43">Sami et al. (2014)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id355"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id356"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id357"><!-- named anchor --></a>Cross correlation</td>
+<td rowspan="1" colspan="1">
+<a id="id358"><!-- named anchor --></a>Edge detection of second derivative</td>
+<td rowspan="1" colspan="1">
+<a id="id359"><!-- named anchor --></a>75%</td>
+<td rowspan="1" colspan="1">
+<a id="id360"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id361"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id362"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id363"><!-- named anchor --></a><a href="#ref-22">Husnain et al. (2019)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id364"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id365"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id366"><!-- named anchor --></a>CNN</td>
+<td rowspan="1" colspan="1">
+<a id="id367"><!-- named anchor --></a>Pixel- and geometrical-based</td>
+<td rowspan="1" colspan="1">
+<a id="id368"><!-- named anchor --></a>98.3%</td>
+<td rowspan="1" colspan="1">
+<a id="id369"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id370"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id371"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id372"><!-- named anchor --></a><a href="#ref-30">Khan et al. (2020a)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id373"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id374"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id375"><!-- named anchor --></a>Linear Discriminant; Quadratic discriminant</td>
+<td rowspan="1" colspan="1">
+<a id="id376"><!-- named anchor --></a>Time domain, statistical domain, shape, spectral domain, cepstral domain</td>
+<td rowspan="1" colspan="1">
+<a id="id377"><!-- named anchor --></a>81%; 63%</td>
+<td rowspan="1" colspan="1">
+<a id="id378"><!-- named anchor --></a>84.05%; 66.4%</td>
+<td rowspan="1" colspan="1">
+<a id="id379"><!-- named anchor --></a>84.7%; 65.9%</td>
+</tr>
+<tr>
+<a id="id380"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id381"><!-- named anchor --></a><a href="#ref-18">Gul et al. (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id382"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id383"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id384"><!-- named anchor --></a>HMM</td>
+<td rowspan="1" colspan="1">
+<a id="id385"><!-- named anchor --></a>3D vectors</td>
+<td rowspan="1" colspan="1">
+<a id="id386"><!-- named anchor --></a>92.5%</td>
+<td rowspan="1" colspan="1">
+<a id="id387"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id388"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id389"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id390"><!-- named anchor --></a><a href="#ref-2">Ahmad et al. (2007)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id391"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id392"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id393"><!-- named anchor --></a>NN</td>
+<td rowspan="1" colspan="1">
+<a id="id394"><!-- named anchor --></a>Segmentation of characters</td>
+<td rowspan="1" colspan="1">
+<a id="id395"><!-- named anchor --></a>93.4%</td>
+<td rowspan="1" colspan="1">
+<a id="id396"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id397"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id398"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id399"><!-- named anchor --></a><a href="#ref-6">Arafat &amp; Iqbal (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id400"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id401"><!-- named anchor --></a>CLE</td>
+<td rowspan="1" colspan="1">
+<a id="id402"><!-- named anchor --></a>DLN (FasterRCNN, RRNN, TSDNN)</td>
+<td rowspan="1" colspan="1">
+<a id="id403"><!-- named anchor --></a>Resnet50, Googlenet</td>
+<td rowspan="1" colspan="1">
+<a id="id404"><!-- named anchor --></a>94%</td>
+<td rowspan="1" colspan="1">
+<a id="id405"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id406"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id407"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id408"><!-- named anchor --></a><a href="#ref-3">Ahmed et al. (2017)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id409"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id410"><!-- named anchor --></a>CENPARMI</td>
+<td rowspan="1" colspan="1">
+<a id="id411"><!-- named anchor --></a>SVM</td>
+<td rowspan="1" colspan="1">
+<a id="id412"><!-- named anchor --></a>400D gradient feature</td>
+<td rowspan="1" colspan="1">
+<a id="id413"><!-- named anchor --></a>98.61%</td>
+<td rowspan="1" colspan="1">
+<a id="id414"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id415"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id416"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id417"><!-- named anchor --></a><a href="#ref-41">Sagheer et al. (2009)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id418"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id419"><!-- named anchor --></a>UNHD</td>
+<td rowspan="1" colspan="1">
+<a id="id420"><!-- named anchor --></a>RNN</td>
+<td rowspan="1" colspan="1">
+<a id="id421"><!-- named anchor --></a>Textline segmentation</td>
+<td rowspan="1" colspan="1">
+<a id="id422"><!-- named anchor --></a>92%</td>
+<td rowspan="1" colspan="1">
+<a id="id423"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id424"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id425"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id426"><!-- named anchor --></a><a href="#ref-40">Sabbour &amp; Shafait (2013)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id427"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id428"><!-- named anchor --></a>UPTI</td>
+<td rowspan="1" colspan="1">
+<a id="id429"><!-- named anchor --></a>Line segmentation</td>
+<td rowspan="1" colspan="1">
+<a id="id430"><!-- named anchor --></a>Contour extraction, shape context</td>
+<td rowspan="1" colspan="1">
+<a id="id431"><!-- named anchor --></a>91%</td>
+<td rowspan="1" colspan="1">
+<a id="id432"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id433"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id434"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id435"><!-- named anchor --></a><a href="#ref-36">Naz et al. (2015)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id436"><!-- named anchor --></a>Journal</td>
+<td rowspan="1" colspan="1">
+<a id="id437"><!-- named anchor --></a>UPTI</td>
+<td rowspan="1" colspan="1">
+<a id="id438"><!-- named anchor --></a>MD-RNN</td>
+<td rowspan="1" colspan="1">
+<a id="id439"><!-- named anchor --></a>vertical and horizontal edges intensities, foreground distribution, density function, intensity feature, horizontal projection, contrast intensity</td>
+<td rowspan="1" colspan="1">
+<a id="id440"><!-- named anchor --></a>94.97%</td>
+<td rowspan="1" colspan="1">
+<a id="id441"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id442"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id443"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id444"><!-- named anchor --></a><a href="#ref-46">Ul-Hasan et al. (2013)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id445"><!-- named anchor --></a>Conference</td>
+<td rowspan="1" colspan="1">
+<a id="id446"><!-- named anchor --></a>UPTI</td>
+<td rowspan="1" colspan="1">
+<a id="id447"><!-- named anchor --></a>BLSTM-RNN</td>
+<td rowspan="1" colspan="1">
+<a id="id448"><!-- named anchor --></a>Baseline information</td>
+<td rowspan="1" colspan="1">
+<a id="id449"><!-- named anchor --></a>86.42%</td>
+<td rowspan="1" colspan="1">
+<a id="id450"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id451"><!-- named anchor --></a>NA</td>
+</tr>
+<tr>
+<a id="id452"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id453"><!-- named anchor --></a><a href="#ref-25">Imran et al. (2021b)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id454"><!-- named anchor --></a>journal</td>
+<td rowspan="1" colspan="1">
+<a id="id455"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id456"><!-- named anchor --></a>SVM</td>
+<td rowspan="1" colspan="1">
+<a id="id457"><!-- named anchor --></a>Achromatic decomposition</td>
+<td rowspan="1" colspan="1">
+<a id="id458"><!-- named anchor --></a>90%</td>
+<td rowspan="1" colspan="1">
+<a id="id459"><!-- named anchor --></a>NA</td>
+<td rowspan="1" colspan="1">
+<a id="id460"><!-- named anchor --></a>NA</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<div class="footnote">
+<a id="table-3fn"><!-- named anchor --></a><p id="id461"><span class="generated">[i]</span> <b>Notes.</b></p>
+</div>
+<div class="footnote">
+<a id="table-3fn1"><!-- named anchor --></a><p id="id462"><span class="generated">[ii]</span> <div class="def-list">
+<a id="dl2"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id463">
+<div class="def-term cell" id="id464"><p>PSL</p></div>
+<div class="def-def cell" id="id465"><p class="first" id="id466">Pakistani Sign Language</p></div>
+</div>
+<div class="def-item row" id="id467">
+<div class="def-term cell" id="id468"><p>NA</p></div>
+<div class="def-def cell" id="id469"><p class="first" id="id470">Not Available</p></div>
+</div>
+<div class="def-item row" id="id471">
+<div class="def-term cell" id="id472"><p>NR</p></div>
+<div class="def-def cell" id="id473"><p class="first" id="id474">Not Required</p></div>
+</div>
+<div class="def-item row" id="id475">
+<div class="def-term cell" id="id476"><p>DTW</p></div>
+<div class="def-def cell" id="id477"><p class="first" id="id478">Dynamic Time Warping</p></div>
+</div>
+<div class="def-item row" id="id479">
+<div class="def-term cell" id="id480"><p>PCA</p></div>
+<div class="def-def cell" id="id481"><p class="first" id="id482">Principal Component Analysis</p></div>
+</div>
+<div class="def-item row" id="id483">
+<div class="def-term cell" id="id484"><p>SVM</p></div>
+<div class="def-def cell" id="id485"><p class="first" id="id486">Support Vector Machine</p></div>
+</div>
+<div class="def-item row" id="id487">
+<div class="def-term cell" id="id488"><p>HOG</p></div>
+<div class="def-def cell" id="id489"><p class="first" id="id490">Histogram of Oriented Gradients</p></div>
+</div>
+<div class="def-item row" id="id491">
+<div class="def-term cell" id="id492"><p>LBP</p></div>
+<div class="def-def cell" id="id493"><p class="first" id="id494">Local Binary Pattern</p></div>
+</div>
+<div class="def-item row" id="id495">
+<div class="def-term cell" id="id496"><p>CTC</p></div>
+<div class="def-def cell" id="id497"><p class="first" id="id498">Connectionist Temporal Classification</p></div>
+</div>
+<div class="def-item row" id="id499">
+<div class="def-term cell" id="id500"><p>RNN</p></div>
+<div class="def-def cell" id="id501"><p class="first" id="id502">Recurrent Neural Network</p></div>
+</div>
+<div class="def-item row" id="id503">
+<div class="def-term cell" id="id504"><p>CNN</p></div>
+<div class="def-def cell" id="id505"><p class="first" id="id506">Convolutional Neural Network</p></div>
+</div>
+<div class="def-item row" id="id507">
+<div class="def-term cell" id="id508"><p>CENPARMI</p></div>
+<div class="def-def cell" id="id509"><p class="first" id="id510">Centre for Pattern Recognition and Machine Intelligence</p></div>
+</div>
+<div class="def-item row" id="id511">
+<div class="def-term cell" id="id512"><p>UPTI</p></div>
+<div class="def-def cell" id="id513"><p class="first" id="id514">Urdu Printed Text Images</p></div>
+</div>
+<div class="def-item row" id="id515">
+<div class="def-term cell" id="id516"><p>ULR-SDA</p></div>
+<div class="def-def cell" id="id517"><p class="first" id="id518">Urdu Ligature Recognition Stacked Denoising Auto encoder</p></div>
+</div>
+<div class="def-item row" id="id519">
+<div class="def-term cell" id="id520"><p>EMG</p></div>
+<div class="def-def cell" id="id521"><p class="first" id="id522">Electro MyoGraphy</p></div>
+</div>
+<div class="def-item row" id="id523">
+<div class="def-term cell" id="id524"><p>HMM</p></div>
+<div class="def-def cell" id="id525"><p class="first" id="id526">Hidden Markov Model</p></div>
+</div>
+<div class="def-item row" id="id527">
+<div class="def-term cell" id="id528"><p>NN</p></div>
+<div class="def-def cell" id="id529"><p class="first" id="id530">Neural Network</p></div>
+</div>
+<div class="def-item row" id="id531">
+<div class="def-term cell" id="id532"><p>DLN</p></div>
+<div class="def-def cell" id="id533"><p class="first" id="id534">Deep Learning Network</p></div>
+</div>
+<div class="def-item row" id="id535">
+<div class="def-term cell" id="id536"><p>RRNN</p></div>
+<div class="def-def cell" id="id537"><p class="first" id="id538">Regression Residual Neural Network</p></div>
+</div>
+<div class="def-item row" id="id539">
+<div class="def-term cell" id="id540"><p>TSDNN</p></div>
+<div class="def-def cell" id="id541"><p class="first" id="id542">Two Stream Deep Neural Network</p></div>
+</div>
+<div class="def-item row" id="id543">
+<div class="def-term cell" id="id544"><p>CLE</p></div>
+<div class="def-def cell" id="id545"><p class="first" id="id546">Center of Language Engineering</p></div>
+</div>
+<div class="def-item row" id="id547">
+<div class="def-term cell" id="id548"><p>UNHD</p></div>
+<div class="def-def cell" id="id549"><p class="first" id="id550">Urdu-Nasta’liq Handwritten Dataset</p></div>
+</div>
+<div class="def-item row" id="id551">
+<div class="def-term cell" id="id552"><p>MD-RNN</p></div>
+<div class="def-def cell" id="id553"><p class="first" id="id554">Multi-Dimensional Recurrent Neural Network</p></div>
+</div>
+<div class="def-item row" id="id555">
+<div class="def-term cell" id="id556"><p>BLSTM</p></div>
+<div class="def-def cell" id="id557"><p class="first" id="id558">Bidirectional Long Short Term Memory</p></div>
+</div>
+</div>
+</div></p>
+</div>
+</div>
+</div>
+<p id="id559"><a href="#fig-8">Figure 8</a> represents the reported accuracies that have been generated after using SVM as a classifier, and it has been noted that the highest accuracy in SVM is written by Sagheer et al. in (<a href="#ref-3">Ahmed et al., 2017</a>) on a character-based dataset which is publically available by the name of UNHD (Urdu-Nasta’liq Handwritten Dataset). The Support Vector Machine (SVM) is an old classification technique that has piqued the research community’s attention, particularly in machine classification, regression, and learning, among other areas. SVM with the accompanying classes that are well-known. This is described as the process of filtering or extracting characteristics. Even if no prediction of unknown samples is required, feature evaluation and SVM classification have been utilized in conjunction with one another. In class differentiation, they can designate the main sets involved in the process. The SVM depicts the entrance space as a vast area with several doors. By generating an optimal hyperplane separation, the SVM determined the boundary between regions belonging to both classes of sites. The hyperplane is selected to optimize the separation between the closest samples of exercises. Initially, SVM models were developed to sort linear categories into subcategories. Because of the massive characteristics, it is impossible to use the function attributes to identify the separation hyperplane in their pure form.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-8"><!-- named anchor --></a><h5 class="label">Figure 8</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-8</span><div class="caption"><h4 class="subsection-title">Graph of reported accuracies of detection of Urdu Sign Language using SVM.</h4></div>
+</div>
+<p id="id560">The specific part is used to calculate non-linear mapping utilizing unique non-linear variables called the kernel, derived from the characteristic function. It has the advantage of operating in the input area where the weighted sum of the kernel function assessed by support vectors can be utilized to solve the classification problem. In contrast, the support vectors have the disadvantage of only functioning in the output area. The SVM algorithm can create a variety of learning machines by utilizing a variety of kernel functions. Compared to artificial neural networks, SVM tends to be significantly more accurate and produce more promising outcomes (<a href="#ref-47">Uma Rani &amp; Holi, 2014</a>). Support vector machines (SVMs) have emerged as a popular machine learning technique for classification, regression, and novelty detection tasks. They exhibit outstanding performance and effectiveness on a wide range of real-world questions, and the approach is conceptually motivated by logic. It is not necessary to seek out the architecture of the learner machine through experimentation (<a href="#ref-21">Huang et al., 2018</a>) to achieve success. There are only a few free parameters available. Even though SVMs are incredibly effective classifiers that use non-linear kernels, they have drawbacks: (1). It is necessary to test alternative kernel configurations and model parameters to obtain the optimal model; (2).</p>
+<p id="id561">In some cases, training might take a lengthy time, especially if there are many characteristics or examples in the data set; (3). Their inner workings are difficult to comprehend since the fundamental models are built on sophisticated mathematical frameworks, and their conclusions are tough to interpret. The selection of features using all available data, followed by the testing of classifier training, for example, results in an optimistic error estimate (<a href="#ref-51">Yue, Li &amp; Hao, 2003</a>).</p>
+<p id="id562"><a href="#fig-9">Figure 9</a> represents the reported accuracies that have been generated after using neural networks, which include RNN, CNN, DLN, MD-RNN, and BLSTM-RNN. In the CNN, numerous hierarchy levels are formed of routing groups and grouping layers, and each of these levels is defined by a different type of chart. A convolutional layer, which receives data at the input level, is the starting point for most CNNs. The convolution layer is responsible for convolutionary processes involving a small number of filtering maps of the same dimension. In addition, the result from this layer is passed to the sample layer, which reduces the scale of the subsequent layers in the sequence. CNN is closely associated with a wide range of deep neural networks locally (<a href="#ref-27">Jan et al., 0000</a>). These systems are then deployed on several hundred cores of GPU architecture based on the GPU architecture. Following the previous layer information blocks (<a href="#ref-37">O’Shea &amp; Nash, 2015</a>), the appropriate people will assign the role maps. It is dependent on the size of the maps.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-9"><!-- named anchor --></a><h5 class="label">Figure 9</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-9</span><div class="caption"><h4 class="subsection-title">Graph of reported accuracies of detection of Urdu Sign Language using Neural Network.</h4></div>
+</div>
+<p id="id563">On the other hand, each thread is tied to a single neuron utilizing a suitable block that contains several lines. Similarly, neuron convolution, induction, and summation are performed on the input neurons throughout the procedure. Finally, the techniques described above are stored in global memory. A reverse and propagation model is used to handle results as efficiently as possible. On the other hand, pulling or moving activities lead to parallel spread because a single distribution would not result in a beneficial consequence. As mentioned previously, the neurons of a single layer communicate with a different number of neurons, which impacts the border effect (<a href="#ref-50">Yang &amp; Horie, 2015</a>).</p>
+<p id="id564"><a href="#fig-10">Figure 10</a> represents the reported accuracies using the UPTI (Urdu Printed Text Images) dataset (<a href="#ref-1">Ahmad et al., 2017</a>; <a href="#ref-40">Sabbour &amp; Shafait, 2013</a>; <a href="#ref-36">Naz et al., 2015</a>; <a href="#ref-46">Ul-Hasan et al., 2013</a>), as it can be observed in <a href="#table-2">Table 2</a> that UPTI is the most used dataset and the highest reported accuracy is 96%. This dataset contains a total of 10,063 images of different sentences of the Urdu language, and this is also a publically available dataset. But the problem lies here that this is not the sign language dataset, which is the authors’ primary concern.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-10"><!-- named anchor --></a><h5 class="label">Figure 10</h5>
+<span class="object-id">10.7717/peerjcs.883/fig-10</span><div class="caption"><h4 class="subsection-title">Graph of reported accuracies for detection of Urdu Printed Text Images.</h4></div>
+</div>
+</div>
+<div class="section">
+<a id="id565"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="id566">The author’s first concern is the lack of publicly available datasets containing images of individuals making the signs. Only one such dataset is available in Mendeley by Imran et al. in <a href="#ref-43">Sami (2014)</a> in 2021, which is very recent. There are so many things that can be pointed out as a flaw. The number of participants used for this dataset is 40. Each individual contributes 37 pictures (one picture each of 37 Urdu characters), making only 1480 images in total considered a minimal dataset. Furthermore, only SVM as a classifier to validate this dataset.</p>
+<p id="id567">Another lack of concern that the author has is the lackness of machine learning outcomes, <i>i.e.,</i> specificity and sensitivity. Only one study, <i>i.e.,</i>
+<a href="#ref-30">Khan et al. (2020a)</a>, reports all three products: accuracy, specificity, and sensitivity. <a href="#ref-34">Naseem et al. (2019)</a> didn’t write the accuracy, the primary machine learning outcome. The last noticeable thing is that not even a single author has used unsupervised techniques as a classifier in the screened studies, which means that a lot of work needs to be done in this area.</p>
+<p id="id568">When it comes to the limitations of this literature review, we can’t ignore the fact that the number of papers included was far lower than expected. As a second point, only studies published in English were considered for inclusion, limiting the representation of work from non-English countries that speak and the generalizability of the findings. Third, there is a strong likelihood that the search technique used for this review overlooked some significant articles, given that papers published in conference proceedings were primarily disregarded.</p>
+</div>
+<div class="section">
+<a id="id569"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<p id="id570">When a person cannot hear, they are deaf, making communicating with others extremely difficult. More than 5% of the global population, including adults and children, is deaf, and around 10 million Pakistanis are deaf. Another impairment is muteness, which occurs when an individual cannot talk or communicate correctly. There are many other types of disabilities. People like this have a very distinct manner of connecting with the rest of the world. Through “Sign Language”, they communicate their feelings and thoughts to the rest of the world. Sign language is very distinct and not comprehended by others; many institutions and organizations worldwide teach people with disabilities and their families sign dialects to make one’s lives more accessible; however, learning sign language is not easy. Not everybody is familiar with it. This literature review summarized 20 screened studies included after the detailed screening. It is also concluded that SVM and Neural Network are the most common classifiers. The first identified gap is the lack of publically available datasets and, most specifically, datasets with images of signs of Urdu characters and not the actual characters. The second identified gap is that the authors can use unsupervised machine learning classifiers because this is an untouched territory, and a tremendous amount of work can be done here.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="section">
+<a id="id571"><!-- named anchor --></a><h2 class="main-title">Additional Information and Declarations</h2>
+<div class="fn-group">
+<h3 class="section-title">Competing Interests</h3>
+<div class="footnote">
+<a id="conflict-1"><!-- named anchor --></a><p id="id572"><span class="generated">[5]</span> The authors declare there are no competing interests.</p>
+</div>
+</div>
+<div class="fn-group">
+<h3 class="section-title">Author Contributions</h3>
+<div class="footnote">
+<a id="contribution-1"><!-- named anchor --></a><p id="id573"><span class="generated">[6]<span class="generated"> Contributed by</span></span> <a href="#author-1">Hira Zahid</a> conceived and designed the experiments, performed the experiments, analyzed the data, performed the computation work, prepared figures and/or tables, authored or reviewed drafts of the paper, and approved the final draft.</p>
+</div>
+<div class="footnote">
+<a id="contribution-2"><!-- named anchor --></a><p id="id574"><span class="generated">[7]<span class="generated"> Contributed by</span></span> <a href="#author-2">Munaf Rashid</a> conceived and designed the experiments, performed the experiments, analyzed the data, performed the computation work, authored or reviewed drafts of the paper, and approved the final draft.</p>
+</div>
+<div class="footnote">
+<a id="contribution-3"><!-- named anchor --></a><p id="id575"><span class="generated">[8]<span class="generated"> Contributed by</span></span> <a href="#author-3">Samreen Hussain</a> analyzed the data, prepared figures and/or tables, and approved the final draft.</p>
+</div>
+<div class="footnote">
+<a id="contribution-4"><!-- named anchor --></a><p id="id576"><span class="generated">[9]<span class="generated"> Contributed by</span></span> <a href="#author-4">Fahad Azim</a> and <a href="#author-6">Afshan Saad</a> analyzed the data, authored or reviewed drafts of the paper, and approved the final draft.</p>
+</div>
+<div class="footnote">
+<a id="contribution-5"><!-- named anchor --></a><p id="id577"><span class="generated">[10]<span class="generated"> Contributed by</span></span> <a href="#author-5">Sidra Abid Syed</a> analyzed the data, performed the computation work, authored or reviewed drafts of the paper, and approved the final draft.</p>
+</div>
+</div>
+<div class="fn-group">
+<h3 class="section-title">Data Availability</h3>
+<div class="footnote">
+<a id="addinfo-1"><!-- named anchor --></a><p id="id578"><span class="generated">[11]</span> The following information was supplied regarding data availability:</p>
+<p id="id579">This is a literature review.</p>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id580"><!-- named anchor --></a><div class="section ref-list">
+<a id="id580"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Ahmad et al. (2017)</span> <a id="ref-1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id581"><!-- named anchor --></a>I AhmadX WangR LiS Rasheed2017Offline Urdu Nastaleeq optical character recognition based on stacked denoising autoencoderChina Communications14114615710.1109/cc.2017.7839765</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Ahmad et al. (2007)</span> <a id="ref-2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id582"><!-- named anchor --></a>Z AhmadJ OrakzaiI ShamsherA Adnan2007Urdu nastaleeq optical character recognition, world academy of science, engineering and technologyInternational Journal of Computer, Electrical, Automation, Control and Information Engineering123742377</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Ahmed et al. (2017)</span> <a id="ref-3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id583"><!-- named anchor --></a>S AhmedS NazS SwatiM Razzak2017Handwritten Urdu character recognition using one-dimensional BLSTM classifierNeural Computing and Applications3141143115110.1007/s00521-017-3146-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">American Sign Language, NIDCD (2021)</span> <a id="ref-4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id584"><!-- named anchor --></a>American Sign Language, NIDCD2021<a target="xrefwindow" href="https://www.nidcd.nih.gov/health/american-sign-language" id="id585">https://www.nidcd.nih.gov/health/american-sign-language</a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Anwar, Wang &amp; Wang (2006)</span> <a id="ref-5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id586"><!-- named anchor --></a>W AnwarX WangX-L Wang2006A survey of automatic Urdu language processingProceedings of the fifth international conference on machine learning and cybernetics, Dalian, China1316</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Arafat &amp; Iqbal (2020)</span> <a id="ref-6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id587"><!-- named anchor --></a>S ArafatM Iqbal2020Urdu-text detection and recognition in natural scene images using deep learningIEEE Access896787968310.1109/access.2020.2994214</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Carol &amp; Humphries (1988)</span> <a id="ref-7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id588"><!-- named anchor --></a>P CarolT HumphriesDeaf in America, Harvard University PressCA AddenT Humphries1988AmericaHarvard University Press</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Chandio et al. (2020)</span> <a id="ref-8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id589"><!-- named anchor --></a>A ChandioM AsikuzzamanM PickeringM Leghari2020Cursive-Text: a comprehensive dataset for end-to-end urdu text recognition in natural scene imagesData in Brief3110574910.1016/j.dib.2020.10574932490098PMC7262424</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Disabled World (2017)</span> <a id="ref-9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id590"><!-- named anchor --></a>Disabled World2017Sign language and deaf communication methods and infonnation. Disabled-world website<a target="xrefwindow" href="http://www.disabled-world.com" id="id591">http://www.disabled-world.com</a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Elakkiya (2020)</span> <a id="ref-10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id592"><!-- named anchor --></a>R Elakkiya2020Machine learning based sign language recognition: a review and itsresearch frontierJournal of Ambient Intelligence and Humanized Computing1277205722410.1007/s12652-020-02396-y</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Elakkiya &amp; Selvamani (2017)</span> <a id="ref-11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id593"><!-- named anchor --></a>R ElakkiyaK Selvamani2017Extricating manual and non-manual features for subunit level medical sign modelling in automatic sign language classification and recognitionJournal of Medical Systems411110.1007/s10916-017-0819-z28940043</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Elakkiya &amp; Selvamani (2018)</span> <a id="ref-12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id594"><!-- named anchor --></a>R ElakkiyaK Selvamani2018Enhanced dynamic programming approach for subunit modelling to handle segmentation and recognition ambiguities in sign languageJournal of Parallel and Distributed Computing11724625510.1016/j.jpdc.2017.07.001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Elakkiya (2020)</span> <a id="ref-13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id595"><!-- named anchor --></a>R Elakkiya2020Machine learning based sign language recognition: a review and its research frontierJournal of Ambient Intelligence and Humanized Computing1277205722410.1007/s12652-020-02396-y</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Elakkiya, Kannan &amp; Selvamani (2013)</span> <a id="ref-14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id596"><!-- named anchor --></a>R ElakkiyaA KannanK Selvamani2013IET Chennai fourth international conference on sustainable energy and intelligent systems (SEISCON 2013)An intelligent framework for recognizing sign language from continuous video sequence using boosted subunits10.1049/ic.2013.0329</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Elakkiya &amp; Selvamani (2015)</span> <a id="ref-15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id597"><!-- named anchor --></a>R ElakkiyaK Selvamani2015An active learning framework for human hand sign gestures and handling movement epenthesis using enhanced level building approachProcedia Computer Science4860661110.1016/j.procs.2015.04.142</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Elakkiya et al. (2012)</span> <a id="ref-16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id598"><!-- named anchor --></a>R ElakkiyaK SelvamaniS KanimozhiR VelumadhavaJ Senthilkumar2012An interactive system for sensory and gustatory impaired people based on hand gesture recognitionProcedia Engineering383166317210.1016/j.proeng.2012.06.367</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Gomes et al. (2016)</span> <a id="ref-17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id599"><!-- named anchor --></a>SL GomesEdS RebouçasEC NetoJP PapaVHC de AlbuquerquePP Rebouças FilhoJMRS Tavares2016Embedded real-time speed limit sign recognition using image processing and machine learning techniquesNeural Computing and Applications28157358410.1007/s00521-016-2388-3</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Gul et al. (2020)</span> <a id="ref-18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id600"><!-- named anchor --></a>A GulB ZehraS ShahN JavedM Saleem20202020 international conference on information science and communication technology (ICISCT)Two-way smart communication system for deaf &amp; dumb and normal people10.1109/icisct49550.2020.9080028</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Gupta &amp; Kumar (2021)</span> <a id="ref-19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id601"><!-- named anchor --></a>R GuptaA Kumar2021Indian sign language recognition using wearable sensors and multi-label classificationComputers &amp; Electrical Engineering9010689810.1016/j.compeleceng.2020.106898</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Halim &amp; Abbas (2014)</span> <a id="ref-20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id602"><!-- named anchor --></a>Z HalimG Abbas2014A kinect-based sign language hand gesture recognition system for hearing- and speech-impaired: a pilot study of pakistani sign languageAssistive Technology271344310.1080/10400435.2014.95284526132224</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Huang et al. (2018)</span> <a id="ref-21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id603"><!-- named anchor --></a>S HuangN CaiPP PachecoS NarrandesY WangW Xu2018Applications of support vector machine (svm) learning in cancer genomicsCancer Genomics &amp; Proteomics151415110.21873/cgp.2006329275361PMC5822181</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Husnain et al. (2019)</span> <a id="ref-22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id604"><!-- named anchor --></a>M HusnainMM Saad MissenS MumtazMZ JhanidrM CoustatyM Muzzamil LuqmanJ-M OgierG Sang Choi2019Recognition of urdu handwritten characters using convolutional neural networkApplied Sciences913275810.3390/app9132758</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Hussain, Ali &amp; Akram (2015)</span> <a id="ref-23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id605"><!-- named anchor --></a>S HussainS AliQ Akram2015Nastalique segmentation-based approach for urdu OCRInternational Journal on Document Analysis and Recognition (IJDAR)184357374</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Imran et al. (2021a)</span> <a id="ref-24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id606"><!-- named anchor --></a>A ImranA RazzaqI BaigA HussainS ShahidT Rehman2021aDataset of Pakistan sign language and automatic recognition of hand configuration of urdu alphabet through machine learningData in Brief3610702110.1016/j.dib.2021.10702133937455PMC8076696</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Imran et al. (2021b)</span> <a id="ref-25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id607"><!-- named anchor --></a>A ImranA RazzaqIA BaigA HussainS ShahidT Rehman2021bDataset of Pakistan sign language and automatic recognition of hand configuration of urdu alphabet through machine learningData in Brief3610.1016/j.dib.2021.107021PMC807669633937455</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Imtiaz et al. (2015)</span> <a id="ref-26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id608"><!-- named anchor --></a>H ImtiazU MahbubG SchaeferS ZhuM Ahad2015Human action recognition based on spectral domain featuresProcedia Computer Science6043043710.1016/j.procs.2015.08.161</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Jan et al. (2019)</span> <a id="ref-27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id609"><!-- named anchor --></a>B JanH FarmanM KhanM ImranIU IslamA AhmadS AliG Jeon2019Deep learning in big data analytics: a comparative studyComputers &amp; Electrical Engineering75275287</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Jiang et al. (2020)</span> <a id="ref-28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id610"><!-- named anchor --></a>X JiangS SatapathyL YangS WangY Zhang2020A survey on artificial intelligence in chinese sign language recognitionArabian Journal for Science and Engineering45129859989410.1007/s13369-020-04758-2</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Kanwal et al. (2014)</span> <a id="ref-29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id611"><!-- named anchor --></a>K KanwalS AbdullahY AhmedY SaherA Jafri2014Assistive glove for Pakistani Sign Language translation17th IEEE international multi topic conference 2014PiscatawayIEEE10.1109/inmic.2014.7097332</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Khan et al. (2020a)</span> <a id="ref-30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id612"><!-- named anchor --></a>M KhanF AmjadS AzizS NaqviM ShakeelM Imtiaz2020a2020 international conference on electrical, communication, and computer engineering (ICECCE)Surface electromyography based Pakistani sign language interpreter10.1109/icecce49384.2020.9179254</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Khan et al. (2020b)</span> <a id="ref-31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id613"><!-- named anchor --></a>M KhanS AzizS Hassan NaqviF AmjadM Shakeel2020bPakistani phrasal sign language classification using surface electromyographyPiscatawayIEEE</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Li, Yang &amp; Peng (2009)</span> <a id="ref-32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id614"><!-- named anchor --></a>Y LiQ YangJ Peng2009Chinese sign language recognition based on gray-level co-occurrence matrix and other multi-features fusion2009 4th IEEE Conference on Industrial Electronics and Applications, 2009PiscatawayIEEE1569157210.1109/ICIEA.2009.5138458</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Liberati et al. (2009)</span> <a id="ref-33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id615"><!-- named anchor --></a>A LiberatiDG AltmanJ TetzlaffC MulrowPC GøtzscheJPA Ioannidis2009The PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate healthcare interventions: explanation and elaborationBMJ339b270010.1136/bmj.b2700PMC271467219622552</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Naseem et al. (2019)</span> <a id="ref-34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id616"><!-- named anchor --></a>M NaseemS SarafrazA AbbasA Haider2019Developing a prototype to translate pakistan sign language into text and speech while using convolutional neural networkingJournal of Education and Practice101510.7176/jep/10-15-18</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Nasir et al. (2014)</span> <a id="ref-35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id617"><!-- named anchor --></a>F NasirU FarooqZ JamilM SanaK Zafar20142014 12th international conference on frontiers of information technologyAutomated sign language to speech interpreter10.1109/fit.2014.64</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Naz et al. (2015)</span> <a id="ref-36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id618"><!-- named anchor --></a>S NazA UmarR AhmadS AhmedS ShiraziM Razzak2015Urdu Nasta’liq text recognition system based on multi-dimensional recurrent neural network and statistical featuresNeural Computing and Applications28221923110.1007/s00521-015-2051-4</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">O’Shea &amp; Nash (2015)</span> <a id="ref-37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id619"><!-- named anchor --></a>K O’SheaR Nash2015An introduction to convolutional neural networksArXiv e-prints</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Oudah, Al-Naji &amp; Chahl (2020)</span> <a id="ref-38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id620"><!-- named anchor --></a>M OudahA Al-NajiJ Chahl2020Hand gesture recognition based on computer vision: a review of techniquesJournal of Imaging687310.3390/jimaging608007334460688PMC8321080</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Pakistan Association of the Deaf (2022b)</span> <a id="ref-39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id621"><!-- named anchor --></a>Pakistan Association of the Deaf2022bDeaf Statistics. Pakistan Association of the Deaf<a target="xrefwindow" href="http://www.padeaf.org/quick-links/deaf-statistics" id="id622">http://www.padeaf.org/quick-links/deaf-statistics</a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Sabbour &amp; Shafait (2013)</span> <a id="ref-40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id623"><!-- named anchor --></a>N SabbourF Shafait2013A segmentation-free approach to Arabic and Urdu OCRProceedingsVolume 8658Document Recognition and Retrieval XX10.1117/12.2003731</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Sagheer et al. (2009)</span> <a id="ref-41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id624"><!-- named anchor --></a>M SagheerC HeN NobileC Suen2009Image analysis and processing –ICIAP 2009A new large urdu database for off-line handwriting recognition53854610.1007/978-3-642-04146-4_58</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Sagheer et al. (2010)</span> <a id="ref-42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id625"><!-- named anchor --></a>M SagheerC HeN NobileC Suen20102010 20th international conference on pattern recognitionHolistic Urdu handwritten word recognition using support vector machine10.1109/icpr.2010.468</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Sami et al. (2014)</span> <a id="ref-43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id626"><!-- named anchor --></a>M SamiH AhmedA WahidU SirajF AhmedS ShahidSIA Shah20142014 international conference on robotics and emerging allied technologies in engineering (iCREATE)Pose recognition using cross correlation for static images of Urdu sign language10.1109/icreate.2014.6828365</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Subban &amp; Mishra (2013)</span> <a id="ref-44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id627"><!-- named anchor --></a>R SubbanR Mishra2013Face detection in color images based on explicitly-defined skin color modelCommunications in Computer and Information Science57058210.1007/978-3-642-36321-4_54</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Syed, Rashid &amp; Hussain (2020)</span> <a id="ref-45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id628"><!-- named anchor --></a>SA SyedM RashidS Hussain2020Meta-analysis of voice disorders databases and applied machine learning techniquesMathematical Biosciences and Engineering: MBE1767958797910.3934/mbe.202040433378928</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Ul-Hasan et al. (2013)</span> <a id="ref-46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id629"><!-- named anchor --></a>A Ul-HasanS AhmedF RashidF ShafaitT Breuel20132013 12th international conference on document analysis and recognitionOffline printed urdu nastaleeq script recognition with bidirectional LSTM networks10.1109/icdar.2013.212</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Uma Rani &amp; Holi (2014)</span> <a id="ref-47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id630"><!-- named anchor --></a>K Uma RaniMS Holi2014A comparative study of neural networks and support vector machines for neurological disordered voice classificationInter. J. Eng. Res. Techol3</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">U. S. Department of Justice (2020)</span> <a id="ref-48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id631"><!-- named anchor --></a>U. S. Department of Justice2020Communicating with people who are deaf or hard of hearing: ADA guide for law enforcement officers. American Disabilities Act<a target="xrefwindow" href="https://www.ada.gov/lawenfcomm.htm" id="id632">https://www.ada.gov/lawenfcomm.htm</a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">World Federation of the Deaf (2022)</span> <a id="ref-49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id633"><!-- named anchor --></a>World Federation of the Deaf2022Deaf people and human right report. World Federation of the Deaf<a target="xrefwindow" href="http://www.wfdeaf.org" id="id634">http://www.wfdeaf.org</a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Yang &amp; Horie (2015)</span> <a id="ref-50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id635"><!-- named anchor --></a>J YangR Horie2015An improved computer Interface comprising a recurrent neural network and a natural user InterfaceProcedia Computer Science6013</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Yue, Li &amp; Hao (2003)</span> <a id="ref-51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id636"><!-- named anchor --></a>S YueP LiP Hao2003SVM classification: its contents and challengesAppl. Math. J. Chinese Univer18332342</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Zafrulla et al. (2011)</span> <a id="ref-52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id637"><!-- named anchor --></a>Z ZafrullaH BrashearT StarnerH HamiltonP Presti2011American sign language recognition with the kinectProceedings of the 13th international conference on multimodal interfaces - ICMI ’1110.1145/2070481.2070532</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Computational Linguistics</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Data Mining and Machine Learning</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Databases</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Natural Language and Speech</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>Sign language recognition</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Pattern recognition</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Deep learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Urdu sign language</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Pakistani sign language</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
