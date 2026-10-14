@@ -1,0 +1,1805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lei, Zhang, Wei, Lao, Xu, Zhang, Chen, Xu, Xia, Zhang, Dong, Fu, Tang, and Wu: Machine learning algorithms’ accuracy in predicting kidney disease progression: a systematic review and meta-analysis</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>BMC Med Inform Decis Mak</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>BMC Med Inform Decis Mak</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>42</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>bmcmidm</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101088682</p>
+<p class="metadata-entry"><span class="generated">Title: </span>BMC Medical Informatics and Decision Making</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1472-6947</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>BMC</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="12911_2022_Article_1951.pdf">12911_2022_Article_1951.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© The Author(s) 2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1"><b>Open Access</b>This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">http://creativecommons.org/licenses/by/4.0/</a>. The Creative Commons Public Domain Dedication waiver (<a target="xrefwindow" href="https://creativecommons.org/publicdomain/zero/1.0/" id="id3">http://creativecommons.org/publicdomain/zero/1.0/</a>) applies to the data made available in this article, unless otherwise stated in a credit line to the data.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>15 December 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>18 July 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>1 August 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>22</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>397167<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>205</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9341041</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9341041.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9341041</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9341041</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35915457</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1186/s12911-022-01951-1</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>1951</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Machine learning algorithms’ accuracy in predicting kidney disease progression: a systematic review and meta-analysis</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group">
+<p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Nuo Lei<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p>
+<p class="metadata-entry"><span class="generated">(Equal contributor)</span></p>
+</div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group">
+<p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Xianlong Zhang<span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p>
+<p class="metadata-entry"><span class="generated">(Equal contributor)</span></p>
+</div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Mengting Wei<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Beini Lao<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Xueyi Xu<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Min Zhang<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Huifen Chen<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a>Yanmin Xu<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id12"><!-- named anchor --></a>Bingqing Xia<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id13"><!-- named anchor --></a>Dingjun Zhang<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id14"><!-- named anchor --></a>Chendi Dong<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id15"><!-- named anchor --></a>Lizhe Fu<span class="generated">[</span><a href="#Aff3">3</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id16"><!-- named anchor --></a>Fang Tang<span class="generated">[</span><a href="#Aff3">3</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id17"><!-- named anchor --></a>Yifan Wu<span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">wuyifan007@gzucm.edu.cn</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="Aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>grid.411866.c0000 0000 8848 7685The Second Clinical Medical College of Guangzhou University of Chinese Medicine, Guangzhou, China </p>
+<p class="metadata-entry"><a id="Aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>grid.411866.c0000 0000 8848 7685Department of Nephrology, Guangdong Provincial Hospital of Chinese Medicine, The Second Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangzhou, China </p>
+<p class="metadata-entry"><a id="Aff3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>grid.411866.c0000 0000 8848 7685Chronic Disease Management Department, Guangdong Provincial Hospital of Chinese Medicine, The Second Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangzhou, China </p>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id18"><!-- named anchor --></a><h3 class="section-title">Background</h3>
+<p id="Par1">Kidney disease progression rates vary among patients. Rapid and accurate prediction of kidney disease outcomes is crucial for disease management. In recent years, various prediction models using Machine Learning (ML) algorithms have been established in nephrology. However, their accuracy have been inconsistent. Therefore, we conducted a systematic review and meta-analysis to investigate the diagnostic accuracy of ML algorithms for kidney disease progression.
+</p>
+</div>
+<div class="section">
+<a id="id19"><!-- named anchor --></a><h3 class="section-title">Methods</h3>
+<p id="Par2">We searched PubMed, EMBASE, Cochrane Central Register of Controlled Trials, the Chinese Biomedicine Literature Database, Chinese National Knowledge Infrastructure, Wanfang Database, and the VIP Database for diagnostic studies on ML algorithms’ accuracy in predicting kidney disease prognosis, from the establishment of these databases until October 2020. Two investigators independently evaluate study quality by QUADAS-2 tool and extracted data from single ML algorithm for data synthesis using the bivariate model and the hierarchical summary receiver operating characteristic (HSROC) model.</p>
+</div>
+<div class="section">
+<a id="id20"><!-- named anchor --></a><h3 class="section-title">Results</h3>
+<p id="Par3">Fifteen studies were left after screening, only 6 studies were eligible for data synthesis. The sample size of these 6 studies was 12,534, and the kidney disease types could be divided into chronic kidney disease (CKD) and Immunoglobulin A Nephropathy, with 5 articles using end-stage renal diseases occurrence as the primary outcome. The main results indicated that the area under curve (AUC) of the HSROC was 0.87 (0.84–0.90) and ML algorithm exhibited a strong specificity, 95% confidence interval and heterogeneity (I<sup>2</sup>) of (0.87, 0.84–0.90, [I<sup>2</sup> 99.0%]) and a weak sensitivity of (0.68, 0.58–0.77, [I<sup>2</sup> 99.7%]) in predicting kidney disease deterioration. And the the results of subgroup analysis indicated that ML algorithm’s AUC for predicting CKD prognosis was 0.82 (0.79–0.85), with the pool sensitivity of (0.64, 0.49–0.77, [I<sup>2</sup> 99.20%]) and pool specificity of (0.84, 0.74–0.91, [I<sup>2</sup> 99.84%]). The ML algorithm’s AUC for predicting IgA nephropathy prognosis was 0.78 (0.74–0.81), with the pool sensitivity of (0.74, 0.71–0.77, [I<sup>2</sup> 7.10%]) and pool specificity of (0.93, 0.91–0.95, [I<sup>2</sup> 83.92%]).</p>
+</div>
+<div class="section">
+<a id="id21"><!-- named anchor --></a><h3 class="section-title">Conclusion</h3>
+<p id="Par4">Taking advantage of big data, ML algorithm-based prediction models have high accuracy in predicting kidney disease progression, we recommend ML algorithms as an auxiliary tool for clinicians to determine proper treatment and disease management strategies.</p>
+</div>
+<div class="section">
+<a id="id22"><!-- named anchor --></a><h3 class="section-title">Supplementary Information</h3>
+<p id="id23">The online version contains supplementary material available at 10.1186/s12911-022-01951-1.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="Sec1"><!-- named anchor --></a><h2 class="main-title">Background</h2>
+<p id="Par45">Chronic kidney disease (CKD) affects 8–16% of the world’s population, and has become a global public health problem as its prevalence has increased [<a href="#CR1">1</a>, <a href="#CR2">2</a>]. As the 10th leading cause of death in the world [<a href="#CR3">3</a>], 1.2 million people died from CKD in 2017 globally [<a href="#CR4">4</a>]. Kidney injury is an irreversible process, any form of kidney disease can progress to end-stage renal diseases (ESRD), and may require Renal Replacement Therapy (RRT) for residual renal function damage [<a href="#CR5">5</a>, <a href="#CR6">6</a>]. Patients who finally progress to ESRD or undertake RRT suffer from heavy economic pressure [<a href="#CR7">7</a>]. However, observational studies have shown that the speed and severity of kidney disease progression varies [<a href="#CR8">8</a>, <a href="#CR9">9</a>]. Therefore, early identification of groups at high-risk of kidney disease progression accurately and delaying kidney function deterioration, have become an important focus in kidney disease management [<a href="#CR10">10</a>–<a href="#CR12">12</a>].</p>
+<p id="Par46">Considering the increasing prevalence and variegated severity of disease progression, kidney disease patients must be managed through stratification. An accurate disease prognosis prediction model may assist medical staff in early intervention for high-risk patients with poor prognosis. Management strategies should be adopted based on the predictable outcome. In order to promote early identification of patients at high risk of kidney function deterioration, researchers have conducted numerous studies exploring the risk factors, and have established several risk prediction models [<a href="#CR13">13</a>, <a href="#CR14">14</a>].
+</p>
+<p id="Par47">These models have performed well in internal validation, but their capacity for generalization is uncertain because only a portion of the studies have been externally validated. As a new tool for big data analysis, machine learning (ML) has emerged in the field of medicine in recent years [<a href="#CR15">15</a>]. ML allows the construction of an algorithm that can learn, predict, and improve with experience [<a href="#CR16">16</a>] based on big data. It has immense potential in exploring risk factors for disease progression and predicting patients’ prognosis. Several ML algorithm-based prediction models have been successful in predicting kidney function during a specific period of time, and shown greater capacity for generalization than previous statistical models.</p>
+<p id="Par48">Though ML algorithms can extract meaningful patterns from big data, several problems remain in clinical practice. Firstly, selecting suitable models in clinical practice is challenging, due to the lack of evidence. Because previous systematic reviews pertaining to prognostic prediction models have neither focused on ML algorithms, nor have they extracted data for further analysis. Secondly, researchers have used an array of ML algorithms, predictors, and outcome indicators to construct prediction models. Finally, there is a dearth of high quality research demonstrating the accuracy and reliability of ML algorithm-based prediction models. Thus, experienced clinicians rely more on their own knowledge and experience when judging patients’ prognosis.</p>
+<p id="Par49">Considering the potentiality and problems pertaining to ML algorithms in the field of nephrology, there is a need for a summary of current research on ML algorithm-based prognostic prediction models for the deterioration of various kidney diseases. Therefore, we conducted this systematic review by reviewing relevant studies and extracting data for a meta-analysis. In doing so, we investigated ML algorithms’ accuracy in predicting kidney disease progression.</p>
+</div>
+<div class="section">
+<a id="Sec2"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<p id="Par50">The methods and results of this review are presented according to the Preferred Reporting Items for Systematic reviews and Meta-analyses statement (PRISMA). The review protocol was previously registered on PROSPERO (International Prospective Register of Systematic Reviews) with the CRD (Centre of Reviews and Dissemination), report number CRD42020156213.</p>
+<div class="section">
+<a id="Sec3"><!-- named anchor --></a><h3 class="section-title">Eligibility criteria</h3>
+<p id="Par51">The inclusion criteria were:<div class="list">
+<a id="id24"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="Par52">Clinical studies of diagnostic tests of accuracy.</p></li>
+<li><p id="Par53">Participants with kidney disease, aged 18 years or older.</p></li>
+<li><p id="Par54">Studies that used ML algorithms.</p></li>
+<li><p id="Par55">Study outcome reflected kidney disease deterioration, including the doubling of serum creatinine, sudden estimated Glomerular Filtration Rate (eGFR) deterioration, urinary protein level aggravation, ESRD occurrence, RRT initiation, cardiovascular events and all-cause mortality.</p></li>
+<li><p id="Par56">Studies from which indicators could be extracted that pertained to diagnostic test accuracy, such as accuracy, specificity, sensitivity, true positive (TP), false positive (FP), true negative (TN), false negative (FN), Area Under Curve(AUC) and C-statistic.</p></li>
+<li><p id="Par57">Studies published in either English or Chinese.</p></li>
+</ol>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec4"><!-- named anchor --></a><h3 class="section-title">Search strategy</h3>
+<p id="Par58">We searched PubMed, EMBASE, Cochrane Central Register of Controlled Trials, the Chinese Biomedicine Literature Database, Chinese National Knowledge Infrastructure, Wanfang Database, and VIP Database by using both free-text terms and Medical Subject Headings (MeSH) terms for studies limited to humans, without any language restrictions, from the establishment of these databases until October 2020. The detailed search strategies are listed in the Additional file <a href="#MOESM1">1</a>. The last search was performed on October 31, 2020.</p>
+</div>
+<div class="section">
+<a id="Sec5"><!-- named anchor --></a><h3 class="section-title">Study selection</h3>
+<p id="Par59">The records retrieved from the search were imported to NoteExpress 3.2.0. Two authors (M. T. Wei and N. L.) independently screened the records by title and abstract after deduplication. Then, the full texts of the selected records were read independently by two researchers (M. T. Wei and N. L.). At each stage of selection, disagreements were arbitrated by a third reviewer (X. L. Zhang) and resolved by consensus. After that, each researcher created an Excel spreadsheet of the articles to be excluded, and their exclusion reasons, before we compiled a final list of included articles.</p>
+</div>
+<div class="section">
+<a id="Sec6"><!-- named anchor --></a><h3 class="section-title">Data extraction</h3>
+<p id="Par60">Two independent reviewers (M. T. Wei and N. L.) extracted data using a customized extraction form. Considering an individual article may use several ML algorithms to build prediction models separately or in combination, in order to explicate the performance of a single ML algorithm, we extracted data in the unit of a single ML algorithm rather than a single article. The extracted data included the TP, FP, FN and TN numbers of patients with kidney disease progression predicted by an ML algorithm, and the ML algorithm’s accuracy, sensitivity, specificity, positive predictive value (PPV) and negative predictive value (NPV). During the data extraction process, we used RevMan 5.2 for data conversion.</p>
+</div>
+<div class="section">
+<a id="Sec7"><!-- named anchor --></a><h3 class="section-title">Assessment methodology quality</h3>
+<p id="Par61">We used the Quality Assessment of Diagnostic Accuracy Studies 2 (QUADAS-2) tool to assess the quality of the included studies. Two reviewers adjusted both the signaling questions and the assessment questions to build a specific version of the tool, according to our study’s objective. We then tested the tool, and when we achieved good agreement, we determined that it would be the final version of the review tool. Both authors then used it to independently assess the risk of bias and the applicability of all included studies. Disagreements were resolved by consensus.</p>
+</div>
+<div class="section">
+<a id="Sec8"><!-- named anchor --></a><h3 class="section-title">Data synthesis</h3>
+<p id="Par62">Considering the bivariate nature of the data, we used both the bivariate model and the hierarchical summary receiver operating characteristic (HSROC) method for data synthesis. The bivariate model, which preserved the bivariate nature of the data, was used to summarize the index tests’ hierarchical sensitivity and specificity. The HSROC model, which could convert the bivariate data into univariate data, was used to determine the index tests’ overall accuracy. In the absence of covariates, the bivariate model was equivalent to the HSROC model [<a href="#CR17">17</a>].</p>
+<p id="Par63">To judge whether there was a threshold effect between the studies, we used the correlation coefficient between the logit transformed sensitivity and specificity generated by the bivariate model, and the asymmetry parameter β generated by the HSROC model. Where a negative correlation coefficient or β = 0 showed an expected trade-off between sensitivity and specificity across thresholds, test accuracy could be represented by the expected accuracy (logDOR) [<a href="#CR18">18</a>]. Then we used the bivariate model to estimate the pool sensitivity and specificity, and generated a forest plot. After that, we generated the HSROC curves and their 95% prediction intervals via the HSROC model. We also calculated the HSROC’s AUC and diagnostic odds ratios (DORs) to evaluate the overall accuracy.</p>
+<p id="Par64">An I<sup>2</sup> statistic was used to explore the heterogeneity. There is potential heterogeneity when the I<sup>2</sup> is greater than 50%. Heterogeneity was also examined visually through HSROC plots. In order to identify any sources of heterogeneity, we conducted a meta regression when there were more than 10 single ML algorithms included. Then, we followed with a subgroup analysis after identifying any sources of heterogeneity. Finally, we conducted sensitivity analysis, and combined the data after eliminating outliers and data with small sample sizes to assess the index test’s stability. We used Deeks' funnel plot asymmetry test to evaluate publication bias. And the data synthesis was conducted with RevMan 5.2 and Stata (version 15.0), using the "Metandi" and "Midas" packages.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec9"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<p id="Par65">We retrieved a total of 184,052 articles from the literature databases. After removing duplicates, we screened 180,958 records by title and abstract, and excluded 180,612. Then, we evaluated the full texts of the remaining 188 articles based on the study eligibility criteria. Ultimately, 15 studies were included in our systematic review. However, we were unable to extract the specific TP, FP, FN and TN data from 9 of the articles. Therefore, only 6 articles were eligible for data synthesis. A detailed flow diagram with the study selection process and reasons for exclusion is shown in Fig. <a href="#Fig1">1</a>.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig1"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id25">PRISMA flow diagram of study selection process</p></div>
+</div></p>
+<div class="section">
+<a id="Sec10"><!-- named anchor --></a><h3 class="section-title">Clinical application</h3>
+<p id="Par66">The total sample size of the 15 articles was 115,155, and the mean age was 59.28 years old. 23 ML algorithms were used to construct progression models with 6 types of predictors—demographics, comorbidities, laboratory data from blood and urine samples, renal biopsy pathology, and therapeutic regimen. These algorithms’ accuracy varied, as did the evaluation indexes used to evaluate the accuracy (see Table <a href="#Tab1">1</a>).<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id26">Clinical characteristics of the included studies</p></div>
+<table frame="hsides" rules="groups">
+<a id="id27"><!-- named anchor --></a><thead>
+<a id="id28"><!-- named anchor --></a><tr>
+<a id="id29"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id30"><!-- named anchor --></a>Studies</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id31"><!-- named anchor --></a>Country</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id32"><!-- named anchor --></a>N</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id33"><!-- named anchor --></a>Ages (years)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id34"><!-- named anchor --></a>Men (%)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id35"><!-- named anchor --></a>KD/Outcome</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id36"><!-- named anchor --></a>Follow up times(Y)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>Reporting dataset</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id38"><!-- named anchor --></a>ML algorithm</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id39"><!-- named anchor --></a>Optimal model</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id40"><!-- named anchor --></a>AUC</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id41"><!-- named anchor --></a>Accuracy</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id42"><!-- named anchor --></a>C statistic</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id43"><!-- named anchor --></a>Analysis</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id44"><!-- named anchor --></a>TP</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id45"><!-- named anchor --></a>FP</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id46"><!-- named anchor --></a>FN</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id47"><!-- named anchor --></a>TN</th>
+</tr>
+</thead>
+<tbody>
+<a id="id48"><!-- named anchor --></a><tr>
+<a id="id49"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id50"><!-- named anchor --></a>Goto [<a href="#CR19">19</a>], 2009</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id51"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id52"><!-- named anchor --></a>790</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id53"><!-- named anchor --></a>28.14</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id54"><!-- named anchor --></a>41.8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id55"><!-- named anchor --></a>IgAN/doubling of SCR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id56"><!-- named anchor --></a>10.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id58"><!-- named anchor --></a>DTs</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id59"><!-- named anchor --></a>DTs</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>0.830</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id61"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id62"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id64"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id67"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id68"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id69"><!-- named anchor --></a>Diciolla [<a href="#CR20">20</a>], 2015</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id70"><!-- named anchor --></a><p class="first" id="id71">Italy</p>
+<p id="id72">Norway</p>
+<p id="id73">Japan</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id74"><!-- named anchor --></a>1040</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>34.56</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id76"><!-- named anchor --></a>69.13</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a>IgAN/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id78"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id79"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id80"><!-- named anchor --></a><p class="first" id="id81">ANN</p>
+<p id="id82">NFS</p>
+<p id="id83">SVM</p>
+<p id="id84">DTs</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id85"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id86"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id87"><!-- named anchor --></a>90.1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id88"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id89"><!-- named anchor --></a><p class="first" id="id90">(1) ANN</p>
+<p id="id91">(2) NFS</p>
+<p id="id92">(3) SVM</p>
+<p id="id93">(4) DTs</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id94"><!-- named anchor --></a><p class="first" id="id95">177</p>
+<p id="id96">175</p>
+<p id="id97">180</p>
+<p id="id98">178</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id99"><!-- named anchor --></a><p class="first" id="id100">35</p>
+<p id="id101">63</p>
+<p id="id102">97</p>
+<p id="id103">67</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id104"><!-- named anchor --></a><p class="first" id="id105">64</p>
+<p id="id106">66</p>
+<p id="id107">61</p>
+<p id="id108">63</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a><p class="first" id="id110">764</p>
+<p id="id111">736</p>
+<p id="id112">702</p>
+<p id="id113">732</p>
+</td>
+</tr>
+<tr>
+<a id="id114"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id115"><!-- named anchor --></a>Pesce [<a href="#CR21">21</a>], 2016</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id116"><!-- named anchor --></a>Italy</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id117"><!-- named anchor --></a>546</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id118"><!-- named anchor --></a>32.5</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a>68.13</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id120"><!-- named anchor --></a>IgAN/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id121"><!-- named anchor --></a>5.0<sup>*</sup>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a>Testing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id124"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id125"><!-- named anchor --></a>89.9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id126"><!-- named anchor --></a>91.8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id127"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id128"><!-- named anchor --></a>(1) ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a>14</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id130"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id131"><!-- named anchor --></a>7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id132"><!-- named anchor --></a>87</td>
+</tr>
+<tr>
+<a id="id133"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1"><a id="id134"><!-- named anchor --></a></td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id135"><!-- named anchor --></a>Norway</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id136"><!-- named anchor --></a>441</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id137"><!-- named anchor --></a>38.2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a>72.56</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id139"><!-- named anchor --></a>IgAN/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id140"><!-- named anchor --></a>6.0<sup>*</sup>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id141"><!-- named anchor --></a>Testing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id142"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id143"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id144"><!-- named anchor --></a>93.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id145"><!-- named anchor --></a>92.1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id146"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id147"><!-- named anchor --></a>(2) ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id148"><!-- named anchor --></a>23</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id149"><!-- named anchor --></a>3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id150"><!-- named anchor --></a>4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id151"><!-- named anchor --></a>59</td>
+</tr>
+<tr>
+<a id="id152"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1"><a id="id153"><!-- named anchor --></a></td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id154"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id155"><!-- named anchor --></a>53</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id156"><!-- named anchor --></a>32.7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id157"><!-- named anchor --></a>50.94</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id158"><!-- named anchor --></a>IgAN/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id159"><!-- named anchor --></a>3.0<sup>*</sup>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id160"><!-- named anchor --></a>Testing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id161"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a>100</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id164"><!-- named anchor --></a>90.9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id166"><!-- named anchor --></a>(3) ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id167"><!-- named anchor --></a>1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id168"><!-- named anchor --></a>1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id169"><!-- named anchor --></a>0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id170"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id171"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id172"><!-- named anchor --></a>Cheng [<a href="#CR22">22</a>], 2017</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id173"><!-- named anchor --></a><p class="first" id="id174">Taiwan,</p>
+<p id="id175">China</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id176"><!-- named anchor --></a>463</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>65</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id178"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id179"><!-- named anchor --></a>CKD/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id180"><!-- named anchor --></a>1.5</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id181"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id182"><!-- named anchor --></a>C4.5 CART SVM Adaboost</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a><p class="first" id="id184">CART + </p>
+<p id="id185">Adaboost</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id186"><!-- named anchor --></a>0.715</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id187"><!-- named anchor --></a>0.662</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id188"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id189"><!-- named anchor --></a><p class="first" id="id190">(1) C4.5</p>
+<p id="id191">(2) CART</p>
+<p id="id192">(3) SVM</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id193"><!-- named anchor --></a><p class="first" id="id194">73</p>
+<p id="id195">76</p>
+<p id="id196">80</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id197"><!-- named anchor --></a><p class="first" id="id198">57</p>
+<p id="id199">48</p>
+<p id="id200">45</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id201"><!-- named anchor --></a><p class="first" id="id202">59</p>
+<p id="id203">56</p>
+<p id="id204">52</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a><p class="first" id="id206">75</p>
+<p id="id207">84</p>
+<p id="id208">87</p>
+</td>
+</tr>
+<tr>
+<a id="id209"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id210"><!-- named anchor --></a>Feng [<a href="#CR23">23</a>], 2018</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id211"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id212"><!-- named anchor --></a>119</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id213"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id214"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id215"><!-- named anchor --></a>CKD/CKD STAGE</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id216"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id217"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id218"><!-- named anchor --></a>DTs</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id219"><!-- named anchor --></a>DTs</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id220"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id221"><!-- named anchor --></a>0.9827</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id222"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id223"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id224"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id225"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id226"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id227"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id228"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id229"><!-- named anchor --></a>Liu [<a href="#CR24">24</a>], 2018</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id230"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id231"><!-- named anchor --></a>262</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id232"><!-- named anchor --></a>32.71</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>47.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id234"><!-- named anchor --></a>IgAN/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id235"><!-- named anchor --></a>3.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id236"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id237"><!-- named anchor --></a>RF</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id238"><!-- named anchor --></a>RF</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id239"><!-- named anchor --></a>0.9729</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id240"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id241"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id243"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id244"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id245"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id246"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id247"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id248"><!-- named anchor --></a>Helena [<a href="#CR8">8</a>], 2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id249"><!-- named anchor --></a>U.S</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id250"><!-- named anchor --></a>4640</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id251"><!-- named anchor --></a>60.19</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id252"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id253"><!-- named anchor --></a>CKD/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id254"><!-- named anchor --></a>3.7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id255"><!-- named anchor --></a>Testing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id256"><!-- named anchor --></a>Lasso</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a>Lasso</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id259"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id260"><!-- named anchor --></a>0.863</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id261"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id262"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id263"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id264"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id265"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id266"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id267"><!-- named anchor --></a>Xiao [<a href="#CR25">25</a>], 2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id268"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id269"><!-- named anchor --></a>551</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id270"><!-- named anchor --></a>58.15</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id271"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id272"><!-- named anchor --></a>CKD/PRO</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id273"><!-- named anchor --></a>3.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id274"><!-- named anchor --></a>Testing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id275"><!-- named anchor --></a><p class="first" id="id276">LR</p>
+<p id="id277">ElasticN</p>
+<p id="id278">Lasso Ridge SVM</p>
+<p id="id279">RF</p>
+<p id="id280">KNN ANN XGBoost</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id281"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id282"><!-- named anchor --></a>0.873</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id283"><!-- named anchor --></a>0.82</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id284"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id285"><!-- named anchor --></a><p class="first" id="id286">(1) LR</p>
+<p id="id287">(2) ElasticN</p>
+<p id="id288">(3) Lasso</p>
+<p id="id289">(4) Ridge</p>
+<p id="id290">(5) SVM</p>
+<p id="id291">(6) RF</p>
+<p id="id292">(7) KNN</p>
+<p id="id293">(8) ANN’</p>
+<p id="id294">(9)XGBoost</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id295"><!-- named anchor --></a><p class="first" id="id296">54</p>
+<p id="id297">52</p>
+<p id="id298">52</p>
+<p id="id299">51</p>
+<p id="id300">53</p>
+<p id="id301">52</p>
+<p id="id302">49</p>
+<p id="id303">52</p>
+<p id="id304">55</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id305"><!-- named anchor --></a><p class="first" id="id306">8</p>
+<p id="id307">7</p>
+<p id="id308">7</p>
+<p id="id309">8</p>
+<p id="id310">8</p>
+<p id="id311">8</p>
+<p id="id312">12</p>
+<p id="id313">8</p>
+<p id="id314">8</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id315"><!-- named anchor --></a><p class="first" id="id316">12</p>
+<p id="id317">14</p>
+<p id="id318">14</p>
+<p id="id319">14</p>
+<p id="id320">13</p>
+<p id="id321">14</p>
+<p id="id322">17</p>
+<p id="id323">14</p>
+<p id="id324">11</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id325"><!-- named anchor --></a><p class="first" id="id326">37</p>
+<p id="id327">38</p>
+<p id="id328">38</p>
+<p id="id329">37</p>
+<p id="id330">37</p>
+<p id="id331">37</p>
+<p id="id332">33</p>
+<p id="id333">37</p>
+<p id="id334">37</p>
+</td>
+</tr>
+<tr>
+<a id="id335"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id336"><!-- named anchor --></a>Chen [<a href="#CR26">26</a>], 2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id337"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id338"><!-- named anchor --></a>2047</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id339"><!-- named anchor --></a>34.80</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id340"><!-- named anchor --></a>49.25</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id341"><!-- named anchor --></a><p class="first" id="id342">IgAN/</p>
+<p id="id343">ESRD</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id344"><!-- named anchor --></a>5.0<sup>1</sup>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id345"><!-- named anchor --></a>Training + Testing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id346"><!-- named anchor --></a>LR SVM DTs ANN RF XGBoost</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id347"><!-- named anchor --></a>XGBoost</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id348"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id349"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id350"><!-- named anchor --></a>0.89</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id351"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id352"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id353"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id354"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id355"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id356"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id357"><!-- named anchor --></a>Masaki [<a href="#CR27">27</a>], 2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id358"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id359"><!-- named anchor --></a>30,810</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id360"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id361"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id362"><!-- named anchor --></a>DKD/stage of DKD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id363"><!-- named anchor --></a>0..5</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id364"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id365"><!-- named anchor --></a>LR CNN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id366"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id367"><!-- named anchor --></a>0.722</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id368"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id369"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id370"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id371"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id372"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id373"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id374"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id375"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id376"><!-- named anchor --></a>Dovgan [<a href="#CR28">28</a>], 2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id377"><!-- named anchor --></a>Taiwan, China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id378"><!-- named anchor --></a>8492</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id379"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id380"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id381"><!-- named anchor --></a><p class="first" id="id382">CKD/</p>
+<p id="id383">RRT</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id384"><!-- named anchor --></a>1.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id385"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id386"><!-- named anchor --></a><p class="first" id="id387">LR XGBoost</p>
+<p id="id388">SGD</p>
+<p id="id389">SVM</p>
+<p id="id390">BDTs</p>
+<p id="id391">ANN</p>
+<p id="id392">RF</p>
+<p id="id393">Bayes</p>
+<p id="id394">DTs</p>
+<p id="id395">NN</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id396"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id397"><!-- named anchor --></a>0.778</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id398"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id399"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id400"><!-- named anchor --></a><p class="first" id="id401">(1) LR</p>
+<p id="id402">(2)XGBoost</p>
+<p id="id403">(3) SGD</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id404"><!-- named anchor --></a><p class="first" id="id405">651</p>
+<p id="id406">60</p>
+<p id="id407">152</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id408"><!-- named anchor --></a><p class="first" id="id409">1628</p>
+<p id="id410">52</p>
+<p id="id411">164</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id412"><!-- named anchor --></a><p class="first" id="id413">394</p>
+<p id="id414">985</p>
+<p id="id415">893</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id416"><!-- named anchor --></a><p class="first" id="id417">5819</p>
+<p id="id418">7395</p>
+<p id="id419">7283</p>
+</td>
+</tr>
+<tr>
+<a id="id420"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id421"><!-- named anchor --></a>Nagaraj [<a href="#CR29">29</a>], 2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id422"><!-- named anchor --></a>Netherlands</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id423"><!-- named anchor --></a>11,789</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id424"><!-- named anchor --></a>62.75</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id425"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id426"><!-- named anchor --></a>DKD/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id427"><!-- named anchor --></a>2.7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id428"><!-- named anchor --></a>Testing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id429"><!-- named anchor --></a>LR SVM RF FNN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id430"><!-- named anchor --></a>FNN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id431"><!-- named anchor --></a>0.84</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id432"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id433"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id434"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id435"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id436"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id437"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id438"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id439"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id440"><!-- named anchor --></a>Schena [<a href="#CR30">30</a>], 2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id441"><!-- named anchor --></a>Italy</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id442"><!-- named anchor --></a>948</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id443"><!-- named anchor --></a>40.6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id444"><!-- named anchor --></a>72.2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id445"><!-- named anchor --></a>IgAN/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id446"><!-- named anchor --></a>7.4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id447"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id448"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id449"><!-- named anchor --></a>ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id450"><!-- named anchor --></a>0.89</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id451"><!-- named anchor --></a>0.83</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id452"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id453"><!-- named anchor --></a>(1) ANN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id454"><!-- named anchor --></a>36</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id455"><!-- named anchor --></a>8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id456"><!-- named anchor --></a>6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id457"><!-- named anchor --></a>117</td>
+</tr>
+<tr>
+<a id="id458"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id459"><!-- named anchor --></a>Yuan [<a href="#CR31">31</a>], 2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id460"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id461"><!-- named anchor --></a>1090</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id462"><!-- named anchor --></a>50.01</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id463"><!-- named anchor --></a>56.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id464"><!-- named anchor --></a>CKD/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id465"><!-- named anchor --></a>4.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id466"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id467"><!-- named anchor --></a><p class="first" id="id468">LR</p>
+<p id="id469">RF</p>
+<p id="id470">SVM</p>
+<p id="id471">NNET</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id472"><!-- named anchor --></a>RF</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id473"><!-- named anchor --></a>0.878</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id474"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id475"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id476"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id477"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id478"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id479"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id480"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id481"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id482"><!-- named anchor --></a>Zhou (<a href="#CR9">9</a>), 2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id483"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id484"><!-- named anchor --></a>2507</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id485"><!-- named anchor --></a>70.6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id486"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id487"><!-- named anchor --></a>CKD/ESRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id488"><!-- named anchor --></a>3.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id489"><!-- named anchor --></a>Training</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id490"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id491"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id492"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id493"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id494"><!-- named anchor --></a>0.69</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id495"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id496"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id497"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id498"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id499"><!-- named anchor --></a>N/A</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<p class="first" id="id500"><i>CKD</i> chronic kidney disease, <i>DKD</i> diabetes kidney disease, <i>IgAN</i> Immunoglobulin A Nephropathy, <i>ESRD</i> end stage renal disease, <i>RRT</i> renal replace therapy, <i>PRO</i> proteinuria, <i>TP</i> true positive, <i>FP</i> false positive, <i>FN</i> false negative, <i>TN</i> true negative, <i>AUC</i> area under the curve, <i>DTs</i> Decision Trees, <i>ANN</i> artificial neural network, <i>NFS</i> neural fuzzy systems, <i>SVM</i> support vector machine, <i>RF</i> random forest, <i>LR</i> logistic regression, <i>ElasticN</i> Elastic Net, <i>KNN</i> K Nearest Neighbors, <i>NN</i> Nearest Neighbors, <i>SGD</i> Stochastic Gradient Descent, <i>BDTs</i> Bagging Decision Trees, <i>CNN</i> convolutional neural network, <i>CART</i> classification and regression, <i>Lasso</i> Lasso regression, <i>Ridge</i> Ridge regression, <i>NNET</i> neural network, <i>FNN</i> Feed-forward neural network</p>
+<p id="id501">*Median times</p>
+</div>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec11"><!-- named anchor --></a><h3 class="section-title">Kidney disease types</h3>
+<p id="Par67">The various kidney diseases in the included articles could be classified into 3 categories: CKD, Immunoglobulin A Nephropathy (IgAN) and diabetic nephropathy. Studies on CKD (43.75%) and IgAN (37.5%) accounted for the largest proportions.</p>
+<p id="Par68">The CKD sample size was 17,862, with a mean age of 61.93 years old and stage 3–4 in 7 articles. Utilization of the Logistics Regression (LR), Support Vector Machine (SVM) and Random Forest (RF) algorithm accounted for proportions of 15.3%, 10.7% and 9.2%, respectively. The RF algorithm was the most accurate algorithm for predicting CKD prognosis and its AUC was 0.878.</p>
+<p id="Par69">The IgAN sample size was 6127 with a mean age of 34.7 years old in 6 articles. Utilization of the Artificial Neural Network (ANN), LR and Decision Tree (DT) algorithms accounted for proportions of 29.0%, 19.3% and 16.1%, respectively. The ANN algorithm was the most accurate algorithm for predicting IgAN prognosis, with an AUC of 0.933.</p>
+</div>
+<div class="section">
+<a id="Sec12"><!-- named anchor --></a><h3 class="section-title">Predictors in the models</h3>
+<p id="Par70">Most of the included ML algorithms used demography, comorbidities, and laboratory data from blood and urine samples as predictors, among which, age, sex, hypertension, serum creatinine and 24-h urinary protein were common predictors. However, Dovgan [<a href="#CR28">28</a>] only used comorbidities to construct prediction models. Chen [<a href="#CR26">26</a>] and Schena [<a href="#CR30">30</a>] applied renal biopsy pathology and types of drug therapy as predictors of ML algorithms to establish accurate prediction models. See Additional file <a href="#MOESM1">1</a> for details.</p>
+</div>
+<div class="section">
+<a id="Sec13"><!-- named anchor --></a><h3 class="section-title">Outcome indicators</h3>
+<p id="Par71">In 12 studies, ESRD was the primary outcome and was defined as such, (1) eGFR &lt; 15 ml/min/1.73 m<sup>2</sup>; (2) the initiation of RRT; (3) renal transplantation. In addition, Xiao et al. [<a href="#CR25">25</a>] used the severity of proteinuria, Feng et al. [<a href="#CR23">23</a>] and Masaki et al. [<a href="#CR27">27</a>] used the progression of CKD stages as outcome indicators for renal disease progression, respectively.</p>
+</div>
+<div class="section">
+<a id="Sec14"><!-- named anchor --></a><h3 class="section-title">Makeup of the 6 eligible articles</h3>
+<p id="Par72">The 6 eligible articles for data synthesis mainly focus on CKD and IgAN with a total sample size of 12, 534 and a mean age of 42.77 years old. 18 ML algorithms were used to construct progression models with 6 types of predictors mentioned above. Except for Xiao et al. [<a href="#CR25">25</a>], the other 5 researchers took ESRD/RRT as the primary outcomes. Utilization of the ANN, LR, and RF algorithm accounted for proportions of 22.5%, 6.4% and 6.4%, respectively. The optimal prognosis model for predicting IgAN progression was constructed by ANN algorithm. And the optimal prognosis model for predicting CKD progression was constructed by LR algorithm (see Table <a href="#Tab1">1</a>).</p>
+</div>
+<div class="section">
+<a id="Sec15"><!-- named anchor --></a><h3 class="section-title">Quality assessment</h3>
+<p id="Par73">We assessed the studies’ quality with the QUADAS-2 tool. Figure <a href="#Fig2">2</a> depicts the risk of bias graph, while Fig. <a href="#Fig3">3</a> presents the risk of bias summary. Bias of the included studies comes primarily from the domains of Index test and Flow and timing. Bias of application concerns pertained primarily to the Index test. Of all the included primary studies, none of the articles were judged as “low risk” on all bias-related domains; 5 (33.3%) were judged as “low concern” on all applicability domains.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig2"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id502">Risk of bias and application concerns graph for the included studies.Red, yellow and green frames correspond to high, unclear and low risk of bias, respectively</p></div>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="Fig3"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id503">Risk of bias and application concerns summary for the included studies. (+) indicates low risk of bias, (?) indicates unclear risk of bias, (−) indicates high risk of bias</p></div>
+</div></p>
+</div>
+</div>
+<div class="section">
+<a id="Sec16"><!-- named anchor --></a><h2 class="main-title">Results of data synthesis</h2>
+<p id="Par74">Extracted data was synthesized using the bivariate model and the HSROC model without accounting for possible covariates explaining heterogeneity. The correlation coefficient was—0.53 and asymmetrical parameter β was 0.015 (<i>P</i> &gt; 0.05) which indicated a trade-off between sensitivity and specificity. The ML algorithms exhibited a pool sensitivity of 0.68 (0.58–0.77) and a pool specificity of 0.87 (0.84–0.90) (Fig. <a href="#Fig4">4</a>A). The AUC of the HSROC curve was 0.87 (0.84–0.90) (Fig. <a href="#Fig5">5</a>A), and the DOR was 16.34.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig4"><!-- named anchor --></a><h5 class="label">Fig. 4</h5>
+<div class="caption"><p class="first" id="id504">Coupled forest plots for sensitivity and specificity. <b>A</b> All single-unit ML algorithms. <b>B</b> CKD subgroup. <b>C</b> IgAN subgroup. <b>D</b> Sensitivity analysis after eliminating outliers and data with small sample sizes. The gray square with a black point in the center showed study specific estimates of sensitivity and specificity. The width of solid black line showed their 95% confidence intervals. The diamond at the bottom of the figure was a combination of single-unit ML algorithm.The center of diamond represented the point estimates, and the width of diamond represented 95% confidence intervals</p></div>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="Fig5"><!-- named anchor --></a><h5 class="label">Fig. 5</h5>
+<div class="caption"><p class="first" id="id505">HSROC curve with 95% confidence region and prediction region. <b>A</b> All single-unit ML algorithms with AUC of 0.87. <b>B</b> CKD subgroup with AUC of 0.82. <b>C</b> IgAN subgroup with AUC of 0.78. <b>D</b> Sensitivity analysis after eliminating outliers and data with small sample sizes with AUC of 0.83. Each circle represents a single-unit ML algorithm. The curve represents the summary receiver operating characteristic curve for all single-unit ML algorithm. The red square represents the summary estimate of test performance. The zone outlines represent the 95% confidence and 95% prediction regions of the summary estimate, respectively</p></div>
+</div></p>
+<p id="Par75">The I<sup>2</sup> for pool sensitivity and specificity were 99.0% and 99.7%, respectively, which indicated the potential heterogeneity. Considering that there were multiple sources of heterogeneity, we conducted a META regression and determined that kidney disease types, algorithm and parameters, dataset, predictors and race were the influential factors (See Fig. <a href="#Fig6">6</a>). After that, we conducted a subgroup analysis.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig6"><!-- named anchor --></a><h5 class="label">Fig. 6</h5>
+<div class="caption"><p class="first" id="id506">Univariate meta-regression plot of all single-unit ML algorithms. The red point represents the result of the individual combination of the subgroup into which each independent variable is divided. The width of solid black line showed their 95% confidence intervals. “*” means that the effects of independent variables on the pool sensitivity and specificity were statistically significant</p></div>
+</div></p>
+<p id="Par76">According to the results of subgroup analysis based on kidney disease types, the ML algorithm’s AUC and DOR for predicting CKD prognosis was 0.82 (0.79–0.85) and 9.31, respectively. The pool sensitivity was 0.64 (0.49–0.77) with an I<sup>2</sup> of 99.20%, and the pool specificity was 0.84 (0.74–0.91) with an I<sup>2</sup> of 99.84% (Figs. <a href="#Fig4">4</a>B, <a href="#Fig5">5</a>B). The ML algorithm’s AUC and DOR for predicting IgA nephropathy prognosis was 0.78 (0.74–0.81) and 39.27,respectively. The pool sensitivity was 0.74 (0.71–0.77) with an I<sup>2</sup> of 7.10%, and the pool specificity was 0.93 (0.91–0.95) with an I<sup>2</sup> of 83.92% (Figs. <a href="#Fig4">4</a>C, <a href="#Fig5">5</a>C). See Table <a href="#Tab2">2</a>, Additional file <a href="#MOESM2">2</a> and Additional file <a href="#MOESM3">3</a> for more details of subgroup analysis.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id507">Summary of meta-analysis and subgroup analysis</p></div>
+<table frame="hsides" rules="groups">
+<a id="id508"><!-- named anchor --></a><thead>
+<a id="id509"><!-- named anchor --></a><tr>
+<a id="id510"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id511"><!-- named anchor --></a>Subgroup</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id512"><!-- named anchor --></a>Number of ML algorithms</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id513"><!-- named anchor --></a>Sensitivity (95% CI)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id514"><!-- named anchor --></a>Specificity (95% CI)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id515"><!-- named anchor --></a>AUC (95% CI)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id516"><!-- named anchor --></a>Correlation coefficient</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id517"><!-- named anchor --></a>β</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id518"><!-- named anchor --></a>DOR</th>
+</tr>
+</thead>
+<tbody>
+<a id="id519"><!-- named anchor --></a><tr>
+<a id="id520"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id521"><!-- named anchor --></a>Total DTA</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id522"><!-- named anchor --></a>23</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id523"><!-- named anchor --></a>0.68 (0.58–0.77)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id524"><!-- named anchor --></a>0.88 (0.83–0.92)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id525"><!-- named anchor --></a>0.87 (0.84–0.90)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id526"><!-- named anchor --></a>− 0.53</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id527"><!-- named anchor --></a>0.015</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id528"><!-- named anchor --></a>16.34</td>
+</tr>
+<tr>
+<a id="id529"><!-- named anchor --></a><td align="left" colspan="8" rowspan="1">
+<a id="id530"><!-- named anchor --></a><i>Type of KD</i>
+</td>
+</tr>
+<tr>
+<a id="id531"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id532"><!-- named anchor --></a>CKD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id533"><!-- named anchor --></a>15</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id534"><!-- named anchor --></a>0.64 (0.49–0.77)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id535"><!-- named anchor --></a>0.84 (0.74–0.91)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id536"><!-- named anchor --></a>0.82 (0.79–0.85)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id537"><!-- named anchor --></a>− 0.77</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id538"><!-- named anchor --></a>− 0.036</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id539"><!-- named anchor --></a>9.31</td>
+</tr>
+<tr>
+<a id="id540"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id541"><!-- named anchor --></a>IgAN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id542"><!-- named anchor --></a>8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id543"><!-- named anchor --></a>0.74 (0.71–0.77)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id544"><!-- named anchor --></a>0.93 (0.91–0.95)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id545"><!-- named anchor --></a>0.78 (0.74–0.81)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id546"><!-- named anchor --></a>− 1.0</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id547"><!-- named anchor --></a>3.781</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id548"><!-- named anchor --></a>39.27</td>
+</tr>
+<tr>
+<a id="id549"><!-- named anchor --></a><td align="left" colspan="8" rowspan="1">
+<a id="id550"><!-- named anchor --></a><i>ML algorithm type</i>
+</td>
+</tr>
+<tr>
+<a id="id551"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id552"><!-- named anchor --></a>Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id553"><!-- named anchor --></a>16</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id554"><!-- named anchor --></a>0.64 (0.50–0.76)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id555"><!-- named anchor --></a>0.87 (0.79–0.92)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id556"><!-- named anchor --></a>0.84 (0.81–0.87)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id557"><!-- named anchor --></a>− 0.66</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id558"><!-- named anchor --></a>0.021</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id559"><!-- named anchor --></a>11.75</td>
+</tr>
+<tr>
+<a id="id560"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id561"><!-- named anchor --></a>Regression</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id562"><!-- named anchor --></a>7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id563"><!-- named anchor --></a>0.80 (0.74–0.84)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id564"><!-- named anchor --></a>0.91 (0.86–0.95)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id565"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id566"><!-- named anchor --></a>1.0</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id567"><!-- named anchor --></a>6.044</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id568"><!-- named anchor --></a>41.09</td>
+</tr>
+<tr>
+<a id="id569"><!-- named anchor --></a><td align="left" colspan="8" rowspan="1">
+<a id="id570"><!-- named anchor --></a><i>Dataset type</i>
+</td>
+</tr>
+<tr>
+<a id="id571"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id572"><!-- named anchor --></a>Training set</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id573"><!-- named anchor --></a>11</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id574"><!-- named anchor --></a>0.56 (0.37–0.73)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id575"><!-- named anchor --></a>0.90 (0.80–0.95)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id576"><!-- named anchor --></a>0.83 (0.80–0.86)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id577"><!-- named anchor --></a>− 0.57</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id578"><!-- named anchor --></a>0.074</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id579"><!-- named anchor --></a>11.40</td>
+</tr>
+<tr>
+<a id="id580"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id581"><!-- named anchor --></a>Testing set</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id582"><!-- named anchor --></a>12</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id583"><!-- named anchor --></a>0.79 (0.76–0.82)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id584"><!-- named anchor --></a>0.86 (0.81–0.90)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id585"><!-- named anchor --></a>0.81 (0.77–0.84)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id586"><!-- named anchor --></a>− 1.0</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id587"><!-- named anchor --></a>3.693</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id588"><!-- named anchor --></a>23.33</td>
+</tr>
+<tr>
+<a id="id589"><!-- named anchor --></a><td align="left" colspan="8" rowspan="1">
+<a id="id590"><!-- named anchor --></a><i>Pathology</i>
+</td>
+</tr>
+<tr>
+<a id="id591"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id592"><!-- named anchor --></a>Y</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id593"><!-- named anchor --></a>11</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id594"><!-- named anchor --></a>0.71 (0.66–0.76)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id595"><!-- named anchor --></a>0.89 (0.80–0.94)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id596"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id597"><!-- named anchor --></a>1</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id598"><!-- named anchor --></a>1.086<sup>a</sup>
+</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id599"><!-- named anchor --></a>19.46</td>
+</tr>
+<tr>
+<a id="id600"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id601"><!-- named anchor --></a>N</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id602"><!-- named anchor --></a>12</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id603"><!-- named anchor --></a>0.65 (0.46–0.81)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id604"><!-- named anchor --></a>0.87 (0.78–0.93)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id605"><!-- named anchor --></a>0.86 (0.83–0.89)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id606"><!-- named anchor --></a>− 0.53</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id607"><!-- named anchor --></a>− 0.172</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id608"><!-- named anchor --></a>12.92</td>
+</tr>
+<tr>
+<a id="id609"><!-- named anchor --></a><td align="left" colspan="8" rowspan="1">
+<a id="id610"><!-- named anchor --></a><i>Race</i>
+</td>
+</tr>
+<tr>
+<a id="id611"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id612"><!-- named anchor --></a>Asian</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id613"><!-- named anchor --></a>16</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id614"><!-- named anchor --></a>0.64 (0.49–0.77)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id615"><!-- named anchor --></a>0.84 (0.75–0.91)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id616"><!-- named anchor --></a>0.82 (0.79–0.86)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id617"><!-- named anchor --></a>− 0.76</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id618"><!-- named anchor --></a>− 0.042</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id619"><!-- named anchor --></a>9.53</td>
+</tr>
+<tr>
+<a id="id620"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id621"><!-- named anchor --></a>Not Asian</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id622"><!-- named anchor --></a>7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id623"><!-- named anchor --></a>0.74 (0.71–0.77)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id624"><!-- named anchor --></a>0.93 (0.91–0.95)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id625"><!-- named anchor --></a>0.78 (0.74–0.81)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id626"><!-- named anchor --></a>− 1</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id627"><!-- named anchor --></a>3.806</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id628"><!-- named anchor --></a>10.95</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<p class="first" id="id629"><i>DTA</i> diagnostic test accuracy, <i>KD</i> kidney disease, <i>CKD</i> chronic kidney disease, <i>IgAN</i> Immunoglobulin A Nephropathy, <i>ML</i> machine learning, <i>Y</i> Yes, <i>N</i> No</p>
+<p id="id630"><sup>a</sup><i>P</i> &lt; 0.01</p>
+</div>
+</div></p>
+<p id="Par77">We found outliers by observing the forest plot and HSROC curve. We performed sensitivity analysis and reapplied the bivariate and HSROC model after excluding the outliers. Which showed that ML algorithm’s AUC and DOR was 0.83 (0.80–0.90) and 16.80, respectively. The pool sensitivity was 0.74 (0.70–0.77) with an I<sup>2</sup> of 74.93%, and the pool specificity was 0.86 (0.80–0.90) with an I<sup>2</sup> of 99.84% (see Figs. <a href="#Fig4">4</a>D, <a href="#Fig5">5</a>D). Additionally, we found that Deek's funnel plot (Fig. <a href="#Fig7">7</a>) was symmetrical, and there was no evidence of publication bias in asymmetric tests (<i>P</i> = 0.07).<div class="fig panel" style="display: float; clear: both">
+<a id="Fig7"><!-- named anchor --></a><h5 class="label">Fig. 7</h5>
+<div class="caption"><p class="first" id="id631">Deek’s funnel plot of all single-unit ML algorithms. Each circle represents a single-unit ML algorithm</p></div>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec17"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="Par78">Our study indicates that ML algorithms did not pool a balance between sensitivity and specificity, which had exceptional accuracy, with an AUC of 0.87, and strong specificity (0.88), but weak sensitivity (0.68) in predicting adverse outcomes, progress to ESRD or initiation of RRT, among both CKD and IgAN patients. This result indicates that recent ML algorithms have low misdiagnosis rates, but significant probability of missed diagnosis, which means that its ability to detect patients with kidney function progression is not strong enough. ML algorithms need optimization because we aim to identify patients at risk. The main reason for the decrease in sensitivity may be the low end-point incidence rate with insufficient follow up time. As shown in the results, only 16.3% of patients reached the end point. In previous studies, a mean follow-up time of at least 5 years has been required to project whether patients with CKD would progress to ESRD [<a href="#CR32">32</a>]. However, in the studies included for data synthesis, the mean follow up times were just 1.5 and 3.0 years, in Cheng’ s and Xiao’ s research, respectively. Sufficient follow-up time is needed to establish prediction models.</p>
+<p id="Par79">The technical superiority of ML algorithm-based prediction models over traditional models is well established. Most previous models have performed well in internal validation, but their capacity for generalization is uncertain because only a portion of the studies have been externally validated. As shown in the subgroup analysis, we found that in the test set group, the pool sensitivity was 0.79 and the pool specificity was 0.86, which indicated an exceptional accuracy in external verification. This is because the goal of machine learning is to fit the models with new samples [<a href="#CR33">33</a>]. Furthermore, in the process of using ML algorithms, it is necessary to first divide the data into a training set and a test set. After learning some potential rules from the training set, the rudimentary model can be verified on the test set. In the included studies, the validation set was used for verification in modeling. However, not all articles reported the results of ML algorithms performed on validation sets, as there is no unified standard for reporting [<a href="#CR34">34</a>]. In order to standardize the research reporting process, and to gain a more comprehensive understanding of ML algorithms, we suggest that future research report the results of both training sets and validation sets. They also show a greater capacity for generalization than traditional statistical methods. However, the small sample size in Pesce’s study’ s test set may have led to high accuracy.</p>
+<p id="Par80">However, when modeling, ML algorithm type should be chosen deliberately. Our study focused on CKD and IgAN, ANN and XGBoost algorithm have been utilized successfully in the field of IgAN [<a href="#CR14">14</a>]. However, regardless of the studies on early stage CKD diagnosis [<a href="#CR35">35</a>–<a href="#CR38">38</a>], there is a lack of studies predicting its outcome. Our study has shown that it is feasible to use ML algorithms to build progression models for CKD. Recent studies have focused on the RF, LR and SVM algorithms which can produce accurate predictions and deserve further study. As for the strengths, the RF and SVM are classification algorithms can produce a qualitative index which can intuitively reflect the occurrence of an outcome event by summarizing and classifying the data characteristics. However, the LR algorithm can utilize as regression algorithm and can predict the probability of an outcome event. But they also have weaknesses. The probability cannot be known when using the classification algorithm, while the regression algorithm-based prediction models cannot produce direct conclusions. Thus, it is necessary to determine the cut-off point.</p>
+<p id="Par81">Additionally, which predictors to use to construct prediction models is undergoing debate. As shown in our subgroup analysis, renal biopsy pathology plays an important role in prognosis predicting. Studies that used pathology had a pool sensitivity of 0.71 (0.66–0.76) and a pool specificity of 0.89 (0.80–0.94). While those without pathology had a pool sensitivity of 0.65 (0.46–0.81) and a pool specificity of 0.87 (0.78–0.93). Which indicate that high quality pathology data optimized the accuracy of prediction models. However, only a small minority of patients can provide pathology data. Because renal biopsy is an invasive manipulation, for which not all patients have indication. Furthermore, there are great differences in renal biopsy specimen preparation and diagnosis for there is no unified or standardized pathological diagnosis mode.
+</p>
+<p id="Par82">However, there are evidences indicated that CKD prognostic ML prediction models using laboratory data from blood and urine samples are also accurate [<a href="#CR22">22</a>]. Moreover, CKD patients have the most comorbidities [<a href="#CR39">39</a>] correlated with disease prognosis, and there is evidence of comorbidities’ effectiveness for modeling [<a href="#CR9">9</a>, <a href="#CR40">40</a>]. We believe that with the development of the electronic medical record (EMR) system, [<a href="#CR15">15</a>] the quantity of comorbidity data will grow with its quality improves. Therefore, exploring the use of laboratory data from blood and urine samples and comorbidities as the predictors for modeling.</p>
+<p id="Par83">As for the outcomes, ESRD occurrence and the time to start RRT were the end points which caught the most attention from researchers. Researchers seem to have been less concerned about Major Adverse Cardiovascular Events (MACE) and all-cause mortality. Considering that MACE is the leading cause of death in kidney disease patients [<a href="#CR7">7</a>], we believe that using ML algorithms to predict risk MACE occurrence is also meaningful.</p>
+<p id="Par84">After data synthesis, we found significant heterogeneity between the studies. This may have been due to heterogeneity of kidney diseases, algorithms and parameters, datasets, predictors or race. Thus, we should be cautious when interpreting the results.</p>
+<p id="Par85">The 15 studies in our systematic review have a moderate to severe risk of bias in methodology. This was because we did not have enough information to determine whether the researchers had interpreted the results knowing patients’ outcome. And in some articles, some data was left out of the analysis because the dataset needed to be divided into a training set and a test set (see Additional file <a href="#MOESM1">1</a> for more details).</p>
+<p id="Par86">However, we also found studies with low risk of bias. From these, we found several prediction models with high accuracy which had used common clinical data as predictors. These included Diciolla’ s ANN model whose accuracy was 0.901, Liu’ s RF model whose AUC was 0.9729, Chen’s XGBoost model whose C-Statistic was 0.89 and Yuan’ s RF model whose AUC was 0.878. Based on the results above, we offer several recommendations for clinicians. When predicting whether IgAN patients will progress to ESRD, we recommend either Diciolla’s ANN model or Chen’s XGBoost model, assuming we can obtain patients’ renal biopsy pathology data. However, when this data is unavailable, we recommend Liu’s RF model. When predicting whether CKD patients will progress to ESRD, we suggest Yuan’s RF model. However, note that Yuan’s model is only suitable for CKD stage 3 patients.</p>
+</div>
+<div class="section">
+<a id="Sec18"><!-- named anchor --></a><h2 class="main-title">Limitations</h2>
+<p id="Par87"><div class="list">
+<a id="id632"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="Par88">We found that the sources of heterogeneity were multifaceted, and the high heterogeneity persisted after subgroup analysis. Furthermore, the covariate had a significant influence on the pool specificity. We also believe that ML algorithm type is an important source of heterogeneity. We found that multiple types of ML algorithms were utilized, but few studies focused on one. This makes it impossible to collect enough data to evaluate the performance of a specific type of ML algorithm. Therefore, we cannot eliminate the heterogeneity, and further studies are needed.</p></li>
+<li><p id="Par89">We utilized data transformation during data extraction. This may have resulted in bias because most of the included studies reported a mean accuracy index without specific TP, FP, FN or TN data.</p></li>
+<li><p id="Par90">Considering the difference in generalizability, our results might not reflect the actual power of ML algorithms. This is because we synthesized data extracted from the training set and test set, which need improvement in future studies.</p></li>
+<li><p id="Par91">The combination of multiple ML algorithms is superior to utilizing a single ML algorithm. However, we only synthesized data extracted from a single ML algorithm. This may have caused us to underestimate the accuracy. This is because we cannot get enough data, since few studies have combined more than two ML algorithms during modeling. Furthermore, the type of ML algorithms they utilized for combination varied.</p></li>
+<li><p id="Par92">The last search was performed on October 31, 2020. After that, we spent almost 10 months screening the retrieved studies, which could affect the timeliness of this study.</p></li>
+</ol>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec19"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<p id="Par93">ML algorithms are a tool for unearthing the rules of big data, and prediction models which incorporate them have exceptional accuracy in predicting kidney disease patients’ poor prognosis during clinical practice. The use of ML algorithms can help clinicians detect patients at high risk of kidney function progression in the early stages. In this way, they can receive treatment and management in time. In sum, we suggest the gradual incorporation of ML algorithm-based prediction models into clinical practice.</p>
+</div>
+<div class="section">
+<a id="id633"><!-- named anchor --></a><h2 class="main-title">Supplementary Information</h2>
+<div class="section">
+<a id="Sec20"><!-- named anchor --></a><p class="first" id="id634"><div class="panel">
+<a id="MOESM1"><!-- named anchor --></a><a id="id635" href="12911_2022_1951_MOESM1_ESM.docx"><div class="caption"><p class="first" id="id636"><b>Additional file 1: Method S1–S4.</b> Search Strategies. <b>Method S5.</b> Exclusion criteria for articles. <b>Method S6.</b> QUADAS-2 coding manual for primary studies included. <b>Table S1.</b> QUADAS-2 gradings for each primary study. <b>Table S2.</b> Predictors used in each primary study.</p></div></a>
+</div><div class="panel">
+<a id="MOESM2"><!-- named anchor --></a><a id="id637" href="12911_2022_1951_MOESM2_ESM.docx"><div class="caption"><p class="first" id="id638"><b>Additional file 2: Figure S1.</b> HSROC curve for classification algorithm group. <b>Figure S2.</b> HSROC curve for regression algorithm group. <b>Figure S3.</b> HSROC curve for training set group. <b>Figure S4.</b> HSROC curve for test set group.</p></div></a>
+</div><div class="panel">
+<a id="MOESM3"><!-- named anchor --></a><a id="id639" href="12911_2022_1951_MOESM3_ESM.docx"><div class="caption"><p class="first" id="id640"><b>Additional file 3: Figure S5.</b> HSROC curve for subgroup used renal biopsy pathology as a predictor. <b>Figure S6.</b> HSROC curve for subgroup did not use renal biopsy pathology as a predictor. <b>Figure S7.</b> HSROC curve for Asian group. <b>Figure S8.</b> HSROC curve for non-Asian group.</p></div></a>
+</div></p>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id762"><!-- named anchor --></a><h4 class="block-title">Abbreviations</h4>
+<div class="def-list">
+<a id="id641"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id642">
+<div class="def-term cell" id="id643"><p>ML</p></div>
+<div class="def-def cell" id="id644"><p class="first" id="Par5">Machine learning</p></div>
+</div>
+<div class="def-item row" id="id645">
+<div class="def-term cell" id="id646"><p>HSROC model</p></div>
+<div class="def-def cell" id="id647"><p class="first" id="Par6">The hierarchical summary receiver operating characteristic model</p></div>
+</div>
+<div class="def-item row" id="id648">
+<div class="def-term cell" id="id649"><p>CKD</p></div>
+<div class="def-def cell" id="id650"><p class="first" id="Par7">Chronic kidney disease</p></div>
+</div>
+<div class="def-item row" id="id651">
+<div class="def-term cell" id="id652"><p>IgAN</p></div>
+<div class="def-def cell" id="id653"><p class="first" id="Par8">Immunoglobulin A nephropathy</p></div>
+</div>
+<div class="def-item row" id="id654">
+<div class="def-term cell" id="id655"><p>ESRD</p></div>
+<div class="def-def cell" id="id656"><p class="first" id="Par9">End stage renal diseases</p></div>
+</div>
+<div class="def-item row" id="id657">
+<div class="def-term cell" id="id658"><p>AUC</p></div>
+<div class="def-def cell" id="id659"><p class="first" id="Par10">Area under curve</p></div>
+</div>
+<div class="def-item row" id="id660">
+<div class="def-term cell" id="id661"><p>RRT</p></div>
+<div class="def-def cell" id="id662"><p class="first" id="Par11">Renal replacement therapy</p></div>
+</div>
+<div class="def-item row" id="id663">
+<div class="def-term cell" id="id664"><p>PRISMA</p></div>
+<div class="def-def cell" id="id665"><p class="first" id="Par12">Preferred reporting items for systematic reviews and meta-analyses statement</p></div>
+</div>
+<div class="def-item row" id="id666">
+<div class="def-term cell" id="id667"><p>eGFR</p></div>
+<div class="def-def cell" id="id668"><p class="first" id="Par13">Estimated glomerular filtration rate</p></div>
+</div>
+<div class="def-item row" id="id669">
+<div class="def-term cell" id="id670"><p>MeSH</p></div>
+<div class="def-def cell" id="id671"><p class="first" id="Par14">Medical subject headings</p></div>
+</div>
+<div class="def-item row" id="id672">
+<div class="def-term cell" id="id673"><p>TP</p></div>
+<div class="def-def cell" id="id674"><p class="first" id="Par15">True positive</p></div>
+</div>
+<div class="def-item row" id="id675">
+<div class="def-term cell" id="id676"><p>FP</p></div>
+<div class="def-def cell" id="id677"><p class="first" id="Par16">False positive</p></div>
+</div>
+<div class="def-item row" id="id678">
+<div class="def-term cell" id="id679"><p>TN</p></div>
+<div class="def-def cell" id="id680"><p class="first" id="Par17">True negative</p></div>
+</div>
+<div class="def-item row" id="id681">
+<div class="def-term cell" id="id682"><p>FN</p></div>
+<div class="def-def cell" id="id683"><p class="first" id="Par18">False negative</p></div>
+</div>
+<div class="def-item row" id="id684">
+<div class="def-term cell" id="id685"><p>PPV</p></div>
+<div class="def-def cell" id="id686"><p class="first" id="Par19">Positive predictive value</p></div>
+</div>
+<div class="def-item row" id="id687">
+<div class="def-term cell" id="id688"><p>NPV</p></div>
+<div class="def-def cell" id="id689"><p class="first" id="Par20">Negative predictive value</p></div>
+</div>
+<div class="def-item row" id="id690">
+<div class="def-term cell" id="id691"><p>QUADAS-2</p></div>
+<div class="def-def cell" id="id692"><p class="first" id="Par21">Quality assessment of diagnostic accuracy studies 2</p></div>
+</div>
+<div class="def-item row" id="id693">
+<div class="def-term cell" id="id694"><p>DOR</p></div>
+<div class="def-def cell" id="id695"><p class="first" id="Par22">Diagnostic odds ratios</p></div>
+</div>
+<div class="def-item row" id="id696">
+<div class="def-term cell" id="id697"><p>LR</p></div>
+<div class="def-def cell" id="id698"><p class="first" id="Par23">Logistics regression</p></div>
+</div>
+<div class="def-item row" id="id699">
+<div class="def-term cell" id="id700"><p>SVM</p></div>
+<div class="def-def cell" id="id701"><p class="first" id="Par24">Support vector machine</p></div>
+</div>
+<div class="def-item row" id="id702">
+<div class="def-term cell" id="id703"><p>RF</p></div>
+<div class="def-def cell" id="id704"><p class="first" id="Par25">Random forest</p></div>
+</div>
+<div class="def-item row" id="id705">
+<div class="def-term cell" id="id706"><p>ANN</p></div>
+<div class="def-def cell" id="id707"><p class="first" id="Par26">Artificial neural network</p></div>
+</div>
+<div class="def-item row" id="id708">
+<div class="def-term cell" id="id709"><p>DT</p></div>
+<div class="def-def cell" id="id710"><p class="first" id="Par27">Decision tree</p></div>
+</div>
+<div class="def-item row" id="id711">
+<div class="def-term cell" id="id712"><p>EMR</p></div>
+<div class="def-def cell" id="id713"><p class="first" id="Par28">Electronic medical record</p></div>
+</div>
+<div class="def-item row" id="id714">
+<div class="def-term cell" id="id715"><p>DKD</p></div>
+<div class="def-def cell" id="id716"><p class="first" id="Par29">Diabetes kidney disease</p></div>
+</div>
+<div class="def-item row" id="id717">
+<div class="def-term cell" id="id718"><p>PRO</p></div>
+<div class="def-def cell" id="id719"><p class="first" id="Par30">Proteinuria</p></div>
+</div>
+<div class="def-item row" id="id720">
+<div class="def-term cell" id="id721"><p>NFS</p></div>
+<div class="def-def cell" id="id722"><p class="first" id="Par31">Neural fuzzy systems</p></div>
+</div>
+<div class="def-item row" id="id723">
+<div class="def-term cell" id="id724"><p>ElasticN</p></div>
+<div class="def-def cell" id="id725"><p class="first" id="Par32">Elastic net</p></div>
+</div>
+<div class="def-item row" id="id726">
+<div class="def-term cell" id="id727"><p>KNN</p></div>
+<div class="def-def cell" id="id728"><p class="first" id="Par33">K nearest neighbors</p></div>
+</div>
+<div class="def-item row" id="id729">
+<div class="def-term cell" id="id730"><p>NN</p></div>
+<div class="def-def cell" id="id731"><p class="first" id="Par34">Nearest neighbors</p></div>
+</div>
+<div class="def-item row" id="id732">
+<div class="def-term cell" id="id733"><p>SGD</p></div>
+<div class="def-def cell" id="id734"><p class="first" id="Par35">Stochastic gradient descent</p></div>
+</div>
+<div class="def-item row" id="id735">
+<div class="def-term cell" id="id736"><p>BDTs</p></div>
+<div class="def-def cell" id="id737"><p class="first" id="Par36">Bagging decision trees</p></div>
+</div>
+<div class="def-item row" id="id738">
+<div class="def-term cell" id="id739"><p>CNN</p></div>
+<div class="def-def cell" id="id740"><p class="first" id="Par37">Convolutional neural network</p></div>
+</div>
+<div class="def-item row" id="id741">
+<div class="def-term cell" id="id742"><p>CART</p></div>
+<div class="def-def cell" id="id743"><p class="first" id="Par38">Classification and regression</p></div>
+</div>
+<div class="def-item row" id="id744">
+<div class="def-term cell" id="id745"><p>Lasso</p></div>
+<div class="def-def cell" id="id746"><p class="first" id="Par39">Lasso regression</p></div>
+</div>
+<div class="def-item row" id="id747">
+<div class="def-term cell" id="id748"><p>Ridge</p></div>
+<div class="def-def cell" id="id749"><p class="first" id="Par40">Ridge regression</p></div>
+</div>
+<div class="def-item row" id="id750">
+<div class="def-term cell" id="id751"><p>NNET</p></div>
+<div class="def-def cell" id="id752"><p class="first" id="Par41">Neural network</p></div>
+</div>
+<div class="def-item row" id="id753">
+<div class="def-term cell" id="id754"><p>FNN</p></div>
+<div class="def-def cell" id="id755"><p class="first" id="Par42">Feed-forward neural network</p></div>
+</div>
+<div class="def-item row" id="id756">
+<div class="def-term cell" id="id757"><p>DTA</p></div>
+<div class="def-def cell" id="id758"><p class="first" id="Par43">Diagnostic test accuracy</p></div>
+</div>
+<div class="def-item row" id="id759">
+<div class="def-term cell" id="id760"><p>KD</p></div>
+<div class="def-def cell" id="id761"><p class="first" id="Par44">Kidney disease</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id768"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id763"><!-- named anchor --></a><p id="id764"><span class="generated">[1]</span> <b>Publisher's Note</b></p>
+<p id="id765">Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+<div class="footnote">
+<a id="id766"><!-- named anchor --></a><p id="id767"><span class="generated">[2]</span> Nuo Lei and Xianlong Zhang contributed equally to this work and should be considered co-first authors</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id770"><!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
+<p id="id769">We acknowledge professor Xusheng Liu, head of Department of Nephrology, Guangdong Provincial Hospital of Chinese Medicine, for his indispensable help in managing this project.</p>
+</div>
+<div class="back-section">
+<a id="id772"><!-- named anchor --></a><h2 class="main-title">Author contributions</h2>
+<p id="id771">NL, XZ and YW designed the study and drafted the manuscript; NL, MW, BL and XX conducted literature research, study selection, quality assessment and data extraction; NL, XZ and MZ conducted the statistical analysis; HC, YX, BX, DZ, CD, LF and FT participated in data interpretation and critically revised the manuscript. All authors approved the final version of the manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id774"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id773">This study was supported by the National Key Research and Development Program of China: Establishment and Evaluation an Exposed Omics based Prediction Model on CKD Risk and Benefit Factors (Project No. 2019YFE0196300); Department of science and technology of Guangdong Provincial project: Construction of popularization of science and effectiveness evaluation tool for chronic kidney disease based on “Internet plus” (Project No. 2020A1414050048) and First-class universities and disciplines of the world and collaborative innovation of disciplines in high-level universities workgroup (Project No. 2021xk66).</p>
+</div>
+<div class="back-section">
+<a id="id781"><!-- named anchor --></a><h2 class="main-title">Availability of data and materials</h2>
+<p id="id775">All data generated or analysed during this study are included in this manuscript [and its supplementary information files], and available from the corresponding author upon reasonable request. Links of database analysed in this manuscript. 1. PubMed, PubMed (<a target="xrefwindow" href="http://nih.gov/" id="id776">http://nih.gov/</a>). 2. EMBASE, Embase. 3. Cochrane Central Register of Controlled Trials, Cochrane|Trusted evidence. Informed decisions. Better health. 4. Chinese Biomedicine Literature Database, <a target="xrefwindow" href="https://sinomed.ac.cn/" id="id777">https://sinomed.ac.cn/</a>. 5. Chinese National Knowledge Infrastructure, <a target="xrefwindow" href="https://cnki.net/" id="id778">https://cnki.net/</a>. 6. Wanfang Database, <a target="xrefwindow" href="https://wanfangdata.com.cn/index.html" id="id779">https://wanfangdata.com.cn/index.html</a>. 7. VIP Database, <a target="xrefwindow" href="https://www.cqvip.com/" id="id780">https://www.cqvip.com/</a>.</p>
+</div>
+<div class="back-section">
+<a id="id782"><!-- named anchor --></a><h2 class="main-title">Declarations</h2>
+<h3 class="section-title">Ethics approval and consent to participate</h3>
+<p id="Par94">All methods were performed in accordance with the relevant guidelines and regulations. But none sought as this was a systematic review of published studies.</p>
+<h3 class="section-title">Consent for publication</h3>
+<p id="Par95">Not applicable.</p>
+<h3 class="section-title">Competing interests</h3>
+<p id="Par96">The authors declare that they have no competing interests.</p>
+</div>
+<div class="back-section">
+<a id="Bib1"><!-- named anchor --></a><div class="section ref-list">
+<a id="Bib1"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="CR1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id783"><!-- named anchor --></a>J CoreshTC TurinK MatsushitaDecline in estimated gomerular filtration rate and subsequent risk of end stage renal diseases and mortalityJAMA2014311242518253110.1001/jama.2014.663424892770PMC4172342</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="CR2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id784"><!-- named anchor --></a>V JhacG GarciaK IsekiChronic kidney disease: global dimension and perspectiveLancet201338226027210.1016/S0140-6736(13)60687-X123727169</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="CR3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id785"><!-- named anchor --></a>World Health Organization. World Health Statistics 2019 Monitoring Health for The SDGs, Sustainable Development Goals. Geneva: World Health Organization; 2019.Licence: CCBY-NC-SA3.0IGO.<a target="xrefwindow" href="https://apps.who.int/iris/bitstream/handle/10665/324835/9789241565707-eng.pdf?sequence=9&amp;isAllowed=y" id="id786">https://apps.who.int/iris/bitstream/handle/10665/324835/9789241565707-eng.pdf?sequence=9&amp;isAllowed=y</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="CR4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id787"><!-- named anchor --></a>GBD Chronic Kidney Disease CollaborationGlobal, regional, and national burden of chronic kidney disease, 1990–2017: a systematic analysis for the Global Burden of Disease StudyLancet2017202012510.1016/S0140-6736(19)32977-0PMC704990532061315</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="CR5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id788"><!-- named anchor --></a>J ScottE DanileS AndrewNational kidney foundation’s primer on kidney disease20187New York CityElsevier218</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="CR6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id789"><!-- named anchor --></a>LJ LoAS GoGM ChertowDialysis-requiring acute renal failure increases the risk of progressive chronic kidney diseaseKidney Int200976989310.1038/ki.2009.289PMC277175419641480</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="CR7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id790"><!-- named anchor --></a>United Stated Renal Data System2018 USRDS annual data report: executive summaryAm J kidney Dis201973A9A2210.1053/j.ajkd.2019.01.002</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="CR8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id791"><!-- named anchor --></a>U HelenaMA ZachariasA novel metabolic signature to predict the requirement of dialysis or renal transplantation in patients with chronic kidney diseaseJ Proteome Res2018214210.1021/acs.jproteome.8b0098330817158</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="CR9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id792"><!-- named anchor --></a>Z FangG AvrumG DjordjeG JelenaO ZoranUse of disease embedding technique to predict the risk of progression to end-stage renal diseaseJ Biomed Inform202010510340910.1016/j.jbi.2020.10340932304869PMC9885429</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="CR10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id793"><!-- named anchor --></a>KDIGO workgroupKDIGO2012 clinical practice guideline for the evaluation and management of chronic kidney diseaseKidney Int Suppl20133115010.1038/kisup.2012.73</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="CR11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id794"><!-- named anchor --></a>UK National Institute of Health and Clinical Excellencechronic kidney disease early identification and management of chronic kidney disease in adults in primary and secondary careNICE Clin Guidel2014182159</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="CR12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id795"><!-- named anchor --></a>KDOQI WorkgroupKDOQI clinical practice guideline for nutrition in CKD: 2020 updateAm J Kidney Dis202076S1S10710.1053/j.ajkd.2020.05.00632829751</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="CR13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id796"><!-- named anchor --></a>T NavdeepDK GeorgiosAI LesleyRisk prediction models for patients with chronic kidney disease: a systematic reviewAnn Intern Med201315859660310.7326/0003-4819-158-8-201304160-0000423588748</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="CR14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id797"><!-- named anchor --></a>LR ChavaJ YpeWD FriedoD MerelTowards the best kidney failure prediction tool: a systematic review and selection aidNephrol Dial Transplant2020351527153810.1093/ndt/gfz01830830157PMC7473808</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="CR15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id798"><!-- named anchor --></a>BJ PeterJJ LarsB SørenMining electronic health records: towards better research applications and clinical careNat Rev Genet20121339540510.1038/nrg320822549152</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="CR16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id799"><!-- named anchor --></a>MI JordanTM MitchellMachine learning: trends, perspectives, and prospectsScience201534925526010.1126/science.aaa841526185243</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="CR17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id800"><!-- named anchor --></a>WA van EnstE OchodoRJ ScholtenL HooftMM LeeflangInvestigation of publication bias in meta-analyses of diagnostic test accuracy: a meta-epidemiological studyBMC Med Res Methodol2014147010.1186/1471-2288-14-7024884381PMC4035673</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="CR18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id801"><!-- named anchor --></a>Macaskill P, Gatsonis C, Deeks JJ, Harbord RM, Takwoingi Y. Chapter 10: Analysing and Presenting Results. In: Deeks JJ, Bossuyt PM, Gatsonis C (editors), Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy Version 1.0. The Cochrane Collaboration, 2010. Available from: <a target="xrefwindow" href="http://srdta.cochrane.org/" id="id802">http://srdta.cochrane.org/</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="CR19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id803"><!-- named anchor --></a>M GotoT KawamuraK WakaiM AndoM EndohY TominoRisk stratification for progression of IgA nephropathy using a decision tree induction algorithmNephrol Dial Transpl2009241242124710.1093/ndt/gfn610PMC265873319017674</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="CR20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id804"><!-- named anchor --></a>M DiciollaG BinettiT Di NoiaPatient classification and outcome prediction in IgA nephropathyComput Biol Med20156627828610.1016/j.compbiomed.2015.09.00326453758</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="CR21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id805"><!-- named anchor --></a>P FrancescoD MatteaB GiulioClinical decision support system for end stage kidney disease risk estimation in IgA nephropathy patientsNephrol Dial Transplant201510.1093/ndt/gfv23226047632</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="CR22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id806"><!-- named anchor --></a>C Li-ChenH Ya-HanC Shr-HanApplying the temporal abstraction technique to the prediction of chronic kidney disease progressionJ Med Syst201741859710.1007/s10916-017-0732-528401396</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="CR23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id807"><!-- named anchor --></a>F MiaoQ XiaorongL ZhiProgression prediction model of chronic kidney disease based on decision tree ant path optimization and logistic regressionJisuanji yu Xiandaihua2018272117121</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="CR24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id808"><!-- named anchor --></a>L YexinZ YanL DiPrediction of ESRD in IgA nephropathy patients from an Asian Cohort: a random forest modelKidney Blood Press Res2018431852186410.1159/00049581830537719</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="CR25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id809"><!-- named anchor --></a>X JingD RuifengX XiulinComparison and development of machine learning tools in the prediction of chronic kidney disease progressionJ Transl Med20191711910.1186/s12967-019-1860-030971285PMC6458616</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="CR26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id810"><!-- named anchor --></a>C TingyuL XiangL YingxuePrediction and risk stratification of kidney outcomes in IgA nephropathyAm J kidney Dis20197411010.1053/j.ajkd.2019.02.01631031086</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="CR27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id811"><!-- named anchor --></a>O MasakiK TakayukiM MasakiH KyoichiS AtsushiT ReitaroFeature set for a prediction model of diabetic kidney disease progressionStud Health Technol Inform20202701289129010.3233/SHTI20040632570623</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="CR28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id812"><!-- named anchor --></a>D ErikG AntonL MitjaUsing machine learning models to predict the initiation of renal replacement therapy among chronic kidney disease patientsPLoS ONE2020156e023397610.1371/journal.pone.023397632502209PMC7274378</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="CR29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id813"><!-- named anchor --></a>BN SunilJP MichelleJ WenjunLH HiddoMachine learning based early prediction of end-stage renal disease in patients with diabetic kidney disease using clinical trials dataDiabetes Obes Metab2020222479248610.1111/dom.1417832844582PMC7756814</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="CR30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id814"><!-- named anchor --></a>PS FrancescoWA VitoT JosephDevelopment and testing of an artificial intelligence tool for predicting end stage kidney disease in patients with immunoglobulin A nephropathyKidney Int20204612610.1016/j.kint.2020.07.04632889014</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="CR31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id815"><!-- named anchor --></a>Y QiongjingZ HaixiaX YanyunDevelopment of prognostic model for patients at CKD Stage 3a and 3b in South Central China using computational intelligenceClin Exp Nephrol20202486587510.1007/s10157-020-01909-532740698</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="CR32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id816"><!-- named anchor --></a>T Ming-HsienH Chen-YangL Ming-YenIncidence, prevalence, and duration of chronic kidney disease in taiwan: results from a community-based screening program of 106,094 individualsNephron201814017518410.1159/00049170830138926</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="CR33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id817"><!-- named anchor --></a>ZH ZhouMachine learning2016BeijingTsinghua University Press1409</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="CR34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id818"><!-- named anchor --></a>MA JieGS CollinsEW VerbakelA systematic review shows no performance benefit of machine learning over logistic regression for clinical perdition modelsJ Clin Epidemiol2019110122210.1016/j.jclinepi.2019.02.00430763612</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="CR35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id819"><!-- named anchor --></a>AO AdeolaG WangqingXGBoost model for chronic kidney disease diagnosisIEEE/ACM Trans Comput Biol Bioinf2020172131214010.1109/TCBB.2019.291107130998478</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="CR36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id820"><!-- named anchor --></a>AA NjoudFS HajraRK NuhaNeural network and support vector machine for the prediction of chronic kidney disease: a comparative studyComput Biol Med201910910111110.1016/j.compbiomed.2019.04.01731054385</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="CR37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id821"><!-- named anchor --></a>SB AkbenEarly stage chronic kidney disease diagnosis by applying data mining methods to urinalysisBlood Anal Dis Hist IRBM20183935335810.1016/j.irbm.2018.09.004</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="CR38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id822"><!-- named anchor --></a>C ZeweiZ ZhuoyongZ RuohuaX YuhongBH PeterDiagnosis of patients with chronic kidney disease by using two fuzzy classifiersChemom Intell Lab Syst201615314014510.1016/j.chemolab.2016.03.004</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="CR39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id823"><!-- named anchor --></a>T MarcelloW NatashaJM BradenComparison of the complexity of patients seen by different medical subspecialists in a universal health care systemJAMA Netw Open20181e184 852e184 85210.1001/jamanetworkopen.2018.4852PMC632442130646392</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="CR40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id824"><!-- named anchor --></a>LB AnrewSK IsaacBig data and machine learning in health careJAMA2018319131710.1001/jama.2017.1839129532063</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Research</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Artificial intelligence</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Machine learning algorithm</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Prediction models</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Chronic kidney disease</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>CKD progression</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Immunoglobulin A nephropathy</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+<p class="metadata-entry"><span class="generated"><span class="data">issue-copyright-statement</span>: </span>© The Author(s) 2022</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
