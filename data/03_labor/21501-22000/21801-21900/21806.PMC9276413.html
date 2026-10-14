@@ -1,0 +1,2080 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Kim, Sung, Park, Jeong, Kim, Lee, and Park: Analyzing adverse drug reaction using statistical and machine learning methods</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Medicine (Baltimore)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Medicine (Baltimore)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>2786</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>medicine</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>2985248R</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>MEDI</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Medicine</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>0025-7974</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1536-5964</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Wolters Kluwer Health</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="medi-101-e29387.pdf">medi-101-e29387.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="medi-101-e29387.pdf">medi-101-e29387.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>Copyright © 2022 the Author(s). Published by Wolters Kluwer Health, Inc.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by-nc/4.0/<p id="id1">This is an open access article distributed under the terms of the Creative Commons Attribution-Non Commercial License 4.0 (CCBY-NC), where it is permissible to download, share, remix, transform, and buildup the work provided it is properly cited. The work cannot be used commercially without permission from the journal. <a target="xrefwindow" href="https://creativecommons.org/licenses/by-nc/4.0/" id="id2">http://creativecommons.org/licenses/by-nc/4.0</a></p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>4 July 2021</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>12 April 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>12 April 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>24 June 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>24 June 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>101</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>25<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>412317<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>e29387</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9276413</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9276413.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9276413</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9276413</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35758373</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1097/MD.0000000000029387</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>MD-D-21-04672</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>the Korea Institute of Drug Safety and Risk Management in 2015</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>NA</p>
+<p class="metadata-entry"><span class="generated">Award Recipient: </span>PhD Yu Rang Park</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>the ministry of science and ict</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>NRF-2019M3E5D4064682</p>
+<p class="metadata-entry"><span class="generated">Award Recipient: </span>PhD Yu Rang Park</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered">
+<h1 class="document-title">Analyzing adverse drug reaction using statistical and machine learning methods:</h1>
+<h2 class="document-title">A systematic review</h2>
+</div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Hae Reong Kim<span class="generated">[</span><a href="#aff1"><sup>a</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>MinDong Sung<span class="generated">[</span><a href="#aff1"><sup>a</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Ji Ae Park<span class="generated">[</span><a href="#aff1"><sup>a</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Kyeongseob Jeong<span class="generated">[</span><a href="#aff1"><sup>a</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Ho Heon Kim<span class="generated">[</span><a href="#aff1"><sup>a</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Suehyun Lee<span class="generated">[</span><a href="#aff2"><sup>b</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-4210-2094<span class="generated">] </span>Yu Rang Park<span class="generated">[</span><a href="#aff1"><sup>a</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#cor1"><sup>∗</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><span class="generated">[</span>a<span class="generated">] </span>Department of Biomedical Systems Informatics, Yonsei University College of Medicine, Seoul, South Korea</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><span class="generated">[</span>b<span class="generated">] </span>Department of Biomedical Informatics, Konyang University College of Medicine, Daejeon, South Korea.</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="cor1"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="id10"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>∗<span class="generated">] </span>Correspondence: Yu Rang Park, Assistant Professor, Department of Biomedical Systems Informatics, Yonsei University College of Medicine, 50-1 Yonsei-ro, Seodaemun-gu, Seoul 03722, South Korea (e-mail: <a href="mailto:yurangpark@yuhs.ac">yurangpark@yuhs.ac</a>).</p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Abstract</h4></div>
+<div class="cell">
+<div class="section">
+<a id="id11"><!-- named anchor --></a><h3 class="section-title">Background:</h3>
+<p id="id12">Adverse drug reactions (ADRs) are unintended negative drug-induced responses. Determining the association between drugs and ADRs is crucial, and several methods have been proposed to demonstrate this association. This systematic review aimed to examine the analytical tools by considering original articles that utilized statistical and machine learning methods for detecting ADRs.</p>
+</div>
+<div class="section">
+<a id="id13"><!-- named anchor --></a><h3 class="section-title">Methods:</h3>
+<p id="id14">A systematic literature review was conducted based on articles published between 2015 and 2020. The keywords used were statistical, machine learning, and deep learning methods for detecting ADR signals. The study was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses statement (PRISMA) guidelines.</p>
+</div>
+<div class="section">
+<a id="id15"><!-- named anchor --></a><h3 class="section-title">Results:</h3>
+<p id="id16">We reviewed 72 articles, of which 51 and 21 addressed statistical and machine learning methods, respectively. Electronic medical record (EMR) data were exclusively analyzed using the regression method. For FDA Adverse Event Reporting System (FAERS) data, components of the disproportionality method were preferable. DrugBank was the most used database for machine learning. Other methods accounted for the highest and supervised methods accounted for the second highest.</p>
+</div>
+<div class="section">
+<a id="id17"><!-- named anchor --></a><h3 class="section-title">Conclusions:</h3>
+<p id="id18">Using the 72 main articles, this review provides guidelines on which databases are frequently utilized and which analysis methods can be connected. For statistical analysis, &gt;90% of the cases were analyzed by disproportionate or regression analysis with each spontaneous reporting system (SRS) data or electronic medical record (EMR) data; for machine learning research, however, there was a strong tendency to analyze various data combinations. Only half of the DrugBank database was occupied, and the k-nearest neighbor method accounted for the greatest proportion.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="id19"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<h5 class="label">1</h5>
+<p id="id20">An adverse drug reaction (ADR) is an unintended negative response caused by the administration of a drug.<sup>[<a href="#R1">1</a>]</sup> In the United States, ADR accounted for almost 6% of all hospitalized patients in 2011, costing billions of dollars and generating significant morbidity and mortality. Studies on ADR are therefore relevant for improving patient safety. Spontaneous reporting system (SRS) data are the cornerstone of signal detection for patient safety. The ADR signal detection methods primarily exploit data from SRS using conventional statistical analysis methods.<sup>[<a href="#R2">2</a>]</sup> Statistical signal detection methods use a contingency table that relates the observed count of an adverse event of interest and a drug of interest in SRS data. However, SRS has several limitations and difficulties, such as under-reporting and bias, in detecting drug side effects.<sup>[<a href="#R3">3</a>,<a href="#R4">4</a>]</sup> For instance, ADR reporting is influenced by a myriad of factors, including the severity of ADR, the duration of the drug's release on the market, the experience of medical professionals, and the qualifications of the doctors reporting it.<sup>[<a href="#R5">5</a>]</sup> Professional medical reports of adverse events often lack clarity regarding the diagnosis of adverse events. In fact, it is difficult to diagnose ADR even though most of them are included in the list of differential diagnoses available to doctors.<sup>[<a href="#R6">6</a>]</sup> In general, when the causal relationship is unclear, it is often not reported as an ADR.<sup>[<a href="#R7">7</a>]</sup> Therefore, many studies considering this limitation of SRS are in progress. Other sources of ADR study data include electronic medical record (EMR) data; these data are important for confirming clinical evidence. They provide more accurate temporal statistics on patients’ experiences with health services, such as times of diagnosis, release of patients, and dates of start and completion of prescription orders.<sup>[<a href="#R8">8</a>]</sup> Research that relies on temporal data to examine the association between ADR induced by drugs can benefit from such information.<sup>[<a href="#R8">8</a>]</sup></p>
+<p id="id21">Typically, SRS data tend to center around signal detection using the reporting ratio of the statistical method. There are several methods, such as the reporting odds ratio (ROR), proportional reporting ratio (PRR), combination risk ratio (CRR), association rule mining (ARM) method, and the Bayesian statistical approach, which includes the Bayesian confidence propagation neural network (BCPNN) and the empirical Bayes geometric mean (EBGM).<sup>[<a href="#R9">9</a>,<a href="#R10">10</a>]</sup> However, statistical methods are limited when it comes to analyzing free text or chemical structure data for signal detection.<sup>[<a href="#R11">11</a>]</sup> Therefore, machine learning techniques have emerged to make analysis of these forms of data feasible for ADR signal detection.<sup>[<a href="#R2">2</a>,<a href="#R12">12</a>–<a href="#R16">16</a>]</sup> Random forest (RF),<sup>[<a href="#R17">17</a>–<a href="#R20">20</a>]</sup> adaboost,<sup>[<a href="#R21">21</a>]</sup> and neutral network<sup>[<a href="#R22">22</a>]</sup> structures are actively used for these analyses. These 2 methods have provided clues regarding potential ADR and their mechanisms for further clinical verification of ADR.<sup>[<a href="#R23">23</a>]</sup> All data-driven methods for determining ADR depend on the quality of data sources and analytical methods involved.<sup>[<a href="#R24">24</a>]</sup> Although numerous studies have attempted to reveal ADR signals using different databases, only a few have focused on the methodology used. Thus, studies that concentrate on the methods to detect ADR signal are required using multiple databases. Our systematic review aimed to examine original articles that employed existing statistical and machine learning methods to detect ADR in humans.</p>
+</div>
+<div class="section">
+<a id="id22"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<h5 class="label">2</h5>
+<div class="section">
+<a id="id23"><!-- named anchor --></a><h3 class="section-title">Study selection and eligibility criteria</h3>
+<h5 class="label">2.1</h5>
+<p id="id24">Our systematic review followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines.<sup>[<a href="#R25">25</a>]</sup> With the premise that a period of approximately 5 years is appropriate for establishing relatively recent research trends, we analyzed data obtained in the last five years based on the time of drafting this review article. The systematic literature search covered clinical research included in EMBASE and PubMed (including 100% of the MEDLINE database) and was conducted based on research published from January 2015 to March 2020, with an emphasis on original articles. Words that reflected adverse events, such as “adverse drug reactions,” “side effect,” and “drug safety,” were included. Since disproportionality analysis is widely used in the statistical analysis section, “statistical” and “disproportion” were included as additional search terms. For the machine learning component, both “machine learning” and “deep learning” were searched. Only cases in which the search term was included in the title and abstract were included (see Text Document and Graph, Supplemental Digital Content 1 which details the search strategy and publication trends for each category by year). The aim of the present review was to determine the relationship between drugs and ADR using statistical or machine learning methods. This study is based on existing research; therefore, ethical approval was not necessary.</p>
+<p id="id25">We reviewed the various analysis methods and the databases they corresponded to, with the purpose of detecting ADR. The analysis methods were divided into statistical and machine learning methods, and the method with the highest frequency was confirmed in detail. The statistical methods were divided into three categories: disproportionate analysis (eg, ROR and PRRs), regression (eg, survival, logistic, and Poisson), and Log-likelihood ratio test (LRT) (eg, LRT and zero-inflated Poisson-LRT). Machine learning methods were divided into three categories as follows: Bayesian methods (eg, Monte Carlo expectation maximization, MCEM), supervised methods (eg, random forest (RF), adaboost, support vector machine (SVM), and recurrent neural network), and other methods (eg, block matrices and matrix factorization).</p>
+</div>
+<div class="section">
+<a id="id26"><!-- named anchor --></a><h3 class="section-title">Assessment for risk of bias</h3>
+<h5 class="label">2.2</h5>
+<p id="id27">The first author (HRK) assessed the risk of bias in all included studies. The risk of bias was evaluated using the “Risk of Bias in Systematic Review (ROBIS)” tool.<sup>[<a href="#R26">26</a>]</sup> The existing systematic review section is limited because we could not perform quantitative analysis since our candidate papers were method-oriented articles. To supplement this, the ROBIS tool was considered suitable in terms of qualitative analysis and was applied and prepared. In particular, the ROBIS method is a systematic review-specific evaluation method and is the most commonly used method in qualitative analysis.<sup>[<a href="#R27">27</a>]</sup></p>
+<p id="id28">It evaluates the bias in 5 domains: Domain 1 is randomization, Domain 2 is the deviation from the intended intervention, Domain 3 is risk of missing, Domain 4 is the outcome measurement, and Domain 5 is configured to evaluate the bias against the selection of reported results. We conducted the evaluation according to statistical methods (see Tables and Graph, Supplemental Digital Content 2 which details the assessment of the risk of bias for research with statistical methods) and machine learning methods (see Tables and Graph, Supplemental Digital Content 3 which details the assessment of the risk of bias for research with machine learning methods). Each figure was obtained using the “robvis” and “ggplot2” packages in the R software (version 3.6.3).</p>
+</div>
+<div class="section">
+<a id="id29"><!-- named anchor --></a><h3 class="section-title">Visualization tools</h3>
+<h5 class="label">2.3</h5>
+<p id="id30">The Sankey diagram is the most accessible tool for expressing all kinds of flows, and the width of each flow is determined based on its respective quantity. For each statistical and machine learning analysis, we began with the database and connected it to the method. Each figure was obtained using the “networkD3” package in the R software (version 3.6.3).</p>
+</div>
+</div>
+<div class="section">
+<a id="id31"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<h5 class="label">3</h5>
+<p id="id32">Ninety duplicate articles were excluded (Fig. <a href="#F1">1</a>). The criteria for improper candidates, subjects, or designs led to the exclusion of 3394 articles. If the full text was not available for an article, or its goal was not clear, it was excluded. In total, we manually reviewed 72 articles, of which 51 and 21 were categorized as addressing statistical and machine learning methods, respectively (Fig. <a href="#F2">2</a>).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id33">Publications removed based on title or abstract<sup>∗</sup>; improper study subject (eg, bird, mouse, cats, and dog), improper candidate (eg, biology, genetic, gene expression, stem cell, HER2, DNA, biologics, β1, beta blockers, mutation, inhibitor, genotype, chemical, pathway, T-cell, surgical, surgery, image, MRI, alcohol, smoke, marijuana, and diet), and improper research design (eg, randomized clinical trial, RCT, clinical trial, meta-analysis, pilot, systematic review, Delphi, and social media). Full-text articles excluded, based on manual reviews<sup>∗∗</sup>; In case of lack of a clear goal, improper candidate or research design that is not filtered out of search terms, and lack of drug-induced adverse event. Figure 1. PRISMA Flow Chart.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id34">CDM<sup>∗</sup> = Common data model. The use of multiple algorithms within one study may result in duplicate inclusions. Figure 2. Sankey diagram for statistical methods.</p></div>
+</div>
+<p id="id35">The databases listed in Table <a href="#T1">1</a> were included as the data sources.<sup>[<a href="#R12">12</a>–<a href="#R17">17</a>,<a href="#R20">20</a>,<a href="#R22">22</a>,<a href="#R28">28</a>–<a href="#R60">60</a>]</sup> This table shows database such as FAERS, SIDER, VigiBase, and other national specific database or web, app data that are associated with detecting ADR. In addition, we also included EMR data and other databases such as DrugBank, which contains information on drug targets, enzymes, and proteins related to metabolism. PubChem and KEGG DRUG also contain chemical information on drugs. The data sources in this review were categorized as follows: SRS data (eg, FAERS and VAERS), EMR, and other data sources (eg, DrugBank and PubChem).</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id36">Including databases in this research.</p></div>
+<table frame="hsides" rules="groups" border="0">
+<a id="id37"><!-- named anchor --></a><thead>
+<a id="id38"><!-- named anchor --></a><tr>
+<a id="id39"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id40"><!-- named anchor --></a>Category</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id41"><!-- named anchor --></a>Database</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id42"><!-- named anchor --></a>Information from the database</td>
+</tr>
+</thead>
+<tbody>
+<a id="id43"><!-- named anchor --></a><tr>
+<a id="id44"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id45"><!-- named anchor --></a>SRS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id46"><!-- named anchor --></a>EudraVigilance<sup>[<a href="#R28">28</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id47"><!-- named anchor --></a>The database for adverse reactions to drug which have been authorised in clinical trials in the European Economic Area</td>
+</tr>
+<tr>
+<a id="id48"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id49"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id50"><!-- named anchor --></a>FAERS (including VAERS)<sup>[<a href="#R12">12</a>–<a href="#R16">16</a>,<a href="#R28">28</a>–<a href="#R41">41</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id51"><!-- named anchor --></a>Drug and ADR association for postmarketing drug safety surveillance from the Food and Drug Administration's</td>
+</tr>
+<tr>
+<a id="id52"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id53"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id54"><!-- named anchor --></a>VigiBase<sup>[<a href="#R42">42</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id55"><!-- named anchor --></a>Individual Case Safety Reports of suspected ADRs</td>
+</tr>
+<tr>
+<a id="id56"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id57"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id58"><!-- named anchor --></a>Other type of SRS<sup>[<a href="#R43">43</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id59"><!-- named anchor --></a>National specific SRS database</td>
+</tr>
+<tr>
+<a id="id60"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id61"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id62"><!-- named anchor --></a>Medical records<sup>[<a href="#R17">17</a>,<a href="#R44">44</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id63"><!-- named anchor --></a>Institution specific standardized data (eg, diagnosis, medication)</td>
+</tr>
+<tr>
+<a id="id64"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id65"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id66"><!-- named anchor --></a>Medical note<sup>[<a href="#R20">20</a>,<a href="#R22">22</a>,<a href="#R45">45</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id67"><!-- named anchor --></a>Unstructured text data (eg, nursing records, surgery, and hospitalization records)</td>
+</tr>
+<tr>
+<a id="id68"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id69"><!-- named anchor --></a>Other data sources</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id70"><!-- named anchor --></a>SIDER<sup>[<a href="#R46">46</a>–<a href="#R52">52</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id71"><!-- named anchor --></a>The information of side effects and indication for marketed drugs</td>
+</tr>
+<tr>
+<a id="id72"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id73"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id74"><!-- named anchor --></a>DrugBank<sup>[<a href="#R14">14</a>,<a href="#R17">17</a>,<a href="#R41">41</a>,<a href="#R46">46</a>–<a href="#R49">49</a>,<a href="#R51">51</a>–<a href="#R55">55</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id75"><!-- named anchor --></a>Non-redundant protein (drug target, enzyme, transporter, carrier, thus informing on drugs’ mechanism of action and metabolism) sequences</td>
+</tr>
+<tr>
+<a id="id76"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id77"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id78"><!-- named anchor --></a>PubChem<sup>[<a href="#R47">47</a>,<a href="#R49">49</a>,<a href="#R52">52</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id79"><!-- named anchor --></a>The chemical information of drugs, unique chemical structures, and biological activity data of chemical substances tested in assay experiments</td>
+</tr>
+<tr>
+<a id="id80"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id81"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id82"><!-- named anchor --></a>KEGG<sup>[<a href="#R47">47</a>–<a href="#R49">49</a>,<a href="#R52">52</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id83"><!-- named anchor --></a>Drug, Compound and Disease databases providing chemical structures, targets, metabolizing enzymes</td>
+</tr>
+<tr>
+<a id="id84"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id85"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id86"><!-- named anchor --></a>Common Data Model<sup>[<a href="#R56">56</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id87"><!-- named anchor --></a>A uniform set of metadata, allowing data and its meaning to be shared across applications (eg, OMOP CDM)</td>
+</tr>
+<tr>
+<a id="id88"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id89"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id90"><!-- named anchor --></a>Health Insurance system<sup>[<a href="#R57">57</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id91"><!-- named anchor --></a>National specific health insurance system data (eg, NHIS)</td>
+</tr>
+<tr>
+<a id="id92"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id93"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id94"><!-- named anchor --></a>App, web data<sup>[<a href="#R58">58</a>,<a href="#R90">90</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id95"><!-- named anchor --></a>Data generated and collected through the app or web (eg, MedHelp)</td>
+</tr>
+<tr>
+<a id="id96"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id97"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id98"><!-- named anchor --></a>Registry<sup>[<a href="#R59">59</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id99"><!-- named anchor --></a>National Data Registry (eg, cardiovascular disease)</td>
+</tr>
+<tr>
+<a id="id100"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id101"><!-- named anchor --></a></td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id102"><!-- named anchor --></a>Simulation data<sup>[<a href="#R60">60</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id103"><!-- named anchor --></a>Fake data created for specific situations for algorithm verification</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section">
+<a id="id104"><!-- named anchor --></a><h3 class="section-title">Statistical methods for ADR detection</h3>
+<h5 class="label">3.1</h5>
+<p id="id105">This ADR signal detection study aimed to reveal the association between drugs and ADR. We unified the statistical methods and expressed them as a single graph. As observed from the results, &gt;80% of the total results were linked to statistical analyses using SRS and EMR data. Various methods have been applied to examine FAERS data, such as the disproportionality, LRT, and regression methods. The EMR data were analyzed exclusively with the regression method. In the disproportionality method, the ROR and PRR were mainly used. In the regression method, survival and logistic regression analyses were mostly used to determine the degree of risk.</p>
+<div class="section">
+<a id="id106"><!-- named anchor --></a><h4 class="subsection-title">Statistical methods for ADR detection in SRS</h4>
+<h5 class="label">3.1.1</h5>
+<p id="id107">Spontaneous adverse event reports collected under voluntary reporting systems were the major sources of structured data (Table <a href="#T2">2</a>).<sup>[<a href="#R11">11</a>,<a href="#R28">28</a>–<a href="#R40">40</a>,<a href="#R42">42</a>,<a href="#R43">43</a>,<a href="#R61">61</a>–<a href="#R67">67</a>]</sup> Some of the prominent SRS include the adverse event reporting system (maintained by the FDA) and VigiBase (maintained by the World Health Organization).<sup>[<a href="#R1">1</a>]</sup> The post-marketing phase is needed to monitor high-priority adverse events and gain insights into actual drug safety profiles by reflecting on concrete clinical practice. SRS represents a primary source of information for detecting safety signals, especially for newly marketed drugs and rare events with drug-related components.<sup>[<a href="#R29">29</a>]</sup></p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id108">Statistical methods for ADR detection in SRS data.</p></div>
+<table frame="hsides" rules="groups" border="0">
+<a id="id109"><!-- named anchor --></a><thead>
+<a id="id110"><!-- named anchor --></a><tr>
+<a id="id111"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>Systems Author</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id113"><!-- named anchor --></a>Category of method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id114"><!-- named anchor --></a>Method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id115"><!-- named anchor --></a>Source</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id116"><!-- named anchor --></a>Purpose</td>
+</tr>
+</thead>
+<tbody>
+<a id="id117"><!-- named anchor --></a><tr>
+<a id="id118"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id119"><!-- named anchor --></a>Candore et al<sup>[<a href="#R11">11</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>Almost all</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id122"><!-- named anchor --></a>Multiple SRS data</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id123"><!-- named anchor --></a>To compare the performance of commonly used algorithms detecting ADRs</td>
+</tr>
+<tr>
+<a id="id124"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>Monaco et al<sup>[<a href="#R28">28</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>PRR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>EudraVigilance</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>to find out suspected ADRs</td>
+</tr>
+<tr>
+<a id="id130"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>Raschi et al<sup>[<a href="#R29">29</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id133"><!-- named anchor --></a>ROR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>To assess the hepatic safety of novel oral anticoagulants</td>
+</tr>
+<tr>
+<a id="id136"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id137"><!-- named anchor --></a>Fukazawa et al<sup>[<a href="#R30">30</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>ROR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id141"><!-- named anchor --></a>To conduct a disproportionality analysis and categorized these signals into groups which are signals with statistical significance and those without signals</td>
+</tr>
+<tr>
+<a id="id142"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id143"><!-- named anchor --></a>Rahman et al and Alatawi et al<sup>[<a href="#R31">31</a>,<a href="#R32">32</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id145"><!-- named anchor --></a>ROR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id146"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id147"><!-- named anchor --></a>To compare whether adverse event reporting patterns are similar between brand and generic drugs</td>
+</tr>
+<tr>
+<a id="id148"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id149"><!-- named anchor --></a>Hoffman et al<sup>[<a href="#R33">33</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id150"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id151"><!-- named anchor --></a>ROR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id152"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id153"><!-- named anchor --></a>To construct a list of signal ADRs</td>
+</tr>
+<tr>
+<a id="id154"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id155"><!-- named anchor --></a>Takada et al<sup>[<a href="#R34">34</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>ROR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id158"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id159"><!-- named anchor --></a>To test that the use of sodium channel-blocking antiepileptic drugs are inversely associated with cancer</td>
+</tr>
+<tr>
+<a id="id160"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>Yu et al<sup>[<a href="#R35">35</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id162"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>ROR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>To assess the extent of sex differences in ADRs</td>
+</tr>
+<tr>
+<a id="id166"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id167"><!-- named anchor --></a>Yue et al<sup>[<a href="#R36">36</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id168"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id169"><!-- named anchor --></a>ROR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id170"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id171"><!-- named anchor --></a>To investigate acute kidney injury events associated with the concomitant use of oral acyclovir or valacyclovir with a Nonsteroidal anti-inflammatory drugs</td>
+</tr>
+<tr>
+<a id="id172"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id173"><!-- named anchor --></a>Cai et al<sup>[<a href="#R37">37</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id174"><!-- named anchor --></a>LRT</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a>Likelihood ratio test</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id176"><!-- named anchor --></a>VAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id177"><!-- named anchor --></a>To propose a powerful testing procedure for signal detection of temporal variation in ADR</td>
+</tr>
+<tr>
+<a id="id178"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id179"><!-- named anchor --></a>Tong et al<sup>[<a href="#R38">38</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id180"><!-- named anchor --></a>LRT</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id181"><!-- named anchor --></a>Likelihood ratio test based on zero-inflated poisson (ZIP-LRT)</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a>VAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>To identify four adverse events that are rare and have significantly different reporting rates for FLU4 vaccine</td>
+</tr>
+<tr>
+<a id="id184"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id185"><!-- named anchor --></a>Zhao et al<sup>[<a href="#R39">39</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>LRT</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id187"><!-- named anchor --></a>The extended likelihood ratio with Poisson model and zero-inflated Poisson model (Ext-ZIP-LRT)</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id188"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id189"><!-- named anchor --></a>To identify ADR signals that have disproportionately high reporting rates</td>
+</tr>
+<tr>
+<a id="id190"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id191"><!-- named anchor --></a>Wang et al<sup>[<a href="#R40">40</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id192"><!-- named anchor --></a>LRT</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id193"><!-- named anchor --></a>Count-dependent probability mixture drug-count response model (MDRM)</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id194"><!-- named anchor --></a>FAERS and OMOP CDM</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id195"><!-- named anchor --></a>To introduce two novel mixture drug-count response models for detecting drug combinations of high dimension that induce myopathy</td>
+</tr>
+<tr>
+<a id="id196"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id197"><!-- named anchor --></a>handler et al<sup>[<a href="#R42">42</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id199"><!-- named anchor --></a>PRR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id200"><!-- named anchor --></a>VigiBase database</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id201"><!-- named anchor --></a>To explore reporting patterns for HPV vaccine</td>
+</tr>
+<tr>
+<a id="id202"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id203"><!-- named anchor --></a>Sugawara et al<sup>[<a href="#R43">43</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id204"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id205"><!-- named anchor --></a>ROR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id206"><!-- named anchor --></a>National specific SRS data</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id207"><!-- named anchor --></a>To evaluate the incidence of respiratory depression by use of opioids</td>
+</tr>
+<tr>
+<a id="id208"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id209"><!-- named anchor --></a>Tan et al<sup>[<a href="#R61">61</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>PRR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id212"><!-- named anchor --></a>SRS data</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id213"><!-- named anchor --></a>To explore risks injection-related ADRs</td>
+</tr>
+<tr>
+<a id="id214"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id215"><!-- named anchor --></a>Trinh et al<sup>[<a href="#R62">62</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id216"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id217"><!-- named anchor --></a>PRR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id218"><!-- named anchor --></a>National specific SRS data</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id219"><!-- named anchor --></a>To optimize signal detection investigating the interest of time-series analysis</td>
+</tr>
+<tr>
+<a id="id220"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id221"><!-- named anchor --></a>Chan et al<sup>[<a href="#R63">63</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id222"><!-- named anchor --></a>LRT</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id223"><!-- named anchor --></a>Sequential Probability Ratio Test</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id224"><!-- named anchor --></a>National specific SRS data</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id225"><!-- named anchor --></a>To detect signals of disproportionate reporting with the hRRs</td>
+</tr>
+<tr>
+<a id="id226"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>Marbac et al<sup>[<a href="#R64">64</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id229"><!-- named anchor --></a>Logistic regression with Metropolis–Hastings algorithm</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id230"><!-- named anchor --></a>SRS data</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id231"><!-- named anchor --></a>To identify a logistic regression with metropolis–hastings algorithm</td>
+</tr>
+<tr>
+<a id="id232"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id233"><!-- named anchor --></a>Xu et al<sup>[<a href="#R65">65</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id235"><!-- named anchor --></a>Logistic</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id236"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id237"><!-- named anchor --></a>To identify secondary medications for mitigating the adverse effects of a primary drug</td>
+</tr>
+<tr>
+<a id="id238"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id239"><!-- named anchor --></a>Pettit et al<sup>[<a href="#R66">66</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id240"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id241"><!-- named anchor --></a>Logistic</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id242"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>To figure out between posaconazole serum concentrations and toxicity</td>
+</tr>
+<tr>
+<a id="id244"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id245"><!-- named anchor --></a>Lerch et al<sup>[<a href="#R67">67</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a>Disproportionate method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id247"><!-- named anchor --></a>Signals of disproportionate reporting</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id248"><!-- named anchor --></a>SRS data</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id249"><!-- named anchor --></a>To detect unknown causal associations between drugs and unexpected events</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id250"><!-- named anchor --></a><p id="id251"><span class="generated">[i]</span> ADR = adverse drug reaction.</p>
+</div></div>
+</div>
+<p id="id252">Studies have used disproportionate analysis through FAERS. Raschi et al<sup>[<a href="#R29">29</a>]</sup> assessed the hepatic safety of novel oral anticoagulants. Rahman et al and Alatawi et al<sup>[<a href="#R31">31</a>,<a href="#R32">32</a>]</sup> explored methods for brand versus generic ADR reports. Hoffman et al<sup>[<a href="#R33">33</a>]</sup> constructed a list of drug-induced adverse event signals. Takada et al<sup>[<a href="#R34">34</a>]</sup> found that the use of sodium channel-blocking antiepileptic drugs is inversely associated with cancer development. Yu et al<sup>[<a href="#R35">35</a>]</sup> identified drugs that showed significant sex differences with RORs.</p>
+<p id="id253">Other studies have used PRRs from pharmacovigilance data. Monaco et al<sup>[<a href="#R28">28</a>]</sup> found suspected ADR of drug products using the EudraVigilance data. Yue et al<sup>[<a href="#R36">36</a>]</sup> investigated reports of acute kidney injury events associated with nonsteroidal anti-inflammatory drugs. Chandler et al<sup>[<a href="#R42">42</a>]</sup> explored global reporting patterns of human papillomavirus vaccines. Sugawara et al<sup>[<a href="#R43">43</a>]</sup> evaluated the incidence of respiratory depression using opioids. Tan et al<sup>[<a href="#R61">61</a>]</sup> explored drugs related to injection-related ADR in children. Trinh et al<sup>[<a href="#R62">62</a>]</sup> optimized signal detection by investigating interest in time-series analysis with PRRs.</p>
+<p id="id254">Log-likelihood ratio test (LRT) has not been used as frequently as disproportionate analysis. However, some studies employed LRT based on characteristics of the SRS. Cai et al<sup>[<a href="#R37">37</a>]</sup> proposed a testing procedure for the signal detection of temporal variation in ADR reporting using VAERS. Tong et al<sup>[<a href="#R38">38</a>]</sup> analyzed the vaccine FLU4, which can protect against four influenza viruses using VAERS. The authors assumed a zero-inflation-based Poisson model and performed an LRT to detect vaccine safety signals by testing the zero proportion and heterogeneity of reporting rates of vaccine-event combinations. Zhao et al<sup>[<a href="#R39">39</a>]</sup> identified ADR signals that have disproportionately high reporting rates compared with other ADRs and drug signals that have disproportionately high reporting rates for a group of ADR using extended LRT methods based on Poisson (Ext-LRT) and zero-inflated Poisson models (Ext-ZIP-LRT). Wang et al<sup>[<a href="#R40">40</a>]</sup> suggested a method with a fixed and count-dependent probability using mixture drug-count response models based on the number of combination drugs with a maximum risk threshold model. Chan et al<sup>[<a href="#R63">63</a>]</sup> explored the behavior of the sequential probability ratio test and its ability to detect signals of disproportionate reporting with hypothesized relative risks. Assessments of the risk of bias for Table <a href="#T2">2</a> were performed (Supplemental Digital Content 2).</p>
+</div>
+<div class="section">
+<a id="id255"><!-- named anchor --></a><h4 class="subsection-title">Statistical methods for ADR detection in EMR data</h4>
+<h5 class="label">3.1.2</h5>
+<p id="id256">The EMR datasets that include the medical records of patients have proven to be useful materials in clinical research and have become an essential source for the analysis of patient medication in healthcare-related big data (Table <a href="#T3">3</a>).<sup>[<a href="#R44">44</a>,<a href="#R50">50</a>,<a href="#R68">68</a>–<a href="#R88">88</a>]</sup> Proper analytical tools and EMR data are required for medication surveillance. Several studies have shown the value of pharmacovigilance research using EMR data as decision support tools; EMR include passive or active referential information, alerts, and guidelines related to ADR. Thus, EMR data may have considerable potential in pharmacovigilance research and can be used for rapid identification of patients in observational studies.<sup>[<a href="#R89">89</a>]</sup></p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id257">Statistical methods for ADR detection in EMR data.</p></div>
+<table frame="hsides" rules="groups" border="0">
+<a id="id258"><!-- named anchor --></a><thead>
+<a id="id259"><!-- named anchor --></a><tr>
+<a id="id260"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id261"><!-- named anchor --></a>Author</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id262"><!-- named anchor --></a>Category of method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>Method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id264"><!-- named anchor --></a>Source</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id265"><!-- named anchor --></a>Purpose</td>
+</tr>
+</thead>
+<tbody>
+<a id="id266"><!-- named anchor --></a><tr>
+<a id="id267"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id268"><!-- named anchor --></a>Uozumi et al<sup>[<a href="#R44">44</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id269"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id270"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id272"><!-- named anchor --></a>To investigate skin toxicity which is a common adverse event during cetuximab treatment</td>
+</tr>
+<tr>
+<a id="id273"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id274"><!-- named anchor --></a>Jeong et al<sup>[<a href="#R50">50</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id275"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id276"><!-- named anchor --></a>Comparison of Extreme Laboratory Test results, among others</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id277"><!-- named anchor --></a>EMR and SIDER</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>To propose a model that enables ADR signal detection from existing algorithms based on the EHR laboratory results for inpatient</td>
+</tr>
+<tr>
+<a id="id279"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id280"><!-- named anchor --></a>Nishihara et al<sup>[<a href="#R68">68</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id281"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id282"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id283"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id284"><!-- named anchor --></a>To investigate the relationships between increased blood pressure and bevacizumab administration</td>
+</tr>
+<tr>
+<a id="id285"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id286"><!-- named anchor --></a>Otake et al<sup>[<a href="#R69">69</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id287"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id288"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id289"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id290"><!-- named anchor --></a>To assess whether chemotherapy-induced neutropenia could be a prognostic factor and clarify other prognostic factors with metastatic pancreatic cancer patients</td>
+</tr>
+<tr>
+<a id="id291"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id292"><!-- named anchor --></a>Kucharz et al<sup>[<a href="#R70">70</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id294"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id296"><!-- named anchor --></a>To investigate cabozantinib-induced adverse events which are predictive factors of survival in case of sunitinib or axitinib</td>
+</tr>
+<tr>
+<a id="id297"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>Dona et al<sup>[<a href="#R71">71</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id299"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id301"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a>To confirm that nonsteroidal anti-inflammatory drugs induced urticaria/angioedema</td>
+</tr>
+<tr>
+<a id="id303"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id304"><!-- named anchor --></a>Gadelha et al<sup>[<a href="#R72">72</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id305"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id306"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id308"><!-- named anchor --></a>To identify risk factors for death in patients who have suffered noninfectious ADR</td>
+</tr>
+<tr>
+<a id="id309"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>Andrade et al<sup>[<a href="#R73">73</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id311"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id312"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id313"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id314"><!-- named anchor --></a>to identify the risk factors for ADRs in pediatric inpatients</td>
+</tr>
+<tr>
+<a id="id315"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id316"><!-- named anchor --></a>Westberg et al<sup>[<a href="#R74">74</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id319"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id320"><!-- named anchor --></a>To assess the association of DTP likelihood of harm severity score, as measured by comprehensive medication management pharmacist after hospital discharge</td>
+</tr>
+<tr>
+<a id="id321"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id322"><!-- named anchor --></a>Sobhonslidsuk et al<sup>[<a href="#R75">75</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id324"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id325"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>To confirm that toxic liver diseases are mainly caused by drug-induced liver injury</td>
+</tr>
+<tr>
+<a id="id327"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id328"><!-- named anchor --></a>Cordiner et al<sup>[<a href="#R76">76</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id329"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id330"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id331"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id332"><!-- named anchor --></a>To test for Antipsychotic polypharmacy runs the risk of additional ADR and drug interactions</td>
+</tr>
+<tr>
+<a id="id333"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id334"><!-- named anchor --></a>Merid et al<sup>[<a href="#R77">77</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id335"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id336"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id337"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id338"><!-- named anchor --></a>To assess incidence and predictors of major adverse drug events among drug resistant tuberculosis patients</td>
+</tr>
+<tr>
+<a id="id339"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id340"><!-- named anchor --></a>Oshikoya et al<sup>[<a href="#R78">78</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id341"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id342"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id343"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id344"><!-- named anchor --></a>To determine the risk of serious ADR when oral azithromycin or intravenous/intramuscular fentanyl are used off-label compared to on-label in pediatric ICU</td>
+</tr>
+<tr>
+<a id="id345"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id346"><!-- named anchor --></a>Okamoto et al<sup>[<a href="#R79">79</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id347"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id348"><!-- named anchor --></a>Survival</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id349"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id350"><!-- named anchor --></a>To examine adverse event occurrence rates by grade, deaths and the appearance of severe ADR</td>
+</tr>
+<tr>
+<a id="id351"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id352"><!-- named anchor --></a>Dedefo et al<sup>[<a href="#R80">80</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id353"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id354"><!-- named anchor --></a>Logistic</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id355"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id356"><!-- named anchor --></a>To assess the incidence and determinants of medication errors and adverse drug events among hospitalized children</td>
+</tr>
+<tr>
+<a id="id357"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id358"><!-- named anchor --></a>Blumenthal et al<sup>[<a href="#R81">81</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id359"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id360"><!-- named anchor --></a>Logistic</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id361"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id362"><!-- named anchor --></a>To address inpatient penicillin allergies results in more broad-spectrum antibiotic use, treatment failures, and adverse drug events</td>
+</tr>
+<tr>
+<a id="id363"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id364"><!-- named anchor --></a>Sellick et al<sup>[<a href="#R82">82</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id365"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id366"><!-- named anchor --></a>Logistic</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id367"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id368"><!-- named anchor --></a>To measure the incidence and risk factors for fluoroquinolone-associated psychosis or delirium</td>
+</tr>
+<tr>
+<a id="id369"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id370"><!-- named anchor --></a>Degu et al<sup>[<a href="#R83">83</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id371"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id372"><!-- named anchor --></a>Logistic</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id373"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id374"><!-- named anchor --></a>To figure out hospital admissions which are due to drug related problems</td>
+</tr>
+<tr>
+<a id="id375"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id376"><!-- named anchor --></a>Mill et al<sup>[<a href="#R84">84</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id377"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id378"><!-- named anchor --></a>Logistic</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id379"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id380"><!-- named anchor --></a>To assess the accuracy and the negative predictive value of the graded provocation challenge in a cohort of children referred with suspected allergy to amoxicillin</td>
+</tr>
+<tr>
+<a id="id381"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id382"><!-- named anchor --></a>Ilich et al<sup>[<a href="#R85">85</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id383"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id384"><!-- named anchor --></a>Logistic</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id385"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id386"><!-- named anchor --></a>To determine whether female colorectal cancer patients experienced a higher incidence of dose-limiting toxicity than men when treated with adjuvant capecitabine</td>
+</tr>
+<tr>
+<a id="id387"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id388"><!-- named anchor --></a>Khong et al<sup>[<a href="#R86">86</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id389"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id390"><!-- named anchor --></a>Negative binomial</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id391"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id392"><!-- named anchor --></a>To affect the interleukin-2 therapy for metastatic melanoma and renal cell carcinoma</td>
+</tr>
+<tr>
+<a id="id393"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id394"><!-- named anchor --></a>Daley et al<sup>[<a href="#R87">87</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id395"><!-- named anchor --></a>Regression</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id396"><!-- named anchor --></a>Conditional poisson</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id397"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id398"><!-- named anchor --></a>To evaluate the safety for influenza vaccine in children</td>
+</tr>
+<tr>
+<a id="id399"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id400"><!-- named anchor --></a>Vock et al<sup>[<a href="#R88">88</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id401"><!-- named anchor --></a>other</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id402"><!-- named anchor --></a>Inverse Probability of Censoring Weighting</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id403"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id404"><!-- named anchor --></a>To propose a technique for mining right-censored time-to-event data</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id405"><!-- named anchor --></a><p id="id406"><span class="generated">[i]</span> ADR = adverse drug reaction.</p>
+</div></div>
+</div>
+<p id="id407">Examples of EMR include clinical data (eg, patient admission and discharge summaries and medications) and para-clinical data (eg, laboratory test results, radiographs, and diagnostic images).<sup>[<a href="#R2">2</a>]</sup> In contrast to existing surveillance data, there are various variables. Thus, ADR detection can be classified based on the goal of the study: reporting only drug and ADR information, correcting baseline information and ADR (patient-level prediction), and analyzing multiple drugs and ADR. Regression methods (eg, linear, logistic, Poisson, and survival) were used to determine the risk of independent variables affecting dependent variables. We summarized methods used to analyze which adverse events occur (dependent variable) depending on a specific drug (independent variable).</p>
+<p id="id408">Regression methods were primarily used to analyze EMR data. Using survival analysis, the risk of ADR was calculated using single-center EMR.<sup>[<a href="#R44">44</a>,<a href="#R68">68</a>–<a href="#R76">76</a>]</sup> Using EMR, these studies examined the detection of ADR at multiple centers.<sup>[<a href="#R77">77</a>–<a href="#R79">79</a>]</sup> Using logistic regression,<sup>[<a href="#R80">80</a>–<a href="#R85">85</a>]</sup> Khong et al analyzed multivariate negative binomial models to confirm that interleukin-2 therapy for metastatic melanoma and renal cell carcinoma affects rigors, which are significant ADR in a single center.<sup>[<a href="#R86">86</a>]</sup> Daley et al examined the safety of the live-attenuated influenza vaccine in a large multicenter cohort using conditional Poisson regression.<sup>[<a href="#R87">87</a>]</sup> The risk of bias for Table <a href="#T3">3</a> was also assessed (see Supplemental Digital Content 2 ).</p>
+</div>
+<div class="section">
+<a id="id409"><!-- named anchor --></a><h4 class="subsection-title">Statistical methods for ADR detection in other data sources</h4>
+<h5 class="label">3.1.3</h5>
+<p id="id410">In the statistical method, databases other than SRS and EMR were rarely used. Studies using the LRT with common data model (CDM) data are summarized in Table <a href="#T4">4</a>.<sup>[<a href="#R56">56</a>,<a href="#R57">57</a>]</sup> Assessments of the risk of bias in Table <a href="#T4">4</a> are presented in Supplemental Digital Content 2. Wang et al<sup>[<a href="#R56">56</a>]</sup> implemented tree-based scan statistics with propensity score-matched analyses using sentinel CDM. Tree-based scan statistics were defined as unconditional tree scan statistics that used the maximum log-likelihood ratio. In this report, exposure to a DPP4 inhibitor was analyzed, with sulfonylurea exposure serving as a comparator. The variables used were age, sex, chronic kidney disease, hypoglycemia, and diabetic nephropathy.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T4"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<div class="caption"><p class="first" id="id411">Statistical methods for ADR detection in other data sources.</p></div>
+<table frame="hsides" rules="groups" border="0">
+<a id="id412"><!-- named anchor --></a><thead>
+<a id="id413"><!-- named anchor --></a><tr>
+<a id="id414"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id415"><!-- named anchor --></a>Author</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id416"><!-- named anchor --></a>Category of method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id417"><!-- named anchor --></a>Method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id418"><!-- named anchor --></a>Source</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id419"><!-- named anchor --></a>Purpose</td>
+</tr>
+</thead>
+<tbody>
+<a id="id420"><!-- named anchor --></a><tr>
+<a id="id421"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id422"><!-- named anchor --></a>Wang et al<sup>[<a href="#R56">56</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id423"><!-- named anchor --></a>LRT</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id424"><!-- named anchor --></a>Maximum log likelihood ratio</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id425"><!-- named anchor --></a>Common Data Model</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id426"><!-- named anchor --></a>to propose tree- based scan statistics to detect ADR signal</td>
+</tr>
+<tr>
+<a id="id427"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id428"><!-- named anchor --></a>Maura et al<sup>[<a href="#R57">57</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id429"><!-- named anchor --></a>Other</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id430"><!-- named anchor --></a>Sequence Symmetry Analysis</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id431"><!-- named anchor --></a>Health Insurance system</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id432"><!-- named anchor --></a>to assess the association between DOAC initiation and the onset of nonbleeding adverse events</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id433"><!-- named anchor --></a><p id="id434"><span class="generated">[i]</span> ADR = adverse drug reaction, DOAC = Direct Oral Anti-Coagulants.</p>
+</div></div>
+</div>
+<p id="id435">In addition, there is a method for measuring the risk by calculating the ratio according to the order of drug use and outcome. Maura et al<sup>[<a href="#R57">57</a>]</sup> used sequence symmetry analysis to classify patients according to their temporal sequence (outcome → oral anticoagulant (OAC) → outcome). This concept is used to evaluate the association between OAC initiation and the onset of non-bleeding adverse events (eg, renal, hepatic, skin, and gastrointestinal disease) by comparing symmetry.</p>
+</div>
+</div>
+<div class="section">
+<a id="id436"><!-- named anchor --></a><h3 class="section-title">Machine learning methods for ADR detection</h3>
+<h5 class="label">3.2</h5>
+<p id="id437">Various computational methods, ranging from statistical methods to machine learning methods, have been used to detect and predict new links between drugs and ADR. Machine learning, rooted in artificial intelligence framework, can be used to train computers with specific data patterns.<sup>[<a href="#R2">2</a>]</sup> It is considered more useful than statistical methods for analyzing complex datasets. The machine learning methods were classified according to the criteria described in Section 2.2.</p>
+<p id="id438">DrugBank was the most used database in machine learning, followed by the EMR, SIDER, and FAERS databases (Fig. <a href="#F3">3</a>). For method classification, other data sources accounted for the largest proportion (21/40 cases, 52.5%). Among the other methods, the k-nearest neighbor method comprised the highest proportion, followed by matrix factorization. The supervised method had the second-largest proportion (13/40 cases, 32.5%). Among the supervised methods, the detection method using RF was the most common, followed by SVM and gradient-boosted trees. The Bayesian and semisupervised methods followed.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F3"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<div class="caption"><p class="first" id="id439">MedEffect<sup>∗</sup> = National SRS data. The use of multiple algorithms within one study may result in duplicate inclusions. Figure 3. Sankey diagram for machine learning methods.</p></div>
+</div>
+<div class="section">
+<a id="id440"><!-- named anchor --></a><h4 class="subsection-title">Machine learning methods for ADR detection in SRS</h4>
+<h5 class="label">3.2.1</h5>
+<p id="id441">For the machine learning approach, the Bayesian method has been used as a flexible and practical method that incorporates prior information (Table <a href="#T5">5</a>).<sup>[<a href="#R12">12</a>–<a href="#R16">16</a>]</sup> It has also been used to identify important signals in ADR detection. Xiao et al<sup>[<a href="#R12">12</a>]</sup> used the MCEM and signal combination to determine drug safety signals. The authors extracted drug and ADR datasets to find a significant edge pair between the drug and ADR multiple Gamma Poisson Shrinkers. The authors calculated the selected ADR pair final MGPS score, which is an algorithm that derives the posterior probability. Signal combinations and MCEM were used to extract useful pairs, while other drugs were considered confounders and filtered out.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T5"><!-- named anchor --></a><h5 class="label">Table 5</h5>
+<div class="caption"><p class="first" id="id442">Machine learning methods for ADR in SRS data.</p></div>
+<table frame="hsides" rules="groups" border="0">
+<a id="id443"><!-- named anchor --></a><thead>
+<a id="id444"><!-- named anchor --></a><tr>
+<a id="id445"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id446"><!-- named anchor --></a>Author</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id447"><!-- named anchor --></a>Category of method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id448"><!-- named anchor --></a>Method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id449"><!-- named anchor --></a>Source</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id450"><!-- named anchor --></a>Purpose</td>
+</tr>
+</thead>
+<tbody>
+<a id="id451"><!-- named anchor --></a><tr>
+<a id="id452"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id453"><!-- named anchor --></a>Xiao et al<sup>[<a href="#R12">12</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id454"><!-- named anchor --></a>Bayesian</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id455"><!-- named anchor --></a>Monte-Carlo Expectation-Maximization procedure</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id456"><!-- named anchor --></a>FAERS, MedEffect, among others</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id457"><!-- named anchor --></a>To detects exact drug safety signals from multiple data sources via Monte Carlo Expectation Maximization and signal combination step</td>
+</tr>
+<tr>
+<a id="id458"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id459"><!-- named anchor --></a>Cai et al<sup>[<a href="#R13">13</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id460"><!-- named anchor --></a>Bayesian</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id461"><!-- named anchor --></a>Causal Bayesian Network</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id462"><!-- named anchor --></a>FAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id463"><!-- named anchor --></a>To discover DDIs</td>
+</tr>
+<tr>
+<a id="id464"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id465"><!-- named anchor --></a>Li et al<sup>[<a href="#R14">14</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id466"><!-- named anchor --></a>Other methods</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id467"><!-- named anchor --></a>Inductive matrix completion</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id468"><!-- named anchor --></a>FAERS, DrugBank, among others</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id469"><!-- named anchor --></a>To find a random matrix value which minimized the distance between the drug and the ADR by the loss function and regularization</td>
+</tr>
+<tr>
+<a id="id470"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id471"><!-- named anchor --></a>Ren et al<sup>[<a href="#R15">15</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id472"><!-- named anchor --></a>Other methods</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id473"><!-- named anchor --></a>Blockmetrices with correlation</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id474"><!-- named anchor --></a>VAERS</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id475"><!-- named anchor --></a>To use correlation matrices to detect the adverse events or symptoms after vaccination</td>
+</tr>
+<tr>
+<a id="id476"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id477"><!-- named anchor --></a>Liu et al<sup>[<a href="#R16">16</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id478"><!-- named anchor --></a>Other methods</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id479"><!-- named anchor --></a>Autoencoder-Based Semi-Supervised Learning Algorithm and weighted SVM</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id480"><!-- named anchor --></a>FAERS and ONC High-Priority</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id481"><!-- named anchor --></a>To propose a machine learning framework to extract useful features and identify potential highpriority DDIs</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id482"><!-- named anchor --></a><p id="id483"><span class="generated">[i]</span> ADR = adverse drug reaction, DDI = Drug-Drug Interaction.</p>
+</div></div>
+</div>
+<p id="id484">In addition, matrix-preprocessing method and a semi-supervised method were classified as “other methods” in the present study. Li et al used the inductive matrix completion (IMC) algorithm to predict potential drug–ADR associations using multiple data sources.<sup>[<a href="#R14">14</a>]</sup> The IMC method created drug and ADR matrices using the drug and ADR low-rank matrix based on chemical structure, cosine, or Jaccard similarity. Ren et al used VAERS data with block matrices composed of correlation information.<sup>[<a href="#R15">15</a>]</sup> The block matrices that were merged by these vectors were calculated using neighboring information to calculate the distance between the vaccine and the ADR. Liu et al proposed a machine learning framework and identified potential high-priority DDIs.<sup>[<a href="#R16">16</a>]</sup> The authors used an auto-encoder-based semisupervised learning algorithm and a weighted SVM. They created reliable samples by combining labeled (FAERS) and unlabeled samples (ONC high-priority and DDI list), stacked the samples with an auto-encoder, and classified them using a weighted SVM to detect ADR. Assessments of the risk of bias for Table <a href="#T5">5</a> were performed (see Supplemental Digital Content 3).</p>
+</div>
+<div class="section">
+<a id="id485"><!-- named anchor --></a><h4 class="subsection-title">Machine learning methods for ADR detection in EMR data</h4>
+<h5 class="label">3.2.2</h5>
+<p id="id486">When using EMR data, all machine learning methods were classified as supervised methods (Table <a href="#T6">6</a>).<sup>[<a href="#R17">17</a>–<a href="#R21">21</a>,<a href="#R45">45</a>]</sup> Wang et al<sup>[<a href="#R17">17</a>]</sup> developed a data mining method for the systematic and automated detection of ADR. The authors used the RF method based on a set of positive or negative signals for known drug and ADR pairs from databases, such as clinical notes and DrugBank. Zhao et al<sup>[<a href="#R18">18</a>]</sup> explored data using diagnostic information, drug administration, clinical measurements, laboratory tests, and clinical notes. They used ADR-related diagnosis codes as class labels with a RF. In another study, the RF method was used to calculate weights that indicated the importance of clinical events for ADR detection using drugs, diagnoses, measurements from laboratory tests, and clinical notes.<sup>[<a href="#R19">19</a>]</sup> The authors extracted the contribution of each variable as a weight (weight aggregation and sampling) and then applied the RF algorithm. Wang et al calculated the feasibility of multiclass classification for identifying ADR using regularized logistic regression and SVM.<sup>[<a href="#R45">45</a>]</sup> Boyce examined the value of text mining by identifying suspected bleeding ADR from admission notes.<sup>[<a href="#R20">20</a>]</sup> They used RF analysis and other classification methods. Wunnava et al developed rule-based tokenization techniques to minimize noise in EMR notes using an embedding method with a recurrent neural network.<sup>[<a href="#R22">22</a>]</sup> These notes were annotated with medication information (eg, medication name, dose, route, frequency, and duration), ADR, indications, and other signs and symptoms. We assessed the risk of bias in Table <a href="#T6">6</a> (see Supplemental Digital Content 3).</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T6"><!-- named anchor --></a><h5 class="label">Table 6</h5>
+<div class="caption"><p class="first" id="id487">Machine learning methods for ADR in EMR data.</p></div>
+<table frame="hsides" rules="groups" border="0">
+<a id="id488"><!-- named anchor --></a><thead>
+<a id="id489"><!-- named anchor --></a><tr>
+<a id="id490"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id491"><!-- named anchor --></a>Author</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id492"><!-- named anchor --></a>Category of method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id493"><!-- named anchor --></a>Method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id494"><!-- named anchor --></a>Source</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id495"><!-- named anchor --></a>Purpose</td>
+</tr>
+</thead>
+<tbody>
+<a id="id496"><!-- named anchor --></a><tr>
+<a id="id497"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id498"><!-- named anchor --></a>Wang et al<sup>[<a href="#R17">17</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id499"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id500"><!-- named anchor --></a>Random Forest</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id501"><!-- named anchor --></a>EMR, DrugBank, and etc.</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id502"><!-- named anchor --></a>To develop data-mining method for detection of ADRs</td>
+</tr>
+<tr>
+<a id="id503"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id504"><!-- named anchor --></a>Zhao et al<sup>[<a href="#R18">18</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id505"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id506"><!-- named anchor --></a>Random Forest</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id507"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id508"><!-- named anchor --></a>To detect the drug-induced diagnosis ADRs</td>
+</tr>
+<tr>
+<a id="id509"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id510"><!-- named anchor --></a>Zhao et al<sup>[<a href="#R19">19</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id511"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id512"><!-- named anchor --></a>Random Forest</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id513"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id514"><!-- named anchor --></a>To learn weights for ADRs detection</td>
+</tr>
+<tr>
+<a id="id515"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id516"><!-- named anchor --></a>Boyce et al<sup>[<a href="#R20">20</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id517"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id518"><!-- named anchor --></a>Random Forest and so on</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id519"><!-- named anchor --></a>Admission notes</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id520"><!-- named anchor --></a>To show the value of text mining for identifying suspected bleeding ADRs</td>
+</tr>
+<tr>
+<a id="id521"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id522"><!-- named anchor --></a>Desautels et al<sup>[<a href="#R21">21</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id523"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id524"><!-- named anchor --></a>AdaBoost</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id525"><!-- named anchor --></a>EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id526"><!-- named anchor --></a>To identify patients who suffer from ICU readmission</td>
+</tr>
+<tr>
+<a id="id527"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id528"><!-- named anchor --></a>Wunnava et al<sup>[<a href="#R22">22</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id529"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id530"><!-- named anchor --></a>Bi-directional long short-term memory, among others</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id531"><!-- named anchor --></a>EMR notes</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id532"><!-- named anchor --></a>To develop rule-based tokenization techniques for ADRs detection</td>
+</tr>
+<tr>
+<a id="id533"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id534"><!-- named anchor --></a>Wang et al<sup>[<a href="#R45">45</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id535"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id536"><!-- named anchor --></a>Regularized logistic regression, linear support vector machine</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id537"><!-- named anchor --></a>EMR notes</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id538"><!-- named anchor --></a>To evaluate the feasibility of multiclass classification for ADRs</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id539"><!-- named anchor --></a><p id="id540"><span class="generated">[i]</span> ADR = adverse drug reaction.</p>
+</div></div>
+</div>
+</div>
+<div class="section">
+<a id="id541"><!-- named anchor --></a><h4 class="subsection-title">Machine learning methods for ADR detection in other data sources</h4>
+<h5 class="label">3.2.3</h5>
+<p id="id542">The list included in the other data sources is presented in Table <a href="#T7">7</a>.<sup>[<a href="#R41">41</a>,<a href="#R46">46</a>–<a href="#R49">49</a>,<a href="#R51">51</a>–<a href="#R53">53</a>,<a href="#R55">55</a>,<a href="#R58">58</a>–<a href="#R60">60</a>,<a href="#R90">90</a>]</sup> Bean et al considered ADR caused by lead compounds and predicted new ADR from available information on marketed drugs.<sup>[<a href="#R46">46</a>]</sup> Their analysis used the weighted predictive method. The authors constructed a knowledge graph that consisted of four types of nodes and edges, which were composed of drugs, protein targets, indications, and adverse reactions, each indicating the weighted feature score for the ADR pair. Zhang et al determined unobserved drug side effects based on known associations between drugs, ADR, and available drug features.<sup>[<a href="#R47">47</a>]</sup> They used feature-derived graph-regularized matrix factorization. The drug and ADR association matrix was decomposed into 2 low-rank matrices, which uncovered the latent features of the drugs and ADR.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T7"><!-- named anchor --></a><h5 class="label">Table 7</h5>
+<div class="caption"><p class="first" id="id543">Machine learning methods for ADR in other data sources.</p></div>
+<table frame="hsides" rules="groups" border="0">
+<a id="id544"><!-- named anchor --></a><thead>
+<a id="id545"><!-- named anchor --></a><tr>
+<a id="id546"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id547"><!-- named anchor --></a>Author</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id548"><!-- named anchor --></a>Category of method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id549"><!-- named anchor --></a>Method</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id550"><!-- named anchor --></a>Source</td>
+<td align="center" rowspan="1" colspan="1">
+<a id="id551"><!-- named anchor --></a>Purpose</td>
+</tr>
+</thead>
+<tbody>
+<a id="id552"><!-- named anchor --></a><tr>
+<a id="id553"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id554"><!-- named anchor --></a>Kastrin et al<sup>[<a href="#R41">41</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id555"><!-- named anchor --></a>Other methods</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id556"><!-- named anchor --></a>Unsupervised and supervised method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id557"><!-- named anchor --></a>DrugBank, KEGG, NDF-RT, and Twosides</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id558"><!-- named anchor --></a>To represent the process of discovering potential DDIs and to evaluate performance of unsupervised and supervised machine learning methods</td>
+</tr>
+<tr>
+<a id="id559"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id560"><!-- named anchor --></a>Bean et al<sup>[<a href="#R46">46</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id561"><!-- named anchor --></a>Other methods</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id562"><!-- named anchor --></a>Weighted predictive method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id563"><!-- named anchor --></a>DrugBank, SIDER, and EMR</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id564"><!-- named anchor --></a>To use knowledge about drugs known to cause an ADR to predict new causes</td>
+</tr>
+<tr>
+<a id="id565"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id566"><!-- named anchor --></a>Zhang et al<sup>[<a href="#R47">47</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id567"><!-- named anchor --></a>Other methods</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id568"><!-- named anchor --></a>Feature-derived graph regularized matrix factorization</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id569"><!-- named anchor --></a>SIDER, DrugBank, KEGG DRUG and PubChem</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id570"><!-- named anchor --></a>To predict ADRs based on known drug-side effect associations</td>
+</tr>
+<tr>
+<a id="id571"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id572"><!-- named anchor --></a>Zhao et al<sup>[<a href="#R48">48</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id573"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id574"><!-- named anchor --></a>Random forest</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id575"><!-- named anchor --></a>STITCH, KEGG, DrugBank, RDKit and SIDER</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id576"><!-- named anchor --></a>To detect the ADRs</td>
+</tr>
+<tr>
+<a id="id577"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id578"><!-- named anchor --></a>Muñoz et al<sup>[<a href="#R49">49</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id579"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id580"><!-- named anchor --></a>Feature selection-based multi-label k-nearest neighbour</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id581"><!-- named anchor --></a>PubChem and Bio2RDF dataset (DrugBank, SIDER, KEGG, etc.)</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id582"><!-- named anchor --></a>To explore effects of: using knowledge graphs as a representation of heterogeneous data; and casting ADRs prediction as a multilabel ranking problem</td>
+</tr>
+<tr>
+<a id="id583"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id584"><!-- named anchor --></a>Song et al<sup>[<a href="#R51">51</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id585"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id586"><!-- named anchor --></a>Pairwise kernel SVM classifier</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id587"><!-- named anchor --></a>DrugBank and SIDER</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id588"><!-- named anchor --></a>To predict drug pairs and check if they truly interact with each other</td>
+</tr>
+<tr>
+<a id="id589"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id590"><!-- named anchor --></a>Zhang et al<sup>[<a href="#R52">52</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id591"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id592"><!-- named anchor --></a>Feature selection-based multi-label k-nearest neighbor method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id593"><!-- named anchor --></a>SIDER, PubChem, DrugBank, KEGG DRUG, and etc.</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id594"><!-- named anchor --></a>To build the association between feature and ADR vector for multilabel learning</td>
+</tr>
+<tr>
+<a id="id595"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id596"><!-- named anchor --></a>Davazdahemami et al<sup>[<a href="#R53">53</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id597"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id598"><!-- named anchor --></a>Gradient boosted trees</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id599"><!-- named anchor --></a>MEDLINE and DrugBank</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id600"><!-- named anchor --></a>To predict the drug and ADR associations</td>
+</tr>
+<tr>
+<a id="id601"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id602"><!-- named anchor --></a>Hoang et al<sup>[<a href="#R55">55</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id603"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id604"><!-- named anchor --></a>Sequence symmetry method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id605"><!-- named anchor --></a>DrugBank</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id606"><!-- named anchor --></a>To assess the utility of supervised machine learning as a signal detection tool for ADRs</td>
+</tr>
+<tr>
+<a id="id607"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id608"><!-- named anchor --></a>Liu et al<sup>[<a href="#R58">58</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id609"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id610"><!-- named anchor --></a>XGBoost</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id611"><!-- named anchor --></a>Osteoarthritis Initiative dataset</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id612"><!-- named anchor --></a>To identify high-risk features of cardiovascular diseases caused by analgesics OA patients</td>
+</tr>
+<tr>
+<a id="id613"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id614"><!-- named anchor --></a>Ross et al<sup>[<a href="#R59">59</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id615"><!-- named anchor --></a>Bayesian</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id616"><!-- named anchor --></a>Bayesian method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id617"><!-- named anchor --></a>Cardiology's National Cardiovascular Data Registry</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id618"><!-- named anchor --></a>To provide insights into whether multiple methods used as an ensemble to detect all safety signals</td>
+</tr>
+<tr>
+<a id="id619"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id620"><!-- named anchor --></a>Cotterill et al<sup>[<a href="#R60">60</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id621"><!-- named anchor --></a>Bayesian</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id622"><!-- named anchor --></a>Bayesian method</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id623"><!-- named anchor --></a>Simulated data</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id624"><!-- named anchor --></a>To account for a subgroup effect to ADRs by including covariates</td>
+</tr>
+<tr>
+<a id="id625"><!-- named anchor --></a><td align="left" rowspan="1" colspan="1">
+<a id="id626"><!-- named anchor --></a>Yang et al<sup>[<a href="#R90">90</a>]</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id627"><!-- named anchor --></a>Supervised</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id628"><!-- named anchor --></a>Association rule mining metrics</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id629"><!-- named anchor --></a>MedHelp</td>
+<td align="left" rowspan="1" colspan="1">
+<a id="id630"><!-- named anchor --></a>To propose a framework for drug safety signal detection by harnessing online health community data which associated ADRs and DDIs</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id631"><!-- named anchor --></a><p id="id632"><span class="generated">[i]</span> ADR = adverse drug reaction, DDI = Drug-Drug Interaction.</p>
+</div></div>
+</div>
+<p id="id633">Several articles were classified under supervised methods for other data sources. Zhao et al used a RF algorithm to identify ADR based on drug similarity.<sup>[<a href="#R48">48</a>]</sup> Muñoz et al used a machine learning method with a feature selection-based multilabel k-nearest neighbor method to explore the effects of knowledge graph-machine-readable interlinked representations of biomedical knowledge as a convenient uniform representation of heterogeneous data, and ADR detection as a multi-label ranking problem.<sup>[<a href="#R49">49</a>]</sup> Song et al used a pairwise kernel SVM classifier.<sup>[<a href="#R51">51</a>]</sup> The established similarity measures included molecular structure similarity, interaction profile fingerprint similarity (between two drugs that codify the known interaction), target similarity (integration of drug targets, enzymes, transporters, and carrier data to calculate the drug target fingerprints using the Jaccard score), and adverse drug effect similarity as a vector that codifies the presence (1) or absence (0) of the adverse effects in different bit positions from DrugBank and SIDER. After calculating the similarity, the authors generated a similarity matrix and predicted unknown drug and ADR pairs using a pairwise kernel SVM classifier. Davazdahemami et al used gradient-boosted trees. The authors calculated the similarity index of drugs from DrugBank and predicted drug and ADR associations, especially high-risk ADR from MEDLINE.<sup>[<a href="#R53">53</a>]</sup> Liu et al used the XGBoost algorithm to predict the risk of analgesic side effects and provided information on the interpretability of the model.<sup>[<a href="#R58">58</a>]</sup> The authors developed a model based on the Osteoarthritis Initiative dataset, which includes the demographic features, medical history, and physical examination data of patients with osteoarthritis. The assessments of the risk of bias in Table <a href="#T7">7</a> are presented in Supplemental Digital Content 3.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="id634"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<h5 class="label">4</h5>
+<div class="section">
+<a id="id635"><!-- named anchor --></a><h3 class="section-title">Summary of findings</h3>
+<h5 class="label">4.1</h5>
+<p id="id636">Here, we reviewed the landscape of technological methods for ADR signal detection using multiple data sources. There have been several systematic review articles on ADR signal detection. There are existing reference papers that employed different methods according to SRS data, social media, and others.<sup>[<a href="#R2">2</a>]</sup> However, it is difficult to intuitively check the relationship between the database and the method. Another paper summarized the latest machine learning methods based on multiomics and SRS data. However, these failed to provide clarification on which statistical methods are mainly used for SRS data.<sup>[<a href="#R23">23</a>]</sup> Therefore, our study aimed to observe the latest trends and intuitively suggest which analysis method can be selected based on the relationship between data and methods. These methods consist of statistical and machine learning approaches, and the summary was achieved using a visualization tool and a Sankey diagram.</p>
+<p id="id637">The type of data used to detect ADR signals differed according to the category of the method. More than 90% of the statistical methods were used to analyze SRS and EMR data, whereas 43% of machine learning methods were used for SRS and EMR data. More than 50% of the studies used other data sources, such as DrugBank or KEGG, which include drug interactions, pathways, and structures. Statistical methods generally used a single database for each study. Conversely, machine learning methods made use of multiple databases for detection of ADR signals.</p>
+<p id="id638">For the statistical approach, &gt;80% of the total results were related to statistical analysis with SRS and EMR data. The disproportionality, LRT, and regression methods were utilized for the SRS data. The EMR data were analyzed exclusively using the regression method.</p>
+<p id="id639">A different set of characteristics was observed for the machine learning approach. Machine learning has a trend-complex dataset for ADR signal detection compared to statistical methods. DrugBank was the most used database in machine learning, followed by EMR, SIDER, and FAERS databases. The remaining databases accounted for the largest proportion (52.5%). Among the other methods, the k-nearest neighbor method comprised the highest proportion. The supervised method had the second-largest proportion (32.5%). In our study, RF was most frequently used in ADR signal detection, followed by SVM and gradient-boosted trees. Furthermore, the risk of bias evaluation showed that while the statistical component was generally high, the machine learning component was generally low.</p>
+<p id="id640">There was an additional difference with respect to the time of the study between the statistical and machine learning methods (see Supplemental Digital Content 1). Until 2016 and 2017, statistical methods accounted for a higher proportion of studies than machine learning methods. In 2018, however, 38.1% of the studies involved machine learning methods, whereas 33.4% involved statistical methods.</p>
+<p id="id641">Although SRS data have been the cornerstone of signal detection for drug safety, the data have some issues, such as underreporting, selective reporting, or the absence of information about actual exposed patients. This can potentially hinder the identification of safety signals.<sup>[<a href="#R91">91</a>]</sup> Monitoring of SRS is voluntary, and SRS does not include all ADRs. Thus, studies have found that as many as 90% of serious ADR are unreported.<sup>[<a href="#R92">92</a>]</sup> The underreporting of ADR can trigger a delay in the signal detection of ADR and marketing of a drug and raise risk estimates, resulting in false positives.<sup>[<a href="#R92">92</a>]</sup> We examined the use of statistical methods, considering the limitations of these data. Two statistical methods have been used to control sparsity: the metropolis-hasting algorithm<sup>[<a href="#R64">64</a>]</sup> which deals with the sparsity of logistic regression, and the zero-inflated Poisson model<sup>[<a href="#R38">38</a>,<a href="#R39">39</a>]</sup> for a true zero distribution. Another analysis method is the LRT. The LRT comprised the third largest proportion, followed by the disproportionate and regression methods. The LRT is primarily used because it can address false positives, such as those typically seen in FAERS data, and display satisfactory power and sensitivity, controlling type-1 errors.<sup>[<a href="#R39">39</a>]</sup> Several studies have attempted to modify the LRT method. Since the LRT method itself is difficult to analyze patient-level data using the LRT method itself, Zhao et al stratified LRT statistics according to age and sex among demographic factors.<sup>[<a href="#R39">39</a>]</sup> Wang et al used the LRT method to represent the probability of risk-associated DDIs for multiple drugs as a log-likelihood function.<sup>[<a href="#R40">40</a>]</sup></p>
+<p id="id642">The Bayesian method comprised the lowest proportion even though it had flexible and practical characteristics in the machine learning method.<sup>[<a href="#R60">60</a>]</sup> Therefore, it was confirmed to be useful in research on ADR signal detection. The Bayesian method reduces the computational cost and robustly preserves the predictive performance of high-dimensional data. However, complexity is a critical problem when using this method. RF is the most used supervised machine learning method. The RF method, which is a strong classifier that exhibits favorable performance, can be applied to signal detection models.<sup>[<a href="#R48">48</a>]</sup> XGBoost is the most used RF method. The XGBoost is a sparsity-aware algorithm. It can predict side effects in large cases of disease.<sup>[<a href="#R93">93</a>]</sup></p>
+<p id="id643">In addition, the multilabel k-nearest neighbor method has been used as a flexible and robust approach; it is similar to the Bayesian method.<sup>[<a href="#R49">49</a>]</sup> This method can control the dimensionality by embedding it into low-rank feature spaces. It can also determine the optimal feature dimensions and derive high accuracy.<sup>[<a href="#R94">94</a>]</sup> Other machine learning methods are matrix based. Among matrix-based methods, matrix factorization can detect unobserved associations based on a known association matrix. The method suggests that centrality-based matrices predict the network edges of drug and ADR pairs better than existing similarity-based matrices.<sup>[<a href="#R53">53</a>]</sup></p>
+</div>
+<div class="section">
+<a id="id644"><!-- named anchor --></a><h3 class="section-title">Limitations</h3>
+<h5 class="label">4.2</h5>
+<div class="section">
+<a id="id645"><!-- named anchor --></a><h4 class="subsection-title">Limitations of the methods used in ADR assessment</h4>
+<h5 class="label">4.2.1</h5>
+<p id="id646">There are some limitations to the statistical methods. Except for the regression method, patient-level analysis using SRS or other databases is difficult to achieve. It is mainly an analysis method for group-level analysis and cannot use the demographic information of an individual. A stratified statistic adjusting the baseline covariate can be suggested as an alternative to overcome this limitation.<sup>[<a href="#R39">39</a>]</sup> This method is appropriate for analyzing baseline covariates. However, there are some limitations to this. Stratified statistics become complicated when the number of adjusted baseline covariates increases. When considering multiple prescriptions, the concept of DDI was introduced to consider multiple counts and determine the count-dependent probability.<sup>[<a href="#R40">40</a>]</sup> However, it is difficult to determine whether these DDIs consider actual drug interactions. Additionally, they are limited with respect to weight adjustment according to the number of drugs administered. In a statistical method, more intensive research is needed to properly reflect these covariates. Further studies are needed to determine how to use the interaction information for multiple drugs.</p>
+<p id="id647">There are also some limitations to machine learning methods. Owing to the limitations of data-driven methods, the results of the predictive model may not be comprehensive, and it is difficult to distinguish clinically relevant signals. The weighted method was used in the RF, but the interpretation for results is also an additional consideration when using other methods (eg, information gain) rather than weight.<sup>[<a href="#R19">19</a>]</sup></p>
+</div>
+<div class="section">
+<a id="id648"><!-- named anchor --></a><h4 class="subsection-title">Limitations of the review</h4>
+<h5 class="label">4.2.2</h5>
+<p id="id649">The limitation of XGBoost is the complexity and highly relevant relationships between risk factors.<sup>[<a href="#R93">93</a>]</sup> There are limitations not only for the research analysis methods but also for the present study. Both statistical and machine learning methods capture an appropriate risk window for the calculation of ADR.<sup>[<a href="#R56">56</a>]</sup> Because there are no “gold standard” safety signal detection methods in databases, it is unknown which method is the most effective and reliable.<sup>[<a href="#R59">59</a>]</sup> Although both statistical and machine learning methods have been reviewed, it is difficult to conclude which method has the best performance because of the diverse characteristics of the data and methods used in the studies. In this review, publication bias may have existed depending on the selected article.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="id650"><!-- named anchor --></a><h2 class="main-title">Conclusions</h2>
+<h5 class="label">5</h5>
+<p id="id651">Seventy-two articles using statistical and machine learning methods for predicting ADRs were identified. This systematic review followed the PRISMA guidelines to analyze the methods thoroughly. Our main finding was that, for the statistical analysis, &gt;90% of the cases were analyzed by disproportionate or regression analysis with SRS or EMR data. In contrast, in machine learning research, there was a strong tendency to analyze various data combinations. Only 50% of the DrugBank database containing drug and drug target information was available. For the machine learning research, we expected the more conventional supervised analysis to dominate. However, detection of ADRs using various other methods was more common. Out of these, the k-nearest neighbor method accounted for the largest proportion. Our trend analysis is expected to serve as a guideline for researchers in the future. Our future work will reveal which method is optimal by comparing performance indicators to measure the utility of the methodology.</p>
+</div>
+<div class="section">
+<a id="id652"><!-- named anchor --></a><h2 class="main-title">Author contributions</h2>
+<p id="id653">HRK developed the study concept and design, data analysis, data interpretation, drafting, and revision of the manuscript; MDS, JAP, and HHK developed the study concept and design, and reviewed this manuscript; SHL developed the review of this manuscript; YRP developed the study concept and design, data interpretation, drafting, and revision of the manuscript. All authors contributed to and approved the final manuscript.</p>
+<p id="id654"><b>Conceptualization:</b> Yu Rang Park</p>
+<p id="id655"><b>Data curation:</b> Hae Kim, Yu Rang Park</p>
+<p id="id656"><b>Funding acquisition:</b> Yu Rang Park</p>
+<p id="id657"><b>Methodology:</b> Hae Kim</p>
+<p id="id658"><b>Project administration:</b> Yu Rang Park</p>
+<p id="id659"><b>Resources:</b> Yu Rang Park</p>
+<p id="id660"><b>Software:</b> Hae Kim</p>
+<p id="id661"><b>Validation:</b> MinDong Sung, Yu Rang Park</p>
+<p id="id662"><b>Visualization:</b> Hae Kim</p>
+<p id="id663"><b>Writing – original draft:</b> Hae Kim</p>
+<p id="id664"><b>Writing – review &amp; editing:</b> Ho Kim, Ji Park, Kyeongseob Jeong, MinDong Sung, Suehyun Lee, Yu Rang Park</p>
+</div>
+<div class="section">
+<a id="id665"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD1"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2624" href="medi-101-e29387-s001.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id666"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD2"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2630" href="medi-101-e29387-s002.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id667"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD3"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2636" href="medi-101-e29387-s003.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id668"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD4"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2642" href="medi-101-e29387-s004.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id669"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD5"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2648" href="medi-101-e29387-s005.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id670"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD6"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2655" href="medi-101-e29387-s006.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id671"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD7"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2661" href="medi-101-e29387-s007.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id672"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD8"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2667" href="medi-101-e29387-s008.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id673"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD9"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2673" href="medi-101-e29387-s009.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id674"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD10"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2679" href="medi-101-e29387-s010.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id675"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD11"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2685" href="medi-101-e29387-s011.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id676"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD12"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2691" href="medi-101-e29387-s012.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id677"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD13"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2697" href="medi-101-e29387-s013.docx"></a>
+</div>
+</div>
+<div class="section">
+<a id="id678"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD14"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Digital Content</h4></div>
+<a id="d64e2703" href="medi-101-e29387-s014.docx"></a>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id699"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id679"><!-- named anchor --></a><p id="id680"><span class="generated">[7]<span class="generated"> Abbreviation</span></span> Abbreviations: ADR = adverse drug reaction, ARM = association rule mining, BCPNN = The Bayesian Confidence Propagation Neural Network, CDM = Common Data Model, CRR = combination risk ratio, EBGM = Empirical Bayes Geometric Mean, EMR = electronic medical record, FAERS = FDA Adverse Event Reporting System, KEGG = Kyoto Encyclopedia of Genes and Genomes, LRT = log-likelihood ratio test, PRR = Proportional Reporting Ratio, RF = Random Forest, ROR = reporting odds ratio, SRS = spontaneous reporting system, SVM = support vector machine, VAERS = Vaccine Adverse Event Reporting System.</p>
+</div>
+<div class="footnote">
+<a id="id681"><!-- named anchor --></a><p id="id682"><span class="generated">[8]</span> How to cite this article: Kim HR, Sung M, Park JA, Jeong K, Kim HH, Lee S, Park YR. Analyzing adverse drug reaction using statistical and machine learning methods: a systematic review. <i>Medicine</i>. 2022;101:25(e29387).</p>
+</div>
+<div class="footnote">
+<a id="id683"><!-- named anchor --></a><p id="id684"><span class="generated">[9]</span> Ethics approval and consent to participate: Not applicable.</p>
+</div>
+<div class="footnote">
+<a id="id685"><!-- named anchor --></a><p id="id686"><span class="generated">[10]</span> Consent for publication: All the authors approved the final manuscript.</p>
+</div>
+<div class="footnote">
+<a id="id687"><!-- named anchor --></a><p id="id688"><span class="generated">[11]</span> Availability of data and material: This manuscript has no associated data and materials.</p>
+</div>
+<div class="footnote">
+<a id="id689"><!-- named anchor --></a><p id="id690"><span class="generated">[12]</span> The authors report no conflicts of interest.</p>
+</div>
+<div class="footnote">
+<a id="id691"><!-- named anchor --></a><p id="id692"><span class="generated">[13]<span class="generated"> Supported by</span></span> Funding: This study was supported by the Foundational Technology Development Program (NRF - 2019M3E5D4064682) the Ministry of Science and ICT, Republic of Korea and this research was also supported by a grant from the Korea Institute of Drug Safety and Risk Management in 2015.</p>
+</div>
+<div class="footnote">
+<a id="id693"><!-- named anchor --></a><p id="id694"><span class="generated">[14]</span> Data sharing not applicable to this article as no datasets were generated or analyzed during the present study.</p>
+</div>
+<div class="footnote">
+<a id="id695"><!-- named anchor --></a><p id="id696"><span class="generated">[15]<span class="generated"> Supported by</span></span> Funding: This study was supported by the Foundational Technology Development Program (NRF - 2019M3E5D4064682) the Ministry of Science and ICT, Republic of Korea and this research was also supported by a grant from the Korea Institute of Drug Safety and Risk Management in 2021</p>
+</div>
+<div class="footnote">
+<a id="id697"><!-- named anchor --></a><p id="id698"><span class="generated">[16]</span> Supplemental digital content is available for this article.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id700"><!-- named anchor --></a><div class="section ref-list">
+<a id="id700"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[1]</span> <a id="R1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id701"><!-- named anchor --></a>CY LeeYPP Chen. Machine learning on adverse drug reactions for pharmacovigilance. Drug Discov Today2019;24:1332–43.3087684510.1016/j.drudis.2019.03.003</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[2]</span> <a id="R2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id702"><!-- named anchor --></a>TB HoL LeDT ThaiS Taewijit. Data-driven approach to detect and predict adverse drug reactions. Curr Pharm Des2016;22:3498–526.2715741610.2174/1381612822666160509125047</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[3]</span> <a id="R3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id703"><!-- named anchor --></a>M AlomarAM TawfiqN HassanS Palaian. Post marketing surveillance of suspected adverse drug reactions through spontaneous reporting: current status, challenges and the future. Ther Adv Drug Saf2020;11:2042098620938595.3284395810.1177/2042098620938595PMC7418468</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[4]</span> <a id="R4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id704"><!-- named anchor --></a>H IbrahimA AbdoAM El KerdawyAS Eldin. Signal detection in pharmacovigilance: a review of informatics-driven approaches for the discovery of drug-drug interaction signals in different data sources. Artificial Intelligence in the Life Sciences2021;1:100005.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[5]</span> <a id="R5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id705"><!-- named anchor --></a>J-L FaillieF MontastrucJ-L MontastrucA Pariente. Pharmacoepidemiology and its input to pharmacovigilance. Therapies2016;71:211–6.10.1016/j.therap.2016.02.01627080840</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[6]</span> <a id="R6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id706"><!-- named anchor --></a>A VallanoG CerezaC Pedròs. Obstacles and solutions for spontaneous reporting of adverse drug reactions in the hospital. Br J Clin Pharmacol2005;60:653–8.1630559110.1111/j.1365-2125.2005.02504.xPMC1884880</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[7]</span> <a id="R7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id707"><!-- named anchor --></a>J HasfordM GoettlerKH MunterB Müller-Oerlinghausen. Physicians’ knowledge and attitudes regarding the spontaneous reporting system for adverse drug reactions. J Clin Epidemiol2002;55:945–50.1239308410.1016/s0895-4356(02)00450-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[8]</span> <a id="R8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id708"><!-- named anchor --></a>Zhang X et al., Comparing Pharmacovigilance Outcomes Between FAERS and EMR Data for Acute Mania Patients, IEEE International Conference on Healthcare Informatics Workshop (ICHI-W), 2018.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[9]</span> <a id="R9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id709"><!-- named anchor --></a>X WangL LiL WangW FengP Zhang. Propensity score-adjusted three-component mixture model for drug-drug interaction data mining in FDA Adverse Event Reporting System. Stat Med2020;39:996–1010.3188082910.1002/sim.8457PMC9292662</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[10]</span> <a id="R10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id710"><!-- named anchor --></a>Y NoguchiT TachiH Teramachi. Detection algorithms and attentive points of safety signal using spontaneous reporting systems as a clinical data source. Brief Bioinform2021;22:bbab347.3445315810.1093/bib/bbab347</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[11]</span> <a id="R11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id711"><!-- named anchor --></a>G CandoreK JuhlinK Manlik. Comparison of statistical signal detection methods within and across spontaneous reporting databases. Drug Saf2015;38:577–87.2589960510.1007/s40264-015-0289-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[12]</span> <a id="R12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id712"><!-- named anchor --></a>C XiaoY LiIM BaytasJ ZhouF Wang. An MCEM framework for drug safety signal detection and combination from heterogeneous real world evidence. Sci Rep2018;8:1806.2937904810.1038/s41598-018-19979-7PMC5789130</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[13]</span> <a id="R13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id713"><!-- named anchor --></a>R CaiM LiuY Hu. Identification of adverse drug-drug interactions through causal association rule discovery from spontaneous adverse event reports. Artif Intell Med2017;76:07–15.10.1016/j.artmed.2017.01.004PMC643838428363289</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[14]</span> <a id="R14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id714"><!-- named anchor --></a>R LiY DongQ Kuang. Inductive matrix completion for predicting adverse drug reactions (ADRs) integrating drug-target interactions. Chemometrics and Intelligent Laboratory Systems2015;144:71–9.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[15]</span> <a id="R15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id715"><!-- named anchor --></a>JJ RenT SunY HeY Zhang. A statistical analysis of vaccine-adverse event data. BMC Med Inform Decis Mak2019;19:101.3113821910.1186/s12911-019-0818-8PMC6540382</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[16]</span> <a id="R16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id716"><!-- named anchor --></a>N LiuCB ChenS Kumara. Semi-supervised learning algorithm for identifying high-priority drug-drug interactions through adverse event reports. IEEE J Biomed Health Inform2020;24:57–68.3139556710.1109/JBHI.2019.2932740</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[17]</span> <a id="R17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id717"><!-- named anchor --></a>G WangK JungR WinnenburgNH Shah. A method for systematic discovery of adverse drug events from clinical notes. J Am Med Inform Assoc2015;22:1196–204.2623244210.1093/jamia/ocv102PMC4921953</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[18]</span> <a id="R18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id718"><!-- named anchor --></a>J ZhaoA HenrikssonL AskerH Bostrom. Predictive modeling of structured electronic health records for adverse drug event detection. BMC Med Inform Decis Mak2015;15: (suppl 4): S1.10.1186/1472-6947-15-S4-S1PMC466012926606038</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[19]</span> <a id="R19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id719"><!-- named anchor --></a>J ZhaoA Henriksson. Learning temporal weights of clinical events using variable importance. BMC Med Inform Decis Mak2016;16: (suppl 2): 71.2745999310.1186/s12911-016-0311-6PMC4965710</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[20]</span> <a id="R20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id720"><!-- named anchor --></a>RD BoyceJ JaoT MillerSL Kane-Gill. Automated screening of emergency department notes for drug-associated bleeding adverse events occurring in older adults. Appl Clin Inform2017;8:1022–30.2924124210.4338/ACI-2017-02-RA-0036PMC5802315</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[21]</span> <a id="R21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id721"><!-- named anchor --></a>T DesautelsR DasJ Calvert. Prediction of early unplanned intensive care unit readmission in a UK tertiary care hospital: a cross-sectional machine learning approach. BMJ Open2017;7:e017199.10.1136/bmjopen-2017-017199PMC564009028918412</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[22]</span> <a id="R22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id722"><!-- named anchor --></a>S WunnavaX QinT KakarC SenEA RundensteinerX Kong. Adverse drug event detection from electronic health records using hierarchical recurrent neural networks with dual-level embedding. Drug Saf2019;42:113–22.3064973610.1007/s40264-018-0765-9</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[23]</span> <a id="R23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id723"><!-- named anchor --></a>DA NguyenCH NguyenH Mamitsuka. A survey on adverse drug reaction studies: data, tasks and machine learning methods. Brief Bioinform2019.10.1093/bib/bbz14031838499</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[24]</span> <a id="R24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id724"><!-- named anchor --></a>RW Park. The distributed research network, observational health data sciences and informatics, and the South Korean research network. Korean J Med2019;94:309–14.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[25]</span> <a id="R25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id725"><!-- named anchor --></a>A LiberatiDG AltmanJ Tetzlaff. The PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: explanation and elaboration. PLOS Med2009;6:e1000100.1962107010.1371/journal.pmed.1000100PMC2707010</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[26]</span> <a id="R26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id726"><!-- named anchor --></a>LA McGuinnessJPT Higgins. Risk-of-bias VISualization (robvis): an R package and Shiny web app for visualizing risk-of-bias assessments. Research Synthesis Methods2020;n/a.10.1002/jrsm.141132336025</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[27]</span> <a id="R27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id727"><!-- named anchor --></a>M JakicM JagerM Kosnik. Predictive value of a negative oral provocation test in patients with hypersensitivity to analgesics. Acta Dermatovenerol Alp Pannonica Adriat2016;25:27–30.2734845410.15570/actaapa.2016.8</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[28]</span> <a id="R28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id728"><!-- named anchor --></a>L MonacoM MelisC Biagi. Signal detection activity on EudraVigilance data: analysis of the procedure and findings from an Italian Regional Centre for Pharmacovigilance. Expert Opin Drug Saf2017;16:271–5.2809458310.1080/14740338.2017.1284200</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[29]</span> <a id="R29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id729"><!-- named anchor --></a>E RaschiE PoluzziA Koci. Liver injury with novel oral anticoagulants: assessing post-marketing reports in the US Food and Drug Administration adverse event reporting system. Br J Clin Pharmacol2015;80:285–93.2568941710.1111/bcp.12611PMC4541976</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[30]</span> <a id="R30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id730"><!-- named anchor --></a>C FukazawaY HinomuraM KanekoM Narukawa. Significance of data mining in routine signal detection: analysis based on the safety signals identified by the FDA. Pharmacoepidemiol Drug Saf2018;27:1402–8.3032467110.1002/pds.4672</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[31]</span> <a id="R31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id731"><!-- named anchor --></a>MM RahmanY AlatawiN Cheng. Methodological considerations for comparison of brand versus generic versus authorized generic adverse event reports in the US Food and Drug Administration Adverse Event Reporting System (FAERS). Clin Drug Investig2017;37:1143–52.10.1007/s40261-017-0574-4PMC584208128933038</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[32]</span> <a id="R32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id732"><!-- named anchor --></a>Y AlatawiMM RahmanN Cheng. Brand vs generic adverse event reporting patterns: an authorized generic-controlled evaluation of cardiovascular medications. J Clin Pharm Ther2018;43:327–35.2909209710.1111/jcpt.12646PMC5930131</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[33]</span> <a id="R33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id733"><!-- named anchor --></a>KB HoffmanM DimbilNP TatonettiRF Kyle. A Pharmacovigilance signaling system based on FDA regulatory action and post-marketing adverse event reports. Drug Saf2016;39:561–75.2694629210.1007/s40264-016-0409-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[34]</span> <a id="R34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id734"><!-- named anchor --></a>M TakadaM FujimotoH MotomuraK Hosomi. Inverse association between sodium channel-blocking antiepileptic drug use and cancer: data mining of spontaneous reporting and claims databases. Int J Med Sci2016;13:48–59.2681649410.7150/ijms.13834PMC4716819</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[35]</span> <a id="R35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id735"><!-- named anchor --></a>Y YuJ ChenD LiL WangW WangH Liu. Systematic analysis of adverse event reports for sex differences in adverse drug events. Sci Rep2016;6:24955.2710201410.1038/srep24955PMC4840306</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[36]</span> <a id="R36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id736"><!-- named anchor --></a>Z YueJ ShiH LiH Li. Association between Concomitant Use of Acyclovir or Valacyclovir with NSAIDs and an Increased Risk of Acute Kidney Injury: Data Mining of FDA Adverse Event Reporting System. Biol Pharm Bull2018;41:158–62.2918770110.1248/bpb.b17-00547</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[37]</span> <a id="R37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id737"><!-- named anchor --></a>Y CaiJ DuJ Huang. A signal detection method for temporal variation of adverse effect with vaccine adverse event reporting system data. BMC Med Inform Decis Mak2017;17:76.2869954310.1186/s12911-017-0472-yPMC5506615</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[38]</span> <a id="R38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id738"><!-- named anchor --></a>J TongJ HuangJ DuY CaiC TaoY Chen. Identification of rare adverse events with year-varying reporting rates for FLU4 vaccine in VAERS. AMIA Annu Symp Proc2018;1544–51.30815200PMC6371315</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[39]</span> <a id="R39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id739"><!-- named anchor --></a>Y ZhaoM YiRC Tiwari. Extended likelihood ratio test-based methods for signal detection in a drug class with application to FDA's adverse event reporting system database. Stat Methods Med Res2018;27:876–90.2714298210.1177/0962280216646678</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[40]</span> <a id="R40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id740"><!-- named anchor --></a>X WangP ZhangCW Chiang. Mixture drug-count response model for the high-dimensional drug combinatory effect on myopathy. Stat Med2018;37:673–86.2917106210.1002/sim.7545PMC5771837</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[41]</span> <a id="R41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id741"><!-- named anchor --></a>A KastrinP FerkB Leskosek. Predicting potential drug-drug interactions on topological and semantic similarity features using statistical learning. PLoS One2018;13:e0196865.2973853710.1371/journal.pone.0196865PMC5940181</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[42]</span> <a id="R42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id742"><!-- named anchor --></a>RE ChandlerK JuhlinJ FranssonO CasterIR EdwardsGN Noren. Current safety concerns with human papillomavirus vaccine: a cluster analysis of reports in VigiBase((R)). Drug Saf2017;40:81–90.2763866110.1007/s40264-016-0456-3PMC5209415</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[43]</span> <a id="R43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id743"><!-- named anchor --></a>H SugawaraM UchidaS Suzuki. Analyses of respiratory depression associated with opioids in cancer patients based on the Japanese Adverse Drug Event Report Database. Biol Pharm Bull2019;42:1185–91.3125729310.1248/bpb.b19-00105</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[44]</span> <a id="R44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id744"><!-- named anchor --></a>S UozumiT EnokidaS Suzuki. Predictive value of cetuximab-induced skin toxicity in recurrent or metastatic squamous cell carcinoma of the head and neck. Front Oncol2018;08.10.3389/fonc.2018.00616PMC630047530619755</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[45]</span> <a id="R45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id745"><!-- named anchor --></a>Y WangE CoieraW RuncimanF Magrabi. Using multiclass classification to automate the identification of patient safety incident reports by type and severity. BMC Med Inform Decis Mak2017;17:84.2860617410.1186/s12911-017-0483-8PMC5468980</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[46]</span> <a id="R46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id746"><!-- named anchor --></a>DM BeanH WuE Iqbal. Knowledge graph prediction of unknown adverse drug reactions and validation in electronic health records. Sci Rep2017;7:16416.2918075810.1038/s41598-017-16674-xPMC5703951</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[47]</span> <a id="R47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id747"><!-- named anchor --></a>W ZhangX LiuY ChenW WuW WangX Li. Feature-derived graph regularized matrix factorization for predicting drug side effects. Neurocomputing2018;287:154–62.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[48]</span> <a id="R48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id748"><!-- named anchor --></a>X ZhaoL ChenJ Lu. A similarity-based method for prediction of drug side effects with heterogeneous information. Math Biosci2018;306:136–44.3029641710.1016/j.mbs.2018.09.010</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[49]</span> <a id="R49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id749"><!-- named anchor --></a>E MuñozV NovácekPY Vandenbussche. Facilitating prediction of adverse drug reactions by using knowledge graphs and multi-label learning models. Brief Bioinform2019;20:190–202.2896865510.1093/bib/bbx099</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[50]</span> <a id="R50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id750"><!-- named anchor --></a>E JeongN ParkY ChoiRW ParkD Yoon. Machine learning model combining features from algorithms with different analytical methodologies to detect laboratory-event-related adverse drug reaction signals. PLoS One2018;13:e0207749.3046274510.1371/journal.pone.0207749PMC6248973</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[51]</span> <a id="R51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id751"><!-- named anchor --></a>D SongY ChenQ Min. Similarity-based machine learning support vector machine predictor of drug-drug interactions with improved accuracies. J Clin Pharm Ther2019;44:268–75.3056531310.1111/jcpt.12786</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[52]</span> <a id="R52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id752"><!-- named anchor --></a>W ZhangF LiuL LuoJ Zhang. Predicting drug side effects by multi-label learning and ensemble learning. BMC Bioinform2015;16:365.10.1186/s12859-015-0774-yPMC463490526537615</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[53]</span> <a id="R53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id753"><!-- named anchor --></a>B DavazdahemamiD Delen. A chronological pharmacovigilance network analytics approach for predicting adverse drug events. J Am Med Inform Assoc2018;25:1311–21.3008510210.1093/jamia/ocy097PMC7646912</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[54]</span> <a id="R54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id754"><!-- named anchor --></a>K RajaM PatrickJT ElderLC Tsoi. Machine learning workflow to enhance predictions of Adverse Drug Reactions (ADRs) through drug-gene interactions: application to drugs for cutaneous diseases. Sci Rep2017;7:3690.2862336310.1038/s41598-017-03914-3PMC5473874</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[55]</span> <a id="R55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id755"><!-- named anchor --></a>T HoangJ LiuE RougheadN PrattJ Li. Supervised signal detection for adverse drug reactions in medication dispensing data. Comput Methods Programs Biomed2018;161:25–38.2985296510.1016/j.cmpb.2018.03.021</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[56]</span> <a id="R56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id756"><!-- named anchor --></a>SV WangJC MaroE Baro. Data mining for adverse drug events with a propensity score-matched tree-based scan statistic. Epidemiology2018;29:895–903.3007453810.1097/EDE.0000000000000907PMC6167151</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[57]</span> <a id="R57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id757"><!-- named anchor --></a>G MauraC BillionnetJ CosteA WeillA NeumannA Pariente. Non-bleeding adverse events with the use of direct oral anticoagulants: a sequence symmetry analysis. Drug Saf2018;41:881–97.2971400410.1007/s40264-018-0668-9PMC6061378</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[58]</span> <a id="R58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id758"><!-- named anchor --></a>L LiuY YuZ Fei. An interpretable boosting model to predict side effects of analgesics for osteoarthritis. BMC Systems Biol2018;12:105.10.1186/s12918-018-0624-4PMC624973030463545</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[59]</span> <a id="R59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id759"><!-- named anchor --></a>JS RossJ BatesCS Parzynski. Can machine learning complement traditional medical device surveillance? A case study of dual-chamber implantable cardioverter-defibrillators. Med Devices (Auckl)2017;10:165–88.2886087410.2147/MDER.S138158PMC5566316</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[60]</span> <a id="R60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id760"><!-- named anchor --></a>A CotterillT Jaki. Dose-escalation strategies which use subgroup information. Pharm Stat2018;17:414–36.2990066610.1002/pst.1860PMC6175353</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[61]</span> <a id="R61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id761"><!-- named anchor --></a>L TanM LiY Lin. Safety concerns of traditional Chinese medicine injections used in chinese children. Evid Based Complement Altern Med2019;2019.10.1155/2019/8310368PMC661238931341500</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[62]</span> <a id="R62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id762"><!-- named anchor --></a>NTH TrinhE SoleM Benkebil. Benefits of combining change-point analysis with disproportionality analysis in pharmacovigilance signal detection. Pharmacoepidemiol Drug Saf2019;28:370–6.2999267910.1002/pds.4613</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[63]</span> <a id="R63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id763"><!-- named anchor --></a>CL ChanS RudrappaPS AngSC LiSJW Evans. Detecting signals of disproportionate reporting from singapore's spontaneous adverse event reporting system: an application of the sequential probability ratio test. Drug Saf2017;40:703–13.2845579310.1007/s40264-017-0531-4</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[64]</span> <a id="R64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id764"><!-- named anchor --></a>M MarbacP Tubert-BitterM Sedki. Bayesian model selection in logistic regression for the detection of adverse drug reactions. Biom J2016;58:1376–89.2722532510.1002/bimj.201500098</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[65]</span> <a id="R65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id765"><!-- named anchor --></a>D XuAG HamRD Tivis. MSBIS: a multi-step biomedical informatics screening approach for identifying medications that mitigate the risks of metoclopramide-induced Tardive Dyskinesia. EBioMedicine2017;26:132–7.2919156010.1016/j.ebiom.2017.11.015PMC5832625</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[66]</span> <a id="R66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id766"><!-- named anchor --></a>NN PettitMH MiceliCG Rivera. Multicentre study of posaconazole delayed-release tablet serum level and association with hepatotoxicity and QTc prolongation. J Antimicrob Chemother2017;72:2355–8.2847580310.1093/jac/dkx122PMC5890703</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[67]</span> <a id="R67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id767"><!-- named anchor --></a>M LerchP NowickiK ManlikG Wirsching. Statistical signal detection as a routine pharmacovigilance practice: effects of periodicity and resignalling criteria on quality and workload. Drug Saf2015;38:1219–31.2639180110.1007/s40264-015-0345-1PMC4659850</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[68]</span> <a id="R68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id768"><!-- named anchor --></a>M NishiharaN MorikawaS YokoyamaK NishikuraM YasuharaH Matsuo. Risk factors increasing blood pressure in Japanese colorectal cancer patients treated with bevacizumab. Pharmazie2018;73:671–5.3039638810.1691/ph.2018.8664</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[69]</span> <a id="R69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id769"><!-- named anchor --></a>A OtakeD TsujiK Taku. Chemotherapy-induced neutropenia as a prognostic factor in patients with metastatic pancreatic cancer treated with gemcitabine. Eur J Clin Pharmacol2017;73:1033–9.2848799910.1007/s00228-017-2260-0</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[70]</span> <a id="R70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id770"><!-- named anchor --></a>J KucharzP DumnickaB Kusnierz-CabalaT DemkowP Wiechno. The correlation between the incidence of adverse events and progression-free survival in patients treated with cabozantinib for metastatic renal cell carcinoma (mRCC). Med Oncol2019;36:19.3066649810.1007/s12032-018-1239-8</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[71]</span> <a id="R71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id771"><!-- named anchor --></a>I DonaE BarrionuevoM Salas. Natural evolution in patients with nonsteroidal anti-inflammatory drug-induced urticaria/angioedema. Allergy2017;72:1346–55.2822640110.1111/all.13147</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[72]</span> <a id="R72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id772"><!-- named anchor --></a>GO GadelhaH PaixaoPRD PradoR VianaTLM Amaral. Risk factors for death in patients with non-infectious adverse events. Rev Lat Am Enfermagem2018;26:e3001.3002033510.1590/1518-8345.2069.3001PMC6053290</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[73]</span> <a id="R73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id773"><!-- named anchor --></a>PHS AndradeIMF LoboWB da Silva. Risk factors for adverse drug reactions in pediatric inpatients: a cohort study. PLoS One2017;12:e0182327.2876349910.1371/journal.pone.0182327PMC5538648</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[74]</span> <a id="R74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id774"><!-- named anchor --></a>SM WestbergA YarbroughED Weinhandl. Drug therapy problem severity following hospitalization and association with 30-day clinical outcomes. Ann Pharmacother2018;52:1195–203.2988861510.1177/1060028018781919</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[75]</span> <a id="R75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id775"><!-- named anchor --></a>A SobhonslidsukK PoovorawanN SoonthornworasiriW Pan-NgumK Phaosawasdi. The incidence, presentation, outcomes, risk of mortality and economic data of drug-induced liver injury from a national database in Thailand: a population-base study. BMC Gastroenterol2016;16:135.2779311610.1186/s12876-016-0550-0PMC5084315</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[76]</span> <a id="R76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id776"><!-- named anchor --></a>M CordinerP ShajahanS McAvoyM BashirM Taylor. Effectiveness of long-acting antipsychotics in clinical practice: 2. Effects of antipsychotic polypharmacy on risperidone long-acting injection and zuclopenthixol decanoate. Ther Adv Psychopharmacol2015;6:66–76.10.1177/2045125315623584PMC483796627141289</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[77]</span> <a id="R77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id777"><!-- named anchor --></a>MW MeridLD GezieGM KassaAG MulunehTY AkaluMK Yenit. Incidence and predictors of major adverse drug events among drug-resistant tuberculosis patients on second-line anti-tuberculosis treatment in Amhara regional state public hospitals; Ethiopia: a retrospective cohort study. BMC Infect Dis2019;19:286.3091778810.1186/s12879-019-3919-1PMC6437856</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[78]</span> <a id="R78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id778"><!-- named anchor --></a>KA OshikoyaGT WhartonD Avant. Serious adverse events associated with off-label use of azithromycin or fentanyl in children in intensive care units: a retrospective chart review. Paediatr Drugs2019;21:47–58.3048407210.1007/s40272-018-0318-9PMC6387682</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[79]</span> <a id="R79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id779"><!-- named anchor --></a>I OkamotoH SatoT Kondo. Efficacy and safety of nivolumab in 100 patients with recurrent or metastatic head and neck cancer—a retrospective multicentre study. Acta Otolaryngol2019;139:918–25.3146081810.1080/00016489.2019.1648867</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[80]</span> <a id="R80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id780"><!-- named anchor --></a>MG DedefoAH MitikeMT Angamo. Incidence and determinants of medication errors and adverse drug events among hospitalized children in West Ethiopia. BMC Pediatr2016;16:81.2738754710.1186/s12887-016-0619-5PMC4936294</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[81]</span> <a id="R81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id781"><!-- named anchor --></a>KG BlumenthalPG WicknerS Hurwitz. Tackling inpatient penicillin allergies: assessing tools for antimicrobial stewardship. J Allergy Clin Immunol2017;140: 154-161.e156.10.1016/j.jaci.2017.02.005PMC549678028254470</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[82]</span> <a id="R82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id782"><!-- named anchor --></a>J SellickK MergenhagenL Morris. Fluoroquinolone-related neuropsychiatric events in hospitalized veterans. Psychosomatics2018;59:259–66.2927596210.1016/j.psym.2017.11.001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[83]</span> <a id="R83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id783"><!-- named anchor --></a>A DeguP NjoguI WeruP Karimi. Assessment of drug therapy problems among patients with cervical cancer at Kenyatta National Hospital, Kenya. Gynecol Oncol Res Pract2017;04.10.1186/s40661-017-0054-9PMC564847329075505</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[84]</span> <a id="R84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id784"><!-- named anchor --></a>C MillMN PrimeauE Medoff. Assessing the diagnostic properties of a graded oral provocation challenge for the diagnosis of immediate and nonimmediate reactions to amoxicillin in children. JAMA Pediatr2016;170:e160033.2704378810.1001/jamapediatrics.2016.0033</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[85]</span> <a id="R85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id785"><!-- named anchor --></a>AI IlichM DanilakCA Kim. Effects of gender on capecitabine toxicity in colorectal cancer. J Oncol Pharm Pract2016;22:454–60.2600295410.1177/1078155215587345</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[86]</span> <a id="R86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id786"><!-- named anchor --></a>B KhongBO LawsonJ Ma. Rigor prophylaxis in stage IV melanoma and renal cell carcinoma patients treated with high dose IL-2. BMC Cancer2018;18:1007.3034247310.1186/s12885-018-4810-yPMC6195987</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[87]</span> <a id="R87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id787"><!-- named anchor --></a>MF DaleyCL ClarkeJM Glanz. The safety of live attenuated influenza vaccine in children and adolescents 2 through 17 years of age: A Vaccine Safety Datalink study. Pharmacoepidemiol Drug Saf2018;27:59–68.2914812410.1002/pds.4349PMC6437673</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[88]</span> <a id="R88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id788"><!-- named anchor --></a>DM VockJ WolfsonS Bandyopadhyay. Adapting machine learning techniques to censored time-to-event health record data: a general-purpose approach using inverse probability of censoring weighting. J Biomed Inform2016;61:119–31.2699256810.1016/j.jbi.2016.03.009PMC4893987</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[89]</span> <a id="R89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id789"><!-- named anchor --></a>YH ChoiCY HanKS KimSG Kim. Future directions of pharmacovigilance studies using electronic medical recording and human genetic databases. Toxicol Res2019;35:319–30.3163684310.5487/TR.2019.35.4.319PMC6791658</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[90]</span> <a id="R90"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id790"><!-- named anchor --></a>CC YangH Yang. Mining heterogeneous networks with topological features constructed from patient-contributed content for pharmacovigilance. Artif Intell Med2018;90:42–52.3009325310.1016/j.artmed.2018.07.002</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[91]</span> <a id="R91"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id791"><!-- named anchor --></a>M ArnaudB BégaudN ThurinN MooreA ParienteF Salvo. Methods for safety signal detection in healthcare databases: a literature review. Expert Opinion on Drug Safety2017;16:721–32.2849026210.1080/14740338.2017.1325463</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[92]</span> <a id="R92"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id792"><!-- named anchor --></a>CL Ventola. Big data and pharmacovigilance: data mining for adverse drug events and interactions. P &amp; T: a peer-reviewed journal for formulary management2018;43:340–51.29896033PMC5969211</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[93]</span> <a id="R93"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id793"><!-- named anchor --></a>Chen T, Guestrin C. XGBoost: A Scalable Tree Boosting System. 2016:arXiv:1603.02754</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[94]</span> <a id="R94"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id794"><!-- named anchor --></a>P BajpaiM Kumar. Genetic algorithm—an approach to solve global optimization problems. Indian Journal of Computer Science and Engineering2010;1:199–206.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>4200</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>Research Article</p>
+<p class="metadata-entry"><span class="generated">Subject: </span>Systematic Review and Meta-Analysis</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>adverse drug reaction</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>drug safety</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning method</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>pharmacovigilance</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>statistical method</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>systematic review</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY-NC</p>
+<p class="metadata-entry"><span class="generated"><span class="data">OPEN-ACCESS</span>: </span>TRUE</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
