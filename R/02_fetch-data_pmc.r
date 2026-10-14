@@ -68,7 +68,7 @@ for (i in seq_along(pmcids)) {
       out_dir,
       cat500,
       cat100,
-      paste0(i, ".", pmcid),
+      paste0(pad_maker(i, 2e4), ".", pmcid),
       ext = "html"
     )
   
