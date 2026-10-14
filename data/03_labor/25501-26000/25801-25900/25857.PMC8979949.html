@@ -1,0 +1,681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Brant, Kennedy, King, Gerstley, Mishra, Schlessinger, Shalaby, Escobar, Angus, Seymour, and Liu: Developing a shared sepsis data infrastructure: a systematic review and concept map to FHIR</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>NPJ Digit Med</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>NPJ Digit Med</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3605</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>npjdigitmed</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101731738</p>
+<p class="metadata-entry"><span class="generated">Title: </span>NPJ Digital Medicine</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2398-6352</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Nature Publishing Group</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="41746_2022_Article_580.pdf">41746_2022_Article_580.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© The Author(s) 2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1"><b>Open Access</b> This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit <a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">http://creativecommons.org/licenses/by/4.0/</a>.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>16 September 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>24 February 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>4 April 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>5</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>398165<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>44</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8979949</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8979949.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8979949</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8979949</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35379946</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1038/s41746-022-00580-2</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>580</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>https://doi.org/10.13039/100000936Gordon and Betty Moore Foundation (Gordon E. and Betty I. Moore Foundation)</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>8857</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>8857</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>8857</p>
+<p class="metadata-entry"><span class="generated">Award Recipient: </span>Emily B. BrantChristopher W. SeymourVincent X. Liu</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>https://doi.org/10.13039/100000002U.S. Department of Health &amp; Human Services | National Institutes of Health (NIH)</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>2-T32-HL007820-21</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>R35GM119519</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>K23GM104022</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>R35GM128672</p>
+<p class="metadata-entry"><span class="generated">Award Recipient: </span>Emily B. BrantJason N. KennedyChristopher W. SeymourVincent X. Liu</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>U.S. Department of Health &amp; Human Services | National Institutes of Health (NIH)</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>U.S. Department of Health &amp; Human Services | National Institutes of Health (NIH)</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>U.S. Department of Health &amp; Human Services | National Institutes of Health (NIH)</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Developing a shared sepsis data infrastructure: a systematic review and concept map to FHIR</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-0207-8210<span class="generated">] </span>Emily B. Brant<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff6">6</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">branteb@upmc.edu</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Jason N. Kennedy<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-9809-0563<span class="generated">] </span>Andrew J. King<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Lawrence D. Gerstley<span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Pranita Mishra<span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>David Schlessinger<span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>James Shalaby<span class="generated">[</span><a href="#Aff5">5</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-2540-3327<span class="generated">] </span>Gabriel J. Escobar<span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a>Derek C. Angus<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group">
+<p class="metadata-entry"><a id="id12"><!-- named anchor --></a>Christopher W. Seymour<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff3">3</a><span class="generated">]</span></p>
+<p class="metadata-entry"><span class="generated">(Equal contributor)</span></p>
+</div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group">
+<p class="metadata-entry"><a id="id13"><!-- named anchor --></a>Vincent X. Liu<span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span></p>
+<p class="metadata-entry"><span class="generated">(Equal contributor)</span></p>
+</div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="Aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>grid.21925.3d0000 0004 1936 9000Department of Critical Care Medicine, University of Pittsburgh School of Medicine, Pittsburgh, PA USA </p>
+<p class="metadata-entry"><a id="Aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>grid.21925.3d0000 0004 1936 9000Clinical Research, Investigation and Systems Modeling of Acute Illness (CRISMA) Center, Pittsburgh, PA USA </p>
+<p class="metadata-entry"><a id="Aff3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>grid.21925.3d0000 0004 1936 9000Department of Emergency Medicine, University of Pittsburgh School of Medicine, Pittsburgh, PA USA </p>
+<p class="metadata-entry"><a id="Aff4"><!-- named anchor --></a><span class="generated">[</span>4<span class="generated">] </span>grid.280062.e0000 0000 9957 7758Kaiser Permanente Division of Research, Oakland, CA USA </p>
+<p class="metadata-entry"><a id="Aff5"><!-- named anchor --></a><span class="generated">[</span>5<span class="generated">] </span>Elimu Informatics, Richmond, CA USA </p>
+<p class="metadata-entry"><a id="Aff6"><!-- named anchor --></a><span class="generated">[</span>6<span class="generated">] </span>grid.21925.3d0000 0004 1936 9000Present Address: Assistant Professor of Critical Care and Emergency Medicine, University of Pittsburgh School of Medicine,, 200 Lothrop Street, #607, Pittsburgh, PA 15261 USA </p>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="Par1">The development of a shared data infrastructure across health systems could improve research, clinical care, and health policy across a spectrum of diseases, including sepsis. Awareness of the potential value of such infrastructure has been heightened by COVID-19, as the lack of a real-time, interoperable data network impaired disease identification, mitigation, and eradication. The <i>Sepsis on FHIR</i> collaboration establishes a dynamic, federated, and interoperable system of sepsis data from 55 hospitals using 2 distinct inpatient electronic health record systems. Here we report on phase 1, a systematic review to identify clinical variables required to define sepsis and its subtypes to produce a concept mapping of elements onto Fast Healthcare Interoperability Resources (FHIR). Relevant papers described consensus sepsis definitions, provided criteria for sepsis, severe sepsis, septic shock, or detailed sepsis subtypes. Studies not written in English, published prior to 1970, or “grey” literature were prospectively excluded. We analyzed 55 manuscripts yielding 151 unique clinical variables. We then mapped variables to their corresponding US Core FHIR resources and specific code values. This work establishes the framework to develop a flexible infrastructure for sharing sepsis data, highlighting how FHIR could enable the extension of this approach to other important conditions relevant to public health.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="Sec1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="Par2">Sepsis is among the deadliest medical conditions recognized worldwide. It occurs when infection triggers a dysregulated systemic immune response and can rapidly lead to organ failure and death<sup><a href="#CR1">1</a></sup>. Recent Global Burden of Disease estimates suggests that there were nearly 50 million cases in 2017 that resulted in 11 million deaths<sup><a href="#CR2">2</a></sup>. In the US, sepsis is the single most costly cause of hospitalization and contributes to as many as half of all hospital deaths<sup><a href="#CR2">2</a>,<a href="#CR3">3</a></sup>. Early diagnosis and treatment of infected patients with sepsis or high risk of progression to sepsis is imperative. Yet, sepsis diagnosis remains a major challenge due to several factors, including the absence of a gold standard test<sup><a href="#CR4">4</a></sup>, variability of patient presentation<sup><a href="#CR5">5</a></sup>, heterogeneity of illness progression<sup><a href="#CR6">6</a></sup>, among others<sup><a href="#CR7">7</a>–<a href="#CR10">10</a></sup>.</p>
+<p id="Par3">There is an urgent need to improve diagnostic excellence in sepsis<sup><a href="#CR11">11</a></sup>. One potential solution is the development of a flexible, scalable, and interoperable data infrastructure to screen and identify sepsis patients across health systems using real-time, granular clinical data available within electronic health records (EHRs)<sup><a href="#CR11">11</a></sup>. Despite clinical data for millions of sepsis or pre-sepsis patients routinely collected in EHRs, the healthcare enterprise has accessed only a small fraction of these data to improve the clinical understanding of sepsis. The development of a sepsis data backbone could be extended to meet diverse needs, including sepsis translational research, clinical care delivery, machine learning/artificial intelligence deployment, disease surveillance, quality improvement, and health policy. Furthermore, once established in sepsis, a similar data infrastructure could be tailored to include other conditions. For example, awareness of the potential value of this data infrastructure has been magnified by the COVID-19 pandemic—many COVID-19 inpatients met sepsis criteria with systemic inflammation, organ failure, and a high risk of mortality—highlighting the critical need for real-time data interoperability that could inform pandemic response, health system preparedness, translational research and clinical care<sup><a href="#CR12">12</a>–<a href="#CR14">14</a></sup>.</p>
+<p id="Par4">The Fast Healthcare Interoperability Resource (FHIR) Health Level Seven International (HL7) standard has shown great potential for modernizing the interchange of data through standardized FHIR resources and application programming interfaces (APIs) to access and exchange these data<sup><a href="#CR15">15</a>,<a href="#CR16">16</a></sup>. Indeed, FHIR has been endorsed by the Center for Medicare and Medicaid Services (CMS) and the Office of the National Coordinator for Health Information (ONC) as the preferred standard for EHR interoperability<sup><a href="#CR17">17</a></sup>.</p>
+<p id="Par5">In this study, we report on the development of <i>Sepsis on FHIR</i>, a framework to accelerate the interoperability of sepsis data across healthcare systems and EHRs. The work is a collaboration between Kaiser Permanente Northern California and the University of Pittsburgh Medical Center (UPMC) health systems to establish a dynamic, federated, and interoperable system of sepsis data from 55 diverse hospitals using two distinct inpatient EHR software systems. Here, we discuss phase 1 of <i>Sepsis on FHIR</i>. We first conducted a systematic review of the sepsis literature and identified a comprehensive set of relevant EHR clinical variables as a sharable set of features across sites. We then produced a concept mapping of clinical variables to FHIR resources. The resulting infrastructure can be adapted for the eventual expansion to other hospitals with different patient populations.</p>
+</div>
+<div class="section">
+<a id="Sec2"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<div class="section">
+<a id="Sec3"><!-- named anchor --></a><h3 class="section-title">Study characteristics</h3>
+<p id="Par6">We conducted a systematic review that retrieved 4812 citations; removing duplicate, non-English, non-full-text citations yielded 1075 full-text manuscripts (Fig. <a href="#Fig1">1</a>). After manual review, we excluded 1022 manuscripts that did not meet inclusion criteria or reported previously cited sepsis definitions, leaving 55 unique articles for analysis (Supplementary Data set <a href="#MOESM2">1</a>). These included 8 consensus definitions, 7 systematic reviews and meta-analyses, 9 prospective cohort studies, 26 retrospective cohort studies, and 5 narrative literature reviews (Supplementary Fig. <a href="#MOESM1">1</a>). All studies were reported between 1989 and 2020 (Supplementary Fig. <a href="#MOESM1">2</a>).<div class="fig panel" style="display: float; clear: both">
+<a id="Fig1"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption">
+<h3 class="title">Flowchart for study selection.</h3>
+<p id="id14">Initial searches identified 4812 manuscripts. After removing duplicate, non-English, non-full-text citations, 1075 full-text manuscripts were reviewed against inclusion criteria. After exclusion, 55 unique studies were included in the analysis.</p>
+</div>
+</div></p>
+<p id="Par7">The systematic review confirmed that several definitions and criteria were used to identify sepsis patients. Studies published prior to international consensus conference definitions identified sepsis patients using standardized criteria for patient enrollment used in trials performed by Bone et al.<sup><a href="#CR18">18</a>–<a href="#CR21">21</a></sup>. Organ dysfunction was defined using clinical markers of hypoperfusion including altered mentation, hypoxemia, elevated lactic acid, and oliguria<sup><a href="#CR18">18</a></sup>. Following the First International Consensus on Sepsis and Septic Shock, 16 studies analyzed defined sepsis patients using Systemic Inflammatory Response Syndrome (SIRS) criteria<sup><a href="#CR6">6</a>,<a href="#CR20">20</a>,<a href="#CR22">22</a>–<a href="#CR35">35</a></sup>. After the Sepsis-3 task force in 2016, 14 studies analyzed defined sepsis patients using the Sequential Organ Failure Assessment (SOFA) score<sup><a href="#CR6">6</a>,<a href="#CR23">23</a>–<a href="#CR25">25</a>,<a href="#CR27">27</a>,<a href="#CR30">30</a>–<a href="#CR32">32</a>,<a href="#CR34">34</a>–<a href="#CR39">39</a></sup>. Two studies defined organ dysfunction in sepsis patients using the logistic organ dysfunction score (LODS); two studies reported the multiple organ dysfunction syndrome (MODS)<sup><a href="#CR21">21</a>,<a href="#CR22">22</a>,<a href="#CR40">40</a>,<a href="#CR41">41</a></sup>. The Acute Physiologic Assessment and Chronic Health Evaluation (APACHE) score defined sepsis-associated organ dysfunction in eight analyzed studies<sup><a href="#CR22">22</a>,<a href="#CR26">26</a>,<a href="#CR29">29</a>,<a href="#CR34">34</a>,<a href="#CR37">37</a>,<a href="#CR42">42</a>–<a href="#CR44">44</a></sup>. Seven studies defined sepsis using claims-based definitions or International Classification of Diseases (ICD) standards<sup><a href="#CR28">28</a>,<a href="#CR33">33</a>,<a href="#CR34">34</a>,<a href="#CR44">44</a>–<a href="#CR48">48</a></sup>.</p>
+<p id="Par8">Definitions used to establish suspected or proven infection varied considerably. Nearly half (46%) of studies incorporated blood culture data, including body fluid sampling for culture or culture positivity. Many, however, relied on clinical suspicion as defined by the treating physician<sup><a href="#CR18">18</a>,<a href="#CR34">34</a>,<a href="#CR35">35</a>,<a href="#CR41">41</a>,<a href="#CR43">43</a>,<a href="#CR49">49</a>–<a href="#CR55">55</a></sup>. Two studies used clinical risk scores, including the clinical pulmonary infection score and infection probability score<sup><a href="#CR35">35</a>,<a href="#CR43">43</a>,<a href="#CR56">56</a></sup>.</p>
+</div>
+<div class="section">
+<a id="Sec4"><!-- named anchor --></a><h3 class="section-title">Data elements</h3>
+<p id="Par9">We identified 788 clinical variables from the 55 manuscripts (Supplementary Table <a href="#MOESM1">3</a>). Recorded data elements included clinical measurements (e.g., heart rate, respiratory rate, white blood cell count), infectious signs and symptoms (e.g., dysuria, abdominal pain), and individual ICD codes for diagnosis and procedures, current procedural terminology (CPT) and diagnosis-related groups (DRG) codes for sepsis, septicemia, and sepsis syndromes, organ dysfunction (e.g., acute kidney injury, hypotension) and infection (e.g., sepsis due to anaerobes, candidal sepsis) (Supplementary Table <a href="#MOESM1">3</a>).</p>
+<p id="Par10">After the removal of duplicates and unstructured variables, 151 unique clinical variables remained (Supplementary Table <a href="#MOESM1">4</a>). Variables represented 7 broad domains including, patient characteristics, vital signs and laboratory tests, interventions data (e.g., medication administration, diagnostic tests, catheterization, surgical events), fluid balance, location information, healthcare use and outcomes, and administrative/billing codes. All major sepsis consensus definitions were represented by selected clinical variables, capturing the evolution of sepsis definitions over time (Fig. <a href="#Fig2">2</a>).<div class="fig panel" style="display: float; clear: both">
+<a id="Fig2"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption">
+<h3 class="title">Chord diagrams showing the representation of clinical elements across international consensus definitions for sepsis.</h3>
+<p id="id15">Ribbons connect from each of three international consensus definitions for sepsis to data elements. Only those data elements encompassed by sepsis consensus definitions are displayed. <i>Abbreviations:</i> ALT alanine aminotransferase, aPTT activated partial thromboplastin time, AST aspartate aminotransferase, BUN blood urea nitrogen, CVP central venous pressure, DBP diastolic blood pressure, GCS Glasgow coma scale score, HR heart rate, INR international normalized ratio, Ly30 lysis in 30 minutes, NH3 ammonia level, PaCO<sub>2</sub> partial pressure of arterial carbon dioxide, FiO<sub>2</sub> fraction of inspired oxygen, PT prothrombin time, RR respiratory rate, SBP systolic blood pressure, WBC white blood cell count.</p>
+</div>
+</div></p>
+<p id="Par11">The most frequently reported patient demographic characteristics included age, sex, and measures of comorbidity (Fig. <a href="#Fig3">3</a>). Vital signs and laboratory tests were both used for sepsis definitions and to describe baseline characteristics. Infection was most often described by body fluid sampling for culture and white blood cell count. Organ dysfunction was most commonly described using respiratory rate, temperature, Glasgow Coma Scale (GCS) score, and urine output. Other variables, including troponin, albumin level, and erythrocyte sedimentation rate, were reported only once, but were considered critical for defining specific sepsis subtypes<sup><a href="#CR6">6</a></sup>.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig3"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption">
+<h3 class="title">Data elements reported by a manuscript in heatmap.</h3>
+<p id="id16">Data elements are displayed on the <i>y</i> axis; manuscripts included in analysis displayed on <i>x</i> axis. Axes are sorted so variables most frequently cited are grouped together on the left, whereas manuscripts contributing infrequently reported variables are grouped on the right. Blue shading represents the data element reported by the manuscript, whereas data elements not reported by the manuscript are not shaded. RR respiratory rate, GCS Glasgow Coma Scale score, WBC white blood cell count, HR heart rate, T Bili, total bilirubin, SIRS systemic inflammatory response syndrome, SBP systolic blood pressure, P:F ratio of partial pressure of arterial oxygen to fraction of inspired oxygen, ICD international classification of diseases, SOFA sequential organ failure assessment score, ICU intensive care unit, LOS length of stay, MAP mean arterial pressure, CRP c-reactive protein, APACHE acute physiology and chronic health enquiry, INR international normalized ratio, PaCO<sub>2</sub> partial pressure of arterial carbon dioxide, SpO<sub>2</sub> oxygen saturation, aPTT activated partial thromboplastin time, HCO<sub>3</sub> bicarbonate, ALT alanine aminotransferase, AST aspartate aminotransferase, TAPSE tricuspid annular plane systolic excursion, EF ejection fraction, SvO<sub>2</sub> saturation of venous oxygen, NEWS national early warning system, LDH lactate dehydrogenase, PT prothrombin time, CVP central venous pressure, FiO<sub>2</sub> fraction of inspired oxygen, NH<sub>3</sub> ammonia level, BUN blood urea nitrogen, DBP diastolic blood pressure, MODS multiple organ dysfunction syndrome, LODS logistic organ dysfunction syndrome, ESR erythrocyte sedimentation rate, DRG diagnosis-related groups.</p>
+</div>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec5"><!-- named anchor --></a><h3 class="section-title">FHIR mapping</h3>
+<p id="Par12">We mapped the 151 clinical variables to their corresponding FHIR resources and, where appropriate, to specific code values that represented each element (Supplementary Table <a href="#MOESM1">5</a>). Variables mapped most frequently to the FHIR DiagnosticReport resource (41%), followed by the observation (33%), patient (12%), encounter (9%), or procedure (5%) resources (Supplementary Table <a href="#MOESM1">5</a>).</p>
+<p id="Par13">To promote flexibility, we linked variables to several FHIR resource types whenever possible. For example, the variable “serum sodium” is represented as a FHIR Observation resource where the Observation.code data element is mapped to the Logical Observation Identifiers Names and Codes (LOINC) code 2951-2 (referring to “Sodium [Moles/volume] in Serum or Plasma”). LOINC is the most commonly used international healthcare terminology standard which describes a reference set of health data and codes for laboratory and clinical observations. FHIR mappings frequently link to more than one LOINC code. For example, blood urea nitrogen (BUN) mapped to both LOINC codes 3094-0 (BUN SerPl-mCnc) and 6299-2 (BUN Bld-mCnc). For variables linked to more than one code, we established a HL7 FHIR-based sepsis value set to represent a set of codes with the same clinical meaning. Most variables (99 out of 151) were FHIR resource observations with direct mappings to LOINC codes. In contrast, the variable “Admit Time” mapped directly to an existing FHIR data element for healthcare encounter time stamps (Encounter.period.start).</p>
+<p id="Par14">We also identified some variables that require additional computation. For example, “Days of Vasopressors”—the duration of treatment with vasoactive agents to support blood pressure—requires calculation using variables mapped to other resources. The start and end dates of vasopressor therapy, which are represented as the FHIR MedicationAdministration resource, are required. In addition, these data may also be represented by RxNORM codes, the US reference terminology standard representing vasopressors (e.g., epinephrine, norepinephrine).</p>
+<p id="Par15">Taken together, clinical variables were successfully mapped to US Core FHIR elements, LOINC, and RxNorm codes to ensure and enhance generalizability and flexibility across health systems and EHR.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec6"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="Par16">In phase 1 of <i>Sepsis on FHIR</i>, we conducted a systematic review of 55 studies, identifying 151 variables relevant to sepsis diagnosis, sepsis definitions and subtyping. We then mapped these variables to a data standard (FHIR) endorsed by national healthcare entities<sup><a href="#CR17">17</a></sup>. The goal of this work is not to define a final or complete set of sepsis diagnostic and clinical criteria, nor to develop a data interoperability resource limited only to two large US healthcare systems. Instead, we aim to establish a publicly available <i>Sepsis on FHIR</i> resource that will promote the use of a flexible, scalable, federated, and interoperable source of clinical data that can be contributed to and used by many stakeholders. Our work could be easily applied to other clinical conditions.</p>
+<p id="Par17">This work focused on sepsis as it is common, costly, and deadly, with significant opportunities to improve treatment and outcomes<sup><a href="#CR2">2</a></sup>. Sepsis treatment can be challenging due to a number of factors, however, the key step to effective treatment is early diagnosis. Timely diagnosis is the critical factor determining patient outcomes, since delays in diagnosis (with concomitant delayed treatment with antibiotics, resuscitation, and organ system stabilization) are associated with increased mortality<sup><a href="#CR7">7</a>,<a href="#CR57">57</a></sup>. Numerous leading entities, including the National Institute of General Medical Sciences and the National Academy of Medicine, have identified the lack of standardized and interoperable data resources as a critical limitation to improving sepsis diagnosis and treatment<sup><a href="#CR6">6</a>,<a href="#CR58">58</a></sup>.</p>
+<p id="Par18">Despite the availability of millions of EHR records detailing patients’ presentation, organ failure, pathogen, treatment, and outcomes today, the lack of access to these data in aggregate stymie further progress<sup><a href="#CR59">59</a></sup>. Multicenter data may be available in some instances, such as within networks of hospitals linked by a single EHR software vendor or within larger health systems or research consortia, for example, but there is a lack of a standardized resource for diverse stakeholders who wish to contribute to or access these data. Larger registries of sepsis data exist through state or national efforts, however, these comprise a relatively narrowly-defined set of criteria targeted to performance or quality improvement efforts<sup><a href="#CR60">60</a></sup>. Further, the cost of maintaining these data has also raised alarm among entities subject to reporting requirements<sup><a href="#CR61">61</a>,<a href="#CR62">62</a></sup>.</p>
+<p id="Par19">The development of an automated, flexible infrastructure for sharing sepsis data represents a key step toward achieving diagnostic excellence and improving sepsis outcomes for several reasons. First, compiling high-fidelity health data from millions of patient encounters creates a substantial opportunity to uncover sepsis subgroups<sup><a href="#CR63">63</a></sup>. Recent studies have highlighted the heterogeneity in treatment effects among specific subgroups which demonstrates potentially adverse effects of current treatment approaches in some patient subtypes<sup><a href="#CR6">6</a>,<a href="#CR64">64</a></sup>. Thus, establishing representative subtypes and identifying them in real-time will be key for initiating clinical trials and targeting treatments. Second, while focused, small repositories of biospecimens exist in sepsis, they cannot be easily appended to detailed clinical data shared across sites to improve their utility and statistical power<sup><a href="#CR65">65</a></sup>. Third, as described above, current reporting requirements for the CMS SEP-1 measure is highly resource-intensive and of uncertain benefit for patients<sup><a href="#CR62">62</a></sup>. Automated extraction of patient data can improve reporting while also helping to refine the use of policy-driven targets. Fourth, while there are many emerging machine learning and artificial intelligence algorithms designed to improve the prediction of sepsis onset or deterioration, they can be brittle (i.e., predictive performance degrades) when developed in one healthcare context and exported to an external context<sup><a href="#CR66">66</a></sup>. A federated learning system built using data from many diverse environments can improve the generalizability, representativeness, and transparency of such algorithms for clinical care. Fifth, as evident in the COVID-19 pandemic, the lack of a national real-time system of interoperable data substantially hampers the identification, mitigation, and eradication of large-scale communicable diseases<sup><a href="#CR12">12</a></sup>. Finally, the extension of this platform beyond the United States may allow for standardized international data exchange.</p>
+<p id="Par20">There are many steps that logically follow from this work. Using the Sepsis on FHIR foundation, our two health systems will instantiate FHIR repositories at each site while continuing work to overcome several barriers. Among these continuing barriers, the most important are the instability of the EHRs (in which codes are frequently changed/altered), persistence of data elements that are unmapped, and difficulties in bulk extraction of FHIR-mapped data elements. For example, real-time extraction of FHIR data in sepsis can be costly and, thus, shadow or parallel data systems that offload computation to non-operational systems may be needed to ensure the availability of data relevant to clinical care or trials. In addition, data elements collected serially will need to be refreshed at a clinically relevant tempo (Supplementary Table <a href="#MOESM1">5</a>).</p>
+<p id="Par21">Further, several key issues involving data governance, privacy, and security must be addressed prior to the aggregation of any patient data. To address data governance and privacy, the development of a federated data infrastructure (i.e., local data that never leave an individual system) reduces the risk associated with data transmission. The FHIR standard supports key interoperability enablers that can support a federated analytics platform<sup><a href="#CR67">67</a></sup>. To ensure data security, FHIR also supports secure exchange of clinical data and the ability to populate powerful standards-based research analytics platforms such as PCORNET Common Data Model (CDM)<sup><a href="#CR68">68</a></sup>. Deidentified FHIR-based data can be used to populate CDMs at each local site that can in turn support federated queries across multiple sites against the deidentified data in the CDM instances.</p>
+<p id="Par22">Scalability beyond the originating health systems can also be challenging given the need for additional resources for initiation and maintenance. Thus, to enhance standardization for data exchange, FHIR Sepsis Implementation Guides (IG) can be developed and balloted for general use<sup><a href="#CR69">69</a></sup>. FHIR IGs constrain the standard to meet specific use cases for interoperability and are the cornerstone of FHIR interoperability. IGs contain profiles for each resource that specify which terminology value sets should be used for valid messaging of observational data between systems (e.g., which LOINC values are used to map clinical variables). Value sets leverage a change management and governance process that is a well-established part of the Value Set Authority Center (VSAC), a nationally available National Library of Medicine repository. This includes the submission, review and publishing process used to manage requests to expand or change value set content over time. The endorsed value sets can also be maintained and distributed widely through the VSAC as a national portal. Once established, FHIR profiles can easily reference VSAC value sets through a process known as terminology binding. Clinical decision support and analytic tools can be standardized through these nationally cataloged VSACs.</p>
+<p id="Par23">In addition to these challenges, we recognize several limitations in this study. First, we only identified structured clinical variables used in prior studies and already available in the EHR to define sepsis and sepsis subgroups. Other data that are likely to be valuable to sepsis diagnosis and subgrouping such as clinician unstructured documentation, radiographic results, biomarkers or other -omic data, or pathogenic variables were not identified and included. The value of a flexible <i>Sepsis on FHIR</i> approach, however, is that such data can be added incrementally to the existing resources as they become available or central to sepsis management. Second, we recognize several limitations in using FHIR for data interoperability: (1) clinical variables were mapped to best-fit FHIR resources, (2) not all clinical data variables were mapped to a FHIR resource, and (3) not all EHR vendors are implementing the same FHIR APIs, potentially limiting expansion to other health systems. Finally, though literature summarized in the systematic review is from across the globe and selected variables mapped to FHIR standards are widely applicable, we focus on a U.S. EHR landscape. Future work to expand Sepsis on FHIR to international sites is needed.</p>
+<p id="Par24">In conclusion, we identified 151 clinical variables from 55 manuscripts needed to define sepsis and sepsis subgroups. We mapped these variables to established FHIR resource standards. This work represents the first step towards a real-time, federated, and flexible <i>Sepsis on FHIR</i> clinical data resource which can form the foundation needed for interoperability of data across healthcare systems to improve sepsis diagnostic excellence and outcomes.</p>
+</div>
+<div class="section">
+<a id="Sec7"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<p id="Par25">The Institutional Review Boards of Kaiser Permanente Northern California (1533936) and the University of Pittsburgh approved the study (STUDY 20020141).</p>
+<div class="section">
+<a id="Sec8"><!-- named anchor --></a><h3 class="section-title">Study overview</h3>
+<p id="Par26">The study objective was to conduct a systematic literature review to identify a core set of variables needed to define sepsis and its subtypes, then, map these variables onto existing FHIR standards. We sought to first identify and map a core set of variables that have been historically used to define sepsis and its subtypes. However, we anticipate expansion of this flexible, foundational framework in response to the future evolution of sepsis care.</p>
+<p id="Par27">We conducted the literature search in three steps. First, we identified studies describing a consensus sepsis definition. Second, we identified studies in which a sepsis, severe sepsis, or septic shock cohort was defined, cataloging variables needed to identify these patient groups based on the multiple sepsis definitions in common use today. Finally, we identified clinical variables needed to perform detailed subtyping of sepsis patients based on currently published studies describing sepsis subtypes. When reviewing the studies, we also selected variables known to be associated with adverse outcomes for sepsis, including the source of infection (e.g., pneumonia vs urinary tract infection), the severity of organ dysfunction (e.g., presence of hypotension or altered mental status), need for organ support treatments (e.g., mechanical ventilation or dialysis) and other treatment modalities (e.g., corticosteroids). Once variables were identified, we assigned each to an existing FHIR resource, the common building blocks used to define and exchange specific EHR data. This review followed guidance published by the Cochrane collaboration and conforms to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) standards<sup><a href="#CR70">70</a>,<a href="#CR71">71</a></sup>. The study protocol was not prospectively registered.</p>
+<p id="Par28">This phase represents the key first steps in the development of <i>Sepsis on FHIR</i>, a framework to accelerate the interoperability of a dynamic, and federated system of sepsis data across healthcare systems and EHRs (Supplementary Fig. <a href="#MOESM1">3</a>).</p>
+</div>
+<div class="section">
+<a id="Sec9"><!-- named anchor --></a><h3 class="section-title">Systematic review</h3>
+<p id="Par29">We sought to identify relevant studies that (1) describe consensus sepsis definitions, (2) provide criteria for sepsis, severe sepsis, septic shock or a sepsis subgroup, or (3) detail sepsis subtyping. Search methods were designed following guidance published by the Cochrane collaboration<sup><a href="#CR70">70</a></sup>. This systematic review conforms all these criteria.</p>
+<p id="Par30">To develop the list of search terms, we collated applicable MeSH terms provided for each major Sepsis consensus definition (i.e., Sepsis-1<sup><a href="#CR40">40</a></sup>, Sepsis-2<sup><a href="#CR72">72</a></sup>, and Sepsis-3<sup><a href="#CR32">32</a></sup>). These included “sepsis”, “septic shock”, “severe sepsis”. Natural language search terms included “definition”, “decision rule”, “diagnosis”, “characteristics”, “variables”, “criteria”, and “epidemiology”. Boolean operators OR and AND for combining search term(s) were used to streamline the procedure. Next, we employed the PICOS (population, intervention, comparator, outcome, and study design) search strategy, a widely cited tool for synthesizing scientific research<sup><a href="#CR73">73</a></sup>. By using the PICOS structure, we sought to identify studies reporting on sepsis patient Populations to elucidate sepsis cohort definitions used.</p>
+<p id="Par31">We sought original research published in peer-reviewed journals reporting on adult patients with sepsis, severe sepsis, and/or septic shock. Selected study designs included consensus statements, systematic reviews, meta-analyses, randomized clinical trials, case-control studies, and cohort studies. Studies not written in English, published prior to 1970, reporting pediatric populations or animals, or “gray” literature were prospectively excluded.</p>
+<p id="Par32">We searched English language studies published from January 1, 1970 through January 31, 2020. We systematically searched three databases: PubMed, MEDLINE, and the Cochrane Library. Search strategies were developed for each database, starting with PubMed then adapted for each subsequent search (Supplementary Tables <a href="#MOESM1">1</a> and <a href="#MOESM1">2</a>). We screened all titles and abstracts returned from searches against inclusion criteria and removed duplicate studies. Reference lists from selected manuscripts were scrutinized by two authors (E.B. and J.K.) to identify additional studies meeting selection criteria. Manuscripts were reviewed and ranked by two independent reviewers (E.B. and J.K). Full-text versions were then obtained and independently reviewed by co-authors. Discrepancies throughout the review process were resolved through discussion with study senior authors (C.S. and V.L.) Initial searches were conducted June 2019 with a second search completed at the end of January 2020.</p>
+</div>
+<div class="section">
+<a id="Sec10"><!-- named anchor --></a><h3 class="section-title">Variable selection</h3>
+<p id="Par33">We collected specific study characteristics (e.g., title, authors, year of publication, journal, study design); population characteristics (e.g., demographics, admission diagnosis, level of care); clinical variables (e.g., vital signs, laboratory measurements); organ support (e.g., provision of mechanical ventilation or dialysis); treatments (e.g., corticosteroids), and outcomes (e.g., 28-day mortality, intensive care unit (ICU) admission, hospital and/or ICU length of stay) using a standardized data extraction form developed in Microsoft Word (Supplementary Table <a href="#MOESM1">3</a>). After removing duplicates, the final list of variables was independently reviewed by members of the study team (E.B., J.K., V.L., and C.S.). We also convened a stakeholder group with expertise in sepsis clinical care, quality improvement, patient and family experience, EHR-based research, and healthcare interoperability to adjudicate the final list of clinical variables for completeness and applicability (Supplementary Note <a href="#MOESM1">1</a>).</p>
+</div>
+<div class="section">
+<a id="Sec11"><!-- named anchor --></a><h3 class="section-title">FHIR mapping</h3>
+<p id="Par34">After compiling the list of variables, we then assigned each a FHIR resource data element to each (Supplementary Fig. <a href="#MOESM1">4</a>). A resource is the building block in the FHIR standard, providing a common way to define and represent all exchangeable data<sup><a href="#CR74">74</a></sup>. A FHIR resource is composed of data elements that define the content of that resource. For example, a clinical observation resource is defined by data elements such as the date of the observation, the type of observation (e.g., a vital sign, laboratory measurement), the value and units of measure. US FHIR resources are constrained to which data elements are required to exchange patient data in the US; these constraints are called US Core FHIR profiles. Example US Core FHIR profiles include vital signs, laboratory measurements, conditions or problems, medications, and other key data element types.</p>
+<p id="Par35">To share clinical data across health systems, variables from the EHR must be mapped onto existing FHIR resources to the data element level. This was done in two steps. First, each clinical variable was reviewed against FHIR documentation for a corresponding resource data element<sup><a href="#CR75">75</a>–<a href="#CR89">89</a></sup>. Next, each variable was fit within an existing FHIR resource deemed best-fit for the source concept.</p>
+<p id="Par36">To ensure generalizability across health systems and EHR, we first attempted to find US Core FHIR Profile mappings and if they were unavailable, we mapped data elements to the FHIR base resources.</p>
+</div>
+<div class="section">
+<a id="Sec12"><!-- named anchor --></a><h3 class="section-title">Reporting summary</h3>
+<p id="Par37">Further information on research design is available in the <a href="#MOESM3">Nature Research Reporting Summary</a> linked to this article.</p>
+</div>
+</div>
+<div class="section">
+<a id="id17"><!-- named anchor --></a><h2 class="main-title">Supplementary information</h2>
+<div class="section">
+<a id="Sec13"><!-- named anchor --></a><p class="first" id="id18"><div class="panel">
+<a id="MOESM1"><!-- named anchor --></a><a id="id19" href="41746_2022_580_MOESM1_ESM.pdf"><div class="caption"><p class="first" id="id20">Supplemental File</p></div></a>
+</div><div class="panel">
+<a id="MOESM2"><!-- named anchor --></a><a id="id21" href="41746_2022_580_MOESM2_ESM.xlsx"><div class="caption"><p class="first" id="id22">Dataset 1</p></div></a>
+</div><div class="panel">
+<a id="MOESM3"><!-- named anchor --></a><a id="id23" href="41746_2022_580_MOESM3_ESM.pdf"><div class="caption"><p class="first" id="id24">Reporting Summary Checklist</p></div></a>
+</div></p>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id29"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id25"><!-- named anchor --></a><p id="id26"><span class="generated">[1]</span> <b>Publisher’s note</b> Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+<div class="footnote">
+<a id="id27"><!-- named anchor --></a><p id="id28"><span class="generated">[2]</span> These authors contributed equally: Christopher W. Seymour, Vincent X. Liu.</p>
+</div>
+</div>
+<div class="section">
+<a id="id30"><!-- named anchor --></a><h2 class="main-title">Supplementary information</h2>
+<p id="id31">The online version contains supplementary material available at 10.1038/s41746-022-00580-2.</p>
+</div>
+<div class="back-section">
+<a id="id33"><!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
+<p id="id32">This work was supported in part by the Gordon and Betty Moore Foundation. Additional funding support through the National Institutes of Health was provided for Dr. Brant (2-T32-HL007820-21), Dr. Seymour (K23GM104022), Dr. Liu (R35GM128672), and Mr. Kennedy (R35GM119519). We thank the significant contribution of the patients, families, researchers, clinical staff, and sponsors to the data included herein.</p>
+</div>
+<div class="back-section">
+<a id="id35"><!-- named anchor --></a><h2 class="main-title">Author contributions</h2>
+<p id="id34">E.B. performed the literature review, data analysis, and drafted/edited the manuscript. J.K. assisted with the literature review, data analysis, drafted figures, and edited the manuscript. A.K., L.G., P.M., and D.S. assisted with FHIR mapping and edited the manuscript. J.S. performed FHIR mapping and assisted with manuscript drafting/editing. G.J.E., D.A., C.S., and V.L. conceived and planned the literature review and analysis, and assisted with manuscript drafting/editing.</p>
+</div>
+<div class="back-section">
+<a id="id37"><!-- named anchor --></a><h2 class="main-title">Data availability</h2>
+<p id="id36">Aggregate data supporting the findings of this article are cataloged in Supplementary Table <a href="#MOESM1">5</a>.</p>
+</div>
+<div class="back-section">
+<a id="FPar1"><!-- named anchor --></a><h2 class="main-title">Competing interests</h2>
+<p id="Par38">Dr. Angus reports receiving personal fees from and serving as a consultant to Ferring Pharmaceuticals, Bristol-Myers Squibb, Bayer AG, and Beckman Coulter Inc; owning stock in Alung Technologies; and having patent applications pending for selepressin (compounds, compositions, and methods for treating sepsis) and proteomic biomarkers of sepsis in elderly patients. Dr. Seymour reports receiving personal fees from Edwards Inc. and Beckman Coulter Inc. No other conflicts of interest were reported.</p>
+</div>
+<div class="back-section">
+<a id="Bib1"><!-- named anchor --></a><div class="section ref-list">
+<a id="Bib1"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="CR1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id38"><!-- named anchor --></a>Seymour, C. W. &amp; Angus, D. C. Sepsis and septic shock. In <i>Harrison’s Principles of Internal Medicine, 20e</i> (eds. Ameson, J. et al.) (McGraw-Hill, 2018).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="CR2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id39"><!-- named anchor --></a>KE RuddGlobal, regional, and national sepsis incidence and mortality, 1990-2017: analysis for the Global Burden of Disease StudyLancet20203952002113195446510.1016/S0140-6736(19)32989-7PMC6970225</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="CR3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id40"><!-- named anchor --></a>A RhodesSurviving sepsis campaign: International guidelines for management of sepsis and septic shock: 2016Intensive Care Med.2017433043772810160510.1007/s00134-017-4683-6</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="CR4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id41"><!-- named anchor --></a>DC AngusA framework for the development and interpretation of different sepsis definitions and clinical criteriaCrit. Care Med.201644e113e1212690155910.1097/CCM.0000000000001730PMC4765912</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="CR5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id42"><!-- named anchor --></a>JVJ CohenSepsis: a roadmap for future researchLancet Infect. Dis.2015155816142593259110.1016/S1473-3099(15)70112-X</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="CR6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id43"><!-- named anchor --></a>CW SeymourDerivation, validation and potential treatment implications of novel clinical phenotypes for sepsisJ. Am. Med. Assoc.20193212003200710.1001/jama.2019.5791PMC653781831104070</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="CR7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id44"><!-- named anchor --></a>CW SeymourTime to treatment and mortality during mandated emergency care for sepsisN. Engl. J. Med.2017376223522442852856910.1056/NEJMoa1703058PMC5538258</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="CR8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id45"><!-- named anchor --></a>HC PrescottTJ IwashynaImproving sepsis treatment by embracing diagnostic uncertaintyAnn. Am. Thorac. Soc.2019164264293088319010.1513/AnnalsATS.201809-646PSPMC6441693</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="CR9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id46"><!-- named anchor --></a>KE SwensonDL WinslowImpact of sepsis mandates on sepsis care: unintended consequences.J. Infect Dis2020222S166S1733269183110.1093/infdis/jiaa133</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="CR10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id47"><!-- named anchor --></a>Barbash, I. J. et al. Treatment patterns and clinical outcomes after the introduction of the medicare sepsis performance measures (SEP-1). <i>Ann. Intern Med</i>. 10.7326/M20-5043 (2021).10.7326/M20-5043PMC884488533872042</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="CR11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id48"><!-- named anchor --></a>National Academies of Sciences, Engineering, and Medicine. Achieving Excellence in Sepsis Diagnosis: Proceedings of a Workshop—in Brief. Washington, DC: The National Academies Press. 10.17226/26034 (2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="CR12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id49"><!-- named anchor --></a>O’Reilly-Shah V. N. et al. The COVID-19 pandemic highlights shortcomings in US health care informatics infrastructure: a call to action. <i>Anesth Analg.</i>10.1213/ANE.0000000000004945 (2020).10.1213/ANE.0000000000004945PMC721983632366769</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="CR13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id50"><!-- named anchor --></a>S MadhavanUse of electronic health records to support a public health response to the COVID-19 pandemic in the United States: a prespective from 15 academic medical centersJ. Am. Med. Inf. Assoc.20212839340110.1093/jamia/ocaa287PMC766554633260207</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="CR14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id51"><!-- named anchor --></a>DC AngusAC GordonH BauchnerEmerging lessons from COVID-19 for the US clinical research enterpriseJ. Am. Med. Assoc.20213251159116110.1001/jama.2021.328433635309</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="CR15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id52"><!-- named anchor --></a>Saripalle, R., Runyan, C. &amp; Russell, M. Using HL7 FHIR to achieve interoperability in patient health record. <i>J. Bioinform</i><b>94</b>10.1016/j.bi.2019.103188 (2019).10.1016/j.jbi.2019.10318831063828</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="CR16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id53"><!-- named anchor --></a>JC MandelD KredaKD MandlIS KohaneRB RamoniSMART on FHIR: a standards-based, interoperable apps platform for electronic health recordsJ. Am. Med. Inf. Assoc.20162389990810.1093/jamia/ocv189PMC499703626911829</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="CR17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id54"><!-- named anchor --></a>U.S. Centers for Medicare &amp; Medicaid Services. “Policies and technology for interoperability and burden reduction”. Health Informatics and Interoperabilty Group. CMS.gov. Retrieved from <a target="xrefwindow" href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index#FHIR" id="id55">https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index#FHIR</a> (2021).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="CR18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id56"><!-- named anchor --></a>RC BoneSepsis syndrome: a valid clinical entityCrit. Care Med.1989173893932651003</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="CR19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id57"><!-- named anchor --></a>WA KnausX SunP NystromDP WagnerEvaluation of definitions for sepsisChest199210116561662160078710.1378/chest.101.6.1656</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="CR20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id58"><!-- named anchor --></a>Rangel-Frausto, M. S. et al. The natural history of the systemic inflammatory response syndrome (SIRS). <i>J. Am. Med. A</i>ssoc. <b>273</b>, 117–123 (1995).7799491</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="CR21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id59"><!-- named anchor --></a>Le Gall, J. R. et al. The logistic organ dysfunction system: a new way to assess organ dysfunction in the intensive care unit. <i>J. Am. Med. Assoc.</i><b>276</b>, 802–810 (1996).10.1001/jama.276.10.8028769590</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="CR22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id60"><!-- named anchor --></a>D AnnaneE BellissantJM CavaillonSeptic shockLancet200536563781563968110.1016/S0140-6736(04)17667-8</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="CR23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id61"><!-- named anchor --></a>SM FernandoPrognostic accuracy of the quick sequential organ failure assessment for mortality in patients with suspected infectionAnn. Intern Med.20181682662752940458210.7326/M17-2820</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="CR24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id62"><!-- named anchor --></a>Y FreundPrognostic accuracy of sepsis-3 criteria for in-hospital mortality among patients with suspected infection presenting to the emergency departmentJ. Am. Med. Assoc.201731730130810.1001/jama.2016.2032928114554</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="CR25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id63"><!-- named anchor --></a>R GouldenqSOFA, SIRS, and NEWS for predicting inhospital mortality and ICU admission in emergency admissions treated as sepsisEmerg. Med. J.2018353453492946717310.1136/emermed-2017-207120</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="CR26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id64"><!-- named anchor --></a>Harrison, D. A., Welch, C. &amp; Eddleston, J. M. The epidemiology of severe sepsis in England, Wales and Northern Ireland, 1996 to 2004: secondary analysis of a high quality clinical database, the ICNARC Case Mix Programme. <i>Crit. Care</i><b>10</b>, 1–10 (2006).10.1186/cc4854PMC155090216542492</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="CR27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id65"><!-- named anchor --></a>S HaydarM SpanierP WeemsS WoodT StroutComparison of QSOFA score and SIRS criteria as screening mechanisms for emergency department sepsisAm. J. Emerg. Med.201735173017332871264510.1016/j.ajem.2017.07.001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="CR28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id66"><!-- named anchor --></a>Jolley, R. J. et al. Validation and optimisation of an ICD-10 coded case definition for sepsis using administrative health data. <i>BMJ Open</i><b>5</b>, e009487 (2015).10.1136/bmjopen-2015-009487PMC469177726700284</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="CR29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id67"><!-- named anchor --></a>K KaukonenSystemic inflammatory response syndrome criteria in defining severe sepsisN. Engl. J. Med.201520151629163810.1056/NEJMoa141523625776936</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="CR30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id68"><!-- named anchor --></a>Napolitano, L. M. Sepsis 2018: Definitions and guideline changes. <i>Surg. Infect</i><b>19</b>, 117–125 (2018).10.1089/sur.2017.27829447109</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="CR31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id69"><!-- named anchor --></a>R SerafimnA comparison of the quick-SOFA and systemic inflammatory response syndrome criteria for the diagnosis of sepsis and prediction of mortalityChest20181536466552928968710.1016/j.chest.2017.12.015</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="CR32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id70"><!-- named anchor --></a>M SingerThe third international consensus definitions for sepsis and septic shock (sepsis-3)J. Am. Med. Assoc.201631580181010.1001/jama.2016.0287PMC496857426903338</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="CR33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id71"><!-- named anchor --></a>OA UsmanA UsmanMA WardComparison of SIRS, qSOFA, and NEWS for the early identification of sepsis in the emergency departmentAm. J. Emerg. Med.201937149014973047060010.1016/j.ajem.2018.10.058</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="CR34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id72"><!-- named anchor --></a>CW SeymourApplication of a framework to assess the usefulness of alternative sepsis criteriaCrit. Care Med.201644e122e1302690156010.1097/CCM.0000000000001724PMC4765919</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="CR35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id73"><!-- named anchor --></a>Vincent, J. L. Definition of Sepsis and non-infectious SIRS. In <i>Sepsis and Non-infectious Systemic Inflammation</i> (eds. Cavaillon, J. M. &amp; Adrie, C.), 3–12 (Wiley-VCH Verlag GmbH &amp; Co. KGaA, Weinheim, 2009).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="CR36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id74"><!-- named anchor --></a>Blanco, J. et al. Incidence, organ dysfunction and mortality in severe sepsis: a Spanish multicentre study. <i>Crit. Care</i><b>12</b>, 1–14 (2008).10.1186/cc7157PMC264632319091069</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="CR37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id75"><!-- named anchor --></a>EP RaithPrognostic accuracy of the SOFA score, SIRS criteria and qSOFA score for in-hospital mortality among adults with suspected infection admitted to the intensive care unitJ. Am. Med. Assoc.201731729030010.1001/jama.2016.2032828114553</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="CR38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id76"><!-- named anchor --></a>JL VincentThe SOFA (sepsis-related organ failure assessment) score to describe organ dysfunction/failure: on behalf of the working group on sepsis-related problems of the European Society of Intensive Care MedicineIntensive Care Med.199622707710884423910.1007/BF01709751</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="CR39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id77"><!-- named anchor --></a>JL., V.Clinical sepsis and septic shock—definition, diagnosis and management principlesLangenbecks Arch. Surg.20083938178241858420510.1007/s00423-008-0343-1</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="CR40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id78"><!-- named anchor --></a>RC BoneR BalkFB CerraDefinitions for sepsis and organ failure and guidelines for the use of innovative therapies in sepsisChest199210116441655130362210.1378/chest.101.6.1644</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41.</span> <a id="CR41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id79"><!-- named anchor --></a>PMCK KlouwenbergD OngMJM BontenOL CremerClassification of sepsis, severe sepsis and septic shock: the impact of minor variations in data capture and definition of SIRS criteriaIntensive Care Med.2012388118192247644910.1007/s00134-012-2549-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42.</span> <a id="CR42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id80"><!-- named anchor --></a>K KaukonenMortality related to severe sepsis and septic shock among critically ill patients in Australia and New Zealand, 2000-2012J. Am. Med. Assoc.20143111308131610.1001/jama.2014.263724638143</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43.</span> <a id="CR43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id81"><!-- named anchor --></a>JL VincentJ MiraM AntonelliSepsis: older and newer conceptsLancet2016423724010.1016/S2213-2600(15)00522-626917436</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44.</span> <a id="CR44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id82"><!-- named anchor --></a>Whittaker, S. et al. Severe sepsis cohorts derived from claims-based strategies appear to be biased towards a more severely ill patient population. <i>Crit Care Med.</i><b>41</b>, 945–953 (2013).10.1097/CCM.0b013e31827466f1PMC381047523385099</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45.</span> <a id="CR45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id83"><!-- named anchor --></a>C RheeIncidence and trends of sepsis in US hospitals using clinical vs claims data, 2009-2014J. Am. Med. Assoc.20173181241124910.1001/jama.2017.13836PMC571039628903154</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46.</span> <a id="CR46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id84"><!-- named anchor --></a>C FleischmannAssessment of global incidence and mortality of hospital-treated sepsis. Current Estimates and LimitationsAm. J. Respir. Crit. Care Med.20161932592722641429210.1164/rccm.201504-0781OC</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47.</span> <a id="CR47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id85"><!-- named anchor --></a>TJ IwashynaIdentifying patients with severe sepsis using administrative claims: patient-level validation of the angus implementation of the international consensus conference definition of severe sepsisMed. Care201452e39e432300143710.1097/MLR.0b013e318268ac86PMC3568444</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48.</span> <a id="CR48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id86"><!-- named anchor --></a>GS MartinD ManninoS EatonM MossThe epidemiology of sepsis in the United States from 1979-200N. Engl. J. Med.20083481546155410.1056/NEJMoa02213912700374</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49.</span> <a id="CR49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id87"><!-- named anchor --></a>S TrzeciakInclusion criteria for clinical trials in sepsisChest20051272422451565399010.1378/chest.127.1.242</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50.</span> <a id="CR50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id88"><!-- named anchor --></a>MM Levy2001 SCCM/ESICM/ACCP/ATS/SOS omnternational sepsis definitions conferenceIntensive Care Med.2003295305381266421910.1007/s00134-003-1662-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51.</span> <a id="CR51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id89"><!-- named anchor --></a>Dellinger, R. P. et al. Surviving sepsis campaign: International guidelines for management of severe sepsis and septic shock: 2012. <i>Crit. Care Med.</i><b>41</b>, 580–637 (2013).10.1097/CCM.0b013e31827e83af23353941</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52.</span> <a id="CR52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id90"><!-- named anchor --></a>M Shankar-HariDeveloping a new definition and assessing new clinical criteria for septic shock: for the third international consensus definitions for sepsis and septic shock (Sepsis-3)J. Am. Med. Assoc.201631577578710.1001/jama.2016.0289PMC491039226903336</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53.</span> <a id="CR53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id91"><!-- named anchor --></a>HB NguyenD SmithSepsis in the 21st century: recent definitions and therapeutic advancesAm. J. Emerg. Med.2007255645711754366210.1016/j.ajem.2006.08.015</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54.</span> <a id="CR54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id92"><!-- named anchor --></a>RN OrgetaC RosinR BingisserCH NickelClinical scores and formal triage for screening of sepsis and adverse outcomes on arrival in an emergency department all-comer cohortJ. Emerg. Med.20195746010.1016/j.jemermed.2019.06.03631500993</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55.</span> <a id="CR55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id93"><!-- named anchor --></a>MM ChurpekQuick sepsis-related organ failure assessment, systemic inflammatory response syndrome, and early warning scores for detecting clinical deterioration in infected patients outside the intensive care unitAm. J. Respir. Crit. Care Med.201619590691110.1164/rccm.201604-0854OCPMC538770527649072</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56.</span> <a id="CR56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id94"><!-- named anchor --></a>T CalandraJ CohenThe international sepsis forum consensus conference on definitions of infection in the intensive care unitCrit. Care Med.200533153815481600306010.1097/01.ccm.0000168253.91200.83</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57.</span> <a id="CR57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id95"><!-- named anchor --></a>MM LevyLE EvansA RhodesThe surviving sepsis campaign bundle: 2018 updateIntensive Care Med.2018449259282967556610.1007/s00134-018-5085-0</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58.</span> <a id="CR58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id96"><!-- named anchor --></a>NAGMSC Working Group on Sepsis. <i>Final Report</i>, <a target="xrefwindow" href="https://www.nigms.nih.gov/News/reports/Documents/nagmsc-working-group-on-sepsis-final-report.pdf" id="id97">https://www.nigms.nih.gov/News/reports/Documents/nagmsc-working-group-on-sepsis-final-report.pdf</a> (2019).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59.</span> <a id="CR59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id98"><!-- named anchor --></a>The Office of the National Coordinator for Health Information Technology. “Health IT Quick Stats”. Retrieved from <a target="xrefwindow" href="https://dashboard.healthit.gov/quickstats/quickstats.php" id="id99">https://dashboard.healthit.gov/quickstats/quickstats.php</a> (2021).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60.</span> <a id="CR60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id100"><!-- named anchor --></a>IJ BarbashJ KahnBT ThompsonOpening the debate on the new sepsis definition. Medicare’s sepsis reporting program: two steps forward, one step backAm. J. Respir. Crit. Care Med.20161941391412716716910.1164/rccm.201604-0723EDPMC5439597</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61.</span> <a id="CR61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id101"><!-- named anchor --></a>M AfsharPatient outcomes and cost-effectiveness of a sepsis care quality improvement program in a health systemCrit. Care Med.201947137113793130617610.1097/CCM.0000000000003919PMC7195842</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62.</span> <a id="CR62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id102"><!-- named anchor --></a>IJ BarbashHospital perceptions of Medicare’s sepsis quality reporting initiativeJ. Hosp. Med.2017129639682923609410.12788/jhm.2929PMC5830093</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63.</span> <a id="CR63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id103"><!-- named anchor --></a>HC PrescottC CalfeeBT ThompsonDC AngusVX LiuToward smarter lumping and smarter splitting: rethinking strategies for sepsis and acute respiratory distress syndrome clinical trial designAm. J. Respir. Crit. Care Med.20161941471552724448110.1164/rccm.201512-2544CPPMC5003218</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64.</span> <a id="CR64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id104"><!-- named anchor --></a>Ma, P. et al. Individualized resuscitation strategy for septic shock formalized by finite mixture modeling and dynamic treatment regimen. <i>Crit. Care</i><b>25</b>, 1–16 (2021).10.1186/s13054-021-03682-7PMC827399134253228</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65.</span> <a id="CR65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id105"><!-- named anchor --></a>Demerle, K. M. et al. Feasibility of embedding a scalable, virtually enabled biorepository in the electronic health record for precision medicine. <i>JAMA Netw Open</i><b>4</b>, e2037739 (2021).10.1001/jamanetworkopen.2020.37739PMC790086433616663</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66.</span> <a id="CR66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id106"><!-- named anchor --></a>MA GianfrescoS TamangJ YazdanyG SchmajukPotential biases in machine learning algorithms using electronic health recordJAMA Intern Med.2018178154415473012855210.1001/jamainternmed.2018.3763PMC6347576</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67.</span> <a id="CR67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id107"><!-- named anchor --></a>U.S. Department of Health and Human Services. Public Health Data Modernization: Listening session on real-workd testing of 21st century cures act requirements, Virtual Meeting. (2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68.</span> <a id="CR68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id108"><!-- named anchor --></a><i>Common Data Model (CDM) Specification, Version 6.0</i>, <a target="xrefwindow" href="https://pcornet.org/wp-content/uploads/2020/12/PCORnet-Common-Data-Model-v60-2020_10_221.pdf" id="id109">https://pcornet.org/wp-content/uploads/2020/12/PCORnet-Common-Data-Model-v60-2020_10_221.pdf</a> (2021).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69.</span> <a id="CR69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id110"><!-- named anchor --></a>HL7 International. “Resource Implementation Guide”. Conformance. Retrieved from <a target="xrefwindow" href="http://hl7.org/fhir/implementationguide.html" id="id111">http://hl7.org/fhir/implementationguide.html</a> (2011).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70.</span> <a id="CR70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id112"><!-- named anchor --></a>Higgins, J. P. T. et al. (eds). <i>Cochrane Handbook for Systematic Reviews of Interventions</i> 2nd edn. (John Wiley &amp; Sons, Chichester (UK), 2019).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71.</span> <a id="CR71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id113"><!-- named anchor --></a>D MoherA LiberatiJ TetzlaffDG AltmanThe PRISMA Group.Preferred reporting ITems for systematic reviews and meta-analyses: the PRISMA statementPLoS Med.20096e10000097PMC309011721603045</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72.</span> <a id="CR72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id114"><!-- named anchor --></a>MM Levy2001 SCCM/ESICM/ACCP/ATS/SIS international sepsis definitions conferenceIntensive Care Med.2003295305381266421910.1007/s00134-003-1662-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73.</span> <a id="CR73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id115"><!-- named anchor --></a>Schardt, C., Adams, M. D., Owens, T., Keitz, S. &amp; Fontelo, P. Utilization of the PICO framework to improve searching PubMed for clinical questions. <i>BMC Med. Inform. Decis Mak.</i><b>7</b>, 1–6 (2007).10.1186/1472-6947-7-16PMC190419317573961</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74.</span> <a id="CR74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id116"><!-- named anchor --></a>M LehneS LuijtenP Vom Felde Genannt ImbuschS ThunThe use of FHIR in digital health—a review of the scientific literatureStud. Health Technol. Inf.20193525810.3233/SHTI19080531483254</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75.</span> <a id="CR75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id117"><!-- named anchor --></a>International, H. L. “Welcome to FHIR”. HL7 FHIR Release 4. <a target="xrefwindow" href="https://www.hl7.org/fhir/" id="id118">https://www.hl7.org/fhir/</a>. Accessed October, 2020 (2016). </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76.</span> <a id="CR76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id119"><!-- named anchor --></a>DC AngusEpidemiology of severe sepsis in the United StatesCrit. Care Med.20012971303131010.1097/00003246-200107000-0000211445675</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77.</span> <a id="CR77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id120"><!-- named anchor --></a>M CecconiL EvansM LevyA RhodesSepsis and septic shockLancet201839275872993719210.1016/S0140-6736(18)30696-2</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78.</span> <a id="CR78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id121"><!-- named anchor --></a>PA DanaiSeasonal variation in the epidemiology of sepsisCrit. Care Med.2007354104151716735110.1097/01.CCM.0000253405.17038.43</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79.</span> <a id="CR79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id122"><!-- named anchor --></a>VY DombrovskyRapid increase in hospitalization and mortality rates for severe sepsis in the United States: a trend analysis from 1993 to 2003Crit. Care Med.200735124412501741473610.1097/01.CCM.0000261890.41311.E9</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80.</span> <a id="CR80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id123"><!-- named anchor --></a>Gaieski, D. F. et al. The relationship between hospital volume and mortality in severe sepsis. <i>Amer. J. Respir. Crit. Care Med.</i><b>190</b>, 665–674 (2014).10.1164/rccm.201402-0289OC25117723</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81.</span> <a id="CR81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id124"><!-- named anchor --></a>S GuptaCulture-negative severe sepsis: nationwide trends and outcomesChest2016150125112592761502410.1016/j.chest.2016.08.1460</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82.</span> <a id="CR82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id125"><!-- named anchor --></a>TJ IwashynaLong-term cognitive impairment and functional disability among survivors of severe sepsisJ. Am. Med. Assoc.20103041787179410.1001/jama.2010.1553PMC334528820978258</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83.</span> <a id="CR83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id126"><!-- named anchor --></a>SS KadriEstimating ten-year trends in septic shock incidence and mortality in United States academic medical centers using clinical dataChest20171512782852745276810.1016/j.chest.2016.07.010PMC5310115</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84.</span> <a id="CR84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id127"><!-- named anchor --></a>A LeverI MackenzieSepsis: definition, epidemiology and diagnosisBMJ20073358798831796228810.1136/bmj.39346.495880.AEPMC2043413</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85.</span> <a id="CR85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id128"><!-- named anchor --></a>I MatotC SprungDefinition of sepsisIntensive Care Med.200127S3S91130736810.1007/pl00003795</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86.</span> <a id="CR86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id129"><!-- named anchor --></a>McPherson, D. et al. Sepsis-associated mortality in England: an analysis of multiple cause of death data from 2001 to 2010. <i>BMJ Open</i><b>3</b>, e002586 (2013).10.1136/bmjopen-2013-002586PMC373331323913771</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87.</span> <a id="CR87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id130"><!-- named anchor --></a>CW SeymourAssessment of clinical criteria for sepsis for the Third International Consensus definitions for sepsis and septic shock (Sepsis-3)J. Am. Med. Assoc.201631576277410.1001/jama.2016.0288PMC543343526903335</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">88.</span> <a id="CR88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id131"><!-- named anchor --></a>Vincent, J. L. et al. Sepsis in European intensive care units: results of the SOAP study. <i>Crit. Care Med.</i><b>34</b>, 344–353 (2006).10.1097/01.ccm.0000194725.48928.3a16424713</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">89.</span> <a id="CR89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id132"><!-- named anchor --></a>H ZhaoAn evaluation of the diagnostic accuracy of the 1991 American College of Chest Physicians/Society of Critical Care Medicine and the 2001 Society of Critical Care Medicine/European Society of Intensive Care Medicine/American College of Chest Physicians/American Thoracic Society/Surgical Infection Society sepsis definitionCrit. Care Med.201240170017062261017610.1097/CCM.0b013e318246b83a</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Subject terms: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Subject terms</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Diagnosis</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Infectious diseases</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Medical research</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+<p class="metadata-entry"><span class="generated"><span class="data">issue-copyright-statement</span>: </span>© The Author(s) 2022</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
