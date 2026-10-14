@@ -1,0 +1,1121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Santosh, Rasmussen, Mamun, Aryal, and Rajaraman: A systematic review on cough sound analysis for Covid-19 diagnosis and screening: is my cough sound COVID-19?</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>PeerJ Comput Sci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>PeerJ Comput Sci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3966</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>peerjcs</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101660598</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>peerj-cs</p>
+<p class="metadata-entry"><span class="generated">Title: </span>PeerJ Computer Science</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2376-5992</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>PeerJ, Inc</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="peerj-cs-08-958.pdf">peerj-cs-08-958.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="https://peerj.com/articles/cs-958">https://peerj.com/articles/cs-958</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2022 Santosh et al.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022, Santosh et al.</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open access article distributed under the terms of the <a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">Creative Commons Attribution License</a>, which permits unrestricted use, distribution, reproduction and adaptation in any medium and for any purpose provided that it is properly attributed. For attribution, the original author(s), title, publication source (PeerJ Computer Science) and either DOI or URL of the article must be cited.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>31 January 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>4 April 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>25 April 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>8</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>398954<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>e958</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9138020</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9138020.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9138020</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9138020</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35634112</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.7717/peerj-cs.958</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>cs-958</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>The University of South Dakota</p>
+<p class="metadata-entry"><span class="generated">Funding: </span>This work was supported by the Dean’s opportunity fund, College of A &amp; S, The University of South Dakota. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">A systematic review on cough sound analysis for Covid-19 diagnosis and screening: is my cough sound COVID-19?</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-4176-0236<span class="generated">] </span>KC Santosh<span class="generated">[</span><a href="#aff-1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">Email: </span><a href="mailto:santosh.kc@usd.edu">santosh.kc@usd.edu</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0001-6196-9956<span class="generated">] </span>Nicholas Rasmussen<span class="generated">[</span><a href="#aff-1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0001-9802-2627<span class="generated">] </span>Muntasir Mamun<span class="generated">[</span><a href="#aff-1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Sunil Aryal<span class="generated">[</span><a href="#aff-2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff-1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>2AI: Applied Artificial Intelligence Lab, Computer Science, University of South Dakota, Vermiillion, South Dakota, United States</p>
+<p class="metadata-entry"><a id="aff-2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>School of Information Technology, Deakin University, Victoria, Australia</p>
+</div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Sivaramakrishnan Rajaraman</p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id8">For COVID-19, the need for robust, inexpensive, and accessible screening becomes critical. Even though symptoms present differently, cough is still taken as one of the primary symptoms in severe and non-severe infections alike. For mass screening in resource-constrained regions, artificial intelligence (AI)-guided tools have progressively contributed to detect/screen COVID-19 infections using cough sounds. Therefore, in this article, we review state-of-the-art works in both years 2020 and 2021 by considering AI-guided tools to analyze cough sound for COVID-19 screening primarily based on machine learning algorithms. In our study, we used PubMed central repository and Web of Science with key words: (Cough OR Cough Sounds OR Speech) AND (Machine learning OR Deep learning OR Artificial intelligence) AND (COVID-19 OR Coronavirus). For better meta-analysis, we screened for appropriate dataset (size and source), algorithmic factors (both shallow learning and deep learning models) and corresponding performance scores. Further, in order not to miss up-to-date experimental research-based articles, we also included articles outside of PubMed and Web of Science, but pre-print articles were strictly avoided as they are not peer-reviewed.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="id9"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id10">COVID-19 has ravaged the world since the World Health Organization (WHO) declared it a global health emergency on January 30, 2020. There are 446,511,318 total confirmed cases and 6,004,421 deaths worldwide as of March 8, 2022 (see <a href="#fig-1">Fig. 1</a>) (WHO coronavirus (COVID-19) dashboard. <a target="xrefwindow" href="https://covid19.who.int/" id="id11">https://covid19.who.int/</a>). Despite all our best efforts, the human cost in terms of person-hours spent and lives lost to this virus is extensive. Although there are multiple ways to fight the virus, the greatest hope for ending the pandemic is vaccines, of which 10,704,043,684 vaccine doses (as of March 6, 2022) have been distributed globally (<a href="#ref-1">Ahmed et al., 2020</a>). However, if we rely on vaccines alone, there will be many more deaths before humanity can put this pandemic behind it. Therefore, how else can we fight this virus other than the suggested preventative measures, like washing our hands and wearing masks? Other than diagnosis, screening tests will be one of the most integral parts of containing this virus completely, especially in resource-constrained regions across the world, where vaccines are unavailable or untrusted because of general vaccine skepticism within a community.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<span class="object-id">10.7717/peerj-cs.958/fig-1</span><div class="caption"><h4 class="subsection-title">Globally, as of 4:31pm CET, 8 March 2022, there have been 446,511,318 confirmedcases of COVID-19, including 6,004,421 deaths (source: <a target="xrefwindow" href="https://covid19.who.int" id="id12">https://covid19.who.int</a>).</h4></div>
+</div>
+<p id="id13">Cough is used to diagnose and predict many diseases to help clinicians better serve patients; some of these diseases include but are not limited to pneumonia and asthma. Multiple studies have recently used artificial intelligence (AI)-guided tools to help classify different coughs and help diagnose or predict certain diseases. For example, <a href="#ref-43">Nemati et al. (2020)</a> conducted a study to help classify the severity of chronic obstructive pulmonary disease by measuring the airflow and volume of patients breathing with spirometry tests. <a href="#ref-42">Nakamori et al. (2020)</a> showed that using a simplified cough test, they can predict the risk of patients with acute stroke getting pneumonia. Another study conducted by <a href="#ref-44">Nemati et al. (2020)</a> used AI-guided tools to detect whether a specific cough was ‘dry’ or ‘wet,’ which would help establish the presence of sputum. In <a href="#ref-50">Rudraraju et al. (2020)</a>, a study also found that AI-guided tools can classify obstructive <i>vs</i> restrictive lung problems. Lastly, <a href="#ref-23">Han et al. (2020)</a> used cough and other types of valuable data to estimate the severity level of illness. These previous five examples show that different cough metrics can get leveraged in multiple ways, with and without AI-guided tools, to help diagnose and predict diseases in humans. However, because cough has helped diagnose many other diseases, AI-guided tools that leverage cough sound samples must also take into consideration the works involved with diagnosing other diseases to more accurately screen COVID-19 (<a href="#ref-25">Imran et al., 2020</a>). Furthermore, mel-frequency cepstral coefficients (MFCCs) processing helps COVID-19 screening because authors found high similarity in MFCCs between different COVID-19 cough and breathing sounds (<a href="#ref-2">Alsabek, Shahin &amp; Hassan, 2020</a>). Although this is only one cough feature that most robust AI-powered algorithms use, it is a good case-in-point for the research that we will explore in this article. Based on the features like MFCCs extracted from the audio recording, AI-guided tools can help detect a cough and use this process to screen COVID-19 patients (<a href="#ref-9">Chen et al., 2021</a>; <a href="#ref-36">Miranda, Diacon &amp; Niesler, 2019</a>; <a href="#ref-10">Chuma &amp; Iano, 2021</a>). More often, accuracy for basic cough detectors is generally greater than 95%. While reviewing state-of-the-art works, we consider whether AI-guided tools are reproducible (with external validation) for COVID-19 diagnosis—‘is my cough COVID-19?’ (<a href="#ref-53">Topol, 2020</a>).</p>
+<p id="id14">A brief clinical analysis of the symptom cough in COVID-19 patients reveals many factors to consider related to AI-guided tools. The first factor to consider is that there is no international definition of the symptom of cough (<a href="#ref-38">Morice, 2007</a>). This fact shows that diagnosis of the symptom cough is subjective, and clinician reporting of cough can be inaccurate, and it is even more inaccurate in the general population (<a href="#ref-14">Donnelly &amp; Everard, 2019</a>; <a href="#ref-38">Morice, 2007</a>). The following factors should also be get considered: socio-demographics, the severity of the illness, the patient’s age, and temporal considerations. Multiple socio-demographic studies on COVID-19 show that cough is ubiquitous in terms of the presentation rate of the symptom between different populations such as African-Americans and Latinos (<a href="#ref-18">Gayam et al., 2020</a>; <a href="#ref-58">Weng et al., 2020</a>). Furthermore, these studies show that there are differences in the presentation of other symptoms regarding race. Next, multiple studies regarding the severity level of the illness show little difference between mild, moderate, severe, and critical infections (<a href="#ref-29">Lapostolle et al., 2020</a>; <a href="#ref-56">Wang et al., 2020</a>; <a href="#ref-54">Vaughan et al., 2021</a>; <a href="#ref-33">Matangila et al., 2020</a>; <a href="#ref-59">Yang et al., 2020</a>). However, there are a few studies, out of many, that show a difference (<a href="#ref-17">Fontana, 2007</a>). Moreover, patients in the mild to moderate categories generalize well to the population at large because most COVID-19 infections will fall into this category (<a href="#ref-59">Yang et al., 2020</a>). Age category is also an essential factor to consider and studies show there is little to no difference between age groups for the presentation rate of the cough symptom (<a href="#ref-6">Brendish et al., 2020</a>; <a href="#ref-8">Cattelan et al., 2020</a>; <a href="#ref-21">Guan et al., 2020</a>; <a href="#ref-38">Morice, 2007</a>). Lastly, considering the temporal aspects of cough in COVID-19 infections, we see a critical aspect that shows that cough is a reliable metric. That aspect is, the symptom of cough lasts longer and at a higher rate than all other symptoms (<a href="#ref-15">Faezipour &amp; Abuzneid, 2020</a>). This study analyzed a relatively small number of patients; however, if this study can be confirmed, it shows that cough as a screening metric may help catch an infection in the later stages. Overall, based on these studies, the cough presentation rate is high relative to all symptoms and can be considered the second most common symptom after fever.</p>
+<p id="id15">This paper systematically reviews AI-guided tools that are used to analyze cough sound for COVID-19 screening. To avoid possible confusion between diagnostic tests and screening tests, a diagnostic test aims to establish the presence/absence of the disease, while a screening test is to detect potential disease indicators. In short, we systematically review screening tests with the use of AI-guided tools. AI-guided tools rely on fully observed clinically diagnosed data (cough sounds, in our case) and are considered one of the fastest and most accurate tools in classifying/screening COVID-19 (<a href="#ref-25">Imran et al., 2020</a>; <a href="#ref-1">Ahmed et al., 2020</a>). Other data, such as respiratory and breathing sounds, can also be considered for screening (<a href="#ref-24">Hassan, Shahin &amp; Alsabek, 2020</a>), but our study is limited to analyzing cough sounds because it is one of the most widespread symptoms that can easily get screened with low-cost equipment for many people in a short period of time.</p>
+<p id="id16">The remainder of the paper is organized as follows. “Survey Methodology” presents our review methodology (inclusion criteria of the published research articles). It mainly includes AI-guided tools for COVID-19 screening using cough sounds in both crowd-sourced and laboratory confirmed data (“AI-guided tools for COVID-19 screening using cough sounds”). In addition, in “Research articles outside of PubMed and Web of Science”, we also review important findings outside PubMed and Web of Science. These sections get followed by discussion in “Discussion”. “Conclusion” concludes our study.</p>
+</div>
+<div class="section">
+<a id="id17"><!-- named anchor --></a><h2 class="main-title">Survey methodology</h2>
+<p id="id18">An essential aspect of any review article is how the information was collected (<a href="#ref-34">McDonagh et al., 2013</a>). For our systematic review, we follow a workflow representing different phases of systematic review, where it primarily includes identification, screening, eligibility and included criteria as shown in <a href="#fig-2">Fig. 2</a>. In our study, we used PubMed central repository and Web of Science, and selected key words are (<i>Cough</i> OR <i>Cough Sounds</i> OR <i>Speech</i>) AND (<i>Machine learning</i> OR <i>Deep learning</i> OR <i>Artificial intelligence</i>) AND (<i>COVID-19</i> OR <i>Coronavirus</i>). In our screening, duplicate items were removed, and experiment-based papers are included.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<span class="object-id">10.7717/peerj-cs.958/fig-2</span><div class="caption"><h4 class="subsection-title">Workflow representing different phases of the systematic review (source: PRISMAcriteria (<a href="#ref-31">Liberati et al., 2009</a>)).</h4></div>
+</div>
+<p id="id19">For better meta-analysis, we screened for appropriate dataset (size and source), algorithmic factors (both, shallow learning and deep learning models), and corresponding performance scores. For meta-analysis, we included experimental-based research articles. Pre-print articles (<i>e.g</i>., ArXiv, medRxiv and TechRxiv) were strictly avoided as they are not peer-reviewed.</p>
+<div class="section">
+<a id="id20"><!-- named anchor --></a><h3 class="section-title">AI-guided tools for COVID-19 screening using cough sounds</h3>
+<p id="id21">AI has contributed a lot in healthcare and integrating speech/audio processing tools is no exception (<a href="#ref-51">Santosh, 2019</a>; <a href="#ref-41">Mukherjee et al., 2021</a>; <a href="#ref-40">Mukherjee, Salam &amp; Santosh, 2021</a>). We review state-of-the-art works on COVID-19 screening through cough sounds. Not only that, but we also address other data types such as sneezing, respiratory, speech, throat clearing, wheezing, and breathing. For a better understanding, <a href="#fig-3">Fig. 3</a> provides a workflow of how AI-guided tools are commonly employed. It takes cough sound data as an input, extracts features and differentiates COVID-19 positive human subjects from non-COVID ones.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="fig-3"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<span class="object-id">10.7717/peerj-cs.958/fig-3</span><div class="caption">
+<h3 class="title">AI-guided tools for COVID-19 screening using cough sound.</h3>
+<p id="id22">COVID-19 positive human subjects are classified based on both, shallow and deep learning models. Even though multiple data types can be considered, in this study, we are focusing on cough sound.</p>
+</div>
+</div>
+<p id="id23">It is possible to develop AI-guided audio/speech processing tools/techniques that extract and leverage acoustic biomarker features to pre-screen COVID-19 recordings from cough. Before developing detailed information, let us discuss a few cases where use of biomarkers and smartphone-based tools/techniques can be seen. Experts proposed a speech and signal processing approach to analyze COVID-19 (in both cases: asymptomatic and symptomatic). A dataset with a complexity of neuromotor coordination across speech subsystems that involve respiration, phonation, and articulation, encouraged by the distinct nature of COVID-19’s lower <i>vs</i> upper respiratory tract inflammation, helps detect COVID-19 in asymptomatic and symptomatic patients (<a href="#ref-49">Quatieri, Talkar &amp; Palmer, 2020</a>). These biomarker features can get leveraged with AI-guided tools to have a significant effect to increase forced cough COVID-19 detection accuracy (<a href="#ref-28">Laguarta, Hueto &amp; Subirana, 2020</a>). Similarly, smartphone-based self-testing of COVID-19 using breathing sounds and their implications to find breathing complications by comparing specific acoustic signal patterns has also been gotten observed in this review. In <a href="#ref-15">Faezipour &amp; Abuzneid (2020)</a>, the authors suggest their opinion for using advanced signal processing in tandem with new deep machine learning and pattern recognition techniques on smartphone technology.</p>
+<p id="id24">In <a href="#table-1">Tables 1</a> and <a href="#table-2">2</a>, we organize the results to contrast studies with and without laboratory confirmation of their datasets for better understanding. Not limited to cough sounds, other sources of data, such as speech, breathing and respiratory sounds, are considered in some studies (see <a href="#fig-3">Fig. 3</a>).</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table-1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<span class="object-id">10.7717/peerj-cs.958/table-1</span><div class="caption"><h3 class="title">Cough sounds (including other data type) for COVID-19 screening performance in terms of Accuracy (ACC), Area Under the Curve (AUC), Sensitivity (SEN) and Specificity (SPEC) on ‘no laboratory confirmed data’.</h3></div>
+<table frame="hsides" rules="groups">
+<a id="id25"><!-- named anchor --></a><colgroup span="1">
+<a id="id26"><!-- named anchor --></a><col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+</colgroup>
+<thead>
+<a id="id33"><!-- named anchor --></a><tr>
+<a id="id34"><!-- named anchor --></a><th rowspan="1" colspan="1"><a id="id35"><!-- named anchor --></a></th>
+<th rowspan="1" colspan="1"><a id="id36"><!-- named anchor --></a></th>
+<th colspan="4" rowspan="1">
+<a id="id37"><!-- named anchor --></a>Performance</th>
+</tr>
+<tr>
+<a id="id38"><!-- named anchor --></a><th rowspan="1" colspan="1">
+<a id="id39"><!-- named anchor --></a>Authors (year)</th>
+<th rowspan="1" colspan="1">
+<a id="id40"><!-- named anchor --></a>Data type (sample size)</th>
+<th rowspan="1" colspan="1">
+<a id="id41"><!-- named anchor --></a>ACC</th>
+<th rowspan="1" colspan="1">
+<a id="id42"><!-- named anchor --></a>AUC</th>
+<th rowspan="1" colspan="1">
+<a id="id43"><!-- named anchor --></a>SEN</th>
+<th rowspan="1" colspan="1">
+<a id="id44"><!-- named anchor --></a>SPEC</th>
+</tr>
+</thead>
+<tbody>
+<a id="id45"><!-- named anchor --></a><tr>
+<a id="id46"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id47"><!-- named anchor --></a><a href="#ref-12">Dash et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id48"><!-- named anchor --></a>Cough sounds (5,130)</td>
+<td rowspan="1" colspan="1">
+<a id="id49"><!-- named anchor --></a>0.86</td>
+<td rowspan="1" colspan="1">
+<a id="id50"><!-- named anchor --></a>0.50</td>
+<td rowspan="1" colspan="1">
+<a id="id51"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id52"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id53"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id54"><!-- named anchor --></a><a href="#ref-39">Mouawad, Dubnov &amp; Dubnov (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id55"><!-- named anchor --></a>Cough sounds (1,927)</td>
+<td rowspan="1" colspan="1">
+<a id="id56"><!-- named anchor --></a>0.91</td>
+<td rowspan="1" colspan="1">
+<a id="id57"><!-- named anchor --></a>0.84</td>
+<td rowspan="1" colspan="1">
+<a id="id58"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id59"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id60"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id61"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1">
+<a id="id62"><!-- named anchor --></a>Speech (1,488)</td>
+<td rowspan="1" colspan="1">
+<a id="id63"><!-- named anchor --></a>0.89</td>
+<td rowspan="1" colspan="1">
+<a id="id64"><!-- named anchor --></a>0.86</td>
+<td rowspan="1" colspan="1">
+<a id="id65"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id66"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id67"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id68"><!-- named anchor --></a><a href="#ref-52">Shimon et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id69"><!-- named anchor --></a>Cough sounds (1,296)</td>
+<td rowspan="1" colspan="1">
+<a id="id70"><!-- named anchor --></a>0.74</td>
+<td rowspan="1" colspan="1">
+<a id="id71"><!-- named anchor --></a>0.60</td>
+<td rowspan="1" colspan="1">
+<a id="id72"><!-- named anchor --></a>0.90</td>
+<td rowspan="1" colspan="1">
+<a id="id73"><!-- named anchor --></a>0.35</td>
+</tr>
+<tr>
+<a id="id74"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id75"><!-- named anchor --></a><a href="#ref-13">Despotovic et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id76"><!-- named anchor --></a>Cough sounds (496)</td>
+<td rowspan="1" colspan="1">
+<a id="id77"><!-- named anchor --></a>0.88</td>
+<td rowspan="1" colspan="1">
+<a id="id78"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id79"><!-- named anchor --></a>0.87</td>
+<td rowspan="1" colspan="1">
+<a id="id80"><!-- named anchor --></a>0.89</td>
+</tr>
+<tr>
+<a id="id81"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id82"><!-- named anchor --></a><a href="#ref-35">Melek (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id83"><!-- named anchor --></a>Cough sounds (180)</td>
+<td rowspan="1" colspan="1">
+<a id="id84"><!-- named anchor --></a>0.98</td>
+<td rowspan="1" colspan="1">
+<a id="id85"><!-- named anchor --></a>0.98</td>
+<td rowspan="1" colspan="1">
+<a id="id86"><!-- named anchor --></a>0.97</td>
+<td rowspan="1" colspan="1">
+<a id="id87"><!-- named anchor --></a>1.00</td>
+</tr>
+<tr>
+<a id="id88"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id89"><!-- named anchor --></a><a href="#ref-37">Mohammed et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id90"><!-- named anchor --></a>Cough sounds (1,276)</td>
+<td rowspan="1" colspan="1">
+<a id="id91"><!-- named anchor --></a>0.77</td>
+<td rowspan="1" colspan="1">
+<a id="id92"><!-- named anchor --></a>0.77</td>
+<td rowspan="1" colspan="1">
+<a id="id93"><!-- named anchor --></a>0.71</td>
+<td rowspan="1" colspan="1">
+<a id="id94"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id95"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id96"><!-- named anchor --></a><a href="#ref-19">Gokcen et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id97"><!-- named anchor --></a>Cough (822)</td>
+<td rowspan="1" colspan="1">
+<a id="id98"><!-- named anchor --></a>0.79</td>
+<td rowspan="1" colspan="1">
+<a id="id99"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id100"><!-- named anchor --></a>0.75</td>
+<td rowspan="1" colspan="1">
+<a id="id101"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id102"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id103"><!-- named anchor --></a><a href="#ref-16">Feng et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id104"><!-- named anchor --></a>Cough sounds (1,440)</td>
+<td rowspan="1" colspan="1">
+<a id="id105"><!-- named anchor --></a>0.81</td>
+<td rowspan="1" colspan="1">
+<a id="id106"><!-- named anchor --></a>0.79</td>
+<td rowspan="1" colspan="1">
+<a id="id107"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id109"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id110"><!-- named anchor --></a><a href="#ref-11">Coppock et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id111"><!-- named anchor --></a>Cough sounds (517)</td>
+<td rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id113"><!-- named anchor --></a>0.84</td>
+<td rowspan="1" colspan="1">
+<a id="id114"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id115"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id116"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id117"><!-- named anchor --></a><a href="#ref-30">Lella &amp; Pja (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id118"><!-- named anchor --></a>Multiple data types<a href="#table-1fn1">*</a> (6,000)</td>
+<td rowspan="1" colspan="1">
+<a id="id119"><!-- named anchor --></a>0.95</td>
+<td rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id122"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id123"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id124"><!-- named anchor --></a><a href="#ref-46">Pahar et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>Cough sounds (1,171)</td>
+<td rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>0.95</td>
+<td rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>0.93</td>
+<td rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>0.98</td>
+</tr>
+<tr>
+<a id="id130"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a><a href="#ref-28">Laguarta, Hueto &amp; Subirana (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>Cough Sounds (5,320)</td>
+<td rowspan="1" colspan="1">
+<a id="id133"><!-- named anchor --></a>0.97</td>
+<td rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a>0.97</td>
+<td rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>0.98</td>
+<td rowspan="1" colspan="1">
+<a id="id136"><!-- named anchor --></a>0.94</td>
+</tr>
+<tr>
+<a id="id137"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a><a href="#ref-26">Jayachitra et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>Cough Sounds (601)</td>
+<td rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>0.97</td>
+<td rowspan="1" colspan="1">
+<a id="id141"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id142"><!-- named anchor --></a>0.94</td>
+<td rowspan="1" colspan="1">
+<a id="id143"><!-- named anchor --></a>–</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<div class="footnote">
+<a id="table-1fn"><!-- named anchor --></a><p id="id144"> <b>Note:</b></p>
+</div>
+<div class="footnote">
+<a id="table-1fn1"><!-- named anchor --></a><p id="id145">* Multiple data types, including cough sound.</p>
+</div>
+</div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table-2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<span class="object-id">10.7717/peerj-cs.958/table-2</span><div class="caption"><h3 class="title">Cough sounds (including other data type) for COVID-19 screening performance in terms of Accuracy (ACC), Area Under the Curve (AUC), Sensitivity (SEN) and Specificity (SPEC) on ‘laboratory confirmed data’.</h3></div>
+<table frame="hsides" rules="groups">
+<a id="id146"><!-- named anchor --></a><colgroup span="1">
+<a id="id147"><!-- named anchor --></a><col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+</colgroup>
+<thead>
+<a id="id154"><!-- named anchor --></a><tr>
+<a id="id155"><!-- named anchor --></a><th rowspan="1" colspan="1"><a id="id156"><!-- named anchor --></a></th>
+<th rowspan="1" colspan="1"><a id="id157"><!-- named anchor --></a></th>
+<th colspan="4" rowspan="1">
+<a id="id158"><!-- named anchor --></a>Performance</th>
+</tr>
+<tr>
+<a id="id159"><!-- named anchor --></a><th rowspan="1" colspan="1">
+<a id="id160"><!-- named anchor --></a>Authors (year)</th>
+<th rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>Data (sample size)</th>
+<th rowspan="1" colspan="1">
+<a id="id162"><!-- named anchor --></a>ACC</th>
+<th rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>AUC</th>
+<th rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>SEN</th>
+<th rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>SPEC</th>
+</tr>
+</thead>
+<tbody>
+<a id="id166"><!-- named anchor --></a><tr>
+<a id="id167"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id168"><!-- named anchor --></a><a href="#ref-25">Imran et al. (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id169"><!-- named anchor --></a>Cough sounds (543)</td>
+<td rowspan="1" colspan="1">
+<a id="id170"><!-- named anchor --></a>0.93</td>
+<td rowspan="1" colspan="1">
+<a id="id171"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id172"><!-- named anchor --></a>0.94</td>
+<td rowspan="1" colspan="1">
+<a id="id173"><!-- named anchor --></a>0.91</td>
+</tr>
+<tr>
+<a id="id174"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a><a href="#ref-48">Pinkas et al. (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id176"><!-- named anchor --></a>Complete recordings<a href="#table-2fn1">*</a> (292)</td>
+<td rowspan="1" colspan="1">
+<a id="id177"><!-- named anchor --></a>0.79</td>
+<td rowspan="1" colspan="1">
+<a id="id178"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id179"><!-- named anchor --></a>0.79</td>
+<td rowspan="1" colspan="1">
+<a id="id180"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id181"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a><a href="#ref-32">Lonini et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>Multiple data types<a href="#table-2fn1">*</a> (288)</td>
+<td rowspan="1" colspan="1">
+<a id="id184"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id185"><!-- named anchor --></a>0.94</td>
+<td rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id187"><!-- named anchor --></a>–</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<div class="footnote">
+<a id="table-2fn"><!-- named anchor --></a><p id="id188"> <b>Note:</b></p>
+</div>
+<div class="footnote">
+<a id="table-2fn1"><!-- named anchor --></a><p id="id189">* Multiple data types, including cough sound.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="id190"><!-- named anchor --></a><h4 class="subsection-title">Studies on non laboratory confirmed datasets</h4>
+<p id="id191">In <a href="#table-1">Table 1</a>, we summarize work in accordance with how features were extracted (shallow learning or deep learning). In other words, we consider handcrafted features (with typical machine learning classifiers) and deep learning algorithms to detect cough sounds in COVID-19 patients. Regardless of how samples were collected, we start with popular features, such as MFCCs, typical machine learning classifiers, and end with deep features. <a href="#table-1">Table 1</a> follows the order of the description (provided below).</p>
+<p id="id192">• Handcrafted features (shallow learning): MFCCs contributed a lot in audio/speech processing. In <a href="#ref-12">Dash et al. (2021)</a>, the authors used the MFCCs of speech signals. From the Coswara dataset, designated database-1, the authors used 570 participants, and each participant contributed nine audio files to various categories of samples (3,470 are clean, 1,055 are noisy, and the rest are highly degraded sound samples). They did not, however, mention if a laboratory has verified the data. Next, the authors used a crowdsourced database designated database-2, with 6,631 users; 235 users were declared COVID-19 positive. The authors suitably optimized the frequency range and the conversion scale of the recordings. The authors used adaptive synthetic sampling approach for imbalanced learning to create synthetic data. In their experiments, they reported accuracy of 0.86 (0.74) for database-2 (database-1) cough sounds.</p>
+<p id="id193">In a similar fashion, <a href="#ref-39">Mouawad, Dubnov &amp; Dubnov (2021)</a> analyzed symbolic recurrence quantification measures derived from MFCC features to detect COVID-19 cases using cough sounds and speech. They used recurrence dynamics and variable Markov model on sustained vowel ‘ah’ recordings and showed that their model is robust for detecting the disease in sustained vowel utterances. The dataset was composed of 1,927 cough sound samples with only 32 sick patients and 1,488 speech records with only 20 sick patients. The authors ensured that the classification model was not biased towards the majority class and experimented with a wide range of data sampling techniques such as oversampling the minority class or under-sampling the majority class. They reported the following test results: an accuracy of 0.91 and an AUC of 0.84.</p>
+<p id="id194">In addition to handcrafted features, other studies highlight the use of typical machine learning classifiers, such as Neural Networks (NNs), Support Vector Machine (SVM), Random Forest (RF), and Logistic Regression (LR). In <a href="#ref-52">Shimon et al. (2021)</a>, the authors used multiple different shallow learning techniques like SVM and RF. Their dataset was from non-publicly available crowdsourced data that took multiple types of recordings from people over multiple days. The type of recording used in this article was both cough sounds and the vowel ‘a’. In total, 1,296 cough recordings were used, and 428 “a” recordings were used. The experimenters used multiple different techniques to extract the audio feature, including the openSMILE toolkit and Librosa. After the classifiers classified each audio sample, the experimenters used simple majority voting to classify the patient as COVID-19 infected or non-COVID-19 infected. SVM showed the best result of the different classifiers with an accuracy of 0.78 and 0.74, an AUC of 0.64 and 0.60, a sensitivity of 0.95 and 0.90, and a specificity of 0.36 and 0.35 for ‘a’ and cough, respectively.</p>
+<p id="id195">In <a href="#ref-13">Despotovic et al. (2021)</a>, the authors used wavelet scattering features and deep audio embeddings with multiple different shallow learning techniques. Their dataset used crowdsourced data with 1,103 participants where each produced two to five samples each. From these samples, the authors created a balanced dataset with a total of 496 cough samples. They used five-fold leave one out cross-validation for their experimental set-up. Boosting with the wavelet scattering features seemed to have the best overall performance with a 0.88 accuracy, a 0.87 sensitivity, and a 0.89 specificity. In <a href="#ref-35">Melek (2021)</a>, the authors used multiple different shallow learning architectures to classify cough as COVID-19 Positive or Negative. Among the different architectures are Polynomial-SVM, Linear-LDA, and Euclidean-kNN. They used a composition of two different datasets, 121 from Virufy and 59 from NoCoCoDa. Once combined, the dataset consisted of 107 positive samples and 73 negative samples. Unfortunately, the paper did not specify how they split their data, which limits the reproducibility of this model and limits interpretation of the results. Euclidean-kNN achieved their best results on a single cough with a 0.98 accuracy, 1.0 Specificity, 0.97 Sensitivity, and 0.99 AUC.</p>
+<p id="id196">• Deep features (deep learning):</p>
+<p id="id197">The authors also introduced a Deep Neural Network (DNN) to analyze cough sounds. In <a href="#ref-45">Nessiem et al. (2021)</a>, the authors explore the usage of deep learning models as a ubiquitous, low-cost, pre-testing method for detecting COVID-19 from audio recordings of breathing or coughing taken with mobile devices or <i>via</i> the web. First, they collected 1,427 audio files from a crowdsourced database. Then, they adapted an ensemble of three Convolutional Neural Networks that utilize breathing and coughing raw audio, spectrograms, and Mel-spectrograms to analyze if a speaker is infected with COVID-19 or not. In their experiments, they reported an unweighted average recall/sensitivity of 0.75, AUC of 0.81, and accuracy of 0.73 by ensembling NNs.</p>
+<p id="id198">In <a href="#ref-19">Gokcen et al. (2021)</a>, the authors used a “Deep neural network” for the classification of COVID-19 infected individuals. However, the paper did not give an excellent description of their neural network, and from what was gathered, they used some dense net with neurons. However, it is clear that the paper had a sample size of 822 coughs from the MIT open dataset. This seemingly small neural network produced the following results: an accuracy of 0.79 and a recall of 0.75.</p>
+<p id="id199">In <a href="#ref-16">Feng et al. (2021)</a>, the authors used an rNN to classify COVID-19 infected individuals from non-infected individuals. They used two different datasets, Coswara for the one they split into validation and training sets, the next is a small Virufy dataset for its final test set. Coswara consisted of 1,433 participants, which they used a 0.80, 0.20 split. The small Virufy test set consisted of 16 recordings from seven patients. Their model had an encouraging result for the training and validation set; however, when they tried it on the Virufy dataset, they could only get around a 0.81 accuracy with an AUC of 0.79.</p>
+<p id="id200">In <a href="#ref-11">Coppock et al. (2021)</a>, the authors used a deep neural network on a crowdsourced dataset. This study used a “CIdeR” Convolutional Neural Network (CNN) which is based on the ResNet architecture to help classify in four tasks: (a) COVID positive and stratum healthy-no-symptoms (62 <i>vs</i> 245 subjects); (b) COVID-positive with COVID cough and stratum healthy-with-cough (23 <i>vs</i> 30 subjects); (c) COVID-positive with COVID cough and stratum asthma-with-cough (23 <i>vs</i> 19 subjects); and (d) COVID positive and COVID negative (62 <i>vs</i> 293 subjects). In total, this dataset consisted of 517 samples from 355 participants, and each sample was chopped up into segments, then used a voting mechanism with a mean average across the segments to break ties. Their respective AUCs are: (a) 0.83, (b) 0.57, (c) 0.91, and (d) 0.85.</p>
+<p id="id201">In <a href="#ref-30">Lella &amp; Pja (2021)</a>, the authors extended the work of <a href="#ref-7">Brown et al. (2020)</a> (using the exact same dataset) using a Deep CNN with multi-feature channels and data augmentation. In contrast to previous work, their results were improved. It was, however, not mentioned whether the improvement was due to data augmentation, the use of the DCNN classifier, or the increase in the dataset’s size. These authors are also ambiguous in declaring whether their data is entirely non-laboratory confirmed, as they mention that users have been admitted ‘into the clinic.’ To classify between COVID-19 positive and negative cases, an accuracy of 0.95 was reported. No other metrics such as sensitivity and specificity were used. In <a href="#ref-46">Pahar et al. (2021)</a>, they used multiple different machine learning techniques on a crowdsourced publicly available dataset called the ‘Coswara’ dataset. It was composed of 92 (1,079) COVID-19 positive samples (negative samples). The authors generated synthetic COVID-19 samples to build dataset balanced. Of many classifiers (<i>e.g</i>., LR, LSTM, CNN and ResNet50), ResNet50 achieved the best-reported accuracy (0.95). However, throughout the entire reported results, sensitivity remained in the lower nineties (percentage-wise). Later, the researchers also tested their model on a clinically validated dataset called Sarcos after training on the Coswara dataset. Their best performing model was a combination of LTSM + SFS which had an accuracy of 0.9291, AUC of 0.938, sensitivity of 0.91, and a specificity of 0.96.</p>
+<p id="id202">In addition, the authors have found that biomarkers are important features. In <a href="#ref-28">Laguarta, Hueto &amp; Subirana (2020)</a>, their tool helped extract and leverage acoustic biomarker features to help pre-screen COVID-19 recordings. The dataset was composed of 475 laboratory-confirmed COVID-19 infected patients, 962 doctor assessments, and 1,223 personal assessments. This study used under-sampling to pull coughs from a group of ‘hundreds of thousands’ of non-infected COVID-19 people to balance the dataset with 224 official tests, 523 personal assessments, and 1,913 personal assessments. However, this study does not thoroughly explain what a ‘personal assessment’ is. However, this study does explain that a diagnostic test must have been complete within seven days of of collection of the sample, with symptom onset no later than 20 days. In total, 4,256 cough samples were used for training and 1,064 for validation. The CNN incorporates multiple biomarker feature models. These biomarkers included muscular degradation, vocal cords, sentiment, and lung and respiratory tract. They achieved a forced cough COVID-19 screening accuracy of 0.97, an AUC of 0.97, a sensitivity of 0.98, and a specificity of 0.94. Furthermore, asymptomatic patients achieved a sensitivity of 1.0 with 0.83 specificity. This work admits that both the inclusion of doctor assessments and personal assessments hurts the generalizability of their model, and are conducting future tests. Since the results are high, their methods of biomarker use should be further explored. In <a href="#ref-26">Jayachitra et al. (2021)</a>, the authors used a deep neural network architecture. The paper proposed a RNN that would fuse each mode of input’s predictions and add the symptoms to the mix of fusions. The dataset used a mixture of audio and radiological pictures to get a yes or no for COVID-19 infection. After gathering many datasets, their cough sample size consisted of 153 positive samples and 348 negative samples. Again, artificial data was used in their sample size. Their testing procedure did not include a separate test set, so there is a potential bias toward the dataset with the .80 .20 split. However, they report that their multi-modal dataset scored 1.0 across the board on all metrics with just cough at 0.97 accuracy, 0.97 precision, and 0.94 recall. As the model is still progress, it may not be generalized well to the population.</p>
+</div>
+<div class="section">
+<a id="id203"><!-- named anchor --></a><h4 class="subsection-title">Studies on laboratory confirmed datasets</h4>
+<p id="id204">In <a href="#table-2">Table 2</a>, we observe the use of CNN and/or DNN as well as ensemble learning to detect COVID-19 in the cough sounds of human subjects. Based on the authors’ reports, we categorize their studies with laboratory confirmed datasets. In what follows, we discuss CNN-based works as well as a new paradigm of physiological impact.</p>
+<p id="id205">CNN has been popularly used to develop AI-guided tools across many different computer vision tasks, and COVID-19 screening using cough sounds is no exception. In <a href="#ref-25">Imran et al. (2020)</a>, the app called ‘AI4COVID-19’ recorded three seconds of sound and provided results in less than 2 min. This app used a CNN to identify cough sounds. In their first test, they employed Deep Transfer Learning-based Multi-Class classifier (DTL-MC) CNN with multiple output classifiers for COVID-19 and three other diseases. The second used a Classical Machine Learning-based Multi-Class classifier (CML-MC) to judge whether the first one suffered from over-fitting issue. The last test employed a Deep Transfer Learning-based Binary Class classifier (DTL-BC) (similar to the first one), but it was limited to a binary output (yes/no) for a possible COVID-19 infection. For training, they used 1,838 cough sounds and 3,597 non-cough environmental sounds, and for testing, they used 96 bronchitis, 130 pertusses, 70 COVID-19, and 247 normal cough samples. The authors did not mention whether they were laboratory-confirmed, but they referred to the people that provided the samples as “patients,” so we assume these samples were collected in a hospital/clinical environment, and thus are laboratory confirmed. The DTL-BC classifier in this study provided the best overall accuracy at 0.93 in differentiating COVID-19 from non-COVID-19 cough sounds and had a sensitivity of 0.96, and specificity of 0.91.</p>
+<p id="id206">Another form of NN called Recurrent Neural Network (RNN) was used in the literature. In <a href="#ref-48">Pinkas et al. (2020)</a>, the authors collected self-recordings from phones (vocal utterances, speech and cough sound), and used RNN to produce specialized sub-models for the SARS-CoV-2 classification. From 29 laboratory-confirmed COVID-19 patients and 59 negative control subjects, 235 samples were used for training the model and 57 samples for testing. An ensemble stacking fused the predictions of the sub-models and pre-training, bootstrapping and regularization techniques were used to prevent over-fitting. They reported an accuracy of 0.79 (with a corresponding sensitivity of 0.79) based on leave-one-out validation protocol.</p>
+<p id="id207">Cough sounds may not be sufficient to completely analyze COVID-19 positive cases, and physiological impact is another important data type that could help better analyze. In <a href="#ref-32">Lonini et al. (2021)</a>, the authors introduced a novel paradigm based on recording the physiological responses elicited by a short sequence of 2-min activities (physical activity, cardio-respiratory function and cough sounds). While validating the data, they employed a novel body-conforming soft wearable sensor placed on the suprasternal notch to capture physical activity data and cardio-respiratory function. Combining these features on snapshots from 19 COVID-19 positive and 14 healthy cases provided an AUC of 0.94 as compared to 0.64 (with only forced cough sounds).</p>
+</div>
+</div>
+<div class="section">
+<a id="id208"><!-- named anchor --></a><h3 class="section-title">Research articles outside of PubMed and Web of Science</h3>
+<p id="id209">In order not to miss up-to-date experimental-based research works, we used the exact same keywords in search engines: ACM, IEEE, Springer, and Elsevier. Using the exact same inclusion criteria, these articles are summarized in <a href="#table-3">Table 3</a>, and their respective results on laboratory confirmed data.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table-3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<span class="object-id">10.7717/peerj-cs.958/table-3</span><div class="caption"><h3 class="title">Cough sounds (including other data type) for COVID-19 screening performance in terms of Accuracy (ACC), Area Under the Curve (AUC), Sensitivity (SEN) and Specificity (SPEC).</h3></div>
+<table frame="hsides" rules="groups">
+<a id="id210"><!-- named anchor --></a><colgroup span="1">
+<a id="id211"><!-- named anchor --></a><col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+<col span="1">
+</colgroup>
+<thead>
+<a id="id218"><!-- named anchor --></a><tr>
+<a id="id219"><!-- named anchor --></a><th rowspan="1" colspan="1"><a id="id220"><!-- named anchor --></a></th>
+<th rowspan="1" colspan="1"><a id="id221"><!-- named anchor --></a></th>
+<th colspan="4" rowspan="1">
+<a id="id222"><!-- named anchor --></a>Performance</th>
+</tr>
+<tr>
+<a id="id223"><!-- named anchor --></a><th rowspan="1" colspan="1">
+<a id="id224"><!-- named anchor --></a>Authors (year)</th>
+<th rowspan="1" colspan="1">
+<a id="id225"><!-- named anchor --></a>Data type (sample size)</th>
+<th rowspan="1" colspan="1">
+<a id="id226"><!-- named anchor --></a>ACC</th>
+<th rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>AUC</th>
+<th rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>SEN</th>
+<th rowspan="1" colspan="1">
+<a id="id229"><!-- named anchor --></a>SPEC</th>
+</tr>
+</thead>
+<tbody>
+<a id="id230"><!-- named anchor --></a><tr>
+<a id="id231"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id232"><!-- named anchor --></a><a href="#ref-22">Han et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id233"><!-- named anchor --></a>Multiple data types<a href="#table-3fn1">*</a> (828)</td>
+<td rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id235"><!-- named anchor --></a>0.79</td>
+<td rowspan="1" colspan="1">
+<a id="id236"><!-- named anchor --></a>0.62</td>
+<td rowspan="1" colspan="1">
+<a id="id237"><!-- named anchor --></a>0.74</td>
+</tr>
+<tr>
+<a id="id238"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id239"><!-- named anchor --></a><a href="#ref-7">Brown et al. (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id240"><!-- named anchor --></a>Multiple data types<a href="#table-3fn1">*</a> (430)</td>
+<td rowspan="1" colspan="1">
+<a id="id241"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id242"><!-- named anchor --></a>0.80</td>
+<td rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>0.69</td>
+<td rowspan="1" colspan="1">
+<a id="id244"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id245"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a><a href="#ref-55">Vrindavanam et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id247"><!-- named anchor --></a>Cough sounds (150)</td>
+<td rowspan="1" colspan="1">
+<a id="id248"><!-- named anchor --></a>0.84</td>
+<td rowspan="1" colspan="1">
+<a id="id249"><!-- named anchor --></a>0.88</td>
+<td rowspan="1" colspan="1">
+<a id="id250"><!-- named anchor --></a>0.81</td>
+<td rowspan="1" colspan="1">
+<a id="id251"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id252"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id253"><!-- named anchor --></a><a href="#ref-4">Anupam et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id254"><!-- named anchor --></a>Cough sounds (640)</td>
+<td rowspan="1" colspan="1">
+<a id="id255"><!-- named anchor --></a>0.97</td>
+<td rowspan="1" colspan="1">
+<a id="id256"><!-- named anchor --></a>0.98</td>
+<td rowspan="1" colspan="1">
+<a id="id257"><!-- named anchor --></a>0.97</td>
+<td rowspan="1" colspan="1">
+<a id="id258"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id259"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id260"><!-- named anchor --></a><a href="#ref-5">Bansal, Pahwa &amp; Kannan (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id261"><!-- named anchor --></a>Cough sounds (500)</td>
+<td rowspan="1" colspan="1">
+<a id="id262"><!-- named anchor --></a>0.70</td>
+<td rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id264"><!-- named anchor --></a>0.81</td>
+<td rowspan="1" colspan="1">
+<a id="id265"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id266"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id267"><!-- named anchor --></a><a href="#ref-20">Grant, McLane &amp; West (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id268"><!-- named anchor --></a>Multiple data types<a href="#table-3fn1">*</a> (2,239)</td>
+<td rowspan="1" colspan="1">
+<a id="id269"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id270"><!-- named anchor --></a>0.68</td>
+<td rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id272"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id273"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id274"><!-- named anchor --></a><a href="#ref-45">Nessiem et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id275"><!-- named anchor --></a>Multiple data types<a href="#table-3fn1">*</a> (1,427)</td>
+<td rowspan="1" colspan="1">
+<a id="id276"><!-- named anchor --></a>0.73</td>
+<td rowspan="1" colspan="1">
+<a id="id277"><!-- named anchor --></a>0.81</td>
+<td rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>0.75</td>
+<td rowspan="1" colspan="1">
+<a id="id279"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id280"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id281"><!-- named anchor --></a><a href="#ref-27">Khriji et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id282"><!-- named anchor --></a>Multiple data types<a href="#table-3fn1">*</a> (3,718)</td>
+<td rowspan="1" colspan="1">
+<a id="id283"><!-- named anchor --></a>0.80</td>
+<td rowspan="1" colspan="1">
+<a id="id284"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id285"><!-- named anchor --></a>0.78</td>
+<td rowspan="1" colspan="1">
+<a id="id286"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id287"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id288"><!-- named anchor --></a><a href="#ref-47">Pal &amp; Sankarasubbu (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id289"><!-- named anchor --></a>Multiple data types<a href="#table-3fn1">*</a> (328)</td>
+<td rowspan="1" colspan="1">
+<a id="id290"><!-- named anchor --></a>0.95</td>
+<td rowspan="1" colspan="1">
+<a id="id291"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id292"><!-- named anchor --></a>0.90</td>
+<td rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>0.97</td>
+</tr>
+<tr>
+<a id="id294"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a><a href="#ref-57">Wei et al. (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id296"><!-- named anchor --></a>Cough sounds (1,283)</td>
+<td rowspan="1" colspan="1">
+<a id="id297"><!-- named anchor --></a>0.76</td>
+<td rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id299"><!-- named anchor --></a>0.99</td>
+<td rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a>0.95</td>
+</tr>
+<tr>
+<a id="id301"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a><a href="#ref-24">Hassan, Shahin &amp; Alsabek (2020)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id303"><!-- named anchor --></a>Cough sounds (80)</td>
+<td rowspan="1" colspan="1">
+<a id="id304"><!-- named anchor --></a>0.97</td>
+<td rowspan="1" colspan="1">
+<a id="id305"><!-- named anchor --></a>0.97</td>
+<td rowspan="1" colspan="1">
+<a id="id306"><!-- named anchor --></a>0.96</td>
+<td rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id308"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id309"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>Breathing sounds (80)</td>
+<td rowspan="1" colspan="1">
+<a id="id311"><!-- named anchor --></a>0.98</td>
+<td rowspan="1" colspan="1">
+<a id="id312"><!-- named anchor --></a>0.98</td>
+<td rowspan="1" colspan="1">
+<a id="id313"><!-- named anchor --></a>0.98</td>
+<td rowspan="1" colspan="1">
+<a id="id314"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id315"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id316"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>Voice sounds (80)</td>
+<td rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a>0.88</td>
+<td rowspan="1" colspan="1">
+<a id="id319"><!-- named anchor --></a>0.84</td>
+<td rowspan="1" colspan="1">
+<a id="id320"><!-- named anchor --></a>0.91</td>
+<td rowspan="1" colspan="1">
+<a id="id321"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id322"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a><a href="#ref-3">Andreu-Perez et al. (2021)</a>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id324"><!-- named anchor --></a>Cough sounds (8,380)</td>
+<td rowspan="1" colspan="1">
+<a id="id325"><!-- named anchor --></a>–</td>
+<td rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>0.99</td>
+<td rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a>0.96</td>
+<td rowspan="1" colspan="1">
+<a id="id328"><!-- named anchor --></a>0.96</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<div class="footnote">
+<a id="table-3fn"><!-- named anchor --></a><p id="id329"> <b>Note:</b></p>
+</div>
+<div class="footnote">
+<a id="table-3fn1"><!-- named anchor --></a><p id="id330">* Multiple data types, including cough sound.</p>
+</div>
+</div>
+</div>
+<p id="id331"><a href="#ref-22">Han et al. (2021)</a> proposed a voice-based framework to automatically detect COVID-19 positive cases and evaluated the performance on a subset of data crowdsourced from the ‘COVID-19 Sound App’. The authors used InterSpeech 09 Computational Paralinguistics Challenge (COMPARE) set, openSMILE toolkit, MFCCs features, and used SVM with linear kernel as the classifier. While using the app, users got asked to record information in the app by submitting their breathing, coughing, and voice samples along with reported symptoms, if any, and provide some basic demographic and medical information. On 828 samples (326 COVID-19 positives and 502 COVID-19 negatives), the authors reported an AUC of 0.79 with a sensitivity of 0.68 and a specificity of 0.74.</p>
+<p id="id332">In <a href="#ref-7">Brown et al. (2020)</a>, the authors used data analysis over a large-scale crowdsourced dataset, however some of their data seems to be laboratory confirmed as they asked their patients whether or not they were in a hospital. Furthermore, the dataset consists of 154 cough and breathing sounds from self-reported COVID-19 infected users, of which 54 report a dry cough. Also, the control groups of the experiment consisted of 298 non-COVID-19 users, 32 non-COVID-19 users with a cough, and 20 non-COVID-19 users with asthma and cough. In all cases, they used an 80/20 split for training and analysis and under-sampled the majority for training. They tested classifiers, such as LR, Gradient Boosting Trees, SVM (with a radial basis function kernel). They reported binary classification tasks for: (a) differentiating COVID-19 users from non-COVID-19 users; (b) differentiating COVID-19 users with a cough from non-COVID-19 users with a cough; and (c) differentiating COVID-19 users with cough from non-COVID-19 user with asthma and cough. In their results, the authors found an AUC of 0.80 across all tasks and a sensitivity of 0.69.</p>
+<p id="id333">Similarly, in <a href="#ref-55">Vrindavanam et al. (2021)</a>, the authors presented an approach to classify audio samples between COVID-19 patient and a healthy person by taking LR, SVM and RF classifiers into account. Their dataset was composed of 150 cough audio samples, of which 54 were COVID-19 positive, and the study did not state whether they were laboratory confirmed. In their test, SVM performed better than LR and RF on all performance metrics and reported an accuracy of 0.84 (with AUC of 0.88). As the dataset size was small, the results could possibly be biased, which was not mentioned in their article.</p>
+<p id="id334">In <a href="#ref-4">Anupam et al. (2021)</a>, the authors analyzed COVID-19 cough sounds to detect COVID-19. The dataset is composed of 640 cough samples (source: Coswara database): 160 infected and 480 healthy cases. Interestingly, other papers written around this paper had almost double the number of cough samples. However, the paper did not specify what technique they used for eliminating assumingly half of the dataset, along with any other pre-processing techniques they may have used. For classification, the authors used shallow-based machine learning classifiers such as LR, KNN, SVM, and decision tree algorithms. The SVM classifier performed the best of all: AUC of 0.98, accuracy of 0.99, sensitivity of 0.97, precision of 0.99, and F1 score of 0.98.</p>
+<p id="id335">In <a href="#ref-37">Mohammed et al. (2021)</a>, the authors developed a robust classifier for a COVID-19 pre-screening model from crowdsourced cough sound data. While detecting COVID-19 from sound datasets, the authors faced two main challenges. The first challenge being a variable number of coughs in each recording, and the second is the low number of COVID-19 positive cases compared to healthy coughs in the data. In total, they were able to obtain 8,886 cough samples which they then used under-sampling the majority to create a balanced dataset of 1,276 cough samples. After obtaining their balanced dataset, they used a VGG16 to extract the audio features such as Mel-spectrograms, MFCCs, spectrograms, and even used the raw audio data to obtain 25,088 feature vectors per audio input. Afterward, they used two separate training pipelines with ensemble learning, one with shallow-based learning such as LR, SVM, and K-Nearest Neighbor, and the second with ensemble learning of three different CNNs, one CNN built from scratch along with two pre-trained VGG models. Their method illustrated a respectable performance using an ensemble model on the testing dataset with AUC of 0.77, precision of 0.80, recall of 0.71, F1 score of 0.75, Kappa of 0.53, and an accuracy of 0.77.</p>
+<p id="id336">In <a href="#ref-5">Bansal, Pahwa &amp; Kannan (2020)</a>, the authors proposed a CNN-based audio classifier using an open cough dataset. They used a manually labeled dataset that was composed of two categories: COVID-19 and non-COVID. They proposed two different approaches: one is based on MFCC features and another used spectrogram images for CNN network. First, they took a dataset of 911 cough sounds, where 871 are from YouTube videos and 40 are from audio files. Afterward, they pared that down to 500 audio samples after labeling. The authors found that the MFCC approach produced 0.71 test accuracy, 0.81 sensitivity, 0.61 precision, and 0.69 F1 score. These results were better than the spectrogram-based approach. It would be interesting to see the results of this paper’s methods along with mel-spectrograms as well.</p>
+<p id="id337"><a href="#ref-20">Grant, McLane &amp; West (2021)</a> developed a method that can be applied to analyze sounds to detect COVID-19 on a crowd-sourced data with sound recordings and these were self-identified. They took a total of 1,040 (78 COVID-19 positive) cough samples and 1,199 (81 COVID-19 positive) speech and breathing samples. MFCCs and relative spectra perceptual linear prediction features were evaluated independently with two different classifiers: DNN and RF. The following AUCs were reported: 0.6836 from cough sounds (DNN classifier), 0.79 from speech sound (RF classifier), and 0.76 from breathing sound (DNN classifier).</p>
+<p id="id338"><a href="#ref-27">Khriji et al. (2021)</a> proposed a deep Long Term Short (LSTM) technique to detect COVID-19 infections from cough, breath and sneeze signals <i>via</i> smartphones or wearable sensors. The dataset was composed of audio signals like cough, sneeze and breath. Furthermore, this dataset was partitioned further into three subsets, including a training set (sick (1,435) + not sick (2,283)), a validation set (sick (468) + not sick (753)), and a test set (sick (642) + not sick (1,012)). The authors, however, did not mention whether dataset was laboratory confirmed. The authors reported an accuracy of 0.80 and a sensitivity of 0.78.</p>
+<p id="id339">In <a href="#ref-47">Pal &amp; Sankarasubbu (2021)</a>, the authors evaluated their model using a medical dataset containing symptoms and demographic data of 30,000 audio segments. They extracted 328 cough sounds from 150 patients with four cough classes (COVID-19, Asthma, Bronchitis and Healthy). They used a CNN to classify cough sounds, and the study showed that their model captured many robust features of cough sounds to distinguish between COVID-19 coughs and several types of non-COVID-19 coughs. The authors reported an accuracy of 0.95, a sensitivity of 0.90, a specificity of 0.97, F1 score of 0.90, and precision of 0.91.</p>
+<p id="id340">In <a href="#ref-57">Wei et al. (2020)</a>, the authors analyzed a real-time robot-based tool to evaluate risk level due to COVID-19 infection. They used real-time speech analysis, temperature, keyword, cough, and other functions to convert live audio into structured data. The authors collected a dataset of 1,283 speech recordings <i>via</i> human-robot conversations from 184 people for the test evaluation. Of all, 392 segments from 64 people were laboratory-confirmed COVID-19 infected. The remainder of the samples were healthy individuals with a history of smoking, acute bronchitis, chronic pharyngitis, children with pertussis and healthy people with no smoking history. For cough detection, using a CNN, they reported an accuracy of 0.76, while their sensitivity was high (0.99).</p>
+<p id="id341">Similarly, <a href="#ref-24">Hassan, Shahin &amp; Alsabek (2020)</a> studied early screening and diagnoses of COVID-19 patients by using RNN and leveraged its significant architecture to discover the acoustic features of cough, breathing and voice of the patients. In their study, 60 healthy and 20 COVID-19 infected patients were asked to record three separate samples: cough, breath and voice sounds. The COVID-19 infected patient samples got collected from hospitals in the UAE. With data split, 70/30 (train/test), they achieved the following accuracies: 0.97 for cough sounds, 0.98 for breathing sounds, and 0.88 for voice sounds.</p>
+<p id="id342">DNN is no exception in cough sound analysis in detecting COVID-19. In <a href="#ref-3">Andreu-Perez et al. (2021)</a>, the authors used empirical mode decomposition with the tensor of speech features and a Deep Artificial Neural Network (ANN) to detect cough of COVID-19 patients. Of all, 8,380 samples of cough sounds were collected <i>via</i> a web app called ‘Cough Detect’ to record the coughs anonymously; 2,339 of the samples are from patients with confirmed qRT-PCR laboratory tests for the COVID-19 infection. The authors reported promising results: AUC of 0.99, sensitivity of 0.96, and specificity of 0.96.</p>
+</div>
+</div>
+<div class="section">
+<a id="id343"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="id344">In this section, we summarize our observations based on the current state-of-the-art works by considering cough sound as primary data. Our discussion is based on cough sound analysis <i>via</i> AI-guided tools for COVID-19 screening (<i>ref</i>. “AI-guided tools for COVID-19 screening using cough sounds”).
+<div class="list">
+<a id="id345"><!-- named anchor --></a><ul style="list-style-type: none"><li><p id="id346">(a) Cough symptoms present themselves at a high rate relative to other symptoms in the vast majority of studies (<i>ref</i>. “Introduction”). It stands to reason that this will also translate well into the population at large, and the majority of the general population would present a cough if infected by COVID-19. In addition to other clinical tests, cough tests could potentially help build clinical decisions for COVID-19 positive. In other words, cough is not the only reliable metric, it is however comparable to others, such as fever. AI-guided tools (<i>ref</i>. “AI-guided tools for COVID-19 screening using cough sounds”) can analyze cough sounds and help detect COVID-19 at a very high rate regardless of cough diagnosis. This fact, along with affordability and accessibility, could make AI-guided cough screening a first-line defense against COVID-19 and similar infectious outbreaks, especially in resource-constrained regions.</p></li></ul>
+</div>
+<div class="list">
+<a id="id347"><!-- named anchor --></a><ul style="list-style-type: none"><li><p id="id348">(b) Following the state-of-the-art methods for screening COVID-19 infections (<i>ref</i>. “AI-guided tools for COVID-19 screening using cough sounds”), we observed a clear distinction between two types of datasets: with and without laboratory confirmation (see <a href="#table-1">Tables 1</a> and <a href="#table-2">2</a>).</p></li></ul>
+</div></p>
+<p id="id349">On laboratory confirmed datasets, AI-guided tools performed better as compared to non-laboratory confirmed data in the vast majority of reviewed articles. Also, the laboratory confirmed data could potentially provide convincing results, as they were annotated by experts. Machine learning algorithms require enough training data (with all possible positive cases). Moreover, AI-guided tools trained with fairly large amounts of data can be accurately used to screen COVID-19 human subjects from a forced cough regardless of the dataset, even if performance degrades slightly on non-laboratory confirmed data. In all cases, importantly, the authors did not mention whether their AI-guided tools are externally validated and reproducible (<a href="#ref-53">Topol, 2020</a>). Moreover, most studies with high metrics in the non-laboratory confirmed sections have serious deficiencies in the reporting of their methods, or their model is admittedly biased.
+<div class="list">
+<a id="id350"><!-- named anchor --></a><ul style="list-style-type: none"><li><p id="id351">(c) Integrating other data types such as sneezing, respiration, speech, throat clearing, wheezing, and breathing can help build a better decision-making process (see <a href="#table-1">Tables 1</a> and <a href="#table-2">2</a>).</p></li></ul>
+</div>
+<div class="list">
+<a id="id352"><!-- named anchor --></a><ul style="list-style-type: none"><li><p id="id353">(d) After reviewing the use of shallow learning and deep learning (<i>ref</i>. “AI-guided tools for COVID-19 screening using cough sounds”), we observed that the use of deep features could open the genericity of the model rather than relying on prior knowledge.</p></li></ul>
+</div>
+<div class="list">
+<a id="id354"><!-- named anchor --></a><ul style="list-style-type: none"><li><p id="id355">(e) In designing AI-guided tools, we observed the use of additional features, such as biomarkers and clinical data (<a href="#ref-28">Laguarta, Hueto &amp; Subirana, 2020</a>). These features get ensembled into the CNN that utilizes the standard features extracted from audio recordings. Such a feature integration could potentially drive future works. Introducing new paradigms (<i>e.g</i>., biomarkers) could help better analyze COVID-19.</p></li></ul>
+</div></p>
+</div>
+<div class="section">
+<a id="id356"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<p id="id357">In this article, we have systematically reviewed state-of-the-art works in both years 2020 and 2021 by taking into account AI-guided tools to analyze cough sounds for COVID-19 screening. Clinically, we have found that cough (<i>via</i> the use of cough presentation rate in <i>ref</i>. “Introduction”) is considered as one of the primary symptoms in severe and non-severe infections alike. COVID-19 screening (<i>ref</i>. “AI-guided tools for COVID-19 screening using cough sounds”) using cough sounds is found to be potentially a cheap, effective, and available alternative to help people decide to quarantine or get tested. In other words, as cough is ubiquitously presented among varying populations, it is possible to develop AI-guided tools with high accuracy to do mass screening using cough sounds. This method of screening deserves to get more thoroughly investigated and developed into production <i>via</i> a mobile app.</p>
+<p id="id358">Integrating other data types, such as sneezing, respiration, speech, throat clearing, wheezing, breathing, biomarkers and clinical data, can help build a better decision-making process; we will extend our work by implementing ensemble DNNs within a multimodal learning mechanism.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="section">
+<a id="id359"><!-- named anchor --></a><h2 class="main-title">Additional Information and Declarations</h2>
+<div class="fn-group">
+<h3 class="section-title">Competing Interests</h3>
+<div class="footnote">
+<a id="conflict-1"><!-- named anchor --></a><p id="id360"><span class="generated">[7]</span> KC Santosh is an Academic Editor for PeerJ.</p>
+</div>
+</div>
+<div class="fn-group">
+<h3 class="section-title">Author Contributions</h3>
+<div class="footnote">
+<a id="contribution-1"><!-- named anchor --></a><p id="id361"><span class="generated">[8]<span class="generated"> Contributed by</span></span> <a href="#author-1">KC Santosh</a> conceived and designed the experiments, performed the experiments, analyzed the data, performed the computation work, prepared figures and/or tables, authored or reviewed drafts of the paper, and approved the final draft.</p>
+</div>
+<div class="footnote">
+<a id="contribution-2"><!-- named anchor --></a><p id="id362"><span class="generated">[9]<span class="generated"> Contributed by</span></span> <a href="#author-2">Nicholas Rasmussen</a> conceived and designed the experiments, performed the experiments, analyzed the data, performed the computation work, prepared figures and/or tables, authored or reviewed drafts of the paper, and approved the final draft.</p>
+</div>
+<div class="footnote">
+<a id="contribution-3"><!-- named anchor --></a><p id="id363"><span class="generated">[10]<span class="generated"> Contributed by</span></span> <a href="#author-3">Muntasir Mamun</a> conceived and designed the experiments, performed the experiments, analyzed the data, performed the computation work, prepared figures and/or tables, authored or reviewed drafts of the paper, and approved the final draft.</p>
+</div>
+<div class="footnote">
+<a id="contribution-4"><!-- named anchor --></a><p id="id364"><span class="generated">[11]<span class="generated"> Contributed by</span></span> <a href="#author-4">Sunil Aryal</a> analyzed the data, performed the computation work, authored or reviewed drafts of the paper, and approved the final draft.</p>
+</div>
+</div>
+<div class="fn-group">
+<h3 class="section-title">Data Availability</h3>
+<div class="footnote">
+<a id="addinfo-1"><!-- named anchor --></a><p id="id365"><span class="generated">[12]</span> The following information was supplied regarding data availability:</p>
+<p id="id366">PubMed and Web of Science were used for this literature review; there is no raw data.</p>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id367"><!-- named anchor --></a><div class="section ref-list">
+<a id="id367"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Ahmed et al. (2020)</span> <a id="ref-1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id368"><!-- named anchor --></a>T AhmedMY AhmedMM RahmanE NematiB IslamK VatanparvarV NathanD McCaffreyJ KuangJA GaoAutomated time synchronization of cough events from multimodal sensors in mobile devices2020Proceedings of the 2020 International Conference on Multimodal Interaction</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Alsabek, Shahin &amp; Hassan (2020)</span> <a id="ref-2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id369"><!-- named anchor --></a>MB AlsabekI ShahinA HassanStudying the similarity of COVID-19 sounds based on correlation analysis of MFCC20202020 International Conference on Communications, Computing, Cybersecurity, and Informatics (CCCI)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Andreu-Perez et al. (2021)</span> <a id="ref-3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id370"><!-- named anchor --></a>J Andreu-PerezH Perez-EspinosaE TimonetM KianiMI Giron-PerezAB Benitez-TrinidadD JarchiA RosalesN GkatzoulisOF Reyes-GalavizA TorresC Alberto Reyes-GarciaZ AliF RivasA generic deep learning based cough analysis system from clinically validated samples for point-of-need COVID-19 test and severity levelsIEEE Transactions on Services Computing20212021110.1109/TSC.2021.3061402PMC932872935936760</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Anupam et al. (2021)</span> <a id="ref-4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id371"><!-- named anchor --></a>A AnupamNJ MohanS SahooS ChakrabortyPreliminary diagnosis of COVID-19 based on cough sounds using machine learning algorithms20212021 5th International Conference on Intelligent Computing and Control Systems (ICICCS)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Bansal, Pahwa &amp; Kannan (2020)</span> <a id="ref-5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id372"><!-- named anchor --></a>V BansalG PahwaN KannanCough classification for COVID-19 based on audio MFCC features using convolutional neural networks20202020 IEEE International Conference on Computing, Power and Communication Technologies (GUCON)PiscatawayIEEE</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Brendish et al. (2020)</span> <a id="ref-6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id373"><!-- named anchor --></a>NJ BrendishS PooleVV NaiduCT MansbridgeN NortonF BorcaHTT PhanH WheelerM HarveyL PreslandTW ClarkClinical characteristics, symptoms and outcomes of 1054 adults presenting to hospital with suspected COVID-19: a comparison of patients with and without SARS-CoV-2 infectionJournal of Infection202081693794310.1016/j.jinf.2020.09.03332998038PMC7521430</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Brown et al. (2020)</span> <a id="ref-7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id374"><!-- named anchor --></a>C BrownJ ChauhanA GrammenosJ HanA HasthanasombatD SpathisT XiaP CicutaC MascoloExploring automatic diagnosis of COVID-19 from crowdsourced respiratory sound data2020Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data MiningNew YorkACM</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Cattelan et al. (2020)</span> <a id="ref-8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id375"><!-- named anchor --></a>AM CattelanE Di MecoM TrevenzoliA FraterA FerrariM VillanoF GomieroG CarrettaL SassetClinical characteristics and laboratory biomarkers changes in COVID-19 patients requiring or not intensive or sub-intensive care: a comparative studyBMC Infectious Diseases2020201111010.1186/s12879-020-05647-7PMC772444433297986</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Chen et al. (2021)</span> <a id="ref-9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id376"><!-- named anchor --></a>X ChenS JiangZ LiB LoA pervasive respiratory monitoring sensor for COVID-19 pandemicIEEE Open Journal of Engineering in Medicine and Biology20212111610.1109/OJEMB.2020.304205134786558PMC8545027</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Chuma &amp; Iano (2021)</span> <a id="ref-10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id377"><!-- named anchor --></a>EL ChumaY IanoA movement detection system using continuous-wave doppler radar sensor and convolutional neural network to detect cough and other gesturesIEEE Sensors Journal20212132921292810.1109/JSEN.2020.3028494PMC876898237975064</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Coppock et al. (2021)</span> <a id="ref-11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id378"><!-- named anchor --></a>H CoppockA GaskellP TzirakisA BairdL JonesB SchullerEnd-to-end convolutional neural network enables COVID-19 detection from breath and cough audio: a pilot studyBMJ Innovations20217235636210.1136/bmjinnov-2021-00066834192022</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Dash et al. (2021)</span> <a id="ref-12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id379"><!-- named anchor --></a>TK DashS MishraG PandaSC SatapathyDetection of COVID-19 from speech signal using bio-inspired based cepstral featuresPattern Recognition2021117110799910.1016/j.patcog.2021.10799933967346PMC8086594</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Despotovic et al. (2021)</span> <a id="ref-13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id380"><!-- named anchor --></a>V DespotovicM IsmaelM CornilRM CallG FagherazziDetection of COVID-19 from voice, cough and breathing patterns: dataset and preliminary resultsComputers in Biology and Medicine20211381810494410.1016/j.compbiomed.2021.10494434656870PMC8513517</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Donnelly &amp; Everard (2019)</span> <a id="ref-14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id381"><!-- named anchor --></a>D DonnellyML Everard‘Dry’ and ‘Wet’ cough: how reliable is parental reporting?BMJ Open Respiratory Research201961e00037510.1136/bmjresp-2018-000375PMC653054431178996</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Faezipour &amp; Abuzneid (2020)</span> <a id="ref-15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id382"><!-- named anchor --></a>M FaezipourA AbuzneidSmartphone-based self-testing of COVID-19 using breathing soundsTelemedicine and e-Health202026101202120510.1089/tmj.2020.011432487005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Feng et al. (2021)</span> <a id="ref-16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id383"><!-- named anchor --></a>K FengF HeJ SteinmannI DemirkiranDeep-learning based approach to identify COVID-19SoutheastCon202120211410.1109/SoutheastCon45413.2021.9401826</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Fontana (2007)</span> <a id="ref-17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id384"><!-- named anchor --></a>GA FontanaBefore we get started: what is a cough?Lung2007186S13610.1007/s00408-007-9036-817909894</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Gayam et al. (2020)</span> <a id="ref-18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id385"><!-- named anchor --></a>V GayamMD ChobufoMA MerghaniS LamichhanePR GarlapatiMK AdlerClinical characteristics and predictors of mortality in African-Americans with COVID-19 from an inner-city community teaching hospital in New YorkJournal of Medical Virology202093281281910.1002/jmv.2630632672844PMC7405133</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Gokcen et al. (2021)</span> <a id="ref-19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id386"><!-- named anchor --></a>A GokcenB KaradagC RivaA BoyaciArtificial intelligence–based COVID-19 detection using cough recordsElectrica202121220320810.5152/electrica.2021.21005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Grant, McLane &amp; West (2021)</span> <a id="ref-20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id387"><!-- named anchor --></a>D GrantI McLaneJ WestRapid and scalable COVID-19 screening using speech, breath, and cough recordings20212021 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)PiscatawayIEEE</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Guan et al. (2020)</span> <a id="ref-21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id388"><!-- named anchor --></a>W-J GuanZ-Y NiY HuW-H LiangC-Q OuJ-X HeL LiuH ShanC-L LeiDSC HuiB DuL-J LiG ZengK-Y YuenR-C ChenC-L TangT WangP-Y ChenJ XiangS-Y LiJ-L WangZ-J LiangY-X PengL WeiY LiuY-H HuP PengJ-M WangJ-Y LiuZ ChenG LiZ-J ZhengS-Q QiuJ LuoC-J YeS-Y ZhuN-S ZhongClinical characteristics of coronavirus disease 2019 in ChinaNew England Journal of Medicine2020382181708172010.1056/NEJMoa200203232109013PMC7092819</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Han et al. (2021)</span> <a id="ref-22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id389"><!-- named anchor --></a>J HanC BrownJ ChauhanA GrammenosA HasthanasombatD SpathisT XiaP CicutaC MascoloExploring automatic COVID-19 diagnosis via voice and symptoms from crowdsourced data2021ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)PiscatawayIEEE</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Han et al. (2020)</span> <a id="ref-23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id390"><!-- named anchor --></a>J HanK QianM SongZ YangZ RenS LiuJ LiuH ZhengW JiT KoikeX LiZ ZhangY YamamotoBW SchullerAn early study on intelligent analysis of speech under COVID-19: severity, sleep quality, fatigue, and anxiety2020Interspeech 2020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Hassan, Shahin &amp; Alsabek (2020)</span> <a id="ref-24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id391"><!-- named anchor --></a>A HassanI ShahinMB AlsabekCOVID-19 detection system using recurrent neural networks20202020 International Conference on Communications, Computing, Cybersecurity, and Informatics (CCCI)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Imran et al. (2020)</span> <a id="ref-25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id392"><!-- named anchor --></a>A ImranI PosokhovaHN QureshiU MasoodMS RiazK AliCN JohnMDI HussainM NabeelAI4COVID-19: AI enabled preliminary diagnosis for COVID-19 from cough samples via an appInformatics in Medicine Unlocked2020201610037810.1016/j.imu.2020.10037832839734PMC7318970</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Jayachitra et al. (2021)</span> <a id="ref-26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id393"><!-- named anchor --></a>VP JayachitraS NivethaR NivethaR HariniA cognitive IoT-based framework for effective diagnosis of COVID-19 using multimodal dataBiomedical Signal Processing and Control202170410296010.1016/j.bspc.2021.10296034249142PMC8260502</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Khriji et al. (2021)</span> <a id="ref-27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id394"><!-- named anchor --></a>L KhrijiA AmmariS MessaoudS BouaafiaA MaraouiM MachhoutCOVID-19 recognition based on patient’s coughing and breathing patterns analysis: deep learning approach20212021 29th Conference of Open Innovations Association (FRUCT)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Laguarta, Hueto &amp; Subirana (2020)</span> <a id="ref-28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id395"><!-- named anchor --></a>J LaguartaF HuetoB SubiranaCOVID-19 artificial intelligence diagnosis using only cough recordingsIEEE Open Journal of Engineering in Medicine and Biology2020127528110.1109/OJEMB.2020.302692834812418PMC8545024</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Lapostolle et al. (2020)</span> <a id="ref-29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id396"><!-- named anchor --></a>F LapostolleE SchneiderI VianuG DolletB RocheJ BerdahJ MichelL GoixE ChanzyT PetrovicF AdnetClinical features of 1487 COVID-19 patients with outpatient management in the greater paris: the COVID-call studyInternal and Emergency Medicine202015581381710.1007/s11739-020-02379-z32474850PMC7260461</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Lella &amp; Pja (2021)</span> <a id="ref-30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id397"><!-- named anchor --></a>KK LellaA PjaAutomatic diagnosis of COVID-19 disease using deep convolutional neural network with multi-feature channel from respiratory sound data: cough, voice, and breathAlexandria Engineering Journal20216121319133410.1016/j.aej.2021.06.024</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Liberati et al. (2009)</span> <a id="ref-31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id398"><!-- named anchor --></a>A LiberatiDG AltmanJ TetzlaffC MulrowPC GøtzscheJPA IoannidisPJD Mike ClarkeJ KleijnenD MoherThe prisma statement for reporting systematic reviews and meta-analyses of studies that evaluate healthcare interventions: explanation and elaborationBMJ2009339b270010.1136/bmj.b270019622552PMC2714672</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Lonini et al. (2021)</span> <a id="ref-32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id399"><!-- named anchor --></a>L LoniniN ShawenO BotonisM FantonC JayaramanCK MummidisettySY ShinC RushinS JenzS XuJA RogersA JayaramanRapid screening of physiological changes associated with COVID-19 using soft-wearables and structured activities: a pilot studyIEEE Journal of Translational Engineering in Health and Medicine2021911110.1109/JTEHM.2021.3058841PMC792465333665044</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Matangila et al. (2020)</span> <a id="ref-33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id400"><!-- named anchor --></a>JR MatangilaRK NyembuGM TeloCD NgoyTM SakoboJM MassoloBM MuyembeRK MvwalaCK IlungaEB LimboleJM NtalajaRM KongoClinical characteristics of COVID-19 patients hospitalized at clinique ngaliema, a public hospital in kinshasa, in the democratic republic of congo: a retrospective cohort studyPLOS ONE20201512e024427210.1371/journal.pone.024427233338063PMC7748279</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">McDonagh et al. (2013)</span> <a id="ref-34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id401"><!-- named anchor --></a>M McDonaghK PetersonP RainaS ChangP ShekelleAvoiding bias in selecting studies2013Methods Guide for Effectiveness and Comparative Effectiveness ReviewsRockvilleAgency for Healthcare Research and Quality23487864</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Melek (2021)</span> <a id="ref-35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id402"><!-- named anchor --></a>M MelekDiagnosis of COVID-19 and non-COVID-19 patients by classifying only a single cough soundNeural Computing and Applications20213324176211763210.1007/s00521-021-06346-3PMC832396134345119</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Miranda, Diacon &amp; Niesler (2019)</span> <a id="ref-36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id403"><!-- named anchor --></a>IDS MirandaAH DiaconTR NieslerA comparative study of features for acoustic cough detection using deep architectures*20192019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)PiscatawayIEEE10.1109/EMBC.2019.885641231946429</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Mohammed et al. (2021)</span> <a id="ref-37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id404"><!-- named anchor --></a>EA MohammedM KeyhaniA Sanati-NezhadSH HejaziBH FarAn ensemble learning approach to digital corona virus preliminary screening from cough soundsScientific Reports2021111157010.1038/s41598-021-95042-234321592PMC8319422</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Morice (2007)</span> <a id="ref-38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id405"><!-- named anchor --></a>AH MoriceRebuttal: cough is an expiratory soundLung2007186S17910.1007/s00408-007-9039-517990037</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Mouawad, Dubnov &amp; Dubnov (2021)</span> <a id="ref-39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id406"><!-- named anchor --></a>P MouawadT DubnovS DubnovRobust detection of COVID-19 in cough soundsSN Computer Science202121244810.1007/s42979-020-00422-6PMC780261633458700</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Mukherjee, Salam &amp; Santosh (2021)</span> <a id="ref-40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id407"><!-- named anchor --></a>H MukherjeeH SalamKC SantoshLung health analysis: adventitious respiratory sound classification using filterbank energiesInternational Journal of Pattern Recognition and Artificial Intelligence20213514215700810.1142/S0218001421570081</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Mukherjee et al. (2021)</span> <a id="ref-41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id408"><!-- named anchor --></a>H MukherjeeP SreeramaA DharSM ObaidullahK RoyM MahmudKC SantoshAutomatic lung health screening using respiratory soundsJournal of Medical Systems20214521910.1007/s10916-020-01681-933426615PMC7797201</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Nakamori et al. (2020)</span> <a id="ref-42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id409"><!-- named anchor --></a>M NakamoriE ImamuraM KuwabaraT AyukawaK TachiyamaT KamimuraY HayashiH MatsushimaM FunaiT MizoueS WakabayashiSimplified cough test can predict the risk for pneumonia in patients with acute strokePLOS ONE2020159e023959010.1371/journal.pone.023959032991632PMC7523950</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Nemati et al. (2020)</span> <a id="ref-43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id410"><!-- named anchor --></a>E NematiMJ RahmanE BlackstockV NathanMM RahmanK VatanparvarJ KuangEstimation of the lung function using acoustic features of the voluntary cough*20202020 42nd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)PiscatawayIEEE10.1109/EMBC44109.2020.917598633018992</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Nemati et al. (2020)</span> <a id="ref-44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id411"><!-- named anchor --></a>E NematiMM RahmanV NathanK VatanparvarJ KuangA comprehensive approach for classification of the cough type*20202020 42nd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)PiscatawayIEEE10.1109/EMBC44109.2020.917534533017966</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Nessiem et al. (2021)</span> <a id="ref-45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id412"><!-- named anchor --></a>MA NessiemMM MohamedH CoppockA GaskellBW SchullerDetecting COVID-19 from breathing and coughing sounds using deep neural networks20212021 IEEE 34th International Symposium on Computer-Based Medical Systems (CBMS)PiscatawayIEEE</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Pahar et al. (2021)</span> <a id="ref-46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id413"><!-- named anchor --></a>M PaharM KlopperR WarrenT NieslerCOVID-19 cough classification using machine learning and global smartphone recordingsComputers in Biology and Medicine202113510457210.1016/j.compbiomed.2021.10457234182331PMC8213969</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Pal &amp; Sankarasubbu (2021)</span> <a id="ref-47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id414"><!-- named anchor --></a>A PalM SankarasubbuPay attention to the cough2021Proceedings of the 36th Annual ACM Symposium on Applied Computing</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Pinkas et al. (2020)</span> <a id="ref-48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id415"><!-- named anchor --></a>G PinkasY KarnyA MalachiG BarkaiG BacharV AharonsonSARS-CoV-2 detection from voiceIEEE Open Journal of Engineering in Medicine and Biology2020126827410.1109/OJEMB.2020.302646835402954PMC8769003</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Quatieri, Talkar &amp; Palmer (2020)</span> <a id="ref-49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id416"><!-- named anchor --></a>TF QuatieriT TalkarJS PalmerA framework for biomarkers of COVID-19 based on coordination of speech-production subsystemsIEEE Open Journal of Engineering in Medicine and Biology2020120320610.1109/OJEMB.2020.299805135402959PMC8975176</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Rudraraju et al. (2020)</span> <a id="ref-50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id417"><!-- named anchor --></a>G RudrarajuS PalreddyB MamidgiNR SripadaYP SaiNK VodnalaSP HaranathCough sound analysis and objective correlation with spirometry and clinical diagnosisInformatics in Medicine Unlocked202019610031910.1016/j.imu.2020.100319</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Santosh (2019)</span> <a id="ref-51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id418"><!-- named anchor --></a>KC SantoshSpeech processing in healthcare: can we integrate?Intelligent Speech Signal Processing201920191410.1016/B978-0-12-818130-0.00001-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Shimon et al. (2021)</span> <a id="ref-52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id419"><!-- named anchor --></a>C ShimonG ShafatI DangoorA Ben-ShitritArtificial intelligence enabled preliminary diagnosis for COVID-19 from voice cues and questionnairesThe Journal of the Acoustical Society of America202114921120112410.1121/10.000343433639822PMC7928231</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Topol (2020)</span> <a id="ref-53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id420"><!-- named anchor --></a>EJ TopolIs my cough COVID-19?The Lancet202039610266187410.1016/S0140-6736(20)32589-7PMC783662633308459</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Vaughan et al. (2021)</span> <a id="ref-54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id421"><!-- named anchor --></a>L VaughanD VeruttipongJG ShawN LevyL EdwardsM WingetRelationship of socio-demographics, comorbidities, symptoms and healthcare access with early COVID-19 presentation and disease severityBMC Infectious Diseases202121111010.1186/s12879-021-05764-x33421991PMC7794633</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Vrindavanam et al. (2021)</span> <a id="ref-55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id422"><!-- named anchor --></a>J VrindavanamR SrinathHh ShankarG NageshMachine learning based COVID-19 cough classification models-a comparative analysis20212021 5th International Conference on Computing Methodologies and Communication (ICCMC)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Wang et al. (2020)</span> <a id="ref-56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id423"><!-- named anchor --></a>X WangJ FangY ZhuL ChenF DingR ZhouL GeF WangQ ChenY ZhangQ ZhaoClinical characteristics of non-critically ill patients with novel coronavirus infection (COVID-19) in a Fangcang HospitalClinical Microbiology and Infection20202681063106810.1016/j.cmi.2020.03.03232251842PMC7195539</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Wei et al. (2020)</span> <a id="ref-57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id424"><!-- named anchor --></a>W WeiJ WangJ MaN ChengJ XiaoA real-time robot-based auxiliary system for risk evaluation of COVID-19 infection2020Interspeech 2020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Weng et al. (2020)</span> <a id="ref-58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id425"><!-- named anchor --></a>C‐H WengA SaalWWW ButtPA ChanCharacteristics and clinical outcomes of covid-19 in hispanic/latino patients in a community setting: a retrospective cohort studyJournal of Medical Virology202093111511710.1002/jmv.2619632558963PMC7323013</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">Yang et al. (2020)</span> <a id="ref-59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id426"><!-- named anchor --></a>X YangY YuJ XuH ShuXia J'anH LiuY WuL ZhangZ YuM FangT YuY WangS PanX ZouS YuanY ShangClinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a single-centered, retrospective, observational studyThe Lancet Respiratory Medicine20208547548110.1016/S2213-2600(20)30079-532105632PMC7102538</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Bioinformatics</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Artificial Intelligence</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Data Mining and Machine Learning</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>Covid-19</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Cough sound</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Diagnosis</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Public healthcare</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>AI</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Machine learning</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
