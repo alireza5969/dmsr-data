@@ -64,8 +64,10 @@ for (i in seq_along(pmcids)) {
     stringr::str_extract("PMC.*.html") %>%
     stringr::str_remove(".html")
   
-  if (pmcid %in% current_list) next
+  if (pmcid %in% current_list) {print("already in repo"; next}
 
+  Sys.sleep(.2)
+                                      
   cat100 <-
     dir_names_distribute_workload(i, 2e4, 1e2)
   cat500 <-
