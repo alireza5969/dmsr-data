@@ -28,42 +28,39 @@ pmc_data <-
 
 # Paths and settings -------------------------------------------------------
 
-pmcids <- pmc_data$pmc   # your list; keep the "PMC" prefix
+pmcids <- pmc_data$pmc # your list; keep the "PMC" prefix
 
-xsl_dir  <- "data/02_pmc/JATSPreviewStylesheets"
+xsl_dir <- "data/02_pmc/JATSPreviewStylesheets"
 temp_dir <- "temp"
-out_dir  <- "data/03_labor"
+out_dir <- "data/03_labor"
 base_url <- "https://pmc-oa-opendata.s3.amazonaws.com"
 
 
-
-xsl <- 
+xsl <-
   read_xml(
     path(
       xsl_dir,
-      "xslt", 
-      "main", 
+      "xslt",
+      "main",
       "jats-html.xsl"
-      )
     )
+  )
 
 
 # fetch last state
 
 
-
 for (i in seq_along(pmcids)) {
-  
   print(i)
-  
+
   pmcid <- pmcids[i]
-  
-  cat100 <- 
+
+  cat100 <-
     dir_names_distribute_workload(i, 2e4, 1e2)
-  cat500 <- 
+  cat500 <-
     dir_names_distribute_workload(i, 2e4, 5e2)
-  
-  html_dir <- 
+
+  html_dir <-
     fs::path(
       out_dir,
       cat500,
@@ -71,10 +68,10 @@ for (i in seq_along(pmcids)) {
       paste0(pad_maker(i, 2e4), ".", pmcid),
       ext = "html"
     )
-  
-  
+
+
   if (fs::file_exists(html_dir)) next
-  
+
   # Download pmc xml and convert it to html
   status <-
     process_pmcid_safely(
@@ -82,26 +79,26 @@ for (i in seq_along(pmcids)) {
       html_dir,
       "temp/temp.xml"
     )
-  
+
   if (status != "ok" && !startsWith(status, "skipped")) {
     message(pmcid, ": ", status)
   }
-  
+
   tryCatch(
     file_copy(
       path(
-        xsl_dir, 
-        "jats-preview.css"), 
+        xsl_dir,
+        "jats-preview.css"
+      ),
       fs::path_dir(html_dir),
       overwrite = FALSE
     ),
     error = function(e) NULL
   )
-  
-  if (!(i %% 20)){
+
+  if (!(i %% 100) | (i == length(pmcids))) {
     commit_changes(
-      commit_message = paste0('saved up to ', i)
-      )
+      commit_message = paste0("saved up to ", i)
+    )
   }
-  
 }
