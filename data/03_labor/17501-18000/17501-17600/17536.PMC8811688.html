@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lovis, Tam, Merid, Naseri Jahfari, Tax, Reinders, and van der Bilt: Machine Learning for Cardiovascular Outcomes From Wearable Data: Systematic Review From a Technology Readiness Level Point of View</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>JMIR Med Inform</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>JMIR Med Inform</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>2655</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>medinform</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101645109</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>JMI</p>
+<p class="metadata-entry"><span class="generated">Title: </span>JMIR Medical Informatics</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2291-9694</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>JMIR Publications Inc.</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="medinform_v10i1e29434.pdf">medinform_v10i1e29434.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="https://medinform.jmir.org/2022/1/e29434">https://medinform.jmir.org/2022/1/e29434</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>©Arman Naseri Jahfari, David Tax, Marcel Reinders, Ivo van der Bilt. Originally published in JMIR Medical Informatics (https://medinform.jmir.org), 19.01.2022.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open-access article distributed under the terms of the Creative Commons Attribution License (<a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">https://creativecommons.org/licenses/by/4.0/</a>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work, first published in JMIR Medical Informatics, is properly cited. The complete bibliographic information, a link to the original publication on <a target="xrefwindow" href="https://medinform.jmir.org/" id="id3">https://medinform.jmir.org/</a>, as well as this copyright and license information must be included.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>2 July 2021</p>
+<p class="metadata-entry"><span class="generated">Date revision requested: </span>6 November 2021</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>22 November 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>4 December 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>January 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>19 January 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>10</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>1<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>397632<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>e29434</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8811688</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8811688.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8811688</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8811688</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35044316</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.2196/29434</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>v10i1e29434</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Machine Learning for Cardiovascular Outcomes From Wearable Data: Systematic Review From a Technology Readiness Level Point of View</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Christian Lovis</p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Hon Lon Tam</p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Beza Merid</p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0002-5676-6596<span class="generated">] </span>Arman Naseri Jahfari<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><div class="metadata-area"><div class="metadata-chunk">
+<p class="metadata-entry">Pattern Recognition and Bioinformatics</p>
+<p class="metadata-entry">Delft University of Technology</p>
+<p class="metadata-entry">van Mourik Broekmanweg 6</p>
+<p class="metadata-entry">Delft, 2628 XE</p>
+<p class="metadata-entry">Netherlands</p>
+<p class="metadata-entry">31 152786052</p>
+<p class="metadata-entry">a.naserijahfari@tudelft.nl</p>
+</div></div></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0002-5153-9087<span class="generated">] </span>David Tax<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0002-1148-1562<span class="generated">] </span>Marcel Reinders<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0002-1151-2461<span class="generated">] </span>Ivo van der Bilt<span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>Pattern Recognition and BioinformaticsDelft University of TechnologyDelftNetherlands</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>Department of CardiologyHaga Teaching HospitalThe HagueNetherlands</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id11"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="id12"><!-- named anchor --></a>Correspondence to: </span>Corresponding Author: Arman Naseri Jahfari <a href="mailto:a.naserijahfari@tudelft.nl">a.naserijahfari@tudelft.nl</a></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id13"><!-- named anchor --></a><h3 class="section-title">Background</h3>
+<p id="id14">Wearable technology has the potential to improve cardiovascular health monitoring by using machine learning. Such technology enables remote health monitoring and allows for the diagnosis and prevention of cardiovascular diseases. In addition to the detection of cardiovascular disease, it can exclude this diagnosis in symptomatic patients, thereby preventing unnecessary hospital visits. In addition, early warning systems can aid cardiologists in timely treatment and prevention.</p>
+</div>
+<div class="section">
+<a id="id15"><!-- named anchor --></a><h3 class="section-title">Objective</h3>
+<p id="id16">This study aims to systematically assess the literature on detecting and predicting outcomes of patients with cardiovascular diseases by using machine learning with data obtained from wearables to gain insights into the current state, challenges, and limitations of this technology.</p>
+</div>
+<div class="section">
+<a id="id17"><!-- named anchor --></a><h3 class="section-title">Methods</h3>
+<p id="id18">We searched PubMed, Scopus, and IEEE Xplore on September 26, 2020, with no restrictions on the publication date and by using keywords such as “wearables,” “machine learning,” and “cardiovascular disease.” Methodologies were categorized and analyzed according to machine learning–based technology readiness levels (TRLs), which score studies on their potential to be deployed in an operational setting from 1 to 9 (most ready).</p>
+</div>
+<div class="section">
+<a id="id19"><!-- named anchor --></a><h3 class="section-title">Results</h3>
+<p id="id20">After the removal of duplicates, application of exclusion criteria, and full-text screening, 55 eligible studies were included in the analysis, covering a variety of cardiovascular diseases. We assessed the quality of the included studies and found that none of the studies were integrated into a health care system (TRL&lt;6), prospective phase 2 and phase 3 trials were absent (TRL&lt;7 and 8), and group cross-validation was rarely used. These issues limited these studies’ ability to demonstrate the effectiveness of their methodologies. Furthermore, there seemed to be no agreement on the sample size needed to train these studies’ models, the size of the observation window used to make predictions, how long participants should be observed, and the type of machine learning model that is suitable for predicting cardiovascular outcomes.</p>
+</div>
+<div class="section">
+<a id="id21"><!-- named anchor --></a><h3 class="section-title">Conclusions</h3>
+<p id="id22">Although current studies show the potential of wearables to monitor cardiovascular events, their deployment as a diagnostic or prognostic cardiovascular clinical tool is hampered by the lack of a realistic data set and proper systematic and prospective evaluation.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="id23"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<div class="section">
+<a id="id24"><!-- named anchor --></a><h3 class="section-title">Background</h3>
+<p id="id25">The use of diagnostic modalities in cardiovascular disease is often limited to hospital visits. As a result, the clinical value may be limited by the short observation period. This is especially problematic for cardiovascular problems that do not manifest constantly, such as paroxysmal arrhythmias, heart failure, or even chest discomfort that may not be present during the hospital visit. Advancements in eHealth, especially in wearable technology, such as electrocardiograms (ECGs) [<a href="#ref1">1</a>] and photoplethysmograms (PPGs) [<a href="#ref2">2</a>], and subsequent signal processing by machine learning have enabled new opportunities for remote monitoring in the outpatient setting.</p>
+<p id="id26">Continuous monitoring over long periods has shown to be effective [<a href="#ref3">3</a>,<a href="#ref4">4</a>]. For example, remote monitoring of patients with cardiac diseases, using pacemakers or implantable cardioverter defibrillators and patients with heart failure have improved patient care [<a href="#ref5">5</a>]. However, current sensors used in health care, such as Holter devices, are limited to a maximum of 14 days (but typically endure 24 hours) of continuous monitoring, limiting the use of these devices. Overcoming this could enable early warning systems for acute events such as cardiac arrest and could capture subtle cardiovascular exacerbation or rehabilitation that manifests over a much longer time because of, for example, changes in lifestyle or intervention.</p>
+<p id="id27">Although widely used, currently 24-hour ECG or blood pressure monitoring devices are cumbersome to wear and impose a burden on patients in a longitudinal setting. Rechargeable, easy-to-wear sensors, such as smartwatches, are becoming an interesting alternative as they contain sensors with a potentially unlimited observation period with minimal burden to the patient for a fraction of the costs. However, the signals that these wearables measure, such as the PPG-derived heart rate, activity, and skin temperature, are not clinically informative enough for clinical decision-making by a cardiologist. With current developments in artificial intelligence (AI), a powerful solution is expected from machine learning algorithms that can learn the relationship between the wearable sensor signals and a cardiovascular outcome in a (fully) data-driven manner.</p>
+<p id="id28">Another great benefit of automatic cardiovascular diagnostics and prognostics by machine learning is minimizing inter- and intraobserver variability, which is a major problem in the subjective interpretation of clinical and diagnostic information by human cardiologists. Interobserver disagreement [<a href="#ref6">6</a>,<a href="#ref7">7</a>] because of, for example, differences in experience or specialization and intraobserver disagreement because of stress or fatigue [<a href="#ref8">8</a>], can be minimized. Variations in clinical practice may lead to medical errors, whereas automatic systems are not (or less) susceptible to such factors. Another possibility is to exclude patients who experience symptoms such as chest pain, which are not caused by cardiovascular disease. Automatic exclusion of these patients can reduce unnecessary visits to a cardiologist; relieving the cardiologist, thereby increasing the capacity of cardiovascular care; and directing patients to the proper specialist quicker.</p>
+<p id="id29">Because of these promises, the field of research on diagnosing cardiovascular events from wearable data is very active and many machine learning solutions are being presented to automatically detect cardiovascular events. Various reviews have been presented to categorize the developed machine learning tools. A study by Krittanawong et al [<a href="#ref9">9</a>] shows that a plethora of wearable devices are researched for a variety of cardiovascular outcomes and discusses a paradigm for remote cardiovascular monitoring consisting of sensors, machine learning diagnosis, data infrastructure, and ethics. They conclude that especially the latter two aspects have several unaddressed challenges. An overview of wearable devices on the market is provided by Bayoumy et al [<a href="#ref10">10</a>]. The study reports their frequency of use in (cardiovascular) trials and Food and Drug Administration status. As reported by Giebel and Gissel [<a href="#ref11">11</a>], most mobile health devices for atrial fibrillation detection are not Food and Drug Administration approved and therefore cannot be used in cardiovascular monitoring systems.</p>
+</div>
+<div class="section">
+<a id="id30"><!-- named anchor --></a><h3 class="section-title">Objectives</h3>
+<p id="id31">Although many machine learning tools have been proposed and studies have shown good performance, they do not seem to have been implemented in operational and functional health care systems. Therefore, we decided to systematically review the machine learning tools to detect cardiovascular events from wearable data from the perspective of their technology readiness level (TRL), that is, how far these proposed tools are in realizing an operational system and what factor is impeding them to get there. The TRL paradigm originates from the National Aeronautics and Space Administration and is a way to assess the maturity level of a particular technology used in space travel by giving solutions a score from 1 to 9 in increasing order of readiness, from basic technology research (score 1) to launch operations (score 9) [<a href="#ref12">12</a>].</p>
+<p id="id32">Interestingly, 2 studies tailor the TRL framework for medical machine learning. A study by Komorowski [<a href="#ref13">13</a>] proposes a TRL for supervised, unsupervised, and reinforcement learning problems and describes criteria to reach TRLs 3, 4, 6, and 7. A description of the 9 TRLs for medical machine learning in intensive care medicine, including examples, is proposed by Fleuren et al [<a href="#ref14">14</a>]. We review the wearable-based cardiovascular machine learning solutions following the framework by Fleuren et al [<a href="#ref14">14</a>] adjusted for remote medicine. We identify aspects in the studies and systematically assign these to TRLs and group some of the TRLs together in a taxonomy to help interpret their relevance (<a href="#figure1">Figure 1</a>). We address the overuse of benchmark data sets, considerations on data acquisition related to the environment and type of sensor, integration in a health care system, construction of the machine learning model, and subsequent model validations.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="figure1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id33">Taxonomy of the eligible studies. TRLs are based on the proposed descriptions for machine learning for medical devices proposed by Fleuren et al [<a href="#ref14">14</a>]. The studies were categorized according to the relevance of their content to these descriptions (aspects within boxes) and were grouped and assigned to the different TRLs (below and above boxes). TRL: technology readiness level.</p></div>
+</div>
+<p id="id34">By assessing current methods by their technological readiness, we show that the current methodologies are promising but that deployment is severely hampered by the lack of realistic data sets and proper systematic and prospective evaluation. To arrive at a readiness that is operational at the health care system level, these bottlenecks need to be resolved.</p>
+</div>
+</div>
+<div class="section">
+<a id="id35"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<div class="section">
+<a id="id36"><!-- named anchor --></a><h3 class="section-title">Screening</h3>
+<p id="id37">The systematic review was performed by following the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines [<a href="#ref15">15</a>], as shown in <a href="#figure2">Figure 2</a>. We followed the patient or population, intervention, comparison, and outcomes framework for our research question, which was as follows: “In patients with cardiovascular disease, using machine learning with data from wearables, what methods and accompanying limitations are used, to deploy this technology to detect and predict cardiovascular disease in standard healthcare?”</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="figure2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id38">PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) flow diagram for the systematic review.</p></div>
+</div>
+</div>
+<div class="section">
+<a id="id39"><!-- named anchor --></a><h3 class="section-title">Study Inclusion</h3>
+<p id="id40">Search queries were performed on September 26, 2020, in the electronic databases Scopus, PubMed, and IEEE Xplore. Only peer-reviewed journals were considered. Studies were eligible for inclusion if data were acquired from wearables, a machine learning method was used, and had the goal to detect or predict cardiovascular disease (see <a href="#app1">Multimedia Appendix 1</a> for used queries). The following exclusion criteria were used: opinion or perspective, letter, review, study protocol, or conference paper; studies not in English; and studies in which only simulated data were used. The eligibility assessment was performed by the first author, ANJ. First, the title and abstract of each study were assessed for relevance based on the inclusion and exclusion criteria. The full texts of the remaining studies were then read and again subjected to the selection criteria. The second author, DT, verified this by reading a subsample of the selection.</p>
+</div>
+<div class="section">
+<a id="id41"><!-- named anchor --></a><h3 class="section-title">TRL and Taxonomy</h3>
+<p id="id42">From the eligible studies through discussions with all authors, the first author, ANJ, identified some general overarching evaluation aspects that the studies had in common and assigned these studies to a taxonomy (<a href="#app2">Multimedia Appendix 2</a> [<a href="#ref16">16</a>-<a href="#ref70">70</a>]). These aspects were related to one or more TRLs, as defined by Fleuren et al [<a href="#ref14">14</a>]. Accordingly, the eligible studies were assigned to the taxonomy and different TRLs (<a href="#figure1">Figure 1</a>). The TRL framework states that studies that use only a benchmark data set as a data source do not progress further than level 3. Furthermore, the framework originally grouped levels 3 and 4 together. We split these levels and assigned studies using their own acquired data without an external validation set from a different study level 4. Next, we assigned studies that use an external validation set from a different study to level 5; although, according to Fleuren et al [<a href="#ref14">14</a>], level 5 further requires that the acquired data set is realistic. However, we interpreted the independently acquired data representative of data recorded during the deployment of the machine learning system as realistic. Therefore, we differentiated levels 3, 4, and 5 mostly on the data sets being used for model deployment and related these levels to the data sets taxonomy. As level 5 mainly focuses on realistic data sets we also assigned practical aspects of the wearables to this TRL. Here, we differentiated the following three aspects: (1) which modality is being measured by the wearable and where on the body it is placed; (2) under which conditions data are measured, such as in the wild or in controlled environments; and (3) for how long data are recorded, that is, the temporal aspect of the acquired data. Level 6 required integrating the machine learning model into a health care system. Therefore, the device in which the model was integrated into was assigned to this level. Finally, levels 7 and 8 required demonstrating the model as a cardiovascular tool. Therefore, the model effectiveness and validation aspects were assigned to these levels. Levels 1, 2, and 9 were disregarded here because none of the papers fit into these categories.</p>
+</div>
+</div>
+<div class="section">
+<a id="id43"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<div class="section">
+<a id="id44"><!-- named anchor --></a><h3 class="section-title">Article Identification</h3>
+<p id="id45">A total of 578 records were retrieved from electronic databases. After the removal of duplicates, 70.8% (409/578) of records remained. One was externally included as it fulfilled the inclusion criteria but was missed by the search query because it did not explicitly mention the term machine learning. As shown in <a href="#figure1">Figure 1</a>, these were further narrowed down during title or abstract screening, resulting in 23.9% (138/578) of records. Finally, after full-text reading, 9.5% (55/578) of records remained to be covered in this study.</p>
+<p id="id46">We related each of the studies to different TRLs for machine learning methods (<i>Methods</i>) according to an identified taxonomy of different evaluation criteria that relate to these TRLs (<a href="#figure1">Figure 1</a>; <i>Methods</i>). The TRL framework states that studies that use only a benchmark data set do not progress further than level 3.</p>
+</div>
+<div class="section">
+<a id="id47"><!-- named anchor --></a><h3 class="section-title">Study Characteristics</h3>
+<p id="id48">The key characteristics of the eligible studies are summarized in <a href="#app2">Multimedia Appendix 2</a>. Notably, of the 55 studies, 27 (49%) exclusively used benchmark data sets, which were all defined as benchmark studies. Furthermore, of the 55 included studies, 6 (11%) were published before 2018 and the remaining 49 (89%) were published thereafter. In the following sections, the study characteristics are described more closely based on the taxonomy.</p>
+</div>
+<div class="section">
+<a id="id49"><!-- named anchor --></a><h3 class="section-title">Activity and Environment (Level 5)</h3>
+<p id="id50">For studies that did not use benchmark data sets, they reported the data acquired either in a controlled environment (hospital or research laboratory) or in a free-living environment, where participants were remotely observed performing their natural daily routines. The latter is also known as <i>in-the-wild</i>. Furthermore, the activities of the participants can be divided into sedentary or active during data acquisition. To capture these two related aspects, we assigned studies on an axis representing a controlled environment and sedentary activity on one side and in-the-wild measurement of active participants on the other side of the axis (<a href="#figure3">Figure 3</a>). Interestingly, only 5 [<a href="#ref16">16</a>-<a href="#ref20">20</a>] studies mapped to the active, free-living situation that complied with the requirement of realistic data acquisition for these aspects that map to TRL5. Thus, only one-tenth of the studies used the potential of wearables to be used for remote, longitudinal monitoring.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="figure3"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<div class="caption"><p class="first" id="id51">Studies ordered based on participant activity and acquisition environment. The leftmost scenario indicates highly controlled acquisition with sedentary participants. The opposite is described by the rightmost scenario where participants are monitored in an active, free-living situation. Controlled environment includes hospitals or laboratories. Free-living participants are monitored during their daily routines.</p></div>
+</div>
+</div>
+<div class="section">
+<a id="id52"><!-- named anchor --></a><h3 class="section-title">Placement and Modality (Level 5)</h3>
+<p id="id53">Realistic data acquisition requires continuous monitoring. Practically, the wearable should therefore not burden the participant when wearing. This burden depended mostly on the placement of the sensor on the body. In addition, the placement also restricted the type of biometric signals that could be measured, which was referred to as the modality. We categorized studies based on the placement and modality for the nonbenchmark studies jointly (<a href="#figure4">Figure 4</a>). The sensor placements for cardiovascular monitoring that results in the least burden for the patient, and thus would be the best candidates to acquire a realistic data set, were the wrist and finger. Less than half (N=13) of the studies were reported with such placements, of which 8 (62%) studies acquired one modality: 3 (23%) studies acquired wrist-based ECGs [<a href="#ref18">18</a>,<a href="#ref21">21</a>,<a href="#ref22">22</a>], 2 (15%) studies acquired wrist-based PPGs [<a href="#ref17">17</a>,<a href="#ref23">23</a>], and 3 (23%) studies acquired finger-based PPGs [<a href="#ref24">24</a>,<a href="#ref30">30</a>,<a href="#ref37">37</a>]. Of the 13 studies, the remaining 5 (39%) studies acquired wrist-based multimodal data: 4 (31%) studies acquired PPGs and accelerometer data [<a href="#ref19">19</a>,<a href="#ref20">20</a>,<a href="#ref29">29</a>,<a href="#ref47">47</a>] and 1 (8%) study acquired both ECGs and PPGs [<a href="#ref25">25</a>]. Thus, the wrist and finger severely limited the additional modalities that were measured (usually only acceleration), although wearables were shown to be able to measure increasing number of modalities [<a href="#ref10">10</a>].</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="figure4"><!-- named anchor --></a><h5 class="label">Figure 4</h5>
+<div class="caption"><p class="first" id="id54">Placement and modalities of wearable sensors: light blue, placement of sensors; blue, modalities used. Others: head, near-infrared spectroscopy; chest, seismocardiography or gyrocardiography. Overlapping blocks represent multiple placements or modalities used. ECG: electrocardiogram; GSR: galvanic skin response; PPG: photoplethysmogram; SIT: skin impedance and temperature.</p></div>
+</div>
+</div>
+<div class="section">
+<a id="id55"><!-- named anchor --></a><h3 class="section-title">Temporal Aspects (Levels 5, 7, and 8)</h3>
+<p id="id56">Besides the requirement of a realistic data set in level 5, levels 7 and 8 required phase 2 and phase 3 studies, respectively. In the context of drug testing, this requires an investigation of the effective, but safe, drug dosage. Analogously, for wearable machine learning, this translated to the time a participant must be exposed to a machine learning model before a cardiovascular outcome could be accurately detected or predicted. Therefore, a realistic deployment setting is dependent on the length of time participants are observed. As it is further essential to characterize the data for reproducibility and the description under which circumstances a model is valid, we decided to outline the temporal aspect of the acquired wearable data in more detail. We recognized the following four levels of time aspects: (1) study duration, (2) observation period, (3) recording duration, and (4) input window size (<a href="#figure5">Figure 5</a>). Within the study duration, patients were included and observed for a certain period—the observation period. The lengths of these periods had an impact on the realistic deployment of a system. For example, Quer et al [<a href="#ref71">71</a>] used wrist-worn Fitbit devices to show that resting heart rate within individuals had a significant seasonal trend in longitudinal data. Therefore, a model constructed using data from a certain period might not be valid for another period. It was therefore important to consider how long the participants were observed to ensure this seasonal effect was incorporated in the model. Within the observation period, the wearable recorded a time series. Theoretically, this could be as long as the observation period itself. However, patients could interrupt the measurements for several reasons (eg, to charge the device and low compliance rate). We denoted the duration of a continuously measured part of the time series as the recording duration. Finally, the records were further segmented into windows, from which features were generated or which were used as raw inputs to a machine learning model. We referred to the duration of these windows as the input window size (I).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="figure5"><!-- named anchor --></a><h5 class="label">Figure 5</h5>
+<div class="caption"><p class="first" id="id57">Venn diagram of reported temporal aspects described in the studies. The S, O, R, and I are represented in the legend. I: input window size; O: observation period; R: recording duration; S: study duration.</p></div>
+</div>
+<p id="id58">We assessed the temporal aspects of all the nonbenchmark studies (<a href="#figure5">Figure 5</a>). One study did not report any aspects [<a href="#ref26">26</a>] and was omitted from the <a href="#figure5">Figure 5</a>. Another study used multiple fixed input window sizes to incorporate different timescales of the data [<a href="#ref19">19</a>]. Overall, most studies did not report all the aspects and were thus not comprehensive about their data characteristics. In almost all studies, the recording rate and input window size were reported, whereas the study and observation periods were mentioned in about half of the studies. For a realistic data set, required for level 5 and progression to level 7 or 8, the observation period and recording duration were specifically important, as we found in 12 studies. Three studies used an observation period of 24 hours [<a href="#ref23">23</a>,<a href="#ref32">32</a>,<a href="#ref64">64</a>]; one for a week [<a href="#ref17">17</a>], one for 2 weeks [<a href="#ref27">27</a>], and one for 90 days [<a href="#ref16">16</a>]. Overall, 2 studies implied an observation period of months but did not explicitly report it [<a href="#ref19">19</a>,<a href="#ref20">20</a>]. One considered recordings of at least eight hours [<a href="#ref19">19</a>] and one reported an average recording duration of 11.3 hours [<a href="#ref20">20</a>]. Finally, only one [<a href="#ref27">27</a>] fully used the potential of wearables and reported a (near-) continuous recording duration.</p>
+</div>
+<div class="section">
+<a id="id59"><!-- named anchor --></a><h3 class="section-title">Cardiovascular Outcomes (All Levels)</h3>
+<p id="id60">Although the required observation period and recording duration to detect or predict a cardiovascular outcome is still an open and active research topic, these periods will be different for different outcomes. Therefore, we inventoried which (combinations of) cardiovascular outcomes were considered in which studies (<a href="#figure6">Figure 6</a>). Interestingly, the control group was defined differently in each study. Only half of the nonbenchmark studies included a (normal) sinus rhythm class as control and could therefore exclude the presence of cardiovascular disease in participants. From these, 8 studies [<a href="#ref17">17</a>,<a href="#ref21">21</a>-<a href="#ref23">23</a>,<a href="#ref28">28</a>-<a href="#ref31">31</a>] used data from healthy individuals to represent normal sinus rhythm. The remaining 6 studies [<a href="#ref32">32</a>-<a href="#ref37">37</a>] derived normal sinus rhythm data from patients with arrhythmia (such as paroxysmal atrial fibrillation) or were unclear about the control group. Three studies had cardiovascular (disease) prevention as the target. One of these described this as a cardiovascular risk assessment where the predicted classes were healthy, precaution, and critical status [<a href="#ref28">28</a>]. Another study predicted vascular age and 10-year cardiovascular disease risk [<a href="#ref34">34</a>]. The third assigned a cardiorespiratory fitness score [<a href="#ref27">27</a>]. Notably, only the first 2 studies constructed a prognostic model. Two other prognostic models forecast cardiac arrest and heart failure exacerbation by forecasting rehospitalization after heart failure admission [<a href="#ref16">16</a>,<a href="#ref21">21</a>].</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="figure6"><!-- named anchor --></a><h5 class="label">Figure 6</h5>
+<div class="caption"><p class="first" id="id61">Studies categorized according to the type of cardiovascular outcomes predicted by the models. AA: atrial arrhythmia; C: control; CAD: coronary artery disease; CP: cardiovascular prevention; HF: heart failure; SR: sinus rhythm; VA: ventricular arrhythmia; VHD: valvular heart disease.</p></div>
+</div>
+</div>
+<div class="section">
+<a id="id62"><!-- named anchor --></a><h3 class="section-title">Bottleneck TRL5</h3>
+<p id="id63">Although many cardiovascular outcomes were investigated with wearables, the promising studies that have reached level 5 were all focused on atrial arrhythmia using wrist-based PPGs. However, their temporal properties were often inconclusive, as they were not reported. Moreover, to progress to level 6, a model should be functional within a health care system (even if it was merely used observationally). None of the studies progressed to this level. An overview of the level 5 models, including the modalities that they are based on, is given in <a href="#table1">Table 1</a>. Although none of the methodologies progressed to level 6, we decided to prospectively evaluate the studies to investigate the progression of the current state.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id64">Studies fulfilling requirements for technology readiness level 5.</p></div>
+<table frame="hsides" rules="groups" width="1000" cellpadding="5" cellspacing="0" border="1">
+<a id="id65"><!-- named anchor --></a><col width="180" span="1">
+<col width="290" span="1">
+<col width="170" span="1">
+<col width="80" span="1">
+<col width="130" span="1">
+<col width="150" span="1">
+<thead>
+<a id="id72"><!-- named anchor --></a><tr valign="bottom">
+<a id="id73"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id74"><!-- named anchor --></a>Study</td>
+<td rowspan="1" colspan="1">
+<a id="id75"><!-- named anchor --></a>Outcomes</td>
+<td rowspan="1" colspan="1">
+<a id="id76"><!-- named anchor --></a>Modality</td>
+<td rowspan="1" colspan="1">
+<a id="id77"><!-- named anchor --></a>O<sup>a</sup>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id78"><!-- named anchor --></a>R<sup>b</sup>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id79"><!-- named anchor --></a>I<sup>c</sup>
+</td>
+</tr>
+</thead>
+<tbody>
+<a id="id80"><!-- named anchor --></a><tr valign="top">
+<a id="id81"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id82"><!-- named anchor --></a>Torres-Soto and Ashley [<a href="#ref17">17</a>]</td>
+<td rowspan="1" colspan="1">
+<a id="id83"><!-- named anchor --></a>Sinus rhythm, atrial arrhythmia</td>
+<td rowspan="1" colspan="1">
+<a id="id84"><!-- named anchor --></a>PPG<sup>d</sup>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id85"><!-- named anchor --></a>1 week</td>
+<td rowspan="1" colspan="1">
+<a id="id86"><!-- named anchor --></a>NR<sup>e</sup>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id87"><!-- named anchor --></a>25 seconds</td>
+</tr>
+<tr valign="top">
+<a id="id88"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id89"><!-- named anchor --></a>Bashar et al [<a href="#ref18">18</a>]</td>
+<td rowspan="1" colspan="1">
+<a id="id90"><!-- named anchor --></a>Atrial arrhythmia, ventricular arrhythmia</td>
+<td rowspan="1" colspan="1">
+<a id="id91"><!-- named anchor --></a>ECG<sup>f</sup>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id92"><!-- named anchor --></a>NR</td>
+<td rowspan="1" colspan="1">
+<a id="id93"><!-- named anchor --></a>NR</td>
+<td rowspan="1" colspan="1">
+<a id="id94"><!-- named anchor --></a>2 minutes</td>
+</tr>
+<tr valign="top">
+<a id="id95"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id96"><!-- named anchor --></a>Tison et al [<a href="#ref19">19</a>]</td>
+<td rowspan="1" colspan="1">
+<a id="id97"><!-- named anchor --></a>Atrial arrhythmia, control</td>
+<td rowspan="1" colspan="1">
+<a id="id98"><!-- named anchor --></a>PPG, accelerometer<sup>g</sup>
+</td>
+<td rowspan="1" colspan="1">
+<a id="id99"><!-- named anchor --></a>NR</td>
+<td rowspan="1" colspan="1">
+<a id="id100"><!-- named anchor --></a>&gt;8 hours a day</td>
+<td rowspan="1" colspan="1">
+<a id="id101"><!-- named anchor --></a>5 seconds, 30 seconds, 5 minutes, and 30 minutes</td>
+</tr>
+<tr valign="top">
+<a id="id102"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id103"><!-- named anchor --></a>Wasserlauf et al [<a href="#ref20">20</a>]</td>
+<td rowspan="1" colspan="1">
+<a id="id104"><!-- named anchor --></a>Atrial arrhythmia, control</td>
+<td rowspan="1" colspan="1">
+<a id="id105"><!-- named anchor --></a>PPG, accelerometer</td>
+<td rowspan="1" colspan="1">
+<a id="id106"><!-- named anchor --></a>NR</td>
+<td rowspan="1" colspan="1">
+<a id="id107"><!-- named anchor --></a>11.3 hours a day</td>
+<td rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>1 hour</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<div class="footnote">
+<a id="table1fn1"><!-- named anchor --></a><p id="id109"><span class="generated">[i]</span> <sup>a</sup>O: observation period.</p>
+</div>
+<div class="footnote">
+<a id="table1fn2"><!-- named anchor --></a><p id="id110"><span class="generated">[ii]</span> <sup>b</sup>R: recording duration.</p>
+</div>
+<div class="footnote">
+<a id="table1fn3"><!-- named anchor --></a><p id="id111"><span class="generated">[iii]</span> <sup>c</sup>I: input window size.</p>
+</div>
+<div class="footnote">
+<a id="table1fn4"><!-- named anchor --></a><p id="id112"><span class="generated">[iv]</span> <sup>d</sup>PPG: photoplethysmogram.</p>
+</div>
+<div class="footnote">
+<a id="table1fn5"><!-- named anchor --></a><p id="id113"><span class="generated">[v]</span> <sup>e</sup>NR: not reported.</p>
+</div>
+<div class="footnote">
+<a id="table1fn6"><!-- named anchor --></a><p id="id114"><span class="generated">[vi]</span> <sup>f</sup>ECG: electrocardiogram.</p>
+</div>
+<div class="footnote">
+<a id="table1fn7"><!-- named anchor --></a><p id="id115"><span class="generated">[vii]</span> <sup>g</sup>Sensor-provided heart rate and step counter data.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="id116"><!-- named anchor --></a><h3 class="section-title">Processing Device (Level 6)</h3>
+<p id="id117">Integration in a health care system could be carried out on different devices. These studies demonstrated their models on either a computer (eg, a server), smartphone, or embedded device (<a href="#table2">Table 2</a>). Only the latter two enabled real-time cardiovascular monitoring locally on the patient side, required for real-time detection and prevention of acute cardiovascular disease, as real-time information exchange to an external system would require high battery consumption and was therefore not feasible. Smartphones were used in both benchmark [<a href="#ref38">38</a>-<a href="#ref40">40</a>] and nonbenchmark [<a href="#ref21">21</a>,<a href="#ref30">30</a>,<a href="#ref31">31</a>,<a href="#ref35">35</a>] studies. Embedded devices, however, had only been demonstrated in benchmark studies [<a href="#ref41">41</a>-<a href="#ref44">44</a>].</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id118">Processing device of trained models used in studies.</p></div>
+<table frame="hsides" rules="groups" width="1000" cellpadding="5" cellspacing="0" border="1">
+<a id="id119"><!-- named anchor --></a><col width="430" span="1">
+<col width="390" span="1">
+<col width="180" span="1">
+<thead>
+<a id="id123"><!-- named anchor --></a><tr valign="top">
+<a id="id124"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>Processing device</td>
+<td rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>Benchmarks included, n</td>
+<td rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>Benchmarks excluded, n</td>
+</tr>
+</thead>
+<tbody>
+<a id="id128"><!-- named anchor --></a><tr valign="top">
+<a id="id129"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id130"><!-- named anchor --></a>Computer</td>
+<td rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>44</td>
+<td rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>24</td>
+</tr>
+<tr valign="top">
+<a id="id133"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a>Smartphone</td>
+<td rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>7</td>
+<td rowspan="1" colspan="1">
+<a id="id136"><!-- named anchor --></a>4</td>
+</tr>
+<tr valign="top">
+<a id="id137"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>Embedded device</td>
+<td rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>4</td>
+<td rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+<a id="id141"><!-- named anchor --></a><h3 class="section-title">Feature Extraction Methods (Levels 7 and 8)</h3>
+<p id="id142">Levels 7 and 8 of the TRL assessed the model effectiveness through phases 2 and 3 clinical trials. We translated that to what features from the observed modalities were being used to construct the models. A significant number of studies used ECG as a modality and used different information from fiducial points [<a href="#ref72">72</a>] to extract features (<a href="#figure7">Figure 7</a>). In many studies, samples were selected before and after the R-peak. For example, the RR interval is the time interval between 2 adjacent R-peaks. Some studies also used techniques to locate other fiducial points and used the time interval between them as features [<a href="#ref45">45</a>]. Together, we denoted these types of features as waveform information features. Next to the specific ECG features, more general features could be derived, such as statistical features (eg, heart rate [variability] derived from 10 RR intervals) or spectral features obtained through techniques such as the Fourier transform. Raw data could also be used as features upon which a neural network can be used to automatically learn informative features [<a href="#ref46">46</a>]. Next to the features based on the sensed signal, demographic information could be used to provide more context [<a href="#ref28">28</a>,<a href="#ref47">47</a>]. Benchmark studies mostly use raw features (using the same data set) and were, therefore, excluded from this study. However, it is noteworthy that 2 of these used more advanced methods, namely, compressed learning [<a href="#ref48">48</a>] combined with dynamic time warping [<a href="#ref49">49</a>].</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="figure7"><!-- named anchor --></a><h5 class="label">Figure 7</h5>
+<div class="caption"><p class="first" id="id143">Features used in the studies. D: demographic; O: others; R: raw; SP: spectral; ST: statistical; WI: waveform information.</p></div>
+</div>
+<p id="id144">The most commonly used features were raw features (studies: 9/28, 32.1%). This was followed by waveform information and statistical features. In all, 2 studies also included demographic metadata from participants [<a href="#ref28">28</a>,<a href="#ref47">47</a>]. One study used hemoglobin parameters [<a href="#ref26">26</a>], which we represented in the <i>others</i> group in <a href="#figure7">Figure 7</a>. Interestingly, 1 study included timestamps [<a href="#ref19">19</a>]. From the 11 studies that used multimodal data (<a href="#figure4">Figure 4</a>), 6 (55%) studies extract features for each modality were separately extracted. Of the 11 studies, the remaining 5 (46%) studies exploited the covariance among the modalities in feature extraction, although 1 (9%) study did not elaborate on the exact method [<a href="#ref16">16</a>]. For example, of the 15 studies, 1 (9%) study computed the time between an R-peak in the ECG and the closest following peak in the PPG [<a href="#ref34">34</a>]. Of the 5 studies, 2 (40%) studies concatenated windows of the different modalities and then extracted the features [<a href="#ref20">20</a>,<a href="#ref50">50</a>] and 1 (20%) study concatenated windows whereafter a convolutional layer in a neural network is used to automatically extract features from the concatenated data [<a href="#ref19">19</a>].</p>
+</div>
+<div class="section">
+<a id="id145"><!-- named anchor --></a><h3 class="section-title">Model Construction Methods (Levels 7 and 8)</h3>
+<p id="id146">Another aspect that defines the model effectiveness relates to the type of models being constructed, which we categorized across both the benchmark and nonbenchmark studies (<a href="#table3">Table 3</a>). Most of the studies used a neural network, and most of them were nonsequential (eg, convolutional and multilayer perceptron). A noteworthy type is the spiking neural network [<a href="#ref51">51</a>,<a href="#ref52">52</a>], which is designed to be energy efficient and suitable for real-time cardiovascular monitoring in an embedded device. Although sequential models were specifically designed for sequence or time series, these types of models were used much less. Some studies had combined sequential and nonsequential neural network architectures [<a href="#ref17">17</a>,<a href="#ref19">19</a>,<a href="#ref32">32</a>,<a href="#ref42">42</a>,<a href="#ref46">46</a>,<a href="#ref53">53</a>]. After the neural networks, most of the models were classical machine learning methods, including linear models: support vector machines; decision trees; and similarity-based models, such as k-nearest neighbor classifiers. Furthermore, ensemble methods had been used that combined multiple simpler models to construct a more complex model [<a href="#ref22">22</a>,<a href="#ref28">28</a>,<a href="#ref44">44</a>,<a href="#ref50">50</a>,<a href="#ref54">54</a>-<a href="#ref56">56</a>]. Finally, 2 studies used models that explicitly exploit the hierarchical structure of medical time series data: a hierarchical Bayesian model [<a href="#ref27">27</a>] and a Multiple-Instance Learning via Embedded instance Selection model [<a href="#ref23">23</a>].</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="table3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id147">Types of machine learning models used in the studies.</p></div>
+<table frame="hsides" rules="groups" width="1000" cellpadding="5" cellspacing="0" border="1">
+<a id="id148"><!-- named anchor --></a><col width="680" span="1">
+<col width="320" span="1">
+<thead>
+<a id="id151"><!-- named anchor --></a><tr valign="top">
+<a id="id152"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id153"><!-- named anchor --></a>Model type</td>
+<td rowspan="1" colspan="1">
+<a id="id154"><!-- named anchor --></a>Number of times used</td>
+</tr>
+</thead>
+<tbody>
+<a id="id155"><!-- named anchor --></a><tr valign="top">
+<a id="id156"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>Nonsequential</td>
+<td rowspan="1" colspan="1">
+<a id="id158"><!-- named anchor --></a>30</td>
+</tr>
+<tr valign="top">
+<a id="id159"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id160"><!-- named anchor --></a>Classical</td>
+<td rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>20</td>
+</tr>
+<tr valign="top">
+<a id="id162"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>Ensemble</td>
+<td rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>9</td>
+</tr>
+<tr valign="top">
+<a id="id165"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id166"><!-- named anchor --></a>Sequential neural network</td>
+<td rowspan="1" colspan="1">
+<a id="id167"><!-- named anchor --></a>6</td>
+</tr>
+<tr valign="top">
+<a id="id168"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id169"><!-- named anchor --></a>Nonsequential + sequential neural network</td>
+<td rowspan="1" colspan="1">
+<a id="id170"><!-- named anchor --></a>5</td>
+</tr>
+<tr valign="top">
+<a id="id171"><!-- named anchor --></a><td rowspan="1" colspan="1">
+<a id="id172"><!-- named anchor --></a>Hierarchical</td>
+<td rowspan="1" colspan="1">
+<a id="id173"><!-- named anchor --></a>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+<a id="id174"><!-- named anchor --></a><h3 class="section-title">Validation (Levels 7 and 8)</h3>
+<p id="id175">The effectiveness of a model was heavily influenced by the number of samples with which the model had been trained. In phase 2 and phase 3 studies, a priori power analyses were performed to estimate the required sample size per group or class to observe an effect. It was empirically shown by Quintana [<a href="#ref73">73</a>] that for heart rate variability studies, an effect size of 0.25, 0.5, and 0.9 corresponded to a low, medium, and high effect, respectively. The corresponding sample sizes were 233, 61, and 21 for 80% statistical power and 312, 82, and 28 for a 90% statistical power. We considered nonbenchmark studies with a sufficient sample size per group or class, from which 9 studies remained. From the remaining 9 studies, a power of 90% was reached with small [<a href="#ref19">19</a>,<a href="#ref20">20</a>,<a href="#ref24">24</a>] and large [<a href="#ref16">16</a>,<a href="#ref30">30</a>,<a href="#ref37">37</a>,<a href="#ref47">47</a>] effect sizes, and 2 studies [<a href="#ref29">29</a>,<a href="#ref32">32</a>] achieved 80% power with a large effect size.</p>
+<p id="id176">This showed that studies generally choose a train sample size (per group or class) that is too small to find a significant effect based on a priori power analysis.</p>
+<p id="id177">In contrast to a priori power analysis, the purpose of model validation is to retrospectively analyze the performance of the model on data it has not seen before, that is, to assess the generalization error of the model. The included studies chose from 2 validation schemes: cross-validation and holdout [<a href="#ref74">74</a>] (<a href="#figure8">Figure 8</a>), although 5 studies [<a href="#ref16">16</a>,<a href="#ref20">20</a>,<a href="#ref28">28</a>,<a href="#ref64">64</a>,<a href="#ref65">65</a>] did not report the validation method. When splitting data into training and testing, one needed to ensure nonoverlapping grouping and stratification of the data (<a href="#figure8">Figure 8</a>). With nonoverlapping grouping [<a href="#ref75">75</a>], one ensured that the same group of data did not appear in both the training and test sets, for example, avoiding that data from the same participant was in both the training and test set, albeit the samples might be from different periods. With stratification, one ensured that both the training samples and the test samples exhibit a similar proportion of samples for an arbitrary variable. For example, it was important to keep the proportion of men and women consistent or to ensure that the proportion of sensor samples representing normal rhythm and arrhythmia is equal. For progressing to TRL 7, 4 studies used leave-one-subject-out group cross-validation [<a href="#ref18">18</a>,<a href="#ref23">23</a>,<a href="#ref27">27</a>,<a href="#ref45">45</a>] and 4 other types of group cross-validation [<a href="#ref29">29</a>,<a href="#ref30">30</a>,<a href="#ref37">37</a>,<a href="#ref44">44</a>]. Ideally, a stratified group cross-validation is used, but none of the studies used this. In addition to validation strategies, it is important to use replication data, that is, completely independently acquired data, which was only done in 11 [<a href="#ref17">17</a>,<a href="#ref18">18</a>,<a href="#ref21">21</a>,<a href="#ref24">24</a>,<a href="#ref25">25</a>,<a href="#ref31">31</a>,<a href="#ref33">33</a>,<a href="#ref35">35</a>,<a href="#ref36">36</a>,<a href="#ref40">40</a>,<a href="#ref70">70</a>] studies.</p>
+<p id="id178">It is important to realize that data sets could suffer from highly imbalanced classes. An example is when there are proportionally more samples representing sinus rhythm than atrial fibrillation. In this case, the model may be biased to focus more on correctly classifying sinus rhythm, as this contributed more to higher overall classification performance. However, this led to poor characterization of cardiovascular disease, as the corresponding samples would be misclassified more often than sinus rhythm. In all, 6 studies [<a href="#ref32">32</a>,<a href="#ref41">41</a>,<a href="#ref59">59</a>-<a href="#ref62">62</a>] mitigated this by (randomly) up-sampling the minority class. A total of 4 studies [<a href="#ref22">22</a>,<a href="#ref29">29</a>,<a href="#ref48">48</a>,<a href="#ref52">52</a>] used the synthetic minority oversampling technique [<a href="#ref76">76</a>].</p>
+<p id="id179">Finally, it is noteworthy that some studies [<a href="#ref41">41</a>-<a href="#ref43">43</a>,<a href="#ref45">45</a>,<a href="#ref49">49</a>,<a href="#ref51">51</a>,<a href="#ref63">63</a>] constructed a semi–patient-specific model. This could be beneficial, as there were large differences in heart rate data among individuals [<a href="#ref71">71</a>]. This was done by training only a small number of samples from the target patient together with data from other patients. The test set consisted of the remainder of the target patient’s samples, which caused overlapping grouping between the training and test sets.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="figure8"><!-- named anchor --></a><h5 class="label">Figure 8</h5>
+<div class="caption"><p class="first" id="id180">Venn diagram of validation methods used in the studies. CV: cross-validation; G: grouping; H: holdout; S: stratification.</p></div>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="id181"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<div class="section">
+<a id="id182"><!-- named anchor --></a><h3 class="section-title">Principal Findings</h3>
+<p id="id183">We have shown that machine learning–based technologies that detect cardiovascular outcomes using wearables, bottleneck at TRL5, most dominantly on the requirement of proper realistic data acquisition. To progress to the next level of technology readiness, models need to become operational (either interventional or observational) in a health care system. A study by Komorowski [<a href="#ref13">13</a>] supports these observations and defines the lack of testing or deployment in clinical practice as an <i>information bottleneck</i>, which often occurs in medical machine learning. Moreover, half of the eligible studies used a benchmark data set (27/55, 49%), and the most common data set [<a href="#ref77">77</a>] was used 18 times. We argue that overusing a data set can introduce bias and overfitting, effectively making such a data set useless, thereby increasing the need for realistic data sets even more.</p>
+<p id="id184">The usefulness of wearable cardiovascular diagnostics lies in free-living and active situations because the low burden for wearing them and the 24/7 monitoring abilities. Placement of the sensor on the wrist does fit these criteria best. Moreover, commercial-grade smartwatches can measure multimodal data with low battery consumption. This makes these types of sensors promising to use wearable technology for cardiovascular diagnostics. However, most studies do not fully demonstrate this potential. Moreover, very few prognostic models have been proposed so that cardiovascular disease prevention using wearable machine learning is, in fact, not (yet) well researched.</p>
+<p id="id185">Although most studies include detailed baseline characteristics of the study population, it is worrisome that the data were not described with a similar level of consistency, structure, and detail. For example, some studies (explicitly or implicitly) have reported acquiring continuous wearable data, but participants do need to take off the device for charging or otherwise have a low compliance rate. These studies then fail to report these details; thus, it is unknown how <i>continuous</i> the data, that is, the length of the recording duration, actually is. We believe that, analogous to the baseline characteristics, data characteristics should be reported in detail to predict how a model will generalize when deployed in a particular setting and environment.</p>
+<p id="id186">The segmentation of the time series data in the windows was performed with a fixed window size in all studies. None of the studies have considered a variable-length or adaptive window size. Furthermore, no previous physiological knowledge has been used to determine informative timescales. For example, the exercise-recovery curve (usually obtained from an exercise tolerance test) is often used to quantify cardiovascular characteristics during activity. This describes a participant’s ability to adaptively increase the heart rate during exercise and recover it back to a resting level after exercise. Studies that had access to accelerometer data did not look at similar timescale events. To this end, we believe that identifying informative timescales within the time series and incorporating this in the model can be valuable to detect cardiovascular diseases.</p>
+<p id="id187">Remarkably, studies primarily prefer nonsequential neural networks over sequential ones, although the latter is designed for time series data. Similarly, the hierarchical structure of the data has rarely been exploited in the published models. We advocate that much more emphasis should be on the exploration of these models, although this also requires larger data sets as these methods are data hungry.</p>
+<p id="id188">Although some studies make use of a healthy control group, most do not include a group with <i>no arrhythmia</i>, <i>sinus rhythm</i>, or a similar group, although diagnosing a participant having no arrhythmia at all is just as, or even more powerful, than detecting a specific heart problem. From a machine learning point of view, this can be seen as a one-class classification (outlier detection) problem: instead of predicting a diverse set of clinical outcomes, the focus of these models lies in modeling the <i>normal class</i> as good as possible and consider deviating data as abnormal. Thus, this would be an interesting avenue to explore. In general, it is important to have clearly defined data annotations. For example, some studies have annotated sinus rhythm events in patients with arrhythmia. One might question whether this is similar to annotated sinus rhythm events for nonarrhythmic individuals and whether a machine learning–based approach might fail by mixing these annotations.</p>
+<p id="id189">We have shown that studies use a training sample size that is too small according to a priori power analysis. Sample size determination in machine learning [<a href="#ref78">78</a>] is focused on posthoc methods, such as learning curves [<a href="#ref79">79</a>]. Prehoc methods, such as power analysis, are difficult in machine learning, as there are many factors that influence the effect size of the model. Furthermore, we have discussed different validation schemes that can be used. An important observation is that a significant number of studies do not validate their model using a nonoverlapping grouping strategy. We believe that validation based on nonoverlapping grouping is crucial for cardiovascular machine learning and any medical machine learning validation in general. Without, experiments will simply suggest performances that are too optimistic.</p>
+<p id="id190">We have shown that only a few papers used multimodal data and even less considered features across modalities. In our view, this is a missed opportunity; there is valuable information to be extracted when combining features from different modalities. An example is the correlation between heart rate and activity. When the heart rate changes abruptly without activity, this can indicate an interesting segment for a model to detect heart problems. As another example, 1 study used timestamps as features that can provide information about seasonality in longitudinal data. This could be used to inspect (change in) circadian rhythm as a biomarker for cardiovascular disease. Interestingly, ECG morphology is well researched and used as a feature. However, no analogous decomposition of PPG signals is used in the studies. Therefore, we advocate a similar exploration of the PPG signals.</p>
+<p id="id191">Finally, we argue that in addition to the technical shortcomings discussed, societal factors (under the umbrella term ethical or socially responsible AI) must also be addressed [<a href="#ref80">80</a>]. From the patients’ point of view, there are concerns regarding reliability, privacy, and especially fairness and AI bias of the system [<a href="#ref81">81</a>]. Our findings of the lack of realistic data and the imbalance in data link to the latter, as it introduces sampling bias [<a href="#ref82">82</a>], for example. A study by Parikh et al [<a href="#ref83">83</a>] refers to this as a statistical bias and argues that, especially in the medical field, there can also be social biases that are caused by inequity of patients’ access to health care (technology) or a combination of both, for example, missing data in certain subgroups. Efforts should be made to remove bias in data (before exposing to an AI model) [<a href="#ref80">80</a>] and in the model itself. This referred to as <i>debiasing</i> [<a href="#ref80">80</a>,<a href="#ref82">82</a>,<a href="#ref84">84</a>].</p>
+<p id="id192">From the physicians’ point of view, the performance of machine learning models is potentially reaching that of health care professionals’ point of view [<a href="#ref85">85</a>,<a href="#ref86">86</a>], which brings techno-dystopic fear of rivalry between AI and human experts. The study by Di Ieva [<a href="#ref87">87</a>] offers an alternative view by stating that this fear can be overcome by considering the success of multidisciplinary teams in modern medicine and that in line with that paradigm, AI is an assisting expert in that team, rather than a competitor.</p>
+<p id="id193">As a final note, we would like to emphasize that we did not fully perform a quality assessment of the risk of bias in the clinical data acquisition of the studies. Instead, we used the TRL to capture these risks from a machine learning perspective and describe these limitations throughout. To this end, studies with low methodological quality did not achieve a higher TRL. In addition, we did not consider conference papers as journal papers are more comprehensive and elaborate in general. However, in the field of machine learning, conferences are used to publish completed research (not limited to an abstract as in other fields). Therefore, we might have missed new developments from conference papers that have been described in detail, yet not fully scrutinized as in journal papers.</p>
+</div>
+<div class="section">
+<a id="id194"><!-- named anchor --></a><h3 class="section-title">Conclusions</h3>
+<p id="id195">TRL has enabled us to perform a structured assessment of the (required) progression of machine learning–based wearable technology for deployment in an operational setting. We discussed that the promise is mainly achieved by acquiring longitudinal data from participants in a free-living environment, which is made possible because of low–energy-consuming sensors that are easy to wear. However, we have also observed that none of the studies detect or predict cardiovascular outcomes on realistic data, which limits TRL of this technology. In addition, we identified many other aspects that hamper deployment progression, which need to be addressed before the promise of using wearable technology for cardiovascular disease detection and prevention becomes reality. On the other hand, of the 55 included studies, 6 (11%) were published before 2018 and the remaining 49 (89%) after. Therefore, we expect a large increase in research popularity in the coming years.</p>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id200"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id196"><!-- named anchor --></a><p id="id197"><span class="generated">[8]<span class="generated"> Contributed by</span></span> Authors' Contributions: The literature search and study inclusion, formal analysis, conceptualization, and the writing of original draft and preparation of the figures were carried out by ANJ. Supervision, conceptualization, and writing—review and editing—were carried out by DT, MR, and IVDB.</p>
+</div>
+<div class="footnote">
+<a id="id198"><!-- named anchor --></a><p id="id199"><span class="generated">[9]</span> Conflicts of Interest: None declared.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id203"><!-- named anchor --></a><h2 class="main-title">Appendices</h2>
+<div class="panel">
+<a id="app1"><!-- named anchor --></a><h5 class="label">Multimedia Appendix 1</h5>
+<p id="id201">Search queries performed in the three electronic databases.</p>
+<a id="d95e1168" href="medinform_v10i1e29434_app1.docx"></a>
+</div>
+<div class="panel">
+<a id="app2"><!-- named anchor --></a><h5 class="label">Multimedia Appendix 2</h5>
+<p id="id202">Tables of study characteristics.</p>
+<a id="d95e1172" href="medinform_v10i1e29434_app2.docx"></a>
+</div>
+</div>
+<div class="back-section">
+<a id="id220"><!-- named anchor --></a><h4 class="block-title">Abbreviations</h4>
+<div class="def-list">
+<a id="id204"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id205">
+<div class="def-term cell" id="abb1"><p>AI</p></div>
+<div class="def-def cell" id="id206"><p class="first" id="id207">artificial intelligence</p></div>
+</div>
+<div class="def-item row" id="id208">
+<div class="def-term cell" id="abb2"><p>ECG</p></div>
+<div class="def-def cell" id="id209"><p class="first" id="id210">electrocardiogram</p></div>
+</div>
+<div class="def-item row" id="id211">
+<div class="def-term cell" id="abb3"><p>PPG</p></div>
+<div class="def-def cell" id="id212"><p class="first" id="id213">photoplethysmogram</p></div>
+</div>
+<div class="def-item row" id="id214">
+<div class="def-term cell" id="abb4"><p>PRISMA</p></div>
+<div class="def-def cell" id="id215"><p class="first" id="id216">Preferred Reporting Items for Systematic Reviews and Meta-Analyses</p></div>
+</div>
+<div class="def-item row" id="id217">
+<div class="def-term cell" id="abb5"><p>TRL</p></div>
+<div class="def-def cell" id="id218"><p class="first" id="id219">technology readiness level</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id221"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="section ref-list">
+<a id="id221"><!-- named anchor --></a><div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1</span> <a id="ref1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id222"><!-- named anchor --></a>A RizwanA ZohaIB MabroukHM SabbourAS Al-SumaitiA AlomainyMA ImranQH AbbasiA review on the state of the art in atrial fibrillation detection enabled by machine learningIEEE Rev Biomed Eng2021142193910.1109/rbme.2020.297650732112683</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2</span> <a id="ref2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id223"><!-- named anchor --></a>T PereiraN TranK GadhoumiMM PelterDH DoRJ LeeR ColoradoK MeiselX HuPhotoplethysmography based atrial fibrillation detection: a reviewNPJ Digit Med202033<a target="xrefwindow" href="http://europepmc.org/abstract/MED/31934647" id="id224">http://europepmc.org/abstract/MED/31934647</a>10.1038/s41746-019-0207-93193464720731934647PMC6954115</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3</span> <a id="ref3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id225"><!-- named anchor --></a>S ChuaL ChenL LienH LoZ LiaoS ChaoC ChuangC ChiuComparison of arrhythmia detection by 24-hour holter and 14-day continuous electrocardiography patch monitoringActa Cardiol Sin2020363251910.6515/ACS.202005_36(3).20190903A32425440PMC7220965</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4</span> <a id="ref4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id226"><!-- named anchor --></a>S PradhanJA RobinsonJK ShivapourCS SnyderAmbulatory arrhythmia detection with ZIO® XT Patch in pediatric patients: a comparison of devicesPediatr Cardiol2019061405921410.1007/s00246-019-02089-03093750210.1007/s00246-019-02089-030937502</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5</span> <a id="ref5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id227"><!-- named anchor --></a>DH BrahmbhattMR CowieRemote management of heart failure: an overview of telemonitoring technologiesCard Fail Rev20190524528692<a target="xrefwindow" href="http://europepmc.org/abstract/MED/31179018" id="id228">http://europepmc.org/abstract/MED/31179018</a>10.15420/cfr.2019.5.33117901831179018PMC6545972</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6</span> <a id="ref6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id229"><!-- named anchor --></a>A van StipdonkS VanbelleTI HorstJ LuermansM MeineA MaassA AuricchioF PrinzenK VernooyLarge variability in clinical judgement and definitions of left bundle branch block to identify candidates for cardiac resynchronisation therapyInt J Cardiol20190701286615<a target="xrefwindow" href="https://linkinghub.elsevier.com/retrieve/pii/S0167-5273(18)32345-3" id="id230">https://linkinghub.elsevier.com/retrieve/pii/S0167-5273(18)32345-3</a>10.1016/j.ijcard.2019.01.05130661850S0167-5273(18)32345-330661850</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7</span> <a id="ref7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id231"><!-- named anchor --></a>PJ SlomkaD DeyA SitekM MotwaniDS BermanG GermanoCardiac imaging: working towards fully-automated machine analysis and interpretationExpert Rev Med Devices20170313143197212<a target="xrefwindow" href="http://europepmc.org/abstract/MED/28277804" id="id232">http://europepmc.org/abstract/MED/28277804</a>10.1080/17434440.2017.13000572827780428277804PMC5450918</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8</span> <a id="ref8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id233"><!-- named anchor --></a>MT TrockelNK MenonSG RoweMT StewartR SmithM LuPK KimMA QuinnE LawrenceD MarchalikH FarleyP NormandM FelderJC DudleyTD ShanafeltAssessment of physician sleep and wellness, burnout, and clinically significant medical errorsJAMA Netw Open20201201312e2028111<a target="xrefwindow" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/10.1001/jamanetworkopen.2020.28111" id="id234">https://jamanetwork.com/journals/jamanetworkopen/fullarticle/10.1001/jamanetworkopen.2020.28111</a>10.1001/jamanetworkopen.2020.2811133284339277377733284339PMC12064096</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9</span> <a id="ref9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id235"><!-- named anchor --></a>C KrittanawongAJ RogersKW JohnsonZ WangMP TurakhiaJL HalperinSM NarayanIntegration of novel monitoring devices with machine learning technology for scalable cardiovascular managementNat Rev Cardiol2021021827591<a target="xrefwindow" href="http://europepmc.org/abstract/MED/33037325" id="id236">http://europepmc.org/abstract/MED/33037325</a>10.1038/s41569-020-00445-93303732510.1038/s41569-020-00445-933037325PMC7545156</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10</span> <a id="ref10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id237"><!-- named anchor --></a>K BayoumyM GaberA ElshafeeyO MhaimeedEH DineenFA MarvelSS MartinED MuseMP TurakhiaKG TarakjiMB ElshazlySmart wearable devices in cardiovascular care: where we are and how to move forwardNat Rev Cardiol2021080418858199<a target="xrefwindow" href="http://europepmc.org/abstract/MED/33664502" id="id238">http://europepmc.org/abstract/MED/33664502</a>10.1038/s41569-021-00522-73366450210.1038/s41569-021-00522-733664502PMC7931503</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11</span> <a id="ref11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id239"><!-- named anchor --></a>GD GiebelC GisselAccuracy of mHealth devices for atrial fibrillation screening: systematic reviewJMIR Mhealth Uhealth2019061676e13641<a target="xrefwindow" href="https://mhealth.jmir.org/2019/6/e13641/" id="id240">https://mhealth.jmir.org/2019/6/e13641/</a>10.2196/1364131199337v7i6e1364131199337PMC6598422</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12</span> <a id="ref12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id241"><!-- named anchor --></a>M HéderFrom NASA to EU: the evolution of the TRL Scale in public sector innovationInnov J2017222123<a target="xrefwindow" href="https://eprints.sztaki.hu/9204/" id="id242">https://eprints.sztaki.hu/9204/</a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13</span> <a id="ref13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id243"><!-- named anchor --></a>M KomorowskiArtificial intelligence in intensive care: are we there yet?Intens Care Med201909459129830010.1007/s00134-019-05662-63123663810.1007/s00134-019-05662-631236638</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14</span> <a id="ref14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id244"><!-- named anchor --></a>LM FleurenP ThoralD ShillanA ErcolePW ElbersRight Data Right Now CollaboratorsMachine learning in intensive care medicine: ready for take-off?Intens Care Med2020074671486810.1007/s00134-020-06045-y3239974710.1007/s00134-020-06045-y32399747</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15</span> <a id="ref15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id245"><!-- named anchor --></a>MJ PageJE McKenziePM BossuytI BoutronTC HoffmannCD MulrowL ShamseerJM TetzlaffEA AklSE BrennanR ChouJ GlanvilleJM GrimshawA HróbjartssonMM LaluT LiEW LoderE Mayo-WilsonS McDonaldLA McGuinnessLA StewartJ ThomasAC TriccoVA WelchP WhitingD MoherThe PRISMA 2020 statement: an updated guideline for reporting systematic reviewsBr Med J20210329372n71<a target="xrefwindow" href="http://www.bmj.com/lookup/pmidlookup?view=long&amp;pmid=33782057" id="id246">http://www.bmj.com/lookup/pmidlookup?view=long&amp;pmid=33782057</a>10.1136/bmj.n713378205733782057PMC8005924</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16</span> <a id="ref16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id247"><!-- named anchor --></a>J StehlikC SchmalfussB BozkurtJ Nativi-NicolauP WohlfahrtS WegerichK RoseR RayR SchofieldA DeswalJ SekaricS AnandD RichardsH HansonM PipkeM PhamContinuous wearable monitoring analytics predict heart failure hospitalization: the LINK-HF multicenter studyCirc Heart Fail202003133e00651310.1161/CIRCHEARTFAILURE.119.0065133209350632093506</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17</span> <a id="ref17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id248"><!-- named anchor --></a>J Torres-SotoEA AshleyMulti-task deep learning for cardiac rhythm detection in wearable devicesNPJ Digit Med202009093111610.1038/s41746-020-00320-410.1038/s41746-020-00320-43449734110.1038/s41746-020-00320-432964139PMC7481177</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18</span> <a id="ref18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id249"><!-- named anchor --></a>SK BasharD HanF ZieneddinE DingTP FitzgibbonsAJ WalkeyDD McManusB JavidiKH ChonNovel density poincaré plot based machine learning method to detect atrial fibrillation from premature atrial/ventricular contractionsIEEE Trans Biomed Eng2021026824486010.1109/TBME.2020.30043103274603532746035PMC7863548</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19</span> <a id="ref19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id250"><!-- named anchor --></a>GH TisonJM SanchezB BallingerA SinghJE OlginMJ PletcherE VittinghoffES LeeSM FanRA GladstoneC MikellN SohoniJ HsiehGM MarcusPassive detection of atrial fibrillation using a commercially available smartwatchJAMA Cardiol20180501354091610.1001/jamacardio.2018.013629562087267536429562087PMC5875390</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20</span> <a id="ref20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id251"><!-- named anchor --></a>J WasserlaufC YouR PatelA ValysD AlbertR PassmanSmartwatch performance for the detection and quantification of atrial fibrillationCirc Arrhythm Electrophysiol201906126e006834<a target="xrefwindow" href="https://www.ahajournals.org/doi/abs/10.1161/CIRCEP.118.006834?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%3dpubmed" id="id252">https://www.ahajournals.org/doi/abs/10.1161/CIRCEP.118.006834?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%3dpubmed</a>10.1161/CIRCEP.118.0068343111323431113234</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21</span> <a id="ref21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id253"><!-- named anchor --></a>AJ MajumderYA ElSaadanyR YoungDR UcciAn energy efficient wearable smart IoT system to predict cardiac arrestAdv Hum-Comput Interact20190212201912110.1155/2019/1507465</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22</span> <a id="ref22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id254"><!-- named anchor --></a>K LeeS KimHO ChoiJ LeeY NamAnalyzing electrocardiogram signals obtained from a nymi band to detect atrial fibrillationMultimed Tools Appl201812177923-24159859910.1007/s11042-018-7075-1</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23</span> <a id="ref23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id255"><!-- named anchor --></a>EM GreenR van MourikC WolfusSB HeitnerO DurMJ SemigranMachine learning detection of obstructive hypertrophic cardiomyopathy using a wearable biosensorNPJ Digit Med2019624215710.1038/s41746-019-0130-010.1038/s41746-019-0130-03130440313031304403PMC6591226</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24</span> <a id="ref24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id256"><!-- named anchor --></a>T PereiraC DingK GadhoumiN TranRA ColoradoK MeiselX HuDeep learning approaches for plethysmography signal quality assessment in the presence of atrial fibrillationPhysiol Meas201912274012125002<a target="xrefwindow" href="http://europepmc.org/abstract/MED/31766037" id="id257">http://europepmc.org/abstract/MED/31766037</a>10.1088/1361-6579/ab5b843176603731766037PMC7198064</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25</span> <a id="ref25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id258"><!-- named anchor --></a>E ChenJ JiangR SuM GaoS ZhuJ ZhouY HuoA new smart wristband equipped with an artificial intelligence algorithm to detect atrial fibrillationHeart Rhythm202005175 Pt B84753<a target="xrefwindow" href="https://linkinghub.elsevier.com/retrieve/pii/S1547-5271(20)30089-8" id="id259">https://linkinghub.elsevier.com/retrieve/pii/S1547-5271(20)30089-8</a>10.1016/j.hrthm.2020.01.03432354449S1547-5271(20)30089-832354449</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26</span> <a id="ref26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id260"><!-- named anchor --></a>W ChouP WuC FangY YenB LinDesign of smart brain oxygenation monitoring system for estimating cardiovascular disease severityIEEE Access2020898422910.1109/access.2020.2997865</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27</span> <a id="ref27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id261"><!-- named anchor --></a>M AltiniP CasaleJ PendersO AmftCardiorespiratory fitness estimation in free-living using wearable sensorsArtif Intell Med20160368374610.1016/j.artmed.2016.02.00226948954S0933-3657(16)30059-826948954</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28</span> <a id="ref28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id262"><!-- named anchor --></a>FP AkbulutA AkanA smart wearable system for short-term cardiovascular risk assessment with emotional dynamicsMeasurement2018111282374610.1016/j.measurement.2018.06.050</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29</span> <a id="ref29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id263"><!-- named anchor --></a>VD CorinoR LaureantiL FerrantiG ScarpiniF LombardiLT MainardiDetection of atrial fibrillation episodes using a wristband devicePhysiol Meas2017053857879910.1088/1361-6579/aa5dd72815143428151434</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30</span> <a id="ref30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id264"><!-- named anchor --></a>S KwonJ HongE ChoiB LeeC BaikE LeeE JeongB KooS OhY YiDetection of atrial fibrillation using a ring-type wearable device (CardioTracker) and deep learning analysis of photoplethysmography signals: prospective observational proof-of-concept studyJ Med Internet Res20200521225e16443<a target="xrefwindow" href="https://www.jmir.org/2020/5/e16443/" id="id265">https://www.jmir.org/2020/5/e16443/</a>10.2196/1644332348254v22i5e1644332348254PMC7273241</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31</span> <a id="ref31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id266"><!-- named anchor --></a>LJ MenaVG FélixA OchoaR OstosE GonzálezJ AspuruP VelardeGE MaestreMobile personal health monitoring for automated classification of electrocardiogram signals in elderlyComput Math Methods Med20182018912805410.1155/2018/912805410.1155/2018/91280543000272530002725PMC5996445</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32</span> <a id="ref32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id267"><!-- named anchor --></a>E JeonK OhS KwonH SonY YunE JungMS KimA lightweight deep learning model for fast electrocardiographic beats classification with a wearable cardiac monitor: development and validation studyJMIR Med Inform2020031283e17037<a target="xrefwindow" href="https://medinform.jmir.org/2020/3/e17037/" id="id268">https://medinform.jmir.org/2020/3/e17037/</a>10.2196/1703732163037v8i3e1703732163037PMC7099397</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33</span> <a id="ref33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id269"><!-- named anchor --></a>Y XiaY XieA novel wearable electrocardiogram classification system using convolutional neural networks and active learningIEEE Access201977989800110.1109/access.2019.2890865</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34</span> <a id="ref34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id270"><!-- named anchor --></a>F MiaoX WangL YinY LiA wearable sensor for arterial stiffness monitoring based on machine learning algorithmsIEEE Sensors J201921519414263410.1109/jsen.2018.2880434</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35</span> <a id="ref35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id271"><!-- named anchor --></a>Y KimM MahmoodY LeeNK KimS KwonR HerbertD KimHC ChoW YeoStretchable hybrid electronics: all‐in‐one, wireless, stretchable hybrid electronics for smart, connected, and ambulatory physiological monitoring (Adv. Sci. 17/2019)Adv Sci20190904617197010410.1002/advs.201970104PMC672435931508289</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36</span> <a id="ref36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id272"><!-- named anchor --></a>A SharmaN GargS PatidarR San TanUR AcharyaAutomated pre-screening of arrhythmia using hybrid combination of Fourier-Bessel expansion and LSTMComput Biol Med20200512010375310.1016/j.compbiomed.2020.10375332421653S0010-4825(20)30130-X32421653</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37</span> <a id="ref37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id273"><!-- named anchor --></a>S KwonJ HongE ChoiE LeeDE HostalleroWJ KangB LeeE JeongB KooS OhY YiDeep learning approaches to detect atrial fibrillation using photoplethysmographic signals: algorithms development studyJMIR Mhealth Uhealth2019060676e12770<a target="xrefwindow" href="https://mhealth.jmir.org/2019/6/e12770/" id="id274">https://mhealth.jmir.org/2019/6/e12770/</a>10.2196/1277031199302v7i6e1277031199302PMC6592499</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38</span> <a id="ref38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id275"><!-- named anchor --></a>JJ OreskoH DuschlAC ChengA wearable smartphone-based platform for real-time cardiovascular disease detection via electrocardiogram processingIEEE Trans Inf Technol Biomed2010051437344010.1109/TITB.2010.20478652038860020388600</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39</span> <a id="ref39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id276"><!-- named anchor --></a>M SadrawiC LinY LinY HsiehC KuoJC ChienK HaraikawaMF AbbodJ ShiehArrhythmia evaluation in wearable ECG devicesSensors (Basel)2017102517112445<a target="xrefwindow" href="https://www.mdpi.com/resolver?pii=s17112445" id="id277">https://www.mdpi.com/resolver?pii=s17112445</a>10.3390/s1711244529068369s17112445PMC571286829068369</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40</span> <a id="ref40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id278"><!-- named anchor --></a>R AllamiPremature ventricular contraction analysis for real-time patient monitoringBiomed Signal Process Control201901473586510.1016/j.bspc.2018.08.040</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41</span> <a id="ref41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id279"><!-- named anchor --></a>Y ZhaoZ ShangY LianA 13.34 μW event-driven patient-specific ANN cardiac arrhythmia classifier for wearable ECG sensorsIEEE Trans Biomed Circuits Syst2020041421869710.1109/TBCAS.2019.29544793179440431794404</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42</span> <a id="ref42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id280"><!-- named anchor --></a>J WuF LiZ ChenY PuM ZhanA neural network-based ECG classification processor with exploitation of heartbeat similarityIEEE Access201971727748210.1109/access.2019.2956179</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43</span> <a id="ref43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id281"><!-- named anchor --></a>S SaadatnejadM OveisiM HashemiLSTM-based ECG classification for continuous monitoring on personal wearable devicesIEEE J Biomed Health Inform2019041524251552310.1109/JBHI.2019.29113673099045230990452</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44</span> <a id="ref44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id282"><!-- named anchor --></a>D SopicAmin AminifarAmir AminifarD AtienzaReal-time event-driven classification technique for early detection and prevention of myocardial infarction on wearable systemsIEEE Trans Biomed Circuits Syst2018101259829210.1109/tbcas.2018.284847730010598</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45</span> <a id="ref45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id283"><!-- named anchor --></a>X TangZ MaQ HuW TangA real-time arrhythmia heartbeats classification algorithm using parallel delta modulations and rotated Linear-Kernel support vector machinesIEEE Trans Biomed Eng2020046749788610.1109/TBME.2019.29261043126538231265382</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46</span> <a id="ref46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id284"><!-- named anchor --></a>K FengX PiH LiuK SunMyocardial infarction classification based on convolutional neural network and recurrent neural networkAppl Sci2019050799187910.3390/app9091879</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47</span> <a id="ref47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id285"><!-- named anchor --></a>AJ ShahN IsakadzeO LevantsevychA VestG CliffordS NematiDetecting heart failure using wearables: a pilot studyPhysiol Meas2020050441404400110.1088/1361-6579/ab7f933216393632163936PMC9199431</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48</span> <a id="ref48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id286"><!-- named anchor --></a>H ZhangZ DongJ GaoP LuZ WangAutomatic screening method for atrial fibrillation based on lossy compression of the electrocardiogram signalPhysiol Meas2020082141707500510.1088/1361-6579/ab979f3246460832464608</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49</span> <a id="ref49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id287"><!-- named anchor --></a>S HuangH LuClassification of temporal data using dynamic time warping and compressed learningBiomed Signal Process Control2020035710178110.1016/j.bspc.2019.101781</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50</span> <a id="ref50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id288"><!-- named anchor --></a>C YangND AranoffP GreenN TavassolianClassification of aortic stenosis using time-frequency features from chest cardio-mechanical signalsIEEE Trans Biomed Eng20200667616728310.1109/TBME.2019.29427413154570631545706</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51</span> <a id="ref51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id289"><!-- named anchor --></a>A AmirshahiM HashemiECG classification algorithm based on STDP and R-STDP neural networks for real-time monitoring on ultra low-power personal wearable devicesIEEE Trans Biomed Circuits Syst20191213614839310.1109/TBCAS.2019.29489203164744531647445</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52</span> <a id="ref52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id290"><!-- named anchor --></a>Z YanJ ZhouW WongEnergy efficient ECG classification with spiking neural networkBiomed Signal Process Control2021016310217010.1016/j.bspc.2020.102170</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53</span> <a id="ref53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id291"><!-- named anchor --></a>HW LuiKL ChowMulticlass classification of myocardial infarction with convolutional and recurrent neural networks for portable ECG devicesInformatics Med Unlocked201813263310.1016/j.imu.2018.08.002</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54</span> <a id="ref54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id292"><!-- named anchor --></a>M ShaoZ ZhouG BinY BaiS WuA wearable electrocardiogram telemonitoring system for atrial fibrillation detectionSensors (Basel)20200122203606<a target="xrefwindow" href="https://www.mdpi.com/resolver?pii=s20030606" id="id293">https://www.mdpi.com/resolver?pii=s20030606</a>10.3390/s2003060631979184s20030606PMC703820431979184</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55</span> <a id="ref55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id294"><!-- named anchor --></a>M GilaniJM EklundM MakrehchiAutomated detection of atrial fibrillation episode using novel heart rate variability featuresConf Proc IEEE Eng Med Biol Soc20161220163461410.1109/EMBC.2016.75914732826904528269045</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56</span> <a id="ref56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id295"><!-- named anchor --></a>Z MeiX GuH ChenW ChenAutomatic atrial fibrillation detection based on heart rate variability and spectral featuresIEEE Access20186535667510.1109/access.2018.2871220</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57</span> <a id="ref57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id296"><!-- named anchor --></a>M LownM BrownC BrownAM YueBN ShahSJ CorbettG LewithB StuartM MooreP LittleMachine learning detection of Atrial Fibrillation using wearable technologyPLoS One2020151e0227401<a target="xrefwindow" href="https://dx.plos.org/10.1371/journal.pone.0227401" id="id297">https://dx.plos.org/10.1371/journal.pone.0227401</a>10.1371/journal.pone.022740131978173PONE-D-19-0854531978173PMC6980577</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58</span> <a id="ref58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id298"><!-- named anchor --></a>Y XiaH ZhangL XuZ GaoH ZhangH LiuS LiAn automatic cardiac arrhythmia classification system with wearable electrocardiogramIEEE Access20186165293810.1109/ACCESS.2018.2807700</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59</span> <a id="ref59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id299"><!-- named anchor --></a>F MaJ ZhangW LiangJ XueAutomated classification of atrial fibrillation using artificial neural network for wearable devicesMath Probl Eng2020042520201610.1155/2020/9159158</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60</span> <a id="ref60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id300"><!-- named anchor --></a>N WangJ ZhouG DaiJ HuangY XieEnergy-efficient intelligent ECG monitoring for wearable devicesIEEE Trans Biomed Circuits Syst20191013511122110.1109/TBCAS.2019.29302153132912931329129</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61</span> <a id="ref61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id301"><!-- named anchor --></a>A ScirèF TropeanoA AnagnostopoulosI ChatzigiannakisFog-computing-based heartbeat detection and arrhythmia classification using machine learningAlgorithms201902021223210.3390/a12020032</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62</span> <a id="ref62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id302"><!-- named anchor --></a>X FanQ YaoY CaiF MiaoF SunY LiMultiscaled fusion of deep convolutional neural networks for screening atrial fibrillation from single lead short ECG recordingsIEEE J Biomed Health Inform20181122617445310.1109/JBHI.2018.28587893010669930106699</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63</span> <a id="ref63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id303"><!-- named anchor --></a>S KiranyazT InceM GabboujReal-time patient-specific ECG classification by 1-D convolutional neural networksIEEE Trans Biomed Eng2016036336647510.1109/TBME.2015.24685892628505426285054</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64</span> <a id="ref64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id304"><!-- named anchor --></a>D LaiY BuY SuX ZhangC MaA flexible multilayered dry electrode and assembly to single-lead ECG patch to monitor atrial fibrillation in a real-life scenarioIEEE Sensors J2020101520201229530610.1109/JSEN.2020.2999101</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65</span> <a id="ref65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id305"><!-- named anchor --></a>OT InanMB PouyanAQ JavaidS DowlingM EtemadiA DorierJA HellerAO BicenS RoyT De MarcoL KleinNovel wearable seismocardiography and machine learning algorithms can assess clinical status of heart failure patientsCirc Heart Fail201801111e004313<a target="xrefwindow" href="http://europepmc.org/abstract/MED/29330154" id="id306">http://europepmc.org/abstract/MED/29330154</a>10.1161/CIRCHEARTFAILURE.117.00431329330154CIRCHEARTFAILURE.117.00431329330154PMC5769154</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66</span> <a id="ref66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id307"><!-- named anchor --></a>M AlfarasMC SorianoS OrtínA fast machine learning model for ECG-based heartbeat classification and arrhythmia detectionFront Phys2019718710310.3389/fphy.2019.00103</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67</span> <a id="ref67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id308"><!-- named anchor --></a>J RubinS ParvanehA RahmanB ConroyS BabaeizadehDensely connected convolutional networks for detection of atrial fibrillation from short single-lead ECG recordingsJ Electrocardiol2018516S182110.1016/j.jelectrocard.2018.08.00830122456S0022-0736(18)30331-530122456</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68</span> <a id="ref68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id309"><!-- named anchor --></a>X XuH LiuECG heartbeat classification using convolutional neural networksIEEE Access202088614910.1109/ACCESS.2020.2964749</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69</span> <a id="ref69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id310"><!-- named anchor --></a>Y LiY PangJ WangX LiPatient-specific ECG classification by deeper CNN from generic to dedicatedNeurocomputing2018113143364610.1016/j.neucom.2018.06.068</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70</span> <a id="ref70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id311"><!-- named anchor --></a>Q MastoiT WahR Gopal RajReservoir computing based echo state networks for ventricular heart beat classificationAppl Sci201902189470210.3390/app9040702</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71</span> <a id="ref71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id312"><!-- named anchor --></a>G QuerP GoudaM GalarnykE TopolS SteinhublInter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: retrospective, longitudinal cohort study of 92,457 adultsPLoS One2020152e0227709<a target="xrefwindow" href="https://dx.plos.org/10.1371/journal.pone.0227709" id="id313">https://dx.plos.org/10.1371/journal.pone.0227709</a>10.1371/journal.pone.022770932023264PONE-D-19-2639332023264PMC7001906</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72</span> <a id="ref72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id314"><!-- named anchor --></a>G FritzDale Dubin: Rapid interpretation of EKG's. 6th edition. Cover Publishing Company/2000. Tampa, Fla., USA. 388 ppIntens Care Med200110302711183210.1007/s001340101100</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73</span> <a id="ref73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id315"><!-- named anchor --></a>DS QuintanaStatistical considerations for reporting and planning heart rate variability case-control studiesPsychophysiology201703543344910.1111/psyp.127982791416727914167</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74</span> <a id="ref74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id316"><!-- named anchor --></a>CM BishopPattern recoginiton and machine learningInformation Science and Statistics2006New YorkSpringer3233</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75</span> <a id="ref75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id317"><!-- named anchor --></a>DR RobertsV BahnS CiutiMS BoyceJ ElithG Guillera-ArroitaS HauensteinJJ Lahoz-MonfortB SchröderW ThuillerDI WartonBA WintleF HartigCF DormannCross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structureEcography201703034089132910.1111/ecog.02881</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76</span> <a id="ref76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id318"><!-- named anchor --></a>NV ChawlaKW BowyerLO HallWP KegelmeyerSMOTE: Synthetic Minority Over-sampling TechniqueJ Artif Intell Res20020601163215710.1613/jair.953</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77</span> <a id="ref77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id319"><!-- named anchor --></a>GB MoodyRG MarkThe impact of the MIT-BIH arrhythmia databaseIEEE Eng Med Biol Mag2001203455010.1109/51.9327241144620911446209</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78</span> <a id="ref78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id320"><!-- named anchor --></a>I BalkiA AmirabadiJ LevmanAL MartelZ EmersicB MedenA Garcia-PedreroSC RamirezD KongAR MoodyPN TyrrellSample-size determination methodologies for machine learning in medical imaging research: a systematic reviewCan Assoc Radiol J201911297043445310.1016/j.carj.2019.06.00231522841S0846-5371(19)30050-631522841</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79</span> <a id="ref79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id321"><!-- named anchor --></a>AN RichterTM KhoshgoftaarSample size determination for biomedical big data with limited labelsNetw Model Anal Health Inform Bioinforma202001119111310.1007/s13721-020-0218-0</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80</span> <a id="ref80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id322"><!-- named anchor --></a>L ChengKR VarshneyH LiuSocially responsible ai algorithms: issues, purposes, and challengesJ Artif Intell Res202108287111378110.1613/jair.1.12814</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81</span> <a id="ref81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id323"><!-- named anchor --></a>V TranC RiverosP RavaudPatients' views of wearable devices and AI in healthcare: findings from the ComPaRe e-cohortNPJ Digit Med2019614215310.1038/s41746-019-0132-y10.1038/s41746-019-0132-y3130439913231304399PMC6572821</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82</span> <a id="ref82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id324"><!-- named anchor --></a>KN VokingerS FeuerriegelAS KesselheimMitigating bias in machine learning for medicineCommun Med (London)20210823112510.1038/s43856-021-00028-w34522916PMC761165234522916</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83</span> <a id="ref83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id325"><!-- named anchor --></a>RB ParikhS TeepleAS NavatheAddressing bias in artificial intelligence in health careJ Am Med Assoc20191224322242377810.1001/jama.2019.1805831755905275619631755905</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84</span> <a id="ref84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id326"><!-- named anchor --></a>J ChenH DongX WangF FengM WangX HeBias and debias in recommender system: a survey and future directionsarXiv20202022-01-05<a target="xrefwindow" href="http://arxiv.org/abs/2010.03240" id="id327">http://arxiv.org/abs/2010.03240</a></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85</span> <a id="ref85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id328"><!-- named anchor --></a>X LiuL FaesAU KaleSK WagnerDJ FuA BruynseelsT MahendiranG MoraesM ShamdasC KernJR LedsamMK SchmidK BalaskasEJ TopolLM BachmannPA KeaneAK DennistonA comparison of deep learning performance against health-care professionals in detecting diseases from medical imaging: a systematic review and meta-analysisLancet Digit Health201910162719710.1016/s2589-7500(19)30123-233323251</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86</span> <a id="ref86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id329"><!-- named anchor --></a>WP van DoornPM StassenHF BorggreveMJ SchalkwijkJ StoffersO BekersSJ MeexA comparison of machine learning models versus clinical evaluation for mortality prediction in patients with sepsisPLoS One2021119161e0245157<a target="xrefwindow" href="https://dx.plos.org/10.1371/journal.pone.0245157" id="id330">https://dx.plos.org/10.1371/journal.pone.0245157</a>10.1371/journal.pone.024515733465096PONE-D-20-0906833465096PMC7815112</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87</span> <a id="ref87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id331"><!-- named anchor --></a>A Di IevaAI-augmented multidisciplinary teams: hype or hope?Lancet20191139410211180110.1016/s0140-6736(19)32626-131699402</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>mHealth</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>wearable</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>cardiovascular disease</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>digital health</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>review</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>mobile phone</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
