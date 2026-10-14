@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Huang, Bai, Wang, Hou, Li, Xia, Yan, Chen, Chang, and Li: The Application and Development of Deep Learning in Radiotherapy: A Systematic Review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Technol Cancer Res Treat</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Technol Cancer Res Treat</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3299</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>tct</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101140941</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>TCT</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Technology in Cancer Research &amp; Treatment</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>1533-0346</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1533-0338</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>SAGE Publications</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="10.1177_15330338211016386.pdf">10.1177_15330338211016386.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© The Author(s) 2021</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2021, SAGE Publications</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by-nc/4.0/<p id="id1">This article is distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 License (<a target="xrefwindow" href="https://creativecommons.org/licenses/by-nc/4.0/" id="id2">https://creativecommons.org/licenses/by-nc/4.0/</a>) which permits non-commercial use, reproduction and distribution of the work without further permission provided the original work is attributed as specified on the SAGE and Open Access pages (<a target="xrefwindow" href="https://us.sagepub.com/en-us/nam/open-access-at-sage" id="id3">https://us.sagepub.com/en-us/nam/open-access-at-sage</a>).</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>25 November 2020</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>29 March 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>19 April 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>18 June 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>20</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>372632<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>15330338211016386</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8216350</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8216350.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8216350</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8216350</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>34142614</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1177/15330338211016386</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>10.1177_15330338211016386</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>ten thousand talent plans for young top-notch talents of yunnan provincehttps://doi.org/10.13039/501100018576</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>No.L-2018001</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">The Application and Development of Deep Learning in Radiotherapy: A Systematic Review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Danju Huang<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Han Bai<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Li Wang<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Yu Hou<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Lan Li<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Yaoxiong Xia<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Zhirui Yan<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a>Wenrui Chen<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id12"><!-- named anchor --></a>Li Chang<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span><span class="generated">[</span><a href="#corresp1-15330338211016386"><span class="warning">{ label needed for corresp[@id='corresp1-15330338211016386'] }</span></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id13"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0001-5874-0122<span class="generated">] </span>Wenhui Li<span class="generated">[</span><a href="#aff1-15330338211016386">1</a><span class="generated">]</span><span class="generated">[</span><a href="#corresp1-15330338211016386"><span class="warning">{ label needed for corresp[@id='corresp1-15330338211016386'] }</span></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1-15330338211016386"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>Department of Radiation Oncology, 531840The Third Affiliated Hospital of Kunming Medical University, Yunnan Cancer Hospital, Kunming, Yunnan, China</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id14"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="corresp1-15330338211016386"><!-- named anchor --></a>Correspondence to: </span>Li Chang, PhD, and Wenhui Li, PhD, Department of Radiation Oncology, The Third Affiliated Hospital of Kunming Medical University, Yunnan Cancer Hospital, Kunming, Yunnan, China. Email: <a href="mailto:lichang99@aliyun.com">lichang99@aliyun.com</a>; <a href="mailto:wenhuili96@163.com">wenhuili96@163.com</a>
+</p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id15">With the massive use of computers, the growth and explosion of data has greatly promoted the development of artificial intelligence (AI). The rise of deep learning (DL) algorithms, such as convolutional neural networks (CNN), has provided radiation oncologists with many promising tools that can simplify the complex radiotherapy process in the clinical work of radiation oncology, improve the accuracy and objectivity of diagnosis, and reduce the workload, thus enabling clinicians to spend more time on advanced decision-making tasks. As the development of DL gets closer to clinical practice, radiation oncologists will need to be more familiar with its principles to properly evaluate and use this powerful tool. In this paper, we explain the development and basic concepts of AI and discuss its application in radiation oncology based on different task categories of DL algorithms. This work clarifies the possibility of further development of DL in radiation oncology.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="section1-15330338211016386"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id16">With the massive use of computers, the growth and explosion of data has greatly promoted the development of artificial intelligence (AI). In recent years, AI has been used widely in the medical field to analyze data in pathology, radiology, cardiology, oncology, genomics, and pharmacology to better provide information for diseases prediction,<sup><a href="#bibr1-15330338211016386">1</a><a href="#bibr2-15330338211016386">2</a><a href="#bibr3-15330338211016386">3</a>-<a href="#bibr4-15330338211016386">4</a></sup> screening,<sup><a href="#bibr5-15330338211016386">5</a></sup> diagnosis,<sup><a href="#bibr6-15330338211016386">6</a>,<a href="#bibr7-15330338211016386">7</a></sup> treatment,<sup><a href="#bibr8-15330338211016386">8</a></sup> prognosis, health management, and drug development.<sup><a href="#bibr9-15330338211016386">9</a></sup> The various applied research currently underway may lead to the increased use of AI by clinicians, in particular, radiation oncologists.<sup><a href="#bibr10-15330338211016386">10</a></sup> The current clinical practice is both time-consuming and extremely subjective, and the rise of deep learning (DL) algorithms, such as convolutional neural networks (CNN), can simplify the complex radiotherapy work process in the clinical work of radiation oncology, including image fusion, delineation of clinical target volume (CTV), and organ-at-risk (OAR), automatic planning (AP), dose distribution prediction, and outcome prediction.<sup><a href="#bibr11-15330338211016386">11</a></sup> The application of DL not only improves the accuracy and objectivity of diagnosis but also reduces the workload, thus enabling clinicians to spend more time on advanced decision-making tasks. As the development of DL gets closer to clinical practice, radiation oncologists will need to be familiar with its principles to properly evaluate and use this powerful tool. We explain the development and basic concepts of AI and discuss its application in radiation oncology based on different task categories of DL algorithms. This work clarifies the possibility of further development of DL in radiation oncology.</p>
+<div class="section">
+<a id="section2-15330338211016386"><!-- named anchor --></a><h3 class="section-title">Basic Concepts</h3>
+<p id="id17"><b>Artificial intelligence (AI):</b> AI is a broad general term used to encompass various subdomains that are used specifically to create algorithms to perform tasks that mimic human intelligence.<sup><a href="#bibr12-15330338211016386">12</a></sup>
+</p>
+<p id="id18"><b>Machine learning (ML):</b> ML belongs to a subfield of AI and is the primary method used to realize AI. ML can provide algorithms, which can build mathematical models based on the collected data. These mathematical models map the input data to the desired output. These input elements can be any sequence of images, numbers, and classification data.<sup><a href="#bibr13-15330338211016386">13</a></sup> ML algorithms are divided into supervised learning, unsupervised learning, reinforcement learning, integrated learning, and DL. Among them, the input data of supervised learning contains tutor signals, which use probability function, algebraic function or artificial neural network as basis function model, adopt iterative calculation method, and learn result as function. Unsupervised learning is that there is no tutor signal in the input data, and the clustering method is adopted, and the learning result is the category. Typical unsupervised learning includes discovery learning, clustering, and competitive learning. Reinforcement learning is a learning method that takes environmental inertia (reward/punishment signals) as input and is guided by statistics and dynamic programming techniques. Ensemble learning is to combine multiple weakly-supervised models here in order to obtain a better and more comprehensive strong-supervised model. The underlying idea of ensemble learning is that even if a certain weak classifier gets a wrong prediction, other weak classifiers may correct its mistakes. In practice, to represent input to output mapping, different functional representations can be used, such as decision trees,<sup><a href="#bibr14-15330338211016386">14</a></sup> support vector machines (SVM),<sup><a href="#bibr15-15330338211016386">15</a></sup> naive Bayes classification,<sup><a href="#bibr16-15330338211016386">16</a></sup> and deep neural network (DNN).<sup><a href="#bibr17-15330338211016386">17</a></sup> In most cases, ML methods can achieve at least as good results as traditional statistical methods. When the basic input–output relationship is not linear and the data set is large enough and contains predictors that capture the nonlinear relationship, the performance of the ML method will be better than the linear statistical model.<sup><a href="#bibr18-15330338211016386">18</a></sup> The SVMs, decision trees, and naive Bayes classification all use supervised learning algorithms to build models, and DNNs use DL algorithms to build models. Ideally, ML can use computers to predict clinical outcomes, identify disease patterns, detect disease characteristics, and optimize treatment strategies, thereby transforming the acquired knowledge into clinical evidence.<sup><a href="#bibr13-15330338211016386">13</a></sup>
+</p>
+<p id="id19"><b>Deep learning (DL):</b> DL (also known as DNN) was introduced at an event at the end of 2012, when the DL method based on CNN won the world’s most famous computer vision competition ImageNet classification.<sup><a href="#bibr19-15330338211016386">19</a></sup> DL is a computational model that allows for multiple processing layers (input layer, hidden layer, and output layer) to discover complex structures in large data sets using a back propagation algorithm to instruct the machine how to change its internal parameters.<sup><a href="#bibr20-15330338211016386">20</a></sup> In the past 10 years, as a result of the massive use of computers and the growth and explosion of data, DNN has surpassed others in computer vision applications, such as processing and understanding text,<sup><a href="#bibr21-15330338211016386">21</a></sup> voice,<sup><a href="#bibr22-15330338211016386">22</a></sup> and images.<sup><a href="#bibr23-15330338211016386">23</a></sup> DNN includes CNN, recurrent neural network (RNN), and fully convolutional neural network (FCN). CNN is a type of feedforward neural network that contains convolutional calculations and has a deep structure that can classify input information according to its hierarchical structure and that usually is used for images and other data with grid-like structures. To overcome the difficulty of a network whose width increases linearly caused by convolution, some scholars have introduced downsampling to reduce the width. They have proved that downsampling a CNN can approximate the ridge function well, which illustrates the advantages of these structured networks in approximation or modeling.<sup><a href="#bibr24-15330338211016386">24</a></sup> In recent years, CNN has introduced breakthroughs in image, video, voice, and audio processing.</p>
+<p id="id20">DL task categories in radiation oncology can be divided according to the main purpose of the algorithm, as follows: image fusion, image segmentation, AP, plan evaluation, and prognosis and outcome prediction. The evaluation criteria include receiver operating characteristic curve, area under the receiver operating characteristic curve (AUC), dose volume histogram, dose difference graph, F1 score, accuracy, specificity, sensitivity, precision, dice similarity coefficient, average accuracy, and Jaccard index.<sup><a href="#bibr25-15330338211016386">25</a></sup>
+</p>
+</div>
+</div>
+<div class="section">
+<a id="section3-15330338211016386"><!-- named anchor --></a><h2 class="main-title">Material and Methods</h2>
+<p id="id21">Here we provide a systematic review of the publications using CNN technology for medical image analysis, available in the National Library of Medicine database (PubMed). The search equation was the following: (convolutional OR deep learning) AND (radiotherapy) AND (image fusion OR image segmentation OR auto-planning and dose distribution prediction OR prediction of efficacy and side effects), filtered for “Human studies” and “Title/Abstract” as search fields.</p>
+<p id="id22">The selected articles were screened according to a standard grid containing the following items: aim of the study; methods: network architecture, dataset, training, validation, test, comparison method; results: accuracy, sensibility and specificity and conclusion.</p>
+<div class="section">
+<a id="section4-15330338211016386"><!-- named anchor --></a><h3 class="section-title">Implementation Area</h3>
+<p id="id23"><b>Image fusion:</b> Medical image fusion technology can fuse medical images from multiple forms, thereby making the medical diagnosis and treatment process more reliable and accurate.<sup><a href="#bibr26-15330338211016386">26</a></sup> Image registration is an important part of image fusion, for which the process is to find the spatial mapping relationship between one image pixel and another image pixel. This process is not absolute. Its core purpose is to identify the conversion relationship between different images. These images can be taken at different times (multitime registration), different sensors in different places (multimode registration). The relationship between these images can be rigid (translation and rotation), affine, homography, or complex large deformation models. For image-guided radiotherapy, radiosurgery, and interventional radiotherapy, image registration is one of the key technologies of auxiliary medical care. In recent years, DL, especially CNN, has achieved good results in medical image processing, and medical registration research has developed rapidly.<sup><a href="#bibr27-15330338211016386">27</a></sup> The 2 main types of existing medical image registration methods are gray-scale-based methods and feature-based methods. The primary steps of image registration include geometric size change, combined image change, image similarity measurement, iterative optimization, and interpolation process.<sup><a href="#bibr28-15330338211016386">28</a></sup> In the traditional registration method, the cost function is iteratively optimized from scratch so that the images can be registered, which severely limits the registration speed. Compared with traditional medical image registration methods, the greatest contribution of DL in medical image registration is to resolve the problem of slow medical image processing.<sup><a href="#bibr27-15330338211016386">27</a></sup> Eppenhof and Pluim<sup><a href="#bibr29-15330338211016386">29</a></sup> studied a CNN-based deformable registration algorithm and compared it with traditional algorithms. Their results showed that the registration speed of DL networks is hundreds of times that of traditional registration methods, with an average of 0.58 ± 0.07s. Among the existing research results, the main DL methods used are CNN and FCN frameworks. A study by Cao <i>et al</i>
+<sup><a href="#bibr30-15330338211016386">30</a></sup> used CNN for brain magnetic resonance imaging (MRI) image registration. The results showed that the Dice similarity coefficient (DSC) was improved in the registration of gray matter, white matter, and cerebrospinal fluid. The rate of improvement was 2.6%. Fan <i>et al</i>
+<sup><a href="#bibr31-15330338211016386">31</a></sup> studied 7different brain MRI deformable registration algorithms. The results showed that the DL network that did not require any iterative optimization also required the least time for registration, and the registration accuracy was based on DL. There are also improvements. Research by Jiang <i>et al</i>
+<sup><a href="#bibr32-15330338211016386">32</a></sup> showed that 4-dimensional computed tomography (CT) deformed image registration of the lung based on CNN had the smallest error compared with various traditional methods, and the registration time was 1.4s. Hasenstab <i>et al</i>
+<sup><a href="#bibr33-15330338211016386">33</a></sup> evaluated the performance of a CNN algorithm for liver registration in 314 patients, and compared it with manual image registration. The results showed that compared with manual registration, the liver overlap and image correlation for automatic registration were higher. In conclusion, DL has made medical image registration more rapid and accurate, which is keeping with the needs of clinical practice.</p>
+<p id="id24"><b>Image segmentation:</b> The delineation of CTV and OAR of tumor patients is a critical and time-consuming part of the radiotherapy process. Usually, it is manually delineated by the radiotherapist. The delineation results often are inconsistent because the experience of the delineator may vary. The emergence of DL has made the automatic segmentation of the tumor and OAR possible. The DSC is usually used as an indicator to evaluate the reliability of the test software output in this field. The closer the DSC result to 1, the higher the degree of overlap between the 2 delineations. If DSC is equal to 1, the 2 delineations completely overlap.</p>
+<p id="id25">At present, several scholars have applied AI to OAR and CTV for head and neck tumors, lung cancer, breast cancer, prostate cancer, rectal cancer, and cervical cancer.<sup><a href="#bibr34-15330338211016386">34</a><a href="#bibr35-15330338211016386">35</a><a href="#bibr36-15330338211016386">36</a><a href="#bibr37-15330338211016386">37</a><a href="#bibr38-15330338211016386">38</a><a href="#bibr39-15330338211016386">39</a><a href="#bibr40-15330338211016386">40</a><a href="#bibr41-15330338211016386">41</a><a href="#bibr42-15330338211016386">42</a><a href="#bibr43-15330338211016386">43</a><a href="#bibr44-15330338211016386">44</a><a href="#bibr45-15330338211016386">45</a><a href="#bibr46-15330338211016386">46</a><a href="#bibr47-15330338211016386">47</a><a href="#bibr48-15330338211016386">48</a><a href="#bibr49-15330338211016386">49</a><a href="#bibr50-15330338211016386">50</a>-<a href="#bibr51-15330338211016386">51</a></sup> Zeineldin <i>et al</i> evaluated the performance of different CNN models in 125 cases of glioma. Compared with manual rendering, the DSC of several CNN models was 81% to 84%. Zeineldin <i>et al</i> believed that different CNN models could be applied to magnetic resonance images and that segmentation of brain tumors was feasible.<sup><a href="#bibr34-15330338211016386">34</a></sup> Deng <i>et al</i> developed a novel brain tumor segmentation method, which integrated the full convolutional neural network (FCNN) and dense micro-block difference feature (DMDF) into a unified framework to segment brain tumors in the MRIs of 100 patients. The average DSC index was as high as 90.98%, and the segmentation time was less than 1s. Compared with the traditional MRI brain tumor segmentation method, the experimental results showed that the segmentation accuracy and stability were greatly improved.<sup><a href="#bibr35-15330338211016386">35</a></sup> Ye <i>et al</i> used an automated method based on CNN for segmentation of nasopharyngeal carcinoma on dual-sequence magnetic resonance imaging. Through automatic contour training of 44 patients with nasopharyngeal carcinoma, the test results obtained in 7patients had an average DSC of 0.87.<sup><a href="#bibr36-15330338211016386">36</a></sup> Another prospective study used DCNN to train and automatically segment the gross tumor volume (GTV) of 22 patients with head and neck cancer on co-registered positron emission tomography (PET-CT) images. Oncologists and radiologists have manually determined the gold standard of GTV by consensus. The automatic segmentation time is less than 1 min, and the average DSC is 0.785.<sup><a href="#bibr37-15330338211016386">37</a></sup> Tong <i>et al</i> used DNN to segment 9 OARs (brain stem, optic chiasm, mandible, optic nerve, parotid gland, and submandibular gland) in 22 head and neck cases. The average DSC ranged from 0.58 to 0.93. The median time of all OARs was 9.5s.<sup><a href="#bibr38-15330338211016386">38</a></sup> Zhu <i>et al</i> tested the results of automatic segmentation of 9 OARs (brain stem, cross, mandible, left optic nerve, right optic nerve, left parotid gland, right parotid gland, left submandibular gland, and right submandibular gland) in CT images of 261 patients with nasopharyngeal carcinoma based on a DL framework. Tong’s model used a single network to segment the OAR and to conduct end-to-end training, called AnatomyNet. Zhu <i>et al</i> found that compared with the traditional U-Net model, AnatomyNet improved the DSC by 2% to 3%, and 6 out of 9 anatomical structures were better than those under U-Net.<sup><a href="#bibr39-15330338211016386">39</a></sup> Subsequently, Dai <i>et al</i> proposed a DCNN that used a 3-dimensional U-Net DCNN combined with 2 loss functions of dice loss and generalized dice loss to automatically segment 19 OARs (left and right eyeballs, left and right optic nerves, left and right lenses, left and right inner ears, left and right temporomandibular joints, left and right parotid glands, left and right submandibular glands, brainstem, spinal cord, thyroid, laryngo-esophagus-tracheal (LET), and oral cavity) in patients with nasopharyngeal carcinoma. A total of 496 patients were enrolled in the group, and 376 cases were randomly selected for use in training set, 60 cases were included in the validation set, and 60 cases were included in the test set. Overall, the average DSC of the 19 high-risk organs was 0.91, and the Jaccard distance was 0.15. Compared with Zhu’s method, the 3-dimensional (3D) U-Net DCNN combined with Dice Loss function could be better applied to the automatic segmentation of head and neck OARs. The 3D U-Net DCNN with the segmentation time within 20S also achieved ideal automatic segmentation results for small-volume OAR.<sup><a href="#bibr40-15330338211016386">40</a></sup> Shapey <i>et al</i> studied the performance of two-and-half-dimensional CNN to automatically segment schwannomas after training in the MRIs of 243 patients with schwannomas. Compared with manual segmentation, the DSC based on T1-weighted segmentation was 93.43%. The DSC for segmentation based on T2 weighting was 93.68%.<sup><a href="#bibr41-15330338211016386">41</a></sup> A prospective study included 126 patients with intracranial meningioma. The target volume contour manually drawn on MRI T1/T2 weights by 2 experienced doctors was compared with the results of a trained DNN. In these patients, a comparison between the DL model and manual segmentation showed that the average DSC of the tumor volume of the enhanced contrast agent was 0.91 ± 0.08, and the average DSC of the total lesion volume was 0.82 ± 0.12.<sup><a href="#bibr42-15330338211016386">42</a></sup> Another study used 2-dimensional CNN to train on 300 patients’ head CT images and automatically segment the ventricles. The results showed that compared with manual rendering, the DSCs of the left, right, and third ventricles were 0.92, 0.92, and 0.79, respectively.<sup><a href="#bibr43-15330338211016386">43</a></sup> Currently, many reports are available on the automatic segmentation of DL for head and neck cancer. Peng used CNN for automatic segmentation of OARs in the chest and abdomen. The research developed and trained a CNN based on U-Net, which included 60 chest CT scan patients and 43 abdominal CT scan patients. Peng <i>et al</i> performed 5 organ segmentations on chest CTs and 8 organ segmentations on abdominal CTs. Compared with manual drawing, the median DSC was 0.97 (right lung), 0.96 (left lung), 0.92 (heart), 0.86 (spinal cord), 0.76 (esophagus), and 0.96 (spleen), 0.96 (liver), 0.95 (Left kidney), 0.90 (stomach), 0.87 (gallbladder), 0.80 (pancreas), 0.75 (esophagus), and 0.61 (duodenum). The automatic segmentation time for each patient did not exceed 5S. The researcher believed that this work shows that the patient’s multiorgan CT image segmentation could be performed with clinically acceptable accuracy and efficiency.<sup><a href="#bibr44-15330338211016386">44</a></sup> Wang <i>et al</i> developed a patient-specific adaptive convolutional neural network (A-NET) to segment lung tumors in 9 patients’ chest MRIs. The patients in the group had a chest MRI every week during radiotherapy. Wang <i>et al</i> took the previously scanned images as the training set and used the latest images for verification. Compared with manual segmentation, the DSC obtained was 0.81 ± 0.10.<sup><a href="#bibr45-15330338211016386">45</a></sup> Another prospective study proposed a new multimodal segmentation method based on 3D FCN that simultaneously considered PET and CT information for lung tumor segmentation. This method was validated on a dataset of 84 lung cancer patients. Compared with the profile drawn by abundant radiation oncologists, the average DSC was 0.85, which achieved significant performance gains compared with CNN-based methods and traditional methods that used only PET or CT.<sup><a href="#bibr46-15330338211016386">46</a></sup> Zabihollahy <i>et al</i> studied a similar ensemble learning model based on U-Net to identify and describe the 3D U-Net of kidney tumors, using contrast-enhanced CT images of 315 patients as training and test sets. Compared with the gold standard, using 3D U-Net to describe the average DSC of kidney tumors was 85.95% ± 1.46%.<sup><a href="#bibr47-15330338211016386">47</a></sup> The research of Chen <i>et al</i> developed a new cervical cancer segmentation method (called PIC-S-CNN). Chen <i>et al</i> compared this method with 6 different segmentation methods and obtained the best segmentation effect, with an average DSC of 0.84. Chen <i>et al</i> believed that the combination of DL and anatomical prior information could improve the accuracy of cervical tumor segmentation. Scholars who have studied models based on CNN to automatically segment pancreatic tumors,<sup><a href="#bibr48-15330338211016386">48</a></sup> liver tumors,<sup><a href="#bibr49-15330338211016386">49</a></sup> colorectal tumors,<sup><a href="#bibr50-15330338211016386">50</a></sup> and prostate tumors<sup><a href="#bibr51-15330338211016386">51</a></sup> have achieved good segmentation results. These findings have shown that DL can save a significant amount of clinician time to delineate CTV and OARS. Most of these delineation results have met the requirements of clinical treatment and achieved better results than those manually delineated by physicians. Not only does this method have high repeatability, but it also can reduce the interobserver variability (IOV) among physicians.</p>
+<p id="id26"><b>AP and dose distribution prediction:</b> The ability to automatically generate plans and predict a priori acceptable dose distribution is one of the most important aspects of AI-related radiotherapy plan implementation. Liu <i>et al</i> designed a DNN (called deep MTP) to generate pseudo-CT for AP based on the MRIs of brain tumor patients. Comparing the generated automatic plan with the clinical treatment plan dose parameters, the results provided by the automatic plan–generated dose distribution were not significantly different.<sup><a href="#bibr52-15330338211016386">52</a></sup> Fan <i>et al</i> trained the DNN framework in 195 patients with head and neck cancer to predict the dose distribution of head and neck patients receiving radiotherapy. They used 25 cases for verification and 50 cases as tests. The results showed that, except for the brainstem and lens, all clinically relevant dosimetry parameters were not detected to be statistically different from the actual clinical plan.<sup><a href="#bibr53-15330338211016386">53</a></sup> The combination of CNN and the Monte Carlo (MC) method can be used to predict the dose of brachytherapy. In another study, 47 prostate cancer patients were used as a training set, 14 prostate cancer patients and 10 cervical cancer patients were used as a test set, and the results could be used for clinical needs. The accuracy of the algorithm was close to that of using only the MC method, and the calculation time was significantly reduced.<sup><a href="#bibr54-15330338211016386">54</a></sup> Kajikawa <i>et al</i> compared CNN with traditional DL methods to predict the dose distribution of intensity-modulated conformal radiotherapy plans for prostate cancer patients. Kajikawa <i>et al</i> used an adaptive moment estimation algorithm to optimize the 3D U-net, and the results showed that the CNN model could predict a better or comparable dose distribution than that produced by DL.<sup><a href="#bibr55-15330338211016386">55</a></sup> Similar experience in predicting dose distribution for prostate cancer was validated in a plan for 80 prostate cancer patients.<sup><a href="#bibr56-15330338211016386">56</a></sup> Although the current clinically available ML-based automatic plan effectively saved time, the generated plan still had to be corrected manually. In the future, DL-based AP commercial software is expected to generate plans that can directly meet the needs of clinical treatment.</p>
+<p id="id27"><b>Other applications (for the prediction of efficacy and side effects):</b> The vast majority of DL predictions of the outcome of radiotherapy use DL to predict the toxicity after radiotherapy. Xerostomia usually occurs in patients who are receiving radiation therapy to the head and neck. Men <i>et al</i> developed a model to predict xerostomia after radiotherapy based on a 3D residual convolutional neural network and included 784 patients with head and neck squamous cell carcinoma of RTOG 0522 test. Using CT planning images, 3D dose distribution, and contours of the parotid and submandibular glands as inputs, good prediction results were obtained.<sup><a href="#bibr57-15330338211016386">57</a></sup> In patients with non-small-cell lung cancer (NSCLC), CNN has been used to predict tumor recurrence after stereotactic radiotherapy. This model was established based on the CT images reviewed after radiotherapy. In the analysis of 1605 characteristics of 46 patients, 5 predicted local recurrence, 3 of which were lobar recurrence, and 7 predicted overall survival.<sup><a href="#bibr58-15330338211016386">58</a></sup> Liang <i>et al</i> constructed a 3D CNN model to predict the occurrence of radiation pneumonia after thoracic radiotherapy, and compared it with 3 prediction models based on multiple logistic regression. The 4 prediction models were all validated in 70 patients with NSCLC who received volume-modulated radiotherapy. The results showed that CNN performed better than the traditional model, with an AUC of 0.842.<sup><a href="#bibr59-15330338211016386">59</a></sup> Lee <i>et al</i> applied ML and bioinformatics tools to genome-wide data to predict and explain the late genitourinary system toxicity in prostate cancer patients after radiotherapy.<sup><a href="#bibr60-15330338211016386">60</a></sup> DL’s prediction of the efficacy and side effects of radiotherapy was able to screen out the possible beneficiaries of radiotherapy in clinical work and to prepare for possible side effects.</p>
+</div>
+</div>
+<div class="section">
+<a id="section5-15330338211016386"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<p id="id28">Radiation oncology is a medical specialty that closely integrates technology and computers. It should integrate computer science, statistics, and clinical knowledge. In the process of clinical radiotherapy, AI algorithms can work continuously and efficiently. In particular, the emergence of DL algorithms can automatically perform tedious tasks, reduce the deviation of dose distribution, and predict adverse effects after radiotherapy. CNN training is a key step, for which specific technical skills are required to avoid overfitting limited data, which can lead to problems when using the network to analyze wider data sets. Therefore, training needs to be evaluated and monitored. Training thus requires evaluation and monitoring. This method is expected to become the third hand of radiation oncologists. The open-source nature and public availability of the AI library enable clinical researchers from various fields to research and use AI algorithms, which can improve objectivity, reduce the need for manual intervention, and reduce the amount of staff work. At the same time, the repeatability of the process can be greatly improved. Because DL algorithms are an opaque “black box” of internal operations, applying them to clinical practice remains challenging.<sup><a href="#bibr11-15330338211016386">11</a></sup> Some systems provide partial visualization techniques (heat maps, probability maps) to provide certain views of CNN internal functions. Understanding how these networks “work” is a relevant and significant challenge in medical AI.</p>
+<p id="id29">Currently available clinically automatic registration and automatic segmentation software based on ML algorithms require manual correction before clinical use, and the segmentation results for small organs are not ideal.<sup><a href="#bibr61-15330338211016386">61</a>,<a href="#bibr62-15330338211016386">62</a></sup> The current technology and framework have limitations, which include model interpretability, data heterogeneity, and lack of common benchmarks.<sup><a href="#bibr63-15330338211016386">63</a></sup> Even if these AI systems show high accuracy in a laboratory environment, it is difficult to practically verify medical AI systems in clinical work. This difficulty is called the last mile of implementation.<sup><a href="#bibr64-15330338211016386">64</a></sup> Therefore, before clinical implementation, in-depth research is needed to evaluate the performance of DL algorithms.<sup><a href="#bibr65-15330338211016386">65</a></sup> One way to make DL results more acceptable in clinical practice is to enable doctors to understand the internal workings of the equipment they use, and the software must provide data protection, algorithm transparency, and accountability to earn clinician and patient trust.<sup><a href="#bibr66-15330338211016386">66</a></sup> Artificial intelligence has clearly demonstrated its efficiency in radiotherapy tasks, but for most applications, there is still a lack of comparative clinical studies showing that the technology has been integrated into the clinical workflow. Nevertheless, the robustness of the current results and the possible simple interface that can be designed using trained CNNs lay the foundation for direct, time-saving, reliable and practical applications. Then, you can treat CNN as a colleague to provide expert second opinions on difficult clinical issues. In addition, CNN is inherently not affected by chaotic factors such as fatigue, personal beliefs, or hierarchical issues, so inter- and intra-individual variability will be minimized when completing specific tasks.</p>
+<p id="id30">CNN will completely change all processes in the field of radiotherapy, and the role of practitioners is crucial to the development and implementation of such equipment. By understanding deep learning, participating in the concept and evaluation of new equipment, and by contributing one’s own power to conceive the regulatory framework for this new type of medical activity, the MD now has the opportunity to participate in the scientific revolution.</p>
+</div>
+<div class="section">
+<a id="section6-15330338211016386"><!-- named anchor --></a><h2 class="main-title">Supplemental Material</h2>
+<div class="panel">
+<a id="suppl1-15330338211016386"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Material, sj-pdf-1-tct-10.1177_15330338211016386 - The Application and Development of Deep Learning in Radiotherapy: A Systematic Review</h4></div>
+<a id="id31" href="sj-pdf-1-tct-10.1177_15330338211016386.pdf"><div class="caption"><p class="first" id="id32">Click here for additional data file.</p></div></a><p id="id33">Supplemental Material, sj-pdf-1-tct-10.1177_15330338211016386 for The Application and Development of Deep Learning in Radiotherapy: A Systematic Review by Danju Huang, Han Bai, Li Wang, Yu Hou, Lan Li, Yaoxiong Xia, Zhirui Yan, Wenrui Chen, Li Chang and Wenhui Li in Technology in Cancer Research &amp; Treatment</p>
+</div>
+<div class="panel">
+<a id="suppl2-15330338211016386"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Supplemental Material, sj-pdf-2-tct-10.1177_15330338211016386 - The Application and Development of Deep Learning in Radiotherapy: A Systematic Review</h4></div>
+<a id="id34" href="sj-pdf-2-tct-10.1177_15330338211016386.pdf"><div class="caption"><p class="first" id="id35">Click here for additional data file.</p></div></a><p id="id36">Supplemental Material, sj-pdf-2-tct-10.1177_15330338211016386 for The Application and Development of Deep Learning in Radiotherapy: A Systematic Review by Danju Huang, Han Bai, Li Wang, Yu Hou, Lan Li, Yaoxiong Xia, Zhirui Yan, Wenrui Chen, Li Chang and Wenhui Li in Technology in Cancer Research &amp; Treatment</p>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id39"><!-- named anchor --></a><h2 class="main-title">Acknowledgments</h2>
+<p id="id37">We thank LetPub (<a target="xrefwindow" href="http://www.letpub.com" id="id38">www.letpub.com</a>) for its linguistic assistance during the preparation of this manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id41"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="fn1-15330338211016386"><!-- named anchor --></a><p id="id40"><span class="generated">[1]</span> <b>Authors’ Note:</b> Our study did not require an ethical board approval because it did not contain human or animal trials. The authors have completed the STROBE guideline check-list. The authors are accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved. All data generated or analyzed during this study are included in this published article. Wenhui Li, Li Chang and Danju Huang carried out the concepts, design, definition of intellectual content, literature search, data acquistion and manuscript review. Han Bai and Li Wang provided assistance for data acquistion and manuscript editing. Yu Hou, Lan Li and Yaoxiong Xia carried out literature search and data acquisition. Zhirui Yan and Wenrui Chen performed data acquistion and manuscript preparation. All authors have read and approved the content of the manuscript. Danju Huang, Han Bai, and Li Wang contributed equally to this work.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id47"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="fn2-15330338211016386"><!-- named anchor --></a><p id="id42"><span class="generated">[2]</span> <b>Declaration of Conflicting Interests:</b> The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p>
+</div>
+<div class="footnote">
+<a id="fn3-15330338211016386"><!-- named anchor --></a><p id="id43"><span class="generated">[3]<span class="generated"> Financial disclosure</span></span> <b>Funding:</b> The author(s) disclosed receipt of the following financial support for the research, authorship, and/or publication of this article: This study was supported by grants from Ten-thousand Talents Program of Yunnan Province (Yunling scholar, Youth talent), Yunnan Provincial Training Funds for Middle-Young Academic and Technical Leader candidate (202005AC160025), Yunnan Provincial Training Funds for High-level Health Technical Personnel (No.L-2018001).</p>
+</div>
+<div class="footnote">
+<a id="fn4-15330338211016386"><!-- named anchor --></a><p id="id44"><span class="generated">[4]</span> <b>ORCID iD:</b> Wenhui Li 
+<a target="xrefwindow" href="https://orcid.org/0000-0001-5874-0122" id="id45">https://orcid.org/0000-0001-5874-0122</a>
+</p>
+</div>
+<div class="footnote">
+<a id="fn5-15330338211016386"><!-- named anchor --></a><p id="id46"><span class="generated">[5]<span class="generated"> Supplementary material</span></span> <b>Supplemental Material:</b> Supplemental material for this article is available online.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id48"><!-- named anchor --></a><div class="section ref-list">
+<a id="id48"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1</span> <a id="bibr1-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id49"><!-- named anchor --></a>R FedewaR PuriE FleischmanJ LeeD PrabhuDL Wilson, et al.Artificial intelligence in intracoronary imaging. Curr Cardiol Rep. 2020;22(7):46. doi:10.1007/s11886-020-01299-w3247218910.1007/s11886-020-01299-w</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2</span> <a id="bibr2-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id50"><!-- named anchor --></a>P BattistaC SalvatoreM BerlingeriA CerasaI Castiglioni. Artificial intelligence and neuropsychological measures: the case of Alzheimer’s disease. Neurosci Biobehav Rev. 2020;114:211–228. doi:10.1016/j.neubiorev.2020.04.026
+3243774410.1016/j.neubiorev.2020.04.026</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3</span> <a id="bibr3-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id51"><!-- named anchor --></a>F FitzpatrickA DohertyG Lacey. Using artificial intelligence in infection prevention. Curr Treat Options Infect Dis. 2020:1–10. doi:10.1007/s40506-020-00216-7
+10.1007/s40506-020-00216-7PMC709509432218708</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4</span> <a id="bibr4-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id52"><!-- named anchor --></a>KP ExarchosM BeltsiouCA VottiK Kostikas. Artificial intelligence techniques in asthma: a systematic review and critical appraisal of the existing literature. Eur Respir J. 2020;56(3):2000521. doi:10.1183/13993003.00521-20203238149810.1183/13993003.00521-2020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5</span> <a id="bibr5-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id53"><!-- named anchor --></a>DL ShungMF Byrne. How artificial intelligence will impact colonoscopy and colorectal screening. Gastrointest Endosc Clin N Am. 2020;30(3):585–595. doi:10.1016/j.giec.2020.02.010
+3243909010.1016/j.giec.2020.02.010PMC12007662</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6</span> <a id="bibr6-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id54"><!-- named anchor --></a>AS AlbahriRA HamidJK Alwan, et al.Role of biological data mining and machine learning techniques in detecting and diagnosing the novel coronavirus (COVID-19): a systematic review. J Med Syst. 2020;44(7):122. doi:10.1007/s10916-020-01582-x3245180810.1007/s10916-020-01582-xPMC7247866</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7</span> <a id="bibr7-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id55"><!-- named anchor --></a>HJ YoonJH Kim. Lesion-based convolutional neural network in diagnosis of early gastric cancer. Clin Endosc. 2020;53(2):127–131. doi:10.5946/ce.2020.046
+3225250510.5946/ce.2020.046PMC7137575</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8</span> <a id="bibr8-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id56"><!-- named anchor --></a>JM KinrossSE MasonG MylonasA Darzi. Next-generation robotics in gastrointestinal surgery. Nat Rev Gastroenterol Hepatol. 2020;17(7):430–440. doi:10.1038/s41575-020-0290-z
+3226932910.1038/s41575-020-0290-z</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9</span> <a id="bibr9-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id57"><!-- named anchor --></a>E MaiaLC AssisTA de OliveiraAM da SilvaAG Taranto. Structure-based virtual screening: from classical to artificial intelligence. Front Chem. 2020;8:343. doi:10.3389/fchem.2020.003433241167110.3389/fchem.2020.00343PMC7200080</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10</span> <a id="bibr10-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id58"><!-- named anchor --></a>P MeyerV NobletC MazzaraA Lallement. Survey on deep learning for radiotherapy. Comput Biol Med. 2018;98:126–146. doi:10.1016/j.compbiomed.2018.05.018
+2978794010.1016/j.compbiomed.2018.05.018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11</span> <a id="bibr11-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id59"><!-- named anchor --></a>G FrancoliniI DesideriG Stocchi, et al.Artificial intelligence in radiotherapy: state of the art and future directions. Med Oncol. 2020;37(6):50. doi:10.1007/s12032-020-01374-w3232306610.1007/s12032-020-01374-w</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12</span> <a id="bibr12-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id60"><!-- named anchor --></a>S MutasaS SunR Ha. Understanding artificial intelligence based radiology studies: What is overfitting. Clin Imaging. 2020;65:96–99. doi:10.1016/j.clinimag.2020.04.025
+3238780310.1016/j.clinimag.2020.04.025PMC8150901</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13</span> <a id="bibr13-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id61"><!-- named anchor --></a>M HügleP OmoumiJM van LaarJ BoedeckerT Hügle. Applied machine learning and artificial intelligence in rheumatology. Rheumatol Adv Pract. 2020;4(1):rkaa005. doi:10.1093/rap/rkaa0053229674310.1093/rap/rkaa005PMC7151725</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14</span> <a id="bibr14-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id62"><!-- named anchor --></a>RK DeLisleSL Dixon. Induction of decision trees via evolutionary programming. J Chem Inf Comput Sci. 2004;44(3):862–870. doi:10.1021/ci034188 s
+1515475110.1021/ci034188s</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15</span> <a id="bibr15-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id63"><!-- named anchor --></a>Y LiT Zhang. Deep neural mapping support vector machines. Neural Netw. 2017;93:185–194. doi:10.1016/j.neunet.2017.05.010
+2864676310.1016/j.neunet.2017.05.010</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16</span> <a id="bibr16-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id64"><!-- named anchor --></a>G SantaféJA LozanoP Larrañaga. Bayesian model averaging of naive Bayes for clustering. IEEE Trans Syst Man Cybern B Cybern. 2006;36(5):1149–1161. doi:10.1109/tsmcb.2006.874132
+1703682010.1109/tsmcb.2006.874132</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17</span> <a id="bibr17-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id65"><!-- named anchor --></a>X LiY ZhangM LiI MarsicJ YangRS Burd. Deep neural network for RFID-based activity recognition. Proc Eighth Wirel Stud Stud Stud Workshop (2016). 2016;2016:24–26. doi:10.1145/2987354.2987355
+3050606710.1145/2987354.2987355PMC6261291</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18</span> <a id="bibr18-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id66"><!-- named anchor --></a>O AkbilgicRL Davis. The promise of machine learning: when will it be delivered. J Card Fail. 2019;25(6):484–485. doi:10.1016/j.cardfail.2019.04.006
+3097850810.1016/j.cardfail.2019.04.006</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19</span> <a id="bibr19-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id67"><!-- named anchor --></a>K Suzuki. Overview of deep learning in medical imaging. Radiol Phys Technol. 2017;10(3):257–273. doi:10.1007/s12194-017-0406-5
+2868931410.1007/s12194-017-0406-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20</span> <a id="bibr20-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id68"><!-- named anchor --></a>Y LeCunY BengioG Hinton. Deep learning. Nature. 2015;521(7553):436–444. doi:10.1038/nature14539
+2601744210.1038/nature14539</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21</span> <a id="bibr21-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id69"><!-- named anchor --></a>J HirschbergCD Manning. Advances in natural language processing. Science. 2015;349(6245):261–266. doi:10.1126/science.aaa8685
+2618524410.1126/science.aaa8685</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22</span> <a id="bibr22-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id70"><!-- named anchor --></a>JH BochnerWM GarrisonKA Doherty. The NTID speech recognition test: NSRT(®). Int J Audiol. 2015;54(7):490–498. doi:10.3109/14992027.2014.991976
+2563477510.3109/14992027.2014.991976</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23</span> <a id="bibr23-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id71"><!-- named anchor --></a>K HeX ZhangS RenJ Sun. Spatial pyramid pooling in deep convolutional networks for visual recognition. IEEE Trans Pattern Anal Mach Intell. 2015;37(9):1904–1916. doi:10.1109/TPAMI.2015.2389824
+2635313510.1109/TPAMI.2015.2389824</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24</span> <a id="bibr24-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id72"><!-- named anchor --></a>DX. ZhouTheory of deep convolutional neural networks: downsampling. Neural Netw. 2020;124:319–327. doi:10.1016/j.neunet.2020.01.018
+3203622910.1016/j.neunet.2020.01.018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25</span> <a id="bibr25-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id73"><!-- named anchor --></a>K MunirH ElahiA AyubF FrezzaA Rizzi. Cancer diagnosis using deep learning: a bibliographic review. Cancers (Basel). 2019;11(9):1235. doi:10.3390/cancers1109123510.3390/cancers11091235PMC677011631450799</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26</span> <a id="bibr26-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id74"><!-- named anchor --></a>K WangM ZhengH WeiG QiY Li. Multi-modality medical image fusion using convolutional neural network and contrast pyramid. Sensors (Basel). 2020;20(8):2169. doi:10.3390/s2008216910.3390/s20082169PMC721874032290472</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27</span> <a id="bibr27-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id75"><!-- named anchor --></a>M ZouH YangG PanY Zhong. Research progress and challenges of deep learning in medical image registration [in Chinese]. Sheng Wu Yi Xue Gong Cheng Xue Za Zhi. 2019;36(4):677–683. doi:10.7507/1001-5515.201810004
+3144127110.7507/1001-5515.201810004PMC10319496</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28</span> <a id="bibr28-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id76"><!-- named anchor --></a>G SongJ HanY ZhaoZ WangH Du. A review on medical image registration as an optimization problem. Curr Med Imaging Rev. 2017;13(3):274–283. doi:10.2174/1573405612666160920123955
+2884514910.2174/1573405612666160920123955PMC5543570</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29</span> <a id="bibr29-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id77"><!-- named anchor --></a>K EppenhofJ Pluim. Pulmonary CT registration through supervised learning with convolutional neural networks. IEEE Trans Med Imaging. 2019;38(5):1097–1105. doi:10.1109/TMI.2018.2878316
+3037135810.1109/TMI.2018.2878316</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30</span> <a id="bibr30-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id78"><!-- named anchor --></a>X CaoJ YangJ Zhang, et al.Deformable image registration based on similarity-steered CNN regression. Med Image Comput Comput Assist Interv. 2017;10433:300–308. doi:10.1007/978-3-319-66182-7_35
+2925061310.1007/978-3-319-66182-7_35PMC5731783</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31</span> <a id="bibr31-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id79"><!-- named anchor --></a>J FanX CaoPT YapD Shen. BIRNet: Brain image registration using dual-supervised fully convolutional networks. Med Image Anal. 2019;54:193–206. doi:10.1016/j.media.2019.03.006
+3093941910.1016/j.media.2019.03.006PMC6764428</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32</span> <a id="bibr32-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id80"><!-- named anchor --></a>Z JiangFF YinY GeL Ren. A multi-scale framework with unsupervised joint training of convolutional neural networks for pulmonary deformable image registration. Phys Med Biol. 2020;65(1):015011. doi:10.1088/1361-6560/ab5da03178339010.1088/1361-6560/ab5da0PMC7255696</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33</span> <a id="bibr33-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id81"><!-- named anchor --></a>KA HasenstabGM CunhaA Higaki, et al.Fully automated convolutional neural network-based affine algorithm improves liver registration and lesion co-localization on hepatobiliary phase T1-weighted MR images. Eur Radiol Exp. 2019;3(1):43. doi:10.1186/s41747-019-0120-73165594310.1186/s41747-019-0120-7PMC6815316</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34</span> <a id="bibr34-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id82"><!-- named anchor --></a>RA ZeineldinME KararJ CoburgerCR WirtzO Burgert. DeepSeg: deep neural network framework for automatic brain tumor segmentation using magnetic resonance FLAIR images. Int J Comput Assist Radiol Surg. 2020;15(6):909–920. doi:10.1007/s11548-020-02186-z
+3237238610.1007/s11548-020-02186-zPMC7303084</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35</span> <a id="bibr35-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id83"><!-- named anchor --></a>W DengQ ShiK LuoY YangN Ning. Brain tumor segmentation based on improved convolutional neural network in combination with non-quantifiable local texture feature. J Med Syst. 2019;43(6):152. doi:10.1007/s10916-019-1289-23101646710.1007/s10916-019-1289-2</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36</span> <a id="bibr36-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id84"><!-- named anchor --></a>Y YeZ CaiB HuangY HeP ZengG Zou, et al.Fully-automated segmentation of nasopharyngeal carcinoma on dual-sequence MRI using convolutional neural networks. Front Oncol. 2020;10:166. doi:10.3389/fonc.2020.001663215416810.3389/fonc.2020.00166PMC7045897</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37</span> <a id="bibr37-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id85"><!-- named anchor --></a>B HuangZ ChenPM Wu, et al.Fully automated delineation of gross tumor volume for head and neck cancer on PET-CT using deep learning: a dual-center study. Contrast Media Mol Imaging. 2018;2018:8923028. doi:10.1155/2018/89230283047364410.1155/2018/8923028PMC6220410</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38</span> <a id="bibr38-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id86"><!-- named anchor --></a>N TongS GouS YangD RuanK Sheng. Fully automatic multi-organ segmentation for head and neck cancer radiotherapy using shape representation model constrained fully convolutional neural networks. Med Phys. 2018;45(10):4558–4567. doi:10.1002/mp.13147
+3013628510.1002/mp.13147PMC6181786</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39</span> <a id="bibr39-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id87"><!-- named anchor --></a>W ZhuY HuangL Zeng, et al.AnatomyNet: deep learning for fast and fully automated whole-volume segmentation of head and neck anatomy. Med Phys. 2019;46(2):576–589. doi:10.1002/mp.13300
+3048081810.1002/mp.13300</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40</span> <a id="bibr40-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id88"><!-- named anchor --></a>X DaiX WangL Du, et al.Automatic segmentation of head and neck organs at risk based on three-dimensional U-NET deep convolutional neural network [in Chinese]. Sheng Wu Yi Xue Gong Cheng Xue Za Zhi. 2020;37(1):136–141. doi:10.7507/1001-5515.201903052
+3209638710.7507/1001-5515.201903052PMC9927653</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41</span> <a id="bibr41-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id89"><!-- named anchor --></a>J ShapeyG WangR Dorent, et al.An artificial intelligence framework for automatic segmentation and volumetry of vestibular schwannomas from contrast-enhanced T1-weighted and high-resolution T2-weighted MRI. J Neurosurg. 2019:1–9. doi:10.3171/2019.9.JNS191949
+10.3171/2019.9.JNS191949PMC761704231812137</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42</span> <a id="bibr42-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id90"><!-- named anchor --></a>KR LaukampL PennigF Thiele, et al.Automated meningioma segmentation in multiparametric MRI: comparable effectiveness of a deep learning model and manual segmentation. Clin Neuroradiol. 2020. doi:10.1007/s00062-020-00884-410.1007/s00062-020-00884-432060575</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43</span> <a id="bibr43-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id91"><!-- named anchor --></a>TJ HuffPE LudwigD SalazarJA Cramer. Fully automated intracranial ventricle segmentation on CT with 2D regional convolutional neural network to estimate ventricular volume. Int J Comput Assist Radiol Surg. 2019;14(11):1923–1932. doi:10.1007/s11548-019-02038-5
+3135070510.1007/s11548-019-02038-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44</span> <a id="bibr44-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id92"><!-- named anchor --></a>Z PengX FangP Yan, et al.A method of rapid quantification of patient-specific organ doses for CT using deep-learning-based multi-organ segmentation and GPU-accelerated Monte Carlo dose computing. Med Phys. 2020;47(6):2526–2536. doi:10.1002/mp.14131
+3215567010.1002/mp.14131</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45</span> <a id="bibr45-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id93"><!-- named anchor --></a>C WangN TyagiA Rimner, et al.Segmenting lung tumors on longitudinal imaging studies via a patient-specific adaptive convolutional neural network. Radiother Oncol. 2019;131:101–107. doi:10.1016/j.radonc.2018.10.037
+3077317510.1016/j.radonc.2018.10.037PMC6615045</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46</span> <a id="bibr46-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id94"><!-- named anchor --></a>X ZhaoL LiW LuS Tan. Tumor co-segmentation in PET/CT using multi-modality fully convolutional neural network. Phys Med Biol. 2018;64(1):015011. doi:10.1088/1361-6560/aaf44b3052396410.1088/1361-6560/aaf44bPMC7493812</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47</span> <a id="bibr47-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id95"><!-- named anchor --></a>Z FatemehS NicolaK SatheeshU Eranga. Ensemble U-net-based method for fully automated detection and segmentation of renal masses on computed tomography images. Med Phys. 2020;47(9):4032–4044. doi:10.1002/mp.14193
+3232907410.1002/mp.14193</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48</span> <a id="bibr48-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id96"><!-- named anchor --></a>Y LiangD SchottY Zhang, et al.Auto-segmentation of pancreatic tumor in multi-parametric MRI using deep convolutional neural networks. Radiother Oncol. 2020;145:193–200. doi:10.1016/j.radonc.2020.01.021
+3204578710.1016/j.radonc.2020.01.021</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49</span> <a id="bibr49-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id97"><!-- named anchor --></a>Y ChenK WangX Liao, et al.Channel-Unet: a spatial channel-wise convolutional neural network for liver and tumors segmentation. Front Genet. 2019;10:1110. doi:10.3389/fgene.2019.011103182748710.3389/fgene.2019.01110PMC6892404</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50</span> <a id="bibr50-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id98"><!-- named anchor --></a>MH SoomroM CoppotelliS Conforto, et al.Automated segmentation of colorectal tumor in 3D MRI using 3D Multiscale Densely Connected Convolutional Neural Network. J Healthc Eng. 2019;2019:1075434. doi:10.1155/2019/10754343083812110.1155/2019/1075434PMC6374810</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51</span> <a id="bibr51-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id99"><!-- named anchor --></a>F ZabihollahyN SchiedaS Krishna JeyarajE Ukwatta. Automated segmentation of prostate zonal anatomy on T2-weighted (T2 W) and apparent diffusion coefficient (ADC) map MR images using U-Nets. Med Phys. 2019;46(7):3078–3090. doi:10.1002/mp.13550
+3100238110.1002/mp.13550</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52</span> <a id="bibr52-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id100"><!-- named anchor --></a>F LiuP YadavAM BaschnagelAB McMillan. MR-based treatment planning in radiation therapy using a deep learning approach. J Appl Clin Med Phys. 2019;20(3):105–114. doi:10.1002/acm2.12554
+10.1002/acm2.12554PMC641414830861275</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53</span> <a id="bibr53-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id101"><!-- named anchor --></a>J FanJ WangZ ChenC HuZ ZhangW Hu. Automatic treatment planning based on three-dimensional dose distribution predicted from deep learning technique. Med Phys. 2019;46(1):370–381. doi:10.1002/mp.13271
+3038330010.1002/mp.13271</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54</span> <a id="bibr54-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id102"><!-- named anchor --></a>X MaoJ PineauR KeyesSA Enger. RapidBrachyDL: rapid radiation dose calculations in brachytherapy via deep learning. Int J Radiat Oncol Biol Phys. 2020;108(3):802–812. doi:10.1016/j.ijrobp.2020.04.045
+3241354610.1016/j.ijrobp.2020.04.045</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55</span> <a id="bibr55-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id103"><!-- named anchor --></a>T KajikawaN KadoyaK Ito, et al.A convolutional neural network approach for IMRT dose distribution prediction in prostate cancer patients. J Radiat Res. 2019;60(5):685–693. doi:10.1093/jrr/rrz051
+3132270410.1093/jrr/rrz051PMC6805973</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56</span> <a id="bibr56-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id104"><!-- named anchor --></a>M MaM K BuyyounouskiV VasudevanL XingY Yang. Dose distribution prediction in isodose feature-preserving voxelization domain using deep convolutional neural network. Med Phys. 2019;46(7):2978–2987. doi:10.1002/mp.13618
+3111230510.1002/mp.13618</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57</span> <a id="bibr57-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id105"><!-- named anchor --></a>K MenH GengH ZhongY FanA LinY Xiao. A deep learning model for predicting xerostomia due to radiation therapy for head and neck squamous cell carcinoma in the RTOG 0522 clinical trial. Int J Radiat Oncol Biol Phys. 2019;105(2):440–447. doi:10.1016/j.ijrobp.2019.06.009
+3120189710.1016/j.ijrobp.2019.06.009PMC6732004</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58</span> <a id="bibr58-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id106"><!-- named anchor --></a>SA MattonenDA PalmaCJ HaasbeekS SenanAD Ward. Early prediction of tumor recurrence based on CT texture changes after stereotactic ablative radiotherapy (SABR) for lung cancer. Med Phys. 2014;41(3):033502. doi:10.1118/1.48662192459374410.1118/1.4866219</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59</span> <a id="bibr59-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id107"><!-- named anchor --></a>B LiangY TianX Chen, et al.Prediction of radiation pneumonitis with dose distribution: a convolutional neural network (CNN) based model. Front Oncol. 2019;9:1500. doi:10.3389/fonc.2019.015003207659610.3389/fonc.2019.01500PMC7006502</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60</span> <a id="bibr60-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id108"><!-- named anchor --></a>S LeeS KernsH OstrerB RosensteinJO DeasyJH Oh. Machine learning on a genome-wide association study to predict late genitourinary toxicity after prostate radiation therapy. Int J Radiat Oncol Biol Phys. 2018;101(1):128–135. doi:10.1016/j.ijrobp.2018.01.054
+2950293210.1016/j.ijrobp.2018.01.054PMC5886789</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61</span> <a id="bibr61-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id109"><!-- named anchor --></a>AR EldesokyES YatesTB Nyeng, et al.Internal and external validation of an ESTRO delineation guideline—dependent automated segmentation tool for loco-regional radiation therapy of early breast cancer. Radiother Oncol. 2016;121(3):424–430. doi:10.1016/j.radonc.2016.09.005
+2769729610.1016/j.radonc.2016.09.005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62</span> <a id="bibr62-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id110"><!-- named anchor --></a>Y ZhaoH LiS Wan, et al.Knowledge-aided convolutional neural network for small organ segmentation. IEEE J Biomed Health Inform. 2019;23(4):1363–1373. doi:10.1109/JBHI.2019.2891526
+3062951910.1109/JBHI.2019.2891526</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63</span> <a id="bibr63-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id111"><!-- named anchor --></a>B ShickelPJ TigheA BihoracP. RashidiEHR Deep: A survey of recent advances in deep learning techniques for electronic health record (EHR) analysis. IEEE J Biomed Health Inform. 2018;22(5):1589–1604. doi:10.1109/JBHI.2017.2767063
+2998997710.1109/JBHI.2017.2767063PMC6043423</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64</span> <a id="bibr64-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id112"><!-- named anchor --></a>F CabitzaA CampagnerC Balsano. Bridging the “last mile” gap between AI implementation and operation: “data awareness” that matters. Ann Transl Med. 2020;8(7):501. doi:10.21037/atm.2020.03.633239554510.21037/atm.2020.03.63PMC7210125</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65</span> <a id="bibr65-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id113"><!-- named anchor --></a>J WongA FongN McVicar, et al.Comparing deep learning-based auto-segmentation of organs at risk and clinical target volumes to expert inter-observer variability in radiotherapy planning. Radiother Oncol. 2020;144:152–158. doi:10.1016/j.radonc.2019.10.019
+3181293010.1016/j.radonc.2019.10.019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66</span> <a id="bibr66-15330338211016386"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id114"><!-- named anchor --></a>E VayenaA BlasimmeIG Cohen. Machine learning in medicine: addressing ethical challenges. PLoS Med. 2018;15(11):e1002689. doi:10.1371/journal.pmed.10026893039914910.1371/journal.pmed.1002689PMC6219763</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>artificial intelligence</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>deep neural networks</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>radiation therapy</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>convolutional neural network</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY-NC</p>
+<p class="metadata-entry"><span class="generated"><span class="data">cover-date</span>: </span>January-December 2021</p>
+<p class="metadata-entry"><span class="generated"><span class="data">typesetter</span>: </span>ts3</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
