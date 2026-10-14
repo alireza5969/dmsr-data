@@ -64,7 +64,7 @@ for (i in seq_along(pmcids)) {
     stringr::str_extract("PMC.*.html") %>%
     stringr::str_remove(".html")
   
-  if (pmcid %in% current_list) {print("already in repo"; next}
+  if (pmcid %in% current_list) {print("already in repo"); next}
 
   Sys.sleep(.2)
                                       
