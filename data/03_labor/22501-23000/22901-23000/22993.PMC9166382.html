@@ -1,0 +1,2112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Campagnini, Arienti, Patrini, Liuzzi, Mannini, and Carrozza: Machine learning methods for functional recovery prediction and prognosis in post-stroke rehabilitation: a systematic review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>J Neuroeng Rehabil</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>J Neuroeng Rehabil</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>286</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>jneurorehab</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101232233</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Journal of NeuroEngineering and Rehabilitation</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1743-0003</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>BMC</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="12984_2022_Article_1032.pdf">12984_2022_Article_1032.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© The Author(s) 2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1"><b>Open Access</b>This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">http://creativecommons.org/licenses/by/4.0/</a>. The Creative Commons Public Domain Dedication waiver (<a target="xrefwindow" href="https://creativecommons.org/publicdomain/zero/1.0/" id="id3">http://creativecommons.org/publicdomain/zero/1.0/</a>) applies to the data made available in this article, unless otherwise stated in a credit line to the data.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>21 July 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>18 May 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>3 June 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>19</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>397930<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>54</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9166382</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9166382.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9166382</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9166382</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35659246</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1186/s12984-022-01032-4</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>1032</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>http://dx.doi.org/10.13039/501100003196Ministero della Salute</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>5xMille AF2018 "Data Science in Rehabilitation Medicine"</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>5xMille AF2019: “Study</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>development of biomedical data science</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>machine learning methods to support the appropriateness</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>the decision-making process in rehabilitation medicine”</p>
+<p class="metadata-entry"><span class="generated">Award Recipient: </span>Andrea Mannini</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>http://dx.doi.org/10.13039/501100003196ministero della salute</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>Ricerca Corrente</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>Rete Italiana Neuroscienze</p>
+<p class="metadata-entry"><span class="generated">Award Recipient: </span>Chiara ArientiAndrea Mannini</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Machine learning methods for functional recovery prediction and prognosis in post-stroke rehabilitation: a systematic review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Silvia Campagnini<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Chiara Arienti<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Michele Patrini<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Piergiuseppe Liuzzi<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-0760-052X<span class="generated">] </span>Andrea Mannini<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">amannini@dongnocchi.it</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Maria Chiara Carrozza<span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="Aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>grid.418563.d0000 0001 1090 9021IRCCS Fondazione Don Carlo Gnocchi Onlus, Via di Scandicci 269, 50143 Firenze, Italy </p>
+<p class="metadata-entry"><a id="Aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>grid.263145.70000 0004 1762 600XScuola Superiore Sant’Anna, Viale Rinaldo Piaggio 34, 56025 Pontedera, Italy </p>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id10"><!-- named anchor --></a><h3 class="section-title">Background</h3>
+<p id="Par1">Rehabilitation medicine is facing a new development phase thanks to a recent wave of rigorous clinical trials aimed at improving the scientific evidence of protocols. This phenomenon, combined with new trends in personalised medical therapies, is expected to change clinical practice dramatically. The emerging field of Rehabilomics is only possible if methodologies are based on biomedical data collection and analysis. In this framework, the objective of this work is to develop a systematic review of machine learning algorithms as solutions to predict motor functional recovery of post-stroke patients after treatment.</p>
+</div>
+<div class="section">
+<a id="id11"><!-- named anchor --></a><h3 class="section-title">Methods</h3>
+<p id="Par2">We conducted a comprehensive search of five electronic databases using the Patient, Intervention, Comparison and Outcome (PICO) format. We extracted health conditions, population characteristics, outcome assessed, the method for feature extraction and selection, the algorithm used, and the validation approach. The methodological quality of included studies was assessed using the prediction model risk of bias assessment tool (PROBAST). A qualitative description of the characteristics of the included studies as well as a narrative data synthesis was performed.</p>
+</div>
+<div class="section">
+<a id="id12"><!-- named anchor --></a><h3 class="section-title">Results</h3>
+<p id="Par3">A total of 19 primary studies were included. The predictors most frequently used belonged to the areas of demographic characteristics and stroke assessment through clinical examination. Regarding the methods, linear and logistic regressions were the most frequently used and cross-validation was the preferred validation approach.</p>
+</div>
+<div class="section">
+<a id="id13"><!-- named anchor --></a><h3 class="section-title">Conclusions</h3>
+<p id="Par4">We identified several methodological limitations: small sample sizes, a limited number of external validation approaches, and high heterogeneity among input and output variables. Although these elements prevented a quantitative comparison across models, we defined the most frequently used models given a specific outcome, providing useful indications for the application of more complex machine learning algorithms in rehabilitation medicine.</p>
+</div>
+<div class="section">
+<a id="id14"><!-- named anchor --></a><h3 class="section-title">Supplementary Information</h3>
+<p id="id15">The online version contains supplementary material available at 10.1186/s12984-022-01032-4.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="Sec1"><!-- named anchor --></a><h2 class="main-title">Background</h2>
+<p id="Par33">Vascular problems in nature are the leading cause of death, and stroke is ranked second in worldwide mortality [<a href="#CR1">1</a>]. It accounted for 5.5 million deaths in 2006 [<a href="#CR2">2</a>]. Indeed, for survivors, the burden of stroke is producing an increase in the number of disability-adjusted living years (DALYs). For this reason, the ultimate challenge in stroke rehabilitation research is to improve the rehabilitation protocols by tuning them according to an optimised early outcome prognosis [<a href="#CR3">3</a>]. Therefore, advances in artificial intelligence, machine learning (ML), and more generically data-driven tools, may have a central role in rehabilitation decision-making and protocol development. ML is the methodology that provides computers with the ability to learn from experience. By designing and training algorithms able to learn decision rules from data, automatic solutions able to make predictions on new data can be exploited [<a href="#CR4">4</a>].</p>
+<p id="Par34">ML algorithms have been used often in recent years to predict clinical outcomes [<a href="#CR5">5</a>]. The recent growing interest is due to the increasing complexity and numerosity of available data sets, as well as the presence of multifactorial data with diverse origins, for which more classical methods do not allow accurate results [<a href="#CR6">6</a>, <a href="#CR7">7</a>].</p>
+<p id="Par35">From this perspective and given the available technologies, a new concept of rehabilitation is arising, namely “Rehabilomics”. This innovative view of the rehabilitative intervention concerns a multifactorial data-driven evaluation of the patient, aiming at the identification of physiological, genetic, biochemical or metabolic biomarkers as factors concurring in the rehabilitation process. The correlation of these biomarkers with the clinical outcome that measures the recovery of the patient could lead to important information for rehabilitation treatment planning.</p>
+<p id="Par36">Considering the latest advances in ML-based predictive models could be employed to promote the development of personalised rehabilitation processes for individual recovery. This would result in a human-centred framework in which the synergy among therapies, biogenetics, imaging techniques, technological devices and data-driven tools has a key role [<a href="#CR8">8</a>].</p>
+<p id="Par37">In the literature, there has been a broad exploration of solutions for outcome prediction in medicine applications [<a href="#CR6">6</a>, <a href="#CR9">9</a>–<a href="#CR11">11</a>], and very few of them are about ML models in stroke rehabilitation [<a href="#CR12">12</a>, <a href="#CR13">13</a>]. Most of the reviews in this field provide only a narrative description of the studies, without providing a systematic analysis of the results. On the other hand, those prioritising the technical aspects of the models often lack a clinical contextualisation of the findings. For example, Christodoulou et al. [<a href="#CR6">6</a>], ML methods for clinical outcome prediction are compared across pathologies without providing details about the outcomes used. So, although the review was highly detailed from the technical point of view, i.e. regarding the algorithms validation approaches and performance metrics used, the clinical aspects were out of focus. We are convinced that a proper discussion of the results in light of the clinical context (i.e., pathology and measures) in which they are obtained is essential for translational applicability of the solutions developed, from research to the clinical practice.</p>
+<p id="Par38">Thus, there is an urgent need for a study able to integrate and combine clinical and engineering/technical aspects of predictive solutions used in rehabilitation. The aim of this study is to identify the predictive solutions, developed using ML or theory-based algorithms and internally or externally validated, used for functional outcome prognosis in stroke patients after a rehabilitation programme. The predictive solutions were investigated comprehensively, by evaluating their technical characteristics and performances in association with the clinical selection of input and output variables.</p>
+</div>
+<div class="section">
+<a id="Sec2"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<div class="section">
+<a id="Sec3"><!-- named anchor --></a><h3 class="section-title">Study design</h3>
+<p id="Par39">A systematic review has been performed following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines [<a href="#CR14">14</a>]. The protocol was registered on PROSPERO (ID CRD42020164184).</p>
+</div>
+<div class="section">
+<a id="Sec4"><!-- named anchor --></a><h3 class="section-title">Selection criteria</h3>
+<p id="Par40">The eligibility criteria of the studies included in the review followed the Patient, Intervention, Comparison and Outcome (PICO) framework.<div class="list">
+<a id="id16"><!-- named anchor --></a><ul>
+<li>
+<p id="Par41">Type of studies</p>
+<p id="Par42">We searched for all types of primary studies, excluding only reviews and overviews from the search.</p>
+</li>
+<li>
+<p id="Par43">Types of participants</p>
+<p id="Par44">We included in the study all adult participants (over 18 years old) with stroke, independently of the type of stroke or the time post-onset (TPO).</p>
+</li>
+<li>
+<p id="Par45">Types of intervention</p>
+<p id="Par46">We included all the studies evaluating predictive models for outcome prognosis after rehabilitation treatment. We defined predictive models as either ML or theory-based algorithms trained on data and internally or externally validated on new data. Primary studies were excluded when the validation of the models, either internal or external, was not performed. We denoted as external the validation performed on new data, unseen from the model during the training phase and geographically and/or temporally independent from the training set. On the contrary, internal validation refers to methods involving only data from a single data acquisition campaign, eventually split into multiple subsets.</p>
+<p id="Par47">Moreover, we considered the outcome of the model as a variable related to the motor functional status of the patient after the rehabilitation treatment, and we considered as predictors any variable related to the patients’ conditions before or during the rehabilitation. So, we included studies that evaluated the relationships between predictors and response, describing the functional recovery of the patient during the rehabilitation.</p>
+</li>
+<li>
+<p id="Par48">Types of outcome</p>
+<p id="Par49">We selected studies evaluating motor functional outcomes and excluded studies involving only cognitive or only sensory-related outcomes. Because functional measures are less influenced than cognitive ones by external factors such as social and cultural biases, we preferred to limit our analysis to them. Nevertheless, we decided not to excessively constrain the selection of the outcome, including either upper and lower limb-related outcomes. Both features describing lower and higher-level domains with respect to the International Classification of Functioning, Disability and Health (ICF) were included, e.g. body functions activities and participation. We also discarded all studies considering responses collected more than three months after the end of the rehabilitation treatment to focus on the effective impact of the rehabilitation phase on the outcome.</p>
+</li>
+</ul>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec5"><!-- named anchor --></a><h3 class="section-title">Search methods for identification of studies</h3>
+<p id="Par50">A systematic search was conducted in the following databases: PubMed, Web of Science, Scopus, CINAHL and the CENTRAL. The keywords used in the search string were ‘stroke’, ‘machine learning’, ‘regression analysis’, ‘automated pattern recognition’, ‘prognosis’, ‘rehabilitation outcome’, ‘clinical’, ‘efficacy treatment’ and ‘rehabilitation’. The search string was built using the PICO framework for prognostic studies [<a href="#CR15">15</a>]. Table <a href="#Tab1">1</a> reports the search strings used in the different databases.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id17">Search string</p></div>
+<table frame="hsides" rules="groups">
+<a id="id18"><!-- named anchor --></a><thead>
+<a id="id19"><!-- named anchor --></a><tr>
+<a id="id20"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id21"><!-- named anchor --></a>Database</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id22"><!-- named anchor --></a>Search string</th>
+</tr>
+</thead>
+<tbody>
+<a id="id23"><!-- named anchor --></a><tr>
+<a id="id24"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id25"><!-- named anchor --></a>PubMed</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id26"><!-- named anchor --></a>((“machine learning”[MeSH Terms] OR “regression analysis”[MeSH Terms] OR “automated pattern recognition”[MeSH Terms]) AND (“stroke”[MeSH Terms]) AND (“rehabilitation”[MeSH Terms]) AND (“prognosis”[MeSH Terms] OR “rehabilitation outcome”[MeSH Terms] OR “clinical”[MeSH Terms] OR “efficacy treatment”[MeSH Terms])) OR ((“Machine Learning” OR “pattern recognition” OR “automated pattern recognition” OR “classif*” OR “regress*” OR “regression analysis”) AND (“stroke”) AND (“rehab*”) AND ((“pred*”) AND (“prognosis” OR “rehabilitation outcome” OR “clinical” OR “efficac*” OR “efficacy treatment” OR “treatment effect” OR “treatments effect”))) Sort by: Best Match Filters: English</td>
+</tr>
+<tr>
+<a id="id27"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id28"><!-- named anchor --></a>Web of Science</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id29"><!-- named anchor --></a>(TS = ((“Machine Learning” OR “pattern recognition” OR “automated pattern recognition” OR “classif*” OR “regress*” OR “regression analysis”) AND (“stroke”) AND (“rehab*”) AND ((“pred*”) AND (“prognosis” OR “rehabilitation outcome” OR “clinical” OR “efficac*” OR “efficacy treatment” OR “treatment effect” OR “treatments effect”)))) AND LANGUAGE: (English)</td>
+</tr>
+<tr>
+<a id="id30"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id31"><!-- named anchor --></a>Scopus</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id32"><!-- named anchor --></a>TITLE-ABS-KEY ((“Machine Learning” OR “pattern recognition” OR “automated pattern recognition” OR “classif*” OR “regress*” OR “regression analysis”) AND (“stroke”) AND (“rehab*” OR “rehabilitation”) AND ((“pred*”) AND (“prognosis” OR “rehabilitation outcome” OR “clinical” OR “efficac*” OR “efficacy treatment” OR “treatment effect” OR “treatments effect”))) AND (LIMIT-TO (LANGUAGE, “English”))</td>
+</tr>
+<tr>
+<a id="id33"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id34"><!-- named anchor --></a>CENTRAL</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id35"><!-- named anchor --></a>((pred*) AND (prognosis OR “rehabilitation outcome” OR clinical OR efficac* OR “efficacy treatment” OR “treatment effect” OR “treatments effect”)) AND (“Machine Learning” OR “pattern recognition” OR “automated pattern recognition” OR classif* OR regress* OR “regression analysis”) AND (stroke) AND (rehab*)</td>
+</tr>
+<tr>
+<a id="id36"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>CINAHL</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id38"><!-- named anchor --></a>((“Machine Learning” OR “pattern recognition” OR “automated pattern recognition” OR “classif*” OR “regress*” OR “regression analysis”) AND (“stroke”) AND (“rehab*”) AND ((“pred*”) AND (“prognosis” OR “rehabilitation outcome” OR “clinical” OR “efficac*” OR “efficacy treatment” OR “treatment effect” OR “treatments effect”)))</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="Par51">Once the results of each database search were merged, two independent reviewers (SC and MP) screened the papers, first by title and abstract, and then with the full text. A third reviewer was involved in case of disagreements (AM). During this phase, only papers in English were considered eligible for screening. The selection concerning outcomes was not applied during the search phase; it was involved in the screening phase only.</p>
+</div>
+<div class="section">
+<a id="Sec6"><!-- named anchor --></a><h3 class="section-title">Data collection</h3>
+<p id="Par52">The CHecklist for critical Appraisal and data extraction for systematic Reviews of prediction Modelling Studies (CHARMS) was used [<a href="#CR16">16</a>]. The data extracted from the included studies concerned:<div class="list">
+<a id="id39"><!-- named anchor --></a><ul>
+<li><p id="Par53">Source of data: authors, publication year, study design and DOI.</p></li>
+<li><p id="Par54">Participant characteristics: age, number, specifications of the stroke event both in terms of aetiology and TPO.</p></li>
+<li><p id="Par55">Setting: monocentric or multicentric, type.</p></li>
+<li><p id="Par56">Outcomes: type, measures used, the timing of acquisition with respect to the rehabilitation treatment.</p></li>
+<li><p id="Par57">Predictors: type, measures used, the timing of acquisition with respect to the rehabilitation treatment, number.</p></li>
+<li><p id="Par58">Data treatment: number of missing data and treatment of missing data.</p></li>
+<li><p id="Par59">Methods used: features selection approach, the algorithm used, internal or external validation strategy.</p></li>
+<li><p id="Par60">Model performances: metrics used for performance evaluation, performance reported, limitations reported.</p></li>
+</ul>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec7"><!-- named anchor --></a><h3 class="section-title">Assessment of risk of bias of the included studies</h3>
+<p id="Par61">The Prediction model Risk Of Bias ASsessment Tool (PROBAST) was used for the assessment of the methodological quality of the included studies [<a href="#CR17">17</a>]. The PROBAST tool is helpful to evaluate both the risk of bias and applicability of the included predictive models in four domains (participants, predictors, outcome and analysis).</p>
+</div>
+<div class="section">
+<a id="Sec8"><!-- named anchor --></a><h3 class="section-title">Data synthesis</h3>
+<p id="Par62">To approach more clearly the description of the results, an illustration of the terminology we used is required (Fig. <a href="#Fig1">1</a>). The <i>model</i> is intended as the complex ensemble of predictors, computational methods and outcome variables. The term <i>variables</i> refers to both the input features (or <i>predictors</i>) and the <i>outcomes</i> of the models. Finally, <i>methods</i> addresses the computational ensemble of the feature selection process, algorithm and validation approach characterising the model.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig1"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id40">Terminology used in this review paper regarding the technical steps and parts of the models</p></div>
+</div></p>
+<p id="Par63">Due to the heterogeneity of the selected populations, as well as the heterogeneity of the model characteristics (as detailed in the following sections), we decided not to perform a meta-analysis. Instead, a qualitative analysis was conducted, based on the data extracted from the systematic search.</p>
+<p id="Par64">First, a description of the population and general characteristics of the studies was generated. Then, a frequency analysis was conducted, investigating separately the variables and methods that were used. Specifically, in the analysis of the variables, the type of predictors and outcomes, the instruments used to define them, as well as the most used associations among the input and output features were investigated. All parts of the methods were analysed, that is, the algorithms for the training, the validation approach and the feature selection strategy (when used).</p>
+<p id="Par65">Given that in our work the studies could report the implementation of one or more models, the analysis was performed considering for each study the best-performing ones. More specifically<i>,</i> we selected the best models for each outcome measure (Barthel Index, speed, etc.) and type (categorical, ordinal or numerical). The performance was evaluated using the same metrics reported by the studies.</p>
+<p id="Par66">Finally, a summary description of the reviewed models was reported. Based on the results obtained in the single parts of the models applied in the different studies (methods, variables and performances analysed separately), a critical discussion of methods with respect to the predictors and outcomes was presented to show the state of the art of currently available models versus outcomes. The association among the variables (outcome measures, outcome classes and predictor classes) and the methods (validation approaches and algorithms) was additionally sustained by graphical means with alluvial charts. By reading the alluvial charts either from right to left or vice versa, it is possible to connect the information among the domains included. In particular, the thickness of the flows is giving a visual indication of the strength of the specific connection.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec9"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<p id="Par67">The electronic search resulted in 3567 papers. No additional records were identified through other sources. After removing duplicates and screening the titles and abstracts, there were 846 studies for full text screening. At the end, 19 results [<a href="#CR18">18</a>–<a href="#CR36">36</a>] were included in the study (Fig. <a href="#Fig2">2</a>). It is important to point out that the most relevant selection of the studies occurred during the full text screening rather than during the title and abstract selection phase. This is partly due to the selection criteria on the outcome and on the intervention criteria. Indeed, it was necessary to analyse the full text to ascertain the presence of a proper validation of the model, in order to assess the actual presence of a predictive model.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig2"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id41">Study flow-chart. It is reported the number of papers screened and the reasons for exclusion</p></div>
+</div></p>
+<p id="Par68">The criterion related to the type of intervention was the reason for the exclusion of 423 studies since the main focus of these papers was not the development and validation of predictive models, but an explorative analysis aiming at the identification of biomarkers and the investigation of their association with the outcome of interest.</p>
+<p id="Par69">In Tables <a href="#Tab2">2</a>, <a href="#Tab3">3</a> and <a href="#Tab4">4</a>, reduced versions of the data extraction, as well as a summary of the methodological quality of the studies, are shown; the full version of the data extraction table is available in the Additional file <a href="#MOESM1">1</a>. For each included primary study, a detail of the models with the best performance is provided in terms of outcome type, measure and time of acquisition, predictor type and time of acquisition, feature selection method, algorithm, validation approach and performance measure. Moreover, an indication of the total number of models investigated in the study is given. For brevity and in order to provide a weighted description of the state of the art at a study level, the characteristics of the models are given for the best-performing ones only, despite the fact that data of all the models were extracted in depth.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id42">Population characteristics. Information regarding the sample size, age, additional aetiology-related inclusion criteria, and outcome type are presented</p></div>
+<table frame="hsides" rules="groups">
+<a id="id43"><!-- named anchor --></a><thead>
+<a id="id44"><!-- named anchor --></a><tr>
+<a id="id45"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id46"><!-- named anchor --></a>Study</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id47"><!-- named anchor --></a>Age (mean (std) or [range])</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id48"><!-- named anchor --></a>Sample size</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id49"><!-- named anchor --></a>Further inclusion criteria specifications regarding stroke pathology (time from event or aetiology)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id50"><!-- named anchor --></a>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<a id="id51"><!-- named anchor --></a><tr>
+<a id="id52"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id53"><!-- named anchor --></a>Almubark et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id54"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id55"><!-- named anchor --></a>45</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id56"><!-- named anchor --></a>Event happened more than 6 months before the study</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a>Upper extremity home use</td>
+</tr>
+<tr>
+<a id="id58"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id59"><!-- named anchor --></a>Bates et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>70.4 (11.47)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id61"><!-- named anchor --></a>4020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id62"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>Physical grade achievement</td>
+</tr>
+<tr>
+<a id="id64"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>Berlowitz et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>67.7 (11.1)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id67"><!-- named anchor --></a>2402</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id68"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id69"><!-- named anchor --></a>Functional outcome</td>
+</tr>
+<tr>
+<a id="id70"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id71"><!-- named anchor --></a>Bland et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id72"><!-- named anchor --></a>[21–93]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>269</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id74"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>Walking ability</td>
+</tr>
+<tr>
+<a id="id76"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a>Cheng et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id78"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id79"><!-- named anchor --></a>82</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id80"><!-- named anchor --></a>Ischemic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id81"><!-- named anchor --></a>Recovery</td>
+</tr>
+<tr>
+<a id="id82"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id83"><!-- named anchor --></a>Li et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id84"><!-- named anchor --></a>65.6 (12.31)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id85"><!-- named anchor --></a>271</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id86"><!-- named anchor --></a>First-ever ischemic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id87"><!-- named anchor --></a>Functional status</td>
+</tr>
+<tr>
+<a id="id88"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id89"><!-- named anchor --></a>De Marchis et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>[60–83]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>1102</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id92"><!-- named anchor --></a>Acute ischemic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id93"><!-- named anchor --></a>Unfavourable functional outcome</td>
+</tr>
+<tr>
+<a id="id94"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id95"><!-- named anchor --></a>de Ridder et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id96"><!-- named anchor --></a><p class="first" id="id97">PAIS: 70.1 (13.4)</p>
+<p id="id98">PRACTISE: 70.6 (13.4)</p>
+<p id="id99">PASS: 71.9 (12.5)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id100"><!-- named anchor --></a><p class="first" id="id101">PAIS = training = 1227</p>
+<p id="id102">PASS = validation = 2125 (2107)</p>
+<p id="id103">PRACTISE = validation = 1657 (1589)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id104"><!-- named anchor --></a>Ischemic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id105"><!-- named anchor --></a>Disability and functional outcome</td>
+</tr>
+<tr>
+<a id="id106"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id107"><!-- named anchor --></a>George et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id108"><!-- named anchor --></a>[24–84]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a>35</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id110"><!-- named anchor --></a>Chronic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id111"><!-- named anchor --></a>Extent of motor recovery after constraint-induced movement therapy</td>
+</tr>
+<tr>
+<a id="id112"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id113"><!-- named anchor --></a>König et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id114"><!-- named anchor --></a><p class="first" id="id115">Original: 68.1 (12.7)</p>
+<p id="id116">VISTA: 68.8 (12.3)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id117"><!-- named anchor --></a><p class="first" id="id118">Original = 1754</p>
+<p id="id119">VISTA = 5048</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id120"><!-- named anchor --></a>Acute ischemic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id121"><!-- named anchor --></a>Functional independence</td>
+</tr>
+<tr>
+<a id="id122"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>Kuceyeski et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id124"><!-- named anchor --></a>72.0 (12.0)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id125"><!-- named anchor --></a>41</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id126"><!-- named anchor --></a>Ischemic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id127"><!-- named anchor --></a>Clinical performance</td>
+</tr>
+<tr>
+<a id="id128"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a>Abdel Majeed et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id130"><!-- named anchor --></a><p class="first" id="id131">Control arm: 55.54 (12.63)</p>
+<p id="id132">Treatment arm: 55.23 (9.11)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id133"><!-- named anchor --></a>26</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id134"><!-- named anchor --></a>Chronic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id135"><!-- named anchor --></a>Change in clinical outcomes</td>
+</tr>
+<tr>
+<a id="id136"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id137"><!-- named anchor --></a>Masiero et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a><p class="first" id="id139">Construction set: 69 (12)</p>
+<p id="id140">Validation set: 68 (11)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id141"><!-- named anchor --></a>150</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id142"><!-- named anchor --></a>Recent stroke (&lt; 8 weeks post-event)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id143"><!-- named anchor --></a>Ambulation</td>
+</tr>
+<tr>
+<a id="id144"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id145"><!-- named anchor --></a>Mostafavi et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id146"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id147"><!-- named anchor --></a>126</td>
+<td align="left" colspan="1" rowspan="1"><a id="id148"><!-- named anchor --></a></td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id149"><!-- named anchor --></a>Assessment of impairment</td>
+</tr>
+<tr>
+<a id="id150"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id151"><!-- named anchor --></a>Sale et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id152"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id153"><!-- named anchor --></a>55</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id154"><!-- named anchor --></a>Subacute (15 ± 10 days from injury)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id155"><!-- named anchor --></a>Motor improvement</td>
+</tr>
+<tr>
+<a id="id156"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id157"><!-- named anchor --></a>Scrutinio, Lanzillo, et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id158"><!-- named anchor --></a><p class="first" id="id159">Derivation set: 72 (12)</p>
+<p id="id160">Validation set: 70 (12)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id161"><!-- named anchor --></a>1592</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a>Functional status</td>
+</tr>
+<tr>
+<a id="id164"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a>Scrutinio, Guida, et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id166"><!-- named anchor --></a>[65–80]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id167"><!-- named anchor --></a>951</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id168"><!-- named anchor --></a>30 days from stroke occurrence</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id169"><!-- named anchor --></a>Treatment failure</td>
+</tr>
+<tr>
+<a id="id170"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id171"><!-- named anchor --></a>Sonoda et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id172"><!-- named anchor --></a><p class="first" id="id173">Prediction group: 63.4</p>
+<p id="id174">Validation group: 65.2</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id175"><!-- named anchor --></a>131</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id176"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>Stroke outcome</td>
+</tr>
+<tr>
+<a id="id178"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id179"><!-- named anchor --></a>Zariffa et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id180"><!-- named anchor --></a>[60–73]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id181"><!-- named anchor --></a>9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id182"><!-- named anchor --></a>Chronic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a>Measure of upper-limb function</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><p class="first" id="id184"><i>N/R</i> information should be specified but it is not reported in the paper, <i>N/A</i> information not applicable to the specific paper</p></div>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id185">PROBAST</p></div>
+<table frame="hsides" rules="groups">
+<a id="id186"><!-- named anchor --></a><thead>
+<a id="id187"><!-- named anchor --></a><tr>
+<a id="id188"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id189"><!-- named anchor --></a>Criteria</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id190"><!-- named anchor --></a>Specification of the review question</th>
+</tr>
+</thead>
+<tbody>
+<a id="id191"><!-- named anchor --></a><tr>
+<a id="id192"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id193"><!-- named anchor --></a>Step 1: Specify your systematic review question</td>
+</tr>
+<tr>
+<a id="id194"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id195"><!-- named anchor --></a> Intended use of the model:</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id196"><!-- named anchor --></a>Prediction of functional outcome after rehabilitation treatment of post-stroke patients</td>
+</tr>
+<tr>
+<a id="id197"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id198"><!-- named anchor --></a> Participants:</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id199"><!-- named anchor --></a>Adults post-stroke participants selected independently on the timing of the event or type of stroke</td>
+</tr>
+<tr>
+<a id="id200"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id201"><!-- named anchor --></a> Predictors:</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id202"><!-- named anchor --></a>Any kind of predictor was included, more specifically any type included in the following categories of stroke assessment: biomechanical assessment, functional assessment, demographic characteristics, medical history, stroke assessment and neurological assessment. The selected predictors are related to the admission or recovery phase only, excluding predictors variables collected at discharge</td>
+</tr>
+<tr>
+<a id="id203"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id204"><!-- named anchor --></a> Outcome:</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a>Any kind of functional outcome, not exclusively cognitive or sensory-related was selected</td>
+</tr>
+</tbody>
+</table>
+<table frame="hsides" rules="groups">
+<a id="id206"><!-- named anchor --></a><thead>
+<a id="id207"><!-- named anchor --></a><tr>
+<a id="id208"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id209"><!-- named anchor --></a>Study</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id210"><!-- named anchor --></a>Outcome</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id211"><!-- named anchor --></a>Type of prediction study</th>
+</tr>
+</thead>
+<tbody>
+<a id="id212"><!-- named anchor --></a><tr>
+<a id="id213"><!-- named anchor --></a><td align="left" colspan="3" rowspan="1">
+<a id="id214"><!-- named anchor --></a>Step 2: Classify the type of prediction model evaluation</td>
+</tr>
+<tr>
+<a id="id215"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id216"><!-- named anchor --></a> Almubark et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id217"><!-- named anchor --></a>Upper extremity home use</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id218"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id219"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id220"><!-- named anchor --></a> Bates et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id221"><!-- named anchor --></a>Physical grade achievement</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id222"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id223"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id224"><!-- named anchor --></a> Berlowitz et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id225"><!-- named anchor --></a>Functional outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id226"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id227"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id228"><!-- named anchor --></a> Bland et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id229"><!-- named anchor --></a>Walking ability</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id230"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id231"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id232"><!-- named anchor --></a> Cheng et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>Recovery</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id234"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id235"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id236"><!-- named anchor --></a> Li et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id237"><!-- named anchor --></a>Functional status</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id238"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id239"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id240"><!-- named anchor --></a> De Marchis et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id241"><!-- named anchor --></a>Unfavourable functional outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>Development and validation</td>
+</tr>
+<tr>
+<a id="id243"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id244"><!-- named anchor --></a> De Ridder et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id245"><!-- named anchor --></a>Disability and functional outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id246"><!-- named anchor --></a>Development and validation</td>
+</tr>
+<tr>
+<a id="id247"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id248"><!-- named anchor --></a> George et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id249"><!-- named anchor --></a>Extent of motor recovery after constraint-induced movement therapy</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id250"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id251"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id252"><!-- named anchor --></a> König et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id253"><!-- named anchor --></a>Functional independence</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id254"><!-- named anchor --></a>Development and validation</td>
+</tr>
+<tr>
+<a id="id255"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id256"><!-- named anchor --></a> Kuceyeski et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a>Clinical performance</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id259"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id260"><!-- named anchor --></a> Abdel Majeed et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id261"><!-- named anchor --></a>Change in clinical outcomes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id262"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id263"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id264"><!-- named anchor --></a> Masiero et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id265"><!-- named anchor --></a>Ambulation</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id266"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id267"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id268"><!-- named anchor --></a> Mostafavi et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id269"><!-- named anchor --></a>Assessment of impairment</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id270"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id271"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id272"><!-- named anchor --></a> Sale et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id273"><!-- named anchor --></a>Motor improvement</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id274"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id275"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id276"><!-- named anchor --></a> Scrutinio, Lanzillo, et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id277"><!-- named anchor --></a>Functional status</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id278"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id279"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id280"><!-- named anchor --></a> Scrutinio, Guida, et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id281"><!-- named anchor --></a>Treatment failure</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id282"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id283"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id284"><!-- named anchor --></a> Sonoda et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id285"><!-- named anchor --></a>Stroke outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id286"><!-- named anchor --></a>Development only</td>
+</tr>
+<tr>
+<a id="id287"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id288"><!-- named anchor --></a> Zariffa et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id289"><!-- named anchor --></a>Measure of upper-limb function</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id290"><!-- named anchor --></a>Development only</td>
+</tr>
+</tbody>
+</table>
+<table frame="hsides" rules="groups">
+<a id="id291"><!-- named anchor --></a><thead>
+<a id="id292"><!-- named anchor --></a><tr>
+<a id="id293"><!-- named anchor --></a><th align="left" rowspan="2" colspan="1">
+<a id="id294"><!-- named anchor --></a>Domain</th>
+<th align="left" colspan="2" rowspan="1">
+<a id="id295"><!-- named anchor --></a>Risk of bias (number of models)</th>
+<th align="left" colspan="2" rowspan="1">
+<a id="id296"><!-- named anchor --></a>Applicability (number of models)</th>
+</tr>
+<tr>
+<a id="id297"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id298"><!-- named anchor --></a>Dev</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id299"><!-- named anchor --></a>Val</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id300"><!-- named anchor --></a>Dev</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id301"><!-- named anchor --></a>Val</th>
+</tr>
+</thead>
+<tbody>
+<a id="id302"><!-- named anchor --></a><tr>
+<a id="id303"><!-- named anchor --></a><td align="left" colspan="5" rowspan="1">
+<a id="id304"><!-- named anchor --></a>Step 3: Assess risk of bias and applicability</td>
+</tr>
+<tr>
+<a id="id305"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id306"><!-- named anchor --></a> Participants</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id307"><!-- named anchor --></a><p class="first" id="id308">High = 0</p>
+<p id="id309">Unclear = 0</p>
+<p id="id310">Low = 174</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id311"><!-- named anchor --></a><p class="first" id="id312">High = 0</p>
+<p id="id313">Unclear = 0</p>
+<p id="id314">Low = 174</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id315"><!-- named anchor --></a><p class="first" id="id316">High = 0</p>
+<p id="id317">Unclear = 0</p>
+<p id="id318">Low = 174</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id319"><!-- named anchor --></a><p class="first" id="id320">High = 0</p>
+<p id="id321">Unclear = 0</p>
+<p id="id322">Low = 174</p>
+</td>
+</tr>
+<tr>
+<a id="id323"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id324"><!-- named anchor --></a> Predictors</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id325"><!-- named anchor --></a><p class="first" id="id326">High = 1</p>
+<p id="id327">Unclear = 0</p>
+<p id="id328">Low = 173</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id329"><!-- named anchor --></a><p class="first" id="id330">High = 1</p>
+<p id="id331">Unclear = 0</p>
+<p id="id332">Low = 173</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id333"><!-- named anchor --></a><p class="first" id="id334">High = 1</p>
+<p id="id335">Unclear = 0</p>
+<p id="id336">Low = 173</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id337"><!-- named anchor --></a><p class="first" id="id338">High = 1</p>
+<p id="id339">Unclear = 0</p>
+<p id="id340">Low = 173</p>
+</td>
+</tr>
+<tr>
+<a id="id341"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id342"><!-- named anchor --></a> Outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id343"><!-- named anchor --></a><p class="first" id="id344">High = 24</p>
+<p id="id345">Unclear = 120</p>
+<p id="id346">Low = 30</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id347"><!-- named anchor --></a><p class="first" id="id348">High = 24</p>
+<p id="id349">Unclear = 120</p>
+<p id="id350">Low = 30</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id351"><!-- named anchor --></a><p class="first" id="id352">High = 24</p>
+<p id="id353">Unclear = 119</p>
+<p id="id354">Low = 31</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id355"><!-- named anchor --></a><p class="first" id="id356">High = 24</p>
+<p id="id357">Unclear = 119</p>
+<p id="id358">Low = 31</p>
+</td>
+</tr>
+<tr>
+<a id="id359"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id360"><!-- named anchor --></a> Analysis</td>
+<td align="left" colspan="4" rowspan="1">
+<a id="id361"><!-- named anchor --></a><p class="first" id="id362">High = 77</p>
+<p id="id363">Unclear = 8</p>
+<p id="id364">Low = 89</p>
+</td>
+</tr>
+<tr>
+<a id="id365"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id366"><!-- named anchor --></a> Overall</td>
+<td align="left" colspan="2" rowspan="1">
+<a id="id367"><!-- named anchor --></a><p class="first" id="id368">High = 85</p>
+<p id="id369">Unclear = 67</p>
+<p id="id370">Low = 22</p>
+</td>
+<td align="left" colspan="2" rowspan="1">
+<a id="id371"><!-- named anchor --></a><p class="first" id="id372">High = 35</p>
+<p id="id373">Unclear = 110</p>
+<p id="id374">Low = 29</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><p class="first" id="id375">A short table containing the details on the four steps of the evaluation is reported</p></div>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab4"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<div class="caption"><p class="first" id="id376">Data extraction table</p></div>
+<table frame="hsides" rules="groups">
+<a id="id377"><!-- named anchor --></a><thead>
+<a id="id378"><!-- named anchor --></a><tr>
+<a id="id379"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id380"><!-- named anchor --></a>Study</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id381"><!-- named anchor --></a>Number of models in the study</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id382"><!-- named anchor --></a>Outcomes</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id383"><!-- named anchor --></a>Outcome measure (type of outcome, ICF classification)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id384"><!-- named anchor --></a>Outcome at discharge? Yes/no</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id385"><!-- named anchor --></a>Predictors (number)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id386"><!-- named anchor --></a>Timing of the measurement</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id387"><!-- named anchor --></a>Methods for features selection</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id388"><!-- named anchor --></a>Algorithm of the best performing model</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id389"><!-- named anchor --></a>Validation approach</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id390"><!-- named anchor --></a>Measures and methods used for the description of model performance</th>
+</tr>
+</thead>
+<tbody>
+<a id="id391"><!-- named anchor --></a><tr>
+<a id="id392"><!-- named anchor --></a><td align="left" rowspan="2" colspan="1">
+<a id="id393"><!-- named anchor --></a>Almubark et al.</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id394"><!-- named anchor --></a>102</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id395"><!-- named anchor --></a>Upper extremity use at home</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id396"><!-- named anchor --></a>MAL ratio (dichotomous variable, d5d6)</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id397"><!-- named anchor --></a>N/R</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id398"><!-- named anchor --></a>Trunk compensation, ARAT (3)</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id399"><!-- named anchor --></a>N/R</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id400"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id401"><!-- named anchor --></a>RF after PCA</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id402"><!-- named anchor --></a>Leave-One-Subject-Out</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id403"><!-- named anchor --></a>Classification accuracy 93.33%</td>
+</tr>
+<tr>
+<a id="id404"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id405"><!-- named anchor --></a>Upper extremity use at home</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id406"><!-- named anchor --></a>Accel ratio (dichotomous variable, b7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id407"><!-- named anchor --></a>KNN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id408"><!-- named anchor --></a>Classification accuracy 86.66%</td>
+</tr>
+<tr>
+<a id="id409"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id410"><!-- named anchor --></a>Bates et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id411"><!-- named anchor --></a>1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id412"><!-- named anchor --></a>Physical grade achievement</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id413"><!-- named anchor --></a>FIM (numeric variable, d2d3d4d5d7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id414"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id415"><!-- named anchor --></a>Anagrafic data, clinical data, comorbidities data, acute procedures (38)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id416"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id417"><!-- named anchor --></a>Unadjusted bivariate logistic analyses _ features selected are with p &lt; 0.2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id418"><!-- named anchor --></a>LogR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id419"><!-- named anchor --></a>60% -40% split</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id420"><!-- named anchor --></a><p class="first" id="id421">ROC area on the derivation set = 0.84</p>
+<p id="id422">ROC area on the validation set = 0.83</p>
+<p id="id423"> + Hosmer–Lemeshow test at p = 0.93 not significant on the derivation cohort</p>
+</td>
+</tr>
+<tr>
+<a id="id424"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id425"><!-- named anchor --></a>Berlowitz et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id426"><!-- named anchor --></a>4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id427"><!-- named anchor --></a>Functional outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id428"><!-- named anchor --></a>FIM change (numeric variable, d2d3d4d5d7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id429"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id430"><!-- named anchor --></a>Age, gender (2)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id431"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id432"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id433"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id434"><!-- named anchor --></a>Bootstrap method (1000 samples)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id435"><!-- named anchor --></a>R^2 = 0.75</td>
+</tr>
+<tr>
+<a id="id436"><!-- named anchor --></a><td align="left" rowspan="2" colspan="1">
+<a id="id437"><!-- named anchor --></a>Bland et al.</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id438"><!-- named anchor --></a>2</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id439"><!-- named anchor --></a>Walking ability</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id440"><!-- named anchor --></a>10 m walking speed (dichotomous variable, b7)</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id441"><!-- named anchor --></a>Yes</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id442"><!-- named anchor --></a>Motricity Index, somatosensation of the dorsum of the foot, Modified Ashworth Scale for plantar flexors, FIM walk item, Berg Balance Scale, 10-m walk speed, age, TPO (8)</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id443"><!-- named anchor --></a>Admission</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id444"><!-- named anchor --></a><p class="first" id="id445">Pearson product-moment correla_</p>
+<p id="id446">tion</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id447"><!-- named anchor --></a>LogR</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id448"><!-- named anchor --></a>110 -159 samples split</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id449"><!-- named anchor --></a>Sensitivity (0.94), specificity (0.65), OR (32), positive and negative predictive values (0.70, 0.93)</td>
+</tr>
+<tr>
+<a id="id450"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id451"><!-- named anchor --></a>10 m walking speed (numeric variable, b7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id452"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id453"><!-- named anchor --></a>Sensitivity (0.94), specificity (0.65), OR (32), positive and negative predictive values (0.70, 0.93)</td>
+</tr>
+<tr>
+<a id="id454"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id455"><!-- named anchor --></a>Cheng et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id456"><!-- named anchor --></a>3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id457"><!-- named anchor --></a>Recovery</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id458"><!-- named anchor --></a>MRS (dichotomous variable)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id459"><!-- named anchor --></a>No, at 3 months</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id460"><!-- named anchor --></a><p class="first" id="id461">Gender, hypertension, heart disease, diabetes,</p>
+<p id="id462">previous stroke with yes or no nodes, age, OTT, NIHSS (8)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id463"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id464"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id465"><!-- named anchor --></a>NN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id466"><!-- named anchor --></a>80%—20% split</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id467"><!-- named anchor --></a>ROC curve = 0.969,sensitivity = 0.9444,specificity = 0.9565,accuracy = 0.9512</td>
+</tr>
+<tr>
+<a id="id468"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id469"><!-- named anchor --></a>De Marchis et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id470"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id471"><!-- named anchor --></a>Unfavourable functional outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id472"><!-- named anchor --></a>MRS (dichotomous variable, d2d4)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id473"><!-- named anchor --></a>No, at 3 months</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id474"><!-- named anchor --></a>Age, NIHSS score, thrombolysis, log10-transformed copeptin levels (4)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id475"><!-- named anchor --></a>Admission</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id476"><!-- named anchor --></a><p class="first" id="id477">Chosen variables that were</p>
+<p id="id478">independently associated with 3-month functional outcome in the dev and val cohorts</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id479"><!-- named anchor --></a>LogR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id480"><!-- named anchor --></a>Model trained on COSMOS dataset (319) and tenfold CV; Ex. validated on CoRisk dataset (783)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id481"><!-- named anchor --></a><p class="first" id="id482">Brier score</p>
+<p id="id483"> + AUC (0.819)</p>
+<p id="id484"> + NRI = continuous net reclassification index (0.46)</p>
+</td>
+</tr>
+<tr>
+<a id="id485"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id486"><!-- named anchor --></a>De Ridder et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id487"><!-- named anchor --></a>7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id488"><!-- named anchor --></a>Functional outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id489"><!-- named anchor --></a>MRS (dichotomous variable, d2d4)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id490"><!-- named anchor --></a>No, at 3 months</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id491"><!-- named anchor --></a><p class="first" id="id492">Gender; age; NIHSS,</p>
+<p id="id493">Diabetes, previous stroke</p>
+<p id="id494">atrial fibrillation and hypertension (7)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id495"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id496"><!-- named anchor --></a>Selected variables that were clinically relevant and/or previously reported to predict outcome in the literature</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id497"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id498"><!-- named anchor --></a>Model trained on PAIS dataset (1227) and ex. validated on PASS dataset (2107)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id499"><!-- named anchor --></a>AUC = 0.81</td>
+</tr>
+<tr>
+<a id="id500"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id501"><!-- named anchor --></a>George et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id502"><!-- named anchor --></a>6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id503"><!-- named anchor --></a>Extent of motor recovery after constraint-induced movement therapy</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id504"><!-- named anchor --></a>WMFT (dichotomous variable, d2d4)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id505"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id506"><!-- named anchor --></a>Side of motor impairment, motor predictors: each of the 15 WMFT natural-log-transformed item times; Sensory-motor predictors: BKT score, TM for the affected side (18)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id507"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id508"><!-- named anchor --></a>All possible combinations of 18 inputs, a total of 262,125 combinations, were generated</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id509"><!-- named anchor --></a>NN</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id510"><!-- named anchor --></a><p class="first" id="id511">35 different splits at different random ratios</p>
+<p id="id512">(RTT)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id513"><!-- named anchor --></a>Accuracy = 100%</td>
+</tr>
+<tr>
+<a id="id514"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id515"><!-- named anchor --></a>König et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id516"><!-- named anchor --></a>1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id517"><!-- named anchor --></a>Functional independence</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id518"><!-- named anchor --></a>BI (dichotomous variable, d2d4d5)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id519"><!-- named anchor --></a>No, at 3 months</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id520"><!-- named anchor --></a><p class="first" id="id521">Single items as well as the</p>
+<p id="id522">overall score of the NIHSS (16)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id523"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id524"><!-- named anchor --></a>Systematic literature search</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id525"><!-- named anchor --></a>LogR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id526"><!-- named anchor --></a>Model trained on original dataset (1754); ex. validated on VISTA dataset (5048)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id527"><!-- named anchor --></a>AUC = 72.9%</td>
+</tr>
+<tr>
+<a id="id528"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id529"><!-- named anchor --></a>Sonoda et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id530"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id531"><!-- named anchor --></a>Stroke outcome</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id532"><!-- named anchor --></a>Motor FIM (numerical variable, d2d4d5)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id533"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id534"><!-- named anchor --></a>Total cognitive subscore of the FIM, age, days from stroke onset to dmission, motor-FIM (4)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id535"><!-- named anchor --></a>Admission</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id536"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id537"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id538"><!-- named anchor --></a>87 -44 samples split</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id539"><!-- named anchor --></a>Correlation coefficients = 0.93</td>
+</tr>
+<tr>
+<a id="id540"><!-- named anchor --></a><td align="left" rowspan="3" colspan="1">
+<a id="id541"><!-- named anchor --></a>Kuceyeski et al.</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id542"><!-- named anchor --></a>7</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id543"><!-- named anchor --></a>Clinical performance</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id544"><!-- named anchor --></a>Motor FIM (numerical variable, d2d4d5)</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id545"><!-- named anchor --></a>N/R</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id546"><!-- named anchor --></a>Right inferior occipital and calcarine areas (N/R)</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id547"><!-- named anchor --></a>N/R</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id548"><!-- named anchor --></a>Jackknife CV</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id549"><!-- named anchor --></a>LR</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id550"><!-- named anchor --></a>Bootstrap</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id551"><!-- named anchor --></a>Akaike Information Criterion (AIC) and R^2 = 0.45 (0.08)</td>
+</tr>
+<tr>
+<a id="id552"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id553"><!-- named anchor --></a>FIM (numerical variable, d2d3d4d5d7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id554"><!-- named anchor --></a>Akaike Information Criterion (AIC) and R^2 = 0.37 (0.08)</td>
+</tr>
+<tr>
+<a id="id555"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id556"><!-- named anchor --></a>MI (numerical variable, b7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id557"><!-- named anchor --></a>Akaike Information Criterion (AIC) and R^2 = 0.54 (0.14)</td>
+</tr>
+<tr>
+<a id="id558"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id559"><!-- named anchor --></a>Li et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id560"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id561"><!-- named anchor --></a>Functional status</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id562"><!-- named anchor --></a>BI (numerical variable, d2d4d5)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id563"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id564"><!-- named anchor --></a>Demographic information (age, sex and smoking habit), medical history (hypertension, diabetes mellitus, atrial fibrillation and hypercholesterolemia), evaluation at initial admission in the emergency department (blood glucose, blood pressure, laboratory data and the stroke severity) (N/R)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id565"><!-- named anchor --></a>Admission</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id566"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id567"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id568"><!-- named anchor --></a>CV (90–10% _ split)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id569"><!-- named anchor --></a>R^2 adjusted = 0.573</td>
+</tr>
+<tr>
+<a id="id570"><!-- named anchor --></a><td align="left" rowspan="2" colspan="1">
+<a id="id571"><!-- named anchor --></a>Scrutinio, Lanzillo, et al.</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id572"><!-- named anchor --></a>2</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id573"><!-- named anchor --></a>Functional status</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id574"><!-- named anchor --></a>FIS (dichotomous variable, d2d4d5)</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id575"><!-- named anchor --></a>Yes</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id576"><!-- named anchor --></a><p class="first" id="id577">Age, sex, marital staus, employment status, hypertension,</p>
+<p id="id578">diabetes mellitus,</p>
+<p id="id579">COPD, coronary heart disease, atrial fibrillation, TPO, aetiology, side of impairment, aphasia, unilateral neglect, M-FIM, cognitive FIM,</p>
+<p id="id580">blood urea nitrogen,</p>
+<p id="id581">estimated glomerular filtration rate, hemoglobin (19)</p>
+</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id582"><!-- named anchor --></a>Admission</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id583"><!-- named anchor --></a>Forward stepwise selection approach with P &lt; 0.05</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id584"><!-- named anchor --></a>LogR</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id585"><!-- named anchor --></a><p class="first" id="id586">717–875</p>
+<p id="id587">samples split</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id588"><!-- named anchor --></a>AUC (0.913), Hosmer–Lemeshow test ( 1.20 (P = 0.754)) and calibration plots</td>
+</tr>
+<tr>
+<a id="id589"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id590"><!-- named anchor --></a>Motor FIM (dichotomous variable, d2d4d5)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id591"><!-- named anchor --></a>AUC (0.883), Hosmer–Lemeshow test ( 4.12 (P = 0.249)) and calibration plots</td>
+</tr>
+<tr>
+<a id="id592"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id593"><!-- named anchor --></a>Mostafavi et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id594"><!-- named anchor --></a>12</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id595"><!-- named anchor --></a>Assessment of impairment</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id596"><!-- named anchor --></a>MAS (numerical variable, b7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id597"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id598"><!-- named anchor --></a>postural hand speed; reaction and its timing; initial movement direction error/ratio, hand speed ratio; number of speed peaks, speed ranges; movement time, hand path length, and maximum hand speed trial-to-trial variability of the active hand; contraction/expansion of the overall spatial area of the active hand relative to the passive hand; systematic shift between the passive and active hand (8)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id599"><!-- named anchor --></a>During every session, they are instrumental attributes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id600"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id601"><!-- named anchor --></a>PCI</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id602"><!-- named anchor --></a>tenfold CV, repeated 100 times + external valiudation</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id603"><!-- named anchor --></a>R-value, RMSE, NRMSE (0.054, 0.405, 31.2)</td>
+</tr>
+<tr>
+<a id="id604"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id605"><!-- named anchor --></a>Masiero et al. [<a href="#CR29">29</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id606"><!-- named anchor --></a>1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id607"><!-- named anchor --></a>Ambulation</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id608"><!-- named anchor --></a>FAC (dichotomous variable, d4)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id609"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id610"><!-- named anchor --></a><p class="first" id="id611">Age, gender, arterial hypertension, hypolipoproteinaemia, diabetes,</p>
+<p id="id612">event date and aetiology, paralysed side</p>
+<p id="id613">length of hospital stay, up MI and low MI, TCT, FIM and mot FIM (12)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id614"><!-- named anchor --></a>Admission</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id615"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id616"><!-- named anchor --></a>LogR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id617"><!-- named anchor --></a>100–50 samples split</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id618"><!-- named anchor --></a><p class="first" id="id619">ROC curves (ROC area = 0.94, CI 95%: 0.86–0.96, p &lt; 0.0001), with sensitivity of 86.5% (CI 95%: 77–96%) and specificity of 95.5%</p>
+<p id="id620">(CI 95%: 75–95%))</p>
+</td>
+</tr>
+<tr>
+<a id="id621"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id622"><!-- named anchor --></a>Abdel Majeed et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id623"><!-- named anchor --></a>8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id624"><!-- named anchor --></a>Change in clinical outcomes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id625"><!-- named anchor --></a>FM change (numerical variable, b2b7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id626"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id627"><!-- named anchor --></a><p class="first" id="id628">Demographic/physiological characteristics</p>
+<p id="id629">descriptive statistics of movement (51)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id630"><!-- named anchor --></a>Demogr. and physiol. at baseline, movement features</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id631"><!-- named anchor --></a><p class="first" id="id632">Random forests with 100 repeats of</p>
+<p id="id633">fourfold CV</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id634"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id635"><!-- named anchor --></a>CV</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id636"><!-- named anchor --></a>RMSE and R^2 &lt; 2.24%</td>
+</tr>
+<tr>
+<a id="id637"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id638"><!-- named anchor --></a>Scrutinio, Guida, et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id639"><!-- named anchor --></a>1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id640"><!-- named anchor --></a>Treatment failure</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id641"><!-- named anchor --></a>FIM-M (dichotomous variable, d2d4d5)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id642"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id643"><!-- named anchor --></a>Age, sex, marital status, diabetes mellitus, TPO, stroke type, side of impairment, FIM-M and cognitive scores, neglect (10)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id644"><!-- named anchor --></a>N/R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id645"><!-- named anchor --></a><p class="first" id="id646">Backward</p>
+<p id="id647">stepwise selection (P &gt; 0.157 for exclusion)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id648"><!-- named anchor --></a>LogR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id649"><!-- named anchor --></a>Resampling 200 bootstrap replications</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id650"><!-- named anchor --></a>Hosmer–Lemeshow test (7.77 (PZ.456)) and AUC (0.834)</td>
+</tr>
+<tr>
+<a id="id651"><!-- named anchor --></a><td align="left" rowspan="3" colspan="1">
+<a id="id652"><!-- named anchor --></a>Mostafavi et al.</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id653"><!-- named anchor --></a>12</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id654"><!-- named anchor --></a>Assessment of impairment</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id655"><!-- named anchor --></a>FIM-M (numerical variable, d2d4d5)</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id656"><!-- named anchor --></a>Yes</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id657"><!-- named anchor --></a>postural hand speed; reaction and its timing; initial movement direction error/ratio, hand speed ratio; number of speed peaks, speed ranges; movement time, hand path length, and maximum hand speed trial-to-trial variability of the active hand; contraction/expansion of the overall spatial area of the active hand relative to the passive hand; systematic shift between the passive and active hand (8)</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id658"><!-- named anchor --></a>During every session, they are instrumental attributes</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id659"><!-- named anchor --></a>N/A</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id660"><!-- named anchor --></a>PCI</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id661"><!-- named anchor --></a>Tenfold CV, repeated 100 times</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id662"><!-- named anchor --></a>R-value, RMSE, NRMSE (0.562, 16.6, 21.7)</td>
+</tr>
+<tr>
+<a id="id663"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id664"><!-- named anchor --></a>FIM (numerical variable, d2d3d4d5d7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id665"><!-- named anchor --></a>R-value, RMSE, NRMSE (0.596, 16.8, 20.5)</td>
+</tr>
+<tr>
+<a id="id666"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id667"><!-- named anchor --></a>Purdue Pegboard score (numerical variable, d2d4)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id668"><!-- named anchor --></a>R-value, RMSE, NRMSE (0.483, 4.1, 14.1)</td>
+</tr>
+<tr>
+<a id="id669"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id670"><!-- named anchor --></a>Abdel Majeed et al.</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id671"><!-- named anchor --></a>8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id672"><!-- named anchor --></a>Change in clinical outcomes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id673"><!-- named anchor --></a>WMFT change (numerical variable, d2d4)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id674"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id675"><!-- named anchor --></a><p class="first" id="id676">Demographic/physiological characteristics</p>
+<p id="id677">descriptive statistics of movement (51)</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id678"><!-- named anchor --></a>Demogr. and physiol. at baseline, movement features</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id679"><!-- named anchor --></a><p class="first" id="id680">Random forests with 100 repeats of</p>
+<p id="id681">fourfold CV</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id682"><!-- named anchor --></a>LR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id683"><!-- named anchor --></a>CV</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id684"><!-- named anchor --></a>RMSE and R^2 &lt; 4.68%</td>
+</tr>
+<tr>
+<a id="id685"><!-- named anchor --></a><td align="left" rowspan="3" colspan="1">
+<a id="id686"><!-- named anchor --></a>Sale et al.</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id687"><!-- named anchor --></a>9</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id688"><!-- named anchor --></a>Motor improvement</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id689"><!-- named anchor --></a>FIM-M (numerical variable, d2d4d5)</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id690"><!-- named anchor --></a>Yes</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id691"><!-- named anchor --></a><p class="first" id="id692">Age, gender, aetiology, first event,</p>
+<p id="id693">recombinant tissue plasminogen activator, BI, FIM</p>
+<p id="id694">motor impairment, dysphagia, tracheostomy, neuropsychological impairment, speech impairment, presence of nasogastric feeding tube, length of stay (14)</p>
+</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id695"><!-- named anchor --></a><p class="first" id="id696">T0 = admission</p>
+<p id="id697">T1 = discharge</p>
+</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id698"><!-- named anchor --></a>Mutual Information (MI) criterion</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id699"><!-- named anchor --></a>SVM</td>
+<td align="left" rowspan="3" colspan="1">
+<a id="id700"><!-- named anchor --></a><p class="first" id="id701">20 rep. of hold-out approach with 70%—30% split</p>
+<p id="id702"> + nested fivefold CV on the training set</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id703"><!-- named anchor --></a>Correlation, RMSE and MADP (0.76, 16.32, 26.79%)</td>
+</tr>
+<tr>
+<a id="id704"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id705"><!-- named anchor --></a>FIM (numerical variable, d2d3d4d5d7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id706"><!-- named anchor --></a>Correlation, RMSE and MADP (0.79, 18.78, 18.88%)</td>
+</tr>
+<tr>
+<a id="id707"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id708"><!-- named anchor --></a>BI (numerical variable, d2d4d5)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id709"><!-- named anchor --></a>Correlation, RMSE and MADP (0.75, 22.6, 83.96%)</td>
+</tr>
+<tr>
+<a id="id710"><!-- named anchor --></a><td align="left" rowspan="2" colspan="1">
+<a id="id711"><!-- named anchor --></a>Zariffa et al.</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id712"><!-- named anchor --></a>2</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id713"><!-- named anchor --></a>Measure of upper-limb function</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id714"><!-- named anchor --></a>FMA (numerical variable, b2b7)</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id715"><!-- named anchor --></a>Yes</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id716"><!-- named anchor --></a><p class="first" id="id717">Mean velocity, peak velocity, RMS jerk, mean-rectified jerk,</p>
+<p id="id718">number of peaks, path smoothness, speed smoothness,</p>
+<p id="id719">SPARC, passive ROMs,</p>
+<p id="id720">passive ROM Area,</p>
+<p id="id721">Active ROMs, Active ROM Area (14)</p>
+</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id722"><!-- named anchor --></a>During 76 assessments</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id723"><!-- named anchor --></a>Exhaustive search of all the combinations of the 14 features</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id724"><!-- named anchor --></a>LR</td>
+<td align="left" rowspan="2" colspan="1">
+<a id="id725"><!-- named anchor --></a>Leave-one-subject-out</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id726"><!-- named anchor --></a>R^2 = 0.4390, SRD = 1.4621</td>
+</tr>
+<tr>
+<a id="id727"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id728"><!-- named anchor --></a>ARAT (numerical variable, b7)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id729"><!-- named anchor --></a>R^2 = 0.4246, SRD = 2.6803</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<p class="first" id="id730">A short description of the methods, predictor, outcomes, and the total number of models performed is presented</p>
+<p id="id731"><i>N/R</i> information should be specified but it is not reported in the paper, <i>N/A</i> information not applicable to the specific paper, <i>ARAT</i> Action Research Arm Test, <i>BI</i> Barthel Index, <i>FAC</i> Functional Ambulation Categories, <i>FIM</i> Functional Independence Measure, <i>FIM-M</i> Functional Independence Measure-Motor, <i>FIS</i> Fatigue Impact Scale, <i>FM</i> Fugl-Meyer, <i>FMA</i> Fugl-Meyer Assessment, <i>MAL</i> Motor Activity Log, <i>MAS</i> Modified Ashworth Scale, <i>MI</i> Motricity Index, <i>MRS</i> Modified Rankin Scale, <i>SDMT</i> Symbol Digit Modalities Test, <i>WMFT</i> Wolf Motor Function Test, <i>ANN</i> Artificial Neural Networks, <i>FOS</i> Fast Orthogonal Search, <i>kNN</i> k-Nearest Neighbours, <i>LR</i> Linear Regression, <i>LogR</i> Logistic Regression, <i>PCI</i> Parallel Cascade Identification, <i>RF</i> Random Forest, <i>SVM</i> Support Vector Machine, <i>AUC</i> Area Under the Curve, <i>MADP</i> Mean Absolute Deviation Percentage, <i>NRI</i> Net Reclassification Index, <i>NRMSE</i> Normalized Root Mean Square Error, <i>RMSE</i> Root Mean Square Error, <i>SRD</i> smallest real difference, <i>CV</i> cross-validation</p>
+</div>
+</div></p>
+<div class="section">
+<a id="Sec10"><!-- named anchor --></a><h3 class="section-title">Study characteristics</h3>
+<p id="Par70">We included 19 trials involving a total number of 23118 participants both for model development and validation. Eight of the included trials are multicentric studies [<a href="#CR20">20</a>, <a href="#CR22">22</a>–<a href="#CR24">24</a>, <a href="#CR26">26</a>, <a href="#CR30">30</a>, <a href="#CR32">32</a>, <a href="#CR33">33</a>] and four of the studies with the largest sample sizes relied on shared digital databases and infrastructure for data collection [<a href="#CR20">20</a>, <a href="#CR21">21</a>, <a href="#CR24">24</a>, <a href="#CR26">26</a>].</p>
+<p id="Par71">Regarding the participants, the mean age ranges from 55 to 72 years. For what concerns specific inclusion criteria related to the pathology, six studies reported a focus on ischemic stroke patients [<a href="#CR23">23</a>, <a href="#CR24">24</a>, <a href="#CR26">26</a>–<a href="#CR28">28</a>, <a href="#CR36">36</a>], four studies included only stroke patients in the chronic phase (TPO &gt; one month) [<a href="#CR18">18</a>, <a href="#CR19">19</a>, <a href="#CR25">25</a>], one in the subacute (2 weeks &lt; TPO &lt; 1 month) phase [<a href="#CR31">31</a>] and two studies included only stroke patients in the acute phase (TPO &lt; two weeks) [<a href="#CR23">23</a>, <a href="#CR26">26</a>]. More detailed information about the populations included in the studies is reported in Table <a href="#Tab2">2</a>.</p>
+<p id="Par72">As reported in the inclusion criteria related to the intervention, all included studies investigated predictive models for functional outcome prediction, thus, after its training, the validation of the model (either internal or external) was studied. The PROBAST tool identified only three papers reporting in the same article the external validation, i.e. performing the validation on new data independent from the training dataset content and unseen from the model [<a href="#CR23">23</a>, <a href="#CR24">24</a>, <a href="#CR26">26</a>]. Conversely, the remaining 16 focussed on the development only, indicating, according to the instructions of the PROBAST tool, the presence of training and internal validation of the model (Table <a href="#Tab3">3</a>).</p>
+<p id="Par73">The 19 included primary studies investigated a total of 174 different models, with studies reporting only one model, up to 102 within the same paper [<a href="#CR19">19</a>]. More in detail, 4 papers reported in the study the investigation of one model only [<a href="#CR20">20</a>, <a href="#CR26">26</a>, <a href="#CR29">29</a>, <a href="#CR32">32</a>], 5 papers included in the study multiple models comparing only different outcomes or outcome types [<a href="#CR22">22</a>, <a href="#CR28">28</a>, <a href="#CR30">30</a>, <a href="#CR33">33</a>, <a href="#CR34">34</a>], whilst the remaining 10 performed multiple comparisons among outcomes, algorithms or predictors subsets. The performances of the best performing models, given the same outcome measure and type, were evaluated using the metrics reported by the authors. In presence of equally performing models, those conducted with simpler methods or on larger sample sizes were selected. As a result, 31 models were obtained, as reported in Table <a href="#Tab4">4</a>.</p>
+</div>
+<div class="section">
+<a id="Sec11"><!-- named anchor --></a><h3 class="section-title">Risk of bias of the included studies</h3>
+<p id="Par74">Differently from what is reported in Table <a href="#Tab4">4</a> and the results, in which only the best performing models are presented, the risk of bias analysis, was executed for every model included in the review (Additional file <a href="#MOESM1">1</a>), and the overall results were determined by the evaluation given in the four domains (participants, predictors, outcome and analysis). In these analyses, with the term bias, we refer to the methodological bias caused by an imprecise reporting of the results and more generically of the experimental process.</p>
+<p id="Par75">Overall, there are 22, 67 and 85 models, respectively, rated with a ‘Low’, ‘Unclear’ and ‘High’ risk of bias, and 29, 110 and 35 models, respectively, with a ‘Low’, ‘Unclear’ and ‘High’ applicability concern.</p>
+<div class="section">
+<a id="Sec12"><!-- named anchor --></a><h4 class="subsection-title">Participants</h4>
+<p id="Par76">The risk of bias evaluation related to the participants’ section is common for each model belonging to the same study because all the models belonging to the same study share the same population and sample size. Moreover, the ratings on the development and validation set columns are equal for this section, because the majority of the models did not rely on external datasets; for those that did, the populations did not show differences regarding the data source and inclusion criteria.</p>
+<p id="Par77">The data source as well as the inclusion criteria of the participants were always declared; thus, all the reviewed models were evaluated with a low risk of bias and a low concern for applicability.</p>
+</div>
+<div class="section">
+<a id="Sec13"><!-- named anchor --></a><h4 class="subsection-title">Predictors</h4>
+<p id="Par78">In the analysis of the predictor section, there was a low risk of bias and applicability concern for most of the models. Only one model was evaluated as ‘High’ risk due to a lack of information about the predictors used in the regression method [<a href="#CR36">36</a>].</p>
+</div>
+<div class="section">
+<a id="Sec14"><!-- named anchor --></a><h4 class="subsection-title">Outcome</h4>
+<p id="Par79">The risk of bias analysis for the outcome highlighted 31 models with a ‘Low’ rating, 120 with an ‘Unclear’ rating and 23 with a ‘High’ rating. All the models with an ‘Unclear’ or a ‘High’ evaluation had a negative or unknown answer to the question ‘Was the time interval between predictor assessment and outcome determination appropriate?’ In fact, although in these articles it was evident that rehabilitation treatment occurred between the assessment of predictors and the outcome determination, the exact timings were not clearly stated. Additionally, the models with a ‘High’ risk of bias were characterised by an unclear or inappropriate outcome definition and determination with respect to predictor knowledge.</p>
+<div class="section">
+<a id="Sec15"><!-- named anchor --></a><h3 class="title">Analysis</h3>
+<p id="Par80">In the analysis assessment, 89 models had a ‘Low’ risk of bias, 8 had an ‘Unclear’ rating and the remaining 77 had a ‘High’ rating. The main factors affecting a ‘High’ risk of bias are the approaches for handling missing data, the awareness of overfitting during the description of the model performances and the presence (or lack thereof) of sufficient data-set numerosity, given the number of predictors. In particular, only 36 models accounted for overfitting within the paper; almost half of the models (83) from 8 different studies appeared to have insufficient participants, and only 3 of these studies reported this limitation in the results [<a href="#CR18">18</a>, <a href="#CR27">27</a>, <a href="#CR34">34</a>].</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="Sec16"><!-- named anchor --></a><h3 class="section-title">Description of the input and output variables</h3>
+<p id="Par81">The description of both outcomes and predictors was reported in terms of the measurement used for their definition, type of variable (categorical, ordinal or scale), the timing of acquisition (when specified by the article) and the number of variables used in the case of predictors (Additional file <a href="#MOESM1">1</a>). Specifically, only results of the best models from each included study were retained within analyses.</p>
+<p id="Par82">For what concerns the treatment of missing data within the variables considered, only three papers [<a href="#CR24">24</a>, <a href="#CR33">33</a>, <a href="#CR34">34</a>] reported the number of patients with missing values, one of which, however, did not report the way these missing values were handled [<a href="#CR33">33</a>]. Conversely, six papers reported among the methods the techniques used for handling missing data, without explicitly specifying the number [<a href="#CR19">19</a>–<a href="#CR22">22</a>, <a href="#CR26">26</a>, <a href="#CR28">28</a>]. The methods mostly used were statistical imputation of missing data (mostly through median values) or sample deletion.</p>
+<p id="Par83">As previously stated, the aim of this review is to investigate the prediction of the clinical outcome after the effect of the rehabilitation treatment. Thus, to reduce the possible influence of intermediate events on the selected outcome, we constrained the upper bound of 3 months on the timing of acquisition of the outcomes. Using this approach, the majority of the models [<a href="#CR22">22</a> in total] focussed on outcomes at discharge, 4 chose outcomes at 3-month follow-up and 5 did not specify the exact timing. For the predictors, the timing of the acquisition, i.e. the timing in which the variable is collected, was not specified in most of the models (a total of 14). In those in which it was reported, the timing was indicated at admission in 6 models, both baseline and discharge for 3 models [<a href="#CR31">31</a>] and within the rehabilitation treatment itself in the case of the remaining 8 models [<a href="#CR18">18</a>, <a href="#CR30">30</a>, <a href="#CR34">34</a>], in which the predictors were features deriving from instrumental data.</p>
+<p id="Par84">To be concise and to ease the performance comparison across models, both predictors and outcomes were categorised. Regarding the outcomes, the categorisation was performed using the International Classification of Functioning, Disability and Health (ICF) [<a href="#CR37">37</a>] on outcome measures. At first, each outcome measure was assigned with the corresponding detailed ICF classification (Table <a href="#Tab4">4</a>) then, for analyses, the outcomes were distinguished among those related to body functions and those related to activities and participation.</p>
+<p id="Par85">It emerged that in some cases the same clinical scale used for the outcome definition was the expression of different outcome types, highlighting a strong heterogeneity in the use of clinical tools for functional assessment in rehabilitation.</p>
+<p id="Par86">The outcome measures resulted to be associated, for the majority of the models (23 out of 31), with activities and participation, whilst a way smaller number of models [<a href="#CR8">8</a>] attempted the prediction of outcomes related to body functions.</p>
+<p id="Par87">For what concerns the predictors, the categorisation could not be performed on the ICF model, since most of the paper did not provide the exact measures describing the features; thus, a different kind of grouping was performed. At first, the classes were blindly identified trying to address in the most complete way the stroke patients’ assessment; then, each group was populated for every model included. The proposed classes were the following (in brackets some examples for each class are presented):<div class="list">
+<a id="id732"><!-- named anchor --></a><ul>
+<li><p id="Par88">Demographic characteristics (age, gender, marital status, employment status…).</p></li>
+<li><p id="Par89">Medical history (presence of hypertension, presence of diabetes mellitus, presence of chronic obstructive pulmonary disease, presence of chronic heart disease…).</p></li>
+<li><p id="Par90">Stroke assessment through clinical evaluation (length of stay, presence of dysphagia, presence of nasogastric tube, presence of tracheostomy…).</p></li>
+<li><p id="Par91">Stroke assessment through laboratory analysis (presence of recombinant tissue plasminogen activator, blood urea nitrogen, haemoglobin…).</p></li>
+<li><p id="Par92">Stroke assessment through imaging (area of the left supramarginal gyri obtained by MRI, area of the right thalamus obtained by MRI, area of the left superior parietal regions obtained by MRI).</p></li>
+<li><p id="Par93">Functional assessment (Motricity Index score, Modified Barthel Index score, Berg Balance Scale score…).</p></li>
+<li><p id="Par94">Neurological assessment through clinical examination (side of the impairment, type of stroke, TPO…).</p></li>
+<li><p id="Par95">Neurological assessment through instrumental examination (not reported).</p></li>
+<li><p id="Par96">Biomechanical assessment through clinical examination (10 m walking test speed).</p></li>
+<li><p id="Par97">Biomechanical assessment through instrumental examination (mean velocity from robotics assessment, peak velocity from robotics assessment, passive range of motion from robotics assessment, active range of motion from robotics assessment…).</p></li>
+</ul>
+</div></p>
+<p id="Par98">Figure <a href="#Fig3">3</a> presents the histogram with the relative frequencies of these classes in the models. The predictor classes were not mutually exclusive, as models usually included features of different nature (up to six different classes of features were used within the same model). In particular, 11 models retained features from 1 class only, whilst 15 models out of 31 performed the training with features belonging to more than 3 classes.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig3"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id733">Frequencies of the predictor classes among models (N = 31)</p></div>
+</div></p>
+<p id="Par99">It can be noticed that due to the blinded nature of this category identification, the class neurological assessment through instrumental examination is not reported because it was never observed in the included studies. On the contrary, the two most populated predictor classes used in the models were demographic characteristics and stroke assessment through clinical examination, used in 18 out of 31 models. Interestingly, among the most populated classes of predictors, it was found that the biomechanical assessment through instrumental examination was used in 12 different models.</p>
+<p id="Par100">The number of predictors ranged between 2 and 51 features, with a mean value (SD) of 14.2 (12.8). Among the models, 17 reported a process of feature selection before the development of the model, 5 of which performed it through an exhaustive search approach. However, less than half of the models adopting an automatic strategy to reduce features (8 out of 17) provided the final number of retained predictors used for the prognosis.</p>
+<p id="Par101">Regarding the use of predictors obtained through instrumental data, the features used in the included studies were related to biomechanical assessment through instrumental examination and stroke assessment through imaging. In particular, 12 models belonging to 5 different studies [<a href="#CR18">18</a>, <a href="#CR19">19</a>, <a href="#CR22">22</a>, <a href="#CR30">30</a>, <a href="#CR34">34</a>] used kinematic data among the predictors.</p>
+</div>
+<div class="section">
+<a id="Sec17"><!-- named anchor --></a><h3 class="section-title">Description of the methods</h3>
+<p id="Par102">The most used algorithms among models are regressions, specifically 12 models trained linear regressions and 8 models logistic ones (Fig. <a href="#Fig4">4</a>, left).<div class="fig panel" style="display: float; clear: both">
+<a id="Fig4"><!-- named anchor --></a><h5 class="label">Fig. 4</h5>
+<div class="caption"><p class="first" id="id734">Algorithms (on the left) and validation approaches (on the right) among the best performing models (N = 31). <i>FOS</i> fast orthogonal search, <i>LogR</i> Logistic Regression, <i>LR</i> Linear Regression, <i>SVM</i> Support Vector Machines, <i>kNN</i> k-Nearest Neighbours, <i>RF</i> Random Forest, <i>NN</i> Neural Network, <i>PCI</i> Parallel Cascade Identification</p></div>
+</div></p>
+<p id="Par103">Regarding the validation process, 28 models performed internal validation, internally divided into cross-validation, split-sample and bootstrap methods, whilst only 3 models performed external validation (Fig. <a href="#Fig4">4</a>, right). More in detail, regarding the specific group in which cross-validation was performed [<a href="#CR15">15</a>], only for 10 models was clearly stated the purpose of the method, either if used for fine-tuning of hyper-parameters or performed on the same parameters for testing the generalisability of the model. In particular, Mostafavi et al. [<a href="#CR30">30</a>] and Zariffa et al. [<a href="#CR34">34</a>] reported the use of cross-validation for the optimisation of hyper-parameters, whilst Sale et al. [<a href="#CR31">31</a>] and Li et al. [<a href="#CR28">28</a>] addressed nested cross-validation for both purposes.</p>
+<p id="Par104">Cross-validation was performed also by De Marchis et al. [<a href="#CR23">23</a>], who calibrated a logistic regression with tenfold cross-validation, for the identification of the intercept, keeping fixed the regression coefficients, then an external validation was performed for the calculation of the performance metrics of the model. König et al. [<a href="#CR26">26</a>] and De Ridder et al. [<a href="#CR24">24</a>] also reported a recalibration and internal validation respectively, without stating the approach used.</p>
+</div>
+<div class="section">
+<a id="Sec18"><!-- named anchor --></a><h3 class="section-title">Model performances</h3>
+<p id="Par105">Model performances were evaluated through several performance measures, coherently with the type of the variable used as outcome. In particular, accuracy, sensitivity, specificity, AUC, Hosmer–Lemeshow test and NRI were used for categorical outcomes, whilst the remaining R<sup>2</sup>, R-value, RMSE, NRMSE, MDP and SRD were used with numerical outcome variables.</p>
+<p id="Par106">The most common performance metrics for numerical and categorical outcomes were respectively the R<sup>2</sup>, indicating the percentage of outcome variance explained by the predictors, and the area under the curve (AUC) of the receiver operating characteristic (ROC) curve (Table <a href="#Tab5">5</a>).<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab5"><!-- named anchor --></a><h5 class="label">Table 5</h5>
+<div class="caption"><p class="first" id="id735">Model performances</p></div>
+<table frame="hsides" rules="groups">
+<a id="id736"><!-- named anchor --></a><thead>
+<a id="id737"><!-- named anchor --></a><tr>
+<a id="id738"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id739"><!-- named anchor --></a>Performance measures</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id740"><!-- named anchor --></a>Frequency among models<sup>a</sup>
+</th>
+</tr>
+</thead>
+<tbody>
+<a id="id741"><!-- named anchor --></a><tr>
+<a id="id742"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id743"><!-- named anchor --></a>Numerical outcomes</td>
+</tr>
+<tr>
+<a id="id744"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id745"><!-- named anchor --></a> R<sup>2</sup>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id746"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id747"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id748"><!-- named anchor --></a> RMSE</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id749"><!-- named anchor --></a>9 (7)</td>
+</tr>
+<tr>
+<a id="id750"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id751"><!-- named anchor --></a> NRMSE</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id752"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id753"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id754"><!-- named anchor --></a> R value</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id755"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id756"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id757"><!-- named anchor --></a> MADP</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id758"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id759"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id760"><!-- named anchor --></a> SRD</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id761"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id762"><!-- named anchor --></a><td align="left" colspan="2" rowspan="1">
+<a id="id763"><!-- named anchor --></a>Categorical outcomes</td>
+</tr>
+<tr>
+<a id="id764"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id765"><!-- named anchor --></a> AUC</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id766"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id767"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id768"><!-- named anchor --></a> Accuracy</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id769"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id770"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id771"><!-- named anchor --></a> Sensitivity and specificity</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id772"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id773"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id774"><!-- named anchor --></a> Hosmer–Lemeshow test</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id775"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id776"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id777"><!-- named anchor --></a> NRI</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id778"><!-- named anchor --></a>1</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<p class="first" id="id779">The metrics used for the performance evaluation of the models and their frequencies are reported</p>
+<p id="id780"><sup>a</sup>Between brackets is reported the number of models for which a value of the corresponding metrics is reported</p>
+</div>
+</div></p>
+<p id="Par107">Of the 9 models for which the evaluation was performed with the AUC, the values ranged from 0.73 to 0.97 and 3 models had performances greater than 0.90 [<a href="#CR29">29</a>, <a href="#CR33">33</a>, <a href="#CR36">36</a>]. The values of R<sup>2</sup> ranged from 2.24% [<a href="#CR18">18</a>] up to 77% [<a href="#CR22">22</a>].</p>
+</div>
+<div class="section">
+<a id="Sec19"><!-- named anchor --></a><h3 class="section-title">A detailed view of the models</h3>
+<p id="Par108">From the above considerations, it emerged that the most used algorithms among models were the regressions, both logistic and linear, whilst the remaining algorithms were almost equally explored. More specifically, by a first broad categorisation of the outcomes based on the ICF model, it was noticeable how logistic regressions were preferred for activities and participation category, whilst the linear regressions for the body functions. For what concerns the relationship among predictor and outcome classes, no preferred choice seemed to be generally taken. Some exceptions are the biomechanical assessment through clinical evaluation class, which was related only to body functions outcomes, and the stroke assessment through laboratory analysis class, interestingly used only for activities and participation category.</p>
+<p id="Par109">A global representation of the models investigated in the studies is shown in terms of the outcome measure—outcome classes—predictor classes relationships (Fig. <a href="#Fig5">5</a>, on the top). As mentioned before, for brevity, all the results are displayed considering a categorisation both for predictors and outcomes. Although the predictors are categorised, it summarises the state of the art in terms of models for functional outcome prediction. However, it is not evident any preferred association both in terms of outcome measures with respect to the outcome type and also in the model inputs given a specific outcome. Regarding the model input, almost half of the included studies (8 out of 19) reported among the limitations that the clinical practice drove the choice of features. Indeed, the variables adopted for the models were often obtained from the clinical scales in use in the centre.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig5"><!-- named anchor --></a><h5 class="label">Fig. 5</h5>
+<div class="caption"><p class="first" id="id781">Alluvial charts reporting an overview of the models. They show outcome measures—outcome classes—predictor classes (top) and the number of participants—validation approach—algorithm (bottom)</p></div>
+</div></p>
+<p id="Par110">At the bottom of the same figure, the number of participants, categorised with the cut-offs of 100 and 1000 patients, is in relation to the validation approach and the algorithms used. From this relation, it is visible that more complex validation approaches, such as bootstrap validation, were used only with linear and logistic regressions. Moreover, the same validation approaches were used with models trained on greater numbers of participants, whilst the cross-validation was performed mostly on models with less than 100 participants. To conclude, no linear relationship between the number of input features and the number of participants was found.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec20"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="Par111">The total number of included studies [<a href="#CR19">19</a>] confirms the interest of the research community in the field of ML tools for stroke prognosis, even though the strict requirements on the validation markedly reduced the number of eligible papers. Indeed, we constrained our analysis to studies including either internal or external validation of the models. In our view, such a requirement is fundamental to assess the generalisation capability and then the real applicability of an ML solution. Limiting the analysis to prognostic factors or ML methods without testing the models on new, unseen data does not allow one to quantify directly the potential of the model without recurring to probabilistic approximations [<a href="#CR38">38</a>]. However, it is worth noting that the exclusion criteria on algorithm validation resulted in a large number of discarded studies, with a number of excluded papers even larger than those discarded for the criteria on the outcome type.</p>
+<p id="Par112">For the description of outcomes and predictors, we decided to report frequencies among models. However, due to the large variability in the number of models reported for each study (from 1 up to 102), we selected those resulting as the best performing on the performance metric reported by the authors. This summarisation was performed among models developed with different algorithms or predictors, while distinct models for each study were presented when different outcome measures or types (categorical or numerical) were used. This process was considered necessary in order to display weighted results among the included studies, without the influence of the number of models that the authors decided to report.</p>
+<p id="Par113">The distinction in classes for both outcomes and predictors was necessary to group the results and generate model comparisons. The generation of classes was performed differently on the outcomes and predictors, as in some cases (5 models out of 31) the input features were given already in categories by the authors. Often, a detailed description of the measures used to define these features was not provided. Hence, in the case of predictors, the categorisation with the ICF model was not possible. Indeed, the proposed predictor categorisation allowed to distinguish among features related to demographics, medical history and clinical, biomechanical and neurological evaluation of stroke and allowed to discriminate among purely clinical, instrumental or laboratory-related features.</p>
+<p id="Par114">Nevertheless, it is important to consider that despite the conciseness and simplicity of this representation, the categorisation of features lacks clinical relevance, a phenomenon that is related to two aspects. First, in the categorisation process, the details on the specific outcome or predictor type were lost. In addition, in the case of outcomes, the categorisation was limited to the measure of the features, neglecting the outcome type, such as motor improvement, functional independence or functional status. Although from the clinical point of view the specific instrument that defines a certain condition has great relevance [<a href="#CR39">39</a>], this aspect needs attention for an appropriate interpretation of the targeted outcome.</p>
+<p id="Par115">For this reason, our suggestion is to detail the specific variables addressed to find elements that can drive the development of new solutions. The application of the PROBAST tool for the analysis of the quality of the included papers highlighted that more than half of the studies were using data from the clinical practice of the specific centre. Hence, the heterogeneity found among models may be explained by a poor standardisation of post-stroke rehabilitation protocols for usual care. Therefore, to fairly compare the performance of ML tools for predictive models and then assess their efficacy for personalised therapies, it would be crucial to establish a common protocol for stroke rehabilitation.</p>
+<p id="Par116">Among the classes of predictors used in the models, the two most populated were demographic characteristics and stroke assessment through clinical examination, not surprisingly used in 18 out of 31 models, as they are related to features that are accessible and fast to collect. Surprisingly, the class of predictors related to biomechanical assessment through instrumental examination was also frequently addressed (12 models), indicating a growing interest in the use of advanced instrumentation for the biomechanical assessment of patients’ kinematics. In particular, the studies from Mostafavi et al. [<a href="#CR30">30</a>] and Bland et al. [<a href="#CR22">22</a>] reported the greatest number of participants over which a biomechanical instrumented examination was performed, with 126 and 269 patients respectively.</p>
+<p id="Par117">Moreover, it was noted that less than half of the papers reporting the feature selection provided the list or the number of the features actually entering the model. Additionally, the PROBAST tool does not fully consider this missing information, considering almost all the models in the predictors section with a low risk of bias. However, a proper description of the feature selection phase is crucial, as it can guarantee not only the reproducibility of the study itself but also the identification of hidden causative associations among outcome and predictors not emerged by classical bio-statistical correlation analyses.</p>
+<p id="Par118">The algorithms most frequently used among the included models were linear and logistic regressions, confirming a preferable choice toward more conventional and interpretable methods, rather than more complex and advanced ones. Going more in detail, a preferred association of logistic regressions and linear regression with outcomes belonging to activities and participation and body functions, respectively, was noticed. This aspect may be addressed as a further confirmation of the need for interpretability of the models. Our findings highlight how outcomes related to higher-level human domains, such as activities and participation outcomes, are rather simplified as categorical features and implemented into logistic regressions.</p>
+<p id="Par119">Another fundamental aspect for the development of reliable predictive models is the sample size. In this review, almost half of the developed models received the answer ‘No’ or ‘Probably no’ in the PROBAST tool question ‘Were there a reasonable number of participants with the outcome?’. The evaluation of this assessment for the PROBAST tool was performed, following instructions available for the tool usage, using the rule of thumb indication of at least 10 samples for each feature. Although this assessment may appear too empirical, the lack of regard for a sufficiently large sample size was confirmed by a non-linear relationship among the number of patients and predictors used. Having larger sample sizes dedicated to the development and validation of the model allows researchers to avoid overfitting complex models and thus to avoid the risk of lacking model generalisation when evaluating new data. Moreover, larger numbers would justify the exploration of more recent ML tools, such as deep learning methods. Among the included studies, those with higher numbers of participants were characterised by multicentric structured databases [<a href="#CR20">20</a>, <a href="#CR21">21</a>, <a href="#CR24">24</a>, <a href="#CR26">26</a>]. Indeed, the implementation of digital infrastructures such as databases, digital clinical folders or data lakes for data storage could promote a digital and data-driven environment, in which a structured and systematic collection of the data is coupled to daily clinical practice.</p>
+<p id="Par120">Differences exist among the possible strategies for method validation; however, we preferred not to further constrain the inclusion criteria. The validation approaches were broadly distinguished among external and internal validation and within the latter type, further groups were created to differentiate among cross-validation, split-sample and bootstrap methods. For what concerns cross-validation, further considerations need to be done, as its use could have a twofold purpose, either for fine-tuning of hyper-parameters or accounting for generalisability, similarly to what is performed with external validation. Especially with complex algorithms, it is important these processes of fine-tuning and generalisability are performed with independent methods, in order to avoid the overfitting of the model on the specific fold configuration. In this study, only four papers [<a href="#CR28">28</a>, <a href="#CR30">30</a>, <a href="#CR31">31</a>, <a href="#CR34">34</a>] clearly reported the final purpose of the validation approach, hence we decided not to perform further categorisations within the group of models validated through cross-validation.</p>
+<p id="Par121">In this work, De Marchis et al. [<a href="#CR23">23</a>], De Ridder et al. [<a href="#CR24">24</a>] and Kӧnig et al. [<a href="#CR26">26</a>] reported both an internal tuning of the parameters and an external validation were used for the development and validation, or calibration, of the model. These studies were among those involving the highest number of participants. Indeed, coherently with the technical characteristics of the approaches, a higher number of participants seemed to be associated with higher complexity of validation approaches (Fig. <a href="#Fig5">5</a>). Although methods like bootstrapping are very efficient and account for sampling variability and cross-validation methods, they should not substitute external validation in prediction research, which should be the best practice. In fact, external validation requires new data to be collected, but it assesses the generalisability of the models by considering changes among populations of patients [<a href="#CR40">40</a>]. For this reason, this effort should usually be planned after model development after a proper tuning of hyper-parameters.</p>
+<p id="Par122">In this review, we found several limitations in the current state of the art: a limited number of participants, high heterogeneity among factors and outcome measures and a small number of models with external validation after appropriate fine-tuning of hyper-parameters. Moreover, the variety of modalities used for the evaluation of the model performance is limiting the possibility to provide a unique, performing model among those found in the literature. Despite these methodological restrictions, the results show it is possible to identify the most frequently used predictors and algorithms given a specific outcome; this ability provides insight into the state of the art and a useful perspective for the development of new solutions (Fig. <a href="#Fig5">5</a>).</p>
+</div>
+<div class="section">
+<a id="Sec21"><!-- named anchor --></a><h2 class="main-title">Conclusions</h2>
+<p id="Par123">Predictive models can be a very promising support tool for clinicians. ML algorithms can be easily deployed for this purpose, due to their capability of handling large cohorts and high dimensional datasets; indeed, once trained, they provide accurate estimates at a low cost. Among the advantages, this kind of solution could stimulate a more data-driven approach in clinical practice, promote a more structured definition of studies and reduce the gap between clinical and research areas. For this reason, we suggest promoting additional research in this field, with larger datasets, external validation of the models and an accurate and scientifically driven selection of outcomes and predictors. Furthermore, the implementation of defined protocols and registers for the evaluation of post-stroke patients in clinical practice is strongly suggested.</p>
+<p id="Par124">This would allow for larger datasets and a broad variety of features, including instrumental ones, that are crucial elements in the development of predictive models. We are convinced that to optimise and personalise the rehabilitation treatment, future research should lead to extensively validated ML methods that become embedded in decision support tools of daily use.</p>
+</div>
+<div class="section">
+<a id="id782"><!-- named anchor --></a><h2 class="main-title">Supplementary Information</h2>
+<div class="section">
+<a id="Sec22"><!-- named anchor --></a><p class="first" id="id783"><div class="panel">
+<a id="MOESM1"><!-- named anchor --></a><a id="id784" href="12984_2022_1032_MOESM1_ESM.docx"><div class="caption"><p class="first" id="id785"><b>Additional file 1.</b><b> Table 5</b>. Extended data extraction.</p></div></a>
+</div></p>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id829"><!-- named anchor --></a><h4 class="block-title">Outcome measures</h4>
+<div class="def-list">
+<a id="id786"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id787">
+<div class="def-term cell" id="id788"><p>ARAT</p></div>
+<div class="def-def cell" id="id789"><p class="first" id="Par5">Action research arm test</p></div>
+</div>
+<div class="def-item row" id="id790">
+<div class="def-term cell" id="id791"><p>BI</p></div>
+<div class="def-def cell" id="id792"><p class="first" id="Par6">Barthel Index</p></div>
+</div>
+<div class="def-item row" id="id793">
+<div class="def-term cell" id="id794"><p>FAC</p></div>
+<div class="def-def cell" id="id795"><p class="first" id="Par7">Functional ambulation categories</p></div>
+</div>
+<div class="def-item row" id="id796">
+<div class="def-term cell" id="id797"><p>FIM</p></div>
+<div class="def-def cell" id="id798"><p class="first" id="Par8">Functional independence measure</p></div>
+</div>
+<div class="def-item row" id="id799">
+<div class="def-term cell" id="id800"><p>FIM-M</p></div>
+<div class="def-def cell" id="id801"><p class="first" id="Par9">Functional independence measure-motor</p></div>
+</div>
+<div class="def-item row" id="id802">
+<div class="def-term cell" id="id803"><p>FIS</p></div>
+<div class="def-def cell" id="id804"><p class="first" id="Par10">Fatigue impact scale</p></div>
+</div>
+<div class="def-item row" id="id805">
+<div class="def-term cell" id="id806"><p>FM</p></div>
+<div class="def-def cell" id="id807"><p class="first" id="Par11">Fugl-Meyer</p></div>
+</div>
+<div class="def-item row" id="id808">
+<div class="def-term cell" id="id809"><p>FMA</p></div>
+<div class="def-def cell" id="id810"><p class="first" id="Par12">Fugl-Meyer assessment</p></div>
+</div>
+<div class="def-item row" id="id811">
+<div class="def-term cell" id="id812"><p>MAL</p></div>
+<div class="def-def cell" id="id813"><p class="first" id="Par13">Motor activity log</p></div>
+</div>
+<div class="def-item row" id="id814">
+<div class="def-term cell" id="id815"><p>MAS</p></div>
+<div class="def-def cell" id="id816"><p class="first" id="Par14">Modified Ashworth Scale</p></div>
+</div>
+<div class="def-item row" id="id817">
+<div class="def-term cell" id="id818"><p>MI</p></div>
+<div class="def-def cell" id="id819"><p class="first" id="Par15">Motricity Index</p></div>
+</div>
+<div class="def-item row" id="id820">
+<div class="def-term cell" id="id821"><p>MRS</p></div>
+<div class="def-def cell" id="id822"><p class="first" id="Par16">Modified Rankin Scale</p></div>
+</div>
+<div class="def-item row" id="id823">
+<div class="def-term cell" id="id824"><p>SDMT</p></div>
+<div class="def-def cell" id="id825"><p class="first" id="Par17">Symbol digit modalities test</p></div>
+</div>
+<div class="def-item row" id="id826">
+<div class="def-term cell" id="id827"><p>WMFT</p></div>
+<div class="def-def cell" id="id828"><p class="first" id="Par18">Wolf motor function test</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id855"><!-- named anchor --></a><h4 class="block-title">Algorithms</h4>
+<div class="def-list">
+<a id="id830"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id831">
+<div class="def-term cell" id="id832"><p>ANN</p></div>
+<div class="def-def cell" id="id833"><p class="first" id="Par19">Artificial neural networks</p></div>
+</div>
+<div class="def-item row" id="id834">
+<div class="def-term cell" id="id835"><p>FOS</p></div>
+<div class="def-def cell" id="id836"><p class="first" id="Par20">Fast orthogonal search</p></div>
+</div>
+<div class="def-item row" id="id837">
+<div class="def-term cell" id="id838"><p>kNN</p></div>
+<div class="def-def cell" id="id839"><p class="first" id="Par21">K-nearest neighbours</p></div>
+</div>
+<div class="def-item row" id="id840">
+<div class="def-term cell" id="id841"><p>LR</p></div>
+<div class="def-def cell" id="id842"><p class="first" id="Par22">Linear regression</p></div>
+</div>
+<div class="def-item row" id="id843">
+<div class="def-term cell" id="id844"><p>LogR</p></div>
+<div class="def-def cell" id="id845"><p class="first" id="Par23">Logistic regression</p></div>
+</div>
+<div class="def-item row" id="id846">
+<div class="def-term cell" id="id847"><p>PCI</p></div>
+<div class="def-def cell" id="id848"><p class="first" id="Par24">Parallel cascade identification</p></div>
+</div>
+<div class="def-item row" id="id849">
+<div class="def-term cell" id="id850"><p>RF</p></div>
+<div class="def-def cell" id="id851"><p class="first" id="Par25">Random forest</p></div>
+</div>
+<div class="def-item row" id="id852">
+<div class="def-term cell" id="id853"><p>SVM</p></div>
+<div class="def-def cell" id="id854"><p class="first" id="Par26">Support vector machine</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id875"><!-- named anchor --></a><h4 class="block-title">Performance measures</h4>
+<div class="def-list">
+<a id="id856"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id857">
+<div class="def-term cell" id="id858"><p>AUC</p></div>
+<div class="def-def cell" id="id859"><p class="first" id="Par27">Area under the curve</p></div>
+</div>
+<div class="def-item row" id="id860">
+<div class="def-term cell" id="id861"><p>MADP</p></div>
+<div class="def-def cell" id="id862"><p class="first" id="Par28">Mean absolute deviation percentage</p></div>
+</div>
+<div class="def-item row" id="id863">
+<div class="def-term cell" id="id864"><p>NRI</p></div>
+<div class="def-def cell" id="id865"><p class="first" id="Par29">Net Reclassification Index</p></div>
+</div>
+<div class="def-item row" id="id866">
+<div class="def-term cell" id="id867"><p>NRMSE</p></div>
+<div class="def-def cell" id="id868"><p class="first" id="Par30">Normalized root mean square error</p></div>
+</div>
+<div class="def-item row" id="id869">
+<div class="def-term cell" id="id870"><p>RMSE</p></div>
+<div class="def-def cell" id="id871"><p class="first" id="Par31">Root mean square error</p></div>
+</div>
+<div class="def-item row" id="id872">
+<div class="def-term cell" id="id873"><p>SRD</p></div>
+<div class="def-def cell" id="id874"><p class="first" id="Par32">Smallest real difference</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id879"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id876"><!-- named anchor --></a><p id="id877"><span class="generated">[1]</span> <b>Publisher's Note</b></p>
+<p id="id878">Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id881"><!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
+<p id="id880">Not applicable.</p>
+</div>
+<div class="back-section">
+<a id="id883"><!-- named anchor --></a><h2 class="main-title">Author contributions</h2>
+<p id="id882">SC contributed to the screening of the papers, data extraction and analysis, and writing and revision of the paper. AM contributed to the design of the study, and writing and revision of the papers. CA and MCC contributed to the design of the study and revision of the paper. MP contributed to the screening of the papers and PL contributed to the revision of the papers. All authors read and approved the final manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id885"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id884">The study was funded by the Italian Ministry of Health under the “Ricerca Corrente RC2020 and RC2021 program” and the 5xMille funds AF2018: “Data Science in Rehabilitation Medicine”, AF2019: “Study and development of biomedical data science and machine learning methods to support the appropriateness and the decision-making process in rehabilitation medicine” and the Italian neuroscience and neurorehabilitation research hospitals network (“Rete IRCCS delle Neuroscienze e della Neuroriabilitazione”). The study was supported by the Department of Excellence in Robotics &amp; AI, Scuola Superiore Sant’Anna.</p>
+</div>
+<div class="back-section">
+<a id="id887"><!-- named anchor --></a><h2 class="main-title">Availability of data and materials</h2>
+<p id="id886">All data generated or analysed during this study are included in this published article and its Additional files.</p>
+</div>
+<div class="back-section">
+<a id="id888"><!-- named anchor --></a><h2 class="main-title">Declarations</h2>
+<h3 class="section-title">Ethics approval and consent to participate</h3>
+<p id="Par125">Not applicable.</p>
+<h3 class="section-title">Consent for publication</h3>
+<p id="Par126">Not applicable.</p>
+<h3 class="section-title">Competing interests</h3>
+<p id="Par127">The authors declare that they have no competing interests.</p>
+</div>
+<div class="back-section">
+<a id="Bib1"><!-- named anchor --></a><div class="section ref-list">
+<a id="Bib1"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="CR1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id889"><!-- named anchor --></a>M KatanA LuftGlobal burden of strokeSemin Neurol2018380220821110.1055/s-0038-164950329791947</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="CR2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id890"><!-- named anchor --></a>CO JohnsonM NguyenGA RothE NicholsT AlamD AbateGlobal, regional, and national burden of stroke, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016Lancet Neurol201918543945810.1016/S1474-4422(19)30034-130871944PMC6494974</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="CR3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id891"><!-- named anchor --></a>C WintersG KwakkelEEH van WegenRHM NijlandJM VeerbeekCGM MeskersMoving stroke rehabilitation forward: the need to change researchNRE2018431193010.3233/NRE-17239330056434</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="CR4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id892"><!-- named anchor --></a>Simon A, Deo MS, Venkatesan S, Babu DRR. An overview of machine learning and its applications. Int J Elect Sci Eng. 22–24.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="CR5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id893"><!-- named anchor --></a>S LiuKC SeeKY NgiamLA CeliX SunM FengReinforcement learning for clinical decision support in critical care: comprehensive reviewJ Med Internet Res2020227e1847710.2196/1847732706670PMC7400046</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="CR6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id894"><!-- named anchor --></a>E ChristodoulouJ MaGS CollinsEW SteyerbergJY VerbakelB Van CalsterA systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction modelsJ Clin Epidemiol2019110122210.1016/j.jclinepi.2019.02.00430763612</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="CR7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id895"><!-- named anchor --></a>JT SendersPC StaplesAV KarhadeMM ZakiWB GormleyMLD BroekmanMachine learning and neurosurgical outcome prediction: a systematic reviewWorld Neurosurg2018109476486.e110.1016/j.wneu.2017.09.14928986230</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="CR8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id896"><!-- named anchor --></a>AK WagnerA Rehabilomics framework for personalized and translational rehabilitation research and care for individuals with disabilities: Perspectives and considerations for spinal cord injuryJ Spinal Cord Med201437549350210.1179/2045772314Y.000000024825029659PMC4166184</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="CR9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id897"><!-- named anchor --></a>RC DeoMachine learning in medicineCirculation.20151322019203010.1161/CIRCULATIONAHA.115.00159326572668PMC5831252</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="CR10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id898"><!-- named anchor --></a>Q FengMT MayS IngleM LuZ YangJ TangPrognostic models for predicting overall survival in patients with primary gastric cancer: a systematic reviewBiomed Res Int201918201911010.1155/2019/5634598PMC676666531641669</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="CR11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id899"><!-- named anchor --></a>AL DalloraS EivazzadehE MendesJ BerglundP AnderbergMachine learning and microsimulation techniques on the prognosis of dementia: a systematic literature reviewPLoS ONE2017126e017980410.1371/journal.pone.017980428662070PMC5491044</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="CR12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id900"><!-- named anchor --></a>C CounsellM DennisSystematic review of prognostic models in patients with acute strokeCerebrovasc Dis200112315917010.1159/00004769911641579</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="CR13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id901"><!-- named anchor --></a>RL HarveyPredictors of functional outcome following strokePhys Med Rehabil Clin N Am201526458359810.1016/j.pmr.2015.07.00226522899</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="CR14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id902"><!-- named anchor --></a>D MoherPreferred reporting items for systematic reviews and meta-analyses: the PRISMA statementPLoS Med.200967e100009710.1371/journal.pmed.100009719621072PMC2707599</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="CR15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id903"><!-- named anchor --></a>RD RileyKGM MoonsKIE SnellJ EnsorL HooftDG AltmanA guide to systematic review and meta-analysis of prognostic factor studiesBMJ201930k459710.1136/bmj.k459730700442</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="CR16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id904"><!-- named anchor --></a>KGM MoonsJAH de GrootW BouwmeesterY VergouweS MallettDG AltmanCritical appraisal and data extraction for systematic reviews of prediction modelling studies: the CHARMS checklistPLoS Med20141110e100174410.1371/journal.pmed.100174425314315PMC4196729</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="CR17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id905"><!-- named anchor --></a>KGM MoonsRF WolffRD RileyPF WhitingM WestwoodGS CollinsPROBAST: a tool to assess risk of bias and applicability of prediction model studies: explanation and elaborationAnn Intern Med20191701W110.7326/M18-137730596876</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="CR18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id906"><!-- named anchor --></a>Y Abdel MajeedSS AwadallaJL PattonRegression techniques employing feature selection to predict clinical outcomes in strokePLoS ONE20181310e020563910.1371/journal.pone.020563930339669PMC6195279</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="CR19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id907"><!-- named anchor --></a>Almubark I, Chang L-C, Holley R, Black iian, Chen J, Chan E, et al. Machine Learning Approaches to Predict Functional Upper Extremity Use in Individuals with Stroke. In: 2018 IEEE International Conference on Big Data (Big Data) [Internet]. Seattle, WA, USA: IEEE; 2018 [cited 2021 Jan 26]. p. 5291–4. Available from: <a target="xrefwindow" href="https://ieeexplore.ieee.org/document/8622054/" id="id908">https://ieeexplore.ieee.org/document/8622054/</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="CR20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id909"><!-- named anchor --></a>BE BatesD XiePL KwongJE KurichiD Cowper RipleyC DavenportDevelopment and validation of prognostic indices for recovery of physical functioning following stroke: part 1PM&amp;R20157768569810.1016/j.pmrj.2015.01.01125633632</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="CR21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id910"><!-- named anchor --></a>DR BerlowitzH HoenigDC CowperPW DuncanWB VogelImpact of comorbidities on stroke rehabilitation outcomes: does the method matter?Arch Phys Med Rehabil200889101903190610.1016/j.apmr.2008.03.02418929019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="CR22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id911"><!-- named anchor --></a>MD BlandA SturmoskiM WhitsonLT ConnorR FucetolaT HuskeyPrediction of discharge walking ability from initial assessment in a stroke inpatient rehabilitation facility populationArch Phys Med Rehabil20129381441144710.1016/j.apmr.2012.02.02922446516PMC5707123</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="CR23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id912"><!-- named anchor --></a>GM De MarchisT DankowskiIR KönigJ FladtF FluriH GensickeA novel biomarker-based prognostic score in acute ischemic stroke: the CoRisk scoreNeurology20199213e1517e152510.1212/WNL.000000000000717730824558</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="CR24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id913"><!-- named anchor --></a>IR de RidderSA DijklandM ScheeleHM den HertogM DirksWF WestendorpDevelopment and validation of the Dutch Stroke Score for predicting disability and functional outcome after ischemic stroke: a tool to support efficient discharge planningEur Stroke J20183216517310.1177/239698731875459129900414PMC5992735</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="CR25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id914"><!-- named anchor --></a>SH GeorgeMH RafieiL GauthierA BorstadJA BufordH AdeliComputer-aided prediction of extent of motor recovery following constraint-induced movement therapy in chronic strokeBehav Brain Res201732919119910.1016/j.bbr.2017.03.01228322914</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="CR26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id915"><!-- named anchor --></a>IR KönigA ZieglerE BluhmkiW HackePMW BathRL SaccoPredicting long-term outcome after acute ischemic stroke: a simple index works in patients from controlled clinical trialsStroke20083961821182610.1161/STROKEAHA.107.50586718403738</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="CR27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id916"><!-- named anchor --></a>A KuceyeskiBB NaviH KamelN RelkinM VillanuevaA RajExploring the brain’s structural connectome: a quantitative stroke lesion-dysfunction mapping study: Predicting Dysfunction from Connectome DisruptionHum Brain Mapp20153662147216010.1002/hbm.2276125655204PMC4414746</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="CR28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id917"><!-- named anchor --></a>C LiY ChenS TsayG HuK LinPredicting functional outcomes in patients suffering from ischaemic stroke using initial admission variables and physiological data: a comparison between tree model and multivariate regression analysisDisabil Rehabil201032252088209610.3109/09638288.2010.48103020450459</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="CR29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id918"><!-- named anchor --></a>S MasieroR AvesaniM ArmaniP VerenaM ErmaniPredictive factors for ambulation in stroke patients in the rehabilitation setting: a multivariate analysisClin Neurol Neurosurg2007109976376910.1016/j.clineuro.2007.07.00917766038</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="CR30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id919"><!-- named anchor --></a>Mostafavi SM, Glasgow JI, Dukelow SP, Scott SH, Mousavi P. Prediction of stroke-related diagnostic and prognostic measures using robot-based evaluation. In: 2013 IEEE 13th International Conference on Rehabilitation Robotics (ICORR) [Internet]. Seattle, WA: IEEE; 2013 [cited 2021 Jan 26]. p. 1–6. Available from: <a target="xrefwindow" href="http://ieeexplore.ieee.org/document/6650457/" id="id920">http://ieeexplore.ieee.org/document/6650457/</a>.10.1109/ICORR.2013.665045724187274</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="CR31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id921"><!-- named anchor --></a>P SaleG FerrieroL CiabattoniAM CorteseF FerracutiL RomeoPredicting motor and cognitive improvement through machine learning algorithm in human subject that underwent a rehabilitation treatment in the early stage of strokeJ Stroke Cerebrovasc Dis201827112962297210.1016/j.jstrokecerebrovasdis.2018.06.02130077601</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="CR32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id922"><!-- named anchor --></a>D ScrutinioP GuidaB LanzilloC FerrettiA LoverreN MontroneRehabilitation outcomes of patients with severe disability poststrokeArch Phys Med Rehabil20191003520529.e310.1016/j.apmr.2018.06.02330056158</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="CR33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id923"><!-- named anchor --></a>D ScrutinioB LanzilloP GuidaF MastropasquaV MonitilloM PusineriDevelopment and validation of a predictive model for functional outcome after stroke rehabilitation: the Maugeri modelStroke201748123308331510.1161/STROKEAHA.117.01805829051222</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="CR34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id924"><!-- named anchor --></a>J ZariffaM MyersM CoahranRH WangSmallest real differences for robotic measures of upper extremity function after stroke: implications for tracking recoveryJ Rehabil Assist Technol Eng2018520556683187880310.1177/2055668318788036PMC645306231191947</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="CR35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id925"><!-- named anchor --></a>S SonodaE SaitohS NagaiY OkuyamaT SuzukiM SuzukiStroke outcome prediction using reciprocal number of initial activities of daily living statusJ Stroke Cerebrovasc Dis200514181110.1016/j.jstrokecerebrovasdis.2004.10.00117903990</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="CR36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id926"><!-- named anchor --></a>CA ChengYC LinHW ChiuPrediction of the prognosis of ischemic stroke patients after intravenous thrombolysis using artificial neural networksStud Health Technol Inform.201420211511825000029</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="CR37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id927"><!-- named anchor --></a>M CuenotClassificazione Internazionale del Funzionamento, della Disabilità e della SaluteEMC Med Riabil.201825116</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="CR38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id928"><!-- named anchor --></a>Vapnik VN. The nature of statistical learning theory. Springer Verlag, New York, Inc. ISBN: 0-387-94559-8;1995.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="CR39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id929"><!-- named anchor --></a>A KüçükdeveciA TennantG GrimbyF FranchignoniStrategies for assessment and outcome measurement in physical and rehabilitation medicine: an educational reviewJ Rehabil Med201143866167210.2340/16501977-084421687922</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="CR40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id930"><!-- named anchor --></a>ES BleekerExternal validation is necessary in prediction research: a clinical exampleJ Clin Epidemiol200359982683210.1016/S0895-4356(03)00207-514505766</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Automated pattern recognition</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Clinical</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Efficacy treatment</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Prognosis</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Regression analysis</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Rehabilitation</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Rehabilitation outcome</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Stroke</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+<p class="metadata-entry"><span class="generated"><span class="data">issue-copyright-statement</span>: </span>© The Author(s) 2022</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
