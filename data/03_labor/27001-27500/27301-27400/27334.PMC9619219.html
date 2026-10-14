@@ -1,0 +1,983 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Zhao, Zhang, Hang, Meng, and Wei: Detecting RNA modification using direct RNA sequencing: A systematic review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Comput Struct Biotechnol J</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Comput Struct Biotechnol J</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>2373</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>csbj</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101585369</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Computational and Structural Biotechnology Journal</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2001-0370</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>AAAS Science Partner Journal Program</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="main.pdf">main.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2022 The Author(s)</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>10 August 2022</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>16 October 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>16 October 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>21 October 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>20</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>395563<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Pages: </span>5740-5749</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9619219</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9619219.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9619219</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9619219</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>36382183</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1016/j.csbj.2022.10.023</p>
+<p class="metadata-entry"><span class="generated">Publisher Item ID: </span>S2001-0370(22)00470-6</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Detecting RNA modification using direct RNA sequencing: A systematic review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Xichen Zhao<span class="generated">[</span><a href="#af005">a</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Yuxin Zhang<span class="generated">[</span><a href="#af005">a</a><span class="generated">]</span><span class="generated">[</span><a href="#af015">c</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Daiyun Hang<span class="generated">[</span><a href="#af005">a</a><span class="generated">]</span><span class="generated">[</span><a href="#af025">e</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Jia Meng<span class="generated">[</span><a href="#af005">a</a><span class="generated">]</span><span class="generated">[</span><a href="#af010">b</a><span class="generated">]</span><span class="generated">[</span><a href="#af015">c</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Zhen Wei<span class="generated">[</span><a href="#af005">a</a><span class="generated">]</span><span class="generated">[</span><a href="#af020">d</a><span class="generated">]</span><span class="generated">[</span><a href="#cor1">⁎</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">Email: </span><a href="mailto:zhen.wei01@xjtlu.edu.cn">zhen.wei01@xjtlu.edu.cn</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="af005"><!-- named anchor --></a><span class="generated">[</span>a<span class="generated">] </span>Department of Biological Sciences, Xi'an Jiaotong-Liverpool University, 215123 Suzhou, Jiangsu, China</p>
+<p class="metadata-entry"><a id="af010"><!-- named anchor --></a><span class="generated">[</span>b<span class="generated">] </span>AI University Research Centre, Xi’an Jiaotong-Liverpool University, 215123 Suzhou, Jiangsu, China</p>
+<p class="metadata-entry"><a id="af015"><!-- named anchor --></a><span class="generated">[</span>c<span class="generated">] </span>Institute of Systems, Molecular and Integrative Biology, L69 7ZB Liverpool, UK</p>
+<p class="metadata-entry"><a id="af020"><!-- named anchor --></a><span class="generated">[</span>d<span class="generated">] </span>Institute of Life Course and Medical Sciences, L69 7ZB Liverpool, UK</p>
+<p class="metadata-entry"><a id="af025"><!-- named anchor --></a><span class="generated">[</span>e<span class="generated">] </span>Department of Computer Science, University of Liverpool, L69 7ZB Liverpool, UK</p>
+</div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group"><div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id7"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="cor1"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>⁎<span class="generated">] </span>Corresponding author at: Department of Biological Sciences, Xi'an Jiaotong-Liverpool University, 215123 Suzhou, Jiangsu, China <a href="mailto:zhen.wei01@xjtlu.edu.cn">zhen.wei01@xjtlu.edu.cn</a></p>
+</div>
+</div></div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Graphical abstract</h4></div>
+<div class="cell"><div class="fig panel"><a id="f0020"><!-- named anchor --></a></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id8">Post-transcriptional RNA modifications are involved in a range of important cellular processes, including the regulation of gene expression and fine-tuning of the functions of RNA molecules. To decipher the context-specific functions of these post-transcriptional modifications, it is crucial to accurately determine their transcriptomic locations and modification levels under a given cellular condition. With the newly emerged sequencing technology, especially nanopore direct RNA sequencing, different RNA modifications can be detected simultaneously with a single molecular level resolution. Here we provide a systematic review of 15 published RNA modification prediction tools based on direct RNA sequencing data, including their computational models, input–output formats, supported modification types, and reported performances. Finally, we also discussed the potential challenges and future improvements of nanopore sequencing-based methods for RNA modification detection.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s0005"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<h5 class="label">1</h5>
+<p id="p0005">Covalent modification of RNA has recently emerged as a critical layer of gene expression regulation in living cells <a href="#b0005">[1]</a>. RNA epitranscriptomic modifications can specify the metabolism fates of RNA molecules, such as the turnover rate of the RNA molecules <a href="#b0010">[2]</a>, <a href="#b0015">[3]</a>, the interaction between RNA and proteins <a href="#b0020">[4]</a>, and translational accuracy and efficiency <a href="#b0025">[5]</a>, <a href="#b0030">[6]</a>. To date, &gt;140 types of RNA modifications have been identified on various types of cellular RNAs, including mRNA, tRNA, rRNA, and lincRNA <a href="#b0035">[7]</a>. Among them, N6-methyladenosine (m<sup>6</sup>A) is the most abundant modification in eukaryotic mRNAs. m<sup>6</sup>A modifications are mainly installed by the m<sup>6</sup>A methyltransferase complex comprised of METTL3, METTL14, and WTAP <a href="#b0040">[8]</a>. The internal m<sup>6</sup>A modification has proven to influence fundamental cellular processes, including the regulation of RNA decay <a href="#b0015">[3]</a>, <a href="#b0045">[9]</a>, translation efficiency <a href="#b0050">[10]</a> and splicing <a href="#b0055">[11]</a>. Recent studies demonstrated that both over and under methylation of m<sup>6</sup>A can lead to or accelerate tumor development <a href="#b0060">[12]</a>, <a href="#b0065">[13]</a>. Similar to m<sup>6</sup>A, m<sup>1</sup>A modifications are methylated by protein complexes, such as TRMT6-TRMT61A <a href="#b0070">[14]</a>. m<sup>1</sup>A has been shown to affect the RNA 2ndary structures by disturbing the Watson–Crick base pairing through the positive charge on the modification site <a href="#b0075">[15]</a>. Pseudouridine (ψ) is another commonly identified RNA modification produced from either the RNA-dependent or RNA-independent pseudouridylation processes. ψ has been proposed to regulate the splicing and translation of mRNA <a href="#b0080">[16]</a>. It can also universally form pairs with A, U, G, and C bases, increasing the stability of RNA structures <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>. 2′-O-methylation (Nm) is a highly conserved RNA modification occurring on any nucleotide across various RNA species <a href="#b0095">[19]</a>. Nm modifications are known to regulate the mRNA and protein expression, specifically via the assistance of small nucleolar RNAs <a href="#b0100">[20]</a>.</p>
+<p id="p0010">To better understand the functional roles of RNA modifications under various conditions, it is important to accurately predict their genomic sites and modification levels for a given biological sample. Most existing methods for RNA modification profiling are based on 2nd generation sequencing technology that requires reverse transcription, in which the RNA modification information is removed from the sequencing signal. Therefore, either antibody enrichment or specific chemical treatment was combined with the standard NGS procedure to selectively identify RNA molecule modification sites <a href="#b0105">[21]</a>. These methods, though widely used, bear some technical defects, including the PCR enrichment bias, difficulty in finding antibodies and chemicals with high specificities, and lack of single-read level detection capacities <a href="#b0105">[21]</a>, <a href="#b0110">[22]</a>. Thus, the 3rd generation sequencing technology has emerged as a promising novel technique to overcome these limitations.</p>
+<p id="p0015">Nanopore sequencing technology and its supporting nanopore sequencer MinION were developed and provided by Oxford Nanopore Technology (ONT) <a href="#b0115">[23]</a>. Compared to NGS, nanopore sequencing does not require reverse transcription, and the modification information is retained on single-read level data. In addition, nanopore sequencing is a portable device that can detect signals in real-time. Nanopore sequencing consists of three major components: the polymer membrane, the nanoscale protein pore embedded in the membrane, and the motor protein on the pore <a href="#b0120">[24]</a>, <a href="#b0125">[25]</a>. While the sequencing is initiated, a voltage potential is kept constant across the membrane. The helicase motor protein will first unwind the DNA into a negatively charged single-stranded molecule (while the single-stranded RNA can be sequenced directly). Next, the nucleic acid is ratcheted from the negatively charged <i>cis</i>-face to the positively charged <i>trans</i>-face of the membrane through the nanopore (<a href="#f0005">Fig. 1</a>) <a href="#b0120">[24]</a>, <a href="#b0125">[25]</a>. This translocation will lead to the alteration of voltage across the membrane and disrupt the currents <a href="#b0120">[24]</a>, <a href="#b0125">[25]</a>, <a href="#b0130">[26]</a>, <a href="#b0135">[27]</a>. Since the degree of shift of the current signals is uniquely associated with the current nucleotide and its 5-mer sequence context, the captured changes of currents can be “basecalled”, i.e. to convert ionic signals into sequence information.<div class="fig panel" style="display: float; clear: both">
+<a id="f0005"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id9">Illustration of nanopore sequencing principle. <b>a)</b>. The translocation of an RNA molecule will disturb the currents across the membrane, which are captured and recorded as “squiggles.” Published tools for RNA modification calling apply computational models to capture the deviation of the current signal in the modified base from the unmodified base. <b>b)</b>. Different computational strategies such as Bayesian models and deep learning were realized in corresponding pipelines to achieve this purpose. Most existing tools are trained on data of m<sup>6</sup>A and can identify only m<sup>6</sup>A modification.</p></div>
+</div></p>
+<p id="p0020">The base calling procedure is mainly realized through deep learning methods such as the recurrent neural network (RNN) <a href="#b0120">[24]</a>, <a href="#b0125">[25]</a>, <a href="#b0135">[27]</a>. The current signals are first segmented into separate “events”. An RNN takes an input of a sequence of vectors containing current values of these events and incorporates with the hidden state vectors from the previously hidden layers to produce an output of a sequence of vectors providing a probability distribution for each base <a href="#b0140">[28]</a>, <a href="#b0145">[29]</a>. To consider the context information before and after the called base, bidirectional recurrent neural networks are applied in Guppy <a href="#b0140">[28]</a>, <a href="#b0145">[29]</a>.</p>
+<p id="p0025">Beyond the primary sequences, the nucleotide modification sites can be predicted directly from the read-level electrical signal by identifying the “deviant” from the regular signal shifts of the nucleotide (<a href="#f0005">Fig. 1</a>). To implement this procedure, current signal intensity levels are often extracted with software such as Nanopolish or Tombo to acquire a dataset containing signal statistics associated with base calling events <a href="#b0150">[30]</a>. Currently, many software tools have been developed to predict RNA modifications based on nanopore sequencing data, such as EpiNano <a href="#b0105">[21]</a>, <a href="#b0155">[31]</a>, nano-ID <a href="#b0160">[32]</a>, DiffErr <a href="#b0165">[33]</a>, MINES <a href="#b0170">[34]</a>, Nanocompore <a href="#b0175">[35]</a>, ELIGOS <a href="#b0180">[36]</a>, xPore <a href="#b0130">[26]</a>, nanom6A <a href="#b0185">[37]</a>, nanoRMS <a href="#b0190">[38]</a>, DRUMMER <a href="#b0195">[39]</a>, nanoDoc <a href="#b0200">[40]</a>, Yanocomp <a href="#b0205">[41]</a>, Penguin <a href="#b0210">[42]</a>, m6Anet <a href="#b0215">[43]</a> and DENA <a href="#b0220">[44]</a>. In this review article, we will first summarize the computational strategies used when developing the above tools. Following that, we try to contrast their functionalities by enumerating the supported modification types, the format of the input information, and their reported performances. Therefore, these efforts may help to find avenues to improve future development in computational methods and sequencing devices.</p>
+</div>
+<div class="section">
+<a id="s0010"><!-- named anchor --></a><h2 class="main-title">Review of methodologies</h2>
+<h5 class="label">2</h5>
+<div class="section">
+<a id="s0015"><!-- named anchor --></a><h3 class="section-title">Statistical methods</h3>
+<h5 class="label">2.1</h5>
+<p id="p0030">Differential statistical testing and Bayesian modeling are two major types of statistical methods used in RNA modification prediction from nanopore sequencing. The input of differential testing depends on the site-level information, which is often the coverage data of the base called reads or the extracted current signals mapped at the reference sequence. The sites level information is often summarized into contingency tables and subjected to statistical testing (<a href="#f0010">Fig. 2</a>a). Bayesian modeling act on the read-level information which is means or medians of the current signals of the base events in reads. Bayesian generative models such as Gaussian mixture model (GMM) will be fitted to the signal to detect signal shifts. In case of GMM, the posterior estimates for each mixture component can interpreted as the probability of modification at the given base (<a href="#f0010">Fig. 2</a>b).<div class="fig panel" style="display: float; clear: both">
+<a id="f0010"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id10">Two major computational frameworks used in RNA modification site prediction. <b>a)</b>. In the differential testing schemes, the input data is arranged by piling up the base called reads or extracted current signals along the reference sequence. The counts of mismatches or normalized current signals are summarized into contingency tables and subjected to categorical differential testing. <b>b)</b>. In the Bayesian models framework, either means or medians of the current signals covering each k-mer position are extracted as observed variables and are fitted by a Gaussian mixture model (GMM). The estimated weight parameter of the latent binomial variable can be regarded as the modification rate at the given k-mer. Differential methylation can be conducted over the quantified modification rate across samples to detect the presence of significantly differentially modified sites.</p></div>
+</div></p>
+<div class="section">
+<a id="s0020"><!-- named anchor --></a><h4 class="subsection-title">Differential testing</h4>
+<h5 class="label">2.1.1</h5>
+<p id="p0035">DiffErr <a href="#b0165">[33]</a> and DRUMMER <a href="#b0195">[39]</a> are two prediction methods adopting G-tests under the differential testing scheme. DiffErr predicts m<sup>6</sup>A modifications by finding differences in the base calling error rate between the target sample and the reference control sample. The input data is the stacked read coverage at the potential modification site labeled by base call errors. Specifically, the counts of five bases called results (A, C, G, U, or indel) are aggregated from each sample. An n × 5 contingency table is then generated for each base, where n denotes the number of samples and 5 represents the types of base calling results. A G-test is performed on this table to identify any base with a significant change in error rates. An additional G-test is performed on significant bases between other pairings of replicates in the same condition. Benjamini-Hochberg method with an 0.05 FDR threshold is used for multiple testing corrections. If the sum of the G statistics in the lateral G-test is larger than the G statistic in the former one, the base will be excluded from the candidate sites to improve stringency. Subsequently, the log2 fold changes of mismatch to match ratio at the candidate sites between different-conditioned samples are calculated. A base with a log2 fold change &gt;1 is considered a modification site. DiffErr was tested on the nanopore direct RNA sequencing (DRS) data of Arabidopsis. The result showed that the m<sup>6</sup>A modification sites revealed by DiffErr are enriched in 3′ UTRs but not enriched around stop codons, which is consistent with the pattern of the paired miCLIP sample. About 66 % of the m<sup>6</sup>A modification sites discovered located within 5 nucleotides of miCLIP sites.</p>
+<p id="p0040">The testing method used by DRUMMER is also G-test on a 2 × 5 contingency table from the counts of basecall information for each base. A Bonferroni approach is used to adjust multiple-hypothesis testing. The two rows in the contingency table represent the methyltransferase knockout samples versus the wild-type samples. The fold change of mismatch to match ratio is then calculated at each included base. Candidate modification sites are selected if the site has a onefold or greater change and the adjusted G-test p-value is less than 0.01. This algorithm was tested on the nanopore DRS data of the wild-type (WT) and METTL3-knockout (M3KO) A549 cells infected with adenovirus serotype 5 (Ad5) with matching MeRIP-Seq data. Their results showed that approximately 83.1 % of the universally predicted sites across all datasets were located on AC motifs, with the remaining sites located within four nucleotides away from AC motifs. The observed distances were much smaller than random shuffled sites, suggesting a positive motif association. The sequence logo generated from the context of these candidate sites resembled the commonly known m<sup>6</sup>A DRACH motif. The predicted modification sites also overlapped extensively with peaks detected by MeRIP-Seq.</p>
+<p id="p0045">ELIGOS <a href="#b0180">[36]</a> uses Fisher’s exact tests to predict modified bases by comparing the base-call error profiles between the modified and control DRS data. The training set consisted of in vitro transcribed (IVT) sequence data with all target bases modified, a control IVT sample with no base modified, and a cDNA sample reversely transcribed from the native RNA sequences called the RNA background error model (rBEM). To apply a differential test, ELIGOS calculates the sum of mismatches, insertions, and deletions at each base of the reference sequence using the aligned reads. These features are referred to as the Error of Specific Bases (ESB). The differences in the proportion ESB (%ESB) between native RNA and the reference sequence data constitute three 2 × 2 contingency tables, one for each reference data. Fisher's exact tests is then performed and the q-values are computed by Benjamini-Hochberg correction. The methylation is called using user defined cut-offs for q-values and odds ratios. ELIGOS was tested on Curlcakes and IVT datasets having modification types from m<sup>6</sup>A, m<sup>1</sup>A, <sup>5</sup>moU, Psi, m<sup>7</sup>G, Ino, hm<sup>5</sup>C, and f<sup>5</sup>C. The results showed that the best AUROC for Curlcakes data is 0.758 on all possible 5-mers and 0.973 on DRACH motifs. All the IVT data had AUROC &gt;0.74 except for the one containing m5C modification. In addition, ELIGOS was further validated on DRS data of rRNAs from human cells, yeasts, and E. coli. The resulting AUROC were 0.895–0.938, 0.861–0.962, and 0.862–0.953, respectively.</p>
+</div>
+<div class="section">
+<a id="s0025"><!-- named anchor --></a><h4 class="subsection-title">Bayesian modeling</h4>
+<h5 class="label">2.1.2</h5>
+<p id="p0050">Nanocompore <a href="#b0225">[45]</a>, xPore <a href="#b0130">[26]</a>, and Yanocomp <a href="#b0205">[41]</a> applied Bayesian generative models to predict the modification sites while supporting the methylation level quantification. Nanocompore predicts m<sup>6</sup>A modification sites by comparative analysis between experimental and control datasets. The median signal intensity and the log10 of dwell time of each read are extracted from raw current signals and used as input data. Pairwise comparisons are conducted between modified and control samples on all the possible 5-mers by the robust univariate test (Kolmogorov-Smirnov test) or bivariate Gaussian mixture model (GMM) with a logistic regression test. Nanocompore was first evaluated on in-silico generated data by simulating modified and unmodified current signals. This simulation was based on the current distribution from an IVT human DRS dataset. The unmodified current signals are mimicked by a probability density generator. The simulation of current signals for modified bases is generated by shifting the mean of density distribution. The evaluation results showed that the KS test has the highest sensitivity but with the expense of lower specificity, while the GMM models reach the lowest False Positive Rate and the highest F1 score. GMM models outperformed KS tests when the analysed transcripts had different sequencing depths and were therefore used in the following analysis. In a cell line independent validation test, Nanocompore was applied on the nanopore RNA sequencing data of shRNA-mediated METTL3 knock-down (K<sub>D</sub>) MOLM13 cell line and wild type (WT) MOLM13 cell line. The results showed that the m<sup>6</sup>A modification sites predicted were enriched near the stop codons of mRNA, resembling the pattern previously reported by the METTL3-dependent m<sup>6</sup>A sites. Compared with the miCLIP data of the MOLM3 cell line, 54 % of the modification sites predicted by Nanocompore overlapped with the miCLIP in WT cells and there exists a significant decrease in Nanocompore predicted modification sites at miCLIP crosslink sites. The methylation ratios at these sites are also significantly reduced from the WT to the K<sub>D</sub> cell line. Although Nanocompore has only been tested and validated only on m<sup>6</sup>A modification, it is potentially applicable to any modification detection with proper control samples free of modification.</p>
+<p id="p0055">xPore predicts m<sup>6</sup>A modification sites through a multi-sample Bayesian Gaussian mixture model. The model takes input from the normalized mean of the current signals from all reads across different samples at each possible 5-mer. The two components of the mixed distributions are used to denote the unmodified and modified RNA species. The cluster closer to the theoretical distribution for unmodified RNA species is considered unmodified, while the other is modified. A Bayes classifier is used on the posterior probability of the soft clustering to predict modification events at the read level. The modification rate for a given site is estimated by the proportion of modified reads aligned at that position. xPore was tested on the nanopore DRS data of wild-type (WT) and METTL3 knockout (KO) HEK293T cell lines with matched m<sup>6</sup>ACE-Seq data as reference labels. Differential analysis was then applied to the estimated modification rates of replicates between WT and KO to determine whether the site is modified. Benjamini-Hochberg method with a 0.05 FDR threshold is utilized to adjust the multiple testing P-values. At the A-centered positions (NNANN), xPore achieved an AUROC of 0.86 and a precision of 0.6. The low precision could be a result of detecting modifications that were missed by antibody-based prediction. Over 90 % of the modification positions predicted with a p-value lower than 0.001 overlapped the modified DRACH motifs identified by m6ACE-Seq. The predicted sites formed a distribution peak near the stop codon, resembling the pattern identified by m6ACE-Seq. xPore also demonstrated a positive correlation between the quantified m<sup>6</sup>A levels in the HEK293T cell lines and the profiles acquired from MAZTER-Seq and m6ACE-Seq, with Spearman's rank correlation coefficient equal to 0.49 and 0.66, respectively. xPore has an advantage over other methods in that it can obtain the quantitative m<sup>6</sup>A levels from individual DRS experiments without depending on the associated KO samples.</p>
+<p id="p0060">Yanocomp constructs GMM based on the mean current values of each kmer at each read. The model contains two Gaussian components and one uniform component. The weights for the two Gaussian components are also utilized to estimate the modification rate at each position, followed by a G-test as the differential analysis between control and experiment samples. This algorithm was tested on the DRS data of Arabidopsis defective in the function of VIRILIZER (vir-1) and VIR complemented lines (VIRc). The average modification rates dropped by 81.8 % in the defective cell line compared to the WT condition. Most of the m<sup>6</sup>A modification sites identified were located at m<sup>6</sup>A consensus motifs and almost all the modification sites predicted were in 3′UTRs. Compared with miCLIP data, 84.1 % of the predicted modification sites were located within 5nt of the nearest miCLIP site. The authors also intend to improve Yanocomp to enable the prediction without the need for paired KO experiments.</p>
+</div>
+</div>
+<div class="section">
+<a id="s0030"><!-- named anchor --></a><h3 class="section-title">Supervised learning</h3>
+<h5 class="label">2.2</h5>
+<p id="p0065">The supervised learning-based prediction methods often use heterogeneous input information, in which both the current intensity and the base called sequence are input features. This can often provide a performance advantage over statistical methods which typically use only one feature type. The adopted models or algorithms include K-means <a href="#b0190">[38]</a>, K-nearest-neighbour <a href="#b0190">[38]</a>, Random Forests <a href="#b0170">[34]</a>, <a href="#b0210">[42]</a>, Support Vector Machine <a href="#b0105">[21]</a>, <a href="#b0155">[31]</a>, <a href="#b0210">[42]</a>, XGBoost <a href="#b0185">[37]</a> and neural networks <a href="#b0160">[32]</a>, <a href="#b0200">[40]</a>, <a href="#b0210">[42]</a>, <a href="#b0215">[43]</a>, <a href="#b0220">[44]</a>.</p>
+<p id="p0070">Among these machine learning-based methods, EpiNano-SVM <a href="#b0105">[21]</a>, <a href="#b0155">[31]</a>, MINES <a href="#b0170">[34]</a>, and nanoDoc <a href="#b0200">[40]</a> can only reach site-level predictions. EpiNano-SVM uses a Support Vector Machine (SVM) to classify the m<sup>6</sup>A-modified bases based on systematic base-calling errors in DRS datasets. The features are composed of per-site and per-kmer quality, mismatch, insertion, deletion, and current intensity. It can either uses absolute feature values or differences in feature values between two comparing samples. The SVM model was trained and tested on Curlcakes datasets with features of per-base quality, mismatch, and deletion at the middle position of the RRACH k-mers. The Curlcakes datasets, originally designed and generated by the authors of EpiNano, consist of the DRS data of the modified and control IVT sequences containing all possible 5-mers. Two biological replicates were generated for both modified and control datasets. The SVM model was trained on the 1st replicate of Curlcake datasets and tested on the 2nd replicate. The results showed that the AUROC were higher than 0.969. For cell line independent validation, the model was trained and tested on the nanopore DRS data of polyA(+)-selected RNA from wild-type (WT) and ime4 knockout (KO) yeast strains with distinct subsets of features. The model reached the AUROC higher than 0.613 with absolute feature values and 0.636 with differences in feature values. In the recent update EpiNano 1.2, the authors implemented another mode named EpiNano-Error, which predicts modification sites by testing for differences in feature values between two comparing samples. Z-score deviances and data point residuals after fitting the linear regression models are used to determine the modification sites. The Bonferroni method is used to correct for multiple testing p-values. The threshold parameters can be user-defined.</p>
+<p id="p0075">MINES classifies the m<sup>6</sup>A sites on DRACH motifs through a random forest model using the features of modification stoichiometries within a 20-bp region. The centre position (Position 0) of the region is an adenine nucleotide in the middle of the DRACH motifs. The modification stoichiometries are calculated by Tombo by averaging the modification probabilities of each read. The random forest models were trained and tested on the HEK293T cell line using labels from matched m6ACLIP-seq datasets. The DRACH motifs containing overlaps with m<sup>6</sup>A modification sites in label datasets were considered as positive sites and otherwise negative sites. The obtained results reached the accuracies ranging from 67 % to 83 %, the precisions ranging from 40 % to 92 % and the AUROC ranging from 54 % to 76 % for all 18 models over instances of DRACH motif. Among them, only 4 models (the ones for the AGACT, GGACA, GGACC, and GGACT motifs) had AUROC beyond 0.67. In the independent validation on the HMEC cell line, the m<sup>6</sup>A sites predicted by MINES were enriched near the start of 3′UTR across all transcript isoforms, which resembled the results from typical m6A-seq. In the future, MINES may upgrade to realize read-level prediction.</p>
+<p id="p0080">nanoDoc distinguishes RNA modifications at the site level through a combination of deep learning and machine learning. It adopts a Deep One-Class (DOC) classification model with transfer learning and takes normalized current signals and the dwell time of each possible 5-mer as the input feature. Two parallel DOC classification models are constructed to calculate the Euclidean distance between the output vectors of target 5-mers in the secondary network and output vector of other 48 similar 5-mers in the reference network. The obtained Euclidean distances constitute a distribution for each 5-mers. The reference network was trained on IVT data free of modification. Besides, the IVT data was also used as the control dataset to calculate the distance distributions. During the application of nanoDoc, two pairs of parallel DOC classification models were processed simultaneously. The distribution of distances between two IVT read datasets (control distribution) and the distribution between an IVT read dataset and a native sequence read dataset (native distribution) were generated, respectively. Next, these two distributions were scored through cumulative distribution functions. With the modification present, the score of the control distribution was expected to be greater than that for the native distribution. To distinguish between different classifications, the native sequence 5-mer data were processed through a reference classification network followed by K-means clustering. nanoDoc was tested on the nanopore DRS data of native rRNA of E. coli and yeast with matched reference IVT sequencing data. It tried to detect all 23 kinds of RNA modification and achieved an AUROC of 0.96. Within 7 5-mers, 10 out of 15 types of modifications were successfully identified with&gt;50 % specificity. nanoDoc was also applied on Curlcakes data to predict m<sup>6</sup>A sites and it achieved an AUROC of 0.68 on all possible 5-mers. Most modification sites within DRACH motifs were successfully detected. Currently, nanoDoc cannot perform read-level predictions for modification rate quantification. In the future, nanoDoc will accumulate more data regarding different modification types in the 5-mers and will be independent of the IVT reference data.</p>
+<p id="p0085">NanoRMS <a href="#b0190">[38]</a>, nanom6A <a href="#b0185">[37]</a>, and Penguin <a href="#b0210">[42]</a> implement read-level prediction using classic machine learning algorithms such as Random Forest (RF), Support Vector Machine (SVM), and K-Nearest-Neighbourhood (KNN). NanoRMS predicts the modification sites and modification levels of pseudouridine (psi) and Nm modification via either unsupervised (K-means) or supervised (KNN) machine learning algorithms. The authors use combined input features of signal intensity calculated from Tombo and base probability (trace) reported from Guppy. NanoRMS was trained and tested on the yeast strains of wild-type (WT) and two different knockouts for psi and Nm modification, respectively. The predicted per-site modification stoichiometries were verified by mass spectrometry results. Significant reductions in predicted stoichiometries were observed at positions specific to one of the psi and Nm-modified snRNA-depleting cell lines.. NanoRMS was also validated on data of the poly(A)-selected RNA from wild-type (WT), Pus1 knockout, and Pus4 knockout yeast strains. The predictions successfully recapitulated 11 % and 75 % of previously reported Pus1- and Pus4-dependent psi modification sites, respectively. NanoRMS also discovered some novel modification sites across replicates. The results revealed similar mismatch patterns to previously reported psi modification sites, and the predicted sites were predominantly responsive to the Pus1 and Pus4 knockout.</p>
+<p id="p0090">Nanom6A uses the XGBoost model to predict m<sup>6</sup>A modification sites at RRACH motifs. The input features of the XGBoost model include the median, standard deviation, mean, and dwell time of the current signals over each RRACH motif extracted by the Tombo re-squiggle function. Nanom6A was trained and tested on the Curlcakes dataset. The authors obtained an AUROC of 0.97 under 10-fold cross-validation, and approximately 91–96 % of modification sites are uncovered. For cell line independent validation, the prediction over the wild type (WT) and METTLE3 knockdown (K<sub>D</sub>) HEK293T cell line were compared with the matched SCARLET and MeRIP-Seq data. In addition, the Arabidopsis mutant defective in the function of VIRILIZER (vir-1) and VIR complemented lines (VIRc) and stem-differentiating xylem (SDX) of Populus trichocarpa with matched MeRIP-Seq and m6A-REF-seq data were also compared. In the HEK293 cell line, the numbers of predicted m<sup>6</sup>A modification sites and the predicted modification rates showed a decline in K<sub>D</sub> samples at ACTB sites, resembling the results reported from SCARLET and MeRIP-Seq. In the Arabidopsis cell line, 40 % of the m<sup>6</sup>A modification sites predicted were shared with those detected by EpiNano or MINES, and 66 % of the RRACH motifs with predicted modification sites were also predicted by DiffErr. The number and modification ratios of m<sup>6</sup>A sites detected by Nanom6A dropped in the VIRc relative to the vir-1. In the Populus trichocarpa, Nanom6A predicted m<sup>6</sup>A with a similar enrichment pattern compared with the MeRIP-Seq and m6A-REF-seq. Approximately 81 % and 80 % of the modification sites predicted overlapped with MeRIP-Seq and m6A-REF-seq, respectively.</p>
+<p id="p0095">Penguin predicts pseudouridine modification at all possible 5-mers by assembling three models of Support Vector Machine (SVM), Random Forest (RF), and Neural Network (NN). It uses Nanopolish to extract current signal features as the model input, including the mean, standard deviation, dwell time of the current signals, and the k-mers of the events aligned to the reference genome. Penguin was trained and tested on the nanopore DRS data from the HEK293 cell line, with the matched benchmark dataset as labels. The obtained results showed that the SVM (Accuracy: 0.9338, Recall: 0.95, AUROC: 0.933, Precision: 0.92) had a higher accuracy, recall and AUROC and a lower precision compared to RF (Accuracy: 0.8459, Recall: 0.72, AUROC: 0.852, Precision: 0.98). The SVM also achieved comparative results with NN (Accuracy: 0.9335, Recall: 0.95, AUROC: 0.932, Precision: 0.92). In the cell line independent testing on the nanopore DRS data of HeLa cell line, NN (Accuracy: 0.9535, Recall: 1.00, AUROC: 0.953, Precision: 0.92) outperformed SVM (Accuracy: 0.9261, Recall: 0.94, AUROC: 0.926, Precision: 0.91) in all aspects. RF was excluded from the results due to its low accuracy (&lt;0.5). Penguin uncovered pseudouridine modification sites from 7148 genes at 6482 unique genomic locations shared across the HEK293T and HeLa cell lines. Among the top 1 % frequent pseudouridine modification genomic locations in the HEK293T and HeLa cell lines, 15.8 % were commonly detected across both cell lines. In the future, Penguin may integrate advanced deep learning methods for modification prediction.</p>
+<p id="p0100">There are three methods using deep learning models for modification sites and quantification prediction, which are DENA <a href="#b0220">[44]</a>, m6Anet <a href="#b0215">[43]</a>, and nano-ID <a href="#b0160">[32]</a>. DENA predicts m<sup>6</sup>A modification on RRACH motifs through Bidirectional Long Short-Term Memory (Bi-LSTM) neural network. A total of 12 Bi-LSTM neural networks are constructed for each RRACH motif. It extracts the mean, median, standard deviation, dwell time, and base quality of the current signals at RRACH motifs as input features through the Tombo re-squiggle algorithm. DENA is the first neural-network-based RNA prediction tool trained on in vivo transcribed mRNA data. The network was trained and tested on the nanopore DRS data of Arabidopsis defective in the function of VIRILIZER (vir-1) and VIRILIZER complemented cell lines (VIRc). The AUROC and the accuracies of all the 12 models reached between 0.90 and 0.97 and between 0.83 and 0.93, respectively. For validation, DENA was applied on the wild-type (Col-0) Arabidopsis and full training dataset (vir-1 and VIRc). A large fraction of overlap was observed between the predicted modification sites in Col-0, VIRc, and vir-1 cell lines. A high correlation between modification rates was discovered between VIRc and Col-0. The m<sup>6</sup>A sites predicted were also enriched near the stop codon and 3′UTR, similar to the expected distribution of m<sup>6</sup>A modifications.</p>
+<p id="p0105">m6Anet is a prediction software based on Multiple Instance Learning. The model consists of two joined modules of a read-level encoder and a pooling layer. The encoder converts the input features into a high-dimensional representation, followed by the read-level prediction of modification rates with two hidden layers. The noisy-OR pooling layer integrates the read level prediction to estimate the probability of modification at the site level. The normalized mean, standard deviation, and dwell time of the nanopore raw signals of each read at each position (i) and the single position before (i − 1) and after (i + 1) are used as input features in this model. The sequence information of all possible 5-mers in the training data is encoded as a two-dimensional vector. The embedding is also used as an input feature for the model. The labels for the model are the binary modification status at each site marked with 1 (modified) or 0 (otherwise). The modification status can be observed from other sequencing methods such as m6ACE-Seq or other gold-standard data. The training data for m6Anet was the nanopore DRS data of the HCT116 cell line and the training labels were the matched m6ACE-Seq data. Sites mapped to non-DRACH motifs were all removed from training data. The trained m6Anet model was evaluated on the HEK293T cell line using the ground truth of the matched m6ACE-Seq and miCLIP data. The results showed an AUROC of 0.83 and a PRAUC of 0.35 on DRACH motifs, outperforming EpiNano and Tombo. m6Anet also achieved the AUROC of 0.83 and 0.83 and PRAUCs of 0.43 and 0.37 on 4 motifs (AGACT, GGACA, GGACC, and GGACT) and all RRACH motifs, respectively, outperforming MINES and nanom6A. m6Anet can generalize well to new DRS data without the requirement of new training data.</p>
+<p id="p0110">nano-ID predicts the sites of nucleoside analogues 5-Ethynyluridine (5EU) at the read level via a neural network model. 5EU is a chemical modification used to identify newly synthesized RNA, which is often generated through metabolic RNA labelling. The neural network takes the normalized raw current signals, base-calling event probability, and alignment mismatch properties as the input features. The network architecture is constituted of a batch normalization layer and two dropout layers between the three dense layers. nano-ID was trained on the nanopore DRS data of the myelogenous leukemia K562 cell line. The cells were exposed to 5EU labelling for 24 h (5EU 24 h), exposed to 5EU labelling for 60 min (5EU 60 min), or not exposed to 5EU labelling (Control). The trained network achieved an accuracy of 0.87 and an FDR of 0.025 on the 5EU 60 min cell line. The model achieved the AUROC of 0.94 overall and 0.96 for reads with lengths &gt;500nt and 1000nt. Similar results were obtained from a random forest classification with the same training and testing data. Improvements of both the nanopore sequencing platform and the base calling algorithm are expected to further improve the accuracy of Nano-ID.</p>
+</div>
+</div>
+<div class="section">
+<a id="s0035"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<h5 class="label">3</h5>
+<p id="p0115">Epitranscriptomics is a field that has been profoundly advanced in recent decades. The research momentum is mainly driven by the breakthrough of sequencing technologies that enabled the omic-level analysis of RNA modifications. With the recent development of third-generation sequencing technology, nanopore direct RNA sequencing has the potential to realize the base resolution detection of RNA modification over long native RNA sequence reads independent of sequencing biases introduced by PCR amplification and reserve transcription.</p>
+<p id="p0120">Here we have comprehensively reviewed 15 published RNA modification prediction tools based on direct RNA sequencing data. Among them, 6 use statistical models and 9 are based on supervised machine learning (<a href="#t0005">Table 1</a>). The principles behind these methods all depend on recognizing the perturbation of the signal intensity in modified bases that are uniquely associated with each k-mer context. One major difference in application is that the statistical testing-based methods often rely on the paired reference control dataset that has no modification, which is typically obtained from either IVT or the K<sub>D</sub>/KO experiment. In contrast, machine learning and deep learning models can generalize the signal pattern learned from the training data set without requiring the paired no-modification control sample.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="t0005"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id11">Comparison over 15 published tools.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id12"><!-- named anchor --></a><thead>
+<a id="id13"><!-- named anchor --></a><tr>
+<a id="id14"><!-- named anchor --></a><th colspan="1" rowspan="1"><a id="id15"><!-- named anchor --></a></th>
+<th colspan="1" rowspan="1">
+<a id="id16"><!-- named anchor --></a>Modification</th>
+<th colspan="1" rowspan="1">
+<a id="id17"><!-- named anchor --></a>Species</th>
+<th colspan="1" rowspan="1">
+<a id="id18"><!-- named anchor --></a>AUROC</th>
+<th colspan="1" rowspan="1">
+<a id="id19"><!-- named anchor --></a>Resolution</th>
+<th colspan="1" rowspan="1">
+<a id="id20"><!-- named anchor --></a>Motif</th>
+</tr>
+</thead>
+<tbody>
+<a id="id21"><!-- named anchor --></a><tr>
+<a id="id22"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id23"><!-- named anchor --></a><b>DENA</b>
+</td>
+<td rowspan="10" colspan="1">
+<a id="id24"><!-- named anchor --></a>m<sup>6</sup>A</td>
+<td colspan="1" rowspan="1">
+<a id="id25"><!-- named anchor --></a>Arabidopsis</td>
+<td colspan="1" rowspan="1">
+<a id="id26"><!-- named anchor --></a>0.90–0.97</td>
+<td colspan="1" rowspan="1">
+<a id="id27"><!-- named anchor --></a>Read</td>
+<td rowspan="3" colspan="1">
+<a id="id28"><!-- named anchor --></a>RRACH</td>
+</tr>
+<tr>
+<a id="id29"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id30"><!-- named anchor --></a><b>nanom6A</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id31"><!-- named anchor --></a>Arabidopsis;<br class="br">Human; IVT;<br class="br">Populus trichocarpa</td>
+<td colspan="1" rowspan="1">
+<a id="id32"><!-- named anchor --></a>0.97</td>
+<td colspan="1" rowspan="1">
+<a id="id33"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id34"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id35"><!-- named anchor --></a><b>EpiNano</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id36"><!-- named anchor --></a>IVT; Yeast</td>
+<td colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>–</td>
+<td colspan="1" rowspan="1">
+<a id="id38"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id39"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id40"><!-- named anchor --></a><b>m6Anet</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id41"><!-- named anchor --></a>Hunan</td>
+<td colspan="1" rowspan="1">
+<a id="id42"><!-- named anchor --></a>0.83</td>
+<td colspan="1" rowspan="1">
+<a id="id43"><!-- named anchor --></a>Read</td>
+<td rowspan="2" colspan="1">
+<a id="id44"><!-- named anchor --></a>DRACH</td>
+</tr>
+<tr>
+<a id="id45"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id46"><!-- named anchor --></a><b>MINES</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id47"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id48"><!-- named anchor --></a>0.54–0.76</td>
+<td colspan="1" rowspan="1">
+<a id="id49"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id50"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id51"><!-- named anchor --></a><b>Nanocompore</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id52"><!-- named anchor --></a>Human; IVT</td>
+<td colspan="1" rowspan="1">
+<a id="id53"><!-- named anchor --></a>0.9889-<br class="br">0.9947</td>
+<td colspan="1" rowspan="1">
+<a id="id54"><!-- named anchor --></a>Site</td>
+<td rowspan="10" colspan="1">
+<a id="id55"><!-- named anchor --></a>All possible<br class="br">5-mers</td>
+</tr>
+<tr>
+<a id="id56"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a><b>xPore</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id58"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id59"><!-- named anchor --></a>0.86</td>
+<td colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id61"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id62"><!-- named anchor --></a><b>Yanocomp</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>Arabidopsis</td>
+<td colspan="1" rowspan="1">
+<a id="id64"><!-- named anchor --></a>–</td>
+<td colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id66"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id67"><!-- named anchor --></a><b>DiffErr</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id68"><!-- named anchor --></a>Arabidopsis</td>
+<td colspan="1" rowspan="1">
+<a id="id69"><!-- named anchor --></a>–</td>
+<td colspan="1" rowspan="1">
+<a id="id70"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id71"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id72"><!-- named anchor --></a><b>DRUMMER</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id74"><!-- named anchor --></a>–</td>
+<td colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id76"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a><b>nanoDoc</b>
+</td>
+<td rowspan="3" colspan="1">
+<a id="id78"><!-- named anchor --></a>Multiple modifications</td>
+<td colspan="1" rowspan="1">
+<a id="id79"><!-- named anchor --></a>Yeast; E. coli;<br class="br">IVT</td>
+<td colspan="1" rowspan="1">
+<a id="id80"><!-- named anchor --></a>Yeast and E. coli: 0.96<br class="br">IVT: 0.68</td>
+<td colspan="1" rowspan="1">
+<a id="id81"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id82"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id83"><!-- named anchor --></a><b>ELIGOS</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id84"><!-- named anchor --></a>Human; IVT;<br class="br">Yeast; E. coli</td>
+<td colspan="1" rowspan="1">
+<a id="id85"><!-- named anchor --></a>IVT: &gt; 0.74 Human:<br class="br">0.895–0.938<br class="br">E. coli: 0.861-<br class="br">0.962<br class="br">Yeast: 0.862-<br class="br">0.953</td>
+<td colspan="1" rowspan="1">
+<a id="id86"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id87"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id88"><!-- named anchor --></a><b>NanoRMS</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id89"><!-- named anchor --></a>Yeast</td>
+<td colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>–</td>
+<td colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id92"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id93"><!-- named anchor --></a><b>nano-ID</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id94"><!-- named anchor --></a>5EU</td>
+<td colspan="1" rowspan="1">
+<a id="id95"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id96"><!-- named anchor --></a>0.94</td>
+<td colspan="1" rowspan="1">
+<a id="id97"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id98"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id99"><!-- named anchor --></a><b>Penguin</b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id100"><!-- named anchor --></a>Psi</td>
+<td colspan="1" rowspan="1">
+<a id="id101"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id102"><!-- named anchor --></a>0.852–0.953</td>
+<td colspan="1" rowspan="1">
+<a id="id103"><!-- named anchor --></a>Read</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="p0125">Regarding the supported modification types of the prediction methods, most of the methods (12/15) are trained and applied to only one type of modification (<a href="#f0010">Fig. 2</a>). However, almost all of their computational frameworks have the potential to apply to other modifications as long as providing a high-quality training set. However, one of the major limitations is that the current DRS data may not support the accurate distinction between certain kinds of modifications due to the overlap between their signal shifts, such as between ψ and m<sup>1</sup>ψ <a href="#b0230">[46]</a>. In addition, 7 out of 15 methods predict modification only at the site level without reporting the quantitative modification profile. The difference in their functionalities can be attributed to the limitations of computational frameworks and programming implementation.</p>
+<p id="p0130">Sequencing depth is also a strong factor influencing the detection power of modification sites, especially for the prediction tools based on statistical models. If the sequencing depth is too low, the differential testing can be significantly affected by the reduction of statistical power, especially considering the relatively low sequencing accuracy of Nanopore sequencing. Common ways of reducing the high statistical noise of low sequencing depths are pooling reads across replicates <a href="#b0220">[44]</a> or excluding sites below a coverage threshold <a href="#b0105">[21]</a>, <a href="#b0165">[33]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0190">[38]</a>, <a href="#b0195">[39]</a>. The default thresholds of minimum read coverage often vary between different tools (see <a href="#t0010">Table 2</a>).<div class="table-wrap panel" style="display: float; clear: both">
+<a id="t0010"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id104">Overview of the features and the models used in the methods reviewed by this article. Feature level describes the type of input features used by the software. All methods modeled on the raw electrical current are classified into the signal intensity, and otherwise, it is labeled as the base call error.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id105"><!-- named anchor --></a><thead>
+<a id="id106"><!-- named anchor --></a><tr>
+<a id="id107"><!-- named anchor --></a><th colspan="1" rowspan="1"><a id="id108"><!-- named anchor --></a></th>
+<th colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a>Feature level</th>
+<th colspan="1" rowspan="1">
+<a id="id110"><!-- named anchor --></a>Model/Method</th>
+<th colspan="1" rowspan="1">
+<a id="id111"><!-- named anchor --></a>URL</th>
+</tr>
+</thead>
+<tbody>
+<a id="id112"><!-- named anchor --></a><tr>
+<a id="id113"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id114"><!-- named anchor --></a><b><i>DENA</i></b>
+</td>
+<td rowspan="12" colspan="1">
+<a id="id115"><!-- named anchor --></a>Signal intensity</td>
+<td rowspan="3" colspan="1">
+<a id="id116"><!-- named anchor --></a>Deep Learning</td>
+<td colspan="1" rowspan="1">
+<a id="id117"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/weir12/DENA" id="ir005">https://github.com/weir12/DENA</a>
+</td>
+</tr>
+<tr>
+<a id="id118"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a><b><i>m6Anet</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id120"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/GoekeLab/m6anet" id="ir010">https://github.com/GoekeLab/m6anet</a>
+</td>
+</tr>
+<tr>
+<a id="id121"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a><b><i>nanoDoc</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/uedaLabR/nanoDoc" id="ir015">https://github.com/uedaLabR/nanoDoc</a>
+</td>
+</tr>
+<tr>
+<a id="id124"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id125"><!-- named anchor --></a><b><i>MINES</i></b>
+</td>
+<td rowspan="6" colspan="1">
+<a id="id126"><!-- named anchor --></a>Machine Learning</td>
+<td colspan="1" rowspan="1">
+<a id="id127"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/YeoLab/MINES.git" id="ir020">https://github.com/YeoLab/MINES.git</a>
+</td>
+</tr>
+<tr>
+<a id="id128"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a><b><i>nano-ID</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id130"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/birdumbrella/nano-ID" id="ir025">https://github.com/birdumbrella/nano-ID</a>
+</td>
+</tr>
+<tr>
+<a id="id131"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id132"><!-- named anchor --></a><b><i>nanom6A</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id133"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/gaoyubang/nanom6A" id="ir030">https://github.com/gaoyubang/nanom6A</a>
+</td>
+</tr>
+<tr>
+<a id="id134"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id135"><!-- named anchor --></a><b><i>NanoRMS</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id136"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/novoalab/nanoRMS" id="ir035">https://github.com/novoalab/nanoRMS</a>
+</td>
+</tr>
+<tr>
+<a id="id137"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a><b><i>Penguin</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id139"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/Janga-Lab/Penguin" id="ir040">https://github.com/Janga-Lab/Penguin</a>
+</td>
+</tr>
+<tr>
+<a id="id140"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id141"><!-- named anchor --></a><b><i>EpiNano-SVM</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id142"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/novoalab/EpiNano" id="ir045">https://github.com/novoalab/EpiNano</a>
+</td>
+</tr>
+<tr>
+<a id="id143"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id144"><!-- named anchor --></a><b><i>Nanocompore</i></b>
+</td>
+<td rowspan="3" colspan="1">
+<a id="id145"><!-- named anchor --></a>Bayesian Modelling</td>
+<td colspan="1" rowspan="1">
+<a id="id146"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/tleonardi/nanocompore" id="ir050">https://github.com/tleonardi/nanocompore</a>
+</td>
+</tr>
+<tr>
+<a id="id147"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id148"><!-- named anchor --></a><b><i>xPore</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id149"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/GoekeLab/xpore" id="ir055">https://github.com/GoekeLab/xpore</a>
+</td>
+</tr>
+<tr>
+<a id="id150"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id151"><!-- named anchor --></a><b><i>Yanocomp</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id152"><!-- named anchor --></a><a target="xrefwindow" href="http://www.github.com/bartongroup/yanocomp" id="ir060">http://www.github.com/bartongroup/yanocomp</a>
+</td>
+</tr>
+<tr>
+<a id="id153"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id154"><!-- named anchor --></a><b><i>DiffErr</i></b>
+</td>
+<td rowspan="4" colspan="1">
+<a id="id155"><!-- named anchor --></a>Base call error</td>
+<td rowspan="4" colspan="1">
+<a id="id156"><!-- named anchor --></a>Differential Tests</td>
+<td colspan="1" rowspan="1">
+<a id="id157"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/bartongroup/differr_nanopore_DRS" id="ir065">https://github.com/bartongroup/differr_nanopore_DRS</a>
+</td>
+</tr>
+<tr>
+<a id="id158"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id159"><!-- named anchor --></a><b><i>DRUMMER</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id160"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/DepledgeLab/DRUMMER" id="ir070">https://github.com/DepledgeLab/DRUMMER</a>
+</td>
+</tr>
+<tr>
+<a id="id161"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a><b><i>ELIGOS</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a><a target="xrefwindow" href="https://gitlab.com/piroonj/eligos2" id="ir075">https://gitlab.com/piroonj/eligos2</a>
+</td>
+</tr>
+<tr>
+<a id="id164"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a><b><i>EpiNano-Error</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id166"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/novoalab/EpiNano" id="ir080">https://github.com/novoalab/EpiNano</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="p0135">Furthermore, all the currently reported methods are not free of false positive methylation calls due to various reasons. Most of such false positivity may be attributed to the overfitting caused by the confounded training samples. Besides, the low differentiability of the electrical signal under certain k-mer contexts may inevitably introduce the sequence-dependent prediction error. Some signal shifts resulting from modifications are observed near the true modification sites, which are also likely to introduce false positive calling. One possible approach to lowering false positivity is to narrow the candidate sites only on consensus motifs such as DRACH for m<sup>6</sup>A. Mistakes generated from low-quality reads and poor alignment results are also potential causes of false positivity. In the framework of Bayesian models, one way to reduce false positives is to only consider signal shifts in one direction. Eventually, for all the computational frameworks, a trade-off is always expected between accuracy and precision upon different cutoffs of predicted values. Therefore, many variations between the prediction outcomes of different methods can be attributed to the difference in the stringencies of the default thresholds.</p>
+<p id="p0140">Multiple previous studies have tried to make comparisons between different tools <a href="#b0175">[35]</a>, <a href="#b0185">[37]</a>, <a href="#b0215">[43]</a>, <a href="#b0220">[44]</a>, <a href="#b0235">[47]</a>. Here, we also conducted a primary comparison between DiffErr, DRUMMER, ELIGOS, nanom6A, MINES, and m6Anet on a single fast 5 data (<a target="xrefwindow" href="GSM3897645" id="id167">GSM3897645</a>; HEK293T WT) <a href="#b0170">[34]</a>. All tools were run using default settings. Interestingly, sites predicted by DiffErr and DRUMMER have extremely poor overlaps with the other four methods (<a href="#f0015">Fig. 3</a>a). Both two methods have adopted statistical testing as their prediction schemes. In contrast, nanom6A, MINES, and m6Anet have made relatively consistent predictions (<a href="#f0015">Fig. 3</a>a), with 5110 sites commonly reported by all three methods (<a href="#f0015">Fig. 3</a>b). To be noticed, the three methods all use the machine learning framework. This primary comparison revealed that the prediction made by different tools are likely to exhibit considerable variations, and the computational schemes adopted may contribute significantly to the differences. Consequently, a systematic evaluation of the performances of different tools is necessary for the field. The codes for this comparison are available at <a target="xrefwindow" href="https://github.com/XichenZhao0223/Nanopore-tools-comparison" id="ir085"><span style="text-decoration: underline">https://github.com/XichenZhao0223/Nanopore-tools-comparison</span></a>. There is also a call for defining robust evaluation metrics and strong benchmark datasets, as most currently published tools have used different pre-processing and evaluation schemes (<a href="#t0015">Table 3</a>) (<a href="#t0020">Table 4</a>).<div class="fig panel" style="display: float; clear: both">
+<a id="f0015"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id168">The comparison of the default m<sup>6</sup>A sites called from different tools. <b>a)</b>. The upset plot shows the number of sites predicted by DiffErr, DRUMMER, ELIGOS, nanom6A, MINES, and m6Anet and their overlaps with each other. <b>b)</b>. The Venn diagram of predicted sites from the top three consistent methods: nanom6A, MINES, and m6Anet.</p></div>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="t0015"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id169">Overview of the capabilities of reviewed methods. The modification column only records the modification used in the training data within the initial publication. The species column summarizes the species of the data used for training, testing, and validation. The coverage filter records the minimum sequencing depths required for some tools on specific sequencing datasets, which can also be a user-defined parameter. The AUROC column records the performance of each method under different benchmark datasets. The level is indicating whether the software can predict the modification in individual reads or not. The motif column summarizes the scope of the 5-mer motifs applied as input features during modelling.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id170"><!-- named anchor --></a><thead>
+<a id="id171"><!-- named anchor --></a><tr>
+<a id="id172"><!-- named anchor --></a><th colspan="1" rowspan="1"><a id="id173"><!-- named anchor --></a></th>
+<th colspan="1" rowspan="1">
+<a id="id174"><!-- named anchor --></a>Modification</th>
+<th colspan="1" rowspan="1">
+<a id="id175"><!-- named anchor --></a>Species (Coverage filter)</th>
+<th colspan="1" rowspan="1">
+<a id="id176"><!-- named anchor --></a>AUROC</th>
+<th colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>Level</th>
+<th colspan="1" rowspan="1">
+<a id="id178"><!-- named anchor --></a>Motif</th>
+</tr>
+</thead>
+<tbody>
+<a id="id179"><!-- named anchor --></a><tr>
+<a id="id180"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id181"><!-- named anchor --></a><b><i>DENA</i></b>
+</td>
+<td rowspan="10" colspan="1">
+<a id="id182"><!-- named anchor --></a>m<sup>6</sup>A</td>
+<td colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a><i>Arabidopsis</i>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id184"><!-- named anchor --></a>0.90–0.97</td>
+<td colspan="1" rowspan="1">
+<a id="id185"><!-- named anchor --></a>Read</td>
+<td rowspan="3" colspan="1">
+<a id="id186"><!-- named anchor --></a>RRACH</td>
+</tr>
+<tr>
+<a id="id187"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id188"><!-- named anchor --></a><b><i>nanom6A</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id189"><!-- named anchor --></a><i>Arabidopsis</i>; Human; IVT; <i>Populus trichocarpa</i>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id190"><!-- named anchor --></a>0.97</td>
+<td colspan="1" rowspan="1">
+<a id="id191"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id192"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id193"><!-- named anchor --></a><b><i>EpiNano-SVM</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id194"><!-- named anchor --></a>IVT; Yeast (&gt;5 reads)</td>
+<td colspan="1" rowspan="1">
+<a id="id195"><!-- named anchor --></a>IVT: &gt; 0.969<br class="br">Yeast: 0.613–0.693</td>
+<td colspan="1" rowspan="1">
+<a id="id196"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id197"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id198"><!-- named anchor --></a><b><i>m6Anet</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id199"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id200"><!-- named anchor --></a>0.83</td>
+<td colspan="1" rowspan="1">
+<a id="id201"><!-- named anchor --></a>Read</td>
+<td rowspan="2" colspan="1">
+<a id="id202"><!-- named anchor --></a>DRACH</td>
+</tr>
+<tr>
+<a id="id203"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id204"><!-- named anchor --></a><b><i>MINES</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a>Human (&gt;5 reads)</td>
+<td colspan="1" rowspan="1">
+<a id="id206"><!-- named anchor --></a>0.54–0.76</td>
+<td colspan="1" rowspan="1">
+<a id="id207"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id208"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id209"><!-- named anchor --></a><b><i>Nanocompore</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id210"><!-- named anchor --></a>Human (&gt;30x); IVT</td>
+<td colspan="1" rowspan="1">
+<a id="id211"><!-- named anchor --></a>0.9889–0.9947</td>
+<td colspan="1" rowspan="1">
+<a id="id212"><!-- named anchor --></a>Site</td>
+<td rowspan="10" colspan="1">
+<a id="id213"><!-- named anchor --></a>All possible 5-mers</td>
+</tr>
+<tr>
+<a id="id214"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id215"><!-- named anchor --></a><b><i>xPore</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id216"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id217"><!-- named anchor --></a>0.86</td>
+<td colspan="1" rowspan="1">
+<a id="id218"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id219"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id220"><!-- named anchor --></a><b><i>Yanocomp</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id221"><!-- named anchor --></a><i>Arabidopsis</i>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id222"><!-- named anchor --></a>Not mentioned</td>
+<td colspan="1" rowspan="1">
+<a id="id223"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id224"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id225"><!-- named anchor --></a><b><i>DiffErr</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id226"><!-- named anchor --></a><i>Arabidopsis</i> (&gt;10 reads)</td>
+<td colspan="1" rowspan="1">
+<a id="id227"><!-- named anchor --></a>Not mentioned</td>
+<td colspan="1" rowspan="1">
+<a id="id228"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id229"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id230"><!-- named anchor --></a><b><i>DRUMMER</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id231"><!-- named anchor --></a>Human (&gt;100x)</td>
+<td colspan="1" rowspan="1">
+<a id="id232"><!-- named anchor --></a>Not mentioned</td>
+<td colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id234"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id235"><!-- named anchor --></a><b><i>nanoDoc</i></b>
+</td>
+<td rowspan="3" colspan="1">
+<a id="id236"><!-- named anchor --></a>Multiple modifications</td>
+<td colspan="1" rowspan="1">
+<a id="id237"><!-- named anchor --></a>Yeast; <i>E. coli</i>; IVT</td>
+<td colspan="1" rowspan="1">
+<a id="id238"><!-- named anchor --></a>Yeast and E. coli: 0.96<br class="br">IVT: 0.68</td>
+<td colspan="1" rowspan="1">
+<a id="id239"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id240"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id241"><!-- named anchor --></a><b><i>ELIGOS</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>Human; IVT; Yeast; <i>E. coli</i>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id243"><!-- named anchor --></a>IVT: &gt; 0.74<br class="br">Human: 0.895–0.938<br class="br">E. coli: 0.861–0.962<br class="br">Yeast: 0.862–0.953</td>
+<td colspan="1" rowspan="1">
+<a id="id244"><!-- named anchor --></a>Site</td>
+</tr>
+<tr>
+<a id="id245"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id246"><!-- named anchor --></a><b><i>NanoRMS</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id247"><!-- named anchor --></a>Yeast (&gt;30 reads)</td>
+<td colspan="1" rowspan="1">
+<a id="id248"><!-- named anchor --></a>Not mentioned</td>
+<td colspan="1" rowspan="1">
+<a id="id249"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id250"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id251"><!-- named anchor --></a><b><i>nano-ID</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id252"><!-- named anchor --></a>5EU</td>
+<td colspan="1" rowspan="1">
+<a id="id253"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id254"><!-- named anchor --></a>0.94</td>
+<td colspan="1" rowspan="1">
+<a id="id255"><!-- named anchor --></a>Read</td>
+</tr>
+<tr>
+<a id="id256"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a><b><i>Penguin</i></b>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>Psi</td>
+<td colspan="1" rowspan="1">
+<a id="id259"><!-- named anchor --></a>Human</td>
+<td colspan="1" rowspan="1">
+<a id="id260"><!-- named anchor --></a>0.852–0.953</td>
+<td colspan="1" rowspan="1">
+<a id="id261"><!-- named anchor --></a>Read</td>
+</tr>
+</tbody>
+</table>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="t0020"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<div class="caption"><p class="first" id="id262">Preprocessing schemes used in reviewed methods. DiffErr, DRUMMER, ELIGOS, and EpiNano only use features of the base call error; thus, no feature extraction software is applied by these methods.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id263"><!-- named anchor --></a><tbody>
+<a id="id264"><!-- named anchor --></a><tr>
+<a id="id265"><!-- named anchor --></a><td colspan="1" rowspan="1"><a id="id266"><!-- named anchor --></a></td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="p0145">The breakthrough in the accuracy of nanopore-based modification prediction methods may eventually rely on two factors: 1.) the preparation of high-quality, unconfounded IVT training data. 2.) the upgrade of the 3rd generation sequencing platform that provides more differentiability between signals of modified and normal bases. Meanwhile, the new computational models can be improved both in accuracy and computational efficiency (fast and small memory demands). If the above criteria have been met, the refined computational tools can eventually enable the detection of all modification types simultaneously within a single RNA molecule. Such detection power can shed light on important epitranscriptomic phenomena, such as revealing the interaction between different modification types on a single molecular transcript. From a long-term perspective, RNA modification detection based on direct RNA sequencing is a promising novel technique to improve our understanding of epitranscriptomic.</p>
+</div>
+<div class="section">
+<a id="id267"><!-- named anchor --></a><h2 class="main-title">Declaration of Competing Interest</h2>
+<p id="p0150">The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</p>
+</div>
+</div>
+<div id="article-back" class="back"><div class="back-section">
+<a id="bi005"><!-- named anchor --></a><div class="section ref-list">
+<a id="bi005"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1</span> <a id="b0005"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0005"><!-- named anchor --></a>J.D. JonesJ. MonroeK.S. KoutmouA molecular-level perspective on the frequency, distribution, and consequences of messenger RNA modificationsWiley Interdiscip Rev RNA112020<span class="object-id">e1586</span>10.1002/wrna.1586PMC824374831960607</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2</span> <a id="b0010"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0010"><!-- named anchor --></a>S.H. BooY.K. KimThe emerging role of RNA modifications in the regulation of mRNA stabilityExp Mol Med5220204004083221035710.1038/s12276-020-0407-zPMC7156397</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3</span> <a id="b0015"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0015"><!-- named anchor --></a>P.C. HeC. Hem(6) A RNA methylation: from mechanisms to therapeutic potentialEMBO J402021<span class="object-id">e105977</span>10.15252/embj.2020105977PMC784916433470439</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4</span> <a id="b0020"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0020"><!-- named anchor --></a>C.J. LewisT. PanA. KalsotraRNA modifications and structures cooperate to guide RNA-protein interactionsNat Rev Mol Cell Biol1820172022102814403110.1038/nrm.2016.163PMC5542016</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5</span> <a id="b0025"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0025"><!-- named anchor --></a>P.F. AgrisA. NarendranK. SarachanV.Y.P. VareE. EruysalThe importance of being modified: the role of RNA modifications in translational fidelityEnzymes4120171502860121910.1016/bs.enz.2017.03.005PMC8118379</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6</span> <a id="b0030"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0030"><!-- named anchor --></a>X. Hernandez-AliasH. BenistyM.H. SchaeferL. SerranoTranslational efficiency across healthy and tumor tissues is proliferation-relatedMol Syst Biol162020<span class="object-id">e9275</span>10.15252/msb.20199275PMC706131032149479</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7</span> <a id="b0035"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0035"><!-- named anchor --></a>P.J. McCownA. RuszkowskaC.N. KunklerK. BregerJ.P. HulewiczM.C. WangNaturally occurring modified ribonucleosidesWiley Interdiscip Rev RNA112020<span class="object-id">e1595</span>10.1002/wrna.1595PMC769441532301288</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8</span> <a id="b0040"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0040"><!-- named anchor --></a>X. WangJ. HuangT. ZouP. YinHuman m(6)A writers: two subunits, 2 rolesRNA Biol1420173003042812123410.1080/15476286.2017.1282025PMC5367249</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9</span> <a id="b0045"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0045"><!-- named anchor --></a>X. WangZ. LuA. GomezG.C. HonY. YueD. HanN6-methyladenosine-dependent regulation of messenger RNA stabilityNature50520141171202428462510.1038/nature12730PMC3877715</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10</span> <a id="b0050"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0050"><!-- named anchor --></a>K.D. MeyerD.P. PatilJ. ZhouA. ZinovievM.A. SkabkinO. Elemento5' UTR m(6)A promotes cap-independent translationCell163201599910102659342410.1016/j.cell.2015.10.012PMC4695625</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11</span> <a id="b0055"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0055"><!-- named anchor --></a>S. AdhikariW. XiaoY.L. ZhaoY.G. Yangm(6)A: signaling for mRNA splicingRNA Biol1320167567592735169510.1080/15476286.2016.1201628PMC5013988</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12</span> <a id="b0060"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0060"><!-- named anchor --></a>X. JiangB. LiuZ. NieL. DuanQ. XiongZ. JinThe role of m6A modification in the biological functions and diseasesSignal Transduct Target Ther62021743361133910.1038/s41392-020-00450-xPMC7897327</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13</span> <a id="b0065"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0065"><!-- named anchor --></a>T. SunR. WuL. MingThe role of m6A RNA methylation in cancerBiomed Pharmacother1122019<span class="object-id">108613</span>10.1016/j.biopha.2019.10861330784918</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14</span> <a id="b0070"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0070"><!-- named anchor --></a>M. SafraA. Sas-ChenR. NirR. WinklerA. NachshonD. Bar-YaacovThe m1A landscape on cytosolic and mitochondrial mRNA at single-base resolutionNature55120172512552907229710.1038/nature24456</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15</span> <a id="b0075"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0075"><!-- named anchor --></a>X. LiX. XiongK. WangL. WangX. ShuS. MaTranscriptome-wide mapping reveals reversible and dynamic N(1)-methyladenosine methylomeNat Chem Biol1220163113162686341010.1038/nchembio.2040</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16</span> <a id="b0080"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0080"><!-- named anchor --></a>J. KarijolichC. YiY.-T. YuTranscriptome-wide dynamics of RNA pseudouridylationNat Rev Mol Cell Biol1620155815852628567610.1038/nrm4040PMC5694666</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17</span> <a id="b0085"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0085"><!-- named anchor --></a>E.K. BorchardtN.M. MartinezW.V. GilbertRegulation and function of RNA pseudouridylation in human cellsAnnu Rev Genet5420203093363287073010.1146/annurev-genet-112618-043830PMC8007080</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18</span> <a id="b0090"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0090"><!-- named anchor --></a>E. KierzekM. MalgowskaJ. LisowiecD.H. TurnerZ. GdaniecR. KierzekThe contribution of pseudouridine to stabilities and structure of RNAsNucleic Acids Res422014349235012436942410.1093/nar/gkt1330PMC3950712</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19</span> <a id="b0095"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0095"><!-- named anchor --></a>Dimitrova, D.G., Teysset, L., Carre, C., 2019. RNA 2'-O-Methylation (Nm) modification in human diseases. Genes (Basel) 10.10.3390/genes10020117PMC640964130764532</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20</span> <a id="b0100"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0100"><!-- named anchor --></a>B.A. ElliottH.T. HoS.V. RanganathanS. VangavetiO. IlkayevaH. Abou AssiModification of messenger RNA by 2'-O-methylation regulates gene expression in vivoNat Commun10201934013136308610.1038/s41467-019-11375-7PMC6667457</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21</span> <a id="b0105"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0105"><!-- named anchor --></a>H. LiuO. BegikM.C. LucasJ.M. RamirezC.E. MasonD. WienerAccurate detection of m(6)A RNA modifications in native RNA sequencesNat Commun10201940793150142610.1038/s41467-019-11713-9PMC6734003</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22</span> <a id="b0110"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0110"><!-- named anchor --></a>M. JoraP.A. LobueR.L. RossB. WilliamsB. AddepalliDetection of ribonucleoside modifications by liquid chromatography coupled with mass spectrometryBiochim Biophys Acta Gene Regul Mech186220192802903041447010.1016/j.bbagrm.2018.10.012PMC6401287</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23</span> <a id="b0115"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0115"><!-- named anchor --></a>M. JainH.E. OlsenB. PatenM. AkesonThe Oxford Nanopore MinION: delivery of nanopore sequencing to the genomics communityGenome Biol1720162392788762910.1186/s13059-016-1103-0PMC5124260</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24</span> <a id="b0120"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0120"><!-- named anchor --></a>D.R. GaraldeE.A. SnellD. JachimowiczB. SiposJ.H. LloydM. BruceHighly parallel direct RNA sequencing on an array of nanoporesNat Methods1520182012062933437910.1038/nmeth.4577</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25</span> <a id="b0125"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0125"><!-- named anchor --></a>H. LuF. GiordanoZ. NingOxford nanopore MinION sequencing and genome assemblyGenom Proteom Bioinformatics14201626527910.1016/j.gpb.2016.05.004PMC509377627646134</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26</span> <a id="b0130"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0130"><!-- named anchor --></a>P.N. PratanwanichF. YaoY. ChenC.W.Q. KohY.K. WanC. HendraIdentification of differential RNA modifications from nanopore direct RNA sequencing with xPoreNat Biotechnol202110.1038/s41587-021-00949-w34282325</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27</span> <a id="b0135"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0135"><!-- named anchor --></a>R.R. WickL.M. JuddK.E. HoltPerformance of neural network basecalling tools for Oxford Nanopore sequencingGenome Biol2020191293123490310.1186/s13059-019-1727-yPMC6591954</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28</span> <a id="b0140"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0140"><!-- named anchor --></a>V. BozaB. BrejovaT. VinarDeepNano: deep recurrent neural networks for base calling in MinION nanopore readsPLoS One122017<span class="object-id">e0178751</span>10.1371/journal.pone.0178751PMC545943628582401</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29</span> <a id="b0145"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0145"><!-- named anchor --></a>Y.K. WanC. HendraP.N. PratanwanichJ. GokeBeyond sequencing: machine learning algorithms extract biology hidden in Nanopore signal dataTrends Genet3820222462573471142510.1016/j.tig.2021.09.001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30</span> <a id="b0150"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0150"><!-- named anchor --></a>H. DingA.D.I.V. BaileyM. JainH. OlsenB. PatenGaussian mixture model-based unsupervised nucleotide modification number detection using nanopore-sequencing readoutsBioinformatics362020492849343259795910.1093/bioinformatics/btaa601PMC7723331</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31</span> <a id="b0155"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0155"><!-- named anchor --></a>H. LiuO. BegikE.M. NovoaEpiNano: detection of m(6)A RNA modifications using oxford nanopore direct RNA sequencingMethods Mol Biol (Clifton, N.J.)22982021315210.1007/978-1-0716-1374-0_334085237</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32</span> <a id="b0160"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0160"><!-- named anchor --></a>K.C. MaierS. GresselP. CramerB. SchwalbNative molecule sequencing by nano-ID reveals synthesis and stability of RNA isoformsGenome Res302020133213443288768810.1101/gr.257857.119PMC7545145</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33</span> <a id="b0165"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0165"><!-- named anchor --></a>M.T. ParkerK. KnopA.V. SherwoodN.J. SchurchK. MackinnonP.D. GouldNanopore direct RNA sequencing maps the complexity of Arabidopsis mRNA processing and m(6)A modificationElife92020<span class="object-id">e49658</span>10.7554/eLife.49658PMC695999731931956</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34</span> <a id="b0170"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0170"><!-- named anchor --></a>Lorenz DA, Sathe S, Einstein JM, Yeo GW. Direct RNA sequencing enables m(6)A detection in endogenous transcript isoforms at base-specific resolution. RNA (New York, N.Y.) 2020; 26: 19-28.10.1261/rna.072785.119PMC691313231624092</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35</span> <a id="b0175"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0175"><!-- named anchor --></a>A. LegerP.P. AmaralL. PandolfiniC. CapitanchikF. CapraroV. MianoRNA modifications detection by comparative Nanopore direct RNA sequencingNat Commun12202171983489360110.1038/s41467-021-27393-3PMC8664944</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36</span> <a id="b0180"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0180"><!-- named anchor --></a>P. JenjaroenpunT. WongsurawatT.D. WadleyT.M. WassenaarJ. LiuQ. DaiDecoding the epitranscriptional landscape from native RNA sequencesNucleic Acids Res492021e73271062210.1093/nar/gkaa620PMC7826254</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37</span> <a id="b0185"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0185"><!-- named anchor --></a>Y. GaoX. LiuB. WuH. WangF. XiM.V. KohnenQuantitative profiling of N6-methyladenosine at single-base resolution in stem-differentiating xylem of Populus trichocarpa using Nanopore direct RNA sequencingGenome Biol222021223341358610.1186/s13059-020-02241-7PMC7791831</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38</span> <a id="b0190"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0190"><!-- named anchor --></a>O. BegikM.C. LucasL.P. PryszczJ.M. RamirezR. MedinaI. MilenkovicQuantitative profiling of pseudouridylation dynamics in native RNAs with nanopore sequencingNat Biotechnol392021127812913398654610.1038/s41587-021-00915-6</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39</span> <a id="b0195"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0195"><!-- named anchor --></a>A.M. PriceK.E. HayerA.B.R. McIntyreN.S. GokhaleJ.S. AbebeA.N. Della FeraDirect RNA sequencing reveals m(6)A modifications on adenovirus RNA are necessary for efficient splicingNat Commun11202060163324399010.1038/s41467-020-19787-6PMC7691994</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40</span> <a id="b0200"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0200"><!-- named anchor --></a>Ueda H. nanoDoc: RNA modification detection using Nanopore raw reads with Deep One-Class Classification. bioRxiv, 2020.2009.2013.295089. 2021.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41</span> <a id="b0205"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0205"><!-- named anchor --></a>Parker MT, Barton GJ, Simpson GG. Yanocomp: robust prediction of m6A modifications in individual nanopore direct RNA reads. bioRxiv 2021. 2021.2006.2015.448494.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42</span> <a id="b0210"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0210"><!-- named anchor --></a>Hassan D, Acevedo D, Daulatabad SV, Mir Q, Janga SC. Penguin: a tool for predicting pseudouridine sites in direct RNA nanopore sequencing data. bioRxiv, 2021. 2021.2003.2031.437901.10.1016/j.ymeth.2022.02.005PMC923293435182749</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43</span> <a id="b0215"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0215"><!-- named anchor --></a>Hendra C, Pratanwanich PN, Wan YK, Goh WSS, Thiery A, Göke J. Detection of m6A from direct RNA sequencing using a Multiple Instance Learning framework. bioRxiv, 2021. 2021.2009.2020.461055.10.1038/s41592-022-01666-1PMC971867836357692</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44</span> <a id="b0220"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0220"><!-- named anchor --></a>H. QinL. OuJ. GaoL. ChenJ.-W. WangP. HaoDENA: training an authentic neural network model using Nanopore sequencing data of Arabidopsis transcripts for detection and quantification of N6-methyladenosine on RNAGenome Biol232022253503906110.1186/s13059-021-02598-3PMC8762864</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45</span> <a id="b0225"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0225"><!-- named anchor --></a>Leger A, Amaral PP, Pandolfini L, Capitanchik C, Capraro F, Barbieri I, Migliori V, Luscombe NM, Enright AJ, Tzelepis K, Ule J, Fitzgerald T, Birney E, Leonardi T, Kouzarides T. RNA modifications detection by comparative Nanopore direct RNA sequencing. 2019: 843136.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46</span> <a id="b0230"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0230"><!-- named anchor --></a>Fleming AM, Burrows CJ. Nanopore sequencing for N1-methylpseudouridine in RNA reveals sequence-dependent discrimination of the modified nucleotide triphosphate during transcription. bioRxiv. 2022.10.1093/nar/gkad044PMC997690736727474</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47</span> <a id="b0235"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0235"><!-- named anchor --></a>J.S. AbebeA.M. PriceK.E. HayerI. MohrM.D. WeitzmanA.C. WilsonDRUMMER-Rapid detection of RNA modifications through comparative nanopore sequencingBioinformatics202210.1093/bioinformatics/btac274PMC915425535426900</p></div>
+</div>
+</div>
+</div>
+</div></div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
