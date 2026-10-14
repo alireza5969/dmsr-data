@@ -1,0 +1,913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Khan, Adam, Huang, Maldjian, Duong, Gastounioti, and Bennett: Deep Learning Prediction of Pathologic Complete Response in Breast Cancer Using MRI and Other Clinical Data: A Systematic Review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Tomography</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Tomography</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3480</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>tomog</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101671170</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>tomography</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Tomography</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>2379-1381</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2379-139X</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Multidisciplinary Digital Publishing Institute  (MDPI)</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="tomography-08-00232.pdf">tomography-08-00232.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2022 by the authors.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">https://creativecommons.org/licenses/by/4.0/</a>).</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>17 September 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>16 November 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>21 November 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>December 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>8</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>6<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>422003<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Pages: </span>2784-2795</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9680498</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9680498.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9680498</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9680498</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>36412691</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3390/tomography8060232</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>tomography-08-00232</p>
+<p class="metadata-entry"><span class="generated">Funding: </span>This research received no external funding.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Deep Learning Prediction of Pathologic Complete Response in Breast Cancer Using MRI and Other Clinical Data: A Systematic Review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Nabeeha Khan<span class="generated">[</span><a href="#fn1-tomography-08-00232">†</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Richard Adam<span class="generated">[</span><a href="#fn1-tomography-08-00232">†</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Pauline Huang</p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Takouhie Maldjian</p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Tim Q. Duong<span class="generated">[</span><a href="#c1-tomography-08-00232">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Aimilia Gastounioti</p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Academic Editor</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Debbie Bennett</p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Academic Editor</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="af1-tomography-08-00232"><!-- named anchor --></a>Department of Radiology, Montefiore Medical Center, Albert Einstein College of Medicine, Bronx, New York, NY 10461, USA</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id10"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="c1-tomography-08-00232"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>*<span class="generated">] </span>Correspondence: <a href="mailto:tim.duong@einsteinmed.edu">tim.duong@einsteinmed.edu</a></p>
+<p class="metadata-entry"><a id="fn1-tomography-08-00232"><!-- named anchor --></a><p id="id11">† These authors contributed equally to this work.</p></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id12">Breast cancer patients who have pathological complete response (pCR) to neoadjuvant chemotherapy (NAC) are more likely to have better clinical outcomes. The ability to predict which patient will respond to NAC early in the treatment course is important because it could help to minimize unnecessary toxic NAC and to modify regimens mid-treatment to achieve better efficacy. Machine learning (ML) is increasingly being used in radiology and medicine because it can identify relationships amongst complex data elements to inform outcomes without the need to specify such relationships a priori. One of the most popular deep learning methods that applies to medical images is the Convolutional Neural Networks (CNN). In contrast to supervised ML, deep learning CNN can operate on the whole images without requiring radiologists to manually contour the tumor on images. Although there have been many review papers on supervised ML prediction of pCR, review papers on deep learning prediction of pCR are sparse. Deep learning CNN could also incorporate multiple image types, clinical data such as demographics and molecular subtypes, as well as data from multiple treatment time points to predict pCR. The goal of this study is to perform a systematic review of deep learning methods that use whole-breast MRI images without annotation or tumor segmentation to predict pCR in breast cancer.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="sec1-tomography-08-00232"><!-- named anchor --></a><h2 class="main-title">1. Introduction</h2>
+<p id="id13">Neoadjuvant chemotherapy (NAC) [<a href="#B1-tomography-08-00232">1</a>] is commonly prescribed to reduce tumor burden prior to breast cancer surgical management, in order to improve surgical outcomes and potentially allow breast conservation in otherwise unresectable tumors or tumors requiring mastectomy [<a href="#B2-tomography-08-00232">2</a>]. Pathological complete response (pCR), defined as the absence of any residual invasive disease, is often used to assess NAC response via pathological analysis of biopsied or dissected tissue at the end of the NAC treatment course [<a href="#B3-tomography-08-00232">3</a>]. Patients with pCR are more likely to be candidates for breast-conserving surgery and are also likely to have longer progression-free survival and overall survival [<a href="#B3-tomography-08-00232">3</a>]. Thus, the ability to longitudinally monitor individual response to NAC and to determine patient’s likelihood to respond to NAC early in the treatment course is clinically important because it could help to minimize unnecessary toxic NAC and modify regimens mid-treatment to achieve better efficacy. A major challenge to date is the lack of reliable methods to assess efficacy early in the NAC course. Radiological prediction of pCR is a desirable alternative to pathology because it is non-invasive, and able to assess the entire breast at once without being limited to the biopsied area.</p>
+<p id="id14">Contrast-enhanced MRI (CE-MRI), in which images are acquired serially following a bolus injection of a contrast agent, provides important dynamic vascular and physiological information about the tumor that could be useful for predicting response to NAC [<a href="#B4-tomography-08-00232">4</a>]. Radiographic complete response based on CE-MRI has been shown to have high sensitivity and specificity to predicting pCR [<a href="#B5-tomography-08-00232">5</a>]. Response to therapy has proven to be a strong predictor of outcome, with patients who achieve pCR demonstrating improved survival compared with non-pCR patients While DCE is frequently used for this analysis, other pulse sequences such as T2 weighted images, and diffusion-weighted images can also be used to predict pCR.</p>
+<p id="id15">Machine learning (ML) is increasingly being used in radiology and medicine [<a href="#B6-tomography-08-00232">6</a>,<a href="#B7-tomography-08-00232">7</a>,<a href="#B8-tomography-08-00232">8</a>]. In contrast to conventional analysis methods which need to specify the relationships amongst data elements to outcomes, ML employs computer algorithms to identify relationships amongst different data elements to inform outcomes without the need to specify such relationships a priori. ML can outperform human experts in performing many tasks in medicine [<a href="#B9-tomography-08-00232">9</a>]. In addition to approximating physician skills, ML can also detect novel relationships not readily apparent to human perception, especially in large complex datasets. There are multiple types of learning methods (supervised, self-supervised, and unsupervised), each having its own advantages and disadvantages. Supervised learning learns from labeled data to perform tasks such as prediction and classification of data. A comparatively small data set is needed but the disadvantage is that labeled datasets for a specific task needs to be provided. Self-supervised learning exploits unlabeled data to yield labels. This eliminates the need for manually labeling data, which is a tedious process, but larger datasets are needed. Supervisory signals provide feedback to train the network, without requiring a labeled dataset. Unsupervised learning needs no corresponding classification or label, and the algorithm finds underlying patterns with each dataset. The disadvantage is that is it requires large datasets. One of the most popular unsupervised learning, deep learning (DL) methods [<a href="#B10-tomography-08-00232">10</a>] used on images is the Convolutional Neural Networks (CNN) [<a href="#B11-tomography-08-00232">11</a>]. CNN is well suited for image recognition and tasks that involve the processing of pixel data. CNN is particularly suitable for computer vision tasks and for applications where object recognition such as facial recognition and radiological images. CNN methods do not require radiologists to contour the tumor on images.</p>
+<p id="id16">In addition to imaging data, inclusion of other clinical data (such as demographic, race and ethnicity, molecular subtypes, and laboratory tests) could improve pCR prediction [<a href="#B12-tomography-08-00232">12</a>]. Molecular subtypes could significantly affect pCR. For example, HER2-positive (elaborating excess human epidermal growth factor receptor-2 protein) and triple-negative tumors achieved significantly higher rates of pCR compared to luminal A subtype tumors, which can aid physicians in creating treatment plans [<a href="#B12-tomography-08-00232">12</a>]. Hormone receptor positive (HR+) (breast cancer cells with estrogen and/or progesterone receptors) and HER2-positive cancers have receptors that can be targeted, allowing for directed therapy which can significantly improve prognosis. Inclusion of specific molecular subtypes could enhance the ability to predict pCR. Epigenetic factors should also be considered, as molecular status can change as treatment progresses, and MRI can prove to be valuable in monitoring changes over multiple timepoints. Young age has a negative prognosis and puts this cohort at increased risk of dying. The application of deep learning, with its ability to manage large and multiple complex datasets (including imaging and non-imaging data), holds promise of being able to accurately predict pCR to guide breast cancer management.</p>
+<p id="id17">There are many review papers on using ML analysis of MRI data to predict pCR in breast cancer (see reviews [<a href="#B13-tomography-08-00232">13</a>,<a href="#B14-tomography-08-00232">14</a>]) but most were of supervised ML, such as support vector machine, random forest, decision tree, extreme gradient boosting, Boosted tree, Bayesian methods, among others (see reviews [<a href="#B13-tomography-08-00232">13</a>,<a href="#B14-tomography-08-00232">14</a>]). Supervised ML methods use extracted image features (i.e., tumor volume, diameter, radiomic features), that usually require expert radiologists to contour the tumors and/or identify features to train the ML algorithms. By contrast, reviews that focus on DL methods (such as CNN) in which whole breast MRI images are used without manual contouring or annotation of the tumor to predict pCR is limited [<a href="#B13-tomography-08-00232">13</a>,<a href="#B14-tomography-08-00232">14</a>,<a href="#B15-tomography-08-00232">15</a>].</p>
+<p id="id18">We thus took on a review that focuses on DL which allows whole-breast MRI images without annotation or tumor segmentation (i.e., feature agnostic DL approach) to predict pCR in breast cancer. Our review differed from prior related reviews in that we compared image types used (i.e., DCE or post contrast), whether pre-training, transfer learning or data augmentation was used, whether CNN models include molecular subtypes, multiple treatment time points, multi-institutional data, as well as whether saliency maps (heatmaps) were provided. We also compared performance metrics across different DL studies that predict pCR.</p>
+</div>
+<div class="section">
+<a id="sec2-tomography-08-00232"><!-- named anchor --></a><h2 class="main-title">2. Materials and Methods</h2>
+<p id="id19">No ethics committee approval was required for this systematic review. With the use of Pubmed and Google Scholar, a search of literature was carried out to identify journal articles that presented deep learning techniques in breast MRI to show pCR. To narrow down the search, key words were utilized to accumulate eligible articles. The search terms used were a combination of: “breast MRI”, “deep learning” and “pCR (pathological complete response)”.</p>
+<p id="id20">The search of journal articles was narrowed down to original journal articles from 2015 to 1 November 2022. Only articles written in English and including an abstract were selected. The initial screening for eligibility was done by an independent researcher. Initially, articles that included deep learning and breast MRI were included. For this review, the topic was limited to deep learning with MRI and its applications to prediction of pCR post NAC. Segmentation of tumors, while possible with deep learning and found in our search, was not included in this review. We included papers that used ROI notation to assist prior to applying CNN. The PRISMA flowchart is shown in <a href="#tomography-08-00232-f001">Figure 1</a>.</p>
+</div>
+<div class="section">
+<a id="sec3-tomography-08-00232"><!-- named anchor --></a><h2 class="main-title">3. Results and Discussion</h2>
+<p id="id21">A typical workflow of the DL algorithms is shown in <a href="#tomography-08-00232-f002">Figure 2</a>A. The workflow starts with data inputs, followed by data curation, and then training, validation and evaluation of DL methods. Evaluation metrics could include, but not limited to, accuracy, sensitivity, and specificity as well as clinical outcomes. A typical model of how imaging and non-imaging data are incorporated into the CNN workflow is shown in <a href="#tomography-08-00232-f002">Figure 2</a>B. DCE MRI or a single post-contrast MRI is often used. Some time, multiple treatment time points are included. Images are first put into the CNN. Multiple treatment time point data, if available, are entered as parallel channels on the CNN. In a separate channel, non-imaging data (such as molecular subtypes and demographics) are entered. The multiple channel networks are then concatenated into a fully connected layer. Note that this is only one of the many models of how different data are incorporated into the CNN to predict pCR.</p>
+<div class="section">
+<a id="sec3dot1-tomography-08-00232"><!-- named anchor --></a><h3 class="section-title">3.1. CNN Prediction of pCR</h3>
+<p id="id22"><a href="#tomography-08-00232-t001">Table 1</a> summarizes the papers on deep learning prediction of pathological complete response in breast cancer using MRI. Braman et al. utilized a multiphasic CNN to predict pCR from 2D DCE MR images acquired pre-NAC. The study focused on patients with HER2+ breast cancer (N = 157) receiving HER2 targeted NAC [<a href="#B16-tomography-08-00232">16</a>]. They found that prediction models using a combination of pre-contrast and third post contrast MR images showed the highest predictive performance, with an AUC and accuracy of 0.93 and 95%. This study demonstrated the feasibility of DL-based prediction of response including data from multiple sites not included in training. Subtype specific analysis of therapeutic outcome of specific targeted therapies has the potential to precisely guide treatment.</p>
+<p id="id23">Comes et al. [<a href="#B17-tomography-08-00232">17</a>] reported a transfer learning approach to predict pCR by exploiting, separately or in combination, pre-treatment and early treatment exams. First, low-level features were automatically extracted by a pre-trained CNN overcoming manual feature extraction. Next, an optimal set of most stable features was detected and then used to design an SVM classifier. By combining the optimal features extracted from both pre-treatment and early treatment exams with some clinical features, an accuracy of 92.3%, and an AUC value of 0.90, were returned the independent test, respectively. They concluded that the low-level CNN features have an important role in the early evaluation of the NAC efficacy by predicting pCR.</p>
+<p id="id24">Duanmu et al. (2020) studied 3D T1-weighted post-contrast whole images and included molecular and demographic data in their analysis [<a href="#B18-tomography-08-00232">18</a>]. Their CNN model differs from conventional CNNs in that MRI data and non-imaging data are convolved to inform each other through interactions, instead of a concatenation of multiple data type channels. This is achieved by channel-wise multiplication of the intermediate results of imaging and non-imaging data. Using a subset of curated data from the I-SPY-1 TRIAL of 112 patients with stage 2 or 3 breast cancer with breast tumors underwent NAC, they found an accuracy of 0.83, AUC of 0.80, sensitivity of 0.68 and specificity of 0.88. This model significantly outperforms models using imaging data only or traditional concatenation models. Heatmaps of where the algorithms weighted as importance were provided.</p>
+<p id="id25">Duanmu et al. (2022) used CNN to evaluate 3D DCE whole images at multiple treatment timepoints and incorporated molecular subtype and demographic data [<a href="#B19-tomography-08-00232">19</a>]. They predicted PCR as well as residual cancer burden (RCB), and progression-free survival (PFS) in breast cancer patients treated with NAC using longitudinal (multiple treatment time points), multiparametric MRI, demographics, and molecular subtypes as inputs. The data came from I-SPY-1 TRIAL (155 patients with stage 2 or 3 breast cancer with breast tumors underwent NAC). The inputs were DCE MRI, and T2-weighted MRI as 3D whole-images without the tumor segmentation, as well as molecular subtypes and demographics. Three (“Integrated”, “Stack” and “Concatenation”) CNN were evaluated using receiver-operating characteristics and mean absolute errors. The Integrated approach outperformed the “Stack” or “Concatenation” CNN. Inclusion of both MRI and non-MRI data outperformed either alone. The combined pre- and post-neoadjuvant chemotherapy data outperformed either alone. Using the best model and data combination, PCR prediction yielded an accuracy of 0.81 ± 0.03 and AUC of 0.83 ± 0.03; RCB prediction yielded an accuracy of 0.80 ± 0.02 and Cohen’s of 0.73 ± 0.03; PFS prediction yielded a mean absolute error of 24.6 ± 0.7 months (survival ranged from 6.6 to 127.5 months). Deep learning using longitudinal multiparametric MRI, demographics, and molecular subtypes accurately predicts PCR, RCB and PFS in breast cancer patients.</p>
+<p id="id26">El Adoui et al. applied a 3D CNN to predict pCR from DCE-MRI (N = 42) using two treatment time points [<a href="#B20-tomography-08-00232">20</a>]. Using a two-branch CNN model to take inputs from MRI pre- and post-chemotherapy, they found an accuracy and ROC AUC of 92.72% and 0.96, respectively in one study and similarly 91.03% and 0.92 in another study. They reported that data augmentation greatly improved prediction performance.</p>
+<p id="id27">Ha et al. similarly looked at pre-treatment imaging to predict response to NAC [<a href="#B21-tomography-08-00232">21</a>]. They applied a CNN implemented using the Keras toolbox with tensor flow backend in Python. The CNN architecture followed the general structure of the VGG 16 network. The first post-contrast dynamic T1W images were used prior to NAC for their analysis, producing an 88% overall mean accuracy for 3 class prediction (complete response versus partial response versus progression/no response) of NAC treatment response.</p>
+<p id="id28">Huynh et al. utilized CNN and Linear Discriminant Analysis (LDA) classifier to predict response to NAC in breast cancer patients (N = 64) using 2D DCE MR images [<a href="#B22-tomography-08-00232">22</a>]. Features which were first extracted using CNN were then used to train the LDA classifier. They found the best ROC AUC was 0.85 for the pre-contrast DCE. A limitation of this study is that slices containing the tumor were manually selected.</p>
+<p id="id29">Joo et al. explored the use of deep learning with 3D-CNN when applied to pretreatment MRI (T1W subtraction and T2W images) versus clinical data as well as a multimodal fusion approach using both clinical and pretreatment MRI data in predicting post NAC pCR [<a href="#B23-tomography-08-00232">23</a>]. They also compared cropped MR images to whole uncropped 3D bilateral images covering the axilla and chest wall. They had the largest cohort for pCR prediction model with breast MRI, with 536 patients with invasive breast cancer. T1W and T2W images showed poorer AUC alone compared to when combined (AUC of 0.725, 0.663, 0.745), clinical data performed better than combined MRI data (AUC of 0.827 versus 0.745), and whole T1W subtraction images performed better than cropped T1W subtraction images (AUC of 0.745 versus 0.624). Using whole images is less labor intensive, allows for multiple findings to be analyzed, and eliminated need for manual or automated segmentation for tumor area extraction. They conjecture that adding multiple post-contrast T1W timepoints allowing use of kinetic information and use of DWI could further improve performance of the model.</p>
+<p id="id30">Liu et al. used a 12-layer CNN to analyze patients from the I-SPY trial dataset to predict pCR in NAC patients (N = 131) using 2D MR images with first post-contrast DCE [<a href="#B24-tomography-08-00232">24</a>]. They demonstrated the feasibility of using a CNN algorithm on a multi-institutional MRI dataset, reporting an accuracy, sensitivity, specificity, and ROC AUC of 72.5%, 65.5%, 78.9%, and 0.72, respectively.</p>
+<p id="id31">Massafra et al. reported the use of DL on different MRI protocols (i.e., axial for private database or sagittal for public database) to predict pCR [<a href="#B25-tomography-08-00232">25</a>]. By merging the features extracted from baseline MRIs with some pre-treatment clinical variables, accuracies of 84.4% and 77.3% and AUC values of 80.3% and 78.0% were achieved on the independent tests related to the public database and the private database, respectively. AUC values with combined clinical and imaging data exceeded those for either clinical or imaging data alone for both public and private databases.</p>
+<p id="id32">Peng et al. compared the performances of DL to radiomics analysis in predicting pCR based on pretreatment DCE-MRI in breast cancer [<a href="#B26-tomography-08-00232">26</a>]. The AUC of the image-molecular radiomics analysis model was 0.755 (95% CI: 0.708, 0.802). The AUC of the image-kinetic-molecular DL model was 0.83 (95% CI: 0.816, 0.847). They concluded that pretreatment DCE-MRI-based DL model is superior to the radiomics analysis model in predicting pCR. Heatmaps of where the algorithms weighted as importance were provided.</p>
+<p id="id33">Qu et al. applied a 2D CNN to predict pCR from multiple DCE MR images plus molecular subtypes including ER, PR, and HER2 (N = 302) [<a href="#B27-tomography-08-00232">27</a>]. This model used 12 channels to combine 6 DCE phases from both pre- and post-NAC. They reported an AUC of 0.553 from pre-NAC images and 0.968 from post-NAC images with a combined model of 0.970. A limitation is that pre-NAC and post-NAC MR images were included by concatenation and thus the temporal information might not be optimally utilized.</p>
+<p id="id34">Ravichandran et al. used a voxel-wise RGB CNN to predict pCR in Pre-NAC patients (N = 166) using selected 2D slices (3 adjacent slices with the largest tumor area) from DCE MR images [<a href="#B28-tomography-08-00232">28</a>]. The corresponding pre-contrast, first post contrast, and second post contrast images of each slice were placed into red, green, and blue color channels, creating a three-channel color image that is then evaluated on a pixel-wise basis. Inclusion of HER2 status was beneficial, improving the AUC from 0.77 to 0.85. Due to the nature of this approach, heatmaps could be generated and the centers of tumors were found to be the most predictive of pCR. A drawback of this study is that tumor segmentations were provided as part of the dataset and the slices were hand selected. The images from pCR patients were also hyper sampled due to data imbalance. Heatmaps of where the algorithms weighted as importance were provided.</p>
+</div>
+<div class="section">
+<a id="sec3dot2-tomography-08-00232"><!-- named anchor --></a><h3 class="section-title">3.2. Single Post-Contrast vs. DCE Dynamic Data</h3>
+<p id="id35">Most studies to date use a single post-contrast MRI. Some studies found that, among the multiple DCE dynamics, the first post contrast dynamic to be the most effective at predicting response to therapy and variance reduces with the addition of more contrast dynamics [<a href="#B22-tomography-08-00232">22</a>]. Different combinations of contrast images and the incorporation of pre-contrast and the 3rd post-contrast image best predicted response with a highest AUC value of 0.93 [<a href="#B16-tomography-08-00232">16</a>]. The pre-contrast served the purpose of being a baseline and the comparison between the post-contrast images revealed that the 1st and 2nd postcontrast images take more time for washout patterns to emerge. In general, pre-contrast dynamic is essential for analysis, but the addition of more dynamics is helpful [<a href="#B16-tomography-08-00232">16</a>,<a href="#B18-tomography-08-00232">18</a>]. One study showed that CNN predictive model using multiple DCE images was superior to individual dynamics [<a href="#B18-tomography-08-00232">18</a>]. DL prediction of pCR using multiple DCE dynamics is understudied.</p>
+</div>
+<div class="section">
+<a id="sec3dot3-tomography-08-00232"><!-- named anchor --></a><h3 class="section-title">3.3. Multiparametric MRI Data</h3>
+<p id="id36">While DCE data are most widely used to predict pCR, other MRI data could also be informative and they include T2-weighted (with and without fat suppression), diffusion imaging, and fat-water imaging. Similarly, background parenchymal enhancement by MRI is informative of cancer risk, recurrence, and outcomes but has not yet been adequately explored for predicting pCR [<a href="#B29-tomography-08-00232">29</a>].</p>
+</div>
+<div class="section">
+<a id="sec3dot4-tomography-08-00232"><!-- named anchor --></a><h3 class="section-title">3.4. Data with Multiple Treatment Time Points</h3>
+<p id="id37">CNN model can make use of data at multiple treatment timepoints to improve prediction. Qu et al. showed that using pre-NAC and post-NAC images improved accuracy which in combination with clinical data (receptor status) yielded the best overall performance of all studies, with AUC of 0.97 [<a href="#B27-tomography-08-00232">27</a>]. Similarly, Duanmu et al. (2020) also employed CNN to evaluate DCE whole images at multiple treatment timepoints and incorporated molecular subtype and demographic data in a component of their analysis [<a href="#B18-tomography-08-00232">18</a>]. DL prediction of pCR using multiple treatment time points is understudied because it is not trivial to incorporate multiple channels and neural networks in a way that maintain the relationship of multiple treatment time point images and DCE images for the same patients throughout. Other challenges include the risk of overfitting and high computational costs.</p>
+</div>
+<div class="section">
+<a id="sec3dot5-tomography-08-00232"><!-- named anchor --></a><h3 class="section-title">3.5. Axillary Lymph Nodes</h3>
+<p id="id38">Axillary lymph node status is a metric for pCR and additionally MRI can also provide nodal information non-invasively. A few studies have investigated nodal status using DL predictive models might consider using nodal images that are already part of the patient’s MRI exam [<a href="#B30-tomography-08-00232">30</a>,<a href="#B31-tomography-08-00232">31</a>,<a href="#B32-tomography-08-00232">32</a>,<a href="#B33-tomography-08-00232">33</a>,<a href="#B34-tomography-08-00232">34</a>]. This is however not without challenge. Axillary lymph nodes are usually small and MR images are usually do not have sufficient contrast and resolution for diagnosis use. However, it may be feasible with improvement in MRI methods and detectors as well as interest in the nodal status using MRI.</p>
+<p id="id39">In summary, to date, few DL studies include dynamic DCE data and/or multiparametric data, and fewer DL studies include molecular subtypes and/or multiple treatment time points. Few DL prediction of pCR studies make use of axillary lymph node MRI data. Testing using independent validation data set to improve generalizability is rare due to limited data availability. Heatmaps to improve interpretability are also limited. These are possible areas of future investigation.</p>
+</div>
+<div class="section">
+<a id="sec3dot6-tomography-08-00232"><!-- named anchor --></a><h3 class="section-title">3.6. Current Challenges to Routine Clinical Applications</h3>
+<p id="id40">There are three broad challenges that need to be overcome before DL can have mainstream applications in the clinical settings, namely: generalizability, interpretability, and ethic/legal concerns [<a href="#B30-tomography-08-00232">30</a>,<a href="#B35-tomography-08-00232">35</a>]. (a) DL findings need to be broadly generalizable. To improve generalizability, training datasets need not only be large but also diverse to avoid or minimize bias. Publicly available high-quality clinical data with which to test predictive models for pCR are currently limited. To overcome limited dataset, federated learning or collaborative learning can be employed in which a machine learning algorithm is trained on multiple local datasets without data sharing or data exchange across instittuions, thus preserving data privacy and security. Doing so however is not without challenges. (b) DL findings are difficult to interpret because there are many features from which DL draws conclusion and DL calculations are complex. There are a few things can be done to improve interpretability. Feature importance and accumulated local effects can be assessed. Additional tools such as by evaluating Shapley values can be employed to explain individual outcomes. For imaging applications, heatmaps can be generated to highlight which regions or features on the images the DL algorithm considers to be important for its calculations. (c) There are ethical and legal challenges to overcome. There are uncertainties concerning who bears ultimate responsibility in the case of an incorrect diagnosis. In the case of triaging, we must also determine/decide if it is ethical to deprioritize reading scans from cases ruled “low risk” by a computer model. Transition to mainstream clinical use is also impeded by the fact that DL functions as a “black box” system. Inputs yield outputs without any understanding of the inner workings of how DL arrives at diagnostic predictions, making it challenging to determine whether in any specific case it has made a mistake, and rendering treatment and management decisions based on DL problematic.</p>
+</div>
+<div class="section">
+<a id="sec3dot7-tomography-08-00232"><!-- named anchor --></a><h3 class="section-title">3.7. How Could DL Be Employed in Practice?</h3>
+<p id="id41">Instead of relying on DL alone, there is also a potential for hybrid intelligence, which combines the expertise of radiologists with deep learning AI. Computer-assisted diagnosis (CAD) systems with deep learning AI can assist radiologists in finding breast cancers and can also potentially increase the radiologist’s efficiency. In a more active role, DL can potentially serve as a secondary or concurrent reader. The potential to increase accuracy while decreasing interpretation time/increasing radiologists’ productivity is a win-win, as this could help patients and reduce radiologist burn-out. Automated triaging to prioritize scans with findings that require more immediate attention is another potential application of AI. Decision making, such as treatments and patient management, can be guided with DL systems. For example, automated preprocessing, segmentation, detection, and classification of lesions may reduce unnecessary biopsies/surgeries due to the ability of DL to predict the behavior of precancerous lesions. DL systems can be incorporated into decision support systems. The ability to predict patients’ treatment responses early on during NAC and potentially alter treatment strategies to optimize outcome allows for individualized treatment and precision medicine. This ability to individualize treatment early on to improve patient survival would be particularly beneficial in underserved areas with lower socioeconomic populations, who currently suffer from worse breast cancer outcomes. ML may thus help to address some current healthcare disparities. Pooling large quantities of data and combining radiological, histological, and pathological information can provide insights into certain biomarkers in the prediction of individual outcomes.</p>
+</div>
+<div class="section">
+<a id="sec3dot8-tomography-08-00232"><!-- named anchor --></a><h3 class="section-title">3.8. Limitations</h3>
+<p id="id42">There are several limitations of our review. We also did not review or compare CNN prediction of pCR with supervised learning or ML + radiomics [<a href="#B36-tomography-08-00232">36</a>]. We did not perform meta-analysis of the literature. We did not conduct a statistical analysis pooling the data from multiple studies.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec4-tomography-08-00232"><!-- named anchor --></a><h2 class="main-title">4. Conclusions and Future Perspectives</h2>
+<p id="id43">Accurate identification of NAC responder early on in treatment course has the potential to alter therapeutic regimens mid-treatment, improve quality of life and clinical outcomes. It is difficult to predict pCR because the disease is complex and heterogeneous, and there is a large array of longitudinal clinical data that can potentially inform pCR. The multitude of data could be challenging for conventional predictive models. DL prediction of pCR could have a central role to play and could make a positive impact on patient care.</p>
+<p id="id44">Although in principle DL offers overall advantages compared to supervised ML (such as ML + radiomics) in predicting pCR, studies in the current literature to date generally do not have large enough data to achieve broad generalizability and, thus, the potential of DL in predicting pCR is not yet fully realized. It is also important to vigorously compare different DL models using the same datasets. Large public datasets and/or federated learning datasets are needed. DL studies that could intelligently integrate multiple types of MRI data (such as, DCE, T2-weighted MRI, fat-water imaging, and diffusion MRI), imaging data at multiple treatment time points, as well as molecular subtypes, demographics, genetic and other data are needed. In addition to predicting pCR, DL models can be used to predict residual cancer burden, progression free survival, risk of recurrence, and overall survival, which are currently understudied. Other DL algorithms beside CNNs should be also explored.</p>
+<p id="id45">Similar to DL applications to other clinical problems, DL algorithms for prediction of pCR have not yet found widespread clinical applications. Broad adoption of DL in prediction of pCR in clinical settings requires further clinical validation, improved reliability, generalizability, and interpretability, among others. Clinical evaluation needs metrics that are intuitive to physicians and must go beyond measures of technical accuracy to include patient outcomes.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id48"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id46"><!-- named anchor --></a><p id="id47"><span class="generated">[1]</span> <b>Publisher’s Note:</b> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id50"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id49">Conceptualization, T.Q.D. and T.M.; Methodology, N.K., R.A., P.H. and T.M.; Formal analysis, N.K., R.A. and T.M.; Data curation, N.K., R.A., P.H. and T.M.; Writing—original draft preparation, N.K. and R.A.; Writing—review and editing, N.K., R.A., P.H., T.M. and T.Q.D. All authors have read and agreed to the published version of the manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id52"><!-- named anchor --></a><h2 class="main-title">Institutional Review Board Statement</h2>
+<p id="id51">No ethics committee approval is needed.</p>
+</div>
+<div class="back-section">
+<a id="id54"><!-- named anchor --></a><h2 class="main-title">Informed Consent Statement</h2>
+<p id="id53">Waived informed consent.</p>
+</div>
+<div class="back-section">
+<a id="id56"><!-- named anchor --></a><h2 class="main-title">Data Availability Statement</h2>
+<p id="id55">Not applicable.</p>
+</div>
+<div class="back-section">
+<a id="id58"><!-- named anchor --></a><h2 class="main-title">Conflicts of Interest</h2>
+<p id="id57">The authors declare no conflict of interest.</p>
+</div>
+<div class="back-section">
+<a id="id59"><!-- named anchor --></a><div class="section ref-list">
+<a id="id59"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="B1-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id60"><!-- named anchor --></a>L.M. SpringG. FellA. ArfeC. SharmaR. GreenupK.L. ReynoldsB.L. SmithB. AlexanderB. MoyS.J. IsakoffPathologic Complete Response after Neoadjuvant Chemotherapy and Impact on Breast Cancer Recurrence and Survival: A Comprehensive Meta-analysisClin. Cancer Res.2020262838284810.1158/1078-0432.CCR-19-349232046998PMC7299787</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="B2-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id61"><!-- named anchor --></a>J.P.M. O’DonnellS.A. GasiorM.G. DaveyE. O’MalleyA.J. LoweryJ. McGarryA.M. O’ConnellM.J. KerinP. McCarthyThe accuracy of breast MRI radiomic methodologies in predicting pathological complete response to neoadjuvant chemotherapy: A systematic review and network meta-analysisEur. J. Radiol.202215711056110.1016/j.ejrad.2022.11056136308849</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="B3-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id62"><!-- named anchor --></a>P. CortazarL. ZhangM. UntchK. MehtaJ.P. CostantinoN. WolmarkH. BonnefoiD. CameronL. GianniP. ValagussaPathological complete response and long-term clinical benefit in breast cancer: The CTNeoBC pooled analysisLancet201438416417210.1016/S0140-6736(13)62422-824529560</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="B4-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id63"><!-- named anchor --></a>J. LeeS.H. KimB.J. KangPretreatment prediction of pathologic complete response to neoadjuvant chemotherapy in breast cancer: Perfusion metrics of dynamic contrast enhanced MRISci. Rep.20188949010.1038/s41598-018-27764-929934524PMC6014994</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="B5-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id64"><!-- named anchor --></a>J.F. De Los SantosA. CantorK.D. AmosA. ForeroM. GolshanJ.K. HortonC.A. HudisN.M. HyltonK. McGuireF. Meric-BernstamMagnetic resonance imaging as a predictor of pathologic response in patients treated with neoadjuvant systemic treatment for operable breast cancer. Translational Breast Cancer Research Consortium trial 017Cancer20131191776178310.1002/cncr.2799523436342PMC3939707</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="B6-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id65"><!-- named anchor --></a>R.C. DeoMachine Learning in MedicineCirculation20151321920193010.1161/CIRCULATIONAHA.115.00159326572668PMC5831252</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="B7-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id66"><!-- named anchor --></a>M.K. SantosJ.R. Ferreira JuniorD.T. WadaA.P.M. TenorioM.H.N. BarbosaP.M.A. MarquesArtificial intelligence, machine learning, computer-aided diagnosis, and radiomics: Advances in imaging towards to precision medicineRadiol. Bras.20195238739610.1590/0100-3984.2019.004932047333PMC7007049</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="B8-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id67"><!-- named anchor --></a>P. TschandlN. CodellaB.N. AkayG. ArgenzianoR.P. BraunH. CaboD. GutmanA. HalpernB. HelbaR. Hofmann-WellenhofComparison of the accuracy of human readers versus machine-learning algorithms for pigmented skin lesion classification: An open, web-based, international, diagnostic studyLancet Oncol.20192093894710.1016/S1470-2045(19)30333-X31201137PMC8237239</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="B9-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id68"><!-- named anchor --></a>D. KillockAI outperforms radiologists in mammographic screeningNat. Rev. Clin. Oncol.20201713410.1038/s41571-020-0329-731965085</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="B10-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id69"><!-- named anchor --></a>Y. LeCunY. BengioG. HintonDeep learningNature201552143644410.1038/nature1453926017442</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="B11-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id70"><!-- named anchor --></a>R. YamashitaM. NishioR.K.G. DoK. TogashiConvolutional neural networks: An overview and application in radiologyInsights Imaging2018961162910.1007/s13244-018-0639-929934920PMC6108980</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="B12-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id71"><!-- named anchor --></a>C. YooJ.H. AhnK.H. JungS.B. KimH.H. KimH.J. ShinS.H. AhnB.H. SonG. GongImpact of immunohistochemistry-based molecular subtype on chemosensitivity and survival in patients with breast cancer following neoadjuvant chemotherapyJ. Breast Cancer20121520321010.4048/jbc.2012.15.2.20322807938PMC3395744</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="B13-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id72"><!-- named anchor --></a>R. Lo GulloS. Eskreis-WinklerE.A. MorrisK. PinkerMachine learning with multiparametric magnetic resonance imaging of the breast for early prediction of response to neoadjuvant chemotherapyBreast20204911512210.1016/j.breast.2019.11.00931786416PMC7375548</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="B14-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id73"><!-- named anchor --></a>T.G. DebeleeF. SchwenkerA. IbenthalD. YohannesSurvey of deep learning in breast cancer image analysisEvol. Syst.202011143163</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="B15-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id74"><!-- named anchor --></a>X. LiangX. YuT. GaoMachine learning with magnetic resonance imaging for prediction of response to neoadjuvant chemotherapy in breast cancer: A systematic review and meta-analysisEur. J. Radiol.202215011024710.1016/j.ejrad.2022.11024735290910</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="B16-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id75"><!-- named anchor --></a>N. BramanM. El AdouiM. VulchiP. TurkM. EtesamiP. FuK. BeraS. DrisisV. VaradanD. PlechaDeep learning-based prediction of response to HER2-targeted neoadjuvant chemotherapy from pre-treatment dynamic breast MRI: A multi-institutional validation studyarXiv20202001.08570</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="B17-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id76"><!-- named anchor --></a>M.C. ComesA. FanizziS. BoveV. DidonnaS. DiotaiutiD. La ForgiaA. LatorreE. MartinelliA. MencattiniA. NardoneEarly prediction of neoadjuvant chemotherapy response by exploiting a transfer learning approach on breast DCE-MRIsSci. Rep.2021111412310.1038/s41598-021-93592-z34238968PMC8266861</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="B18-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id77"><!-- named anchor --></a>H. DuanmuP.B. HuangS. BrahmavarL. LinT. RenJ. KongF. WangT.Q. DuongPrediction of Pathological Complete Response to Neoadjuvant Chemotherapy Using Deep Learning with Integrative Imaging, Molecular and Demographic DataProceedings of the 3rd International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)Lima, Peru4–8 October 2020242252</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="B19-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id78"><!-- named anchor --></a>H. DuanmuT. RenT.Q. DuongDeep learning prediction of pathological complete response, residual cancer burden, and progression-free survival in breast cancer patientsPLoS ONE2022<i>in press</i>10.1371/journal.pone.0280148PMC982146936607982</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="B20-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id79"><!-- named anchor --></a>M. El AdouiS. DrisisM. BenjellounMulti-input deep learning architecture for predicting breast tumor response to chemotherapy using quantitative MR imagesInt. J. Comput. Assist. Radiol. Surg.2020151491150010.1007/s11548-020-02209-932556920</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="B21-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id80"><!-- named anchor --></a>R. HaC. ChinJ. KarcichM.Z. LiuP. ChangS. MutasaE. Pascual Van SantR.T. WynnE. ConnollyS. JambawalikarPrior to Initiation of Chemotherapy, Can We Predict Breast Tumor Response? Deep Learning Convolutional Neural Networks Approach Using a Breast MRI Tumor DatasetJ. Digit. Imaging20193269370110.1007/s10278-018-0144-130361936PMC6737125</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="B22-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id81"><!-- named anchor --></a>B.Q. HuynhN. AntropovaM.L. GigerComparison of breast DCE-MRI contrast time points for predicting response to neoadjuvant chemotherapy using deep convolutional neural network features with transfer learningProceedings Volume 10134, Medical Imaging 2017: Computer-Aided DiagnosisSPIEOrlando, FL, USA201710134101340U</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="B23-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id82"><!-- named anchor --></a>S. JooE.S. KoS. KwonE. JeonH. JungJ.Y. KimM.J. ChungY.H. ImMultimodal deep learning models for the prediction of pathologic response to neoadjuvant chemotherapy in breast cancerSci. Rep.2021111880010.1038/s41598-021-98408-834552163PMC8458289</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="B24-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id83"><!-- named anchor --></a>M.Z. LiuS. MutasaP. ChangM. SiddiqueS. JambawalikarR. HaA novel CNN algorithm for pathological complete response prediction using an I-SPY TRIAL breast MRI databaseMagn. Reson. Imaging20207314815110.1016/j.mri.2020.08.02132889091PMC8111786</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="B25-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id84"><!-- named anchor --></a>R. MassafraM.C. ComesS. BoveV. DidonnaG. GattaF. GiottaA. FanizziD. La ForgiaA. LatorreM.I. PastenaRobustness Evaluation of a Deep Learning Model on Sagittal and Axial Breast DCE-MRIs to Predict Pathological Complete Response to Neoadjuvant ChemotherapyJ. Pers. Med.20221295310.3390/jpm1206095335743737PMC9225219</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="B26-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id85"><!-- named anchor --></a>Y. PengZ. ChengC. GongC. ZhengX. ZhangZ. WuY. YangX. YangJ. ZhengJ. ShenPretreatment DCE-MRI-Based Deep Learning Outperforms Radiomics Analysis in Predicting Pathologic Complete Response to Neoadjuvant Chemotherapy in Breast CancerFront. Oncol.20221284677510.3389/fonc.2022.84677535359387PMC8960929</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="B27-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id86"><!-- named anchor --></a>Y.H. QuH.T. ZhuK. CaoX.T. LiM. YeY.S. SunPrediction of pathological complete response to neoadjuvant chemotherapy in breast cancer using a deep learning (DL) methodThorac. Cancer20201165165810.1111/1759-7714.1330931944571PMC7049483</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="B28-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id87"><!-- named anchor --></a>K. RavichandranN. BramanA. JanowczykA. MadabhushiA deep learning classifier for prediction of pathological complete response to neoadjuvant chemotherapy from baseline breast DCE-MRISPIE Int. Soc. Opt. Eng.201810575105750C-1</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="B29-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id88"><!-- named anchor --></a>G.J. LiaoL.C. Henze BancroftR.M. StrigelR.D. ChitaliaD. KontosL. MoyS.C. PartridgeH. RahbarBackground parenchymal enhancement on breast MRI: A comprehensive reviewJ. Magn. Reson. Imaging202051436110.1002/jmri.2676231004391PMC7207072</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="B30-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id89"><!-- named anchor --></a>R. HaP. ChangJ. KarcichS. MutasaE.P. Van SantE. ConnollyC. ChinB. TabackM.Z. LiuS. JambawalikarPredicting Post Neoadjuvant Axillary Response Using a Novel Convolutional Neural Network AlgorithmAnn. Surg. Oncol.2018253037304310.1245/s10434-018-6613-429978368</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="B31-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id90"><!-- named anchor --></a>T. RenR. CattellH. DuanmuP. HuangH. LiR. VanguriM.Z. LiuS. JambawalikarR. HaF. WangConvolutional Neural Network Detection of Axillary Lymph Node Metastasis Using Standard Clinical Breast MRIClin. Breast Cancer202020e301-e810.1016/j.clbc.2019.11.00932139272</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="B32-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id91"><!-- named anchor --></a>R.F. CattellJ.J. KangT. RenP.B. HuangA. MuttrejaS. DacostaH. LiL. BaerS. CloustonR. PalermoMRI Volume Changes of Axillary Lymph Nodes as Predictor of Pathologic Complete Responses to Neoadjuvant Chemotherapy in Breast CancerClin. Breast Cancer2020206879 e110.1016/j.clbc.2019.06.00631327729</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="B33-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id92"><!-- named anchor --></a>T. RenS. LinP. HuangT.Q. DuongConvolutional Neural Network of Multiparametric MRI Accurately Detects Axillary Lymph Node Metastasis in Breast Cancer Patients With Pre Neoadjuvant ChemotherapyClin. Breast Cancer20222217017710.1016/j.clbc.2021.07.00234384696</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="B34-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id93"><!-- named anchor --></a>R. HaP. ChangJ. KarcichS. MutasaR. FardaneshR.T. WynnM.Z. LiuS. JambawalikarAxillary Lymph Node Evaluation Utilizing Convolutional Neural Networks Using MRI DatasetJ. Digit. Imaging20183185185610.1007/s10278-018-0086-729696472PMC6261196</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="B35-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id94"><!-- named anchor --></a>D.T. HuffA.J. WeismanR. JerajInterpretation and visualization techniques for deep learning models in medical imagingPhys. Med. Biol.20216604TR110.1088/1361-6560/abcd1733227719PMC8236074</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="B36-tomography-08-00232"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id95"><!-- named anchor --></a>L. HussainP. HuangT. NguyenK.J. LoneA. AliM.S. KhanH. LiD.Y. SuhT.Q. DuongMachine learning classification of texture features of MRI breast tumor and peri-tumor of combined pre- and early treatment predicts pathologic complete responseBiomed. Eng. Online2021206310.1186/s12938-021-00899-z34183038PMC8240261</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-floats" class="back">
+<h2 class="main-title"><span class="generated">Floating objects</span></h2>
+<div class="fig panel" style="display: float; clear: both">
+<a id="tomography-08-00232-f001"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id96">PRISMA flowchart. Initially, 79 studies were found on PubMed through our keyword search, of which 66 were removed. The final number of papers reviewed was 13.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="tomography-08-00232-f002"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id97">(<b>A</b>) A typical flowchart of inputs, data curation, training, and evaluation of DL methods. (<b>B</b>) A CNN model of how DCE data at multiple treatment time point and non-imaging data are incorporated. Abbreviations: DCE: dynamic contrast enhanced MRI; Conv: convolutional neural network.</p></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="tomography-08-00232-t001"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<span class="object-id">tomography-08-00232-t001_Table 1</span><div class="caption"><p class="first" id="id98">Summary of papers on deep learning prediction of pathological complete response in breast cancer using MRI.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id99"><!-- named anchor --></a><thead>
+<a id="id100"><!-- named anchor --></a><tr>
+<a id="id101"><!-- named anchor --></a><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id102"><!-- named anchor --></a>Study</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id103"><!-- named anchor --></a>Year</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id104"><!-- named anchor --></a>Image Type <sup>b</sup>
+</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id105"><!-- named anchor --></a>Pre-Trained or CNN Models</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id106"><!-- named anchor --></a>pCR/Non-pCR <sup>c</sup>
+</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id107"><!-- named anchor --></a>Molecular Subtypes</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>Multiple Time Points</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id109"><!-- named anchor --></a>Independ Validation <sup>d</sup>
+</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id110"><!-- named anchor --></a>Multisite</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id111"><!-- named anchor --></a>Transfer Learning</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>Data Augmentation</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id113"><!-- named anchor --></a>Heat Maps</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id114"><!-- named anchor --></a>AUC <sup>e</sup>
+</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id115"><!-- named anchor --></a>Accu <sup>f</sup>
+</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id116"><!-- named anchor --></a>Sens <sup>f</sup>
+</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id117"><!-- named anchor --></a>Spec <sup>f</sup>
+</th>
+</tr>
+</thead>
+<tbody>
+<a id="id118"><!-- named anchor --></a><tr>
+<a id="id119"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>Braman [<a href="#B16-tomography-08-00232">16</a>] <sup>a</sup>
+</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id122"><!-- named anchor --></a>DCE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id123"><!-- named anchor --></a>CNN</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id124"><!-- named anchor --></a>76/81</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id130"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>0.93</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id133"><!-- named anchor --></a>86.7%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a>75%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>100%</td>
+</tr>
+<tr>
+<a id="id136"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id137"><!-- named anchor --></a>Comes [<a href="#B17-tomography-08-00232">17</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>2021</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>CE, T2</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>AlexNet</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id141"><!-- named anchor --></a>37/78</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id142"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id143"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id145"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id146"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id147"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id148"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id149"><!-- named anchor --></a>-</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id150"><!-- named anchor --></a>92.3%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id151"><!-- named anchor --></a>85.7%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id152"><!-- named anchor --></a>94.7%</td>
+</tr>
+<tr>
+<a id="id153"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id154"><!-- named anchor --></a>Duanmu [<a href="#B18-tomography-08-00232">18</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id155"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>3D-CE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>VGG13</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id158"><!-- named anchor --></a>42/112</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id159"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id160"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id162"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id166"><!-- named anchor --></a>0.80</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id167"><!-- named anchor --></a>83%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id168"><!-- named anchor --></a>68%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id169"><!-- named anchor --></a>88%</td>
+</tr>
+<tr>
+<a id="id170"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id171"><!-- named anchor --></a>Duanmu [<a href="#B19-tomography-08-00232">19</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id172"><!-- named anchor --></a>2022</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id173"><!-- named anchor --></a>DCE, T2</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id174"><!-- named anchor --></a>VGG13</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a>42/110</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id176"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id177"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id178"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id179"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id180"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id181"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>0.83 ± 0.03</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id184"><!-- named anchor --></a>81 ± 3%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id185"><!-- named anchor --></a>68 ± 8%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>86 ± 4%</td>
+</tr>
+<tr>
+<a id="id187"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id188"><!-- named anchor --></a>El Adoui [<a href="#B20-tomography-08-00232">20</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id189"><!-- named anchor --></a>2019</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id190"><!-- named anchor --></a>CE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id191"><!-- named anchor --></a>CNN</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id192"><!-- named anchor --></a>14/28</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id193"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id194"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id195"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id196"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id197"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id199"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id200"><!-- named anchor --></a>0.91</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id201"><!-- named anchor --></a>88%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id202"><!-- named anchor --></a>92.2%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id203"><!-- named anchor --></a>79.1%</td>
+</tr>
+<tr>
+<a id="id204"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id205"><!-- named anchor --></a>Ha [<a href="#B21-tomography-08-00232">21</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id206"><!-- named anchor --></a>2018</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id207"><!-- named anchor --></a>CE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id208"><!-- named anchor --></a>VGG16</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id209"><!-- named anchor --></a>46/95</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id212"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id213"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id214"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id215"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id216"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id217"><!-- named anchor --></a>0.85</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id218"><!-- named anchor --></a>88 ± 0.6%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id219"><!-- named anchor --></a>95 ± 3%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id220"><!-- named anchor --></a>74 ± 5%</td>
+</tr>
+<tr>
+<a id="id221"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id222"><!-- named anchor --></a>Huynh [<a href="#B22-tomography-08-00232">22</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id223"><!-- named anchor --></a>2017</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id224"><!-- named anchor --></a>DCE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id225"><!-- named anchor --></a>VGGNet</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id226"><!-- named anchor --></a>39/25</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id229"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id230"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id231"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id232"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id233"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>0.85 ± 0.03</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id235"><!-- named anchor --></a>-</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id236"><!-- named anchor --></a>-</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id237"><!-- named anchor --></a>-</td>
+</tr>
+<tr>
+<a id="id238"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id239"><!-- named anchor --></a>Joo [<a href="#B23-tomography-08-00232">23</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id240"><!-- named anchor --></a>2021</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id241"><!-- named anchor --></a>DCE, T2</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id242"><!-- named anchor --></a>ResNet-50</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>133/403</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id244"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id245"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id247"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id248"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id249"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id250"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id251"><!-- named anchor --></a>0.888</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id252"><!-- named anchor --></a>-</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id253"><!-- named anchor --></a>66.7%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id254"><!-- named anchor --></a>93.2%</td>
+</tr>
+<tr>
+<a id="id255"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id256"><!-- named anchor --></a>Liu [<a href="#B24-tomography-08-00232">24</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id257"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id258"><!-- named anchor --></a>DCE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id259"><!-- named anchor --></a>VGG16</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id260"><!-- named anchor --></a>40/91</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id261"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id262"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id264"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id265"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id266"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id267"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id268"><!-- named anchor --></a>0.72</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id269"><!-- named anchor --></a>72.5%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id270"><!-- named anchor --></a>65.5%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>78.9%</td>
+</tr>
+<tr>
+<a id="id272"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id273"><!-- named anchor --></a>Massafra [<a href="#B25-tomography-08-00232">25</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id274"><!-- named anchor --></a>2022</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id275"><!-- named anchor --></a>CE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id276"><!-- named anchor --></a>AlexNet</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id277"><!-- named anchor --></a>64/161</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id279"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id280"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id281"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id282"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id283"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id284"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id285"><!-- named anchor --></a>0.78</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id286"><!-- named anchor --></a>77.3%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id287"><!-- named anchor --></a>71.4%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id288"><!-- named anchor --></a>80.0%</td>
+</tr>
+<tr>
+<a id="id289"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id290"><!-- named anchor --></a>Peng [<a href="#B26-tomography-08-00232">26</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id291"><!-- named anchor --></a>2022</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id292"><!-- named anchor --></a>DCE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>ResNeXt50</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id294"><!-- named anchor --></a>83/273</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id296"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id297"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id299"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id301"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a>0.83</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id303"><!-- named anchor --></a>77.2%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id304"><!-- named anchor --></a>78.1%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id305"><!-- named anchor --></a>7.69%</td>
+</tr>
+<tr>
+<a id="id306"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>Qu [<a href="#B27-tomography-08-00232">27</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id308"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id309"><!-- named anchor --></a>DCE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>CNN</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id311"><!-- named anchor --></a>132/170</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id312"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id313"><!-- named anchor --></a>yes <sup>g</sup>
+</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id314"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id315"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id316"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id319"><!-- named anchor --></a>0.97</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id320"><!-- named anchor --></a>-</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id321"><!-- named anchor --></a>96%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id322"><!-- named anchor --></a>100%</td>
+</tr>
+<tr>
+<a id="id323"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id324"><!-- named anchor --></a>Ravichandran [<a href="#B28-tomography-08-00232">28</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id325"><!-- named anchor --></a>2018</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>DCE</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a>AlexNet</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id328"><!-- named anchor --></a>49/117</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id329"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id330"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id331"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id332"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id333"><!-- named anchor --></a>no</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id334"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id335"><!-- named anchor --></a>yes</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id336"><!-- named anchor --></a>0.85</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id337"><!-- named anchor --></a>85%</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id338"><!-- named anchor --></a>-</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id339"><!-- named anchor --></a>-</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id340"><!-- named anchor --></a><p id="id341"><span class="generated">[i]</span> <sup>a</sup> This study tested on HER2+ patients underwent HER2+ targeted NAC only. <sup>b</sup> There are three types of MRI data. DCE: dynamic contrast enhanced MRI (multiple dynamics); CE: first post contrast enhanced MRI; T2: T2-weighted MRI. <sup>c</sup> combined of all data (testing, validation, multiple sites). <sup>d</sup> independent validation was obtained from a separate institution not used in training. <sup>e</sup> performance metrics are given for independent validation data set (if available) or validation data set. <sup>f</sup> pre-NAC and post-NAC MRIs were included by concatenation (not linked) and thus the temporal information might not be optimally utilized. Abbreviations: Independ validation: independent validation; AUC: area under the curve; Accu: Accuracy; Sens: Sensitivity; Spec: Specificity.</p>
+</div></div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>neoadjuvant chemotherapy</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>convolutional neural networks</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>artificial intelligence</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>molecular subtypes</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>magnetic resonance imaging</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>dynamic contrast-enhanced MRI</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
