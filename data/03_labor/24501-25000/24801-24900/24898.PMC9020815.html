@@ -1,0 +1,1030 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sun, Dong, Shi, Ma, Cheng, and Huang: Comparing Machine Learning Models and Statistical Models for Predicting Heart Failure Events: A Systematic Review and Meta-Analysis</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Front Cardiovasc Med</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Front Cardiovasc Med</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>2863</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>fcvm</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101653388</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>Front. Cardiovasc. Med.</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Frontiers in Cardiovascular Medicine</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2297-055X</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Frontiers Media SA</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="fcvm-09-812276.pdf">fcvm-09-812276.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>Copyright © 2022 Sun, Dong, Shi, Ma, Cheng and Huang.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022, Sun, Dong, Shi, Ma, Cheng and Huang</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>10 November 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>28 February 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>06 April 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>9</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>400309<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>812276</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9020815</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9020815.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9020815</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9020815</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35463786</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3389/fcvm.2022.812276</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Comparing Machine Learning Models and Statistical Models for Predicting Heart Failure Events: A Systematic Review and Meta-Analysis</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Zhoujian Sun<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1550762/overview" id="id3">http://loop.frontiersin.org/people/1550762/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Wei Dong<span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Hanrui Shi<span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Hong Ma<span class="generated">[</span><a href="#aff4"><sup>4</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1265764/overview" id="id7">http://loop.frontiersin.org/people/1265764/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Lechao Cheng<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Zhengxing Huang<span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#c001"><sup>*</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1387249/overview" id="id10">http://loop.frontiersin.org/people/1387249/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><sup>1</sup>Zhejiang Lab, Hangzhou, China</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><sup>2</sup>Zhejiang University, Hangzhou, China</p>
+<p class="metadata-entry"><a id="aff3"><!-- named anchor --></a><sup>3</sup>Department of Cardiology, The First Medical Center of Chinese PLA General Hospital, Beijing, China</p>
+<p class="metadata-entry"><a id="aff4"><!-- named anchor --></a><sup>4</sup>Department of Cardiology, The Second Affiliated Hospital of School of Medicine, Zhejiang University, Hangzhou, China</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id11"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id12"><!-- named anchor --></a><p id="id13"> Edited by: Nicola Montano, University of Milan, Italy</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id14"><!-- named anchor --></a><p id="id15"> Reviewed by: Leona Cilar, University of Maribor, Slovenia; Brent Williams, Geisinger Health System, United States</p></p>
+<p class="metadata-entry"><span class="generated"><a id="c001"><!-- named anchor --></a>Correspondence to: </span>*Correspondence: Zhengxing Huang <a href="mailto:zhengxinghuang@zju.edu.cn">zhengxinghuang@zju.edu.cn</a></p>
+<p class="metadata-entry"><a id="fn001"><!-- named anchor --></a><p id="id16"> This article was submitted to Heart Failure and Transplantation, a section of the journal Frontiers in Cardiovascular Medicine</p></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id17"><!-- named anchor --></a><h3 class="section-title">Objective</h3>
+<p id="id18">To compare the performance, clinical feasibility, and reliability of statistical and machine learning (ML) models in predicting heart failure (HF) events.</p>
+</div>
+<div class="section">
+<a id="id19"><!-- named anchor --></a><h3 class="section-title">Background</h3>
+<p id="id20">Although ML models have been proposed to revolutionize medicine, their promise in predicting HF events has not been investigated in detail.</p>
+</div>
+<div class="section">
+<a id="id21"><!-- named anchor --></a><h3 class="section-title">Methods</h3>
+<p id="id22">A systematic search was performed on Medline, Web of Science, and IEEE Xplore for studies published between January 1, 2011 to July 14, 2021 that developed or validated at least one statistical or ML model that could predict all-cause mortality or all-cause readmission of HF patients. Prediction Model Risk of Bias Assessment Tool was used to assess the risk of bias, and random effect model was used to evaluate the pooled c-statistics of included models.</p>
+</div>
+<div class="section">
+<a id="id23"><!-- named anchor --></a><h3 class="section-title">Result</h3>
+<p id="id24">Two-hundred and two statistical model studies and 78 ML model studies were included from the retrieved papers. The pooled c-index of statistical models in predicting all-cause mortality, ML models in predicting all-cause mortality, statistical models in predicting all-cause readmission, ML models in predicting all-cause readmission were 0.733 (95% confidence interval 0.724–0.742), 0.777 (0.752–0.803), 0.678 (0.651–0.706), and 0.660 (0.633–0.686), respectively, indicating that ML models did not show consistent superiority compared to statistical models. The head-to-head comparison revealed similar results. Meanwhile, the immoderate use of predictors limited the feasibility of ML models. The risk of bias analysis indicated that ML models' technical pitfalls were more serious than statistical models'. Furthermore, the efficacy of ML models among different HF subgroups is still unclear.</p>
+</div>
+<div class="section">
+<a id="id25"><!-- named anchor --></a><h3 class="section-title">Conclusions</h3>
+<p id="id26">ML models did not achieve a significant advantage in predicting events, and their clinical feasibility and reliability were worse.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id27">Heart failure (HF), as a complex cardiovascular syndrome, causes severe healthcare burdens, and its prevalence continues to increase with the global aging tendency (<a href="#B1">1</a>). Despite recent improvements in diagnosis and management, HF prognosis remains poor (<a href="#B1">1</a>, <a href="#B2">2</a>), partly because estimating patient risk is difficult (<a href="#B3">3</a>, <a href="#B4">4</a>). Due to this challenge, prediction models are considered a potential tool to help clinicians make informed decisions about treatment initiation and survival estimation to prevent adverse HF events (<a href="#B5">5</a>).</p>
+<p id="id28">In recent years, machine learning (ML) models have been suggested to be a revolutionary innovation with the potential to transform the whole healthcare system (<a href="#B6">6</a>) and have been gradually leveraged to create prognostic prediction models. Concerning this changing trend, existing HF prediction models can be coarsely divided into two categories based on methodologies: statistical and ML models. Although ML models are typically described to have theoretical superiority over statistical models for their ability to fit complex data patterns (<a href="#B7">7</a>), previous studies arrived at controversial conclusions. Some studies claimed that ML-based methods were indeed better than statistical models (<a href="#B8">8</a>–<a href="#B10">10</a>), while others held opposite views (<a href="#B11">11</a>–<a href="#B13">13</a>). The conflicting opinions on the superiority of ML models motivated us to review HF prediction models with respect to their methodologies comprehensively to answer two questions. (1) Does ML models obtained better performance in predicting HF events? (2) What are the weaknesses of current ML models?</p>
+<p id="id29">Of note, previous reviews on HF prediction models generally only focused on their discrimination ability (<a href="#B14">14</a>–<a href="#B19">19</a>), while the other factors that may affect model application were usually ignored. In this review, we analyzed two representative prognostic events in HF, all-cause death and all-cause readmission. We compared the c-index of the two types of models and investigated their reliability and clinical feasibility, which may clarify the current position of ML models in the two HF events prediction research and identify directions for future work.</p>
+</div>
+<div class="section">
+<a id="s2"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<p id="id30">We conducted this analysis according to the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) statement (<a href="#B20">20</a>) and the Checklist for Critical Appraisal and Data Extraction for Systematic Reviews of Prediction Modeling Studies (CHARMS) (<a href="#B21">21</a>).</p>
+<p id="id31">Of note, there is no clear demarcation between the two types of models (<a href="#B7">7</a>). In this review, statistical models refer to linear models developed by logistic regression or Cox regression or those presented as risk scoring systems. ML models refer to emerging models developed by ML methods only.</p>
+<div class="section">
+<a id="id32"><!-- named anchor --></a><h3 class="section-title">Literature Search</h3>
+<p id="id33">We designed a broad literature search strategy to include all articles published in English between 2010 and 2021 by applying a search string to their title, abstract, or keyword sections. Earlier studies were not included due to possible discrepancies in population characteristics and therapy. The search string was “(predict<sup>*</sup> OR progn<sup>*</sup> OR “risk assessment” OR “risk calculation”) AND “heart failure” AND (model OR algorithm OR score).” ZJS searched Medline, Web of Science, and IEEE Xplore on July 14, 2021, and included 13,301 papers for further analysis.</p>
+</div>
+<div class="section">
+<a id="id34"><!-- named anchor --></a><h3 class="section-title">Selection Procedure</h3>
+<p id="id35">We analyzed two representative prognostic events in HF, all-cause death and all-cause readmission. Articles that reported the development or validation of at least one statistical or ML model for predicting these events with appropriate performance evaluation were included. Models that predicted other outcomes or composite endpoints were excluded. Appropriate performance evaluation indicated that each model should report the c-index in the validation phase. Studies that only reported the c-index of models on the training dataset were excluded. Studies also need to report the 95% confidence interval (CI) of the c-index as well [or sample size and event number such that the 95% CI of the c-index could be calculated approximately (<a href="#B22">22</a>)]. We excluded models that were not originally designed to predict HF events (e.g., CHA2DS2-VASC) (<a href="#B23">23</a>). These models may be transferred to predict HF events to highlight associations between other disease processes and HF prognosis.</p>
+<p id="id36">We conducted a three-phase selection in practice as we have more than 10 thousand papers to review. First, we only reviewed papers via their titles, and the papers whose topic is not predicting the two representative prognostic HF events will be excluded. Then, we reviewed papers according to their abstracts, and the papers which did not report any quantitative metrics will be excluded. Finally, we conducted the full-text review, and only the papers that meet all requirements described above will be reserved. If we cannot identify whether a paper should be included via its title/abstract, we will reserve the paper into the next phase for a more detailed investigation. ZS, HS independently conducted the selection procedure, and the discrepancy was reviewed by HM.</p>
+</div>
+<div class="section">
+<a id="id37"><!-- named anchor --></a><h3 class="section-title">Data Extraction</h3>
+<p id="id38">Three researchers (ZH, WD, and HM) performed data extraction by following recommendations in the CHARMS statement. From all eligible articles, two researchers (ZS, HS) extracted (as applicable) the first author, title, digital object identifier, journal, geographical location, year of publication, study type, model name, data collection manner, patient selection criteria, predictor selection method, missing data processing method, numerical feature processing method, age, gender ratio, sample size, number of events, predicted outcome, follow-up time, c-index, 95% CI of c-index, type of algorithm, and performance validation method. HF subtype was also extracted to take HF heterogeneity into consideration. We also collected the list of predictors to investigate their usage.</p>
+</div>
+<div class="section">
+<a id="id39"><!-- named anchor --></a><h3 class="section-title">Statistical Analysis</h3>
+<p id="id40">We summarized the basic characteristics of the studies with respect to the type of methods and prediction tasks. The summarized characteristics included algorithm, geographical location, admission type (chronic or acute HF), HF type (HF with reduced ejection fraction, HFrEF, or HF with preserved ejection fraction, HFpEF), publication year, and study type (model development study or validation study). The performances of statistical and ML models were compared from two perspectives: (1) We conducted random effects model based meta-analysis to compare the pooled c-index of the two methodologies for all included studies. The meta-analysis was conducted via MedCalc (<a href="#B24">24</a>), and I-square is used to evaluate the heterogeneity of meta-analysis. (2) We conducted a “head-to-head” performance comparison for studies that developed both ML models and statistical models, which helped us to explore the performance gain of utilizing ML methods under the same experimental settings.</p>
+</div>
+<div class="section">
+<a id="id41"><!-- named anchor --></a><h3 class="section-title">Risk of Bias Assessment</h3>
+<p id="id42">Three researchers (ZH, WD, and ZH) adopted the Prediction Model Risk of Bias Assessment Tool (PROBAST) to appraise reliability (25). PROBAST evaluates the risk of bias (ROB) of models in four domains: participants, predictors, outcome, and statistical analysis. Each domain contained several ROB signal questions answered with “yes,” “probably yes,” “no,” “probably no,” or “no information,” and the domains were ranked independently. If answers to all questions in all four domains were “yes” or “probably yes,” the model was regarded as “low ROB”; if “yes” to all questions in the four domains, the model was with “high ROB.” If a domain contained at least one question that signaled “no information,” and no question was answered “no” or “probably no,” the domain was graded “unclear ROB.” If at least one domain was regarded as unclear and none as high, the model was also graded “unclear ROB.”</p>
+</div>
+</div>
+<div class="section">
+<a id="s3"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<div class="section">
+<a id="id43"><!-- named anchor --></a><h3 class="section-title">Characteristics of Models</h3>
+<p id="id44">After screening (<a href="#F1">Figure 1</a>), 280 models from 116 articles were selected, the details of which are shown in <a href="#SM1">Supplementary Table 1</a>, <a href="#SM1">Supplementary Data Sheet</a>. <a href="#T1">Table 1</a> describes the basic characteristics of the included models, the excluded articles and corresponding reasons were included in the <a href="#SM1">Supplementary Material</a> as well. Among all 280 model studies, 68% of the statistical model studies and 95% of the ML model studies were conducted in the last 5 years (2016–2021). The included studies were mainly from North America (41%), Europe (31%), and East Asia (22%). Concerning the outcomes, 205 (73%) models predicted all-cause mortality, and 75 (27%) predicted all-cause readmission. Among the 202 statistical model studies, 101 (50%) studies were model development studies, and 101 (50%) were validation studies of 31 different statistical models, while all ML model studies were model development studies. ML models were grouped into seven types according to the algorithm, where boosting, random forest, and decision tree were the most used methods.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id45">Literature selection procedure.</p></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id46">Model characteristics.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id47"><!-- named anchor --></a><thead>
+<a id="id48"><!-- named anchor --></a><tr>
+<a id="id49"><!-- named anchor --></a><th rowspan="1" colspan="1"><a id="id50"><!-- named anchor --></a></th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id51"><!-- named anchor --></a><b>Overall</b>
+</th>
+<th valign="top" align="center" style="border-bottom: thin solid #000000;" colspan="2" rowspan="1">
+<a id="id52"><!-- named anchor --></a><b>Statistical model</b>
+</th>
+<th valign="top" align="center" style="border-bottom: thin solid #000000;" colspan="4" rowspan="1">
+<a id="id53"><!-- named anchor --></a><b>Machine learning model</b>
+</th>
+</tr>
+<tr>
+<a id="id54"><!-- named anchor --></a><th rowspan="1" colspan="1"><a id="id55"><!-- named anchor --></a></th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id56"><!-- named anchor --></a><b>280 models</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id57"><!-- named anchor --></a><b>Overall 202 models</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id58"><!-- named anchor --></a><b>Mortality 158 models</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id59"><!-- named anchor --></a><b>Readmission 44 models</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id60"><!-- named anchor --></a><b>Overall 78 models</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id61"><!-- named anchor --></a><b>Mortality 47 models</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id62"><!-- named anchor --></a><b>Readmission 31 models</b>
+</th>
+</tr>
+</thead>
+<tbody>
+<a id="id63"><!-- named anchor --></a><tr>
+<a id="id64"><!-- named anchor --></a><td valign="top" align="center" colspan="8" rowspan="1">
+<a id="id65"><!-- named anchor --></a><b>HF type</b>
+</td>
+</tr>
+<tr>
+<a id="id66"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id67"><!-- named anchor --></a>Acute HF</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id68"><!-- named anchor --></a>73 (26%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id69"><!-- named anchor --></a>66 (33%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id70"><!-- named anchor --></a>62 (39%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id71"><!-- named anchor --></a>4 (9%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id72"><!-- named anchor --></a>7 (9%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id73"><!-- named anchor --></a>6 (13%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id74"><!-- named anchor --></a>1 (3%)</td>
+</tr>
+<tr>
+<a id="id75"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id76"><!-- named anchor --></a>Chronic HF</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id77"><!-- named anchor --></a>32 (11%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id78"><!-- named anchor --></a>32 (16%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id79"><!-- named anchor --></a>25 (16%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id80"><!-- named anchor --></a>7 (16%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id81"><!-- named anchor --></a>0 (0%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id82"><!-- named anchor --></a>0 (0%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id83"><!-- named anchor --></a>0 (0%)</td>
+</tr>
+<tr>
+<a id="id84"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id85"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id86"><!-- named anchor --></a>175 (62%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id87"><!-- named anchor --></a>104 (51%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id88"><!-- named anchor --></a>71 (44%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id89"><!-- named anchor --></a>33 (75%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id90"><!-- named anchor --></a>71 (91%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id91"><!-- named anchor --></a>41 (87%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id92"><!-- named anchor --></a>30 (97%)</td>
+</tr>
+<tr>
+<a id="id93"><!-- named anchor --></a><td valign="top" align="left" colspan="8" rowspan="1">
+<a id="id94"><!-- named anchor --></a><b>LVEF</b>
+</td>
+</tr>
+<tr>
+<a id="id95"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id96"><!-- named anchor --></a>HFrEF</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id97"><!-- named anchor --></a>65 (23%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id98"><!-- named anchor --></a>62 (31%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id99"><!-- named anchor --></a>55 (35%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id100"><!-- named anchor --></a>7 (16%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id101"><!-- named anchor --></a>3 (4%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id102"><!-- named anchor --></a>3 (6%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id103"><!-- named anchor --></a>0 (0%)</td>
+</tr>
+<tr>
+<a id="id104"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id105"><!-- named anchor --></a>HFpEF</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id106"><!-- named anchor --></a>23 (8%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id107"><!-- named anchor --></a>13 (6%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>11 (7%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id109"><!-- named anchor --></a>2 (5%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id110"><!-- named anchor --></a>10 (13%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id111"><!-- named anchor --></a>10 (21%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>0 (0%)</td>
+</tr>
+<tr>
+<a id="id113"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id114"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id115"><!-- named anchor --></a>192 (69%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id116"><!-- named anchor --></a>127 (63%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id117"><!-- named anchor --></a>92 (58%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id118"><!-- named anchor --></a>35 (80%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id119"><!-- named anchor --></a>65 (83%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>34 (72%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>31 (100%)</td>
+</tr>
+<tr>
+<a id="id122"><!-- named anchor --></a><td valign="top" align="left" colspan="8" rowspan="1">
+<a id="id123"><!-- named anchor --></a><b>Admission type</b>
+</td>
+</tr>
+<tr>
+<a id="id124"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>Inpatient</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>172 (61%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>127 (63)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>98 (62%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>29 (66%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id130"><!-- named anchor --></a>45 (58%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>25 (53%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>20 (65%)</td>
+</tr>
+<tr>
+<a id="id133"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a>Outpatient</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>45 (16%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id136"><!-- named anchor --></a>37 (18%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id137"><!-- named anchor --></a>32 (20%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>5 (11%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>8 (10%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>8 (17%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id141"><!-- named anchor --></a>0 (0%)</td>
+</tr>
+<tr>
+<a id="id142"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id143"><!-- named anchor --></a>Other <a href="#TN1"><sup>*</sup></a>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>63 (22%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id145"><!-- named anchor --></a>38 (19%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id146"><!-- named anchor --></a>28 (18%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id147"><!-- named anchor --></a>10 (23%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id148"><!-- named anchor --></a>25 (32%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id149"><!-- named anchor --></a>14 (30%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id150"><!-- named anchor --></a>11 (35%)</td>
+</tr>
+<tr>
+<a id="id151"><!-- named anchor --></a><td valign="top" align="left" colspan="8" rowspan="1">
+<a id="id152"><!-- named anchor --></a><b>Region</b>
+</td>
+</tr>
+<tr>
+<a id="id153"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id154"><!-- named anchor --></a>North America</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id155"><!-- named anchor --></a>116 (41%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>72 (36%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>47 (30%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id158"><!-- named anchor --></a>25 (57%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id159"><!-- named anchor --></a>44 (56%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id160"><!-- named anchor --></a>27 (57%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>17 (55%)</td>
+</tr>
+<tr>
+<a id="id162"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>Europe</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>88 (31%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>78 (39%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id166"><!-- named anchor --></a>67 (42%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id167"><!-- named anchor --></a>11 (25%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id168"><!-- named anchor --></a>10 (13%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id169"><!-- named anchor --></a>2 (4%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id170"><!-- named anchor --></a>8 (26%)</td>
+</tr>
+<tr>
+<a id="id171"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id172"><!-- named anchor --></a>East Asia</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id173"><!-- named anchor --></a>61 (22%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id174"><!-- named anchor --></a>40 (20%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a>35 (22%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id176"><!-- named anchor --></a>5 (11%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id177"><!-- named anchor --></a>21 (27%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id178"><!-- named anchor --></a>18 (38%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id179"><!-- named anchor --></a>3 (10%)</td>
+</tr>
+<tr>
+<a id="id180"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id181"><!-- named anchor --></a>Others</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a>15 (5%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>12 (6%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id184"><!-- named anchor --></a>9 (6%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id185"><!-- named anchor --></a>3 (7%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>3 (4%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id187"><!-- named anchor --></a>0 (0%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id188"><!-- named anchor --></a>3 (10%)</td>
+</tr>
+<tr>
+<a id="id189"><!-- named anchor --></a><td valign="top" align="left" colspan="8" rowspan="1">
+<a id="id190"><!-- named anchor --></a><b>Algorithm</b>
+</td>
+</tr>
+<tr>
+<a id="id191"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id192"><!-- named anchor --></a>Cox regression</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id193"><!-- named anchor --></a>64 (23%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id194"><!-- named anchor --></a>64 (32%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id195"><!-- named anchor --></a>58 (37%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id196"><!-- named anchor --></a>6 (14%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id197"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id199"><!-- named anchor --></a>/</td>
+</tr>
+<tr>
+<a id="id200"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id201"><!-- named anchor --></a>LR</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id202"><!-- named anchor --></a>61 (22%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id203"><!-- named anchor --></a>61 (30%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id204"><!-- named anchor --></a>31 (20%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id205"><!-- named anchor --></a>30 (68%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id206"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id207"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id208"><!-- named anchor --></a>/</td>
+</tr>
+<tr>
+<a id="id209"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>Score</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>77 (28%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id212"><!-- named anchor --></a>77 (38%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id213"><!-- named anchor --></a>69 (44%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id214"><!-- named anchor --></a>8 (18%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id215"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id216"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id217"><!-- named anchor --></a>/</td>
+</tr>
+<tr>
+<a id="id218"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id219"><!-- named anchor --></a>RF</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id220"><!-- named anchor --></a>11 (4%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id221"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id222"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id223"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id224"><!-- named anchor --></a>11 (14%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id225"><!-- named anchor --></a>7 (15%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id226"><!-- named anchor --></a>4 (13%)</td>
+</tr>
+<tr>
+<a id="id227"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>Boosting</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id229"><!-- named anchor --></a>17 (6%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id230"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id231"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id232"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id233"><!-- named anchor --></a>17 (22%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>11 (23%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id235"><!-- named anchor --></a>6 (19%)</td>
+</tr>
+<tr>
+<a id="id236"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id237"><!-- named anchor --></a>SVM</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id238"><!-- named anchor --></a>7 (3%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id239"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id240"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id241"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id242"><!-- named anchor --></a>7 (9%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>5 (11%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id244"><!-- named anchor --></a>2 (6%)</td>
+</tr>
+<tr>
+<a id="id245"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a>Neural network <a href="#TN2"><sup>**</sup></a>
+</td>
+<td rowspan="1" colspan="1"><a id="id247"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id248"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id249"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id250"><!-- named anchor --></a>/</td>
+<td rowspan="1" colspan="1"><a id="id251"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id252"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id253"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id254"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id255"><!-- named anchor --></a>Multi-layer perceptron</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id256"><!-- named anchor --></a>7 (3%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id257"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id258"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id259"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id260"><!-- named anchor --></a>7 (9%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id261"><!-- named anchor --></a>5 (11%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id262"><!-- named anchor --></a>2 (6%)</td>
+</tr>
+<tr>
+<a id="id263"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id264"><!-- named anchor --></a>Deep learning</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id265"><!-- named anchor --></a>8 (3%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id266"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id267"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id268"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id269"><!-- named anchor --></a>8 (10%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id270"><!-- named anchor --></a>2 (4%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>6 (19%)</td>
+</tr>
+<tr>
+<a id="id272"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id273"><!-- named anchor --></a>Decision tree</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id274"><!-- named anchor --></a>10 (4%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id275"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id276"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id277"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>10 (13%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id279"><!-- named anchor --></a>8 (17%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id280"><!-- named anchor --></a>2 (6%)</td>
+</tr>
+<tr>
+<a id="id281"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id282"><!-- named anchor --></a>Others</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id283"><!-- named anchor --></a>18 (6%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id284"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id285"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id286"><!-- named anchor --></a>/</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id287"><!-- named anchor --></a>18 (23%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id288"><!-- named anchor --></a>9 (19%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id289"><!-- named anchor --></a>9 (29%)</td>
+</tr>
+<tr>
+<a id="id290"><!-- named anchor --></a><td valign="top" align="left" colspan="8" rowspan="1">
+<a id="id291"><!-- named anchor --></a><b>Year of publication</b>
+</td>
+</tr>
+<tr>
+<a id="id292"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>2010–2015</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id294"><!-- named anchor --></a>69 (25%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a>65 (32%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id296"><!-- named anchor --></a>50 (32%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id297"><!-- named anchor --></a>15 (34%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>4 (5%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id299"><!-- named anchor --></a>2 (4%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a>2 (6%)</td>
+</tr>
+<tr>
+<a id="id301"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a>2016–2021</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id303"><!-- named anchor --></a>211 (75%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id304"><!-- named anchor --></a>137 (68%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id305"><!-- named anchor --></a>108 (68%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id306"><!-- named anchor --></a>29 (66%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>74 (95%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id308"><!-- named anchor --></a>45 (96%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id309"><!-- named anchor --></a>29 (94%)</td>
+</tr>
+<tr>
+<a id="id310"><!-- named anchor --></a><td valign="top" align="left" colspan="8" rowspan="1">
+<a id="id311"><!-- named anchor --></a><b>Study type</b>
+</td>
+</tr>
+<tr>
+<a id="id312"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id313"><!-- named anchor --></a>Model development</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id314"><!-- named anchor --></a>179 (64%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id315"><!-- named anchor --></a>101 (50%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id316"><!-- named anchor --></a>71 (45%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>30 (68%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a>78 (100%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id319"><!-- named anchor --></a>47 (100%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id320"><!-- named anchor --></a>31 (100%)</td>
+</tr>
+<tr>
+<a id="id321"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id322"><!-- named anchor --></a>Model validation</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>101 (36%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id324"><!-- named anchor --></a>101 (50%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id325"><!-- named anchor --></a>87 (55%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>14 (32%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a>0 (0%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id328"><!-- named anchor --></a>0 (0%)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id329"><!-- named anchor --></a>0 (0%)</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<p class="first" id="id330"><i>Values are presented as numbers</i>.</p>
+<div class="footnote">
+<a id="TN1"><!-- named anchor --></a><p id="id331">* <i>“Others” indicates that studies did not specify the origin of patients, or patients have mixed origins</i>.</p>
+</div>
+<div class="footnote">
+<a id="TN2"><!-- named anchor --></a><p id="id332">** <i>The deep learning model refers to recently proposed neural network-based models (e.g., recurrent neural nets and autoencoder) apart from simple multi-layer perceptron</i>.</p>
+</div>
+<p id="id333"><i>HF, heart failure; HFpEF, heart failure with preserved ejection fraction;HFrEF, heart failure with reduced ejection fraction; LVEF. left ventricular ejection fraction</i>.</p>
+</div>
+</div>
+<p id="id334"><a href="#T1">Table 1</a> also indicates the efficacy of statistical HF models was widely investigated for different patient subgroups, as 33% of statistical models were developed or validated for acute HF patients, 16% for chronic HF patients, 31% for HFrEF patients, 6% for HFpEF patients, 63% for hospitalized patients, and 18% for ambulatory patients. In comparison, most ML models did not consider the heterogeneity of HF. ML models were typically developed using a “general” HF population dataset that identified HF patients by primary diagnoses or international classification of disease (ICD) codes without other inclusion or exclusion criteria. For example, these studies did not take symptoms, left ventricular ejection fraction (LVEF), admission type, and comorbidities into consideration to select a specific HF patient group.</p>
+<p id="id335">Concerning the predictor usage characteristic, statistical models used significantly fewer predictors than ML models (<a href="#SM1">Supplementary Figure 1</a>). Specifically, 93 out of 101 (92%) statistical model development studies reported the number of predictors with the median was 11 (interquartile range, IQR: 6–18), and 76% of studies used less than 20 predictors. All ML model development studies reported the number of predictors; the median was 62 (IQR: 16–516), and 72% of studies used more than 20 predictors. Sixty-six (67%) statistical models reported a detailed list of predictors, while only 36 (46%) ML model development studies reported a detailed list of predictors. The predictor usage details can be found in <a href="#SM1">Supplementary Figure 2</a>.</p>
+</div>
+<div class="section">
+<a id="id336"><!-- named anchor --></a><h3 class="section-title">Performance Comparison</h3>
+<p id="id337"><a href="#F2">Figure 2</a> describes the performance comparison result of the models. As shown in <a href="#F2">Figure 2A</a>, the pooled c-index of statistical models in predicting all-cause mortality, ML models in predicting all-cause mortality, statistical models in predicting all-cause readmission, ML models in predicting all-cause readmission were 0.733 (95% CI 0.724–0.742), 0.777 (0.752–0.803), 0.678 (0.651–0.706), and 0.660 (0.633–0.686), respectively. The meta-analysis indicated that the ML model only outperformed the statistical model in predicting all-cause mortality. In contrast, their performance in predicting all-cause readmission was worse than the statistical model. Of note, the predictive ability across all studies exhibited substantial heterogeneity. Even when these characteristics were incorporated in the meta-regression model or multi-level meta-analysis model, heterogeneity remained high and essentially unchanged. Since the substantial heterogeneity of the included models did not permit reliable comparison of performance by meta-analysis, the result of meta-analysis can only be interpreted carefully within the context.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id338">Performance distribution of statistical and ML models. <b>(A)</b> Pooled C-index of meta-analysis with respect to tasks and model types. <b>(B)</b> Task specific comparison result. <b>(C)</b> Model specific comparison result. In subplots <b>(B,C)</b>, the inner pie indicates the number of pairwise comparisons between ML models and statistical models. The middle pie indicates the number of pairs in which the ML model achieved better performance, while the outer pie indicates the number of pairs in which the superiority of ML models reached statistical significance. ML, Machined Learning; DL, Deep Learning; DT, Decision Tree; SVM, Support Vector Machine; MLP, Multi-Layer Perceptron; RF, Random Forest.</p></div>
+</div>
+<p id="id339"><a href="#F2">Figures 2B,C</a> describe the result of the head-to-head comparison, which compares the performance differences of ML models and statistical models trained by same dataset. We found 60 valid comparison pairs, of which ML models achieved better performance in 39 (65%) pairs, and the superiority reached statistical significance in 22 (37%) pairs. In the task-specific comparison, we observed that ML models had a substantial advantage in predicting all-cause mortality, which accords to the result of the meta-analysis. ML models obtained better performance in two-thirds of the pairs, and the advantage was statistically significant in half of the pairs. ML models achieved similar performance compared to statistical models in predicting all-cause readmission. In the method-specific comparison, deep neural networks, boosting, multi-layer perceptron, support vector machine (SVM), and random forest (RF) were more likely to achieve better performance than statistical models, while decision tree and other ML algorithms achieved comparable or even worse performance.</p>
+</div>
+<div class="section">
+<a id="id340"><!-- named anchor --></a><h3 class="section-title">Risk of Bias Assessment</h3>
+<p id="id341"><a href="#F3">Figure 3</a> describes the ROB of both statistical and ML models. Among 202 statistical models and 78 ML models, only 19 statistical and 2 ML models were graded as low ROB, 18 statistical models were graded as unclear ROB, while all remaining models were graded as high ROB, indicating that most prediction models have technical pitfalls. The measured ROB was mainly from the participant and analysis domains. In PROBAST, models derived from retrospective data were treated as high participants ROB, and 103 (51%) statistical and 55 (70%) ML models were developed or validated with a retrospective dataset. One hundred and sixty-five (82%) statistical and 76 (97%) ML model studies did not conduct appropriate statistical analysis or reported incomplete statistical analysis information. Specifically, 22 (11%) statistical and 54 (69%) ML models were developed or validated from an insufficient number of participants. Thirty-seven (36%) statistical and 21 (27%) ML models categorized continuous predictors, which caused unnecessary loss of information (<a href="#B25">25</a>). While 52 (26%) statistical and 24 (31%) ML models used high-risk imputation methods, 65 (32%) statistical and 35 (45%) ML models did not report data imputation in detail. To select predictors, 31 (31%) statistical and 9 (12%) ML models used univariate analysis. Although the univariate analysis is a widely adopted method, its use has been discouraged recently (<a href="#B26">26</a>). One hundred and three (51%) statistical and 62 (80%) ML models did not conduct (or conducted inappropriate) calibration evaluation. Thirty-five (35%) statistical and 34 (44%) ML models used random split or non-random split, rather than more reliable bootstrap and cross-validation, to evaluate the discrimination ability of models.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F3"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<div class="caption"><p class="first" id="id342">Result of risk of bias analysis.</p></div>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="s4"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<div class="section">
+<a id="id343"><!-- named anchor --></a><h3 class="section-title">Discrimination Ability</h3>
+<p id="id344">Different from the conclusion of previous reviews (<a href="#B17">17</a>), our analysis indicated that the performance of ML models is not consistently better than statistical models in predicting HF prognostic events. The superiority of ML models significantly relies on specific experimental environments, i.e., prediction events, population characteristics, and selected algorithms. The meta-analysis result indicated ML models obtained better performance in predicting all-cause mortality, while their performance was worse in predicting all-cause readmission. The head-to-head analysis indicated that ML models achieved similar or worse performance in about one-third of pairwise cases even in exactly the same experimental settings. For the cases where ML models achieved better performance, their superiority is probably not statistically significant. We also found not all ML algorithms were superior to statistical models. Specifically, ensemble learning-based models (boosting and RF) and neural network-based models (multi-layer perceptron and deep learning) achieved better performance, while decision tree and support vector machines generally achieved worse performance than statistical models. This finding is in accordance with the consensus in the computer science community (<a href="#B27">27</a>, <a href="#B28">28</a>).</p>
+<p id="id345">According to these results, we argue that the expectation of leveraging ML has not yet been fulfilled. ML models were suggested to transfer their computer vision and natural language processing success, thereby transforming medicine (<a href="#B6">6</a>). Although we cannot precisely summarize the performance of statistical and ML models in event prediction due to their heterogeneity, ML models clearly achieved at most moderately better or comparable performance compared to statistical models. This degree of improvement is unlikely to trigger a revolution in HF event prediction.</p>
+<p id="id346">However, the potential of ML models still warrants further investigation for two reasons. First, current ML studies did not take full advantage of the data being analyzed. ML models typically require a large training dataset to become efficient and avoid overfitting. However, our ROB analysis showed about three-quarters of ML models were developed using insufficient numbers of participants, as their event per variable rate was less than 10 (<a href="#B29">29</a>). ML models were also more likely to be trained by low-quality electronic health record datasets, which also negatively affected their performance. Meanwhile, as HF is a chronic syndrome, longitudinal clinical patient data usually accumulate, including treatment, laboratory tests, and image information generated over the entire HF management process. It is worth investigating how to extract information from longitudinal sequential datasets to achieve better event prediction performance, and only ML algorithms are capable of handling this task (<a href="#B30">30</a>). Second, the performance of ML models was not sufficiently validated. Notably, about half of the statistical model studies were validation studies, whereas no ML models were externally validated. As model performance typically degenerates upon validation, the performance of current ML models is probably overestimated, but to what degree is unclear.</p>
+</div>
+<div class="section">
+<a id="id347"><!-- named anchor --></a><h3 class="section-title">Model Reliability</h3>
+<p id="id348">This review revealed two reliability issues of ML models, the first being neglect of HF heterogeneity. As a complex syndrome, HF prognosis varies widely among different patient subgroups (<a href="#B19">19</a>). We observed statistical model studies generally identified this situation and applied a detailed sample inclusion procedure to select the target population before developing or validating a model. Therefore, the efficacy of statistical models in each HF subgroup, e.g., HFrEF, HFpEF, acute HF, and chronic HF, has already been investigated. On the contrary, ML models were typically developed using a “general” HF patient group without clear inclusion criteria and only reported overall performance metrics. The subgroup-specific performance of ML models is currently unclear, which undoubtedly influenced the reliability of ML models in our study. The efficacy of ML models in different HF patient subgroups needs to be investigated in future studies.</p>
+<p id="id349">Secondly, the PROBAST analysis indicated both types of models have technical flaws. The issues affecting ML models were more serious and can be coarsely summarized to four points. Insufficient information disclosure was the first flaw. PROBAST analysis demonstrated that most statistical and ML models did not report sufficient statistical analysis information, and no ML models reported enough details for model reproduction. Inappropriate statistical analysis was the second flaw. ML models systematically did not perform calibration analysis, which may lead to inaccurate evaluation of event risk. Meanwhile, the training dataset of a large fraction of ML studies was too small to optimize parameters satisfactorily. Third, it is worth noting that adopting ML methods and proposing low ROB models were sometimes controversial. For example, as ML models usually require a large dataset for training, the time cost of imputing missing data via multiple imputation algorithms usually becomes intolerable. In fact, ML studies typically use mean-value imputation or a separate category to tackle the missing data problem, which inevitably brings ROB to ML models and makes them untrustworthy. Lack of external validation was the fourth flaw. More than half of statistical model studies were validation studies, while no ML model was externally validated by independent studies. ROB analyses indicated that the lack of a practical guideline in ML model development and validation is a big challenge. Such a guideline could help tackle a series of tasks in ML model development (i.e., data collection, pre-processing, performance evaluation, and model releasing), and thereafter provide a feasible path for developing reliable ML models, rather than just adopting a particular ML algorithm to fit a clinical dataset.</p>
+</div>
+<div class="section">
+<a id="id350"><!-- named anchor --></a><h3 class="section-title">Clinical Feasibility</h3>
+<p id="id351">Our analysis indicated that the clinical feasibility of ML models was low due to immoderate usage of predictors and lack of computer infrastructure, which may explain why no ML model was externally validated. Current ML development studies usually waived the predictor selection process, which is essential to developing statistical models. As a result, ML models included on average eight times the number of predictors used in statistical models; some even used more than 1,000 predictors. Although the inclusion of more information was regarded as an advantage of ML-based models (<a href="#B31">31</a>), it makes the model prone to overfit. Furthermore, with more predictors to be evaluated, the inclusion of a large number may limit the clinical utility of models. ML models require a feature selection protocol to effectively utilize more patient information in order to make a precise prediction and determine clinical feasibility.</p>
+<p id="id352">The complexity of the ML algorithm and the number of used predictors indicated that it is impossible to calculate the model manually. A comprehensive pipeline, including data collection, pre-processing, model invocation, and results display needed to execute a model in real-time. The development of the pipeline requires mass interdisciplinary collaboration, and the pipeline needs to be elaborately integrated into the current clinical decision support system. As the development and deployment of such a pipeline are obviously beyond the ability of most hospitals, ML models are difficult to be applied in clinical practice. An updated medical decision-making system is required to facilitate the deployment of ML models in the clinical workflow.</p>
+</div>
+<div class="section">
+<a id="id353"><!-- named anchor --></a><h3 class="section-title">Strengths and Limitations of This Study</h3>
+<p id="id354">The major strength of this study was that we analyzed the clinical feasibility and reliability of statistical and ML models, which were not systematically investigated in the previous review (<a href="#B14">14</a>–<a href="#B19">19</a>). The large number of studies used to compare different ML and statistical models was another major strength. However, this study also had several limitations. (1) The heterogeneity among studies impeded us from conducting rigorous performance comparisons of the two types of models. (2) We did not conduct an analysis on the calibration of models, as most studies did not report calibration information or conducted inappropriate calibration. (3) We only analyzed for all-cause mortality events, due to the lack of relevant studies examining all-cause readmission. Findings in this review may not be generalizable to other outcomes or settings.</p>
+</div>
+</div>
+<div class="section">
+<a id="s5"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<p id="id355">In summary, our review indicated ML models did not show the ability to revolutionize the process of predicting prognosis, and due to lack of external validation, their performance is probably overestimated. It seems the increased complexity of ML models did not bring significantly better performance. However, we argue it is still too early to claim that introducing ML technique in heart failure event prediction task is as meaningless. Because applying ML technique in medicine is an emerging research area and pioneer studies may be immature. Substantial effort is required in the future to explore how to utilize ML technology to achieve precise event prediction and overcome the difficulties in deploying ML models in clinical environments.</p>
+</div>
+<div class="section">
+<a id="s6"><!-- named anchor --></a><h2 class="main-title">Data Availability Statement</h2>
+<p id="id356">The original contributions presented in the study are included in the article/<a href="#s10">Supplementary Material</a>, further inquiries can be directed to the corresponding author.</p>
+</div>
+<div class="section">
+<a id="s7"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id357">ZS, WD, and ZH were involved in the conception and design of the review, developed the search strategy, and performed the study selection. ZS and HS extracted data from the included studies and were involved in the data analysis. ZS, WD, ZH, LC, and HM were involved in the interpretation and discussion of results. All authors drafted the manuscript, contributed to the drafting of the review, and revised it critically for important intellectual content.</p>
+</div>
+<div class="section">
+<a id="s8"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id358">This work is being supported by Open Research Projects of Zhejiang Lab (No. 2019KD0AD01/012). The supporting bodies had no influence on the analysis and data, on the writing of the report, or on the decision to submit the paper for publication.</p>
+</div>
+<div class="section">
+<a id="conf1"><!-- named anchor --></a><h2 class="main-title">Conflict of Interest</h2>
+<p id="id359">The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</div>
+<div class="section">
+<a id="s9"><!-- named anchor --></a><h2 class="main-title">Publisher's Note</h2>
+<p id="id360">All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="section">
+<a id="s10"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<p id="id361">The Supplementary Material for this article can be found online at: <a target="xrefwindow" href="https://www.frontiersin.org/articles/10.3389/fcvm.2022.812276/full#supplementary-material" id="id362">https://www.frontiersin.org/articles/10.3389/fcvm.2022.812276/full#supplementary-material</a></p>
+<div class="panel">
+<a id="SM1"><!-- named anchor --></a><a id="id363" href="Data_Sheet_1.ZIP"><div class="caption"><p class="first" id="id364">Click here for additional data file.</p></div></a>
+</div>
+</div>
+<div class="back-section">
+<a id="id365"><!-- named anchor --></a><div class="section ref-list">
+<a id="id365"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="B1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id366"><!-- named anchor --></a>SM DunlayVL RogerMM Redfield. Epidemiology of heart failure with preserved ejection fraction. Nature Rev Cardiol. (2017) 14: 591–602. 10.1038/nrcardio.2017.6528492288</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="B2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id367"><!-- named anchor --></a>O ChioncelM LainscakPM SeferovicSD AnkerMG Crespo-Leiro. Epidemiology and 1-year outcomes in patients with chronic heart failure and preserved, mid-range and reduced ejection fraction: an analysis of the ESC heart failure long-term registry. Eur J Heart Fail. (2017) 19:1574–574. 10.1002/ejhf.81328386917</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="B3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id368"><!-- named anchor --></a>S Woldman. Heart failure management-time to change our script on prognosis?Eur J Heart Fail. (2018) 20:837–8. 10.1002/ejhf.115729493084</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="B4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id369"><!-- named anchor --></a>P BanerjeeC WatsonD Ali. Discussing prognosis in heart failure: a questionnaire-based study of the patient's view. JACC-Heart Failure. (2018) 6:803–4. 10.1016/j.jchf.2018.04.00130166026</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="B5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id370"><!-- named anchor --></a>P PonikowskiAA VoorsSD AnkerH BuenoJGF ClelandAJS Coats. 2016 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J. (2016) 37:2129–U130. 10.1093/eurheartj/ehw12827206819</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="B6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id371"><!-- named anchor --></a>AL BeamIS Kohane. Big data and machine learning in health care. JAMA. (2018) 319:1317–8. 10.1001/jama.2017.1839129532063</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="B7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id372"><!-- named anchor --></a>A RajkomarJ DeanI Kohane. Machine learning in medicine. New Eng J Med. (2019) 380:1347–58. 10.1056/NEJMra181425930943338</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="B8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id373"><!-- named anchor --></a>Mudunuru VR Skrzypek LA A A comparison of artificial neural network and decision trees with logistic regression as classification models for breast cancer survival. Int J Math Eng Manag. (2020) 5:1170–90. 10.33889/IJMEMS.2020.5.6.089</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="B9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id374"><!-- named anchor --></a>U BenedettoA DimagliS SinhaL CocomelloB GibbisonM Caputo. Machine learning improves mortality risk prediction after cardiac surgery: systematic review and meta-analysis. J Thorac Cardiovasc Surg. (2020). 10.1016/j.jtcvs.2020.07.10532900480</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="B10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id375"><!-- named anchor --></a>RJ DesaiSV WangM VaduganathanT EversS Schneeweiss. Comparison of machine learning methods with traditional models for use of administrative claims with electronic medical records to predict heart failure outcomes. JAMA Network Open. (2020) 3:e1918962. 10.1001/jamanetworkopen.2019.1896231922560PMC6991258</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="B11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id376"><!-- named anchor --></a>E ChristodoulouJ MaGS CollinsEW SteyerbergJY VerbakelB Van Calster. systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction models. J Clin Epidemiol. (2019) 110:12llmio10.1016/j.jclinepi.2019.02.00430763612</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="B12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id377"><!-- named anchor --></a>JD FrizzellL LiangPJ SchulteCW YancyPA HeidenreichAF Hernandez. Prediction of 30-day all-cause readmissions in patients hospitalized for heart failure comparison of machine learning and other statistical approaches. JAMA Cardiology. (2017) 2:12–22. 10.1001/jamacardio.2016.395627784047</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="B13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id378"><!-- named anchor --></a>L WynantsB Van CalsterMMJ BontenRD RileyG HeinzeE Schuit. Prediction models for diagnosis and prognosis of covid-19 infection: systematic review and critical appraisal. BMJ. (2020) 369:m1328. 10.1101/2020.03.24.2004102032265220PMC7222643</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="B14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id379"><!-- named anchor --></a>AC AlbaT AgoritsasM JankowskiD CourvoisierSD WalterGH Guyatt. Risk prediction models for mortality in ambulatory patients with heart failure a systematic review. Circ-Heart Fail. (2013) 6:881–9. 10.1161/CIRCHEARTFAILURE.112.00004323888045</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="B15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id380"><!-- named anchor --></a>AM MichaudSIA ParkerH GanshornJA EzekowitzAD McRae. Prediction of early adverse events in emergency department patients with acute heart failure: a systematic review. Canadian J Cardiol. (2018) 34:168–79. 10.1016/j.cjca.2017.09.00429287944</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="B16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id381"><!-- named anchor --></a>JB Echouffo-TcheuguiSJ GreeneL PapadimitriouF ZannadCW YancyM Gheorghiade. Population risk prediction models for incident heart failure a systematic review. Circ-Heart Failure. (2015) 8:438–47. 10.1161/CIRCHEARTFAILURE.114.00189625737496</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="B17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id382"><!-- named anchor --></a>G BazoukisS StavrakisJ ZhouSC BollepalliG TseQ Zhang. Machine learning vs. conventional clinical methods in guiding management of heart failure patients-a systematic review. Heart Fail Rev. (2020) 26:23–34. 10.1007/s10741-020-10007-332720083PMC7384870</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="B18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id383"><!-- named anchor --></a>GL Di TannaH WirtzKL BurrowsG Globe. Evaluating risk prediction models for adults with heart failure: a systematic literature review. Plos ONE. (2020) 15:e0224135. 10.1371/journal.pone.023597031940350PMC6961879</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="B19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id384"><!-- named anchor --></a>K RahimiD BennettN ConradTM WilliamsJ BasuJ Dwight. Risk prediction in patients with heart failure a systematic review and analysis. Jacc-Heart Failure. (2014) 2:440–6. 10.1016/j.jchf.2014.04.00825194291</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="B20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id385"><!-- named anchor --></a>D MoherA LiberatiJ TetzlaffDG AltmanGroup PRISMA. Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. Bmj. (2009) 339:b2535. 10.1136/bmj.b253519622551PMC2714657</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="B21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id386"><!-- named anchor --></a>KG MoonsJA de GrootW BouwmeesterY VergouweS MallettDG Altman. Critical appraisal and data extraction for systematic reviews of prediction modelling studies: the CHARMS checklist. PLoS Med. (2014) 11:e1001744. 10.1371/journal.pmed.100174425314315PMC4196729</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="B22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id387"><!-- named anchor --></a>TP DebrayJA DamenRD RileyK SnellJB ReitsmaL Hooft. A framework for meta-analysis of prediction model studies with binary and time-to-event outcomes. Stat Methods Med Res. (2019) 28:2768–86. 10.1177/096228021878550430032705PMC6728752</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="B23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id388"><!-- named anchor --></a>BF GageC van WalravenL PearceRG HartPJ KoudstaalP Petersen. Selecting patients with atrial fibrillation for anticoagulation - Stroke risk stratification in patients taking aspirin. Circulation. (2004) 110:2287–92. 10.1161/01.CIR.0000145172.55640.9315477396</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="B24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id389"><!-- named anchor --></a>MedCalc Statistical Software version 19,.2.6 MedCalc Software bv, Ostend, Belgium; Available online at: <a target="xrefwindow" href="https://www.medcalc.org" id="id390">https://www.medcalc.org</a> (2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="B25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id391"><!-- named anchor --></a>DG AltmanP Royston. The cost of dichotomising continuous variables. Bmj. (2006) 332:1080. 10.1136/bmj.332.7549.108016675816PMC1458573</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="B26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id392"><!-- named anchor --></a>FE HarrellKL LeeDB Mark. Multivariable prognostic models: issues in developing models, evaluating assumptions and adequacy, and measuring and reducing errors. Stat Med. (1996) 15:361–87. 10.1002/(SICI)1097-0258(19960229)15:4&lt;361::AID-SIM168&gt;3.0.CO;2-48668867</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="B27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id393"><!-- named anchor --></a>HM GomesJP BarddalF EnembreckA Bifet. A survey on ensemble learning for data stream classification. Acm Comput Surv. (2017) 50:1–36. 10.1145/3054925</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="B28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id394"><!-- named anchor --></a>A EstevaA RobicquetB RamsundarV KuleshovM DePristoK Chou. A guide to deep learning in healthcare. Nat Med. (2019) 25:24–9. 10.1038/s41591-018-0316-z30617335</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="B29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id395"><!-- named anchor --></a>RF WolffKG MoonsRD RileyPF WhitingM Westwoodal Collins GS et. PROBAST: a tool to assess the risk of bias and applicability of prediction model studies. Ann Intern Med. (2019) 170:51–8. 10.7326/M18-137630596875</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="B30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id396"><!-- named anchor --></a>B ShickelPJ TigheA BihoracP Rashidi. Deep EHR: a survey of recent advances in deep learning techniques for electronic health record (EHR) analysis. IEEE J Biomed Health Informat. (2018) 22:1589–604. 10.1109/JBHI.2017.276706329989977PMC6043423</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="B31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id397"><!-- named anchor --></a>ZX HuangTM ChanW Dong. MACE prediction of acute coronary syndrome via boosted resampling classification using electronic medical records. J Biomed Inform. (2017) 66:161–70. 10.1016/j.jbi.2017.01.00128065840</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>Cardiovascular Medicine</p>
+<div class="metadata-area"><p class="metadata-entry"><span class="generated">Subject: </span>Systematic Review</p></div>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>heart failure</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>prediction model</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>systematic review</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>statistical model</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Counts: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Figures: </span>3</p>
+<p class="metadata-entry"><span class="generated">Tables: </span>1</p>
+<p class="metadata-entry"><span class="generated">Equations: </span>0</p>
+<p class="metadata-entry"><span class="generated">References: </span>31</p>
+<p class="metadata-entry"><span class="generated">Pages: </span>9</p>
+<p class="metadata-entry"><span class="generated">Words: </span>5821</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
