@@ -1,0 +1,2394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Deng, Sun, Wang, Zeng, Yuan, Li, Li, Chen, Zhou, Wang, and Jiang: Evaluating machine learning models for sepsis prediction: A systematic review of methodologies</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>iScience</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>iScience</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3532</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>isci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101724038</p>
+<p class="metadata-entry"><span class="generated">Title: </span>iScience</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2589-0042</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Elsevier</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="main.pdf">main.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2021 The Authors</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2021</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by-nc-nd/4.0/<p id="id1">This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>27 August 2021</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>16 November 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>15 December 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>21 January 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>20 December 2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>25</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>1<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>395702<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>103651</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8741489</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8741489.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8741489</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8741489</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35028534</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1016/j.isci.2021.103651</p>
+<p class="metadata-entry"><span class="generated">Publisher Item ID: </span>S2589-0042(21)01621-7</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>103651</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Evaluating machine learning models for sepsis prediction: A systematic review of methodologies</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Hong-Fei Deng<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#fn1">8</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Ming-Wei Sun<span class="generated">[</span><a href="#aff3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#fn1">8</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Yu Wang<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#aff3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#aff7">7</a><span class="generated">]</span><span class="generated">[</span><a href="#fn1">8</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Jun Zeng<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#aff3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#aff7">7</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Ting Yuan<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Ting Li<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Di-Huan Li<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Wei Chen<span class="generated">[</span><a href="#aff6">6</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Ping Zhou<span class="generated">[</span><a href="#aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a>Qi Wang<span class="generated">[</span><a href="#aff5">5</a><span class="generated">]</span><span class="generated">[</span><a href="#cor1">∗</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">Email: </span><a href="mailto:qwang@csrc.ac.cn">qwang@csrc.ac.cn</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id12"><!-- named anchor --></a>Hua Jiang<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#aff3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#aff7">7</a><span class="generated">]</span><span class="generated">[</span><a href="#fn2">9</a><span class="generated">]</span><span class="generated">[</span><a href="#cor2">∗∗</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">Email: </span><a href="mailto:cdjianghua@qq.com">cdjianghua@qq.com</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>Institute for Emergency and Disaster Medicine, Sichuan Academy of Medical Sciences, Sichuan Provincial People's Hospital, School of Medicine, University of Electronic Science and Technology of China, Chengdu, Sichuan 610072, China</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>School of Medicine, University of Electronic Science and Technology of China, Chengdu 610054, China</p>
+<p class="metadata-entry"><a id="aff3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>Emergency Center of Sichuan Provincial People's Hospital, Sichuan Academy of Medical Sciences, Chengdu 610072, China</p>
+<p class="metadata-entry"><a id="aff4"><!-- named anchor --></a><span class="generated">[</span>4<span class="generated">] </span>Emergency Intensive Care Unit of Sichuan Provincial People's Hospital, Sichuan Academy of Medical Sciences, Chengdu 610072, China</p>
+<p class="metadata-entry"><a id="aff5"><!-- named anchor --></a><span class="generated">[</span>5<span class="generated">] </span>Beijing Computational Science Research Center, Beijing 100193, China</p>
+<p class="metadata-entry"><a id="aff6"><!-- named anchor --></a><span class="generated">[</span>6<span class="generated">] </span>Department of Clinical Nutrition, Peking Union Medical College Hospital, Beijing 100730, China</p>
+<p class="metadata-entry"><a id="aff7"><!-- named anchor --></a><span class="generated">[</span>7<span class="generated">] </span>Sichuan Clinical Research Center for Emergency and Critical Care, Chengdu, Sichuan 610072, China</p>
+</div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group"><div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id13"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="cor1"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>∗<span class="generated">] </span>Corresponding author <a href="mailto:qwang@csrc.ac.cn">qwang@csrc.ac.cn</a></p>
+<p class="metadata-entry"><span class="generated"><a id="cor2"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>∗∗<span class="generated">] </span>Corresponding author <a href="mailto:cdjianghua@qq.com">cdjianghua@qq.com</a></p>
+<p class="metadata-entry"><a id="fn1"><!-- named anchor --></a><p id="ntpara0010">8 These authors contributed equally</p></p>
+<p class="metadata-entry"><a id="fn2"><!-- named anchor --></a><p id="ntpara0015">9 Lead contact</p></p>
+</div>
+</div></div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Summary</h4></div>
+<div class="cell"><p id="id14">Studies for sepsis prediction using machine learning are developing rapidly in medical science recently. In this review, we propose a set of new evaluation criteria and reporting standards to assess 21 qualified machine learning models for quality analysis based on PRISMA. Our assessment shows that (1.) the definition of sepsis is not consistent among the studies; (2.) data sources and data preprocessing methods, machine learning models, feature engineering, and inclusion types vary widely among the studies; (3.) the closer to the onset of sepsis, the higher the value of AUROC is; (4.) the improvement in AUROC is primarily due to using machine learning as a feature engineering tool; (5.) deep neural networks coupled with Sepsis-3 diagnostic criteria tend to yield better results on the time series data collected from patients with sepsis. The new evaluation criteria and reporting standards will facilitate the development of improved machine learning models for clinical applications.</p></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Graphical abstract</h4></div>
+<div class="cell"><div class="fig panel"><a id="undfig1"><!-- named anchor --></a></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Highlights</h4></div>
+<div class="cell"><p id="id15"><div class="list">
+<a id="ulist0010"><!-- named anchor --></a><ul style="list-style-type: none">
+<li><p id="p0010"><span class="label">•</span> New evaluation/reporting standard for sepsis prediction machine learning models</p></li>
+<li><p id="p0015"><span class="label">•</span> Major limitations in the current models for sepsis prediction have been identified</p></li>
+<li><p id="p0020"><span class="label">•</span> We strongly suggest using machine learning as a feature engineering tool</p></li>
+<li><p id="p0025"><span class="label">•</span> Recommending multilayer neural networks and Sepsis 3.0 for yield better result</p></li>
+</ul>
+</div></p></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id16">Clinical medicine; Machine learning</p></div>
+</div></div>
+<div class="metadata"><div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Notes: </span></p>
+<div class="metadata-chunk"><p class="first" id="misc0010">Published: January 21, 2022</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="sec1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="p0050">Sepsis is a significant threat to patients' lives. A meta-analysis estimated about 31.5 million sepsis and 19.4 million severe sepsis cases occur each year, contributing to 5.3 million deaths worldwide (<a href="#bib12">Fleischmann et al., 2016</a>). This doomed scenario is further amplified under the current COVID-19 pandemic, where most of the deceased could be traced to sepsis (<a href="#bib1">Alhazzani et al.,2020</a>).</p>
+<p id="p0055">In 2016, the Third International Consensus Definition for Sepsis and Septic Shock (Sepsis-3) defined sepsis as “life-threatening organ dysfunction resulting from dysregulated host responses to infection.” It pointed out sepsis' death risk and the necessity of early identification and intervention (<a href="#bib7">Cecconi et al.,2018</a>). Early warning and accurate prediction on sepsis, which provides opportunities for physicians to take preventative measures to alleviate its devastating consequences, is recognized by researchers. A successful early warning together with the best clinical technique provides the best chance to reduce mortality and lower the risk of the severe septic shock (<a href="#bib40">Shashikumar et al.,2017</a>; <a href="#bib31">Mira et al.,2017</a>; <a href="#bib41">Singer et al.,2016</a>). Some clinical prognostic tools, such as Sequential Organ Failure Assessment (SOFA), Modified Early Warning Score (MEWS), Systemic Inflammatory Response Syndrome (SIRS), and quick Sequential Organ Failure Assessment (qSOFA) have been developed to predict the risk of death after the onset of sepsis (<a href="#bib37">Raith et al.,2017</a>). But these are not sufficiently reliable because most values of the tested markers come from ICU admission, which can hardly be linked definitively to the onset of infection. Consequently, traditional methods have limitations to accurately identify or predict the onset of sepsis and make high a fidelity prognosis. A new methodology is clearly in need.</p>
+<p id="p0060">Two systematic reviews evaluated the performance of machine learning models used in prediction for occurrence and prognosis of sepsis in the past (<a href="#bib13">Fleuren et al.,2020</a>; <a href="#bib17">Islam et al.,2019</a>). However, the influence brought about by the evolution of diagnostic criteria has never been discussed. Compared to the old criteria, Sepsis-3 needs more clinical data to complete SOFA assessment and to confirm infection. In addition, there has not been any consensus on how to establish a reasonable dataset, an appropriate feature-treatment method, and how to obtain a prediction of sepsis development dynamically. The goal of this review is to identify the characteristics and shortcomings in the models and methods in the previous studies, and try to establish a unified standard and evaluation tool for machine learning models in order to guide the model development in medical science in the future to make reliable predictions on this deadly ailment.</p>
+</div>
+<div class="section">
+<a id="sec2"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<div class="section">
+<a id="sec2.1"><!-- named anchor --></a><h3 class="section-title">Studies included</h3>
+<p id="p0065">A total of twenty-one studies are included in this review from two hundred and sixty-two potentially eligible papers based on our criteria (<a href="#fig1">Figure 1</a>). Most selected studies focused on early sepsis detection, prediction, and mortality. Only two aimed at predicting severe sepsis (<a href="#tbl1">Table 1</a>). We notice that seven studies used data from The Medical Information Mart for Intensive Care (MIMIC) database. Two studies used data from the University of California San Francisco Medical Center database and the Beth Israel Deaconess Medical Center database (UCSF + BIDMC database).<div class="fig panel" style="display: float; clear: both">
+<a id="fig1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id17">Literature screening flowchart</p></div>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="tbl1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id18">Basic information of the included studies</p></div>
+<table frame="hsides" rules="groups">
+<a id="id19"><!-- named anchor --></a><thead>
+<a id="id20"><!-- named anchor --></a><tr>
+<a id="id21"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id22"><!-- named anchor --></a>Study</th>
+<th colspan="1" rowspan="1">
+<a id="id23"><!-- named anchor --></a>Sepsis definition</th>
+<th colspan="1" rowspan="1">
+<a id="id24"><!-- named anchor --></a>Target</th>
+<th colspan="1" rowspan="1">
+<a id="id25"><!-- named anchor --></a>Data sources</th>
+<th colspan="1" rowspan="1">
+<a id="id26"><!-- named anchor --></a>Missing data processing</th>
+<th colspan="1" rowspan="1">
+<a id="id27"><!-- named anchor --></a>Training data</th>
+<th colspan="1" rowspan="1">
+<a id="id28"><!-- named anchor --></a>Testing data</th>
+<th colspan="1" rowspan="1">
+<a id="id29"><!-- named anchor --></a>Validation data</th>
+</tr>
+</thead>
+<tbody>
+<a id="id30"><!-- named anchor --></a><tr>
+<a id="id31"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id32"><!-- named anchor --></a><a href="#bib10">Delahanty et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id33"><!-- named anchor --></a>sepsis3.0</td>
+<td colspan="1" rowspan="1">
+<a id="id34"><!-- named anchor --></a>Early prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id35"><!-- named anchor --></a>49 urban community hospitals operated by Tenet Healthcare</td>
+<td colspan="1" rowspan="1">
+<a id="id36"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>1,839,503</td>
+<td colspan="1" rowspan="1">
+<a id="id38"><!-- named anchor --></a>920,026</td>
+<td colspan="1" rowspan="1">
+<a id="id39"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id40"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id41"><!-- named anchor --></a><a href="#bib2">Barton et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id42"><!-- named anchor --></a>sepsis3.0</td>
+<td colspan="1" rowspan="1">
+<a id="id43"><!-- named anchor --></a>Detection and early prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id44"><!-- named anchor --></a>UCSF data+BIDMC data</td>
+<td colspan="1" rowspan="1">
+<a id="id45"><!-- named anchor --></a>Carry-forward and replacing by mean</td>
+<td colspan="1" rowspan="1">
+<a id="id46"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id47"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id48"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id49"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id50"><!-- named anchor --></a><a href="#bib43">Taylor et al. (2016)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id51"><!-- named anchor --></a>Infection + SIRS</td>
+<td colspan="1" rowspan="1">
+<a id="id52"><!-- named anchor --></a>Mortality prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id53"><!-- named anchor --></a>Four emergency departments</td>
+<td colspan="1" rowspan="1">
+<a id="id54"><!-- named anchor --></a>K-means</td>
+<td colspan="1" rowspan="1">
+<a id="id55"><!-- named anchor --></a>4222</td>
+<td colspan="1" rowspan="1">
+<a id="id56"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a>1056</td>
+</tr>
+<tr>
+<a id="id58"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id59"><!-- named anchor --></a><a href="#bib19">Kam and Kim (2017)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>ICD-9</td>
+<td colspan="1" rowspan="1">
+<a id="id61"><!-- named anchor --></a>Detection and early prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id62"><!-- named anchor --></a>MIMIC-II</td>
+<td colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>Replacing by nearest measured value</td>
+<td colspan="1" rowspan="1">
+<a id="id64"><!-- named anchor --></a>252</td>
+<td colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>72</td>
+<td colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>36</td>
+</tr>
+<tr>
+<a id="id67"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id68"><!-- named anchor --></a><a href="#bib28">Mao et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id69"><!-- named anchor --></a>SIRS</td>
+<td colspan="1" rowspan="1">
+<a id="id70"><!-- named anchor --></a>Sepsis detection</td>
+<td colspan="1" rowspan="1">
+<a id="id71"><!-- named anchor --></a>UCSF data+BIDMC data</td>
+<td colspan="1" rowspan="1">
+<a id="id72"><!-- named anchor --></a>Carry-forward and replacing by mean</td>
+<td colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>80%</td>
+<td colspan="1" rowspan="1">
+<a id="id74"><!-- named anchor --></a>20%</td>
+<td colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id76"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a><a href="#bib42">Taneja et al. (2017)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id78"><!-- named anchor --></a>Clinical adjudication label</td>
+<td colspan="1" rowspan="1">
+<a id="id79"><!-- named anchor --></a>Early prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id80"><!-- named anchor --></a>Carle Foundation Hospital</td>
+<td colspan="1" rowspan="1">
+<a id="id81"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id82"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id83"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id84"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id85"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id86"><!-- named anchor --></a><a href="#bib38">Saqib et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id87"><!-- named anchor --></a>Angus</td>
+<td colspan="1" rowspan="1">
+<a id="id88"><!-- named anchor --></a>Early prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id89"><!-- named anchor --></a>MIMIC-III</td>
+<td colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>Forward-filling</td>
+<td colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>81%</td>
+<td colspan="1" rowspan="1">
+<a id="id92"><!-- named anchor --></a>10%</td>
+<td colspan="1" rowspan="1">
+<a id="id93"><!-- named anchor --></a>9%</td>
+</tr>
+<tr>
+<a id="id94"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id95"><!-- named anchor --></a><a href="#bib35">Perng et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id96"><!-- named anchor --></a>SIRS + qSOFA</td>
+<td colspan="1" rowspan="1">
+<a id="id97"><!-- named anchor --></a>Mortality prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id98"><!-- named anchor --></a>Chang Gung Research Database</td>
+<td colspan="1" rowspan="1">
+<a id="id99"><!-- named anchor --></a>Replacing by medium number of the column</td>
+<td colspan="1" rowspan="1">
+<a id="id100"><!-- named anchor --></a>70%</td>
+<td colspan="1" rowspan="1">
+<a id="id101"><!-- named anchor --></a>30%</td>
+<td colspan="1" rowspan="1">
+<a id="id102"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id103"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id104"><!-- named anchor --></a><a href="#bib44">Thottakkara et al. (2016)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id105"><!-- named anchor --></a>the criteria of the Agency for Healthcare Research and Quality</td>
+<td colspan="1" rowspan="1">
+<a id="id106"><!-- named anchor --></a>Severe sepsis prediction</td>
+<td colspan="1" rowspan="1">
+<a id="id107"><!-- named anchor --></a>DECLARE data</td>
+<td colspan="1" rowspan="1">
+<a id="id108"><!-- named anchor --></a>Replacing by mean value</td>
+<td colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a>70%</td>
+<td colspan="1" rowspan="1">
+<a id="id110"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id111"><!-- named anchor --></a>30%</td>
+</tr>
+<tr>
+<a id="id112"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id113"><!-- named anchor --></a><a href="#bib5">Bloch et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id114"><!-- named anchor --></a>Infection +SIRS</td>
+<td colspan="1" rowspan="1">
+<a id="id115"><!-- named anchor --></a>Early prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id116"><!-- named anchor --></a>Israel Rabin Medical Center</td>
+<td colspan="1" rowspan="1">
+<a id="id117"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id118"><!-- named anchor --></a>75%</td>
+<td colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a>25%</td>
+<td colspan="1" rowspan="1">
+<a id="id120"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id121"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a><a href="#bib23">Kwon and Baek, (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>Infection + qSOFA</td>
+<td colspan="1" rowspan="1">
+<a id="id124"><!-- named anchor --></a>Mortality prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id125"><!-- named anchor --></a>Four hospitals of Korea</td>
+<td colspan="1" rowspan="1">
+<a id="id126"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id127"><!-- named anchor --></a>74%</td>
+<td colspan="1" rowspan="1">
+<a id="id128"><!-- named anchor --></a>18%</td>
+<td colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a>8%</td>
+</tr>
+<tr>
+<a id="id130"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id131"><!-- named anchor --></a><a href="#bib34">Nemati et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id132"><!-- named anchor --></a>sepsis3.0</td>
+<td colspan="1" rowspan="1">
+<a id="id133"><!-- named anchor --></a>Early prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id134"><!-- named anchor --></a>two hospitals within the Emory Healthcare system and an ICU database</td>
+<td colspan="1" rowspan="1">
+<a id="id135"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id136"><!-- named anchor --></a>80%</td>
+<td colspan="1" rowspan="1">
+<a id="id137"><!-- named anchor --></a>20%</td>
+<td colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id139"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id140"><!-- named anchor --></a><a href="#bib25">Lauritsen et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id141"><!-- named anchor --></a>Infection +SIRS</td>
+<td colspan="1" rowspan="1">
+<a id="id142"><!-- named anchor --></a>Early detection and prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id143"><!-- named anchor --></a>Four Danish municipalities data</td>
+<td colspan="1" rowspan="1">
+<a id="id144"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id145"><!-- named anchor --></a>80%</td>
+<td colspan="1" rowspan="1">
+<a id="id146"><!-- named anchor --></a>10%</td>
+<td colspan="1" rowspan="1">
+<a id="id147"><!-- named anchor --></a>10%</td>
+</tr>
+<tr>
+<a id="id148"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id149"><!-- named anchor --></a><a href="#bib39">Scherpf et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id150"><!-- named anchor --></a>ICD9+SIRS</td>
+<td colspan="1" rowspan="1">
+<a id="id151"><!-- named anchor --></a>Early prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id152"><!-- named anchor --></a>MIMIC-III</td>
+<td colspan="1" rowspan="1">
+<a id="id153"><!-- named anchor --></a>Liner interpolation and “carry forward/backward” extrapolation</td>
+<td colspan="1" rowspan="1">
+<a id="id154"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id155"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id156"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id157"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id158"><!-- named anchor --></a><a href="#bib16">Hou et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id159"><!-- named anchor --></a>Sepsis3.0</td>
+<td colspan="1" rowspan="1">
+<a id="id160"><!-- named anchor --></a>Mortality prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id161"><!-- named anchor --></a>MIMIC III v1.4</td>
+<td colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a>Remove the variables with more than 20% observations missing + multiple imputation method</td>
+<td colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id164"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id166"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id167"><!-- named anchor --></a><a href="#bib22">Kong et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id168"><!-- named anchor --></a>Sepsis3.0</td>
+<td colspan="1" rowspan="1">
+<a id="id169"><!-- named anchor --></a>Mortality prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id170"><!-- named anchor --></a>MIMIC III</td>
+<td colspan="1" rowspan="1">
+<a id="id171"><!-- named anchor --></a>Remove the patients with more than 30% predictor variable missing + Replace by mean value</td>
+<td colspan="1" rowspan="1">
+<a id="id172"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id173"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id174"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id175"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id176"><!-- named anchor --></a><a href="#bib4">Bedoya et al.(2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>SIRS + infection + end organ failure</td>
+<td colspan="1" rowspan="1">
+<a id="id178"><!-- named anchor --></a>Early detection of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id179"><!-- named anchor --></a>ED of a quaternary academic hospital</td>
+<td colspan="1" rowspan="1">
+<a id="id180"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id181"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id182"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id184"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id185"><!-- named anchor --></a><a href="#bib45">van Doorn et al. (2021)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id186"><!-- named anchor --></a>Infection + SIRS/SOFA</td>
+<td colspan="1" rowspan="1">
+<a id="id187"><!-- named anchor --></a>Mortality prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id188"><!-- named anchor --></a>ED at the Maastricht University Medical Center+</td>
+<td colspan="1" rowspan="1">
+<a id="id189"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id190"><!-- named anchor --></a>1244</td>
+<td colspan="1" rowspan="1">
+<a id="id191"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id192"><!-- named anchor --></a>100</td>
+</tr>
+<tr>
+<a id="id193"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id194"><!-- named anchor --></a><a href="#bib27">Li et al. (2021)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id195"><!-- named anchor --></a>ICD-9</td>
+<td colspan="1" rowspan="1">
+<a id="id196"><!-- named anchor --></a>Mortality prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id197"><!-- named anchor --></a>MIMIC-III V1.4</td>
+<td colspan="1" rowspan="1">
+<a id="id198"><!-- named anchor --></a>Remove the patients with data missing more than 30% + Replace by mean value</td>
+<td colspan="1" rowspan="1">
+<a id="id199"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id200"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id201"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id202"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id203"><!-- named anchor --></a><a href="#bib6">Burdick et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id204"><!-- named anchor --></a>SIRS</td>
+<td colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a>Early severe sepsis prediction</td>
+<td colspan="1" rowspan="1">
+<a id="id206"><!-- named anchor --></a>The Dascena Analysis Dataset and the Cabell Huntington Hospital Dataset</td>
+<td colspan="1" rowspan="1">
+<a id="id207"><!-- named anchor --></a>last-one carry forward</td>
+<td colspan="1" rowspan="1">
+<a id="id208"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id209"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id210"><!-- named anchor --></a>NR</td>
+</tr>
+<tr>
+<a id="id211"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id212"><!-- named anchor --></a><a href="#bib36">Qi et al. (2021)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id213"><!-- named anchor --></a>Sepsis3.0</td>
+<td colspan="1" rowspan="1">
+<a id="id214"><!-- named anchor --></a>Mortality prediction of sepsis</td>
+<td colspan="1" rowspan="1">
+<a id="id215"><!-- named anchor --></a>MIMIC-III</td>
+<td colspan="1" rowspan="1">
+<a id="id216"><!-- named anchor --></a>Remove the patients with data missing more than 40% + Replace by 21% and mean value</td>
+<td colspan="1" rowspan="1">
+<a id="id217"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id218"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id219"><!-- named anchor --></a>NR</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id220"><!-- named anchor --></a><p id="id221"><span class="generated">[i]</span> Abbreviation:SIRS: Systemic Inflammatory Response Syndrome; ICD9:international classification of diseases 9; NR: not reported.</p>
+</div></div>
+</div></p>
+<p id="p0070">Thirteen studies described preprocessing methods for the clinical data with various methods, including filling missing data by mean, median or nearest measured values, K-means clustering, forward-filling, linear interpolations, and carry forward/backward extrapolations. Twelve studies provided detailed descriptions of sample sizes or proportions between training groups and test/verification groups. However, not a single study discussed the rationale for adopting their methods. Only six studies adopted the latest Sepsis-3 definition, and the others used old criteria (SIRS/ICD [the international classification of diseases definition]/Angus/the criteria of the Agency for Healthcare Research and Quality).<div class="list">
+<a id="ulist0020"><!-- named anchor --></a><ul style="list-style-type: none">
+<li><p id="p0075"><span class="label">•</span> SIRS: Heart rate &gt;90 beats/min; Body temperature &gt;38°C or &lt;36°C; Respiration rate &gt;20 times/min or PaCO<sub>2</sub>&lt;32mm Hg; White blood cell count &gt;12 × 10<sup>9</sup>/L or &lt; 4 × 10<sup>9</sup>/L</p></li>
+<li><p id="p0080"><span class="label">•</span> Sepsis-3: infection + SOFA≥2</p></li>
+</ul>
+</div></p>
+</div>
+<div class="section">
+<a id="sec2.2"><!-- named anchor --></a><h3 class="section-title">Quality evaluation</h3>
+<p id="p0085">Using the Joanna Briggs Institute Critical Appraisal (JBI) tool, Kwong et al. proposed a method to evaluate the quality of machine learning research. JBI is a checklist for cross-sectional research, which has been adopted by Islam et al. and Kwong et al. to evaluate quality of machine learning studies (<a href="#bib24">Kwong et al.,2019</a>; <a href="#bib18">Islam et al.,2018</a>). It consists of eight items. We first applied their tool to evaluate the included studies, and the results are shown in <a href="#tbl2">Table 2</a>.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="tbl2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id222">Quality evaluation of including studies</p></div>
+<table frame="hsides" rules="groups">
+<a id="id223"><!-- named anchor --></a><thead>
+<a id="id224"><!-- named anchor --></a><tr>
+<a id="id225"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id226"><!-- named anchor --></a>Study</th>
+<th colspan="1" rowspan="1">
+<a id="id227"><!-- named anchor --></a>Inclusioncriteria</th>
+<th colspan="1" rowspan="1">
+<a id="id228"><!-- named anchor --></a>Data preprocessed</th>
+<th colspan="1" rowspan="1">
+<a id="id229"><!-- named anchor --></a>Data source and collection</th>
+<th colspan="1" rowspan="1">
+<a id="id230"><!-- named anchor --></a>The source of the feature</th>
+<th colspan="1" rowspan="1">
+<a id="id231"><!-- named anchor --></a>Ethical issue</th>
+<th colspan="1" rowspan="1">
+<a id="id232"><!-- named anchor --></a>Detail discussion</th>
+<th colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>Measurement of models' performance</th>
+<th colspan="1" rowspan="1">
+<a id="id234"><!-- named anchor --></a>Cross-validation/evaluation method</th>
+</tr>
+</thead>
+<tbody>
+<a id="id235"><!-- named anchor --></a><tr>
+<a id="id236"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id237"><!-- named anchor --></a><a href="#bib10">Delahanty et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id238"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id239"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id240"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id241"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id243"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id244"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id245"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id246"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id247"><!-- named anchor --></a><a href="#bib2">Barton et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id248"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id249"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id250"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id251"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id252"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id253"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id254"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id255"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id256"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a>Taylro, 2015</td>
+<td colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id259"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id260"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id261"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id262"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id263"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id264"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id265"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id266"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id267"><!-- named anchor --></a><a href="#bib19">Kam and Kim (2017)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id268"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id269"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id270"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id271"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id272"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id273"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id274"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id275"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id276"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id277"><!-- named anchor --></a><a href="#bib28">Mao et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id278"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id279"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id280"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id281"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id282"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id283"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id284"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id285"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id286"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id287"><!-- named anchor --></a><a href="#bib42">Taneja et al. (2017)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id288"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id289"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id290"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id291"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id292"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id293"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id294"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id295"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id296"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id297"><!-- named anchor --></a><a href="#bib38">Saqib et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id298"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id299"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id300"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id301"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id302"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id303"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id304"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id305"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id306"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id307"><!-- named anchor --></a><a href="#bib35">Perng et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id308"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id309"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id310"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id311"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id312"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id313"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id314"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id315"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id316"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id317"><!-- named anchor --></a><a href="#bib44">Thottakkara et al. (2016)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id318"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id319"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id320"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id321"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id322"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id323"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id324"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id325"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id326"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id327"><!-- named anchor --></a><a href="#bib5">Bloch et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id328"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id329"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id330"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id331"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id332"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id333"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id334"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id335"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id336"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id337"><!-- named anchor --></a><a href="#bib23">Kwon and Baek (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id338"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id339"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id340"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id341"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id342"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id343"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id344"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id345"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id346"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id347"><!-- named anchor --></a><a href="#bib34">Nemati et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id348"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id349"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id350"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id351"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id352"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id353"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id354"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id355"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id356"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id357"><!-- named anchor --></a><a href="#bib25">Lauritsen et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id358"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id359"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id360"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id361"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id362"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id363"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id364"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id365"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id366"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id367"><!-- named anchor --></a><a href="#bib39">Scherpf et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id368"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id369"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id370"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id371"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id372"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id373"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id374"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id375"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id376"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id377"><!-- named anchor --></a><a href="#bib16">Hou et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id378"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id379"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id380"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id381"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id382"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id383"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id384"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id385"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id386"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id387"><!-- named anchor --></a><a href="#bib22">Kong et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id388"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id389"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id390"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id391"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id392"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id393"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id394"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id395"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id396"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id397"><!-- named anchor --></a><a href="#bib4">Bedoya et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id398"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id399"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id400"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id401"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id402"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id403"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id404"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id405"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id406"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id407"><!-- named anchor --></a><a href="#bib45">van Doorn et al. (2021)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id408"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id409"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id410"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id411"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id412"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id413"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id414"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id415"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id416"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id417"><!-- named anchor --></a><a href="#bib27">Li et al. (2021)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id418"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id419"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id420"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id421"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id422"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id423"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id424"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id425"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id426"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id427"><!-- named anchor --></a><a href="#bib6">Burdick et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id428"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id429"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id430"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id431"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id432"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id433"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id434"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id435"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id436"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id437"><!-- named anchor --></a><a href="#bib36">Qi et al. (2021)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id438"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id439"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id440"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id441"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id442"><!-- named anchor --></a>0</td>
+<td colspan="1" rowspan="1">
+<a id="id443"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id444"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id445"><!-- named anchor --></a>0</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id446"><!-- named anchor --></a><p id="id447"><span class="generated">[i]</span> Annotation: The contents of have been tweaked to better fit machine learning research.</p>
+</div></div>
+</div></p>
+</div>
+<div class="section">
+<a id="sec2.3"><!-- named anchor --></a><h3 class="section-title">Prediction in time</h3>
+<p id="p0090">Considering that sepsis progression is time-sensitive, a good predictive model should be able to verify the accuracy at different times. However, we find only seven studies provided the information (see <a href="#tbl3">Table 3</a>).<div class="table-wrap panel" style="display: float; clear: both">
+<a id="tbl3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id448">Prediction (AUROC) of each model at different hours in the sepsis studies</p></div>
+<table frame="hsides" rules="groups">
+<a id="id449"><!-- named anchor --></a><thead>
+<a id="id450"><!-- named anchor --></a><tr>
+<a id="id451"><!-- named anchor --></a><th rowspan="2" colspan="1">
+<a id="id452"><!-- named anchor --></a>Study</th>
+<th rowspan="2" colspan="1">
+<a id="id453"><!-- named anchor --></a>Model</th>
+<th rowspan="2" colspan="1">
+<a id="id454"><!-- named anchor --></a>Algorithm</th>
+<th colspan="13" rowspan="1">
+<a id="id455"><!-- named anchor --></a>Different hours<hr class="hr">
+</th>
+</tr>
+<tr>
+<a id="id456"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id457"><!-- named anchor --></a>−48</th>
+<th colspan="1" rowspan="1">
+<a id="id458"><!-- named anchor --></a>−24</th>
+<th colspan="1" rowspan="1">
+<a id="id459"><!-- named anchor --></a>−12</th>
+<th colspan="1" rowspan="1">
+<a id="id460"><!-- named anchor --></a>−10</th>
+<th colspan="1" rowspan="1">
+<a id="id461"><!-- named anchor --></a>−8</th>
+<th colspan="1" rowspan="1">
+<a id="id462"><!-- named anchor --></a>−6</th>
+<th colspan="1" rowspan="1">
+<a id="id463"><!-- named anchor --></a>−5</th>
+<th colspan="1" rowspan="1">
+<a id="id464"><!-- named anchor --></a>−4</th>
+<th colspan="1" rowspan="1">
+<a id="id465"><!-- named anchor --></a>−3</th>
+<th colspan="1" rowspan="1">
+<a id="id466"><!-- named anchor --></a>−2</th>
+<th colspan="1" rowspan="1">
+<a id="id467"><!-- named anchor --></a>−1</th>
+<th colspan="1" rowspan="1">
+<a id="id468"><!-- named anchor --></a>−0.25</th>
+<th colspan="1" rowspan="1">
+<a id="id469"><!-- named anchor --></a>0</th>
+</tr>
+</thead>
+<tbody>
+<a id="id470"><!-- named anchor --></a><tr>
+<a id="id471"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id472"><!-- named anchor --></a><a href="#bib10">Delahanty et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id473"><!-- named anchor --></a>RoS</td>
+<td colspan="1" rowspan="1">
+<a id="id474"><!-- named anchor --></a>Gradient boosting</td>
+<td colspan="1" rowspan="1"><a id="id475"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id476"><!-- named anchor --></a>0.97</td>
+<td colspan="1" rowspan="1"><a id="id477"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id478"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id479"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id480"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id481"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id482"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id483"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id484"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id485"><!-- named anchor --></a>0.93</td>
+<td colspan="1" rowspan="1"><a id="id486"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id487"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id488"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id489"><!-- named anchor --></a><a href="#bib2">Barton et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id490"><!-- named anchor --></a>MLA</td>
+<td colspan="1" rowspan="1">
+<a id="id491"><!-- named anchor --></a>Gradient boosted trees</td>
+<td colspan="1" rowspan="1">
+<a id="id492"><!-- named anchor --></a>0.83</td>
+<td colspan="1" rowspan="1">
+<a id="id493"><!-- named anchor --></a>0.84</td>
+<td colspan="1" rowspan="1"><a id="id494"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id495"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id496"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id497"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id498"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id499"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id500"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id501"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id502"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id503"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id504"><!-- named anchor --></a>0.88</td>
+</tr>
+<tr>
+<a id="id505"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id506"><!-- named anchor --></a><a href="#bib19">Kam and Kim (2017)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id507"><!-- named anchor --></a>SepLSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id508"><!-- named anchor --></a>long short-term memory</td>
+<td colspan="1" rowspan="1"><a id="id509"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id510"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id511"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id512"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id513"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id514"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id515"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id516"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id517"><!-- named anchor --></a>0.93</td>
+<td colspan="1" rowspan="1">
+<a id="id518"><!-- named anchor --></a>0.94</td>
+<td colspan="1" rowspan="1">
+<a id="id519"><!-- named anchor --></a>0.96</td>
+<td colspan="1" rowspan="1"><a id="id520"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id521"><!-- named anchor --></a>0.99</td>
+</tr>
+<tr>
+<a id="id522"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id523"><!-- named anchor --></a><a href="#bib5">Bloch et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id524"><!-- named anchor --></a>SVM-RBF</td>
+<td colspan="1" rowspan="1">
+<a id="id525"><!-- named anchor --></a>SVM-RBF</td>
+<td colspan="1" rowspan="1"><a id="id526"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id527"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id528"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id529"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id530"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id531"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id532"><!-- named anchor --></a>0.8141</td>
+<td colspan="1" rowspan="1">
+<a id="id533"><!-- named anchor --></a>0.8879</td>
+<td colspan="1" rowspan="1">
+<a id="id534"><!-- named anchor --></a>0.8807</td>
+<td colspan="1" rowspan="1">
+<a id="id535"><!-- named anchor --></a>0.8639</td>
+<td colspan="1" rowspan="1">
+<a id="id536"><!-- named anchor --></a>0.8675</td>
+<td colspan="1" rowspan="1"><a id="id537"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id538"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id539"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id540"><!-- named anchor --></a><a href="#bib34">Nemati et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id541"><!-- named anchor --></a>Weilbull-Cox proportional hazards</td>
+<td colspan="1" rowspan="1">
+<a id="id542"><!-- named anchor --></a>Weilbull-Cox proportional hazards</td>
+<td colspan="1" rowspan="1"><a id="id543"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id544"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id545"><!-- named anchor --></a>0.79</td>
+<td colspan="1" rowspan="1"><a id="id546"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id547"><!-- named anchor --></a>0.8</td>
+<td colspan="1" rowspan="1">
+<a id="id548"><!-- named anchor --></a>0.81</td>
+<td colspan="1" rowspan="1"><a id="id549"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id550"><!-- named anchor --></a>0.82</td>
+<td colspan="1" rowspan="1"><a id="id551"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id552"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id553"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id554"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id555"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id556"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id557"><!-- named anchor --></a><a href="#bib25">Lauritsen et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id558"><!-- named anchor --></a>CNN-LSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id559"><!-- named anchor --></a>CNN-LSTM</td>
+<td colspan="1" rowspan="1"><a id="id560"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id561"><!-- named anchor --></a>0.752</td>
+<td colspan="1" rowspan="1"><a id="id562"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id563"><!-- named anchor --></a>0.792</td>
+<td colspan="1" rowspan="1"><a id="id564"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id565"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id566"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id567"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id568"><!-- named anchor --></a>0.842</td>
+<td colspan="1" rowspan="1"><a id="id569"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id570"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id571"><!-- named anchor --></a>0.879</td>
+<td colspan="1" rowspan="1"><a id="id572"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id573"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id574"><!-- named anchor --></a><a href="#bib39">Scherpf et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id575"><!-- named anchor --></a>RNN</td>
+<td colspan="1" rowspan="1">
+<a id="id576"><!-- named anchor --></a>RNN</td>
+<td colspan="1" rowspan="1"><a id="id577"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id578"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id579"><!-- named anchor --></a>0.76</td>
+<td colspan="1" rowspan="1"><a id="id580"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id581"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id582"><!-- named anchor --></a>0.79</td>
+<td colspan="1" rowspan="1"><a id="id583"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id584"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id585"><!-- named anchor --></a>0.81</td>
+<td colspan="1" rowspan="1"><a id="id586"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id587"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id588"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1"><a id="id589"><!-- named anchor --></a></td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id590"><!-- named anchor --></a><p id="id591"><span class="generated">[i]</span> Abbreviation:RoS: Risk of Sepsis; MLA: machine learning algorithm; LSTM: long short-term memory; SVM-RBF: support vector machines with radial basis function; CNN-LSTM: convolutional neural network-long short-term memory; RNN: recurrent neural network.</p>
+</div></div>
+</div></p>
+</div>
+<div class="section">
+<a id="sec2.4"><!-- named anchor --></a><h3 class="section-title">Performance in predictions</h3>
+<p id="p0095">Compared with traditional predictive tools in single studies, AUROC of machine learning models mostly scored more than 0.8, with some studies even over 0.9, which was significantly higher than the traditional predictive tools where the results were around 0.7 (<a href="#mmc1">Table S1</a>). Meanwhile, two studies also detected sepsis. Their predictive models showed AUROC value around 0.9 (<a href="#tbl3">Table 3</a>), demonstrating strong ability to distinguish sepsis from no-sepsis patients at 0 h. We are therefore confident that machine learning algorithms can effectively predict sepsis.</p>
+</div>
+<div class="section">
+<a id="sec2.5"><!-- named anchor --></a><h3 class="section-title">Time sensitivity</h3>
+<p id="p0100">The predictions can be divided into three categories: (1.) using only one model, (2.) using more than one model, and (3.) using the best model among several for the prediction. Among the 21 included studies, most belong to the third category and focused on the prediction of an early occurrence of sepsis. With the completion of information collection, the prediction performance of the third category at different hours is shown in <a href="#fig2">Figure 2</a>. Here, we make trend lines of AUROC in five studies, and find that the model's performance increased notably as the time gets closer to the onset of sepsis. The ideal time period for early sepsis prediction ranges from 0 to 24 h.<div class="fig panel" style="display: float; clear: both">
+<a id="fig2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id592">Predicting performance of multi-time points, related to <a href="#tbl3">Table 3</a></p></div>
+</div></p>
+</div>
+<div class="section">
+<a id="sec2.6"><!-- named anchor --></a><h3 class="section-title">Mortality prediction</h3>
+<p id="p0105">There are eight studies targeted at predicting sepsis mortality in emergency departments or ICUs, and we list seven studies' models, algorithm, AUROC, and prediction time in <a href="#tbl4">Table 4</a>. These researchers tried many algorithms to build their predictive models. In a study of 28-days mortality prediction by Perng et al., the use of convolutional neural networks (CNN) + SoftMax resulted in AUROC =0.92, which is the highest among all the models in the study. Meanwhile, it predicted 72-h mortality, proving that CNN + SoftMax was the best model (AUROC = 0.94). And we find Ke Li et al. used Gradient Boosting Decision Tree (GBDT) and random forest (RF) to predict in-hospital mortality. They attained remarkably high AUROC scores (0.992, 0.980) and demonstrated excellent predictive ability of ensemble learning and traditional machine learning algorithm in sepsis.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="tbl4"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<div class="caption"><p class="first" id="id593">AUROC and time points of mortality prediction studies</p></div>
+<table frame="hsides" rules="groups">
+<a id="id594"><!-- named anchor --></a><thead>
+<a id="id595"><!-- named anchor --></a><tr>
+<a id="id596"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id597"><!-- named anchor --></a>Study</th>
+<th colspan="1" rowspan="1">
+<a id="id598"><!-- named anchor --></a>Model</th>
+<th colspan="1" rowspan="1">
+<a id="id599"><!-- named anchor --></a>Algorithm</th>
+<th colspan="1" rowspan="1">
+<a id="id600"><!-- named anchor --></a>AUROC</th>
+<th colspan="1" rowspan="1">
+<a id="id601"><!-- named anchor --></a>Time</th>
+</tr>
+</thead>
+<tbody>
+<a id="id602"><!-- named anchor --></a><tr>
+<a id="id603"><!-- named anchor --></a><td rowspan="6" colspan="1">
+<a id="id604"><!-- named anchor --></a>Taylro, 2015</td>
+<td colspan="1" rowspan="1">
+<a id="id605"><!-- named anchor --></a>Logistic regression</td>
+<td colspan="1" rowspan="1">
+<a id="id606"><!-- named anchor --></a>Logistic regression</td>
+<td colspan="1" rowspan="1">
+<a id="id607"><!-- named anchor --></a>0.755</td>
+<td rowspan="6" colspan="1">
+<a id="id608"><!-- named anchor --></a>28 days</td>
+</tr>
+<tr>
+<a id="id609"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id610"><!-- named anchor --></a>CART</td>
+<td colspan="1" rowspan="1">
+<a id="id611"><!-- named anchor --></a>Classification and regression tree</td>
+<td colspan="1" rowspan="1">
+<a id="id612"><!-- named anchor --></a>0.693</td>
+</tr>
+<tr>
+<a id="id613"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id614"><!-- named anchor --></a>Random forest</td>
+<td colspan="1" rowspan="1">
+<a id="id615"><!-- named anchor --></a>Random forest</td>
+<td colspan="1" rowspan="1">
+<a id="id616"><!-- named anchor --></a>0.860</td>
+</tr>
+<tr>
+<a id="id617"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id618"><!-- named anchor --></a>MEDS score</td>
+<td colspan="1" rowspan="1">
+<a id="id619"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id620"><!-- named anchor --></a>0.705</td>
+</tr>
+<tr>
+<a id="id621"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id622"><!-- named anchor --></a>CURB-65 score</td>
+<td colspan="1" rowspan="1">
+<a id="id623"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id624"><!-- named anchor --></a>0.734</td>
+</tr>
+<tr>
+<a id="id625"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id626"><!-- named anchor --></a>REMS score</td>
+<td colspan="1" rowspan="1">
+<a id="id627"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id628"><!-- named anchor --></a>0.717</td>
+</tr>
+<tr>
+<a id="id629"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id630"><!-- named anchor --></a><a href="#bib35">Perng et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id631"><!-- named anchor --></a>KNN</td>
+<td colspan="1" rowspan="1">
+<a id="id632"><!-- named anchor --></a>KNN</td>
+<td colspan="1" rowspan="1">
+<a id="id633"><!-- named anchor --></a>0.84</td>
+<td rowspan="5" colspan="1">
+<a id="id634"><!-- named anchor --></a>28 days</td>
+</tr>
+<tr>
+<a id="id635"><!-- named anchor --></a><td rowspan="4" colspan="1"><a id="id636"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id637"><!-- named anchor --></a>SoftMax</td>
+<td colspan="1" rowspan="1">
+<a id="id638"><!-- named anchor --></a>SoftMax</td>
+<td colspan="1" rowspan="1">
+<a id="id639"><!-- named anchor --></a>0.88</td>
+</tr>
+<tr>
+<a id="id640"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id641"><!-- named anchor --></a>PCA + SoftMax</td>
+<td colspan="1" rowspan="1">
+<a id="id642"><!-- named anchor --></a>PCA + SoftMax</td>
+<td colspan="1" rowspan="1">
+<a id="id643"><!-- named anchor --></a>0.91</td>
+</tr>
+<tr>
+<a id="id644"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id645"><!-- named anchor --></a>AE + SoftMax</td>
+<td colspan="1" rowspan="1">
+<a id="id646"><!-- named anchor --></a>AE + SoftMax</td>
+<td colspan="1" rowspan="1">
+<a id="id647"><!-- named anchor --></a>0.90</td>
+</tr>
+<tr>
+<a id="id648"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id649"><!-- named anchor --></a>CNN + SoftMax</td>
+<td colspan="1" rowspan="1">
+<a id="id650"><!-- named anchor --></a>CNN + SoftMax</td>
+<td colspan="1" rowspan="1">
+<a id="id651"><!-- named anchor --></a>0.92</td>
+</tr>
+<tr>
+<a id="id652"><!-- named anchor --></a><td rowspan="2" colspan="1">
+<a id="id653"><!-- named anchor --></a><a href="#bib23">Kwon and Baek (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id654"><!-- named anchor --></a>qSOFA scores</td>
+<td colspan="1" rowspan="1">
+<a id="id655"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id656"><!-- named anchor --></a>0.78</td>
+<td rowspan="2" colspan="1">
+<a id="id657"><!-- named anchor --></a>3 days</td>
+</tr>
+<tr>
+<a id="id658"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id659"><!-- named anchor --></a>qSOFA-based machine-learning models</td>
+<td colspan="1" rowspan="1">
+<a id="id660"><!-- named anchor --></a>Extreme gradient boosting, light gradient boosting machine, and random forest</td>
+<td colspan="1" rowspan="1">
+<a id="id661"><!-- named anchor --></a>0.86</td>
+</tr>
+<tr>
+<a id="id662"><!-- named anchor --></a><td rowspan="3" colspan="1">
+<a id="id663"><!-- named anchor --></a><a href="#bib16">Hou et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id664"><!-- named anchor --></a>XGBoost</td>
+<td colspan="1" rowspan="1">
+<a id="id665"><!-- named anchor --></a>eXtreme Gradient Boosting</td>
+<td colspan="1" rowspan="1">
+<a id="id666"><!-- named anchor --></a>0.857</td>
+<td rowspan="3" colspan="1">
+<a id="id667"><!-- named anchor --></a>30 days</td>
+</tr>
+<tr>
+<a id="id668"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id669"><!-- named anchor --></a>logistic regression</td>
+<td colspan="1" rowspan="1">
+<a id="id670"><!-- named anchor --></a>logistic regression</td>
+<td colspan="1" rowspan="1">
+<a id="id671"><!-- named anchor --></a>0.819</td>
+</tr>
+<tr>
+<a id="id672"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id673"><!-- named anchor --></a>SAPS-II scores</td>
+<td colspan="1" rowspan="1">
+<a id="id674"><!-- named anchor --></a>Simplified acute physiology score-II</td>
+<td colspan="1" rowspan="1">
+<a id="id675"><!-- named anchor --></a>0.797</td>
+</tr>
+<tr>
+<a id="id676"><!-- named anchor --></a><td rowspan="5" colspan="1">
+<a id="id677"><!-- named anchor --></a><a href="#bib22">Kong et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id678"><!-- named anchor --></a>LASSO</td>
+<td colspan="1" rowspan="1">
+<a id="id679"><!-- named anchor --></a>least absolute shrinkage and selection operator</td>
+<td colspan="1" rowspan="1">
+<a id="id680"><!-- named anchor --></a>0.829</td>
+<td rowspan="5" colspan="1">
+<a id="id681"><!-- named anchor --></a>In hospital</td>
+</tr>
+<tr>
+<a id="id682"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id683"><!-- named anchor --></a>RF</td>
+<td colspan="1" rowspan="1">
+<a id="id684"><!-- named anchor --></a>random forest</td>
+<td colspan="1" rowspan="1">
+<a id="id685"><!-- named anchor --></a>0.829</td>
+</tr>
+<tr>
+<a id="id686"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id687"><!-- named anchor --></a>GBM</td>
+<td colspan="1" rowspan="1">
+<a id="id688"><!-- named anchor --></a>gradient boosting machine</td>
+<td colspan="1" rowspan="1">
+<a id="id689"><!-- named anchor --></a>0.845</td>
+</tr>
+<tr>
+<a id="id690"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id691"><!-- named anchor --></a>LR</td>
+<td colspan="1" rowspan="1">
+<a id="id692"><!-- named anchor --></a>logistic regression</td>
+<td colspan="1" rowspan="1">
+<a id="id693"><!-- named anchor --></a>0.833</td>
+</tr>
+<tr>
+<a id="id694"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id695"><!-- named anchor --></a>SAPS II</td>
+<td colspan="1" rowspan="1">
+<a id="id696"><!-- named anchor --></a>Simplified acute physiology score-II</td>
+<td colspan="1" rowspan="1">
+<a id="id697"><!-- named anchor --></a>0.77</td>
+</tr>
+<tr>
+<a id="id698"><!-- named anchor --></a><td rowspan="5" colspan="1">
+<a id="id699"><!-- named anchor --></a><a href="#bib27">Li et al. (2021)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id700"><!-- named anchor --></a>GBDT</td>
+<td colspan="1" rowspan="1">
+<a id="id701"><!-- named anchor --></a>GBDT</td>
+<td colspan="1" rowspan="1">
+<a id="id702"><!-- named anchor --></a>0.992</td>
+<td rowspan="5" colspan="1">
+<a id="id703"><!-- named anchor --></a>In hospital</td>
+</tr>
+<tr>
+<a id="id704"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id705"><!-- named anchor --></a>LR</td>
+<td colspan="1" rowspan="1">
+<a id="id706"><!-- named anchor --></a>Logistic regression</td>
+<td colspan="1" rowspan="1">
+<a id="id707"><!-- named anchor --></a>0.876</td>
+</tr>
+<tr>
+<a id="id708"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id709"><!-- named anchor --></a>KNN</td>
+<td colspan="1" rowspan="1">
+<a id="id710"><!-- named anchor --></a>k-nearest neighbor</td>
+<td colspan="1" rowspan="1">
+<a id="id711"><!-- named anchor --></a>0.877</td>
+</tr>
+<tr>
+<a id="id712"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id713"><!-- named anchor --></a>RF</td>
+<td colspan="1" rowspan="1">
+<a id="id714"><!-- named anchor --></a>Random forest</td>
+<td colspan="1" rowspan="1">
+<a id="id715"><!-- named anchor --></a>0.980</td>
+</tr>
+<tr>
+<a id="id716"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id717"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id718"><!-- named anchor --></a>Support vector machine</td>
+<td colspan="1" rowspan="1">
+<a id="id719"><!-- named anchor --></a>0.898</td>
+</tr>
+<tr>
+<a id="id720"><!-- named anchor --></a><td rowspan="5" colspan="1">
+<a id="id721"><!-- named anchor --></a><a href="#bib36">Qi et al. (2021)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id722"><!-- named anchor --></a>XGBoost</td>
+<td colspan="1" rowspan="1">
+<a id="id723"><!-- named anchor --></a>Extreme gradient boosting</td>
+<td colspan="1" rowspan="1">
+<a id="id724"><!-- named anchor --></a>0.848</td>
+<td rowspan="5" colspan="1">
+<a id="id725"><!-- named anchor --></a>In hospital</td>
+</tr>
+<tr>
+<a id="id726"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id727"><!-- named anchor --></a>SAPSII</td>
+<td colspan="1" rowspan="1">
+<a id="id728"><!-- named anchor --></a>The simplified acute physiology score</td>
+<td colspan="1" rowspan="1">
+<a id="id729"><!-- named anchor --></a>0.777</td>
+</tr>
+<tr>
+<a id="id730"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id731"><!-- named anchor --></a>SOFA</td>
+<td colspan="1" rowspan="1">
+<a id="id732"><!-- named anchor --></a>Sequential organ failure assessment score</td>
+<td colspan="1" rowspan="1">
+<a id="id733"><!-- named anchor --></a>0.704</td>
+</tr>
+<tr>
+<a id="id734"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id735"><!-- named anchor --></a>SIRS</td>
+<td colspan="1" rowspan="1">
+<a id="id736"><!-- named anchor --></a>Systemic inflammatory response syndrome</td>
+<td colspan="1" rowspan="1">
+<a id="id737"><!-- named anchor --></a>0.609</td>
+</tr>
+<tr>
+<a id="id738"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id739"><!-- named anchor --></a>qSOFA</td>
+<td colspan="1" rowspan="1">
+<a id="id740"><!-- named anchor --></a>Quick sequential organ failure assessment</td>
+<td colspan="1" rowspan="1">
+<a id="id741"><!-- named anchor --></a>0.580</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id742"><!-- named anchor --></a><p id="id743"><span class="generated">[i]</span> Abbreviation: CART: classification and regression tree; MEDS: mortality in emergency department sepsis score; KNN: K nearest neighbor; REMS: rapid emergency medicine score; CURB-65 score: the confusion, urea nitrogen, respiratory rate, blood pressure, 65 years of age and older; PCA: principal component analysis; AE: Autoencoder; CNN: Convolutional Neural Network; qSOFA: quick Sequential Organ Failure Assessment.</p>
+</div></div>
+</div></p>
+</div>
+<div class="section">
+<a id="sec2.7"><!-- named anchor --></a><h3 class="section-title">Feature engineering</h3>
+<p id="p0110">All studies collected vital signs and laboratory data. For vital signs, researchers collected body temperature, heart rate, blood pressure, and respiratory rate. For laboratory data, researchers collected white blood cell count, lactic acid etc. Furthermore, demographic characteristics, clinical scores, and other features were also included in a few studies. We show representative ten studies and list their results in <a href="#tbl5">Table 5</a>.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="tbl5"><!-- named anchor --></a><h5 class="label">Table 5</h5>
+<div class="caption"><p class="first" id="id744">Features engineering and included features of each study</p></div>
+<table frame="hsides" rules="groups">
+<a id="id745"><!-- named anchor --></a><thead>
+<a id="id746"><!-- named anchor --></a><tr>
+<a id="id747"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id748"><!-- named anchor --></a>Study</th>
+<th colspan="1" rowspan="1">
+<a id="id749"><!-- named anchor --></a>Number of initial features</th>
+<th colspan="1" rowspan="1">
+<a id="id750"><!-- named anchor --></a>Number of final features</th>
+<th colspan="1" rowspan="1">
+<a id="id751"><!-- named anchor --></a>Including features</th>
+</tr>
+</thead>
+<tbody>
+<a id="id752"><!-- named anchor --></a><tr>
+<a id="id753"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id754"><!-- named anchor --></a><a href="#bib10">Delahanty et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id755"><!-- named anchor --></a>217</td>
+<td colspan="1" rowspan="1">
+<a id="id756"><!-- named anchor --></a>13</td>
+<td colspan="1" rowspan="1">
+<a id="id757"><!-- named anchor --></a>Lactic acid (max), Shock index age (last), WBC count(max), Lactic acid(change), Neutrophils(max), Glucose(max), Blood urea nitrogen(max), Shock index age (first), Respiratory rate (max), Albumin (last), Systolic blood pressure (min), Serum creatinine (max), Temperature (max)</td>
+</tr>
+<tr>
+<a id="id758"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id759"><!-- named anchor --></a><a href="#bib2">Barton et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id760"><!-- named anchor --></a>6</td>
+<td colspan="1" rowspan="1">
+<a id="id761"><!-- named anchor --></a>6</td>
+<td colspan="1" rowspan="1">
+<a id="id762"><!-- named anchor --></a>SpO<sub>2</sub>, heart rate, respiratory rate, temperature, systolic blood pressure, diastolic blood pressure</td>
+</tr>
+<tr>
+<a id="id763"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id764"><!-- named anchor --></a>Taylro, 2015</td>
+<td colspan="1" rowspan="1">
+<a id="id765"><!-- named anchor --></a>566</td>
+<td colspan="1" rowspan="1">
+<a id="id766"><!-- named anchor --></a>20</td>
+<td colspan="1" rowspan="1">
+<a id="id767"><!-- named anchor --></a>Oxygen saturation, Respiratory rate, Blood pressure, BUN, Albumin, Intubation, Procedures (in ED), Need for vasopressors, Age, RN resp care, RDW, Potassium, AST, Heart rate, Acuity level(triage), ED impression (Dx), CO<sub>2</sub> (Lab), ECG performed, Beta-blocker (Home Med), Cardiac dysrhythmia (PMHx)</td>
+</tr>
+<tr>
+<a id="id768"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id769"><!-- named anchor --></a><a href="#bib19">Kam and Kim (2017)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id770"><!-- named anchor --></a>9</td>
+<td colspan="1" rowspan="1">
+<a id="id771"><!-- named anchor --></a>9</td>
+<td colspan="1" rowspan="1">
+<a id="id772"><!-- named anchor --></a>systolic pressure, pulse pressure, heart rate, body temperature, respiratory rate, WBC count, pH, blood oxygen saturation,age</td>
+</tr>
+<tr>
+<a id="id773"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id774"><!-- named anchor --></a><a href="#bib28">Mao et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id775"><!-- named anchor --></a>6</td>
+<td colspan="1" rowspan="1">
+<a id="id776"><!-- named anchor --></a>6</td>
+<td colspan="1" rowspan="1">
+<a id="id777"><!-- named anchor --></a>systolic blood pressure, diastolic blood pressure, heart rate, respiratory rate, temperature, peripheral capillary oxygen saturation</td>
+</tr>
+<tr>
+<a id="id778"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id779"><!-- named anchor --></a><a href="#bib42">Taneja et al. (2017)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id780"><!-- named anchor --></a>31</td>
+<td colspan="1" rowspan="1">
+<a id="id781"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id782"><!-- named anchor --></a>TNF-α, IL-1β, GCSF, IL-6, PCT, sTREM1, IL18, MMP9, TNFR1, TNFR2, IP10, MCP1, IL-1ra, NA, CD64, WBC, Lactic Acid, Systolic Blood Pressure, Diastolic Blood Pressure, Pulse, Temperature, Respirations, PCO<sub>2</sub>, Age, Gender, Bilirubin, Glasgow Coma Scale, Creatinine, Platelet, SOFA score, qSOFA score</td>
+</tr>
+<tr>
+<a id="id783"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id784"><!-- named anchor --></a><a href="#bib38">Saqib et al. (2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id785"><!-- named anchor --></a>47</td>
+<td colspan="1" rowspan="1">
+<a id="id786"><!-- named anchor --></a>34</td>
+<td colspan="1" rowspan="1">
+<a id="id787"><!-- named anchor --></a>White blood cell count, Heart rate, Diastolic blood pressure, Systolic blood pressure, Mean blood pressure, Weight, Anion gap, Bicarbonate, Oxygen saturation, Height, Temperature, pH</td>
+</tr>
+<tr>
+<a id="id788"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id789"><!-- named anchor --></a><a href="#bib5">Bloch et al. (2019)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id790"><!-- named anchor --></a>20</td>
+<td colspan="1" rowspan="1">
+<a id="id791"><!-- named anchor --></a>4</td>
+<td colspan="1" rowspan="1">
+<a id="id792"><!-- named anchor --></a>the number of trend changes in respiratory rate and arterial pressure, the minimal change in respiratory rate, and the median change in heart rate</td>
+</tr>
+<tr>
+<a id="id793"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id794"><!-- named anchor --></a><a href="#bib23">Kwon and Baek (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id795"><!-- named anchor --></a>14</td>
+<td colspan="1" rowspan="1">
+<a id="id796"><!-- named anchor --></a>NR</td>
+<td colspan="1" rowspan="1">
+<a id="id797"><!-- named anchor --></a>Age, sex, diagnoses at the ED, systolic blood pressure, respiration rate, mental status, body temperature, heart rate, arterial partial pressure of carbon dioxide, white blood cell count, duration of hospitalization, ICU admission, mechanical ventilation, mortality.</td>
+</tr>
+<tr>
+<a id="id798"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id799"><!-- named anchor --></a><a href="#bib34">Nemati et al.(2018)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id800"><!-- named anchor --></a>65</td>
+<td colspan="1" rowspan="1">
+<a id="id801"><!-- named anchor --></a>65</td>
+<td colspan="1" rowspan="1">
+<a id="id802"><!-- named anchor --></a>RRSTD, MAPSTD, HRV1, BPV1, HRV2, BPV2, MAP, HR, O<sub>2</sub>Sat, SBP, DBP, RESP, Temp, GCS, PaO<sub>2</sub>, FIO<sub>2</sub>, WBC, Hemoglobin, Hematocrit, Creatinine, Bilirubin and Bilirubin direct, Platelets, INR, PTT, AST, Alkaline Phosphatase, Lactate, Glucose, Potassium, Calcium, BUN, Phosphorus, Magnesium, Chloride, B-type BNP, Troponin, Fibrinogen, CRP, Sedimentation Rate, Ammonia, pH, pCO<sub>2</sub>, HCO<sub>3</sub>, Base Excess, SaO<sub>2</sub>, Care Unit (Surgical, Cardiac Care, or Neuro intensive care), Surgery in the past 12 h, Wound Class (clean, contaminated, dirty, or infected), Surgical Specialty (Cardiovascular, Neuro, Ortho-Spine, Oncology, Urology, etc.), Number of antibiotics in the past 12, 24, and 48 h, Age, CCI, Mechanical Ventilation, maximum change in SOFA score over the past 6 h.</td>
+</tr>
+<tr>
+<a id="id803"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id804"><!-- named anchor --></a><a href="#bib16">Hou et al. (2020)</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id805"><!-- named anchor --></a>22</td>
+<td colspan="1" rowspan="1">
+<a id="id806"><!-- named anchor --></a>11</td>
+<td colspan="1" rowspan="1">
+<a id="id807"><!-- named anchor --></a>urine output, lactate, Bun, sysbp, INR, age, cancer, SpO2, sodium, AG, creatinine</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<div class="footnote">
+<a id="tspara0055"><!-- named anchor --></a><p id="id808"><span class="generated">[i]</span> Annotation: The study of Tanejia2017 and YS2020 has established a variety of different models with different numbers of included features, so all features are provided. The <a href="#bib38">Saqib et al. (2018</a>) study provides only partial features.</p>
+</div>
+<div class="footnote">
+<a id="tspara0060"><!-- named anchor --></a><p id="id809"><span class="generated">[ii]</span> Abbreviation: WBC count: white blood cell count; BUN: blood urea nitrogen; RDW: Red blood cell distribution width; AST: aspartate transaminase; ED: emergency department; ECG: electrocardiogram; SOFA: Sequential Organ Failure Assessment; qSOFA: quick Sequential Organ Failure Assessment; RRSTD: standard deviation of respiratory rate intervals; MAPSTD: standard deviation of mean arterial pressure; HRV1: average multiscale entropy of respiratory rate; BPV1:averagemultiscale entropy of mean arterial pressure; HRV2:average multiscale conditional entropy of respiratory rate; HRV2:average multiscale conditional entropy of respiratory rate; MAP: Mean Arterial Blood Pressure; HR: Heart Rate; O<sub>2</sub>Sat: Oxygen Saturation; SBP: Systolic Blood Pressure; DBP: Diastolic Blood Pressure; RESP: Respiratory Rate; Temp: Temperature; GCS: Glasgow Coma Scale; PaO2: Partial Pressure of Arterial Oxygen; FIO2: Fraction of Inspired O2; INR: International Normalized Ratio, PTT: Partial Prothrombin Time, AST: Aspartate Aminotransferase, BNP:B-type Natriuretic Peptide; CCI: Charleston Comorbidity Index; sysbp: systolic blood pressure; AG: anion gap.</p>
+</div>
+</div>
+</div></p>
+<p id="p0115">In general, feature preprocessing can also be divided into two categories. The studies in category one used feature engineering methods to identify the key factors/features that can be used for machine learning processes. For example, Bloch et al. recorded four vital signs of data at the frequency of 6 times an hour, found median, and calculated mean values. They obtained 20 features and selected the most important 4 in their machine learning models (<a href="#bib5">Bloch et al.,2019</a>). The studies in category two rely on researchers' expertise to choose what factors/variables should be used to devise models. For example, Barton et al. used six factors, including heart rate and respiratory rate to develop their models to predict sepsis occurrence (<a href="#bib2">Barton et al.,2019</a>). Mao et al. chose the data that are easily available in intensive care unit and emergency department as features (<a href="#bib28">Mao et al.,2018</a>).</p>
+</div>
+</div>
+<div class="section">
+<a id="sec3"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="p0120">As the first attempt to systematically review methodologies of sepsis prediction studies, we find that most studies focused on early prediction and detection of sepsis and mortality. Except for the results mentioned above, there are nine issues that we would like to address in this review.</p>
+<div class="section">
+<a id="sec3.1"><!-- named anchor --></a><h3 class="section-title">Diagnostic criteria</h3>
+<p id="p0125">Those studies, which adopt old sepsis definition or improper inclusion criteria, performed adequately. They were however viewed as too lax in sample inclusion and lacking enough specificity and sensitivity. For example, Mao et al. and Bloch et al. considered patients over 18 years old with a slight limitation and selected SIRS as diagnostic criteria (<a href="#bib28">Mao et al.,2018</a>; <a href="#bib5">Bloch et al.,2019</a>). They all used large datasets and had enough patients meeting the SIRS criteria, which led to high AUROC values. Compared to older diagnostic criteria, the latest Sepsis-3 includes more stringent clinical features and describes sepsis more accurately.</p>
+<p id="p0130">Large disparities are found among sepsis definitions, making it impossible to compare AUROC of each study to find the best machine learning model. However, it should be noted that Kam et al. used the long short-term memory (LSTM) model to predict sepsis occurrence and obtained high AUROC value (<a href="#bib19">Kamand Kim, 2017</a>). In addition, 1D CNN combined with SoftMax model was selected by Perng et al., which significantly improved the performance of mortality prediction compared to the traditional predictive models in the single study. The CNN model reached AUROC 0.92 while the traditional models, such as KNN, got AUROC only 0.84 (<a href="#bib35">Perng et al., 2019</a>). This is because deep learning algorithms can remove many redundant dimensions by self-learning (<a href="#bib19">Kamand Kim,2017</a>; <a href="#bib33">Mücke et al.,2021</a>), and multiclass classification problem can be resolved with SoftMax. We also noted that Ke Li et al. reported that GBDT and RF predicted sepsis mortality well. GBDT is an ensemble learning method and may correct the training results and reduce the degree of overfitting by a regularization function (<a href="#bib8">Chen et al.,2020</a>). However, there are conflicting l studies which reported not good performance of random forest (<a href="#tbl4">Table 4</a>); thus, further studies are needed to determine the robustness of RF for sepsis prediction.</p>
+</div>
+<div class="section">
+<a id="sec3.2"><!-- named anchor --></a><h3 class="section-title">Prediction time</h3>
+<p id="p0135">Prediction times of the studies were different and AUROC changed with time (<a href="#fig2">Figure 2</a>). These characteristics corroborates with clinical experience. The closer to the onset of sepsis, the more accurately the model predicts. We find a study by Delahanty et al. where the results were inconsistent with other conclusions (<a href="#bib10">Delahanty et al.,2019</a>). This study used inappropriate inclusion criteria and concluded that neutrophil count had a negative effect on the RoS model, which was contrary to the pathophysiological mechanism. Therefore, we think the robustness of RoS should be further discussed. Because there is huge heterogeneity between studies predicting sepsis mortality, we cannot compare them reasonably to obtain similar rules.</p>
+</div>
+<div class="section">
+<a id="sec3.3"><!-- named anchor --></a><h3 class="section-title">Importance of feature engineering</h3>
+<p id="p0140">There are commonly two major steps in machine learning studies. The first is to extract features from input samples and the second is to feed feature vectors into the machine learning algorithm for training and making the prediction. It is especially important to select key features and reduce the data dimension, which is known as feature engineering or order reduction. Feature engineering can not only significantly reduce redundant information and improve computational efficiency but also keep lowest negative influence of complex data dimensions on model robustness (<a href="#bib9">Dai et al., 2020</a>). There are two categories of feature engineering among the studies: one is designed by the domain expertise while the other is designed using machine learning methods (<a href="#bib30">Miotto et al.,2018</a>).</p>
+</div>
+<div class="section">
+<a id="sec3.4"><!-- named anchor --></a><h3 class="section-title">Designed by the domain expertise</h3>
+<p id="p0145">Three studies chose features that were common and easily obtained in hospitals or based on the researchers' clinical experience. For example, several features that were common in the intensive care units (ICU) or emergency departments (systolic blood pressure, diastolic blood pressure, heart rate, respiratory rate, and body temperature) were selected in studies by Barton et al. and Mao et al. (<a href="#bib2">Barton et al.,2019</a>; <a href="#bib28">Mao et al.,2018</a>). However, only relying on clinical expertise could lead to strong subjectivity and may overlook some key features (<a href="#bib15">Garcia et al.,2014</a>). Even though the models performed adequately, the outcomes were difficult to be validated by external data; therefore, the applicability of these models is limited.</p>
+</div>
+<div class="section">
+<a id="sec3.5"><!-- named anchor --></a><h3 class="section-title">Designed by machine learning methods</h3>
+<p id="p0150">Traditional reduced-order or feature-extraction algorithms, represented by principal component analysis (PCA) or auto decoder-encoder methods, can reduce data dimensions and significantly improve model performance. Perng et al. increased the accuracy of support vector machine (SVM) from 74.33% to 78.91% using PCA to preprocess the data. Meanwhile, AUROC of SoftMax increased from 0.88 to 0.91 (<a href="#bib35">Perng et al., 2019</a>). We can see the same situation here again, where Thottakkara et al. succeeded in improving the accuracy and AUROC after using PCA to preprocess their data (<a href="#bib44">Thottakkara et al.,2016</a>).</p>
+<p id="p0155">In addition, the deep feedforward neural network (DFN) can independently learn and obtain the most crucial features. For instance, Kam et al. used DFN to detect early sepsis (<a href="#bib19">Kamand Kim,2017</a>). In addition, LSTM, a deep recurrent neural network, was adopted to learn long-range dependencies and handle vanishing gradient. As a result, the accuracy, sensitivity, and AUROC of LSTM are the highest and the number of the final features is the smallest.</p>
+</div>
+<div class="section">
+<a id="sec3.6"><!-- named anchor --></a><h3 class="section-title">Data granularity</h3>
+<p id="p0160">Before processing data, researchers should first establish the definition for data granularity. The degree of data refinement and predictive performance can be improved by changing the granularity level (<a href="#bib11">Dormosh et al.,2020</a>). Here, we screened studies that refined data. In the 21 studies we included in this review, only Bloch et al. reported and discussed the issue of data granularity in detail, and the others did not mention this essential information at all (<a href="#bib5">Bloch et al.,2019</a>). Bloch et al. selected four features at the early stage and then expanded them to 20 features by calculating mean, median, minimum, maximum, and standard deviation. As a result, they obtained four satisfying features by ranking the features' importance. To some extent, it is another type of feature engineering used to explore intrinsic regularities of the clinical data.</p>
+</div>
+<div class="section">
+<a id="sec3.7"><!-- named anchor --></a><h3 class="section-title">Missing data</h3>
+<p id="p0165">It is inadequate to build predictive models when there are missing data (<a href="#bib3">Beaulieu-Jones et al.,2018</a>). There were 12 studies that reported their methods on how to deal with missing data; six studies filled the missing data with mean value or median value. Three studies used methods such as filling in missing data by liner interpolation or “carry forward/backward” extrapolation methods (<a href="#tbl1">Table 1</a>). It is a consensus that missing data should be processed before conducting any analysis (<a href="#bib29">Mehrabani-Zeinabad et al., 2020</a>), but obviously in the machine learning research field on sepsis, this standard operation has not been widely followed.</p>
+</div>
+<div class="section">
+<a id="sec3.8"><!-- named anchor --></a><h3 class="section-title">Machine learning algorithms</h3>
+<p id="p0170">Various algorithms were applied, and their predictive performance is summarized in <a href="#tbl3">Tables 3</a> and <a href="#tbl4">4</a>, respectively. These consisted of popular current machine learning algorithms, including logistic regression, decision tree, support vector machine, random forest, and deep learning algorithms in supervised learning. The other category is unsupervised learning, including principal component analysis, K-means clustering, and autoencoder. Regardless of the influence of diagnostic criteria, the neural network-based algorithm performed better on average in sepsis detection, mortality, and early prediction. GBDT, which is a kind of classical and popular ensemble algorithm, may also have a broad prospect in sepsis prediction.</p>
+</div>
+<div class="section">
+<a id="sec3.9"><!-- named anchor --></a><h3 class="section-title">Continuous dataset</h3>
+<p id="p0175">The studies contained in this review established outcome prediction models based on sectional data. To the contrary, some researchers predicted sepsis by using continuous data (time series). Kamaleswaran et al., Mohammed et al., and Wyk et al. constructed models for predicting sepsis onset with continuous physiologic data streams (<a href="#bib32">Mohammed et al., 2021</a>; <a href="#bib20">Kamaleswaran et al., 2021a</a>, <a href="#bib21">2021b</a>, <a href="#bib46">van Wyk et al., 2019</a>). After preprocessing, they put data into selected algorithms and obtain the best predictive model. In addition, Kamaleswaran et al. also studied the significance of continuous data in predicting sepsis patients' response for volume treatment. We noticed this study reported better performance based on continuous data than EMR (<a href="#bib20">Kamaleswaran et al., 2021a</a>, <a href="#bib21">2021b</a>), high-frequency data containing more patients' information, which may account for this result. This was an interesting finding. In fact, our team is conducting a similar research currently, which will be reported later.</p>
+</div>
+<div class="section">
+<a id="sec3.10"><!-- named anchor --></a><h3 class="section-title">Data heterogeneity</h3>
+<p id="p0180">Predictive models of sepsis were mostly based on large databases. However, every sepsis patient is unique, therefore significant differences among the patients. For example, sepsis detection is to distinguish the confirmed sepsis patients from the non-sepsis patients, but it is difficult to carry out the classification in clinical settings because the symptoms and therapeutic medicine of every patient are different. There are large discrepancies among each individual patient so that it could be misleading to put all patients' data into a single dataset for training or testing when conducting machine learning. Therefore, all models mentioned above lack certain universality in machine learning protocols and cannot be used widely to assist any clinical decision-making (<a href="#bib14">Fohner et al.,2019</a>).</p>
+<p id="p0185">Combined with clinical experience, researchers can collect necessary higher frequency clinical data every day to observe dynamical evolution of sepsis. Meanwhile, sepsis progression can be simulated by the machine learning model based on neural networks so that patients' prognosis will be predicted. Although we have discussed that we cannot solely rely on physician's experiences to select feature, it is necessary to integrate physician's experiences when transferring the model to new patient. It will mitigate the inherent heterogeneity. In a recent study, we have developed a deep learning method to integrate the clinical knowledge with clinical data to make successful short-term predictions (up to 48 h) for clinical practitioners (<a href="#bib26">Lei et al.,2020</a>).</p>
+<p id="p0190">Based on the above discussions, we recommend strongly that future model development should incorporate clinical experience into data preprocessing instead of relying solely on the routinely collected data. Certain objective-oriented data preprocessing standard must be established so that the preprocessed data will be AI-ready for machine learning use.</p>
+</div>
+<div class="section">
+<a id="sec3.11"><!-- named anchor --></a><h3 class="section-title">Quality reevaluation and reporting standards</h3>
+<p id="p0195">Through comparative study, we believe the JBI is a crude tool for evaluating machine learning methods. Based on the analysis above, we propose a new quality evaluation tool for machine learning methods. (1.) The evaluation methodology should include an appropriate and accurate disease definition, a data preprocessing protocol, and reasonable inclusion criteria. For example, we think that only Sepsis-3 can describe patient conditions accurately and be a basis for patient inclusion. (2.) For common problems in clinical data, such as missing data, data redundancy, data collected in different forms, noisy data etc., one should develop a protocol to produce standardized or normalized datasets, making sparse data non-sparse and “smooth” and improve data granularity. (3.) To avoid data redundancy and improve computational efficiency, feature engineering should include how many types of the original features are included, how many key features are selected, and how many types are classified. (4.) The process of sample removing, and grouping should be provided in the flowchart, and the rationales clearly explained. (5.) One needs to introduce algorithms, including the rationale for their choices based on relevant mathematical and statistical principles. (6.) Every model needs to have a set of corresponding evaluation criteria. We suggest adopting AUROC as an evaluation standard for the model performance. (7.) Finally, a prospective validation process is needed to ensure the predictive model developed can be adapted to clinical settings.</p>
+<p id="p0200">Based on the new criteria alluded to above, we reevaluate the models in the 21 studies. We score 1 for any item meeting a criterion above and 0 otherwise. Total score more than or equal to 8 is considered high quality, 5–8 (including 5) average quality, and less than 5 low qualities. The quality reevaluation results of this review are shown in <a href="#tbl2">Tables 2</a>, 10 studies are ranked low and 11 average. There are no high-quality models based on the score table.</p>
+<p id="p0205">It is obvious that there are significant differences in data sources, data preprocessing, and feature engineering among sepsis prediction models. In addition, using diverse types of evaluation indices and predicted sepsis occurrence in various times, could result in distinctive model performance. Naturally, we believe there should be a unified standard to be a guideline of machine learning models in clinical research and applications. Referring to Standards for Reporting Diagnostic Accuracy (STARD) and combining with the above quality evaluation table, we propose a new report list of machine learning models in clinical medicine (<a href="#tbl6">Table 6</a>).<div class="table-wrap panel" style="display: float; clear: both">
+<a id="tbl6"><!-- named anchor --></a><h5 class="label">Table 6</h5>
+<div class="caption"><p class="first" id="id810">Report standards list of machine learning in clinical medication</p></div>
+<table frame="hsides" rules="groups">
+<a id="id811"><!-- named anchor --></a><thead>
+<a id="id812"><!-- named anchor --></a><tr>
+<a id="id813"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id814"><!-- named anchor --></a>Section and topic</th>
+<th colspan="1" rowspan="1">
+<a id="id815"><!-- named anchor --></a>Item</th>
+<th colspan="1" rowspan="1">
+<a id="id816"><!-- named anchor --></a>Description</th>
+</tr>
+</thead>
+<tbody>
+<a id="id817"><!-- named anchor --></a><tr>
+<a id="id818"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id819"><!-- named anchor --></a>Title/Abstract/Keywords</td>
+<td colspan="1" rowspan="1">
+<a id="id820"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id821"><!-- named anchor --></a>Can be judged as a machine learning predictive research. (Keywords,such as machine learning,prediction)</td>
+</tr>
+<tr>
+<a id="id822"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id823"><!-- named anchor --></a>Introduction</td>
+<td colspan="1" rowspan="1">
+<a id="id824"><!-- named anchor --></a>2</td>
+<td colspan="1" rowspan="1">
+<a id="id825"><!-- named anchor --></a>Introduce background, existing problems, and study targets,such as evaluating machine learning models to predict prognoses and probability of disease occurrence</td>
+</tr>
+<tr>
+<a id="id826"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id827"><!-- named anchor --></a>Method research subject</td>
+<td colspan="1" rowspan="1">
+<a id="id828"><!-- named anchor --></a>3</td>
+<td colspan="1" rowspan="1">
+<a id="id829"><!-- named anchor --></a>Inclusion and exclusion criteria, locations where data is collected and time range</td>
+</tr>
+<tr>
+<a id="id830"><!-- named anchor --></a><td colspan="1" rowspan="1"><a id="id831"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id832"><!-- named anchor --></a>4</td>
+<td colspan="1" rowspan="1">
+<a id="id833"><!-- named anchor --></a>Describe reasons of patients' selection, including symptoms, laboratorial results, or disease golden standard.</td>
+</tr>
+<tr>
+<a id="id834"><!-- named anchor --></a><td colspan="1" rowspan="1"><a id="id835"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id836"><!-- named anchor --></a>5</td>
+<td colspan="1" rowspan="1">
+<a id="id837"><!-- named anchor --></a>Describe golden standard and provide references</td>
+</tr>
+<tr>
+<a id="id838"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id839"><!-- named anchor --></a>Research data</td>
+<td colspan="1" rowspan="1">
+<a id="id840"><!-- named anchor --></a>6</td>
+<td colspan="1" rowspan="1">
+<a id="id841"><!-- named anchor --></a>Describe whether study is based on past datasets (retrospective study) or latest collection data (prospective study).</td>
+</tr>
+<tr>
+<a id="id842"><!-- named anchor --></a><td colspan="1" rowspan="1"><a id="id843"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id844"><!-- named anchor --></a>7</td>
+<td colspan="1" rowspan="1">
+<a id="id845"><!-- named anchor --></a>Describe the data collection process.</td>
+</tr>
+<tr>
+<a id="id846"><!-- named anchor --></a><td colspan="1" rowspan="1"><a id="id847"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id848"><!-- named anchor --></a>8</td>
+<td colspan="1" rowspan="1">
+<a id="id849"><!-- named anchor --></a>Describe the process of feature engineering. At least explain why choose this way to select features.</td>
+</tr>
+<tr>
+<a id="id850"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id851"><!-- named anchor --></a>Results Building model</td>
+<td colspan="1" rowspan="1">
+<a id="id852"><!-- named anchor --></a>9</td>
+<td colspan="1" rowspan="1">
+<a id="id853"><!-- named anchor --></a>Provide flowchart of the including and excluding process, describe demographic and clinical characteristics (such as age, sex, height, and weight)</td>
+</tr>
+<tr>
+<a id="id854"><!-- named anchor --></a><td colspan="1" rowspan="1"><a id="id855"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id856"><!-- named anchor --></a>10</td>
+<td colspan="1" rowspan="1">
+<a id="id857"><!-- named anchor --></a>Describe data preprocessing methods, including missing data processing, and smoothly processing sparse data.</td>
+</tr>
+<tr>
+<a id="id858"><!-- named anchor --></a><td colspan="1" rowspan="1"><a id="id859"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id860"><!-- named anchor --></a>11</td>
+<td colspan="1" rowspan="1">
+<a id="id861"><!-- named anchor --></a>Describe the mathematical theory of the algorithm and its advantages.</td>
+</tr>
+<tr>
+<a id="id862"><!-- named anchor --></a><td colspan="1" rowspan="1"><a id="id863"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id864"><!-- named anchor --></a>12</td>
+<td colspan="1" rowspan="1">
+<a id="id865"><!-- named anchor --></a>Describe numbers and names of finally including features</td>
+</tr>
+<tr>
+<a id="id866"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id867"><!-- named anchor --></a>Research results</td>
+<td colspan="1" rowspan="1">
+<a id="id868"><!-- named anchor --></a>13</td>
+<td colspan="1" rowspan="1">
+<a id="id869"><!-- named anchor --></a>Describe models performance at different time points (provide at least one evaluation indicator, such as AUROC, accuracy).</td>
+</tr>
+<tr>
+<a id="id870"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id871"><!-- named anchor --></a>Discussion</td>
+<td colspan="1" rowspan="1">
+<a id="id872"><!-- named anchor --></a>14</td>
+<td colspan="1" rowspan="1">
+<a id="id873"><!-- named anchor --></a>Discuss clinical universality of predictive models, including heterogeneity discussion and clinical prospective validation.</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+</div>
+<div class="section">
+<a id="sec3.12"><!-- named anchor --></a><h3 class="section-title">Conclusions</h3>
+<p id="p0210">Through a systematical review, we find that the number of studies using machine learning to predict the occurrence and mortality of sepsis grows rapidly in recent years, and the accuracy of predictions has improved considerably. However, there is no model that can be widely adopted in the real world yet, because of the lack of unified validation standard and procedure and the heterogeneity in a cohort of patients. In addition, the data collected from patients with sepsis are normally high-dimensional, highly heterogeneous, including both structured and unstructured data that evolve in a time-sensitive fashion and static data. Compared to traditional tools, deep neural networks are more suitable for this type of data. The traditional SIRS criteria cannot describe sepsis comprehensively due to the lack of sufficient features, and cannot be included for sepsis machine learning study. We note that studies based on Sepsis-3 just begin so that further studies are necessary. Hence, the new quality evaluation tool and reporting standard list suggested in this review would help improve the effective use of machine learning methods in clinical medicine.</p>
+</div>
+<div class="section">
+<a id="sec3.13"><!-- named anchor --></a><h3 class="section-title">Limitations of the study</h3>
+<p id="p0215">We do not have access to enough medical information on the treatment process of sepsis and therefore cannot evaluate its significance in the model development. Moreover, limited to very few open-source databases, it is difficult to compare them and have a meaningful discussion. We do not find any study that described the specific influence of data preprocessing and have not come to the conclusion on which method is the best.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec4"><!-- named anchor --></a><h2 class="main-title">STAR★Methods</h2>
+<div class="section">
+<a id="sec4.1"><!-- named anchor --></a><h3 class="section-title">Key resources table</h3>
+<p id="p0220"><div class="table-wrap panel" style="display: float; clear: both">
+<a id="undtbl1"><!-- named anchor --></a><table frame="hsides" rules="groups">
+<a id="id874"><!-- named anchor --></a><thead>
+<a id="id875"><!-- named anchor --></a><tr>
+<a id="id876"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id877"><!-- named anchor --></a>REAGENT or RESOURCE</th>
+<th colspan="1" rowspan="1">
+<a id="id878"><!-- named anchor --></a>SOURCE</th>
+<th colspan="1" rowspan="1">
+<a id="id879"><!-- named anchor --></a>IDENTIFIER</th>
+</tr>
+</thead>
+<tbody>
+<a id="id880"><!-- named anchor --></a><tr>
+<a id="id881"><!-- named anchor --></a><td colspan="3" rowspan="1">
+<a id="id882"><!-- named anchor --></a><b>Deposited data</b>
+</td>
+</tr>
+<tr>
+<a id="id883"><!-- named anchor --></a><td colspan="3" rowspan="1">
+<a id="id884"><!-- named anchor --></a><hr class="hr">
+</td>
+</tr>
+<tr>
+<a id="id885"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id886"><!-- named anchor --></a>Studies' methodologies and AUROC of prediction</td>
+<td colspan="1" rowspan="1">
+<a id="id887"><!-- named anchor --></a>Contained in the article</td>
+<td colspan="1" rowspan="1">
+<a id="id888"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id889"><!-- named anchor --></a><td colspan="3" rowspan="1">
+<a id="id890"><!-- named anchor --></a><hr class="hr">
+</td>
+</tr>
+<tr>
+<a id="id891"><!-- named anchor --></a><td colspan="3" rowspan="1">
+<a id="id892"><!-- named anchor --></a><b>Other</b>
+</td>
+</tr>
+<tr>
+<a id="id893"><!-- named anchor --></a><td colspan="3" rowspan="1">
+<a id="id894"><!-- named anchor --></a><hr class="hr">
+</td>
+</tr>
+<tr>
+<a id="id895"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id896"><!-- named anchor --></a>MIMIC database</td>
+<td colspan="1" rowspan="1">
+<a id="id897"><!-- named anchor --></a>MIMIC database</td>
+<td colspan="1" rowspan="1">
+<a id="id898"><!-- named anchor --></a><a target="xrefwindow" href="https://mimic.mit.edu/" id="interref0010">https://mimic.mit.edu/</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+</div>
+<div class="section">
+<a id="sec4.2"><!-- named anchor --></a><h3 class="section-title">Resource availability</h3>
+<div class="section">
+<a id="sec4.2.1"><!-- named anchor --></a><h4 class="subsection-title">Lead contact</h4>
+<p id="p0225">Further requests for resources and materials should be directed to and will be fulfilled by the Lead Contact, Hua Jiang (<a target="xrefwindow" href="mailto:cdjianghua@qq.com" id="intref0015">cdjianghua@qq.com</a>).</p>
+</div>
+<div class="section">
+<a id="sec4.2.2"><!-- named anchor --></a><h4 class="subsection-title">Materials availability</h4>
+<p id="p0230">This study did not yield new unique reagents.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec4.3"><!-- named anchor --></a><h3 class="section-title">Methods details</h3>
+<div class="section">
+<a id="sec4.3.1"><!-- named anchor --></a><h4 class="subsection-title">Eligibility criteria</h4>
+<p id="p0235">There should be a consensus that eligible studies should provide clear data source based on Electronic Medical Record (EMR) or Electronic Healthy Record (EHR) from Emergency Department (ED) or Intensive Care Unit (ICU), so we can obtain disease and demographic information from the patients. In addition, we need AUROC and a clearly delineated detail of predictive models to compare and determine which model is the best. Considering the definition of sepsis has changed several times in the past, we require each study to provide at least one acceptable definition based on the current standard. We only study the prospection of machine learning algorithms in adults' sepsis and the target conditions include early detection and mortality of sepsis and severe sepsis.</p>
+</div>
+<div class="section">
+<a id="sec4.3.2"><!-- named anchor --></a><h4 class="subsection-title">Search strategy</h4>
+<p id="p0240">A comprehensive literature retrieval is conducted in PubMed, ScienceDirect, Engineering Index (EI), Web of Science, China National Knowledge Infrastructure (CNKI) and WANFANG DATA for papers published between January 2010 and November 2021. Keywords like sepsis/machine learning/prediction are used for the search<div class="table-wrap panel" style="display: float; clear: both">
+<a id="undtbl2"><!-- named anchor --></a><div class="caption"><p class="first" id="id899">A literature retrieval strategy for sepsis prediction</p></div>
+<table frame="hsides" rules="groups">
+<a id="id900"><!-- named anchor --></a><thead>
+<a id="id901"><!-- named anchor --></a><tr>
+<a id="id902"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id903"><!-- named anchor --></a>Databases</th>
+<th colspan="1" rowspan="1">
+<a id="id904"><!-- named anchor --></a>Search strategy</th>
+</tr>
+</thead>
+<tbody>
+<a id="id905"><!-- named anchor --></a><tr>
+<a id="id906"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id907"><!-- named anchor --></a>PubMed</td>
+<td colspan="1" rowspan="1">
+<a id="id908"><!-- named anchor --></a>((sepsis [Title/Abstract]) and (machine learning [Title/Abstract])) and (prediction [Title/Abstract])</td>
+</tr>
+<tr>
+<a id="id909"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id910"><!-- named anchor --></a>ScienceDirect</td>
+<td colspan="1" rowspan="1">
+<a id="id911"><!-- named anchor --></a>Title, abstract, keywords: sepsis, machine learning, predict</td>
+</tr>
+<tr>
+<a id="id912"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id913"><!-- named anchor --></a>The engineering index</td>
+<td colspan="1" rowspan="1">
+<a id="id914"><!-- named anchor --></a>(((sepsis) and (machine learning) and (prediction) and (mortality) and (onset)) WN KY)</td>
+</tr>
+<tr>
+<a id="id915"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id916"><!-- named anchor --></a>Web of science</td>
+<td colspan="1" rowspan="1">
+<a id="id917"><!-- named anchor --></a>Title:(sepsis) and Title:(machine learning) and Title:(prediction)</td>
+</tr>
+<tr>
+<a id="id918"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id919"><!-- named anchor --></a>CNKI</td>
+<td colspan="1" rowspan="1">
+<a id="id920"><!-- named anchor --></a>ky = 'sepsis' and ky = 'machine learning' and ky= 'prediction'</td>
+</tr>
+<tr>
+<a id="id921"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id922"><!-- named anchor --></a>WANFANG DATA</td>
+<td colspan="1" rowspan="1">
+<a id="id923"><!-- named anchor --></a>Title or keywords: “sepsis” and “machine learning” and “prediction”</td>
+</tr>
+</tbody>
+</table>
+</div>.</p>
+<p id="p0280">All the included papers are perused by two independent reviewers (TL and DHL), including title-abstract and full text. All disagreements between the two authors are resolved by a third author (TY) and principal investigators (HFD, HJ). The chosen papers are limited to languages in Chinese and English.</p>
+</div>
+<div class="section">
+<a id="sec4.3.3"><!-- named anchor --></a><h4 class="subsection-title">Evaluating tool and reporting standard</h4>
+<p id="p0245">After rules of evaluating machine learning models on sepsis prediction are established, we realize that, like clinical medicine, there is the need for specialized tools for quality evaluation and reporting standard to guide research analogous to those used in evidence-based medicine. Therefore, based on the above analysis, we propose a new quality evaluation tool and a new reporting standard from the aspects of data acquisition, algorithm selection, feature engineering, and model building with reference to the Standards for Reporting Diagnostic Accuracy (STARD). These are more comprehensive than existing tools and standards, and more appropriate for machine learning research in medicine.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec4.4"><!-- named anchor --></a><h3 class="section-title">Quantification and statistical analysis</h3>
+<p id="p0250">This work systematically evaluate the method of statistical and quantification analysis of published researches. The authors of this work did not do further quantification analysis, eg, meta-analysis.</p>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="cebib0010"><!-- named anchor --></a><div class="section ref-list">
+<a id="cebib0010"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">1</span></span> <a id="bib1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref1"><!-- named anchor --></a>W. AlhazzaniM.H. MøllerY.M. ArabiM. LoebM.N. GongE. FanS. OczkowskiM.M. LevyL. DerdeA. DzierbaSurviving sepsis campaign: guidelines on the management of critically Ill adults with coronavirus disease 2019 (COVID-19)Crit. Care Med.482020e440e46910.1097/ccm.000000000000436332224769PMC7176264</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">2</span></span> <a id="bib2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref2"><!-- named anchor --></a>C. BartonU. ChettipallyY. ZhouZ. JiangA. Lynn-PalevskyS. LeJ. CalvertR. DasEvaluation of a machine learning algorithm for up to 48-hour advance prediction of sepsis using six vital signsComput. Biol. Med.1092019798410.1016/j.compbiomed.2019.04.02731035074PMC6556419</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">3</span></span> <a id="bib3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref3"><!-- named anchor --></a>B.K. Beaulieu-JonesD.R. LavageJ.W. SnyderJ.H. MooreS.A. PendergrassC.R. BauerCharacterizing and managing missing structured data in electronic health records: data analysisJMIR Med. Inform.62018e1110.2196/medinform.896029475824PMC5845101</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">4</span></span> <a id="bib4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref4"><!-- named anchor --></a>A.D. BedoyaJ. FutomaM.E. ClementK. CoreyN. BrajerA. LinM.G. SimonsM. GaoM. NicholsS. BaluMachine learning for early detection of sepsis: an internal and temporal validation studyJAMIAOpen.3202025226010.1093/jamiaopen/ooaa006PMC738263932734166</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">5</span></span> <a id="bib5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref5"><!-- named anchor --></a>E. BlochT. RotemJ. CohenP. SingerY. ApersteinMachine learning models for analysis of vital signs dynamics: a case for sepsis onset predictionJ. Healthc. Eng.20192019593037910.1155/2019/593037931885832PMC6925691</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">6</span></span> <a id="bib6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref6"><!-- named anchor --></a>H. BurdickE. PinoD. Gabel-ComeauC. GuJ. RobertsS. LeJ. SloteN. SaberE. PellegriniA. Green-SaxenaValidation of a machine learning algorithm for early severe sepsis prediction: a retrospective study predicting severe sepsis up to 48 h in advance using a diverse dataset from 461 US hospitalsBMC Med. Inform. Decis.Mak.20202027610.1186/s12911-020-01284-x33109167PMC7590695</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">7</span></span> <a id="bib7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref7"><!-- named anchor --></a>M. CecconiL. EvansM. LevyA. RhodesSepsis and septic shockLancet3922018758710.1016/s0140-6736(18)30696-229937192</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">8</span></span> <a id="bib8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref8"><!-- named anchor --></a>T. ChenL. ZhuR.-q. NiuC.J. TrinderL. PengT. LeiMapping landslide susceptibility at the Three Gorges Reservoir, China, using gradient boosting decision tree, random forest and information value modelsJ. Mountain Sci.17202067068510.1007/s11629-019-5839-3</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">9</span></span> <a id="bib9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref9"><!-- named anchor --></a>D. DaiT. XuX. WeiG. DingY. XuJ. ZhangH. ZhangUsing machine learning and feature engineering to characterize limited material datasets of high-entropy alloysComput.Mater.Sci.175202010961810.1016/j.commatsci.2020.109618</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">10</span></span> <a id="bib10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref10"><!-- named anchor --></a>R.J. DelahantyJ. AlvarezL.M. FlynnR.L. SherwinS.S. JonesDevelopment and evaluation of a machine learning model for the early identification of patients at risk for sepsisAnn. Emerg. Med.73201933434410.1016/j.annemergmed.2018.11.03630661855</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">11</span></span> <a id="bib11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref11"><!-- named anchor --></a>N. DormoshA. Abu-HannaN. van der VeldeM. SchutImpact of altering data granularity levels on predictive modelling: a case study of fall risk prediction in older personsStud. Health Technol. Inform.270202025726110.3233/shti20016232570386</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">12</span></span> <a id="bib12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref12"><!-- named anchor --></a>C. FleischmannA. ScheragN.K. AdhikariC.S. HartogT. TsaganosP. SchlattmannD.C. AngusK. ReinhartAssessment of global incidence and mortality of hospital-treated sepsis.Current estimates and limitationsAm. J. Respir. Crit. Care Med.193201625927210.1164/rccm.201504-0781OC26414292</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">13</span></span> <a id="bib13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref13"><!-- named anchor --></a>L.M. FleurenT.L.T. KlauschC.L. ZwagerL.J. SchoonmadeT. GuoL.F. RoggeveenE.L. SwartA.R.J. GirbesP. ThoralA. ErcoleMachine learning for the prediction of sepsis: a systematic review and meta-analysis of diagnostic test accuracyIntensive Care Med.46202038340010.1007/s00134-019-05872-y31965266PMC7067741</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">14</span></span> <a id="bib14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref14"><!-- named anchor --></a>A.E. FohnerJ.D. GreeneB.L. LawsonJ.H. ChenP. KipnisG.J. EscobarV.X. LiuAssessing clinical heterogeneity in sepsis through treatment patterns and machine learningJ. Am. Med. Inform. Assoc.2620191466147710.1093/jamia/ocz10631314892PMC7647146</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">15</span></span> <a id="bib15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref15"><!-- named anchor --></a>E.V. GarciaJ.L. KleinA.T. TaylorClinical decision support systems in myocardial perfusion imagingJ. Nucl. Cardiol.21201442743910.1007/s12350-014-9857-924482142</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">16</span></span> <a id="bib16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref16"><!-- named anchor --></a>N. HouM. LiL. HeB. XieL. WangR. ZhangY. YuX. SunZ. PanK. WangPredicting 30-days mortality for MIMIC-III patients with sepsis-3: a machine learning approach using XGboostJ. Transl. Med.18202046210.1186/s12967-020-02620-533287854PMC7720497</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">17</span></span> <a id="bib17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref17"><!-- named anchor --></a>M.M. IslamT. NasrinB.A. WaltherC.C. WuH.C. YangY.C. LiPrediction of sepsis patients using machine learning approach: a meta-analysisComput.Methods Programs Biomed.17020191910.1016/j.cmpb.2018.12.02730712598</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">18</span></span> <a id="bib18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref18"><!-- named anchor --></a>M.S. IslamM.M. HasanX. WangH.D. GermackE.A.M. NoorA systematic review on healthcare analytics: application and theoretical perspective of data miningHealthcare (Basel, Switzerland)620185410.3390/healthcare6020054PMC602343229882866</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">19</span></span> <a id="bib19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref19"><!-- named anchor --></a>H.J. KamH.Y. KimLearning representations for the early detection of sepsis with deep neural networksComput. Biol. Med.89201724825510.1016/j.compbiomed.2017.08.01528843829</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">20</span></span> <a id="bib20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref20"><!-- named anchor --></a>R. KamaleswaranJ. LianD.L. LinH. MolakapuriS. NunnaP. ShahS. DuaR. PadmanPredicting volume responsiveness among sepsis patients using clinical data and continuous physiological waveformsAMIAAnnu.Symp.Proc.20202021619628PMC8075451PMC807545133936436</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">21</span></span> <a id="bib21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref21"><!-- named anchor --></a>R. KamaleswaranS.K. SataphatyV.R. MasJ.D. EasonD.G. MalufArtificial intelligence may predict early sepsis after liver transplantationFront. Physiol.12202169266710.3389/fphys.2021.69266734552499PMC8450439</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">22</span></span> <a id="bib22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref22"><!-- named anchor --></a>G. KongK. LinY. HuUsing machine learning methods to predict in-hospital mortality of sepsis patients in the ICUBMC Med. Inform. Decis.Mak.20202025110.1186/s12911-020-01271-233008381PMC7531110</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">23</span></span> <a id="bib23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref23"><!-- named anchor --></a>Y.S. KwonM.S. BaekDevelopment and validation of a quick sepsis-related organ failure assessment-based machine-learning model for mortality prediction in patients with suspected infection in the emergency departmentJ. Clin. Med.9202087510.3390/jcm9030875PMC714151832210033</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">24</span></span> <a id="bib24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref24"><!-- named anchor --></a>M.T. KwongG.W. ColopyA.M. WeberA. ErcoleJ.H.M. BergmannThe efficacy and effectiveness of machine learning for weaning in mechanically ventilated patients at the intensive care unit: a systematic reviewBio-Design and Manufacturing22019314010.1007/s42242-018-0030-1</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">25</span></span> <a id="bib25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref25"><!-- named anchor --></a>S.M. LauritsenM.E. KalørE.L. KongsgaardK.M. LauritsenM.J. JørgensenJ. LangeB. ThiessonEarly detection of sepsis utilizing deep learning on electronic health record event sequencesArtif.Intell.Med.104202010182010.1016/j.artmed.2020.10182032498999</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">26</span></span> <a id="bib26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref26"><!-- named anchor --></a>C. LeiY. WangJ. ZhaoK. LiH. JiangQ. WangA patient specific forecasting model for human albumin based on deep neural networksComput.Methods Programs Biomed.196202010555510.1016/j.cmpb.2020.10555532544776</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">27</span></span> <a id="bib27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref27"><!-- named anchor --></a>K. LiQ. ShiS. LiuY. XieJ. LiuPredicting in-hospital mortality in ICU patients with sepsis using gradient boosting decision treeMedicine (Baltimore).1002021e2581310.1097/md.000000000002581334106618PMC8133100</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">28</span></span> <a id="bib28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref28"><!-- named anchor --></a>Q. MaoM. JayJ.L. HoffmanJ. CalvertC. BartonD. ShimabukuroL. ShiehU. ChettipallyG. FletcherY. KeremMulticentre validation of a sepsis prediction algorithm using only vital sign data in the emergency department, general ward and ICUBMJOpen82018e01783310.1136/bmjopen-2017-017833PMC582982029374661</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">29</span></span> <a id="bib29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref29"><!-- named anchor --></a>K. Mehrabani-ZeinabadM. DoostfatemehS.M.T. AyatollahiAn efficient and effective model to handle missing data in classificationBiomed.Res Int.20202020881014310.1155/2020/881014333299878PMC7710403</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">30</span></span> <a id="bib30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref30"><!-- named anchor --></a>R. MiottoF. WangS. WangX. JiangJ.T. DudleyDeep learning for healthcare: review, opportunities and challengesBrief. Bioinform.1920181236124610.1093/bib/bbx04428481991PMC6455466</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">31</span></span> <a id="bib31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref31"><!-- named anchor --></a>J.C. MiraL.F. GentileB.J. MathiasP.A. EfronS.C. BrakenridgeA.M. MohrF.A. MooreL.L. MoldawerSepsis pathophysiology, chronic critical illness, and persistent inflammation-immunosuppression and catabolism syndromeCrit. Care Med.45201725326210.1097/ccm.000000000000207427632674PMC5243156</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">32</span></span> <a id="bib32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref32"><!-- named anchor --></a>A. MohammedF. Van WykL.K. ChinthalaA. KhojandiR.L. DavisC.M. CoopersmithR. KamaleswaranTemporal differential expression of physiomarkers predicts sepsis in critically Ill adultsShock562021586410.1097/SHK.000000000000167032991797PMC8352046</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">33</span></span> <a id="bib33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref33"><!-- named anchor --></a>N.T. MückeS.M. BohtéC.W. OosterleeReduced order modeling for parameterized time-dependent PDEs using spatially and memory aware deep learningJ. Comput. Sci53202110140810.1016/j.jocs.2021.101408</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">34</span></span> <a id="bib34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref34"><!-- named anchor --></a>S. NematiA. HolderF. RazmiM.D. StanleyG.D. CliffordT.G. BuchmanAn interpretable machine learning model for accurate prediction of sepsis in the ICUCrit. Care Med.46201854755310.1097/ccm.000000000000293629286945PMC5851825</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">35</span></span> <a id="bib35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref35"><!-- named anchor --></a>J.W. PerngI.H. KaoC.T. KungS.C. HungY.H. LaiC.M. SuMortality prediction of septic patients in the emergency department based on machine learningJ. Clin. Med.82019190610.3390/jcm8111906PMC691227731703390</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">36</span></span> <a id="bib36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref36"><!-- named anchor --></a>S. QiH. XuJ. HuZ. MaoX. HuF.H. ZhouEarly mortality risk prediction model for sepsis patients in intensive care unit based on machine learningAcad. J.Chin.PLA Med.Sch.42202115015510.3969/j.issn.2095-5227.2021.02.006</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">37</span></span> <a id="bib37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref37"><!-- named anchor --></a>E.P. RaithA.A. UdyM. BaileyS. McGloughlinC. MacIsaacR. BellomoD.V. PilcherPrognostic accuracy of the SOFA score, SIRS criteria, and qSOFAscore for in-hospital mortality among adults with suspected infection admitted to the intensive care unitJAMA.317201729030010.1001/jama.2016.2032828114553</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">38</span></span> <a id="bib38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref38"><!-- named anchor --></a>M. SaqibY. ShaM.D. WangEarly prediction of sepsis in EMR records using traditional ML techniques and deep learning LSTM networks. Annual International Conference of the IEEE Engineering in Medicine and Biology Society.IEEE Engineering in Medicine and Biology SocietyAnnual International Conference201820184038404110.1109/embc.2018.851325430441243</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">39</span></span> <a id="bib39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref39"><!-- named anchor --></a>M. ScherpfF. GräßerH. MalbergS. ZaunsederPredicting sepsis with a recurrent neural network using the MIMIC III databaseComput.Biol. Med.113201910339510.1016/j.compbiomed.2019.10339531480008</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">40</span></span> <a id="bib40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref40"><!-- named anchor --></a>S.P. ShashikumarM.D. StanleyI. SadiqQ. LiA. HolderG.D. CliffordS. NematiEarly sepsis detection in critical care patients using multiscale blood pressure and heart rate dynamicsJ. Electrocardiol.50201773974310.1016/j.jelectrocard.2017.08.01328916175PMC5696025</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">41</span></span> <a id="bib41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref41"><!-- named anchor --></a>M. SingerC.S. DeutschmanC.W. SeymourM. Shankar-HariD. AnnaneM. BauerR. BellomoG.R. BernardJ.D. ChicheC.M. CoopersmithThe third international consensus definitions for sepsis and septic shock (Sepsis-3)JAMA.315201680181010.1001/jama.2016.028726903338PMC4968574</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">42</span></span> <a id="bib42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref42"><!-- named anchor --></a>I. TanejaB. ReddyG. DamhorstS. Dave ZhaoU. HassanZ. PriceT. JensenT. GhongeM. PatelS. WachspressCombining biomarkers with EMRdata to identify patients in different phases of sepsisSci. Rep.720171080010.1038/s41598-017-09766-128883645PMC5589821</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">43</span></span> <a id="bib43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref43"><!-- named anchor --></a>R.A. TaylorJ.R. PareA.K. VenkateshH. MowafiE.R. MelnickW. FleischmanM.K. HallPrediction of in-hospital mortality in emergency department patients with sepsis: a local big data-driven, machine learning approachAcad. Emerg. Med.23201626927810.1111/acem.1287626679719PMC5884101</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">44</span></span> <a id="bib44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref44"><!-- named anchor --></a>P. ThottakkaraT. Ozrazgat-BaslantiB.B. HupfP. RashidiP. PardalosP. MomcilovicA. BihoracApplication of machine learning techniques to high-dimensional clinical data to forecast postoperative complicationsPLoSONE.112016e015570510.1371/journal.pone.0155705PMC488376127232332</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">45</span></span> <a id="bib45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref45"><!-- named anchor --></a>W. van DoornP.M. StassenH.F. BorggreveM.J. SchalkwijkJ. StoffersO. BekersS.J.R. MeexA comparison of machine learning models versus clinical evaluation for mortality prediction in patients with sepsisPLoSONE.162021e024515710.1371/journal.pone.0245157PMC781511233465096</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">46</span></span> <a id="bib46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="sref46"><!-- named anchor --></a>F. van WykA. KhojandiA. MohammedE. BegoliR.L. DavisR. KamaleswaranA minimal set of physiomarkers in continuous high frequency data streams predict adult sepsis onset earlierInt. J. Med. Inform.1222019556210.1016/j.ijmedinf.2018.12.00230623784</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="appsec2"><!-- named anchor --></a><h2 class="main-title">Supplemental information</h2>
+<p id="p0275"><div class="panel">
+<a id="mmc1"><!-- named anchor --></a><div class="caption"><h3 class="title">Document S1. Table S1</h3></div>
+<a id="id924" href="mmc1.pdf"></a>
+</div></p>
+</div>
+<div class="section">
+<a id="id925"><!-- named anchor --></a><h2 class="main-title">Data and code availability</h2>
+<p id="p0030"><div class="list">
+<a id="ulist0015"><!-- named anchor --></a><ul style="list-style-type: none">
+<li><p id="p0035">•This paper analyzes existing, publicly available data, they can be shared by the lead contact upon request.</p></li>
+<li><p id="p0040">•This paper does not report original code.</p></li>
+<li><p id="p0045">•Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.</p></li>
+</ul>
+</div></p>
+</div>
+<div class="back-section">
+<a id="ack0010"><!-- named anchor --></a><h2 class="main-title">Acknowledgments</h2>
+<p id="p0255">This work is support by Funding to <span class="funding-source">Sichuan Provincial Research Center for Emergency Medicine</span> and <span class="funding-source">Critical Illness from Sichuan Department of Science and Technology</span> through award #2019YFS0534, 2019YFS0303 and 2020YFS0392, <span class="funding-source">10.13039/501100001809NSFC</span>award #11971051, # 72074222 and NSAF-U1930402. The authors thank Dr. Charles Damien Lu and Mr. Chao Zhang for their significant help in the manuscript writing and English proofing.</p>
+<div class="section">
+<a id="sec5"><!-- named anchor --></a><h3 class="section-title">Author contributions</h3>
+<p id="p0260">HFD, MWS, and HJ conducted the protocol and drafting of the systematic review. TY, DHL, and TL performed literature search and data retrieval. YW and QW provided guidance and made suggestions on machine learning algorithms. HFD, HJ, JZ, MWS, PZ, and QW interpret the analysis result. WC, QW, and HJ contributed to the subsequent revisions of the manuscripts. All authors read and approved the final manuscript.</p>
+</div>
+<div class="section">
+<a id="sec6"><!-- named anchor --></a><h3 class="section-title">Declaration of interests</h3>
+<p id="p0265">The authors declare no competing interests.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id926"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="appsec1"><!-- named anchor --></a><p id="p0270"><span class="generated">[7]<span class="generated"> Supplementary material</span></span> Supplemental information can be found online at <a target="xrefwindow" href="https://doi.org/10.1016/j.isci.2021.103651" id="intref0020">https://doi.org/10.1016/j.isci.2021.103651</a>.</p>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Subject areas: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Subject areas</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Clinical medicine</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Machine learning</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY-NC-ND</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
