@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Liang, Damiani, Del Brocco, Rogers, Jantz, Fisher, Gaunt, Capogrosso, Lempka, and Pirondini: A systematic review of computational models for the design of spinal cord stimulation therapies: from neural circuits to patient-specific simulations</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>J Physiol</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>J Physiol</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>319</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>nihpa</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>0266262</p>
+<p class="metadata-entry"><span class="generated">Title: </span>The Journal of physiology</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>0022-3751</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1469-7793</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="nihms-1850385.pdf">nihms-1850385.pdf</a></p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk"><p class="first" id="id1">This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p></div>
+</div>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">print</span>): </span>August 2023</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>27 December 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>601</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>15<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>437910<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Pages: </span>3103-3121</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC10259770</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC10259770.319</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>10259770</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>10259770</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id</span>): </span>NIHMS1850385</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>36409303</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1113/JP282884</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id-alternative</span>): </span>NIHMS1850385</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id-alternative</span>): </span>NIHPA1850385</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">A systematic review of computational models for the design of spinal cord stimulation therapies: from neural circuits to patient-specific simulations</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Lucy Liang<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#FN1">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Arianna Damiani<span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A4">4</a><span class="generated">]</span><span class="generated">[</span><a href="#FN1">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Matteo Del Brocco<span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A4">4</a><span class="generated">]</span><span class="generated">[</span><a href="#FN1">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Evan R. Rogers<span class="generated">[</span><a href="#A5">5</a><span class="generated">]</span><span class="generated">[</span><a href="#A6">6</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-4623-7690<span class="generated">] </span>Maria K. Jantz<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A3">3</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Lee E. Fisher<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#A4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Robert A. Gaunt<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#A4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Marco Capogrosso<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#A7">7</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-0964-311X<span class="generated">] </span>Scott F. Lempka<span class="generated">[</span><a href="#A5">5</a><span class="generated">]</span><span class="generated">[</span><a href="#A6">6</a><span class="generated">]</span><span class="generated">[</span><a href="#A8">8</a><span class="generated">]</span><span class="generated">[</span><a href="#FN2">**</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-8078-3951<span class="generated">] </span>Elvira Pirondini<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A3">3</a><span class="generated">]</span><span class="generated">[</span><a href="#A4">4</a><span class="generated">]</span><span class="generated">[</span><a href="#FN2">**</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="A1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>Department of Bioengineering, University of Pittsburgh, Pittsburgh, Pennsylvania</p>
+<p class="metadata-entry"><a id="A2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>Rehab Neural Engineering Labs, University of Pittsburgh, Pittsburgh, Pennsylvania</p>
+<p class="metadata-entry"><a id="A3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>Center for the Neural Basis of Cognition, Pittsburgh, Pennsylvania</p>
+<p class="metadata-entry"><a id="A4"><!-- named anchor --></a><span class="generated">[</span>4<span class="generated">] </span>Department of Phys. Med. and Rehab., University of Pittsburgh, Pittsburgh, Pennsylvania</p>
+<p class="metadata-entry"><a id="A5"><!-- named anchor --></a><span class="generated">[</span>5<span class="generated">] </span>Department of Biomedical Engineering, University of Michigan, Ann Arbor, Michigan</p>
+<p class="metadata-entry"><a id="A6"><!-- named anchor --></a><span class="generated">[</span>6<span class="generated">] </span>Biointerfaces Institute, University of Michigan, Ann Arbor, Michigan</p>
+<p class="metadata-entry"><a id="A7"><!-- named anchor --></a><span class="generated">[</span>7<span class="generated">] </span>Department of Neurological Surgery, University of Pittsburgh, Pittsburgh, Pennsylvania</p>
+<p class="metadata-entry"><a id="A8"><!-- named anchor --></a><span class="generated">[</span>8<span class="generated">] </span>Department of Anesthesiology, University of Michigan, Ann Arbor, Michigan</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id12"><!-- named anchor --></a><p class="metadata-entry"><a id="FN1"><!-- named anchor --></a><p id="P1">* co-first authors</p></p>
+<p class="metadata-entry"><a id="FN2"><!-- named anchor --></a><p id="P2">** co-senior authors</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Contributed by</span>: </span><a id="FN3"><!-- named anchor --></a><p id="P3"> Author contributions</p><p id="P4">SL and EP conceived the study. LF, RG, MC, SL, and EP secured funding. LL, AD, MB, ER, SL, EP, designed the literature research. LL, AD, MB, ER performed the analysis and interpretation of the data. LL, AD, MB, ER created the figures. LL, AD, MB, ER, SL, and EP wrote the paper and all authors contributed to its editing.</p></p>
+<p class="metadata-entry"><span class="generated"><a id="CR1"><!-- named anchor --></a>Correspondence to: </span><b>Corresponding authors:</b> S. Lempka: Neuromodulation Lab, Department of Biomedical Engineering, University of Michigan, Ann Arbor, MI, USA, <a href="mailto:lempka@umich.edu">lempka@umich.edu</a>, E. Pirondini: Rehab Neural Engineering Labs, Phys. Med. &amp; Rehab and Bioengineering, University of Pittsburgh, Pittsburgh, Pennsylvania, USA, <a href="mailto:elvirap@pitt.edu">elvirap@pitt.edu</a></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="P5">Seventy years ago, Hodgkin and Huxley published the first mathematical model that described action potential generation, laying the foundation for modern computational neuroscience. Since then, the field has evolved enormously with studies spanning from basic neuroscience to clinical neuromodulation applications. Computer models for neuromodulation have evolved in complexity and personalization, advancing clinical practice and novel neurostimulation therapies, such as spinal cord stimulation (SCS). SCS is a widely used therapy to treat chronic pain with rapidly expanding indications, such as restoring motor function. In general, simulations dramatically contributed to improved lead designs, stimulation configurations, waveform parameters, and programming procedures, as well as provided insight into potential mechanisms of action of electrical stimulation. However, while practical applications of neural models are relentlessly increasing in number and complexity, it is reasonable to ask whether this observed increase in complexity is necessary for improved accuracy and ultimately clinical efficacy. To this aim, we performed a systematic literature review with a qualitative meta-synthesis of the evolution of computational models, with a focus on complexity, personalization, and the use of medical imaging to capture realistic anatomy. Our review showed that increased model complexity improved both mechanistic as well as translational studies. More specifically, it enabled the development of patient-specific models that can help transform clinical practice in SCS. Finally, we combined our results to provide clear guidelines for standardization and expansion of computational models for SCS.</p></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Graphical Abstract</h4></div>
+<div class="cell">
+<p id="P6"></p>
+<p id="P7"><b>Evolution of computational models of spinal cord stimulation.</b> The use of computational models of spinal cord stimulation is rapidly expanding in the field of neuromodulation. Here, we evaluated the evolution of such models from the 1980s to 2022. Thanks to the advancement of medical images and computational tools, models evolved from 2D models (left) to 3D models with limited realism and tissue compartments (middle), then, to MRI-based patient specific models with high realism and complex tissue compartments (right). Model figures from left to right were adapted from <a href="#R13">Coburn 1980</a>, <a href="#R9">Capogrosso <i>et al</i>. 2013</a>, and <a href="#R62">Rowald <i>et al</i>. 2022</a>, respectively, with permission. Abbreviation key: <b>gm</b>-gray matter, <b>wm</b>-white matter, <b>csf</b>-cerebrospinal fluid, <b>edf</b>-epidural fat, <b>root</b>-roots and rootlets</p>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="S1"><!-- named anchor --></a><h2 class="main-title">Introduction:</h2>
+<p id="P8">Since Hodgkin and Huxley published their numerical solutions to the set of partial differential equations describing the generation of membrane voltages in axons (<a href="#R33">Hodgkin &amp; Huxley, 1952</a>), computer models in neuroscience have bloomed into a myriad of applications. In addition to theoretical understanding of the neural code, computer models have found fertile ground in translational studies of neurostimulation (<a href="#R7">Capogrosso &amp; Lempka, 2020</a>). This clinically oriented application stemmed from the need to understand the mechanisms underlying the observed experimental evidence that electrical stimulation of axons in the dorsal columns reduced chronic pain in patients with refractory pain syndrome. This technology, known as spinal cord stimulation (SCS), is now the most widely adopted neurostimulation therapy, and computer simulations of SCS have paved the way for the use of computational tools in other neurostimulation technologies, such as nerve and deep brain stimulation (DBS) therapies (<a href="#R7">Capogrosso &amp; Lempka, 2020</a>). Here, we reviewed the historical progression of computer models for SCS and analyzed the introduction of modern imaging techniques and their impact on current and future clinical applications.</p>
+<div class="section">
+<a id="S2"><!-- named anchor --></a><h3 class="section-title">Spinal cord stimulation (SCS)</h3>
+<p id="P9">SCS is an FDA-approved therapy for treating refractory pain with more than 50,000 implants per year (<a href="#R64">Sdrulla <i>et al.</i>, 2018</a>). SCS for pain management dates back to 1967 (<a href="#R65">Shealy <i>et al.</i>, 1967</a>; <a href="#R77">Wall &amp; Sweet, 1967</a>). It was originally developed on the premise of the gate-control theory of pain (<a href="#R54">Melzack &amp; Wall, 1965</a>), in which Melzack and Wall theorized that the activation of cutaneous fibers can interfere with nociceptive signaling through inhibitory interneurons that “gate” pain transmission from the spinal cord to the brain. This hypothesis led to the suggestion that electrical stimulation of the dorsal columns, which carry low-threshold cutaneous afferents, would drive activity in spinal inhibitory interneurons, which would in turn attenuate nociceptive signaling and thus prevent nociceptive output from the spinal cord to the brain (<a href="#R47">Lempka &amp; Patil, 2018</a>; <a href="#R85">Zhang <i>et al.</i>, 2014</a>). To this end, electrodes were placed in the dorsal epidural space to stimulate sensory afferents in the dorsal columns. Aided by the relatively low risk of the surgical procedure, SCS has since been employed in investigational studies to explore a variety of clinical applications, such as improvement of motor control and autonomic functions in a variety of disorders, such as multiple sclerosis, stroke, and spinal cord injury (SCI) (<a href="#R2">Barola <i>et al.</i>, 1995</a>; <a href="#R3">Barolat-Romana <i>et al.</i>, 1985</a>; <a href="#R53">Meglio <i>et al.</i>, 1989</a>; <a href="#R78">Waltz &amp; Andreesen, 1981</a>; <a href="#R12">Cioni &amp; Meglio, 1987</a>; <a href="#R59">Powell <i>et al.</i>, 2022</a>; <a href="#R58">Pirondini <i>et al.</i>, 2022</a>).</p>
+</div>
+<div class="section">
+<a id="S3"><!-- named anchor --></a><h3 class="section-title">Computational models of SCS</h3>
+<p id="P10">Computational models of neurostimulation build on the concepts developed by Hodgkin-Huxley to estimate how extracellularly applied electric potentials influence the neural membrane voltage (<a href="#R33">Hodgkin &amp; Huxley, 1952</a>; <a href="#R34">Holsheimer, 1998</a>). More specifically, three-dimensional (3D) volume conductor models of the spinal cord geometry, which rely on realistic anatomy that can be obtained by anatomical measures and/or medical imaging (<a href="#F1">Figure 1A</a>), are used to compute the extracellular potential. A numerical method, such as the finite element method (FEM), can then be used to calculate the potential distributions generated within these complex anatomical structures (<a href="#R14">Coburn &amp; Sin, 1985</a>) (<a href="#F1">Figure 1B</a>). Extracellular potentials are finally applied to Hodgkin-Huxley neural models (<a href="#R33">Hodgkin &amp; Huxley, 1952</a>) to estimate the corresponding neural response (<a href="#F1">Figure 1C</a>).</p>
+</div>
+<div class="section">
+<a id="S4"><!-- named anchor --></a><h3 class="section-title">Why do we need computer models of SCS?</h3>
+<p id="P11">In translational applications of SCS, <i>in silico</i> neural models provide a platform for investigating mechanisms of neurostimulation technologies and optimizing the therapy in ways that would be difficult, time consuming, and expensive to perform experimentally (<a href="#R7">Capogrosso &amp; Lempka, 2020</a>). For example, computer models can be used to restrict the parameter space to be tested experimentally. This accelerates development and mitigates safety and ethical concerns by reducing the number of pre-clinical subjects as well as clinical iterations of initial experimental assays.</p>
+<p id="P12">With regard to SCS for chronic pain management, computational models have provided insights into which neural pathways primarily respond to SCS, supporting the gate-control mechanism of the therapy (<a href="#R35">Holsheimer, 2002</a>). These computational models also led to dramatic improvements in lead designs, stimulation configurations, waveform parameters, and programming procedures (<a href="#R47">Lempka &amp; Patil, 2018</a>). For instance, they have been used to develop or validate new lead designs (<a href="#R41">Kent <i>et al.</i>, 2014</a>). Computational models are also utilized in commercial clinical programming systems to determine stimulation configurations and select parameters that focus the stimulation at a desired location (selected by the user) (<a href="#R75">Veizi <i>et al.</i>, 2017</a>). Finally, a computational network model has been used to optimize the temporal patterns of a SCS waveform (<a href="#R28">Gilbert <i>et al.</i>, 2022</a>). Yet, in many cases, these approaches remain to be clinically validated.</p>
+<p id="P13">The knowledge gained from computational models of SCS for pain permitted a rapid growth of SCS models for other applications. In experiments utilizing SCS to improve locomotion, computational models demonstrated that myelinated afferent fibers are the primary targets of SCS, activating motoneurons and other cells via synaptic pathways (<a href="#R9">Capogrosso <i>et al.</i>, 2013</a>). These models also revealed that antidromic action potentials elicited in primary sensory afferents by SCS interfere with natural sensory feedback, which is crucial for coordinated limb movements (<a href="#R85">Zhang <i>et al.</i>, 2014</a>; <a href="#R63">Sadashivaiah <i>et al.</i>, 2018</a>; <a href="#R56">Moraud <i>et al.</i>, 2016</a>; <a href="#R21">Formento <i>et al.</i>, 2018</a>). This issue was resolved by implementation of a biomimetic burst stimulation protocol spatiotemporally tuned to selectively activate different spinal cord locations with precise temporal resolution. This protocol was first tested through computer simulations (<a href="#R56">Moraud <i>et al.</i>, 2016</a>; <a href="#R21">Formento <i>et al.</i>, 2018</a>) and then followed by experiments in rats (<a href="#R79">Wenger <i>et al.</i>, 2016</a>), monkeys (<a href="#R8">Capogrosso <i>et al.</i>, 2016</a>), and later in humans (<a href="#R76">Wagner <i>et al.</i>, 2018</a>).</p>
+</div>
+<div class="section">
+<a id="S5"><!-- named anchor --></a><h3 class="section-title">Unknowns, challenges, and open questions</h3>
+<p id="P14">Overall, the previous examples highlight the importance of computational simulations in the translational pathway, to pre-clinical tests, and finally to successful clinical implementation. Computational models support and expedite the development, optimization, and implementation of innovative neurostimulation therapies. Yet, there are still important questions to be addressed. First, there is no consensus on which anatomical structures are essential for accurate volume conductor models and what are the most proper imaging techniques and protocols to capture these structures. Secondly, there is still controversy on how several factors influence model accuracy, such as the presence and characteristics of a biophysical neuron model, the applied physical material properties (e.g., electrical conductivity), and the necessary levels of model complexity and personalization. Finally, the best methods to standardize model validation and clinical outcome metrics are not established, resulting in a dramatic lack of defined guidelines that consequently limits the effective use of computational models in clinical applications. To answer these questions, we reviewed the evolution of computer models of SCS since their introduction in the early 1980s (<a href="#R13">Coburn, 1980</a>; <a href="#R66">Sin &amp; Coburn, 1983</a>). The goals of this review are to identify overall trends, including both established and emerging indications, as well as provide recommendations to standardize and expand the use of computational models to advance the field of SCS for various clinical applications.</p>
+</div>
+</div>
+<div class="section">
+<a id="S6"><!-- named anchor --></a><h2 class="main-title">Methods:</h2>
+<div class="section">
+<a id="S7"><!-- named anchor --></a><h3 class="section-title">Inclusion criteria and study search</h3>
+<p id="P15">The papers included in the present review had to comply with three essential criteria: a) they had to include volume conductor models of the spinal cord; b) the computational model was used to simulate the field(s) generated by electrical SCS (epidural, intradural or transcutaneous); and c) the paper was available in English. The search for relevant papers was initially conducted in PubMed (<a target="xrefwindow" href="https://pubmed.ncbi.nlm.nih.gov/" id="id13">https://pubmed.ncbi.nlm.nih.gov/</a>, Mar. 4, 2022) using the key-words defined in (<a href="#T1">Table 1</a>) by means of Boolean operators, nesting, and truncation.</p>
+</div>
+<div class="section">
+<a id="S8"><!-- named anchor --></a><h3 class="section-title">Coding of variables</h3>
+<p id="P16">For each included paper, we extracted variables to categorize distinct aspects of the computational models. We divided these aspects into <i>objective</i> and <i>derived</i> variables. On an important note, several methods can be used to solve Maxwell’s equations and calculate the applied potentials in the complex anatomical geometries. However, because the finite element method (FEM) is by far the most common approach, we will generally refer to these methods as FEM models.</p>
+<div class="section">
+<a id="S9"><!-- named anchor --></a><h4 class="subsection-title">Objective variables:</h4>
+<div class="list">
+<a id="L1"><!-- named anchor --></a><ul>
+<li><p id="P17"><span style="text-decoration: underline">Year</span> of publication of the paper.</p></li>
+<li><p id="P18"><span style="text-decoration: underline">Species</span> on which the FEM model was based: human, monkey, canine, cat, rodent.</p></li>
+<li><p id="P19"><span style="text-decoration: underline">SCS technique</span>: epidural, intradural, transcutaneous.</p></li>
+<li><p id="P20"><span style="text-decoration: underline">Spine level coverage</span>: cervical, thoracic, lumbar/lumbo-sacral, whole spinal cord.</p></li>
+<li><p id="P21"><span style="text-decoration: underline">Application</span> for which the FEM model was used: pain, movement, autonomic function, biophysical. “Biophysical” meant that the model was not used for a specific application, but with the goal to improve the general development of computational models (e.g., comparing the dermatomal zone selectivity of single current source and multiple current source systems within the dorsal column (<a href="#R55">Min <i>et al.</i>, 2014</a>)).</p></li>
+<li><p id="P22"><span style="text-decoration: underline">The main purpose</span> for which the model was created: optimize stimulation parameters, optimize lead position, optimize lead design, investigate mechanism(s) of action, and modeling. “Modeling” refers to studies that developed and released the model without a specific purpose. When there was more than one purpose in the same paper, we assigned the most relevant one.</p></li>
+<li><p id="P23"><span style="text-decoration: underline">Anatomical sources</span> used to create the FEM model: measure/atlas-based, magnetic resonance imaging (MRI)-based, MRI/measure-based. “Measure/atlas-based” refers to either using basic geometric contours of shapes and sizes measured from dissections or taken from literature, or using an atlas (i.e., by extrusion of histological cross-sectional images). “MRI-based” refers to using 3D reconstructions of tissue structures through MRI segmentations. Finally, the “MRI/measure-based” category refers to using a combination of measures and MRI-based models. It is important to note that we used the term “MRI” to refer to medical imaging (i.e., MRI and/or CT). This choice was made because only n=4 articles (<a href="#R68">Song <i>et al.</i>, 2015</a>; <a href="#R30">Greiner <i>et al.</i>, 2021</a>; <a href="#R49">Lempka <i>et al.</i>, 2020</a>; <a href="#R84">Zareen <i>et al.</i>, 2017</a>) reported the use of CT as an anatomical source for specific compartments (bone and electrode). Furthermore, to date, dura mater and roots/rootlets tissues have not been created in any FEM using MRI, therefore we did not consider these structures in the anatomical sources classification.</p></li>
+<li><p id="P24"><span style="text-decoration: underline">Validation</span>: no validation, qualitative validation, and quantitative validation. We assigned a study “no validation” if the main conclusions drawn from the simulations were not validated against any experiments. However, note that the model may have been validated for other simulations in a different publication. A “qualitative validation” corresponded to a comparison between simulated and experimental results without directly comparing numerical values. A “quantitative validation” involved direct comparison of values, such as compound muscle action potential amplitudes (<a href="#R45">Laakso <i>et al.</i>, 2014</a>). For studies with both qualitative and quantitative validation, we placed them in the quantitative validation group.</p></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<a id="S10"><!-- named anchor --></a><h4 class="subsection-title">Derived variables:</h4>
+<p id="P25">In addition to objective variables, we assigned different scores to the models based on two derived variables, namely personalization and complexity.
+<div class="list">
+<a id="L2"><!-- named anchor --></a><ul>
+<li><p id="P26"><span style="text-decoration: underline">Personalization</span>: a variable that evaluated to what extent the FEM model was personalized for a specific subject. We assigned a score of 0, 1, or 2. “0” meant that the model was not personalized. “1” meant that the model was partially personalized (e.g., variations in the dorsal cerebrospinal fluid (CSF) thickness or a modification of tissue conductivity to simulate SCI). “2” meant that the model considered the realistic shapes and sizes of each anatomical compartment for a specific subject.</p></li>
+<li>
+<p id="P27"><span style="text-decoration: underline">Complexity</span>: we considered two levels of model complexity: a) FEM model complexity and b) neuron model complexity.</p>
+<div class="list">
+<a id="L3"><!-- named anchor --></a><ol style="list-style-type: lower-alpha">
+<li><p id="P28"><i>FEM model complexity:</i> a variable that evaluated the complexity of the tissue volumes and conductivities included in the FEM model. We calculated the complexity score for each FEM model considering the tissues that were included. Precisely, we gave one point for each tissue type that appeared in at least 8% of the papers (i.e., gray matter, white matter, CSF, epidural fat, bone, dura mater, vasculature, rootlets, intervertebral discs, encapsulation tissue, muscle, skin and surrounding layer/saline bath). For the other tissues (e.g., cartilage, connective tissue), which were represented in a minority of the papers, we assigned one point if at least one of these tissues was represented in the FEM model. The maximum score was 11, and we discretized the complexity score in 3 levels: 0 = (complexity score ≤ 4), 1 = (5 ≤ complexity score ≤ 7), and 2 = (complexity score ≥ 8).</p></li>
+<li><p id="P29"><i>Neuron model complexity</i>: a variable that evaluated the complexity of the biophysical model of the neural response to SCS. We calculated this complexity by summing the complexity scores assigned for individual components of the model: axon ion channels and axon cable structure. We assigned the axonal ion channels a score of 0 (no ion channels), 1, or 2. “1” meant that the ionic dynamics were derived from another species, whereas “2” meant that the ionic dynamics were matched to the species for which SCS was being modeled. We assigned the axonal cable structure a score of either 1, 2, 3, or 4. We applied a score of: “1” to models that did not represent the axon as an electrical circuit, but instead used an activating function (i.e., second-order spatial derivative of the applied electric potential) to approximate neural activation (<a href="#R60">Rattay <i>et al.</i>, 2000</a>); “2” to models that represented axons as simple, unmyelinated cylinders as well as models that represented axons as nodes of Ranvier separated by internodes with infinitely resistive myelin; “3” to models that represented axons as nodes of Ranvier connected by myelinated internodes with finite impedance; and “4” to models that used a double-cable structure to model axons with finite-impedance myelin as well as a conductive pathway in the periaxonal region between the axolemma and myelin sheath. We added additional points (i.e., 1 point) if studies incorporated: <i>i)</i> small-diameter collateralization of the axons; <i>ii)</i> more than one fiber population; <i>iii)</i> different fiber diameters; <i>iv)</i> different axon locations; and/or <i>v)</i> varied fiber position and/or diameter to maximize biological realism (e.g., matching fiber densities to histological data, stochastically drawing fiber diameters from an appropriately parametrized distribution). Overall, this scoring system allowed for a maximum of 11 points, and we discretized the complexity score in 3 levels: 0 = (complexity score ≤ 4), 1 = (5 ≤ complexity score ≤ 7), and 2 = (complexity score ≥ 8).</p></li>
+</ol>
+</div>
+</li>
+</ul>
+</div></p>
+</div>
+</div>
+<div class="section">
+<a id="S11"><!-- named anchor --></a><h3 class="section-title">Data analysis</h3>
+<p id="P30">We first summarized the proportional distribution of studies within each category. Then, we focused our analysis on the temporal evolution of individual variables. Finally, we analyzed the relationships between the different variables. It is important to note that when analyzing anatomical sources for different applications and purposes, we considered only studies published after 2010, i.e., the year in which MRI was introduced into the construction of FEM models. Finally, we summarized key findings of human studies that utilized patient-specific models, which may guide future advancement of these tools.</p>
+</div>
+</div>
+<div class="section">
+<a id="S12"><!-- named anchor --></a><h2 class="main-title">Results:</h2>
+<div class="section">
+<a id="S13"><!-- named anchor --></a><h3 class="section-title">Study selection</h3>
+<p id="P31">Our search combinations resulted in a total of 431 unique papers on Mar. 4 (<a href="#F2">Figure 2</a>). Following an abstract appraisal, 352 manuscripts were excluded due to the absence of a volume conductor model of the spinal cord or a focus on unrelated simulations, such as mechanical properties of the spinal cord. Since computational modeling of electrical stimulation is highly interdisciplinary, for the 79 remaining papers, we examined their references to avoid oversight of relevant papers that were not in the PubMed database. As a result of this step, we added 17 papers. Of these 96 papers, nine papers were review papers, perspectives, or book chapters and were excluded from our review. Therefore, we considered a total of 87 papers in our analyses. It should be noted that these 87 papers only included ~41 unique spinal cord models (see <a href="#SD2">Tables 2</a>, <a href="#SD2">3</a>, and <a href="#SD2">4</a> for details). Some of the models were reused in different papers with small modifications. Because these modifications were made to simulate specific conditions or unique applications, we considered each study as a new model in our analysis.</p>
+</div>
+<div class="section">
+<a id="S14"><!-- named anchor --></a><h3 class="section-title">The evolution of FEM models for SCS</h3>
+<p id="P32">Computational models of SCS were first developed in the early 1980s (<a href="#R13">Coburn, 1980</a>; <a href="#R66">Sin &amp; Coburn, 1983</a>). Prior to around the year 2000, the majority of models were not developed for a specific clinical application and studies focused mainly on understanding technical aspects of building a model and factors affecting simulation results. Thereafter, the focus evolved into more specific applications. Computer models for pain management have been and continue to be the most common application (43%) (<a href="#F3">Figure 3</a>), and only around the 2010s, movement and autonomic function applications emerged (<a href="#F4">Figure 4A</a>). Therefore, not surprisingly, most of the models (53%) focused on the thoracic spinal cord, the most common SCS target to treat lower back and leg pain. For all existing models, the most common stimulation technique was epidural stimulation (76%) and most of the computational efforts were used to model the human spinal cord (81%), where clinical interest is more abundant. A considerable portion of existing models sought to analyze and optimize the stimulation parameters (40%). Only in the last decade (since 2010), more applied studies were complemented with the interest in understanding the underlying mechanisms of action of SCS (<a href="#F4">Figure 4C</a>). Not surprisingly, this shift coincides strikingly well with the introduction of computational models of SCS in preclinical animal models and might be driven by the introduction of new SCS technologies, such as kilohertz-frequency (<a href="#R40">Kapural <i>et al.</i>, 2015</a>; <a href="#R73">Van Buyten <i>et al.</i>, 2013</a>) and burst SCS (<a href="#R17">Deer <i>et al.</i>, 2018</a>), which were proposed to improve the clinical efficacy of SCS for pain relief relative to conventional low-frequency (i.e., 40–60Hz) stimulation. Despite the increased use of SCS models in both clinical and preclinical simulations, we found that more than half (58%) of the published simulation results were not validated experimentally, highlighting the lack of standardized guidelines for the effective use of these models.</p>
+</div>
+<div class="section">
+<a id="S15"><!-- named anchor --></a><h3 class="section-title">The evolution of personalization and complexity of SCS models</h3>
+<p id="P33">Since the earliest computational models of SCS, investigators considered the possible effects of anatomical variations (<a href="#R38">Holsheimer <i>et al.</i>, 1991</a>; <a href="#R6">Cadotte <i>et al.</i>, 2015</a>; <a href="#R18">Delmotte <i>et al.</i>, 2015</a>; <a href="#R72">Toossi <i>et al.</i>, 2021</a>) on the electric potential distributions generated during SCS and the corresponding neural activation. However, most FEM models to date incorporate no personalization (69%) (<a href="#F3">Figure 3</a>). Only a small percentage (6%) of studies utilized models with a high degree of personalization (i.e., personalization score of 2) and all of these studies were published recently (2014 or later) (<a href="#F3">Figures 3</a> and <a href="#F5">5</a>).</p>
+<p id="P34">We identified an analogous pattern with regard to FEM model complexity. In the early stages, models were two-dimensional and contained limited spinal cord compartments. Probably thanks to more powerful computers, more efficient algorithms, and standardized multiphysics simulation software, FEM models quickly expanded to 3D and utilized a medium level of complexity (i.e., complexity score of 1) (60%). However, only 33% of the models reached the highest complexity level (i.e., complexity score of 2). This increase in complexity might also be explained by the inclusion of the spinal roots and rootlet structures in 16 papers (see <a href="#SD2">Tables 2</a>, <a href="#SD2">3</a>, <a href="#SD2">4</a> for details) since 2014. While some early modeling studies of SCS for pain control included explicit representations of the spinal roots (<a href="#R13">Coburn, 1980</a>; <a href="#R14">Coburn &amp; Sin, 1985</a>), recent increased attention on spinal root volume can be partly attributed to increased computational power that allow these roots to be included in complex 3D models. Multiple studies have demonstrated that dorsal root fibers are critical stimulation targets for motor control (<a href="#R9">Capogrosso et al., 2013</a>; <a href="#R30">Greiner et al., 2021</a>), which highlights that the inclusion of spinal roots in the FEM model is especially important in SCS for motor control.</p>
+<p id="P35">An equivalent analysis on the model complexity can be applied to the increase in realism over time for the biophysical neuron models. These neural components are necessary to directly quantify the effect of SCS-produced potential on neural behavior. Coburn was the first to directly model the neural response to SCS, and compared the predicted activation thresholds of dorsal column, dorsal rootlet, and corticospinal tract fibers in response to epidural SCS with clinical observations (<a href="#R14">Coburn &amp; Sin, 1985</a>). This seminal paper applied the McNeal model of myelinated fibers, which consists of nodes of Ranvier with frog-derived ion dynamics connected by infinitely resistive myelinated internodes (<a href="#R23">Frankenhaeuser &amp; Huxley, 1964</a>; <a href="#R51">McNeal, 1976</a>). Following this foundational model, many studies included explicit representations of neurons (74%), with a general trend of increased biophysical complexity over time (<a href="#F5">Figure 5B</a>). Indeed, only ~17% of biophysical models published before 2010 had high complexity, whereas 59% of those published since 2010 achieved the highest complexity score.</p>
+<p id="P36">This increase in complexity is attributable both to an increase in the sophistication of components included in the models (e.g., fibre diameters and ion channel dynamics) and to the introduction of new levels of detail (e.g., double-cable myelin model) that provide a more complete or accurate assessment of the neural response (<a href="#R70">Struijk <i>et al.</i>, 1992</a>; <a href="#R80">Wesselink <i>et al.</i>, 1999</a>; <a href="#R61">Richardson <i>et al.</i>, 2000</a>). These developments have followed important findings from studies that were both specific to SCS as well as those for general neurostimulation purposes.</p>
+<p id="P37">When comparing model complexity and personalization, we found that, despite the limited number of papers with high personalization (n=5), which prohibited statistical analysis, there is a clear trend showing that higher levels of personalization are paralleled by higher levels of complexity in both the FEM and biophysical models (<a href="#F5">Figure 5D</a>). Interestingly, studies using highly personalized models were more likely to perform a quantitative validation of the simulation results, with 100% of the most personalized models having a quantitative validation (<a href="#F5">Figure 5E</a>). Out of the 23 studies with quantitative validation, 18 of these studies were published in the last decade (since 2012). These results show that researchers are placing an increased emphasis on model validation, and with enough personalization and complexity, computer models have the capability of making quantitative predictions that may directly inform clinical practice.</p>
+</div>
+<div class="section">
+<a id="S16"><!-- named anchor --></a><h3 class="section-title">Increased complexity shaped the evolution of model applications and purposes</h3>
+<p id="P38">The personalization level distributions were similar across applications and purposes, whereas FEM and biophysical model complexity scores varied across different model applications (<a href="#F4">Figure 4B</a>), with movement-application models generally having a higher complexity. This higher complexity for movement-application models may be explained by their well-defined neural targets and necessary stimulation precision. Likewise, it is unsurprising that biophysical-application models, which lack a defined functional goal, have the lowest aggregate complexity scores. Moreover, this discrepancy may partially be explained by the fact that models were first applied for different applications in different decades, thus reflecting the general trend for complexity to increase over time (<a href="#F4">Figure 4A</a>; <a href="#F5">Figure 5A</a> and <a href="#F5">B</a>).</p>
+<p id="P39">Additionally, FEM and biophysical complexity scores also differed between study purposes (<a href="#F4">Figure 4D</a>). Interestingly, both mechanism and lead design had high complexity both for FEM and biophysical models, whereas modeling-purpose and stimulation-parameters studies had medium complexity. Interestingly, for lead position, the complexity score was higher for biophysical (level 3) than for FEM models (level 2).</p>
+</div>
+<div class="section">
+<a id="S17"><!-- named anchor --></a><h3 class="section-title">Introduction of medical imaging influenced the complexity and personalization of computer models for SCS</h3>
+<p id="P40">Until recently (2010s), the majority of the models were measure-based (71%). In the early 2010s, MRI images obtained with different sequences and microCT scans were introduced, revolutionizing the way that SCS FEM models were created (<a href="#F3">Figure 3</a> and <a href="#F4">4</a>). For humans, the most common sequences have been SPACE fast turbo spin echo 3D (<a href="#R11">Christ <i>et al.</i>, 2010</a>) and T2 SPACE with ZOOMit (<a href="#R62">Rowald <i>et al.</i>, 2022</a>); whereas in animals, the most common have been TurboRARE T2 weighted pulse sequence (<a href="#R84">Zareen <i>et al.</i>, 2017</a>).</p>
+<p id="P41">Despite the limited use of this technology, MRI-based models shaped applications and purposes and allowed the use of more complex and personalized models. Indeed, all models with the highest personalization level used MRI-based identification of the anatomical structures and those with medium personalization used medical imaging in the majority of the cases (58%). FEM complexity showed a similar trend with 65% of the models with high complexity deploying MRI information. Interestingly, we found that MRI-based models are used more commonly in the movement application (60% for movement versus 28% for pain) and have recently expanded to the biophysical application (<a href="#F4">Figure 4A</a>). This trend suggests that, despite being the first and one of the main fields of application, the pain community is not fully taking advantage of the innovations introduced by the use of MR imaging. Several reasons could justify this discrepancy. Rootlet fibers are often not explicitly represented in FEM or biophysical models of SCS for pain, because activation of the thoracic roots and rootlets is believed to be associated with discomfort and the axons within the dorsal columns are the main therapeutic target. Furthermore, the most common implantation levels for SCS for pain are the lower thoracic spine levels. At these levels, it is not possible to visualize these rootlet structures. Further, the anatomy of the thoracic spinal cord is also less variable across segments as compared to the cervical and the lumbosacral cord (<a href="#R44">Ko <i>et al.</i>, 2004</a>; <a href="#R25">Frostell <i>et al.</i>, 2016</a>) (<a href="#F1">Figure 1A</a>). Therefore, precise cord and rootlet shapes and dimensions are less likely to affect simulation results in the thoracic cord.</p>
+<p id="P42">Purposes and MRI-based models had a similar evolution. Indeed, we found that, from birth (around early 2010s), mechanisms of SCS were studied mostly using MRI-based models showing that more recent fields took full advantage of this novel technology (<a href="#F4">Figure 4C</a>). Also, for lead position and design, the usage of MRI has been increasing over the years. Stimulation parameters studies, instead, are still based mostly on measure-based models (<a href="#F4">Figure 4C</a>).</p>
+<p id="P43">Finally, it appears that transcutaneous SCS models were mostly MRI-based (<a href="#F4">Figure 4A</a>). This could be because of the necessity to capture anatomical structure outside the bone, but also by the usage of the virtual family model (<a href="#R11">Christ <i>et al.</i>, 2010</a>), which is MRI-based and is often reused across studies. There is, instead, nothing similar for epidural and subdural SCS.</p>
+</div>
+</div>
+<div class="section">
+<a id="S18"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="P44">The rapidity at which neuroengineering and neuroscience are expanding results in a continuous demand for new tools capable of optimizing and refining the interactions with the nervous system, even though the role of many structures (e.g., interneurons, fibers, etc.) is still unknown and therefore not described by computer models. This lack of knowledge about target systems represents a crucial obstacle for the development of more effective SCS therapies. In parallel, commercial systems continue to become more sophisticated, allowing an increased variety of waveform parameters, higher electrode counts and non-standardized configurations that represent an increasing variety of possibilities to interact with the system. These technical improvements exponentially increase the space of therapeutic parameters, generating a critical need to find optimal parameter sub-spaces that can be tackled by accurate, realistic, and highly personalized computational models. These virtual frameworks would successfully meet the need to efficiently and effectively explore these large parameter spaces which would be infeasible experimentally. Finally, the increase of model personalization would improve the search for optimal stimulation parameters, lead configurations, and lead position in patient-specific scenarios, hence overcoming current standardized practices that may select sub-optimal therapy parameters. This approach could revolutionize clinical care and patient programming in SCS-based therapies.</p>
+<p id="P45">In this study, we classified manuscripts describing computer models of SCS to reveal trends in the evolution of applications for SCS models, realism in model components, complexity, personalization and the technological advances and clinical needs that drove these evolutions. In this section, we discuss our main findings with additional recommendations to standardize computational models of SCS and provide suggestions to further improve the quality of these computational approaches.</p>
+<div class="section">
+<a id="S19"><!-- named anchor --></a><h3 class="section-title">The importance of increased complexity</h3>
+<p id="P46">As previously stated, computational models can simply include a volume conductor model to simulate the electromagnetic fields generated by SCS or can incorporate a biophysical neuron model to understand ionic current flows in individual neurons (<a href="#R10">Chakraborty <i>et al.</i>, 2018</a>). It has been proposed that, given the complex anatomical structure and variety of factors that can affect neural activation (e.g., branch points, axonal bends), the electric field will best predict neural polarization and neuromodulation, in contrast to the activation function (i.e., the second-order spatial derivative of the electric potential). This approach has been formalized as the “quasi-uniform assumption” (<a href="#R4">Bikson <i>et al.</i>, 2013</a>; <a href="#R5">Bikson <i>et al.</i>, 2015</a>; <a href="#R43">Khadka <i>et al.</i>, 2019</a>) and may serve as a useful and efficient heuristic for predicting which gross anatomical regions are likely to be more strongly affected by the stimulation. Thus, this approach is well-suited for applications in which precise identification of which neurons are being activated is not the primary objective, such as studies investigating novel electrode configurations or the effects of anatomical electrical properties on current flow. On the other hand, for studies investigating precise biophysical activation profiles or evaluating new temporal stimulation patterns, a biophysical model is better able to account for the subtle effects of ion channel dynamics and neural morphology on activation properties. Finally, for putative mechanisms of action other than direct electrical stimulation, biophysical neuronal modeling may be unnecessary and instead multiphysics simulations may be more appropriate. For instance, modeling studies have investigated the combined effects of joule heating (due to applied electric currents) and bioheat transfer as a potential therapeutic mechanism for kilohertz-frequency SCS (<a href="#R83">Zannou <i>et al.</i>, 2019</a>; <a href="#R82">Zannou <i>et al.</i>, 2021</a>).</p>
+<p id="P47">Despite the quasi-uniform assumption, there is a clear trend of increasing complexity over time both in the FEM and biophysical models (<a href="#F5">Figure 5A</a> and <a href="#F5">5B</a>). However, a more complex model does not necessarily imply a better model, and questions naturally arise as to what level of complexity is necessary and/or sufficient to develop a useful model. Regarding the FEM model, the increase in complexity was partially possible because of the use of MRI techniques to capture gross anatomical structures, such as the spinal roots that are the neural target in the movement field. As discussed in <a href="#R7">Capogrosso &amp; Lempka 2020</a>, inclusion of root volumes can significantly shift fiber activation distribution and threshold, and thus affect direct clinical applicability of simulated results. However, only three studies considered realistic representations of roots and rootlets that followed trajectories derived from anatomical measurements (<a href="#R42">Khadka <i>et al.</i>, 2020</a>; <a href="#R30">Greiner <i>et al.</i>, 2021</a>; <a href="#R62">Rowald <i>et al.</i>, 2022</a>) and implemented curvilinear anisotropic conductivities (<a href="#R30">Greiner <i>et al.</i>, 2021</a>; <a href="#R62">Rowald <i>et al.</i>, 2022</a>).</p>
+<p id="P48">Regarding the biophysical model, we considered several factors when scoring complexity. We believe that the value of including several relevant neuronal populations (e.g., both dorsal column and dorsal rootlet fibers to compare on/off target effects) as well as varying axonal diameter and position clearly helps improve the translatability of model predictions. Furthermore, studies have clearly demonstrated the importance of using species-appropriate ion channels (<a href="#R80">Wesselink <i>et al.</i>, 1999</a>) and including branch points (<a href="#R70">Struijk <i>et al.</i>, 1992</a>) in biophysical models of SCS. For each of these variables, maximizing their complexity is not strictly necessary to produce a useful model, as all models require simplifications and abstractions. However, we feel that it is good practice to thoughtfully consider each of these variables to provide a more complete and realistic prediction of the neural response, and accounting for these variables in the models is typically feasible without an unreasonable increase in effort or computational resources.</p>
+<p id="P49">In contrast, the necessary (and sufficient) complexity to model the axon geometry, and specifically the internode, is more controversial, and largely depends on the study. Compelling evidence demonstrates the role of submyelin conductance in axonal behavior, and the value of representing this current pathway to improve model predictions of axonal behavior relative to single-cable models (<a href="#R61">Richardson <i>et al.</i>, 2000</a>; <a href="#R15">Cohen <i>et al.</i>, 2020</a>). In a direct comparison between models with infinite-impedance myelin, finite-impedance myelin, and a double-layer myelinated axon, Richardson et al. demonstrated that all three models could produce reasonable results in line with experimental data, and that all models were sensitive to parameter choices. However, Richardson et al. found that only the double-cable axon representation could faithfully respond to pulse trains at frequencies of at least 25 Hz, as is typical in SCS (<a href="#R61">Richardson <i>et al.</i>, 2000</a>). Thus, for studies investigating the response to sequential stimuli (rather than activation by a single pulse), a double-layer axon structure is the appropriate model. For studies considering a single stimulus pulse, using a simplified representation may be sufficient to produce a reasonably accurate prediction of the neural response, and will reduce the number of parameters and the corresponding computational complexity. Additionally, simplified approaches may prove valuable and sufficient in situations in which reduced accuracy is acceptable for the accompanying gains in efficiency. For instance, these simplified models could provide a useful heuristic in producing real-time predictions of the neural response to various stimulation configurations while programming devices in the clinic.</p>
+<p id="P50">Looking forward, significant model improvements remain attainable by generating high-quality experimental data to parameterize biophysical models. The gold standard remains the MRG (McIntyre, Richardson and Grill) model (or derivatives thereof) of the spinal motor axon that was developed two decades ago (<a href="#R61">Richardson <i>et al.</i>, 2000</a>). Promising developments, such as adding additional channel conductances (e.g., active submyelin conductances), have produced model behaviors that better match recordings from human sensory nerve fibers which are highly relevant when modeling the dorsal spinal cord for SCS applications (<a href="#R26">Gaines <i>et al.</i>, 2018</a>). Future work advancing these ideas, as well as investigating the local properties in different regions of the axon (e.g., the axon terminal), will further enhance our ability to model the neural response to SCS.</p>
+</div>
+<div class="section">
+<a id="S20"><!-- named anchor --></a><h3 class="section-title">The importance of patient-specific models to improve, standardize, and expand SCS</h3>
+<p id="P51">Although canonical models are still invaluable to understand the science of SCS and to improve the technical design of SCS systems, patient-specific models are essential to quantitatively describe the axonal response to SCS and to program effective stimulation parameters for each patient. Despite the small number of studies employing patient-specific models of SCS (i.e., only five papers), their results parallel those of other neurostimulation applications where personalization is more established: DBS. Indeed, Frankemolle and colleagues (<a href="#R22">Frankemolle <i>et al.</i>, 2010</a>) showed that computational models of DBS provide an exemplary tool in support of clinical decisions. In this study, patient-specific computational models helped determine stimulation parameters that provided superior clinical efficacy relative to the parameters selected through standard programming methods. In order to obtain similar results for SCS, research groups performed in-depth studies focusing on FEM-model variations of two main structures, CSF and bone, and the corresponding changes in model predictions between highly personalized models and generalized models. Specifically, CSF thickness, which varies as a function of spinal level, body position, and across patients (<a href="#R31">He et al., 1994</a>; <a href="#R36">Holsheimer et al., 1995</a>), was shown to have a large effect on current penetration within the spinal cord during SCS. Specifically, an increment of the current density of 54.6% was observed when halving the CSF thickness (<a href="#R66">Sin &amp; Coburn, 1983</a>). The dorsal CSF thickness was demonstrated to be positively correlated with the activation threshold of dorsal column fibers (<a href="#R67">Solanes et al., 2021</a>) and perception threshold (which increased by 50.8% and 26.6%, respectively, in the dorsal columns and the dorsal root entry zone, following an increase of the dorsal CSF thickness of 1 mm), and negatively correlated with paresthesia coverage (<a href="#R31">He et al., 1994</a>; <a href="#R38">Holsheimer &amp; Struijk, 1991</a>; <a href="#R36">Holsheimer et al., 1995</a>; <a href="#R46">Lempka et al., 2015</a>). The transverse size of the dural sac, instead, was negatively correlated with the activation of afferent fibers (<a href="#R67">Solanes et al., 2021</a>). Similarly, the shape of the spinal canal (<a href="#R19">Fernandes et al., 2021</a>), size of the spine structures (<a href="#R20">Fiocchi et al., 2016</a>), and relative position of the stimulating electrodes to the spine (<a href="#R81">Zander et al., 2020</a>) have strong effects on the electric field and corresponding activation thresholds. Interestingly, after SCI, orthopedic interventions (<a href="#R29">Greenberg &amp; Arredondo, 2001</a>) can change the spine structure and scarring can change tissues conductivities, which can both affect the simulated electric field amplitude (<a href="#R32">Hernández-Labrado et al., 2011</a>) and therefore need to be considered in computer simulations. In summary, these studies provide evidence of the great variability in outcome measures deriving from anatomical alterations, suggesting that increased personalization could increase model accuracy by accounting for multiple sources of interpatient variability. Additionally, these studies suggest that CSF thickness, bone, and thecal sac sizes are essential structures for accurate volume conductor models.</p>
+<p id="P52">In this direction, Lempka and colleagues (<a href="#R49">Lempka <i>et al.</i>, 2020</a>) reported that simulated sensory thresholds obtained with patient-specific models were significantly more similar to those clinically measured than those simulated with canonical models, which underestimate the dorsal column fiber activation thresholds. Additionally, they quantified the effect of pulse-width variation on sensory thresholds, identifying a mean absolute percentage error of 8.9% and 44.9% relative to the clinically measured value, for the patient-specific and canonical models, respectively. Two other studies found similar results in which model predictions of perception and discomfort thresholds were more consistent with the clinical measurements using patient-specific models (specifically, the difference with respect to clinically measured perception threshold was 6.4% and 171% for the patient-specific and canonical model, respectively) (<a href="#R67">Solanes <i>et al.</i>, 2021</a>; <a href="#R39">Howell <i>et al.</i>, 2014</a>). Similarly, in the “movement” application, <a href="#R62">Rowald <i>et al</i>. 2022</a> developed highly personalized patient-specific models for the purpose of restoring locomotion. The authors performed an intraoperative validation of the simulated lead position by monitoring electromyographic recordings while delivering SCS. The predictions of the patient-specific model corresponded to the optimal electrode placement; indeed, the study reports that a 2 mm displacement from the predicted location caused a drop in selectivity. Interestingly, the use of a generic (i.e., not personalized) model failed to reach the same accuracy. Thanks to the optimized lead position, contact location, and stimulation configuration for each patient, Rowald and colleagues demonstrated rapid restoration of trunk and leg motor functions in patients with complete paralysis (<a href="#R62">Rowald <i>et al.</i>, 2022</a>). Finally, Veizi and colleagues used a canonical model with patient-specific electrode locations and implemented a patient-specific algorithm to select active electrode combinations and current amplitudes at each electrode (<a href="#R75">Veizi <i>et al.</i>, 2017</a>). The personalized group demonstrated an approximately 1.5 times higher responder rate (i.e., patients receiving ≥50% reduction in pain) relative to a cohort in which stimulation parameters were selected through standard clinical methods.</p>
+<p id="P53">Despite these extremely encouraging results, additional work using patient-specific models is now necessary to further demonstrate the potential of these models to improve clinical implementation of SCS. We believe that the collection of papers reported here (see <a href="#SD2">Tables 3</a> and <a href="#SD2">4</a>) represents a valuable summary to guide the choosing of the best model designs in future works and boost the use of patient-specific approaches. However, wider adoption of SCS models impels the improvement and standardization of MRI protocols that capture relevant structures, such as CSF and spinal roots.</p>
+<p id="P54">Finally, it is important to note that personalization of DBS models was driven not only by the availability of higher-resolution brain MRI but especially by needs for precision in neurosurgical implantation procedures. Instead, spinal lead implantations are currently performed with limited image-guidance and lower constraint on positioning far from the millimeter precision required to target deep brain structures (<a href="#R47">Lempka &amp; Patil, 2018</a>). In this context it is important to note that complex personalized computer models of SCS are now suggesting that new neurosurgical approaches to SCS must be developed to improve accuracy and stability of implantation procedures to be able to target specific microstructures, such as the dorsal rootlets (<a href="#R62">Rowald <i>et al.</i>, 2022</a>). This provides a powerful example of how neural simulations can be ahead of clinical practice and influence standard of care.</p>
+</div>
+<div class="section">
+<a id="S21"><!-- named anchor --></a><h3 class="section-title">Medical imaging propelled personalization and complexity</h3>
+<p id="P55">Importantly, all of the studies (n=5) with patient-specific models deployed medical imaging for the segmentation and the quantification of the anatomical structures, suggesting that MRI is necessary to increase the accuracy and the predictive power of these models. On the other hand, models can reach high complexity with both measure-based and MRI-based models. However, since MRI was introduced, the majority of the complex models were also MRI-based. This trend was particularly true for the application of movement restoration. While this could be explained by a tendency of newer fields to propel for the use of newly available technologies, such as MRI, this could also be due to the difficulty to capture structures at the thoracic level, i.e., the most common implantation level of SCS to treat pain. Novel advances in the field of MRI for lower cervical segments (<a href="#R16">Cohen-Adad <i>et al.</i>, 2021</a>) could improve these images and soon change this trend.</p>
+<p id="P56">However, medical imaging has still not been maximally exploited for development of computational models of SCS. For instance, manuscripts often lack details describing the specific acquisition sequences, thus limiting the adaptability of these approaches. Additionally, even the models with the most complex representations of the spinal cord roots and rootlets did not directly model these structures from medical images, but instead combined anatomical measurements and mathematical algorithms to calculate assumed non-overlapping trajectories. Yet it is now well known that dorsal root diameter, as well as fiber angles and curvature when entering the spinal cord, can cause substantial differences in fiber activation threshold (<a href="#R14">Coburn &amp; Sin, 1985</a>; <a href="#R69">Struijk <i>et al.</i>, 1993</a>). Therefore, accurate images of these structures are pivotal to increase accuracy of current models. In this direction, advanced acquisition sequences, such as diffusion-weighted MRI (<a href="#R74">Vargas <i>et al.</i>, 2010</a>), provide a means to capture high-resolution fiber trajectories and thus could be used to accurately characterize roots and rootlets shapes.</p>
+</div>
+<div class="section">
+<a id="S22"><!-- named anchor --></a><h3 class="section-title">Future of SCS models</h3>
+<p id="P57">Artificial intelligence (AI)-based algorithms are another important breakthrough that could be extremely advantageous for the development of personalized <i>in silico</i> models of SCS. These approaches have the potential to achieve automation of processes that are currently performed manually. Specifically, the exploitation of AI in the automated tissue segmentation from medical images would drastically reduce the time and effort required for the creation of a patient-specific model, thus paving the way towards personalized precision medicine (<a href="#R7">Capogrosso &amp; Lempka, 2020</a>; <a href="#R57">Perone <i>et al.</i>, 2018</a>; <a href="#R27">Gaweł <i>et al.</i>, 2018</a>).</p>
+<p id="P58">Additionally, computational modeling of the neural network effects of SCS is another area with significant potential for development. In the related field of DBS, many researchers developed network-based models incorporating the various basal ganglia populations to investigate the stimulation generated effects on neural circuit behavior (<a href="#R50">McIntyre &amp; Hahn, 2010</a>). These models provide a more complete picture of the neural response by incorporating interactions between relevant neural populations. A similar approach has recently begun to be adopted for SCS purposes, although the technique remains immature. For pain applications, Zhang <i>et al</i>. produced a SCS-based network model that included primary afferent fibers as well as excitatory and inhibitory interneurons (allowing for subpopulations with different firing characteristics) and measured the output response of spinal neural networks for multiple SCS stimulation frequencies (<a href="#R85">Zhang <i>et al.</i>, 2014</a>). In a contrasting approach, Arle and colleagues produced a comprehensive model with hundreds of thousands of neurons and millions of synaptic connections to examine how SCS can treat neuropathic and nociceptive pain (<a href="#R1">Arle <i>et al.</i>, 2014</a>). Although such models are impressive in scale, they highlight the difficulties as well as the importance of proper model parameterization and constraining models based upon high quality experimental data. Impressive advancements continue to be made in delineating the neurochemical and electrophysiological subpopulations of the dorsal horn and their connections (e.g., <a href="#R52">Medlock <i>et al.</i>, 2022</a>), and integration of these data with best-practice biophysical modeling provides a promising path for understanding how SCS affects the behavior of spinal circuits.</p>
+<p id="P59">Lastly, while recent studies have increasingly included quantitative comparisons of simulations and experimental results, the validation metrics used for these comparisons have been inconsistent. Inconsistency in these validation metrics creates difficulties in comparing the predictions across multiple models and impedes the development of clinically meaningful standards for effective treatment predictions. For example, in the field of motor function, studies have compared the model-based predictions of large sensory fiber activation thresholds with experimentally observed motor thresholds (<a href="#R24">de Freitas <i>et al.</i>, 2022</a>) and response latency (<a href="#R9">Capogrosso <i>et al.</i>, 2013</a>), simulated motoneuron activation with specific muscle force (<a href="#R76">Wagner <i>et al.</i>, 2018</a>), and simulated and measured compound muscle action potential amplitudes (<a href="#R45">Laakso <i>et al.</i>, 2014</a>). When using computational models to study SCS for pain, validation metrics have been applied more consistently, with most studies comparing simulated dorsal root and dorsal column fiber activation threshold with measured perception and discomfort thresholds (<a href="#R36">Holsheimer <i>et al.</i>, 1995</a>; <a href="#R71">Struijk <i>et al.</i>, 1998</a>; <a href="#R60">Rattay <i>et al.</i>, 2000</a>; <a href="#R1">Arle <i>et al.</i>, 2014</a>; <a href="#R39">Howell <i>et al.</i>, 2014</a>; <a href="#R48">Lempka <i>et al.</i>, 2018</a>; <a href="#R49">Lempka <i>et al.</i>, 2020</a>; <a href="#R67">Solanes <i>et al.</i>, 2021</a>). As the use of SCS continues to increase and expand to new indications, it will be important to establish a standardized set of validation metrics to assist implementation of simulation results in a clinical setting.</p>
+<p id="P60">To conclude, we strongly believe that, by taking full advantage of MRI techniques and AI, developing novel circuit networks, and increasing computational power, we can develop realistic and highly accurate virtual frameworks to understand the mechanisms of SCS and develop optimal SCS therapies and surgical strategies. With more complex and personalized models, and standardized model validation and clinical outcome metrics, we can bridge the gap between simulations and patient care.</p>
+</div>
+</div>
+<div class="section">
+<a id="SM1"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD1"><!-- named anchor --></a><h5 class="label">supinfo1</h5>
+<a id="d64e1292" href="NIHMS1850385-supplement-supinfo1.pdf"></a>
+</div>
+<div class="panel">
+<a id="SD2"><!-- named anchor --></a><h5 class="label">supinfo2</h5>
+<a id="d64e1295" href="NIHMS1850385-supplement-supinfo2.xlsx"></a>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="S23"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="P61">This research was supported by the following grants from the National Institutes of Health: R01 AT010817, to the University of Michigan (Scott F. Lempka), 1OT2OD030537–01 to the University of Pittsburgh (Robert A. Gaunt).</p>
+</div>
+<div class="back-section">
+<a id="id14"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="FN4"><!-- named anchor --></a><p id="P64"><span class="generated">[1]</span> Competing interests</p>
+<p id="P65">MC is an inventor on several patents’ applications related to concepts presented in this work; SFL is an inventor on multiple patents related to concepts presented in this work, receives research support from Abbott Neuromodulation, Medtronic, plc, and Presidio Medical, Inc., is a shareholder in CereGate, Hologram Consultants, LLC, and Presidio Medical, Inc., and a member of the scientific advisory boards for Abbott Neuromodulation, CereGate, and Presidio Medical, Inc.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="d64e1301"><!-- named anchor --></a><h2 class="main-title">Biography</h2>
+<p class="first" id="P62">LL, AD, MB, MJ, LF, RG, MC, and EP are with the Rehabilitation and Neural Engineering Labs at the University of Pittsburgh, a super-lab built as a collaboration of multiple laboratories. They have a long experience in spinal cord stimulation to restore bladder functions, upper- and lower-limb movements, and sensation in people with spinal cord injury, stroke, and amputation. ER and SL are with the Neuromodulation Laboratory at the University of Michigan—Ann Arbor and they implement engineering approaches, such as computational modeling, to study the mechanism of action of clinical neuromodulation therapies for chronic pain management. The two groups have a long-standing collaboration on the design of complex and personalized computer models of spinal cord stimulation with the objective to develop novel effective therapies for different neurological disorders.</p>
+<p id="P63"></p>
+</div>
+<div class="back-section">
+<a id="id15"><!-- named anchor --></a><div class="section ref-list">
+<a id="id15"><!-- named anchor --></a><h2 class="main-title">References:</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">1</span></span> <a id="R1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id16"><!-- named anchor --></a>JE Arle, KW Carlson, L Mei &amp; JL Shils (2014). Modeling effects of scar on patterns of dorsal column stimulation. Neuromodulation Technol Neural Interface
+17, 320–333.10.1111/ner.1212824180673</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">2</span></span> <a id="R2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id17"><!-- named anchor --></a>G Barola, K Singh-Sahni, WE Staas Jr, D Shatin, B Ketcik &amp; K Allen (1995). Epidural spinal cord stimulation in the management of spasms in spinal cord injury: a prospective study. Stereotact Funct Neurosurg
+64, 153–164.874650410.1159/000098744</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">3</span></span> <a id="R3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id18"><!-- named anchor --></a>G Barolat-Romana, JB Myklebust, DC Hemmy, B Myklebust &amp; W Wenninger (1985). Immediate effects of spinal cord stimulation in spinal spasticity. J Neurosurg
+62, 558–562.387184710.3171/jns.1985.62.4.0558</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">4</span></span> <a id="R4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id19"><!-- named anchor --></a>M Bikson, J Dmochowski &amp; A Rahman (2013). The “quasi-uniform” assumption in animal and computational models of non-invasive electrical stimulation. Brain Stimulat
+6, 704–705.10.1016/j.brs.2012.11.005PMC371289523290681</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">5</span></span> <a id="R5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id20"><!-- named anchor --></a>M Bikson, DQ Truong, AP Mourdoukoutas, M Aboseria, N Khadka, D Adair &amp; A Rahman (2015). Modeling sequence and quasi-uniform assumption in computational neurostimulation. Prog Brain Res
+222, 1–23.2654137410.1016/bs.pbr.2015.08.005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">6</span></span> <a id="R6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id21"><!-- named anchor --></a>D Cadotte, A Cadotte, J Cohen-Adad, D Fleet, M Livne, J Wilson, D Mikulis, N Nugaeva &amp; M Fehlings (2015). Characterizing the location of spinal and vertebral levels in the human cervical spinal cord. Am J Neuroradiol
+36, 803–810.2552358710.3174/ajnr.A4192PMC7964298</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">7</span></span> <a id="R7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id22"><!-- named anchor --></a>M Capogrosso &amp; SF Lempka (2020). A computational outlook on neurostimulation. Bioelectron Med
+6, 1–7.3249003710.1186/s42234-020-00047-3PMC7247210</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">8</span></span> <a id="R8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id23"><!-- named anchor --></a>M Capogrosso, T Milekovic, D Borton, F Wagner, EM Moraud, J-B Mignardot, N Buse, J Gandar, Q Barraud &amp; D Xing (2016). A brain–spine interface alleviating gait deficits after spinal cord injury in primates. Nature
+539, 284–288.2783079010.1038/nature20118PMC5108412</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">9</span></span> <a id="R9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id24"><!-- named anchor --></a>M Capogrosso, N Wenger, S Raspopovic, P Musienko, J Beauparlant, LB Luciani, G Courtine &amp; S Micera (2013). A computational model for epidural electrical stimulation of spinal sensorimotor circuits. J Neurosci
+33, 19326–19340.2430582810.1523/JNEUROSCI.1688-13.2013PMC6618777</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">10</span></span> <a id="R10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id25"><!-- named anchor --></a>D Chakraborty, DQ Truong, M Bikson &amp; H Kaphzan (2018). Neuromodulation of Axon Terminals. Cereb Cortex
+28, 2786–2794.2865514910.1093/cercor/bhx158PMC6041977</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">11</span></span> <a id="R11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id26"><!-- named anchor --></a>A Christ, W Kainz, EG Hahn, K Honegger, M Zefferer, E Neufeld, W Rascher, R Janka, W Bautz &amp; J Chen (2010). The Virtual Family—development of surface-based anatomical models of two adults and two children for dosimetric simulations. Phys Med Biol
+55, N23.2001940210.1088/0031-9155/55/2/N01</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">12</span></span> <a id="R12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id27"><!-- named anchor --></a>B Cioni &amp; M Meglio (1987). Spinal Cord Stimulation Improves Motor Performances in Hemiplegics: Clinical and Neurophysiological Study. In Advances in Stereotactic and Functional Neurosurgery
+7, pp. 103–105. Springer, Vienna.10.1007/978-3-7091-8909-2_273499757</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">13</span></span> <a id="R13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id28"><!-- named anchor --></a>B Coburn (1980). Electrical stimulation of the spinal cord: two-dimensional finite element analysis with particular reference to epidural electrodes. Med Biol Eng Comput
+18, 573–584.746428010.1007/BF02443129</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">14</span></span> <a id="R14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id29"><!-- named anchor --></a>B Coburn &amp; WK Sin (1985). A theoretical study of epidural electrical stimulation of the spinal cord--Part I: Finite element analysis of stimulus fields. IEEE Trans Biomed Eng
+32, 971–977.387767710.1109/tbme.1985.325648</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">15</span></span> <a id="R15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id30"><!-- named anchor --></a>CCH Cohen, MA Popovic, J Klooster, M-T Weil, W Möbius, K-A Nave &amp; MHP Kole (2020). Saltatory Conduction along Myelinated Axons Involves a Periaxonal Nanocircuit. Cell
+180, 311–322.e15.3188379310.1016/j.cell.2019.11.039PMC6978798</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">16</span></span> <a id="R16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id31"><!-- named anchor --></a>J Cohen-Adad, E Alonso-Ortiz, M Abramovic, C Arneitz, N Atcheson, L Barlow, RL Barry, M Barth, M Battiston &amp; C Büchel (2021). Generic acquisition protocol for quantitative MRI of the spinal cord. Nat Protoc
+16, 4611–4632.3440083910.1038/s41596-021-00588-0PMC8811488</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">17</span></span> <a id="R17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id32"><!-- named anchor --></a>T Deer, KV Slavin, K Amirdelfan, RB North, AW Burton, TL Yearwood, E Tavel, P Staats, S Falowski, J Pope, R Justiz, AY Fabi, A Taghva, R Paicius, T Houden &amp; D Wilson (2018). Success Using Neuromodulation With BURST (SUNBURST) Study: Results From a Prospective, Randomized Controlled Trial Using a Novel Burst Waveform. Neuromodulation Technol Neural Interface
+21, 56–66.10.1111/ner.1269828961366</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">18</span></span> <a id="R24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id33"><!-- named anchor --></a>RM de Freitas, M Capogrosso, T Nomura &amp; M Milosevic (2022). Preferential activation of proprioceptive and cutaneous sensory fibers compared to motor fibers during cervical transcutaneous spinal cord stimulation: A computational study. J Neural Eng.10.1088/1741-2552/ac6a7c35472720</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">19</span></span> <a id="R18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id34"><!-- named anchor --></a>A Delmotte, L Jacques, K Kumar, K Poon, O Monlezun, M Roulaud, A Prevost, R Munson, F Guetarni &amp; B Bataille (2015). The Franco-Canadian multicolumn spinal cord stimulation prospective study: a subgroup analysis focusing on the decisive role of lead positioning. Neurochirurgie
+61, S83–S89.2524591810.1016/j.neuchi.2014.06.005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">20</span></span> <a id="R19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id35"><!-- named anchor --></a>SR Fernandes, R Salvador, M de Carvalho &amp; PC Miranda (2021). Modelling studies of non-invasive electric and magnetic stimulation of the spinal cord. Brain Hum Body Model
+2020139.32966023</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">21</span></span> <a id="R20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id36"><!-- named anchor --></a>S Fiocchi, P Ravazzani, A Priori &amp; M Parazzini (2016). Cerebellar and spinal direct current stimulation in children: computational modeling of the induced electric field. Front Hum Neurosci
+10, 522.2779990510.3389/fnhum.2016.00522PMC5065976</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">22</span></span> <a id="R21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id37"><!-- named anchor --></a>E Formento, K Minassian, F Wagner, JB Mignardot, L Goff-Mignardot, G Camille, A Rowald, J Bloch, S Micera &amp; M Capogrosso (2018). Electrical spinal cord stimulation must preserve proprioception to enable locomotion in humans with spinal cord injury. Nat Neurosci
+21, 1728–1741.3038219610.1038/s41593-018-0262-6PMC6268129</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">23</span></span> <a id="R22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id38"><!-- named anchor --></a>AM Frankemolle, J Wu, AM Noecker, C Voelcker-Rehage, JC Ho, JL Vitek, CC McIntyre &amp; JL Alberts (2010). Reversing cognitive–motor impairments in Parkinson’s disease patients using a computational modelling approach to deep brain stimulation programming. Brain
+133, 746–761.2006132410.1093/brain/awp315PMC2842509</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">24</span></span> <a id="R23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id39"><!-- named anchor --></a>B Frankenhaeuser &amp; A Huxley (1964). The action potential in the myelinated nerve fibre of Xenopus laevis as computed on the basis of voltage clamp data. J Physiol
+171, 302.1419148110.1113/jphysiol.1964.sp007378PMC1368893</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">25</span></span> <a id="R25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id40"><!-- named anchor --></a>A Frostell, R Hakim, EP Thelin, P Mattsson &amp; M Svensson (2016). A review of the segmental diameter of the healthy human spinal cord. Front Neurol
+7, 238.2806632210.3389/fneur.2016.00238PMC5179522</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">26</span></span> <a id="R26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id41"><!-- named anchor --></a>JL Gaines, KE Finn, JP Slopsema, LA Heyboer &amp; KH Polasek (2018). A model of motor and sensory axon activation in the median nerve using surface electrical stimulation. J Comput Neurosci
+45, 29–43.2994692210.1007/s10827-018-0689-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">27</span></span> <a id="R27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id42"><!-- named anchor --></a>D Gaweł, P Główka, T Kotwicki &amp; M Nowak (2018). Automatic Spine Tissue Segmentation from MRI Data Based on Cascade of Boosted Classifiers and Active Appearance Model. BioMed Res Int
+2018, e7952946.10.1155/2018/7952946PMC594919329854791</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">28</span></span> <a id="R28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id43"><!-- named anchor --></a>JE Gilbert, T Zhang, R Esteller &amp; WM Grill (2022). Evaluating optimized temporal patterns of spinal cord stimulation (SCS). Brain Stimulat
+15, 1051–1062.10.1016/j.brs.2022.07.04635918052</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">29</span></span> <a id="R29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id44"><!-- named anchor --></a>MS Greenberg &amp; N Arredondo (2001). Handbook of neurosurgery. Thieme
+New York.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">30</span></span> <a id="R30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id45"><!-- named anchor --></a>N Greiner, B Barra, G Schiavone, H Lorach, N James, S Conti, M Kaeser, F Fallegger, S Borgognon &amp; S Lacour (2021). Recruitment of upper-limb motoneurons with epidural electrical stimulation of the cervical spinal cord. Nat Commun
+12, 1–19.3346902210.1038/s41467-020-20703-1PMC7815834</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">31</span></span> <a id="R31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id46"><!-- named anchor --></a>J He, G Barolat, J Holsheimer &amp; JJ Struijk (1994). Perception threshold and electrode position for spinal cord stimulation. Pain
+59, 55–63.785480310.1016/0304-3959(94)90047-7</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">32</span></span> <a id="R32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id47"><!-- named anchor --></a>GR Hernández-Labrado, JL Polo, E López-Dolado &amp; JE Collazos-Castro (2011). Spinal cord direct current stimulation: finite element analysis of the electric field and current density. Med Biol Eng Comput
+49, 417–429.2140942610.1007/s11517-011-0756-9</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">33</span></span> <a id="R33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id48"><!-- named anchor --></a>AL Hodgkin &amp; AF Huxley (1952). A quantitative description of membrane current and its application to conduction and excitation in nerve. J Physiol
+117, 500.1299123710.1113/jphysiol.1952.sp004764PMC1392413</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">34</span></span> <a id="R34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id49"><!-- named anchor --></a>J Holsheimer (1998). Computer modelling of spinal cord stimulation and its contribution to therapeutic efficacy. Spinal Cord
+36, 531–540.971392110.1038/sj.sc.3100717</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">35</span></span> <a id="R35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id50"><!-- named anchor --></a>J Holsheimer (2002). Which neuronal elements are activated directly by spinal cord stimulation. Neuromodulation Technol Neural Interface
+5, 25–31.10.1046/j.1525-1403.2002._2005.x22151778</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">36</span></span> <a id="R36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id51"><!-- named anchor --></a>J Holsheimer, G Barolat, JJ Struijk &amp; J He (1995). Significance of the spinal cord position in spinal cord stimulation. Acta Neurochir Suppl
+64, 119–124.874859810.1007/978-3-7091-9419-5_26</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">37</span></span> <a id="R38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id52"><!-- named anchor --></a>J Holsheimer &amp; JJ Struijk (1991). How do geometric factors influence epidural spinal cord stimulation? A quantitative analysis by computer modeling. Stereotact Funct Neurosurg
+56, 234–249.180864810.1159/000099410</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">38</span></span> <a id="R39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id53"><!-- named anchor --></a>B Howell, SP Lad &amp; WM Grill (2014). Evaluation of intradural stimulation efficiency and selectivity in a computational model of spinal cord stimulation. PloS One
+9, e114938.2553603510.1371/journal.pone.0114938PMC4275184</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">39</span></span> <a id="R40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id54"><!-- named anchor --></a>L Kapural, C Yu, MW Doust, BE Gliner, R Vallejo, BT Sitzman, K Amirdelfan, DM Morgan, LL Brown, TL Yearwood, R Bundschu, AW Burton, T Yang, R Benyamin &amp; AH Burgher (2015). Novel 10-kHz High-frequency Therapy (HF10 Therapy) Is Superior to Traditional Low-frequency Spinal Cord Stimulation for the Treatment of Chronic Back and Leg Pain: The SENZA-RCT Randomized Controlled Trial. Anesthesiology
+123, 851–860.2621876210.1097/ALN.0000000000000774</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">40</span></span> <a id="R41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id55"><!-- named anchor --></a>AR Kent, X Min, SP Rosenberg &amp; TA Fayram (2014). Computational modeling analysis of a spinal cord stimulation paddle lead reveals broad, gapless dermatomal coverage. 2014 36th Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE.10.1109/EMBC.2014.694505825571426</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">41</span></span> <a id="R42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id56"><!-- named anchor --></a>N Khadka, X Liu, H Zander, J Swami, E Rogers, SF Lempka &amp; M Bikson (2020). Realistic anatomically detailed open-source spinal cord stimulation (RADO-SCS) model. J Neural Eng
+17, 026033.3220974110.1088/1741-2552/ab8344</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">42</span></span> <a id="R43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id57"><!-- named anchor --></a>N Khadka, DQ Truong, P Williams, JH Martin &amp; M Bikson (2019). The quasi-uniform assumption for spinal cord stimulation translational research. J Neurosci Methods
+328, 108446.3158989210.1016/j.jneumeth.2019.108446PMC6919276</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">43</span></span> <a id="R44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id58"><!-- named anchor --></a>H-Y Ko, J Park, Y Shin &amp; S Baek (2004). Gross quantitative measurements of spinal cord segments in human. Spinal Cord
+42, 35–40.1471394210.1038/sj.sc.3101538</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">44</span></span> <a id="R45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id59"><!-- named anchor --></a>I Laakso, H Matsumoto, A Hirata, Y Terao, R Hanajima &amp; Y Ugawa (2014). Multi-scale simulations predict responses to non-invasive nerve root stimulation. J Neural Eng
+11, 056013.2511561310.1088/1741-2560/11/5/056013</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">45</span></span> <a id="R46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id60"><!-- named anchor --></a>SF Lempka, CC McIntyre, KL Kilgore &amp; AG Machado (2015). Computational analysis of kilohertz frequency spinal cord stimulation for chronic pain management. Anesthesiology
+122, 1362–1376.2582258910.1097/ALN.0000000000000649</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">46</span></span> <a id="R47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id61"><!-- named anchor --></a>SF Lempka &amp; PG Patil (2018). Innovations in spinal cord stimulation for pain. Curr Opin Biomed Eng
+8, 51–60.3091170510.1016/j.cobme.2018.10.005PMC6430588</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">47</span></span> <a id="R48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id62"><!-- named anchor --></a>SF Lempka, H Zander, CJ Anaya, A Wyant, JG Ozinga &amp; AG Machado (2018). Model-based analysis of spinal cord stimulation for chronic pain. International Conference on NeuroRehabilitation. Springer.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">48</span></span> <a id="R49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id63"><!-- named anchor --></a>SF Lempka, HJ Zander, CJ Anaya, A Wyant, JG Ozinga IV &amp; AG Machado (2020). Patient-specific analysis of neural activation during spinal cord stimulation for pain. Neuromodulation Technol Neural Interface
+23, 572–581.10.1111/ner.1303731464040</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">49</span></span> <a id="R50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id64"><!-- named anchor --></a>CC McIntyre &amp; PJ Hahn (2010). Network perspectives on the mechanisms of deep brain stimulation. Neurobiol Dis
+38, 329–337.1980483110.1016/j.nbd.2009.09.022PMC2862840</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">50</span></span> <a id="R51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id65"><!-- named anchor --></a>DR McNeal (1976). Analysis of a model for excitation of myelinated nerve. IEEE Trans Biomed Eng329–337.127892510.1109/tbme.1976.324593</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">51</span></span> <a id="R52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id66"><!-- named anchor --></a>L Medlock, K Sekiguchi, S Hong, S Dura-Bernal, WW Lytton &amp; SA Prescott (2022). Multiscale computer model of the spinal dorsal horn reveals changes in network processing associated with chronic pain. J Neurosci
+42, 3133–3149.3523276710.1523/JNEUROSCI.1199-21.2022PMC8996343</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">52</span></span> <a id="R53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id67"><!-- named anchor --></a>M Meglio, B Cioni &amp; GF Rossi (1989). Spinal cord stimulation in management of chronic pain: a 9-year experience. J Neurosurg
+70, 519–524.253858810.3171/jns.1989.70.4.0519</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">53</span></span> <a id="R54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id68"><!-- named anchor --></a>R Melzack &amp; PD Wall (1965). Pain Mechanisms: A New Theory: A gate control system modulates sensory input from the skin before it evokes pain perception and response. Science
+150, 971–979.532081610.1126/science.150.3699.971</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">54</span></span> <a id="R55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id69"><!-- named anchor --></a>X Min, AR Kent, SP Rosenberg &amp; TA Fayram (2014). Modeling dermatome selectivity of single-and multiple-current source spinal cord stimulation systems. 2014 36th Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE.10.1109/EMBC.2014.694505625571424</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">55</span></span> <a id="R56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id70"><!-- named anchor --></a>EM Moraud, M Capogrosso, E Formento, N Wenger, J DiGiovanna, G Courtine &amp; S Micera (2016). Mechanisms Underlying the Neuromodulation of Spinal Circuits for Correcting Gait and Balance Deficits after Spinal Cord Injury. Neuron
+89, 814–828.2685330410.1016/j.neuron.2016.01.009</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">56</span></span> <a id="R57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id71"><!-- named anchor --></a>CS Perone, E Calabrese &amp; J Cohen-Adad (2018). Spinal cord gray matter segmentation using deep dilated convolutions. Sci Rep
+8, 5966.2965423610.1038/s41598-018-24304-3PMC5899127</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">57</span></span> <a id="R58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id72"><!-- named anchor --></a>E Pirondini, E Carranza, J-M Balaguer, E Sorensen, DJ Weber, JW Krakauer &amp; M Capogrosso (2022). Poststroke arm and hand paresis: should we target the cervical spinal cord?
+Trends Neurosci
+45, 568–578.3565941410.1016/j.tins.2022.05.002</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">58</span></span> <a id="R59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id73"><!-- named anchor --></a>MP Powell, N Verma, E Sorensen, E Carranza, A Boos, D Fields, S Roy, S Ensel, B Barra, J Balzer, J Goldsmith, RM Friedlander, G Wittenberg, LE Fisher, JW Krakauer, PC Gerszten, E Pirondini, DJ Weber &amp; M Capogrosso (2022). Epidural stimulation of the cervical spinal cord improves voluntary motor control in post-stroke upper limb paresis. 2022.04.11.22273635. Available at: 10.1101/2022.04.11.22273635v1 [Accessed October 13, 2022].PMC1029188936807682</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">59</span></span> <a id="R60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id74"><!-- named anchor --></a>F Rattay, K Minassian &amp; M Dimitrijevic (2000). Epidural electrical stimulation of posterior structures of the human lumbosacral cord: 2. quantitative analysis by computer modeling. Spinal Cord
+38, 473–489.1096260810.1038/sj.sc.3101039</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">60</span></span> <a id="R61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id75"><!-- named anchor --></a>A Richardson, C McIntyre &amp; W Grill (2000). Modelling the effects of electric fields on nerve fibres: influence of the myelin sheath. Med Biol Eng Comput
+38, 438–446.1098494310.1007/BF02345014</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">61</span></span> <a id="R62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id76"><!-- named anchor --></a>A Rowald, S Komi, R Demesmaeker, E Baaklini, SD Hernandez-Charpak, E Paoles, H Montanaro, A Cassara, F Becce &amp; B Lloyd (2022). Activity-dependent spinal cord neuromodulation rapidly restores trunk and leg motor functions after complete paralysis. Nat Med
+28, 260–271.3513226410.1038/s41591-021-01663-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">62</span></span> <a id="R63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id77"><!-- named anchor --></a>V Sadashivaiah, P Sacré, Y Guan, WS Anderson &amp; SV Sarma (2018). Modeling the interactions between stimulation and physiologically induced APs in a mammalian nerve fiber: dependence on frequency and fiber diameter. J Comput Neurosci
+45, 193–206.3044381310.1007/s10827-018-0703-yPMC8015266</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">63</span></span> <a id="R64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id78"><!-- named anchor --></a>AD Sdrulla, Y Guan &amp; SN Raja (2018). Spinal cord stimulation: clinical efficacy and potential mechanisms. Pain Pract
+18, 1048–1067.2952604310.1111/papr.12692PMC6391880</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">64</span></span> <a id="R65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id79"><!-- named anchor --></a>CN Shealy, JT Mortimer &amp; JB Reswick (1967). Electrical inhibition of pain by stimulation of the dorsal columns: preliminary clinical report. Anesth Analg
+46, 489–491.4952225</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">65</span></span> <a id="R66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id80"><!-- named anchor --></a>W Sin &amp; B Coburn (1983). Electrical stimulation of the spinal cord: a further analysis relating to anatomical factors and tissue properties. Med Biol Eng Comput
+21, 264–269.687689810.1007/BF02478492</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">66</span></span> <a id="R67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id81"><!-- named anchor --></a>C Solanes, JL Durá, MÁ Canós, J De Andrés, L Martí-Bonmatí &amp; J Saiz (2021). 3D patient-specific spinal cord computational model for SCS management: potential clinical applications. J Neural Eng
+18, 036017.10.1088/1741-2552/abe44f33556926</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">67</span></span> <a id="R68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id82"><!-- named anchor --></a>W Song, DQ Truong, M Bikson &amp; JH Martin (2015). Transspinal direct current stimulation immediately modifies motor cortex sensorimotor maps. J Neurophysiol
+113, 2801–2811.2567373810.1152/jn.00784.2014PMC4416633</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">68</span></span> <a id="R69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id83"><!-- named anchor --></a>JJ Struijk, J Holsheimer &amp; HB Boom (1993). Excitation of dorsal root fibers in spinal cord stimulation: a theoretical study. IEEE Trans Biomed Eng
+40, 632–639.824442410.1109/10.237693</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">69</span></span> <a id="R70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id84"><!-- named anchor --></a>JJ Struijk, J Holsheimer, GG van der Heide &amp; HB Boom (1992). Recruitment of dorsal column fibers in spinal cord stimulation: influence of collateral branching. IEEE Trans Biomed Eng
+39, 903–912.133543810.1109/10.256423</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">70</span></span> <a id="R71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id85"><!-- named anchor --></a>JJ Struijk, J Holsheimer, GH Spincemaille, FL Gielen &amp; R Hoekema (1998). Theoretical performance and clinical evaluation of transverse tripolar spinal cord stimulation. IEEE Trans Rehabil Eng Publ IEEE Eng Med Biol Soc
+6, 277–285.10.1109/86.7122249749905</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">71</span></span> <a id="R72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id86"><!-- named anchor --></a>A Toossi, B Bergin, M Marefatallah, B Parhizi, N Tyreman, DG Everaert, S Rezaei, P Seres, JC Gatenby &amp; SI Perlmutter (2021). Comparative neuroanatomy of the lumbosacral spinal cord of the rat, cat, pig, monkey, and human. Sci Rep
+11, 1–15.3347937110.1038/s41598-021-81371-9PMC7820487</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">72</span></span> <a id="R73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id87"><!-- named anchor --></a>J-P Van Buyten, A Al-Kaisy, I Smet, S Palmisani &amp; T Smith (2013). High-frequency spinal cord stimulation for the treatment of chronic back pain patients: results of a prospective multicenter European clinical study. Neuromodulation J Int Neuromodulation Soc
+16, 59–65; discussion 65–66.10.1111/ner.1200623199157</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">73</span></span> <a id="R74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id88"><!-- named anchor --></a>MI Vargas, M Viallon, D Nguyen, J Delavelle &amp; M Becker (2010). Diffusion tensor imaging (DTI) and tractography of the brachial plexus: feasibility and initial experience in neoplastic conditions. Neuroradiology
+52, 237–245.2005468510.1007/s00234-009-0643-3</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">74</span></span> <a id="R75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id89"><!-- named anchor --></a>E Veizi, SM Hayek, J North, T Brent Chafin, TL Yearwood, L Raso, R Frey, K Cairns, A Berg &amp; J Brendel (2017). Spinal cord stimulation (SCS) with anatomically guided (3D) neural targeting shows superior chronic axial low back pain relief compared to traditional SCS—LUMINA Study. Pain Med
+18, 1534–1548.2810864110.1093/pm/pnw286</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">75</span></span> <a id="R76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id90"><!-- named anchor --></a>FB Wagner, J-B Mignardot, L Goff-Mignardot, G Camille, R Demesmaeker, S Komi, M Capogrosso, A Rowald, I Seáñez &amp; M Caban (2018). Targeted neurotechnology restores walking in humans with spinal cord injury. Nature
+563, 65–71.3038219710.1038/s41586-018-0649-2</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">76</span></span> <a id="R77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id91"><!-- named anchor --></a>PD Wall &amp; WH Sweet (1967). Temporary abolition of pain in man. Science
+155, 108–109.601556110.1126/science.155.3758.108</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">77</span></span> <a id="R78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id92"><!-- named anchor --></a>JM Waltz &amp; WH Andreesen (1981). Multiple-lead spinal cord stimulation: technique. Stereotact Funct Neurosurg
+44, 30–36.10.1159/0001021816975072</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">78</span></span> <a id="R79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id93"><!-- named anchor --></a>N Wenger (2016). Spatiotemporal neuromodulation therapies engaging muscle synergies improve motor control after spinal cord injury. Nat Med
+22, 138–145.2677981510.1038/nm.4025PMC5061079</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">79</span></span> <a id="R80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id94"><!-- named anchor --></a>WA Wesselink, J Holsheimer &amp; HB Boom (1999). A model of the electrical behaviour of myelinated sensory nerve fibres based on human data. Med Biol Eng Comput
+37, 228–235.1039682710.1007/BF02513291</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">80</span></span> <a id="R81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id95"><!-- named anchor --></a>HJ Zander, RD Graham, CJ Anaya &amp; SF Lempka (2020). Anatomical and technical factors affecting the neural response to epidural spinal cord stimulation. J Neural Eng
+17, 036019.3236534010.1088/1741-2552/ab8fc4PMC8351789</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">81</span></span> <a id="R82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id96"><!-- named anchor --></a>AL Zannou, N Khadka, M FallahRad, DQ Truong, BH Kopell &amp; M Bikson (2021). Tissue temperature increases by a 10 kHz spinal cord stimulation system: phantom and bioheat model. Neuromodulation Technol Neural Interface
+24, 1327–1335.10.1111/ner.12980PMC692535831225695</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">82</span></span> <a id="R83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id97"><!-- named anchor --></a>AL Zannou, N Khadka, DQ Truong, T Zhang, R Esteller, B Hershey &amp; M Bikson (2019). Temperature increases by kilohertz frequency spinal cord stimulation. Brain Stimulat
+12, 62–72.10.1016/j.brs.2018.10.007PMC630110330482674</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">83</span></span> <a id="R84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id98"><!-- named anchor --></a>N Zareen, M Shinozaki, D Ryan, H Alexander, A Amer, D Truong, N Khadka, A Sarkar, S Naeem &amp; M Bikson (2017). Motor cortex and spinal cord neuromodulation promote corticospinal tract axonal outgrowth and motor recovery after cervical contusion spinal cord injury. Exp Neurol
+297, 179–189.2880375010.1016/j.expneurol.2017.08.004PMC5612913</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">84</span></span> <a id="R85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id99"><!-- named anchor --></a>TC Zhang, JJ Janik &amp; WM Grill (2014). Modeling effects of spinal cord stimulation on wide-dynamic range dorsal horn neurons: influence of stimulation frequency and GABAergic inhibition. J Neurophysiol
+112, 552–567.2479016910.1152/jn.00254.2014</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-floats" class="back">
+<h2 class="main-title"><span class="generated">Floating objects</span></h2>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">Figure 1.</h5>
+<div class="caption"><p class="first" id="P66">SCS computational modeling components. <b>(A)</b> Example of human spinal cord segments morphology, and their general applications in SCS (movement: movement restoration, pain: chronic pain treatment, autonomic: autonomic/lower urinary tract function restoration). Differences in root angle and segment shape for each spine area are highlighted with thickened lines. <b>(B)</b> Steps for building the <b>volume conductor model</b> that can be used to simulate the electromagnetic fields generated by SCS: 1) tissue contours are derived from anatomical sources, i.e., measurements, atlas, and/or medical images; 2) these segmentations are then used for the 3D volume reconstruction; 3) proper conductivity values are assigned to each tissue and the mesh is generated to simulate electromagnetic field distributions. <b>(C)</b> Potential components for the <b>biophysical neuron model</b>. Neuron fiber activation can be simulated based on assigned fiber diameter, neuron population, or neural trajectory, which with parameter tuning based on experimental and/or clinical data, can be translated into experimental and/or clinical predictions, such as perception and discomfort thresholds, and measurements of motor restoration. Subfigures in panel C include modified figures from <a href="#R30">Greiner <i>et al</i>. 2021</a> (<a href="#R30">Greiner <i>et al.</i>, 2021</a>) and <a href="#R24">de Freitas <i>et al</i>. 2022</a> (<a href="#R24">de Freitas <i>et al.</i>, 2022</a>) with permission.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F2"><!-- named anchor --></a><h5 class="label">Figure 2.</h5>
+<div class="caption"><p class="first" id="P67">Flow diagram of study selection results.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F3"><!-- named anchor --></a><h5 class="label">Figure 3.</h5>
+<div class="caption"><p class="first" id="P68">Pie charts of objective- and derived-variable distributions amongst the studies included in our analysis.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F4"><!-- named anchor --></a><h5 class="label">Figure 4.</h5>
+<div class="caption"><p class="first" id="P69">SCS model applications and purposes. (A) The top plot shows the different modeling studies based on their corresponding application (abscissa) and publication year (ordinate). The pie charts show the percentages of the anatomical sources used to create models for each application. For this analysis, we only considered models published after the introduction of MRI to SCS models in 2010. (B) Bubble charts illustrating the distributions of FEM and biophysical complexity scores for different applications. Autonomic was not included due to the low number of studies (n=3). Bold outlines indicate the most frequent complexity score for each application. (C) The bottom plot shows the different modeling studies based on their corresponding purpose (abscissa) and publication year (ordinate). The pie charts show the percentages of the anatomical sources used to create the models for each purpose. For this analysis, we only considered models published after the introduction of MRI to SCS models in 2010. (D) Bubble charts illustrating the distributions of FEM and biophysical complexity scores for different purposes. Bold outlines indicate the most frequent complexity score for each purpose.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F5"><!-- named anchor --></a><h5 class="label">Figure 5.</h5>
+<div class="caption"><p class="first" id="P70">FEM model complexity (<b>A</b>), biophysical model complexity (<b>B</b>) and personalization (<b>C</b>) scores of SCS models as a function of publication year. We have indicated the anatomical sources of the model and the corresponding SCS technique by marker color and shape, respectively. The pie charts in A and C indicate the corresponding percentage of anatomical sources for each complexity and personalization score: 0 (bottom), 1 (middle), and 2 (top). For this analysis, we only considered models published after the introduction of MRI to SCS models in 2010. (D) Bar plots representing the mode of complexity scores for the FEM and biophysical models for each personalization level. (E) Bar plots representing, for each level of personalization, the percentage of papers with no validation, a quantitative validation or a qualitative validation.</p></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1.</h5>
+<div class="caption"><p class="first" id="P71">Keyword search table and results.</p></div>
+<table frame="box" rules="all">
+<a id="id100"><!-- named anchor --></a><colgroup span="1">
+<a id="id101"><!-- named anchor --></a><col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+</colgroup>
+<thead>
+<a id="id105"><!-- named anchor --></a><tr>
+<a id="id106"><!-- named anchor --></a><th align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id107"><!-- named anchor --></a>Search Term</th>
+<th align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>Search Results PubMed (Mar. 4, 2022)</th>
+<th align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id109"><!-- named anchor --></a>Comment</th>
+</tr>
+</thead>
+<tbody>
+<a id="id110"><!-- named anchor --></a><tr>
+<a id="id111"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>“spinal cord stimulation” AND (“finite element” OR “computation*”) NOT “peripheral”</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id113"><!-- named anchor --></a>72</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id114"><!-- named anchor --></a>no filter</td>
+</tr>
+<tr>
+<a id="id115"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id116"><!-- named anchor --></a>“spinal cord” AND “stimulat*” AND “computation*” AND model</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id117"><!-- named anchor --></a>128</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id118"><!-- named anchor --></a>no filter</td>
+</tr>
+<tr>
+<a id="id119"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>“spinal cord” AND “stimulat*” AND “finite element” AND model</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>74</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id122"><!-- named anchor --></a>no filter</td>
+</tr>
+<tr>
+<a id="id123"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id124"><!-- named anchor --></a>“spinal cord” AND “stimulat*” AND simulation AND model</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>334</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>no filter</td>
+</tr>
+<tr>
+<a id="id127"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a><b>Total Number of Publication</b>
+</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>608</td>
+<td align="center" valign="middle" rowspan="1" colspan="1"><a id="id130"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id131"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a><b>Total Number of Publication Excluding Duplicates</b>
+</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id133"><!-- named anchor --></a>431</td>
+<td align="center" valign="middle" rowspan="1" colspan="1"><a id="id134"><!-- named anchor --></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>computational models</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>computer simulation</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>spinal cord stimulation</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>electric stimulation</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>personalization</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>medical imaging</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>chronic pain</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>movement restoration</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-manuscript</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
