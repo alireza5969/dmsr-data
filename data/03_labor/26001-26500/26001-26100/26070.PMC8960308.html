@@ -1,0 +1,1572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Baltrukevich and Podlewska: From Data to Knowledge: Systematic Review of Tools for Automatic Analysis of Molecular Dynamics Output</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Front Pharmacol</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Front Pharmacol</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>1524</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>frontpharmacol</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101548923</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>Front. Pharmacol.</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Frontiers in Pharmacology</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1663-9812</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Frontiers Media SA</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="fphar-13-844293.pdf">fphar-13-844293.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>Copyright © 2022 Baltrukevich and Podlewska.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022, Baltrukevich and Podlewska</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>27 December 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>26 January 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>10 March 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>13</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>400058<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>844293</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8960308</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8960308.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8960308</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8960308</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35359865</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3389/fphar.2022.844293</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>844293</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Narodowe Centrum Nauki
+10.13039/501100004281</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered">
+<h1 class="document-title">From Data to Knowledge: Systematic Review of Tools for Automatic Analysis of Molecular Dynamics Output</h1>
+<div class="document-title-notes metadata-group">
+<p class="metadata-entry"><span class="generated">Alternative title (<span class="data">left-running-head</span>): </span>Baltrukevich and Podlewska</p>
+<p class="metadata-entry"><span class="generated">Alternative title (<span class="data">right-running-head</span>): </span>Automatic Analysis of Molecular Dynamics</p>
+</div>
+</div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Hanna Baltrukevich<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1615181/overview" id="id3">https://loop.frontiersin.org/people/1615181/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Sabina Podlewska<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#c001">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1116930/overview" id="id5">https://loop.frontiersin.org/people/1116930/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><sup>1</sup>Maj Institute of Pharmacology, Polish Academy of Sciences, Kraków, Poland</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><sup>2</sup>Faculty of Pharmacy, Chair of Technology and Biotechnology of Medical Remedies, Jagiellonian University Medical College in Krakow, Kraków, Poland</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id6"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id7"><!-- named anchor --></a><p id="id8"> <b>Edited by:</b><a target="xrefwindow" href="https://loop.frontiersin.org/people/414005/overview" id="id9">Adriano D. Andricopulo</a>, University of Sao Paulo, Brazil</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id10"><!-- named anchor --></a><p id="id11"> <b>Reviewed by:</b><a target="xrefwindow" href="https://loop.frontiersin.org/people/1630511/overview" id="id12">Mohamed AbdElAziz Khamis Omar</a>, Egypt-Japan University of Science and Technology, Egypt</p><p id="id13"><a target="xrefwindow" href="https://loop.frontiersin.org/people/1631171/overview" id="id14">Rafael Doležal</a>, University of Hradec Králové, Czechia</p></p>
+<p class="metadata-entry"><span class="generated"><a id="c001"><!-- named anchor --></a>Correspondence to: </span>*Correspondence: Sabina Podlewska, <a href="mailto:smusz@if-pan.krakow.pl">smusz@if-pan.krakow.pl</a>
+</p>
+<p class="metadata-entry"><a id="id15"><!-- named anchor --></a><p id="id16"> This article was submitted to Experimental Pharmacology and Drug Discovery, a section of the journal Frontiers in Pharmacology</p></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id17">An increasing number of crystal structures available on one side, and the boost of computational power available for computer-aided drug design tasks on the other, have caused that the structure-based drug design tools are intensively used in the drug development pipelines. Docking and molecular dynamics simulations, key representatives of the structure-based approaches, provide detailed information about the potential interaction of a ligand with a target receptor. However, at the same time, they require a three-dimensional structure of a protein and a relatively high amount of computational resources. Nowadays, as both docking and molecular dynamics are much more extensively used, the amount of data output from these procedures is also growing. Therefore, there are also more and more approaches that facilitate the analysis and interpretation of the results of structure-based tools. In this review, we will comprehensively summarize approaches for handling molecular dynamics simulations output. It will cover both statistical and machine-learning-based tools, as well as various forms of depiction of molecular dynamics output.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id18">Structure-based drug design is becoming an indispensable part of virtual screening campaigns, due to the expanding possibilities of carrying out experiments from this path. It is related both to the achievements in the field of crystallography (expressed by the increasing number of deposited crystal structures), but also to the availability of the computational power and more efficient computational algorithms. Structure-based tools, with their key representatives—docking and molecular dynamics simulations–are a great source of information on the possible interaction schemes occurring between ligand and target receptors (<a href="#B206">Yang, 2014</a>; <a href="#B201">Wang et al., 2018</a>).</p>
+<p id="id19">Molecular docking is a technique that aims to predict the optimal binding mode(s) of a ligand in the respective receptor (<a href="#B139">Morris and Lim-Wilby, 2008</a>; <a href="#B85">Guedes et al., 2014</a>; <a href="#B67">Ferreira et al., 2015</a>). As the docking methodology relies on minimizing free energy of the ligand-receptor complex, the obtained structure can constitute a good starting point for more detailed analysis of ligand-protein interactions during molecular dynamics (MD) simulations (<a href="#B164">Santos et al., 2019</a>; <a href="#B200">Wang et al., 2019</a>). Moreover, as most docking tools provide limited flexibility of the target, MD can explore conformational space and generate an ensemble of receptor conformations, which could further be used during screening of chemical databases (<a href="#B6">Amaro et al., 2018</a>; <a href="#B4">Acharya et al., 2020</a>). The so-called ensemble sampling has not only increased the hit rate and, thus, improved the quality of virtual screening, but has also allowed efficient docking to the so-called “difficult protein targets” (<a href="#B69">Fu et al., 2014</a>; <a href="#B59">Ellingson et al., 2015</a>; <a href="#B192">Uehara and Tanaka, 2017</a>; <a href="#B23">Bhattarai et al., 2020</a>).</p>
+<p id="id20">MD is an approach that relies on simulating dynamical changes of the system and capturing its evolution in time. MD offers an insight into the movement of the ligand-receptor complex at an atomistic level. Furthermore, it enables quantitative estimation of parameters that cannot be established in wet-lab experiments, e.g., values of torsional angles to describe flexibility, solvent accessible surface area to predict stability, or change in the entropy for distinct structures, such as water molecule in particular location (<a href="#B67">Ferreira et al., 2015</a>; <a href="#B123">Leimkuhler and Matthews, 2016</a>; <a href="#B92">Hollingsworth and Dror, 2018</a>). The basis of the classical MD methodology is solving the Newton’s motion equations for each atom in the system, where the potential energy and forces of interacting particles are from the force-field definitions (<a href="#B181">Sutmann, 2002</a>; <a href="#B124">Lindahl, 2008</a>). These approximations are necessary to balance between the required accuracy and optimal speed of simulations’ performance. Moreover, MD timestep should be very small—1–10 fs – in order to minimize errors related to the potential energy estimation (<a href="#B24">Binder et al., 2004</a>; <a href="#B123">Leimkuhler and Matthews, 2016</a>). Huge numbers of timesteps, which are required for even relatively short simulations, contribute to the consumption of a great amount of computational resources. Fortunately, due to the increasing computational power and possibilities to perform simulations with the use of graphical processing units (GPU), MD simulations reached a millisecond time scale allowing to investigate events such as protein folding (<a href="#F1">Figure 1</a>; <a href="#B124">Lindahl, 2008</a>).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">FIGURE 1</h5>
+<div class="caption"><p class="first" id="id21">The influence of simulation time on events occurring during MD (according to <a href="#B124">Lindahl, 2008</a>).</p></div>
+</div>
+<p id="id22">Thus, the amount of data produced by MD has dramatically increased over recent years and is far beyond the accessibility of manual analysis. For this reason, it is crucial to develop automatic tools for post-processing of such data. Great numbers of approaches are offered specifically by the software for MD simulations. Nevertheless, a lot of new independent methods for automated analysis have appeared recently, which are based on various statistical methods and machine learning (ML).</p>
+<p id="id23">ML approaches are nowadays used at each stage of the drug design process and development (<a href="#B14">Ballester, 2019</a>; <a href="#B193">Vamathevan et al., 2019</a>; <a href="#B146">Patel et al., 2020</a>). Their most common application involves the evaluation of compound potential bioactivity in ligand-based virtual screening (<a href="#B134">Melville et al., 2009</a>; <a href="#B31">Carpenter and Huang, 2018</a>; <a href="#B100">Hussain et al., 2021</a>); however, they are also widely applied in the evaluation of compound physicochemical and ADMET properties (<a href="#B77">Göller et al., 2020</a>; <a href="#B78">Göller et al., 2022</a>; <a href="#B105">Jia and Gao, 2022</a>). The ML role in computer-aided drug design is not limited to the assessment of compound libraries, but a number of generative approaches is used to enumerate new sets of potentially active compounds (<a href="#B18">Baskin, 2020</a>). Moreover, ML can help in the compound optimization and indication of features, which are important for a particular type of activity, thanks to the wide range of interpretability tools (<a href="#B97">Hudson, 2021</a>). ML methods also support structure-based path of virtual screening tasks – they assist in the detection of ligand-protein interaction patterns characteristic for considered activity profiles (<a href="#B112">Khamis et al., 2015</a>; <a href="#B113">Khamis and Gomaa, 2015</a>; <a href="#B114">Khamis et al., 2016</a>), as well as in the detection of complex relationships between ligand-protein interaction schemes occurring during MD simulations (<a href="#B153">Podlewska et al., 2020</a>; <a href="#B118">Kucwaj-Brysz et al., 2021</a>).</p>
+<p id="id24">In this review, we comprehensively summarize existing approaches to automatic handling of MD simulations’ outputs. We will describe approaches available within the MD software, but our main focus is on the automatic statistical and ML-based post-processing tools.</p>
+</div>
+<div class="section">
+<a id="s2"><!-- named anchor --></a><h2 class="main-title">Tools Available Within the MD Software or Packages Dedicated To MD Output Analysis</h2>
+<p id="id25">Numerous software packages are able to perform MD simulations. The list of the most popular programs includes GROMACS (<a href="#B2">Abraham et al., 2015</a>), HyperChem (<a href="#B121">Laxmi and Priyadarshy, 2002</a>), AMBER (<a href="#B33">Case et al., 2005</a>), LAMMPS (<a href="#B185">Thompson et al., 2021</a>), CHARMM (<a href="#B28">Brooks et al., 2009</a>), DL_POLY (<a href="#B187">Todorov et al., 2006</a>), HOOMD (<a href="#B72">Glaser et al., 2015</a>), TINKER (<a href="#B119">Lagardère et al., 2018</a>), NAMD (<a href="#B148">Phillips et al., 2005</a>), and Desmond (<a href="#B26">Bowers et al., 2006</a>). The resulting simulation trajectory can then be analyzed at different levels – from the qualitative visualization of changes occurring in the modeled system to detailed investigation of variations in atom positions and ligand-protein interactions. Due to the high amount of data produced during MD simulations (of up to several terabytes size), programs for MD analysis should also be able to efficiently deal with such data volumes.</p>
+<p id="id26">The list of the most known packages for MD simulations analysis opens VMD [Visual Molecular Dynamics (<a href="#B98">Humphrey et al., 1996</a>)], developed by the Theoretical and Computational Biophysics Group at the University of Illinois at Urbana-Champaign. VMD is a program designed for interactive visualization and analysis of biomolecular systems including processing of very large systems (composed of up to billion particles). The software is written in C and C++ (source code available) and is distributed free of charge. Convenient graphical interface supports performing various types of coordinate analysis on Unix, MacOS, and Windows operating system, along with NVIDIA OptiX and CUDA support. In addition to the built-in analysis tools applicable to trajectories processing, VMD has a broad collection of plugins and scripts (<a href="#B217">VMD Plugin Library, 2021</a>, n. d.; <a href="#B198">VMD Script Library (2021)</a>, n. d.).</p>
+<p id="id27">Execution of Tcl and Python scripts and implementation of developed plugins enables adjustement of VMD capabilities to users’ needs without recompiling the source code. Both types of tools are distributed under an open-source license, unless otherwise stated. Moreover, researchers are encouraged to develop and share new utilities in order to support the growth of the VMD community and development of the software. VMD plugins are divided into the “molfile” plugins, which enable working with multiple file formats of molecular data, and scripting extensions used to perform requested tasks. Plugins dedicated to data analysis allow performing various calculations: from RMSD (<i>RMSD Tool</i>, <i>RMSD Trajectory Tool</i>) to electrostatic potentials (<i>APBSRun</i>, <i>Delphi Force</i>) and IR spectral density (<i>IRSpecGUI</i>). Resulting outcomes can be visualized through generated plots—<i>GofRGUI</i>, <i>NAMD Plot</i>, <i>RamaPlot</i>, <i>Timeline</i>—or as maps—<i>Contact Map</i>, <i>VolMap</i>, <i>HeatMapper</i>, <i>PMEpot</i>. There are also plugins capable of analysing free-energy perturbation calculations (<i>AlaScan</i>, <i>ParseFEP</i>) and obtaining data on proteins—<i>Intervor</i> (extracts and displays protein-protein interface), <i>SurfVol</i> (measures surface area and volume of proteins), and <i>NetworkView</i> (shows protein interaction networks). Developed statistical tools visualize clusters of structure conformations (<i>Clustering Tool</i>) or perform normal mode visualization and comparative analysis (<i>NMWiz</i>). VMD has constantly been developed: the latest version (1.9.3) includes introduction of the following major features: introduction of new QwikMD plugin connecting VMD with MD program NAMD, enabling quick preparation of common molecular simulations; the TopoTools plugin used for automated topology conversion from CHARMM to GROMACS: the new TachyonL-OSPray ray tracing engine for generating high quality renderings of molecular systems containing hundreds millions of particles; and OpenGL rendering for parallel visualization runs on “headless” clouds and petascale computers.</p>
+<p id="id28">PTRAJ (Process TRAJectory) is another example of a tool enabling post-processing of MD data (<a href="#B158">Roe et al., 2013</a>). It was dedicated for the analysis of the AMBER output. Its successor, CPPTRAJ, emerged as a response to the growing trajectory sizes, offering a wider range of functionalities and more efficient data processing. In contrast to PTRAJ (written primarily in C), CPPTRAJ code is based on C++ and the whole program structure was reorganized to facilitate the addition of new functionalities. The programs and their source code are freely available under the GNU General Public License version 3 and are distributed within the AmberTools21. The strong point of CPPTRAJ is batch-processing, which allows the use of remote sites for analysis and possibility of combining various types of commands, trajectories, and topologies in the same run. Other important features of CPPTRAJ are: the availability of MPI, OpenMP, and CUDA parallelization, support for implementation of variables and loops, and possibility to apply atom masking to specify which part of the system should be analyzed. The number of developed commands applicable for MD data analysis is great, including simple calculations, such as estimation of the number of hydrogen bonds (<i>hbond</i>), and multiple examples of more complex tools, such as performing non-linear curve fitting (<i>curvefit, multicurve</i>) and linear regression (<i>regress</i>), matrix based calculations (<i>crosscorr, diagmatrix, hausdorff, modes</i>), estimating auto-/cross-correlation (<i>autocorr, correlationcoe, timecorr</i>), creating histograms (<i>hist, kde, multihist</i>), and many more (<a href="#B34">Case et al., 2021</a>). CPPTRAJ development has resulted in new features, among which are: rewritten code expanding clustering capabilities, ability to RMS-fit grids onto coordinates, automatic calculation of multiple puckers, speeding up the non-bonded energy calculation, enhancing the performance of the <i>permutedihedrals</i> and <i>randomizeions</i> commands, and automation of downloading and building external libraries in <a href="#B46">CPPTRAJ (2021)</a>.</p>
+<p id="id29">MDAnalysis is an object-oriented library developed for the analysis of MD trajectories and protein structures (<a href="#B136">Michaud-Agrawal et al., 2011</a>). The package is written in Python and Cython and uses NumPy arrays to expand its functionality. MDAnalysis is available under the GNU General Public License version 2.0 (<a target="xrefwindow" href="https://github.com/MDAnalysis/mdanalysis" id="id30">https://github.com/MDAnalysis/mdanalysis</a>). The analysis modules are capable of assessing distances and contacts (e.g., calculating path similarity, which reveals geometric similarity of trajectories useful for identification of patterns in trajectory), performing dimensionality reduction and carrying out volumetric analysis (e.g., linear density estimation). Other modules analyze the structure of macromolecules (such as HELANAL (<a href="#B180">Sugeta and Miyazawa, 1967</a>; <a href="#B15">Bansal et al., 2000</a>)—a tool for the analysis of protein helices), polymers (including determination of the polymer persistence length), nucleic acids and, finally, membrane and membrane proteins (namely, HOLE (<a href="#B179">Stelzl et al., 2014</a>), a suite of tools used to assess pore dimensions of the holes as a function of time). Recently MDAnalysis announced the introduction of a command-line interface in answer to user needs, and a number of supported analysis modules is provided in the documentation.</p>
+<p id="id31">MDTraj (<a href="#B133">McGibbon et al., 2015</a>) is a Python library applied for MD trajectory manipulation and analysis, whose goal is to provide interafce between MD data and modern tools and programs for statistical analysis and visualization based on Python. MDTraj is licensed under the Lesser GNU General Public License (LGPL v2.1+) on GitHub (<a target="xrefwindow" href="https://github.com/mdtraj/mdtraj" id="id32">https://github.com/mdtraj/mdtraj</a>). MDTraj works with every possible MD data format, focusing on speed and efficient performance and providing multiple analysis possibilities. Available functions identify hydrogen bonds, compute distances to create residue-residue contact maps, assess secondary structure of the protein and assign code according to the implemented Dictionary (<a href="#B108">Kabsch and Sander, 1983</a>), calculate solvent-accessible surface area (SASA) and NMR scalar coupling, as well as determine nematic order parameters, which describe the orientational order of a system from 0 to 1. Another special feature is the particularly fast RMSD computations due to performance optimization based on <a href="#B87">Haque at al. (2014)</a> along with C/C++ code implementation. Moreover, MDTraj documentation gives access to 14 notebooks containing analysis examples with executable code—e.g., PCA with scikit-learn ML library followed by plotting data using Matplotlib.</p>
+<p id="id33">LOOS (Lightweight Object-Oriented Structure-analysis) (<a href="#B161">Romo et al., 2014</a>; <a href="#B83">Grossfield and Romo, 2021</a>) aims at enabling rapid development and testing of new tools for MD analysis. Additionally, the program includes a number of easy-to-use prebuilt applications. As LOOS is a C++ library, its combination with Python interface (PyLOOS) resulted in high performance and simplicity of use and further development. Moreover, the C++ layers could be used independently for even more efficient utilization of resources. LOOS is freely distributed under the GPLv3 license and is available via GitHub (<a target="xrefwindow" href="https://github.com/GrossfieldLab/loos" id="id34">https://github.com/GrossfieldLab/loos</a>). In LOOS, 140 prebuilt tools are grouped into the following categories: macromolecule tools (e.g., computation of the radial distribution function), hydrogen bonding handling, principal component analysis (PCA), elastic network models (ENM), clustering, assessment of statistical error (e.g., block-averaged standard error calculations), and convergence. The tools included in the "membrane systems" category are dedicated for analyzing lipid bilayers and associated systems (e.g., calculation of molecular order parameters. Furthermore, 2D Voronoi decomposition tools are used to obtain data within a particular membrane slice. 3D density distributions tools generate 3D histograms from MD trajectories. They were originally created for visualization of water distribution; however, they are able to estimate membrane lipid density as well.</p>
+<p id="id35">Pteros (<a href="#B209">Yesylevskyy, 2012</a>; <a href="#B208">Yesylevskyy, 2015</a>) is a high-performance molecular modeling library available for C++ and Python. It lets users analyse MD data and develop new analysis tools with the assistance of the easy-to-use APIs in both of the above-mentioned programming languages. In order to accelerate the analysis process, Pteros asynchronously reads files with MD trajectories and performs analysis tasks in parallel. Analysis plugins are completely independent and, besides typical calculations, provide more specific manipulations. For example, they enable assessing properties related to curvature with the Curvature plugin, which computes mean and Gaussian curvatures of various lipid aggregates, smooths membrane surfaces, and calculates other properties of molecules embedded into the lipid membrane. While the above-mentioned plugin is not open-source, Pteros is a free software distributed under Artistic License and available at GitHub (<a target="xrefwindow" href="https://github.com/yesint/pteros" id="id36">https://github.com/yesint/pteros</a>).</p>
+<p id="id37">Till now, we have described exclusively open source software and libraries, which serve as powerful and freely available tools for MD output analysis. Nevertheless, some commercial software is also worth mentioning, e.g., Molecular Operating Environment (MOE) [<a href="#B218">Molecular Operating Environment (MOE), 2019</a>], Desmond (<i>Schrödinger Release 2021</i>–4: <a href="#B219">Desmond Molecular Dynamics System, 2021</a>), and CHARMM (<a href="#B28">Brooks et al., 2009</a>). MOE constitutes a platform for integrated computer-aided molecular design with vast capabilities: QSAR models generation, virtual screening, protein engineering, homology modeling, as well as carrying out MD simulations. However, MOE offers limited opportunities for MD analysis, as only Free Energy Calculations along with Torsion Scan and Analysis are mentioned at the official software webpage. Greater analysis possibilities are provided by Desmond—a commercial software available without cost for non-commercial use, developed by D. E. Shaw Research for high-speed MD simulations of biological systems. Desmond offers multiple panels for different post-processing operations, such as Trajectory Frame Clustering Panel, Simulation Quality Analysis Panel (enabling estimation of potential energy, temperature, pressure, etc.), Simulation Event Analysis Panel (enabling calculation of geometric and energy-based properties, e.g., RMSF, hydrogen bonds, Coulomb energy), and Radial Distribution Function Panel. What is more, Desmond provides distinct panels for metadynamics and replica exchange simulations analysis, and Python scripts applicable for PCA, density profile calculations, and others. The advantages of MD data analysis in Desmond are its detailed tutorials, intuitive GUI, and conveniency of some tools, such as Simulation Interaction Diagram. Its output is saved as a pdf file, which contains results of protein-ligand system analysis in the form of colored plots, together with the short explanation of the meaning of each calculated property.</p>
+<p id="id38">Plenty of other software and tools are useful in MD data analysis; among them are GROMACS (<a href="#B2">Abraham et al., 2015</a>) and CHARMM (<a href="#B28">Brooks et al., 2009</a>)— well-known MD programs capable of performing analysis tasks as well. Carma (<a href="#B76">Glykos, 2006</a>) is a lightweight program written in C along with its graphical user interface grcarma (<a href="#B116">Koukos and Glykos, 2013</a>) and Wordom (<a href="#B168">Seeber et al., 2007</a>; <a href="#B169">Seeber et al., 2011</a>) - a simple and fast command-line utility. MMTSB (<a href="#B64">Feig and Karanicolas, 2004</a>) is a set of tools for enhanced sampling and multiscale molecular modeling approaches, while Simulaid (<a href="#B135">Mezei, 2010</a>) is a program for carrying out analysis tasks of multiple types and MD trajectory data manipulation. MMTK (<a href="#B91">Hinsen, 2000</a>), the Molecular Modeling Toolkit, contains MD analysis scripts; both Bio3D package (<a href="#B82">Grant et al., 2006</a>) written in R language, and Python toolkit. MD-Tracks (<a href="#B196">Verstraelen et al., 2008</a>) provides statistical analysis of MD data, and ST-Analyzer (<a href="#B104">Jeong et al., 2014</a>) is an intuitive and simple web-based GUI environment, with nine analysis modules for extraction of various parameters from MD output.</p>
+</div>
+<div class="section">
+<a id="s3"><!-- named anchor --></a><h2 class="main-title">Machine Learning—Classes of Models Used in the Structure-Based Drug Design</h2>
+<p id="id39">ML methods have become an integral element of structure-based path of drug design, and they assist in the analysis of both docking and MD simulations (<a href="#B58">Dutta and Bose, 2021</a>). The general task of ML is to detect relationships and complex patterns in large datasets. As the amount of data produced in the structure-based path has recently grown enormously, the application of ML methods for MD outcome analysis is becoming more and more popular. Within ML methods, we can also distinguish deep learning (DL) algorithms with their main usage in computer-aided drug design to generate examples of new potential ligands via generative approaches.</p>
+<p id="id40">The most popular classes of ML models applied in the broadly understood campaigns for searching for new drugs include:<div class="list">
+<a id="id41"><!-- named anchor --></a><ul style="list-style-type: none"><li><p id="id42">1) Bayesian models—a collection of models based on the Bayes’ theorem. It defines the probability of an event on the basis of prior knowledge of conditions, which might be influencing this event. The Bayes’ theorem in its simplest form (taking into account only two events, A and B) can be described using the following equation:</p></li></ul>
+</div>
+<div class="disp-formula panel">
+<a id="equ1"><!-- named anchor --></a><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="m1" overflow="scroll"><mml:mrow><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>A</mml:mi><mml:mtext>|</mml:mtext><mml:mi>B</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>B</mml:mi><mml:mtext>|</mml:mtext><mml:mi>A</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>A</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>B</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mfrac><mml:mo>,</mml:mo></mml:mrow></mml:math>
+</div>where P (A|B) is a conditional probability of occurrence of event A, given that B is true; P(B|A) is a conditional probability of occurrence of event B, given that B is true; and P(A) and P(B) are probabilities of occurrence A and B, respectively, without any conditions (P(B) &gt; 0).</p>
+<p id="id43">Bayes’ theorem for a higher number of events adopts the following form:</p>
+<p id="id44">If B, T<sub>1</sub>,…,T<sub>n</sub> are such events that:</p>
+<p id="id45">P(B) &gt; 0, <span class="inline-formula"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="m2" overflow="scroll"><mml:mrow><mml:mi>B</mml:mi><mml:mtext>C</mml:mtext><mml:msubsup><mml:mo>∪</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:msub><mml:mi>T</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:math></span> and <span class="inline-formula"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="m3" overflow="scroll"><mml:mrow><mml:msub><mml:mi>T</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>∩</mml:mo><mml:msub><mml:mi>T</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>ϕ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>≠</mml:mo><mml:mi>j</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:math></span> then:<div class="disp-formula panel">
+<a id="equ2"><!-- named anchor --></a><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="m4" overflow="scroll"><mml:mrow><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>T</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mtext>|</mml:mtext><mml:mi>B</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>B</mml:mi><mml:mtext>|</mml:mtext><mml:msub><mml:mi>T</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>T</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:msubsup><mml:mstyle displaystyle="true"><mml:mo>∑</mml:mo></mml:mstyle><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>B</mml:mi><mml:mtext>|</mml:mtext><mml:msub><mml:mi>T</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mi>P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>T</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mfrac><mml:mo>.</mml:mo></mml:mrow></mml:math>
+</div>
+</p>
+<p id="id46">In drug design approaches, Bayes’ theorem is most often used within the Naïve Bayes algorithm. In such a case, Bayes’ theorem is used together with an assumption of events (features) independence (<a href="#B21">Berrar, 2019</a>).</p>
+<p id="id47">Another concept using Bayes’ theorem is Bayesian statistics, in which all observed and unobserved parameters of a statistical model are given a joint probability distribution (prior and data distribution). Bayesian statistics expresses probability as a <i>degree of belief</i>, and Bayes’ theorem is used to assign a probability distribution to quantitatively describe this <i>degree of belief</i> in the form of a set of parameters (<a href="#B194">van de Schoot et al., 2021</a>).</p>
+<p id="id48">The Bayesian concept is also used in fuzzy clustering (<a href="#B74">Glenn et al., 2015</a>).<div class="list">
+<a id="id49"><!-- named anchor --></a><ul style="list-style-type: none"><li><p id="id50">2) K-nearest neighbors methods – based on the determination of distances between an evaluated sample and representatives of the training set. In its simplest form (K = 1), the evaluated sample is assigned to the class of its closest neighbor from the training set (or value of the considered parameter of the closest neighbor is returned in the case of regression). If a higher number of examples closest to the query is considered (K &gt; 1), voting for the most frequent class label is carried out (classification) or values of evaluated parameters are averaged (regression)–<a href="#F2">Figure 2</a> a (<a href="#B45">Cover and Hart, 1967</a>; <a href="#B86">Hall et al., 2008</a>).</p></li></ul>
+</div>
+</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F2"><!-- named anchor --></a><h5 class="label">FIGURE 2</h5>
+<div class="caption"><p class="first" id="id51">Visualization of selected ML algorithms: <b>(A)</b> k-nearest neighbor, <b>(B)</b> decision tree, <b>(C)</b> hyperplane with the highest separation margin constructed within the support vector machines algorithm implementation, <b>(D)</b> data transformation to the space, in which they are linearly separable with the use of the kernel function.</p></div>
+</div>
+<p id="id52">In MD studies, k-nearest neighbors algorithm is also used in clustering procedures aimed at the formation of groups of geometrically similar conformations (<a href="#B111">Keller et al., 2010</a>).<div class="list">
+<a id="id53"><!-- named anchor --></a><ul style="list-style-type: none">
+<li><p id="id54">3) Trees—tree-based algorithms are considered to be one of the most efficient and most broadly used types of ML models. Their important advantage is their simplicity and ease of interpretation, which play a role in drug design protocols (e.g., by the possibility of indication of features important for a particular compound activity). Predictions can be made using one decision tree or multiple tress (as it is in the case of Random Forest). Attributes for a root and subsequent nodes are selected on the basis of their discrimination power (at each level, a feature which provides the best distinguishment between considered classes is selected). Evaluation of new examples is carried out via checking values of features present in the subsequent nodes -<a href="#F2">Figure 2B</a> (<a href="#B27">Breiman et al., 1984</a>; <a href="#B155">Quinlan, 1986</a>).</p></li>
+<li><p id="id55">4) Neural networks—neural networks search for relationships in data in such a way that they mimic the processes occurring in the human brain. Their neurons are constituted by a mathematical function, which collects and classifies information. Such artificial neurons are interconnected (such connections reflect biological synapses, called edges) and they have the ability to communicate with each other. A neuron (node) receives a signal, processes it, and passes the respective information to the connected neurons. Typically, neurons are organized into layers, and the signal is passed from the input layer (the first one) to the output layer (the last one) (<a href="#B93">Hopfield, 1982</a>).</p></li>
+</ul>
+</div>
+</p>
+<p id="id56">A special type of neural network that has recently gained enormous popularity is deep neural network (DNN) with “deep” referring to the application of multiple layers in the network (<a href="#B122">LeCun et al., 2015</a>; <a href="#B165">Schmidhuber, 2015</a>).</p>
+<p id="id57">Neural networks concept is also applied in unsupervised approaches for MD data clustering, e.g., in the form of Self Organizing Maps (SOMs) (<a href="#B101">Hyvönen et al., 2001</a>; <a href="#B68">Fraccalvieri et al., 2013</a>; <a href="#B130">Mallet et al., 2021</a>). In order not to lose the topological properties of the input space, a neighborhood function is used.<div class="list">
+<a id="id58"><!-- named anchor --></a><ul style="list-style-type: none"><li><p id="id59">5) Support Vector Machines (SVM)—an algorithm according to which each data item constitutes a point in n-dimensional space (n is equal to the number of features), with coordinates defined by the particular feature value. The task of the model is to find a hyperplane, which discriminates example classes with the highest margin (<a href="#F2">Figure 2C</a>). As linear discrimination is often not possible, a kernel function needs to be applied in order to transform the input into a space of higher dimension, so an inseparable problem is converted into a separable one–<a href="#F2">Figure 2D</a> (<a href="#B43">Cortes and Vapnik, 1995</a>).</p></li></ul>
+</div>
+</p>
+</div>
+<div class="section">
+<a id="s4"><!-- named anchor --></a><h2 class="main-title">Clustering and Reduction of Data Dimensionality</h2>
+<p id="id60">The most common approach to use the automatic post-processing of the MD simulations output is the reduction of dimensionality and clustering (<a href="#B5">Amadei et al., 1993</a>; <a href="#B120">Lange and Grubmüller, 2006</a>).</p>
+<div class="section">
+<a id="s4-1"><!-- named anchor --></a><h3 class="section-title">Clustering</h3>
+<p id="id61">Clustering, from its assumptions, is an unsupervised technique of finding patterns and relationships in data. In contrast to the previously described techniques, clustering does not require the presence of the training set, as its aim is to form subgroups of similar objects. Clustering algorithms use various “distance” measures to evaluate object similarity. Two main groups of clustering approaches can be distinguished, namely partitional and hierarchical, both of which can be carried out in the bottom-up agglomerative way or using a top-down divisive approach (<a href="#B110">Kaufman and Rousseeuw, 1990</a>). Another group of data grouping methods are density-based schemes, in which the clusters refer to the peaks of the probability distribution (or free energy minima) from which the data are collected (<a href="#B163">Sander, 2011</a>; <a href="#B75">Glielmo et al., 2021</a>). In MD simulations, such probability peaks typically correspond to metastable states of the system. An example application of density-based clustering to the analysis of MD data is density-based spatial clustering of applications with noise (DBSCAN) (<a href="#B61">Ester et al., 1996</a>; <a href="#B167">Schubert et al., 2017</a>), in which the clusters are defined as regions with density above the particular threshold. Such an approach was used to find representative structures from MD simulations and analyze MD trajectories (<a href="#B199">Wang et al., 2013</a>). MD trajectories have also been analyzed by the density peak clustering.</p>
+<p id="id62">The most popular partitional clustering technique is the K-means algorithm. Clustering in this approach starts from the random placement of K initial centroids. Then, K clusters are formed iteratively in such a way that a point which is closest to a particular centroid is added to the respective cluster, and a new centroid for each cluster is determined. When the cluster membership does not change (the convergence is obtained), the process is stopped. The drawback of K-means clustering is the dependence of the final outcome on the initial choice of the centroids. Problems might also occur when significant variations in the cluster sizes or densities appear, when data outliers are present, or when the ‘natural’ clusters have non-spherical shapes (<a href="#B88">Hartigan and Wong, 1979</a>; <a href="#B96">Huang, 1998</a>).</p>
+<p id="id63">The starting point of agglomerative hierarchical clustering is a formation of singleton clusters from each object from the dataset. Then, iterative linkage of the nearest clusters is carried out, until the whole dataset constitutes one group. On the basis of the resulting dendrogram, the final division of data is produced. Hierarchical clustering is deterministic, but it requires high computational power and storage abilities, which limits its application to small datasets.</p>
+<p id="id64">The most popular metric used to evaluate MD simulations’ output in terms of data proximity is Root Mean Square Deviation (RMSD). Despite the presence of some drawbacks [e.g., incidents of wrong conclusions when applied to equilibrium evaluation (<a href="#B84">Grossfield and Zuckerman, 2009</a>)], it is still the most frequently used method for comparison of conformation similarity. Several different solutions were also proposed, such as the application of Euclidean Distances Matrices (EDM) (<a href="#B53">de Souza et al., 2017</a>); however, they have not gained such wide popularity as RMSD.</p>
+</div>
+<div class="section">
+<a id="s4-2"><!-- named anchor --></a><h3 class="section-title">Evaluation of Clustering Approaches</h3>
+<p id="id65">The evaluation of clustering is not easy, as falling into the group of unsupervised approaches, clustering does not refer to true labels. One group of cluster assessment methods is the so-called “internal evaluation,” where clusters are evaluated on the basis of the clustered data. In general, in such an evaluation, the highest scores are assigned to the approaches which produce clusters of high similarity between particular cluster elements and low similarity between elements belonging to different clusters (<a href="#B156">Rand, 1971</a>). An example of internal measure of clustering quality is Davies-Bouldin index (DB) (<a href="#B49">Davies and Bouldin, 1979</a>):<div class="disp-formula panel">
+<a id="equ3"><!-- named anchor --></a><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="m5" overflow="scroll"><mml:mrow><mml:mi>D</mml:mi><mml:mi>B</mml:mi><mml:mo>=</mml:mo><mml:mo> </mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>n</mml:mi></mml:mfrac><mml:munderover><mml:mstyle displaystyle="true"><mml:mo>∑</mml:mo></mml:mstyle><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:munderover><mml:munder><mml:mrow><mml:mi>max</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi><mml:mo>≠</mml:mo><mml:mi>i</mml:mi></mml:mrow></mml:munder><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mfrac><mml:mrow><mml:msub><mml:mi>σ</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>σ</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>c</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math>
+</div>with n being the number of clusters, <i>c</i>
+<sub><i>i</i></sub>, c<sub>j</sub> being centroids of clusters <i>i</i> and <i>j</i>, respectively; σ<sub>i</sub> refers to the average distance of elements belonging to cluster i to its centroid c<sub>i</sub>; and d (ci,cj) is the distance between centroids of clusters i and j. The lower the values of DB index, the better they are.</p>
+<p id="id66">Another approach of the assessment of clustering quality is external evaluation, which refers to pieces of information that were not used during clustering. External evaluation can be based on the known class labels or on some benchmark datasets. However, if the true class labels are known, the clustering is actually not needed (<a href="#B52">de Souto et al., 2012</a>).</p>
+<p id="id67">Before the application of methods for clustering evaluation, the dataset should be examined in terms of the clustering tendency. If the dataset is composed of the uniformly distributed points (therefore, there is no clustering tendency present), then the identified clusters may be invalid. In order to verify the clustering tendency, the Hopkins test (<a href="#B94">Hopkins and Skellam, 1954</a>) can be used (statistical test for spatial randomness of a variable).</p>
+</div>
+<div class="section">
+<a id="s4-3"><!-- named anchor --></a><h3 class="section-title">Reduction of Data Dimensionality</h3>
+<p id="id68">Principal Component Analysis (PCA) is an approach for the reduction of the data dimensionality via transformation of a large set of variables into a smaller one, preserving as much information of the original set as possible (<a href="#B102">Ichiye and Karplus, 1991</a>; <a href="#B107">Jolliffe, 2002</a>; <a href="#B106">Jolliffe and Cadima, 2016</a>). The goal is obtained via extraction of important information from the data table and its representation in the form of new orthogonal (linearly independent) variables (principal components). Then, the relationships between observations and variables can be displayed in the form of points in the maps. PCA is based on the assumption that the phenomena of interest can be explained by variances and covariances between original variables from the dataset. PCA is often applied before performing the clustering procedure. In MD-related applications, PCA is responsible for extracting the dominant modes in the molecule motion. It should be pointed out that, during the MD, the Cartesian positions of all atoms of the simulated system (of a size of thousands or even millions of atoms) are recorded in every time step, which indicates the importance of application of post-processing methods. If the dimensionality reduction is carried out properly, all relevant information is preserved, and the analysis of the MD output is valid.</p>
+<p id="id69">Another approach for reduction of data dimensionality is multidimensional scaling (MDS), which determines the data space of lower dimension with the best possible preservation of the pairwise distances between data points (<a href="#B211">Young and Householder, 1938</a>; <a href="#B189">Torgerson, 1952</a>). Its mode of action is closely related to PCA; however, for MDS it is sufficient to provide a pairwise distance between points (their exact positions are not necessary).</p>
+<p id="id70">PCA and MDS are representatives of linear methods of data dimensionality reduction; however, there is also a number of non-linear approaches to this task, with such examples as isometric features mapping (<a href="#B184">Tenenbaum et al., 2000</a>), kernel PCA (<a href="#B166">Schölkopf et al., 1998</a>), diffusion map (<a href="#B42">Coifman et al., 2005</a>; <a href="#B41">Coifman and Lafon, 2006</a>), and t-Distributed Stochastic Neighbor Embedding (t-SNE) (<a href="#B195">van der Maaten and Hinton, 2008</a>). Low-dimensional spaces to embed high-dimensional data are also more and more often determined using DL approaches. One of the most popular DL techniques for reduction of data dimensionality is autoencoder (<a href="#B117">Kramer, 1991</a>). Autoencoder maps input configuration to representation of lower dimension and then maps it back to the original space <i>via</i> respective decoder. Low-dimensional representation is learned <i>via</i> minimization of error between the original data points and data points obtained by the application of the above-mentioned decoder. Another DL-based approach for reduction of data dimensionality falls into the group of generative neural networks. Its representatives include Variational Autoencoders (VAEs) (<a href="#B126">Lopez et al., 2018</a>) and Generative Adversarial Networks (GANs) (<a href="#B80">Goodfellow, et al., 2014</a>).</p>
+</div>
+<div class="section">
+<a id="s4-4"><!-- named anchor --></a><h3 class="section-title">Examples of Clustering and Data Dimensionality Reduction for MD Output Analysis</h3>
+<p id="id71">Unsupervised procedures are widely applied in the MD outcome analysis, due to the above-mentioned problem of the vast amount of data produced during simulations: clustering data into groups gathering similar conformations obtained during MD, and reduction of data dimensionality which lowers the number of features considered. Both these approaches help in the analysis of MD output.</p>
+<p id="id72">The problem of clustering MD data emerged quite early. The first reports of clustering MD output were released in the early 1990s (<a href="#B81">Gordon and Somorjai, 1992</a>; <a href="#B188">Torda and van Gunstered, 1994</a>). Various groups also compared effectiveness of various clustering algorithms (<a href="#B171">Shao et al., 2007</a>; <a href="#B111">Keller et al., 2010</a>; <a href="#B3">Abramyan et al., 2016</a>). Nowadays, clustering of MD data has become a standard procedure applied in order to facilitate interpretation and analysis of MD trajectories (<a href="#B29">Bruno et al., 2011</a>; <a href="#B50">De Paris et al., 2015a</a>; <a href="#B51">De Paris et al., 2015b</a>; <a href="#B162">Rudling et al., 2018</a>; <a href="#B183">Takemura et al., 2018</a>; <a href="#B62">Evangelista et al., 2019</a>; <a href="#B210">Yoshino et al., 2019</a>; <a href="#B19">Bekker et al., 2020</a>; <a href="#B160">Roither et al., 2020</a>; <a href="#B11">Araki et al., 2021</a>; <a href="#B130">Mallet et al., 2021</a>; <a href="#B205">Wu et al., 2021</a>) and new algorithms to improve this procedure are constantly developed.</p>
+<p id="id73">Dimensionality reduction of MD data with the use of PCA was also first used in the early 90s (<a href="#B102">Ichiye and Karplus, 1991</a>; <a href="#B5">Amadei et al., 1993</a>) and since that time its application in MD output analysis has been constantly growing (<a href="#B47">Das and Mukhopadhyay, 2007</a>; <a href="#B38">Chiappori et al., 2010</a>; <a href="#B115">Kim et al., 2010</a>; <a href="#B35">Casoni et al., 2013</a>; <a href="#B140">Ng et al., 2013</a>; <a href="#B141">Novikov et al., 2013</a>; <a href="#B22">Bhakat et al., 2014</a>; <a href="#B175">Sittel et al., 2014</a>; <a href="#B60">Ernst et al., 2015</a>; <a href="#B36">Chaturvedi et al., 2017</a>; <a href="#B44">Cossio-Pérez et al., 2017</a>; <a href="#B63">Fakhar et al., 2017</a>; <a href="#B37">Chen, 2018</a>; <a href="#B40">Cholko et al., 2018</a>; <a href="#B7">An et al., 2019</a>; <a href="#B17">Barletta et al., 2019</a>; <a href="#B71">Girdhar et al., 2019</a>; <a href="#B109">Karnati and Wang, 2019</a>; <a href="#B125">Lipiński et al., 2019</a>; <a href="#B132">Martínez-Archundia et al., 2019</a>; <a href="#B204">Wu et al., 2019</a>; <a href="#B128">Magudeeswaran and Poomani, 2020</a>; <a href="#B48">David et al., 2021</a>; <a href="#B129">Majumder and Giri, 2021</a>). Although PCA is the most popular approach applied to handle MD trajectories, other data dimensionality reduction methods are also used in the MD field. Pisani et al. used MDS to examine conformational landscapes of CDK2 (<a href="#B150">Pisani et al., 2016</a>) and Bécavin et al. improved the application of MDS for MD data by using singular value decomposition. MDS in the context of MD was also described by <a href="#B191">Troyer and Cohen (1995)</a>, <a href="#B9">Andrecut (2009)</a>, <a href="#B190">Tribello and Gasparotto (2019)</a>, and <a href="#B177">Srivastava et al. (2020)</a>. There are also examples of the application of other approaches: isometric feature mapping (<a href="#B178">Stamati et al., 2010</a>), kernel PCA (<a href="#B10">Antoniou and Schwartz, 2011</a>), diffusion map (<a href="#B159">Rohrdanz et al., 2011</a>; <a href="#B212">Zheng et al., 2011</a>; <a href="#B213">Zheng et al., 2013a</a>; <a href="#B214">Zheng et al., 2013b</a>; <a href="#B154">Preto and Clementi, 2014</a>), t-SNE (<a href="#B216">Zhou et al., 2018</a>; <a href="#B215">Zhou et al., 2019</a>; <a href="#B176">Spiwok and Kříž, 2020</a>), and VAE (<a href="#B89">Hernández et al., 2018</a>; <a href="#B170">Shamsi et al., 2018</a>; <a href="#B138">Moritsugu, 2021</a>; <a href="#B186">Tian et al., 2021</a>).</p>
+</div>
+</div>
+<div class="section">
+<a id="s5"><!-- named anchor --></a><h2 class="main-title">Markov State Modeling</h2>
+<p id="id74">Markov state modeling (MSM) (<a href="#B144">Pande et al., 2010</a>; <a href="#B99">Husic and Pande, 2018</a>) is another approach widely applied in the MD-based studies. MSM can be used to characterize events that occur at longer timescales than available computational power to perform such long simulation. Such MDs are simulated as transitions between a set of discrete stable states. The MSM parametrization can be performed <i>via</i> running several short MDs, which can be computed in parallel. The main difficulty in the MSM application is definition of the above-mentioned stable states (<a href="#B1">Abella et al., 2020</a>). In general, MSM is an approach for modeling random processes with the use of the Markov assumption, which is when the present state is given, all following states are independent of all past states. MSMs describe the stochastic dynamics of a biomolecular system using two objects: a discretization of the high-dimensional molecular state space into n disjoint conformational sets and a model of the stochastic transitions between these states [usually described by a matrix of conditional transition probabilities (<a href="#B39">Chodera and Noé, 2014</a>)].</p>
+<p id="id75">Examples of MSM applications in drug design include: examination of the binding kinetics of the trypsin inhibitor benzamidine (<a href="#B30">Buch et al., 2011</a>), description of the multiple unbinding pathways of ligands dissociating from FKBP (<a href="#B95">Huang and Caflisch, 2011</a>), examination of substrate binding mechanism of HIV-1 protease (<a href="#B149">Pietrucci et al., 2009</a>), analysis of binding pathways of opiates to µ-opioid receptors (<a href="#B16">Barati et al., 2018</a>), reconstruction of binding process of alprenolol to the beta2-adrenergic receptor (<a href="#B20">Bernetti et al., 2019</a>), membrane-mediated ligand unbinding of the PK-11195 ligand from the translocator protein (TSPO) (<a href="#B55">Dixon et al., 2021</a>), study of the two bromodomain-inhibitor systems using multiple docked starting poses (<a href="#B54">Dickson, 2018</a>), examination of the unbinding kinetics of a p38 MAP kinase type II inhibitor (<a href="#B32">Casasnovas et al., 2017</a>), examination of ligand-induced active-inactive conformation change of beta-2 adrenergic receptor (<a href="#B13">Bai et al., 2014</a>), and investigation of the interplay of conformational change and ligand-binding kinetics for the serine protease trypsin and its competitive inhibitor benzamidine (<a href="#B152">Plattner and Noé, 2015</a>).</p>
+</div>
+<div class="section">
+<a id="s6"><!-- named anchor --></a><h2 class="main-title">Examples of ML-Based Analysis of MD</h2>
+<p id="id76">The proper representation of MD outcome opens the door to the wide range of possibilities in terms of the post-processing approaches. <a href="#B153">Podlewska et al. (2020)</a> and <a href="#B118">Kucwaj-Brysz et al. (2021)</a> analyzed ligand-receptor contact patterns occurring during MD simulations and examined them with reference to the modeled property. Via the calculation of the Pearson’s correlation coefficient between the contact frequencies and values of examined parameters, the highest correlated residues (considered as the most important for the modeled property) were detected. Scheme of the above-described protocol is presented in <a href="#F3">Figure 3</a>. At first, each simulation frame was represented with the use of the Structural Interaction Fingerprints (<a href="#B174">Singh et al., 2006</a>). Then, for each amino acid, the contact frequency during simulation was calculated. Finally, for each protein residue, the Pearson’s correlation coefficients between the respective contact frequency and values of the evaluated compound parameters were determined. The highest correlated positions were indicated as those which should be considered in detail during the further design of compounds of particular activity profile.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F3"><!-- named anchor --></a><h5 class="label">FIGURE 3</h5>
+<div class="caption"><p class="first" id="id77">Scheme of the protocol for indication of the important amino acids on the basis of the contact frequency with particular amino acids during MD simulations.</p></div>
+</div>
+<p id="id78"><a href="#B157">Riniker (2017)</a> developed a molecular dynamics fingerprint (MDFP) to combine MD approach with ML methods. MDFPs were obtained <i>via</i> the extraction of three properties from MD trajectories: intramolecular and total potential energy of the solute, radius of gyration, and solvent-accessible surface area resulting in a vector of floats. The fingerprint also contained information on the distribution of each property, characterized by its average, standard deviation, and median values. In addition, MDFP was enriched with standard 2D fingerprints: Morgan fingerprints and 2D-counts fingerprints from RDKit (number of heavy atoms, number of rotatable bonds, number of N, O, F, P, S, Cl, Br, and I atoms in the compound). Such representation constituted an input for ML models, which were trained to predict solvation free energies in five different solvents (water, octanol, chloroform, hexadecane, and cyclohexane) and partition coefficient in octanol/water, hexadecane/water, and cyclohexane/water.</p>
+<p id="id79">MDFP was also used by <a href="#B70">Gebhardt et al. (2020)</a>. In this approach, ML was combined with the atomistic MD simulations encoded with MDFPs enabling the large-scale free-energy calculations. The so-called ML/MDFP method overcomes limitations related to free-energy estimation with MD – high computational expense and imperfections of force-fields. ML models are able to detect systematic force field errors caused by specific chemical groups and, afterwards, decrease their influence on final prediction. Moreover, ML models provide efficient and fast calculations when working with fingerprints databases; as an example, Gebhart et al. utilized the distributions of potential energy of the solute, radius of gyration, and SASA, which were generated from MD data. The outcomes proved that ML/MDFP approach predicted free-energy not worse or even slightly better than rigorous free-energy simulations and two models, namely quantum chemistry-based COSMO-RS. When two models for free energy predictions (COSMO-RS and UNIFAC) were compared with the support vector regression (SVR), it appeared that the latter one demonstrated the best results. The other application of fingerprints extracted from MD could be distinguishing active compounds, as <a href="#B103">Jamal et al. (2019)</a> proved on the example of caspase-8 ligands. MD descriptors determined in this work were analogous to those obtained by Gebhardt et al. Moreover, fingerprints of different types were also calculated for reference. Multiple combinations of 2D, 3D, and MD descriptors were used to train two ML models: artificial neural networks and Random Forest. MD descriptors used individually showed better performance than being combined with other 2D/3D descriptors, which proved applicability of MD descriptors for lead prioritization and optimization of caspase-8 ligands.</p>
+<p id="id80"><a href="#B12">Ash and Fourches (2017)</a> made benefits of combination of MD and chemical descriptors to generate innovative QSAR models based on MD data, resulting in the construction of the so-called hyperpredictive MDQSAR models. The researchers in their work hypothesized that exploring dynamic noncovalent protein-ligand interactions would help to distinguish active compounds from non-active. A set of ERK2 inhibitors served as a case study, after previous unsuccessful attempts to rank them using conventional QSAR and sophisticated molecular docking techniques. Each ligand was docked in the ERK2 binding site using Glide, then 20 ns simulations of obtained ligand-protein complexes were performed in Desmond. MDs were followed by the extraction of descriptors on the basis of MD data with KNIME, such as traditional 1D-MACCS fingerprints, as well as 2D RDKit, 3D-D Moments and 3D-WHIM descriptors. The results indicate that MD descriptors successfully tackled the primary challenge and clearly pointed out the most active ligands. The hierarchical clustering highlighted similarities between MD descriptors and activities; furthermore, MD descriptors turned out to be useful in the identification of activity cliffs in all descriptor spaces. The research underlines the importance of further investigation of the MD descriptors usage, which could lead to implementation of new highly effective MDQSAR models in the future computer-aided drug design workflows.</p>
+<p id="id81">MD data were also used by <a href="#B197">Vitek et al. (2013)</a> to develop Support Vector Regression (SVR) model for water molecule energy estimation and by Jamroz et al. (2012) to examine fluctuations of protein residues during simulation.</p>
+<p id="id82">Exploring protein conformations is extremely useful in understanding protein structure and function. However, to capture conformational changes we would need to perform long-time simulations and overcome multiple high energy barriers between local energy minima, which is related to the consumption of significant amounts of computational resources. Traditionally, enhanced sampling methods are exploited to solve these problems; however, their efficiency requires improvement (<a href="#B207">Yang et al., 2019</a>). Fortunately, owing to technology advances, numerous novel efficient techniques have been developed. For example, a number of DL-based, approaches have already been proposed, such as variational autoencoders (VAEs), which significantly increases sampling “power”, if combined with MD potential. <a href="#B186">Tian et al. (2021)</a> demonstrated successful protein sampling with VAEs on the example of adenosine kinase (ADK) conformational change from its closed state to the open one. Decoded conformations were similar to the training ones. Additionally, the latent space provided by VAEs could serve as a starting point for new simulations and studying of unexplored conformational spaces. VAEs application allows to perform short simulations of 20 ns and reach sampling efficiency comparable to a single long MD simulation. Another example of analysis of MD trajectories of proteins applies the Bayesian interference method to perform structural fitting for removing time-dependent translational and rotational movements (<a href="#B137">Miyashita and Yonezawa, 2017</a>). On the other hand, <a href="#B147">Perez et al. (2015)</a> combined MD with Bayesian interference to speed up simulation. The combination of Bayesian interference with MD simulations was also used by <a href="#B173">Shevchuk and Hub (2017)</a> to refine structures and ensembles against small-angle X-ray scattering (SAXS) data.</p>
+<p id="id83">Proteins change their conformations upon the influence of many factors, such as temperature, pH, and more importantly as a consequence of molecular recognition due to ligand binding (<a href="#B57">Doms et al., 1985</a>; <a href="#B182">Takeda et al., 1989</a>; <a href="#B8">Andersen et al., 1990</a>). What is more, the ligand-protein complex is formed by the induced fit of both molecules, and the resulting protein conformations depend on the structure of the ligand (<a href="#B25">Bosshard, 2001</a>). Conformational dynamics of proteins have a profound effect on cell functioning, such as in the case of G-protein coupled receptors (GPCRs), which transduce external signals into cells by activation of specific cellular pathways. The binding of different ligands stabilizes certain conformational state, which results in the elicitation of distinct signalling—a phenomenon called functional signalling, or biased agonism (<a href="#B90">Hilger et al., 2018</a>; <a href="#B203">Wootten et al., 2018</a>). An essential role of GPCRs in signal transmission highlights the importance of understanding how ligand binding alters protein conformations, in order to design new GPCR ligands, which would target desired pathways and avoid others, potentially causing side effects. MD is perfectly suited for perceiving ligand-protein conformational change; however, the difficulty lies in the necessity to analyze long-scale MD simulations, which are required to capture tiny structural changes, responsible for functional signalling. <a href="#B151">Plante et al. (2019)</a> successfully applied deep neural networks (DNNs), to analyze MD data. MD output was transformed into the pixel representation, which is interpretable by the state-of-art DL object-recognition technology. When the method was applied to the pharmacological classification of 5-HT<sub>2A</sub> and D<sub>2</sub> receptors ligands, among which were full, partial, and inverse agonists, DNN achieved near-perfect accuracy, classifying correctly &gt;99% frames. Moreover, the sensitivity analysis identified the molecular determinants, which were considered by the model as the most important for the correct prediction. Even if the study has limited scope, including only eight ligands and two receptors, it gives hope for the highly accurate and efficient estimation of ligand-protein functional selectivity with the help of DNN.</p>
+<p id="id84">Allostery is called the second secret of life (<a href="#B65">Fenton, 2008</a>), as it is crucial for the adaptation of living organisms to changing environmental conditions by altering multiple cell functions, like enzyme catalysis, cell signalling, gene transcription, and others (<a href="#B79">Goodey and Benkovic, 2008</a>; <a href="#B143">Nussinov et al., 2014</a>). Designing allosteric drugs is a challenging task for multiple reasons. First of all, classical docking alone is unable to predict how orthosteric binding sites would adjust to allosteric modulation, and, importantly, which functional effect ligands would exert on protein’s function (<a href="#B142">Nussinov and Tsai, 2013</a>; <a href="#B127">Lu et al., 2019</a>; <a href="#B172">Sheik et al., 2020</a>). Luckily, MD simulations give insight into the nature of allosteric perturbations; moreover, the application of ML algorithms to MD data expands possibilities to extract valuable information from long-scale simulations. Recently conducted research proved that such a combined MD-ML approach is able to efficiently determine ligand’s functional activity and models explaining ligand efficacy can be constructed. <a href="#B131">Marchetti et al. (2021)</a> brought together the benefits of ensemble docking, MD and ML, in order to predict whether a set of ligands would inhibit or activate molecular chaperone Hsp90. MD of Hsp90 with several ligands was followed by cluster analysis of the obtained metatrajectory, subsequently, representative protein conformations were chosen for ensemble docking. The features obtained from docking, notably docking score, RMS, and RMSD, were used for training a supervised model, which served as a classification tool. Among three popular algorithms—logistic regression, SVM, and Random Forest - SVM reached the highest accuracy (0.9), as well as showed the best performance. On the other hand, attempts to classify ligands on the basis of separate features or chemometrics properties (here, molecular fingerprints) were far less efficient. In contrast, <a href="#B66">Ferraro et al. (2021)</a> aimed to predict allosteric ligand functionality quantitatively. A computational experiment was performed on the allosteric modulators of the molecular chaperone TRAP1, which had similar affinities, but inhibited ATPase function with different efficacy. Two ML algorithms–Naïve Bayes and SVM–were applied to extract the local dynamic patterns responsible for the allosteric perturbation. The models were trained and validated on MD simulations of the perturbed and unperturbed systems. Whereas the discriminative SVM models qualitatively assessed the disparities between the perturbed and unperturbed ensembles, the implementation of the generative Naïve Bayes model produced a linear regression model with a 0.71 correlation between predicted states in the inhibitor-bound trajectories (TPR percentage) and the TRAP1 inhibition percentage. Additionally, Naïve Bayes could estimate the weight of ligand effects on each feature, which would support the identification of the features crucial for the allosteric propagation. Therefore, ML expands the possibilities of computer-aided drug design of allosteric modulators and could bring drug design to a new level with limited experimental testing.</p>
+<p id="id85">The number of proteins with unknown functions is increasing due to the advances in bioinformatics, especially in the field of structural genomics. Identification of binding pockets could potentially be the key to understanding which functions specific proteins carry out. The FEATURE (<a href="#B202">Wei and Altman, 1998</a>) is an ML-based algorithm for the identification of Ca<sup>2+</sup>-binding sites, utilizing the Bayesian scoring scheme. The FEATURE prediction does not depend on the sequence or structure, as the models examine local 3D physicochemical environment and that is why they are able to recognize diverse binding sites. However, the applications of the algorithm were limited to static structures, until <a href="#B73">Glazer et al. (2008)</a> applied MD to improve the FEATURE detection ability by increasing structural diversity. The hypothesis was tested on parvalbumin β – an EF-hand Ca<sup>2+</sup>-binding protein, which has two Ca<sup>2+</sup>-binding sites–and MD-assisted calcium-binding pockets recognition. Moreover, relatively small time steps were characterized by significant change in the FEATURE scores, meaning that the FEATURE is very sensitive to small conformational changes, which might have an impact on calcium binding. These promising results could help to implement MD methodology in the exploration of protein functions.</p>
+<p id="id86">Researchers’ efforts and technological advancement resulted in the development of a framework designed to support performing of MD simulations by means of ML algorithms – TorchMD (<a href="#B56">Doerr et al., 2021</a>). Since the toolset is written in PyTorch (<a href="#B145">Paszke et al., 2019</a>), it can be easily integrated with other models from this ML library. Among essential features of the framework is TorchMD-Net, which takes advantage of training neural network potential in order to improve force-field development. Furthermore, TorchMD enables running simulations with end-to-end differentiability of parameters, beneficial for the performance of steered and highly constrained MD simulations, sensitivity analysis, and others. Additionally, TorchMD with implemented neural network potential is used for coarse-grained MD simulations, which are helpful in studying protein folding and exploring conformational space. Code, step-by-step tutorials, and data are available at GitHub (<a target="xrefwindow" href="https://www.github.com/torchmd" id="id87">https://www.github.com/torchmd</a>).</p>
+</div>
+<div class="section">
+<a id="s7"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<p id="id88">Both intense growth in the amount of data, as well as increasing capabilities of various algorithms to detect patterns and relationships in various sets of information, dramatically increased the popularity of automatic approaches for MD outcome analysis. The output of such experiments consists of billions of timesteps, and recorded positions and velocities of thousands of atoms. Therefore, extracting important information from such a data package can be very challenging, and so the application of various post-processing approaches is needed. The post-processing protocols can help in the finding of non-obvious ligand-protein interaction patterns, detection of rare conformational states, or examining dependence of conformational changes of the examined system in time. Moreover, thanks to the post-processing approaches, the prediction of the system behavior in longer time scales than modeled can be made.</p>
+<p id="id89">However, given all the advantages of ML approaches, we should still be aware of their limitations and pay attention to data used for models training, as it will substantially define the quality of the outcome. Importantly, ML models could have limited transferability and must be applied to other types of data carefully. Nevertheless, application of ML to MD data is undoubtedly the future, which makes the potential of MD applications almost unlimited.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="section">
+<a id="s8"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id90">HB: literature search; preparation of the manuscript draft, review, editing, figures preparation; SP: literature search, preparation of the manuscript, review, editing, figures preparation, supervision.</p>
+</div>
+<div class="section">
+<a id="s9"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id91">The study was supported by the grant OPUS 2018/31/B/NZ2/00165 financed by the National Science Centre, Poland (<a target="xrefwindow" href="http://www.ncn.gov.pl" id="id92">www.ncn.gov.pl</a>).</p>
+</div>
+<div class="section">
+<a id="s10"><!-- named anchor --></a><h2 class="main-title">Conflict of Interest</h2>
+<p id="id93">The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</div>
+<div class="section">
+<a id="s11"><!-- named anchor --></a><h2 class="main-title">Publisher’s Note</h2>
+<p id="id94">All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+</div>
+<div class="back-section">
+<a id="id95"><!-- named anchor --></a><div class="section ref-list">
+<a id="id95"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">1</span></span> <a id="B1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id96"><!-- named anchor --></a>J. R. AbellaD. AntunesK. JacksonG. LizéeC. ClementiL. E. Kavraki (2020). Markov State Modeling Reveals Alternative Unbinding Pathways for Peptide-MHC Complexes. Proc. Natl. Acad. Sci. U S A.
+117 (48), 30610–30618. 10.1073/pnas.2007246117
+33184174PMC7720115</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">2</span></span> <a id="B2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id97"><!-- named anchor --></a>M. J. AbrahamT. MurtolaR. SchulzS. PállJ. C. SmithB. Hess (2015). GROMACS: High Performance Molecular Simulations through Multi-Level Parallelism from Laptops to Supercomputers. SoftwareX
+1-2, 19–25. 10.1016/j.softx.2015.06.001
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">3</span></span> <a id="B3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id98"><!-- named anchor --></a>T. M. AbramyanJ. A. SnyderA. A. ThyparambilS. J. StuartR. A. Latour (2016). Cluster Analysis of Molecular Simulation Trajectories for Systems where Both Conformation and Orientation of the Sampled States Are Important. J. Comput. Chem.
+37 (21), 1973–1982. 10.1002/jcc.24416
+27292100PMC4925300</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">4</span></span> <a id="B4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id99"><!-- named anchor --></a>A. AcharyaR. AgarwalM. BakerJ. BaudryD. BhowmikS. Boehm (2020). Supercomputer-based Ensemble Docking Drug Discovery Pipeline with Application to COVID-19. ChemRxiv
+60 (12), 5832–5352. 10.26434/chemrxiv.12725465.v1
+PMC775478633326239</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">5</span></span> <a id="B5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id100"><!-- named anchor --></a>A. AmadeiA. B. LinssenH. J. Berendsen (1993). Essential Dynamics of Proteins. Proteins
+17 (4), 412–425. 10.1002/prot.340170408
+8108382</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">6</span></span> <a id="B6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id101"><!-- named anchor --></a>R. E. AmaroJ. BaudryJ. ChoderaÖ. DemirJ. A. McCammonY. Miao (2018). Ensemble Docking in Drug Discovery. Biophys. J.
+114 (10), 2271–2278. 10.1016/j.bpj.2018.02.038
+29606412PMC6129458</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">7</span></span> <a id="B7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id102"><!-- named anchor --></a>Y. AnH. J. JessenH. WangS. B. ShearsD. Kireev (2019). Dynamics of Substrate Processing by PPIP5K2, a Versatile Catalytic Machine. Structure
+27 (6), 1022–e2. e2. 10.1016/j.str.2019.03.007
+30956131PMC6551306</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">8</span></span> <a id="B8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id103"><!-- named anchor --></a>B. F. AndersenH. M. BakerG. E. MorrisS. V. RumballE. N. Baker (1990). Apolactoferrin Structure Demonstrates Ligand-Induced Conformational Change in Transferrins. Nature
+344 (6268), 784–787. 10.1038/344784a0
+2330032</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">9</span></span> <a id="B9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id104"><!-- named anchor --></a>M. Andrecut (2009). Molecular Dynamics Multidimensional Scaling. Phys. Lett. A
+373 (23-24), 2001–2006. 10.1016/j.physleta.2009.04.007
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">10</span></span> <a id="B10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id105"><!-- named anchor --></a>D. AntoniouS. D. Schwartz (2011). Response to Comment on “Towards Identification of the Reaction Coordinate Directly from the Transition State Ensemble Using the Kernel PCA Method” by D. Antoniou and S. Schwartz, J. Phys. Chem. B. 115, 2465-2469 (2011). J. Phys. Chem. B
+115 (10), 12674–12675. 10.1021/jp207463g
+23741196PMC3670703</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">11</span></span> <a id="B11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id106"><!-- named anchor --></a>M. ArakiS. MatsumotoG. J. BekkerY. IsakaY. SagaeN. Kamiya (2021). Exploring Ligand Binding Pathways on Proteins Using Hypersound-Accelerated Molecular Dynamics. Nat. Commun.
+12 (1), 2793. 10.1038/s41467-021-23157-1
+33990583PMC8121818</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">12</span></span> <a id="B12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id107"><!-- named anchor --></a>J. AshD. Fourches (2017). Characterizing the Chemical Space of ERK2 Kinase Inhibitors Using Descriptors Computed from Molecular Dynamics Trajectories. J. Chem. Inf. Model.
+57 (6), 1286–1299. 10.1021/acs.jcim.7b00048
+28471171</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">13</span></span> <a id="B13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id108"><!-- named anchor --></a>Q. BaiH. Pérez-SánchezY. ZhangY. ShaoD. ShiH. Liu (2014). Ligand Induced Change of β2 Adrenergic Receptor from Active to Inactive Conformation and its Implication for the Closed/open State of the Water Channel: Insight from Molecular Dynamics Simulation, Free Energy Calculation and Markov State Model Analysis. Phys. Chem. Chem. Phys.
+16 (30), 15874–15885. 10.1039/c4cp01185f
+24962153</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">14</span></span> <a id="B14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id109"><!-- named anchor --></a>P. J. Ballester (2019). Machine Learning for Molecular Modelling in Drug Design. Biomolecules
+9 (6), 216. 10.3390/biom9060216
+PMC662764431167503</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">15</span></span> <a id="B15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id110"><!-- named anchor --></a>M. BansalS. KumarR. Velavan (2000). HELANAL: a Program to Characterize helix Geometry in Proteins. J. Biomol. Struct. Dyn.
+17 (5), 811–819. 10.1080/07391102.2000.10506570
+10798526</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">16</span></span> <a id="B16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id111"><!-- named anchor --></a>A. Barati FarimaniE. FeinbergV. Pande (2018). Binding Pathway of Opiates to μ-Opioid Receptors Revealed by Machine Learning. Biophysical J.
+114 (3), 62a–63a. 10.1016/j.bpj.2017.11.390
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">17</span></span> <a id="B17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id112"><!-- named anchor --></a>G. P. BarlettaG. FranchiniB. CorsicoS. Fernandez-Alberti (2019). Fatty Acid and Retinol-Binding Protein: Unusual Protein Conformational and Cavity Changes Dictated by Ligand Fluctuations. J. Chem. Inf. Model.
+59 (8), 3545–3555. 10.1021/acs.jcim.9b00364
+31365253</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">18</span></span> <a id="B18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id113"><!-- named anchor --></a>I. I. Baskin (2020). The Power of Deep Learning to Ligand-Based Novel Drug Discovery. Expert Opin. Drug Discov.
+15 (7), 755–764. 10.1080/17460441.2020.1745183
+32228116</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">19</span></span> <a id="B19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id114"><!-- named anchor --></a>G. J. BekkerM. ArakiK. OshimaY. OkunoN. Kamiya (2020). Exhaustive Search of the Configurational Space of Heat-Shock Protein 90 with its Inhibitor by Multicanonical Molecular Dynamics Based Dynamic Docking. J. Comput. Chem.
+41 (17), 1606–1615. 10.1002/jcc.26203
+32267975</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">20</span></span> <a id="B20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id115"><!-- named anchor --></a>M. BernettiM. MasettiM. RecanatiniR. E. AmaroA. Cavalli (2019). An Integrated Markov State Model and Path Metadynamics Approach to Characterize Drug Binding Processes. J. Chem. Theor. Comput.
+15 (10), 5689–5702. 10.1021/acs.jctc.9b00450
+31436987</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">21</span></span> <a id="B21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id116"><!-- named anchor --></a>D. Berrar (2019). “Bayes’ Theorem and Naive Bayes Classifier,” in Encyclopedia of Bioinformatics and Computational Biology. Editors S. RanganathanM. GribskovK. NakaiC. Schönbach (Wadern: Academic Press), 403–412. 10.1016/b978-0-12-809633-8.20473-1
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">22</span></span> <a id="B22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id117"><!-- named anchor --></a>S. BhakatA. J. MartinM. E. Soliman (2014). An Integrated Molecular Dynamics, Principal Component Analysis and Residue Interaction Network Approach Reveals the Impact of M184V Mutation on HIV Reverse Transcriptase Resistance to Lamivudine. Mol. Biosyst.
+10 (8), 2215–2228. 10.1039/c4mb00253a
+24931725</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">23</span></span> <a id="B23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id118"><!-- named anchor --></a>A. BhattaraiJ. WangY. Miao (2020). Retrospective Ensemble Docking of Allosteric Modulators in an Adenosine G-Protein-Coupled Receptor. Biochim. Biophys. Acta Gen. Subj.
+1864 (8), 129615. 10.1016/j.bbagen.2020.129615
+32298791PMC7261249</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">24</span></span> <a id="B24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id119"><!-- named anchor --></a>K. BinderJ. HorbachW. KobW. PaulF. Varnik (2004). Molecular Dynamics Simulations. J. Phys. Condens. Matter
+16 (5), S429–S453. 10.1088/0953-8984/16/5/006
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">25</span></span> <a id="B25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id120"><!-- named anchor --></a>H. R. Bosshard (2001). Molecular Recognition by Induced Fit: How Fit Is the Concept. News Physiol. Sci.
+16 (4), 171–173. 10.1152/physiologyonline.2001.16.4.171
+11479367</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">26</span></span> <a id="B26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id121"><!-- named anchor --></a>K. J. BowersD. E. ChowH. XuR. O. DrorM. P. EastwoodB. A. Gregersen (2006). “Scalable Algorithms for Molecular Dynamics Simulations on Commodity Clusters,” in SC '06: Proceedings of the 2006 ACM/IEEE Conference on Supercomputing, 43. 10.1109/SC.2006.54
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">27</span></span> <a id="B27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id122"><!-- named anchor --></a>L. BreimanJ. H. FriedmanR. A. OlshenC. J. Stone (1984). Classification and Regression Trees. 1st ed.
+New York: Routledge. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">28</span></span> <a id="B28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id123"><!-- named anchor --></a>B. R. BrooksC. L. Brooks 3rdA. D. Mackerell JrL. NilssonR. J. PetrellaB. Roux (2009). CHARMM: the Biomolecular Simulation Program. J. Comput. Chem.
+30 (10), 1545–1614. 10.1002/jcc.21287
+19444816PMC2810661</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">29</span></span> <a id="B29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id124"><!-- named anchor --></a>A. BrunoC. BeatoG. Costantino (2011). Molecular Dynamics Simulations and Docking Studies on 3D Models of the Heterodimeric and Homodimeric 5-HT(2A) Receptor Subtype. Future Med. Chem.
+3 (6), 665–681. 10.4155/fmc.11.27
+21554074</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">30</span></span> <a id="B30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id125"><!-- named anchor --></a>I. BuchT. GiorginoG. de Fabritiis (2011). Complete Reconstruction of an Enzyme-Inhibitor Binding Process by Molecular Dynamics Simulations. Proc. Natl. Acad. Sci. U S A.
+108, 10184–10189. 10.1073/pnas.1103547108
+21646537PMC3121846</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">31</span></span> <a id="B31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id126"><!-- named anchor --></a>K. A. CarpenterX. Huang, (2018). Machine Learning-Based Virtual Screening and its Applications to Alzheimer's Drug Discovery: A Review. Curr. Pharm. Des.24 (28), 3347–3358. 10.2174/1381612824666180607124038
+29879881PMC6327115</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">32</span></span> <a id="B32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id127"><!-- named anchor --></a>R. CasasnovasV. LimongelliP. TiwaryP. CarloniM. Parrinello (2017). Unbinding Kinetics of a P38 MAP Kinase Type II Inhibitor from Metadynamics Simulations. J. Am. Chem. Soc.
+139 (13), 4780–4788. 10.1021/jacs.6b12950
+28290199</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">33</span></span> <a id="B33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id128"><!-- named anchor --></a>D. A. CaseT. E. Cheatham 3rdT. DardenH. GohlkeR. LuoK. M. Merz Jr. (2005). The Amber Biomolecular Simulation Programs. J. Comput. Chem.26(16), 1668. 10.1002/jcc.2029016200636PMC1989667</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">34</span></span> <a id="B34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id129"><!-- named anchor --></a>D. A. CaseH. M. AktulgaK. BelfonI. Y. Ben-ShalomS. R. BrozellD. S. Cerutti (2021). Amber 2021. San Francisco: University of California. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">35</span></span> <a id="B35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id130"><!-- named anchor --></a>A. CasoniF. ClericiA. Contini (2013). Molecular Dynamic Simulation of mGluR5 Amino Terminal Domain: Essential Dynamics Analysis Captures the Agonist or Antagonist Behaviour of Ligands. J. Mol. Graph. Model.
+41, 72–78. 10.1016/j.jmgm.2013.02.002
+23500630</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">36</span></span> <a id="B36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id131"><!-- named anchor --></a>N. ChaturvediB. S. YadavP. N. PandeyV. Tripathi (2017). The Effect of β-glucan and its Potential Analog on the Structure of Dectin-1 Receptor. J. Mol. Graph. Model.
+74, 315–325. 10.1016/j.jmgm.2017.04.014
+28475968</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">37</span></span> <a id="B37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id132"><!-- named anchor --></a>J. Chen (2018). Functional Roles of Magnesium Binding to Extracellular Signal-Regulated Kinase 2 Explored by Molecular Dynamics Simulations and Principal Component Analysis. J. Biomol. Struct. Dyn.
+36 (2), 351–361. 10.1080/07391102.2016.1277783
+28030988</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">38</span></span> <a id="B38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id133"><!-- named anchor --></a>F. ChiapporiI. MerelliL. MilanesiE. Rovida (2010). Exploring the Role of the Phospholipid Ligand in Endothelial Protein C Receptor: a Molecular Dynamics Study. Proteins
+78 (12), 2679–2690. 10.1002/prot.22782
+20589634</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">39</span></span> <a id="B39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id134"><!-- named anchor --></a>J. D. ChoderaF. Noé (2014). Markov State Models of Biomolecular Conformational Dynamics. Curr. Opin. Struct. Biol.
+25, 135–144. 10.1016/j.sbi.2014.04.002
+24836551PMC4124001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">40</span></span> <a id="B40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id135"><!-- named anchor --></a>T. CholkoW. ChenZ. TangC. A. Chang (2018). A Molecular Dynamics Investigation of CDK8/CycC and Ligand Binding: Conformational Flexibility and Implication in Drug Discovery. J. Comput. Aided Mol. Des.
+32 (6), 671–685. 10.1007/s10822-018-0120-3
+29737445PMC6440799</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">41</span></span> <a id="B41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id136"><!-- named anchor --></a>R. R. CoifmanS. Lafon (2006). Diffusion Maps. Appl. Comput. Harmon. Anal.
+21 (1), 5–30. 10.1016/j.acha.2006.04.006
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">42</span></span> <a id="B42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id137"><!-- named anchor --></a>R. R. CoifmanS. LafonA. B. LeeM. MaggioniB. NadlerF. Warner (2005). Geometric Diffusions as a Tool for Harmonic Analysis and Structure Definition of Data: Diffusion Maps. Proc. Natl. Acad. Sci. U. S. A.
+102 (21), 7426–7431. 10.1073/pnas.0500334102
+15899970PMC1140422</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">43</span></span> <a id="B43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id138"><!-- named anchor --></a>C. CortesV. N. Vapnik (1995). Support-vector Networks. Mach. Learn.
+20 (3), 273–297. 10.1007/BF00994018
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">44</span></span> <a id="B44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id139"><!-- named anchor --></a>R. Cossio-PérezJ. PalmaG. Pierdominici-Sottile (2017). Consistent Principal Component Modes from Molecular Dynamics Simulations of Proteins. J. Chem. Inf. Model.
+57 (4), 826–834. 10.1021/acs.jcim.6b00646
+28301154</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">45</span></span> <a id="B45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id140"><!-- named anchor --></a>T. M. CoverP. E. Hart (1967). Nearest Neighbor Pattern Classification. IEEE Trans. Inf. Theor.
+13 (1), 21–27. 10.1109/TIT.1967.1053964
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">46</span></span> <a id="B46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id141"><!-- named anchor --></a>CPPTRAJ (2021). CPPTRAJ Wiki. Available at: <a target="xrefwindow" href="https://github.com/Amber-MD/cpptraj/wiki" id="id142">https://github.com/Amber-MD/cpptraj/wiki</a> (Accessed December 22, 2021). </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">47</span></span> <a id="B47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id143"><!-- named anchor --></a>A. DasC. Mukhopadhyay (2007). Application of Principal Component Analysis in Protein Unfolding: an All-Atom Molecular Dynamics Simulation Study. J. Chem. Phys.
+127 (16), 165103. 10.1063/1.2796165
+17979396</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">48</span></span> <a id="B48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id144"><!-- named anchor --></a>C. C. DavidC. S. AveryD. J. Jacobs (2021). JEDi: Java Essential Dynamics Inspector - a Molecular Trajectory Analysis Toolkit. BMC Bioinform
+22 (1), 226. 10.1186/s12859-021-04140-5
+PMC808858333932974</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">49</span></span> <a id="B49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id145"><!-- named anchor --></a>D. L. DaviesD. W. Bouldin (1979). A Cluster Separation Measure. IEEE Trans. Pattern Anal. Mach. Intell.
+PAMI-1 (2), 224–227. 10.1109/TPAMI.1979.4766909
+21868852</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">50</span></span> <a id="B50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id146"><!-- named anchor --></a>R. De ParisC. V. QuevedoD. D. A. RuizO. Norberto de Souza (2015a). An Effective Approach for Clustering InhA Molecular Dynamics Trajectory Using Substrate-Binding Cavity Features. PLoS ONE
+10 (7), e0133172. 10.1371/journal.pone.0133172
+26218832PMC4517875</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">51</span></span> <a id="B51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id147"><!-- named anchor --></a>R. De ParisC. V. QuevedoD. D. RuizO. Norberto de SouzaR. C. Barros (2015b). Clustering Molecular Dynamics Trajectories for Optimizing Docking Experiments. Comput. Intell. Neurosci.
+2015, 916240. 10.1155/2015/916240
+25873944PMC4385651</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">52</span></span> <a id="B52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id148"><!-- named anchor --></a>M. C. P. de SoutoA. L. V. CoelhoK. FaceliT. C. SakataV. BonadiaI. G. Costa (2012). A Comparison of External Clustering Evaluation Indices in the Context of Imbalanced Data Sets. Braz. Symp. Neural Networks
+2012, 49–54. 10.1109/SBRN.2012.25
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">53</span></span> <a id="B53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id149"><!-- named anchor --></a>V. C. de SouzaL. GolliatP. V. Z. C. Goliatt (2017). “Clustering Algorithms Applied on Analysis of Protein Molecular Dynamics,” in Proceedings of the 2017 IEEE Latin American Conference on Computational Intelligence (LA-CCI), 1–6. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">54</span></span> <a id="B54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id150"><!-- named anchor --></a>A. Dickson (2018). Mapping the Ligand Binding Landscape. Biophys. J.
+115 (9), 1707–1719. 10.1016/j.bpj.2018.09.021
+30327139PMC6224774</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">55</span></span> <a id="B55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id151"><!-- named anchor --></a>T. DixonA. UyarS. Ferguson-MillerA. Dickson (2021). Membrane-Mediated Ligand Unbinding of the PK-11195 Ligand from TSPO. Biophys. J.
+120 (1), 158–167. 10.1016/j.bpj.2020.11.015
+33221248PMC7820730</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">56</span></span> <a id="B219"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id152"><!-- named anchor --></a>Desmond Molecular Dynamics System (2021). Maestro-Desmond Interoperability Tools. New York, NY: Schrödinger. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">57</span></span> <a id="B56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id153"><!-- named anchor --></a>S. DoerrM. MajewskiA. PérezA. KrämerC. ClementiF. Noe (2021). TorchMD: A Deep Learning Framework for Molecular Simulations. J. Chem. Theor. Comput.
+17 (4), 2355–2363. 10.1021/acs.jctc.0c01343
+PMC848616633729795</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">58</span></span> <a id="B57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id154"><!-- named anchor --></a>R. W. DomsA. HeleniusJ. White (1985). Membrane Fusion Activity of the Influenza Virus Hemagglutinin. The Low pH-Induced Conformational Change. J. Biol. Chem.
+260 (5), 2973–2981. 10.1016/s0021-9258(18)89461-3
+3972812</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">59</span></span> <a id="B58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id155"><!-- named anchor --></a>S. DuttaK. Bose (2021). Remodelling Structure-Based Drug Design Using Machine Learning. Emerg. Top. Life Sci.
+5 (1), 13–27. 10.1042/ETLS20200253
+33825834</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">60</span></span> <a id="B59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id156"><!-- named anchor --></a>S. R. EllingsonY. MiaoJ. BaudryJ. C. Smith (2015). Multi-conformer Ensemble Docking to Difficult Protein Targets. J. Phys. Chem. B.
+119 (3), 1026–1034. 10.1021/jp506511p
+25198248</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">61</span></span> <a id="B60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id157"><!-- named anchor --></a>M. ErnstF. SittelG. Stock (2015). Contact- and Distance-Based Principal Component Analysis of Protein Dynamics. J. Chem. Phys.
+143 (24), 244114. 10.1063/1.4938249
+26723658</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">62</span></span> <a id="B61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id158"><!-- named anchor --></a>M. EsterH.-P. KriegelJ. SanderX. Xu (1996). A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise. Kdd-96 Proc.
+96, 226–231. 10.5555/3001460.3001507
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">63</span></span> <a id="B62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id159"><!-- named anchor --></a>F. W. EvangelistaS. R. EllingsonJ. C. SmithJ. Baudry (2019). Ensemble Docking in Drug Discovery: How Many Protein Configurations from Molecular Dynamics Simulations Are Needed to Reproduce Known Ligand Binding. J. Phys. Chem. B.
+123 (25), 5189–5195. 10.1021/acs.jpcb.8b11491
+30695645</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">64</span></span> <a id="B63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id160"><!-- named anchor --></a>Z. FakharT. GovenderG. E. M. MaguireG. LamichhaneR. C. WalkerH. G. Kruger (2017). Differential Flap Dynamics in L,d-Transpeptidase2 from mycobacterium Tuberculosis Revealed by Molecular Dynamics. Mol. Biosyst.
+13 (6), 1223–1234. 10.1039/c7mb00110j
+28480928</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">65</span></span> <a id="B64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id161"><!-- named anchor --></a>M. FeigJ. KaranicolasC. L. Brooks 3rd (2004). MMTSB Tool Set: Enhanced Sampling and Multiscale Modeling Methods for Applications in Structural Biology. J. Mol. Graph. Model.
+22 (5), 377–395. 10.1016/j.jmgm.2003.12.005
+15099834</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">66</span></span> <a id="B65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id162"><!-- named anchor --></a>A. W. Fenton (2008). Allostery: an Illustrated Definition for the ‘second Secret of Life. Trends Biochem. Sci.
+33 (9), 420–425. 10.1016/j.tibs.2008.05.009
+18706817PMC2574622</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">67</span></span> <a id="B66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id163"><!-- named anchor --></a>M. FerraroE. MoroniE. IppolitiS. RinaldiC. Sanchez-MartinA. Rasola (2021). Machine Learning of Allosteric Effects: the Analysis of Ligand-Induced Dynamics to Predict Functional Effects in TRAP1. J. Phys. Chem. B.
+125 (1), 101–114. 10.1021/acs.jpcb.0c09742
+33369425PMC8016192</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">68</span></span> <a id="B67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id164"><!-- named anchor --></a>L. G. FerreiraR. N. Dos SantosG. OlivaA. D. Andricopulo (2015). Molecular Docking and Structure-Based Drug Design Strategies. Molecules
+20 (7), 13384–13421. 10.3390/molecules200713384
+26205061PMC6332083</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">69</span></span> <a id="B68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id165"><!-- named anchor --></a>D. FraccalvieriL. BonatiF. Stella (2013). “Self Organizing Maps to Efficiently Cluster and Functionally Interpret Protein Conformational Ensembles,” in In Proceedings Wivace. arXiv:1309.7122. 10.4204/eptcs.130.13
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">70</span></span> <a id="B69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id166"><!-- named anchor --></a>G. FuP. SivaprakasamO. R. DaleS. P. ManlyS. J. CutlerR. J. Doerksen (2014). Pharmacophore Modeling, Ensemble Docking, Virtual Screening, and Biological Evaluation on Glycogen Synthase Kinase‐3β. Mol. Inform.
+33 (9), 610–626. 10.1002/minf.201400044
+27486080</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">71</span></span> <a id="B70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id167"><!-- named anchor --></a>J. GebhardtM. KieselS. RinikerN. Hansen (2020). Combining Molecular Dynamics and Machine Learning to Predict Self-Solvation Free Energies and Limiting Activity Coefficients. J. Chem. Inf. Model.
+60 (11), 5319–5330. 10.1021/acs.jcim.0c00479
+32786697</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">72</span></span> <a id="B71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id168"><!-- named anchor --></a>K. GirdharB. DehuryS. M. KumarV. P. DanielA. ChoubeyS. Dogra (2019). Novel Insights into the Dynamics Behavior of Glucagon-like Peptide-1 Receptor with its Small Molecule Agonists. J. Biomol. Struct. Dyn.
+37 (15), 3976–3986. 10.1080/07391102.2018.1532818
+30296922</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">73</span></span> <a id="B72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id169"><!-- named anchor --></a>J. GlaserT. D. NguyenJ. A. AndersonP. LuiF. SpigaJ. A. Millan (2015). Strong Scaling of General-Purpose Molecular Dynamics Simulations on GPUs. Comput. Phys. Commun.
+192, 97–107. 10.1016/j.cpc.2015.02.028
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">74</span></span> <a id="B73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id170"><!-- named anchor --></a>D. S. GlazerR. J. RadmerR. B. Altman (2008). Combining Molecular Dynamics and Machine Learning to Improve Protein Function Recognition. Pac. Symp. Biocomput.
+13, 332–343. 10.1249/jsr.0b013e31818f03c5
+PMC245924318229697</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">75</span></span> <a id="B74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id171"><!-- named anchor --></a>T. C. GlennA. ZareP. D. Gader (2015). Bayesian Fuzzy Clustering. IEEE Trans. Fuzzy Syst.
+23 (5), 1545–1561. 10.1109/TFUZZ.2014.2370676
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">76</span></span> <a id="B75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id172"><!-- named anchor --></a>A. GlielmoB. E. HusicA. RodriguezC. ClementiF. NoéA. Laio (2021). Unsupervised Learning Methods for Molecular Simulation Data. Chem. Rev.
+121 (16), 9722–9758. 10.1021/acs.chemrev.0c01195
+33945269PMC8391792</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">77</span></span> <a id="B76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id173"><!-- named anchor --></a>N. M. Glykos (2006). Software News and Updates Carma: A Molecular Dynamics Analysis Program. J. Comput. Chem.
+27 (14), 1765–1768. 10.1002/jcc.20482
+16917862</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">78</span></span> <a id="B77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id174"><!-- named anchor --></a>A. H. GöllerL. KuhnkeF. MontanariA. BoninS. SchneckenerA. Ter Laak (2020). Bayer's In Silico ADMET Platform: a Journey of Machine Learning over the Past Two Decades. Drug Discov. Today
+25 (9), 1702–1709. 10.1016/j.drudis.2020.07.001
+32652309</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">79</span></span> <a id="B78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id175"><!-- named anchor --></a>A. H. GöllerL. KuhnkeA. Ter LaakK. MeierA. Hillisch (2022). Machine Learning Applied to the Modeling of Pharmacological and ADMET Endpoints. Methods Mol. Biol.
+2390, 61–101. 10.1007/978-1-0716-1787-8_2
+34731464</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">80</span></span> <a id="B79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id176"><!-- named anchor --></a>N. M. GoodeyS. J. Benkovic (2008). Allosteric Regulation and Catalysis Emerge via a Common Route. Nat. Chem. Biol.
+4 (8), 474–482. 10.1038/nchembio.98
+18641628</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">81</span></span> <a id="B80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id177"><!-- named anchor --></a>I. GoodfellowJ. Pouget-AbadieM. MirzaB. XuD. Warde-FarleyS. Ozair (2014). Generative Adversarial Nets. Adv. Neural Inf. Process. Syst.
+27, 2672–2680. 10.3156/jsoft.29.5_177_2
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">82</span></span> <a id="B81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id178"><!-- named anchor --></a>H. L. GordonR. L. Somorjai (1992). Fuzzy Cluster Analysis of Molecular Dynamics Trajectories. Proteins
+14 (2), 249–264. 10.1002/prot.340140211
+1409572</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">83</span></span> <a id="B82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id179"><!-- named anchor --></a>B. J. GrantA. P. C. RodriguesK. M. ElSawyJ. A. McCammonL. S. D. Caves (2006). Bio3d: an R Package for the Comparative Analysis of Protein Structures. Bioinformatics
+22 (21), 2695–2696. 10.1093/bioinformatics/btl461
+16940322</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">84</span></span> <a id="B83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id180"><!-- named anchor --></a>A. GrossfieldT. D. Romo (2021). Loos, a Better Tool to Analyze Molecular Dynamics Simulations. Biophys. J.
+120 (3), 178a. 10.1016/j.bpj.2020.11.1245
+33296668</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">85</span></span> <a id="B84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id181"><!-- named anchor --></a>A. GrossfieldD. M. Zuckerman (2009). Quantifying Uncertainty and Sampling Quality in Biomolecular Simulations. Annu. Rep. Comput. Chem.
+5, 23–48. 10.1016/S1574-1400(09)00502-7
+20454547PMC2865156</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">86</span></span> <a id="B85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id182"><!-- named anchor --></a>I. A. GuedesC. S. de MagalhãesL. E. Dardenne (2014). Receptor–ligand Molecular Docking. Biophys. Rev.
+6 (1), 75–87. 10.1007/s12551-013-0130-2
+28509958PMC5425711</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">87</span></span> <a id="B86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id183"><!-- named anchor --></a>P. HallB. U. ParkR. J. Samworth (2008). Choice of Neighbor Order in Nearest-Neighbor Classification. Ann. Stat.
+36 (5), 2135–2152. 10.1214/07-AOS537
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">88</span></span> <a id="B87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id184"><!-- named anchor --></a>I. S. HaqueK. A. BeauchampV. S. Pande (2014). A Fast 3× N Matrix Multiply Routine for Calculation of Protein RMSD. Biorxiv
+8631. 10.1101/008631
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">89</span></span> <a id="B88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id185"><!-- named anchor --></a>A. HartiganM. A. Wong (1979). A K-Means Clustering Algorithm. J. R. Stat. Soc. Ser. C Appl. Stat.
+28 (1), 100–108. 10.2307/2346830
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">90</span></span> <a id="B89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id186"><!-- named anchor --></a>C. X. HernándezH. K. Wayment-SteeleM. M. SultanB. E. HusicV. S. Pande (2018). Variational Encoding of Complex Dynamics. Phys. Rev. E.
+97 (6-1), 062412. 10.1103/PhysRevE.97.062412
+30011547PMC7398762</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">91</span></span> <a id="B90"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id187"><!-- named anchor --></a>D. HilgerM. MasureelB. K. Kobilka (2018). Structure and Dynamics of GPCR Signaling Complexes. Nat. Struct. Mol. Biol.
+25 (1), 4–12. 10.1038/s41594-017-0011-7
+29323277PMC6535338</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">92</span></span> <a id="B91"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id188"><!-- named anchor --></a>K. Hinsen (2000). The Molecular Modeling Toolkit: a New Approach to Molecular Simulations. J. Comput. Chem.
+21 (2), 79–85. 10.1002/(SICI)1096-987X(20000130)21:2&lt;79::AID-JCC1&gt;3.0.CO;2-B
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">93</span></span> <a id="B92"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id189"><!-- named anchor --></a>S. A. HollingsworthR. O. Dror (2018). Molecular Dynamics Simulation for All. Neuron
+99 (6), 1129–1143. 10.1016/j.neuron.2018.08.011
+30236283PMC6209097</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">94</span></span> <a id="B93"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id190"><!-- named anchor --></a>J. J. Hopfield (1982). Neural Networks and Physical Systems with Emergent Collective Computational Abilities. Proc. Natl. Acad. Sci. U.S.A.
+79 (8), 2554–2558. 10.1073/pnas.79.8.2554
+6953413PMC346238</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">95</span></span> <a id="B94"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id191"><!-- named anchor --></a>B. HopkinsJ. G. Skellam (1954). A New Method for Determining the Type of Distribution of Plant Individuals. Ann. Bot.
+18 (2), 213–227. 10.1093/oxfordjournals.aob.a083391
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">96</span></span> <a id="B95"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id192"><!-- named anchor --></a>D. HuangA. Caflisch (2011). The Free Energy Landscape of Small Molecule Unbinding. Plos Comput. Biol.
+7 (2), e1002002. 10.1371/journal.pcbi.1002002
+21390201PMC3033371</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">97</span></span> <a id="B96"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id193"><!-- named anchor --></a>Z. Huang (1998). Extensions to the <i>K</i>-Means Algorithm for Clustering Large Data Sets with Categorical Values. Data Min. Knowl. Discov.
+2 (3), 283–304. 10.1023/A:1009769707641
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">98</span></span> <a id="B97"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id194"><!-- named anchor --></a>I. L. Hudson (2021). Data Integration Using Advances in Machine Learning in Drug Discovery and Molecular Biology. Methods Mol. Biol.
+2190, 167–184. 10.1007/978-1-0716-0826-5_7
+32804365</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">99</span></span> <a id="B98"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id195"><!-- named anchor --></a>W. HumphreyA. DalkeK. Schulten (1996). VMD: Visual Molecular Dynamics. J. Mol. Graph.
+14 (1), 33–38. 10.1016/0263-7855(96)00018-5
+8744570</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">100</span></span> <a id="B99"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id196"><!-- named anchor --></a>B. E. HusicV. S. Pande (2018). Markov State Models: From an Art to a Science. J. Am. Chem. Soc.
+140 (7), 2386–2396. 10.1021/jacs.7b12191
+29323881</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">101</span></span> <a id="B100"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id197"><!-- named anchor --></a>W. HussainN. RasoolY. D. Khan (2021). Insights into Machine Learning-Based Approaches for Virtual Screening in Drug Discovery: Existing Strategies and Streamlining through FP-CADD. Curr. Drug Discov. Technol.
+18 (4), 463–472. 10.2174/1570163817666200806165934
+32767944</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">102</span></span> <a id="B101"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id198"><!-- named anchor --></a>M. T. HyvönenY. HiltunenW. El-DeredyT. OjalaJ. VaaraP. T. Kovanen (2001). Application of Self-Organizing Maps in Conformational Analysis of Lipids. J. Am. Chem. Soc.
+123 (5), 810–816. 10.1021/ja0025853
+11456614</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">103</span></span> <a id="B102"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id199"><!-- named anchor --></a>T. IchiyeM. Karplus (1991). Collective Motions in Proteins: a Covariance Analysis of Atomic Fluctuations in Molecular Dynamics and normal Mode Simulations. Proteins
+11 (3), 205–217. 10.1002/prot.340110305
+1749773</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">104</span></span> <a id="B103"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id200"><!-- named anchor --></a>S. JamalA. GroverS. Grover (2019). Machine Learning from Molecular Dynamics Trajectories to Predict Caspase-8 Inhibitors against Alzheimer’s Disease. Front. Pharmacol.
+10, 780. 10.3389/fphar.2019.00780
+31354494PMC6639425</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">105</span></span> <a id="B104"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id201"><!-- named anchor --></a>J. C. JeongS. JoE. L. WuY. QiV. Monje‐GalvanM. S. Yeom (2014). ST‐analyzer: A Web‐based User Interface for Simulation Trajectory Analysis. J. Comput. Chem.
+35 (12), 957–963. 10.1002/jcc.23584
+24638223</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">106</span></span> <a id="B105"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id202"><!-- named anchor --></a>L. JiaH. Gao (2022). Machine Learning for In Silico ADMET Prediction. Methods Mol. Biol.
+2390, 447–460. 10.1007/978-1-0716-1787-8_20
+34731482</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">107</span></span> <a id="B106"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id203"><!-- named anchor --></a>I. T. JolliffeJ. Cadima (2016). Principal Component Analysis: a Review and Recent Developments. Phil. Trans. R. Soc. A.
+374 (2065), 20150202. 10.1098/rsta.2015.0202
+26953178PMC4792409</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">108</span></span> <a id="B107"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id204"><!-- named anchor --></a>I. T. Jolliffe (2002). Principal Component Analysis. New York: Springer-Verlag. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">109</span></span> <a id="B108"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id205"><!-- named anchor --></a>W. KabschC. Sander (1983). Dictionary of Protein Secondary Structure: Pattern Recognition of Hydrogen‐bonded and Geometrical Features. Biopolym. Orig. Res. Biomol.
+22 (12), 2577–2637. 10.1002/bip.360221211
+6667333</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">110</span></span> <a id="B109"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id206"><!-- named anchor --></a>K. R. KarnatiY. Wang (2019). Structural and Binding Insights into HIV-1 Protease and P2-Ligand Interactions through Molecular Dynamics Simulations, Binding Free Energy and Principal Component Analysis. J. Mol. Graph. Model.
+92, 112–122. 10.1016/j.jmgm.2019.07.008
+31351319PMC6732013</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">111</span></span> <a id="B110"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id207"><!-- named anchor --></a>L. KaufmanP. J. Rousseeuw (1990). Finding Groups in Data: An Introduction to Cluster Analysis. Hoboken, NJ: John Willey &amp; Sons. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">112</span></span> <a id="B111"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id208"><!-- named anchor --></a>B. KellerX. DauraW. F. van Gunsteren (2010). Comparing Geometric and Kinetic Cluster Algorithms for Molecular Simulation Data. J. Chem. Phys.
+132 (7), 074110. 10.1063/1.3301140
+20170218</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">113</span></span> <a id="B112"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id209"><!-- named anchor --></a>M. A. KhamisW. GomaaW. F. Ahmed (2015). Machine Learning in Computational Docking. Artif. Intell. Med.
+63 (3), 135–152. 10.1016/j.artmed.2015.02.002
+25724101</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">114</span></span> <a id="B113"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id210"><!-- named anchor --></a>M. A. KhamisW. Gomaa (2015). Comparative Assessment of Machine-Learning Scoring Functions on PDBbind 2013. Eng. Appl. Artif. Intell.
+45 (C), 136–151. 10.1016/j.engappai.2015.06.021
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">115</span></span> <a id="B114"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id211"><!-- named anchor --></a>M. KhamisW. GomaaB. Galal (2016). Deep Learning Is Competing Random forest in Computational Docking. New Borg El-Arab City, Egypt: arXiv:1608.06665. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">116</span></span> <a id="B115"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id212"><!-- named anchor --></a>H. J. KimM. Y. ChoiH. J. KimM. Llinás (2010). Conformational Dynamics and Ligand Binding in the Multi-Domain Protein PDC109. PLoS One
+5 (2), e9180. 10.1371/journal.pone.0009180
+20174627PMC2823774</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">117</span></span> <a id="B116"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id213"><!-- named anchor --></a>P. I. KoukosN. M. Glykos (2013). Grcarma: a Fully Automated Task‐oriented Interface for the Analysis of Molecular Dynamics Trajectories. J. Comput. Chem.
+34 (26), 2310–2312. 10.1002/jcc.23381
+24159629</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">118</span></span> <a id="B117"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id214"><!-- named anchor --></a>M. A. Kramer (1991). Nonlinear Principal Component Analysis Using Autoassociative Neural Networks. Aiche J.
+37, 233–243. 10.1002/aic.690370209
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">119</span></span> <a id="B118"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id215"><!-- named anchor --></a>K. Kucwaj-BryszA. DelaS. PodlewskaM. BednarskiA. SiwekG. Satała (2021). The Structural Determinants for α1-adrenergic/serotonin Receptors Activity Among Phenylpiperazine-Hydantoin Derivatives. Molecules
+26 (22), 7025. 10.3390/molecules26227025
+34834117PMC8623851</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">120</span></span> <a id="B119"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id216"><!-- named anchor --></a>L. LagardèreL.-H. JollyF. LippariniF. AviatB. StammZ. F. Jing (2018). Tinker-HP: A Massively Parallel Molecular Dynamics Package for Multiscale Simulations of Large Complex Systems with Advanced Point Dipole Polarizable Force Fields. Chem. Sci.
+9 (4), 956–972. 10.1039/c7sc04531j
+29732110PMC5909332</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">121</span></span> <a id="B120"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id217"><!-- named anchor --></a>O. F. LangeH. Grubmüller (2006). Can Principal Components Yield a Dimension Reduced Description of Protein Dynamics on Long Time Scales?
+J. Phys. Chem. B.
+110 (45), 22842–22852. 10.1021/jp062548j
+17092036</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">122</span></span> <a id="B121"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id218"><!-- named anchor --></a>D. LaxmiS. Priyadarshy (2002). HyperChem 6.03. Biotech. Softw. Internet Rep.
+3 (1), 5–9. 10.1089/152791602317250351
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">123</span></span> <a id="B122"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id219"><!-- named anchor --></a>Y. LeCunY. BengioG. Hinton (2015). Deep Learning. Nature
+521 (7553), 436–444. 10.1038/nature14539
+26017442</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">124</span></span> <a id="B123"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id220"><!-- named anchor --></a>B. LeimkuhlerC. Matthews (2016). Molecular Dynamics. Switzerland: Springer. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">125</span></span> <a id="B124"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id221"><!-- named anchor --></a>E. R. Lindahl (2008). Molecular Dynamics Simulations. Methods Mol. Biol.
+443, 3–23. 10.1007/978-1-59745-177-2_1
+18446279</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">126</span></span> <a id="B125"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id222"><!-- named anchor --></a>P. F. J. LipińskiM. JarończykJ. C. DobrowolskiJ. Sadlej (2019). Molecular Dynamics of Fentanyl Bound to μ-opioid Receptor. J. Mol. Model.
+25 (5), 144. 10.1007/s00894-019-3999-2
+31053968</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">127</span></span> <a id="B126"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id223"><!-- named anchor --></a>R. LopezJ. RegierM. I. JordanN. Yosef (2018). Information Constraints on Auto-Encoding Variational Bayes. Adv. Neural Inf. Process. Syst.
+31, 6114–6125. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">128</span></span> <a id="B127"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id224"><!-- named anchor --></a>S. LuQ. ShenJ. Zhang (2019). Allosteric Methods and Their Applications: Facilitating the Discovery of Allosteric Drugs and the Investigation of Allosteric Mechanisms. Acc. Chem. Res.
+52 (2), 492–500. 10.1021/acs.accounts.8b00570
+30688063</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">129</span></span> <a id="B128"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id225"><!-- named anchor --></a>S. MagudeeswaranK. Poomani (2020). Binding Mechanism of Spinosine and Venenatine Molecules with P300 HAT Enzyme: Molecular Screening, Molecular Dynamics and Free-Energy Analysis. J. Cel. Biochem.
+121 (2), 1759–1777. 10.1002/jcb.29412
+31633226</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">130</span></span> <a id="B129"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id226"><!-- named anchor --></a>S. MajumderK. Giri (2021). An Insight into the Binding Mechanism of Viprinin and its Morpholine and Piperidine Derivatives with HIV-1 VPR: Molecular Dynamics Simulation, Principal Component Analysis and Binding Free Energy Calculation Study. J. Biomol. Struct. Dyn., 1–13. 10.1080/07391102.2021.1954553
+34296659</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">131</span></span> <a id="B130"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id227"><!-- named anchor --></a>V. MalletM. NilgesG. Bouvier (2021). Quicksom: Self-Organizing Maps on GPUs for Clustering of Molecular Dynamics Trajectories. Bioinformatics
+37 (14), 2064–2065. 10.1093/bioinformatics/btaa925
+33135048PMC8336998</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">132</span></span> <a id="B131"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id228"><!-- named anchor --></a>F. MarchettiE. MoroniA. PandiniG. Colombo (2021). Machine Learning Prediction of Allosteric Drug Activity from Molecular Dynamics. J. Phys. Chem. Lett.
+12 (15), 3724–3732. 10.1021/acs.jpclett.1c00045
+33843228PMC8154828</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">133</span></span> <a id="B132"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id229"><!-- named anchor --></a>M. Martínez-ArchundiaJ. Correa-BasurtoS. MontañoJ. L. Rosas-Trigueros (2019). Studying the Collective Motions of the Adenosine A2A Receptor as a Result of Ligand Binding Using Principal Component Analysis. J. Biomol. Struct. Dyn.
+37 (18), 4685–4700. 10.1080/07391102.2018.1564700
+30661450</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">134</span></span> <a id="B133"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id230"><!-- named anchor --></a>R. T. McGibbonK. A. BeauchampM. P. HarriganC. KleinJ. M. SwailsC. X. Hernández (2015). MDTraj: a Modern Open Library for the Analysis of Molecular Dynamics Trajectories. Biophys. J.
+109 (8), 1528–1532. 10.1016/j.bpj.2015.08.015
+26488642PMC4623899</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">135</span></span> <a id="B134"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id231"><!-- named anchor --></a>J. L. MelvilleE. K. BurkeJ. D. Hirst (2009). Machine Learning in Virtual Screening. Comb. Chem. High Throughput Screen.
+12 (4), 332–343. 10.2174/138620709788167980
+19442063</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">136</span></span> <a id="B135"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id232"><!-- named anchor --></a>M. Mezei (2010). Simulaid: a Simulation Facilitator and Analysis Program. J. Comput. Chem.
+31 (14), 2658–2668. 10.1002/jcc.21551
+20740566</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">137</span></span> <a id="B136"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id233"><!-- named anchor --></a>N. Michaud-AgrawalE. J. DenningT. B. WoolfO. Beckstein (2011). MDAnalysis: a Toolkit for the Analysis of Molecular Dynamics Simulations. J. Comput. Chem.
+32 (10), 2319–2327. 10.1002/jcc.21787
+21500218PMC3144279</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">138</span></span> <a id="B137"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id234"><!-- named anchor --></a>N. MiyashitaY. Yonezawa (2017). On-the-fly Analysis of Molecular Dynamics Simulation Trajectories of Proteins Using the Bayesian Inference Method. J. Chem. Phys.
+147 (12), 124108. 10.1063/1.4997099
+28964039</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">139</span></span> <a id="B218"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id235"><!-- named anchor --></a>Molecular Operating Environment (MOE) (2020). Chemical Computing Group ULC. Montreal, QC, Canada. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">140</span></span> <a id="B138"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id236"><!-- named anchor --></a>K. Moritsugu (2021). Multiscale Enhanced Sampling Using Machine Learning. Life (Basel)
+11 (10), 1076. 10.3390/life11101076
+34685447PMC8540671</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">141</span></span> <a id="B139"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id237"><!-- named anchor --></a>G. M. MorrisM. Lim-Wilby (2008). Molecular Docking. Methods Mol. Biol.
+443, 365–382. 10.1007/978-1-59745-177-2_19
+18446297</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">142</span></span> <a id="B140"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id238"><!-- named anchor --></a>H. W. NgC. A. LaughtonS. W. Doughty (2013). Molecular Dynamics Simulations of the Adenosine A2a Receptor: Structural Stability, Sampling, and Convergence. J. Chem. Inf. Model.
+53 (5), 1168–1178. 10.1021/ci300610w
+23514445</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">143</span></span> <a id="B141"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id239"><!-- named anchor --></a>G. V. NovikovV. S. SivozhelezovK. V. Shaitan (2013). Study of Structural Dynamics of Ligand-Activated Membrane Receptors by Means of Principal Component Analysis. Biochemistry (Mosc)
+78 (4), 403–411. 10.1134/S0006297913040093
+23590443</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">144</span></span> <a id="B142"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id240"><!-- named anchor --></a>R. NussinovC.-J. Tsai (2013). Allostery in Disease and in Drug Discovery. Cell
+153 (2), 293–305. 10.1016/j.cell.2013.03.034
+23582321</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">145</span></span> <a id="B143"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id241"><!-- named anchor --></a>R. NussinovC.-J. TsaiJ. Liu (2014). Principles of Allosteric Interactions in Cell Signaling. J. Am. Chem. Soc.
+136 (51), 17692–17701. 10.1021/ja510028c
+25474128PMC4291754</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">146</span></span> <a id="B144"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id242"><!-- named anchor --></a>V. S. PandeK. BeauchampG. R. Bowman (2010). Everything You Wanted to Know about Markov State Models but Were Afraid to Ask. Methods
+52 (1), 99–105. 10.1016/j.ymeth.2010.06.002
+20570730PMC2933958</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">147</span></span> <a id="B145"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id243"><!-- named anchor --></a>A. PaszkeS. GrossF. MassaA. LererJ. BradburyG. Chanan (2019). “PyTorch: An Imperative Style, High-Performance Deep Learning Library,” in Advances in Neural Information Processing Systems. Editors H. WallachH. LarochelleA. BeygelzimerF. d'Alché-BucE. FoxR. Garnett (Vancouver: Curran Associates, Inc.), 8024–8035. 32. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">148</span></span> <a id="B146"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id244"><!-- named anchor --></a>L. PatelT. ShuklaX. HuangD. W. UsseryS. Wang (2020). Machine Learning Methods in Drug Discovery. Molecules
+25 (22), 5277. 10.3390/molecules25225277
+PMC769613433198233</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">149</span></span> <a id="B147"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id245"><!-- named anchor --></a>A. PerezJ. L. MacCallumK. A. Dill (2015). Accelerating Molecular Simulations of Proteins Using Bayesian Inference on Weak Information. PNAS
+112 (38), 11846–11851. 10.1073/pnas.1515561112
+26351667PMC4586851</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">150</span></span> <a id="B148"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id246"><!-- named anchor --></a>J. C. PhillipsR. BraunW. WangJ. GumbartE. TajkhorshidE. Villa (2005). Scalable Molecular Dynamics with NAMD. J. Comput. Chem.
+26 (16), 1781–1802. 10.1002/jcc.20289
+16222654PMC2486339</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">151</span></span> <a id="B149"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id247"><!-- named anchor --></a>F. PietrucciF. MarinelliP. CarloniA. Laio (2009). Substrate Binding Mechanism of HIV-1 Protease from Explicit-Solvent Atomistic Simulations. J. Am. Chem. Soc.
+131 (33), 11811–11818. 10.1021/ja903045y
+19645490</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">152</span></span> <a id="B150"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id248"><!-- named anchor --></a>P. PisaniF. CaporuscioL. CarlinoG. Rastelli (2016). Molecular Dynamics Simulations and Classical Multidimensional Scaling Unveil New Metastable States in the Conformational Landscape of CDK2. PLoS One
+11 (4), e0154066. 10.1371/journal.pone.0154066
+27100206PMC4839568</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">153</span></span> <a id="B151"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id249"><!-- named anchor --></a>A. PlanteD. M. ShoreG. MorraG. KhelashviliH. Weinstein (2019). A Machine Learning Approach for the Discovery of Ligand-Specific Functional Mechanisms of GPCRs. Molecules
+24 (11), 2097. 10.3390/molecules24112097
+PMC660017931159491</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">154</span></span> <a id="B152"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id250"><!-- named anchor --></a>N. PlattnerF. Noé (2015). Protein Conformational Plasticity and Complex Ligand-Binding Kinetics Explored by Atomistic Simulations and Markov Models. Nat. Commun.
+6, 7653. 10.1038/ncomms8653
+26134632PMC4506540</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">155</span></span> <a id="B153"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id251"><!-- named anchor --></a>S. PodlewskaG. LataczD. ŁażewskaK. Kieć-KononowiczJ. Handzlik (2020). In Silico and <i>In Vitro</i> Studies on Interaction of Novel Non-Imidazole Histamine H3R Antagonists with CYP3A4. Bioorg. Med. Chem. Lett.
+30 (11), 127147. 10.1016/j.bmcl.2020.127147
+32249114</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">156</span></span> <a id="B154"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id252"><!-- named anchor --></a>J. PretoC. Clementi (2014). Fast Recovery of Free Energy Landscapes via Diffusion-Map-Directed Molecular Dynamics. Phys. Chem. Chem. Phys.
+16 (36), 19181–19191. 10.1039/c3cp54520b
+24955434</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">157</span></span> <a id="B155"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id253"><!-- named anchor --></a>J. R. Quinlan (1986). Induction of Decision Trees. Mach. Learn.
+1, 81–106. 10.1007/BF00116251
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">158</span></span> <a id="B156"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id254"><!-- named anchor --></a>W. M. Rand (1971). Objective Criteria for the Evaluation of Clustering Methods. J. Am. Stat. Assoc.
+66 (336), 846–850. 10.1080/01621459.1971.10482356
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">159</span></span> <a id="B157"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id255"><!-- named anchor --></a>S. Riniker (2017). Molecular Dynamics Fingerprints (MDFP): Machine Learning from MD Data to Predict Free-Energy Differences. J. Chem. Inf. Model.
+57 (4), 726–741. 10.1021/acs.jcim.6b00778
+28368113</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">160</span></span> <a id="B158"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id256"><!-- named anchor --></a>D. R. RoeT. E. Cheatham 3rd (2013). PTRAJ and CPPTRAJ: Software for Processing and Analysis of Molecular Dynamics Trajectory Data. J. Chem. Theor.
+9 (7), 3084–3095. 10.1021/ct400341p
+26583988</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">161</span></span> <a id="B159"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id257"><!-- named anchor --></a>M. A. RohrdanzW. ZhengM. MaggioniC. Clementi (2011). Determination of Reaction Coordinates via Locally Scaled Diffusion Map. J. Chem. Phys.
+134 (12), 124116. 10.1063/1.3569857
+21456654</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">162</span></span> <a id="B160"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id258"><!-- named anchor --></a>B. RoitherC. OostenbrinkW. Schreiner (2020). Molecular Dynamics of the Immune Checkpoint Programmed Cell Death Protein I, PD-1: Conformational Changes of the BC-Loop upon Binding of the Ligand PD-L1 and the Monoclonal Antibody Nivolumab. BMC Bioinform
+21 (Suppl. 17), 557. 10.1186/s12859-020-03904-9
+PMC773477633308148</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">163</span></span> <a id="B161"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id259"><!-- named anchor --></a>T. D. RomoN. LeioattsA. Grossfield (2014). Lightweight Object Oriented Structure Analysis: Tools for Building Tools to Analyze Molecular Dynamics Simulations. J. Comput. Chem.
+35 (32), 2305–2318. 10.1002/jcc.23753
+25327784PMC4227929</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">164</span></span> <a id="B162"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id260"><!-- named anchor --></a>A. RudlingA. OrroJ. Carlsson (2018). Prediction of Ordered Water Molecules in Protein Binding Sites from Molecular Dynamics Simulations: The Impact of Ligand Binding on Hydration Networks. J. Chem. Inf. Model.
+58 (2), 350–361. 10.1021/acs.jcim.7b00520
+29308882PMC6716772</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">165</span></span> <a id="B163"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id261"><!-- named anchor --></a>J. Sander (2011). in Density-Based Clustering” in Encyclopedia of Machine Learning. Editors C. SammutG. I. Webb (Boston: Springer). </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">166</span></span> <a id="B164"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id262"><!-- named anchor --></a>L. H. S. SantosR. S. FerreiraE. R. Caffarena (2019). Integrating Molecular Docking and Molecular Dynamics Simulations. Methods Mol. Biol.
+2053, 13–34. 10.1007/978-1-4939-9752-7_2
+31452096</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">167</span></span> <a id="B165"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id263"><!-- named anchor --></a>J. Schmidhuber (2015). Deep Learning in Neural Networks: An Overview. Neural Netw.
+61, 85–117. 10.1016/j.neunet.2014.09.003
+25462637</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">168</span></span> <a id="B166"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id264"><!-- named anchor --></a>B. SchölkopfA. SmolaK. Müller (1998). Nonlinear Component Analysis as a Kernel Eigenvalue Problem. Neural Comput.
+10 (5), 1299–1319. 10.1162/089976698300017467
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">169</span></span> <a id="B167"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id265"><!-- named anchor --></a>E. SchubertJ. SanderM. EsterH. P. KriegelX. Xu (2017). DBSCAN Revisited, Revisited: Why and How You Should (Still) Use DBSCAN. ACM Trans. Database Syst.
+42 (3), 19. 10.1145/3068335
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">170</span></span> <a id="B168"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id266"><!-- named anchor --></a>M. SeeberM. CecchiniF. RaoG. SettanniA. Caflisch (2007). Wordom: A Program for Efficient Analysis of Molecular Dynamics Simulations. Bioinformatics
+23 (19), 2625–2627. 10.1093/bioinformatics/btm378
+17717034</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">171</span></span> <a id="B169"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id267"><!-- named anchor --></a>M. SeeberA. FellineF. RaimondiS. MuffR. FriedmanF. Rao (2011). Wordom: A User‐friendly Program for the Analysis of Molecular Structures, Trajectories, and Free Energy Surfaces. J. Comput. Chem.
+32 (6), 1183–1194. 10.1002/jcc.21688
+21387345PMC3151548</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">172</span></span> <a id="B170"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id268"><!-- named anchor --></a>Z. ShamsiK. J. ChengD. Shukla (2018). Reinforcement Learning Based Adaptive Sampling: REAPing Rewards by Exploring Protein Conformational Landscapes. J. Phys. Chem. B
+122 (35), 8386–8395. 10.1021/acs.jpcb.8b06521
+30126271</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">173</span></span> <a id="B171"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id269"><!-- named anchor --></a>J. ShaoS. W. TannerN. ThompsonT. E. Cheatham (2007). Clustering Molecular Dynamics Trajectories: 1. Characterizing the Performance of Different Clustering Algorithms. J. Chem. Theor. Comput.
+3 (6), 2312–2334. 10.1021/ct700119m
+26636222</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">174</span></span> <a id="B172"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id270"><!-- named anchor --></a>A. O. SheikW. VeldmanC. ManyumwaA. KhairallahS. AgajanianO. Oluyemi (2020). Integrated Computational Approaches and Tools for Allosteric Drug Discovery. Int. J. Mol. Sci.
+21 (3), 847. 10.3390/ijms21030847
+PMC703686932013012</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">175</span></span> <a id="B173"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id271"><!-- named anchor --></a>R. ShevchukJ. S. Hub (2017). Bayesian Refinement of Protein Structures and Ensembles against SAXS Data Using Molecular Dynamics. PLOS Comput. Biol.
+13 (10), e1005800. 10.1371/journal.pcbi.1005800
+29045407PMC5662244</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">176</span></span> <a id="B174"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id272"><!-- named anchor --></a>J. SinghZ. DengG. NaraleC. Chuaqui (2006). Structural Interaction Fingerprints: a New Approach to Organizing, Mining, Analyzing, and Designing Protein-Small Molecule Complexes. Chem. Biol. Drug Des.
+67 (1), 5–12. 10.1111/j.1747-0285.2005.00323.x
+16492144</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">177</span></span> <a id="B175"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id273"><!-- named anchor --></a>F. SittelA. JainG. Stock (2014). Principal Component Analysis of Molecular Dynamics: on the Use of Cartesian vs. Internal Coordinates. J. Chem. Phys.
+141 (1), 014111. 10.1063/1.4885338
+25005281</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">178</span></span> <a id="B176"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id274"><!-- named anchor --></a>V. SpiwokP. Kříž (2020). Time-Lagged T-Distributed Stochastic Neighbor Embedding (T-SNE) of Molecular Simulation Trajectories. Front. Mol. Biosci.
+7, 132. 10.3389/fmolb.2020.00132
+32714941PMC7344294</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">179</span></span> <a id="B177"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id275"><!-- named anchor --></a>A. SrivastavaS. BalaH. MotomuraD. KohdaF. TamaO. Miyashita (2020). Conformational Ensemble of an Intrinsically Flexible Loop in Mitochondrial Import Protein Tim21 Studied by Modeling and Molecular Dynamics Simulations. Biochim. Biophys. Acta Gen. Subj.
+1864 (2), 129417. 10.1016/j.bbagen.2019.129417
+31445064</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">180</span></span> <a id="B178"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id276"><!-- named anchor --></a>H. StamatiC. ClementiL. E. Kavraki (2010). Application of Nonlinear Dimensionality Reduction to Characterize the Confonrmational Landscape of Small Peptides. Proteins
+78 (2), 223–235. 10.1002/prot.22526
+19731366PMC2795065</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">181</span></span> <a id="B179"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id277"><!-- named anchor --></a>L. S. StelzlP. W. FowlerM. S. P. SansomO. Beckstein (2014). Flexible gates Generate Occluded Intermediates in the Transport Cycle of LacY. J. Mol. Biol.
+426 (3), 735–751. 10.1016/j.jmb.2013.10.024
+24513108PMC3905165</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">182</span></span> <a id="B180"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id278"><!-- named anchor --></a>H. SugetaT. Miyazawa (1967). General Method for Calculating Helical Parameters of Polymer Chains from Bond Lengths, Bond Angles, and Internal‐Rotation Angles. Biopolym. Orig. Res. Biomol.
+5 (7), 673–679. 10.1002/BIP.1967.360050708
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">183</span></span> <a id="B181"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id279"><!-- named anchor --></a>G. Sutmann (2002). “Classical Molecular Dynamics,” in Quantum Simulations of Complex Many-Body Systems: From Theory to Algorithms. Editors J. GrotendorstD. MarxA. Muramatsu (Jülich: John von Neumann Institute for Computing), 211–254. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">184</span></span> <a id="B182"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id280"><!-- named anchor --></a>K. TakedaA. WadaK. YamamotoY. MoriyamaK. Aoki (1989). Conformational Change of Bovine Serum Albumin by Heat Treatment. J. Protein Chem.
+8 (5), 653–659. 10.1007/BF01025605
+2610859</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">185</span></span> <a id="B183"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id281"><!-- named anchor --></a>K. TakemuraC. SatoA. Kitao (2018). ColDock: Concentrated Ligand Docking with All-Atom Molecular Dynamics Simulation. J. Phys. Chem. B.
+122 (29), 7191–7200. 10.1021/acs.jpcb.8b02756
+29993242</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">186</span></span> <a id="B184"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id282"><!-- named anchor --></a>J. B. TenenbaumV. de SilvaJ. C. Langford (2000). A Global Geometric Framework for Nonlinear Dimensionality Reduction. Science
+290, 2319–2323. 10.1126/science.290.5500.2319
+11125149</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">187</span></span> <a id="B185"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id283"><!-- named anchor --></a>A. P. ThompsonH. M. AktulgaR. BergerD. S. BolintineanuW. M. BrownP. S. Crozier (2021). LAMMPS-A Flexible Simulation Tool for Particle-Based Materials Modeling at the Atomic, Meso, and Continuum Scales. Comput. Phys. Commun.
+271, 108171. 10.1016/j.cpc.2021.108171
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">188</span></span> <a id="B186"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id284"><!-- named anchor --></a>H. TianX. JiangF. TrozziS. XiaoE. C. LarsonP. Tao (2021). Explore Protein Conformational Space with Variational Autoencoder. Front. Mol. Biosci.
+8, 781635. 10.3389/fmolb.2021.781635
+34869602PMC8633506</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">189</span></span> <a id="B187"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id285"><!-- named anchor --></a>I. T. TodorovW. SmithK. TrachenkoM. T. Dove (2006). DL_POLY_3: New Dimensions in Molecular Dynamics Simulations via Massive Parallelism. J. Mater. Chem.
+16 (20), 1911–1918. 10.1039/B517931A
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">190</span></span> <a id="B188"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id286"><!-- named anchor --></a>A. E. TordaW. F. van Gunstered (1994). Algorithms for Clustering Molecular Dynamics Configurations. J. Comput. Chem.
+15 (12), 1331–1340. 10.1002/jcc.540151203
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">191</span></span> <a id="B189"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id287"><!-- named anchor --></a>W. S. Torgerson (1952). Multidimensional Scaling: I. Theory and Method. Psychometrika
+17, 401–419. 10.1007/BF02288916
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">192</span></span> <a id="B190"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id288"><!-- named anchor --></a>G. A. TribelloP. Gasparotto (2019). Using Dimensionality Reduction to Analyze Protein Trajectories. Front. Mol. Biosci.
+6, 46. 10.3389/fmolb.2019.00046
+31275943PMC6593086</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">193</span></span> <a id="B191"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id289"><!-- named anchor --></a>J. M. TroyerF. E. Cohen (1995). Protein Conformational Landscapes: Energy Minimization and Clustering of a Long Molecular Dynamics Trajectory. Proteins Struct. Funct. Bioinform.
+23, 97–110. 10.1002/prot.340230111
+8539254</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">194</span></span> <a id="B192"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id290"><!-- named anchor --></a>S. UeharaS. Tanaka (2017). Cosolvent-based Molecular Dynamics for Ensemble Docking: Practical Method for Generating Druggable Protein Conformations. J. Chem. Inf. Model.
+57 (4), 742–756. 10.1021/acs.jcim.6b00791
+28388074</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">195</span></span> <a id="B193"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id291"><!-- named anchor --></a>J. VamathevanD. ClarkP. CzodrowskiI. DunhamE. FerranG. Lee (2019). Applications of Machine Learning in Drug Discovery and Development. Nat. Rev. Drug Discov.
+18 (6), 463–477. 10.1038/s41573-019-0024-5
+30976107PMC6552674</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">196</span></span> <a id="B194"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id292"><!-- named anchor --></a>R. van de SchootS. DepaoliR. KingB. KramerK. MärtensM. G. Tadesse (2021). Bayesian Statistics and Modelling. Nat. Rev. Methods Primers
+1, 1–26. 10.1038/s43586-020-00001-2
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">197</span></span> <a id="B195"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id293"><!-- named anchor --></a>L. van der MaatenG. Hinton (2008). Visualizing Data Using T-SNE. J. Mach. Learn. Res.
+9 (86), 2579–2605. </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">198</span></span> <a id="B196"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id294"><!-- named anchor --></a>T. VerstraelenM. Van HouteghemV. Van SpeybroeckM. Waroquier (2008). Md-tracks: a Productive Solution for the Advanced Analysis of Molecular Dynamics and Monte Carlo Simulations. J. Chem. Inf. Model.
+48 (12), 2414–2424. 10.1021/ci800233y
+19053522</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">199</span></span> <a id="B197"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id295"><!-- named anchor --></a>A. VitekM. StachonP. KrömerV. Snáel (2013). “Towards the Modeling of Atomic and Molecular Clusters Energy by Support Vector Regression,” in 2013 5th International Conference on Intelligent Networking and Collaborative Systems, 121–126. 10.1109/INCoS.2013.26
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">200</span></span> <a id="B217"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id296"><!-- named anchor --></a>VMD Plugin Library (2021). Theoretical and Computational Biophysics Group. Available at: <a target="xrefwindow" href="https://www.ks.uiuc.edu/Research/vmd/plugins/" id="id297">https://www.ks.uiuc.edu/Research/vmd/plugins/</a> (Accessed December 22, 2021).
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">201</span></span> <a id="B198"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id298"><!-- named anchor --></a>VMD Script Library (2021). Theoretical and Computational Biophysics Group. Available at: <a target="xrefwindow" href="https://www.ks.uiuc.edu/Research/vmd/script_library" id="id299">https://www.ks.uiuc.edu/Research/vmd/script_library</a> (Accessed December 22, 2021). </p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">202</span></span> <a id="B199"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id300"><!-- named anchor --></a>K. WangJ. D. ChoderaY. YangM. R. Shirts (2013). Identifying Ligand Binding Sites and Poses Using GPU-Accelerated Hamiltonian Replica Exchange Molecular Dynamics. J. Comput.-Aided Mol. Des.
+27 (12), 989–1007. 10.1007/s10822-013-9689-8
+24297454PMC4154199</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">203</span></span> <a id="B200"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id301"><!-- named anchor --></a>W. WangN. GanQ. SunD. WuR. GanM. Zhang (2019). Study on the Interaction of Ertugliflozin with Human Serum Albumin <i>In Vitro</i> by Multispectroscopic Methods, Molecular Docking, and Molecular Dynamics Simulation. Spectrochim. Acta A. Mol. Biomol. Spectrosc.
+219, 83–90. 10.1016/j.saa.2019.04.047
+31030051</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">204</span></span> <a id="B201"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id302"><!-- named anchor --></a>X. WangK. SongL. LiL. Chen (2018). Structure-Based Drug Design Strategies and Challenges. Curr. Top. Med. Chem.
+18 (12), 998–1006. 10.2174/1568026618666180813152921
+30101712</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">205</span></span> <a id="B202"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id303"><!-- named anchor --></a>L. WeiR. B. Altman (1998). Recognizing Protein Binding Sites Using Statistical Descriptions of Their 3D Environments. Pac. Symp. Biocomput., 497–508. 9697207</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">206</span></span> <a id="B203"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id304"><!-- named anchor --></a>D. WoottenA. ChristopoulosM. Marti-SolanoM. M. BabuP. M. Sexton (2018). Mechanisms of Signalling and Biased Agonism in G Protein-Coupled Receptors. Nat. Rev. Mol. Cell Biol.
+19 (10), 638–653. 10.1038/s41580-018-0049-3
+30104700</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">207</span></span> <a id="B204"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id305"><!-- named anchor --></a>W. WuL. HanC. WangX. WenH. SunH. Yuan (2019). Structural Insights into Ligand Binding Features of Dual FABP4/5 Inhibitors by Molecular Dynamics Simulations. J. Biomol. Struct. Dyn.
+37 (18), 4790–4800. 10.1080/07391102.2018.1561328
+30590992</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">208</span></span> <a id="B205"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id306"><!-- named anchor --></a>X. WuZ. ZhengT. GuoK. WangY. Zhang (2021). Molecular Dynamics Simulation of Lentinan and its Interaction with the Innate Receptor Dectin-1. Int. J. Biol. Macromol.
+171, 527–538. 10.1016/j.ijbiomac.2021.01.032
+33428957</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">209</span></span> <a id="B206"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id307"><!-- named anchor --></a>G. F. Yang (2014). Structure-based Drug Design: Strategies and Challenges. Curr. Pharm. Des.
+20 (5), 685–686. 10.2174/138161282005140214161643
+23688085</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">210</span></span> <a id="B207"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id308"><!-- named anchor --></a>Y. I. YangQ. ShaoJ. ZhangL. YangY. Q. Gao (2019). Enhanced Sampling in Molecular Dynamics. J. Chem. Phys.
+151 (7), 70902. 10.1063/1.5109531
+31438687</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">211</span></span> <a id="B208"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id309"><!-- named anchor --></a>S. O. Yesylevskyy (2015). Pteros 2.0: Evolution of the Fast Parallel Molecular Analysis Library for C++ and Python. J. Comput. Chem.
+36 (19), 1480–1488. 10.1002/jcc.23943
+25974373</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">212</span></span> <a id="B209"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id310"><!-- named anchor --></a>S. O. Yesylevskyy (2012). Pteros: Fast and Easy to Use Open‐source C++ Library for Molecular Analysis. J. Comput. Chem.
+33 (19), 1632–1636. 10.1002/jcc.22989
+22539341</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">213</span></span> <a id="B210"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id311"><!-- named anchor --></a>R. YoshinoN. YasuoM. Sekijima (2019). Molecular Dynamics Simulation Reveals the Mechanism by Which the Infuenza Cap-Dependent Endonuclease Acquires Resistance Against Baloxavir Marboxil. Sci. Rep.
+9 (1), 17464. 10.1038/s41598-019-53945-1
+31767949PMC6877583</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">214</span></span> <a id="B211"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id312"><!-- named anchor --></a>G. YoungA. S. Householder (1938). Discussion of a Set of Points in Terms of Their Mutual Distances. Psychometrika
+3, 19–22. 10.1007/BF02287916
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">215</span></span> <a id="B212"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id313"><!-- named anchor --></a>W. ZhengB. QiM. A. RohrdanzA. CaflischA. R. DinnerC. Clementi (2011). Delineation of Folding Pathways of a β-sheet Miniprotein. J. Phys. Chem. B
+115 (44), 3065–13074. 10.1021/jp2076935
+21942785</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">216</span></span> <a id="B213"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id314"><!-- named anchor --></a>W. ZhengM. A. RohrdanzC. Clementi (2013a). Rapid Exploration of Configuration Space with Diffusion-Map-Directed Molecular Dynamics. J. Phys. Chem. B
+117 (42), 12769–12776. 10.1021/jp401911h
+23865517PMC3808479</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">217</span></span> <a id="B214"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id315"><!-- named anchor --></a>W. ZhengA. V. VargiuM. A. RohrdanzP. CarloniC. Clementi (2013b). Molecular Recognition of DNA by Ligands: Roughness and Complexity of the Free Energy Profile. J. Chem. Phys.
+139 (14), 145102. 10.1063/1.4824106
+24116648PMC3808439</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">218</span></span> <a id="B215"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id316"><!-- named anchor --></a>H. ZhouF. WangD. I. BennettP. Tao (2019). Directed Kinetic Transition Network Model. J. Chem. Phys.
+151 (14), 144112. 10.1063/1.5110896
+31615261PMC6800283</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">219</span></span> <a id="B216"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id317"><!-- named anchor --></a>H. ZhouF. WangP. Tao (2018). t-Distributed Stochastic Neighbor Embedding Method with the Least Information Loss for Macromolecular Simulations. J. Chem. Theor. Comput.
+14 (11), 5499–5510. 10.1021/acs.jctc.8b00652
+PMC667989930252473</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>Pharmacology</p>
+<div class="metadata-area"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>molecular dynamics</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>structure-based drug design</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>clustering</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>data dimensionality reduction</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>interaction fingerprints</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
