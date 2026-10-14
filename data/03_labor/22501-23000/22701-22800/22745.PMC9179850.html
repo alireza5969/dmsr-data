@@ -1,0 +1,1279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Windisch, Koechli, Rogers, Schröder, Förster, Zwahlen, Bodis, and Wong: Machine Learning for the Detection and Segmentation of Benign Tumors of the Central Nervous System: A Systematic Review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Cancers (Basel)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Cancers (Basel)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>2105</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>cancers</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101526829</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>cancers</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Cancers</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2072-6694</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Multidisciplinary Digital Publishing Institute  (MDPI)</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="cancers-14-02676.pdf">cancers-14-02676.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2022 by the authors.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">https://creativecommons.org/licenses/by/4.0/</a>).</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>26 April 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>26 May 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>27 May 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>June 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>14</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>11<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>409693<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>2676</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9179850</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9179850.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9179850</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9179850</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35681655</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3390/cancers14112676</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>cancers-14-02676</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Swiss National Science Foundation</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>195054</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Innosuisse</p>
+<p class="metadata-entry"><span class="generated">Funding: </span>The research has been supported with a BRIDGE-Proof of Concept research grant from the Swiss National Science Foundation (SNSF, project number 195054) and Innosuisse.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Machine Learning for the Detection and Segmentation of Benign Tumors of the Central Nervous System: A Systematic Review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0003-1040-4888<span class="generated">] </span>Paul Windisch<span class="generated">[</span><a href="#af1-cancers-14-02676">1</a><span class="generated">]</span><span class="generated">[</span><a href="#c1-cancers-14-02676">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Carole Koechli<span class="generated">[</span><a href="#af1-cancers-14-02676">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Susanne Rogers<span class="generated">[</span><a href="#af2-cancers-14-02676">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0002-4168-2795<span class="generated">] </span>Christina Schröder<span class="generated">[</span><a href="#af1-cancers-14-02676">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0002-7664-9207<span class="generated">] </span>Robert Förster<span class="generated">[</span><a href="#af1-cancers-14-02676">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0003-4359-7735<span class="generated">] </span>Daniel R. Zwahlen<span class="generated">[</span><a href="#af1-cancers-14-02676">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0003-1078-8711<span class="generated">] </span>Stephan Bodis<span class="generated">[</span><a href="#af2-cancers-14-02676">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>David Wong</p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Academic Editor</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="af1-cancers-14-02676"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>Department of Radiation Oncology, Kantonsspital Winterthur, 8400 Winterthur, Switzerland; <a href="mailto:carole.koechli@uzh.ch">carole.koechli@uzh.ch</a> (C.K.); <a href="mailto:christina.schroeder@ksw.ch">christina.schroeder@ksw.ch</a> (C.S.); <a href="mailto:robert.foerster@ksw.ch">robert.foerster@ksw.ch</a> (R.F.); <a href="mailto:daniel.zwahlen@ksw.ch">daniel.zwahlen@ksw.ch</a> (D.R.Z.)</p>
+<p class="metadata-entry"><a id="af2-cancers-14-02676"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>Department of Radiation Oncology, Kantonsspital Aarau, 5001 Aarau, Switzerland; <a href="mailto:susanne.rogers@ksa.ch">susanne.rogers@ksa.ch</a> (S.R.); <a href="mailto:stephan.bodis@ksa.ch">stephan.bodis@ksa.ch</a> (S.B.)</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id11"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="c1-cancers-14-02676"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>*<span class="generated">] </span>Correspondence: <a href="mailto:paul.windisch@ksw.ch">paul.windisch@ksw.ch</a>; Tel.: +41-52-266-26-53</p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id12"><!-- named anchor --></a><h3 class="section-title">Simple Summary</h3>
+<p id="id13">Machine learning in radiology of the central nervous system has seen many interesting publications in the past few years. Since the focus has largely been on malignant tumors such as brain metastases and high-grade gliomas, we conducted a systematic review on benign tumors to summarize what has been published and where there might be gaps in the research. We found several studies that report good results, but the descriptions of methodologies could be improved to enable better comparisons and assessment of biases.</p>
+</div>
+<div class="section">
+<a id="id14"><!-- named anchor --></a><h3 class="section-title">Abstract</h3>
+<p id="id15"><b>Objectives</b>: To summarize the available literature on using machine learning (ML) for the detection and segmentation of benign tumors of the central nervous system (CNS) and to assess the adherence of published ML/diagnostic accuracy studies to best practice. <b>Methods</b>: The MEDLINE database was searched for the use of ML in patients with any benign tumor of the CNS, and the records were screened according to PRISMA guidelines. <b>Results</b>: Eleven retrospective studies focusing on meningioma (n = 4), vestibular schwannoma (n = 4), pituitary adenoma (n = 2) and spinal schwannoma (n = 1) were included. The majority of studies attempted segmentation. Links to repositories containing code were provided in two manuscripts, and no manuscripts shared imaging data. Only one study used an external test set, which raises the question as to whether some of the good performances that have been reported were caused by overfitting and may not generalize to data from other institutions. <b>Conclusions</b>: Using ML for detecting and segmenting benign brain tumors is still in its infancy. Stronger adherence to ML best practices could facilitate easier comparisons between studies and contribute to the development of models that are more likely to one day be used in clinical practice.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="sec1-cancers-14-02676"><!-- named anchor --></a><h2 class="main-title">1. Introduction</h2>
+<p id="id16">Whilst an increase in computational power and the development of more user-friendly software libraries have accelerated the adoption of machine learning (ML) techniques in both neuro-radiology and neuro-oncology, much of the research that is being published focuses on malignant tumor entities, such as high-grade gliomas or brain metastases [<a href="#B1-cancers-14-02676">1</a>].</p>
+<p id="id17">A possible explanation for this phenomenon lies in the availability of data that are required to train, validate and test ML models. While almost any hospital will have a sufficient number of cases for epidemiologically significant entities such as brain metastases, this is not the case for central nervous system (CNS) tumors with lower incidences, such as many benign brain tumors [<a href="#B2-cancers-14-02676">2</a>].</p>
+<p id="id18">In addition, most publicly available imaging datasets are comprised of malignant entities. The popular Brain Tumor Segmentation (BraTS) Challenge dataset consists exclusively of gliomas, which also applies to most of brain datasets that are available as part of The Cancer Imaging Archive (TCIA) [<a href="#B3-cancers-14-02676">3</a>,<a href="#B4-cancers-14-02676">4</a>].</p>
+<p id="id19">Despite these obstacles, there have been publications investigating the use of ML for benign CNS tumors [<a href="#B5-cancers-14-02676">5</a>,<a href="#B6-cancers-14-02676">6</a>]. This review will therefore summarize the research that has been conducted on this topic in systematic fashion and assess the quality of the studies that have used ML for tumor detection and segmentation, as has been done previously for malignant CNS tumors [<a href="#B7-cancers-14-02676">7</a>,<a href="#B8-cancers-14-02676">8</a>]. The goal is to create a point of reference that other researchers can use to identify gaps in the research that are worthy of further investigation and to identify possible shared issues regarding methodologies or their descriptions so that they can be addressed by future publications.</p>
+<p id="id20">While there are numerous potential benefits to having machine learning techniques taking over parts of the radiology workflow or serving as automated second opinions, this requires common reporting standards to identify approaches that are worthy of being pursued further with the goal of possibly translating them into routine clinical practice someday.</p>
+</div>
+<div class="section">
+<a id="sec2-cancers-14-02676"><!-- named anchor --></a><h2 class="main-title">2. Methods</h2>
+<div class="section">
+<a id="sec2dot1-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">2.1. Literature Search</h3>
+<p id="id21">The review was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines [<a href="#B9-cancers-14-02676">9</a>]. Studies published in English after 2000 that used any kind of machine learning technique for the detection or segmentation of benign tumors of the CNS were included. Studies using semi-automatic segmentation requiring manual user input prior to creating the segmentation were not included. Since studies using segmentation only as a means to predict clinical or pathologic features frequently provide little detail on the segmentation methodology, so these studies were not included as well. No limits regarding size of the patient collective or length of follow-up were applied.</p>
+<p id="id22">The Medical Literature Analysis and Retrieval System Online (MEDLINE) database was searched on 14 June 2021 via the PubMed interface. The query was designed to include all studies that contained one or more words from two groups, one group comprised of words that indicate the usage of an ML technique (automated, computer aided, computer-aided, CAD, radiomic, texture analysis, deep learning, machine learning, neural network, artificial intelligence) and the other group comprised of words associated with benign brain tumors (meningioma, meningiomas, schwannoma, schwannomas, craniopharyngioma, craniopharyngiomas, ganglioglioma, gangliogliomas, glomus, pineocytoma, pineocytomas, pilocytic, pituitary, benign brain tumor, benign brain tumors).</p>
+<p id="id23">The complete search query that was used was therefore:</p>
+<p id="id24">“((automated[title]) OR (computer aided[title]) OR (computer-aided[title]) OR (CAD[title]) OR (radiomic[title]) OR (radiomics[title]) OR (texture analysis[title]) OR (texture analyses[title]) OR (textural analysis[title]) OR (textural analyses[title]) OR (deep learning[title]) OR (machine learning[title]) OR (ML[title]) OR (neural network[title]) OR (NN[title]) OR (artificial intelligence[title]) OR (AI[title])) AND ((meningioma[title]) OR (meningiomas[title]) OR (schwannoma[title]) OR (schwannomas[title]) OR (craniopharyngioma[title]) OR (craniopharyngiomas[title]) OR (ganglioglioma[title]) OR (gangliogliomas[title]) OR (glomus[title]) OR (glomera[title]) OR (pineocytoma[title]) OR (pineocytomas[title]) OR (pilocytic[title]) OR (pituitary[title]) OR (benign brain tumor[title]) OR (benign brain tumors[title]) OR (benign brain tumour[title]) OR (benign brain tumours[title])) AND (“2000/01/01”[Date-Create]: “2021/06/14”[Date-Create])”</p>
+<p id="id25">The review had neither been registered nor had a protocol published beforehand.</p>
+<p id="id26">After exclusion of duplicates, the titles and abstracts were screened, and only relevant publications proceeded to full-text screening. The decision as to whether a study met the inclusion criteria of the review was performed by two authors (P.W. and C.K.) without the use of automated tools. A third author (C.S.) acted as a referee in case of a potential disagreement between the two authors responsible for screening. All articles that did not focus on the use of ML for detection or segmentation in patients with benign brain tumors were excluded. </p>
+</div>
+<div class="section">
+<a id="sec2dot2-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">2.2. Data Extraction</h3>
+<p id="id27">Two authors (P.W. and C.S.) independently extracted data and discussed any discrepancies. Data were extracted with regard to:<div class="list">
+<a id="id28"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="id29">Study parameters: authors, title, year, design, number of patients in training/test set, ground truth, inter-/intrarater variability, task, conflict of interest, sources of funding.</p></li>
+<li><p id="id30">Clinical parameters: tumor entity, tumor volume, treatment of tumors prior to imaging.</p></li>
+<li><p id="id31">Imaging parameters: MRI machine, field strength, slice thickness, sequences.</p></li>
+<li><p id="id32">ML parameters: algorithm, dimensionality, training duration and hardware, libraries/frameworks/packages, data augmentation, performance measures, explainability/interpretability features, code/data availability.</p></li>
+</ol>
+</div></p>
+</div>
+</div>
+<div class="section">
+<a id="sec3-cancers-14-02676"><!-- named anchor --></a><h2 class="main-title">3. Results</h2>
+<p id="id33">The inclusion workflow is depicted in <a href="#cancers-14-02676-f001">Figure 1</a>. The query returned 110 publications and no duplicates. When screening the records, 99 articles were excluded. A complete list of the excluded articles and the respective reasons for exclusion is provided in <a href="#app1-cancers-14-02676">Supplementary Table S1</a>. Thirty three articles were excluded due to predicting only pathological features, e.g., grade (n = 16), or differentiating between tumor entities (n = 8) [<a href="#B10-cancers-14-02676">10</a>,<a href="#B11-cancers-14-02676">11</a>,<a href="#B12-cancers-14-02676">12</a>,<a href="#B13-cancers-14-02676">13</a>,<a href="#B14-cancers-14-02676">14</a>,<a href="#B15-cancers-14-02676">15</a>,<a href="#B16-cancers-14-02676">16</a>,<a href="#B17-cancers-14-02676">17</a>,<a href="#B18-cancers-14-02676">18</a>,<a href="#B19-cancers-14-02676">19</a>,<a href="#B20-cancers-14-02676">20</a>,<a href="#B21-cancers-14-02676">21</a>,<a href="#B22-cancers-14-02676">22</a>,<a href="#B23-cancers-14-02676">23</a>,<a href="#B24-cancers-14-02676">24</a>,<a href="#B25-cancers-14-02676">25</a>,<a href="#B26-cancers-14-02676">26</a>,<a href="#B27-cancers-14-02676">27</a>,<a href="#B28-cancers-14-02676">28</a>,<a href="#B29-cancers-14-02676">29</a>,<a href="#B30-cancers-14-02676">30</a>,<a href="#B31-cancers-14-02676">31</a>,<a href="#B32-cancers-14-02676">32</a>,<a href="#B33-cancers-14-02676">33</a>,<a href="#B34-cancers-14-02676">34</a>,<a href="#B35-cancers-14-02676">35</a>,<a href="#B36-cancers-14-02676">36</a>,<a href="#B37-cancers-14-02676">37</a>,<a href="#B38-cancers-14-02676">38</a>,<a href="#B39-cancers-14-02676">39</a>,<a href="#B40-cancers-14-02676">40</a>,<a href="#B41-cancers-14-02676">41</a>,<a href="#B42-cancers-14-02676">42</a>]. Thirty four articles were excluded due to predicting only clinical parameters, e.g., tumor consistency (n = 7), response/treatment outcome (n = 12) or brain/bone invasion (n = 4) [<a href="#B43-cancers-14-02676">43</a>,<a href="#B44-cancers-14-02676">44</a>,<a href="#B45-cancers-14-02676">45</a>,<a href="#B46-cancers-14-02676">46</a>,<a href="#B47-cancers-14-02676">47</a>,<a href="#B48-cancers-14-02676">48</a>,<a href="#B49-cancers-14-02676">49</a>,<a href="#B50-cancers-14-02676">50</a>,<a href="#B51-cancers-14-02676">51</a>,<a href="#B52-cancers-14-02676">52</a>,<a href="#B53-cancers-14-02676">53</a>,<a href="#B54-cancers-14-02676">54</a>,<a href="#B55-cancers-14-02676">55</a>,<a href="#B56-cancers-14-02676">56</a>,<a href="#B57-cancers-14-02676">57</a>,<a href="#B58-cancers-14-02676">58</a>,<a href="#B59-cancers-14-02676">59</a>,<a href="#B60-cancers-14-02676">60</a>,<a href="#B61-cancers-14-02676">61</a>,<a href="#B62-cancers-14-02676">62</a>,<a href="#B63-cancers-14-02676">63</a>,<a href="#B64-cancers-14-02676">64</a>,<a href="#B65-cancers-14-02676">65</a>,<a href="#B66-cancers-14-02676">66</a>,<a href="#B67-cancers-14-02676">67</a>,<a href="#B68-cancers-14-02676">68</a>,<a href="#B69-cancers-14-02676">69</a>,<a href="#B70-cancers-14-02676">70</a>,<a href="#B71-cancers-14-02676">71</a>,<a href="#B72-cancers-14-02676">72</a>,<a href="#B73-cancers-14-02676">73</a>,<a href="#B74-cancers-14-02676">74</a>,<a href="#B75-cancers-14-02676">75</a>]. Twelve articles did not focus on ML techniques [<a href="#B76-cancers-14-02676">76</a>,<a href="#B77-cancers-14-02676">77</a>,<a href="#B78-cancers-14-02676">78</a>,<a href="#B79-cancers-14-02676">79</a>,<a href="#B80-cancers-14-02676">80</a>,<a href="#B81-cancers-14-02676">81</a>,<a href="#B82-cancers-14-02676">82</a>,<a href="#B83-cancers-14-02676">83</a>,<a href="#B84-cancers-14-02676">84</a>,<a href="#B85-cancers-14-02676">85</a>,<a href="#B86-cancers-14-02676">86</a>,<a href="#B87-cancers-14-02676">87</a>]. Eight articles were not original reports but reviews or editorials [<a href="#B88-cancers-14-02676">88</a>,<a href="#B89-cancers-14-02676">89</a>,<a href="#B90-cancers-14-02676">90</a>,<a href="#B91-cancers-14-02676">91</a>,<a href="#B92-cancers-14-02676">92</a>,<a href="#B93-cancers-14-02676">93</a>,<a href="#B94-cancers-14-02676">94</a>,<a href="#B95-cancers-14-02676">95</a>]. Three articles used semi-automatic segmentation techniques [<a href="#B96-cancers-14-02676">96</a>,<a href="#B97-cancers-14-02676">97</a>,<a href="#B98-cancers-14-02676">98</a>]. Three articles dealt with the application of ML techniques to brain tumors in dogs [<a href="#B99-cancers-14-02676">99</a>,<a href="#B100-cancers-14-02676">100</a>,<a href="#B101-cancers-14-02676">101</a>]. Six articles were excluded for other reasons, such as using ML for image reconstruction (n = 1), analyzing tissue (n = 3) or non CNS-tumor entities (n = 1) and predicting drivers of costs (n = 1) [<a href="#B102-cancers-14-02676">102</a>,<a href="#B103-cancers-14-02676">103</a>,<a href="#B104-cancers-14-02676">104</a>,<a href="#B105-cancers-14-02676">105</a>,<a href="#B106-cancers-14-02676">106</a>]. </p>
+<p id="id34">All eleven articles that underwent full text screening were included, and the extracted characteristics from all articles are provided in <a href="#app1-cancers-14-02676">Supplementary Table S2</a>. All studies were conducted retrospectively and published between 2018 and 2021. The tumor entities that were investigated were meningioma (n = 4), vestibular schwannoma (n = 4), pituitary adenoma (n = 2) and spinal schwannoma (n = 1). Between 50 and 1876 patients were used for developing or testing the models in the respective studies. Notably, only the study by Qian et al. studied tumor detection using healthy controls or controls with other cerebral neoplasms [<a href="#B107-cancers-14-02676">107</a>]. Other studies claiming to do tumor detection did so by doing tumor segmentation, but these models never had to consider the possibility that a tumor was not present. </p>
+<div class="section">
+<a id="sec3dot1-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">3.1. Disclosures and Declarations</h3>
+<p id="id35">The authors of two publications uploaded code to a public repository that was referenced in the manuscript [<a href="#B108-cancers-14-02676">108</a>,<a href="#B109-cancers-14-02676">109</a>]. The remaining publications did not mention code availability. No data were shared, but two articles mentioned the option to obtain data from the corresponding author upon request [<a href="#B109-cancers-14-02676">109</a>,<a href="#B110-cancers-14-02676">110</a>]. Employment by Philips was the most frequent conflict of interest at study level and declared in two publications [<a href="#B111-cancers-14-02676">111</a>,<a href="#B112-cancers-14-02676">112</a>]. A patent application related to the published work was present in one publication. Six publications explicitly stated that the authors had no conflict of interest. The Ministry of Science and Technology of Taiwan was the most frequent source of funding (n = 2), and three publications stated no additional funding [<a href="#B108-cancers-14-02676">108</a>,<a href="#B113-cancers-14-02676">113</a>]. </p>
+</div>
+<div class="section">
+<a id="sec3dot2-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">3.2. Imaging</h3>
+<p id="id36">All studies used magnetic resonance imaging (MRIs) with a field strength of between one and three Tesla for imaging. Whilst six studies used homogenous datasets from a single device, the remaining studies used datasets consisting of images from multiple devices. Where reported, slice thickness was between one and six millimeters. All studies used a T1-weighted sequence, presumably with contrast enhancement, though this was not explicitly stated in all publications. T2-weighted sequences were used in seven studies, and two specified the use of a T2 FLAIR sequence.</p>
+</div>
+<div class="section">
+<a id="sec3dot3-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">3.3. Ground Truth</h3>
+<p id="id37">All manuscripts claimed that at least two people worked on tumor segmentation. Additional information was frequently lacking—for example, whether every image was independently annotated by two people and whether the annotators had access to clinical information. Similarly, only four manuscripts reported interrater variability. The most frequently used metric for interrater variability, the dice coefficient, was between 0.89 and 0.94 [<a href="#B5-cancers-14-02676">5</a>,<a href="#B112-cancers-14-02676">112</a>,<a href="#B114-cancers-14-02676">114</a>,<a href="#B115-cancers-14-02676">115</a>].</p>
+</div>
+<div class="section">
+<a id="sec3dot4-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">3.4. Modeling</h3>
+<p id="id38">All publications used convolutional neural networks for modeling. Eight publications used a designated test set, unseen by the model during training, and one of which can be considered an external test set, as the images were provided by an institution other than the one that supplied the training set. The publications that did not use a separate test set used cross-validation or the contours of one annotator for training and those of the other for testing.</p>
+<p id="id39">Regarding libraries, five publications mentioned the use of tensorflow and one the use of PyTorch. The remaining publications did not reference libraries in the manuscript. The use of data augmentation was mentioned in three publications. The implementation of explainability features was not discussed, but one publication analyzed the performance of the classifier depending on tumor volume [<a href="#B5-cancers-14-02676">5</a>].</p>
+</div>
+<div class="section">
+<a id="sec3dot5-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">3.5. Meningioma</h3>
+<p id="id40">All publications on meningiomas (n = 4) used meningiomas from different intracranial locations. </p>
+<p id="id41">Laukamp et al. published two articles on meningioma segmentation [<a href="#B111-cancers-14-02676">111</a>,<a href="#B112-cancers-14-02676">112</a>]. For the first publication, they trained a network based on the DeepMedic architecture with contrast-enhanced T1 (T1c) and T2FLAIR images from glioblastoma cases and used those to segment meningiomas, which resulted in a Dice coefficient of 0.78. In their second publication, they used grade I/II meningiomas for training as well and tested on the same cohort, this time achieving a dice coefficient of 0.91 for the contrast-enhancing tumor. </p>
+<p id="id42">Zhang et al. used T1c slices from 1876 patients to train a model to segment meningiomas and predict the tumor grade by using the segmentation [<a href="#B109-cancers-14-02676">109</a>]. To describe the performance of their segmentation, they used a less established concept called “tumor accuracy” defined as the percentage of correctly predicted pixels in the tumor, which was 0.814.</p>
+<p id="id43">Bouget et al. used T1c MRIs of 698 patients with various architectures, the best of which achieved a dice coefficient of 0.73 for meningioma segmentation. Notably, the authors used one fold of the cross-validation for testing, rather than a separate set with previously unseen data [<a href="#B5-cancers-14-02676">5</a>].</p>
+</div>
+<div class="section">
+<a id="sec3dot6-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">3.6. Schwannoma</h3>
+<p id="id44">Shapey, Wang et al. used T1c and T2 images from 243 patients to train a model to segment vestibular schwannomas. Median tumor size in the test set was 1.89 mL and the best dice coefficient was 0.937 [<a href="#B115-cancers-14-02676">115</a>].</p>
+<p id="id45">George-Jones et al. analyzed a cohort of 65 patients with a median tumor volume of only 0.28 mL [<a href="#B114-cancers-14-02676">114</a>]. Unlike other publications, the authors did not report dice coefficients, but instead tried to analyze how well the model was able to detect growth compared to the manual segmentations which were used as the ground truth. The model achieved an area under the receiver operating characteristic curve (ROC-AUC) of 0.822.</p>
+<p id="id46">Lee et al. published two manuscripts on vestibular schwannoma segmentation and used the segmentations to analyze changes in volume [<a href="#B108-cancers-14-02676">108</a>,<a href="#B113-cancers-14-02676">113</a>]. The authors achieved a dice coefficient of 0.90 when taking advantage of both T1c- and T2-weighted imaging data.</p>
+<p id="id47">Ito et al. used a dataset of 50 patients for bounding-box segmentations of spinal schwannomas, and used one cross-validation fold for testing instead of a fully independent test set [<a href="#B6-cancers-14-02676">6</a>]. The authors reported an accuracy of 0.935, though the actual ground-truth was not explicitly stated.</p>
+</div>
+<div class="section">
+<a id="sec3dot7-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">3.7. Pituitary Adenoma</h3>
+<p id="id48">Qian et al. published a study on pituitary adenoma detection, and it is the only study included in this manuscript that used a control group of patients without tumors [<a href="#B107-cancers-14-02676">107</a>]. The reported overall accuracy was 0.91. </p>
+<p id="id49">Wang, Zhang et al. used a collective of 163 patients to train and test automated segmentation for pituitary adenomas [<a href="#B110-cancers-14-02676">110</a>]. The dice coefficient for all slices of the tumors was 0.898. </p>
+<p id="id50">Highlighted study, imaging and machine learning parameters can be found in <a href="#cancers-14-02676-t001">Table 1</a>, <a href="#cancers-14-02676-t002">Table 2</a> and <a href="#cancers-14-02676-t003">Table 3</a> respectively.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec4-cancers-14-02676"><!-- named anchor --></a><h2 class="main-title">4. Discussion</h2>
+<p id="id51">The results of our review indicate that machine learning for the segmentation, and even more so for the detection, of benign brain tumors is still in its infancy but is gaining traction. </p>
+<p id="id52">All included studies were published after 2018 and used deep learning, which is in line with the finding by Cho and colleagues, who found a shift from classical ML to deep learning for brain metastasis detection after 2018 [<a href="#B7-cancers-14-02676">7</a>].</p>
+<p id="id53">Guidelines and checklists for diagnostic accuracy, and artificial intelligence studies, have been available for some time [<a href="#B8-cancers-14-02676">8</a>,<a href="#B116-cancers-14-02676">116</a>]. The fact that all studies mentioned two physicians being involved with creating the ground truth can be considered as evidence that the authors were aware of at least some of their requirements and best practices. However, many studies were vague about other items of these guidelines, or did not mention them at all, even though they would apply, which indicates that the guidelines are only enforced to a limited degree when a manuscript is reviewed prior to publication.</p>
+<p id="id54">Many questions regarding the exact methodology could be answered by providing the code that was used for the project, but a public repository was only referenced in two of the included studies. Data sharing is even rarer, though this is somewhat understandable given the sensitive nature of complete cranial MRI datasets that could be used for face recognition if the resolution is sufficiently high [<a href="#B117-cancers-14-02676">117</a>].</p>
+<p id="id55">As an example, the study by Qian et al. mentions that the data were augmented and then divided “into training or testing set in a ratio of 8:2 for further analysis”. This makes it seem like slices from the same patient could have been present in the training and test sets, and maybe even different augmentations based on the exact same slice could have been present in the training and test sets. If this was the case, it is likely that the performance of the model would be attributable to overfitting and unlikely to be sustained on previously unseen data [<a href="#B107-cancers-14-02676">107</a>]. If code had been provided, this could have been easily clarified by any technical reader or reviewer.</p>
+<p id="id56">In general, the presence of overfitting cannot really be assessed for the majority of publications, as external test sets were almost never used. The logistics involved with obtaining data for fairly rare tumor entities from other institutions is challenging, but strategies to mitigate this could be employed. If a hospital has more than one MRI machine, one might, for example, use data from one machine for testing and data from the other machines for training. </p>
+<p id="id57">Considering the progress in services that allow researchers to deploy their models, we might get to a point where researchers host models so that reviewers/readers can test them with their own data in the future to make additional conclusions regarding generalizability. </p>
+<p id="id58">The fact that only one publication tried to train a network for detection is surprising, as overlooking a small, benign brain tumor on an MRI is a real-world problem that could be addressed by having an artificial intelligence function as a safety net. This would, however, require a low false positive rate of the AI to not increase the radiology workload, and the logistics of creating and processing datasets with different tumors, including healthy controls, remain a hurdle.</p>
+<p id="id59">Creating a dataset for segmentation is easier, as it only requires images of patients with the tumor one is trying to segment. Automatic segmentation has a clear application, as fractionated and stereotactic radiotherapy are treatment options for many benign tumors of the CNS and require segmentation of the tumor prior to treatment. Furthermore, volumetric measurements, to determine if a tumor is growing, could be facilitated by automatic segmentations [<a href="#B118-cancers-14-02676">118</a>,<a href="#B119-cancers-14-02676">119</a>].</p>
+<p id="id60">Considering that benign brain tumors are relatively rare, and that related datasets are consequently often small, it was surprising to see that only three publications reported the use of data augmentation techniques, as they are an effective way to add heterogeneity to the data [<a href="#B120-cancers-14-02676">120</a>]. One underlying reason might be that such techniques are less established for 3D convolutional neural networks (CNNs), which were used in several publications [<a href="#B121-cancers-14-02676">121</a>]. </p>
+<p id="id61">Lastly, the use of explainability/interpretability features could be expanded. Implementing model explainability has the potential to not only enable trust in and adoption of models by physicians, but also to support the training process by discovering pitfalls regarding data selection and overfitting [<a href="#B122-cancers-14-02676">122</a>].</p>
+<p id="id62">As a general consideration, it will be interesting to see if an automated detection of benign brain tumors, if feasible, actually improves outcomes. As other studies on screening, even in malignant entities show that finding more tumors is not necessarily a guarantee for making patients’ lives better and longer, which should always be the ultimate goals. This question, however, can only be answered by enrolling patients in a randomized-controlled trial testing ML-augmented radiology vs. non-ML-augmented radiology once the technique has matured.</p>
+<p id="id63">Limitations of this review include the fact that studies using segmentation only as a means for predicting clinical or pathologic features were not considered. In addition, the small sample size and heterogeneous descriptions of methodologies prevent us from drawing quantitative conclusions. Only one database was queried, but this limitation was mitigated by the fact that the majority of publications in the field of ML for radiology appear in PubMed-indexed journals.</p>
+<p id="id64">Strengths of this review include the adherence to PRISMA guidelines and the fact that systematically searching the literature showed several ways to easily improve the quality of publications in the future—e.g., ensuring code availability. We hope that our review will also serve as a starting point for interested ML researchers to identify interesting topics in the field of benign brain tumors more efficiently by getting up to speed with the literature more quickly.</p>
+</div>
+<div class="section">
+<a id="sec5-cancers-14-02676"><!-- named anchor --></a><h2 class="main-title">5. Conclusions</h2>
+<p id="id65">In conclusion, machine learning for detecting and segmenting benign tumors of the CNS is gaining traction but is still at an early stage. The possible presence of overfitting and other biases in several publications makes it difficult to assess whether the high dice coefficients that were reported would be achievable when deploying the models on data from other institutions. Enforcing guidelines at the review and publication level could enhance the quality of published studies. This is likely to happen as ML in medicine becomes more established and those involved in the publication process become increasingly aware of the possible pitfalls.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id68"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id66"><!-- named anchor --></a><p id="id67"><span class="generated">[1]</span> <b>Publisher’s Note:</b> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id73"><!-- named anchor --></a><h2 class="main-title">Appendices</h2>
+<div class="section app">
+<a id="app1-cancers-14-02676"><!-- named anchor --></a><h3 class="section-title">Supplementary Materials</h3>
+<p id="id69">The following supporting information can be downloaded at: <a target="xrefwindow" href="https://www.mdpi.com/article/10.3390/cancers14112676/s1" id="id70">https://www.mdpi.com/article/10.3390/cancers14112676/s1</a>, Table S1: Excluded studies, Table S2: Study parameters.</p>
+<div class="panel">
+<a id="cancers-14-02676-s001"><!-- named anchor --></a><a id="id71" href="cancers-14-02676-s001.zip"><div class="caption"><p class="first" id="id72">Click here for additional data file.</p></div></a>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id75"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id74">Conceptualization, P.W. and R.F.; methodology, P.W.; formal analysis, P.W., C.K. and C.S.; data curation, P.W., C.K. and C.S.; writing—original draft preparation, P.W.; writing—review and editing, C.K., S.R., C.S., R.F., D.R.Z. and S.B.; supervision, D.R.Z. and S.B.; project administration, P.W. All authors have read and agreed to the published version of the manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id77"><!-- named anchor --></a><h2 class="main-title">Conflicts of Interest</h2>
+<p id="id76">P.W. has a patent application titled “Method for detection of neurological abnormalities”. The other authors declare no conflict of interest.</p>
+</div>
+<div class="back-section">
+<a id="id78"><!-- named anchor --></a><div class="section ref-list">
+<a id="id78"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="B1-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id79"><!-- named anchor --></a>A.A.-A. VallianiD. RantiE.K. OermannDeep Learning and Neurology: A Systematic ReviewNeurol. Ther.2019835136510.1007/s40120-019-00153-831435868PMC6858915</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="B2-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id80"><!-- named anchor --></a>Q.T. OstromH. GittlemanG. TruittA. BosciaC. KruchkoJ.S. Barnholtz-SloanCBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2011–2015Neuro. Oncol.201820iv1iv8610.1093/neuonc/noy13130445539PMC6129949</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="B3-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id81"><!-- named anchor --></a>B.H. MenzeA. JakabS. BauerJ. Kalpathy-CramerK. FarahaniJ. KirbyY. BurrenN. PorzJ. SlotboomR. WiestThe Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)IEEE Trans. Med. Imaging2015341993202410.1109/TMI.2014.237769425494501PMC4833122</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="B4-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id82"><!-- named anchor --></a>TCGA-GBMThe Cancer Imaging Archive (TCIA) Public Access—Cancer Imaging Archive WikiAvailable online: <a target="xrefwindow" href="https://wiki.cancerimagingarchive.net/display/Public/TCGA-GBM" id="id83">https://wiki.cancerimagingarchive.net/display/Public/TCGA-GBM</a>(accessed on 25 April 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="B5-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id84"><!-- named anchor --></a>D. BougetA. PedersenS.A.M. HosaineyJ. VanelO. SolheimI. ReinertsenFast Meningioma Segmentation in T1-Weighted Magnetic Resonance Imaging Volumes Using a Lightweight 3D Deep Learning ArchitectureJ. Med. Imaging202182400210.1117/1.JMI.8.2.024002PMC799519833778095</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="B6-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id85"><!-- named anchor --></a>S. ItoK. AndoK. KobayashiH. NakashimaM. OdaM. MachinoS. KanbaraT. InoueH. YamaguchiH. KoshimizuAutomated Detection of Spinal Schwannomas Utilizing Deep Learning Based on Object Detection from Magnetic Resonance ImagingSpine2021469510010.1097/BRS.000000000000374933079909</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="B7-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id86"><!-- named anchor --></a>S.J. ChoL. SunwooS.H. BaikY.J. BaeB.S. ChoiJ.H. KimBrain Metastasis Detection Using Machine Learning: A Systematic Review and Meta-AnalysisNeuro. Oncol.20202321422510.1093/neuonc/noaa232PMC790605833075135</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="B8-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id87"><!-- named anchor --></a>J. MonganL. MoyC.E. KahnChecklist for Artificial Intelligence in Medical Imaging (CLAIM): A Guide for Authors and ReviewersRadiol. Artif. Intell.20202e20002910.1148/ryai.202020002933937821PMC8017414</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="B9-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id88"><!-- named anchor --></a>M.J. PageJ.E. McKenzieP.M. BossuytI. BoutronT.C. HoffmannC.D. MulrowL. ShamseerJ.M. TetzlaffE.A. AklS.E. BrennanThe PRISMA 2020 Statement: An Updated Guideline for Reporting Systematic ReviewsBMJ202137210.1136/bmj.n71PMC800592433782057</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="B10-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id89"><!-- named anchor --></a>Z.-S. HuangX. XiaoX.-D. LiH.-Z. MoW.-L. HeY.-H. DengL.-J. LuY.-K. WuH. LiuMachine Learning-Based Multiparametric Magnetic Resonance Imaging Radiomic Model for Discrimination of Pathological Subtypes of CraniopharyngiomaJ. Magn. Reson. Imaging2021541541155010.1002/jmri.2776134085336</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="B11-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id90"><!-- named anchor --></a>D. KalasauskasA. KronfeldM. RenovanzE. KurzP. LeukelH. KrenzlinM.A. BrockmannC.J. SommerF. RingelN. KericIdentification of High-Risk Atypical Meningiomas According to Semantic and Radiomic FeaturesCancers202012294210.3390/cancers12102942PMC759967633053798</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="B12-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id91"><!-- named anchor --></a>Y. ZhaoY. LuX. LiY. ZhengB. YinThe Evaluation of Radiomic Models in Distinguishing Pilocytic Astrocytoma from Cystic Oligodendroglioma With Multiparametric MRIJ. Comput. Assist. Tomogr.20204496997610.1097/RCT.000000000000108832976261</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="B13-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id92"><!-- named anchor --></a>E.W. PrinceR. WhelanD.M. MirskyN. StenceS. StaulcupP. KlimoR.C.E. AndersonT.N. NiaziG. GrantM. SouweidaneRobust Deep Learning Classification of Adamantinomatous Craniopharyngioma from Limited Preoperative Radiographic ImagesSci. Rep.2020101688510.1038/s41598-020-73278-833037266PMC7547020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="B14-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id93"><!-- named anchor --></a>J. HuY. ZhaoM. LiJ. LiuF. WangQ. WengX. WangD. CaoMachine Learning-Based Radiomics Analysis in Predicting the Meningioma Grade Using Multiparametric MRIEur. J. Radiol.202013110925110.1016/j.ejrad.2020.10925132916409</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="B15-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id94"><!-- named anchor --></a>S. BiR. ChenK. ZhangY. XiangR. WangH. LinH. YangDifferentiate Cavernous Hemangioma from Schwannoma with Artificial Intelligence (AI)Ann. Transl. Med.2020871010.21037/atm.2020.03.15032617330PMC7327353</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="B16-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id95"><!-- named anchor --></a>H.R. Khayat KashaniS. AzhariH. NayebaghayeeS. SalimiH.R. MohammadiPrediction Value of Preoperative Findings on Meningioma Grading Using Artificial Neural NetworkClin. Neurol. Neurosurg.202019610594710.1016/j.clineuro.2020.10594732521393</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="B17-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id96"><!-- named anchor --></a>M. LiH. WangZ. ShangZ. YangY. ZhangH. WanEpendymoma and Pilocytic Astrocytoma: Differentiation Using Radiomics Approach Based on Machine LearningJ. Clin. Neurosci.20207817518010.1016/j.jocn.2020.04.08032336636</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="B18-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id97"><!-- named anchor --></a>A. PengH. DaiH. DuanY. ChenJ. HuangL. ZhouL. ChenA Machine Learning Model to Precisely Immunohistochemically Classify Pituitary Adenoma Subtypes with Radiomics Based on Preoperative Magnetic Resonance ImagingEur. J. Radiol.202012510889210.1016/j.ejrad.2020.10889232087466</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="B19-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id98"><!-- named anchor --></a>C. ChenX. GuoJ. WangW. GuoX. MaJ. XuThe Diagnostic Value of Radiomics-Based Machine Learning in Predicting the Grade of Meningiomas Using Conventional Magnetic Resonance Imaging: A Preliminary StudyFront. Oncol.20199133810.3389/fonc.2019.0133831867272PMC6908490</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="B20-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id99"><!-- named anchor --></a>S. MakiT. FuruyaT. HorikoshiH. YokotaY. MoriJ. OtaY. KawasakiT. MiyamotoM. NorimotoS. OkimatsuA Deep Convolutional Neural Network with Performance Comparable to Radiologists for Differentiating Between Spinal Schwannoma and MeningiomaSpine20204569470010.1097/BRS.000000000000335331809468</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="B21-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id100"><!-- named anchor --></a>C. KeH. ChenX. LvH. LiY. ZhangM. ChenD. HuG. RuanY. ZhangY. ZhangDifferentiation Between Benign and Nonbenign Meningiomas by Using Texture Analysis from Multiparametric MRIJ. Magn. Reson. Imaging2020511810182010.1002/jmri.2697631710413</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="B22-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id101"><!-- named anchor --></a>H. ZhuQ. FangH. HeJ. HuD. JiangK. XuAutomatic Prediction of Meningioma Grade Image Based on Data Amplification and Improved Convolutional Neural NetworkComput. Math. Methods Med.20192019728927310.1155/2019/728927331662786PMC6791208</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="B23-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id102"><!-- named anchor --></a>O. MorinW.C. ChenF. NassiriM. SuskoS.T. MagillH.N. VasudevanA. WuM. VallièresE.D. GennatasG. ValdesIntegrated Models Incorporating Radiologic and Radiomic Features Predict Meningioma Grade, Local Failure, and Overall SurvivalNeurooncol. Adv.20191vdz01110.1093/noajnl/vdz01131608329PMC6777505</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="B24-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id103"><!-- named anchor --></a>G. HamerlaH.-J. MeyerS. SchobD.T. GinatA. AltmanT. LimG.A. GihrD. Horvath-RizeaK.-T. HoffmannA. SurovComparison of Machine Learning Classifiers for Differentiation of Grade 1 from Higher Gradings in Meningioma: A Multicenter Radiomics StudyMagn. Reson. Imaging20196324424910.1016/j.mri.2019.08.01131425811</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="B25-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id104"><!-- named anchor --></a>L. UggaR. CuocoloD. SolariE. GuadagnoA. D’AmicoT. SommaP. CappabiancaM.L. Del Basso de CaroL.M. CavalloA. BrunettiPrediction of High Proliferative Index in Pituitary Macroadenomas Using MRI-Based Radiomics and Machine LearningNeuroradiology2019611365137310.1007/s00234-019-02266-131375883</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="B26-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id105"><!-- named anchor --></a>X. LiY. LuJ. XiongD. WangD. SheX. KuaiD. GengB. YinPresurgical Differentiation between Malignant Haemangiopericytoma and Angiomatous Meningioma by a Radiomics Approach Based on Texture AnalysisJ. Neuroradiol.20194628128710.1016/j.neurad.2019.05.01331226327</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="B27-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id106"><!-- named anchor --></a>Y. ZhuC. ManL. GongD. DongX. YuS. WangM. FangS. WangX. FangX. ChenA Deep Learning Radiomics Model for Preoperative Grading in MeningiomaEur. J. Radiol.20191161281343115355310.1016/j.ejrad.2019.04.022</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="B28-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id107"><!-- named anchor --></a>T. BanzatoF. CausinA. Della PuppaG. CesterL. MazzaiA. ZottiAccuracy of Deep Learning to Differentiate the Histopathological Grading of Meningiomas on MR Images: A Preliminary StudyJ. Magn. Reson. Imaging2019501152115910.1002/jmri.2672330896065PMC6767062</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="B29-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id108"><!-- named anchor --></a>A.T. HaleD.P. StonkoL. WangM.K. StrotherL.B. ChamblessMachine Learning Analyses Can Differentiate Meningioma Grade by Features on Magnetic Resonance ImagingNeurosurg. Focus201845E410.3171/2018.8.FOCUS1819130453458</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="B30-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id109"><!-- named anchor --></a>Y.W. ParkJ. OhS.C. YouK. HanS.S. AhnY.S. ChoiJ.H. ChangS.H. KimS.-K. LeeRadiomics and Machine Learning May Accurately Predict the Grade and Histological Subtype in Meningiomas Using Conventional and Diffusion Tensor ImagingEur. Radiol.2019294068407610.1007/s00330-018-5830-330443758</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="B31-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id110"><!-- named anchor --></a>Y. LuL. LiuS. LuanJ. XiongD. GengB. YinThe Diagnostic Value of Texture Analysis in Predicting WHO Grades of Meningiomas Based on ADC Maps: An Attempt Using Decision Tree and Decision ForestEur. Radiol.2019291318132810.1007/s00330-018-5632-730088065</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="B32-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id111"><!-- named anchor --></a>T. KanazawaY. MinamiM. JinzakiM. TodaK. YoshidaH. SasakiPreoperative Prediction of Solitary Fibrous Tumor/Hemangiopericytoma and Angiomatous Meningioma Using Magnetic Resonance Imaging Texture AnalysisWorld Neurosurg.2018120e1208e121610.1016/j.wneu.2018.09.04430240864</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="B33-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id112"><!-- named anchor --></a>F. DongQ. LiD. XuW. XiuQ. ZengX. ZhuF. XuB. JiangM. ZhangDifferentiation between Pilocytic Astrocytoma and Glioblastoma: A Decision Tree Model Using Contrast-Enhanced Magnetic Resonance Imaging-Derived Quantitative Radiomic FeaturesEur. Radiol.2019293968397510.1007/s00330-018-5706-630421019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="B34-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id113"><!-- named anchor --></a>T.P. CorollerW.L. BiE. HuynhM. AbedalthagafiA.A. AizerN.F. GreenwaldC. ParmarV. NarayanW.W. WuS. Miranda de MouraRadiographic Prediction of Meningioma Grade by Semantic and Radiomic FeaturesPLoS ONE201712e018790810.1371/journal.pone.018790829145421PMC5690632</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="B35-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id114"><!-- named anchor --></a>Z. TianC. ChenY. ZhangY. FanR. FengJ. XuRadiomic Analysis of Craniopharyngioma and Meningioma in the Sellar/Parasellar Area with MR Images Features and Texture Features: A Feasible StudyContrast Media Mol. Imaging20202020483715610.1155/2020/483715632158365PMC7049426</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="B36-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id115"><!-- named anchor --></a>Y. HanT. WangP. WuH. ZhangH. ChenC. YangMeningiomas: Preoperative Predictive Histopathological Grading Based on Radiomics of MRIMagn. Reson. Imaging202177364310.1016/j.mri.2020.11.00933220449</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="B37-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id116"><!-- named anchor --></a>Y.W. ParkY. KangS.S. AhnC.R. KuE.H. KimS.H. KimE.J. LeeS.H. KimS.-K. LeeRadiomics Model Predicts Granulation Pattern in Growth Hormone-Secreting Pituitary AdenomasPituitary20202369170010.1007/s11102-020-01077-532851505</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="B38-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id117"><!-- named anchor --></a>H. ChuX. LinJ. HeP. PangB. FanP. LeiD. GuoC. YeValue of MRI Radiomics Based on Enhanced T1WI Images in Prediction of Meningiomas GradeAcad. Radiol.20212868769310.1016/j.acra.2020.03.03432418785</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="B39-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id118"><!-- named anchor --></a>K.R. LaukampG. ShakirinB. BaeßlerF. ThieleD. ZopfsN. Große HokampM. TimmerC. KabbaschM. PerkuhnJ. BorggrefeAccuracy of Radiomics-Based Feature Analysis on Multiparametric Magnetic Resonance Images for Noninvasive Meningioma GradingWorld Neurosurg.2019132e366e39010.1016/j.wneu.2019.08.14831476455</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="B40-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id119"><!-- named anchor --></a>L. NiuX. ZhouC. DuanJ. ZhaoQ. SuiX. LiuX. ZhangDifferentiation Researches on the Meningioma Subtypes by Radiomics from Contrast-Enhanced Magnetic Resonance Imaging: A Preliminary StudyWorld Neurosurg.2019126e646e65210.1016/j.wneu.2019.02.10930831287</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41.</span> <a id="B41-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id120"><!-- named anchor --></a>X. ChenY. TongZ. ShiH. ChenZ. YangY. WangL. ChenJ. YuNoninvasive Molecular Diagnosis of Craniopharyngioma with MRI-Based Radiomics ApproachBMC Neurol.201919610.1186/s12883-018-1216-z30616515PMC6322318</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42.</span> <a id="B42-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id121"><!-- named anchor --></a>S. ZhangG. SongY. ZangJ. JiaC. WangC. LiJ. TianD. DongY. ZhangNon-Invasive Radiomics Approach Potentially Predicts Non-Functioning Pituitary Adenomas Subtypes before SurgeryEur. Radiol.2018283692370110.1007/s00330-017-5180-629572634</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43.</span> <a id="B43-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id122"><!-- named anchor --></a>Y. ZhaiD. SongF. YangY. WangX. JiaS. WeiW. MaoY. XueX. WeiPreoperative Prediction of Meningioma Consistency via Machine Learning-Based RadiomicsFront. Oncol.20211165728810.3389/fonc.2021.65728834123812PMC8187861</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44.</span> <a id="B44-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id123"><!-- named anchor --></a>S. ShahrestaniT. CardinalA. MickoB.A. StricklandD.J. PangalG. KugenerM.H. WeissJ. CarmichaelG. ZadaNeural Network Modeling for Prediction of Recurrence, Progression, and Hormonal Non-Remission in Patients Following Resection of Functional Pituitary AdenomasPituitary20212452352910.1007/s11102-021-01128-533528731</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45.</span> <a id="B45-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id124"><!-- named anchor --></a>S. DangN.F. ManzoorN. ChowdhuryS.M. TittmanK.L. YanceyM.A. MonsourM.R. O’MalleyA. RivasD.S. HaynesM.L. BennettInvestigating Predictors of Increased Length of Stay After Resection of Vestibular Schwannoma Using Machine LearningOtol. Neurotol.202142e584e59210.1097/MAO.000000000000304233443974</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46.</span> <a id="B46-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id125"><!-- named anchor --></a>J.M. ChenQ. WanH.Y. ZhuY.Q. GeL.L. WuJ. ZhaiZ.M. DingThe value of conventional magnetic resonance imaging based radiomic model in predicting the texture of pituitary macroadenomaZhonghua Yi Xue Za Zhi2020100362636313333368810.3760/cma.j.cn112137-20200511-01511</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47.</span> <a id="B47-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id126"><!-- named anchor --></a>S. CepedaI. ArreseS. García-GarcíaM. Velasco-CasaresT. Escudero-CaroT. ZamoraR. SarabiaMeningioma Consistency Can Be Defined by Combining the Radiomic Features of Magnetic Resonance Imaging and Ultrasound Elastography. A Pilot Study Using Machine Learning ClassifiersWorld Neurosurg.2021146e1147e115910.1016/j.wneu.2020.11.11333259973</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48.</span> <a id="B48-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id127"><!-- named anchor --></a>J. ZhangJ. SunT. HanZ. ZhaoY. CaoG. ZhangJ. ZhouRadiomic Features of Magnetic Resonance Images as Novel Preoperative Predictive Factors of Bone Invasion in MeningiomasEur. J. Radiol.202013210928710.1016/j.ejrad.2020.10928732980725</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49.</span> <a id="B49-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id128"><!-- named anchor --></a>S.G. KandemirliS. ChopraS. PriyaC. WardT. LockeN. SoniS. SrivastavaK. JonesG. BathlaPresurgical Detection of Brain Invasion Status in Meningiomas Based on First-Order Histogram Based Texture Analysis of Contrast Enhanced ImagingClin. Neurol. Neurosurg.202019810620510.1016/j.clineuro.2020.10620532932028</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50.</span> <a id="B50-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id129"><!-- named anchor --></a>R. CuocoloL. UggaD. SolariS. CorvinoA. D’AmicoD. RussoP. CappabiancaL.M. CavalloA. ElefantePrediction of Pituitary Adenoma Surgical Consistency: Radiomic Data Mining and Machine Learning on T2-Weighted MRINeuroradiology2020621649165610.1007/s00234-020-02502-z32705290PMC7666676</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51.</span> <a id="B51-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id130"><!-- named anchor --></a>Y.Q. LiuB.B. GaoB. DongS.S. Padikkalakandy CheriyathQ.W. SongB. XuQ. WeiL.Z. XieY. GuoY.W. MiaoPreoperative Vascular Heterogeneity and Aggressiveness Assessment of Pituitary Macroadenoma Based on Dynamic Contrast-Enhanced MRI Texture AnalysisEur. J. Radiol.202012910912510.1016/j.ejrad.2020.10912532593076</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52.</span> <a id="B52-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id131"><!-- named anchor --></a>S. VoglisC.H.B. van NiftrikV.E. StaartjesG. BrandiO. TschoppL. RegliC. SerraFeasibility of Machine Learning Based Predictive Modelling of Postoperative Hyponatremia after Pituitary SurgeryPituitary20202354355110.1007/s11102-020-01056-w32488759</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53.</span> <a id="B53-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id132"><!-- named anchor --></a>D. ChaS.H. ShinS.H. KimJ.Y. ChoiI.S. MoonMachine Learning Approach for Prediction of Hearing Preservation in Vestibular Schwannoma SurgerySci. Rep.202010713610.1038/s41598-020-64175-132346085PMC7188896</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54.</span> <a id="B54-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id133"><!-- named anchor --></a>M. AbouzariK. GoshtasbiB. SarnaP. KhosraviT. ReutershanN. MostaghniH.W. LinH.R. DjalilianPrediction of Vestibular Schwannoma Recurrence Using Artificial Neural NetworkLaryngoscope Investig. Otolaryngol.2020527828510.1002/lio2.362PMC717845232337359</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55.</span> <a id="B55-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id134"><!-- named anchor --></a>C.-Q. SuX. ZhangT. PanX.-T. ChenW. ChenS.-F. DuanJ. JiW.-X. HuS.-S. LuX.-N. HongTexture Analysis of High B-Value Diffusion-Weighted Imaging for Evaluating Consistency of Pituitary MacroadenomasJ. Magn. Reson. Imaging2020511507151310.1002/jmri.2694131769565</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56.</span> <a id="B56-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id135"><!-- named anchor --></a>Y. FanZ. LiuB. HouL. LiX. LiuZ. LiuR. WangY. LinF. FengJ. TianDevelopment and Validation of an MRI-Based Radiomic Signature for the Preoperative Prediction of Treatment Response in Patients with Invasive Functional Pituitary AdenomaEur. J. Radiol.201912110864710.1016/j.ejrad.2019.10864731561943</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57.</span> <a id="B57-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id136"><!-- named anchor --></a>H. SpeckterJ. BidoG. HernandezD. RiveraL. SuazoS. ValenzuelaI. MichesJ. OviedoC. GonzalezP. StoeterPretreatment Texture Analysis of Routine MR Images and Shape Analysis of the Diffusion Tensor for Prediction of Volumetric Response after Radiosurgery for MeningiomaJ. Neurosurg.2018129313710.3171/2018.7.GKS18132730544300</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58.</span> <a id="B58-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id137"><!-- named anchor --></a>A. MekkiL. DercleP. LichtensteinG. NasserA. MarabelleS. ChampiatE. ChouzenouxC. BalleyguierS. AmmariMachine Learning Defined Diagnostic Criteria for Differentiating Pituitary Metastasis from Autoimmune Hypophysitis in Patients Undergoing Immune Checkpoint Blockade TherapyEur. J. Cancer2019119445610.1016/j.ejca.2019.06.02031415986</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59.</span> <a id="B59-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id138"><!-- named anchor --></a>V.E. StaartjesC.M. ZattraK. AkeretN. MaldanerG. MuscasC.H. Bas van NiftrikJ. FierstraL. RegliC. SerraNeural Network-Based Identification of Patients at High Risk for Intraoperative Cerebrospinal Fluid Leaks in Endoscopic Pituitary SurgeryJ. Neurosurg.201913332933510.3171/2019.4.JNS1947731226693</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60.</span> <a id="B60-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id139"><!-- named anchor --></a>A. ZeynalovaB. KocakE.S. DurmazN. ComunogluK. OzcanG. OzcanO. TurkN. TanrioverN. KocerO. KizilkilicPreoperative Evaluation of Tumour Consistency in Pituitary Macroadenomas: A Machine Learning-Based Histogram Analysis on Conventional T2-Weighted MRINeuroradiology20196176777410.1007/s00234-019-02211-231011772</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61.</span> <a id="B61-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id140"><!-- named anchor --></a>H. SpeckterJ. SantanaJ. BidoG. HernandezD. RiveraL. SuazoS. ValenzuelaJ. OviedoC.F. GonzalezP. StoeterTexture Analysis of Standard Magnetic Resonance Images to Predict Response to Gamma Knife Radiosurgery in Vestibular SchwannomasWorld Neurosurg.2019132e228e23410.1016/j.wneu.2019.08.19331493607</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62.</span> <a id="B62-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id141"><!-- named anchor --></a>T.C. HollonA. ParikhB. PandianJ. TarpehD.A. OrringerA.L. BarkanE.L. McKeanS.E. SullivanA Machine Learning Approach to Predict Early Outcomes after Pituitary Adenoma SurgeryNeurosurg. Focus201845E810.3171/2018.8.FOCUS1826830453460</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63.</span> <a id="B63-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id142"><!-- named anchor --></a>B.P. GalmE.L. Martinez-SalazarB. SwearingenM. TorrianiA. KlibanskiM.A. BredellaN.A. TritosMRI Texture Analysis as a Predictor of Tumor Recurrence or Progression in Patients with Clinically Non-Functioning Pituitary AdenomasEur. J. Endocrinol.201817919119810.1530/EJE-18-029129973377</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64.</span> <a id="B64-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id143"><!-- named anchor --></a>W.E. MuhlesteinD.S. AkagiJ.A. KallosP.J. MoroneK.D. WeaverR.C. ThompsonL.B. ChamblessUsing a Guided Machine Learning Ensemble Model to Predict Discharge Disposition Following Meningioma ResectionJ. Neurol. Surg. B Skull Base20187912313010.1055/s-0037-160439329868316PMC5978858</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65.</span> <a id="B65-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id144"><!-- named anchor --></a>C.-C. KoY. ZhangJ.-H. ChenK.-T. ChangT.-Y. ChenS.-W. LimT.-C. WuM.-Y. SuPre-Operative MRI Radiomics for the Prediction of Progression and Recurrence in MeningiomasFront. Neurol.20211263623510.3389/fneur.2021.63623534054688PMC8160291</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66.</span> <a id="B66-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id145"><!-- named anchor --></a>B. XiaoY. FanZ. ZhangZ. TanH. YangW. TuL. WuX. ShenH. GuoZ. WuThree-Dimensional Radiomics Features from Multi-Parameter MRI Combined With Clinical Characteristics Predict Postoperative Cerebral Edema Exacerbation in Patients With MeningiomaFront. Oncol.20211162522010.3389/fonc.2021.62522033937027PMC8082417</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67.</span> <a id="B67-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id146"><!-- named anchor --></a>G. MaJ. KangN. QiaoB. ZhangX. ChenG. LiZ. GaoS. GuiNon-Invasive Radiomics Approach Predict Invasiveness of Adamantinomatous Craniopharyngioma Before SurgeryFront. Oncol.20201059988810.3389/fonc.2020.59988833680925PMC7925821</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68.</span> <a id="B68-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id147"><!-- named anchor --></a>P.P.J.H. LangenhuizenS. ZingerS. LeenstraH.P.M. KunstJ.J.S. MulderP.E.J. HanssensP.H.N. de WithJ.B. VerheulRadiomics-Based Prediction of Long-Term Treatment Response of Vestibular Schwannomas Following Stereotactic RadiosurgeryOtol. Neurotol.202041e1321e132710.1097/MAO.000000000000288633492808</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69.</span> <a id="B69-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id148"><!-- named anchor --></a>Y. ZhangC.-C. KoJ.-H. ChenK.-T. ChangT.-Y. ChenS.-W. LimY.-K. TsuiM.-Y. SuRadiomics Approach for Prediction of Recurrence in Non-Functioning Pituitary MacroadenomasFront. Oncol.20201059008310.3389/fonc.2020.59008333392084PMC7775655</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70.</span> <a id="B70-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id149"><!-- named anchor --></a>H.-C. YangC.-C. WuC.-C. LeeH.-E. HuangW.-K. LeeW.-Y. ChungH.-M. WuW.-Y. GuoY.-T. WuC.-F. LuPrediction of Pseudoprogression and Long-Term Outcome of Vestibular Schwannoma after Gamma Knife Radiosurgery Based on Preradiosurgical MR RadiomicsRadiother. Oncol.202115512313010.1016/j.radonc.2020.10.04133161011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71.</span> <a id="B71-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id150"><!-- named anchor --></a>L.F. MachadoP.C.L. EliasA.C. MoreiraA.C. Dos SantosL.O. Murta JuniorMRI Radiomics for the Prediction of Recurrence in Patients with Clinically Non-Functioning Pituitary MacroadenomasComput. Biol. Med.202012410396610.1016/j.compbiomed.2020.10396632860977</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72.</span> <a id="B72-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id151"><!-- named anchor --></a>J. ZhangK. YaoP. LiuZ. LiuT. HanZ. ZhaoY. CaoG. ZhangJ. ZhangJ. TianA Radiomics Model for Preoperative Prediction of Brain Invasion in Meningioma Non-Invasively Based on MRI: A Multicentre StudyEBioMedicine20205810293310.1016/j.ebiom.2020.10293332739863PMC7393568</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73.</span> <a id="B73-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id152"><!-- named anchor --></a>Y. ZhangJ.-H. ChenT.-Y. ChenS.-W. LimT.-C. WuY.-T. KuoC.-C. KoM.-Y. SuRadiomics Approach for Prediction of Recurrence in Skull Base MeningiomasNeuroradiology2019611355136410.1007/s00234-019-02259-031324948PMC7717070</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74.</span> <a id="B74-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id153"><!-- named anchor --></a>W. RuiY. WuZ. MaY. WangY. WangX. XuJ. ZhangZ. YaoMR Textural Analysis on Contrast Enhanced 3D-SPACE Images in Assessment of Consistency of Pituitary MacroadenomaEur. J. Radiol.201911021922410.1016/j.ejrad.2018.12.00230599863</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75.</span> <a id="B75-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id154"><!-- named anchor --></a>J. NiuS. ZhangS. MaJ. DiaoW. ZhouJ. TianY. ZangW. JiaPreoperative Prediction of Cavernous Sinus Invasion by Pituitary Adenomas Using a Radiomics Method Based on Magnetic Resonance ImagesEur. Radiol.2019291625163410.1007/s00330-018-5725-330255254PMC6510860</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76.</span> <a id="B76-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id155"><!-- named anchor --></a>L. GoertzP. StavrinouG. StranjalisM. TimmerR. GoldbrunnerB. KrischekSingle-Step Resection of Sphenoorbital Meningiomas and Orbital Reconstruction Using Customized CAD/CAM ImplantsJ. Neurol. Surg. B Skull Base20208114214810.1055/s-0039-168104432206532PMC7082166</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77.</span> <a id="B77-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id156"><!-- named anchor --></a>M.D. McCraddenA. BabaA. SahaS. AhmadK. BoparaiP. FadaiefardM.D. CusimanoEthical Concerns around Use of Artificial Intelligence in Health Care Research from the Perspective of Patients with Meningioma, Caregivers and Health Care Providers: A Qualitative StudyCMAJ Open20208E90E9510.9778/cmajo.20190151PMC702816332071143</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78.</span> <a id="B78-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id157"><!-- named anchor --></a>E.E. LovoF.J. CamposV.E. CacerosM. MinerviniC.B. CruzJ.C. AriasW.A. ReyesAutomated Stereotactic Gamma Ray Radiosurgery to the Pituitary Gland in Terminally Ill Cancer Patients with Opioid Refractory PainCureus201911e481110.7759/cureus.481131403008PMC6682389</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79.</span> <a id="B79-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id158"><!-- named anchor --></a>A. CarolusS. WeiheK. SchmiederC. BrenkeOne-Step CAD/CAM Titanium Cranioplasty after Drilling Template-Assisted Resection of Intraosseous Skull Base Meningioma: Technical NoteActa Neurochir.201715944745210.1007/s00701-016-3053-428074281</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80.</span> <a id="B80-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id159"><!-- named anchor --></a>N. QiaoY. ZhangZ. YeM. ShenX. ShouY. WangS. LiM. WangY. ZhaoComparison of Multifocal Visual Evoked Potential, Static Automated Perimetry, and Optical Coherence Tomography Findings for Assessing Visual Pathways in Patients with Pituitary AdenomasPituitary20151859860310.1007/s11102-014-0613-625349031</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81.</span> <a id="B81-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id160"><!-- named anchor --></a>R. GarridoT.S. ZabkaJ. TaoM. FieldenA. FretlandM. AlbassamQuantitative Histological Assessment of Xenobiotic-Induced Liver Enzyme Induction and Pituitary-Thyroid Axis Stimulation in Rats Using Whole-Slide Automated Image AnalysisJ. Histochem. Cytochem.20136136237110.1369/002215541348292623456825PMC3636704</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82.</span> <a id="B82-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id161"><!-- named anchor --></a>V. ChangJ. NarangL. SchultzA. IssawiR. JainJ. RockM. RosenblumComputer-Aided Volumetric Analysis as a Sensitive Tool for the Management of Incidental MeningiomasActa Neurochir.2012154589597589–597; discussion 59710.1007/s00701-012-1273-922302235</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83.</span> <a id="B83-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id162"><!-- named anchor --></a>J. BrossaudM. BoutonB. GattaA. TabarinJ.-B. CorcuffUse of an Automated ACTH Assay for the Diagnosis of Pituitary and Adrenal-Related DiseasesClin. Biochem.2011441160116210.1016/j.clinbiochem.2011.06.00221704612</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84.</span> <a id="B84-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id163"><!-- named anchor --></a>B.B. GorzalkaM.N. HillIntegration of Endocannabinoid Signaling into the Neural Network Regulating Stress-Induced Activation of the Hypothalamic-Pituitary-Adrenal AxisCurr. Top. Behav. Neurosci.200912893062110438910.1007/978-3-540-88955-7_12</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85.</span> <a id="B85-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id164"><!-- named anchor --></a>B. GralaT. MarkiewiczW. KozłowskiS. OsowskiJ. SłodkowskaW. PapierzNew Automated Image Analysis Method for the Assessment of Ki-67 Labeling Index in MeningiomasFolia Histochem. Cytobiol.20094758759210.2478/v10042-008-0098-020430724</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86.</span> <a id="B86-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id165"><!-- named anchor --></a>Y.J. KimB.F.M. RomeikeJ. UszkoreitW. FeidenAutomated Nuclear Segmentation in the Determination of the Ki-67 Labeling Index in MeningiomasClin. Neuropathol.200625677316550739</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87.</span> <a id="B87-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id166"><!-- named anchor --></a>P.K. PillayC.W. LeoD.S. SethiComputer-Aided/image-Guided and Video-Endoscopic Resection of Pituitary TumorsStereotact. Funct. Neurosurg.20007420320910.1159/00005648111279360</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">88.</span> <a id="B88-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id167"><!-- named anchor --></a>J. ShapeyA. KujawaR. DorentS.R. SaeedN. KitchenR. ObholzerS. OurselinT. VercauterenN.W.M. ThomasArtificial Intelligence Opportunities for Vestibular Schwannoma Management Using Image Segmentation and Clinical Decision ToolsWorld Neurosurg.202114926927010.1016/j.wneu.2021.03.01033940676</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">89.</span> <a id="B89-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id168"><!-- named anchor --></a>L. UggaT. PerilloR. CuocoloA. StanzioneV. RomeoR. GreenV. CantoniA. BrunettiMeningioma MRI Radiomics and Machine Learning: Systematic Review, Quality Score Assessment, and Meta-AnalysisNeuroradiology2021631293130410.1007/s00234-021-02668-033649882PMC8295153</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">90.</span> <a id="B90-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id169"><!-- named anchor --></a>E. NeromyliotisT. KalamatianosA. PaschalisS. KomaitisK.N. FountasE.Z. KapsalakiG. StranjalisI. TsougosMachine Learning in Meningioma MRI: Past to Present. A Narrative ReviewJ. Magn. Reson. Imaging202055486010.1002/jmri.2737833006425</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">91.</span> <a id="B91-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id170"><!-- named anchor --></a>S. SoldozyF. FarzadS. YoungK. YağmurluP. NoratJ. SokolowskiM.S. ParkJ.A. Jane Jr.H.R. SyedPituitary Tumors in the Computational Era, Exploring Novel Approaches to Diagnosis, and Outcome Prediction with Machine LearningWorld Neurosurg.2021146315321.e110.1016/j.wneu.2020.07.10432711142</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">92.</span> <a id="B92-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id171"><!-- named anchor --></a>E.K. van StaalduinenL. BangiyevEditorial for “Texture Analysis of High B-Value Diffusion-Weighted Imaging for Evaluating Consistency of Pituitary Macroadenomas”J. Magn. Reson. Imaging2020511514151510.1002/jmri.2713032154956</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">93.</span> <a id="B93-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id172"><!-- named anchor --></a>A. SahaS. TsoJ. RabskiA. SadeghianM.D. CusimanoMachine Learning Applications in Imaging Analysis for Patients with Pituitary Tumors: A Review of the Current Literature and Future DirectionsPituitary20202327329310.1007/s11102-019-01026-x31907710</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">94.</span> <a id="B94-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id173"><!-- named anchor --></a>S.Y. WonY.W. ParkS.S. AhnJ.H. MoonE.H. KimS.-G. KangJ.H. ChangS.H. KimS.-K. LeeQuality Assessment of Meningioma Radiomics Studies: Bridging the Gap between Exploratory Research and Clinical ApplicationsEur. J. Radiol.202113810967310.1016/j.ejrad.2021.10967333774441</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">95.</span> <a id="B95-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id174"><!-- named anchor --></a>H. GuX. ZhangP. di RussoX. ZhaoT. XuThe Current State of Radiomics for Meningiomas: Promises and ChallengesFront. Oncol.20201056773610.3389/fonc.2020.56773633194649PMC7653049</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">96.</span> <a id="B96-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id175"><!-- named anchor --></a>S. MacKeithT. DasM. GravesA. PattersonN. DonnellyR. MannionP. AxonJ. TysomeA Comparison of Semi-Automated Volumetric vs Linear Measurement of Small Vestibular SchwannomasEur. Arch. Otorhinolaryngol.201827586787410.1007/s00405-018-4865-z29335780PMC5838150</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">97.</span> <a id="B97-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id176"><!-- named anchor --></a>H. McGrathP. LiR. DorentR. BradfordS. SaeedS. BisdasS. OurselinJ. ShapeyT. VercauterenManual Segmentation versus Semi-Automated Segmentation for Quantifying Vestibular Schwannoma Volume on MRIInt. J. Comput. Assist. Radiol. Surg.2020151445145510.1007/s11548-020-02222-y32676869PMC7419453</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">98.</span> <a id="B98-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id177"><!-- named anchor --></a>S.A.C. MacKeithT. DasM. GravesA. PattersonN. DonnellyR. MannionP. AxonJ. TysomeA Comparison of Repeatability and Usability of Semi-Automated Volume Segmentation Tools for Measurement of Vestibular SchwannomasOtol. Neurotol.201839e496e50510.1097/MAO.000000000000179629649049</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">99.</span> <a id="B99-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id178"><!-- named anchor --></a>T. BanzatoM. BernardiniG.B. CherubiniA. ZottiTexture Analysis of Magnetic Resonance Images to Predict Histologic Grade of Meningiomas in DogsAm. J. Vet. Res.2017781156116210.2460/ajvr.78.10.115628945125</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">100.</span> <a id="B100-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id179"><!-- named anchor --></a>T. BanzatoG.B. CherubiniM. AtzoriA. ZottiDevelopment of a Deep Convolutional Neural Network to Predict Grading of Canine Meningiomas from Magnetic Resonance ImagesVet. J.2018235909210.1016/j.tvjl.2018.04.00129704946</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">101.</span> <a id="B101-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id180"><!-- named anchor --></a>T. BanzatoM. BernardiniG.B. CherubiniA. ZottiA Methodological Approach for Deep Learning to Distinguish between Meningiomas and Gliomas on Canine MR-ImagesBMC Vet. Res.20181431710.1186/s12917-018-1638-230348148PMC6196418</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">102.</span> <a id="B102-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id181"><!-- named anchor --></a>M. LenzR. KrugC. DillmannR. StroopN.C. GerhardtH. WelpK. SchmiederM.R. HofmannAutomated Differentiation between Meningioma and Healthy Brain Tissue Based on Optical Coherence Tomography Ex Vivo Images Using Texture FeaturesJ. Biomed. Opt.2018237120510.1117/1.JBO.23.7.07120529484876</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">103.</span> <a id="B103-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id182"><!-- named anchor --></a>P. ChavaliM.S. UppinS.G. UppinS. ChallaMeningiomas: Objective Assessment of Proliferative Indices by Immunohistochemistry and Automated Counting MethodNeurol. India201765134513492913371210.4103/0028-3886.217934</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">104.</span> <a id="B104-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id183"><!-- named anchor --></a>M. KimH.S. KimH.J. KimJ.E. ParkS.Y. ParkY.-H. KimS.J. KimJ. LeeM.R. LebelThin-Slice Pituitary MRI with Deep Learning-Based Reconstruction: Diagnostic Performance in a Postoperative SettingRadiology202129811412210.1148/radiol.202020072333141001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">105.</span> <a id="B105-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id184"><!-- named anchor --></a>J. WangZ. XieX. ZhuZ. NiuH. JiL. HeQ. HuC. ZhangDifferentiation of Gastric Schwannomas from Gastrointestinal Stromal Tumors by CT Using Machine LearningAbdom. Radiol.2021461773178210.1007/s00261-020-02797-933083871</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">106.</span> <a id="B106-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id185"><!-- named anchor --></a>W.E. MuhlesteinD.S. AkagiA.R. McManusL.B. ChamblessMachine Learning Ensemble Models Predict Total Charges and Drivers of Cost for Transsphenoidal Surgery for Pituitary TumorJ. Neurosurg.201813150751610.3171/2018.4.JNS1830630239321</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">107.</span> <a id="B107-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id186"><!-- named anchor --></a>Y. QianY. QiuC.-C. LiZ.-Y. WangB.-W. CaoH.-X. HuangY.-H. NiL.-L. ChenJ.-Y. SunA Novel Diagnostic Method for Pituitary Adenoma Based on Magnetic Resonance Imaging Using a Convolutional Neural NetworkPituitary20202324625210.1007/s11102-020-01032-432062801</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">108.</span> <a id="B108-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id187"><!-- named anchor --></a>C.-C. LeeW.-K. LeeC.-C. WuC.-F. LuH.-C. YangY.-W. ChenW.-Y. ChungY.-S. HuH.-M. WuY.-T. WuApplying Artificial Intelligence to Longitudinal Imaging Analysis of Vestibular Schwannoma Following RadiosurgerySci. Rep.202111310610.1038/s41598-021-82665-833542422PMC7862268</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">109.</span> <a id="B109-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id188"><!-- named anchor --></a>H. ZhangJ. MoH. JiangZ. LiW. HuC. ZhangY. WangX. WangC. LiuB. ZhaoDeep Learning Model for the Automated Detection and Histopathological Prediction of MeningiomaNeuroinformatics20211939340210.1007/s12021-020-09492-632974873</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">110.</span> <a id="B110-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id189"><!-- named anchor --></a>H. WangW. ZhangS. LiY. FanM. FengR. WangDevelopment and Evaluation of Deep Learning-Based Automated Segmentation of Pituitary Adenoma in Clinical TaskJ. Clin. Endocrinol. Metab.20211062535254610.1210/clinem/dgab37134060609</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">111.</span> <a id="B111-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id190"><!-- named anchor --></a>K.R. LaukampF. ThieleG. ShakirinD. ZopfsA. FaymonvilleM. TimmerD. MaintzM. PerkuhnJ. BorggrefeFully Automated Detection and Segmentation of Meningiomas Using Deep Learning on Routine Multiparametric MRIEur. Radiol.20192912413210.1007/s00330-018-5595-829943184PMC6291436</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">112.</span> <a id="B112-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id191"><!-- named anchor --></a>K.R. LaukampL. PennigF. ThieleR. ReimerL. GörtzG. ShakirinD. ZopfsM. TimmerM. PerkuhnJ. BorggrefeAutomated Meningioma Segmentation in Multiparametric MRI: Comparable Effectiveness of a Deep Learning Model and Manual SegmentationClin. Neuroradiol.20213135736610.1007/s00062-020-00884-432060575</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">113.</span> <a id="B113-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id192"><!-- named anchor --></a>W.-K. LeeC.-C. WuC.-C. LeeC.-F. LuH.-C. YangT.-H. HuangC.-Y. LinW.-Y. ChungP.-S. WangH.-M. WuCombining Analysis of Multi-Parametric MR Images into a Convolutional Neural Network: Precise Target Delineation for Vestibular Schwannoma Treatment PlanningArtif. Intell. Med.202010710191110.1016/j.artmed.2020.10191132828450</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">114.</span> <a id="B114-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id193"><!-- named anchor --></a>N.A. George-JonesK. WangJ. WangJ.B. HunterAutomated Detection of Vestibular Schwannoma Growth Using a Two-Dimensional U-Net Convolutional Neural NetworkLaryngoscope2021131E619E62410.1002/lary.2869532304338</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">115.</span> <a id="B115-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id194"><!-- named anchor --></a>J. ShapeyG. WangR. DorentA. DimitriadisW. LiI. PaddickN. KitchenS. BisdasS.R. SaeedS. OurselinAn Artificial Intelligence Framework for Automatic Segmentation and Volumetry of Vestibular Schwannomas from Contrast-Enhanced T1-Weighted and High-Resolution T2-Weighted MRIJ. Neurosurg.201913417117910.3171/2019.9.JNS19194931812137PMC7617042</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">116.</span> <a id="B116-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id195"><!-- named anchor --></a>P.M. BossuytJ.B. ReitsmaThe STARD InitiativeLancet20033617110.1016/S0140-6736(03)12122-812517476</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">117.</span> <a id="B117-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id196"><!-- named anchor --></a>C.G. SchwarzW.K. KremersT.M. TherneauR.R. SharpJ.L. GunterP. VemuriA. AraniA.J. SpychallaK. KantarciD.S. KnopmanIdentification of Anonymous MRI Research Participants with Face-Recognition SoftwareN. Engl. J. Med.20193811684168610.1056/NEJMc190888131644852PMC7091256</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">118.</span> <a id="B118-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id197"><!-- named anchor --></a>R. GoldbrunnerM. WellerJ. RegisM. Lund-JohansenP. StavrinouD. ReussD.G. EvansF. LefrancK. SallabandaA. FaliniEANO Guideline on the Diagnosis and Treatment of Vestibular SchwannomaNeuro. Oncol.202022314510.1093/neuonc/noz15331504802PMC6954440</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">119.</span> <a id="B119-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id198"><!-- named anchor --></a>R. GoldbrunnerG. MinnitiM. PreusserM.D. JenkinsonK. SallabandaE. HoudartA. von DeimlingP. StavrinouF. LefrancM. Lund-JohansenEANO Guidelines for the Diagnosis and Treatment of MeningiomasLancet Oncol.201617e383e39110.1016/S1470-2045(16)30321-727599143</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">120.</span> <a id="B120-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id199"><!-- named anchor --></a>C. ShortenT.M. KhoshgoftaarA Survey on Image Data Augmentation for Deep LearningJ. Big Data201966010.1186/s40537-019-0197-0PMC828711334306963</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">121.</span> <a id="B121-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id200"><!-- named anchor --></a>J. XuM. LiZ. ZhuAutomatic Data Augmentation for 3D Medical Image SegmentationarXiv20202010.11695v1</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">122.</span> <a id="B122-cancers-14-02676"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id201"><!-- named anchor --></a>S. KunduAI in Medicine Must Be ExplainableNat. Med.202127132810.1038/s41591-021-01461-z34326551</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-floats" class="back">
+<h2 class="main-title"><span class="generated">Floating objects</span></h2>
+<div class="fig panel" style="display: float; clear: both">
+<a id="cancers-14-02676-f001"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id202">Inclusion workflow diagram according to PRISMA 2020. From: Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ 2021;372:n71. Doi: 10.1136/bmj.n71. For more information, visit: <a target="xrefwindow" href="http://www.prisma-statement.org/" id="id203">http://www.prisma-statement.org/</a> (accessed on 25 April 2022).</p></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="cancers-14-02676-t001"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<span class="object-id">cancers-14-02676-t001_Table 1</span><div class="caption"><p class="first" id="id204">Study and clinical parameters.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id205"><!-- named anchor --></a><thead>
+<a id="id206"><!-- named anchor --></a><tr>
+<a id="id207"><!-- named anchor --></a><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id208"><!-- named anchor --></a>Author</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id209"><!-- named anchor --></a>Year</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>Tumor Entity</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>Average Tumor Volume</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id212"><!-- named anchor --></a>No. of Patients</th>
+</tr>
+</thead>
+<tbody>
+<a id="id213"><!-- named anchor --></a><tr>
+<a id="id214"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id215"><!-- named anchor --></a>Wang, Zhang et al. [<a href="#B110-cancers-14-02676">110</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id216"><!-- named anchor --></a>2021</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id217"><!-- named anchor --></a>Pituitary adenoma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id218"><!-- named anchor --></a>7.9 mL</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id219"><!-- named anchor --></a>163</td>
+</tr>
+<tr>
+<a id="id220"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id221"><!-- named anchor --></a>Bouget et al. [<a href="#B5-cancers-14-02676">5</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id222"><!-- named anchor --></a>2021</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id223"><!-- named anchor --></a>Meningioma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id224"><!-- named anchor --></a>29.8 mL (surgically resected); 8.47 mL (untreated)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id225"><!-- named anchor --></a>698</td>
+</tr>
+<tr>
+<a id="id226"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>Lee et al. [<a href="#B108-cancers-14-02676">108</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>2021</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id229"><!-- named anchor --></a>Vestibular schwannoma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id230"><!-- named anchor --></a>2.05 mL</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id231"><!-- named anchor --></a>381</td>
+</tr>
+<tr>
+<a id="id232"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id233"><!-- named anchor --></a>Ito et al. [<a href="#B6-cancers-14-02676">6</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id235"><!-- named anchor --></a>Spinal schwannoma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id236"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id237"><!-- named anchor --></a>50</td>
+</tr>
+<tr>
+<a id="id238"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id239"><!-- named anchor --></a>Ugga et al. [<a href="#B89-cancers-14-02676">89</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id240"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id241"><!-- named anchor --></a>Meningioma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id242"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>1876</td>
+</tr>
+<tr>
+<a id="id244"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id245"><!-- named anchor --></a>Lee et al. [<a href="#B113-cancers-14-02676">113</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id247"><!-- named anchor --></a>Vestibular schwannoma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id248"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id249"><!-- named anchor --></a>516</td>
+</tr>
+<tr>
+<a id="id250"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id251"><!-- named anchor --></a>George-Jones et al. [<a href="#B114-cancers-14-02676">114</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id252"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id253"><!-- named anchor --></a>Vestibular schwannoma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id254"><!-- named anchor --></a>0.28 mL</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id255"><!-- named anchor --></a>65</td>
+</tr>
+<tr>
+<a id="id256"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id257"><!-- named anchor --></a>Qian et al. [<a href="#B107-cancers-14-02676">107</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id258"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id259"><!-- named anchor --></a>Pituitary adenoma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id260"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id261"><!-- named anchor --></a>149</td>
+</tr>
+<tr>
+<a id="id262"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>Laukamp et al. [<a href="#B112-cancers-14-02676">112</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id264"><!-- named anchor --></a>2020</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id265"><!-- named anchor --></a>Meningioma </td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id266"><!-- named anchor --></a>∼31 mL</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id267"><!-- named anchor --></a>126</td>
+</tr>
+<tr>
+<a id="id268"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id269"><!-- named anchor --></a>Shapey, Wang et al. [<a href="#B115-cancers-14-02676">115</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id270"><!-- named anchor --></a>2019</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>Vestibular schwannoma</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id272"><!-- named anchor --></a>1.89 mL (test set)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id273"><!-- named anchor --></a>243</td>
+</tr>
+<tr>
+<a id="id274"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id275"><!-- named anchor --></a>Laukamp et al. [<a href="#B111-cancers-14-02676">111</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id276"><!-- named anchor --></a>2018</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id277"><!-- named anchor --></a>Meningioma </td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>30.9 mL</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id279"><!-- named anchor --></a>56 (test set)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="cancers-14-02676-t002"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<span class="object-id">cancers-14-02676-t002_Table 2</span><div class="caption"><p class="first" id="id280">Imaging parameters.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id281"><!-- named anchor --></a><thead>
+<a id="id282"><!-- named anchor --></a><tr>
+<a id="id283"><!-- named anchor --></a><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id284"><!-- named anchor --></a>Author</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id285"><!-- named anchor --></a>Field Strength [T]</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id286"><!-- named anchor --></a>Slice Thickness [mm]</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id287"><!-- named anchor --></a>MRI Sequence Used for Task</th>
+</tr>
+</thead>
+<tbody>
+<a id="id288"><!-- named anchor --></a><tr>
+<a id="id289"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id290"><!-- named anchor --></a>Wang, Zhang et al. [<a href="#B110-cancers-14-02676">110</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id291"><!-- named anchor --></a>3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id292"><!-- named anchor --></a>3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>T1c</td>
+</tr>
+<tr>
+<a id="id294"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a>Bouget et al. [<a href="#B5-cancers-14-02676">5</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id296"><!-- named anchor --></a>1.5/3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id297"><!-- named anchor --></a>heterogeneous</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>T1c</td>
+</tr>
+<tr>
+<a id="id299"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a>Lee et al. [<a href="#B108-cancers-14-02676">108</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id301"><!-- named anchor --></a>1.5</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a>3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id303"><!-- named anchor --></a>T1c; T2</td>
+</tr>
+<tr>
+<a id="id304"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id305"><!-- named anchor --></a>Ito et al. [<a href="#B6-cancers-14-02676">6</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id306"><!-- named anchor --></a>1.5/3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>heterogeneous</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id308"><!-- named anchor --></a>T1; T2</td>
+</tr>
+<tr>
+<a id="id309"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>Ugga et al. [<a href="#B89-cancers-14-02676">89</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id311"><!-- named anchor --></a>3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id312"><!-- named anchor --></a>5</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id313"><!-- named anchor --></a>T1c</td>
+</tr>
+<tr>
+<a id="id314"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id315"><!-- named anchor --></a>Lee et al. [<a href="#B113-cancers-14-02676">113</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id316"><!-- named anchor --></a>1.5</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a>T1; T1c; T2</td>
+</tr>
+<tr>
+<a id="id319"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id320"><!-- named anchor --></a>George-Jones et al. [<a href="#B114-cancers-14-02676">114</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id321"><!-- named anchor --></a>1.5/3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id322"><!-- named anchor --></a>heterogeneous (median 3.3)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>T1c</td>
+</tr>
+<tr>
+<a id="id324"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id325"><!-- named anchor --></a>Qian et al. [<a href="#B107-cancers-14-02676">107</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>1.5</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a>3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id328"><!-- named anchor --></a>T1; T2</td>
+</tr>
+<tr>
+<a id="id329"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id330"><!-- named anchor --></a>Laukamp et al. [<a href="#B112-cancers-14-02676">112</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id331"><!-- named anchor --></a>1–3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id332"><!-- named anchor --></a>heterogeneous</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id333"><!-- named anchor --></a>T1c; T2FLAIR</td>
+</tr>
+<tr>
+<a id="id334"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id335"><!-- named anchor --></a>Shapey, Wang et al. [<a href="#B115-cancers-14-02676">115</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id336"><!-- named anchor --></a>1.5</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id337"><!-- named anchor --></a>1.5</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id338"><!-- named anchor --></a>T1c; T2</td>
+</tr>
+<tr>
+<a id="id339"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id340"><!-- named anchor --></a>Laukamp et al. [<a href="#B111-cancers-14-02676">111</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id341"><!-- named anchor --></a>1–3</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id342"><!-- named anchor --></a>1–6</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id343"><!-- named anchor --></a>T1c; T2FLAIR</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="cancers-14-02676-t003"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<span class="object-id">cancers-14-02676-t003_Table 3</span><div class="caption"><p class="first" id="id344">Machine learning parameters.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id345"><!-- named anchor --></a><thead>
+<a id="id346"><!-- named anchor --></a><tr>
+<a id="id347"><!-- named anchor --></a><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id348"><!-- named anchor --></a>Author</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id349"><!-- named anchor --></a>Detection/Segmentation Algorithm</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id350"><!-- named anchor --></a>Data Augmentation</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id351"><!-- named anchor --></a>Performance Measures</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id352"><!-- named anchor --></a>Explainability/Interpretability</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id353"><!-- named anchor --></a>Code Availability</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id354"><!-- named anchor --></a>Data Availability</th>
+</tr>
+</thead>
+<tbody>
+<a id="id355"><!-- named anchor --></a><tr>
+<a id="id356"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id357"><!-- named anchor --></a>Wang, Zhang et al. [<a href="#B110-cancers-14-02676">110</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id358"><!-- named anchor --></a>Convolutional Neural Network (Gated-Shaped U-Net)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id359"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id360"><!-- named anchor --></a>Dice coefficient: 0.898</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id361"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id362"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id363"><!-- named anchor --></a>From authors upon request</td>
+</tr>
+<tr>
+<a id="id364"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id365"><!-- named anchor --></a>Bouget et al. [<a href="#B5-cancers-14-02676">5</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id366"><!-- named anchor --></a>Convolutional Neural Network (3D U-Net, PLS-Net)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id367"><!-- named anchor --></a>Horizontal and vertical flipping, random rotation in the range [−20°, 20°], translation up to 10% of the axis dimension, zoom between [80, 120]%, and perspective transform with a scale within [0.0, 0.1]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id368"><!-- named anchor --></a>Best dice coefficients: 0.714 (U-Net), 0.732 (PLS-Net)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id369"><!-- named anchor --></a>Authors analyzed the influence of tumor volume on the performance of the classifiers</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id370"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id371"><!-- named anchor --></a>Not mentioned</td>
+</tr>
+<tr>
+<a id="id372"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id373"><!-- named anchor --></a>Lee et al. [<a href="#B108-cancers-14-02676">108</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id374"><!-- named anchor --></a>Convolutional Neural Network (Dual Pathway U-Net Model)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id375"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id376"><!-- named anchor --></a>Dice coefficient: 0.9</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id377"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id378"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/KenLee1996/Dual-pathway-CNN-for-VS-segmentation" id="id379">https://github.com/KenLee1996/Dual-pathway-CNN-for-VS-segmentation</a> (accessed on 25 April 2022)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id380"><!-- named anchor --></a>Claims that all data is in the supplement but that appears not to be the case</td>
+</tr>
+<tr>
+<a id="id381"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id382"><!-- named anchor --></a>Ito et al. [<a href="#B6-cancers-14-02676">6</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id383"><!-- named anchor --></a>Convolutional Neural Network (YOLO v3)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id384"><!-- named anchor --></a>Random transformations such as flipping and scaling</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id385"><!-- named anchor --></a>Accuracy: 0.935</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id386"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id387"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id388"><!-- named anchor --></a>Not mentioned</td>
+</tr>
+<tr>
+<a id="id389"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id390"><!-- named anchor --></a>Ugga et al. [<a href="#B89-cancers-14-02676">89</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id391"><!-- named anchor --></a>Convolutional Neural Network (Pyramid Scene Parsing Network)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id392"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id393"><!-- named anchor --></a>Tumor accuracy: 0.814</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id394"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id395"><!-- named anchor --></a><a target="xrefwindow" href="https://github.com/zhangkai62035/Meningioma_demo" id="id396">https://github.com/zhangkai62035/Meningioma_demo</a> (accessed on 25 April 2022)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id397"><!-- named anchor --></a>From authors upon request</td>
+</tr>
+<tr>
+<a id="id398"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id399"><!-- named anchor --></a>Lee et al. [<a href="#B113-cancers-14-02676">113</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id400"><!-- named anchor --></a>Convolutional Neural Network (Dual Pathway U-Net Model)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id401"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id402"><!-- named anchor --></a>Dice coefficient: 0.9</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id403"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id404"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id405"><!-- named anchor --></a>Not mentioned</td>
+</tr>
+<tr>
+<a id="id406"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id407"><!-- named anchor --></a>George-Jones et al. [<a href="#B114-cancers-14-02676">114</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id408"><!-- named anchor --></a>Convolutional Neural Network (U-Net)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id409"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id410"><!-- named anchor --></a>ROC-AUC: 0.822 (for agreement wether a tumor had grown between scans)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id411"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id412"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id413"><!-- named anchor --></a>Not mentioned</td>
+</tr>
+<tr>
+<a id="id414"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id415"><!-- named anchor --></a>Qian et al. [<a href="#B107-cancers-14-02676">107</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id416"><!-- named anchor --></a>Convolutional Neural Networks (one per combination of perspective/sequence)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id417"><!-- named anchor --></a>Zooming (0–40%), rotating (−15° to +15°), and shear mapping (0–40%)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id418"><!-- named anchor --></a>Accuracy: 0.91</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id419"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id420"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id421"><!-- named anchor --></a>Not mentioned</td>
+</tr>
+<tr>
+<a id="id422"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id423"><!-- named anchor --></a>Laukamp et al. [<a href="#B112-cancers-14-02676">112</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id424"><!-- named anchor --></a>Convolutional Neural Network (DeepMedic)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id425"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id426"><!-- named anchor --></a>Dice coefficient: 0.91</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id427"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id428"><!-- named anchor --></a>Not mentioned; DeepMedic is a public repository</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id429"><!-- named anchor --></a>Not mentioned</td>
+</tr>
+<tr>
+<a id="id430"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id431"><!-- named anchor --></a>Shapey, Wang et al. [<a href="#B115-cancers-14-02676">115</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id432"><!-- named anchor --></a>Convolutional Neural Network (U-Net)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id433"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id434"><!-- named anchor --></a>Dice coefficient: 0.937</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id435"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id436"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id437"><!-- named anchor --></a>Not mentioned</td>
+</tr>
+<tr>
+<a id="id438"><!-- named anchor --></a><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id439"><!-- named anchor --></a>Laukamp et al. [<a href="#B111-cancers-14-02676">111</a>]</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id440"><!-- named anchor --></a>Convolutional Neural Network (DeepMedic)</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id441"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id442"><!-- named anchor --></a>Dice coefficient: 0.78</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id443"><!-- named anchor --></a>Not mentioned</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id444"><!-- named anchor --></a>Not mentioned; DeepMedic is a public repository</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id445"><!-- named anchor --></a>Not mentioned</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Systematic Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>deep learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>benign brain tumor</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>vestibular schwannoma</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>meningioma</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>pituitary adenoma</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
