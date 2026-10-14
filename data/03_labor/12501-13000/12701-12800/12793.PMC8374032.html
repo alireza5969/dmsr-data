@@ -1,0 +1,1415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Mendo, Marques, de la Torre Díez, López-Coronado, and Martín-Rodríguez: Machine Learning in Medical Emergencies: a Systematic Review and Analysis</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>J Med Syst</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>J Med Syst</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>365</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>springeropen</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>7806056</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Journal of Medical Systems</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>0148-5598</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1573-689X</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="10916_2021_Article_1762.pdf">10916_2021_Article_1762.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© The Author(s) 2021</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1"><b>Open Access</b> This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">http://creativecommons.org/licenses/by/4.0/</a>.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>9 May 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>4 August 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>18 August 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">print</span>): </span>2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>45</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>10<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>388352<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>88</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8374032</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8374032.2</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8374032</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8376722</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>34410512</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1007/s10916-021-01762-3</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>1762</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Universidad de Valladolid</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Open Access: </span></p>
+<div class="metadata-chunk"><p class="first" id="id3">Open Access funding provided thanks to the CRUE-CSIC agreement with Springer Nature.</p></div>
+</div>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Machine Learning in Medical Emergencies: a Systematic Review and Analysis</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-2856-6044<span class="generated">] </span>Inés Robles Mendo<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">inesromen@gmail.com</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0001-5834-6571<span class="generated">] </span>Gonçalo Marques<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#Aff3">3</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">goncalosantosmarques@gmail.com</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-3134-7720<span class="generated">] </span>Isabel de la Torre Díez<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">isator@tel.uva.es</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-1543-9732<span class="generated">] </span>Miguel López-Coronado<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">miglop@tel.uva.es</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-1773-2860<span class="generated">] </span>Francisco Martín-Rodríguez<span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">francisco.martin.rodriguez@uva.es</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="Aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>grid.5239.d0000 0001 2286 5329Department of Signal Theory and Communications and Telematics Engineering, University of Valladolid, Paseo de Belén, 15, 47.011 Valladolid, Spain </p>
+<p class="metadata-entry"><a id="Aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>grid.5239.d0000 0001 2286 5329Advanced Clinical Simulation Center. Faculty of Medicine, University of Valladolid, Avda. Ramón Y Cajal, 7, 47.005 Valladolid, Spain </p>
+<p class="metadata-entry"><a id="Aff3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>Polytechnic of Coimbra, ESTGOH, Rua General Santos Costa, 3400-124 Oliveira do Hospital, Portugal </p>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="Par1">Despite the increasing demand for artificial intelligence research in medicine, the functionalities of his methods in health emergency remain unclear. Therefore, the authors have conducted this systematic review and a global overview study which aims to identify, analyse, and evaluate the research available on different platforms, and its implementations in healthcare emergencies. The methodology applied for the identification and selection of the scientific studies and the different applications consist of two methods. On the one hand, the PRISMA methodology was carried out in <i>Google Scholar</i>, <i>IEEE Xplore</i>, <i>PubMed ScienceDirect,</i> and <i>Scopus</i>. On the other hand, a review of commercial applications found in the best-known commercial platforms (Android and iOS). A total of 20 studies were included in this review. Most of the included studies were of clinical decisions (<i>n</i> = 4, 20%) or medical services or emergency services (<i>n</i> = 4, 20%). Only 2 were focused on m-health (<i>n</i> = 2, 10%). On the other hand, 12 apps were chosen for full testing on different devices. These apps dealt with pre-hospital medical care (<i>n</i> = 3, 25%) or clinical decision support (<i>n</i> = 3, 25%). In total, half of these apps are based on machine learning based on natural language processing. Machine learning is increasingly applicable to healthcare and offers solutions to improve the efficiency and quality of healthcare. With the emergence of mobile health devices and applications that can use data and assess a patient's real-time health, machine learning is a growing trend in the healthcare industry.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="Sec1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="Par10">Nowadays, people are familiar with artificial intelligence and machine learning. These terms are beginning to be present in all facets of the world, whether consciously or unconsciously, as they are linked to computer processes and automated artificial intelligence systems [<a href="#CR1">1</a>].</p>
+<p id="Par11">Artificial intelligence is a field that is composed of computer science methods and reliable datasets. The objective of artificial intelligence is to provide novel and effective methods for problem-solving. It also encompasses sub-fields of machine learning and deep learning, which are frequently mentioned in conjunction with artificial intelligence. These disciplines are comprised of AI algorithms that seek to create expert systems that make predictions or classifications based on input data. The complexity of artificial intelligence systems ranges from simple methods direction for specific tasks to abstract methods that aim to imitate human intelligence using computers.</p>
+<p id="Par12">The applications in everyday life with artificial intelligence and machine learning systems are numerous, and the implementation of these systems, and in particular their growth, is due to the increase in the availability of data that our society is experiencing [<a href="#CR2">2</a>]. These types of artificial intelligence applications take advantage of the large volume of data to extract as much information as possible from it and help to elaborate tasks that require human intelligence, currently transferred to computer systems [<a href="#CR3">3</a>, <a href="#CR4">4</a>].</p>
+<p id="Par13">The field of artificial intelligence is a set of algorithms that simulates human intelligence embedded in machines, to make them have the same capabilities as human beings [<a href="#CR5">5</a>]. In recent years, interest in AI research has grown exponentially, leading to the development of numerous new applications in a multitude of fields [<a href="#CR6">6</a>]. Figure <a href="#Fig1">1</a> shows how the number of articles related to this topic is growing more and more as the years go by. From less than 1% in 1998 to almost 3% in 2018 [<a href="#CR7">7</a>].<div class="fig panel" style="display: float; clear: both">
+<a id="Fig1"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id9">Growth of IA-related articles between 1998 and 2019 [<a href="#CR7">7</a>]</p></div>
+</div></p>
+<p id="Par14">There are different fields of AI learning. Machine learning and deep learning differ from each other in the way they analyse and manipulate data and are used to train machines to mimic human intelligence and behaviour [<a href="#CR8">8</a>].</p>
+<p id="Par15">Machine learning is a critical field of artificial intelligence that includes statistical methods and algorithms to make predictions using existent data to support the learning process. On the one hand, deep learning is a subfield of machine learning. Deep learning enables the automation of feature extraction to eliminate some processes that have been typically done by human intervention and make it possible to use a high volume of information. On the other hand, these processes need to be manually implemented when using machine learning algorithms.</p>
+<p id="Par16">Machine Learning has been gaining popularity in recent years. It is based on using user-defined algorithms to detect patterns in massive data and make predictions, all autonomously [<a href="#CR9">9</a>]. The purpose of this field of AI is to perform specific tasks without having to be programmed to do so and without having to depend on a rule-based system [<a href="#CR10">10</a>]. On the other hand, deep learning uses artificial neural networks (ANNs) to carry out the ML process, mentioned above, and learn how neurons in the brain work.</p>
+<p id="Par17">The conclusion is that as you go up the level, this information becomes more complex. This learning is called deep learning because of the layered representation model and requires longer periods than ML, due to the multitude of layers of complex computations it must solve [<a href="#CR11">11</a>].</p>
+<p id="Par18">According to the definition provided by the American College of Emergency Physicians, emergency medicine is a medical focused on the diagnosis and treatment of illness or injury. It has a fundamental role to play in society by receiving patients seeking urgent medical care [<a href="#CR12">12</a>]. The practice performed by EM physicians includes the initial assessment, diagnosis, treatment, coordination of care among different physicians, and stabilisation of cases of varying degrees of acuity for any given patient [<a href="#CR13">13</a>].</p>
+<p id="Par19">The use of machine learning and deep learning can help to assess data collected over the past years and provide the information needed to improve emergency medical processes [<a href="#CR14">14</a>]. It can assist in research and medical trials based, for example, on clinical image analysis and classification tasks, thereby automating the process and helping to reduce the workload of medical staff, thus avoiding possible human fatigue that can lead to errors in the important area of healthcare.</p>
+<p id="Par20">Moreover, emergency medicine has been a major focus for study and solution development with the advent of artificial intelligence. Technological advances have brought various tools that have great potential to improve processes and will improve the operational efficiency and quality of healthcare service delivery [<a href="#CR14">14</a>].</p>
+<p id="Par21">There are several studies that support interventions based on artificial intelligence and can match or surpass the expertise of physicians. On the other hand, there are also a multitude of mobile health apps for mobile devices, which offer good options for patient progression, as well as providing patient education materials, receiving personalised guidance and support, data retrieval, and use of self-management interventions should the user need them [<a href="#CR15">15</a>].</p>
+<p id="Par22">Furthermore, this study is necessary to know the current situation in different search platforms and to find out the different utilities that these computer systems are capable of. Currently, proposed methods can perform tasks that would normally require human intelligence, oriented towards the field of medicine.</p>
+</div>
+<div class="section">
+<a id="Sec2"><!-- named anchor --></a><h2 class="main-title">Methodology</h2>
+<p id="Par23">The methodology followed was based on carrying out two different types of systematic reviews:</p>
+<p id="Par24">The first was a review of the literature in articles extracted from different open access scientific search engines for the University of Valladolid. The second review was carried out on different commercial application platforms.</p>
+<p id="Par25">Both reviews were carried out until the end of April 2021, therefore, all articles and applications published later have not been considered in the analysis of the following work.</p>
+<div class="section">
+<a id="Sec3"><!-- named anchor --></a><h3 class="section-title">Literature review</h3>
+<p id="Par26">Before beginning to detail the characteristics of the PRISMA-ScR protocol, the articles to be selected must first be obtained, that is why we proceed to specify the search strategy used to find a series of articles. These 3 procedures of the search strategy were carried out successively in each one of the search engines. In this literature review, articles were retrieved from different academic search systems: <i>Google Scholar</i>, <i>IEEE Xplore</i>, <i>PubMed</i>, <i>ScienceDirect</i> and <i>Scopus</i>. The authors have selected these databases for two main points. On the one hand, they cover most of the scientific information in fields such as engineering or telemedicine. On the other hand, these databases have been used by several recent systematic reviews on health informatics [<a href="#CR16">16</a>–<a href="#CR20">20</a>].</p>
+<p id="Par27">In each of these databases, an advanced search is carried out by combining appropriate words and/or expressions, making use of AND and OR connectors. To carry out the research, specifically the Machine Learning analysis in the field of health, the following keywords have been mainly used in combination with each other, although there may be many more combinations, depending on the criteria of each user: (“All Metadata”: machine) AND (“All Metadata”: learning) OR (“All Metadata”: AI) AND (“All Metadata”: health*) AND (“All Metadata”: emergenc*) OR (“All Metadata”: urgenc*).</p>
+<p id="Par28">To minimise this large number of searches and to assist in the selection of suitable items, various filters are applied. The parameters set were as follows:<div class="blockquote">
+<a id="id10"><!-- named anchor --></a><p class="first" id="Par29"><div class="list">
+<a id="id11"><!-- named anchor --></a><ul>
+<li><p id="Par30">The date of publication of the article must be between 2011 and the present day.</p></li>
+<li><p id="Par31">The language must be English and Spanish only.</p></li>
+<li><p id="Par32">The document type criterion. Only documents that are research or systematic review articles will be retained, as they gather information from the most relevant sources.</p></li>
+</ul>
+</div></p>
+</div></p>
+<p id="Par33"><b>Appendix A</b> shows schematically the procedure used in the search strategy. The authors used the PRISMA-ScR Protocol. This protocol has 4 phases necessary to perform such a state-of-the-art study. These phases will be carried out in all search systems until the existing results are finalised [<a href="#CR21">21</a>] Fig. <a href="#Fig10">10</a>.<div class="blockquote">
+<a id="id12"><!-- named anchor --></a><p class="first" id="Par34">Identification phase: Articles were discarded if, despite including the keywords and filters, they did not go into the subject matter of this research work in depth. To carry out the first round of discarding, the articles obtained were sorted in order of relevance and the title was read. If the article does not have the expected title, it will be discarded.</p>
+<p id="Par35">Selection phase: The documents obtained in the previous phase were screened for duplicate articles. Moreover, the summary of each of the documents is consulted and discarded in case it is not potentially what is expected.</p>
+<p id="Par36">Eligibility phase: In this stage, the article is read individually and in its entirety. Insufficiently informative articles will be discarded. The opinion of the author/authors and their conclusions will be considered, as well as the number of citations the article has.</p>
+<p id="Par37">Inclusion phase: Finally, articles that have not been discarded in the previous phase will be included in this review.</p>
+</div></p>
+<p id="Par38">The risk of bias assessment points out the transparency of the results provided by the studies included in a systematic review. Several systematic reviews on related topics available in the literature that has adopted PRISMA methodology do not include the risk of bias [<a href="#CR22">22</a>, <a href="#CR23">23</a>]. Consequently, this study does not list the risk of bias. Nevertheless, the authors highlight this limitation.</p>
+</div>
+<div class="section">
+<a id="Sec4"><!-- named anchor --></a><h3 class="section-title">Review of commercial mobile applications</h3>
+<p id="Par39">A review of currently available mobile applications is also carried out, to which different search strategies are applied. The collection of mobile apps (mHealth) was carried out in the most popular search systems of the smartphone brands. In this case, the two main and most used app shops have been chosen: App Store used on iOS devices and Google Play used on Android devices [<a href="#CR9">9</a>].</p>
+<p id="Par40">Search terms: The first procedure is similar to the previous review. A set of keywords is chosen that fit the desired search. The set of words was as follows: “mHealth”, “eHealth”, “Machine learning and emergencies”, “Machine learning and health”, “AI and health”, “Al and medicine”, “mHealth and CoreML (for App Store search)” y “mHealth y MLKit (for Google Play search)”. To select the relevant mobile applications; several criteria have been followed:<div class="blockquote">
+<a id="id13"><!-- named anchor --></a><p class="first" id="Par41"><div class="list">
+<a id="id14"><!-- named anchor --></a><ul>
+<li><p id="Par42">The main categories will be "medicine" and "health and wellness". Other apps focused in other categories will be discarded.</p></li>
+<li><p id="Par43">Apps that have a cost will be discarded.</p></li>
+<li><p id="Par44">The rating must be equal to or higher than 2 stars.</p></li>
+<li><p id="Par45">The language of the applications must be English and/or Spanish.</p></li>
+</ul>
+</div></p>
+</div></p>
+<p id="Par46">The description of each application is read and then downloaded to test each application individually and in full. Apps with insufficient information will be discarded [<a href="#CR15">15</a>]. For applications from the Google Play platform, a Realme 7 5G with Android 10 operating system was used, for applications from the App Store platform, an iPhone 7 with iOS 14.5 operating system (latest update until April 2021) was used.</p>
+<p id="Par47"><b>Appendix B</b> shows the flowchart describing the above-mentioned procedure Fig.<a href="#Fig11">11</a>.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec5"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<p id="Par48">In total, 20 potential information articles in the literature review and 12 mobile applications in the review of commercial applications were chosen for the analysis.</p>
+<div class="section">
+<a id="Sec6"><!-- named anchor --></a><h3 class="section-title">Literature review</h3>
+<p id="Par49">First, applying the corresponding keywords and filters, a total of 1,583 articles were retrieved through searches in the identified bibliographic databases, as shown in the following Table <a href="#Tab1">1</a>.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id15">Number of results obtained in search engines</p></div>
+<table frame="hsides" rules="groups">
+<a id="id16"><!-- named anchor --></a><thead>
+<a id="id17"><!-- named anchor --></a><tr>
+<a id="id18"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id19"><!-- named anchor --></a>Academic Search Systems</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id20"><!-- named anchor --></a>Search terms</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id21"><!-- named anchor --></a>Search filtering</th>
+</tr>
+</thead>
+<tbody>
+<a id="id22"><!-- named anchor --></a><tr>
+<a id="id23"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id24"><!-- named anchor --></a>Google Scholar</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id25"><!-- named anchor --></a> +1.600.000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id26"><!-- named anchor --></a>29</td>
+</tr>
+<tr>
+<a id="id27"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id28"><!-- named anchor --></a>IEEE Xplore</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id29"><!-- named anchor --></a>126.218</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id30"><!-- named anchor --></a>579</td>
+</tr>
+<tr>
+<a id="id31"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id32"><!-- named anchor --></a>PubMed</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id33"><!-- named anchor --></a>269.704</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id34"><!-- named anchor --></a>41</td>
+</tr>
+<tr>
+<a id="id35"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id36"><!-- named anchor --></a>Science Direct</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>2.061</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id38"><!-- named anchor --></a>320</td>
+</tr>
+<tr>
+<a id="id39"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id40"><!-- named anchor --></a>Scopus</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id41"><!-- named anchor --></a>365</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id42"><!-- named anchor --></a>34</td>
+</tr>
+<tr>
+<a id="id43"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1"><a id="id44"><!-- named anchor --></a></td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id45"><!-- named anchor --></a><b>Total:</b>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id46"><!-- named anchor --></a><b>1.583</b>
+</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="Par50">Different criteria were applied to the articles found, discarding 1,478 records whose titles did not meet expectations during the Identification phase. In this selection phase, the summary of each of the 105 documents was consulted, and 74 documents were discarded since, in the opinion of the authors, they were not potentially what was expected.</p>
+<p id="Par51">In total, 31 articles were found for content analysis during the eligibility stage and 11 of them were subsequently eliminated because the information they contained did not focus on healthcare emergencies. Finally, after eliminating several articles with the different criteria mentioned above, 20 articles are included in this systematic review.</p>
+<p id="Par52">The screening process of the included results has been done at least by two reviewers independently. This process has two main stages. On the one hand, the reviewers have read the title and abstract of each study. On the other hand, the reviewers have analysed all the manuscript content. The study is included only with the common consensus of the reviewers.</p>
+<p id="Par53">Figure <a href="#Fig2">2</a> shows a flow diagram describing the PRISMA-ScR protocol algorithm with numbers.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig2"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id47">Numeric flow diagram of the PRISMA-ScR protocol algorithm</p></div>
+</div></p>
+<p id="Par54">Figure <a href="#Fig3">3</a> shows the number of articles from each search engine included in this work.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig3"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id48">Number of results in the literature review search</p></div>
+</div></p>
+<p id="Par55">The Science Direct search engine is the platform where most articles of interest have been selected, followed by IEEE Xplore. Figure <a href="#Fig4">4</a> shows the number of articles published each year over the last 10 years.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig4"><!-- named anchor --></a><h5 class="label">Fig. 4</h5>
+<div class="caption"><p class="first" id="id49">Number of articles published in the last 10 years</p></div>
+</div></p>
+<p id="Par56">The year 2020 is notable for having 9 articles with information of interest compared to previous years. This is mainly due to research into COVID-19, considered a global health emergency disease, whose need for detection and treatment through machine learning, among others, is of vital importance at present. The included studies are divided into 7 major groups according to the content covered in each of them, as shown in Table <a href="#Tab2">2</a>. These categories have been defined based on the included studies and under the supervision and medical background of the last author. Group 1 includes three studies that focus on methods or systems to support pre-hospital medical care and disease screening. Group 2 includes four works that focus on machine learning-based solutions for clinical decision support. Group 3 presents three research studies that focus on the current pandemic scenario of COVID-19. Group 4 (Emergency medicine) includes 3 review studies focused on health informatics solutions for medical scenarios that require immediate medical attention. Group 5 includes three works that focus on services for enhanced medical scenarios. Group 6 includes two research papers that deal with the applications of mobile computing technologies. Finally, the remaining one study has been categorized as others since cannot be included in any of the before mentioned categories.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id50">Categorization of literature</p></div>
+<table frame="hsides" rules="groups">
+<a id="id51"><!-- named anchor --></a><thead>
+<a id="id52"><!-- named anchor --></a><tr>
+<a id="id53"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id54"><!-- named anchor --></a>Group</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id55"><!-- named anchor --></a>Total</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id56"><!-- named anchor --></a>References</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<a id="id58"><!-- named anchor --></a><tr>
+<a id="id59"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>Pre-hospital medical care and disease screening</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id61"><!-- named anchor --></a>3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id62"><!-- named anchor --></a>[<a href="#CR24">24</a>–<a href="#CR26">26</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>15%</td>
+</tr>
+<tr>
+<a id="id64"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>Clinical decisions</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id67"><!-- named anchor --></a>[<a href="#CR27">27</a>–<a href="#CR30">30</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id68"><!-- named anchor --></a>20%</td>
+</tr>
+<tr>
+<a id="id69"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id70"><!-- named anchor --></a>COVID-19 screening, and management</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id71"><!-- named anchor --></a>3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id72"><!-- named anchor --></a>[<a href="#CR31">31</a>–<a href="#CR33">33</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>15%</td>
+</tr>
+<tr>
+<a id="id74"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>Emergency medicine (EM)</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id76"><!-- named anchor --></a>3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a>[<a href="#CR34">34</a>–<a href="#CR36">36</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id78"><!-- named anchor --></a>15%</td>
+</tr>
+<tr>
+<a id="id79"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id80"><!-- named anchor --></a>Medical services and/or emergency services</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id81"><!-- named anchor --></a>4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id82"><!-- named anchor --></a>[<a href="#CR37">37</a>–<a href="#CR40">40</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id83"><!-- named anchor --></a>20%</td>
+</tr>
+<tr>
+<a id="id84"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id85"><!-- named anchor --></a>M-Health</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id86"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id87"><!-- named anchor --></a>[<a href="#CR41">41</a>, <a href="#CR42">42</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id88"><!-- named anchor --></a>10%</td>
+</tr>
+<tr>
+<a id="id89"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>Others</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id92"><!-- named anchor --></a>[<a href="#CR43">43</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id93"><!-- named anchor --></a>5%</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="Par57">Figure <a href="#Fig5">5</a> represents the distribution of the selected literature concerning the group information represented in Table <a href="#Tab2">2</a>.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig5"><!-- named anchor --></a><h5 class="label">Fig. 5</h5>
+<div class="caption"><p class="first" id="id94">Categorization of literature in groups according to the content covered</p></div>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec7"><!-- named anchor --></a><h3 class="section-title">Analysis</h3>
+<p id="Par58">Table <a href="#Tab3">3</a> presents the title, date, authors, and main contributions addressed in these articles [<a href="#CR14">14</a>–<a href="#CR33">33</a>].<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id95">Characteristics of the selected items</p></div>
+<table frame="hsides" rules="groups">
+<a id="id96"><!-- named anchor --></a><thead>
+<a id="id97"><!-- named anchor --></a><tr>
+<a id="id98"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id99"><!-- named anchor --></a>Title and date</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id100"><!-- named anchor --></a>Author(s)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id101"><!-- named anchor --></a>Main Contribution</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id102"><!-- named anchor --></a>Category</th>
+</tr>
+</thead>
+<tbody>
+<a id="id103"><!-- named anchor --></a><tr>
+<a id="id104"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id105"><!-- named anchor --></a><p class="first" id="id106">An accurate and dynamic predictive model for a smart M-Health system using machine learning [<a href="#CR42">42</a>]</p>
+<p id="id107">October 2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id108"><!-- named anchor --></a>Naseer Qreshi K, Din S., &amp; Jeon G</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a>This model is divided into data collection, data pre-processing, data partitioning, learning algorithm and the decision making for which it has been trained</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id110"><!-- named anchor --></a>M-Health</td>
+</tr>
+<tr>
+<a id="id111"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id112"><!-- named anchor --></a><p class="first" id="id113">Applications of machine learning and artificial intelligence for Covid-19 (SARS-CoV-2) pandemic: A review [<a href="#CR32">32</a>]</p>
+<p id="id114">October 2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id115"><!-- named anchor --></a>Lalmuanawma, S., Hussain, J., &amp; Chhakchhuak, L</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id116"><!-- named anchor --></a>This report reviews existing information on the application of ML and AI to address the COVID-19 pandemic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id117"><!-- named anchor --></a>COVID-19 screening, and management</td>
+</tr>
+<tr>
+<a id="id118"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a><p class="first" id="id120">Applications of Machine Learning Approaches in Emergency Medicine [<a href="#CR36">36</a>]</p>
+<p id="id121">June 2019</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a>Shafaf N., &amp; Malek H</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>This paper aims to compile and evaluate the existing studies in recent years on AI in EM, which can be categorised into different groups</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id124"><!-- named anchor --></a>Emergency medicine (EM)</td>
+</tr>
+<tr>
+<a id="id125"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id126"><!-- named anchor --></a><p class="first" id="id127">Architecture of Smart Health Care System Using Artificial Intelligence [<a href="#CR25">25</a>]</p>
+<p id="id128">2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a>Kamruzzaman M. M</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id130"><!-- named anchor --></a>It is concluded that AI- or ML-based healthcare offers a multitude of improvements for the health sector</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id131"><!-- named anchor --></a>Pre-hospital medical care and disease screening</td>
+</tr>
+<tr>
+<a id="id132"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id133"><!-- named anchor --></a><p class="first" id="id134">Artificial Intelligence and Machine Learning Applications in Musculoskeletal Imaging [<a href="#CR43">43</a>]</p>
+<p id="id135">February 2019</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id136"><!-- named anchor --></a>Enamandram S., Sandhu E., Bao H.Do, Reicher J., &amp; Beaulieu CF</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id137"><!-- named anchor --></a>This article describes the key applications of supervised and unsupervised ML in musculoskeletal medicine. Such as diagnostic imaging, patient measurement data and clinical decision support</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a>Others</td>
+</tr>
+<tr>
+<a id="id139"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id140"><!-- named anchor --></a><p class="first" id="id141">Artificial Intelligence and Machine Learning in Emergency Medicine [<a href="#CR34">34</a>]</p>
+<p id="id142">July 2018</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id143"><!-- named anchor --></a>Stewart, J., Sprivulis, P., &amp; Dwivedi, G</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id144"><!-- named anchor --></a><p class="first" id="id145">This article studies and conducts a research analysis of AI and ML in EM</p>
+<p id="id146">Finally, it is emphasised that, despite limitations, AI and its subfields are very useful as they can solve problems in a wide range of clinical domains</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id147"><!-- named anchor --></a>Emergency medicine (EM)</td>
+</tr>
+<tr>
+<a id="id148"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id149"><!-- named anchor --></a><p class="first" id="id150">Artificial Intelligence for the Future Radiology Diagnostic Service [<a href="#CR29">29</a>]</p>
+<p id="id151">January 2021</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id152"><!-- named anchor --></a>Mun, S.K. Wong, K.H.,Lo, S.-C.B.,Li, Y., &amp; Bayarsaikhan, S</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id153"><!-- named anchor --></a><p class="first" id="id154">In this chapter, artificial intelligence (AI) is explored along future lines in diagnostic radiology</p>
+<p id="id155">Three avenues are proposed for the important role of AI in radiology beyond current capabilities</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id156"><!-- named anchor --></a>Clinical decisions</td>
+</tr>
+<tr>
+<a id="id157"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id158"><!-- named anchor --></a><p class="first" id="id159">Automatic Clinical Procedure Detection for Emergency Services [<a href="#CR28">28</a>]</p>
+<p id="id160">July 2019</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id161"><!-- named anchor --></a>Heard, J., Paris, R. A., Scully, D., McNaughton, C., Ehrenfeld, J. M., Coco, J., Fabbri, D., Bodenheimer, B., &amp; Adams, J. A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a>A system based on human activity recognition algorithms to accurately recognise clinical processes and send data of these processes without the presence of the physician is evaluated</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a>Clinical decisions</td>
+</tr>
+<tr>
+<a id="id164"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a><p class="first" id="id166">Classification of hospital admissions into emergency and elective care: a machine learning approach [<a href="#CR39">39</a>]</p>
+<p id="id167">November 2017</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id168"><!-- named anchor --></a>Krämer, J., Schreyögg, J., &amp; Busse, R</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id169"><!-- named anchor --></a>This article focuses on the classification of hospital admissions in emergency care with a focus on ML</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id170"><!-- named anchor --></a>Medical services and/or emergency services</td>
+</tr>
+<tr>
+<a id="id171"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id172"><!-- named anchor --></a><p class="first" id="id173">Clinician involvement in research on machine learning-based predictive clinical decision support for the hospital setting [<a href="#CR30">30</a>]</p>
+<p id="id174">March 2021</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id175"><!-- named anchor --></a>Schwartz, J. M., Moy, A. J., Rossetti, S. C., Elhadad, N., &amp; Cato, K. D</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id176"><!-- named anchor --></a>This article describes the involvement of clinicians in the development, evaluation and implementation of clinical decision support systems that use ML and analyse electronic medical record data to assist clinicians in their diagnosis and treatment, as well as in decision making</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>Clinical decisions</td>
+</tr>
+<tr>
+<a id="id178"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id179"><!-- named anchor --></a><p class="first" id="id180">Development, evaluation, and validation of machine learning models for COVID-19 detection based on routine blood tests [<a href="#CR31">31</a>]</p>
+<p id="id181">October 2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id182"><!-- named anchor --></a>Cabitza, F., Campagner, A.,Ferrari, D., Di Resta, C., Ceriotti, D., Sabetta, E., Colombini, A., De Vecchi, E., Banfi, G.,Locatelli, M., &amp; Carobene, A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a><p class="first" id="id184">This paper studies the development and evaluation of machine learning models for the detection of COVID-19 based on blood tests</p>
+<p id="id185">The methodology carried out was to train 3 different datasets to develop different predictive models</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id186"><!-- named anchor --></a>COVID-19 screening, and management</td>
+</tr>
+<tr>
+<a id="id187"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id188"><!-- named anchor --></a><p class="first" id="id189">Fall Detection for Elderly People using Machine Learning [<a href="#CR37">37</a>]</p>
+<p id="id190">July 2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id191"><!-- named anchor --></a>Badgujar S., &amp; Pillai AS</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id192"><!-- named anchor --></a>This paper presents a fall detection system based on wearable sensors that are suitable for elderly people</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id193"><!-- named anchor --></a>Medical services and/or emergency services</td>
+</tr>
+<tr>
+<a id="id194"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id195"><!-- named anchor --></a><p class="first" id="id196">IoT based healthcare monitoring system using 5G communication and Machine learning models [<a href="#CR26">26</a>]</p>
+<p id="id197">January 2021</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id198"><!-- named anchor --></a>Paramita, S., Bebartta, H. N. D., &amp; Pattanayak, P</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id199"><!-- named anchor --></a>This smart system for patients by implanting wireless sensors in the body collects different vital aspects such as heart rate, blood pressure, etc</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id200"><!-- named anchor --></a>Pre-hospital medical care and disease screening</td>
+</tr>
+<tr>
+<a id="id201"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id202"><!-- named anchor --></a><p class="first" id="id203">Machine learning and artificial intelligence in the service of medicine: Necessity or potentiality? [<a href="#CR40">40</a>]</p>
+<p id="id204">November 2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a>Alsuliman, T., Humaidan, D., &amp; Sliman, L</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id206"><!-- named anchor --></a>This article arises because of the global trend towards digitisation of the healthcare system and how the need for it affects this area</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id207"><!-- named anchor --></a>Medical services and/or emergency services</td>
+</tr>
+<tr>
+<a id="id208"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id209"><!-- named anchor --></a><p class="first" id="id210">Machine Learning for Predicting Emergency Incidents that Need an Air-ambulance [<a href="#CR38">38</a>]</p>
+<p id="id211">July 2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id212"><!-- named anchor --></a>Nuntalid N., &amp; Richards D</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id213"><!-- named anchor --></a>The main objective of this article is to develop a real-time report to help the emergency medical service improve patient outcomes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id214"><!-- named anchor --></a>Medical services and/or emergency services</td>
+</tr>
+<tr>
+<a id="id215"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id216"><!-- named anchor --></a><p class="first" id="id217">Machine Learning-Based Early Warning Systems for Clinical Deterioration: Systematic Scoping Review [<a href="#CR27">27</a>]</p>
+<p id="id218">February 2021</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id219"><!-- named anchor --></a>Muralitharan, S., Nelson, W., Di, S., McGillion, M., Devereaux, P., Barr, N. G., &amp; Petch, J</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id220"><!-- named anchor --></a>The results obtained in this article are based on a systematic scoping review following the PRISMA-ScR model and conclude that the impact on ML-based early warning systems could be significant for clinicians and patients because of the decrease in false alerts and the increase in early detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id221"><!-- named anchor --></a>Clinical decisions</td>
+</tr>
+<tr>
+<a id="id222"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id223"><!-- named anchor --></a><p class="first" id="id224">Machine Learning-based Risk of Hospital Readmissions: Predicting Acute Readmissions within 30 Days of Discharge [<a href="#CR24">24</a>]</p>
+<p id="id225">2019</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id226"><!-- named anchor --></a>Baig, M. M., Hua, N., Zhang, E., Robinson, R., Armstrong, D., Whittaker, R., Robinson, T., Mirza, F., &amp; Ullah, E</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id227"><!-- named anchor --></a>The proposed predictive model works better than other admission risk models. However, to further strengthen risk prediction and its clinical impact, the addition of non-clinical data such as social support is proposed as a future line of research</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id228"><!-- named anchor --></a>Pre-hospital medical care and disease screening</td>
+</tr>
+<tr>
+<a id="id229"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id230"><!-- named anchor --></a><p class="first" id="id231">Review on machine and deep learning models for the detection and prediction of Coronavirus [<a href="#CR33">33</a>]</p>
+<p id="id232">June 2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>Ahmad W., Salehi Preety B., &amp; Gaurav G</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id234"><!-- named anchor --></a><p class="first" id="id235">Solutions are proposed through AI by performing a scoping review following the PRISMA-ScR model</p>
+<p id="id236">The research concludes that so far there is no effective drug for the treatment of patients with COVID-19, but early detection or prediction of coronavirus cases may be possible with these predictive models</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id237"><!-- named anchor --></a>COVID-19 screening, and management</td>
+</tr>
+<tr>
+<a id="id238"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id239"><!-- named anchor --></a><p class="first" id="id240">Role of machine learning in medical research: A survey [<a href="#CR35">35</a>]</p>
+<p id="id241">May 2020</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>Garg A., &amp; Mago V</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id243"><!-- named anchor --></a>Different concepts of ML and DL and their possible medical application are studied and analysed</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id244"><!-- named anchor --></a>Emergency medicine (EM)</td>
+</tr>
+<tr>
+<a id="id245"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id246"><!-- named anchor --></a><p class="first" id="id247">SaveMe: A Crime Deterrent Personal Safety Android App with a Bluetooth Connected Hardware Switch [<a href="#CR41">41</a>]</p>
+<p id="id248">August 2018</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id249"><!-- named anchor --></a>Tripti, N. F., Farhad, A., Iqbal, W., &amp; Zaman, H. U</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id250"><!-- named anchor --></a>This application consists of a switch connected to the smartphone via Bluetooth that is pressed to alert the emergency contact of the victim in question of danger</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id251"><!-- named anchor --></a>M-Health</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec8"><!-- named anchor --></a><h3 class="section-title">Performance in the review of commercial mobile applications</h3>
+<p id="Par59">Firstly, several searches were conducted on the commercial platforms. The desired keywords were applied and a total of 3,089 applications were retrieved. On the one hand, 2084 results are available in App Store and 1005 in Google Play.</p>
+<p id="Par60">Once the results of the previous table had been obtained, various filters were applied to narrow down the results, resulting in 201 applications, of which the description was read to find the most appropriate thematic applications. A total of 168 were discarded, resulting in 33 applications, which will be subjected to a final criterion. Finally, the 21 less generic applications that did not cover the treatment and/or care of different health emergency diseases were eliminated. Applications with similar functionality to others were also removed, resulting in a total of 12 applications.</p>
+<p id="Par61">Figure <a href="#Fig6">6</a> also shows graphically the number of applications launched in the different years.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig6"><!-- named anchor --></a><h5 class="label">Fig. 6</h5>
+<div class="caption"><p class="first" id="id252">Number of apps published in the last 10 years</p></div>
+</div></p>
+<p id="Par62">Among the health topics most addressed in this review were clinical decisions, as was the case with the literature review, followed by apps for pre-hospital medical care. Consequently, they have been categorised into 5 groups according to the content covered in each of these apps. The following Table <a href="#Tab4">4</a> and graph in Fig. <a href="#Fig7">7</a> shows the categories.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab4"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<div class="caption"><p class="first" id="id253">Categorization of apps</p></div>
+<table frame="hsides" rules="groups">
+<a id="id254"><!-- named anchor --></a><thead>
+<a id="id255"><!-- named anchor --></a><tr>
+<a id="id256"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a>Group</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>Total</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id259"><!-- named anchor --></a>References</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id260"><!-- named anchor --></a>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<a id="id261"><!-- named anchor --></a><tr>
+<a id="id262"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id263"><!-- named anchor --></a>Pre-hospital medical care</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id264"><!-- named anchor --></a>3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id265"><!-- named anchor --></a>[<a href="#CR44">44</a>–<a href="#CR46">46</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id266"><!-- named anchor --></a>25%</td>
+</tr>
+<tr>
+<a id="id267"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id268"><!-- named anchor --></a>Applications for COVID-19 management</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id269"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id270"><!-- named anchor --></a>[<a href="#CR47">47</a>, <a href="#CR48">48</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id271"><!-- named anchor --></a>16.7%</td>
+</tr>
+<tr>
+<a id="id272"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id273"><!-- named anchor --></a>Help with physical illness or disability</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id274"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id275"><!-- named anchor --></a>[<a href="#CR49">49</a>, <a href="#CR50">50</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id276"><!-- named anchor --></a>16.7%</td>
+</tr>
+<tr>
+<a id="id277"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id278"><!-- named anchor --></a>Searching for clinical material and help among health personnel</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id279"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id280"><!-- named anchor --></a>[<a href="#CR51">51</a>, <a href="#CR52">52</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id281"><!-- named anchor --></a>16.7%</td>
+</tr>
+<tr>
+<a id="id282"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id283"><!-- named anchor --></a>Clinical decisions</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id284"><!-- named anchor --></a>3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id285"><!-- named anchor --></a>[<a href="#CR53">53</a>–<a href="#CR55">55</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id286"><!-- named anchor --></a>25%</td>
+</tr>
+</tbody>
+</table>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="Fig7"><!-- named anchor --></a><h5 class="label">Fig. 7</h5>
+<div class="caption"><p class="first" id="id287">Categorization of apps</p></div>
+</div></p>
+<p id="Par63">On the other hand, to find out the impact of these apps among users, the ratings of each of them on the two commercial platforms have been studied. Figure <a href="#Fig8">8</a> below shows graphically the score obtained from 0 to 5 stars.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig8"><!-- named anchor --></a><h5 class="label">Fig. 8</h5>
+<div class="caption"><p class="first" id="id288">Histogram of ratings for each app</p></div>
+</div></p>
+<p id="Par64">The highest-rated app on both platforms is <i>Tok Medicine</i>. Followed by <i>Nabta Health</i> and <i>Redivus Health</i> for App Store users. And <i>MDCalc</i> and <i>HealthTap</i> for Google Play users. The AI and ML techniques on which each of these tools are based can also be divided into 4 different groups. The following Table <a href="#Tab5">5</a> and Fig. <a href="#Fig9">9</a> show the categories.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab5"><!-- named anchor --></a><h5 class="label">Table 5</h5>
+<div class="caption"><p class="first" id="id289">Categorization of techniques of apps</p></div>
+<table frame="hsides" rules="groups">
+<a id="id290"><!-- named anchor --></a><thead>
+<a id="id291"><!-- named anchor --></a><tr>
+<a id="id292"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id293"><!-- named anchor --></a>Group</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id294"><!-- named anchor --></a>Total</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id295"><!-- named anchor --></a>References</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id296"><!-- named anchor --></a>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<a id="id297"><!-- named anchor --></a><tr>
+<a id="id298"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id299"><!-- named anchor --></a>AI-based on evidence</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id300"><!-- named anchor --></a>3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id301"><!-- named anchor --></a>[<a href="#CR45">45</a>, <a href="#CR46">46</a>, <a href="#CR48">48</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id302"><!-- named anchor --></a>25%</td>
+</tr>
+<tr>
+<a id="id303"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id304"><!-- named anchor --></a>ML-based on natural language processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id305"><!-- named anchor --></a>6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id306"><!-- named anchor --></a>[<a href="#CR44">44</a>, <a href="#CR47">47</a>, <a href="#CR48">48</a>, <a href="#CR51">51</a>–<a href="#CR53">53</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id307"><!-- named anchor --></a>50%</td>
+</tr>
+<tr>
+<a id="id308"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id309"><!-- named anchor --></a>ML-based on visual processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id310"><!-- named anchor --></a>2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id311"><!-- named anchor --></a>[<a href="#CR50">50</a>, <a href="#CR54">54</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id312"><!-- named anchor --></a>16.7%</td>
+</tr>
+<tr>
+<a id="id313"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id314"><!-- named anchor --></a>ML-based on natural language processing + visual processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id315"><!-- named anchor --></a>1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id316"><!-- named anchor --></a>[<a href="#CR49">49</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id317"><!-- named anchor --></a>8.3%</td>
+</tr>
+</tbody>
+</table>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="Fig9"><!-- named anchor --></a><h5 class="label">Fig. 9</h5>
+<div class="caption"><p class="first" id="id318">Graph of app technology</p></div>
+</div></p>
+<p id="Par65">The most used technique is ML-based on natural language processing, as most apps have a virtual assistant or use an advanced search that allows the user to use tags and filter content. In this way, the system learns automatically according to the user's preferences and over time will be able to suggest recommendations or searches more in line with the user's needs.</p>
+</div>
+<div class="section">
+<a id="Sec9"><!-- named anchor --></a><h3 class="section-title">Analysis of the obtained applications</h3>
+<p id="Par66">Based on the Core ML [<a href="#CR56">56</a>] model and according to the methodology followed for the selection of each of them, in the following table are 10 apps (out of the 12 existing ones) compatible with the App Store. On the other hand, based on the Kit ML model [<a href="#CR57">57</a>] and the methodology followed for their selection, the following table shows 10 apps (out of the 12 existing ones) compatible with Google Play. The characteristics of the applications included in this systematic review are listed in Appendix C Table <a href="#Tab6">6</a> [<a href="#CR34">34</a>–<a href="#CR45">45</a>].</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec10"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="Par67">A total of 105 scientific articles from the different databases were examined to find the 20 successful research studies. In total, 35% (7/20) were mainly extracted from the Science Direct platform. These studies were further classified into 7 categories, among which 20% (4/20) for medical and/or emergency service research and another 20% (4/20) for automated systems for clinical decisions.</p>
+<p id="Par68">Secondly, during the commercial review, a total of 201 mobile applications were examined and 12 of them were finally chosen. They were classified into 5 groups, of which 25% (3/12) focus on pre-hospital medical care and another 25% (3/12) on clinical decision support. In addition, 50% (6/12) of them use ML techniques based on natural language processing, as most of the apps make use of virtual assistants or advanced searches so that the system subsequently learns from the user's needs.</p>
+<p id="Par69">Contrasting the articles found in the literature review with the applications from the commercial application review, the search for ML-based mobile applications in the literature review leads to low results compared to the commercial review. Therefore, the authors can conclude that the development of mHealth applications is more economically and commercially motivated than research-driven [<a href="#CR58">58</a>].</p>
+<p id="Par70">Mobile apps can optimise the efficiency of health system services, facilitating the work of healthcare staff, and thus reducing their costs. This model can predict emergency admissions to hospitals and help clinicians accurately monitor the risks faced by patients. Establish measures to avoid unplanned admissions that result in high medical costs [<a href="#CR59">59</a>].</p>
+<p id="Par71">Early prediction and reduction of false alarms. Patients will avoid going to the health centre as, by using ML-based mobile health apps, there will be a more informed patient, who will also follow the indications of the treatment to be followed and, therefore medical collapse can be avoided [<a href="#CR59">59</a>]. This is particularly relevant for pandemic scenarios such as COVID-19. In addition, follow-up is improved as information about these patients will be collected and recorded in the electronic medical record, thus improving the intelligent triage system, and assisting physicians in patient triage. Furthermore, mobile health can reduce the workload for medical staff, allowing them to avoid mental saturation that could lead to vital errors.</p>
+<p id="Par72">Nevertheless, several limitations are still to be solved. The lack of availability of technical means in many of the emergency services is a critical barrier. Still, progress is also needed, as more of these studies and trials need to be analysed before a clear conclusion can be drawn on the effectiveness of this machine learning model [<a href="#CR59">59</a>]. As far as the use of mobile applications is concerned, a complete introduction into society is needed based on several functional criteria, such as coordination and uniformity of all systems accessing the data. Another aspect to be highlighted would be the establishment of security criteria regarding the handling and privacy of such data.</p>
+<p id="Par73">As future work, the authors want to explore a machine learning approach to develop a decision support system to support medical emergency scenarios considering the main advantages and limitations of current systems included in this systematic review.</p>
+</div>
+<div class="section">
+<a id="Sec11"><!-- named anchor --></a><h2 class="main-title">Conclusions</h2>
+<p id="Par74">The emergence of mobile health devices and applications, which can use data and assess a patient's real-time health, lead to a growing trend in machine learning technologies applied to the healthcare industry. The technology can help healthcare experts analyse to identify cases that can lead to improved diagnosis and treatment. On the one hand, this technology will reduce diagnosis times. And speed up immediate patient care. Furthermore, treatments will be optimised and improved. It is expected that, soon, using AI and its subfields, complex algorithmic scoring systems using different variables can be used to predict diagnosis, readmission, and mortality rates. The advantages that machine learning can provide emergency health services play a critical role in improving triage classification and/or diagnosis prediction. Through ML, large-scale analysis is expected to become even more automated than it is today. In the actual pandemic context, the need to analyse data more efficiently arises, whether we are talking about data derived from virus tracking or the analysis of the medical literature that has been generated and collected throughout this review work. The use of AI and ML mechanisms will be the key to efficient global health management [<a href="#CR60">60</a>].</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id450"><!-- named anchor --></a><h2 class="main-title">Appendices</h2>
+<div class="section app">
+<a id="App1"><!-- named anchor --></a><div class="section">
+<a id="Sec12"><!-- named anchor --></a><h4 class="subsection-title">Appendix A</h4>
+<div class="fig panel" style="display: float; clear: both">
+<a id="Fig10"><!-- named anchor --></a><h5 class="label">Fig. 10</h5>
+<div class="caption"><p class="first" id="id319">Schematically the procedure used in the search strategy (literature)</p></div>
+</div>
+</div>
+<div class="section">
+<a id="Sec13"><!-- named anchor --></a><h4 class="subsection-title">Appendix B</h4>
+<div class="fig panel" style="display: float; clear: both">
+<a id="Fig11"><!-- named anchor --></a><h5 class="label">Fig. 11</h5>
+<div class="caption"><p class="first" id="id320">Schematically the procedure used in the search strategy (mobile apps)</p></div>
+</div>
+</div>
+<div class="section">
+<a id="Sec14"><!-- named anchor --></a><h4 class="subsection-title">Appendix C</h4>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab6"><!-- named anchor --></a><h5 class="label">Table 6</h5>
+<div class="caption"><p class="first" id="id321">Key features of App Store and Google Play apps</p></div>
+<table frame="hsides" rules="groups">
+<a id="id322"><!-- named anchor --></a><thead>
+<a id="id323"><!-- named anchor --></a><tr>
+<a id="id324"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id325"><!-- named anchor --></a>Name of The App</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id326"><!-- named anchor --></a>Technique</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id327"><!-- named anchor --></a>User Type</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id328"><!-- named anchor --></a>Health Condition</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id329"><!-- named anchor --></a>Search Platform</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id330"><!-- named anchor --></a>Language(s)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id331"><!-- named anchor --></a>App Registration?</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id332"><!-- named anchor --></a>Category</th>
+</tr>
+</thead>
+<tbody>
+<a id="id333"><!-- named anchor --></a><tr>
+<a id="id334"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id335"><!-- named anchor --></a>Asistencia COVID-19 [<a href="#CR47">47</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id336"><!-- named anchor --></a>ML-based on natural language processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id337"><!-- named anchor --></a>Potential patients</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id338"><!-- named anchor --></a>COVID-19</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id339"><!-- named anchor --></a>App Store and Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id340"><!-- named anchor --></a>4, including Spanish and English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id341"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id342"><!-- named anchor --></a>Applications for COVID-19 management</td>
+</tr>
+<tr>
+<a id="id343"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id344"><!-- named anchor --></a>HealthTap [<a href="#CR45">45</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id345"><!-- named anchor --></a>AI-based on evidence protocols</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id346"><!-- named anchor --></a>Potential patients</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id347"><!-- named anchor --></a>Diverse</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id348"><!-- named anchor --></a>App Store and Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id349"><!-- named anchor --></a>Spanish and English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id350"><!-- named anchor --></a>Yes, in addition to paying a monthly fee</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id351"><!-- named anchor --></a>Pre-hospital medical care</td>
+</tr>
+<tr>
+<a id="id352"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id353"><!-- named anchor --></a>MDCalc [<a href="#CR53">53</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id354"><!-- named anchor --></a>ML-based on natural language processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id355"><!-- named anchor --></a>Health professional</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id356"><!-- named anchor --></a>Clinical decision</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id357"><!-- named anchor --></a>Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id358"><!-- named anchor --></a>English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id359"><!-- named anchor --></a>Yes, in addition to paying a monthly fee</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id360"><!-- named anchor --></a>Clinical decisions</td>
+</tr>
+<tr>
+<a id="id361"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id362"><!-- named anchor --></a>Mediktor [<a href="#CR44">44</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id363"><!-- named anchor --></a>ML-based on natural language processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id364"><!-- named anchor --></a>Potential patients</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id365"><!-- named anchor --></a>Diverse</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id366"><!-- named anchor --></a>App Store and Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id367"><!-- named anchor --></a>9, including Spanish and English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id368"><!-- named anchor --></a>No</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id369"><!-- named anchor --></a>Pre-hospital medical care</td>
+</tr>
+<tr>
+<a id="id370"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id371"><!-- named anchor --></a>Medit [<a href="#CR51">51</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id372"><!-- named anchor --></a>ML-based on natural language processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id373"><!-- named anchor --></a>Health professional</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id374"><!-- named anchor --></a>Search for Clinical Material</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id375"><!-- named anchor --></a>App Store and Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id376"><!-- named anchor --></a>English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id377"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id378"><!-- named anchor --></a>Searching for clinical material and help among health personnel</td>
+</tr>
+<tr>
+<a id="id379"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id380"><!-- named anchor --></a>Nabta Health [<a href="#CR46">46</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id381"><!-- named anchor --></a>AI-based on evidence protocols</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id382"><!-- named anchor --></a>Women patients</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id383"><!-- named anchor --></a>Diverse</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id384"><!-- named anchor --></a>App Store and Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id385"><!-- named anchor --></a>English and Arabic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id386"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id387"><!-- named anchor --></a>Pre-hospital medical care</td>
+</tr>
+<tr>
+<a id="id388"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id389"><!-- named anchor --></a>Redivus Health [<a href="#CR55">55</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id390"><!-- named anchor --></a>AI-based on evidence protocols</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id391"><!-- named anchor --></a>Health professional</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id392"><!-- named anchor --></a>Diverse</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id393"><!-- named anchor --></a>App Store and Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id394"><!-- named anchor --></a>English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id395"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id396"><!-- named anchor --></a>Clinical decisions</td>
+</tr>
+<tr>
+<a id="id397"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id398"><!-- named anchor --></a>Seeing AI [<a href="#CR49">49</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id399"><!-- named anchor --></a>ML-based on natural language processing + visual processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id400"><!-- named anchor --></a>Visually impaired patients</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id401"><!-- named anchor --></a>Vision loss</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id402"><!-- named anchor --></a>App Store</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id403"><!-- named anchor --></a>16, including Spanish and English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id404"><!-- named anchor --></a>No</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id405"><!-- named anchor --></a>Help with physical illness or disability</td>
+</tr>
+<tr>
+<a id="id406"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id407"><!-- named anchor --></a>SkinApp [<a href="#CR50">50</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id408"><!-- named anchor --></a>ML-based on visual processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id409"><!-- named anchor --></a>Health professional mainly dermatologists</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id410"><!-- named anchor --></a>Dermatology</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id411"><!-- named anchor --></a>App Store</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id412"><!-- named anchor --></a>French and English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id413"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id414"><!-- named anchor --></a>Help with physical illness or disability</td>
+</tr>
+<tr>
+<a id="id415"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id416"><!-- named anchor --></a><p class="first" id="id417">Tidda ODEM</p>
+<p id="id418">[<a href="#CR48">48</a>]</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id419"><!-- named anchor --></a>ML-based on natural language processing + visual processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id420"><!-- named anchor --></a><p class="first" id="id421">Health professional</p>
+<p id="id422">Potential patients</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id423"><!-- named anchor --></a>COVID-19</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id424"><!-- named anchor --></a>App Store and Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id425"><!-- named anchor --></a>German and English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id426"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id427"><!-- named anchor --></a>Applications for COVID-19 management</td>
+</tr>
+<tr>
+<a id="id428"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id429"><!-- named anchor --></a><p class="first" id="id430">Tok Medicine</p>
+<p id="id431">[<a href="#CR52">52</a>]</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id432"><!-- named anchor --></a>ML-based on natural language processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id433"><!-- named anchor --></a>Health professional</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id434"><!-- named anchor --></a>Search for Clinical Material</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id435"><!-- named anchor --></a>App Store and Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id436"><!-- named anchor --></a>Spanish and English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id437"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id438"><!-- named anchor --></a>Searching for clinical material and help among health personnel</td>
+</tr>
+<tr>
+<a id="id439"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id440"><!-- named anchor --></a> + WoundDesk [<a href="#CR54">54</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id441"><!-- named anchor --></a>ML-based on visual processing</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id442"><!-- named anchor --></a><p class="first" id="id443">Health professional</p>
+<p id="id444">Patients</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id445"><!-- named anchor --></a>Wound Care</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id446"><!-- named anchor --></a>Google Play</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id447"><!-- named anchor --></a>English</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id448"><!-- named anchor --></a>Yes</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id449"><!-- named anchor --></a>Clinical decisions</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id476"><!-- named anchor --></a><h4 class="block-title">Abbreviations</h4>
+<div class="def-list">
+<a id="id451"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id452">
+<div class="def-term cell" id="id453"><p>AI</p></div>
+<div class="def-def cell" id="id454"><p class="first" id="Par2">Artificial Intelligence</p></div>
+</div>
+<div class="def-item row" id="id455">
+<div class="def-term cell" id="id456"><p>ANN</p></div>
+<div class="def-def cell" id="id457"><p class="first" id="Par3">Artificial Neural Networks</p></div>
+</div>
+<div class="def-item row" id="id458">
+<div class="def-term cell" id="id459"><p>COVID-19</p></div>
+<div class="def-def cell" id="id460"><p class="first" id="Par4">Coronavirus Disease 2019</p></div>
+</div>
+<div class="def-item row" id="id461">
+<div class="def-term cell" id="id462"><p>DL </p></div>
+<div class="def-def cell" id="id463"><p class="first" id="Par5">Deep Learning</p></div>
+</div>
+<div class="def-item row" id="id464">
+<div class="def-term cell" id="id465"><p>EM </p></div>
+<div class="def-def cell" id="id466"><p class="first" id="Par6">Emergency Medicine</p></div>
+</div>
+<div class="def-item row" id="id467">
+<div class="def-term cell" id="id468"><p>ML </p></div>
+<div class="def-def cell" id="id469"><p class="first" id="Par7">Machine Learning</p></div>
+</div>
+<div class="def-item row" id="id470">
+<div class="def-term cell" id="id471"><p>PRISMA-ScR</p></div>
+<div class="def-def cell" id="id472"><p class="first" id="Par8">Preferred Reporting Items for Systematic Reviews and Meta-Analyses Extension for Scoping Reviews</p></div>
+</div>
+<div class="def-item row" id="id473">
+<div class="def-term cell" id="id474"><p>WHO</p></div>
+<div class="def-def cell" id="id475"><p class="first" id="Par9">World Health Organization</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id482"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id477"><!-- named anchor --></a><p id="id478"><span class="generated">[1]</span> This article is part of the Topical Collection on <i>Clinical Systems</i></p>
+</div>
+<div class="footnote">
+<a id="id479"><!-- named anchor --></a><p id="id480"><span class="generated">[2]</span> <b>Publisher's Note</b></p>
+<p id="id481">Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id484"><!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
+<p id="id483">This research has been partially supported by European Commission and the Ministry of Industry, Energy and Tourism under the project AAL-20125036 named BWetake Care: ICTbased Solution for (Self-) Management of Daily Living.</p>
+</div>
+<div class="back-section">
+<a id="id486"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id485">Open Access funding provided thanks to the CRUE-CSIC agreement with Springer Nature. </p>
+</div>
+<div class="back-section">
+<a id="id487"><!-- named anchor --></a><h2 class="main-title">Declarations</h2>
+<h3 class="section-title">Ethical approval</h3>
+<p id="Par75">This article does not contain any studies with human participants or animals performed by any of the authors.</p>
+<h3 class="section-title">Conflict of interest</h3>
+<p id="Par76">The authors declare that they have no conflict of interest.</p>
+</div>
+<div class="back-section">
+<a id="Bib1"><!-- named anchor --></a><div class="section ref-list">
+<a id="Bib1"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="CR1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id488"><!-- named anchor --></a>Riedl, M.O.: Human‐centered artificial intelligence and machine learning. 1, (2009).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="CR2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id489"><!-- named anchor --></a>J WiensES ShenoyMachine Learning for Healthcare: On the Verge of a Major Shift in Healthcare EpidemiologyClin. Infect. Dis.20186614915310.1093/cid/cix73129020316PMC5850539</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="CR3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id490"><!-- named anchor --></a>Stone, P., Brooks, R., Brynjolfsson, E., Calo, R., Etzioni, O., Hager, G., Hirschberg, J., Kalyanakrishnan, S., Kamar, E., Kraus, S., Leyton-Brown, K., Parkes, D., Press, W., Saxenian, A., Shah, J., Tambe, M., Teller, A.: Artificial Intelligence and life in 2030: the one hundred year study on artificial intelligence. Stanford University (2016).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="CR4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id491"><!-- named anchor --></a>Alelyani, S., Ibrahim, A.: Internet-of-Things in telemedicine for diabetes management. In: 2018 15th Learning and Technology Conference (L T). pp. 20–23 (2018). 10.1109/LT.2018.8368505.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="CR5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id492"><!-- named anchor --></a>S DickArtificial Intelligence.201910.1162/99608f92.92fe150c</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="CR6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id493"><!-- named anchor --></a>P HametJ TremblayArtificial intelligence in medicineMetabolism.201769S36S4010.1016/j.metabol.2017.01.01128126242</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="CR7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id494"><!-- named anchor --></a>García, J.: Este es el estado actual de la inteligencia artificial a nivel mundial, según el AI Index Report 2019, <a target="xrefwindow" href="https://www.xataka.com/inteligencia-artificial/este-estado-actual-inteligencia-artificial-a-nivel-mundial-ai-index-report-2019" id="id495">https://www.xataka.com/inteligencia-artificial/este-estado-actual-inteligencia-artificial-a-nivel-mundial-ai-index-report-2019</a>, last accessed 2021/05/05.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="CR8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id496"><!-- named anchor --></a>SA BiniArtificial Intelligence, Machine Learning, Deep Learning, and Cognitive Computing: What Do These Terms Mean and How Will They Impact Health Care?J. Arthroplasty.2018332358236110.1016/j.arth.2018.02.06729656964</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="CR9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id497"><!-- named anchor --></a>DS CharMD AbràmoffC FeudtnerIdentifying Ethical Considerations for Machine Learning Healthcare ApplicationsAm. J. Bioeth.20202071710.1080/15265161.2020.181946933103967PMC7737650</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="CR10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id498"><!-- named anchor --></a>Descubre los principales beneficios del Machine Learning, <a target="xrefwindow" href="https://www.iberdrola.com/innovacion/machine-learning-aprendizaje-automatico" id="id499">https://www.iberdrola.com/innovacion/machine-learning-aprendizaje-automatico</a>, last accessed 2021/05/05.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="CR11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id500"><!-- named anchor --></a>Deep learning vs. machine learning: ¿qué diferencia hay?, <a target="xrefwindow" href="https://www.ionos.es/digitalguide/online-marketing/marketing-para-motores-de-busqueda/deep-learning-vs-machine-learning/" id="id501">https://www.ionos.es/digitalguide/online-marketing/marketing-para-motores-de-busqueda/deep-learning-vs-machine-learning/</a>, last accessed 2021/05/05.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="CR12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id502"><!-- named anchor --></a>M SharmaRemote diagnosis, monitoring and intervention for maritime industry workers: need and challengesInt. Marit. Health.20217215115210.5603/IMH.2021.002934212360</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="CR13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id503"><!-- named anchor --></a>Definition of Emergency Medicine, <a target="xrefwindow" href="https://www.acep.org/patient-care/policy-statements/definition-of-emergency-medicine/" id="id504">https://www.acep.org/patient-care/policy-statements/definition-of-emergency-medicine/</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="CR14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id505"><!-- named anchor --></a>Artificial Intelligence and Machine Learning in Emergency MedicineBiocybernBiomed. Eng.20214115617210.1016/j.bbe.2020.12.002</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="CR15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id506"><!-- named anchor --></a>B Martínez-PérezI de la Torre-DíezM López-CoronadoJ Herreros-GonzálezMobile Apps in Cardiology: ReviewJMIR MHealth UHealth.20131e273710.2196/mhealth.2737PMC411442825098320</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="CR16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id507"><!-- named anchor --></a>G Castillo-SánchezG MarquesE DorronzoroO Rivera-RomeroM Franco-MartínI De la Torre-DíezSuicide Risk Assessment Using Machine Learning and Social Networks: a Scoping ReviewJ. Med. Syst.20204420510.1007/s10916-020-01669-533165729PMC7649702</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="CR17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id508"><!-- named anchor --></a>A GuptaR KataryaSocial media based surveillance systems for healthcare using machine learning: A systematic reviewJ. Biomed. Inform.202010810350010.1016/j.jbi.2020.10350032622833PMC7331523</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="CR18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id509"><!-- named anchor --></a>SG AlonsoG MarquesI BarrachinaB Garcia-ZapirainJ ArambarriJC SalvadorI de la Torre DíezTelemedicine and e-Health research solutions in literature for combatting COVID-19: a systematic reviewHealth Technol.20211125726610.1007/s12553-021-00529-7PMC785764533558838</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="CR19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id510"><!-- named anchor --></a>S SharmaG SinghM SharmaA comprehensive review and analysis of supervised-learning and soft computing techniques for stress diagnosis in humansComput. Biol. Med.202113410445010.1016/j.compbiomed.2021.10445033989896</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="CR20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id511"><!-- named anchor --></a>P KaurM SharmaDiagnosis of human psychological disorders using supervised learning and nature-inspired computing techniques: a meta-analysisJ. Med. Syst.20194320410.1007/s10916-019-1341-231139933</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="CR21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id512"><!-- named anchor --></a>AC TriccoE LillieW ZarinKK O’BrienH ColquhounD LevacD MoherMDJ PetersT HorsleyL WeeksS HempelEA AklC ChangJ McGowanL StewartL HartlingA AldcroftMG WilsonC GarrittyS LewinCM GodfreyMT MacdonaldEV LangloisK Soares-WeiserJ MoriartyT CliffordÖ TunçalpSE StrausPRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and ExplanationAnn. Intern. Med.201816946747310.7326/M18-085030178033</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="CR22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id513"><!-- named anchor --></a>VP CornetRJ HoldenSystematic review of smartphone-based passive sensing for health and wellbeingJ. Biomed. Inform.20187712013210.1016/j.jbi.2017.12.00829248628PMC5793918</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="CR23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id514"><!-- named anchor --></a>R NussbaumC KellyE QuinbyA MacB ParmantoBE DiciannoSystematic Review of Mobile Health Applications in RehabilitationArch. Phys. Med. Rehabil.201910011512710.1016/j.apmr.2018.07.43930171827</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="CR24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id515"><!-- named anchor --></a>Baig, M.M., Hua, N., Zhang, E., Robinson, R., Armstrong, D., Whittaker, R., Robinson, T., Mirza, F., Ullah, E.: Machine Learning-based Risk of Hospital Readmissions: Predicting Acute Readmissions within 30 Days of Discharge. In: 2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC). pp. 2178–2181 (2019). 10.1109/EMBC.2019.8856646.10.1109/EMBC.2019.885664631946333</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="CR25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id516"><!-- named anchor --></a>Kamruzzaman, M.M.: Architecture of Smart Health Care System Using Artificial Intelligence. In: 2020 IEEE International Conference on Multimedia Expo Workshops (ICMEW). pp. 1–6 (2020). 10.1109/ICMEW46912.2020.9106026.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="CR26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id517"><!-- named anchor --></a>Paramita, S., Bebartta, H.N.D., Pattanayak, P.: IoT Based Healthcare Monitoring System Using 5G Communication and Machine Learning Models. In: Patgiri, R., Biswas, A., and Roy, P. (eds.) Health Informatics: A Computational Perspective in Healthcare. pp. 159–182. Springer, Singapore (2021). 10.1007/978-981-15-9735-0_9.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="CR27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id518"><!-- named anchor --></a>S MuralitharanW NelsonS DiM McGillionPJ DevereauxNG BarrJ PetchMachine Learning-Based Early Warning Systems for Clinical Deterioration: Systematic Scoping ReviewJ. Med. Internet Res.202123e2518710.2196/2518733538696PMC7892287</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="CR28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id519"><!-- named anchor --></a>Automatic Clinical Procedure Detection for Emergency Services | IEEE Conference Publication | IEEE Xplore, <a target="xrefwindow" href="https://ieeexplore.ieee.org/document/8856281/" id="id520">https://ieeexplore.ieee.org/document/8856281/</a>, last accessed 2021/05/07.10.1109/EMBC.2019.885628131945910</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="CR29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id521"><!-- named anchor --></a>Mun, S.K., Wong, K.H., Lo, S.-C.B., Li, Y., Bayarsaikhan, S.: Artificial Intelligence for the Future Radiology Diagnostic Service. Front. Mol. Biosci. 7, (2021). 10.3389/fmolb.2020.614258.10.3389/fmolb.2020.614258PMC787587533585563</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="CR30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id522"><!-- named anchor --></a>JM SchwartzAJ MoySC RossettiN ElhadadKD CatoClinician involvement in research on machine learning–based predictive clinical decision support for the hospital setting: A scoping reviewJ. Am. Med. Inform. Assoc.20212865366310.1093/jamia/ocaa29633325504PMC7936403</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="CR31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id523"><!-- named anchor --></a>Federico, C., Andrea, C., Davide, F., Chiara, D.R., Daniele, C., Eleonora, S., Alessandra, C., Elena, D.V., Giuseppe, B., Massimo, L., Anna, C.: Development, evaluation, and validation of machine learning models for COVID-19 detection based on routine blood tests. medRxiv. 2020.10.02.20205070 (2020). 10.1101/2020.10.02.20205070.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="CR32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id524"><!-- named anchor --></a>S LalmuanawmaJ HussainL ChhakchhuakApplications of machine learning and artificial intelligence for Covid-19 (SARS-CoV-2) pandemic: A reviewChaos Solitons Fractals.202013911005910.1016/j.chaos.2020.11005932834612PMC7315944</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="CR33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id525"><!-- named anchor --></a>A Waleed SalehiP BaglatG GuptaReview on machine and deep learning models for the detection and prediction of CoronavirusMater. Today Proc.2020333896390110.1016/j.matpr.2020.06.24532837918PMC7309744</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="CR34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id526"><!-- named anchor --></a>J StewartP SprivulisG DwivediArtificial intelligence and machine learning in emergency medicineEmerg. Med. Australas.20183087087410.1111/1742-6723.1314530014578</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="CR35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id527"><!-- named anchor --></a>A GargV MagoRole of machine learning in medical research: A surveyComput. Sci. Rev.20214010037010.1016/j.cosrev.2021.100370</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="CR36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id528"><!-- named anchor --></a>Shafaf, N., Malek, H.: Applications of Machine Learning Approaches in Emergency Medicine; a Review Article. Arch. Acad. Emerg. Med. 7, (2019).PMC673220231555764</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="CR37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id529"><!-- named anchor --></a>Badgujar, S., Pillai, A.S.: Fall Detection for Elderly People using Machine Learning. In: 2020 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT). pp. 1–4 (2020). 10.1109/ICCCNT49239.2020.9225494.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="CR38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id530"><!-- named anchor --></a>Nuntalid, N., Richards, D.: Poster: Machine Learning for Predicting Emergency Medical Incidents that Need an Air-ambulance. In: 2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC). pp. 1–2 (2020). 10.1109/VL/HCC50065.2020.9127266.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="CR39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id531"><!-- named anchor --></a>Classification of hospital admissions into emergency and elective care: a machine learning approach | SpringerLink, <a target="xrefwindow" href="https://link.springer.com/article/10.1007%2Fs10729-017-9423-5" id="id532">https://link.springer.com/article/10.1007%2Fs10729-017-9423-5</a>, last accessed 2021/05/07.10.1007/s10729-017-9423-529177993</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="CR40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id533"><!-- named anchor --></a>Machine learning and artificial intelligence in the service of medicine: Necessity or potentiality? - ScienceDirect, <a target="xrefwindow" href="https://www.sciencedirect.com/science/article/pii/S2452318620300192?via%3Dihub" id="id534">https://www.sciencedirect.com/science/article/pii/S2452318620300192?via%3Dihub</a>, last accessed 2021/05/07.10.1016/j.retram.2020.01.00232029403</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41.</span> <a id="CR41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id535"><!-- named anchor --></a>Tripti, N.F., Farhad, A., Iqbal, W., Zaman, H.U.: SaveMe: A Crime Deterrent Personal Safety Android App with a Bluetooth Connected Hardware Switch. In: 2018 9th IEEE Control and System Graduate Research Colloquium (ICSGRC). pp. 23–26 (2018). 10.1109/ICSGRC.2018.8657489.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42.</span> <a id="CR42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id536"><!-- named anchor --></a>K Naseer QureshiS DinG JeonF PiccialliAn accurate and dynamic predictive model for a smart M-Health system using machine learningInf. Sci.202053848650210.1016/j.ins.2020.06.025</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43.</span> <a id="CR43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id537"><!-- named anchor --></a>C TackArtificial intelligence and machine learning | applications in musculoskeletal physiotherapyMusculoskelet. Sci. Pract.20193916416910.1016/j.msksp.2018.11.01230502096</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44.</span> <a id="CR44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id538"><!-- named anchor --></a>Mediktor, <a target="xrefwindow" href="https://www.mediktor.com/es" id="id539">https://www.mediktor.com/es</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45.</span> <a id="CR45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id540"><!-- named anchor --></a>How It Works, <a target="xrefwindow" href="https://www.healthtap.com/resources/how-healthtap-works/" id="id541">https://www.healthtap.com/resources/how-healthtap-works/</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46.</span> <a id="CR46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id542"><!-- named anchor --></a>Nabta App, <a target="xrefwindow" href="https://nabtahealth.com/our-platform/nabta-app/" id="id543">https://nabtahealth.com/our-platform/nabta-app/</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47.</span> <a id="CR47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id544"><!-- named anchor --></a>Así es Asistencia COVID-19 la APP del Gobierno para la segunda ola, <a target="xrefwindow" href="https://www.moncloa.com/2020/05/08/asistencia-covid-19-app-gobierno/" id="id545">https://www.moncloa.com/2020/05/08/asistencia-covid-19-app-gobierno/</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48.</span> <a id="CR48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id546"><!-- named anchor --></a>Tidda Care, <a target="xrefwindow" href="https://tidda.care/odem" id="id547">https://tidda.care/odem</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49.</span> <a id="CR49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id548"><!-- named anchor --></a>Seeing AI App from Microsoft, <a target="xrefwindow" href="https://www.microsoft.com/en-us/ai/seeing-ai" id="id549">https://www.microsoft.com/en-us/ai/seeing-ai</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50.</span> <a id="CR50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id550"><!-- named anchor --></a>SKINAPP, <a target="xrefwindow" href="https://anapix-medical.com/service/skinapp-standard/" id="id551">https://anapix-medical.com/service/skinapp-standard/</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51.</span> <a id="CR51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id552"><!-- named anchor --></a>Helping Medical Professionals Connect, Share and Learn · Medit, <a target="xrefwindow" href="https://medit.online/" id="id553">https://medit.online/</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52.</span> <a id="CR52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id554"><!-- named anchor --></a>Tok Medicine. Espacios digitales para profesionales de la salud, <a target="xrefwindow" href="https://tokmedicine.com/home" id="id555">https://tokmedicine.com/home</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53.</span> <a id="CR53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id556"><!-- named anchor --></a>MDCalc - Medical calculators, equations, scores, and guidelines, <a target="xrefwindow" href="https://www.mdcalc.com/" id="id557">https://www.mdcalc.com/</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54.</span> <a id="CR54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id558"><!-- named anchor --></a>+WoundDesk: +WoundDesk - Mobile enhanced Wound Management for Chronic Wounds, <a target="xrefwindow" href="https://wounddesk.com" id="id559">https://wounddesk.com</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55.</span> <a id="CR55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id560"><!-- named anchor --></a>Redivus Health, <a target="xrefwindow" href="https://redivus.com/" id="id561">https://redivus.com/</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56.</span> <a id="CR56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id562"><!-- named anchor --></a>Core ML | Apple Developer Documentation, <a target="xrefwindow" href="https://developer.apple.com/documentation/coreml" id="id563">https://developer.apple.com/documentation/coreml</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57.</span> <a id="CR57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id564"><!-- named anchor --></a>ML Kit, <a target="xrefwindow" href="https://developers.google.com/ml-kit" id="id565">https://developers.google.com/ml-kit</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58.</span> <a id="CR58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id566"><!-- named anchor --></a>B Martínez-PérezI de la Torre-DíezM López-CoronadoMobile Health Applications for the Most Prevalent Conditions by the World Health Organization: Review and AnalysisJ. Med. Internet Res.201315e260010.2196/jmir.2600PMC371395423770578</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59.</span> <a id="CR59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id567"><!-- named anchor --></a>Elsevier: Ventajas y asignaturas pendientes de las apps en el sector salud, <a target="xrefwindow" href="https://www.elsevier.com/es-es/connect/ehealth/ventajas-y-asignaturas-pendientes-de-las-apps-en-el-sector-salud" id="id568">https://www.elsevier.com/es-es/connect/ehealth/ventajas-y-asignaturas-pendientes-de-las-apps-en-el-sector-salud</a>, last accessed 2021/05/07.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60.</span> <a id="CR60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id569"><!-- named anchor --></a>C KrittanawongThe rise of artificial intelligence and the uncertain future for physiciansEur. J. Intern. Med.201848e13e1410.1016/j.ejim.2017.06.01728651747</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Clinical Systems</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Health emergencies</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Emergency medicine</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Mobile applications</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+<p class="metadata-entry"><span class="generated"><span class="data">issue-copyright-statement</span>: </span>© Springer Science+Business Media, LLC, part of Springer Nature 2021</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
