@@ -1,0 +1,974 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bahar, Merkaj, Cassinelli Petersen, Tillmanns, Subramanian, Brim, Zeevi, Staib, Kazarian, Lin, Bousabarah, Huttner, Pala, Payabvash, Ivanidze, Cui, Malhotra, and Aboian: Machine Learning Models for Classifying High- and Low-Grade Gliomas: A Systematic Review and Quality of Reporting Analysis</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Front Oncol</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Front Oncol</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>1755</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>frontonco</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101568867</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>Front. Oncol.</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Frontiers in Oncology</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2234-943X</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Frontiers Media SA</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="fonc-12-856231.pdf">fonc-12-856231.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>Copyright © 2022 Bahar, Merkaj, Cassinelli Petersen, Tillmanns, Subramanian, Brim, Zeevi, Staib, Kazarian, Lin, Bousabarah, Huttner, Pala, Payabvash, Ivanidze, Cui, Malhotra and Aboian</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022, Bahar, Merkaj, Cassinelli Petersen, Tillmanns, Subramanian, Brim, Zeevi, Staib, Kazarian, Lin, Bousabarah, Huttner, Pala, Payabvash, Ivanidze, Cui, Malhotra and Aboian</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>16 January 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>25 March 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>22 April 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>12</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>400062<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>856231</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9076130</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9076130.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9076130</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9076130</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35530302</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3389/fonc.2022.856231</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Deutscher Akademischer Austauschdienst
+10.13039/501100001655</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>BMEP</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>National Institute of Diabetes and Digestive and Kidney Diseases
+10.13039/100000062</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>T35DK104689</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>American Society of Neuroradiology
+10.13039/100011975</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>Fellow Award 2018</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>National Center for Advancing Translational Sciences
+10.13039/100006108</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>KL2 TR001862</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>National Institutes of Health
+10.13039/100000002</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>NCI R01 CA206180</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>National Institutes of Health
+10.13039/100000002</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>NINDS K23NS118056</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>American Society of Neuroradiology
+10.13039/100011975</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>1861150721</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Doris Duke Charitable Foundation
+10.13039/100000862</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>2020097</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Nvidia
+10.13039/100007065</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Machine Learning Models for Classifying High- and Low-Grade Gliomas: A Systematic Review and Quality of Reporting Analysis</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Ryan C. Bahar<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#fn003"><sup>†</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1622814" id="id3">https://loop.frontiersin.org/people/1622814</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Sara Merkaj<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#fn003"><sup>†</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1635071" id="id5">https://loop.frontiersin.org/people/1635071</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Gabriel I. Cassinelli Petersen<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1503298" id="id7">https://loop.frontiersin.org/people/1503298</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Niklas Tillmanns<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1503253" id="id9">https://loop.frontiersin.org/people/1503253</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Harry Subramanian<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1452486" id="id11">https://loop.frontiersin.org/people/1452486</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id12"><!-- named anchor --></a>Waverly Rose Brim<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id13"><!-- named anchor --></a>Tal Zeevi<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id14"><!-- named anchor --></a>Lawrence Staib<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id15"><!-- named anchor --></a>Eve Kazarian<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1716112" id="id16">https://loop.frontiersin.org/people/1716112</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id17"><!-- named anchor --></a>MingDe Lin<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id18"><!-- named anchor --></a>Khaled Bousabarah<span class="generated">[</span><a href="#aff4"><sup>4</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id19"><!-- named anchor --></a>Anita J. Huttner<span class="generated">[</span><a href="#aff5"><sup>5</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1716536" id="id20">https://loop.frontiersin.org/people/1716536</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id21"><!-- named anchor --></a>Andrej Pala<span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/411149" id="id22">https://loop.frontiersin.org/people/411149</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id23"><!-- named anchor --></a>Seyedmehdi Payabvash<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/611713" id="id24">https://loop.frontiersin.org/people/611713</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id25"><!-- named anchor --></a>Jana Ivanidze<span class="generated">[</span><a href="#aff6"><sup>6</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/679237" id="id26">https://loop.frontiersin.org/people/679237</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id27"><!-- named anchor --></a>Jin Cui<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id28"><!-- named anchor --></a>Ajay Malhotra<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id29"><!-- named anchor --></a>Mariam S. Aboian<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#fn001"><sup>*</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="https://loop.frontiersin.org/people/1647057" id="id30">https://loop.frontiersin.org/people/1647057</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><sup>1</sup>Department of Radiology and Biomedical Imaging, Yale School of Medicine, New Haven, CT, United States</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><sup>2</sup>Department of Neurosurgery, University of Ulm, Ulm, Germany</p>
+<p class="metadata-entry"><a id="aff3"><!-- named anchor --></a><sup>3</sup>Visage Imaging, Inc., San Diego, CA, United States</p>
+<p class="metadata-entry"><a id="aff4"><!-- named anchor --></a><sup>4</sup>Visage Imaging, GmbH., Berlin, Germany</p>
+<p class="metadata-entry"><a id="aff5"><!-- named anchor --></a><sup>5</sup>Department of Pathology, Yale-New Haven Hospital, Yale School of Medicine, New Haven, CT, United States</p>
+<p class="metadata-entry"><a id="aff6"><!-- named anchor --></a><sup>6</sup>Department of Radiology, Weill Cornell Medicine, New York, NY, United States</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id31"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id32"><!-- named anchor --></a><p id="id33"> Edited by: Dario de Biase, University of Bologna, Italy</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id34"><!-- named anchor --></a><p id="id35"> Reviewed by: Vincenzo Di Nunno, AUSL Bologna, Italy; Chirag Kamal Ahuja, Post Graduate Institute of Medical Education and Research (PGIMER), India</p></p>
+<p class="metadata-entry"><span class="generated"><a id="fn001"><!-- named anchor --></a>Correspondence to: </span>*Correspondence: Mariam S. Aboian, <a href="mailto:mariam.aboian@yale.edu">mariam.aboian@yale.edu</a>
+</p>
+<p class="metadata-entry"><a id="fn002"><!-- named anchor --></a><p id="id36"> This article was submitted to Neuro-Oncology and Neurosurgical Oncology, a section of the journal Frontiers in Oncology</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Equal contributor</span>: </span><a id="fn003"><!-- named anchor --></a><p id="id37"><span class="warning">{ label (or @symbol) needed for fn[@id='fn003'] }</span> †These authors have contributed equally to this work and share first authorship</p></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id38"><!-- named anchor --></a><h3 class="section-title">Objectives</h3>
+<p id="id39">To systematically review, assess the reporting quality of, and discuss improvement opportunities for studies describing machine learning (ML) models for glioma grade prediction.</p>
+</div>
+<div class="section">
+<a id="id40"><!-- named anchor --></a><h3 class="section-title">Methods</h3>
+<p id="id41">This study followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses of Diagnostic Test Accuracy (PRISMA-DTA) statement. A systematic search was performed in September 2020, and repeated in January 2021, on four databases: Embase, Medline, CENTRAL, and Web of Science Core Collection. Publications were screened in Covidence, and reporting quality was measured against the Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis (TRIPOD) Statement. Descriptive statistics were calculated using GraphPad Prism 9.</p>
+</div>
+<div class="section">
+<a id="id42"><!-- named anchor --></a><h3 class="section-title">Results</h3>
+<p id="id43">The search identified 11,727 candidate articles with 1,135 articles undergoing full text review and 85 included in analysis. 67 (79%) articles were published between 2018-2021. The mean prediction accuracy of the best performing model in each study was 0.89 ± 0.09. The most common algorithm for conventional machine learning studies was Support Vector Machine (mean accuracy: 0.90 ± 0.07) and for deep learning studies was Convolutional Neural Network (mean accuracy: 0.91 ± 0.10). Only one study used both a large training dataset (n&gt;200) and external validation (accuracy: 0.72) for their model. The mean adherence rate to TRIPOD was 44.5% ± 11.1%, with poor reporting adherence for model performance (0%), abstracts (0%), and titles (0%).</p>
+</div>
+<div class="section">
+<a id="id44"><!-- named anchor --></a><h3 class="section-title">Conclusions</h3>
+<p id="id45">The application of ML to glioma grade prediction has grown substantially, with ML model studies reporting high predictive accuracies but lacking essential metrics and characteristics for assessing model performance. Several domains, including generalizability and reproducibility, warrant further attention to enable translation into clinical practice.</p>
+</div>
+<div class="section">
+<a id="id46"><!-- named anchor --></a><h3 class="section-title">Systematic Review Registration</h3>
+<p id="id47">PROSPERO, identifier CRD42020209938.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s1"><!-- named anchor --></a><h2 class="main-title">1 Introduction</h2>
+<p id="id48">Gliomas are the most common primary brain malignancy (<a href="#B1">1</a>). They are classified according to histopathologic and molecular World Health Organization (WHO) criteria: grades 1/2 (low-grade gliomas (LGG) and grades 3/4 [high-grade gliomas (HGG)] (<a href="#B2">2</a>). Glioblastomas, WHO grade 4 tumors, are the most aggressive with a 15-month median overall survival (<a href="#B3">3</a>).</p>
+<p id="id49">Because prognosis (<a href="#B3">3</a>, <a href="#B4">4</a>) and treatment (<a href="#B5">5</a>) vary with glioma grade, accurate classification is essential for guiding clinical decision-making and mitigating risks posed by unnecessary or delayed surgery due to misdiagnosis (<a href="#B6">6</a>). The gold standard for diagnosis, histopathology, requires surgical resection or stereotactic biopsy for analysis. These invasive procedures, however, carry significant risks and complications (<a href="#B7">7</a>). Gliomas also exhibit intratumoral heterogeneity with associated sampling error (<a href="#B8">8</a>). Therefore, a need exists for timely pre-operative whole-glioma grading. As a non-invasive tool for analyzing entire lesions, imaging overcomes the limitations of diagnostic surgical procedures. Although conventional MRI has had modest success in glioma grading (sensitivity 55-83%) (<a href="#B9">9</a>), the diagnostic potential of imaging has expanded with the use of advanced imaging, radiomics, and artificial intelligence.</p>
+<p id="id50">Radiomics quantitatively characterizes medical images using image-derived features that serve as biomarkers for tumor phenotypes (<a href="#B10">10</a>). Artificial intelligence technologies, such as machine learning (ML), have augmented radiomics. By leveraging robust high-dimensional data, ML enhances predictive performance (<a href="#B11">11</a>). Deep learning (DL) is a subtype of ML that has sparked recent interest given its superior performance in image analysis and suitability for high volumes of data (<a href="#B12">12</a>). For imaging applications, DL generates useful outputs from input images using multilayer neural networks. Convolutional Neural Networks are the primary DL architecture for image classification (<a href="#B13">13</a>).</p>
+<p id="id51">In clinical practice, ML models may increase the value of diagnostic imaging and enhance patient management, for example, by motivating earlier grade-appropriate interventions (<a href="#B14">14</a>, <a href="#B15">15</a>). Despite these opportunities, ML has not been implemented clinically because of numerous technical (data requirements, need for training, low standardization and interpretability) and non-technical (ethical, financial, legal, educational) barriers (<a href="#B16">16</a>).</p>
+<p id="id52">High-quality scientific reporting is necessary for readers to critically interpret or replicate studies and encourage translation into practice. Prior work indicates that reporting quality in prediction studies is poor (<a href="#B17">17</a>). To address this, the Transparent Reporting of a multivariable model for Individual Prognosis or Diagnosis (TRIPOD) Statement was published in 2015 (<a href="#B18">18</a>). Most of TRIPOD is applicable to ML-based prediction model studies; however, ML-specific guidelines are lacking. The need for such guidelines has initiated development of a TRIPOD extension for ML-based prediction models (TRIPOD-AI) (<a href="#B19">19</a>, <a href="#B20">20</a>).</p>
+<p id="id53">While ML demonstrates promise for accurate glioma grading, few works have characterized the state of ML in glioma grade prediction (<a href="#B21">21</a>–<a href="#B23">23</a>). A systematic review of the literature can identify potential ML methods for clinical use and generate insights for implementation. This study aims to (1) systematically review and synthesize the body of literature using ML for classification of glioma grade, (2) evaluate study reporting quality using TRIPOD, and (3) discuss opportunities for bridging the ML bench-to-clinic implementation gap.</p>
+</div>
+<div class="section">
+<a id="s2"><!-- named anchor --></a><h2 class="main-title">2 Materials and Methods</h2>
+<p id="id54">This study followed the guidelines in the Preferred Reporting Items for Systematic Reviews and Meta-Analyses of Diagnostic Test Accuracy (PRISMA-DTA) statement (<a href="#B24">24</a>) and was registered with the International Prospective Register of Systematic Reviews (PROSPERO, CRD42020209938). An institutional librarian searched the literature published through September 18, 2020, using four databases: Cochrane Central Register of Controlled Trials, EMBASE, Medline, and Web of Science Core Collection. A multi-database approach was pursued because prior work has demonstrated that a single database search may omit pertinent studies (<a href="#B25">25</a>). Keywords and controlled vocabulary included the following terms and combinations thereof: “artificial intelligence,” “machine learning,” “deep learning,” “radiomics,” “magnetic resonance imaging,” “glioma,” and related terms. The search was repeated on January 29, 2021, to gather additional articles published through this date. A full search strategy is provided in <a href="#ST1"><b>Appendix A1 (Supplementary)</b></a>. A second institutional librarian reviewed the search prior to execution.</p>
+<p id="id55">Only peer-reviewed studies were imported into Covidence (Veritas Health Innovation Ltd) for screening. Covidence is an online tool designed to streamline the systematic review process. Duplicate studies were identified and removed. Study abstracts were then screened for relevance to neuro-oncology by two of three independent reviewers: an experienced board-certified neuroradiologist, radiology resident, and graduate student in artificial intelligence. The board-certified neuroradiologist resolved discrepancies in screening recommendations. Relevant articles were subsequently assessed for eligibility. To ensure completeness, appropriateness, and understandability of eligible studies, the following exclusion criteria were established: (1) abstract-only; (2) not primary literature; (3) non-English; (4) unrelated to artificial intelligence; (5) unrelated to gliomas; (6) unrelated to imaging; (7) non-human research subjects; and (8) duplicates. Studies were not excluded based on publication year in order to have comprehensive analysis of historical and contemporary literature. Eligible studies underwent full text review to identify those using ML to classify gliomas by grade. Studies exclusively developing predictive models with distinct focuses (e.g., predicting glioma IDH status, glioma segmentation) were not included in analysis. A PRISMA flow diagram describing our study selection process is depicted in <a href="#f1"><b>Figure 1</b></a>.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="f1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id56">PRISMA flow diagram of study search strategy. ML, machine learning; PRISMA, Preferred Reporting Guidelines for Systematic Reviews and Meta-Analyses.</p></div>
+</div>
+<p id="id57">Whole data was independently extracted by two trained medical student researchers using a standardized Microsoft Excel (Microsoft Corporation) form. Conflicts were resolved through team discussion and consensus. When necessary, articles were carefully re-reviewed to obtain missing information after data extraction. The following data points were extracted: article characteristics (title, lead author, country of lead author, publication year), data characteristics (data source, country (or countries) of data acquisition, dataset size, types and number of tumors for training/testing/validation, model validation technique), grading characteristics (study definition of HGG and LGG, gold standard for glioma grading), model characteristics (best performing ML classifier, classification task, supervised/semi-supervised/unsupervised learning, types of features in classifier, imaging sequences used by classifier, measures of classifier performance) and reporting characteristics (TRIPOD items, explained below).</p>
+<p id="id58">Reporting quality was assessed against the TRIPOD statement in agreement with the TRIPOD adherence assessment form (<a href="#B26">26</a>) and author explanations (<a href="#B18">18</a>, <a href="#B27">27</a>). TRIPOD contains 20 main items (e.g., main item 5) that apply to studies developing prediction models, 10 of which contain subitems (e.g., 5a, 5b, 5c). Among the 30 total items that can be evaluated and scored, three (item 5c, 11, 14b) were excluded because they were not applicable to our studies. The remaining 27 items were scored for every study. Each item includes one or more elements, all of which must score a “yes” for the item to score “1.” To calculate a study’s adherence rate to TRIPOD, the number of items scoring “1” was divided by the total number of scored items for the study. Adherence rate for a given TRIPOD item across all studies was calculated by dividing the number of studies scoring “1” for that item by the total number of studies scored.</p>
+<p id="id59">TRIPOD adherence rates and descriptive statistics (e.g., frequencies, mean ± standard deviation) were calculated and displayed with GraphPad Prism 9 (GraphPad Software). GraphPad Prism 9 is a scientific graphing and statistical software supporting data analysis. Descriptive statistics were obtained to summarize study characteristics, dataset and model characteristics, features, imaging modalities, and model prediction performance, among other domains. Only the best performing classifiers’ performance metrics (accuracy, AUC, sensitivity, specificity, positive predictive value, negative predictive value, and F1 score) defined in each study are presented. Best performing classifiers were determined based on accuracy results. In the few instances when accuracy was not reported, AUC determined the best performing classifier. All studies meeting our inclusion criteria ((1) identified by search strategy; (2) relevant to neuro-oncology; (3) not excluded during eligibility assessment; and (4) clearly evaluate ML-based classification of glioma grade) contributed to the sample size of our study. References for included studies are listed in <a href="#ST1"><b>Appendix A4 (Supplementary)</b></a>.</p>
+</div>
+<div class="section">
+<a id="s3"><!-- named anchor --></a><h2 class="main-title">3 Results</h2>
+<div class="section">
+<a id="s3_1"><!-- named anchor --></a><h3 class="section-title">3.1 Study Characteristics</h3>
+<p id="id60">The search identified 11,727 candidate articles, with 11,637 studies screened for relevance to neuro-oncology. Agreement between screeners was substantial [(Cohen’s kappa: 0.77 ± 0.04, see <a href="#ST1"><b>Table A1 (Supplementary)</b></a>]. 1,135 articles underwent full text review, and 85 articles were included in analysis (<a href="#f1"><b>Figure 1</b></a>).</p>
+<p id="id61">67 articles (79%) were published between 2018 and 2021, with 26 articles (31%) published in 2019 alone (<a href="#f2"><b>Figure 2</b></a>). Based on lead author affiliations, most articles were from China, the US, or India (n=45, 51%) (<a href="#f3"><b>Figure 3</b></a>).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="f2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id62">Number of studies published per year from 1995-2020.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="f3"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<div class="caption"><p class="first" id="id63"><b>(A)</b> Number of studies by first author’s country of affiliation and respective continent. <b>(B)</b> Number of studies by country (or countries) of data acquisition.</p></div>
+</div>
+<p id="id64">36 articles (42%) defined HGG as grade 3 and 4 and LGG as grade 1 and 2. 17 articles (20%) defined HGG as grade 4 and LGG as grades 2 and 3. 32 articles (38%) didn’t define grades for HGG and LGG (<a href="#f4"><b>Figure 4</b></a>).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="f4"><!-- named anchor --></a><h5 class="label">Figure 4</h5>
+<div class="caption"><p class="first" id="id65">Classification systems used across studies for defining HGG vs. LGG by grade 1-4. HGG, high-grade gliomas; LGG, low-grade gliomas.</p></div>
+</div>
+</div>
+<div class="section">
+<a id="s3_2"><!-- named anchor --></a><h3 class="section-title">3.2 Study Findings</h3>
+<div class="section">
+<a id="s3_2_1"><!-- named anchor --></a><h4 class="subsection-title">3.2.1 Dataset and Model Characteristics</h4>
+<p id="id66">Among the 84 articles with identifiable patient data sources, data was most commonly acquired multi-nationally (n=38, 45%), entirely in China (n=15, 18%), or entirely in the US (n=10, 12%) (<a href="#f3"><b>Figure 3</b></a>). BraTS (<a href="#B28">28</a>) and TCIA (<a href="#B29">29</a>) datasets, which are publicly available multi-institutional datasets containing multi-parametric MRI scans, were used in 45% (n=38) of studies. Conventional ML was the primary ML model for glioma grade prediction in 59 (69%) studies and DL in 26 (31%) studies. Of all 85 studies included, 80 (94%) reported the number of patients in their datasets (mean: 177 ± 140). Studies developing conventional ML models reported mean dataset sizes of 168 ± 150 patients. DL studies reported mean dataset sizes of 199 ± 109 patients. Among the 67 studies whose best performing models were binary classifiers of HGG and LGG and reported the number of HGG and LGG used in model development, 58 (87%) had imbalanced datasets characterized by an unequal number of HGG and LGG patients. Most studies (n=44, 66%) used datasets containing more HGG than LGG patients (i.e., HGG : LGG ratio &gt;1). 14 studies (21%) had fewer HGG than LGG patients (HGG : LGG ratio &lt;1).</p>
+<p id="id67">Only 5 (6%) studies reported external validation. Of the 80 other studies, 68 (85%) reported internal validation and 12 (15%) did not clearly report validation methods. 82 (96%) of studies had supervised learning algorithms and 3 (4%) used semi-supervised learning. No studies reported unsupervised learning algorithms. The gold standard for glioma grading was histopathology in all studies.</p>
+</div>
+<div class="section">
+<a id="s3_2_2"><!-- named anchor --></a><h4 class="subsection-title">3.2.2 Features</h4>
+<p id="id68">Texture (second-order) features and first-order features were the most common feature subsets, extracted in 45 (53%) and 42 (49%) studies, respectively. Shape and/or size features (n=28, 33%) and DL extracted features (n=20, 24%) were also common. Hemodynamic (n=5), qualitative (n=6), higher-order (n=4) and spectroscopic features (n=8) were observed in less than 10% of studies. Definitions for feature types are provided in <a href="#ST1"><b>Table A7 (Supplementary)</b></a>.</p>
+</div>
+<div class="section">
+<a id="s3_2_3"><!-- named anchor --></a><h4 class="subsection-title">3.2.3 Imaging Modalities</h4>
+<p id="id69">T1-weighted contrast-enhanced (T1CE) imaging was the most common sequence used in best performing models (n=54, 64%), followed by T2 (n=46, 54%) and FLAIR (n=40, 47%). T1 pre-contrast was less common (n=35, 41%). Perfusion-weighted imaging (n=15), MR Spectroscopy (n=9) and diffusion-weighted imaging (n=12) were used in 11-18% of models. PET and fMRI were only used in one model each.</p>
+</div>
+<div class="section">
+<a id="s3_2_4"><!-- named anchor --></a><h4 class="subsection-title">3.2.4 Prediction Performance</h4>
+<p id="id70">A summary of model performance measures across studies is shown in <a href="#T1"><b>Table 1</b></a>. The mean glioma grade prediction accuracy of the best performing algorithm per study was 0.89 ± 0.09. This parameter was determined by taking the prediction accuracy of the best performing algorithm in each study for all studies and calculating a mean value and standard deviation. Lower accuracies were reported for models undergoing external validation (mean: 0.82 ± 0.09, n=5). DL models had a mean prediction accuracy of 0.92 ± 0.08 and conventional ML models 0.88 ± 0.09.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id71">Mean (± standard deviation) aggregate performance metrics across studies.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id72"><!-- named anchor --></a><thead>
+<a id="id73"><!-- named anchor --></a><tr>
+<a id="id74"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id75"><!-- named anchor --></a>Accuracy (n=82)</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id76"><!-- named anchor --></a>AUC (n=48)</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id77"><!-- named anchor --></a>Sensitivity (n=55)</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id78"><!-- named anchor --></a>Specificity (n=51)</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id79"><!-- named anchor --></a>Positive Predictive Value (n=12)</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id80"><!-- named anchor --></a>Negative Predictive Value (n=6)</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id81"><!-- named anchor --></a>F1 Score (n=7)</th>
+</tr>
+</thead>
+<tbody>
+<a id="id82"><!-- named anchor --></a><tr>
+<a id="id83"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id84"><!-- named anchor --></a>0.89 ± 0.09</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id85"><!-- named anchor --></a>0.92 ± 0.07</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id86"><!-- named anchor --></a>0.89 ± 0.09</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id87"><!-- named anchor --></a>0.88 ± 0.11</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id88"><!-- named anchor --></a>0.90 ± 0.09</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id89"><!-- named anchor --></a>0.82 ± 0.08</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id90"><!-- named anchor --></a>0.89 ± 0.11</td>
+</tr>
+<tr>
+<a id="id91"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id92"><!-- named anchor --></a>(0.53-1.00)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id93"><!-- named anchor --></a> (0.73-1.00)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id94"><!-- named anchor --></a>(0.63-1.00)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id95"><!-- named anchor --></a>(0.55-1.00)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id96"><!-- named anchor --></a>(0.68-1.00)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id97"><!-- named anchor --></a>(0.73-0.94)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id98"><!-- named anchor --></a>(0.67-0.98)</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id99"><!-- named anchor --></a><p id="id100"><span class="generated">[i]</span> n, number of studies reporting metric.</p>
+</div></div>
+</div>
+<p id="id101">The most common best performing conventional ML model was Support Vector Machine (mean accuracy: 0.90 ± 0.07) and DL model was Convolutional Neural Network (mean accuracy: 0.91 ± 0.10) (<a href="#f5"><b>Figure 5</b></a>).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="f5"><!-- named anchor --></a><h5 class="label">Figure 5</h5>
+<div class="caption"><p class="first" id="id102">Prediction accuracy of most common algorithm types, measured in the best performing algorithm of each study. Circle at mean. Error bars indicate standard deviation.</p></div>
+</div>
+<p id="id103">We grouped all studies by data source into 4 categories: BraTS, TCIA, single center, and multicenter (excluding BraTS and TCIA) data. Studies which used BraTS as a data source had a mean accuracy of 0.93 ± 0.04 (n=27) and studies using TCIA had a mean accuracy of 0.91 ± 0.08 (n=12). Single center datasets were the most common (n=43) with a mean accuracy of 0.88 ± 0.07, and multicenter hospital datasets the least common (n=6, mean accuracy: 0.80 ± 0.18).</p>
+<p id="id104">We additionally identified studies whose models were built on relatively large (n≥200) datasets and externally validated, two characteristics indicating potential generalizability. Only one study (1%) had both characteristics (accuracy: 0.72) (<a href="#B30">30</a>). Further analysis of model performance by dataset source, dataset size, validation technique, and glioma grade classification task can be found in <a href="#ST1"><b>Appendix A2</b></a> and <a href="#ST1"><b>Tables A2-A5 (Supplementary)</b></a>. Characteristics of the 10 studies reporting the highest accuracy results for their best performing algorithms are summarized in <a href="#T2"><b>Table 2</b></a>. Characteristics of all included studies may be seen in <a href="#ST1"><b>Table A6 (Supplementary)</b></a>.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id105">Characteristics of the 10 studies reporting the highest accuracy results for their best performing models, including: glioma grade classification task, dataset source and size, ratio of high- to low-grade gliomas, validation technique, imaging sequences used in prediction, feature types used in prediction, best performing algorithm (based on accuracy results), and performance metrics.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id106"><!-- named anchor --></a><thead>
+<a id="id107"><!-- named anchor --></a><tr>
+<a id="id108"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id109"><!-- named anchor --></a>Paper</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id110"><!-- named anchor --></a>Glioma Grade Classification Task</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id111"><!-- named anchor --></a>Dataset</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>HGG : LGG Ratio</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id113"><!-- named anchor --></a>Validation Technique</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id114"><!-- named anchor --></a>Imaging Sequences</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id115"><!-- named anchor --></a>Features</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id116"><!-- named anchor --></a>Best Algorithm</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id117"><!-- named anchor --></a>Performance Metrics</th>
+</tr>
+</thead>
+<tbody>
+<a id="id118"><!-- named anchor --></a><tr>
+<a id="id119"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>Hedyehzadeh et al. (2020) (<a href="#B31">31</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>2/3 vs. 4</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id122"><!-- named anchor --></a>TCIA (n=461 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id123"><!-- named anchor --></a>1.3:1 (262 HGG, 199 LGG in total set)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id124"><!-- named anchor --></a>Internal (4-fold cross-validation)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>T1, T1CE, T2, FLAIR</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>Texture</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>Support Vector Machine</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>Accuracy = 1.00 Sensitivity = 1.00 Specificity = 1.00</td>
+</tr>
+<tr>
+<a id="id129"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id130"><!-- named anchor --></a>BashirGonbadi and Khotanlou (2019) (<a href="#B32">32</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>1/2 vs. 3/4</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>BraTS (n=285 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id133"><!-- named anchor --></a>2.8:1 (210 HGG, 75 LGG in total set)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a>Internal (Holdout, 15% of dataset)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>T1, T1CE, T2, FLAIR</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id136"><!-- named anchor --></a>Deep learning extracted</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id137"><!-- named anchor --></a>Convolutional Neural Network</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>Accuracy = 0.9918</td>
+</tr>
+<tr>
+<a id="id139"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>Polly et al. (2018) (<a href="#B33">33</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id141"><!-- named anchor --></a>HGG vs. LGG (unclear)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id142"><!-- named anchor --></a>BraTS (n=160 images)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id143"><!-- named anchor --></a>1:1 (50 HGG, 50 LGG in testing set)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>Unspecified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id145"><!-- named anchor --></a>T2</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id146"><!-- named anchor --></a>First-order, Shape, Texture</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id147"><!-- named anchor --></a>Support Vector Machine</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id148"><!-- named anchor --></a>Accuracy = 0.99 Sensitivity = 1.00 Specificity = 0.9803</td>
+</tr>
+<tr>
+<a id="id149"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id150"><!-- named anchor --></a>De Looze et al. (2018) (<a href="#B34">34</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id151"><!-- named anchor --></a>HGG vs. LGG (unclear)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id152"><!-- named anchor --></a>Single center hospital (n=381 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id153"><!-- named anchor --></a>Unclear</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id154"><!-- named anchor --></a>Internal (5-fold cross-validation)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id155"><!-- named anchor --></a>T1, T1CE, T2, FLAIR, Diffusion</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>Qualitative</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>Random Forest</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id158"><!-- named anchor --></a>Accuracy = 0.99 AUC = 0.99 Sensitivity = 1.00 Specificity = 0.92</td>
+</tr>
+<tr>
+<a id="id159"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id160"><!-- named anchor --></a>Sharif et al. (2020) (<a href="#B35">35</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>HGG vs. LGG (unclear)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id162"><!-- named anchor --></a>BraTS (n=30 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>2.3:1 (7 HGG, 3 LGG in testing set)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>Internal (Holdout, 10-fold cross-validation)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>T1, T1CE, T2, FLAIR</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id166"><!-- named anchor --></a>Deep learning extracted</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id167"><!-- named anchor --></a>Convolutional Neural Network</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id168"><!-- named anchor --></a>Accuracy = 0.987</td>
+</tr>
+<tr>
+<a id="id169"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id170"><!-- named anchor --></a>Muneer et al. (2019) (<a href="#B36">36</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id171"><!-- named anchor --></a>1 vs. 2 vs. 3 vs. 4</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id172"><!-- named anchor --></a>Single center hospital (n=20 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id173"><!-- named anchor --></a>1.3:1.6:1:1.5 (39 grade 1, 51 grade 2, 31 grade 3, 47 grade 4 images in testing set)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id174"><!-- named anchor --></a>Internal<br class="br">(Holdout, 30% of dataset)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a>T2</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id176"><!-- named anchor --></a>Deep learning extracted</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id177"><!-- named anchor --></a>VGG19 (Deep Convolutional Neural Network)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id178"><!-- named anchor --></a>Accuracy = 0.9825 Sensitivity = 0.9272 Specificity = 0.9813 Positive Predictive Value = 0.9471 F1 Score = 0.9371</td>
+</tr>
+<tr>
+<a id="id179"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id180"><!-- named anchor --></a>Dandil and Bicer (2020) (<a href="#B37">37</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id181"><!-- named anchor --></a>1/2 vs. 3 vs. 4 vs. meningioma</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a>INTERPRET (n=179 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>Unclear</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id184"><!-- named anchor --></a>Unspecified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id185"><!-- named anchor --></a>MR Spectroscopy (Time of Echo 20ms and 136ms)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>First-order, Shape and size, Texture</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id187"><!-- named anchor --></a>Long Short-Term Memory (Neural Network)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id188"><!-- named anchor --></a>Accuracy = 0.982 AUC = 0.9936 Sensitivity = 1.00 Specificity = 0.9753</td>
+</tr>
+<tr>
+<a id="id189"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id190"><!-- named anchor --></a>Tian et al. (2018) (<a href="#B38">38</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id191"><!-- named anchor --></a>2 vs. 3/4</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id192"><!-- named anchor --></a>Single center hospital (n=153 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id193"><!-- named anchor --></a>2.6:1 (111 HGG, 42 LGG in total set)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id194"><!-- named anchor --></a>Internal (10-fold cross-validation)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id195"><!-- named anchor --></a>T1, T1CE, T2, Diffusion, Perfusion (3D Arterial Spin Labeling)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id196"><!-- named anchor --></a>Texture</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id197"><!-- named anchor --></a>Support Vector Machine</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a>Accuracy = 0.981 AUC = 0.992 Sensitivity = 0.987 Specificity = 0.974</td>
+</tr>
+<tr>
+<a id="id199"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id200"><!-- named anchor --></a>Lo et al. (2019) (<a href="#B39">39</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id201"><!-- named anchor --></a>2 vs. 3 vs. 4</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id202"><!-- named anchor --></a>TCIA (n=130 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id203"><!-- named anchor --></a>1:1.4:1.9(30 grade 2, 43 grade 3 and 57 grade 4 in total set)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id204"><!-- named anchor --></a>Internal (10-fold cross-validation)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id205"><!-- named anchor --></a>T1CE</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id206"><!-- named anchor --></a>Deep learning extracted</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id207"><!-- named anchor --></a>Deep Convolutional Neural Network</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id208"><!-- named anchor --></a>Accuracy = 0.979 AUC = 0.9991</td>
+</tr>
+<tr>
+<a id="id209"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>Kumar et al. (2020) (<a href="#B40">40</a>)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>1/2 vs. 3/4</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id212"><!-- named anchor --></a>BraTS (n=285 patients)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id213"><!-- named anchor --></a>2.8:1 (210 HGG, 75 LGG in total set)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id214"><!-- named anchor --></a>Internal (5-fold cross-validation)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id215"><!-- named anchor --></a>T1, T1CE, T2, (T2W)-FLAIR</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id216"><!-- named anchor --></a>First-order, Shape, Texture</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id217"><!-- named anchor --></a>Random Forest</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id218"><!-- named anchor --></a>Accuracy = 0.9754 AUC = 0.9748 Sensitivity = 0.9762 Specificity = 0.9733 F1 Score = 0.983</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id219"><!-- named anchor --></a><p id="id220"><span class="generated">[i]</span> Testing or validation metrics are reported when available, otherwise training metrics are reported. HGG, high-grade gliomas; LGG, low-grade gliomas; ML, machine learning; PRISMA-DTA, Preferred Reporting Items for Systematic Reviews and Meta-Analyses of Diagnostic Test Accuracy; T1CE, T1-weighted contrast-enhanced; TRIPOD, Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis.</p>
+</div></div>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="s3_3"><!-- named anchor --></a><h3 class="section-title">3.3 Quality Assessment</h3>
+<p id="id221">The mean adherence rate to TRIPOD was 44.5% ± 11.1%, with poor reporting adherence in categories including model performance (0%), abstract (0%), title (0%), justification of sample size (2.4%), full model specification (2.4%), and participant demographics and missing data (7.1%). High reporting adherence was observed for results interpretation (100%), background (98.8%), study design/source of data (96.5%), and objectives (95.3%) (<a href="#f6"><b>Figure 6</b></a>).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="f6"><!-- named anchor --></a><h5 class="label">Figure 6</h5>
+<div class="caption"><p class="first" id="id222">TRIPOD adherence of machine learning glioma grade prediction studies. Adherence rate for individual items represents the percent of studies scoring a point for that item: 1 – title. 2 – abstract. 3a – background. 3b – objectives. 4a – study design. 4b – study dates. 5a – study setting. 5b – eligibility criteria. 6a – outcome assessment. 6b – blinding assessment of outcome. 7a – predictor assessment. 7b – blinding assessment of predictors. 8 – sample size justification. 9 – missing data. 10a – predictor handling. 10b – model type, model-building, and internal validation. 10d – model performance. 13a – participant flow and outcomes. 13b – participant demographics and missing data. 14a – model development (participants and outcomes). 15a – full model specification. 15b – using the model. 16 – model performance. 18 – study limitations. 19b – results interpretation. 20 – clinical use and research implications. 22 – funding. Overall – mean TRIPOD adherence rate of all studies. TRIPOD, Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis.</p></div>
+</div>
+<p id="id223">Titles (0%) did not identify the development of prediction models. Abstracts (0%) frequently lacked source of data, overall sample size, and calibration methods. Regarding model performance (0%), very few studies reported measures for model calibration or confidence intervals. Most studies failed to specify model regression coefficients (2.4%) or provide justifications of sample size (2.4%), e.g., how sample size was arrived at according to statistical or practical grounds. More detailed explanations of TRIPOD items and their adherence rates can be found in <a href="#ST1"><b>Table A8 (Supplementary)</b></a>.</p>
+</div>
+</div>
+<div class="section">
+<a id="s4"><!-- named anchor --></a><h2 class="main-title">4 Discussion</h2>
+<p id="id224">Our systematic review analyzed 85 articles describing ML applications for glioma grade prediction and revealed several trends. First, the number of studies published per year grew steadily between 2016 and 2019. Second, imaging sequences and ML models became less conventional, with the emergence of advanced MRI sequences (MR Spectroscopy, Perfusion) in the early 2000s (<a href="#B41">41</a>) and DL models in 2018 (<a href="#B42">42</a>). Third, datasets recently expanded to encompass multiple institutions, with BraTS and TCIA datasets appearing in 2017. While ML model studies report high predictive accuracies, they underreport critical model performance measures, lack a common validation dataset, and vary remarkably in glioma classification systems, ML algorithms, feature types and imaging sequences used for prediction, etc., limiting model comparison. Here, we identify several opportunities for improvement to prepare models for multicenter clinical adoption.</p>
+<div class="section">
+<a id="s4_1"><!-- named anchor --></a><h3 class="section-title">4.1 Study Datasets, Validation Techniques, Classification Systems, and Reporting Quality</h3>
+<p id="id225">Prior to broad clinical use, ML models must be trained and validated on large, multi-institutional datasets to ensure generalizability (<a href="#B43">43</a>). Dataset sizes, however, were low in our study, and most publications lacked external validation. These findings are consistent with those from a similar systematic review by Tabatabaei et al. (<a href="#B23">23</a>). Moreover, while studies based on highly curated datasets, including BraTS or TCIA, showed consistently high accuracy results, algorithms trained on these datasets without external validation may not have reproducible results in clinical practice, where imaging protocols are less standardized, image quality is variable, and tumor presentations are heterogeneous. To show that models perform well across distinct populations and are fit for broad clinical implementation, future works should use sizable, less-curated, multicenter datasets and externally validate their models.</p>
+<p id="id226">ML models should also be trained according to standardized definitions of glioma grade. Interestingly, definitions were variable for HGG and LGG, with some studies considering grade 3 gliomas to be high-grade and others low-grade. Lack of a unified classification system may hinder predictive model performances on external datasets, given that the images used for segmentation, feature extraction, and model training/testing are labeled HGG or LGG based on non-uniform definitions. As glioma grade guides clinical management, it is essential that algorithm outputs of “HGG” and “LGG” reflect a universal definition consistent with current WHO criteria.</p>
+<p id="id227">An alternative to binary high-or-low grading is to report numerical glioma grades (1, 2, 3, or 4) and tumor entities. Importantly, grade and entity classifications are evolving. In 2016, purely histopathological classification was succeeded by classification based on both molecular and histopathologic parameters (<a href="#B44">44</a>). In 2021, cIMPACT-NOW established further changes to glioma grading, for example, by redefining GBM to be an IDH (Isocitrate Dehydrogenase)-wild-type lesion distinct from IDH-mutant grade 4 astrocytomas (<a href="#B45">45</a>, <a href="#B46">46</a>). Classification changes may have led to inconsistencies in tumor entities and grades reported in glioma grade prediction studies across the years, limiting model comparison. As WHO criteria continue to evolve and affect generalizability of study results, we recommend that studies clearly reference the criteria used in glioma grading, report the glioma entities and corresponding grade used in model development, and describe the predictive performances by both entity and grade. This will promote comprehensible and traceable results over time. Moreover, integrated techniques that characterize disease according to both radiological and biological features are emerging in neuro-oncology (<a href="#B47">47</a>). We advise future researchers to consider the implementation of these techniques into ML model development studies predicting glioma grade, molecular markers, response to treatment, prognosis, and other applications within neuro-oncology.</p>
+<p id="id228">Finally, reporting of ML models should be transparent, thorough, and reproducible to facilitate proper assessment for use in clinical practice (<a href="#B48">48</a>). Several comprehensive checklists are used to assess reporting quality of diagnostic models, including Checklist for Artificial Intelligence in Medical Imaging (<a href="#B49">49</a>) and TRIPOD. In our study, mean adherence to TRIPOD was low, with key assessment elements such as model performance scoring poorly. These findings reflect inadequate study reporting. To address this, we recommend future studies use appropriate reporting frameworks to guide all phases of study execution, from initial design through manuscript writing. For ML studies, the relevance of TRIPOD as a benchmark for reporting quality may be questioned. Published explanations and elaborations of TRIPOD focus on regression-based models, a shortcoming that TRIPOD authors have recently acknowledged (<a href="#B19">19</a>). We support their initiative to create a TRIPOD Statement specific to ML (TRIPOD-AI) (<a href="#B19">19</a>, <a href="#B20">20</a>), and in the context of this work, to improve the reporting quality of literature concerning ML in glioma grade prediction.</p>
+</div>
+<div class="section">
+<a id="s4_2"><!-- named anchor --></a><h3 class="section-title">4.2 Limitations</h3>
+<p id="id229">This study has several limitations. First, the timing and criteria of our search may have missed relevant studies (e.g., recent and unpublished works). Moreover, 191 of the 1,135 (16.8%) studies assessed for eligibility were excluded because they were abstracts (n=169, 14.9%) or not in English (n=22, 1.9%), creating a potential selection bias. However, full texts were required for complete data extraction and quality of reporting analysis, and we unfortunately did not have the resources to translate non-English articles. Second, we determined best performing algorithms based on accuracy, which excluded the three studies that did not report accuracy results for their models. Accuracy, furthermore, may be considered a flawed performance metric for ML models applied to imbalanced datasets (<a href="#B50">50</a>), which constituted most datasets in our study. With imbalanced datasets, ML models intrinsically overfit toward the majority class, risking higher misclassification rates for minority classes (<a href="#B51">51</a>, <a href="#B52">52</a>). Because accuracy may be high even if a minority class is poorly predicted, we recommend study authors consistently report a full slate of model performance metrics. Including metrics sensitive to performance differences within imbalanced datasets (e.g., AUC) (<a href="#B53">53</a>) will enable a more thorough assessment of ML model performance. Third, the inconsistent definitions for HGG and LGG, evolving grading criteria, high heterogeneity of our included articles and low number of articles reporting confidence intervals for their performance metrics limited the pooling of results across studies and subsequent generation of conclusions. As a result, we could not perform a meta-analysis (<a href="#B54">54</a>, <a href="#B55">55</a>).</p>
+</div>
+</div>
+<div class="section">
+<a id="s5"><!-- named anchor --></a><h2 class="main-title">5 Conclusion</h2>
+<p id="id230">The application of ML to glioma grade prediction has grown substantially, with ML model studies reporting high predictive accuracies but lacking essential metrics and characteristics for assessing model performance. To increase the generalizability, standardization, reproducibility, and reporting quality necessary for clinical translation, future studies need to (1) train and test on large, multi-institutional datasets, (2) validate on external datasets, (3) clearly report glioma entities, corresponding glioma grades, and a full state of predictive performance metrics by both grade and entity, and (4) adhere to reporting guidelines.</p>
+</div>
+<div class="section">
+<a id="s6"><!-- named anchor --></a><h2 class="main-title">Data Availability Statement</h2>
+<p id="id231">The original contributions presented in the study are included in the article/<a href="#ST1"><b>Supplementary Material</b></a>, further inquiries can be directed to the corresponding author.</p>
+</div>
+<div class="section">
+<a id="s7"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id232">All authors listed have made a substantial, direct, and intellectual contribution to the work and approved it for publication.</p>
+</div>
+<div class="section">
+<a id="s8"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id233">SM receives funding in part from the Biomedical Education Program (BMEP). RB receives funding in part from the National Institute of Diabetes and Digestive and Kidney Disease of the National Institutes of Health under Award Number T35DK104689. MA received funding from American Society of Neuroradiology Fellow Award 2018. This publication was made possible by KL2 TR001862 (MA) from the National Center for Advancing Translational Science (NCATS), components of the National Institutes of Health (NIH), and NIH roadmap for Medical Research. Seyedmehdi Payabvash has grant support from NIH/NINDS K23NS118056, foundation of American Society of Neuroradiology (ASNR) #1861150721, Doris Duke Charitable Foundation (DDCF) #2020097, and NVIDIA. Funders were not involved in the study design, collection, analysis, interpretation of data, the writing of this article or the decision to submit it for publication.</p>
+</div>
+<div class="section">
+<a id="s9"><!-- named anchor --></a><h2 class="main-title">Author Disclaimer</h2>
+<p id="id234">The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>
+</div>
+<div class="section">
+<a id="s10"><!-- named anchor --></a><h2 class="main-title">Conflict of Interest</h2>
+<p id="id235">Author ML is an employee and stockholder of Visage Imaging, Inc., and unrelated to this work, receives funding from NIH/NCI R01 CA206180 and is a board member of Tau Beta Pi engineering honor society. KB is an employee of Visage Imaging, GmbH. JI has funding support for an investigator-initiated clinical trial from Novartis Pharmaceuticals (unrelated to this work).</p>
+<p id="id236">The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</div>
+<div class="section">
+<a id="s11"><!-- named anchor --></a><h2 class="main-title">Publisher’s Note</h2>
+<p id="id237">All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id239"><!-- named anchor --></a><h2 class="main-title">Acknowledgments</h2>
+<p id="id238">We would like to thank our institutional librarians (Alexandria Brackett and Thomas Mead) for developing and executing our search strategy, and Mary Hughes and Vermetha Polite for their technical support. We also would like to thank Julia Shatalov for assisting with eligibility screening and Irena Tocino for her continuous support throughout the execution of this study.</p>
+</div>
+<div class="section">
+<a id="s12"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<p id="id240">The Supplementary Material for this article can be found online at: <a target="xrefwindow" href="https://www.frontiersin.org/articles/10.3389/fonc.2022.856231/full#supplementary-material" id="id241">https://www.frontiersin.org/articles/10.3389/fonc.2022.856231/full#supplementary-material</a>
+</p>
+<div class="panel">
+<a id="ST1"><!-- named anchor --></a><a id="id242" href="Table_1.docx"><div class="caption"><p class="first" id="id243">Click here for additional data file.</p></div></a>
+</div>
+</div>
+<div class="back-section">
+<a id="id244"><!-- named anchor --></a><div class="section ref-list">
+<a id="id244"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1</span> <a id="B1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id245"><!-- named anchor --></a>QT OstromG CioffiH GittlemanN PatilK WaiteC Kruchko. CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2012-2016. Neuro Oncol (2019) 21(Suppl 5):v1–v100. doi: 10.1093/neuonc/noz150
+31675094PMC6823730</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2</span> <a id="B2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id246"><!-- named anchor --></a>DN LouisA PerryP WesselingDJ BratIA CreeD Figarella-Branger. The 2021 WHO Classification of Tumors of the Central Nervous System: A Summary. Neuro Oncol (2021) 23(8):1231–51. doi: 10.1093/neuonc/noab106
+PMC832801334185076</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3</span> <a id="B3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id247"><!-- named anchor --></a>B TranMA Rosenthal. Survival Comparison Between Glioblastoma Multiforme and Other Incurable Cancers. J Clin Neurosci (2010) 17(4):417–21. doi: 10.1016/j.jocn.2009.09.004
+20167494</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4</span> <a id="B4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id248"><!-- named anchor --></a>H OhgakiP Kleihues. Population-Based Studies on Incidence, Survival Rates, and Genetic Alterations in Astrocytic and Oligodendroglial Gliomas. J Neuropathol Exp Neurol (2005) 64(6):479–89. doi: 10.1093/jnen/64.6.479
+15977639</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5</span> <a id="B5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id249"><!-- named anchor --></a>J Gallego Perez-LarrayaJY Delattre. Management of Elderly Patients With Gliomas. Oncologist (2014) 19(12):1258–67. doi: 10.1634/theoncologist.2014-0170
+PMC425774225342314</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6</span> <a id="B6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id250"><!-- named anchor --></a>P ZonariP BaraldiG Crisi. Multimodal MRI in the Characterization of Glial Neoplasms: The Combined Role of Single-Voxel MR Spectroscopy, Diffusion Imaging and Echo-Planar Perfusion Imaging. Neuroradiology (2007) 49(10):795–803. doi: 10.1007/s00234-007-0253-x
+17619871</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7</span> <a id="B7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id251"><!-- named anchor --></a>N ThonJC TonnFW Kreth. The Surgical Perspective in Precision Treatment of Diffuse Gliomas. Onco Targets Ther (2019) 12:1497–508. doi: 10.2147/OTT.S174316
+PMC639086730863116</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8</span> <a id="B8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id252"><!-- named anchor --></a>LS HuA Hawkins-DaarudL WangJ LiKR Swanson. Imaging of Intratumoral Heterogeneity in High-Grade Glioma. Cancer Lett (2020) 477:97–106. doi: 10.1016/j.canlet.2020.02.025
+32112907PMC7108976</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9</span> <a id="B9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id253"><!-- named anchor --></a>M LawS YangH WangJS BabbG JohnsonS Cha. Glioma Grading: Sensitivity, Specificity, and Predictive Values of Perfusion MR Imaging and Proton MR Spectroscopic Imaging Compared With Conventional MR Imaging. AJNR Am J Neuroradiol (2003) 24(10):1989–98.PMC814890414625221</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10</span> <a id="B10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id254"><!-- named anchor --></a>RJ GilliesPE KinahanH Hricak. Radiomics: Images Are More Than Pictures, They Are Data. Radiology (2016) 278(2):563–77. doi: 10.1148/radiol.2015151169
+PMC473415726579733</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11</span> <a id="B11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id255"><!-- named anchor --></a>ML Giger. Machine Learning in Medical Imaging. J Am Coll Radiol (2018) 15(3 Pt B):512–20. doi: 10.1016/j.jacr.2017.12.028
+29398494</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12</span> <a id="B12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id256"><!-- named anchor --></a>G ChartrandPM ChengE VorontsovM DrozdzalS TurcotteCJ Pal. Deep Learning: A Primer for Radiologists. Radiographics (2017) 37(7):2113–31. doi: 10.1148/rg.2017170077
+29131760</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13</span> <a id="B13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id257"><!-- named anchor --></a>PM ChengE MontagnonR YamashitaI PanA Cadrin-ChênevertF Perdigón Romero. Deep Learning: An Update for Radiologists. Radiographics (2021) 41(5):1427–45. doi: 10.1148/rg.2021200210
+34469211</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14</span> <a id="B14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id258"><!-- named anchor --></a>J HeSL BaxterJ XuJ XuX ZhouK Zhang. The Practical Implementation of Artificial Intelligence Technologies in Medicine. Nat Med (2019) 25(1):30–6. doi: 10.1038/s41591-018-0307-0
+PMC699527630617336</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15</span> <a id="B15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id259"><!-- named anchor --></a>A LasockiA TsuiMA TaceyKJ DrummondKM FieldF Gaillard. MRI Grading Versus Histology: Predicting Survival of World Health Organization Grade II-IV Astrocytomas. AJNR Am J Neuroradiol (2015) 36(1):77–83. doi: 10.3174/ajnr.A4077
+25104288PMC7965922</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16</span> <a id="B16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id260"><!-- named anchor --></a>W JinM FatehiK AbhishekM MallyaB ToyotaG Hamarneh. Artificial Intelligence in Glioma Imaging: Challenges and Advances. J Neural Eng (2020) 17(2):021002. doi: 10.1088/1741-2552/ab8131
+32191935</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17</span> <a id="B17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id261"><!-- named anchor --></a>JE ParkHS KimD KimSY ParkJY KimSJ Cho. A Systematic Review Reporting Quality of Radiomics Research in Neuro-Oncology: Toward Clinical Utility and Quality Improvement Using High-Dimensional Imaging Features. BMC Cancer (2020) 20(1):29. doi: 10.1186/s12885-019-6504-5
+31924170PMC6954557</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18</span> <a id="B18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id262"><!-- named anchor --></a>GS CollinsJB ReitsmaDG AltmanKG Moons. Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis (TRIPOD): The TRIPOD Statement. Ann Intern Med (2015) 162(1):55–63. doi: 10.7326/M14-0697
+25560714</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19</span> <a id="B19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id263"><!-- named anchor --></a>GS CollinsKGM Moons. Reporting of Artificial Intelligence Prediction Models. Lancet (2019) 393(10181):1577–9. doi: 10.1016/S0140-6736(19)30037-6
+31007185</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20</span> <a id="B20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id264"><!-- named anchor --></a>GS CollinsP DhimanCL Andaur NavarroJ MaL HooftJB Reitsma. Protocol for Development of a Reporting Guideline (TRIPOD-AI) and Risk of Bias Tool (PROBAST-AI) for Diagnostic and Prognostic Prediction Model Studies Based on Artificial Intelligence. BMJ Open (2021) 11(7):e048008. doi: 10.1136/bmjopen-2020-048008
+PMC827346134244270</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21</span> <a id="B21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id265"><!-- named anchor --></a>QD BuchlakN EsmailiJC LevequeC BennettF FarrokhiM Piccardi. Machine Learning Applications to Neuroimaging for Glioma Detection and Classification: An Artificial Intelligence Augmented Systematic Review. J Clin Neurosci (2021) 89:177–98. doi: 10.1016/j.jocn.2021.04.043
+34119265</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22</span> <a id="B22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id266"><!-- named anchor --></a>CK SohnS Bisdas. Diagnostic Accuracy of Machine Learning-Based Radiomics in Grading Gliomas: Systematic Review and Meta-Analysis. Contrast Media Mol Imaging (2020) 2020:2127062. doi: 10.1155/2020/2127062
+33746649PMC7952179</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23</span> <a id="B23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id267"><!-- named anchor --></a>M TabatabaeiA RazaeiAH SarramiZ SaadatpourA SinghalH Sotoudeh. Current Status and Quality of Machine Learning-Based Radiomics Studies for Glioma Grading: A Systematic Review. Oncology (2021) 99(7):433. doi: 10.1159/000515597
+33849021</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24</span> <a id="B24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id268"><!-- named anchor --></a>RA FrankPM BossuytMDF McInnes. Systematic Reviews and Meta-Analyses of Diagnostic Test Accuracy: The PRISMA-DTA Statement. Radiology (2018) 289(2):313–4. doi: 10.1148/radiol.2018180850
+30015590</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25</span> <a id="B25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id269"><!-- named anchor --></a>P WhitingM WestwoodM BurkeJ SterneJ Glanville. Systematic Reviews of Test Accuracy Should Search a Range of Databases to Identify Primary Studies. J Clin Epidemiol (2008) 61(4):357–64. doi: 10.1016/j.jclinepi.2007.05.013
+18313560</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26</span> <a id="B26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id270"><!-- named anchor --></a>TRIPOD Statement Web Site. Adherence to TRIPOD (2020). Available at: <a target="xrefwindow" href="https://www.tripod-statement.org/adherence/" id="id271">https://www.tripod-statement.org/adherence/</a> (Accessed 10 Jul 2021).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27</span> <a id="B27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id272"><!-- named anchor --></a>KG MoonsDG AltmanJB ReitsmaJP IoannidisP MacaskillEW Steyerberg. Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis (TRIPOD): Explanation and Elaboration. Ann Intern Med (2015) 162(1):W1–73. doi: 10.7326/M14-0698
+25560730</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28</span> <a id="B28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id273"><!-- named anchor --></a>BH MenzeA JakabS BauerJ Kalpathy-CramerK FarahaniJ Kirby. The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS). IEEE T Med Imaging (2015) 34(10):1993–2024. doi: 10.1109/Tmi.2014.2377694
+PMC483312225494501</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29</span> <a id="B29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id274"><!-- named anchor --></a>K ClarkB VendtK SmithJ FreymannJ KirbyP Koppel. The Cancer Imaging Archive (TCIA): Maintaining and Operating a Public Information Repository. J Digital Imaging (2013) 26(6):1045–57. doi: 10.1007/s10278-013-9622-7
+PMC382491523884657</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30</span> <a id="B30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id275"><!-- named anchor --></a>YW ParkYS ChoiSS AhnJH ChangSH KimSK Lee. Radiomics MRI Phenotyping With Machine Learning to Predict the Grade of Lower-Grade Gliomas: A Study Focused on Nonenhancing Tumors. Korean J Radiol (2019) 20(9):1381–9. doi: 10.3348/kjr.2018.0814
+PMC671556231464116</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31</span> <a id="B31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id276"><!-- named anchor --></a>M HedyehzadehSYD NezhadN Safdarian. Evaluation of Conventional Machine Learning Methods for Brain Tumour Type Classification. Cr Acad Bulg Sci (2020) 73(6):856–65. doi: 10.7546/Crabs.2020.06.14
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32</span> <a id="B32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id277"><!-- named anchor --></a>F Bashir GonbadiH Khotanlou. Glioma Brain Tumors Diagnosis and Classification in MR Images Based on Convolutional Neural Networks. 9th International Conference on Computer and Knowledge Engineering (Iccke 2019) (2019) 1–5. doi: 10.1109/ICCKE48569.2019.8965143
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33</span> <a id="B33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id278"><!-- named anchor --></a>FP PollySK ShilMA HossainA AymanYM Jang. Detection and Classification of HGG and LGG Brain Tumor Using Machine Learning. 32nd International Conference on Information Networking (Icoin), (2018) 813–7. doi: 10.1109/ICOIN.2018.8343231</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34</span> <a id="B34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id279"><!-- named anchor --></a>C De LoozeA BeausangJ CryanT LoftusPG BuckleyM Farrell. Machine Learning: A Useful Radiological Adjunct in Determination of a Newly Diagnosed Glioma's Grade and IDH Status. J Neuro-Oncol (2018) 139(2):491–9. doi: 10.1007/s11060-018-2895-4
+29770897</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35</span> <a id="B35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id280"><!-- named anchor --></a>MI SharifJP LiMA KhanMA Saleem. Active Deep Neural Network Features Selection for Segmentation and Recognition of Brain Tumors Using MRI Images. Pattern Recogn Lett (2020) 129:181–9. doi: 10.1016/j.patrec.2019.11.019
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36</span> <a id="B36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id281"><!-- named anchor --></a>KVA MuneerVR RajendranKP Joseph. Glioma Tumor Grade Identification Using Artificial Intelligent Techniques. J Med Syst (2019) 43(5). doi: ARTN 113 10.1007/s10916-019-1228-2
+10.1007/s10916-019-1228-230900029</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37</span> <a id="B37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id282"><!-- named anchor --></a>E DandilA Bicer. Automatic Grading of Brain Tumours Using LSTM Neural Networks on Magnetic Resonance Spectroscopy Signals. Iet Image Process(2020) 14(10):1967–79. doi: 10.1049/iet-ipr.2019.1416
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38</span> <a id="B38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id283"><!-- named anchor --></a>Q TianLF YanX ZhangX ZhangYC HuY Han. Radiomics Strategy for Glioma Grading Using Texture Features From Multiparametric MRI. J Magnetic Resonance Imaging (2018) 48(6):1518–28. doi: 10.1002/jmri.26010
+29573085</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39</span> <a id="B39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id284"><!-- named anchor --></a>CM LoYC ChenRC WengKLC Hsieh. Intelligent Glioma Grading Based on Deep Transfer Learning of MRI Radiomic Features. Appl Sci-Basel (2019) 9(22). doi: ARTN 4926 10.3390/app9224926
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40</span> <a id="B40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id285"><!-- named anchor --></a>R KumarA GuptaHS AroraGN PandianB Raman. CGHF: A Computational Decision Support System for Glioma Classification Using Hybrid Radiomics- and Stationary Wavelet-Based Features. IEEE Access(2020) 8:79440–58. doi: ARTN 4926 10.1109/Access.2020.2989193
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41</span> <a id="B41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id286"><!-- named anchor --></a>A DevosAW SimonettiM van der GraafL LukasJAK SuykensL Vanhamme. The Use of Multivariate MR Imaging Intensities Versus Metabolic Data From MR Spectroscopic Imaging for Brain Tumour Classification. J Magn Reson (2005) 173(2):218–28. doi: 10.1016/j.jmr.2004.12.007
+15780914</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42</span> <a id="B42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id287"><!-- named anchor --></a>C GeIY GuAS JakolaJ Yang. Deep Learning and Multi-Sensor Fusion for Glioma Classification Using Multistream 2d Convolutional Networks. Annu Int Conf IEEE Eng Med Biol Soc (2018) 2018:5894–7. doi: 10.1109/EMBC.2018.8513556
+30441677</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43</span> <a id="B43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id288"><!-- named anchor --></a>G ChoyO KhalilzadehM MichalskiS DoAE SamirOS Pianykh. Current Applications and Future Impact of Machine Learning in Radiology. Radiology (2018) 288(2):318–28. doi: 10.1148/radiol.2018171820
+PMC654262629944078</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44</span> <a id="B44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id289"><!-- named anchor --></a>DN LouisA PerryG ReifenbergerA von DeimlingD Figarella-BrangerWK Cavenee. The 2016 World Health Organization Classification of Tumors of the Central Nervous System: A Summary. Acta Neuropathol (2016) 131(6):803–20. doi: 10.1007/s00401-016-1545-1
+27157931</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45</span> <a id="B45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id290"><!-- named anchor --></a>DJ BratK AldapeH ColmanD Figrarella-BrangerGN FullerC Giannini. cIMPACT-NOW Update 5: Recommended Grading Criteria and Terminologies for IDH-Mutant Astrocytomas. Acta Neuropathol (2020) 139(3):603–8. doi: 10.1007/s00401-020-02127-9
+PMC844306231996992</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46</span> <a id="B46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id291"><!-- named anchor --></a>M WellerM van den BentM PreusserE Le RhunJC TonnG Minniti. EANO Guidelines on the Diagnosis and Treatment of Diffuse Gliomas of Adulthood. Nat Rev Clin Oncol (2021) 18(3):170–86. doi: 10.1038/s41571-020-00447-z
+PMC790451933293629</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47</span> <a id="B47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id292"><!-- named anchor --></a>I MaggioE FranceschiL GattoA TosoniV Di NunnoC Tonon. Radiomics, Mirnomics, and Radiomirrnomics in Glioblastoma: Defining Tumor Biology From Shadow to Light. Expert Rev Anticancer Ther (2021) 21:1265–72. doi: 10.1080/14737140.2021.1971518
+34433354</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48</span> <a id="B48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id293"><!-- named anchor --></a>PF WhitingAW RutjesME WestwoodS MallettJJ DeeksJB Reitsma. QUADAS-2: A Revised Tool for the Quality Assessment of Diagnostic Accuracy Studies. Ann Intern Med (2011) 155(8):529–36. doi: 10.7326/0003-4819-155-8-201110180-00009
+22007046</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49</span> <a id="B49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id294"><!-- named anchor --></a>J MonganL MoyCE Kahn Jr.Checklist for Artificial Intelligence in Medical Imaging (CLAIM): A Guide for Authors and Reviewers. Radiol Artif Intell (2020) 2(2):e200029. doi: 10.1148/ryai.2020200029
+33937821PMC8017414</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50</span> <a id="B50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id295"><!-- named anchor --></a>T SaitoM Rehmsmeier. The Precision-Recall Plot is More Informative Than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets. PloS One (2015) 10(3):e0118432. doi: 10.1371/journal.pone.0118432
+25738806PMC4349800</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51</span> <a id="B51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id296"><!-- named anchor --></a>WC KnowlerDJ PettittPJ SavagePH Bennett. Diabetes Incidence in Pima-Indians - Contributions of Obesity and Parental Diabetes. Am J Epidemiol (1981) 113(2):144–56. doi: 10.1093/oxfordjournals.aje.a113079
+7468572</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52</span> <a id="B52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id297"><!-- named anchor --></a>DC LiCW LiuSC Hu. A Learning Method for the Class Imbalance Problem With Medical Data Sets. Comput Biol Med (2010) 5):509–18. doi: 10.1016/j.compbiomed.2010.03.005
+20347072</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53</span> <a id="B53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id298"><!-- named anchor --></a>CX LingJ HuangH Zhang. AUC: A Better Measure Than Accuracy in Comparing Learning Algorithms. Lect Notes Artif Int (2003) 2671:329–41. doi: 10.1007/3-540-44886-1_25
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54</span> <a id="B54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id299"><!-- named anchor --></a>P CroninAM KellyD AltaeeB FoersterM PetrouBA Dwamena. How to Perform a Systematic Review and Meta-Analysis of Diagnostic Imaging Studies. Acad Radiol (2018) 25(5):573–93. doi: 10.1016/j.acra.2017.12.007
+29371119</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55</span> <a id="B55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id300"><!-- named anchor --></a>P MacaskillC GatsonisJJ DeeksRM HarbordY TakwoingiThe Cochrane Collaboration. Chapter 10: Analysing and Presenting Results. In: JJ DeeksPM BossuytC Gatsonis, editors. Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy Version 1.0Birmingham, UK: The Cochrane Collaboration (2010). Available at: <a target="xrefwindow" href="http://srdta.cochrane.org/" id="id301">http://srdta.cochrane.org/</a>.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>Oncology</p>
+<div class="metadata-area"><p class="metadata-entry"><span class="generated">Subject: </span>Systematic Review</p></div>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>deep learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>artificial intelligence</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>glioma</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>systematic review</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Counts: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Figures: </span>6</p>
+<p class="metadata-entry"><span class="generated">Tables: </span>2</p>
+<p class="metadata-entry"><span class="generated">Equations: </span>0</p>
+<p class="metadata-entry"><span class="generated">References: </span>55</p>
+<p class="metadata-entry"><span class="generated">Pages: </span>11</p>
+<p class="metadata-entry"><span class="generated">Words: </span>4768</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
