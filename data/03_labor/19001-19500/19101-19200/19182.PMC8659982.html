@@ -1,0 +1,1363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Manullang, Lin, Lai, Chou, Scalise, and Lepore: Implementation of Thermal Camera for Non-Contact Physiological Measurement: A Systematic Review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Sensors (Basel)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Sensors (Basel)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>1660</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>sensors</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101204366</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>sensors</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Sensors (Basel, Switzerland)</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1424-8220</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Multidisciplinary Digital Publishing Institute  (MDPI)</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="sensors-21-07777.pdf">sensors-21-07777.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2021 by the authors.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2021</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">https://creativecommons.org/licenses/by/4.0/</a>).</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>10 October 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>19 November 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>23 November 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>December 2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>21</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>23<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>395388<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>7777</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8659982</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8659982.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8659982</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8659982</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>34883780</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3390/s21237777</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>sensors-21-07777</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Implementation of Thermal Camera for Non-Contact Physiological Measurement: A Systematic Review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0002-7437-0851<span class="generated">] </span>Martin Clinton Tosima Manullang<span class="generated">[</span><a href="#af1-sensors-21-07777">1</a><span class="generated">]</span><span class="generated">[</span><a href="#af2-sensors-21-07777">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a><span class="generated">[</span>https://orcid.org/0000-0003-0630-7313<span class="generated">] </span>Yuan-Hsiang Lin<span class="generated">[</span><a href="#af1-sensors-21-07777">1</a><span class="generated">]</span><span class="generated">[</span><a href="#c1-sensors-21-07777">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Sheng-Jie Lai<span class="generated">[</span><a href="#af1-sensors-21-07777">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Nai-Kuan Chou<span class="generated">[</span><a href="#af3-sensors-21-07777">3</a><span class="generated">]</span><span class="generated">[</span><a href="#c1-sensors-21-07777">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Lorenzo Scalise</p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Academic Editor</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Maria Lepore</p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Academic Editor</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="af1-sensors-21-07777"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>Department of Electronic and Computer Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan; <a href="mailto:D10902809@mail.ntust.edu.tw">D10902809@mail.ntust.edu.tw</a> (M.C.T.M.); <a href="mailto:m10902137@ntust.edu.tw">m10902137@ntust.edu.tw</a> (S.-J.L.)</p>
+<p class="metadata-entry"><a id="af2-sensors-21-07777"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>Department of Informatics, Institut Teknologi Sumatera, South Lampung Regency 35365, Indonesia</p>
+<p class="metadata-entry"><a id="af3-sensors-21-07777"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>Department of Cardiovascular Surgery, National Taiwan University Hospital, Taipei 10002, Taiwan</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id9"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="c1-sensors-21-07777"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>*<span class="generated">] </span>Correspondence: <a href="mailto:linyh@mail.ntust.edu.tw">linyh@mail.ntust.edu.tw</a> (Y.-H.L.); <a href="mailto:nickchou@ntu.edu.tw">nickchou@ntu.edu.tw</a> (N.-K.C.)</p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id10">Non-contact physiological measurements based on image sensors have developed rapidly in recent years. Among them, thermal cameras have the advantage of measuring temperature in the environment without light and have potential to develop physiological measurement applications. Various studies have used thermal camera to measure the physiological signals such as respiratory rate, heart rate, and body temperature. In this paper, we provided a general overview of the existing studies by examining the physiological signals of measurement, the used platforms, the thermal camera models and specifications, the use of camera fusion, the image and signal processing step (including the algorithms and tools used), and the performance evaluation. The advantages and challenges of thermal camera-based physiological measurement were also discussed. Several suggestions and prospects such as healthcare applications, machine learning, multi-parameter, and image fusion, have been proposed to improve the physiological measurement of thermal camera in the future.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="sec1-sensors-21-07777"><!-- named anchor --></a><h2 class="main-title">1. Introduction</h2>
+<div class="section">
+<a id="sec1dot1-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">1.1. Research Motivation</h3>
+<p id="id11">The use of thermal cameras has become very widespread in recent years as it can be applied in various fields. Thermal cameras have the advantages of operating in an environment without light and not being affected by changes in light. There are existing studies illustrating that thermal camera can be used to monitor respiratory rate (RR), heart rate (HR), and body temperature, while other studies found its use in breast cancer diagnosis [<a href="#B1-sensors-21-07777">1</a>], evaluating physical condition [<a href="#B2-sensors-21-07777">2</a>], stress level [<a href="#B3-sensors-21-07777">3</a>], as well as the neonates’ health condition [<a href="#B4-sensors-21-07777">4</a>], sleep posture [<a href="#B5-sensors-21-07777">5</a>], and many more not mentioned here.</p>
+<p id="id12">Meanwhile, vital signs data, such as blood pressure, temperature, respiration rate, and heart rate, are critical for patient care and diagnosis. They enable physicians and other healthcare workers to make informed decisions about a patient’s treatment options and overall well-being. However, existing medical instruments still rely on physical touch from existing tools to gather data about patients’ health. Most techniques for determining respiration and heart rate include physical contact with the patients such as pulse oximeters, ECG (electrocardiogram), monitoring systems using electrodes, or piezoelectric sensors.</p>
+<p id="id13">During the SARS-CoV-2 19 pandemic, the whole world reduced the amount of direct contact drastically. People are reluctant to visit health and medical institutions due to fear of infection. Based on existing studies [<a href="#B6-sensors-21-07777">6</a>], there has been a change in medical services since the outbreak of SARS-CoV-2 19. Contactless services have been implemented during SARS-CoV-2 19, and will become commonplace [<a href="#B7-sensors-21-07777">7</a>] even after the pandemic. Several developments such as measuring RR and HR using the non-contact method with radar sensors [<a href="#B8-sensors-21-07777">8</a>], blood volume pulse and vasomotion measurements [<a href="#B9-sensors-21-07777">9</a>], using radio frequency, and the Doppler effect to monitor vital body objects [<a href="#B10-sensors-21-07777">10</a>] have been tested and researched.</p>
+<p id="id14">Body temperature is an excellent indication of a patient’s health [<a href="#B11-sensors-21-07777">11</a>]. Human body temperature can be categorized into two types: skin temperature and core body temperature. Skin temperature is the temperature of the outermost surface of the body. Average human skin temperature varies between 33.5 and 36.9 °C (92.3 and 98.4 °F) while healthy core body temperature falls within 37 °C (98 °F) and 37.8 °C (100 °F) [<a href="#B12-sensors-21-07777">12</a>]. According to a study [<a href="#B13-sensors-21-07777">13</a>], extreme body temperature can negatively affect how a human’s body and vital organs work. To compensate for this, the body has thermoregulation processes that enable it to maintain a standard core internal temperature.</p>
+<p id="id15">Non-contact systems can detect temperature through infrared thermography because it can detect electromagnetic waves produced by anything with a temperature greater than absolute zero Kelvin. This phenomenon is used for the development of thermal cameras. Thermal cameras measure temperature using infrared radiation from 1 to 14 µm spectral range [<a href="#B14-sensors-21-07777">14</a>,<a href="#B15-sensors-21-07777">15</a>]. This measurement procedure is known as infrared thermography (IRT). IRT is a non-invasive technique that remotely measures the energy emitted by an entity (i.e., human body, industrial machine, engine, and many more objects). IRT is applied as an indirect technique for capturing the changes in surface body temperature and can be used to measure other physiological signals [<a href="#B16-sensors-21-07777">16</a>]. However, the commonly used thermal camera for medical purpose is a long-wavelength infrared (LWIR) type with a 7–14 µm spectral range [<a href="#B17-sensors-21-07777">17</a>].</p>
+<p id="id16">According to research in United States by McKinsey between March and April 2020, a large migration to telemedicine occurred, coinciding with an over 80% drop in in-person visits. The use of telemedicine by physicians and healthcare organizations has also expanded by 50–175 times since the COVID-19 outbreak [<a href="#B18-sensors-21-07777">18</a>]. The increase in public demand for indirect healthcare during the pandemic led to the rapid development of non-contact healthcare practice and emphasized its importance. There is also a trend for non-contact measurement technology to replace the current conventional methods without any compromise on performance and accuracy. However, the use of thermal cameras to capture vital signs has its challenges in terms of image and signal processing. </p>
+</div>
+<div class="section">
+<a id="sec1dot2-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">1.2. Research Objective</h3>
+<p id="id17">This paper aims to systematically evaluate the use and development of thermal cameras in its application for measuring vital signs using preferred reporting items for systematic reviews and meta-analyses (PRISMA) to produce relevant papers from 2012 to 2021. More specifically, this paper will evaluate system capabilities, thermal camera types, signal processing steps, system platform, and highlight system performance along with the validation method. This systematic review contributes an evaluation of recent progress in non-contact physiological measurement with LWIR thermal camera that can be used as a basis for reference for other related research.</p>
+</div>
+<div class="section">
+<a id="sec1dot3-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">1.3. Comparison with Existing Reviews</h3>
+<p id="id18">Other previous systematic review papers that also discussed the applications of thermal cameras are listed in <a href="#sensors-21-07777-t001">Table 1</a>.</p>
+<p id="id19">There are some significant differences between this systematic review and the existing ones. These differences mean that this study has a novelty in review. The following studies [<a href="#B19-sensors-21-07777">19</a>,<a href="#B20-sensors-21-07777">20</a>] have similarities with this study regarding research objectives, but in these the coverage years are different. Some studies also have a scope that focuses on specific aspects such as sports [<a href="#B21-sensors-21-07777">21</a>], psychophysiological [<a href="#B22-sensors-21-07777">22</a>], breast cancer [<a href="#B1-sensors-21-07777">1</a>], neonatal [<a href="#B4-sensors-21-07777">4</a>], vein finder [<a href="#B24-sensors-21-07777">24</a>], and human core temperature [<a href="#B26-sensors-21-07777">26</a>]. Some studies have a broader scope; for example, the study conducted by He et al. [<a href="#B27-sensors-21-07777">27</a>] covered all aspects outside the health field.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec2-sensors-21-07777"><!-- named anchor --></a><h2 class="main-title">2. System Architecture in General</h2>
+<p id="id20">The image processing carried out by each study requires a platform on which the processing takes place. Most of the studies carried out signal processing on software such as python for a programming language and OpenCV as a library framework. Python is a multi-hardware programming language that runs on various hardware ranging from personal computers to mini-PC boards such as Jetson [<a href="#B28-sensors-21-07777">28</a>] and Raspberry Pi. OpenCV stands for Open-Source Computer Vision, a library that provides various kinds of image processing functions which can be used for real-time processing directly from the camera or by using pre-recorded image data.</p>
+<p id="id21">Although each study that uses a thermal camera for physiological measurement included in this systematic review is very diverse in various vital signs, the processing stages of each study can generally be summed up in one process flow that can be seen in <a href="#sensors-21-07777-f001">Figure 1</a>.</p>
+<div class="section">
+<a id="sec2dot1-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">2.1. Thermal Camera Model and Specification</h3>
+<p id="id22">The image process stage begins with the acquisition of a thermal image from a thermal camera. The resolution and the number of images that run in one second or what is known as frames per second (FPS) are essential in signal processing, primarily related to images. Several cameras are used more than once by the studies included in this systematic review, i.e., the A315 and A325 from Teledyne FLIR LLC and the MAG62 from Magnity Electronics Co., Ltd., Shanghai, China.</p>
+<p id="id23">There are several necessary specifications related to thermal cameras. In general, the cameras used in the included studies can record video from the lowest FPS of 8.7 FPS to 60 FPS in resolution between 160 × 120 pixels to 1024 × 768 pixels. FPS and resolution are closely related to the quality of the resulting signal [<a href="#B29-sensors-21-07777">29</a>,<a href="#B30-sensors-21-07777">30</a>]. FPS refers to the number of thermal image frames captured in one second. The more image frames obtained, the greater the variation of thermal information and its variability. Therefore, in this case, FPS can be interpreted as the sampling rate of a system. Likewise, the image’s dimensions also show the number of measurement points made by the thermal camera. The larger the image dimensions, the easier it will be for the system to detect region of interest (ROI). </p>
+<p id="id24">Apart from thermal image specifications, two variables are often shown regarding the performance of thermal cameras, i.e., temperature accuracy and thermal sensitivity. Temperature accuracy indicates how close a measurement from a thermal imager is to the actual absolute value. Meanwhile, thermal sensitivity refers to the noise equivalent temperature difference (NETD). This value specifies the most negligible temperature difference that the camera can detect.</p>
+<p id="id25">Some research shows that NETD is a critical aspect to show the performance of a thermal camera [<a href="#B31-sensors-21-07777">31</a>,<a href="#B32-sensors-21-07777">32</a>,<a href="#B33-sensors-21-07777">33</a>,<a href="#B34-sensors-21-07777">34</a>]. The value of NETD is also an essential variable in using low-cost thermal cameras for applications in the medical field. For example, a thermal camera with a NETD value of less than 50 mK is ideal for medical applications [<a href="#B35-sensors-21-07777">35</a>]. In studies related to the measurement of respiratory rate and heart rate, the value of the NETD becomes an essential aspect because the measurement of respiratory rate considers changes in temperature rather than the value of the temperature itself. Meanwhile, the study conducted by Pan et al. [<a href="#B36-sensors-21-07777">36</a>] made corrections to the value of body temperature readings with correction variables in measuring body temperature, while a study conducted by Rao et al. [<a href="#B37-sensors-21-07777">37</a>] developed an automatic temperature correction algorithm to calibrate the camera according to black body reference.</p>
+<p id="id26">The correction value from the thermal camera is obtained by calibrating it. This calibration process is performed using a radiometric calibration method, which establishes the relationship between the pixel signal and the temperature of the target object [<a href="#B38-sensors-21-07777">38</a>,<a href="#B39-sensors-21-07777">39</a>]. Calibrated thermal cameras minimize temperature readings that differ significantly from reference devices and become more reliable for medical applications.</p>
+<p id="id27">More complete details regarding the use of thermal cameras in each study are summarized in <a href="#sensors-21-07777-t002">Table 2</a>.</p>
+</div>
+<div class="section">
+<a id="sec2dot2-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">2.2. Image Pre-Processing and Feature Matching</h3>
+<p id="id28">The second stage is the pre-processing of the thermal image. Pre-processing is carried out on the entire frame of the image. During pre-processing, gaussian filter, changes in image dimensions or size, conversion of the number of FPS, altering color channels to grayscale, bitmap, or using pseudocolor can be applied.</p>
+<p id="id29">A feature matching stage is required for studies that use more than one camera or what is known as image fusion. The fusion cameras used are also varied. Some use a combination of near-infrared (NIR) and LWIR cameras [<a href="#B40-sensors-21-07777">40</a>,<a href="#B53-sensors-21-07777">53</a>], while the others use a combination of LWIR and RGB cameras [<a href="#B42-sensors-21-07777">42</a>,<a href="#B47-sensors-21-07777">47</a>,<a href="#B48-sensors-21-07777">48</a>,<a href="#B52-sensors-21-07777">52</a>]. Most studies combined the two images, generally thermal images and RGB images. The RGB image is used for ROI detection. The ROI coordinates in the RGB image are matched with the coordinates on the thermal camera. Determination of these coordinates has a diverse method, ranging from multispectral localization using the dlib algorithm [<a href="#B55-sensors-21-07777">55</a>,<a href="#B56-sensors-21-07777">56</a>], and pre-trained machine learning models. These points are then correlated with the thermal image. Some pre-processing may be required, such as frame per second synchronization and adjustment of the image’s dimensions (in general, the dimensions of thermal images are often smaller than RGB images). This cross-correlation process also has several algorithms, including affine transformation [<a href="#B57-sensors-21-07777">57</a>], the Oriented Fast and Rotated Brief feature [<a href="#B58-sensors-21-07777">58</a>,<a href="#B59-sensors-21-07777">59</a>], and others. This cross-correlation process will produce an equation matrix called a homography matrix (some studies call it a transformation matrix or correlation matrix). An illustrative simplification of this process can be seen in <a href="#sensors-21-07777-f002">Figure 2</a>.</p>
+</div>
+<div class="section">
+<a id="sec2dot3-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">2.3. Determining and Tracking of ROI</h3>
+<p id="id30">Determining the ROI in a dimensional image is an important stage in thermal camera image processing. There are several methods used by the studies selected in this systematic review. The first one that was used is called Viola-Jones framework [<a href="#B60-sensors-21-07777">60</a>]. Paul Viola and Michael Jones developed this framework using the haar feature, commonly used to detect facial parts. All studies by Negishi [<a href="#B42-sensors-21-07777">42</a>,<a href="#B47-sensors-21-07777">47</a>,<a href="#B48-sensors-21-07777">48</a>] included in this systematic review used Viola-Jones to determine ROI. However, Hu et al. [<a href="#B51-sensors-21-07777">51</a>] claimed that their ROI detection algorithm has better performance when compared to Viola-Jones, with 98.46% accuracy versus 87.69%. Chen et al. [<a href="#B52-sensors-21-07777">52</a>] also argue that Viola-Jones in OpenCV is always used to determine coarse faces’ locations but is not precise in respiratory rate measurement. Therefore, deep learning is used as a method to determine ROI.</p>
+<p id="id31">Movement between frames, especially when the camera is set at a low FPS, is often a problem in signal acquisition from the thermal camera. For this reason, optical flow is used to solve this problem. The study conducted by Lyra et al. [<a href="#B28-sensors-21-07777">28</a>] used optical flow to quantify the thermal image so that the subtle motion in the chest area is reduced for later extraction of the respiratory signal. Furthermore, the study conducted by Scebba et al. [<a href="#B40-sensors-21-07777">40</a>] used a dense optical flow algorithm developed by Farneback to reduce the periodic motion of the torso.</p>
+<p id="id32">Extracting signals from moving objects is a challenge, and therefore tracking methods are needed to overcome them, one of which is by using The Kanade-Lucas-Tomasi (KLT) algorithm, which is used by several studies [<a href="#B40-sensors-21-07777">40</a>,<a href="#B51-sensors-21-07777">51</a>,<a href="#B52-sensors-21-07777">52</a>]. This algorithm uses a linear coordinate mapping which determine the corresponding region in the thermal video. This tracker extracts feature points from ROI using the minimum eigenvalue algorithm and follows those points with a single point tracker.</p>
+</div>
+<div class="section">
+<a id="sec2dot4-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">2.4. Signal Extraction, Feature Extraction, and Classification</h3>
+<p id="id33">Signal extraction is an advanced stage that is carried out when the system has succeeded in identifying ROI and tracking ROI movements. Vital physiological signals are plotted in units of time known as time-series signals. The general method for extracting this signal is by comparing pixel-per-pixel motion in thermal images [<a href="#B61-sensors-21-07777">61</a>]. Not infrequently, the extracted signal requires post-processing in a filter until the signal results can characterize a change (signature). These changes contain data that must be extracted at the feature extraction stage. Some algorithms can be used for extracting the feature, i.e., peak detection [<a href="#B62-sensors-21-07777">62</a>,<a href="#B63-sensors-21-07777">63</a>], fuzzy rule [<a href="#B64-sensors-21-07777">64</a>], one dimensional CNN [<a href="#B65-sensors-21-07777">65</a>], power spectral density [<a href="#B66-sensors-21-07777">66</a>], and various other methods. There is also a python toolkit for quickly extracting the feature [<a href="#B67-sensors-21-07777">67</a>] in a python package library. </p>
+<p id="id34">The results of this feature extraction will show a value that can be drawn into the system’s output. In some studies, this output cannot be easily interpreted. Using machine learning or deep learning [<a href="#B43-sensors-21-07777">43</a>,<a href="#B45-sensors-21-07777">45</a>], a classification of the signals generated by the previous stages is carried out based on the model trained beforehand. This output is a form of classification that users can easily interpret. Each input will be directed to two or more outputs, either anomaly detection or multi-class output, using classification and machine learning.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec3-sensors-21-07777"><!-- named anchor --></a><h2 class="main-title">3. Thermal Camera for Physiological Measurement</h2>
+<p id="id35">This systematic review reviews the use of thermal cameras for physiological measurements which will be broken down into three subsections, including respiratory rate, heart rate, and body temperature.</p>
+<div class="section">
+<a id="sec3dot1-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">3.1. Respiratory Rate</h3>
+<div class="section">
+<a id="sec3dot1dot1-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">3.1.1. Overview of Respiratory Rate Measurement</h4>
+<p id="id36">Monitoring RR and related variations are critical for determining an individual’s health status [<a href="#B68-sensors-21-07777">68</a>]. Moreover, research [<a href="#B69-sensors-21-07777">69</a>] states that the RR can be used as one of the most efficient indicators to determine whether a person is healthy. Anomalous RR is critical for detecting significant health problems and can also be used to forecast potentially serious clinical outcomes such as influenza classification [<a href="#B42-sensors-21-07777">42</a>], lung airflow limitation [<a href="#B70-sensors-21-07777">70</a>], and sleep apnea screening. Additionally, monitoring variations in RR can assist in identifying a high-risk intensive care patient up to 24-h before a medical emergency.</p>
+<p id="id37">RR is defined clinically as the times of respiration recorded within a minute (in breaths per minute, or bpm). In general, the RR is normal if it is 12–20 bpm for adult humans. A study [<a href="#B71-sensors-21-07777">71</a>] shows that a slight increase of breaths per minute to 24–28 correlates to an increased risk of mortality by 5%. During the COVID-19 pandemic, RR counting is essential. RR is also a vital sign that determines the severity of SARS-CoV-2 19 infection [<a href="#B72-sensors-21-07777">72</a>]. This viral outbreak has caused many ICUs to be at full capacity and high bed occupancy rates throughout the world. Medical equipment, including instruments for measuring vital signs, is insufficient in some countries [<a href="#B73-sensors-21-07777">73</a>]. The thermal camera is undoubtedly one potential solution for developing a RR counter that works without direct contact.</p>
+<p id="id38">While RR is a significant clinical predictor of severe events, it is often measured manually, yielding erroneous findings. RR was often not regularly recorded, even when the patient’s main complaint was a respiratory illness [<a href="#B68-sensors-21-07777">68</a>].</p>
+<p id="id39">There are several well-known methods used for RR monitoring [<a href="#B68-sensors-21-07777">68</a>]. The first is by using a manual human counting method. However, it might be inaccurate and time-consuming. The second is using a spirometer. This method is considered accurate and also measures some other respiratory parameters. However, it can interfere with natural breathing and difficult for continuous RR monitoring. The third approach employs capnometry, a highly accurate, simple, and measured continuous monitoring technique. This is a contact approach that is not particularly pleasant and requires analysis using specialized equipment. The last approach is impedance pneumography, which is precise, continuous, and concurrent. However, this procedure is challenging to conduct and requires specialized tools for analysis.</p>
+<p id="id40">In addition to standard medical measurements used as a reference in hospitals, there are also several affordable, contact-based methods to measure RR, such as using a nasal temperature probe near the nostril [<a href="#B74-sensors-21-07777">74</a>] or using a microphone located near the nostril that records the inhale-exhale sound noise [<a href="#B75-sensors-21-07777">75</a>]. The primary drawbacks of these methods stem from their intrusive nature: they may be unpleasant and potentially disruptive to sleep which may alter the results. Additionally, patient movement and any other signal noise may dislodge the sensors or skew the data.</p>
+<p id="id41">Noninvasive methods for detecting breathing include non-contact audio analysis, vibration sensors, thermal imaging, and doppler radar sensors. The extraction of breathing sounds from sensor data polluted by ambient noise is significant for non-contact audio analysis. Vibration sensors impose positional and postural limitations and need the use of costly specialized hardware. By detecting the breath as it is exhaled, thermal imaging methods were utilized to record a breathing signal. Thermal imaging can be achieved using a thermal camera. One of the advantages of a thermal camera is that it can be used indirectly and reliably without affecting the light intensity, and can be used in a completely dark room. In general, the challenge in using a thermal camera is processing thermal images and extracting features from these images.</p>
+</div>
+<div class="section">
+<a id="sec3dot1dot2-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">3.1.2. Summary of Thermal Camera Usage Related to Respiratory</h4>
+<p id="id42">Next, <a href="#sensors-21-07777-t003">Table 3</a> summarizes all the characteristics of the studies with respiration as the main objective that were used in this systematic review.</p>
+</div>
+<div class="section">
+<a id="sec3dot1dot3-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">3.1.3. Deep Learning for RR Monitoring</h4>
+<p id="id43">Several studies use deep learning to classify the breathing pattern and to determine the ROI from the image. There are some deep learning algorithms used in the research list above, CSPDarknet [<a href="#B28-sensors-21-07777">28</a>], FlowNet 2.0 [<a href="#B76-sensors-21-07777">76</a>] (algorithm based on deep networks), k-nearest neighbors (k-NN) [<a href="#B43-sensors-21-07777">43</a>,<a href="#B45-sensors-21-07777">45</a>], and cascade convolutional neural network (CCNN) [<a href="#B40-sensors-21-07777">40</a>].</p>
+<p id="id44">CSPDarknet is the backbone running on YOLOv4. Lyra et al., in their research [<a href="#B28-sensors-21-07777">28</a>], used it to determine four classes that would be used as ROI, namely head, chest, patient, and clinician. Head ROI is used to measure body temperature, chest ROI is used for RR estimation, and clinician ROI is used to count the number of clinicians near the patient. After the chest ROI was determined, respiratory movement was tracked using a pixel-wise temporal mean algorithm by comparing movement between frames. The use of the neural network to determine five facial landmarks were also used by Scebba et al. [<a href="#B40-sensors-21-07777">40</a>] by utilizing CCNN on NIR images.</p>
+<p id="id45">Meanwhile, Jagadev et al., in both of their studies [<a href="#B43-sensors-21-07777">43</a>,<a href="#B45-sensors-21-07777">45</a>], used k-NN to decide whether the human volunteer had normal or abnormal respiration. Previously, the breath detection algorithm (BDA), which they also developed, was used to extract respiratory movements. In simple terms, BDA calculates the number of peaks and valleys based on the specified ROI movement from the nostrils. Finally, the output of this BDA is forwarded to the k-NN to classify between normal breathing, bradypnea, or tachypnea (abnormal). The output of this system is compared with the Support-Vector Machine (SVM) method to determine the accuracy achieved.</p>
+</div>
+<div class="section">
+<a id="sec3dot1dot4-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">3.1.4. Camera Sensor Fusion: Usability and Image Fusion Method</h4>
+<p id="id46">Several studies on the list combined the two types of cameras with different measurements related to respiratory. Most of them use a combination of a LWIR thermal camera with a CMOS RGB camera or a color camera that we commonly find on smartphones, webcams, or point-and-shoot cameras. The merging of these two cameras aims to gain the advantages of each camera and eliminate the weaknesses of each camera. Meanwhile, light significantly affects RGB cameras, and this type of camera cannot be used in low or no light conditions. In contrast, thermal cameras can capture objects even in light conditions because they work using the principle of radiation emitted by objects. <a href="#sensors-21-07777-t004">Table 4</a> summarizes each study involving fusion cameras and their characteristics.</p>
+<p id="id47">The following spectral video fusion study [<a href="#B40-sensors-21-07777">40</a>] combines two types of thermal cameras, which are NIR and LWIR cameras. Scebba et al. initiated a new algorithm to calculate the RR based on multispectral data fusion from the two cameras. The multispectral ROI localization analyzes footage from LWIR and NIR cameras. The localized ROIs extract the Thermal Airflow (TA) signal from the nose ROI and the respiratory motion signal from the chest ROIs in the LWIR and NIR cameras. The RR and signal to noise ratio (SNR) are calculated in the Signal Quality-based fusion (SQb Fusion) using the TA’s frequency analysis and respiratory motion signal both from the LWIR camera and the NIR camera. The weighted median generates an RR estimation by combining all RR estimations and weighting them by their SNR. Temporal aspects and frequency characteristics of TA, respiratory motion from NIR and LWIR cameras are used as input to the ensemble of support-vector-machine to determine whether apnea occurs or not. The intelligent signal quality-based fusion (S<sup>2</sup>Fusion) algorithm combines the findings of the SQb Fusion with the apnea classifier (h) to produce an apnea-sensitive signal.</p>
+<p id="id48">There is also the use of two different cameras to measure two different physiological quantities. Negishi et al. used the same two cameras configuration in all three studies [<a href="#B42-sensors-21-07777">42</a>,<a href="#B47-sensors-21-07777">47</a>,<a href="#B48-sensors-21-07777">48</a>]. LWIR camera is used to measure RR while RGB camera is used to measure HR. Image fusion determines ROI based on RGB images rather than thermal images. To determine the ROI of the nose and mouth, a feature matching analysis was performed with a homography matrix between RGB and thermal images based on the contours of the human face. Grabcut is used for facial contour extraction, while oriented-fast and rotated brief (ORB) algorithm is used for feature matching and dlib for determining the region of nose and mouth. All these algorithms and tools are available as libraries in OpenCV.</p>
+<p id="id49">Almost the same as before, Hu et al., in their studies [<a href="#B51-sensors-21-07777">51</a>], also use camera fusion to make the determination of ROI while facial objects was detected using the RGB camera. To record thermal and visual images, an affine transformation is needed. The first step is to pick the most correlated points in the first frame of bimodal movies to determine the thermal image’s fixed point and RGB image’s image points. Following that, cross-correlation is used to modify these points in order to produce the transformation matrix. After mapping between the RGB image and the thermal image, the bounding box is determined for the ROI object (the face, nose, and mouth) by using the Viola-Jones algorithm. The shi-Tomasi corner detection algorithm is used to help extract the interest points to calculate the covariance matrix, while the KLT algorithm is used to track ROI on movement.</p>
+<p id="id50">As before, the use of RGB camera for face detection is also used by Chen et al. [<a href="#B52-sensors-21-07777">52</a>]. They provide an alternative method to measuring RR if no face is detected by tracking the sticky markers that placed on the body. Meanwhile, to combine RGB and thermal images, they use affine transformation to transform two different geometric shapes. The Viola-Jones algorithm is used to detect faces, while the KLT algorithm is used for tracking the ROI.</p>
+</div>
+<div class="section">
+<a id="sec3dot1dot5-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">3.1.5. RR Signal Extraction Process</h4>
+<p id="id51">A thermal image only has a single information channel that is a temperature representation converted into an image matrix. It is by utilizing this only information that a respiratory signal can be generated. In general, as shown in <a href="#sensors-21-07777-f003">Figure 3</a>, two changes can be observed: the first is a change in the temperature value and the second is a change in movement. Each of these characters will be explored by each study based on the methods and algorithms they use, respectively.</p>
+<p id="id52">The study [<a href="#B44-sensors-21-07777">44</a>] conducted by Mutlu et al. used the temperature change around the nostril to indicate respiration. After defining the ROI and excluding non-varying pixels, the decreasing segments are identified using experimentally established criteria for a minimal frame-to-frame decline. If a single frame exists between two possible decrease segments, they are combined. The process of identifying temperature changes at the pixel level by comparing frame per frame was also used in other studies.</p>
+<p id="id53">Another way of extracting the RR signal is to consider the movement of pixels between frames without making the nose or mouth the ROI. This method was used in the following study [<a href="#B54-sensors-21-07777">54</a>] and is more reliable when used in real time and with patients in the frame using a blanket or in a position not facing the camera. Breathing motion detection uses a subtraction technique in the background to identify motion by computing the difference between the current and previous frames. To be precise, the absolute difference between the current frame <span class="inline-formula"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="mm1" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi><mml:mo>,</mml:mo><mml:mi>f</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></span> and the previous frame <span class="inline-formula"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="mm2" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi><mml:mo>,</mml:mo><mml:mi>f</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></span> is computed for all pixels where <span class="inline-formula"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="mm3" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow></mml:mrow></mml:math></span> are the coordinates of x and y axis respectively, and f is the frame sequence. Then, employing thresholding, erosion, and dilation procedures, parts of the relocated region are removed. The parameters utilized in these procedures are 5 for thresholding, which ensures that the difference between the pixel values is smaller than 5, and 5 × 5 kernel for opening (i.e., erosion and dilation). Following that, boundary boxes are determined using contour detection and noise filtering. Finally, the RR is determined by the number of bounding boxes. The concept of comparing each pixel movement between frames per frame is also used by other studies [<a href="#B77-sensors-21-07777">77</a>].</p>
+<p id="id54">Negishi et al., in three of their studies [<a href="#B42-sensors-21-07777">42</a>,<a href="#B47-sensors-21-07777">47</a>,<a href="#B48-sensors-21-07777">48</a>], use multiple signal classification (MUSIC) algorithms to calculate RR estimates. This algorithm is also proven to be more accurate than FFT in time series data with a shorter window. By using this algorithm, the correlation matrix from the time series data is calculated, and the eigenvectors are obtained.</p>
+</div>
+<div class="section">
+<a id="sec3dot1dot6-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">3.1.6. Performance Validation Method on RR</h4>
+<p id="id55">Testing on RR is carried out by comparing the system output with reference equipment such as apnea monitors, sleep diagnostic equipment, respiratory belts, and other respiratory rate measuring devices. For example, in this study [<a href="#B52-sensors-21-07777">52</a>], GY-6620 (South China Medical and Electrical Technology Co., Ltd., Zhengzhou, China) was used as a comparison. GY-6620 is the equipment used in polysomnography or sleep tests and it can provide output records of body activity during sleep, including RR. In another study [<a href="#B50-sensors-21-07777">50</a>], the SOMNOlab2 tool (Weinman GmbH, Hamburg, Germany) was used as the reference. The device is a measuring device for body activity that records thoracic movements based on piezo plethysmography. In his three studies [<a href="#B42-sensors-21-07777">42</a>,<a href="#B47-sensors-21-07777">47</a>,<a href="#B48-sensors-21-07777">48</a>], Negishi also used the same validation system, namely the respiratory effort belt. However, the model of the tool is only listed in one of their studies [<a href="#B48-sensors-21-07777">48</a>], namely DL-231 (S&amp;ME, Tokyo, Japan). A similar force sensor-based respiratory belt was also used by another study [<a href="#B54-sensors-21-07777">54</a>], the Go Direct Respiration Belt model. This belt is set to record ten respiration samples per second for 5400 s. This study [<a href="#B44-sensors-21-07777">44</a>] also uses a respiratory belt to obtain the reference value. Unfortunately, not all studies compare the results with standard medical equipment; others use statistical calculations as a performance test method, such as scatter plots, bland-Altman plots, or other statistical calculations.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec3dot2-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">3.2. Heart Rate</h3>
+<p id="id56">Studies that use thermal cameras to measure heart rate tend to be less popular than those measuring respiratory rate. Many researchers use RGB cameras rather than thermal cameras for heart rate measurement. The heart rate measurement with the RGB camera utilizes changes in skin color that can be observed in one of the three color channels in the RGB image. While in thermal cameras, discriminant characteristics can be obtained based on the two most popular methods: using the blood perfusion temperature changes from a particular pixel [<a href="#B49-sensors-21-07777">49</a>,<a href="#B78-sensors-21-07777">78</a>,<a href="#B79-sensors-21-07777">79</a>] or by analyzing the head movement based on Balistocardiography (BCG) [<a href="#B80-sensors-21-07777">80</a>,<a href="#B81-sensors-21-07777">81</a>].</p>
+<p id="id57">Similar to the respiratory rate process, obtaining a heart rate signal from a thermal camera begins with capturing the images, pre-processing the image, detecting the ROI, and tracking the ROI so the ROI will be more stable to movement.</p>
+<p id="id58">Some studies describe the camera specification they use for the research. For example, Bennet et al. [<a href="#B79-sensors-21-07777">79</a>] use a FLIR-A camera with 640 × 480 pixels and 60 FPS framerate. On the other hand, Kim et al. [<a href="#B49-sensors-21-07777">49</a>] use a FLIR T430sc camera with 320 × 240 pixels and 12 FPS framerate. Unfortunately, Gault et al. [<a href="#B78-sensors-21-07777">78</a>] use pre-recorded thermal video with ten subjects without further detail about the camera specification.</p>
+<p id="id59">For studies that are using temperature changes methods, they select some regions such as the highest blood vessel temperature region on the skin [<a href="#B49-sensors-21-07777">49</a>,<a href="#B78-sensors-21-07777">78</a>] or chest [<a href="#B79-sensors-21-07777">79</a>] as the ROI. In other parts, for the head movement-based method, they use the entire head as an ROI and track its movement [<a href="#B80-sensors-21-07777">80</a>,<a href="#B81-sensors-21-07777">81</a>].</p>
+<p id="id60">Some studies reported that the noise was very high on the unprocessed signal and the discriminant characteristics are almost imperceptible. Various and multiple filters were applied to enhance the signal quality and its characteristics. For example, Kim et al. [<a href="#B49-sensors-21-07777">49</a>] converted the time-series signals into the frequency domain using Fourier transform, while some others [<a href="#B79-sensors-21-07777">79</a>,<a href="#B80-sensors-21-07777">80</a>,<a href="#B81-sensors-21-07777">81</a>] put a bandpass filter to extract the heartbeat signals and count the heart rate.</p>
+<p id="id61">For studies that rely on the head movement method, they use almost identical processing steps. Both Li et al. [<a href="#B80-sensors-21-07777">80</a>] and Balakrishnan et al. [<a href="#B81-sensors-21-07777">81</a>] applied temporal filtering for the signal obtained from the head movement trajectories. Then they use principal component analysis (PCA) to obtain the periodic signal caused by the heartbeat. Finally, peak detection is used to help determine the heart rate.</p>
+<p id="id62">Each study shows promising results by obtaining identical value compared to the reference ground truth, i.e., Kim et al. [<a href="#B49-sensors-21-07777">49</a>] obtained an average accuracy of 95.48%, Gault et al. [<a href="#B78-sensors-21-07777">78</a>] reached 90% accuracy, Li et al. [<a href="#B80-sensors-21-07777">80</a>] had a mean error of 2.7%, and finally, Balakrishnan et al. [<a href="#B81-sensors-21-07777">81</a>] achieve mean error of 1.5%. These results were achieved by comparing them to a contact-based device such as a pulse sensor and ECG. Unfortunately, there is no detailed information regarding the reference equipment model or specification.</p>
+</div>
+<div class="section">
+<a id="sec3dot3-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">3.3. Body Temperature</h3>
+<p id="id63">In most cases, the body temperature is measured using the LWIR type thermal camera. For example, Pan et al. [<a href="#B36-sensors-21-07777">36</a>]. used the P384-20 thermal camera, Rao et al. [<a href="#B37-sensors-21-07777">37</a>] used the Mobotix 16TR camera consisting of RGB and LWIR thermal camera, while Lewicki et al. [<a href="#B41-sensors-21-07777">41</a>] used the FLIR Lepton 3.5.</p>
+<p id="id64">There are some steps to process the image and calculate the body temperature value. The process starts from obtaining the image from the thermal camera, followed by determining the ROI. In this case, some studies [<a href="#B37-sensors-21-07777">37</a>,<a href="#B41-sensors-21-07777">41</a>] used a combination of RGB and thermal cameras and needed a calibration process between two images. This RGB camera objective is to obtain enough information about the facial landmark and help select the ROI. Rao et al. [<a href="#B37-sensors-21-07777">37</a>] also implemented some advanced algorithms in their system, such as a prioritization algorithm to decide which person should be measured and background removal to separate person object and background environment. In terms of tracking, Rao et al. [<a href="#B37-sensors-21-07777">37</a>] used a neural network-based head tracker while another study [<a href="#B36-sensors-21-07777">36</a>] used an elliptical head tracking method.</p>
+<p id="id65">Matching the two images from RGB cameras and thermal cameras also requires a series of processes. Instead of using Affine Transformation, Lewicki et al. [<a href="#B41-sensors-21-07777">41</a>] use coarse-grained field of view method, while Rao et al. [<a href="#B37-sensors-21-07777">37</a>] use manual offset approach and dynamic frame alignment.</p>
+<p id="id66">Some authors also mentioned challenges related to accuracy. Rao et al. [<a href="#B37-sensors-21-07777">37</a>] implemented the temperature correction algorithm to compensate the temperature with the distance using a regression and multi-layer perceptron. The camera also needs to be calibrated in order to achieve a minimum error [<a href="#B82-sensors-21-07777">82</a>].</p>
+<p id="id67">Each study has its procedure to get the body temperature value. For example, Pan et al. [<a href="#B36-sensors-21-07777">36</a>] determine the body temperature by measuring the highest temperature value from every point on the face. In comparison, Rao et al. [<a href="#B37-sensors-21-07777">37</a>] set some algorithms to prioritize the region of eyes and forehead followed by face and head. In contrast, Lewicki et al. [<a href="#B41-sensors-21-07777">41</a>] use the average value of each point on the face as the body temperature.</p>
+<p id="id68">The eye’s inner canthus or medial canthus is known as the most accurate region of the face for measuring body temperature [<a href="#B83-sensors-21-07777">83</a>,<a href="#B84-sensors-21-07777">84</a>]. This region has a temperature that is almost identical to the eardrum temperature [<a href="#B85-sensors-21-07777">85</a>,<a href="#B86-sensors-21-07777">86</a>]. This region also has a similar temperature compared with the rectum, which has been the most identified as a reference for inner core body temperature [<a href="#B87-sensors-21-07777">87</a>]. However, because the selection of the inner eye canthus ROI in thermal images is quite challenging and requires an advanced method (for example, with machine learning or cross correlation [<a href="#B88-sensors-21-07777">88</a>]), several studies [<a href="#B87-sensors-21-07777">87</a>,<a href="#B89-sensors-21-07777">89</a>] have chosen the highest temperature value on the face or forehead as the body temperature which is also quite accurate.</p>
+<p id="id69">Several methods were used to validate the system result by comparing it with the reference. Rao et al. [<a href="#B37-sensors-21-07777">37</a>], in their studies, used the black body measured temperature as the ground truth and obtained 100% sensitivity and 96.9% specificity from 105 people as the subject. On the other hand, Pan et al. [<a href="#B36-sensors-21-07777">36</a>] used an infrared ear thermometer as a reference and achieved a CAND value above 0.9.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec4-sensors-21-07777"><!-- named anchor --></a><h2 class="main-title">4. Discussion</h2>
+<p id="id70">This systematic review provides an overview of studies that use thermal cameras to measure and monitor aspects of vital signs in the human body. This discussion section will present the advantages, disadvantages, challenges, and future trends and works.</p>
+<div class="section">
+<a id="sec4dot1-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">4.1. Advantages of Thermal Camera-Based Physiological Measurement</h3>
+<p id="id71">A thermal camera can be used to measure several parameters such as RR, HR, and body temperature. Thus, it has the potential to be used in non-invasive, continuous measurements such as in neonatal ICU monitoring, long-term monitoring, fitness applications, and health screening. Moreover, during the COVID-19 pandemic, non-contact body temperature measurement methods promise hygiene. Mainly, it could be implemented as non-contact physiological measurement. Moreover, the thermal camera is able to operate in low light conditions. Therefore, using the thermal camera-based non-contact method offers more flexibility and convenience for the patient.</p>
+<p id="id72">Since thermal camera overcomes the drawbacks of contact-based sensors, some clinical applications are using this method. For instance, it can provide continuous monitoring for neonates [<a href="#B4-sensors-21-07777">4</a>], classifying affective states [<a href="#B90-sensors-21-07777">90</a>], and monitoring exercise [<a href="#B91-sensors-21-07777">91</a>]. The thermal camera method is also effective for sleep monitoring [<a href="#B54-sensors-21-07777">54</a>] and estimating the movement during sleeping [<a href="#B5-sensors-21-07777">5</a>]. In addition, there are also some other implementations such as human thermal comfort modeling [<a href="#B92-sensors-21-07777">92</a>], lie detector [<a href="#B93-sensors-21-07777">93</a>,<a href="#B94-sensors-21-07777">94</a>], mood and stress-related disorders [<a href="#B95-sensors-21-07777">95</a>], sober and drunk classification [<a href="#B96-sensors-21-07777">96</a>], and many more.</p>
+</div>
+<div class="section">
+<a id="sec4dot2-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">4.2. Challenges of Thermal Camera-Based Physiological Measurement</h3>
+<p id="id73">A significant challenge of using a non-contact method that depends on the camera is that it is very susceptible to movement—both the motion of objects in the frame and the movement of the camera itself. Research in ROI tracking is needed to overcome this shortcoming. Additionally, separating partially obscured individuals or objects of the same temperature in thermal pictures can be challenging, as their pixels have the same intensity [<a href="#B97-sensors-21-07777">97</a>]. In these cases, including depth information or color edges can aid in disambiguation.</p>
+<p id="id74">Related to the applicability, there is a concern for non-contact measurement using a thermal camera when faced with the current standard medical method in terms of accuracy and reliability. Although the accuracy of the prototype in this systematic review shows good results, it is not enough to exceed the performance of existing medical standard equipment. This happens because the systems developed in these studies have not been tested in actual health care conditions. Moreover, it has not been standardized or medically certified. Therefore, measurement involving several possibilities in real-case scenarios is an important direction to take. Several studies emphasize the importance of further clinical trials to ensure the reliability of the developed systems. The tests carried out need to combine several test scenarios to test the reliability of the system in measuring RR, for example, the use of various kinds of bed covers or blankets [<a href="#B54-sensors-21-07777">54</a>], the involvement of various patient demographics [<a href="#B40-sensors-21-07777">40</a>], and further clinical trials in the health institution such as hospital or clinic.</p>
+</div>
+<div class="section">
+<a id="sec4dot3-sensors-21-07777"><!-- named anchor --></a><h3 class="section-title">4.3. Future Trends and Works</h3>
+<p id="id75">Several suggestions and prospects need to be considered to improve the future of thermal cameras for physiological signal measurements.</p>
+<div class="section">
+<a id="sec4dot3dot1-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">4.3.1. Healthcare Applications</h4>
+<p id="id76">In healthcare, the telemedicine revolution shifts illness prediction, prevention, and treatment from a hospital-centered reactive paradigm to a person-centered one. Driven by the COVID-19 pandemic and a growing need for home healthcare, telemedicine trends have the potential to transform and enhance healthcare delivery and accessibility. Non-contact physiological signal monitoring is a significant development that supports current telemedicine technology [<a href="#B98-sensors-21-07777">98</a>], including using thermal cameras as part of non-contact monitoring. Thermal cameras also provide a hygienic aspect for users where there are no components attached to the body to minimize contact between users.</p>
+<p id="id77">For the popularization of health care, another critical challenge is related to low-cost implementation. Meanwhile, most of the studies in this systematic review have not explained development costs in detail. Research related to low-cost development is essential because the cost aspect is considered in implementing medical devices in developing countries [<a href="#B99-sensors-21-07777">99</a>,<a href="#B100-sensors-21-07777">100</a>].</p>
+</div>
+<div class="section">
+<a id="sec4dot3dot2-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">4.3.2. Machine Learning</h4>
+<p id="id78">Machine learning can be used as an enhancement to thermal images. As discussed in the previous section, a thermal camera generally has a small resolution. The resulting image can be enhanced to have a higher resolution by using the Thermal Image Enhancement method using convolutional neural network (TEN-CNN) [<a href="#B101-sensors-21-07777">101</a>]. Furthermore, the challenge in using machine learning is increasing the variety of datasets used to improve inference engine capabilities and accuracy. This is also expressed by Lyra et al. in their study [<a href="#B28-sensors-21-07777">28</a>]. The YOLOv4 they use relies on large-scale datasets to enhance their inference engine abilities. Improvements to this dataset also need to consider aspects of data variation for various races, ages, genders, weight and height, and other aspects.</p>
+</div>
+<div class="section">
+<a id="sec4dot3dot3-sensors-21-07777"><!-- named anchor --></a><h4 class="subsection-title">4.3.3. Multi-Parameter and Data Fusion</h4>
+<p id="id79">Multi-parameter measurement could be future work for the thermal camera-based physiological measurement system. Simplifying the measurement of several parameters will benefit patients using this system, especially multi-parameters on vital signs such as body temperature, blood pressure, heart rate, and respiratory rate. One study [<a href="#B102-sensors-21-07777">102</a>] that evaluated a multi-parameter wireless wearable sensor to monitor vital signs showed excellent and effective results. However, not many similar systems are accommodated in a non-invasive method.</p>
+<p id="id80">Multi-parameter focuses on various parameters being measured. In contrast, data fusion is an aspect that combines several input data into the same process to achieve an output from a system. In this systematic review, there are several studies [<a href="#B40-sensors-21-07777">40</a>,<a href="#B42-sensors-21-07777">42</a>,<a href="#B47-sensors-21-07777">47</a>] that use data fusion in the form of combining several types of cameras. The aim and benefit of combining various sensors and data are to eliminate each sensor’ or method’s disadvantages and take advantage of every sensor. Further observation related to the combination of various sensors should be addressed to achieve better signal measurement.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="sec5-sensors-21-07777"><!-- named anchor --></a><h2 class="main-title">5. Conclusions</h2>
+<p id="id81">In this paper, we have reviewed the existing literatures regarding thermal cameras to measure the human body’s respiratory rate, heart rate, and body temperature. The general process stages in processing thermal images for physiological signal measurements are discussed, compared, and evaluated to find advantages and challenges. The advantages of using a thermal camera in measuring physiological signals include comfort and convenience for the patient due to its non-invasive aspects, hygiene, and the ability to capture images in low light conditions. On the contrary, the challenges include how to reduce motion artifact and increase the accuracy and reliability of the physiological signal measurement system.</p>
+<p id="id82">This systematic review contributes a comprehensive overview by providing highlights of current methodological concerns related to using the thermal camera to measure physiological signal. Furthermore, this systematic review can be used as an initial reference for researchers to identify the existing research gap. In addition, we also provide several future development directions, including integrating multi-parameter systems to improve functionality, using data fusion and machine learning technology to improve measurement accuracy and reliability, and developing low-cost thermal imaging applications to increase penetration.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id85"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id83"><!-- named anchor --></a><p id="id84"><span class="generated">[1]</span> <b>Publisher’s Note:</b> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id87"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id86">Conceptualization: M.C.T.M. and Y.-H.L.; studies screening: M.C.T.M. and S.-J.L.; original draft preparation: M.C.T.M., Y.-H.L. and S.-J.L.; contextual review: Y.-H.L. and N.-K.C.; proofreading: S.-J.L., Y.-H.L. and N.-K.C.; editing: M.C.T.M., Y.-H.L. and N.-K.C. All authors have read and agreed to the published version of the manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id89"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id88">This work was supported in part by a research grant from the Ministry of Science and Technology, Taiwan for academic research under Grant MOST 109-2637-E-011-002- and Grant MOST 110-2221-E-011-123-, and financially supported by the Taiwan Building Technology Center from The Featured Areas Research Center Program within the framework of the Higher Education Sprout Project by the Ministry of Education in Taiwan.</p>
+</div>
+<div class="back-section">
+<a id="id91"><!-- named anchor --></a><h2 class="main-title">Data Availability Statement</h2>
+<p id="id90">The data used in this review are from published primary studies available in the public domain.</p>
+</div>
+<div class="back-section">
+<a id="id93"><!-- named anchor --></a><h2 class="main-title">Conflicts of Interest</h2>
+<p id="id92">The authors declare no conflict of interest.</p>
+</div>
+<div class="back-section">
+<a id="id94"><!-- named anchor --></a><div class="section ref-list">
+<a id="id94"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="B1-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id95"><!-- named anchor --></a>H.G. ZadehS. MasoumzadehS. NourS. KianersiZ. Eyvazi ZadehF. Joneidi Shariat ZadehJ. HaddadniaF. KhamsehN. AhmadinejadBreast cancer diagnosis by thermal imaging in the fields of medical and artificial intelligence sciences: Review articleTehran Univ. Med. J.201674377385</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="B2-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id96"><!-- named anchor --></a>A.S. BalajiN. MakaramS. BalasubramanianR. SwaminathanAnalysis of pre- and post- fatigue thermal profiles of the dominant hand using infrared imagingACM Int. Conf. Proceeding Ser.201715357</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="B3-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id97"><!-- named anchor --></a>D. CardoneD. PerpetuiniC. FilippiniE. SpadoliniL. ManciniA.M. ChiarelliA. MerlaDriver stress state evaluation by means of thermal imaging: A supervised machine learning approach based on ECG signalAppl. Sci.202010567310.3390/app10165673</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="B4-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id98"><!-- named anchor --></a>A. TopalidouN. AliS. SekulicS. DowneThermal imaging applications in neonatal care: A scoping reviewBMC Pregnancy Childbirth20191938110.1186/s12884-019-2533-y31651266PMC6814124</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="B5-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id99"><!-- named anchor --></a>S.M. MohammadiS. EnshaeifarA. HiltonD.-J. DijkK. WellsTransfer Learning for Clinical Sleep Pose Detection Using a Single 2D IR CameraIEEE Trans. Neural Syst. Rehabil. Eng.20212929029910.1109/TNSRE.2020.304812133378261</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="B6-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id100"><!-- named anchor --></a>D.M. MannJ. ChenR. ChunaraP.A. TestaO. NovCOVID-19 transforms health care through telemedicine: Evidence from the fieldJ. Am. Med. Inform. Assoc.2020271132113510.1093/jamia/ocaa07232324855PMC7188161</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="B7-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id101"><!-- named anchor --></a>S.M. LeeD. LeeOpportunities and challenges for contactless healthcare services in the post-COVID-19 EraTechnol. Forecast. Soc. Chang.202116733733910.1016/j.techfore.2021.12071233654330PMC7908833</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="B8-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id102"><!-- named anchor --></a>H. KimJ. JeongNon-Contact Measurement of Human Respiration and Heartbeat Using W-band Doppler Radar SensorSensors202020520910.3390/s20185209PMC757087232932671</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="B9-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id103"><!-- named anchor --></a>D. McDuffI. NishidateK. NakanoH. HaneishiY. AokiC. TanabeK. NiizekiY. AizuNon-contact imaging of peripheral hemodynamics during cognitive and psychological stressorsSci. Rep.2020101088410.1038/s41598-020-67647-632616832PMC7331808</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="B10-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id104"><!-- named anchor --></a>T. HallD.Y.C. LieT.Q. NguyenJ.C. MayedaP.E. LieJ. LopezR.E. BanisterNon-Contact Sensor for Long-Term Continuous Vital Signs Monitoring: A Review on Intelligent Phased-Array Doppler Sensor DesignSensors201717263210.3390/s17112632PMC571302529140281</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="B11-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id105"><!-- named anchor --></a>W.P. CheshireThermoregulatory disorders and illness related to heat and cold stressAuton. Neurosci.20161969110410.1016/j.autneu.2016.01.00126794588</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="B12-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id106"><!-- named anchor --></a>M. FuW. WengW. ChenN. LuoReview on modeling heat transfer and thermoregulatory responses in human bodyJ. Therm. Biol.20166218920010.1016/j.jtherbio.2016.06.01827888933</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="B13-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id107"><!-- named anchor --></a>K. IvanovThe development of the concepts of homeothermy and thermoregulationJ. Therm. Biol.200631242910.1016/j.jtherbio.2005.12.005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="B14-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id108"><!-- named anchor --></a>E.S. BarrThe Infrared Pioneers—II. Macedonio MelloniInfrared Phys.19622677410.1016/0020-0891(62)90023-4</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="B15-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id109"><!-- named anchor --></a>Wikipedia ContributorsThermographic CameraAvailable online: <a target="xrefwindow" href="https://en.wikipedia.org/w/index.php?title=Thermographic_camera&amp;oldid=1052657772" id="id110">https://en.wikipedia.org/w/index.php?title=Thermographic_camera&amp;oldid=1052657772</a>(accessed on 30 October 2021)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="B16-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id111"><!-- named anchor --></a>G.J. TattersallInfrared thermography: A non-invasive window into thermal physiologyComp. Biochem. Physiol. Part A Mol. Integr. Physiol.2016202789810.1016/j.cbpa.2016.02.02226945597</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="B17-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id112"><!-- named anchor --></a>K.J. HowellR.E. SmithGuidelines for specifying and testing a thermal camera for medical applicationsThermol. Int.200919512</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="B18-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id113"><!-- named anchor --></a>O. BestsennyyG. GilbertA. HarrisJ. RostTelehealth: A Quarter-Trillion-Dollar Post-COVID-19 Reality?McKinsey2020Available online: <a target="xrefwindow" href="https://www.mckinsey.com/industries/healthcare-systems-and-services/our-insights/telehealth-a-quarter-trillion-dollar-post-covid-19-reality" id="id114">https://www.mckinsey.com/industries/healthcare-systems-and-services/our-insights/telehealth-a-quarter-trillion-dollar-post-covid-19-reality</a>(accessed on 4 November 2021)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="B19-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id115"><!-- named anchor --></a>D. MikulskaContemporary applications of infrared imaging in medical diagnosticsAnn. Acad. Med. Stetin.200652354017131845</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="B20-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id116"><!-- named anchor --></a>B. LahiriS. BagavathiappanT. JayakumarJ. PhilipMedical applications of infrared thermography: A reviewInfrared Phys. Technol.20125522123510.1016/j.infrared.2012.03.00732288544PMC7110787</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="B21-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id117"><!-- named anchor --></a>E.N. ElD. UnaApplications of Infrared Thermography in Sports: A ReviewRev. Int. Med. Cienc. Act. Física Deporte201515805824</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="B22-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id118"><!-- named anchor --></a>V.V.S.I.A. ZnamenskayaE.Y. KoroteevaA.V. KhakhalinThermographic visualization and remote control of dynamical processes around a facial areaSci. Vis.20168122131</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="B23-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id119"><!-- named anchor --></a>D.G. MoreiraJ.T. CostelloC.J. BritoJ.G. AdamczykK. AmmerA.J. BachC.M. CostaC. EglinA.A. FernandesI. Fernández-CuevasThermographic imaging in sports and exercise medicine: A Delphi study and consensus statement on the measurement of human skin temperatureJ. Therm. Biol.20176915516210.1016/j.jtherbio.2017.07.00629037377</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="B24-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id120"><!-- named anchor --></a>C.-T. PanM.D. FranciscoC.-K. YenS.-Y. WangY.-L. ShiueVein Pattern Locating Technology for Cannulation: A Review of the Low-Cost Vein Finder PrototypesSensors201919357310.3390/s19163573PMC671919531426370</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="B25-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id121"><!-- named anchor --></a>N. NAggarwalM. GargV. DwarakanathanN. GautamS.S. KumarR.S. JadonM. GuptaA. RayDiagnostic accuracy of non-contact infrared thermometers and thermal scanners: A systematic review and meta-analysisJ. Travel Med.202027taaa19310.1093/jtm/taaa19333043363PMC7665626</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="B26-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id122"><!-- named anchor --></a>J. FosterA.B. LloydG. HavenithNon-contact infrared assessment of human body temperature: The journal Temperature toolboxTemperature2021114Available online: <a target="xrefwindow" href="https://www.tandfonline.com/action/showAxaArticles?journalCode=ktmp20" id="id123">https://www.tandfonline.com/action/showAxaArticles?journalCode=ktmp20</a>(accessed on 4 November 2021)10.1080/23328940.2021.1899546PMC865447934901315</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="B27-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id124"><!-- named anchor --></a>Y. HeB. DengH. WangL. ChengK. ZhouS. CaiF. CiampaInfrared machine vision and infrared thermography with deep learning: A reviewInfrared Phys. Technol.202111610375410.1016/j.infrared.2021.103754</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="B28-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id125"><!-- named anchor --></a>S. LyraL. MayerL. OuD. ChenP. TimmsA. TayP. ChanB. GanseS. LeonhardtC.H. AntinkA Deep Learning-Based Camera Approach for Vital Sign Monitoring Using Thermography Images for ICU PatientsSensors202121149510.3390/s2104149533670066PMC7926634</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="B29-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id126"><!-- named anchor --></a>E.M. NowaraD.M. DuffCombating the Impact of Video Compression on Non-Contact Vital Sign Measurement Using Supervised LearningProceedings of the IEEE/CVF International Conference on Computer Vision WorkshopsSeoul, Korea27–28 October 2019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="B30-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id127"><!-- named anchor --></a>A. AKirimtatO. KrejcarA. SelamatE. Herrera-ViedmaFLIR vs SEEK thermal cameras in biomedicine: Comparative diagnosis through infrared thermographyBMC Bioinform.202021(Suppl. S2)2210.1186/s12859-020-3355-7PMC706916132164529</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="B31-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id128"><!-- named anchor --></a>S. KhareM. SinghB.K. KaushikDevelopment and validation of a quantitative model for the subjective and objective minimum resolvable temperature difference of thermal imaging systemsOpt. Eng.20195810411110.1117/1.OE.58.10.104111</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="B32-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id129"><!-- named anchor --></a>D.-I. KimG. KimG.-H. KimK.S. ChangResponsivity and Noise Evaluation of Infrared Thermal Imaging CameraJ. Korean Soc. Nondestruct. Test.20133334234810.7779/JKSNT.2013.33.4.342</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="B33-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id130"><!-- named anchor --></a>S.M.-M.P. Da-xingEvaluation of Performance of Infrared Systems Using Noise Equivalent Temperature DifferenceInfrared2010312225</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="B34-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id131"><!-- named anchor --></a>Y. LiD. PanC. YangY. LuoNETD test of high-sensitivity infrared cameraProceedings of the 3rd International Symposium on Advanced Optical Manufacturing and Testing Technologies: Optical Test and Measurement Technology and EquipmentChengdu, China8–12 July 2007Volume 6723836840</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="B35-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id132"><!-- named anchor --></a>E. VillaN. Arteaga-MarreroJ. Ruiz-AlzolaPerformance Assessment of Low-Cost Thermal Cameras for Medical ApplicationsSensors202020132110.3390/s20051321PMC708579232121299</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="B36-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id133"><!-- named anchor --></a>C.Y. PanC.S. HuangG.J. HorngP.L. PengG.J. JongInfrared Image Processing for a Physiological Information Telemetry SystemWirel. Pers. Commun.2015833181320810.1007/s11277-015-2589-6</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="B37-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id134"><!-- named anchor --></a>K. RaoG. CovielloM. FengB. DebnathW.-P. HsiungM. SankaradasY. YangO. PoU. DroliaS. ChakradharF3S: Free Flow Fever ScreeningIn Proceeding of the 7th IEEE International Conference on Smart ComputingIrvine, CA, USA23–27 August 2021276285</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="B38-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id135"><!-- named anchor --></a>H. HBudzierG. GerlachCalibration of uncooled thermal infrared camerasJ. Sens. Sens. Syst.2015418719710.5194/jsss-4-187-2015</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="B39-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id136"><!-- named anchor --></a>S. KönigB. GutschwagerR.D. TaubertJ. HollandtMetrological characterization and calibration of thermographic cameras for quantitative temperature measurementJ. Sens. Sens. Syst.2020942544210.5194/jsss-9-425-2020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="B40-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id137"><!-- named anchor --></a>G. ScebbaG. Da PoianW. KarlenMultispectral Video Fusion for Non-Contact Monitoring of Respiratory Rate and ApneaIEEE Trans. Biomed. Eng.20216835035910.1109/TBME.2020.299364932396069</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41.</span> <a id="B41-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id138"><!-- named anchor --></a>T. LewickiK. LiuAI thermometer for temperature screening: Demo abstractProceedings of the 18th Conference on Embedded Networked Sensor SystemsYokohama, Japan16–19 November 2020597598</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42.</span> <a id="B42-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id139"><!-- named anchor --></a>T. NegishiS. AbeT. MatsuiH. LiuM. KurosawaT. KirimotoG. SunContactless Vital Signs Measurement System Using RGB-Thermal Image Sensors and Its Clinical Screening Test on Patients with Seasonal InfluenzaSensors202020217110.3390/s20082171PMC721872732294973</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43.</span> <a id="B43-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id140"><!-- named anchor --></a>P. JagadevL.I. GiriNon-contact monitoring of human respiration using infrared thermography and machine learningInfrared Phys. Technol.202010410311710.1016/j.infrared.2019.103117</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44.</span> <a id="B44-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id141"><!-- named anchor --></a>K. MutluJ.E. RabellP.M. del OlmoS. HaeslerIR thermography-based monitoring of respiration phase without image segmentationJ. Neurosci. Methods20183011810.1016/j.jneumeth.2018.02.01729501561</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45.</span> <a id="B45-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id142"><!-- named anchor --></a>P. JagadevL.I. GiriHuman respiration monitoring using infrared thermography and artificial intelligenceBiomed. Phys. Eng. Express202063500710.1088/2057-1976/ab7a5433438652</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46.</span> <a id="B46-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id143"><!-- named anchor --></a>L.J. GoldmanNasal airflow and thoracoabdominal motion in children using infrared thermographic video processingPediatr. Pulmonol.20124747648610.1002/ppul.2157022009760</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47.</span> <a id="B47-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id144"><!-- named anchor --></a>T. NegishiG. SunH. LiuS. SatoT. MatsuiT. KirimotoStable Contactless Sensing of Vital Signs Using RGB-Thermal Image Fusion System with Facial Tracking for Infection ScreeningConf. Proc. IEEE Eng. Med. Biol. Soc.201820184371437410.1109/EMBC.2018.851330030441322</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48.</span> <a id="B48-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id145"><!-- named anchor --></a>T. NegishiG. SunS. SatoH. LiuT. MatsuiS. AbeH. NishimuraT. KirimotoInfection screening system using thermography and CCD camera with good stability and swiftness for non-contact vital-signs measurement by feature matching and MUSIC algorithmProceedings of the 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)Berlin, Germany23–27 July 201910.1109/EMBC.2019.885702731946564</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49.</span> <a id="B49-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id146"><!-- named anchor --></a>Y. KimY. ParkJ. KimE.C. LeeRemote heart rate monitoring method using infrared thermal cameraInt. J. Eng. Res. Technol.201811493500</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50.</span> <a id="B50-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id147"><!-- named anchor --></a>C.B. PereiraX. YuT. GoosI. ReissT. OrlikowskyK. HeimannB. VenemaV. BlazekS. LeonhardtD. TeichmannNoncontact Monitoring of Respiratory Rate in Newborn Infants Using Thermal ImagingIEEE Trans. Biomed. Eng.2018661105111410.1109/TBME.2018.286687830139045</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51.</span> <a id="B51-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id148"><!-- named anchor --></a>M.-H. HuG.-T. ZhaiD. LiY.-Z. FanX.-H. ChenX.-K. YangSynergetic use of thermal and visible imaging techniques for contactless and unobtrusive breathing measurementJ. Biomed. Opt.201722110.1117/1.JBO.22.3.03600628264083</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52.</span> <a id="B52-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id149"><!-- named anchor --></a>L. ChenM. HuN. LiuG. ZhaiS.X. YangCollaborative use of RGB and thermal imaging for remote breathing rate measurement under realistic conditionsInfrared Phys. Technol.202011110350410.1016/j.infrared.2020.103504</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53.</span> <a id="B53-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id150"><!-- named anchor --></a>M. HuG. ZhaiD. LiY. FanH. DuanW. ZhuX. YangCombination of near-infrared and thermal imaging techniques for the remote and simultaneous measurements of breathing and heart rates under sleep situationPLoS ONE201813e019046610.1371/journal.pone.019046629304152PMC5755779</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54.</span> <a id="B54-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id151"><!-- named anchor --></a>P. JakkaewT. OnoyeNon-contact respiration monitoring and body movements detection for sleep using thermal imagingSensors202020630710.3390/s20216307PMC766399733167556</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55.</span> <a id="B55-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id152"><!-- named anchor --></a>N. BoykoO. BasystiukN. ShakhovskaPerformance Evaluation and Comparison of Software for Face Recognition, Based on Dlib and Opencv LibraryProceedings of the 2018 IEEE Second International Conference on Data Stream Mining &amp; Processing (DSMP)Lviv, Ukraine21–25 August 2018478482</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56.</span> <a id="B56-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id153"><!-- named anchor --></a>D.E. KingDlib-ml: A machine learning toolkitJ. Mach. Learn. Res.20091017551758</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57.</span> <a id="B57-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id154"><!-- named anchor --></a>E.W. WeissteinAffine TransformationAvailable online: <a target="xrefwindow" href="https://mathworld.wolfram.com/" id="id155">https://mathworld.wolfram.com/</a>(accessed on 25 July 2021)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58.</span> <a id="B58-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id156"><!-- named anchor --></a>E. RubleeV. RabaudK. KonoligeG. BradskiORB: An efficient alternative to SIFT or SURFProceedings of the 2011 International Conference on Computer VisionBarcelona, Spain6–13 November 201125642571</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59.</span> <a id="B59-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id157"><!-- named anchor --></a>M. AbdulmajeedL. SeyfiObject recognition system based on oriented FAST and rotated BRIEFProceedings of the 2nd International Symposium on Innovative Approaches in Scientific StudiesKonya, Turkey30 November–2 December 2018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60.</span> <a id="B60-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id158"><!-- named anchor --></a>P. ViolaM. JonesRapid object detection using a boosted cascade of simple featuresProceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern RecognitionKauai, HI, USA8–14 December 2001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61.</span> <a id="B61-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id159"><!-- named anchor --></a>S.L. BennettR. GoubranF. KnoefelComparison of motion-based analysis to thermal-based analysis of thermal video in the extraction of respiration patternsProceedings of the 2017 39th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)Jeju, Korea11–15 July 20173835383910.1109/EMBC.2017.803769329060734</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62.</span> <a id="B62-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id160"><!-- named anchor --></a>F. ScholkmannJ. BossM. WolfAn Efficient Algorithm for Automatic Peak Detection in Noisy Periodic and Quasi-Periodic SignalsAlgorithms2012558860310.3390/a5040588</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63.</span> <a id="B63-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id161"><!-- named anchor --></a>G. PalshikarSimple algorithms for peak detection in time-seriesProceedings of the 1st Int. Conf. Advanced Data Analysis, Business Analytics and IntelligenceAhmedabad, India6–7 June 2009Volume 122</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64.</span> <a id="B64-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id162"><!-- named anchor --></a>H.B. SandyaK.P. HemanthP. HimanshiFuzzy rule based feature extraction and classification of time series signalInt. J. Soft Comput. Eng.2013322312307</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65.</span> <a id="B65-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id163"><!-- named anchor --></a>S. HuangJ. TangJ. DaiY. WangSignal Status Recognition Based on 1DCNN and Its Feature Extraction Mechanism AnalysisSensors201919201810.3390/s19092018PMC654021331035732</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66.</span> <a id="B66-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id164"><!-- named anchor --></a>P. LagunaG.B. MoodyR.G. MarkPower spectral density of unevenly sampled data by least-square analysis: Performance and application to heart rate signalsIEEE Trans. Biomed. Eng.19984569871510.1109/10.6786059609935</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67.</span> <a id="B67-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id165"><!-- named anchor --></a>M. BarandasD. FolgadoL. FernandesS. SantosM. AbreuP. BotaH. LiuT. SchultzH. GamboaTSFEL: Time Series Feature Extraction LibrarySoftwareX20201110045610.1016/j.softx.2020.100456</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68.</span> <a id="B68-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id166"><!-- named anchor --></a>H. LiuJ. AllenD. ZhengF. ChenRecent development of respiratory rate measurement technologiesPhysiol. Meas.20194007TR0110.1088/1361-6579/ab299e31195383</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69.</span> <a id="B69-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id167"><!-- named anchor --></a>K. CarolRespiratory rate 1: Why measurement and recording are crucialNurs. Times20181142324</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70.</span> <a id="B70-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id168"><!-- named anchor --></a>H. TakamotoH. NishineS. SatoG. SunS. WatanabeK. SeokjinM. AsaiM. MineshitaT. MatsuiDevelopment and Clinical Application of a Novel Non-contact Early Airflow Limitation Screening System Using an Infrared Time-of-Flight Depth Image SensorFront. Physiol.20201155294210.3389/fphys.2020.55294233013479PMC7516262</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71.</span> <a id="B71-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id169"><!-- named anchor --></a>T. FlenadyT. DwyerJ. ApplegarthAccurate respiratory rates count: So should you!Australas. Emerg. Nurs. J.201720454710.1016/j.aenj.2016.12.00328073649</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72.</span> <a id="B72-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id170"><!-- named anchor --></a>C. SartiniM. TresoldiP. ScarpelliniA. TettamantiF. CarcòG. LandoniA. ZangrilloRespiratory Parameters in Patients With COVID-19 After Using Noninvasive Ventilation in the Prone Position Outside the Intensive Care UnitJAMA20203232338234010.1001/jama.2020.786132412606PMC7229533</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73.</span> <a id="B73-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id171"><!-- named anchor --></a>Total Hospital Bed Occupancy (COVID-19)|SCDHECAvailable online: <a target="xrefwindow" href="https://scdhec.gov/covid19/hospital-bed-capacity-covid-19" id="id172">https://scdhec.gov/covid19/hospital-bed-capacity-covid-19</a>(accessed on 25 July 2021)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74.</span> <a id="B74-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id173"><!-- named anchor --></a>K. StorckM. KarlssonP. AskD. LoydHeat transfer evaluation of the nasal thermistor techniqueIEEE Trans. Biomed. Eng.1996431187119110.1109/10.5443429214837</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75.</span> <a id="B75-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id174"><!-- named anchor --></a>D.H. HunsakerR.H. RiffenburghSnoring Significance in Patients Undergoing Home Sleep StudiesOtolaryngol. Neck Surg.200613475676010.1016/j.otohns.2006.01.01716647530</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76.</span> <a id="B76-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id175"><!-- named anchor --></a>S. AkbarianN.M. GhahjaverestanA. YadollahiB. TaatiDistinguishing Obstructive Versus Central Apneas in Infrared Video of Sleep Using Deep Learning: Validation StudyJ. Med. Internet Res.202022e1725210.2196/1725232441656PMC7275259</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77.</span> <a id="B77-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id176"><!-- named anchor --></a>C.W. WangA. HunterN. GravillS. MatusiewiczUnconstrained video monitoring of breathing behavior and application to diagnosis of sleep apneaIEEE Trans. Biomed. Eng.20146139640410.1109/TBME.2013.228013224001952</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78.</span> <a id="B78-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id177"><!-- named anchor --></a>T. GaultA. FaragA fully automatic method to extract the heart rate from thermal videoProceedings of the IEEE Conference on Computer Vision and Pattern Recognition WorkshopsLouisville, KY, USA23–28 June 2013336341</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79.</span> <a id="B79-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id178"><!-- named anchor --></a>S.L. BennettR. GoubranF. KnoefelAdaptive eulerian video magnification methods to extract heart rate from thermal videoProceedings of the 2016 IEEE International Symposium on Medical Measurements and Applications (MeMeA)Benevento, Italy15–18 May 201615</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80.</span> <a id="B80-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id179"><!-- named anchor --></a>F. LiY. ZhaoL. KongL. DongM. LiuM. HuiX. LiuA camera-based ballistocardiogram heart rate measurement methodRev. Sci. Instrum.20209105410510.1063/1.512880632486732</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81.</span> <a id="B81-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id180"><!-- named anchor --></a>G. BalakrishnanF. DurandJ. GuttagDetecting Pulse from Head Motions in VideoProceedings of the 2013 IEEE Conference on Computer Vision and Pattern RecognitionPortland, OR, USA23–28 June 201334303437</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82.</span> <a id="B82-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id181"><!-- named anchor --></a>P. NetinantP. VasprasertM. RukhiranEvaluations of Effective on LWIR Micro Thermal Camera IoT and Digital Thermometer for Human Body TemperaturesProceedings of the 2021 The 5th International Conference on E-Commerce, E-Business and E-GovernmentNew York, NY, USA28 April 20212024</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83.</span> <a id="B83-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id182"><!-- named anchor --></a>E.F.J. RingH. McEvoyA. JungJ. ZuberG. MachinNew standards for devices used for the measurement of human body temperatureJ. Med. Eng. Technol.20103424925310.3109/0309190100366383620397848</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84.</span> <a id="B84-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id183"><!-- named anchor --></a>J.B. MercerE.F.J. RingFever screening and infrared thermal imaging: Concerns and guidelinesThermol. Int.2009196769</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85.</span> <a id="B85-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id184"><!-- named anchor --></a>N.W. KimH.Y. ZhangJ.-H. YooY.S. ParkH.J. SongK.H. YangThe Correlation Between Tympanic Membrane Temperature and Specific Region of Face TemperatureQuant. InfraRed Thermogr. Asia20171617</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86.</span> <a id="B86-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id185"><!-- named anchor --></a>W.K. YeohJ.K.W. LeeH.Y. LimC.W. GanW. LiangK.K. TanRe-visiting the tympanic membrane vicinity as core body temperature measurement sitePLoS ONE201712e017412010.1371/journal.pone.017412028414722PMC5393563</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87.</span> <a id="B87-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id186"><!-- named anchor --></a>G.B. Dell’IsolaE. CosentiniL. CanaleG. FiccoM. Dell’IsolaNoncontact Body Temperature Measurement: Uncertainty Evaluation and Screening Decision Rule to Prevent the Spread of COVID-19Sensors20212134610.3390/s21020346PMC782551633419187</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">88.</span> <a id="B88-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id187"><!-- named anchor --></a>M. StrąkowskaR. StrąkowskiAutomatic eye corners detection and tracking algorithm in sequence of thermal medical imagesMeas. Autom. Monit.201561199202</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">89.</span> <a id="B89-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id188"><!-- named anchor --></a>H.-Y. ChenA. ChenC. ChenInvestigation of the Impact of Infrared Sensors on Core Body Temperature Monitoring by Comparing Measurement SitesSensors202020288510.3390/s20102885PMC728473732438729</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">90.</span> <a id="B90-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id189"><!-- named anchor --></a>B.R. NhanT. ChauClassifying Affective States Using Thermal Infrared Imaging of the Human FaceIEEE Trans. Biomed. Eng.20105797998710.1109/TBME.2009.203592619923040</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">91.</span> <a id="B91-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id190"><!-- named anchor --></a>A. MerlaP.A. MatteiL. Di DonatoG.L. RomaniThermal Imaging of Cutaneous Temperature Modifications in Runners During Graded ExerciseAnn. Biomed. Eng.20093815816310.1007/s10439-009-9809-819798579</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">92.</span> <a id="B92-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id191"><!-- named anchor --></a>B. TejedorM. CasalsM. GangolellsM. MacarullaN. ForcadaHuman comfort modelling for elderly people by infrared thermography: Evaluating the thermoregulation system responses in an indoor environment during winterBuild. Environ.202018610735410.1016/j.buildenv.2020.107354</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">93.</span> <a id="B93-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id192"><!-- named anchor --></a>I.T. PavlidisLie detection using thermal imagingDef. Secur.2004XXVI270279</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">94.</span> <a id="B94-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id193"><!-- named anchor --></a>L. WarmelinkA. VrijS. MannS. LealD. ForresterR.P. FisherThermal imaging as a lie detection tool at airportsLaw Hum. Behav.201135404810.1007/s10979-010-9251-321061052</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">95.</span> <a id="B95-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id194"><!-- named anchor --></a>V. VEngertA. MerlaJ. GrantD. CardoneA. TuscheT. SingerExploring the Use of Thermal Infrared Imaging in Human Stress ResearchPLoS ONE20149e907822467570910.1371/journal.pone.0090782PMC3968009</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">96.</span> <a id="B96-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id195"><!-- named anchor --></a>G. KoukiouV. AnastassopoulosNeural networks for identifying drunk persons using thermal infrared imageryForensic Sci. Int.2015252697610.1016/j.forsciint.2015.04.02225951502</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">97.</span> <a id="B97-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id196"><!-- named anchor --></a>R. GadeT.B. MoeslundThermal cameras and applications: A surveyMach. Vis. Appl.20142524526210.1007/s00138-013-0570-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">98.</span> <a id="B98-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id197"><!-- named anchor --></a>F. ZhaoM. LiJ.Z. TsienTechnology platforms for remote monitoring of vital signs in the new era of telemedicineExpert Rev. Med. Devices20151241142910.1586/17434440.2015.105095726037691</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">99.</span> <a id="B99-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id198"><!-- named anchor --></a>M. WeberM. HieteL. LauerO. RentzLow cost country sourcing and its effects on the total cost of ownership structure for a medical devices manufacturerJ. Purch. Supply Manag.20101641610.1016/j.pursup.2009.06.001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">100.</span> <a id="B100-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id199"><!-- named anchor --></a>J. BalsamM. OssandonH.A. BruckI. LubenskyA. RasoolyLow-cost technologies for medical diagnostics in low-resource settingsExpert Opin. Med. Diagn.2013724325510.1517/17530059.2013.76779623480559</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">101.</span> <a id="B101-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id200"><!-- named anchor --></a>Y. YChoiN. KimS. HwangI.S. KweonThermal Image Enhancement using Convolutional Neural NetworkProceedings of the 2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)Daejeon, Korea9–14 October 2016223230</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">102.</span> <a id="B102-sensors-21-07777"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id201"><!-- named anchor --></a>J. WelchB. KanterB. SkoraS. McCombieI. HenryD. McCombieR. KennedyB. SollerMulti-parameter vital sign database to assist in alarm optimization for general care unitsJ. Clin. Monit.20153089590010.1007/s10877-015-9790-826439830PMC5081381</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-floats" class="back">
+<h2 class="main-title"><span class="generated">Floating objects</span></h2>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-21-07777-f001"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id202">The general process stages of studies using a thermal camera that performs physiological measurements. Several stages are depicted by dotted line boxes explaining that these stages only apply in certain studies in general.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-21-07777-f002"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id203">An overview of how RGB cameras are used to assist thermal cameras in determining ROI and the transformation process.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-21-07777-f003"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<div class="caption"><p class="first" id="id204">An overview of how the signal extraction process from a thermal image is carried out. In general, there are two methods: first by measuring changes in temperature in the area around the nostrils and mouth, and second by looking at the movement based on the comparison between changes in pixels in each frame.</p></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="sensors-21-07777-t001"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<span class="object-id">sensors-21-07777-t001_Table 1</span><div class="caption"><p class="first" id="id205">Existing Systematic review.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id206"><!-- named anchor --></a><thead>
+<a id="id207"><!-- named anchor --></a><tr>
+<a id="id208"><!-- named anchor --></a><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id209"><!-- named anchor --></a>Author</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>Published Year</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>Difference</th>
+</tr>
+</thead>
+<tbody>
+<a id="id212"><!-- named anchor --></a><tr>
+<a id="id213"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id214"><!-- named anchor --></a>Mikulska D. [<a href="#B19-sensors-21-07777">19</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id215"><!-- named anchor --></a>2006</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id216"><!-- named anchor --></a>Covered studies before 2006</td>
+</tr>
+<tr>
+<a id="id217"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id218"><!-- named anchor --></a>Lahiri et al. [<a href="#B20-sensors-21-07777">20</a>]</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id219"><!-- named anchor --></a>2012</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id220"><!-- named anchor --></a>Published in 2012 and covered studies before 2012</td>
+</tr>
+<tr>
+<a id="id221"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id222"><!-- named anchor --></a>El et al. [<a href="#B21-sensors-21-07777">21</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id223"><!-- named anchor --></a>2015</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id224"><!-- named anchor --></a>Only covered applications related to sports</td>
+</tr>
+<tr>
+<a id="id225"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id226"><!-- named anchor --></a>Znamenskaya et al. [<a href="#B22-sensors-21-07777">22</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>2016</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>Limited to human psychophysiological conditions that are based on thermographic video</td>
+</tr>
+<tr>
+<a id="id229"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id230"><!-- named anchor --></a>Zadeh et al. [<a href="#B1-sensors-21-07777">1</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id231"><!-- named anchor --></a>2016</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id232"><!-- named anchor --></a>Only covered breast cancer diagnostics by using thermal imaging</td>
+</tr>
+<tr>
+<a id="id233"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>Moreira et al. [<a href="#B23-sensors-21-07777">23</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id235"><!-- named anchor --></a>2017</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id236"><!-- named anchor --></a>Developed checklist guidelines to assess skin temperature for sports and exercise medicine</td>
+</tr>
+<tr>
+<a id="id237"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id238"><!-- named anchor --></a>Topalidou et al. [<a href="#B4-sensors-21-07777">4</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id239"><!-- named anchor --></a>2019</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id240"><!-- named anchor --></a>Database limited to EMBASE, MEDLINE, and MIDIRS and only covered thermal camera usage in neonatal care</td>
+</tr>
+<tr>
+<a id="id241"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id242"><!-- named anchor --></a>Pan et al. [<a href="#B24-sensors-21-07777">24</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>2019</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id244"><!-- named anchor --></a>Focused on vein finder by using near infrared (NIR)</td>
+</tr>
+<tr>
+<a id="id245"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a>Aggarwal et al. [<a href="#B25-sensors-21-07777">25</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id247"><!-- named anchor --></a>2020</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id248"><!-- named anchor --></a>Focused on reviewing the accuracy of handheld thermal cameras</td>
+</tr>
+<tr>
+<a id="id249"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id250"><!-- named anchor --></a>Foster et al. [<a href="#B26-sensors-21-07777">26</a>] </td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id251"><!-- named anchor --></a>2021</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id252"><!-- named anchor --></a>Focused on assessing human core temperature using infrared thermometry</td>
+</tr>
+<tr>
+<a id="id253"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id254"><!-- named anchor --></a>He et al. [<a href="#B27-sensors-21-07777">27</a>] </td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id255"><!-- named anchor --></a>2021</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id256"><!-- named anchor --></a>Not focused on human vital signs</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="sensors-21-07777-t002"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<span class="object-id">sensors-21-07777-t002_Table 2</span><div class="caption"><p class="first" id="id257">List of Thermal Cameras Used in Some Studies in this Systematic Review Along with The Specifications Used.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id258"><!-- named anchor --></a><thead>
+<a id="id259"><!-- named anchor --></a><tr>
+<a id="id260"><!-- named anchor --></a><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id261"><!-- named anchor --></a>Manufacturer</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id262"><!-- named anchor --></a>Model</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>Spectral Range</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id264"><!-- named anchor --></a>Temperature Accuracy</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id265"><!-- named anchor --></a>Thermal Sensitivity (NETD)</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id266"><!-- named anchor --></a>Maximum FPS and Resolutions</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id267"><!-- named anchor --></a>Used by</th>
+</tr>
+</thead>
+<tbody>
+<a id="id268"><!-- named anchor --></a><tr>
+<a id="id269"><!-- named anchor --></a><td rowspan="6" align="left" valign="middle" style="border-bottom:solid thin" colspan="1">
+<a id="id270"><!-- named anchor --></a>Flir Systems Inc., Wilsonville, OR, USA</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>Lepton 3.5</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id272"><!-- named anchor --></a>8 to 14 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id273"><!-- named anchor --></a>±5 °C</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id274"><!-- named anchor --></a>&lt;50 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id275"><!-- named anchor --></a>8.7 FPS, 160 × 120 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id276"><!-- named anchor --></a>[<a href="#B40-sensors-21-07777">40</a>,<a href="#B41-sensors-21-07777">41</a>]</td>
+</tr>
+<tr>
+<a id="id277"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>A325</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id279"><!-- named anchor --></a>7 to 13.5 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id280"><!-- named anchor --></a>±5 °C</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id281"><!-- named anchor --></a>&lt;50 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id282"><!-- named anchor --></a>60 FPS, 320 × 240 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id283"><!-- named anchor --></a>[<a href="#B42-sensors-21-07777">42</a>,<a href="#B43-sensors-21-07777">43</a>,<a href="#B44-sensors-21-07777">44</a>,<a href="#B45-sensors-21-07777">45</a>]</td>
+</tr>
+<tr>
+<a id="id284"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id285"><!-- named anchor --></a>Thermovision A40M</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id286"><!-- named anchor --></a>7 to 13.5 µm</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id287"><!-- named anchor --></a>±2 °C</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id288"><!-- named anchor --></a>&lt;50 mK</td>
+<td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id289"><!-- named anchor --></a>60 FPS, 320 × 240 pixels</td>
+<td align="center" valign="middle" rowspan="1" colspan="1">
+<a id="id290"><!-- named anchor --></a>[<a href="#B46-sensors-21-07777">46</a>]</td>
+</tr>
+<tr>
+<a id="id291"><!-- named anchor --></a><td align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id292"><!-- named anchor --></a>A315</td>
+<td align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>7.5 to 13 µm</td>
+<td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id294"><!-- named anchor --></a>±2 °C</td>
+<td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a>&lt;50 mK</td>
+<td align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id296"><!-- named anchor --></a>60 FPS, 320 × 240 pixels</td>
+<td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id297"><!-- named anchor --></a>[<a href="#B47-sensors-21-07777">47</a>,<a href="#B48-sensors-21-07777">48</a>]</td>
+</tr>
+<tr>
+<a id="id298"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id299"><!-- named anchor --></a>P384-20</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a>8 to 14 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id301"><!-- named anchor --></a>±2 °C</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a>&lt;50 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id303"><!-- named anchor --></a>50 FPS, 384 × 288 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id304"><!-- named anchor --></a>[<a href="#B36-sensors-21-07777">36</a>]</td>
+</tr>
+<tr>
+<a id="id305"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id306"><!-- named anchor --></a>T430sc</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>7.5 to 13 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id308"><!-- named anchor --></a>±2 °C</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id309"><!-- named anchor --></a>&lt;30 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>12 FPS, 320 × 240 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id311"><!-- named anchor --></a>[<a href="#B49-sensors-21-07777">49</a>]</td>
+</tr>
+<tr>
+<a id="id312"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id313"><!-- named anchor --></a>InfraTec GmbH, Dresden, Germany</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id314"><!-- named anchor --></a>VarioCAMR HD 820S</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id315"><!-- named anchor --></a>7.5 to 14 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id316"><!-- named anchor --></a>±1 °C</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>&lt;55 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a>30 FPS, 1024 × 768 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id319"><!-- named anchor --></a>[<a href="#B50-sensors-21-07777">50</a>]</td>
+</tr>
+<tr>
+<a id="id320"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id321"><!-- named anchor --></a>Magnity Electronics Co., Ltd., Shanghai, China</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id322"><!-- named anchor --></a>MAG 62</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>7.5 to 14 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id324"><!-- named anchor --></a>±2 °C</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id325"><!-- named anchor --></a>&lt;60 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>50 FPS, 640 × 480 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a>[<a href="#B51-sensors-21-07777">51</a>,<a href="#B52-sensors-21-07777">52</a>,<a href="#B53-sensors-21-07777">53</a>]</td>
+</tr>
+<tr>
+<a id="id328"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id329"><!-- named anchor --></a>Optris Gmbh, Berlin, Germany</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id330"><!-- named anchor --></a>Optris PI 450i</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id331"><!-- named anchor --></a>8 to 14 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id332"><!-- named anchor --></a>±2 °C</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id333"><!-- named anchor --></a>&lt;75 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id334"><!-- named anchor --></a>80 FPS, 382 × 288 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id335"><!-- named anchor --></a>[<a href="#B28-sensors-21-07777">28</a>]</td>
+</tr>
+<tr>
+<a id="id336"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id337"><!-- named anchor --></a>Seek Thermal Inc., Santa Barbara, CA, USA</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id338"><!-- named anchor --></a>Compact PRO</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id339"><!-- named anchor --></a>7.5 to 14 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id340"><!-- named anchor --></a>-</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id341"><!-- named anchor --></a>&lt;70 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id342"><!-- named anchor --></a>&gt;15 FPS, 320 × 240 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id343"><!-- named anchor --></a>[<a href="#B54-sensors-21-07777">54</a>]</td>
+</tr>
+<tr>
+<a id="id344"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id345"><!-- named anchor --></a>Mobotix AG, Winnweiler, Germany</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id346"><!-- named anchor --></a>M16 TR</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id347"><!-- named anchor --></a>7.5 to 13 µm</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id348"><!-- named anchor --></a>±10 °C</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id349"><!-- named anchor --></a>&lt;50 mK</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id350"><!-- named anchor --></a>9 FPS, 336 × 252 pixels</td>
+<td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id351"><!-- named anchor --></a>[<a href="#B37-sensors-21-07777">37</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="sensors-21-07777-t003"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<span class="object-id">sensors-21-07777-t003_Table 3</span><div class="caption"><p class="first" id="id352">Summary of Thermal Camera Usage Related to Respiratory.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id353"><!-- named anchor --></a><thead>
+<a id="id354"><!-- named anchor --></a><tr>
+<a id="id355"><!-- named anchor --></a><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id356"><!-- named anchor --></a>Author</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id357"><!-- named anchor --></a>Objectives</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id358"><!-- named anchor --></a>Thermal Camera Model, FPS, and Dimension Used</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id359"><!-- named anchor --></a>Image and Signal Processing Tools</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id360"><!-- named anchor --></a>Algorithm Used</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id361"><!-- named anchor --></a>Validation Method</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id362"><!-- named anchor --></a>Performance</th>
+</tr>
+</thead>
+<tbody>
+<a id="id363"><!-- named anchor --></a><tr>
+<a id="id364"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id365"><!-- named anchor --></a>Chen et al. [<a href="#B52-sensors-21-07777">52</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id366"><!-- named anchor --></a>RR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id367"><!-- named anchor --></a>MAG 62, 10 FPS, 640 × 480 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id368"><!-- named anchor --></a>·Open CV: Image Processing Tools</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id369"><!-- named anchor --></a>·KLT: Coordinate Mapping <br class="br">·RSQI_dtw: score each ROI</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id370"><!-- named anchor --></a>Compared with the GY-6620 sleep monitor</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id371"><!-- named anchor --></a>·Root Mean Square Error: 0.71 breaths/min and 0.76 breaths/min</td>
+</tr>
+<tr>
+<a id="id372"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id373"><!-- named anchor --></a>Goldman et al. [<a href="#B46-sensors-21-07777">46</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id374"><!-- named anchor --></a>RR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id375"><!-- named anchor --></a>Thermovision A40, 50FPS, 320 × 240 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id376"><!-- named anchor --></a>·Matlab for signal processing software</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id377"><!-- named anchor --></a>·n/a</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id378"><!-- named anchor --></a>Compared with standard measurements of nasal pressure</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id379"><!-- named anchor --></a>·Intraclass correlation of 0.978 (0.991–0.954 95% CI)</td>
+</tr>
+<tr>
+<a id="id380"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id381"><!-- named anchor --></a>Hu et al. [<a href="#B51-sensors-21-07777">51</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id382"><!-- named anchor --></a>RR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id383"><!-- named anchor --></a>MAG 62, 640 × 480 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id384"><!-- named anchor --></a>·All analysis conducted with Matlab R2014A</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id385"><!-- named anchor --></a>·Viola-Jones Algorithm for Cascade Object Detector <br class="br">·Shi-Tomasi for the corner detection algorithm</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id386"><!-- named anchor --></a>Compared with human observers (manual counting)</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id387"><!-- named anchor --></a>·Accuracy for face, nose, and mouth: 98.46%, 95.38%, 84.62%</td>
+</tr>
+<tr>
+<a id="id388"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id389"><!-- named anchor --></a>Hu, et al. [<a href="#B53-sensors-21-07777">53</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id390"><!-- named anchor --></a>RR and HR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id391"><!-- named anchor --></a>MAG 62, 30 FPS, 640 × 480 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id392"><!-- named anchor --></a>·Matlab R2014a for Image Processing</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id393"><!-- named anchor --></a>·Affine Transformation for transforming images</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id394"><!-- named anchor --></a>Compared with human observers (manual counting)</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id395"><!-- named anchor --></a>·Determination Coefficient: 0.831</td>
+</tr>
+<tr>
+<a id="id396"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id397"><!-- named anchor --></a>Jagadev et al. [<a href="#B45-sensors-21-07777">45</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id398"><!-- named anchor --></a>RR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id399"><!-- named anchor --></a>Flir A325, 25 FPS, 320 × 240 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id400"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id401"><!-- named anchor --></a>·k-nearest neighbors (k-NN) Classifier <br class="br">·the t-Stochastic Neighbor Embedding algorithm</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id402"><!-- named anchor --></a>Statistical calculation of sensitivity, precision, spurious cycle rate, missed cycle rate</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id403"><!-- named anchor --></a>·Sensitivity: 98.76% <br class="br">·Precision: 99.07% <br class="br">·Spurious cycle rate: 0.92% <br class="br">·Missed cycle rate: 1.23%</td>
+</tr>
+<tr>
+<a id="id404"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id405"><!-- named anchor --></a>Jagadev et al. [<a href="#B43-sensors-21-07777">43</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id406"><!-- named anchor --></a>RR measurement and classification</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id407"><!-- named anchor --></a>Flir A325, 25 FPS, 320 × 240 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id408"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id409"><!-- named anchor --></a>·Breath Detection algorithm for counting RR <br class="br">·k-NN and SVM to classify the abnormalities</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id410"><!-- named anchor --></a>Statistical calculation of sensitivity, precision, spurious cycle rate, missed cycle rate</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id411"><!-- named anchor --></a>·Sensitivity: 97.2% <br class="br">·Precision: 98.6% <br class="br">·Spurious cycle rate: 1.4% <br class="br">·Missed cycle rate: 2.8%</td>
+</tr>
+<tr>
+<a id="id412"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id413"><!-- named anchor --></a>Jakkaew et al. [<a href="#B54-sensors-21-07777">54</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id414"><!-- named anchor --></a>RR measurement and body movement detection</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id415"><!-- named anchor --></a>Compact PRO, 17 FPS, 640 × 480 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id416"><!-- named anchor --></a>·minMaxLoc OpenCV: ROI Detection <br class="br">·findContour: programming library to detect significant movement <br class="br">·OpenCV: image processing framework</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id417"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id418"><!-- named anchor --></a>Compared with Go Direct respiratory belt</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id419"><!-- named anchor --></a>·Root Mean Square Error: 1.82 ± 0.75 bpm</td>
+</tr>
+<tr>
+<a id="id420"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id421"><!-- named anchor --></a>Lyra et al. [<a href="#B28-sensors-21-07777">28</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id422"><!-- named anchor --></a>RR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id423"><!-- named anchor --></a>Optris PI 450i, 4 FPS, 382 × 288 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id424"><!-- named anchor --></a>·YOLO_mark: Labelling framework <br class="br">·YOLOv4 with CSPDarknet53 Backbone: training framework <br class="br">·YOLOv4-Tiny: Real-Time classifier framework</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id425"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id426"><!-- named anchor --></a>Compared with thoracic bioimpedance based patient monitor device (Philips, Amsterdam, The Netherlands) </td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id427"><!-- named anchor --></a>·Intersection over unit (IoU): 0.70 <br class="br">·IoU (tiny): 0.75 <br class="br">·Mean Absolute Errors: 2.79 bpm, 2.69 bpm (Tiny)</td>
+</tr>
+<tr>
+<a id="id428"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id429"><!-- named anchor --></a>Mutlu et al. [<a href="#B44-sensors-21-07777">44</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id430"><!-- named anchor --></a>RR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id431"><!-- named anchor --></a>Flir A325, 60 FPS, 320 × 240 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id432"><!-- named anchor --></a>·FLIR ResearchIRMax: Video Recording software <br class="br">·Labview: camera trigger software<br class="br">·MATLAB: analysis tools</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id433"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id434"><!-- named anchor --></a>Compared with a respiratory belt transducer containing a piezoelectric</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id435"><!-- named anchor --></a>·Median Error Rate: 6.2%</td>
+</tr>
+<tr>
+<a id="id436"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id437"><!-- named anchor --></a>Negishi et al. [<a href="#B47-sensors-21-07777">47</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id438"><!-- named anchor --></a>RR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id439"><!-- named anchor --></a>Flir A315, 15 FPS, 320 × 240 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id440"><!-- named anchor --></a>·Labview: Image recording and analysis <br class="br">·Grab cut: Extraction of contour <br class="br">·Oriented FAST and Rotated Brief (ORB): feature matching <br class="br">·dlib: ROI detection library <br class="br">·OpenCV: Image Processing Tools</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id441"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id442"><!-- named anchor --></a>Compared with a respiratory effort belt (DL-231, S&amp;ME, Japan)</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id443"><!-- named anchor --></a>·Root Mean Square Error: 2.52 RPM <br class="br">·Correlation Coefficient 0.77</td>
+</tr>
+<tr>
+<a id="id444"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id445"><!-- named anchor --></a>Negishi et al. [<a href="#B48-sensors-21-07777">48</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id446"><!-- named anchor --></a>RR and HR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id447"><!-- named anchor --></a>Flir A315, 15 FPS, 320 × 240 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id448"><!-- named anchor --></a>·Labview: Image recording and analysis <br class="br">·Grab cut: Extraction of contour <br class="br">·Oriented Fast and Rotated Brief: feature matching <br class="br">·dlib: ROI detection library <br class="br">·OpenCV: Image Processing Tools</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id449"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id450"><!-- named anchor --></a>Compared with a respiratory effort belt (DL-231, S&amp;ME, Japan)</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id451"><!-- named anchor --></a>·Root Mean Square Error: 1.13 RPM <br class="br">·Correlation Coefficient 0.92</td>
+</tr>
+<tr>
+<a id="id452"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id453"><!-- named anchor --></a>Negishi et al. [<a href="#B42-sensors-21-07777">42</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id454"><!-- named anchor --></a>RR and HR measurement</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id455"><!-- named anchor --></a>Flir A325, 15 FPS, 320 × 240 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id456"><!-- named anchor --></a>·dlib: ROI detection library<br class="br">·OpenCV: Image Processing Library</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id457"><!-- named anchor --></a>·Multiple signal classification (MUSIC) algorithm for signal estimation <br class="br">·Homography Matrix for facial landmarking</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id458"><!-- named anchor --></a>Compared with a respiratory effort belt (DL-231, S&amp;ME, Japan)</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id459"><!-- named anchor --></a>·Sensitivity: 85.7% <br class="br">·Specificity: 90.1%</td>
+</tr>
+<tr>
+<a id="id460"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id461"><!-- named anchor --></a>Pereira et al. [<a href="#B50-sensors-21-07777">50</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id462"><!-- named anchor --></a>RR measurement for infants</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id463"><!-- named anchor --></a>VarioCAMR HD 820S, 30 FPS, 1024 × 768 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id464"><!-- named anchor --></a>·Matlab 2017 for Evaluation and Signal Processing software</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id465"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id466"><!-- named anchor --></a>Compared with thoracic effort <br class="br">piezo plethysmography belt, namely SOMNOlab2</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id467"><!-- named anchor --></a>·Root Mean Square Error: (0.31 ± 0.09) breaths/min.</td>
+</tr>
+<tr>
+<a id="id468"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id469"><!-- named anchor --></a>Scebba et al. [<a href="#B40-sensors-21-07777">40</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id470"><!-- named anchor --></a>RR measurement for apnea detection</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id471"><!-- named anchor --></a>NIR: See3cam_CU40 MV, 15 FPS, 336×190 pixels <br class="br">LWIR: Flir Lepton 3.5, 8.7 FPS, 160 × 120 pixels</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id472"><!-- named anchor --></a>
+</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id473"><!-- named anchor --></a>·Smart Signal Quality Fusion (S2Fusion) for RR estimation <br class="br">·Cascade Convolutional Neural Network (CCNN) for facial landmark <br class="br">·KLT for tracking</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id474"><!-- named anchor --></a>Compared with piezo-resistive sensors based ezRIP module, Philips Respironics</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id475"><!-- named anchor --></a>· Median of Root Mean Square Error: 1.17 breaths/min</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="sensors-21-07777-t004"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<span class="object-id">sensors-21-07777-t004_Table 4</span><div class="caption"><p class="first" id="id476">List of Studies Involved Camera Fusion and Its Characteristic.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id477"><!-- named anchor --></a><thead>
+<a id="id478"><!-- named anchor --></a><tr>
+<a id="id479"><!-- named anchor --></a><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id480"><!-- named anchor --></a>Authors</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id481"><!-- named anchor --></a>Fusion Camera Combination</th>
+<th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id482"><!-- named anchor --></a>Characteristic</th>
+</tr>
+</thead>
+<tbody>
+<a id="id483"><!-- named anchor --></a><tr>
+<a id="id484"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id485"><!-- named anchor --></a>Scebba et al. [<a href="#B40-sensors-21-07777">40</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id486"><!-- named anchor --></a>NIR and LWIR Camera</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id487"><!-- named anchor --></a>LWIR camera used for nostrils and chest ROI, NIR camera used for chest ROI</td>
+</tr>
+<tr>
+<a id="id488"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id489"><!-- named anchor --></a>Negishi et al. [<a href="#B42-sensors-21-07777">42</a>,<a href="#B47-sensors-21-07777">47</a>,<a href="#B48-sensors-21-07777">48</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id490"><!-- named anchor --></a>RGB and LWIR Camera</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id491"><!-- named anchor --></a>RGB camera used for determining ROI and extracting PPG signals while LWIR camera used for extracting respiratory signal</td>
+</tr>
+<tr>
+<a id="id492"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id493"><!-- named anchor --></a>Hu et al. [<a href="#B51-sensors-21-07777">51</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id494"><!-- named anchor --></a>RGB and LWIR Camera</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id495"><!-- named anchor --></a>RGB camera used for determining ROI while LWIR camera used for extracting respiratory signal</td>
+</tr>
+<tr>
+<a id="id496"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id497"><!-- named anchor --></a>Chen et al. [<a href="#B52-sensors-21-07777">52</a>]</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id498"><!-- named anchor --></a>RGB and LWIR Camera</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id499"><!-- named anchor --></a>RGB camera used for determining ROI and alternative method to extract respiratory signal if no face detected while LWIR camera sued for extract respiratory signal if any face detected</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Systematic Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>thermal camera</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>contactless sensors</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>non-contact</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>physiological measurement</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
