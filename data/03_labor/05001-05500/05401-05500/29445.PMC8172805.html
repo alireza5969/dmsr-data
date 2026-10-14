@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Wells and Bednarz: Explainable AI and Reinforcement Learning—A Systematic Review of Current Approaches and Trends</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Front Artif Intell</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Front Artif Intell</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3981</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>frontai</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101770551</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>Front. Artif. Intell.</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Frontiers in Artificial Intelligence</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2624-8212</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Frontiers Media SA</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="frai-04-550030.pdf">frai-04-550030.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>Copyright © 2021 Wells and Bednarz.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2021, Wells and Bednarz</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>08 April 2020</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>09 April 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>20 May 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>4</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>375285<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>550030</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8172805</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8172805.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8172805</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8172805</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>34095817</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3389/frai.2021.550030</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Explainable AI and Reinforcement Learning—A Systematic Review of Current Approaches and Trends</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Lindsay Wells<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/948797/overview" id="id3">http://loop.frontiersin.org/people/948797/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Tomasz Bednarz<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#c001"><sup>*</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1086608/overview" id="id5">http://loop.frontiersin.org/people/1086608/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><sup>1</sup>Expanded Perception and Interaction Center, Faculty of Art and Design, University of New South Wales, Sydney, NSW, Australia</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><sup>2</sup>Data61, Commonwealth Scientific and Industrial Research Organisation, Sydney, NSW, Australia</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id6"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id7"><!-- named anchor --></a><p id="id8"> Edited by: Novi Quadrianto, University of Sussex, United Kingdom</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id9"><!-- named anchor --></a><p id="id10"> Reviewed by: Mohan Sridharan, University of Birmingham, United Kingdom; Fabio Aurelio D'Asaro, University of Milan, Italy; Arnaud Fadja Nguembang, University of Ferrara, Italy; Elena Bellodi, University of Ferrara, Italy</p></p>
+<p class="metadata-entry"><span class="generated"><a id="c001"><!-- named anchor --></a>Correspondence to: </span>*Correspondence: Tomasz Bednarz <a href="mailto:t.bednarz@unsw.edu.au">t.bednarz@unsw.edu.au</a></p>
+<p class="metadata-entry"><a id="fn001"><!-- named anchor --></a><p id="id11"> This article was submitted to Machine Learning and Artificial Intelligence, a section of the journal Frontiers in Artificial Intelligence</p></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id12">Research into Explainable Artificial Intelligence (XAI) has been increasing in recent years as a response to the need for increased transparency and trust in AI. This is particularly important as AI is used in sensitive domains with societal, ethical, and safety implications. Work in XAI has primarily focused on Machine Learning (ML) for classification, decision, or action, with detailed systematic reviews already undertaken. This review looks to explore current approaches and limitations for XAI in the area of Reinforcement Learning (RL). From 520 search results, 25 studies (including 5 snowball sampled) are reviewed, highlighting visualization, query-based explanations, policy summarization, human-in-the-loop collaboration, and verification as trends in this area. Limitations in the studies are presented, particularly a lack of user studies, and the prevalence of toy-examples and difficulties providing understandable explanations. Areas for future study are identified, including immersive visualization, and symbolic representation.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id13"><i>Explainable Artificial Intelligence</i> (XAI) is a growing area of research and is quickly becoming one of the more pertinent sub-topics of Artificial Intelligence (AI). AI systems are being used in increasingly sensitive domains with potentially large-scale social, ethical, and safety implications, with systems for autonomous driving, weather simulations, medical diagnosis, behavior recognition, digital twins, facial recognition, business optimization, and security just to name a few. With this increased sensitivity and increased ubiquity comes inevitable questions of trust, bias, accountability, and process—i.e., how did the machine come to a certain conclusion? (Glass et al., <a href="#B15">2008</a>). These concerns arise from the fact that, generally, the most popular and potentially most powerful part of AI—Machine Learning (ML)—is essentially a <i>black-box</i>, with data input into a trained neural network, which then outputs a classification, decision, or action. The inner workings of these algorithms are a complete mystery to the lay-person (usually the person interacting with the AI). The algorithms can even be difficult for data scientists to understand or interpret. While the architecture and mathematics involved are well-defined, very little is known about how to interpret (let alone explain), the inner state of the neural network. Interaction with such systems are fraught with disuse (failure to rely on reliable automation), and misuse (over reliance on unreliable automation) (Pynadath et al., <a href="#B37">2018</a>).</p>
+<p id="id14">This black-box scenario makes it difficult for end-users to trust the system they are interacting with. When an AI system produces an unexpected output, this lack of trust often results in skepticism and possibly even rejection on the part of the end-user. It is not clear if the result is “correct” or as a result of some flaw or bias in the creation of the AI system that led to the model being overfit on training data not representative of wide range of examples in the real world, or underfit, not sufficiently modeling the complexities of the target environment. These errors may have considerable side effects, such as unsafe resultant behaviors in factories due to misclassification, unfair treatment of members of society, unlawful actions, or financial impact on companies employing AI solutions. Marcus and Davis (<a href="#B30">2019</a>) describe a number of these issues in their book <i>Rebooting AI</i>. They argue that current approaches to AI are not “on a path to get us to AI that is safe, smart, or reliable” (p. 23).</p>
+<p id="id15">XAI research in the context of Machine Learning and deep learning aims to look inside this black-box and extract information or explanations as to why the algorithm came to the conclusion or action that it did. In addition to providing tools to assist with trust and accountability, XAI assists with debugging and bias in Machine Learning. The inputs and outputs and network design of Machine Learning algorithms are ultimately still decided with human input (human-in-the loop), and as such are often subject to human errors or bias. Explanations from XAI enabled algorithms may uncover potential flaws or issues with this design (e.g., are certain completely irrelevant features in the input image becoming too much of a factor in outputs?). XAI aims to tackle these problems, providing the end-user with increased confidence, and increased trust in the machine. Recent reviews into XAI have already been conducted, with the most recent being Biran and Cotton (<a href="#B6">2017</a>), and Miller et al. (<a href="#B32">2017</a>). These reviews focus on data-driven Machine Learning explanations. Recently Anjomshoae et al. (<a href="#B3">2019</a>) published a systematic literature review on goal-driven explainable AI, which encompassed Reinforcement Learning (RL), although the review did not provide any specific commentary on approaches used within that area. These reviews indicate that XAI is a growing area of importance, and this is also reflected in a recent move by Google to release a range of XAI tools.<a href="#fn0001"><sup>1</sup></a> Furthering the need for research in the area of XAI is the recent General Data Protection Regulation in the EU, which has a provision for the right to explanations (Carey, <a href="#B7">2018</a>).</p>
+<p id="id16">In the broader ML space, the review of 23 articles by Miller et al. (<a href="#B32">2017</a>) determined that human behavioral experiments were rare. Anjomshoae et al. (<a href="#B3">2019</a>) reviewed 62 papers and found that after text-style explanations, which were present in 47% of papers, explanations in the form of visualization were the next most common, seen in 21% of papers. Visualization presents a dynamic and exploratory way of finding meaning from the ML black-box algorithms. A considerable amount of work has already gone into the concept of “saliency maps” which highlight areas of the input image that were of importance to the outcome, see Adebayo et al. (<a href="#B1">2018</a>).</p>
+<p id="id17">Following on from these previous reviews, the current work aims to examine XAI within the scope of <i>RL</i>. RL agents generally leverage a <i>Markov Decision Process (MDP)</i>, whereby at each timestep, an <i>action</i> is selected given a certain input set of observations (<i>state</i>), to maximize a given <i>reward</i>. During compute runs, the agent learns which actions result in higher rewards (factoring in a <i>discount factor</i> for obtaining long-term rewards, such as winning the game) through a carefully moderated process of exploration and exploitation. Popularly, RL has been used successfully by the <i>DeepMind</i> team to produce agents capable of better than human-level performance in complex games like <i>GO</i> (Silver et al., <a href="#B38">2016</a>), and a suite of Atari games (Mnih et al., <a href="#B34">2015</a>).</p>
+<p id="id18">In the next section, we will qualify the reasoning for selecting RL as an area for further investigation in terms of XAI and describe the guiding research questions of this work. Then, the methodology used for the systematic literature review will be described, and the results of the review will be presented.</p>
+</div>
+<div class="section">
+<a id="s2"><!-- named anchor --></a><h2 class="main-title">Background</h2>
+<p id="id19">This work investigates RL specifically due to the unique challenges and potential benefits of XAI applied to the RL space. The concept of XAI even in agent-based AI system has been considered as early as 1994, in work by Johnson (<a href="#B21">1994</a>) who described an approach for querying an intelligent agent and generating explanations. The system was domain-independent, implemented for a simulated fighter-pilot agent. The agent itself did not use for its approach, however there are several similarities to current RL work, as the theory behind how an explanation should be worded or generated remains the same. The agent was able to explain a decision made by going back to that point in time and “repeatedly and systematically” (p. 32) modifying the situation state, and observing the different actions the agent would take in order to form a mapping between states and actions.</p>
+<div class="section">
+<a id="id20"><!-- named anchor --></a><h3 class="section-title">Benefits</h3>
+<p id="id21">As mentioned above, XAI aims to combat the issues of trust and confidence in AI, a topic which is particularly important when safety is a major factor. Applications such as autonomous vehicles or robotics where the robot takes in observations of the environment around it and performs actions where the result could have an impact on safety are an area where trust and accountability are pertinent (Araiza-Illan and Eder, <a href="#B4">2019</a>). Determining why a robot took the action it did (and by extension knowing what factors it considered) in a human-understandable way plays a big part of building a trust that the robot is indeed making intelligent and safe decisions. This could even lead to building a rapport with the robot, making working with it more efficient as their behaviors may become more predictable. Diagnosing what went wrong when a robot or autonomous car is involved in an incident would also benefit from XAI, where we could query the machine about why it took actions in the lead up to the incident, which would allow designers to not only prevent further incidents, but help with accountability or possible insurance or ethical claims (e.g., was the autonomous car at fault, was there a fault in the decision making of the car, or was another third party at fault?).</p>
+<p id="id22">Another benefit is that RL agents often learn behaviors which are unique and can identify new strategies or policies previously not thought of. A recent example of this was a game of hide-and-seek where agents learned strategies to exploit the physics system of the game to overcome what was intended by the developers to be walls that could not be passed (Baker et al., <a href="#B5">2019</a>). Extracting from the black box how these strategies were learned, or under what circumstances these strategies were learned could result in useful new knowledge for decision making or optimization. As Stamper and Moore (<a href="#B41">2019</a>) point out, analysis of agents playing the Atari 2600 game <i>Space Invaders</i> exhibited similar decision-making behaviors to expert human players (e.g., keeping the invaders in a square formation, and destroying right-most enemies first to slow down the rate of advancement), however in other games investigated, the strategies varied more from human play. Understanding and articulating these strategies may result in new knowledge on how to optimally play these games, but also enhance recommendation systems for informed decision making. A quote by Zhuang et al. (<a href="#B48">2017</a>) sums up the current situation well: “<i>[…] people and computers can both play chess, it is far from clear whether they do it the same way</i>.”</p>
+</div>
+<div class="section">
+<a id="id23"><!-- named anchor --></a><h3 class="section-title">Challenges</h3>
+<p id="id24">A challenge in providing XAI for RL is that it usually involves a large number of decisions made over a period of time, often aiming to provide the next action at real-time speeds. Compared to standard ML techniques where decisions can happen in isolation or are unrelated to each other, RL explanations generally will need to encompass a set of actions that were related in some way (e.g., outputting explanations such as “I did actions A,B,C to avoid a penalty for Z”).</p>
+<p id="id25">Another challenge is the fact that RL agents are generally trained without using training data (with the exception of where human-replay data is used, such as in Vinyals et al., <a href="#B45">2017</a>), and instead learning is facilitated by a feedback loop (observations) from performing actions within an environment. This makes it challenging to generate human-readable explanations. While the observation and action spaces may be labeled in sensible ways, having no human-labeled training data linking actions and observations makes it challenging to produce valid explanations.</p>
+<p id="id26">Further adding to the difficulties in XAI, is that developing an AI system that is explainable and transparent can be at odds with companies that have explicit commercial interests which they may not want exposed by overly verbose AI. It can also raise issues around protecting their IP, maintaining a competitive advantage, and the additional costs involved with implementing XAI (Mohanty and Vyas, <a href="#B35">2018</a>).</p>
+</div>
+</div>
+<div class="section">
+<a id="s3"><!-- named anchor --></a><h2 class="main-title">Methodology and Research Questions</h2>
+<p id="id27">With XAI becoming increasingly important for a range of reasons previously described, and work in this area beginning to grow, it is important to take stock of the current approaches in order to find similarities, themes, and avenues for further research. As such, the guiding research questions for this review are:</p>
+<p id="id28">RQ1: What approaches exist for producing explainable output for Reinforcement Learning?</p>
+<p id="id29">RQ2: What are the limitations of studies in the area of XAI for Reinforcement Learning?</p>
+<p id="id30">It is worth taking a moment to clarify the meaning of “explanation” and “explainability” in this paper. In the case of a systematic literature review using these words as search terms, search results will appear for a multitude of meanings and interpretations of these words. For example, “explainability” might refer to something which makes a system more transparent or understandable. An “explanation” may refer to something which describes the actions, decisions, or beliefs of an AI system. “Explainablity” however may also refer to logging or verifications, or an AI system that can be queried or visualized. During the filtering process described in the next section, no restrictions were placed on how the authors defined or interpreted these terms.</p>
+<p id="id31">Given these research questions, the following section describes the methodology for searching the extant literature for information to address them.</p>
+</div>
+<div class="section">
+<a id="s4"><!-- named anchor --></a><h2 class="main-title">Selection of Literature</h2>
+<p id="id32">To examine the current state of the literature, a systematic literature review using a methodology adapted from Kitchenham et al. (<a href="#B24">2009</a>) was performed. Searches were conducted on the ACM, IEEExplorer, Science Direct, and Springer Link digital libraries, using Boolean search queries, taking the term “Reinforcement Learning” and combining it with the terms “data visualization,” “information visualization,” “explanation,” “explainable,” “explainable ai,” “XAI,” “black box,” “visual analytics,” “hybrid analytics,” and “human in the loop.” The full set of search term combinations can be found in <a href="#SM1">Supplementary Materials</a>.</p>
+<p id="id33">In addition, papers were filtered using the following criteria:</p>
+<div class="list">
+<a id="id34"><!-- named anchor --></a><ul style="list-style-type: none">
+<li><p id="id35">- <i>recent paper</i>: papers had to be published within the last 5 years (i.e., since 2014 at time of writing);</p></li>
+<li><p id="id36">- <i>relevancy</i>: papers had to be relevant to the topic of <i>RL</i> (papers which spoke about general agent-based AI system or RL from a human psychology perspective were excluded) and <i>explainability</i> (i.e., papers which did not describe an approach for explaining the actions or policy of an agent were excluded);</p></li>
+<li><p id="id37">- <i>accessibility</i>: papers needed to be accessible <i>via</i> the portals previously described;</p></li>
+<li><p id="id38">- <i>singularity</i>: duplicate papers were excluded; and</p></li>
+<li><p id="id39">- <i>full paper</i>: extended abstracts and other short papers were excluded.</p></li>
+</ul>
+</div>
+<p id="id40">As <a href="#F1">Figure 1</a> illustrates, a total of 520 papers were gathered, which was reduced to 404 after filtering out duplicate results using the EndNote software “Find Duplicates” feature. The titles and abstracts of these papers were reviewed for relevance to the domain of RL and XAI, of which 69 were deemed relevant using the relevancy measure described above. These papers were then read fully to determine relevance to the domain. The remaining 20 papers after this stage of filtering constitute the main analysis of this paper.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id41">Number of papers included in review after various stages of filtering.</p></div>
+</div>
+<p id="id42">The jump down from 69 to 20 may seem surprising, however due to the search terms, a number of papers mentioned RL in the body for purposes of describing AI systems generally for the reader, or in some cases RL was used as the technique for generating explanations for a different form of AI such as classification. Such use of the term “Reinforcement Learning” could not be determined until the full paper was examined. Many filtered papers advertised frameworks or implementations for XAI in ML in general and were picked up by the search terms for RL as the papers described the broad spectrum of Machine Learning which encompasses RL. However, these papers ultimately just described typical classification problems instead.</p>
+<p id="id43">In addition, 5 papers were added to the review, using a snowball sampling technique (Greenhalgh and Peacock, <a href="#B16">2005</a>), where if a relevant sounding paper was cited by a reviewed paper, it was subsequently assessed, and if deemed relevant added to the pool of papers for review (15 papers were examined during this stage).</p>
+<p id="id44">Before going into detail of some of the approaches for XAI in RL, the following section explores at a high level the core themes in the 25 papers reviewed in terms of domain and scope, in order to paint a picture of the current state of the research space.</p>
+</div>
+<div class="section">
+<a id="s5"><!-- named anchor --></a><h2 class="main-title">Summary of Literature</h2>
+<p id="id45">Selected papers were categorized and analyzed based upon four main topics: domain, publication type, year, and purpose. A full summary table of the selected papers and information about each is provided in <a href="#SM1">Supplementary Materials</a>.</p>
+<div class="section">
+<a id="id46"><!-- named anchor --></a><h3 class="section-title">Domain</h3>
+<p id="id47">Papers were categorized based upon the featured subject domain(s) they focused on (either in their implementation, or theoretical domain). It was possible for each paper to be in multiple categories. The distribution of papers across the categories is summarized in <a href="#F2">Figure 2</a>, and expanded upon in this section.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id48">Categorization of papers by domain. Note that some papers were in multiple domains.</p></div>
+</div>
+<p id="id49">The majority of papers (16; 64.0%) focused their examples on the domain of video games (particularly Atari games, given recent popularity due to DeepMind's success), however choice of target game was generally quite broad spread, with the only game utilized in more than one paper was Pac-Man, as illustrated in <a href="#F3">Figure 3</a>. Most common after this were examples using a basic grid-world environment with a navigation task (5 papers), and examples in robotics (4 papers).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F3"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<div class="caption"><p class="first" id="id50">Screenshots of the game-based applications in the studied papers. Where more than one paper used that game, the number of papers using the game are shown in brackets.</p></div>
+</div>
+<p id="id51">The domain of networking tasks such as video bitrate monitoring and cloud-based applications appeared in 2 papers. An area that was expected to have greater representation was autonomous vehicles (and this is validated by the mention of this area of RL frequently in the reviewed papers), however this area was the focus of only 2 papers.</p>
+<p id="id52">Finally, one paper was written from a defense/military perspective. It should be noted that only 6 papers attempted to apply their implementation to multiple example situations, however even in these cases, it was from within the same domain (e.g., multiple types of games).</p>
+</div>
+<div class="section">
+<a id="id53"><!-- named anchor --></a><h3 class="section-title">Publication Type</h3>
+<p id="id54">The primary outlet for the reviewed papers was conference proceedings (16 papers), with only 3 papers published in journals. Another 4 papers were from the open access repository arXiv,<a href="#fn0002"><sup>2</sup></a> 3 of which were found as part of the snowball sampling process described previously. One publication (Pynadath et al., <a href="#B37">2018</a>) was a book chapter published in “Human and Machine Learning.”</p>
+</div>
+<div class="section">
+<a id="id55"><!-- named anchor --></a><h3 class="section-title">Year</h3>
+<p id="id56">The majority of papers found were published in 2019 (15 papers), while only 6 were published in 2018, and 4 in 2017 (see <a href="#F4">Figure 4</a>). This indicates that research into attempting produce explainable RL agents is an area of considerable growth. As we will see, given the sudden increase in publications, there is a reasonable amount of cross-over between some streams of research, and ideally these researchers may consolidate their work and progress together, rather than in parallel, into the future.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F4"><!-- named anchor --></a><h5 class="label">Figure 4</h5>
+<div class="caption"><p class="first" id="id57">Distribution of surveyed papers by year, indicating an increase of academic interest in this area.</p></div>
+</div>
+</div>
+<div class="section">
+<a id="id58"><!-- named anchor --></a><h3 class="section-title">Purpose/Scope</h3>
+<p id="id59">The reviewed papers presented a mixture of papers attempting to establish a theory or model (6 papers), while others primarily focused on introducing a new method for explainable RL (18 papers).</p>
+<p id="id60">The primary purpose or focus of the reviewed papers was coded down to 5 core topics as shown in 5 (it was possible for a paper to be assigned to multiple topics): <i>human collaboration</i> (7 papers); <i>visualization</i> (9 papers); <i>policy summarization</i> (10 papers); <i>query-based explanations</i> (5 papers); and <i>verification</i> (1 paper). This distribution of purposes is consistent with the findings in the Anjomshoae et al. (<a href="#B3">2019</a>) review, which found a high number of visualization-based explanation systems.</p>
+<p id="id61"><a href="#T1">Table 1</a> summarizes which category was determined for each paper, and the distribution of papers across different domains is presented in <a href="#F5">Figure 5</a>. These topics are used to help structure the following discussion section.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id62">A summary of the papers reviewed, categorized by purpose.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id63"><!-- named anchor --></a><thead>
+<a id="id64"><!-- named anchor --></a><tr>
+<a id="id65"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id66"><!-- named anchor --></a><b>Purpose</b>
+</th>
+<th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id67"><!-- named anchor --></a><b>Papers</b>
+</th>
+</tr>
+</thead>
+<tbody>
+<a id="id68"><!-- named anchor --></a><tr>
+<a id="id69"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id70"><!-- named anchor --></a>Human collaboration</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id71"><!-- named anchor --></a>Amir et al. (<a href="#B2">2019</a>), Hayes and Shah (<a href="#B18">2017</a>), Huang et al. (<a href="#B19">2019</a>), Pynadath et al. (<a href="#B37">2018</a>), Tabrez et al. (<a href="#B42">2019</a>), Tabrez and Hayes (<a href="#B43">2019</a>), Ehsan et al. (<a href="#B11">2019</a>)</td>
+</tr>
+<tr>
+<a id="id72"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id73"><!-- named anchor --></a>Visualization</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id74"><!-- named anchor --></a>Dao et al. (<a href="#B9">2018</a>), Dethise et al. (<a href="#B10">2019</a>), Iyer et al. (<a href="#B20">2018</a>), Joo and Kim (<a href="#B22">2019</a>), Mishra et al. (<a href="#B33">2018</a>), Pan et al. (<a href="#B36">2019</a>), Wang et al. (<a href="#B46">2018</a>), Greydanus et al. (<a href="#B17">2018</a>), Yang et al. (<a href="#B47">2018</a>).</td>
+</tr>
+<tr>
+<a id="id75"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id76"><!-- named anchor --></a>Policy summarization</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id77"><!-- named anchor --></a>Amir et al. (<a href="#B2">2019</a>), Fukuchi et al. (<a href="#B12">2017a</a>,<a href="#B13">b</a>), Hayes and Shah (<a href="#B18">2017</a>), Lage et al. (<a href="#B25">2019</a>), Madumal et al. (<a href="#B29">2020</a>), Sridharan and Meadows (<a href="#B40">2019</a>), Stamper and Moore (<a href="#B41">2019</a>), Lyu et al. (<a href="#B28">2019</a>), Verma et al. (<a href="#B44">2018</a>)</td>
+</tr>
+<tr>
+<a id="id78"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id79"><!-- named anchor --></a>Query-based explanations</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id80"><!-- named anchor --></a>Amir et al. (<a href="#B2">2019</a>), Hayes and Shah (<a href="#B18">2017</a>), Kazak et al. (<a href="#B23">2019</a>), Sridharan and Meadows (<a href="#B40">2019</a>)</td>
+</tr>
+<tr>
+<a id="id81"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id82"><!-- named anchor --></a>Verification</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id83"><!-- named anchor --></a>Kazak et al. (<a href="#B23">2019</a>), Dethise et al. (<a href="#B10">2019</a>)</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><p class="first" id="id84"><i>Note that a paper could have multiple purposes</i>.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F5"><!-- named anchor --></a><h5 class="label">Figure 5</h5>
+<div class="caption"><p class="first" id="id85">Categorization of papers by scope. Note that some papers were multi-faceted and covered multiple categories.</p></div>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="s6"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="id86">The following sections address each of the defined research questions for this work.</p>
+<div class="section">
+<a id="id87"><!-- named anchor --></a><h3 class="section-title">RQ1: What Approaches Exist for Producing Explainable Output for Reinforcement Learning?</h3>
+<div class="section">
+<a id="id88"><!-- named anchor --></a><h4 class="subsection-title">Human Collaboration</h4>
+<p id="id89">Seven papers discussed approaches that were inherently human-based in their approaches.</p>
+<p id="id90">Pynadath et al. (<a href="#B37">2018</a>) tested human interaction with an agent while manipulating the perceived ability of the agent by altering the explanations it gave. They explored the design of explanations for Partially Observable Markov Decision Process (POMDP)-based RL agents. The authors mapped different components of the POMDP model to the Situational Awareness-based Agent Transparency (SAT) model in order to determine a set of “explanation content” to assist with situational awareness in a military setting. The SAT was comprised of three levels:</p>
+<div class="list">
+<a id="id91"><!-- named anchor --></a><ul>
+<li><p id="id92">The agent's <i>actions and plans;</i></p></li>
+<li><p id="id93">The agent's <i>reasoning process</i>, and;</p></li>
+<li><p id="id94">The agent's <i>predicated outcomes</i> (optionally including uncertainties).</p></li>
+</ul>
+</div>
+<p id="id95">The researchers were able to manipulate the ability of the agent in their experiments for human-machine team missions. They evaluated an explainable robot agent which would navigate around an online 3D environment. The robot used a scanner to recommend to the human team members what they should do next (enter the building, put on armor etc.) Example explanations for this agent included “I believe that there are no threats in the market square” for beliefs about the current state of the world, or “my image processing will fail to detect armed gunmen 30% of the time” as an explanation of the current state of the observation model the agent was using.</p>
+<p id="id96">The authors evaluated differing levels of explanation and found that in general they could potentially “improve task performance, build transparency, and foster trust relationships.” Interestingly, the authors noted that explanations which resulted in users being uncertain about what to do next were considered just as ineffective as when no explanations were given. Ability of the robot was tested as well. The high-ability robot got predictions 100% correct, resulting in participants not questioning the robots' decisions (potentially leading those participants to ignore some of the explanation content as the robot “got it right anyway”). This is a prominent example of overreliance, mentioned earlier.</p>
+<p id="id97">In a similar vein as the work by Pynadath et al. (<a href="#B37">2018</a>) and Sridharan and Meadows (<a href="#B40">2019</a>) contributed a theory of how to enable robots to provide explanatory descriptions of its decisions based upon its beliefs and experiences. Building upon existing work into scientific explanation, the theory encompassed 3 core components:</p>
+<div class="list">
+<a id="id98"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="id99">How to represent, reason with, and learn knowledge to support explanations.</p></li>
+<li><p id="id100">How to characterize explanations in terms of axes of abstraction, specificity, and verbosity.</p></li>
+<li><p id="id101">How to construct explanations.</p></li>
+</ol>
+</div>
+<p id="id102">The authors went on to describe an architecture which implemented this theory in a cross-domain manner. The architecture itself operates on two levels, first reasoning using commonsense domain knowledge at a high-level a plan of actions. The system utilized RL for the actions, working alongside Answer Set Prolog (ASP) reasoning of object constants, domain attributes, and axioms based upon state-action-reward combinations (Sridharan and Meadows, <a href="#B40">2019</a>). The ASP reasoning was used for planning and diagnostics, and to trigger the learning (using RL) of new concepts when something unknown is encountered (Sridharan and Meadows, <a href="#B39">2018</a>). When producing explanations, the architecture extracted words and phrases from a human query matching a template, and based upon human-controlled values effecting the abstraction, specificity, and verbosity of the explanation, reasoned based upon changes in beliefs about the environment. The two evaluation tasks used were moving objects to a target location and following a recipe.</p>
+<p id="id103">Tabrez and Hayes (<a href="#B43">2019</a>) described a framework called RARE (Reward Augmentation and Repair through Explanation) which also extended the POMDP model. Using this framework, the RL agent was able to infer based upon a human's behavior the most likely reward function they were using and communicate to the user important differences or missing information in the human's reward function. The agent autonomously provided “actionable statements,” which the authors tested in a controlled experiment on a Sudoku-style game. The control group were given an agent who would alert users who were about to make a mistake, and the treatment group had an agent which would indicate that a move would result in failure, and <i>explain</i> to them which rules of the game would be broken. Participants found the agent with explanations to be more helpful, useful, and intelligent. The authors however highlighted the fact that the approach does not scale. Statements used a template in the form of: “If you perform {describe action}, you will fail the task in state {describe state} because of {describe reward function difference}.”</p>
+<p id="id104">Looking at autonomous vehicles as an example, Pan et al. (<a href="#B36">2019</a>), contributed Semantic Predictive Control (SPC) which learns to “predict the visual semantics of future states and possible events based upon visual inputs and an inferred sequence of future actions” (p. 3203). Visual semantics in this case refers to object detection, and the authors suggested that these predicted semantics can provide a visual explanation of the RL process. The paper, however, provided little insight into how it addresses the problem of XAI.</p>
+<p id="id105">Another work in the autonomous driving domain, Huang et al. (<a href="#B19">2019</a>) compared approximate-inference and exact-inference approaches in an attempt to leverage the way humans make inferences about how a RL agent operates based upon examples of optimal behavior. Their work compared different approximate-inference models in a user study, where users were shown example behaviors. Users were tasked with selecting from a range of trajectories which one they thought the autonomous driver was most likely to take. The authors' findings suggested that an approximate-inference model using a Euclidean-based approach performed better than algorithmic teaching.</p>
+<p id="id106">Finally, work by Ehsan et al. (<a href="#B11">2019</a>) presented a novel approach for generating rationales (the authors note a distinction between this and explanations, indicating that rationales do not need to <i>explain</i> the inner workings of the underlying model). The method involves conducting a modified think-aloud user study of the target application (in this case, the game <i>Frogger</i>) where participants are prompted to verbally indicate their rationale for each action they take. These rationales (and the associated observation-action pairs in the game) are then cleansed and parsed before being fed through an encoder-decoder network to facilitate natural language generation of actions taken by a RL agent. The authors conducted user studies on the generated explanations compared to random and compared to pre-prepared human explanations. Generated explanations performed better than randomly generated explanations in all factors tested (confidence, human-likeness, adequate justification, and understandability), and performed similarly to the pre-prepared explanations, but did not beat it. A limitation of this work was that the system was designed for turn-based or distinct-step environments, and the authors are continuing their work to look at continuous environments. A major challenge in this is that data collection of rationales during the think-aloud stage is constrained to be after each action taken and would be an arduous process for a human for games larger than Frogger.</p>
+</div>
+<div class="section">
+<a id="id107"><!-- named anchor --></a><h4 class="subsection-title">Visualization</h4>
+<p id="id108">Nine of the papers reviewed focused on graphical visualization of the agent learning process. Some remarkable visualizations have already been produced, however as discussed later, limitations exist in the ability of these visualizations to fully explain an agent's behavior or policy.</p>
+<p id="id109">Wang et al. (<a href="#B46">2018</a>) provided a comprehensive yet highly application-specific visualization tool for Deep-Q Reinforcement Learning Networks called <i>DQNViz</i>, with the goal of identifying and extracting typical action/movement/reward patterns of agents. While <i>DQNVis</i> was scoped to the Atari <i>Breakout</i> game and was focused primarily on objectives relating to improving the training of an agent during development, the tool shows the power of visualization techniques to gain insight into the behaviors of an agent.</p>
+<p id="id110">The system allowed behaviors to be identified and labeled using tools, such as regular expressions, principal component analysis, dynamic time warping, and hierarchical clustering. Core behaviors in <i>Breakout</i> that the agent went through during training included <i>repeating, hesitating, digging</i>, and <i>bouncing</i> (see <a href="#F6">Figure 6</a>). The tool allowed users to investigate certain moments and see what the agent did at that time and highlight which states in each layer of the convolutional neural network were most activated. Coupled with video output surrounding certain behaviors, experts were able to explore what caused bad behaviors like repetition or hesitation.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F6"><!-- named anchor --></a><h5 class="label">Figure 6</h5>
+<div class="caption"><p class="first" id="id111">Example visualizations from DQNVis, showing <b>(a,b)</b> episode duration, and <b>(c)</b> actions taken over time and how experts identified these as “hesitating” and “repeating” behaviors which were non-optimal (from Wang et al., <a href="#B46">2018</a>, p. 294, reproduced with permission).</p></div>
+</div>
+<p id="id112">Testing so far on DQNViz has been conducted only with deep learning experts who were involved in the initial collaborative process of building the system, and so the usability for non-experts remains to be seen.</p>
+<p id="id113">Region Sensitive Rainbow (RS-Rainbow) was a visualization method contributed by Yang et al. (<a href="#B47">2018</a>). RS-Rainbow used a “region-sensitive module” (p. 1) added in after the standard image convolution layers of a deep neural network, which looks for distinctive patterns or objects, and this representation replaces the original representation of the screen as the state used by the deep Q network agent. The authors provided three alternative approaches for visualizing the important regions: a weights-overlay, a soft saliency mask, and a binary saliency mask. Tested on a range of Atari games, the agent out-performed state-of-the-art approaches for Deep RL. The authors have not yet studied to what extent the visualization aids in human understanding in non-experts and ability to debug agents.</p>
+<p id="id114">Greydanus et al. (<a href="#B17">2018</a>) also presented a visualization technique tested on Atari games. They contributed <i>perturbation-based saliency</i>, to artificially reduce the RL agent's certainty about specific features (e.g., the location of the ball in the Atari game Pong), and its effect on the agent's policy. Using this, the authors could determine the regions of an image which had the most effect. The authors used the visualization to understand “strong” policies where agents perform dominant strategies (such as “tunneling” in <i>Breakout</i>), and to observe how attention changes while the agent learns. The study found that the visualization helped non-expert users with identify agents with overfitted models. Finally, the study showed how visualization can aid in debugging, showing examples of Atari games where human performance was not yet attained. In <i>MsPacman</i>, it was found that the agent was not tracking the ghosts, and in <i>Frostbite</i>, the agent was only tracking the player and goal, and not the destination platforms.</p>
+<p id="id115">A similar approach to highlighting areas of an image that were relevant to a decision was presented by Joo and Kim (<a href="#B22">2019</a>) who applied the Gradient-weighted Class Activation Mapping (<i>Grad-CAM</i>) approach, to Asynchronous Advantage Actor-Critic (A3C) deep RL in the context of Atari Games. The result was effectively a heatmap indicating which parts of the input image affected the predicted action.</p>
+<p id="id116">A more complex approach to visualizing the focus of a RL agent was presented by Iyer et al. (<a href="#B20">2018</a>). The authors claimed their system could “automatically produce visualization[s] of their state and behavior that is intelligible to humans.” Developed within the domain of Atari games, the authors used template matching to detect objects in the screen input to produce a number of “object channels” (one for each detected object), as extra input into the convolutional neural network used by the RL agent. The authors also described an approach to produce a “pixel saliency map,” where pixels are ranked in terms of their contribution toward the chosen action in that state (see <a href="#F7">Figure 7</a>). As the pixel map is generally not human intelligible (i.e., it is difficult to interpret due to noise and other factors), the approach was combined with the previously mentioned object detection, to produce an “object saliency map” which is easier for humans to understand. The authors tested the system using human experiments, where participants were tasked with generating explanations of the behavior of a Pacman agent, and predict the next action. Participants assisted by the object salience maps performed significantly better on the tasks.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F7"><!-- named anchor --></a><h5 class="label">Figure 7</h5>
+<div class="caption"><p class="first" id="id117">Screenshots (left) and their matching object saliency maps (right) in the game Ms Pacman (from Iyer et al., <a href="#B20">2018</a>, p. 148, reproduced with permission).</p></div>
+</div>
+<p id="id118">Sparse Bayesian Reinforcement Learning (SBRL; Lee, <a href="#B26">2017</a>) can explain which relevant data samples influenced the agent's learning. An extension to SBRL by Mishra et al. (<a href="#B33">2018</a>) was <i>V-SBRL</i> which was applied to vision-based RL agents. The system maintains snapshot storage to store important past experiences. The authors presented an approach to visualizing snapshots at various important locations (as determined by the SBRL algorithm), by showing state-action pairs. In the context of a navigation task, an interesting visualization was provided by overlaying the snapshots on a Q contour plot, allowing designers to see where the agent had confidence in its actions and where it did not. V-SBRL may prove to be useful in continuous environments, where the number of important moments may be high, but can be compressed down by finding similar state-action pairs within the continuous space. In another paper from the same authorship team, Dao et al. (<a href="#B9">2018</a>) applied the approach to the Atari games Pong and Ms Pacman.</p>
+<p id="id119">Pan et al. (<a href="#B36">2019</a>) as previously described provided visual explanations in the form of object detection.</p>
+</div>
+<div class="section">
+<a id="id120"><!-- named anchor --></a><h4 class="subsection-title">Policy Summarization</h4>
+<p id="id121">Ten papers provided approaches to in some way summarize the policy that a RL agent has learned. While a policy summary doesn't explain an individual action, it can help provide context for why an action was taken, and more broadly why an agent makes the overall set of actions it makes.</p>
+<p id="id122">Fukuchi et al. (<a href="#B12">2017a</a>) described the <i>Instruction-based Behavior Explanation</i> (IBE) approach which allows an agent to announce their future behavior. To accomplish this, the agent leveraged Interactive RL where experts provide instructions in real-time to beginner agents. The instructions are then re-used by the system to generate natural-language explanations. Further work by Fukuchi et al. (<a href="#B13">2017b</a>) then expanded on this to a situation where an agent dynamically changed policy.</p>
+<p id="id123">Hayes and Shah (<a href="#B18">2017</a>) used code annotations to give human-readable labels to functions representing actions and variables representing state space, and then used a separate Markov Decision Process (MDP) to construct a model of the domain and policy of the control software itself. The approach is compatible not only with RL, but also with hard-coded conditional logic applications too.</p>
+<p id="id124">The authors tested their approach on three different domains, a grid-world delivery task, the traditional Cart Pole task, and an inspection robot task. Generated policies were similar in nature to the expert-written policies. The authors suggested that the state space and action space of the learned domain model needs to be constrained in order for the approach to be effective, and to prevent combinatory explosion. It remains to be seen if the approach will work on environments more complex than the Cart Pole.</p>
+<p id="id125">Amir et al. (<a href="#B2">2019</a>) proposed a conceptual framework for strategy summarization. The framework consisted of three core components:</p>
+<div class="list">
+<a id="id126"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="id127">intelligent states extraction: which given the agent's strategy/policy as input, outputs a prioritized subset of states to be included in the summary—the main challenge being determining what the desirable characteristics of a state are for use in a summary;</p></li>
+<li><p id="id128">world state representation: which involves the summarization of potentially complex world states (i.e., an agent may consider a large number of variables with different weights for certain decisions); and</p></li>
+<li><p id="id129">the strategy summary interface: which is concerned with a usable and appropriate user interface for exploration of the summary, which is guided by both the user and the system itself.</p></li>
+</ol>
+</div>
+<p id="id130">For each of these components, the authors provided potential research directions for addressing these problems in the RL space, however this is the only paper reviewed which did not include an implementation which was tested alongside the theoretical framework.</p>
+<p id="id131">Recent work by Madumal et al. (<a href="#B29">2020</a>), implemented explanations in a RL agent playing <i>StarCraft II</i>, under the premise that humans would prefer causal models of explanation. The agent was able to answer “counterfactual” levels of explanations, i.e., “why” questions. The authors introduced an approach where a causal graph was generated in the form of a directed acyclic graph, where state variables and rewards were nodes, and actions being edges (assuming that an action <i>caused</i> a transition between different states). Using structural causal equations, on the causal graph, an explanation was generated.</p>
+<p id="id132">The explainable agent was tested on 120 participants. To test participants understanding of the explanations, they were tasked with first watching the agent play StarCraft II and explain its actions, followed by watching an agent play and predict its next action. The agent was found to have statistically significantly higher levels of satisfaction and understanding of actions taken than a non-explainable agent. Interestingly however, no significant difference in levels of trust was found, a fact that the author attributed to the short interaction time with the agent.</p>
+<p id="id133">A set of causal rules was also used in similar work by Lyu et al. (<a href="#B28">2019</a>) who proposed the Symbolic Deep Reinforcement Learning (SDRL) framework, aimed at handling high-dimensional sensory inputs. The system used symbolic planning as a high-level technique for structuring the learning with a symbolic representation provided by an expert. The high-level symbolic planner had the goal of maximizing some “intrinsic” reward of formulating the most optimal “plan” (where a plan is a series of learned sub-tasks). DRL was used at the “task/action” level to learn low-level control policies, operating to maximize what the authors call an “extrinsic” reward. The authors tested their new approach on the classic “taxi” Hierarchical Reinforcement Learning (HRL) task, and the Atari game <i>Montezuma's Revenge</i> (see <a href="#F8">Figure 8</a>). While the system contributed gains in terms of data efficiency, of interest to this paper is the use of symbolic representation and the high-level planner. Such representation of the environment and action space and abstraction at a high-level can be useful in the pursuit of XAI as it may open up opportunities to (with careful design) provide more interpretable systems.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F8"><!-- named anchor --></a><h5 class="label">Figure 8</h5>
+<div class="caption"><p class="first" id="id134">Summarized policies for Montezuma's Revenge (left), and the “taxi” problem (right), (from Lyu et al. (<a href="#B28">2019</a>), p. 2975, reproduced with permission).</p></div>
+</div>
+<p id="id135">Verma et al. (<a href="#B44">2018</a>) described a framework for generating agent policies called Programmatically Interpretable Reinforcement Learning (PIRL), which used a high-level, domain-specific programming language, similar to the symbolic representations mentioned previously. The system used DRL for initial learning, and then a novel search algorithm called Neurally Directed Program Search (NDPS) to search over the DRL with a technique inspired by imitation learning to produce a model in the symbolic representation. The resulting model was described by the authors as “human readable source code” (p. 9), however no tests have yet been conducted on how well users can understand it, or how useful it is for debugging. The authors indicated that the resulting policy was smoother than the one generated by DRL—in the case of the test domain of a racing game, the steering output was much smoother, albeit with slower lap times (see <a href="#F9">Figure 9</a>).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F9"><!-- named anchor --></a><h5 class="label">Figure 9</h5>
+<div class="caption"><p class="first" id="id136">Plot of steering actions generated by standard DRL agent vs. the summarized NDPS policy, which resulted in much smoother steering movements (from Verma et al., <a href="#B44">2018</a>, p. 7, reproduced with permission).</p></div>
+</div>
+<p id="id137">Lage et al. (<a href="#B25">2019</a>) reported on different approaches for agent policy summarization, using Inverse Reinforcement Learning and Imitation learning approaches. Tested in three different domains, the authors found that the policy of an agent was most accurately reproduced when using the same model that was used for extraction as was used for reconstruction. Stamper and Moore (<a href="#B41">2019</a>) compared policies generated by machines to those of humans. Using <i>post-hoc</i> human inspection, they analyzed data from a DQN RL agent, using t-SNE embedding. They found that the agent playing <i>Space Invaders</i> exhibited similar decision-making behaviors to expert human players (e.g., keeping the invaders in a square formation, and destroying right-most enemies first to slow down the rate of advancement). The work is still in its early stages, and the authors plan to automate the strategy identification process.</p>
+<p id="id138">The previously described work by Sridharan and Meadows (<a href="#B40">2019</a>) also provided for a summary of learned policy in their approach at different levels of abstraction. These summaries were able to be queried by the user, as explained in the next section.</p>
+</div>
+<div class="section">
+<a id="id139"><!-- named anchor --></a><h4 class="subsection-title">Query-Based Explanations</h4>
+<p id="id140">Five papers described an interactive query-based approach to extracting explanations from a RL agent. Hayes and Shah (<a href="#B18">2017</a>) went into the most detail. Broadly, their system conducted 4 core actions:</p>
+<div class="list">
+<a id="id141"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="id142">identify the question based upon a template approach, e.g., “When do you do {action}?”;</p></li>
+<li><p id="id143">resolve states [using the template from (1), determine the states that are relevant to the question];</p></li>
+<li><p id="id144">summarize attributes (determine common attributes across the resolved states); and</p></li>
+<li><p id="id145">compose a summary in a natural language form (using “communicable predicates”).</p></li>
+</ol>
+</div>
+<p id="id146">These steps integrated with the code annotations previously described for this system.</p>
+<p id="id147">The work by Madumal et al. (<a href="#B29">2020</a>) featured a query-based RL agent playing <i>Starcraft II</i>. The agent focused on handling <i>why?</i> and <i>why not?</i> questions. An example question was provided by the author, “Why not build barracks?”, to which the agent replied, “Because it is more desirable to do action build_supply_depot to have more supply depots as the goal is to have more destroyed units and destroyed buildings.” This is a great example of a RL agent being able to answer questions about its action, however it remains to be seen how well this approach will scale.</p>
+<p id="id148">Kazak et al. (<a href="#B23">2019</a>) presented an approach which allowed experts to query a RL agent in order to perform verification tasks. In their tests, queries took over 40 s to complete. Their work is described in more detail in the verification section, as that was the primary purpose of that work.</p>
+<p id="id149">Previously described work on policy summarization by Amir et al. (<a href="#B2">2019</a>) and Sridharan and Meadows (<a href="#B40">2019</a>), both highlighted the importance of being able to further query summarized policies in order to prevent initial cognitive load on the user by presenting a policy that was too complex or verbose. The query functionality in Sridharan and Meadows (<a href="#B40">2019</a>) was able to be customized to different levels of abstraction, specificity, and verbosity, but this was further guided by the ASP-based architecture they used.</p>
+</div>
+<div class="section">
+<a id="id150"><!-- named anchor --></a><h4 class="subsection-title">Verification</h4>
+<p id="id151">A theme which was found within two reviewed papers was that of verification. Verification is an area of importance to RL for a number of reasons, not least due to the impact on safety it can have. As Fulton and Platzer (<a href="#B14">2018</a>) point out, formal verification allows us to detect discrepancies between models and the physical system being controlled, which could lead to accidents.</p>
+<p id="id152">Acknowledging the non-explainability of RL systems, Kazak et al. (<a href="#B23">2019</a>) suggested that verifying that systems adhere to specific <i>behaviors</i> may be a good alternative to verifying that they adhere to exact values from a model. They presented an approach called <i>Verily</i>, which checks that the examined system satisfies the pre-defined requirements for that system by examining all possible states the agent could be in, and using the formal verification approach <i>Marabou</i>. The system identifies “undesirable” sequences using bounded model checking queries of the state space. Of interest to this review is that when a system is found to not meet the requirements, a <i>counter example</i> is generated that <i>explains</i> a scenario in which the system fails. The authors tested this approach on three case studies within a networking/cloud computing domain, providing verification that the RL systems employed were conducting desired behaviors and avoiding poor outcomes (e.g., verifying that an adaptive video streaming system was correctly choosing between high- or low-quality video based upon network conditions). The impact of <i>Verily</i> on the trust relationship between humans and the systems remains to be tested, as does the scalability of this approach since it operates on all possible states.</p>
+<p id="id153">Similar to the Kazak et al. study was work by Dethise et al. (<a href="#B10">2019</a>), also in the domain of RL for networking problems. They looked at using interpretability tools to identify unwanted and anomalous behaviors in trained models. The system in question was <i>Pensieve</i>, an adaptive bit rate selector, common in video streaming services. The authors analyzed the relationship between data throughput and decisions made by the agent. Using simple visualization techniques, they showed that the agent never chose certain bandwidths for users (despite there being no bias present in the training data). Further analysis revealed that the agent preferred to multiplex between higher and lower bitrates when the average available bitrate was one of the identified ignored bitrates. The authors also analyzed which features contributed the most to decisions, finding that the most highly weighted feature was the previous bit rate. This paper used domain knowledge to lead a guided exploration of the inputs of a relatively simple RL agent, however some of the approaches and visualizations presented may be of use in other areas.</p>
+</div>
+</div>
+<div class="section">
+<a id="id154"><!-- named anchor --></a><h3 class="section-title">RQ2: What Are the Limitations of Studies in the Area of XAI for Reinforcement Learning?</h3>
+<p id="id155">In reviewing the collected papers, a number of common limitations were identified, particularly in the use of “toy examples,” a lack of new algorithms, lack of user testing, complexity of explanations, basic visualizations, and lack of open-sourced code. The following sections discuss in more detail the various common limitations.</p>
+<div class="section">
+<a id="id156"><!-- named anchor --></a><h4 class="subsection-title">Use of Toy Examples, Specific Applications, and Limited Scalability</h4>
+<p id="id157">Given the early stages of XAI for RL research, all papers reviewed presented effectively “toy” examples, or case studies which were deliberately scoped to smaller examples. In most cases this was done to avoid the combinatory explosion problem in which where state- and action-space grow, so do the number of possible combinations of states and actions. An example of this was Hayes and Shah (<a href="#B18">2017</a>) who scoped their work to the basic Cart Pole environment. Similarly the Tabrez and Hayes (<a href="#B43">2019</a>) paper focused on a grid-world example.</p>
+<p id="id158">Many authors indicated limitations in scaling the approach to more complex domains or explanations (with the exception of Sridharan and Meadows, <a href="#B40">2019</a>, who indicated that a strong contribution of their work was that their approach would scale). Sixteen of the papers reviewed were either agents within video games or were tested with video game problems, and surprisingly few were on more real-world applications such as autonomous driving or robotics. Examples of this include Ehsan et al. (<a href="#B11">2019</a>) who provide an interesting example but is highly scoped to the <i>Frogger</i> game, and Madumal et al. (<a href="#B29">2020</a>) who looked at Starcraft II. While this is naturally following on from the success of DeepMind, and video game problems provide for challenging RL tasks, there is an opportunity for more work on applications outside of this domain.</p>
+</div>
+<div class="section">
+<a id="id159"><!-- named anchor --></a><h4 class="subsection-title">Focus on Modification of Existing Algorithms</h4>
+<p id="id160">Papers examined in this review described RL approaches or visualization techniques to augment or accompany existing RL algorithms. There is an opportunity in this area to design RL algorithms with explainability in mind. Symbolic representation can be a step toward allowing for inherently explainable and verifiable agents.</p>
+</div>
+<div class="section">
+<a id="id161"><!-- named anchor --></a><h4 class="subsection-title">Lack of User Testing</h4>
+<p id="id162">A major limitation of the studies presented in this review is that many approaches were either not tested with users (17 papers), or when they did, limited details of the testing were published, failing to describe where the participants were recruited from, how many were recruited, or if the participants were knowledgeable in Machine Learning (Pynadath et al., <a href="#B37">2018</a>; Tabrez and Hayes, <a href="#B43">2019</a>; Tabrez et al., <a href="#B42">2019</a>). Participant counts varied greatly, with one paper using 3 experts (Wang et al., <a href="#B46">2018</a>), others with students (Iyer et al., <a href="#B20">2018</a>), <i>n</i> = 40; and Greydanus et al. (<a href="#B17">2018</a>), <i>n</i> = 31, and three recruiting using Amazon Mechanical Turk<a href="#fn0003"><sup>3</sup></a> (Huang et al., <a href="#B19">2019</a>, <i>n</i> = 191; Madumal et al., <a href="#B29">2020</a>, <i>n</i> = 120; and Ehsan et al., <a href="#B11">2019</a>, <i>n</i> = 65 and <i>n</i> = 60).</p>
+<p id="id163">This lack of user testing across the reviewed papers is consistent with the findings in the Miller et al. (<a href="#B32">2017</a>) review of XAI in Machine Learning.</p>
+</div>
+<div class="section">
+<a id="id164"><!-- named anchor --></a><h4 class="subsection-title">Explanation Presentation</h4>
+<p id="id165">In some cases, implementations provided too much information for the human participant, or required significant additional knowledge from the human team member, making these approaches unsuitable for use by laypeople or even knowledgeable domain experts. This finding is consistent with the survey paper by Miller et al. (<a href="#B32">2017</a>) who found that there is very little research in the XAI space on leverages existing work on how people “generate, select, present, and evaluate” (p. 4) explanations, such as the work by Lombrozo (<a href="#B27">2007</a>) which describes how people prefer simpler and more general explanations over specific and more likely explanations.</p>
+<p id="id166">In the papers focusing on visualization, most expanded on existing techniques of pixel saliency which have successfully been used for image classification (e.g., Greydanus et al., <a href="#B17">2018</a>; Iyer et al., <a href="#B20">2018</a>; Yang et al., <a href="#B47">2018</a>). RL problems happening over time may need more complex visualization techniques to capture the temporal dimension. Other forms of visualization presented were primarily 2D graphs (e.g., DQNVis, Wang et al., <a href="#B46">2018</a>), however these solutions may struggle to scale and to be interpretable in more complex domains given the large amount of data involved network design.</p>
+<p id="id167">The majority of papers with user studies presented explanations or visualizations palatable only to experts. Further research could look at providing explainable systems targeted at laypeople or people more likely to be working with the agent, rather than those with a background in artificial intelligence. Symbolic representation was present in a number of papers in this review (e.g., Verma et al., <a href="#B44">2018</a>; Lyu et al., <a href="#B28">2019</a>). Future research could consider alternatives to text representation of these to provide more visceral explanations, such as annotations in the virtual environment. Similarly, visualization techniques presented in the papers in this review are a good start (e.g., DQNVis, Wang et al., <a href="#B46">2018</a>), however the toolkits provided may be enhanced by the addition of visualization techniques better designed for handling the temporal dimension of RL (such as the Immersive Analytics Toolkit by Cordeil et al. (<a href="#B8">2019</a>) or TensorBoard graphs<a href="#fn0004"><sup>4</sup></a>), as well as multi-modal, immersive forms of visualization such as virtual or augmented reality to better explore the complex data structures of neural networks (Marriott et al., <a href="#B31">2018</a>).</p>
+</div>
+<div class="section">
+<a id="id168"><!-- named anchor --></a><h4 class="subsection-title">Lack of Open-Source Code</h4>
+<p id="id169">Finally, only four papers provided the reader with a link to the open-source repository of their code (Greydanus et al., <a href="#B17">2018</a>; Yang et al., <a href="#B47">2018</a>; Dethise et al., <a href="#B10">2019</a>; Sridharan and Meadows, <a href="#B40">2019</a>). This lack of availability of code could be as the result of many things, but we argue that given the toy example nature of the work previously described, that some authors didn't find utility in providing code online. Additionally, intellectual property issues can sometimes arise, making it not possible to publish code in an open-source matter. This is despite the potential benefits for the academic community of shared, open-source code.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="s7"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<p id="id170">The area of XAI is of growing importance as Machine Learning techniques become commonplace, and there are important issues surrounding ethics, trust, transparency, and safety to be considered. This review has explored the extant literature on XAI within the scope of RL. We have shown that work in this area is still in its early stages but growing in prevalence and impact it can make. Clear trends are appearing in terms within the area with researchers focusing on human collaboration, visualization techniques, whole-of-policy summarization explanations, query-based explanations, and verification approaches.</p>
+<p id="id171">This paper has described current approaches, while also identifying a range of limitations in this field of research, primarily finding a lack of detail when describing human experiments, limited outcomes in terms of scalability and level of comprehension of explanations for non-expert users, and under-use of more advanced visualization techniques such as multi-modal displays and immersive visualization. To truly break through the black box of RL, a strong combination of well-articulated explanations coupled with advanced visualization techniques will be essential tools for Machine Learning experts and users alike.</p>
+</div>
+<div class="section">
+<a id="s8"><!-- named anchor --></a><h2 class="main-title">Data Availability Statement</h2>
+<p id="id172">The raw data supporting the conclusions of this article will be made available by the authors, without undue reservation.</p>
+</div>
+<div class="section">
+<a id="s9"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id173">LW completed the majority of the work here, under the supervision of TB. TB contributed major edits and comments which helped shape the overall project. All authors contributed to the article and approved the submitted version.</p>
+</div>
+<div class="section">
+<a id="conf1"><!-- named anchor --></a><h2 class="main-title">Conflict of Interest</h2>
+<p id="id174">The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id183"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="fn0001"><!-- named anchor --></a><p id="id175"><span class="generated">[1]</span> <sup>1</sup>Available online at: <a target="xrefwindow" href="https://cloud.google.com/explainable-ai" id="id176">https://cloud.google.com/explainable-ai</a>.</p>
+</div>
+<div class="footnote">
+<a id="fn0002"><!-- named anchor --></a><p id="id177"><span class="generated">[2]</span> <sup>2</sup>Available online at: <a target="xrefwindow" href="https://arxiv.org/" id="id178">https://arxiv.org/</a>.</p>
+</div>
+<div class="footnote">
+<a id="fn0003"><!-- named anchor --></a><p id="id179"><span class="generated">[3]</span> <sup>3</sup>Available online at: <a target="xrefwindow" href="https://www.mturk.com/" id="id180">https://www.mturk.com/</a>.</p>
+</div>
+<div class="footnote">
+<a id="fn0004"><!-- named anchor --></a><p id="id181"><span class="generated">[4]</span> <sup>4</sup>Available online at: <a target="xrefwindow" href="https://www.tensorflow.org/tensorboard/graphs" id="id182">https://www.tensorflow.org/tensorboard/graphs</a>.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id186"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id184"><!-- named anchor --></a><p id="id185"><span class="generated">[5]<span class="generated"> Financial disclosure</span></span> <b>Funding.</b> This work was supported by UNSW Grant number: RG190540.</p>
+</div>
+</div>
+<div class="section">
+<a id="s10"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<p id="id187">The Supplementary Material for this article can be found online at: <a target="xrefwindow" href="https://www.frontiersin.org/articles/10.3389/frai.2021.550030/full#supplementary-material" id="id188">https://www.frontiersin.org/articles/10.3389/frai.2021.550030/full#supplementary-material</a></p>
+<div class="panel">
+<a id="SM1"><!-- named anchor --></a><a id="id189" href="Data_Sheet_1.docx"><div class="caption"><p class="first" id="id190">Click here for additional data file.</p></div></a>
+</div>
+</div>
+<div class="back-section">
+<a id="id191"><!-- named anchor --></a><div class="section ref-list">
+<a id="id191"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">1</span></span> <a id="B1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id192"><!-- named anchor --></a>J. AdebayoJ. GilmerM. MuellyI. GoodfellowM. HardtB. Kim (2018). Sanity checks for saliency maps. arXiv [Preprint] arXiv:1810.03292.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">2</span></span> <a id="B2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id193"><!-- named anchor --></a>O. AmirF. Doshi-VelezD. Sarne (2019). Summarizing agent strategies. Autonomous Agents Multi Agent Syst. 33, 628–644. 10.1007/s10458-019-09418-wPMC790184933628085</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">3</span></span> <a id="B3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id194"><!-- named anchor --></a>S. AnjomshoaeA. NajjarD. CalvaresiK. Främling (2019). Explainable agents and robots: results from a systematic literature review, in 18th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2019), Montreal, Canada, May 13–17, 2019 (Montreal, QC: International Foundation for Autonomous Agents and Multiagent Systems), 1078–1088.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">4</span></span> <a id="B4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id195"><!-- named anchor --></a>D. Araiza-IllanK. Eder (2019). Safe and trustworthy human-robot interaction, in Humanoid Robotics: A Reference, eds A. GoswamiP Vadakkepat. (Dordrecht: Springer Netherlands), 2397–2419.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">5</span></span> <a id="B5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id196"><!-- named anchor --></a>B. BakerI. KanitscheiderT. MarkovY. WuG. PowellB. McGrew. (2019). Emergent tool use from multi-agent autocurricula. arXiv [Preprint] arXiv:1909.07528.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">6</span></span> <a id="B6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id197"><!-- named anchor --></a>O. BiranC. Cotton (2017). Explanation and justification in machine learning: a survey, in IJCAI-17Workshop on Explainable AI(XAI) (Melbourne, VIC), 8.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">7</span></span> <a id="B7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id198"><!-- named anchor --></a>P. Carey (2018). Data Protection: A Practical Guide to UK and EU Law.
+Oxford: Oxford University Press, Inc.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">8</span></span> <a id="B8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id199"><!-- named anchor --></a>M. CordeilA. CunninghamB. BachC. HurterB. H. ThomasK. Marriott. (2019). Iatk: an immersive analytics toolkit, in 2019 IEEE Conference on Virtual Reality and 3D User Interfaces (VR) (Osaka: IEEE), 200–209.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">9</span></span> <a id="B9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id200"><!-- named anchor --></a>G. DaoI. MishraM. Lee (2018). Deep reinforcement learning monitor for snapshot recording, in 2018 17th IEEE International Conference on Machine Learning and Applications (ICMLA) (IEEE), 591–598. 10.1109/ICMLA.2018.00095</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">10</span></span> <a id="B10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id201"><!-- named anchor --></a>A. DethiseM. CaniniS. Kandula (2019). Cracking open the black box: what observations can tell us about reinforcement learning agents, in Proceedings of the 2019 Workshop on Network Meets AI &amp; ML (Beijing), 29–36. 10.1145/3341216.3342210</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">11</span></span> <a id="B11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id202"><!-- named anchor --></a>U. EhsanP. TambwekarL. ChanB. HarrisonM. O. Riedl (2019). Automated rationale generation: a technique for explainable AI and its effects on human perceptions, in Proceedings of the 24th International Conference on Intelligent User Interfaces (Marina del Ray, CA), 263–274. 10.1145/3301275.3302316</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">12</span></span> <a id="B12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id203"><!-- named anchor --></a>Y. FukuchiM. OsawaH. YamakawaM. Imai (2017a). Application of instruction-based behavior explanation to a reinforcement learning agent with changing policy, in International Conference on Neural Information Processing (Cham: Springer), 100–108. 10.1007/978-3-319-70087-8_11</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">13</span></span> <a id="B13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id204"><!-- named anchor --></a>Y. FukuchiM. OsawaH. YamakawaM. Imai (2017b). Autonomous self-explanation of behavior for interactive reinforcement learning agents, in Proceedings of the 5th International Conference on Human Agent Interaction (New York, NY), 97–101. 10.1145/3125739.3125746</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">14</span></span> <a id="B14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id205"><!-- named anchor --></a>N. FultonA. Platzer (2018). Safe reinforcement learning via formal methods: toward safe control through proof and learning, in Thirty-Second AAAI Conference on Artificial Intelligence, (New Orleans, LA).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">15</span></span> <a id="B15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id206"><!-- named anchor --></a>A. GlassD. L. McGuinnessM. Wolverton (2008). Toward establishing trust in adaptive agents, in Proceedings of the 13th International Conference on Intelligent User Interfaces (New York, NY), 227–236. 10.1145/1378773.1378804</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">16</span></span> <a id="B16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id207"><!-- named anchor --></a>T. GreenhalghR. Peacock (2005). Effectiveness and efficiency of search methods in systematic reviews of complex evidence: audit of primary sources. BMJ
+331, 1064–1065. 10.1136/bmj.38636.593461.6816230312PMC1283190</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">17</span></span> <a id="B17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id208"><!-- named anchor --></a>S. GreydanusA. KoulJ. DodgeA. Fern (2018). Visualizing and understanding atari agents, in International Conference on Machine Learning (Stockholm), 1792–1801.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">18</span></span> <a id="B18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id209"><!-- named anchor --></a>B. HayesJ. A. Shah (2017). Improving robot controller transparency through autonomous policy explanation, in Proceedings of the 2017 ACM/IEEE International Conference on Human-Robot Interaction (Vienna: ACM), 303–312. 10.1145/2909824.3020233</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">19</span></span> <a id="B19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id210"><!-- named anchor --></a>S. H. HuangD. HeldP. AbbeelA. D. Dragan (2019). Enabling robots to communicate their objectives. Autonomous Robots
+43, 309–326. 10.1007/s10514-018-9771-0</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">20</span></span> <a id="B20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id211"><!-- named anchor --></a>R. IyerY. LiH. LiM. LewisR. SundarK. Sycara (2018). Transparency and explanation in deep reinforcement learning neural networks, in Proceedings of the 2018 AAAI/ACM Conference on AI, Ethics, and Society (New York, NY), 144–150. 10.1145/3278721.3278776</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">21</span></span> <a id="B21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id212"><!-- named anchor --></a>W. L. Johnson (1994). Agents that learn to explain themselves, in AAAI (Palo Alto, CA), 1257–1263.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">22</span></span> <a id="B22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id213"><!-- named anchor --></a>H. JooK. Kim (2019). Visualization of deep reinforcement learning using grad-CAM: how AI plays atari games? in 2019 IEEE Conference on Games (CoG) (London, UK). 10.1109/CIG.2019.8847950</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">23</span></span> <a id="B23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id214"><!-- named anchor --></a>Y. KazakC. BarrettG. KatzM. Schapira (2019). Verifying deep-RL-driven systems, in Proceedings of the 2019 Workshop on Network Meets AI and ML (Beijing), 83–89. 10.1145/3341216.3342218</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">24</span></span> <a id="B24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id215"><!-- named anchor --></a>B. KitchenhamO. P. BreretonD. BudgenM. TurnerJ. BaileyS. Linkman (2009). Systematic literature reviews in software engineering–a systematic literature review. Information Softw. Technol. 51, 7–15. 10.1016/j.infsof.2008.09.00930205648</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">25</span></span> <a id="B25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id216"><!-- named anchor --></a>I. LageD. LifschitzF. Doshi-VelezO. Amir (2019). Toward robust policy summarization, in Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems, 2081–2083. 33628085PMC7901849</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">26</span></span> <a id="B26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id217"><!-- named anchor --></a>M. Lee (2017). Sparse Bayesian reinforcement learning (Ph.D. dissertation). Colorado State University, Fort Collins, CO, United States.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">27</span></span> <a id="B27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id218"><!-- named anchor --></a>T. Lombrozo (2007). Simplicity and probability in causal explanation. Cogn. Psychol. 55, 232–257
+10.1016/j.cogpsych.2006.09.00617097080</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">28</span></span> <a id="B28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id219"><!-- named anchor --></a>D. LyuF. YangB. LiuS. Gustafson (2019). SDRL: interpretable and data-efficient deep reinforcement learning leveraging symbolic planning, in Proceedings of the AAAI Conference on Artificial Intelligence (Honolulu, HI), Vol. 33, 2970–2977. 10.1609/aaai.v33i01.33012970</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">29</span></span> <a id="B29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id220"><!-- named anchor --></a>P. MadumalT. MillerL. SonenbergF. Vetere (2020). Explainable reinforcement learning through a causal lens, in Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 34 (New York, NY), 2493–2500.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">30</span></span> <a id="B30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id221"><!-- named anchor --></a>G. MarcusE. Davis (2019). Rebooting AI: Building Artificial Intelligence We Can Trust. Pantheon.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">31</span></span> <a id="B31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id222"><!-- named anchor --></a>K. MarriottF. SchreiberT. DwyerK. KleinN. H. RicheT. Itoh. (2018). Immersive Analytics, Vol. 11190. Springer. 10.1007/978-3-030-01388-2</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">32</span></span> <a id="B32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id223"><!-- named anchor --></a>T. MillerP. HoweL. Sonenberg (2017). Explainable AI: beware of inmates running the asylum or: how I learnt to stop worrying and love the social and behavioural sciences. arXiv [Preprint] arXiv:1712.00547.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">33</span></span> <a id="B33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id224"><!-- named anchor --></a>I. MishraG. DaoM. Lee (2018). Visual sparse Bayesian reinforcement learning: a framework for interpreting what an agent has learned, in 2018 IEEE Symposium Series on Computational Intelligence (SSCI) (Bangalore: IEEE), 1427–1434. 10.1109/SSCI.2018.8628887</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">34</span></span> <a id="B34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id225"><!-- named anchor --></a>V. MnihK. KavukcuogluD. SilverA. A. RusuJ. VenessM. G. Bellemare. (2015). Human-level control through deep reinforcement learning. Nature518, 529–533. 10.1038/nature1423625719670</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">35</span></span> <a id="B35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id226"><!-- named anchor --></a>S. MohantyS. Vyas (2018). How to Compete in the Age of Artificial Intelligence: Implementing a Collaborative Human-Machine Strategy for Your Business. Apress. 10.1007/978-1-4842-3808-0</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">36</span></span> <a id="B36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id227"><!-- named anchor --></a>X. PanX. ChenQ. CaiJ. CannyF. Yu (2019). Semantic predictive control for explainable and efficient policy learning, in 2019 International Conference on Robotics and Automation (ICRA) (Montreal, QC: IEEE), 3203–3209. 10.1109/ICRA.2019.8794437</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">37</span></span> <a id="B37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id228"><!-- named anchor --></a>D. V. PynadathM. J. BarnesN. WangJ. Y. Chen (2018). Transparency communication for machine learning in human-automation interaction, in Human and Machine Learning (Cham: Springer), 75–90.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">38</span></span> <a id="B38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id229"><!-- named anchor --></a>D. SilverA. HuangC. J. MaddisonA. GuezL. SifreG. Van Den Driessche. (2016). Mastering the game of go with deep neural networks and tree search. Nature529:484. 10.1038/nature1696126819042</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">39</span></span> <a id="B39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id230"><!-- named anchor --></a>M. SridharanB. Meadows (2018). Knowledge representation and interactive learning of domain knowledge for human-robot interaction. Adv. Cogn. Syst.
+7, 77–96.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">40</span></span> <a id="B40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id231"><!-- named anchor --></a>M. SridharanB. Meadows (2019). Towards a Theory of Explanations for Human–Robot Collaboration. KI - Künstliche Intelligenz. 10.1007/s13218-019-00616-y</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">41</span></span> <a id="B41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id232"><!-- named anchor --></a>J. StamperS. Moore (2019). Exploring Teachable Humans and Teachable Agents: Human Strategies Versus Agent Policies and the Basis of Expertise. Cham: Springer International Publishing. 10.1007/978-3-030-23207-8_50</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">42</span></span> <a id="B42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id233"><!-- named anchor --></a>A. TabrezS. AgrawalB. Hayes (2019). Explanation-based reward coaching to improve human performance via reinforcement learning, in 2019 14th ACM/IEEE International Conference on Human-Robot Interaction (HRI) (IEEE), 249–257. 10.1109/HRI.2019.8673104</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">43</span></span> <a id="B43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id234"><!-- named anchor --></a>A. TabrezB. Hayes (2019). Improving human-robot interaction through explainable reinforcement learning, in 2019 14th ACM/IEEE International Conference on Human-Robot Interaction (HRI) (Daegu: IEEE), 751–753. 10.1109/HRI.2019.8673198</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">44</span></span> <a id="B44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id235"><!-- named anchor --></a>A. VermaV. MuraliR. SinghP. KohliS. Chaudhuri (2018). Programmatically interpretable reinforcement learning, in International Conference on Machine Learning (Stockholm), 5045–5054.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">45</span></span> <a id="B45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id236"><!-- named anchor --></a>O. VinyalsT. EwaldsS. BartunovP. GeorgievA. S. VezhnevetsM. Yeo. (2017). Starcraft II: a new challenge for reinforcement learning. arXiv [Preprint] arXiv:1708.04782.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">46</span></span> <a id="B46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id237"><!-- named anchor --></a>J. WangL. GouH. W. ShenH. Yang (2018). Dqnviz: a visual analytics approach to understand deep q-networks. IEEE Trans. Visual. Comput. Graph. 25, 288–298. 10.1109/TVCG.2018.286450430188823</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">47</span></span> <a id="B47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id238"><!-- named anchor --></a>Z. YangS. BaiL. ZhangP. H. Torr (2018). Learn to interpret atari agents. arXiv [Preprint] arXiv:1812.11276.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">48</span></span> <a id="B48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id239"><!-- named anchor --></a>Y. T. ZhuangF. WuC. ChenY. H. Pan (2017). Challenges and opportunities: from big data to knowledge in AI 2.0. Front. Information Technol. Electronic Eng. 18, 3–14. 10.1631/FITEE.1601883</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>Artificial Intelligence</p>
+<div class="metadata-area"><p class="metadata-entry"><span class="generated">Subject: </span>Systematic Review</p></div>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>explainable AI</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>reinforcement learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>artificial intelligence</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>visualization</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Counts: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Figures: </span>9</p>
+<p class="metadata-entry"><span class="generated">Tables: </span>1</p>
+<p class="metadata-entry"><span class="generated">Equations: </span>0</p>
+<p class="metadata-entry"><span class="generated">References: </span>48</p>
+<p class="metadata-entry"><span class="generated">Pages: </span>15</p>
+<p class="metadata-entry"><span class="generated">Words: </span>10345</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
