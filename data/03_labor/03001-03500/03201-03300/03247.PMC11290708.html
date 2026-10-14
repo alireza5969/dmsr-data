@@ -1,0 +1,1529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Si, Du, Li, Jiang, Miller, Wang, Zheng, and Roberts: Deep representation learning of patient data from Electronic Health Records (EHR): A systematic review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>J Biomed Inform</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>J Biomed Inform</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>319</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>nihpa</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>100970413</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Journal of biomedical informatics</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>1532-0464</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1532-0480</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="nihms-2008566.pdf">nihms-2008566.pdf</a></p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">http://www.elsevier.com/open-access/userlicense/1.0/<p id="id1">This article is made available under the Elsevier license (<a target="xrefwindow" href="http://www.elsevier.com/open-access/userlicense/1.0/" id="id2">http://www.elsevier.com/open-access/userlicense/1.0/</a>).</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk"><p class="first" id="id3">This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p></div>
+</div>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">print</span>): </span>March 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>31 December 2020</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>115</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>467831<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Page: </span>103671</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC11290708</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC11290708.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>11290708</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>11290708</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id</span>): </span>NIHMS2008566</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>33387683</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1016/j.jbi.2020.103671</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id-alternative</span>): </span>NIHMS2008566</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id-alternative</span>): </span>NIHPA2008566</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Deep representation learning of patient data from Electronic Health Records (EHR): A systematic review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Yuqi Si<span class="generated">[</span><a href="#A1">a</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Jingcheng Du<span class="generated">[</span><a href="#A1">a</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Zhao Li<span class="generated">[</span><a href="#A1">a</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Xiaoqian Jiang<span class="generated">[</span><a href="#A1">a</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Timothy Miller<span class="generated">[</span><a href="#A2">b</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Fei Wang<span class="generated">[</span><a href="#A3">c</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>W. Jim Zheng<span class="generated">[</span><a href="#A1">a</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a>Kirk Roberts<span class="generated">[</span><a href="#A1">a</a><span class="generated">]</span><span class="generated">[</span><a href="#CR1">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="A1"><!-- named anchor --></a><span class="generated">[</span>a<span class="generated">] </span>School of Biomedical Informatics, The University of Texas Health Science Center at Houston, TX, USA</p>
+<p class="metadata-entry"><a id="A2"><!-- named anchor --></a><span class="generated">[</span>b<span class="generated">] </span>Computational Health Informatics Program (CHIP), Boston Children’s Hospital and Harvard Medical School, MA, USA</p>
+<p class="metadata-entry"><a id="A3"><!-- named anchor --></a><span class="generated">[</span>c<span class="generated">] </span>Department of Population Health Sciences. Weill Cornell Medicine, Cornell University, NY, USA</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id12"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><span class="generated"> Contributed by</span>: </span><a id="FN1"><!-- named anchor --></a><p id="P1"> Author contributions statement</p><p id="P2">YS and KR conceived the review. YS, JD, ZL, and KR completed the initial screening. YS and ZL performed data extraction. YS conducted the data analysis and drafted the initial manuscript. XJ, TM, FW, and WJZ contributed to the design of the study and editing of the manuscript. KR provided overall leadership for the study and revised the manuscript. All authors approved the final version of the article.</p></p>
+<p class="metadata-entry"><span class="generated"><a id="CR1"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>*<span class="generated">] </span>Corresponding author at: School of Biomedical Informatics, University of Texas Health Science Center at Houston, 7000 Fannin St. #600, Houston TX 77030. <a href="mailto:kirk.roberts@uth.tmc.edu">kirk.roberts@uth.tmc.edu</a> (K. Roberts).</p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="S1"><!-- named anchor --></a><h3 class="section-title">Objectives:</h3>
+<p id="P3">Patient representation learning refers to learning a dense mathematical representation of a patient that encodes meaningful information from Electronic Health Records (EHRs). This is generally performed using advanced deep learning methods. This study presents a systematic review of this field and provides both qualitative and quantitative analyses from a methodological perspective.</p>
+</div>
+<div class="section">
+<a id="S2"><!-- named anchor --></a><h3 class="section-title">Methods:</h3>
+<p id="P4">We identified studies developing patient representations from EHRs with deep learning methods from MEDLINE, EMBASE, Scopus, the Association for Computing Machinery (ACM) Digital Library, and the Institute of Electrical and Electronics Engineers (IEEE) Xplore Digital Library. After screening 363 articles, 49 papers were included for a comprehensive data collection.</p>
+</div>
+<div class="section">
+<a id="S3"><!-- named anchor --></a><h3 class="section-title">Results:</h3>
+<p id="P5">Publications developing patient representations almost doubled each year from 2015 until 2019. We noticed a typical workflow starting with feeding raw data, applying deep learning models, and ending with clinical outcome predictions as evaluations of the learned representations. Specifically, learning representations from structured EHR data was dominant (37 out of 49 studies). Recurrent Neural Networks were widely applied as the deep learning architecture (Long short-term memory: 13 studies, Gated recurrent unit: 11 studies). Learning was mainly performed in a supervised manner (30 studies) optimized with cross-entropy loss. Disease prediction was the most common application and evaluation (31 studies). Benchmark datasets were mostly unavailable (28 studies) due to privacy concerns of EHR data, and code availability was assured in 20 studies.</p>
+</div>
+<div class="section">
+<a id="S4"><!-- named anchor --></a><h3 class="section-title">Discussion &amp; Conclusion:</h3>
+<p id="P6">The existing predictive models mainly focus on the prediction of single diseases, rather than considering the complex mechanisms of patients from a holistic review. We show the importance and feasibility of learning comprehensive representations of patient EHR data through a systematic review. Advances in patient representation learning techniques will be essential for powering patient-level EHR analyses. Future work will still be devoted to leveraging the richness and potential of available EHR data. Reproducibility and transparency of reported results will hopefully improve. Knowledge distillation and advanced learning techniques will be exploited to assist the capability of learning patient representation further.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="S5"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<h5 class="label">1.</h5>
+<p id="P7">In Electronic Health Records (EHRs), information regarding patient status is extensively documented. Therefore, EHR data provides a feasible mechanism to track patient health information and to make better decisions based on data-driven technologies. Unlike data in clinical trials or other biomedical studies, secondary data extracted from EHRs are not designed to answer a specific hypothesis. Instead, their primary goal is to monitor a patient. This results in the issue that EHR data have many challenging characteristics such as <i>uncurated</i> (data are not carefully chosen and thoughtfully organized or presented), <i>poor-quality</i> (data are rarely subject to data quality audits), <i>high-dimensional</i> (thousands of distinct medical events), <i>sparse</i> (lots of zero values), <i>heterogeneous</i> (drawn from different resources), <i>temporal</i> (data are collected over time), <i>incomplete</i> (missing values), <i>large-scale</i> (a large volume of data), and <i>multimodal</i> (multiple data modalities). A wide variety of studies have conducted predictive modeling of EHR data, which is a machine learning task that applies EHR data to construct a statistical model for the purpose of predicting a given clinical outcome of interest [<a href="#R1">1</a>]. However, the complexity of EHR data discussed as above makes it difficult to directly use EHR raw data in machine learning models to achieve predictive modeling.</p>
+<p id="P8">A critical element in predictive modeling of EHR data is to effectively convert patient data from the raw EHR format to a machine learning representation—in other words, to transform patient data to meaningful information that can be further understood algorithmically. The effectiveness of predictive models for improving disease diagnosis, phenotyping, and prognosis heavily depends on the quality of this feature representation. In machine learning, the task of representation learning is to learn and extract good feature representations from raw data automatically [<a href="#R2">2</a>]. Patient representation learning is one particularly promising direction of combining representation learning and large EHR datasets. It refers to learning a mathematical description of patient data to find an appropriate way of transforming raw data into meaningful features. The patient representations built from many EHR data modalities (including clinical narratives, lab tests, treatments, etc.) should be organized in a form that enables machine learning to learn effective prediction models for many tasks.</p>
+<p id="P9">This work investigates the methods of representation learning and the field of patient representation learning from EHRs through a methodological review of the literature. We collected data on 28 patient representation variables from 49 papers published in a diverse variety of venues, published up to December 2019.</p>
+<p id="P10">We seek to understand the following research questions:
+<div class="list">
+<a id="L2"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="P11"><i>Resources</i>: What are the resources available for learning patient representations? How is patient data transformed from raw input to important features?</p></li>
+<li><p id="P12"><i>Methods</i>: What representation learning methods are being contributed? What kind of models and algorithms are used to develop patient representations?</p></li>
+<li><p id="P13"><i>Applications</i>: What types of clinical problems and outcomes are addressed?</p></li>
+<li><p id="P14"><i>Potential</i>: How could these methods potentially contribute to diverse research communities?</p></li>
+</ol>
+</div></p>
+</div>
+<div class="section">
+<a id="S6"><!-- named anchor --></a><h2 class="main-title">Background</h2>
+<h5 class="label">2.</h5>
+<div class="section">
+<a id="S7"><!-- named anchor --></a><h3 class="section-title">Patient learning data pipeline</h3>
+<h5 class="label">2.1.</h5>
+<p id="P15">First, we briefly summarize the methods and resources that are commonly used in related studies (<a href="#F1">Fig. 1</a>). The learning starts with raw patient data from either structured codes such as ICD-9, or unstructured data like clinical notes. After some initial embedding techniques to transform patient data into input features, deep learning models are utilized to create the patient representation. The learning model can be unsupervised, supervised, or self-supervised. The final step is to evaluate the learned representations by applying it to some clinical task(s), such as mortality, readmission, or a specific disease prediction. There are also some ways to visualize patient representations to provide some intuitive understanding or interpretation of the representation. The majority of studies in this field follow this pipeline to learn patient representations from EHR data and further evaluate on downstream tasks.</p>
+</div>
+<div class="section">
+<a id="S8"><!-- named anchor --></a><h3 class="section-title">Patient representation methods</h3>
+<h5 class="label">2.2.</h5>
+<p id="P16">According to Bengio et al. [<a href="#R2">2</a>], deep learning models are representation learning methods with multiple layers, each with their own representations. The model starts with raw input, constructs non-linear modules that transform the representation at each layer into high-level, abstract representations. As already discussed, EHR data is high-dimensional and sparse. Thus, deep learning models are particularly well-suited to encode EHR data to learn patient representations. In this section, we will introduce the background of representation learning methods and how they are applied to learn patient representations. We describe five methods of representing a patient: vector-based, temporal matrix-based, graph-based, sequence-based, and tensor-based representations. For more detailed and technical interpretations of deep learning models, we recommend the review by LeCun et al. [<a href="#R3">3</a>].</p>
+<div class="section">
+<a id="S9"><!-- named anchor --></a><h4 class="subsection-title">Vector-based patient representation</h4>
+<h5 class="label">2.2.1.</h5>
+<p id="P17">In vector-based patient representation, every patient is represented by a mathematical vector. Models that attempt to construct vector-based patient representations are as follows:</p>
+<div class="section">
+<a id="S10"><!-- named anchor --></a><h3 class="title">Fully connected deep neural network</h3>
+<p id="P18">Fully connected deep neural network (fully connected DNN), originally inspired by biological neural networks, contain one or more hidden layers connected in a feed-forward manner [<a href="#R4">4</a>]. Fully connected DNN are also known as multi-layer perceptrons (MLPs) or dense neural networks. Like the other neural network methods described below, they use backpropagation for supervised learning with non-linear activations. Some early attempts for learning patient representation with neural networks have applied fully connected DNN approaches [<a href="#R5">5</a>]. However, the majority of recent studies have considered this architecture as a baseline method [<a href="#R6">6</a>].</p>
+</div>
+<div class="section">
+<a id="S11"><!-- named anchor --></a><h3 class="title">Autoencoders</h3>
+<p id="P19">Autoencoders are an unsupervised deep learning model that learns abstract representations from high-dimensional data, which is also a way of performing dimensionality reduction. An autoencoder learns to predict its input, but must compress the input signal through progressively smaller intermediate layers. The inner layer can be used as a low-dimensional representation. The variants of autoencoders include denoising [<a href="#R7">7</a>], stacked denoising [<a href="#R8">8</a>], variational [<a href="#R9">9</a>], and contractive autoencoder [<a href="#R10">10</a>]. Given the prior success of autoencoders for representation learning, their application to patient representation learning was first introduced by Miotto et al. [<a href="#R11">11</a>], where a dense and general patient representation was derived with unsupervised three-layer stacked denoising autoencoders.</p>
+</div>
+<div class="section">
+<a id="S12"><!-- named anchor --></a><h3 class="title">Convolutional Neural Networks</h3>
+<p id="P20">Convolutional Neural Networks (CNNs) were specifically developed for image processing [<a href="#R12">12</a>]. Each module of the CNN contains a convolutional layer and a pooling layer. Those modules are stacked to construct a deep CNN. The convolutional layer uses a small neural network that slides across the image, allowing for the capture of local image properties irrespective of their location in the full image. However, CNNs have been applied to more data types than just images, including text [<a href="#R13">13</a>] and waveforms [<a href="#R14">14</a>]. More advanced variants of CNN also attempt to incorporate temporal information in addition to the convolutional layer to model longitudinal patient data [<a href="#R15">15</a>]. This is different from the variants of CNN in image processing fields such as VGGNet [<a href="#R16">16</a>] and ResNet [<a href="#R17">17</a>], which add more complex layers in the architecture.</p>
+</div>
+<div class="section">
+<a id="S13"><!-- named anchor --></a><h3 class="title">Word2vec</h3>
+<p id="P21">Word2vec originated from natural language processing to learn word embeddings from large-scale text resources [<a href="#R18">18</a>]. There are two algorithms in word2vec: continuous bag of words (CBOW) predicts a target word given the surrounding context, and skip-gram predicts the surrounding context given a target word [<a href="#R19">19</a>]. Both algorithms have just one hidden layer; thus, word2vec techniques are shallow networks compared with other deep learning methods. The variants of word2vec have been applied to learn representations from clinical codes [<a href="#R20">20</a>], characterized by different assumptions and aimed to capture relationships between code sequences.</p>
+</div>
+</div>
+<div class="section">
+<a id="S14"><!-- named anchor --></a><h4 class="subsection-title">Temporal matrix-based patient representation</h4>
+<h5 class="label">2.2.2.</h5>
+<p id="P22">Temporal matrix-based patient representation constructs a two-dimensional matrix with one dimension related to time and the other dimension related to clinical events from the EHR. Nonnegative matrix factorization (NMF) is an algorithm for decomposing high-dimensional data from a set of nonnegative elements. NMF has been widely used in bioinformatics for clustering sources of variations [<a href="#R21">21</a>,<a href="#R22">22</a>]. There were also early attempts of applying NMF or its variants into EHR patient data representation [<a href="#R23">23</a>–<a href="#R25">25</a>,<a href="#R15">15</a>], which are some of the earliest examples of constructing a mathematical representation for each patient. They also showed the challenges of using EHR data and demonstrated the feasibility of encoding the latent factors of temporal patient data by providing a one-to-one identifiable mapping between the patient matrix and the target label.</p>
+</div>
+<div class="section">
+<a id="S15"><!-- named anchor --></a><h4 class="subsection-title">Graph-based patient representation</h4>
+<h5 class="label">2.2.3.</h5>
+<p id="P23">Graph-based patient representation constructs a compact graph for each patient where the nodes in the graph encode clinical events and the edges between the nodes encode relationships among the clinical events. One of the early works developing graph-based EHR representation was proposed by Liu et al. [<a href="#R26">26</a>], where they designed a novel graph representation algorithm to learn distinct clinical events from EHR data that included temporal relationships among the events. Although their work was not developed based on deep learning, one such emerging application of deep learning into graph representation is the Graph Neural Network.</p>
+<div class="section">
+<a id="S16"><!-- named anchor --></a><h3 class="title">Graph Neural Networks</h3>
+<p id="P24">Graph Neural Networks consist of a finite number of nodes and edges to connect data. Nodes contain information about entities, and edges contain relations between entities. Prominent methods of GNN include Directed Acyclic Graph [<a href="#R27">27</a>], Graph Convolutional Network [<a href="#R28">28</a>], Graph Attention Network [<a href="#R29">29</a>], and node2vec embeddings [<a href="#R30">30</a>]. GNNs attempt to learn graphical structures of EHR data that can infer the missing information through other representation mechanisms, therefore resulting in a more explainable representation. GNNs are particularly useful to introduce domain knowledge into the architecture. For instance, a few studies have employed hierarchical ICD-9 knowledge graphs as the graph model to enhance the interpretability and performance of the proposed method [<a href="#R27">27</a>,<a href="#R31">31</a>]. Other knowledge-based resources include adverse drug-drug interactions [<a href="#R32">32</a>], and comorbidities [<a href="#R33">33</a>].</p>
+</div>
+</div>
+<div class="section">
+<a id="S17"><!-- named anchor --></a><h4 class="subsection-title">Sequence-based patient representation</h4>
+<h5 class="label">2.2.4.</h5>
+<p id="P25">Sequence-based patient representation produces a timestamped event sequential features for each patient.</p>
+<div class="section">
+<a id="S18"><!-- named anchor --></a><h3 class="title">Recurrent Neural Networks</h3>
+<p id="P26">Recurrent Neural Networks (RNNs) were developed for processing sequential inputs such as language [<a href="#R34">34</a>,<a href="#R35">35</a>]. RNNs deal with a sequence of inputs one item at a time and transfer the hidden state of each input unit to the next input unit, so the current state implicitly contains information about the entire sequence history. The common variants of RNN include Gated Recurrent Unit (GRU) and Long Short-Term Memory (LSTM), both designed to minimize the vanishing gradient problem. GRU adds a gating mechanism into the RNN [<a href="#R36">36</a>]. LSTM is particularly useful for dealing with long-term dependencies [<a href="#R37">37</a>]. Thanks to the advances in RNN architecture, many studies have applied RNNs to develop patient representations where they have focused on representing patients using combinations or sequences of clinical codes. One such RNN-inspired approach is Doctor AI [<a href="#R38">38</a>], where distributed vector representations of clinical codes are derived to represent patient trajectories.</p>
+<p id="P27">Although RNNs enable to sequential modeling, especially some variants of RNNs like LSTMs are effective in dealing with long dependencies, limitations of RNNs still persist. One notable limitation is that RNNs cannot be trained in parallel (which will increase training time). Also, RNNs only process information from one direction, and even bi-directional RNNs which encode from two directions are a simple concatenation of two directions. Therefore, the <b>Transformer</b> architecture equipped with self-attention and positional embeddings was introduced to achieve true bi-directional representation [<a href="#R39">39</a>].</p>
+<p id="P28">Recently, with the wide adoption of Transformer-based language models in NLP (e.g., GPT [<a href="#R40">40</a>], BERT [<a href="#R41">41</a>]), Transformers continue to be applied for patient representation learning and for clinical sequence modeling [<a href="#R42">42</a>–<a href="#R45">45</a>]. Similar to the use of RNNs to enable sequence modeling of EHR data, Transformers also encode each clinical event at every time stamp as a unit and an entire patient trajectory as a whole sequence. Unlike a RNN using recurrence to predict the next unit, the Transformer architecture considers the sequence of units as a whole and employs self-attention to learn the essential information from the entire sequence.</p>
+</div>
+</div>
+<div class="section">
+<a id="S19"><!-- named anchor --></a><h4 class="subsection-title">Tensor-based patient representation</h4>
+<h5 class="label">2.2.5.</h5>
+<p id="P29">Tensor-based patient representation is a method that represents each patient with a three-dimensional (or more) tensor consisting of events such as diagnoses and treatments.</p>
+<div class="section">
+<a id="S20"><!-- named anchor --></a><h3 class="title">Tensor Decomposition</h3>
+<p id="P30">Tensor Decomposition is the high-order extension of matrix decomposition that seeks to decompose high-dimensional tensors into products of low-dimensional factors [<a href="#R46">46</a>]. The CANDECOMP/PARAFAC alternating Poisson regression (CP-APR) algorithm is one of the representative methods that are well-studied for tensor decomposition, trying to express a tensor as the sum of a finite number of rank-one tensors [<a href="#R47">47</a>]. Compared with traditional dimensionality reduction methods, tensor decomposition is unique in having the capability of managing multi-aspect features in multiple dimensions and is versatile enough to incorporate domain knowledge into the operation [<a href="#R48">48</a>]. These advantages have made tensor decomposition a promising modeling approach to learn abstract patient representations from EHR data and provide good interpretability and scalability [<a href="#R49">49</a>]. Each tensor is constructed of patient-level data, with three different factors including a patient factor, and two other factors related to clinical events (i.e., diagnosis with medication, or diagnosis with procedure). Each tensor constitutes a phenotype with a weighted sum of rank-one tensor from the outer product of three factor vectors. A tensor-based patient representation allows for the capture of complex interactions and relationships between clinical events (especially phenotypes, comorbidities, and medications) that are not evident in flattened EHR data [<a href="#R50">50</a>].</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="S21"><!-- named anchor --></a><h2 class="main-title">Materials and methods</h2>
+<h5 class="label">3.</h5>
+<p id="P31">Papers that are eligible for inclusion in this review are characterized by (a) focus on patient representation learning, (b) use of patient data from longitudinal EHRs, and (c) utilization of deep learning or neural network models. Notably, we consider studies using deep learning as one criterion because the unique characteristics of EHR data (as discussed in Introduction) make deep learning a feasible data-driven solution to generate robust representation simultaneously from diverse resources compared with other techniques. It is likely that, at least in the next few years, most advances in patient representation will utilize deep learning approaches.</p>
+<p id="P32">These criteria were applied to generate keyword searching queries for literature database search. Five databases consisting of PubMed, EMBASE, Scopus, the Association for Computing Machinery (ACM) Digital Library, and the Institute of Electrical and Electronics Engineers (IEEE) Xplore Digital Library were queried on December 31, 2019. The search consists of the following combination of keywords:
+<div class="blockquote">
+<a id="Q1"><!-- named anchor --></a><p class="first" id="P33"><i>(“deep learning” OR “neural network”) AND patient AND (vector OR representation OR embedding OR vec) AND (“electronic health records” OR ehr OR “electronic medical records” OR emr)</i>.</p>
+</div></p>
+<p id="P34">As for publication characteristics, we limit our search to English-language research articles with the publication time range from 2000 to 2019 and only focus on peer-reviewed journals and conference proceedings (i.e., posters and preprints are not included). For study characteristics, only study designs related to developing a deep learning- or neural network-based patient representation from electronic health records are considered. The study outcome should also apply the learned representation to downstream evaluations of clinical predictions. In terms of exclusion criteria, studies such as review papers and proceeding summaries are excluded. Studies that use patient data other than EHRs are also excluded.</p>
+<p id="P35">Duplicates were removed and additional records were added using a snowballing strategy. The additional records were subsequently traced from references of the included papers and personal readings. Next, the articles were uploaded to Rayyan [<a href="#R51">51</a>] and screened for title and abstract. Two authors (YS, JD) screened the articles under a blind format. At the full-text screening step performed on Zotero [<a href="#R52">52</a>], each study was read in full by one author (YS) to validate the final relevancy.</p>
+<p id="P36">As a result, 363 papers were queried at the beginning, including 349 articles retrieved from the five databases, and 14 additional records identified through snowballing. At deduplication, 54 duplicate records were removed and 309 records remained. At the step of title and abstract screening, 199 records were excluded because the topic is not relevant (n = 114), they are traditional predictive modeling of the single task (28), they are not peer-reviewed or original research papers (26 studies are not research, 5 preprints), no deep learning is used (12), no evaluation of the patient representations (7), and there is no EHR data (7).</p>
+<p id="P37">After these exclusions, 110 papers went through to the next screening step (full text screening) to determine the relevancy of each study. At this step, 61 papers were excluded due to no patient representation being developed (n = 37), no deep learning method being used (8), no EHR data being used (7), no evaluation (6), and only containing abstracts (3). Finally, this left 49 articles to be included in this work. A detailed literature selection procedure (PRISMA diagram) [<a href="#R53">53</a>] is shown in <a href="#F2">Fig. 2</a>. Based on the variables extracted from 49 publications, some interesting findings are worthy of being highlighted and discussed in the following sections.</p>
+<p id="P38">We performed data extraction from the final included papers considering the following variables:
+<div class="list">
+<a id="L4"><!-- named anchor --></a><ul>
+<li><p id="P39">Publication date: the date on which this paper was published by the conference or journal.</p></li>
+<li><p id="P40">Publication venue: the conference or journal where this paper was published.</p></li>
+<li><p id="P41">Representation learning approach: this contains two items including the proposed deep learning model(s) and additional attributes to enhance the model.</p></li>
+<li><p id="P42">Patient data type: what modality of EHR data was used? For instance, structured code from diagnoses/procedures/medications tables, numerical values from lab measurements, or unstructured data from clinical notes/images/waveforms.</p></li>
+<li><p id="P43">EHR resources: where does the patient EHR data came from? For example, publicly available datasets or a private local hospital data warehouse? What is the size/duration?</p></li>
+<li><p id="P44">Preprocessing methods: what is the format of the input data that was fed into the model architecture? In other words, how the EHR raw data was preprocessed into numerical data?</p></li>
+<li><p id="P45">Clinical outcome tasks: main clinical tasks for evaluating learned patient representation.</p></li>
+<li><p id="P46">Evaluation metrics: quantitative measure of the performance of prediction/clustering/regression on clinical outcome tasks.</p></li>
+<li><p id="P47">Interpretability: the degree to which a human can understand the model’s result or learned patient representations.</p></li>
+<li><p id="P48">Objective functions: the loss function when optimizing the models.</p></li>
+<li><p id="P49">Computational resources: for instance, deep learning frameworks and computational platforms (GPU).</p></li>
+<li><p id="P50">Code reproducibility: reproducibility of the results/instructions on open-source platforms.</p></li>
+</ul>
+</div></p>
+</div>
+<div class="section">
+<a id="S22"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<h5 class="label">4.</h5>
+<div class="section">
+<a id="S23"><!-- named anchor --></a><h3 class="section-title">Publication characteristics</h3>
+<h5 class="label">4.1.</h5>
+<p id="P51">First, we look at the publication numbers over time in <a href="#F3">Fig. 3</a>. The volume of studies is currently growing rapidly each year (almost 3 times in 2017 over 2016). Although there is a slight decrease from 2018 to 2019, we think this is because we exclude preprints at the first step of screening. Apart from the publication date, we also outline the major research communities that have contributed to the topic. <a href="#T1">Table 1</a> lists the top conferences or journals that have published this topic in three main communities. The conferences or journals include, but are not limited to, AMIA Symposium, AMIA Joint Summit, Conference on Information and Knowledge Management (CIKM), Journal of the American Medical Informatics Association (JAMIA), Journal of Biomedical Informatics (JBI), BMC Medicine, Scientific Data, Scientific Reports, NPJ Digital Medicine, Neural Information Processing Systems (NeurIPS), Knowledge Discovery and Data Mining (KDD), Machine Learning for Health Care (NeurIPS_ML4H), and Association for the Advancement of Artificial Intelligence (AAAI).</p>
+</div>
+<div class="section">
+<a id="S24"><!-- named anchor --></a><h3 class="section-title">Study characteristics</h3>
+<h5 class="label">4.2.</h5>
+<p id="P52">Pertinent study characteristics of the 49 reviewed publications are reported in the following sub-sections, and also summarized in <a href="#SD1">Supplementary Table 1</a>. These study characteristics enable to qualify the scientific validity and applicability of each study, which reveals the inadequacies and gaps of current research fields, and would be potentially useful to inform the need for new study designs for future research in patient representation learning.</p>
+<div class="section">
+<a id="S25"><!-- named anchor --></a><h4 class="subsection-title">Learning scenarios</h4>
+<h5 class="label">4.2.1.</h5>
+<p id="P53">We find that, among the 49 included studies, the majority (n = 30) applied supervised approaches to learning the representation. Here one would train and optimize the representation with some target or objective, usually focusing on phenotyping or other clinical outcomes. Unsupervised learning was applied in 11 studies. Unlike supervised learning, unsupervised learning does not require labels. This would include the use of autoencoders, which function by reconstructing the data from its raw input. In all forms of unsupervised learning, patient representations are learned separately from the prediction task. Since no labels are required, unsupervised learning is more likely to benefit from large EHR datasets.</p>
+<p id="P54">Self-supervised methods were used by 8 studies. Unlike supervised learning that relies on labels for a target task, or unsupervised learning that has no label-driven objectives, self-supervised learning frames a learning scenario as predicting a subset of information using the remaining data. Essentially this enables the use of models that are commonly used for supervised tasks (including many deep learning models) in a setting that does not have the labels of interest for the target task. With self-supervised learning, the patient representation is obtained similar to word embeddings in NLP studies, where a target word is predicted with its contextual information. Since patient representations are themselves largely intended as intermediate steps to a final prediction task (usually done via supervised learning), learning the representations in a self-supervised manner provides many of the benefits of unsupervised learning (no manual curation of labels) while still allowing for the use of powerful deep learning methods (e.g., transformers) that can otherwise be considered supervised. The self-supervised tasks included in this review are mainly used for clinical code representation learning, where clinical codes are ordered sequentially, and the codes in between are masked and predicted using the context of clinical codes nearby, similar to the algorithms of skip-gram and CBOW used to learn word embeddings [<a href="#R19">19</a>].</p>
+</div>
+<div class="section">
+<a id="S26"><!-- named anchor --></a><h4 class="subsection-title">Patient data types</h4>
+<h5 class="label">4.2.2.</h5>
+<p id="P55">In terms of patient data types in EHRs, among the 49 studies, 37 papers used structured codes (i.e., diagnosis codes, procedure codes, medication codes) to build the representation, while 6 papers used unstructured notes. The remaining 6 papers used both structured codes and unstructured notes jointly. Though combining heterogeneous resources is promising, we noticed these studies were not really combining the raw data fully from the two modalities into the same model. Instead, they only used a subset of data from one modality [<a href="#R6">6</a>,<a href="#R11">11</a>,<a href="#R54">54</a>–<a href="#R57">57</a>]. One such method is to simplify clinical notes by using topic models to represent unstructured resources [<a href="#R6">6</a>,<a href="#R11">11</a>,<a href="#R55">55</a>].</p>
+</div>
+<div class="section">
+<a id="S27"><!-- named anchor --></a><h4 class="subsection-title">Preprocessing methods</h4>
+<h5 class="label">4.2.3.</h5>
+<p id="P56">Although not many studies emphasized the preprocessing steps used to transfer raw input data into the model, we assume this is because deep learning does not necessarily need heavy manual work for preprocessing. However, we still extract the preprocessing approach and workflow of each study because we consider this an essential step towards representing a patient. Among 37 studies learning from structured codes, the majority (n = 27) generate one-hot vectors for the input data, and the frequency of a given code is used in 5 studies [<a href="#R11">11</a>,<a href="#R48">48</a>,<a href="#R58">58</a>–<a href="#R60">60</a>]. For inputs from multiple resources, input vectors are concatenated before feeding them into the architecture [<a href="#R14">14</a>]. Normalized formats of patient data are also important to learn an effective representation. For instance, z-score is applied to convert data from continuous variables to discrete one-hot vectors [<a href="#R55">55</a>,<a href="#R57">57</a>,<a href="#R61">61</a>]. For both structured codes and unstructured notes, standardized vocabularies including FHIR [<a href="#R6">6</a>] and UMLS CUIs [<a href="#R62">62</a>,<a href="#R63">63</a>] are introduced to transfer raw tokens into unique phrases to reduce the sparsity of the input data.</p>
+</div>
+<div class="section">
+<a id="S28"><!-- named anchor --></a><h4 class="subsection-title">Learning models and architectures</h4>
+<h5 class="label">4.2.4.</h5>
+<p id="P57">A primary interest of this study is the types of deep learning models that the proposed methods used as the foundation to learn patient representations. We plot the number of papers that have applied each deep learning model as the foundation architecture, and also differentiate studies with different data input types, shown in <a href="#F4">Fig. 4</a> and <a href="#T2">Table 2</a>. In total, there are 13 studies (structured: 8; unstructured: 1; combined: 4) that have applied an LSTM model to develop patient representations, which is the most common architecture. CNNs are the next with 11 studies (structured: 7; unstructured: 2; combined: 2). GRU is also common with 11 studies (all structured EHR data). This result is reasonable since both CNN and RNN architectures are utilized to learn local or sequential information from large-scale data and to find the nuance of variance within the data.</p>
+<p id="P58">Although the methods of learning patient representations are all built upon deep learning models, many unique architectures were introduced, and additional learning modules have been applied to capture the characteristics of EHR data. To improve performance and provide a degree of interpretability to the model, an attention mechanism is adopted in 13 studies [<a href="#R6">6</a>,<a href="#R14">14</a>,<a href="#R27">27</a>,<a href="#R31">31</a>,<a href="#R43">43</a>,<a href="#R57">57</a>,<a href="#R64">64</a>,<a href="#R72">72</a>,<a href="#R76">76</a>–<a href="#R78">78</a>,<a href="#R80">80</a>,<a href="#R88">88</a>]. A hierarchical knowledge graph has been incorporated into learning representations in 6 studies [<a href="#R27">27</a>,<a href="#R31">31</a>–<a href="#R33">33</a>,<a href="#R81">81</a>,<a href="#R91">91</a>].</p>
+<p id="P59">Sequential order between clinical events has been considered in the architecture in 27 studies. The majority of them have applied RNN (i.e., LSTM, GRU) to model sequential order with time-series patient data from diagnoses or measurements. Specifically, RNN adopts hidden states to carry information from the previous step to the next, which attempts to transmit sequential order between clinical events. Clinical events at each timestamp (i.e., diagnoses at each visit, or lab measures at every hour) are fed into every unit of the RNN, and the hidden state at this time point is updated with the hidden states from the previous timestamp and additional input from the current timestamp. Along these lines, sequential information from discrete event time-series can be transmitted to the final prediction target. The remaining 22 studies have not considered sequential information, based on varied ways of preprocessing patient data. For instance, deep learning models that fail to process sequential orders such as CNNs or autoencoders are applied in the architecture [<a href="#R73">73</a>,<a href="#R98">98</a>], the patient EHR data are only derived from clinical notes [<a href="#R62">62</a>,<a href="#R90">90</a>], and the patient EHR data are represented with one-hot encoding or frequency counts [<a href="#R11">11</a>].</p>
+<p id="P60">An interesting observation when speculating about what the “ideal” architecture for learning patient representations would be is that deep learning models are not mutually exclusive from each other. The best aspects of each model can be combined into a joint deep learning architecture. For instance, RNNs can assist with autoencoders to learn unsupervised representations while improving their ability to capture sequential clinical events [<a href="#R61">61</a>,<a href="#R67">67</a>,<a href="#R74">74</a>,<a href="#R75">75</a>]. CNNs can also be combined with RNNs to learn multifaceted patient representations [<a href="#R14">14</a>,<a href="#R55">55</a>,<a href="#R72">72</a>].</p>
+</div>
+<div class="section">
+<a id="S29"><!-- named anchor --></a><h4 class="subsection-title">Patient data resource</h4>
+<h5 class="label">4.2.5.</h5>
+<p id="P61">We have observed the recent success in the image processing field built upon the curation of a very large image dataset, ImageNet [<a href="#R92">92</a>]. In this review, we investigated the resources of available EHR data that are large-scale and publicly available to advance research. Although it may be hard to access EHR data due to privacy concerns, a large publicly available clinical dataset can push representation performance to a scale similar to that of image processing by giving researchers a common benchmark to build on prior work. We observed that the prominent dataset in 49 included studies is the Medical Information Mart for Intensive Care (MIMIC-III) [<a href="#R93">93</a>], where 22 out of 49 studies have used this dataset. Because MIMIC-III has both structured and unstructured data, clinical outcomes studied using MIMIC-III are widely varied, including mortality prediction, disease diagnoses, phenotype predictions, readmission, and length-of-stay forecasting. Other publicly available datasets that have been used to develop patient representations are: the Parkinson Progression Marker Initiative (PPMI) [<a href="#R67">67</a>,<a href="#R74">74</a>,<a href="#R94">94</a>], the Alzheimer’s disease neuroimaging initiative (ADNI) [<a href="#R74">74</a>,<a href="#R95">95</a>], the i2b2 obesity challenge [<a href="#R62">62</a>,<a href="#R63">63</a>,<a href="#R90">90</a>,<a href="#R96">96</a>], and eICU Collaborative Database [<a href="#R42">42</a>,<a href="#R97">97</a>]. We summarize the public datasets and their corresponding clinical applications in <a href="#T3">Table 3</a>. Considering the public datasets for each clinical task, the most popular is MIMIC-III for disease predictions (n = 10). Private datasets from local clinical data warehouses were used in 27 of the 49 studies. The detailed description of local hospital datasets can be found in <a href="#SD1">Supplementary Table 2</a>. A total of 9 studies have applied their methods on two or more datasets (i.e., private or public).</p>
+</div>
+<div class="section">
+<a id="S30"><!-- named anchor --></a><h4 class="subsection-title">Clinical outcomes and applications</h4>
+<h5 class="label">4.2.6.</h5>
+<p id="P62">Studies involving patient representation learning evaluate their representations based on risk predictions. The general assumption is that a more advanced and robust patient representation would improve the performance of predictive models. <a href="#T4">Table 4</a> illustrates the clinical outcomes addressed among the 49 papers. We categorize main clinical tasks for each paper into seven types: disease prediction (n = 31), mortality prediction (12), length-of-stay forecasting (8), admission prediction (7), patient subtyping (4), intervention prediction (5), and medical cost forecasting (3). To show the generalizability of the study, the majority of works have applied two or more clinical outcomes to evaluate the representations, resulting in a number of studies that have sizable overlap in terms of outcomes studied. The most common clinical tasks (31 studies) are disease diagnosis predictions, which is to predict whether the patient will develop a given condition. Mortality prediction is the second most common task with 12 studies.</p>
+<p id="P63">Rather than focusing on predictive tasks, patient representations can be potentially useful for clustering patients based on similarity, which can be used to identify patient subtypes, among other things. Patient subtyping is helpful for studying certain types of diseases, including Parkinson’s Disease. However, very few studies have focused on patient subtyping (n = 4). We assume this is because patient subtyping is not like other prediction tasks such as mortality and disease predictions that have straightforward label information. Typically, a data-driven technique is required to differentiate between different subtypes. For instance, the technique of measuring the distance of two patient representation vectors is to calculate the similarity; thus, to decide whether the two patients belong to the same subtype. Zhang et al. [<a href="#R100">100</a>] proposed a data-driven subtyping method with LSTM and Dynamic Time Warping to first transform patients into temporal representations and then calculate the similarity of every patient pair.</p>
+<p id="P64">Evaluation metrics are mainly dependent on the prediction task. We summarize the metrics for the above clinical outcomes in <a href="#T4">Table 4</a>. Typically, for prediction tasks, AUROC, AUPRC, Precision, Recall, F1-measure, and Accuracy are the most used. Metrics including Top_K_Recall or Top_K_Precision (ranking metrics from information retrieval), are adopted particularly for predicting full sets of diagnoses where K is the number of diseases. In addition, for regression tasks that involve predicting a real-valued quantity (i.e., medical cost, readmission forecasting), Root Mean Squared Error (RMSE), Mean Absolute Percentage Error (MAPE) and Goodness-of-Fit R-squared are utilized.</p>
+<p id="P65">Another evident observation stands out when we look into the time periods for the evaluation, that is how to select appropriate observation and prediction periods. Normally, clinical events in the observation period are accumulated to construct the samples for training, while clinical events in the prediction period are considered as the gold standard for evaluation. We discover an interesting connection that the design of observation and prediction periods are highly correlated with the clinical outcome tasks that are evaluated. <a href="#T4">Table 4</a> shows the time period for prediction with corresponding clinical tasks. Prediction tasks, such as disease, readmission, patient subtyping, and medical cost forecasting, generally extend observation windows for long time periods. Month-level [<a href="#R69">69</a>,<a href="#R88">88</a>], year-level [<a href="#R11">11</a>,<a href="#R48">48</a>,<a href="#R66">66</a>,<a href="#R78">78</a>,<a href="#R80">80</a>], and visit-level predictions [<a href="#R31">31</a>,<a href="#R38">38</a>,<a href="#R56">56</a>,<a href="#R59">59</a>,<a href="#R64">64</a>,<a href="#R70">70</a>,<a href="#R71">71</a>,<a href="#R76">76</a>] are prevalent for those tasks. Take disease prediction as an example, a number of studies extracted diagnoses from the first visit and then predicted diagnoses in the next visit (i.e., visit-level observation) [<a href="#R31">31</a>,<a href="#R38">38</a>,<a href="#R56">56</a>,<a href="#R59">59</a>,<a href="#R64">64</a>,<a href="#R70">70</a>,<a href="#R71">71</a>,<a href="#R76">76</a>]. On the contrary, for those outcomes that happen in hospital, such as inpatient mortality [<a href="#R14">14</a>,<a href="#R57">57</a>,<a href="#R61">61</a>,<a href="#R65">65</a>], length-of-stay [<a href="#R14">14</a>,<a href="#R83">83</a>], and intervention prediction [<a href="#R32">32</a>,<a href="#R55">55</a>,<a href="#R65">65</a>], observation windows at hour level are developed. Specifically, 24 hours are common as these tasks are immediate and physicians make decisions instantly. Rajkomar et al., [<a href="#R6">6</a>] assessed two periods for mortality prediction (i.e.,12-hour and 24-hour) and showed that, if the deep learning model and other parameters remained the same, the prediction made 24 hours after admission attained a slightly better performance than that of 12 hours. This outcome is reasonable because more training features were accumulated with a longer time of observation. However, we assume this is a trade-off between time and accuracy, because the decision for this type of demanding task should be up-to-date as well.</p>
+</div>
+<div class="section">
+<a id="S31"><!-- named anchor --></a><h4 class="subsection-title">Objective function</h4>
+<h5 class="label">4.2.7.</h5>
+<p id="P66">Only a few papers have reported the loss function applied in the study. We find that cross-entropy loss (or logarithmic loss) was the most common objective function for optimization. Aside from traditional cross-entropy loss, a weighted loss function was applied to account for an imbalanced-class dataset [<a href="#R55">55</a>]. For regression tasks, mean squared error (MSE) loss and mean absolute error (MAE) loss were mainly performed [<a href="#R43">43</a>]. What’s more, studies developing patient representations with several learning objectives conduct a unified loss function with different targets being optimized jointly. For instance, a masked binary cross-entropy loss was employed for a multi-task architecture [<a href="#R43">43</a>,<a href="#R69">69</a>]. Doctor AI [<a href="#R38">38</a>] has a joint loss function containing the cross-entropy loss from diagnosis predictions and the squared loss for the prediction of time duration for a single patient.</p>
+</div>
+<div class="section">
+<a id="S32"><!-- named anchor --></a><h4 class="subsection-title">Interpretability</h4>
+<h5 class="label">4.2.8.</h5>
+<p id="P67">While patient representations may be relatively low-dimensional (often less than 500 dimensions), these collections of continuous numbers can be particularly abstruse and difficult for humans to interpret [<a href="#R101">101</a>].</p>
+<p id="P68">Visualization techniques are often performed to construct qualitative clusters of patient cohorts to provide an intuitive interpretation of the learned representations [<a href="#R102">102</a>]. Such techniques for patient representations include t-Distributed Stochastic Neighbor Embedding (t-SNE) [<a href="#R103">103</a>], Multidimensional Scaling (MDS) [<a href="#R104">104</a>], Principal Component Analysis (PCA) [<a href="#R105">105</a>], and Uniform Manifold Approximation and Projection (UMAP) [<a href="#R106">106</a>]. Among these four methods, t-SNE has developed into the standard tool in this field due to its capability of revealing clusters in data. Ideally, patients typically from test sets associated with different labels, are projected and clustered into distinct groups. We observed 8 papers visualized with t-SNE to interpret the representations [<a href="#R14">14</a>,<a href="#R27">27</a>,<a href="#R31">31</a>,<a href="#R60">60</a>,<a href="#R66">66</a>,<a href="#R73">73</a>,<a href="#R75">75</a>,<a href="#R79">79</a>], and one study visualized with MDS [<a href="#R70">70</a>]. Apart from projecting representations, interpretability can be provided by visualization methods including a heatmap of features [<a href="#R33">33</a>,<a href="#R67">67</a>,<a href="#R78">78</a>], visualizing attention weights [<a href="#R57">57</a>,<a href="#R72">72</a>,<a href="#R76">76</a>,<a href="#R80">80</a>,<a href="#R88">88</a>], and case study (explanation by examples) [<a href="#R32">32</a>].</p>
+</div>
+<div class="section">
+<a id="S33"><!-- named anchor --></a><h4 class="subsection-title">Computational resources and reproducibility</h4>
+<h5 class="label">4.2.9.</h5>
+<p id="P69">With the rapid improvements in computational resources, GPU-accelerated techniques have been exploited to train deep learning models faster and more efficiently. Because the literature in this study is from recent years (2015–2019), we observe the majority (29 out of 49) have reported the computational resources along with the deep learning frameworks. The reported deep learning frameworks include Theano (n = 12), TensorFlow (7), PyTorch (6), and Keras (4).</p>
+<p id="P70">The need for reproducibility of scientific results has been growing in awareness in biomedicine in recent years. This is also true in this field of research because we want to ensure that the patient representations are generalizable and reproducible across multiple institutions. Unfortunately, reproducibility in patient representation learning is difficult due to the variety of data resources, learning methods and architectures, and data preprocessing steps. Another major difficulty in data sharing is related to privacy concerns as inappropriate access to sensitive patient data might lead to patients’ identity disclosure. While there are machine learning techniques that preserve data privacy [<a href="#R107">107</a>–<a href="#R111">111</a>], it is often impossible to share patient data due to privacy issues. Thus, providing workflow and computer code associated with publications is becoming increasingly common to enable the reproducibility of the method, if not the full work. One such open-source platform, GitHub, manages a robust infrastructure that is appropriate for sharing the full suite of intermediate experiments such as programming code, statistical results, etc. Therefore, we consider papers that provide code as one measurement of reproducibility. Among the 49 included papers, 20 of them have provided code links. Notably, the source code of RETAIN [<a href="#R80">80</a>], based on Theano, has been starred on Github more than 100 times and forked over 50 times, and it has been redeveloped in other deep learning frameworks (TensorFlow, Keras). RETAIN was also commonly used as baselines in the subsequent series of advanced models (i.e., GRAM [<a href="#R27">27</a>], Dipole [<a href="#R76">76</a>], Health-ATM [<a href="#R72">72</a>]). Thus, we anticipate that sharing open-source resources and code would motivate researchers to further explore innovations in a more scientific manner.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="S34"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<h5 class="label">5.</h5>
+<div class="section">
+<a id="S35"><!-- named anchor --></a><h3 class="section-title">Growing importance</h3>
+<h5 class="label">5.1.</h5>
+<p id="P71">In this review, we provide an overview of the current research into EHR patient representation learning. A total of 363 articles were assessed, with 49 studies from 2015 to 2019 meeting the full criteria for review. We observe a growing trend of developing deep learning-based patient representations from EHRs. The earliest attempt of learning patient representations with deep learning used Restricted Boltzmann Machines, proposed in 2015 [<a href="#R60">60</a>]. An increasing number of works continued to contribute to improving the representation power of deep learning-derived representations.</p>
+<p id="P72">Notable observations are identified throughout the review and can be addressed to the four questions we proposed at the end of Introduction.</p>
+<div class="list">
+<a id="L6"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="P73">Resources: We investigated that the resources of available EHR data are quite limited due to privacy concerns. The most prominent dataset is the Medical Information Mart for Intensive Care (MIMIC-III), where 22 out of 49 studies used this dataset.</p></li>
+<li><p id="P74">Methods: Learning was mainly performed in a supervised manner optimized with cross-entropy loss. Recurrent Neural Networks were the most common deep learning model.</p></li>
+<li><p id="P75">Applications: Disease prediction was the most common application and evaluation. We also identified a wide variety of clinical outcomes being addressed, including mortality prediction, admission prediction, length-of-stay forecasting, patient subtyping, intervention prediction, and medical cost forecasting.</p></li>
+<li><p id="P76">Potential: Enhancements in patient representation learning techniques will be continuously growing for powering patient-level EHR analyses. We anticipate that researchers from diverse communities will leverage the richness and potential of EHR data, and will assist the capability of learning patient representation further.</p></li>
+</ol>
+</div>
+<p id="P77">Furthermore, analyses and evidence from data extractions of the 49 included papers suggest the importance and feasibility of learning comprehensive representations of patient EHR data. Studies that forego any attempt to utilize patient representations as an intermediate structure lose out on several advantages. Most notably, many representation learning models utilize—through unsupervised or self-supervised learning—very large amounts of EHR data. In contrast, traditional predictive models focus on just the labeled information needed for the single task they are trained on. This is similar in essence to the difference between discriminative and generative machine learning models, where the latter attempt to model the full distribution of the data. Since learned representations attempt to gain a cohesive picture of a patient’s data, these models may very well be more robust to small changes in the data distribution (e.g., when porting a model to a new institution without retraining). The extent to which this may be true requires further investigation, but it is worth noting that the field of natural language processing has become dominated recently by transformer-based models [<a href="#R41">41</a>] that essentially follow this approach. Contextual word representations are learned on large corpora in a self-supervised manner (“pre-training”) and then those representations form the basis on which prediction models are built (“fine-tuning”).</p>
+<p id="P78">The capability to develop effective patient representations from EHRs derives primarily from how to model the pertinent characteristics of EHR data. For instance, recent clinical events are more likely to contribute to the final label compared to earlier events [<a href="#R80">80</a>]. Another challenge is that clinical events may be correlated with each other (i.e., diagnoses lead to treatments, disease co-occurrence) [<a href="#R32">32</a>,<a href="#R81">81</a>]. Leveraging this inherent structure is a key factor to improving the representation. This has resulted in a wide range of methods that can complement deep learning models to enhance representation power. These methods include developing additional components to models for capturing a hierarchical representation from event-level, to visit-level, to patient-level [<a href="#R81">81</a>,<a href="#R112">112</a>]; for encoding the longitudinal factors between clinical events [<a href="#R65">65</a>,<a href="#R77">77</a>]; for incorporating domain knowledge into the representation [<a href="#R27">27</a>,<a href="#R31">31</a>–<a href="#R33">33</a>,<a href="#R91">91</a>]; and for adopting multiple modalities of EHR data [<a href="#R11">11</a>,<a href="#R14">14</a>,<a href="#R57">57</a>].</p>
+</div>
+<div class="section">
+<a id="S36"><!-- named anchor --></a><h3 class="section-title">Future directions</h3>
+<h5 class="label">5.2.</h5>
+<p id="P79">Building upon current promising trends in learning meaningful patient representations, we believe the growth will continue, and the challenges of EHR data can be addressed in the following directions. We highlight a limited number of works published after the end of the review period (i.e., since January 2020) to exemplify these promising directions.</p>
+<div class="section">
+<a id="S37"><!-- named anchor --></a><h4 class="subsection-title">Methodology</h4>
+<h5 class="label">5.2.1.</h5>
+<p id="P80">With the pace of deep learning models diffusing into patient representation learning, algorithm and model development continues to enhance in order to adequately consider and model EHR data [<a href="#R113">113</a>]. Some pilot works have applied advanced methods to model contextualized information into the learning architecture, such as the transformer model [<a href="#R39">39</a>]. For instance, Choi et al. [<a href="#R42">42</a>] proposed the Graph Convolutional Transformer (GCT) to learn hidden patterns of EHR data. This work is an advancement over works like MiME [<a href="#R81">81</a>] in that GCT can capture hidden logical relationships between structured EHR data (e.g., which diagnoses lead to which treatment) that are completely missing in the raw data. There is also a recent NLP study attempting to show the expressive power of transformers in that they can be universal approximators of sequence-to-sequence aggregators with compact support [<a href="#R114">114</a>], though this study was not in the clinical domain. Another groundbreaking technique fueled by language models highlights the potential to learn generic representations from raw data. Ethan et al. [<a href="#R115">115</a>] proposed language model-based representations to learn structured data from EHRs. Si et al. [<a href="#R116">116</a>] applied pre-training and fine-tuning techniques to learn general and transferable clinical language representations. Li et al. [<a href="#R44">44</a>], inspired from the architecture of BERT, proposed BHERT, a transformer model for structured data in electronic health records. BHERT is scalable to perform well across a wide range of downstream predictions.</p>
+<p id="P81">Advanced learning techniques including transfer learning, multi-task learning, and meta-learning can combat data scarcity and label insufficiency to some extent. One of the earliest attempts to learn patient representations, Doctor AI [<a href="#R38">38</a>], also demonstrated the impact of transfer learning from large-scale clinical data (i.e., 263,706 patients in Sutter Health) to tasks with relatively small amounts of data (i.e., 2,695 patients in MIMIC-III). Furthermore, with the success of multi-task learning in the open domain, such as in image processing and NLP, a growing number of studies also highlighted the potential and feasibility of properly integrating multiple related tasks to learn meaningful patient representations [<a href="#R73">73</a>,<a href="#R89">89</a>]. The concept of meta-learning is similar to transfer learning in that it takes advantage of information from other related high-resource domains. We have included a recent novel study in this review work, known as MetaPred [<a href="#R66">66</a>]. MetaPred applied an optimization-based meta learning built on Model Agnostic Meta Learning (MAML) [<a href="#R117">117</a>] in clinical scenarios. Because insufficient data is an obstacle for machine learning to solve many clinical problems, such as diagnosing rare conditions, we hope to leverage as many related datasets and knowledge resources as possible. Progress of advanced techniques for learning patient representations are responsible to take knowledge base into account to ensure the clinical relevance of problems and solutions [<a href="#R118">118</a>].</p>
+</div>
+<div class="section">
+<a id="S38"><!-- named anchor --></a><h4 class="subsection-title">Data sources</h4>
+<h5 class="label">5.2.2.</h5>
+<p id="P82">Despite the richness and potential of EHR data, few studies take full advantage of the heterogeneity of EHR data. Instead, many only use a subset of the data. For instance, many studies use diagnosis codes to represent patients, and ignore the real-valued measurements associated with the diagnoses, such as lab test values. Unstructured data, additionally, are often overlooked when developing patient representations (only 12 out of 49 studies used unstructured data). Future work will still be devoted to leveraging rich, yet varied, information in EHRs. One technique known as deep learning-based multimodal representation learning can be exploited to narrow the heterogeneity of EHR data among different modalities. Recently, a joint representation learning strategy named HORDE was proposed by Lee et al. [<a href="#R119">119</a>], which applies several graphical modules to embed different types of data sources dynamically from EHR data.</p>
+<p id="P83">The cause of many diseases is very complicated. Many factors, including inherited genetics, living environments, daily diets, and habits, have an impact on disease development. Just relying on the phenotype and medical history information in the EHR would generally fail to effectively represent the patient’s full health status. Therefore, integrating multi-source information, e.g. genomics and clinical imaging, would be critical for accurate patient representation learning as well as the associated downstream clinical tasks [<a href="#R120">120</a>]. Although most current work focuses on a single type of data, there are also some pilot works that are trying to harmonize multiple types of data. Cheerla et al. [<a href="#R121">121</a>] developed a multimodal deep learning method to predict the survival of pan-cancer prognosis using clinical, multi-omics, and histopathology data together. Some researchers are also investigating the linkage of imaging to genetic data [<a href="#R122">122</a>] and EHR to genetic data [<a href="#R123">123</a>] for clinical outcome prediction and disease heritability estimation. These works show the enormous potential to integrate multi-source information to effectively model patient health status [<a href="#R22">22</a>]. All these data sources can expand the set of features that potentially contribute to fine-grained patient representations.</p>
+</div>
+<div class="section">
+<a id="S39"><!-- named anchor --></a><h4 class="subsection-title">Multi-Institutional data</h4>
+<h5 class="label">5.2.3.</h5>
+<p id="P84">Ethical and legal issues with regards to the use of EHR patient data for research, including AI, are well known. The problems lie in the trade-off between the privacy of patient data and data access for research. Yet learning representations from multiple institutions is critical to achieving both scalability and generalizability. Privacy-preserving algorithms and constrained domain adaptation settings are developed to compensate for this tradeoff to some degree [<a href="#R124">124</a>]. Distributed learning and federated learning are such paradigms that enable the safe use of data from multiple institutions by only learning mathematical parameters [<a href="#R125">125</a>] and avoiding any instance that might trace back to a specific patient. Distributed learning is an algorithm that, in a parallelized fashion, iteratively learns a single model on separate datasets and obtains the shared model as if data were centralized [<a href="#R126">126</a>]. Federated learning is a machine learning technique to train different models on multiple decentralized datasets, in contrast to traditional machine learning in which all samples are combined [<a href="#R127">127</a>,<a href="#R128">128</a>]. They both attempt to collaboratively train while keeping all the training data at their original institutions. The difference between the two learning paradigms is that distributed learning trains a separate model for each split of the data, and each separate model is transferred to a centralized model, while federated learning trains individual models on heterogeneous datasets. Many existing studies have exploited distributed learning and federated learning across multiple institutions in fields such as medical image processing [<a href="#R129">129</a>,<a href="#R130">130</a>], clinical decision support [<a href="#R131">131</a>], and clinical oncology [<a href="#R132">132</a>], to facilitate privacy-preserving multi-centric rapid learning of health care. We also observe some pilot studies applying federated learning and distributed learning to learn patient representations in this review. Li et al. [<a href="#R59">59</a>] proposed a method that can learn clinical code representations from different EHR databases by adding distributed noise contrastive estimation. Liu et al. [<a href="#R90">90</a>] proposed a federated learning framework to pre-train on MIMIC-III notes and predict clinical outcomes related to obesity. The adoption of distributed and federated learning shows that there are emerging technologies to manage privacy concerns and facilitate scientific research without directly sharing data.</p>
+</div>
+</div>
+<div class="section">
+<a id="S40"><!-- named anchor --></a><h3 class="section-title">Limitations</h3>
+<h5 class="label">5.3.</h5>
+<p id="P85">A potential limitation of this review is incomplete retrieval of relevant studies that meet the inclusion criteria. As a wide variety of methods to represent patients are included, it is challenging to conduct an inclusive search strategy with an automatic query by keyword searching. There is, unfortunately, no MeSH term that covers patient representation. We mitigated this issue by working cooperatively with experienced librarians and applying snowballing search strategies from the included publications. It is also challenging to differentiate our included studies with numerous works of predicting one clinical outcome end-to-end with deep learning. To achieve this, we ensured at the full-text review step that all the papers that are included specifically mentioned patient representation or embedding, and that their goal was learning representations at a patient level, not merely a model that maximized performance on a specific disease. In addition, we do not include manuscripts [<a href="#R133">133</a>–<a href="#R136">136</a>] that can only be found as preprints on arXiv or bioRxiv. All these limitations would pose a potential threat to selective bias in publication trends.</p>
+<p id="P86">Another limitation is that our review fails to answer all technical questions. Due to the lack of transparency and reproducibility of reported results, many studies in our review claim state-of-the-art results, but few can be verified by external parties. This might be a barrier for future model development and would slow the pace of improvement. Even though MIMIC-III is widely used as a benchmark dataset, not many generic pipelines for benchmarking machine learning studies are available. Prior works have proposed different components in addition to the deep learning models to improve representation ability and predictive performance. However, it is still unclear which approach works best for representing EHR data. Therefore, one future direction to mitigate this limitation is to more comprehensively investigate different methods and conduct comparative studies using a common set of shared clinical benchmark datasets. Some recent comparative studies such as Ayala Solares et al. [<a href="#R137">137</a>], Sadati et al. [<a href="#R138">138</a>], and Min et al. [<a href="#R139">139</a>] provided some surprising observations in terms of how to choose the best representation learning methods. For instance, Min et al. [<a href="#R139">139</a>] conducted a case study of applying different machine learning methods to represent Chronic Obstructive Pulmonary Disease (COPD) patient claim data to predict readmission. They have shown some contradictory observations that medical problems are unlike problems in NLP and image processing, merely applying complex deep learning without incorporating medical knowledge does not necessarily result in better performance. Therefore, in the future, we would encourage such studies to be conducted across a variety of patient representation use cases.</p>
+</div>
+</div>
+<div class="section">
+<a id="S41"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<h5 class="label">6.</h5>
+<p id="P87">Deep representation learning has led to a wide variety of innovations in the process of modeling EHR patient data. As deep learning models benefit largely from the model capabilities to address the challenges of EHR data, deep patient representation learning is a promising direction to acquire powerful, robust, and precise representations. By adopting advanced learning techniques in addition to the model architecture, patient representation learning attempts to further address issues related to patient data and promote scientific research. We conducted a systematic review of this work and discussed the current research scenarios pertinent to patient representation learning. We believe a growing number of advanced methods will be continuously developed to learn meaningful patient representations, and that these representations will play a greater and greater role in clinical prediction tasks.</p>
+</div>
+<div class="section">
+<a id="SM1"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD1"><!-- named anchor --></a><h5 class="label">1</h5>
+<a id="d67e1270" href="NIHMS2008566-supplement-1.zip"></a>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="S42"><!-- named anchor --></a><h2 class="main-title">Acknowledgments</h2>
+<p id="P88">This work was supported by the U.S. National Library of Medicine, National Institutes of Health (NIH) under award R00LM012104, R01LM012973, UL1TR00316701, U01TR002062, R01GM118609, and R01AG06674901, the National Science Foundation under award NSF IIS-1750326, the Cancer Prevention Research Institute of Texas (CPRIT) under awards RP170668 and RR180012, as well as the Patient-Centered Outcomes Research Institute (PCORI) under award ME-2018C1-10963.</p>
+</div>
+<div class="back-section">
+<a id="id14"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="FN2"><!-- named anchor --></a><p id="P89"><span class="generated">[1]</span> Declaration of Competing Interest</p>
+<p id="P90">The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</p>
+</div>
+<div class="footnote">
+<a id="FN4"><!-- named anchor --></a><p id="P91"><span class="generated">[2]</span> Appendix A. Supplementary material</p>
+<p id="P92">Supplementary data to this article can be found online at <a target="xrefwindow" href="10.1016/j.jbi.2020.103671" id="id13">https://doi.org/10.1016/j.jbi.2020.103671</a>.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id15"><!-- named anchor --></a><div class="section ref-list">
+<a id="id15"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[1]</span> <a id="R1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id16"><!-- named anchor --></a>J Wu, J Roy, WF Stewart, Prediction modeling using EHR data: Challenges, strategies, and a comparison of machine learning approaches, Med. Care48 (2010) S106–S113, 10.1097/MLR.0b013e3181de9e17.20473190
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[2]</span> <a id="R2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id17"><!-- named anchor --></a>Y Bengio, A Courville, P Vincent, Representation learning: A review and new perspectives, IEEE Trans. Pattern Anal. Mach. Intell35 (2013) 1798–1828, 10.1109/TPAMI.2013.50.23787338
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[3]</span> <a id="R3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id18"><!-- named anchor --></a>Y LeCun, Y Bengio, G Hinton, Deep learning, Nature521 (2015) 436–444, 10.1038/nature14539.26017442
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[4]</span> <a id="R4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id19"><!-- named anchor --></a>D Svozil, V Kvasnicka, J Pospichal, Introduction to multi-layer feed-forward neural networks, Chemomet. Intell. Lab. Syst39 (1997) 43–62, 10.1016/S0169-7439(97)00061-0.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[5]</span> <a id="R5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id20"><!-- named anchor --></a>Z Che, D Kale, W Li, MT Bahadori, Y Liu, Deep computational phenotyping, in: Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, ACM, 2015, pp. 507–516.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[6]</span> <a id="R6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id21"><!-- named anchor --></a>A Rajkomar, E Oren, K Chen, AM Dai, N Hajaj, M Hardt, PJ Liu, X Liu, J Marcus, M Sun, P Sundberg, H Yee, K Zhang, Y Zhang, G Flores, GE Duggan, J Irvine, Q Le, K Litsch, A Mossin, J Tansuwan, D Wang, J Wexler, J Wilson, D Ludwig, SL Volchenboum, K Chou, M Pearson, S Madabushi, NH Shah, AJ Butte, MD Howell, C Cui, GS Corrado, J Dean, Scalable and accurate deep learning with electronic health records, Npj Digit. Med1 (2018), 10.1038/s41746-018-0029-1.PMC655017531304302</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[7]</span> <a id="R7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id22"><!-- named anchor --></a>P Vincent, H Larochelle, Y Bengio, P-A Manzagol, Extracting and composing robust features with denoising autoencoders, in: Proceedings of the 25th International Conference on Machine Learning - ICML’08, ACM Press, Helsinki, Finland, 2008, pp. 1096–1103. 10.1145/1390156.1390294.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[8]</span> <a id="R8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id23"><!-- named anchor --></a>P Vincent, H Larochelle, I Lajoie, Y Bengio, P-A Manzagol, Stacked denoising autoencoders: Learning useful representations in a deep network with a local denoising criterion, J. Mach. Learn. Res11 (2010) 3371–3408. <a target="xrefwindow" href="http://jmlr.org/papers/v11/vincent10a.html" id="id24">http://jmlr.org/papers/v11/vincent10a.html</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[9]</span> <a id="R9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id25"><!-- named anchor --></a>C Doersch, Tutorial on variational autoencoders, ArXivPreprint ArXiv: 1606.05908 (2016).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[10]</span> <a id="R10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id26"><!-- named anchor --></a>S Rifai, P Vincent, X Muller, X Glorot, Y Bengio, Contractive auto-encoders: explicit invariance during feature extraction, in: Proceedings of the 28th International Conference on International Conference on Machine Learning, 2011, pp. 833–840.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[11]</span> <a id="R11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id27"><!-- named anchor --></a>R Miotto, L Li, BA Kidd, JT Dudley, Deep patient: An unsupervised representation to predict the future of patients from the electronic health records, Sci. Rep6 (2016) 26094, 10.1038/srep26094.27185194
+PMC4869115</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[12]</span> <a id="R12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id28"><!-- named anchor --></a>Y LeCun, BE Boser, JS Denker, D Henderson, RE Howard, WE Hubbard, LD Jackel, Handwritten digit recognition with a back-propagation network, Adv. Neural Inf. Process. Syst (1990) 396–404.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[13]</span> <a id="R13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id29"><!-- named anchor --></a>Y Kim, Convolutional Neural Networks for Sentence Classification, in: Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2014, pp. 1746–1751.10.18653/v1/d16-1076PMC530075128191551</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[14]</span> <a id="R14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id30"><!-- named anchor --></a>Y Xu, S Biswal, SR Deshpande, KO Maher, J Sun, RAIM: Recurrent attentive and intensive model of multimodal patient monitoring data, in: Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining, ACM, New York, NY, USA, 2018, pp. 2565–2573. 10.1145/3219819.3220051.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[15]</span> <a id="R15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id31"><!-- named anchor --></a>Y Cheng, F Wang, P Zhang, J Hu, Risk prediction with electronic health records: A deep learning approach, in: Proceedings of the 2016 SIAM International Conference on Data Mining, SIAM, 2016, pp. 432–440.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[16]</span> <a id="R16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id32"><!-- named anchor --></a>K Simonyan, A Zisserman, Very deep convolutional networks for large-scale image recognition, in: International Conference on Learning Representations, 2015.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[17]</span> <a id="R17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id33"><!-- named anchor --></a>K He, X Zhang, S Ren, J Sun, Deep residual learning for image recognition, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2016, pp. 770–778.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[18]</span> <a id="R18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id34"><!-- named anchor --></a>T Mikolov, I Sutskever, K Chen, GS Corrado, J Dean, Distributed representations of words and phrases and their compositionality, Adv. Neural Inf. Process. Syst (2013) 3111–3119.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[19]</span> <a id="R19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id35"><!-- named anchor --></a>T Mikolov, K Chen, G Corrado, J Dean, Efficient estimation of word representations in vector space, ArXivPreprint ArXiv:1301.3781 (2013).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[20]</span> <a id="R20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id36"><!-- named anchor --></a>Y Choi, CY-I Chiu, D Sontag, Learning low-dimensional representations of medical concepts, in: AMIA Summits on Translational Science Proceedings, 2016, 2016, p. 41.PMC500176127570647</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[21]</span> <a id="R21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id37"><!-- named anchor --></a>L Taslaman, B Nilsson, A framework for regularized non-negative matrix factorization, with application to the analysis of gene expression data, PLoS ONE7 (2012) e46331, 10.1371/journal.pone.0046331.23133590
+PMC3487913</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[22]</span> <a id="R22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id38"><!-- named anchor --></a>GL Stein-O’Brien, R Arora, AC Culhane, AV Favorov, LX Garmire, CS Greene, LA Goff, Y Li, A Ngom, MF Ochs, Y Xu, EJ Fertig, Enter the Matrix: Factorization Uncovers Knowledge from Omics, Trends Genet. 34 (2018) 790–805, 10.1016/j.tig.2018.07.003.30143323
+PMC6309559</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[23]</span> <a id="R23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id39"><!-- named anchor --></a>F Wang, N Lee, J Hu, J Sun, S Ebadollahi, AF Laine, A framework for mining signatures from event sequences and its applications in healthcare data, IEEE Trans. Pattern Anal. Mach. Intell35 (2012) 272–285.10.1109/TPAMI.2012.11122585098</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[24]</span> <a id="R24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id40"><!-- named anchor --></a>F Wang, N Lee, J Hu, J Sun, S Ebadollahi, Towards heterogeneous temporal clinical event pattern discovery: a convolutional approach, in: Proceedings of the 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2012, pp. 453–461.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[25]</span> <a id="R25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id41"><!-- named anchor --></a>J Zhou, F Wang, J Hu, J Ye, From micro to macro: data driven phenotyping by densification of longitudinal electronic medical records, in: Proceedings of the 20th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2014, pp. 135–144.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[26]</span> <a id="R26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id42"><!-- named anchor --></a>C Liu, F Wang, J Hu, H Xiong, Temporal phenotyping from longitudinal electronic health records: A graph based framework, in: Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, ACM, 2015, pp. 705–714.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[27]</span> <a id="R27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id43"><!-- named anchor --></a>E Choi, MT Bahadori, L Song, WF Stewart, J Sun, GRAM: Graph-based Attention Model for Healthcare Representation Learning, in: Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD ‘17, ACM Press, Halifax, NS, Canada, 2017, pp. 787–795. 10.1145/3097983.3098126.PMC795412233717639</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[28]</span> <a id="R28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id44"><!-- named anchor --></a>M Niepert, M Ahmed, K Kutzkov, Learning convolutional neural networks for graphs, in: International Conference on Machine Learning, 2016, pp. 2014–2023.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[29]</span> <a id="R29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id45"><!-- named anchor --></a>P Veličkovíc, G Cucurull, A Casanova, A Romero, P Lio, Y Bengio, Graph attention networks, ArXivPreprint ArXiv:1710.10903 (2017).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[30]</span> <a id="R30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id46"><!-- named anchor --></a>A Grover, J Leskovec, node2vec: Scalable feature learning for networks, in: Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2016, pp. 855–864.10.1145/2939672.2939754PMC510865427853626</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[31]</span> <a id="R31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id47"><!-- named anchor --></a>F Ma, Q You, H Xiao, R Chitta, J Zhou, J Gao, KAME: Knowledge-based Attention Model for Diagnosis Prediction in Healthcare, in: Proceedings of the 27th ACM International Conference on Information and Knowledge Management, ACM, New York, NY, USA, 2018, pp. 743–752. 10.1145/3269206.3271701.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[32]</span> <a id="R32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id48"><!-- named anchor --></a>S Wang, P Ren, Z Chen, Z Ren, J Ma, M de Rijke, Order-free Medicine Combination Prediction with Graph Convolutional Reinforcement Learning, in: Proceedings of the 28th ACM International Conference on Information and Knowledge Management - CIKM ‘19, ACM Press, Beijing, China, 2019, pp. 1623–1632. 10.1145/3357384.3357965.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[33]</span> <a id="R33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id49"><!-- named anchor --></a>J Zhang, J Gong, L Barnes, HCNN: Heterogeneous Convolutional Neural Networks for Comorbid Risk Prediction with Electronic Health Records, in: Proceedings of the Second IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies, IEEE Press, Piscataway, NJ, USA, 2017, pp. 214–221. 10.1109/CHASE.2017.80.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[34]</span> <a id="R34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id50"><!-- named anchor --></a>D Bahdanau, K Cho, Y Bengio, Neural machine translation by jointly learning to align and translate, ArXivPreprint ArXiv:1409.0473 (2014).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[35]</span> <a id="R35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id51"><!-- named anchor --></a>I Sutskever, O Vinyals, QV Le, Sequence to sequence learning with neural networks, Adv. Neural Inf. Process. Syst (2014) 3104–3112.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[36]</span> <a id="R36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id52"><!-- named anchor --></a>K Cho, B Van Merrïenboer, D Bahdanau, Y Bengio, On the properties of neural machine translation: Encoder-decoder approaches, ArXivPreprint ArXiv: 1409.1259 (2014).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[37]</span> <a id="R37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id53"><!-- named anchor --></a>S Hochreiter, J Schmidhuber, Long short-term memory, Neural Comput. 9 (1997) 1735–1780.9377276
+10.1162/neco.1997.9.8.1735</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[38]</span> <a id="R38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id54"><!-- named anchor --></a>E Choi, MT Bahadori, A Schuetz, WF Stewart, J Sun, Doctor AI: Predicting Clinical Events via Recurrent Neural Networks, ArXiv:1511.05942 [Cs]. (2015). <a target="xrefwindow" href="http://arxiv.org/abs/1511.05942" id="id55">http://arxiv.org/abs/1511.05942</a> (accessed
+April 10, 2019).PMC534160428286600</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[39]</span> <a id="R39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id56"><!-- named anchor --></a>A Vaswani, N Shazeer, N Parmar, J Uszkoreit, L Jones, AN Gomez, Ł Kaiser, I Polosukhin, Attention is all you need, Adv. Neural Inf. Process. Syst (2017) 5998–6008.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[40]</span> <a id="R40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id57"><!-- named anchor --></a>A Radford, K Narasimhan, T Salimans, I Sutskever, Improving language understanding by generative pre-training, Technical Report, OpenAI, 2018.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[41]</span> <a id="R41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id58"><!-- named anchor --></a>J Devlin, M-W Chang, K Lee, K Toutanova, BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding, in: Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1(Long and Short Papers), 2019, pp. 4171–4186.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[42]</span> <a id="R42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id59"><!-- named anchor --></a>E Choi, Z Xu, Y Li, MW Dusenberry, G Flores, E Xue, AM Dai, Learning the Graphical Structure of Electronic Health Records with Graph Convolutional Transformer, Proceedings of the AAAI Conference on Artificial Intelligence. (2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[43]</span> <a id="R43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id60"><!-- named anchor --></a>H Song, D Rajan, JJ Thiagarajan, A Spanias, Attend and diagnose: Clinical time series analysis using attention models, in: 32nd AAAI Conference on Artificial Intelligence, AAAI2018, 2018, pp. 4091–4098.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[44]</span> <a id="R44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id61"><!-- named anchor --></a>Y Li, S Rao, JRA Solares, A Hassaine, R Ramakrishnan, D Canoy, Y Zhu, K Rahimi, G Salimi-Khorshidi, BEHRT: Transformer for electronic health records, Sci. Rep10 (2020) 7155, 10.1038/s41598-020-62922-y.32346050
+PMC7189231</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[45]</span> <a id="R45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id62"><!-- named anchor --></a>L Rasmy, Y Xiang, Z Xie, C Tao, D Zhi, Med-BERT: pre-trained contextualized embeddings on large-scale structured electronic health records for disease prediction, ArXivPreprint ArXiv:2005.12833 (2020).10.1038/s41746-021-00455-yPMC813788234017034</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[46]</span> <a id="R46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id63"><!-- named anchor --></a>TG Kolda, BW Bader, Tensor decompositions and applications, SIAM Rev. 51 (2009) 455–500, 10.1137/07070111X.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[47]</span> <a id="R47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id64"><!-- named anchor --></a>EC Chi, TG Kolda, On tensors, sparsity, and nonnegative factorizations, SIAM J. Matrix Anal. Appl33 (2012) 1272–1299, 10.1137/110859063.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[48]</span> <a id="R48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id65"><!-- named anchor --></a>K Yang, X Li, H Liu, J Mei, G Xie, J Zhao, B Xie, F Wang, TaGiTeD: Predictive task guided tensor decomposition for representation learning from electronic health records, in: Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence, AAAI Press, 2017, pp. 2824–2830.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[49]</span> <a id="R49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id66"><!-- named anchor --></a>JC Ho, J Ghosh, J Sun, Marble: High-throughput phenotyping from electronic health records via sparse nonnegative tensor factorization, in: Proceedings of the 20th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD ‘14, ACM Press, New York, New York, USA, 2014, pp. 115–124. 10.1145/2623330.2623658.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[50]</span> <a id="R50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id67"><!-- named anchor --></a>H He, J Henderson, JC Ho, Distributed Tensor Decomposition for Large Scale Health Analytics, in: The World Wide Web Conference on - WWW ‘19, ACM Press, San Francisco, CA, USA, 2019, pp. 659–669. 10.1145/3308558.3313548.PMC656381231198910</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[51]</span> <a id="R51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id68"><!-- named anchor --></a>M Ouzzani, H Hammady, Z Fedorowicz, A Elmagarmid, Rayyan—a web and mobile app for systematic reviews, Syst Rev. 5 (2016) 210, 10.1186/s13643-016-0384-4.27919275
+PMC5139140</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[52]</span> <a id="R52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id69"><!-- named anchor --></a>KM Ahmed, B Al Dhubaib, Zotero: A bibliographic assistant to researcher, J. Pharmacol. Pharmacotherap2 (2011) 303.10.4103/0976-500X.85940PMC319853322025866</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[53]</span> <a id="R53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id70"><!-- named anchor --></a>D Moher, A Liberati, J Tetzlaff, DG Altman, Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement, Int. J. Surg8 (2010) 336–341, 10.1016/j.ijsu.2010.02.007.20171303
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[54]</span> <a id="R54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id71"><!-- named anchor --></a>E Zhang, R Robinson, B Pfahringer, Deep Holistic Representation Learning from EHR, in: 2018. 10.1109/ISMICT.2018.8573698.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[55]</span> <a id="R55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id72"><!-- named anchor --></a>H Suresh, N Hunt, A Johnson, LA Celi, P Szolovits, M Ghassemi, Clinical intervention prediction and understanding with deep neural networks, Mach. Learn. Healthc. Conf (2017) 322–337.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[56]</span> <a id="R56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id73"><!-- named anchor --></a>T Bai, AK Ch, BL Egleston, S Vucetic, EHR phenotyping via jointly embedding medical concepts and words into a unified vector space, BMC Med. Inf. Decis. Mak18 (2018) 123. <a target="xrefwindow" href="http://www.embase.com/search/results?subaction=viewrecord&amp;from=export&amp;id=L625525781" id="id74">http://www.embase.com/search/results?subaction=viewrecord&amp;from=export&amp;id=L625525781</a>.10.1186/s12911-018-0672-0PMC629051430537974</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[57]</span> <a id="R57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id75"><!-- named anchor --></a>J Kemp, A Rajkomar, AM Dai, Improved Hierarchical Patient Classification with Language Model Pretraining over Clinical Notes, ArXiv:1909.03039 [Cs, Stat]. (2019). <a target="xrefwindow" href="http://arxiv.org/abs/1909.03039" id="id76">http://arxiv.org/abs/1909.03039</a> (accessed
+November 22, 2019).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[58]</span> <a id="R58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id77"><!-- named anchor --></a>K Yin, D Qian, WK Cheung, BCM Fung, J Poon, Learning phenotypes and dynamic patient representations via RNN regularized collective non-negative tensor factorization, AAAI33 (2019) 1246–1253, 10.1609/aaai.v33i01.33011246.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[59]</span> <a id="R59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id78"><!-- named anchor --></a>Z Li, K Roberts, X Jiang, Q Long, Distributed learning from multiple EHR databases: Contextual embedding models for medical events, J. Biomed. Inform92 (2019) 103138, 10.1016/j.jbi.2019.103138.30825539
+PMC6533615</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[60]</span> <a id="R60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id79"><!-- named anchor --></a>T Tran, TD Nguyen, D Phung, S Venkatesh, Learning vector representation of medical objects via EMR-driven nonnegative restricted Boltzmann machines (eNRBM), J. Biomed. Inform54 (2015) 96–105, 10.1016/j.jbi.2015.01.012.25661261
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[61]</span> <a id="R61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id80"><!-- named anchor --></a>H Suresh, JJ Gong, J Guttag, Learning tasks for multitask learning: heterogenous patient populations in the ICU, in: Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining - KDD ‘18. (2018) 802–810. 10.1145/3219819.3219930.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[62]</span> <a id="R62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id81"><!-- named anchor --></a>D Dligach, T Miller, Learning Patient Representations from Text, in: Proceedings of the Seventh Joint Conference on Lexical and Computational Semantics, 2018, pp. 119–123.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[63]</span> <a id="R63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id82"><!-- named anchor --></a>D Dligach, M Afshar, T Miller, Toward a clinical text encoder: pretraining for clinical natural language processing with applications to substance misuse, J. Am. Med. Inform. Assoc (2019) ocz072, 10.1093/jamia/ocz072.PMC679856631233140</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[64]</span> <a id="R64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id83"><!-- named anchor --></a>T Bai, BL Egleston, S Zhang, S Vucetic, Interpretable representation learning for healthcare via capturing disease progression through time, in: 2018, pp. 43–51. 10.1145/3219819.3219904.PMC648483631037221</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[65]</span> <a id="R65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id84"><!-- named anchor --></a>L Liu, J Shen, M Zhang, Z Wang, J Tang, Learning the joint representation of heterogeneous temporal events for clinical endpoint prediction, in: 2018, pp. 109–116. <a target="xrefwindow" href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85060476955&amp;partnerID=40&amp;md5=e3cfd1382f1464164edc3f0dd4ab7baa" id="id85">https://www.scopus.com/inward/record.uri?eid=2-s2.0-85060476955&amp;partnerID=40&amp;md5=e3cfd1382f1464164edc3f0dd4ab7baa</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[66]</span> <a id="R66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id86"><!-- named anchor --></a>XS Zhang, F Tang, HH Dodge, J Zhou, F Wang, MetaPred: Meta-Learning for Clinical Risk Prediction with Limited Patient Electronic Health Records, in: Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining, ACM, New York, NY, USA,2019, pp. 2487–2495. 10.1145/3292500.3330779.PMC804625833859865</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[67]</span> <a id="R67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id87"><!-- named anchor --></a>IM Baytas, C Xiao, X Zhang, F Wang, AK Jain, J Zhou, Patient subtyping via time-aware LSTM networks, in: Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, ACM, 2017, pp. 65–74.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[68]</span> <a id="R68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id88"><!-- named anchor --></a>M Rafiq, G Keel, P Mazzocato, J Spaak, C Savage, C Guttmann, Deep learning architectures for vector representations of patients and exploring predictors of 30-day hospital readmissions in patients with multiple chronic conditions, 2019. 10.1007/978-3-030-12738-1_17.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[69]</span> <a id="R69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id89"><!-- named anchor --></a>J Liu, Z Zhang, N Razavian, Deep EHR: Chronic Disease Prediction Using Medical Notes, ArXiv:1808.04928 [Cs, Stat]. (2018). <a target="xrefwindow" href="http://arxiv.org/abs/1808.04928" id="id90">http://arxiv.org/abs/1808.04928</a> (accessed
+April 9, 2019).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[70]</span> <a id="R70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id91"><!-- named anchor --></a>Q Suo, F Ma, Y Yuan, M Huai, W Zhong, J Gao, A Zhang, Deep patient similarity learning for personalized healthcare, IEEE Trans. Nanobiosci17 (2018) 219–227, 10.1109/TNB.2018.2837622.29994534</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[71]</span> <a id="R71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id92"><!-- named anchor --></a>Z Che, Y Cheng, Z Sun, Y Liu, Exploiting Convolutional Neural Network for Risk Prediction with Medical Feature Embedding, ArXiv:1701.07474 [Cs, Stat]. (2017). <a target="xrefwindow" href="http://arxiv.org/abs/1701.07474" id="id93">http://arxiv.org/abs/1701.07474</a> (accessed
+April 10, 2019).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[72]</span> <a id="R72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id94"><!-- named anchor --></a>T Ma, C Xiao, F Wang, Health-ATM: A deep architecture for multifaceted patient health record representation and risk prediction, in: 2018, pp. 261–269. <a target="xrefwindow" href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85045143398&amp;partnerID=40&amp;md5=b63d90606c942e23cb2d49ae4fed27fd" id="id95">https://www.scopus.com/inward/record.uri?eid=2-s2.0-85045143398&amp;partnerID=40&amp;md5=b63d90606c942e23cb2d49ae4fed27fd</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[73]</span> <a id="R73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id96"><!-- named anchor --></a>Y Si, K Roberts, Deep patient representation of clinical notes via multi-task learning for mortality prediction, in: AMIA Jt Summits Transl Sci Proc, 2019, 2019, pp. 779–788.31259035
+PMC6568068</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[74]</span> <a id="R74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id97"><!-- named anchor --></a>Y Zhang, H Zhou, J Li, W Sun, Y Chen, A Time-Sensitive Hybrid Learning Model for Patient Subgrouping, in: 2018 International Joint Conference on Neural Networks (IJCNN), IEEE, Rio de Janeiro, 2018, pp. 1–8. 10.1109/IJCNN.2018.8488991.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[75]</span> <a id="R75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id98"><!-- named anchor --></a>L Lei, Y Zhou, J Zhai, L Zhang, Z Fang, P He, J Gao, An Effective Patient Representation Learning for Time-series Prediction Tasks Based on EHRs, in: 2019, pp. 885–892. 10.1109/BIBM.2018.8621542.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[76]</span> <a id="R76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id99"><!-- named anchor --></a>F Ma, R Chitta, J Zhou, Q You, T Sun, J Gao, Dipole: Diagnosis Prediction in Healthcare via Attention-based Bidirectional Recurrent Neural Networks, Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD ‘17. (2017) 1903–1911. 10.1145/3097983.3098088.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[77]</span> <a id="R77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id100"><!-- named anchor --></a>L Liu, H Li, Z Hu, H Shi, Z Wang, J Tang, M Zhang, Learning Hierarchical Representations of Electronic Health Records for Clinical Outcome Prediction, ArXivPreprint ArXiv:1903.08652. (2019).PMC715307332308854</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[78]</span> <a id="R78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id101"><!-- named anchor --></a>J Zhang, K Kowsari, JH Harrison, JM Lobo, LE Barnes, Patient2Vec: A Personalized Interpretable Deep Representation of the Longitudinal Electronic Health Record, IEEE Access6 (2018) 65333–65346, 10.1109/ACCESS.2018.2875677.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[79]</span> <a id="R79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id102"><!-- named anchor --></a>C Xiao, T Ma, AB Dieng, DM Blei, F Wang, Readmission prediction via deep contextual embedding of clinical concepts, PLoS ONE13 (2018) e0195024, 10.1371/journal.pone.0195024.29630604
+PMC5890980</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[80]</span> <a id="R80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id103"><!-- named anchor --></a>E Choi, MT Bahadori, J Sun, J Kulas, A Schuetz, W Stewart, RETAIN: An interpretable predictive model for healthcare using reverse time attention mechanism, Adv. Neural Inf. Process. Syst (2016) 3504–3512.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[81]</span> <a id="R81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id104"><!-- named anchor --></a>E Choi, C Xiao, W Stewart, J Sun, Mime: Multilevel medical embedding of electronic health records for predictive healthcare, Adv. Neural Inf. Process. Syst (2018) 4547–4557.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[82]</span> <a id="R82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id105"><!-- named anchor --></a>C Zhou, Y Jia, M Motani, J Chew, Learning Deep Representations from Heterogeneous Patient Data for Predictive Diagnosis, in: Proceedings of the 8th ACM International Conference on Bioinformatics, Computational Biology,and Health Informatics - ACM-BCB ‘17, ACM Press, Boston, Massachusetts, USA, 2017, pp. 115–123. 10.1145/3107411.3107433.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[83]</span> <a id="R83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id106"><!-- named anchor --></a>C Zhou, Y Jia, M Motani, Optimizing Autoencoders for Learning Deep Representations from Health Data, IEEE J. Biomed. Health. Inf23 (2019) 103–111, 10.1109/JBHI.2018.2856820.30028714</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[84]</span> <a id="R84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id107"><!-- named anchor --></a>M Sushil, S Šuster, K Luyckx, W Daelemans, Patient representation learning and interpretable evaluation using clinical notes, J. Biomed. Inform84 (2018) 103–113, 10.1016/j.jbi.2018.06.016.29966746
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[85]</span> <a id="R85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id108"><!-- named anchor --></a>J Stojanovic, D Gligorijevic, V Radosavljevic, N Djuric, M Grbovic, Z Obradovic, Modeling Healthcare Quality via Compact Representations of Electronic Health Records, in: IEEE/ACM Trans. Comput. Biol. Bioinformatics, 14, 2017, pp. 545–554, 10.1109/TCBB.2016.2591523.27429443</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[86]</span> <a id="R86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id109"><!-- named anchor --></a>E Choi, MT Bahadori, E Searles, C Coffey, M Thompson, J Bost, J Tejedor-Sojo, J Sun, Multi-layer Representation Learning for Medical Concepts, in: Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD ‘16, ACM Press, San Francisco, California, USA, 2016, pp. 1495–1504. 10.1145/2939672.2939823.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[87]</span> <a id="R87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id110"><!-- named anchor --></a>L Cui, X Xie, Z Shen, Prediction task guided representation learning of medical codes in EHR, J. Biomed. Inform84 (2018) 1–10, 10.1016/j.jbi.2018.06.013.29928997
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[88]</span> <a id="R88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id111"><!-- named anchor --></a>S Barbieri, J Kemp, O Perez-Concha, S Kotwal, M Gallagher, A Ritchie, L Jorm, Benchmarking Deep Learning Architectures for Predicting Readmission to the ICU and Describing Patients-at-Risk, Sci Rep. 10 (2020) 1111, 10.1038/s41598-020-58053-z.31980704
+PMC6981230</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[89]</span> <a id="R89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id112"><!-- named anchor --></a>DY Ding, C Simpson, S Pfohl, DC Kale, K Jung, NH Shah, The Effectiveness of Multitask Learning for Phenotyping with Electronic Health Records Data, in: Pac Symp Biocomput, 24, 2019, pp. 18–29.30864307
+PMC6662921</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[90]</span> <a id="R90"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id113"><!-- named anchor --></a>D Liu, D Dligach, T Miller, Two-stage Federated Phenotyping and Patient Representation Learning, ArXiv:1908.05596 [Cs]. (2019). <a target="xrefwindow" href="http://arxiv.org/abs/1908.05596" id="id114">http://arxiv.org/abs/1908.05596</a> (accessed
+September 20, 2019).10.18653/v1/W19-5030PMC807222933907350</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[91]</span> <a id="R91"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id115"><!-- named anchor --></a>A Hosseini, T Chen, W Wu, Y Sun, M Sarrafzadeh, HeteroMed: Heterogeneous Information Network for Medical Diagnosis, in: Proceedings of the 27th ACM International Conference on Information and Knowledge Management, Association for Computing Machinery, New York, NY, USA, 2018, pp. 763–772. 10.1145/3269206.3271805.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[92]</span> <a id="R92"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id116"><!-- named anchor --></a>J Deng, W Dong, R Socher, L-J Li, K Li, L Fei-Fei, Imagenet: A large-scale hierarchical image database, in: 2009IEEE Conference on Computer Vision and Pattern Recognition, Ieee, 2009, pp. 248–255.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[93]</span> <a id="R93"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id117"><!-- named anchor --></a>AE Johnson, TJ Pollard, L Shen, HL Li-wei, M Feng, M Ghassemi, B Moody, P Szolovits, LA Celi, RG Mark, MIMIC-III, a freely accessible critical care database, Sci. Data3 (2016) 160035.27219127
+10.1038/sdata.2016.35PMC4878278</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[94]</span> <a id="R94"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id118"><!-- named anchor --></a>K Marek, D Jennings, S Lasch, A Siderowf, C Tanner, T Simuni, C Coffey, K Kieburtz, E Flagg, S Chowdhury, The Parkinson progression marker initiative (PPMI), Prog. Neurobiol95 (2011) 629–635.21930184
+10.1016/j.pneurobio.2011.09.005PMC9014725</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[95]</span> <a id="R95"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id119"><!-- named anchor --></a>SG Mueller, MW Weiner, LJ Thal, RC Petersen, C Jack, W Jagust, JQ Trojanowski, AW Toga, L Beckett, The Alzheimer’s disease neuroimaging initiative, Neuroimag. Clin15 (2005) 869–877.10.1016/j.nic.2005.09.008PMC237674716443497</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[96]</span> <a id="R96"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id120"><!-- named anchor --></a>Ö Uzuner, Recognizing obesity and comorbidities in sparse data, J. Am. Med. Inform. Assoc16 (2009) 561–570.19390096
+10.1197/jamia.M3115PMC2705260</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[97]</span> <a id="R97"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id121"><!-- named anchor --></a>TJ Pollard, AEW Johnson, JD Raffa, LA Celi, RG Mark, O Badawi, The eICU Collaborative Research Database, a freely available multi-center database for critical care research, Sci Data. 5 (2018) 180178, 10.1038/sdata.2018.178.30204154
+PMC6132188</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[98]</span> <a id="R98"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id122"><!-- named anchor --></a>M Sushil, S Šuster, K Luyckx, W Daelemans, Unsupervised patient representations from clinical notes with interpretable classification decisions, ArXiv:1711.05198 [Cs]. (2017). <a target="xrefwindow" href="http://arxiv.org/abs/1711.05198" id="id123">http://arxiv.org/abs/1711.05198</a> (accessed
+April 10, 2019).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[99]</span> <a id="R99"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id124"><!-- named anchor --></a>W Wang, C Guo, J Xu, A Liu, Bi-Dimensional Representation of Patients for Diagnosis Prediction, in: 2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC), IEEE, Milwaukee, WI, USA, 2019, pp. 374–379. 10.1109/COMPSAC.2019.10235.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[100]</span> <a id="R100"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id125"><!-- named anchor --></a>X Zhang, J Chou, J Liang, C Xiao, Y Zhao, H Sarva, C Henchcliffe, F Wang, Data-Driven Subtyping of Parkinson’s Disease Using Longitudinal Clinical Records: A Cohort Study, Sci. Rep9 (2019) 797, 10.1038/s41598-018-37545-z.30692568
+PMC6349906</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[101]</span> <a id="R101"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id126"><!-- named anchor --></a>GE Hinton, RR Salakhutdinov, Reducing the dimensionality of data with neural networks, Science313 (2006) 504–507.16873662
+10.1126/science.1127647</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[102]</span> <a id="R102"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id127"><!-- named anchor --></a>F Wang, R Kaushal, D Khullar, Should Health Care Demand Interpretable Artificial Intelligence or Accept “Black Box” Medicine?Ann. Intern. Med172 (2020) 59, 10.7326/M19-2548.31842204
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[103]</span> <a id="R103"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id128"><!-- named anchor --></a>L van der Maaten, G Hinton, Visualizing data using t-SNE, J. Mach. Learn. Res9 (2008) 2579–2605.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[104]</span> <a id="R104"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id129"><!-- named anchor --></a>MA Cox, TF Cox, Multidimensional scaling, in: Handbook of Data Visualization, Springer, 2008, pp. 315–347.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[105]</span> <a id="R105"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id130"><!-- named anchor --></a>M Ringnér, What is principal component analysis?Nat. Biotechnol26 (2008) 303–304.18327243
+10.1038/nbt0308-303</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[106]</span> <a id="R106"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id131"><!-- named anchor --></a>L McInnes, J Healy, J Melville, UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction, ArXiv:1802.03426 [Cs, Stat]. (2018). <a target="xrefwindow" href="http://arxiv.org/abs/1802.03426" id="id132">http://arxiv.org/abs/1802.03426</a> (accessed
+April 21, 2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[107]</span> <a id="R107"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id133"><!-- named anchor --></a>MN Sadat, MM Al Aziz, N Mohammed, F Chen, X Jiang, S Wang, SAFETY: secure gwAs in federated environment through a hYbrid solution, in: IEEE/ACM Trans. Comput. Biol. Bioinf, 16, 2018, pp. 93–102.10.1109/TCBB.2018.2829760PMC641168029993695</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[108]</span> <a id="R108"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id134"><!-- named anchor --></a>H Yu, X Jiang, J Vaidya, Privacy-preserving SVM using nonlinear kernels on horizontally partitioned data, in: Proceedings of the 2006 ACM Symposium on Applied Computing, 2006, pp. 603–610.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[109]</span> <a id="R109"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id135"><!-- named anchor --></a>Y Kim, J Sun, H Yu, X Jiang, Federated tensor factorization for computational phenotyping, in: Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2017, pp. 887–895.10.1145/3097983.3098118PMC565233129071165</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[110]</span> <a id="R110"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id136"><!-- named anchor --></a>W Dai, S Wang, H Xiong, X Jiang, Privacy preserving federated big data analysis, in: Guide to Big Data Applications, Springer, 2018, pp. 49–82.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[111]</span> <a id="R111"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id137"><!-- named anchor --></a>J Lee, J Sun, F Wang, S Wang, C-H Jun, X Jiang, Privacy-preserving patient similarity learning in a federated environment: development and analysis, JMIR Med. Inf6 (2018) e20.10.2196/medinform.7744PMC592437929653917</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[112]</span> <a id="R112"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id138"><!-- named anchor --></a>Y Si, K Roberts, Patient Representation Transfer Learning from Clinical Notes based on Hierarchical Attention Network, in: AMIA Joint Summits on Translational Science Proceedings. AMIA Joint Summits on Translational Science, 2020.PMC723303532477682</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[113]</span> <a id="R113"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id139"><!-- named anchor --></a>F Wang, LP Casalino, D Khullar, Deep Learning in Medicine—Promise, Progress, and Challenges, JAMA, Intern Med. 179 (2019) 293, 10.1001/jamainternmed.2018.7117.30556825</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[114]</span> <a id="R114"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id140"><!-- named anchor --></a>C Yun, S Bhojanapalli, AS Rawat, SJ Reddi, S Kumar, Are Transformers universal approximators of sequence-to-sequence functions?, ArXiv:1912.10077 [Cs, Stat]. (2020). <a target="xrefwindow" href="http://arxiv.org/abs/1912.10077" id="id141">http://arxiv.org/abs/1912.10077</a> (accessed
+May 5, 2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[115]</span> <a id="R115"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id142"><!-- named anchor --></a>E Steinberg, K Jung, JA Fries, CK Corbin, SR Pfohl, NH Shah, Language models are an effective representation learning technique for electronic health record data, J. Biomed. Inf113 (2020) 103637.10.1016/j.jbi.2020.103637PMC786363333290879</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[116]</span> <a id="R116"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id143"><!-- named anchor --></a>Y Si, EV Bernstam, K Roberts, Generalized and Transferable Patient Language Representation for Phenotyping with Limited Data, arXiv (2021).10.1016/j.jbi.2021.103726PMC1157772933711541</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[117]</span> <a id="R117"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id144"><!-- named anchor --></a>C Finn, P Abbeel, S Levine, Model-agnostic Meta-learning for Fast Adaptation of Deep Networks, in: Proceedings of the 34th International Conference on Machine Learning - Volume 70, <a target="xrefwindow" href="http://jmlr.org" id="id145">JMLR.org</a>, 2017, pp. 1126–1135. <a target="xrefwindow" href="http://dl.acm.org/citation.cfm?id=3305381.3305498" id="id146">http://dl.acm.org/citation.cfm?id=3305381.3305498</a>.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[118]</span> <a id="R118"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id147"><!-- named anchor --></a>J Wiens, S Saria, M Sendak, M Ghassemi, VX Liu, F Doshi-Velez, K Jung, K Heller, D Kale, M Saeed, PN Ossorio, S Thadaney-Israni, A Goldenberg, Do no harm: a roadmap for responsible machine learning for health care, Nat. Med25 (2019) 1337–1340, 10.1038/s41591-019-0548-6.31427808
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[119]</span> <a id="R119"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id148"><!-- named anchor --></a>D Lee, X Jiang, H Yu, Harmonized representation learning on dynamic EHR graphs, J. Biomed. Inform106 (2020) 103426, 10.1016/j.jbi.2020.103426.32339747
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[120]</span> <a id="R120"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id149"><!-- named anchor --></a>S Shilo, H Rossman, E Segal, Axes of a revolution: challenges and promises of big data in healthcare, Nat. Med26 (2020) 29–38, 10.1038/s41591-019-0727-5.31932803
+</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[121]</span> <a id="R121"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id150"><!-- named anchor --></a>A Cheerla, O Gevaert, Deep learning with multimodal representation for pancancer prognosis prediction, Bioinformatics35 (2019) i446–i454.31510656
+10.1093/bioinformatics/btz342PMC6612862</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[122]</span> <a id="R122"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id151"><!-- named anchor --></a>X Zhu, J Yao, G Xiao, Y Xie, J Rodriguez-Canales, ER Parra, C Behrens, II Wistuba, J Huang, Imaging-genetic data mapping for clinical outcome prediction via supervised conditional gaussian graphical model, in: 2016 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), IEEE, 2016, pp. 455–459.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[123]</span> <a id="R123"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id152"><!-- named anchor --></a>G Jia, Y Li, H Zhang, I Chattopadhyay, AB Jensen, DR Blair, L Davis, PN Robinson, T Dahlén, S Brunak, others, Estimating heritability and genetic correlations from large health datasets in the absence of genetic data, Nat. Commun10 (2019) 1–11.31796735
+10.1038/s41467-019-13455-0PMC6890770</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[124]</span> <a id="R124"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id153"><!-- named anchor --></a>E Laparra, S Bethard, TA Miller, Rethinking domain adaptation for machine learning over clinical language, JAMIA Open (2020) ooaa010, 10.1093/jamiaopen/ooaa010.PMC738262632734151</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[125]</span> <a id="R125"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id154"><!-- named anchor --></a>J Koněcný, B McMahan, D Ramage, Federated Optimization:Distributed Optimization Beyond the Datacenter, ArXiv:1511.03575 [Cs, Math]. (2015). <a target="xrefwindow" href="http://arxiv.org/abs/1511.03575" id="id155">http://arxiv.org/abs/1511.03575</a> (accessed
+May 7, 2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[126]</span> <a id="R126"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id156"><!-- named anchor --></a>F Zerka, S Barakat, S Walsh, M Bogowicz, RTH Leijenaar, A Jochems, B Miraglio, D Townend, P Lambin, Systematic Review of Privacy-Preserving Distributed Machine Learning From Federated Databases in Health Care, JCO Clin. Cancer Inf (2020) 184–200, 10.1200/CCI.19.00047.PMC711307932134684</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[127]</span> <a id="R127"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id157"><!-- named anchor --></a>J Xu, F Wang, Federated Learning for Healthcare Informatics, ArXiv:1911.06270 [Cs]. (2019). <a target="xrefwindow" href="http://arxiv.org/abs/1911.06270" id="id158">http://arxiv.org/abs/1911.06270</a> (accessed
+May 7, 2020).10.1007/s41666-020-00082-4PMC765989833204939</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[128]</span> <a id="R128"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id159"><!-- named anchor --></a>N Rieke, J Hancox, W Li, F Milletari, H Roth, S Albarqouni, S Bakas, MN Galtier, B Landman, K Maier-Hein, S Ourselin, M Sheller, RM Summers, A Trask, D Xu, M Baust, MJ Cardoso, The Future of Digital Health with Federated Learning, ArXiv:2003.08119 [Cs]. (2020). <a target="xrefwindow" href="http://arxiv.org/abs/2003.08119" id="id160">http://arxiv.org/abs/2003.08119</a> (accessed
+May 7, 2020).10.1038/s41746-020-00323-1PMC749036733015372</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[129]</span> <a id="R129"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id161"><!-- named anchor --></a>P McClure, CY Zheng, J Kaczmarzyk, J Rogers-Lee, S Ghosh, D Nielson, PA Bandettini, F Pereira, Distributed Weight Consolidation: A Brain Segmentation Case Study, in: S Bengio, H Wallach, H Larochelle, K Grauman, N Cesa-Bianchi, R Garnett (Eds.), Advances in Neural Information Processing Systems
+31, Curran Associates, Inc., 2018, pp. 4093–4103. <a target="xrefwindow" href="http://papers.nips.cc/paper/7664-distributed-weight-consolidation-a-brain-segmentation-case-study.pdf" id="id162">http://papers.nips.cc/paper/7664-distributed-weight-consolidation-a-brain-segmentation-case-study.pdf</a>.34376963
+PMC8351531</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[130]</span> <a id="R130"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id163"><!-- named anchor --></a>K Chang, N Balachandar, C Lam, D Yi, J Brown, A Beers, B Rosen, DL Rubin, J Kalpathy-Cramer, Distributed deep learning networks among institutions for medical imaging, J. Am. Med. Inform. Assoc25 (2018) 945–954, 10.1093/jamia/ocy017.29617797
+PMC6077811</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[131]</span> <a id="R131"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id164"><!-- named anchor --></a>TM Deist, A Jochems, J van Soest, G Nalbantov, C Oberije, S Walsh, M Eble, P Bulens, P Coucke, W Dries, A Dekker, P Lambin, Infrastructure and distributed learning methodology for privacy-preserving multi-centric rapid learning health care: euroCAT, Clin. Transl. Radiat. Oncol4 (2017) 24–31, 10.1016/j.ctro.2016.12.004.29594204
+PMC5833935</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[132]</span> <a id="R132"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id165"><!-- named anchor --></a>G Price, M van Herk, C Faivre-Finn, Data Mining in Oncology: The ukCAT Project and the Practicalities of Working with Routine Patient Data, Clin. Oncol29 (2017) 814–817, 10.1016/j.clon.2017.07.011.28781199</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[133]</span> <a id="R133"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id166"><!-- named anchor --></a>S Darabi, M Kachuee, S Fazeli, M Sarrafzadeh, TAPER: Time-Aware Patient EHR Representation, ArXiv:1908.03971 [Cs, Stat]. (2019). <a target="xrefwindow" href="http://arxiv.org/abs/1908.03971" id="id167">http://arxiv.org/abs/1908.03971</a> (accessed
+September 20, 2019).10.1109/JBHI.2020.298493132287023</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[134]</span> <a id="R134"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id168"><!-- named anchor --></a>B Hettige, Y-F Li, W Wang, S Le, W Buntine, MedGraph: Structural and Temporal Representation Learning of Electronic Medical Records, ArXiv: 1912.03703 [Cs, Stat]. (2020). <a target="xrefwindow" href="http://arxiv.org/abs/1912.03703" id="id169">http://arxiv.org/abs/1912.03703</a> (accessed
+May 7, 2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[135]</span> <a id="R135"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id170"><!-- named anchor --></a>S Darabi, M Kachuee, M Sarrafzadeh, Unsupervised Representation for EHR Signals and Codes as Patient Status Vector, ArXiv:1910.01803 [Cs, Stat]. (2019). <a target="xrefwindow" href="http://arxiv.org/abs/1910.01803" id="id171">http://arxiv.org/abs/1910.01803</a> (accessed
+May 7, 2020).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[136]</span> <a id="R136"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id172"><!-- named anchor --></a>S Dubois, N Romano, DC Kale, N Shah, K Jung, Effective Representations of Clinical Notes, ArXiv:1705.07025 [Cs, Stat]. (2017). <a target="xrefwindow" href="http://arxiv.org/abs/1705.07025" id="id173">http://arxiv.org/abs/1705.07025</a> (accessed
+April 15, 2019).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[137]</span> <a id="R137"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id174"><!-- named anchor --></a>JR Ayala Solares, FE Diletta Raimondi, Y Zhu, F Rahimian, D Canoy, J Tran, AC Pinho Gomes, AH Payberah, M Zottoli, M Nazarzadeh, N Conrad, K Rahimi, G Salimi-Khorshidi, Deep learning for electronic health records: A comparative review of multiple deep neural architectures, J. Biomed. Inf101 (2020) 103337, 10.1016/j.jbi.2019.103337.31916973</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[138]</span> <a id="R138"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id175"><!-- named anchor --></a>N Sadati, MZ Nezhad, RB Chinnam, D Zhu, Representation Learning with Autoencoders for Electronic Health Records: A Comparative Study, ArXiv: 1801.02961 [Cs, Stat]. (2018). <a target="xrefwindow" href="http://arxiv.org/abs/1801.02961" id="id176">http://arxiv.org/abs/1801.02961</a> (accessed
+October 21, 2019).</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">[139]</span> <a id="R139"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id177"><!-- named anchor --></a>X Min, B Yu, F Wang, Predictive Modeling of the Hospital Readmission Risk from Patients’ Claims Data Using Machine Learning: A Case Study on COPD, Sci. Rep9 (2019) 2362, 10.1038/s41598-019-39071-y.30787351
+PMC6382784</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-floats" class="back">
+<h2 class="main-title"><span class="generated">Floating objects</span></h2>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">Fig. 1.</h5>
+<div class="caption"><p class="first" id="P93">Workflow of patient representation learning.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F2"><!-- named anchor --></a><h5 class="label">Fig. 2.</h5>
+<div class="caption"><p class="first" id="P94">PRISMA flowchart for including articles in this review. (PRL: Patient Representation Learning. DL: Deep Learning. EHR: Electronic Health Records.)</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F3"><!-- named anchor --></a><h5 class="label">Fig. 3.</h5>
+<div class="caption"><p class="first" id="P95">Publication counts over time.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F4"><!-- named anchor --></a><h5 class="label">Fig. 4.</h5>
+<div class="caption"><p class="first" id="P96">Deep learning architectures used in the included studies.</p></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="P97">Selection of conferences/journals publishing the included studies.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id178"><!-- named anchor --></a><colgroup span="1">
+<a id="id179"><!-- named anchor --></a><col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+</colgroup>
+<thead>
+<a id="id183"><!-- named anchor --></a><tr>
+<a id="id184"><!-- named anchor --></a><th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id185"><!-- named anchor --></a>Community</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>Conference/Journal</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id187"><!-- named anchor --></a>Name (# Papers)</th>
+</tr>
+</thead>
+<tbody>
+<a id="id188"><!-- named anchor --></a><tr>
+<a id="id189"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id190"><!-- named anchor --></a>Informatics</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id191"><!-- named anchor --></a>Conference</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id192"><!-- named anchor --></a>AMIA Summit (1), AMIA Symposium (1), others (4)</td>
+</tr>
+<tr>
+<a id="id193"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1"><a id="id194"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id195"><!-- named anchor --></a>Journal</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id196"><!-- named anchor --></a>JBI (3), JAMIA (1)</td>
+</tr>
+<tr>
+<a id="id197"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a>Medicine</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id199"><!-- named anchor --></a>Journal</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id200"><!-- named anchor --></a>NPJ Digital Medicine (1), Scientific Reports (2), PLoS ONE (1)</td>
+</tr>
+<tr>
+<a id="id201"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id202"><!-- named anchor --></a>Computer Science</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id203"><!-- named anchor --></a>Conference</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id204"><!-- named anchor --></a>KDD (8), AAAI (4), CIKM (3), NeurIPS_ML4H (4), IEEE-related (7), others (7)</td>
+</tr>
+<tr>
+<a id="id205"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1"><a id="id206"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id207"><!-- named anchor --></a>Journal</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id208"><!-- named anchor --></a>JMLR (2)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="P98">Correspondence between patient data types and deep learning models.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id209"><!-- named anchor --></a><colgroup span="1">
+<a id="id210"><!-- named anchor --></a><col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+</colgroup>
+<thead>
+<a id="id215"><!-- named anchor --></a><tr>
+<a id="id216"><!-- named anchor --></a><th align="left" valign="middle" rowspan="1" colspan="1"><a id="id217"><!-- named anchor --></a></th>
+<th colspan="3" align="left" valign="middle" style="border-bottom: solid 1px" rowspan="1">
+<a id="id218"><!-- named anchor --></a>Patient Input Data Type</th>
+</tr>
+<tr>
+<a id="id219"><!-- named anchor --></a><th align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id220"><!-- named anchor --></a>DL Models</th>
+<th align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id221"><!-- named anchor --></a>Structured</th>
+<th align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id222"><!-- named anchor --></a>Unstructured</th>
+<th align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id223"><!-- named anchor --></a>Combined</th>
+</tr>
+</thead>
+<tbody>
+<a id="id224"><!-- named anchor --></a><tr>
+<a id="id225"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id226"><!-- named anchor --></a>LSTM</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>[<a href="#R14">14</a>,<a href="#R58">58</a>,<a href="#R61">61</a>,<a href="#R64">64</a>–<a href="#R68">68</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>[<a href="#R69">69</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id229"><!-- named anchor --></a>[<a href="#R6">6</a>,<a href="#R54">54</a>,<a href="#R55">55</a>,<a href="#R57">57</a>]</td>
+</tr>
+<tr>
+<a id="id230"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id231"><!-- named anchor --></a>CNN</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id232"><!-- named anchor --></a>[<a href="#R14">14</a>,<a href="#R33">33</a>,<a href="#R66">66</a>,<a href="#R68">68</a>,<a href="#R70">70</a>–<a href="#R72">72</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id233"><!-- named anchor --></a>[<a href="#R63">63</a>,<a href="#R73">73</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>[<a href="#R54">54</a>,<a href="#R55">55</a>]</td>
+</tr>
+<tr>
+<a id="id235"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id236"><!-- named anchor --></a>GRU</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id237"><!-- named anchor --></a>[<a href="#R31">31</a>,<a href="#R38">38</a>,<a href="#R72">72</a>,<a href="#R74">74</a>–<a href="#R81">81</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id238"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id239"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id240"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id241"><!-- named anchor --></a>Autoencoder</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id242"><!-- named anchor --></a>[<a href="#R61">61</a>,<a href="#R67">67</a>,<a href="#R74">74</a>,<a href="#R75">75</a>,<a href="#R82">82</a>,<a href="#R83">83</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>[<a href="#R84">84</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id244"><!-- named anchor --></a>[<a href="#R11">11</a>]</td>
+</tr>
+<tr>
+<a id="id245"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a>word2vec</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id247"><!-- named anchor --></a>[<a href="#R59">59</a>,<a href="#R85">85</a>–<a href="#R87">87</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id248"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id249"><!-- named anchor --></a>[<a href="#R56">56</a>]</td>
+</tr>
+<tr>
+<a id="id250"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id251"><!-- named anchor --></a>FFNN</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id252"><!-- named anchor --></a>[<a href="#R88">88</a>,<a href="#R89">89</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id253"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id254"><!-- named anchor --></a>[<a href="#R6">6</a>,<a href="#R54">54</a>]</td>
+</tr>
+<tr>
+<a id="id255"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id256"><!-- named anchor --></a>Tensor Decomposition</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id257"><!-- named anchor --></a>[<a href="#R48">48</a>,<a href="#R58">58</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id258"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id259"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id260"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id261"><!-- named anchor --></a>Deep Averaging Network</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id262"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>[<a href="#R62">62</a>,<a href="#R90">90</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id264"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id265"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id266"><!-- named anchor --></a>Graph NN</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id267"><!-- named anchor --></a>[<a href="#R27">27</a>,<a href="#R32">32</a>,<a href="#R91">91</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id268"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id269"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id270"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>Restricted Boltzmann Machines</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id272"><!-- named anchor --></a>[<a href="#R60">60</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id273"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id274"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id275"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id276"><!-- named anchor --></a>Transformer</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id277"><!-- named anchor --></a>[<a href="#R43">43</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id278"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id279"><!-- named anchor --></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="P99">Benchmark dataset and clinical outcome applications.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id280"><!-- named anchor --></a><colgroup span="1">
+<a id="id281"><!-- named anchor --></a><col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+</colgroup>
+<thead>
+<a id="id288"><!-- named anchor --></a><tr>
+<a id="id289"><!-- named anchor --></a><th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id290"><!-- named anchor --></a>Public Resource</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id291"><!-- named anchor --></a>Description</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id292"><!-- named anchor --></a>Patient Data Type</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>Patient Count</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id294"><!-- named anchor --></a>Application Tasks</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a>Paper</th>
+</tr>
+</thead>
+<tbody>
+<a id="id296"><!-- named anchor --></a><tr>
+<a id="id297"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>MIMIC-III</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id299"><!-- named anchor --></a>A critical care database, including de-identified patient data with ~ 60,000 Intensive Care Unit (ICU) admissions [<a href="#R93">93</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a>Structured; Unstructured</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id301"><!-- named anchor --></a>~46,000</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a>Mortality Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id303"><!-- named anchor --></a>[<a href="#R14">14</a>,<a href="#R43">43</a>,<a href="#R57">57</a>,<a href="#R58">58</a>,<a href="#R61">61</a>,<a href="#R65">65</a>,<a href="#R73">73</a>,<a href="#R77">77</a>]</td>
+</tr>
+<tr>
+<a id="id304"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1"><a id="id305"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id306"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id307"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id308"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id309"><!-- named anchor --></a>Disease Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>[<a href="#R27">27</a>,<a href="#R31">31</a>,<a href="#R43">43</a>,<a href="#R54">54</a>,<a href="#R56">56</a>,<a href="#R57">57</a>,<a href="#R59">59</a>,<a href="#R91">91</a>,<a href="#R98">98</a>,<a href="#R99">99</a>]</td>
+</tr>
+<tr>
+<a id="id311"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1"><a id="id312"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id313"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id314"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id315"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id316"><!-- named anchor --></a>Admission Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>[<a href="#R77">77</a>,<a href="#R88">88</a>]</td>
+</tr>
+<tr>
+<a id="id318"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1"><a id="id319"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id320"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id321"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id322"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>Length-of-stay Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id324"><!-- named anchor --></a>[<a href="#R14">14</a>,<a href="#R43">43</a>,<a href="#R73">73</a>]</td>
+</tr>
+<tr>
+<a id="id325"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1"><a id="id326"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id327"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id328"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id329"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id330"><!-- named anchor --></a>Patient Similarity</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id331"><!-- named anchor --></a>[<a href="#R58">58</a>]</td>
+</tr>
+<tr>
+<a id="id332"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1"><a id="id333"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id334"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id335"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id336"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id337"><!-- named anchor --></a>24-hour decompensation</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id338"><!-- named anchor --></a>[<a href="#R14">14</a>,<a href="#R43">43</a>,<a href="#R61">61</a>]</td>
+</tr>
+<tr>
+<a id="id339"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1"><a id="id340"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id341"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id342"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1"><a id="id343"><!-- named anchor --></a></td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id344"><!-- named anchor --></a>Intervention Prediction (ventilation, prescription, lab test order, etc.)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id345"><!-- named anchor --></a>[<a href="#R32">32</a>,<a href="#R54">54</a>,<a href="#R55">55</a>,<a href="#R65">65</a>,<a href="#R98">98</a>]</td>
+</tr>
+<tr>
+<a id="id346"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id347"><!-- named anchor --></a>PPMI</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id348"><!-- named anchor --></a>A longitudinal patient dataset comprising clinical and behavioral variables, imaging, and specimen data of Parkinson’s disease patients. [<a href="#R94">94</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id349"><!-- named anchor --></a>Structured</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id350"><!-- named anchor --></a>~1000</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id351"><!-- named anchor --></a>Patient subtyping</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id352"><!-- named anchor --></a>[<a href="#R67">67</a>,<a href="#R74">74</a>]</td>
+</tr>
+<tr>
+<a id="id353"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id354"><!-- named anchor --></a>ADNI</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id355"><!-- named anchor --></a>A longitudinal patient dataset consisting of assessments collected from selected patients in varied stages of Alzheimer’s Disease. [<a href="#R95">95</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id356"><!-- named anchor --></a>Structured</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id357"><!-- named anchor --></a>~600</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id358"><!-- named anchor --></a>Patient subtyping</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id359"><!-- named anchor --></a>[<a href="#R74">74</a>]</td>
+</tr>
+<tr>
+<a id="id360"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id361"><!-- named anchor --></a>i2b2 obesity challenge</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id362"><!-- named anchor --></a>1237 discharge summaries from the Partners HealthCare Research Patient Data Repository. Each discharge summary was annotated with patient disease status corresponding to obesity and fifteen comorbidities of obesity. [<a href="#R96">96</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id363"><!-- named anchor --></a>Unstructured</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id364"><!-- named anchor --></a>~1000</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id365"><!-- named anchor --></a>Phenotype Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id366"><!-- named anchor --></a>[<a href="#R62">62</a>,<a href="#R63">63</a>,<a href="#R90">90</a>]</td>
+</tr>
+<tr>
+<a id="id367"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id368"><!-- named anchor --></a>eICU Collaborative Database</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id369"><!-- named anchor --></a>A combination of multiple critical care units across the United States. The data covers patients who were admitted to critical care units in 2014 and 2015. [<a href="#R97">97</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id370"><!-- named anchor --></a>Structured</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id371"><!-- named anchor --></a>~139,000</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id372"><!-- named anchor --></a>Mortality medication, and diagnosis predictions</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id373"><!-- named anchor --></a>[<a href="#R42">42</a>]</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<div class="footnote">
+<a id="TFN1"><!-- named anchor --></a><p id="P100"><span class="generated">[i]</span> MIMIC-III: <a target="xrefwindow" href="https://mimic.physionet.org/" id="id374">https://mimic.physionet.org/</a>.</p>
+</div>
+<div class="footnote">
+<a id="TFN2"><!-- named anchor --></a><p id="P101"><span class="generated">[ii]</span> PPMI: <a target="xrefwindow" href="http://www.ppmi-info.org/" id="id375">http://www.ppmi-info.org/</a>.</p>
+</div>
+<div class="footnote">
+<a id="TFN3"><!-- named anchor --></a><p id="P102"><span class="generated">[iii]</span> ADNI: <a target="xrefwindow" href="http://ida.loni.usc.edu/" id="id376">http://ida.loni.usc.edu/</a>.</p>
+</div>
+<div class="footnote">
+<a id="TFN4"><!-- named anchor --></a><p id="P103"><span class="generated">[iv]</span> eICU: <a target="xrefwindow" href="https://eicu-crd.mit.edu/about/eicu/" id="id377">https://eicu-crd.mit.edu/about/eicu/</a>.</p>
+</div>
+</div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T4"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<div class="caption"><p class="first" id="P104">Clinical outcome of interests with evaluation metric(s) and prediction period level.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id378"><!-- named anchor --></a><colgroup span="1">
+<a id="id379"><!-- named anchor --></a><col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+</colgroup>
+<thead>
+<a id="id384"><!-- named anchor --></a><tr>
+<a id="id385"><!-- named anchor --></a><th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id386"><!-- named anchor --></a>Evaluation Tasks (# paper)</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id387"><!-- named anchor --></a>Evaluation Metrics</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id388"><!-- named anchor --></a>Time periods</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id389"><!-- named anchor --></a>Papers</th>
+</tr>
+</thead>
+<tbody>
+<a id="id390"><!-- named anchor --></a><tr>
+<a id="id391"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id392"><!-- named anchor --></a>Disease Prediction (31)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id393"><!-- named anchor --></a>AUROC, AUPRC, Accuracy, Top K Recall/Precision</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id394"><!-- named anchor --></a>Year-level, visit-level</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id395"><!-- named anchor --></a>[<a href="#R6">6</a>,<a href="#R11">11</a>,<a href="#R27">27</a>,<a href="#R31">31</a>,<a href="#R33">33</a>,<a href="#R38">38</a>,<a href="#R43">43</a>,<a href="#R54">54</a>,<a href="#R56">56</a>,<a href="#R57">57</a>,<a href="#R59">59</a>,<a href="#R60">60</a>,<a href="#R62">62</a>–<a href="#R64">64</a>,<a href="#R66">66</a>,<a href="#R67">67</a>,<a href="#R69">69</a>–<a href="#R72">72</a>,<a href="#R75">75</a>,<a href="#R76">76</a>,<a href="#R80">80</a>,<a href="#R81">81</a>,<a href="#R83">83</a>,<a href="#R86">86</a>,<a href="#R89">89</a>–<a href="#R91">91</a>,<a href="#R98">98</a>]</td>
+</tr>
+<tr>
+<a id="id396"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id397"><!-- named anchor --></a>Mortality Prediction (12)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id398"><!-- named anchor --></a>AUROC, AUPRC, F1, Accuracy</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id399"><!-- named anchor --></a>24-hour, month-level</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id400"><!-- named anchor --></a>[<a href="#R6">6</a>,<a href="#R14">14</a>,<a href="#R43">43</a>,<a href="#R57">57</a>,<a href="#R58">58</a>,<a href="#R61">61</a>,<a href="#R65">65</a>,<a href="#R73">73</a>,<a href="#R75">75</a>,<a href="#R77">77</a>,<a href="#R85">85</a>,<a href="#R98">98</a>]</td>
+</tr>
+<tr>
+<a id="id401"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id402"><!-- named anchor --></a>Length-of-stay Prediction (8)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id403"><!-- named anchor --></a>AUROC, AUPRC, F1, Accuracy, MSE, MAPE</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id404"><!-- named anchor --></a>12-hour, 24-hour</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id405"><!-- named anchor --></a>[<a href="#R6">6</a>,<a href="#R14">14</a>,<a href="#R43">43</a>,<a href="#R73">73</a>,<a href="#R82">82</a>,<a href="#R83">83</a>,<a href="#R85">85</a>,<a href="#R87">87</a>]</td>
+</tr>
+<tr>
+<a id="id406"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id407"><!-- named anchor --></a>Admission Prediction (7)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id408"><!-- named anchor --></a>AUROC, AUPRC, Accuracy, Top K Recall/Precision</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id409"><!-- named anchor --></a>Month-level, year-level</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id410"><!-- named anchor --></a>[<a href="#R6">6</a>,<a href="#R38">38</a>,<a href="#R48">48</a>,<a href="#R77">77</a>–<a href="#R79">79</a>,<a href="#R88">88</a>]</td>
+</tr>
+<tr>
+<a id="id411"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id412"><!-- named anchor --></a>Patient Subtyping (4)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id413"><!-- named anchor --></a>Significant difference among different groups; NMI, MSE, Sparsity and Similarity</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id414"><!-- named anchor --></a>Visit-level</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id415"><!-- named anchor --></a>[<a href="#R67">67</a>,<a href="#R70">70</a>,<a href="#R74">74</a>,<a href="#R79">79</a>]</td>
+</tr>
+<tr>
+<a id="id416"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id417"><!-- named anchor --></a>Intervention Prediction (5)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id418"><!-- named anchor --></a>Jaccard, Recall, Precision, F1</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id419"><!-- named anchor --></a>24-hour</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id420"><!-- named anchor --></a>[<a href="#R32">32</a>,<a href="#R54">54</a>,<a href="#R55">55</a>,<a href="#R65">65</a>,<a href="#R98">98</a>]</td>
+</tr>
+<tr>
+<a id="id421"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id422"><!-- named anchor --></a>Medical Cost (3)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id423"><!-- named anchor --></a>R-squared, RMSE</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id424"><!-- named anchor --></a>Year-level</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id425"><!-- named anchor --></a>[<a href="#R48">48</a>,<a href="#R85">85</a>,<a href="#R87">87</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>Systematic review</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Electronic health records</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Patient representation</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Deep learning</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-manuscript</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
