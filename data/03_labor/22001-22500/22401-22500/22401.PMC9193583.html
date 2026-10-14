@@ -1,0 +1,2963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rafie, Jentzer, Noseworthy, and Kashou: Mortality Prediction in Cardiac Intensive Care Unit Patients: A Systematic Review of Existing and Artificial Intelligence Augmented Approaches</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Front Artif Intell</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Front Artif Intell</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3981</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>frontai</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101770551</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>Front. Artif. Intell.</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Frontiers in Artificial Intelligence</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2624-8212</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Frontiers Media SA</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="frai-05-876007.pdf">frai-05-876007.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>Copyright © 2022 Rafie, Jentzer, Noseworthy and Kashou.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022, Rafie, Jentzer, Noseworthy and Kashou</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>14 February 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>06 May 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>31 May 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>5</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>401139<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>876007</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9193583</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9193583.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9193583</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9193583</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35711617</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3389/frai.2022.876007</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Mortality Prediction in Cardiac Intensive Care Unit Patients: A Systematic Review of Existing and Artificial Intelligence Augmented Approaches</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Nikita Rafie<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#c001"><sup>*</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1541035/overview" id="id3">http://loop.frontiersin.org/people/1541035/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Jacob C. Jentzer<span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1320110/overview" id="id5">http://loop.frontiersin.org/people/1320110/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Peter A. Noseworthy<span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1428816/overview" id="id7">http://loop.frontiersin.org/people/1428816/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Anthony H. Kashou<span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><sup>1</sup>Department of Medicine, Mayo Clinic, Rochester, MN, United States</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><sup>2</sup>Division of Pulmonary and Critical Care Medicine, Department of Medicine, Mayo Clinic, Rochester, MN, United States</p>
+<p class="metadata-entry"><a id="aff3"><!-- named anchor --></a><sup>3</sup>Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, United States</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id9"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id10"><!-- named anchor --></a><p id="id11"> Edited by: Zhihan Lv, Uppsala University, Sweden</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id12"><!-- named anchor --></a><p id="id13"> Reviewed by: Joao Sousa, University of Lisbon, Portugal; Mohanad Alkhodari, Khalifa University, United Arab Emirates</p></p>
+<p class="metadata-entry"><span class="generated"><a id="c001"><!-- named anchor --></a>Correspondence to: </span>*Correspondence: Nikita Rafie <a href="mailto:rafie.nikita@mayo.edu">rafie.nikita@mayo.edu</a></p>
+<p class="metadata-entry"><a id="fn001"><!-- named anchor --></a><p id="id14"> This article was submitted to AI in Business, a section of the journal Frontiers in Artificial Intelligence</p></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id15">The medical complexity and high acuity of patients in the cardiac intensive care unit make for a unique patient population with high morbidity and mortality. While there are many tools for predictions of mortality in other settings, there is a lack of robust mortality prediction tools for cardiac intensive care unit patients. The ongoing advances in artificial intelligence and machine learning also pose a potential asset to the advancement of mortality prediction. Artificial intelligence algorithms have been developed for application of electrocardiogram interpretation with promising accuracy and clinical application. Additionally, artificial intelligence algorithms applied to electrocardiogram interpretation have been developed to predict various variables such as structural heart disease, left ventricular systolic dysfunction, and atrial fibrillation. These variables can be used and applied to new mortality prediction models that are dynamic with the changes in the patient's clinical course and may lead to more accurate and reliable mortality prediction. The application of artificial intelligence to mortality prediction will fill the gaps left by current mortality prediction tools.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id16">The modern cardiac intensive care unit (CICU) has evolved from the original coronary care unit (CCU) paradigm developed 50 years ago to provide more effective care for patients with acute myocardial infarction (AMI) (Katz et al., <a href="#B28">2010</a>) into an integrated, multidisciplinary unit that provides comprehensive care to an increasingly diverse and complex patient population. Recent studies highlight the dramatic changes in the contemporary CICU patient population including a shift from AMI to circulatory failure and multi-organ dysfunction (Katz et al., <a href="#B28">2010</a>; Bohula et al., <a href="#B6">2019</a>; Jentzer et al., <a href="#B24">2019c</a>). These studies underscore the substantial complexity of the modern CICU population and demonstrate the multitude of acute and chronic cardiac and non-cardiac illnesses suffered by these patients (Katz et al., <a href="#B28">2010</a>; Bohula et al., <a href="#B6">2019</a>; Jentzer et al., <a href="#B24">2019c</a>; Lyle et al., <a href="#B31">2020</a>; Miller et al., <a href="#B32">2021</a>). There has been a recent emphasis on outcome prognostication and mortality risk stratification in CICU patients (Jentzer and Rossello, <a href="#B23">2021</a>). Risk stratification strategies tailored to this medically complex patient cohort are necessary to direct management to improve patient care and reduce mortality (Miller et al., <a href="#B32">2021</a>).</p>
+<p id="id17">The breadth of diagnostic testing performed in the CICU (e.g., laboratory and vital sign assessment, cardiac telemetry, invasive, and non-invasive hemodynamic monitoring) provides an enormous quantity of data. Previous CICU mortality prediction studies have failed to fully leverage the complexity of the data available in the medical record to optimize prediction performance. This has created a niche for the use of artificial intelligence (AI) methods to integrate variables to provide risk predictions. For instance, digitized electrocardiographic data has been used as a substrate to create deep learning models capable of diagnostic predictions. By treating the standard 12-lead electrocardiogram (ECG) as an image and applying deep learning neural networks to the cardiac biosignal, AI models can discern the presence or absence of specific underlying cardiac diseases (Attia et al., <a href="#B3">2019a</a>; Tison et al., <a href="#B38">2019</a>; Christopoulos et al., <a href="#B13">2020</a>; Gladding et al., <a href="#B17">2020</a>; Jentzer et al., <a href="#B21">2021a</a>; Kashou et al., <a href="#B27">2021</a>). This diagnostic and prognostic capability may be particularly valuable to the care of patients in the CICU. In this systematic review, we explore (i) existing CICU mortality prediction models, (ii) how AI-ECG can be embedded into clinical practice, and (iii) use of AI-ECG in CICU for mortality prediction.</p>
+</div>
+<div class="section">
+<a id="s2"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<p id="id18">We conducted a thorough literature search using our institutional database search which includes PubMed, UpToDate, Catalog, and Google Scholar. Keywords used for the search were: “artificial intelligence,” “machine learning,” “deep neural network,” “mortality prediction,” “risk score,” “cardiac intensive care unit,” “CICU,” “CCU,” and “ECG.” Articles were filtered to include original studies and meta-analyses. There is limited work in this field as it relates to AI-ECG, and there is even less literature in a CICU population. The authors made a comprehensive review of the limited literature available.</p>
+</div>
+<div class="section">
+<a id="s3"><!-- named anchor --></a><h2 class="main-title">Existing CICU Mortality Prediction Models</h2>
+<p id="id19">Given the high mortality and complexity of patients in the CICU, a mortality risk stratification tool could guide clinical decision making during and after hospitalization. Multiple mortality prediction models for critically ill patients have been developed in non-CICU settings, including medical and surgical intensive care units (ICUs). However, these prediction models were not developed specifically for use in the CICU and therefore are poorly calibrated for such patients. Common risk scores in the ICU include the Acute Physiology and Chronic Health Evaluation (APACHE)-III, APACHE-IV, Sequential Organ Failure Assessment (SOFA), and Oxford Acute Severity of Illness Score (OASIS) (<a href="#T1">Table 1</a>). Analysis of these risk scores demonstrate inconsistent performance for mortality risk stratification when applied to the CICU population characterized by good discrimination but poor calibration (Jentzer et al., <a href="#B19">2019a</a>, <a href="#B25">2020</a>; Jentzer and Rossello, <a href="#B23">2021</a>; Miller et al., <a href="#B32">2021</a>). The need for a CICU-specific mortality prediction tool led to the development of the Mayo Cardiac Intensive Care Unit Admission Risk Score (M-CARS), which is the first published risk score designed for use in CICU patients and outperforms standard severity of illness scores for prediction of in-hospital mortality in terms of both discrimination and calibration (Jentzer et al., <a href="#B19">2019a</a>).</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id20">Commonly used risk scores: APACHE-III, APACHE-IV, SOFA, and OASIS.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id21"><!-- named anchor --></a><thead>
+<a id="id22"><!-- named anchor --></a><tr>
+<a id="id23"><!-- named anchor --></a><th valign="top" align="left" colspan="3" rowspan="1">
+<a id="id24"><!-- named anchor --></a><b>APACHE-III Score</b> (0–299) (Knaus et al., <a href="#B29">1991</a>).</th>
+</tr>
+<tr>
+<a id="id25"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id26"><!-- named anchor --></a><b>Variable</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id27"><!-- named anchor --></a><b>Points assigned</b>
+</th>
+<th rowspan="1" colspan="1"><a id="id28"><!-- named anchor --></a></th>
+</tr>
+<tr>
+<a id="id29"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id30"><!-- named anchor --></a><b>Age</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id31"><!-- named anchor --></a><b>0–24</b>
+</th>
+<th rowspan="1" colspan="1"><a id="id32"><!-- named anchor --></a></th>
+</tr>
+<tr>
+<a id="id33"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id34"><!-- named anchor --></a><b>Comorbid condition</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id35"><!-- named anchor --></a><b>0–23</b>
+</th>
+<th rowspan="1" colspan="1"><a id="id36"><!-- named anchor --></a></th>
+</tr>
+<tr>
+<a id="id37"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id38"><!-- named anchor --></a><b>Physiology</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id39"><!-- named anchor --></a><b>0–252</b>
+</th>
+<th rowspan="1" colspan="1"><a id="id40"><!-- named anchor --></a></th>
+</tr>
+<tr>
+<a id="id41"><!-- named anchor --></a><th valign="top" align="left" colspan="3" rowspan="1">
+<a id="id42"><!-- named anchor --></a><b>APACHE-IV Score – 129 Variables from the worst values from the initial 24 h of intensive care unit (ICU) admission (Zimmerman et al.</b>, <a href="#B39"><b>2006</b></a><b>)</b>.</th>
+</tr>
+<tr>
+<a id="id43"><!-- named anchor --></a><th valign="top" align="left" colspan="3" rowspan="1">
+<a id="id44"><!-- named anchor --></a><b>SOFA</b> score calculated on admission and every 48 h until discharge. Initial and highest scores of more than 11 or mean scores of more than five correspond to a mortality of more than 80% (Ferreira et al., <a href="#B16">2001</a>).</th>
+</tr>
+</thead>
+<tbody>
+<a id="id45"><!-- named anchor --></a><tr>
+<a id="id46"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id47"><!-- named anchor --></a><b>Variable</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id48"><!-- named anchor --></a><b>Value</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id49"><!-- named anchor --></a><b>Points assigned</b>
+</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id50"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id51"><!-- named anchor --></a>PaO<sub>2</sub>/FiO<sub>2</sub>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id52"><!-- named anchor --></a>&gt;400</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id53"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id54"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id55"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id56"><!-- named anchor --></a>301–400</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id57"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id58"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id59"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id60"><!-- named anchor --></a> ≤ 300</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id61"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id62"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id63"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id64"><!-- named anchor --></a>101–200 with ventilatory support</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id65"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id66"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id67"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id68"><!-- named anchor --></a> ≤ 100 with ventilatory support</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id69"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id70"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id71"><!-- named anchor --></a>Platelets</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id72"><!-- named anchor --></a>&gt;150 × 10<sup>3</sup>/mm<sup>3</sup>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id73"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id74"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id75"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id76"><!-- named anchor --></a>101–150 × 10<sup>3</sup>/mm<sup>3</sup>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id77"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id78"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id79"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id80"><!-- named anchor --></a>51–100 × 10<sup>3</sup>/mm<sup>3</sup>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id81"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id82"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id83"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id84"><!-- named anchor --></a>21–50 × 10<sup>3</sup>/mm<sup>3</sup>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id85"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id86"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id87"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id88"><!-- named anchor --></a> ≤ 20 × 10<sup>3</sup>/mm<sup>3</sup>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id89"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id90"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id91"><!-- named anchor --></a>Bilirubin</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id92"><!-- named anchor --></a>&lt;1.2 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id93"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id94"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id95"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id96"><!-- named anchor --></a>1.2–1.9 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id97"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id98"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id99"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id100"><!-- named anchor --></a>2–5.9 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id101"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id102"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id103"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id104"><!-- named anchor --></a>6–11.9 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id105"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id106"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id107"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>&gt;12 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id109"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id110"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id111"><!-- named anchor --></a>Blood Pressure</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>Hypotension absent</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id113"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id114"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id115"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id116"><!-- named anchor --></a>Mean arterial pressure &lt;70 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id117"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id118"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id119"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>On dopamine ≤ 5 mcg/kg/min or any dobutamine</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id122"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id123"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id124"><!-- named anchor --></a>On dopamine &gt;5 mcg/kg/min, epinephrine ≤ 0.1 mcg/kg/min, or norepinephrine ≤ 0.1 mcg/kg/min</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id126"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id127"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>On dopamine &gt;15 mcg/kg/min, epinephrine &gt;0.1 mcg/kg/min, or norepinephrine &gt;0.1 mcg/kg/min</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id130"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>Glasgow Coma Score</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>15</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id133"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id134"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id135"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id136"><!-- named anchor --></a>13–14</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id137"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id138"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id139"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>10–12</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id141"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id142"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id143"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>6–9</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id145"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id146"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id147"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id148"><!-- named anchor --></a>&lt;6</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id149"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id150"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id151"><!-- named anchor --></a>Creatinine</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id152"><!-- named anchor --></a>&lt;1.2 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id153"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id154"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id155"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>1.2–1.9 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id158"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id159"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id160"><!-- named anchor --></a>2–3.4 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id162"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id163"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>3.5–4.9 mg/dL or urine output 200–500 mL/day</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id166"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id167"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id168"><!-- named anchor --></a>&gt;5 mg/dL or urine output &lt;200 mL/day</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id169"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id170"><!-- named anchor --></a><td valign="top" align="left" colspan="3" rowspan="1">
+<a id="id171"><!-- named anchor --></a><b>OASIS</b> scores in the 20th decile correlated with an 18% ICU and 25% hospital mortality rate and Oasis scores in the 30th decile correlated with a 40% ICU and 49% hospital mortality rate (Johnson et al., <a href="#B26">2013</a>).</td>
+</tr>
+<tr>
+<a id="id172"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id173"><!-- named anchor --></a>Pre-ICU Length of Stay</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id174"><!-- named anchor --></a>&lt;0.17 h</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id176"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id177"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id178"><!-- named anchor --></a>0.17–4.94 h</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id179"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id180"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id181"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a>4.95–24 h</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id184"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id185"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>24.01–311.8 h</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id187"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id188"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id189"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id190"><!-- named anchor --></a>&gt;311.8 h</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id191"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id192"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id193"><!-- named anchor --></a>Age</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id194"><!-- named anchor --></a>&lt;24 years</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id195"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id196"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id197"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a>24–53 years</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id199"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id200"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id201"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id202"><!-- named anchor --></a>54–77 years</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id203"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id204"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id205"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id206"><!-- named anchor --></a>78–89 years</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id207"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id208"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id209"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>&gt;90 years</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>7</td>
+</tr>
+<tr>
+<a id="id212"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id213"><!-- named anchor --></a>Glasgow coma score</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id214"><!-- named anchor --></a>3–7</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id215"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id216"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id217"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id218"><!-- named anchor --></a>8-13</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id219"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id220"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id221"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id222"><!-- named anchor --></a>14</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id223"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id224"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id225"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id226"><!-- named anchor --></a>15</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id228"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id229"><!-- named anchor --></a>Heart rate</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id230"><!-- named anchor --></a>&lt;33 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id231"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id232"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id233"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>33–88 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id235"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id236"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id237"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id238"><!-- named anchor --></a>89–106 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id239"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id240"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id241"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id242"><!-- named anchor --></a>107–125 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id244"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id245"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a>&gt;125 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id247"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id248"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id249"><!-- named anchor --></a>Mean arterial pressure</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id250"><!-- named anchor --></a>&lt;20.65 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id251"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id252"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id253"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id254"><!-- named anchor --></a>20.65–50.99 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id255"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id256"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id257"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id258"><!-- named anchor --></a>51–61.32 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id259"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id260"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id261"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id262"><!-- named anchor --></a>61.33–143.44 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id264"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id265"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id266"><!-- named anchor --></a>&gt;143.44 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id267"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id268"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id269"><!-- named anchor --></a>Respiratory rate</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id270"><!-- named anchor --></a>&lt;6 breaths per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id272"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id273"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id274"><!-- named anchor --></a>6–12 breaths per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id275"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id276"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id277"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>13–22 breaths per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id279"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id280"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id281"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id282"><!-- named anchor --></a>23–30 breaths per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id283"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id284"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id285"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id286"><!-- named anchor --></a>31–44 breaths per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id287"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id288"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id289"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id290"><!-- named anchor --></a>&gt;44 breaths per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id291"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id292"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id293"><!-- named anchor --></a>Temperature</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id294"><!-- named anchor --></a>&lt;33.22°C</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id295"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id296"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id297"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>33.22–35.93°C</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id299"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id300"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id301"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id302"><!-- named anchor --></a>35.94–36.39°C</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id303"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id304"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id305"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id306"><!-- named anchor --></a>36.4–36.88°C</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id308"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id309"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>36.89–39.88°C</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id311"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id312"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id313"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id314"><!-- named anchor --></a>&gt;39.88</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id315"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id316"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>Urine output</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a>&lt;671 cc/day</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id319"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id320"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id321"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id322"><!-- named anchor --></a>671–1426.99 cc/day</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id324"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id325"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>1427–253.99 cc/day</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id328"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id329"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id330"><!-- named anchor --></a>2,544–6,896 cc/day</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id331"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id332"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id333"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id334"><!-- named anchor --></a>&gt;6,896 cc/day</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id335"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id336"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id337"><!-- named anchor --></a>Ventilated</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id338"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id339"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id340"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id341"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id342"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id343"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id344"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id345"><!-- named anchor --></a>Elective surgery</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id346"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id347"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id348"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id349"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id350"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id351"><!-- named anchor --></a>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="id352">M-CARS incorporates data available at the time of CICU admission to predict in-hospital mortality using 7 clinical variables (Jentzer et al., <a href="#B19">2019a</a>). The component variables include blood urea nitrogen (BUN), anion gap, Braden skin score, red cell distribution width (RDW), diagnosis of cardiac arrest, diagnosis of shock, and diagnosis of respiratory failure (<a href="#T2">Table 2</a>). Variables are collected at the time of CICU admission with a score ranging from 0 to 10. In addition, the M-CARS on CICU admission can predict the likelihood of requiring critical care interventions during the CICU stay (Breen et al., <a href="#B9">2021a</a>). An M-CARS &lt;2 correlates with a patient that typically does not require CICU level of care based on low mortality (&lt;1% in hospital) and infrequent need for critical care resources (Jentzer et al., <a href="#B19">2019a</a>; Breen et al., <a href="#B9">2021a</a>). A score &gt;6 is associated with a high in-hospital mortality risk that generally exceeds 50%, with high resource utilization (Jentzer et al., <a href="#B19">2019a</a>; Breen et al., <a href="#B9">2021a</a>). Knowing these risks early in the patient's hospital course will allow for additional interventions and collaborations, such as with palliative care. Notably, an increasing M-CARS is associated with incrementally higher all-cause mortality out to 1 year after CICU admission, including among patients surviving to hospital discharge (Breen et al., <a href="#B11">2021c</a>). These findings highlight the multitude of ways that the prognostic information captured by the M-CARS can be incorporated into clinical decision-making.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id353">Calculating the Mayo Cardiac Intensive Care Unit Admission Risk Score (M-CARS). Calculated at time of admission; score ranges from 0 to 10.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id354"><!-- named anchor --></a><thead>
+<a id="id355"><!-- named anchor --></a><tr>
+<a id="id356"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id357"><!-- named anchor --></a><b>Variable</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id358"><!-- named anchor --></a><b>Value</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id359"><!-- named anchor --></a><b>Points assigned</b>
+</th>
+</tr>
+</thead>
+<tbody>
+<a id="id360"><!-- named anchor --></a><tr>
+<a id="id361"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id362"><!-- named anchor --></a>Admission value of BUN</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id363"><!-- named anchor --></a>&gt;23 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id364"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id365"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id366"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id367"><!-- named anchor --></a> ≤ 23 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id368"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id369"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id370"><!-- named anchor --></a>Admission value of anion gap</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id371"><!-- named anchor --></a>&gt;14 mmol/L</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id372"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id373"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id374"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id375"><!-- named anchor --></a> ≤ 14 mmol/L</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id376"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id377"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id378"><!-- named anchor --></a>Admission Braden skin score</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id379"><!-- named anchor --></a> ≤ 12</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id380"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id381"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id382"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id383"><!-- named anchor --></a>13–15</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id384"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id385"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id386"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id387"><!-- named anchor --></a>&gt;15</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id388"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id389"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id390"><!-- named anchor --></a>Admission value of RDW</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id391"><!-- named anchor --></a>&gt;14.3%</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id392"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id393"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id394"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id395"><!-- named anchor --></a> ≤ 14.3%</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id396"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id397"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id398"><!-- named anchor --></a>Admission diagnosis of cardiac arrest</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id399"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id400"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id401"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id402"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id403"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id404"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id405"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id406"><!-- named anchor --></a>Admission diagnosis of shock</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id407"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id408"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id409"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id410"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id411"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id412"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id413"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id414"><!-- named anchor --></a>Admission diagnosis of respiratory failure</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id415"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id416"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id417"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id418"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id419"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id420"><!-- named anchor --></a>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="id421">As emphasized by M-CARS, abnormalities in common laboratory tests at the time of CICU admission have been associated with higher mortality, including hyponatremia, hyperkalemia, hypochloremia, hypoalbuminemia, anemia, elevated RDW, elevated anion gap, and elevated BUN (Jentzer et al., <a href="#B19">2019a</a>; Breen et al., <a href="#B8">2020</a>, <a href="#B10">2021b</a>; Rayes et al., <a href="#B37">2020</a>; Padkins et al., <a href="#B34">2021</a>). One variable utilized in the M-CARS requires further clarification—the Braden skin score, which is a bedside nursing tool used to predict the risk of skin pressure injury. The Braden skin score ranges from six to 23 and is derived from six individual subscores reflecting different components of risk; a lower score predicts an increased risk of pressure injury (<a href="#T3">Table 3</a>). Prior studies have demonstrated that a lower Braden skin score at the time of CICU admission is associated with a higher risk of all-cause mortality (Bergstrom et al., <a href="#B5">1987</a>; Jentzer et al., <a href="#B20">2019b</a>). A lower Braden skin score is a proposed marker of frailty, making the M-CARS novel insofar as it is the first mortality risk score to include this important construct (Jentzer et al., <a href="#B19">2019a</a>,<a href="#B20">b</a>).</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id422">Braden scale for predicting risk of pressure-induced injury.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id423"><!-- named anchor --></a><thead>
+<a id="id424"><!-- named anchor --></a><tr>
+<a id="id425"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id426"><!-- named anchor --></a><b>Variable</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id427"><!-- named anchor --></a><b>Value</b>
+</th>
+<th valign="top" align="center" rowspan="1" colspan="1">
+<a id="id428"><!-- named anchor --></a><b>Points assigned</b>
+</th>
+</tr>
+</thead>
+<tbody>
+<a id="id429"><!-- named anchor --></a><tr>
+<a id="id430"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id431"><!-- named anchor --></a>Sensory perception</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id432"><!-- named anchor --></a>Completely limited</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id433"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id434"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id435"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id436"><!-- named anchor --></a>Very limited</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id437"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id438"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id439"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id440"><!-- named anchor --></a>Slightly limited</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id441"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id442"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id443"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id444"><!-- named anchor --></a>No impairment</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id445"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id446"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id447"><!-- named anchor --></a>Moisture</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id448"><!-- named anchor --></a>Constantly moist</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id449"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id450"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id451"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id452"><!-- named anchor --></a>Very moist</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id453"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id454"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id455"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id456"><!-- named anchor --></a>Occasionally moist</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id457"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id458"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id459"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id460"><!-- named anchor --></a>Rarely moist</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id461"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id462"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id463"><!-- named anchor --></a>Activity</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id464"><!-- named anchor --></a>Bedfast</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id465"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id466"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id467"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id468"><!-- named anchor --></a>Chairfast</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id469"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id470"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id471"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id472"><!-- named anchor --></a>Walks occasionally</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id473"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id474"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id475"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id476"><!-- named anchor --></a>Walks frequently</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id477"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id478"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id479"><!-- named anchor --></a>Mobility</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id480"><!-- named anchor --></a>Completely immobile</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id481"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id482"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id483"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id484"><!-- named anchor --></a>Very limited</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id485"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id486"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id487"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id488"><!-- named anchor --></a>Slightly limited</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id489"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id490"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id491"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id492"><!-- named anchor --></a>No limitation</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id493"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id494"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id495"><!-- named anchor --></a>Nutrition</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id496"><!-- named anchor --></a>Very poor</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id497"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id498"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id499"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id500"><!-- named anchor --></a>Probably inadequate</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id501"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id502"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id503"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id504"><!-- named anchor --></a>Adequate</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id505"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id506"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id507"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id508"><!-- named anchor --></a>Excellent</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id509"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id510"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id511"><!-- named anchor --></a>Friction and Shear</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id512"><!-- named anchor --></a>Problem</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id513"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id514"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id515"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id516"><!-- named anchor --></a>Potential problem</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id517"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id518"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id519"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id520"><!-- named anchor --></a>No apparent problem</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id521"><!-- named anchor --></a>3</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="TN1"><!-- named anchor --></a><p id="id522"><span class="generated">[i]</span> <i>Score of 18 or less indicates high risk of developing pressure sores (Bergstrom et al., <a href="#B5">1987</a>)</i>.</p>
+</div></div>
+</div>
+<p id="id523">Prior to the establishment of M-CARS, mortality prediction tools used in the CICU were disease specific and not necessarily formulated for the broader CICU patient population. The Thrombolysis in Myocardial Infarction (TIMI), the Global Registry of Acute Coronary Events (GRACE), and Zwolle risk scores were developed for patients with AMI or ACS (Antman et al., <a href="#B2">2000</a>; Granger et al., <a href="#B18">2003</a>; De Luca et al., <a href="#B14">2004</a>) (<a href="#T4">Table 4</a>). In patients with acute decompensated HF, several risk scores help predict short-term mortality. Some of these include the Enhanced Feedback for Effective Cardiac Treatment (EFFECT), the Organized Program to Initiate Lifesaving Treatment in Hospitalized Patients with Heart Failure (OPTIMIZE), and the Get with the Guidelines—Heart Failure (GWTG-HF) risk scores (Lee et al., <a href="#B30">2003</a>; Abraham et al., <a href="#B1">2008</a>; Peterson et al., <a href="#B35">2010</a>; Lyle et al., <a href="#B31">2020</a>) (<a href="#T5">Table 5</a>). These scores are capable of providing risk stratification amongst unselected CICU patients; however, their predictive performance is inferior to standard ICU risk scores when applied to CICU patients, even in those with HF (Lyle et al., <a href="#B31">2020</a>).</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T4"><!-- named anchor --></a><h5 class="label">Table 4</h5>
+<div class="caption"><p class="first" id="id524">The TIMI, GRACE, and Zwolle risk scores for prediction of outcome in acute MI/ACS patients.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id525"><!-- named anchor --></a><thead>
+<a id="id526"><!-- named anchor --></a><tr>
+<a id="id527"><!-- named anchor --></a><th valign="top" align="left" colspan="3" rowspan="1">
+<a id="id528"><!-- named anchor --></a>Higher <b>TIMI</b> risk score correlates with increased number of events at 14 day including, all-cause mortality, new or recurrent MI, or severe recurrent ischemia requiring revascularization (Antman et al., <a href="#B2">2000</a>).</th>
+</tr>
+</thead>
+<tbody>
+<a id="id529"><!-- named anchor --></a><tr>
+<a id="id530"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id531"><!-- named anchor --></a><b>Variable</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id532"><!-- named anchor --></a><b>Value</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id533"><!-- named anchor --></a><b>Points assigned</b>
+</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id534"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id535"><!-- named anchor --></a>Age</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id536"><!-- named anchor --></a>≥65</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id537"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id538"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id539"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id540"><!-- named anchor --></a>&lt;65</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id541"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id542"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id543"><!-- named anchor --></a>Presence of at least three risk factors for coronary heart disease</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id544"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id545"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id546"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id547"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id548"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id549"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id550"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id551"><!-- named anchor --></a>Prior coronary stenosis of ≥50%</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id552"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id553"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id554"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id555"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id556"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id557"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id558"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id559"><!-- named anchor --></a>Presence of ST segment deviation on admission ECG</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id560"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id561"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id562"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id563"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id564"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id565"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id566"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id567"><!-- named anchor --></a>At least two anginal episodes in prior 24 h</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id568"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id569"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id570"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id571"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id572"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id573"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id574"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id575"><!-- named anchor --></a>Elevated serum cardiac biomarkers</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id576"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id577"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id578"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id579"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id580"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id581"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id582"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id583"><!-- named anchor --></a>Use of aspirin in prior seven day</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id584"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id585"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id586"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id587"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id588"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id589"><!-- named anchor --></a>0</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id590"><!-- named anchor --></a><td valign="top" align="left" colspan="3" rowspan="1">
+<a id="id591"><!-- named anchor --></a>A low <b>GRACE</b> score ( ≤ 108) correlated with &lt;1% in-hospital death, an intermediate GRACE score (109–140) correlated with 1–3% in-hospital death, and a high GRACE score (&gt;140%) correlated with &gt;3% in-hospital death (Granger et al., <a href="#B18">2003</a>).</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id592"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id593"><!-- named anchor --></a><b>Variable</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id594"><!-- named anchor --></a><b>Value</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id595"><!-- named anchor --></a><b>Points assigned</b>
+</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id596"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id597"><!-- named anchor --></a>Age</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id598"><!-- named anchor --></a>&lt;40</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id599"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id600"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id601"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id602"><!-- named anchor --></a>40–49</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id603"><!-- named anchor --></a>18</td>
+</tr>
+<tr>
+<a id="id604"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id605"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id606"><!-- named anchor --></a>50–59</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id607"><!-- named anchor --></a>36</td>
+</tr>
+<tr>
+<a id="id608"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id609"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id610"><!-- named anchor --></a>60–69</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id611"><!-- named anchor --></a>55</td>
+</tr>
+<tr>
+<a id="id612"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id613"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id614"><!-- named anchor --></a>70–79</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id615"><!-- named anchor --></a>73</td>
+</tr>
+<tr>
+<a id="id616"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id617"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id618"><!-- named anchor --></a>80–89</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id619"><!-- named anchor --></a>91</td>
+</tr>
+<tr>
+<a id="id620"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id621"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id622"><!-- named anchor --></a>≥90</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id623"><!-- named anchor --></a>100</td>
+</tr>
+<tr>
+<a id="id624"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id625"><!-- named anchor --></a>Resting heart rate</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id626"><!-- named anchor --></a>&lt;50 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id627"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id628"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id629"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id630"><!-- named anchor --></a>50–69.9 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id631"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id632"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id633"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id634"><!-- named anchor --></a>70–89.9 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id635"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id636"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id637"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id638"><!-- named anchor --></a>90–109.9 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id639"><!-- named anchor --></a>14</td>
+</tr>
+<tr>
+<a id="id640"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id641"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id642"><!-- named anchor --></a>110–149.9 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id643"><!-- named anchor --></a>23</td>
+</tr>
+<tr>
+<a id="id644"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id645"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id646"><!-- named anchor --></a>150–199.9 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id647"><!-- named anchor --></a>35</td>
+</tr>
+<tr>
+<a id="id648"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id649"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id650"><!-- named anchor --></a>≥200 beats per minute</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id651"><!-- named anchor --></a>43</td>
+</tr>
+<tr>
+<a id="id652"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id653"><!-- named anchor --></a>Systolic blood pressure</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id654"><!-- named anchor --></a> ≤ 79.9 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id655"><!-- named anchor --></a>24</td>
+</tr>
+<tr>
+<a id="id656"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id657"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id658"><!-- named anchor --></a>80–99.9 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id659"><!-- named anchor --></a>22</td>
+</tr>
+<tr>
+<a id="id660"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id661"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id662"><!-- named anchor --></a>100–119.9 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id663"><!-- named anchor --></a>18</td>
+</tr>
+<tr>
+<a id="id664"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id665"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id666"><!-- named anchor --></a>120–139.9 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id667"><!-- named anchor --></a>14</td>
+</tr>
+<tr>
+<a id="id668"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id669"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id670"><!-- named anchor --></a>140–159.9 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id671"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id672"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id673"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id674"><!-- named anchor --></a>160–199.9 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id675"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id676"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id677"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id678"><!-- named anchor --></a>≥200 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id679"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id680"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id681"><!-- named anchor --></a>Initial serum creatinine</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id682"><!-- named anchor --></a>0–0.39 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id683"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id684"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id685"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id686"><!-- named anchor --></a>0.4–0.79 mg/Dl</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id687"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id688"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id689"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id690"><!-- named anchor --></a>0.8–1.19 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id691"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id692"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id693"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id694"><!-- named anchor --></a>1.2–1.59 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id695"><!-- named anchor --></a>7</td>
+</tr>
+<tr>
+<a id="id696"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id697"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id698"><!-- named anchor --></a>1.6–1.99 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id699"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id700"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id701"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id702"><!-- named anchor --></a>2.0–3.99 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id703"><!-- named anchor --></a>15</td>
+</tr>
+<tr>
+<a id="id704"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id705"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id706"><!-- named anchor --></a>≥4 mg/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id707"><!-- named anchor --></a>20</td>
+</tr>
+<tr>
+<a id="id708"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id709"><!-- named anchor --></a>Other factors</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id710"><!-- named anchor --></a>History of heart failure</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id711"><!-- named anchor --></a>24</td>
+</tr>
+<tr>
+<a id="id712"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id713"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id714"><!-- named anchor --></a>History of MI</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id715"><!-- named anchor --></a>12</td>
+</tr>
+<tr>
+<a id="id716"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id717"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id718"><!-- named anchor --></a>ST segment depression</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id719"><!-- named anchor --></a>11</td>
+</tr>
+<tr>
+<a id="id720"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id721"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id722"><!-- named anchor --></a>Elevated cardiac enzymes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id723"><!-- named anchor --></a>15</td>
+</tr>
+<tr>
+<a id="id724"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id725"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id726"><!-- named anchor --></a>No in-hospital percutaneous coronary intervention done</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id727"><!-- named anchor --></a>14</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id728"><!-- named anchor --></a><td valign="top" align="left" colspan="3" rowspan="1">
+<a id="id729"><!-- named anchor --></a>Low risk (<b>Zwolle</b> score ≤ 3) patients undergoing primary percutaneous coronary intervention had a mortality rate of 0.1% at 2 days and 0.2% between two and 10 days post-MI (De Luca et al., <a href="#B14">2004</a>).</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id730"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id731"><!-- named anchor --></a><b>Variable</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id732"><!-- named anchor --></a><b>Value</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id733"><!-- named anchor --></a><b>Points assigned</b>
+</td>
+</tr>
+<tr>
+<a id="id734"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id735"><!-- named anchor --></a>Killip class</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id736"><!-- named anchor --></a>1</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id737"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id738"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id739"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id740"><!-- named anchor --></a>2</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id741"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id742"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id743"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id744"><!-- named anchor --></a>3–4</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id745"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id746"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id747"><!-- named anchor --></a>TIMI flow post intervention</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id748"><!-- named anchor --></a>3</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id749"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id750"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id751"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id752"><!-- named anchor --></a>2</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id753"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id754"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id755"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id756"><!-- named anchor --></a>0–1</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id757"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id758"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id759"><!-- named anchor --></a>Age</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id760"><!-- named anchor --></a>&lt;60</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id761"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id762"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id763"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id764"><!-- named anchor --></a>≥60</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id765"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id766"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id767"><!-- named anchor --></a>Three-vessel disease</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id768"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id769"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id770"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id771"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id772"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id773"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id774"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id775"><!-- named anchor --></a>Anterior infarction</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id776"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id777"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id778"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id779"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id780"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id781"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id782"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id783"><!-- named anchor --></a>Ischemia time</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id784"><!-- named anchor --></a> ≤ 4 h</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id785"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id786"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id787"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id788"><!-- named anchor --></a>&gt;4 h</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id789"><!-- named anchor --></a>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T5"><!-- named anchor --></a><h5 class="label">Table 5</h5>
+<div class="caption"><p class="first" id="id790">The EFFECT, OPTIMIZE-HF, and GWTG-HF risk scores predict outcomes in patients with acute decompensated heart failure.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id791"><!-- named anchor --></a><thead>
+<a id="id792"><!-- named anchor --></a><tr>
+<a id="id793"><!-- named anchor --></a><th valign="top" align="left" colspan="3" rowspan="1">
+<a id="id794"><!-- named anchor --></a>A low risk <b>EFFECT</b> score of &lt;60 corresponds to 0.4% 30-day and 7.8% 1-year mortality. A high risk <b>EFFECT</b> score of &gt;150 corresponds to 59% 30-day and 78.8% 1-year mortality (Lee et al., <a href="#B30">2003</a>).</th>
+</tr>
+</thead>
+<tbody>
+<a id="id795"><!-- named anchor --></a><tr>
+<a id="id796"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id797"><!-- named anchor --></a><b>Variable</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id798"><!-- named anchor --></a><b>30-day score</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id799"><!-- named anchor --></a><b>1-year score</b>
+</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id800"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id801"><!-- named anchor --></a>Age</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id802"><!-- named anchor --></a>+age (in<br class="br"> years)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id803"><!-- named anchor --></a>+age (in<br class="br"> years)</td>
+</tr>
+<tr>
+<a id="id804"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id805"><!-- named anchor --></a>Respiratory rate</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id806"><!-- named anchor --></a>+rate (in breaths/minute)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id807"><!-- named anchor --></a>+rate (in breaths/minute)</td>
+</tr>
+<tr>
+<a id="id808"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id809"><!-- named anchor --></a>Systolic blood pressure ≥180 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id810"><!-- named anchor --></a>−60</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id811"><!-- named anchor --></a>−50</td>
+</tr>
+<tr>
+<a id="id812"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id813"><!-- named anchor --></a>160–179 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id814"><!-- named anchor --></a>−55</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id815"><!-- named anchor --></a>−45</td>
+</tr>
+<tr>
+<a id="id816"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id817"><!-- named anchor --></a>140–159 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id818"><!-- named anchor --></a>−50</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id819"><!-- named anchor --></a>−40</td>
+</tr>
+<tr>
+<a id="id820"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id821"><!-- named anchor --></a>120–139 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id822"><!-- named anchor --></a>−45</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id823"><!-- named anchor --></a>−35</td>
+</tr>
+<tr>
+<a id="id824"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id825"><!-- named anchor --></a>100–119 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id826"><!-- named anchor --></a>−40</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id827"><!-- named anchor --></a>−30</td>
+</tr>
+<tr>
+<a id="id828"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id829"><!-- named anchor --></a>90–99 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id830"><!-- named anchor --></a>−35</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id831"><!-- named anchor --></a>−25</td>
+</tr>
+<tr>
+<a id="id832"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id833"><!-- named anchor --></a>&lt;90 mmHg</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id834"><!-- named anchor --></a>−30</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id835"><!-- named anchor --></a>−20</td>
+</tr>
+<tr>
+<a id="id836"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id837"><!-- named anchor --></a>Urea nitrogen (maximum 60 mg/dL)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id838"><!-- named anchor --></a>+level (in<br class="br"> mg/dL)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id839"><!-- named anchor --></a>+level (in<br class="br"> mg/dL)</td>
+</tr>
+<tr>
+<a id="id840"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id841"><!-- named anchor --></a>Sodium concentration &lt;136 mEq/L</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id842"><!-- named anchor --></a>+10</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id843"><!-- named anchor --></a>+10</td>
+</tr>
+<tr>
+<a id="id844"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id845"><!-- named anchor --></a>Cerebrovascular disease</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id846"><!-- named anchor --></a>+10</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id847"><!-- named anchor --></a>+10</td>
+</tr>
+<tr>
+<a id="id848"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id849"><!-- named anchor --></a>Dementia</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id850"><!-- named anchor --></a>+20</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id851"><!-- named anchor --></a>+15</td>
+</tr>
+<tr>
+<a id="id852"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id853"><!-- named anchor --></a>Chronic obstructive pulmonary disease</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id854"><!-- named anchor --></a>+10</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id855"><!-- named anchor --></a>+10</td>
+</tr>
+<tr>
+<a id="id856"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id857"><!-- named anchor --></a>Hepatic cirrhosis</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id858"><!-- named anchor --></a>+25</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id859"><!-- named anchor --></a>+35</td>
+</tr>
+<tr>
+<a id="id860"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id861"><!-- named anchor --></a>Cancer</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id862"><!-- named anchor --></a>+15</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id863"><!-- named anchor --></a>+15</td>
+</tr>
+<tr>
+<a id="id864"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id865"><!-- named anchor --></a>Hemoglobin &lt;10.0 g/dL</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id866"><!-- named anchor --></a>NA</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id867"><!-- named anchor --></a>+10</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id868"><!-- named anchor --></a><td valign="top" align="left" colspan="3" rowspan="1">
+<a id="id869"><!-- named anchor --></a>The score obtained using the <b>OPTIMIZE</b>-<b>HF</b> risk score is directly associated with the probability of in-hospital mortality. A score of 70 correlates with 50% mortality and a score of 90 correlates with 90% mortality (Abraham et al., <a href="#B1">2008</a>).</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id870"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id871"><!-- named anchor --></a><b>Variable</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id872"><!-- named anchor --></a><b>Value</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id873"><!-- named anchor --></a><b>Points assigned</b>
+</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id874"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id875"><!-- named anchor --></a>Age</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id876"><!-- named anchor --></a>20</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id877"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id878"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id879"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id880"><!-- named anchor --></a>25</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id881"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id882"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id883"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id884"><!-- named anchor --></a>30</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id885"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id886"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id887"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id888"><!-- named anchor --></a>35</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id889"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id890"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id891"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id892"><!-- named anchor --></a>40</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id893"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id894"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id895"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id896"><!-- named anchor --></a>45</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id897"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id898"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id899"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id900"><!-- named anchor --></a>50</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id901"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id902"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id903"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id904"><!-- named anchor --></a>55</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id905"><!-- named anchor --></a>11</td>
+</tr>
+<tr>
+<a id="id906"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id907"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id908"><!-- named anchor --></a>60</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id909"><!-- named anchor --></a>13</td>
+</tr>
+<tr>
+<a id="id910"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id911"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id912"><!-- named anchor --></a>65</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id913"><!-- named anchor --></a>14</td>
+</tr>
+<tr>
+<a id="id914"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id915"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id916"><!-- named anchor --></a>70</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id917"><!-- named anchor --></a>16</td>
+</tr>
+<tr>
+<a id="id918"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id919"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id920"><!-- named anchor --></a>75</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id921"><!-- named anchor --></a>17</td>
+</tr>
+<tr>
+<a id="id922"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id923"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id924"><!-- named anchor --></a>80</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id925"><!-- named anchor --></a>19</td>
+</tr>
+<tr>
+<a id="id926"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id927"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id928"><!-- named anchor --></a>85</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id929"><!-- named anchor --></a>20</td>
+</tr>
+<tr>
+<a id="id930"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id931"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id932"><!-- named anchor --></a>90</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id933"><!-- named anchor --></a>22</td>
+</tr>
+<tr>
+<a id="id934"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id935"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id936"><!-- named anchor --></a>95</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id937"><!-- named anchor --></a>24</td>
+</tr>
+<tr>
+<a id="id938"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id939"><!-- named anchor --></a>Heart rate (beats/min)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id940"><!-- named anchor --></a>65</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id941"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id942"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id943"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id944"><!-- named anchor --></a>70</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id945"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id946"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id947"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id948"><!-- named anchor --></a>75</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id949"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id950"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id951"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id952"><!-- named anchor --></a>80</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id953"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id954"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id955"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id956"><!-- named anchor --></a>85</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id957"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id958"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id959"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id960"><!-- named anchor --></a>90</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id961"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id962"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id963"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id964"><!-- named anchor --></a>95</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id965"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id966"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id967"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id968"><!-- named anchor --></a>100</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id969"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id970"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id971"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id972"><!-- named anchor --></a>105</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id973"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id974"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id975"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id976"><!-- named anchor --></a>110</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id977"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id978"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id979"><!-- named anchor --></a>Systolic blood pressure (mmHg)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id980"><!-- named anchor --></a>50</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id981"><!-- named anchor --></a>22</td>
+</tr>
+<tr>
+<a id="id982"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id983"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id984"><!-- named anchor --></a>60</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id985"><!-- named anchor --></a>20</td>
+</tr>
+<tr>
+<a id="id986"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id987"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id988"><!-- named anchor --></a>70</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id989"><!-- named anchor --></a>18</td>
+</tr>
+<tr>
+<a id="id990"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id991"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id992"><!-- named anchor --></a>80</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id993"><!-- named anchor --></a>16</td>
+</tr>
+<tr>
+<a id="id994"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id995"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id996"><!-- named anchor --></a>90</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id997"><!-- named anchor --></a>14</td>
+</tr>
+<tr>
+<a id="id998"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id999"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1000"><!-- named anchor --></a>100</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1001"><!-- named anchor --></a>12</td>
+</tr>
+<tr>
+<a id="id1002"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1003"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1004"><!-- named anchor --></a>110</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1005"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id1006"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1007"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1008"><!-- named anchor --></a>120</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1009"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id1010"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1011"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1012"><!-- named anchor --></a>130</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1013"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id1014"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1015"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1016"><!-- named anchor --></a>140</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1017"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id1018"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1019"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1020"><!-- named anchor --></a>150</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1021"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id1022"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1023"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1024"><!-- named anchor --></a>160</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1025"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1026"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1027"><!-- named anchor --></a>Sodium (mEq/L)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1028"><!-- named anchor --></a>110</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1029"><!-- named anchor --></a>13</td>
+</tr>
+<tr>
+<a id="id1030"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1031"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1032"><!-- named anchor --></a>115</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1033"><!-- named anchor --></a>11</td>
+</tr>
+<tr>
+<a id="id1034"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1035"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1036"><!-- named anchor --></a>120</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1037"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id1038"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1039"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1040"><!-- named anchor --></a>125</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1041"><!-- named anchor --></a>7</td>
+</tr>
+<tr>
+<a id="id1042"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1043"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1044"><!-- named anchor --></a>130</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1045"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id1046"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1047"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1048"><!-- named anchor --></a>135</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1049"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id1050"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1051"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1052"><!-- named anchor --></a>140</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1053"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1054"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1055"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1056"><!-- named anchor --></a>145</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1057"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id1058"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1059"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1060"><!-- named anchor --></a>150</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1061"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id1062"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1063"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1064"><!-- named anchor --></a>155</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1065"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id1066"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1067"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1068"><!-- named anchor --></a>160</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1069"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id1070"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1071"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1072"><!-- named anchor --></a>165</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1073"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id1074"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1075"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1076"><!-- named anchor --></a>170</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1077"><!-- named anchor --></a>12</td>
+</tr>
+<tr>
+<a id="id1078"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1079"><!-- named anchor --></a>Serum creatinine (mg/dL)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1080"><!-- named anchor --></a>0</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1081"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1082"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1083"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1084"><!-- named anchor --></a>0.5</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1085"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id1086"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1087"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1088"><!-- named anchor --></a>1</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1089"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id1090"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1091"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1092"><!-- named anchor --></a>1.5</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1093"><!-- named anchor --></a>7</td>
+</tr>
+<tr>
+<a id="id1094"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1095"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1096"><!-- named anchor --></a>2</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1097"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id1098"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1099"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1100"><!-- named anchor --></a>2.5</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1101"><!-- named anchor --></a>12</td>
+</tr>
+<tr>
+<a id="id1102"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1103"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1104"><!-- named anchor --></a>3</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1105"><!-- named anchor --></a>15</td>
+</tr>
+<tr>
+<a id="id1106"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1107"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1108"><!-- named anchor --></a>3.5</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1109"><!-- named anchor --></a>17</td>
+</tr>
+<tr>
+<a id="id1110"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1111"><!-- named anchor --></a>Primary cause of admission</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1112"><!-- named anchor --></a>Heart failure</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1113"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1114"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1115"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1116"><!-- named anchor --></a>Other</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1117"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id1118"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1119"><!-- named anchor --></a>LVSD</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1120"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1121"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1122"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1123"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1124"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1125"><!-- named anchor --></a>1</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id1126"><!-- named anchor --></a><td valign="top" align="left" colspan="3" rowspan="1">
+<a id="id1127"><!-- named anchor --></a>The greater the <b>GWTG-HF</b> risk score, the greater the probability of death. A score of ≥79 correlates with a &gt;50% mortality (Peterson et al., <a href="#B35">2010</a>).</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id1128"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1129"><!-- named anchor --></a><b>Variable</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1130"><!-- named anchor --></a><b>Value</b>
+</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1131"><!-- named anchor --></a><b>Points assigned</b>
+</td>
+</tr>
+<tr style="border-top: thin solid #000000;">
+<a id="id1132"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1133"><!-- named anchor --></a>Age</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1134"><!-- named anchor --></a> ≤ 19</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1135"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1136"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1137"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1138"><!-- named anchor --></a>20–29</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1139"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id1140"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1141"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1142"><!-- named anchor --></a>30–39</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1143"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id1144"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1145"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1146"><!-- named anchor --></a>40–49</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1147"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id1148"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1149"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1150"><!-- named anchor --></a>50–59</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1151"><!-- named anchor --></a>11</td>
+</tr>
+<tr>
+<a id="id1152"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1153"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1154"><!-- named anchor --></a>60–69</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1155"><!-- named anchor --></a>14</td>
+</tr>
+<tr>
+<a id="id1156"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1157"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1158"><!-- named anchor --></a>70–79</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1159"><!-- named anchor --></a>17</td>
+</tr>
+<tr>
+<a id="id1160"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1161"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1162"><!-- named anchor --></a>80–89</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1163"><!-- named anchor --></a>19</td>
+</tr>
+<tr>
+<a id="id1164"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1165"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1166"><!-- named anchor --></a>90–99</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1167"><!-- named anchor --></a>22</td>
+</tr>
+<tr>
+<a id="id1168"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1169"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1170"><!-- named anchor --></a>100–109</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1171"><!-- named anchor --></a>25</td>
+</tr>
+<tr>
+<a id="id1172"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1173"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1174"><!-- named anchor --></a>≥110</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1175"><!-- named anchor --></a>28</td>
+</tr>
+<tr>
+<a id="id1176"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1177"><!-- named anchor --></a>Heart rate (beats/min)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1178"><!-- named anchor --></a> ≤ 79</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1179"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1180"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1181"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1182"><!-- named anchor --></a>80–84</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1183"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id1184"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1185"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1186"><!-- named anchor --></a>85–89</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1187"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id1188"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1189"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1190"><!-- named anchor --></a>90–94</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1191"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id1192"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1193"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1194"><!-- named anchor --></a>95–99</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1195"><!-- named anchor --></a>5</td>
+</tr>
+<tr>
+<a id="id1196"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1197"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1198"><!-- named anchor --></a>100–104</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1199"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id1200"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1201"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1202"><!-- named anchor --></a>≥105</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1203"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id1204"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1205"><!-- named anchor --></a>Systolic blood pressure (mmHg)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1206"><!-- named anchor --></a>50–59</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1207"><!-- named anchor --></a>28</td>
+</tr>
+<tr>
+<a id="id1208"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1209"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1210"><!-- named anchor --></a>60–69</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1211"><!-- named anchor --></a>26</td>
+</tr>
+<tr>
+<a id="id1212"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1213"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1214"><!-- named anchor --></a>70–79</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1215"><!-- named anchor --></a>24</td>
+</tr>
+<tr>
+<a id="id1216"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1217"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1218"><!-- named anchor --></a>80–89</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1219"><!-- named anchor --></a>23</td>
+</tr>
+<tr>
+<a id="id1220"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1221"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1222"><!-- named anchor --></a>90–99</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1223"><!-- named anchor --></a>21</td>
+</tr>
+<tr>
+<a id="id1224"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1225"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1226"><!-- named anchor --></a>100–109</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1227"><!-- named anchor --></a>19</td>
+</tr>
+<tr>
+<a id="id1228"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1229"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1230"><!-- named anchor --></a>110–119</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1231"><!-- named anchor --></a>17</td>
+</tr>
+<tr>
+<a id="id1232"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1233"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1234"><!-- named anchor --></a>120–129</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1235"><!-- named anchor --></a>15</td>
+</tr>
+<tr>
+<a id="id1236"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1237"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1238"><!-- named anchor --></a>130–139</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1239"><!-- named anchor --></a>13</td>
+</tr>
+<tr>
+<a id="id1240"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1241"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1242"><!-- named anchor --></a>140–149</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1243"><!-- named anchor --></a>11</td>
+</tr>
+<tr>
+<a id="id1244"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1245"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1246"><!-- named anchor --></a>150–159</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1247"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id1248"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1249"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1250"><!-- named anchor --></a>160–169</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1251"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id1252"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1253"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1254"><!-- named anchor --></a>170–179</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1255"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id1256"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1257"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1258"><!-- named anchor --></a>180–189</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1259"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id1260"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1261"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1262"><!-- named anchor --></a>190–199</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1263"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id1264"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1265"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1266"><!-- named anchor --></a>≥200</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1267"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1268"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1269"><!-- named anchor --></a>Sodium (mEq/L)</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1270"><!-- named anchor --></a> ≤ 130</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1271"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id1272"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1273"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1274"><!-- named anchor --></a>131–133</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1275"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id1276"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1277"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1278"><!-- named anchor --></a>134–136</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1279"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id1280"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1281"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1282"><!-- named anchor --></a>137–138</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1283"><!-- named anchor --></a>1</td>
+</tr>
+<tr>
+<a id="id1284"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1285"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1286"><!-- named anchor --></a>≥139</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1287"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1288"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1289"><!-- named anchor --></a>Blood urea nitrogen</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1290"><!-- named anchor --></a> ≤ 9</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1291"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1292"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1293"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1294"><!-- named anchor --></a>10–19</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1295"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id1296"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1297"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1298"><!-- named anchor --></a>20–29</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1299"><!-- named anchor --></a>4</td>
+</tr>
+<tr>
+<a id="id1300"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1301"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1302"><!-- named anchor --></a>30–39</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1303"><!-- named anchor --></a>6</td>
+</tr>
+<tr>
+<a id="id1304"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1305"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1306"><!-- named anchor --></a>40–49</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1307"><!-- named anchor --></a>8</td>
+</tr>
+<tr>
+<a id="id1308"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1309"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1310"><!-- named anchor --></a>50–59</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1311"><!-- named anchor --></a>9</td>
+</tr>
+<tr>
+<a id="id1312"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1313"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1314"><!-- named anchor --></a>60–69</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1315"><!-- named anchor --></a>11</td>
+</tr>
+<tr>
+<a id="id1316"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1317"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1318"><!-- named anchor --></a>70–79</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1319"><!-- named anchor --></a>13</td>
+</tr>
+<tr>
+<a id="id1320"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1321"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1322"><!-- named anchor --></a>80–89</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1323"><!-- named anchor --></a>15</td>
+</tr>
+<tr>
+<a id="id1324"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1325"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1326"><!-- named anchor --></a>90–99</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1327"><!-- named anchor --></a>17</td>
+</tr>
+<tr>
+<a id="id1328"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1329"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1330"><!-- named anchor --></a>100–109</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1331"><!-- named anchor --></a>19</td>
+</tr>
+<tr>
+<a id="id1332"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1333"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1334"><!-- named anchor --></a>110–119</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1335"><!-- named anchor --></a>21</td>
+</tr>
+<tr>
+<a id="id1336"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1337"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1338"><!-- named anchor --></a>120–129</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1339"><!-- named anchor --></a>23</td>
+</tr>
+<tr>
+<a id="id1340"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1341"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1342"><!-- named anchor --></a>130–139</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1343"><!-- named anchor --></a>25</td>
+</tr>
+<tr>
+<a id="id1344"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1345"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1346"><!-- named anchor --></a>140–149</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1347"><!-- named anchor --></a>27</td>
+</tr>
+<tr>
+<a id="id1348"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1349"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1350"><!-- named anchor --></a>≥150</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1351"><!-- named anchor --></a>28</td>
+</tr>
+<tr>
+<a id="id1352"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1353"><!-- named anchor --></a>Black race</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1354"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1355"><!-- named anchor --></a>0</td>
+</tr>
+<tr>
+<a id="id1356"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1357"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1358"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1359"><!-- named anchor --></a>3</td>
+</tr>
+<tr>
+<a id="id1360"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1361"><!-- named anchor --></a>Chronic obstructive pulmonary disease</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1362"><!-- named anchor --></a>Yes</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1363"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id1364"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id1365"><!-- named anchor --></a></td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1366"><!-- named anchor --></a>No</td>
+<td valign="top" align="center" rowspan="1" colspan="1">
+<a id="id1367"><!-- named anchor --></a>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+<a id="s4"><!-- named anchor --></a><h2 class="main-title">AI-ECG in Clinical Practice</h2>
+<p id="id1368">The surface ECG is one of the most ubiquitous point-of-care tests in contemporary CICU practice and remains the gold standard for diagnosing a variety of clinical syndromes. As such, leveraging the ECG to provide an assessment of a patient's cardiac function would be a powerful tool in the CICU. Accordingly, recently developed AI-ECG algorithms can identify various patient characteristics and disease processes based on the surface 12-lead ECG alone. AI-ECG models have demonstrated the ability to classify age and sex, as well as the ability to detect the presence of atrial fibrillation (AF), left ventricular systolic dysfunction (LVSD), and structural heart diseases (e.g., aortic stenosis, amyloidosis, pulmonary arterial hypertension, mitral valve prolapse, and hypertrophic cardiomyopathy) (Attia et al., <a href="#B3">2019a</a>; Tison et al., <a href="#B38">2019</a>; Christopoulos et al., <a href="#B13">2020</a>; Gladding et al., <a href="#B17">2020</a>; Jentzer et al., <a href="#B21">2021a</a>; Kashou et al., <a href="#B27">2021</a>). While these AI-ECG algorithms were developed based on large cohorts consisting primarily of outpatients, there is no reason to suspect that they would not perform well in CICU patients.</p>
+<p id="id1369">Indeed, a previously developed AI-ECG algorithm can predict the risk of LVSD in the CICU population (Jentzer et al., <a href="#B21">2021a</a>). The AI-ECG algorithm used in this study to detect LVSD was derived and validated in almost 100,000 patients from Mayo Clinic (Attia et al., <a href="#B4">2019b</a>). The AI-ECG algorithm was developed by using the Keras framework with a Tensorflow backend and Python (Attia et al., <a href="#B4">2019b</a>). Half of the sample of the large data set was used to train the network and the remainder of the data set to test the network (Attia et al., <a href="#B4">2019b</a>). The original model had a sensitivity of 86.3%, specificity of 85.7%, and accuracy of 85.7% in the validation cohort including a broad patient population (Attia et al., <a href="#B4">2019b</a>). In a secondary validation study, 5,680 unique CICU patients with a mean age of 68 ± 15 years (34% females) were included if they underwent an AI-ECG and transthoracic echocardiogram within seven days and were not included in the original derivation cohort. The AI-ECG algorithm was applied to identify the probability of the presence of LVSD, as defined by a left ventricular ejection fraction (LVEF) of ≤ 40% in the CICU cohort and ≤ 35% in the original derivation cohort, which was present in 34% of the CICU patient population as compared to 19.9% for the general population in which the algorithm was derived and validated (Attia et al., <a href="#B4">2019b</a>; Jentzer et al., <a href="#B21">2021a</a>). The AI-ECG had a sensitivity of 73%, specificity of 78%, negative prediction value of 85%, and overall accuracy of 76% for identifying LVSD in the CICU population (Jentzer et al., <a href="#B21">2021a</a>). This was the first study to use AI-ECG to predict LVSD in the CICU patient population and it confirmed the ability of the algorithm to do so, albeit with a slightly reduced accuracy in the setting of a higher pre-test probability of LVSD. One CICU subgroup that demonstrated lower performance of the AI-ECG algorithm was those admitted with ACS (including those who underwent PCI), presumably due to the dynamic changes in both the ECG and LV function by TTE due to myocardial stunning and recovery (Jentzer et al., <a href="#B21">2021a</a>). In this population, there was a lower probability of LVSD by the AI-ECG algorithm despite similar mean LVEF compared to the CICU population without ACS leading to a higher rate of false-negative AI-ECG for LVSD emphasizing the need to perform TTE when reduced LVEF is suspected in ACS patients (Jentzer et al., <a href="#B21">2021a</a>). Additionally, the inverse correlation between the AI-ECG predicted probability of LVSD and LVEF was stronger in patients without ACS than those with ACS (Jentzer et al., <a href="#B21">2021a</a>). It was hypothesized that this population has dramatic dynamic ECG changes that may interfere with the AI-ECG algorithm to accurately predict LVSD (Jentzer et al., <a href="#B21">2021a</a>).</p>
+<p id="id1370">In a follow-up study, CICU patients with AF at the time of TTE were examined to determine whether the presence of AF influences the ability of the AI-ECG to identify LVSD. This study again used the previously derived AI-ECG algorithm applied to CICU patients undergoing AI-ECG prediction of LVSD and TTE in the same day for whom data regarding cardiac rhythm was also available (Kashou et al., <a href="#B27">2021</a>). The AI-ECG algorithm proved to have an area under the curve (AUC) for identification of LVSD of 0.79 in patients in AF and 0.82 in patients in sinus rhythm (Kashou et al., <a href="#B27">2021</a>). When used to detect LVSD in patients in AF, the AI-ECG model had an overall accuracy of 71.4%, sensitivity of 77.5%, specificity of 67.4%, positive predictive value of 62.6%, and negative predictive value of 81.0% (Kashou et al., <a href="#B27">2021</a>). When used to detect LVSD in patients in sinus rhythm, the AI-ECG model had an overall accuracy of 76.4%, sensitivity of 67.3%, specificity of 80.4%, positive predictive value of 60.7%, and negative predictive value of 84.5% (Kashou et al., <a href="#B27">2021</a>). Nonetheless, this algorithm and application to the CICU population pose a great advancement to the ability to use AI-ECG in the CICU setting. Furthermore, the prediction of LVSD can be used in various mortality prediction tools to better predict mortality throughout the patient's hospitalization as a dynamic variable that can be quickly and easily obtained.</p>
+<p id="id1371">The ability of the AI-ECG to predict LVSD without a formal echocardiogram can be used to triage and treat certain patient populations with suspected LVSD, particularly if they do not have ACS. This may influence decisions regarding specific treatments, such as the rate-control drug option for patients with AF help to identify patients requiring an expedited formal echocardiogram or detailed point of care cardiac ultrasound. In many institutions, a timely echocardiogram cannot be obtained, especially during off-hours when resources are limited; furthermore, many acutely ill patients have poor imaging windows, making detection of LVSD by point-of-care cardiac ultrasound more challenging. An AI-ECG, on the other hand, can provide diagnostic predictions in a matter of seconds. AI-ECG may serve as a non-invasive, inexpensive, and rapid diagnostic and screening tool in such circumstances. Potential future applications could include early diagnosis of shock to allow targeted intervention, diagnosis of heart failure and prediction of decompensation, as well as differentiation of cardiogenic vs. non-cardiogenic pulmonary edema among others.</p>
+</div>
+<div class="section">
+<a id="s5"><!-- named anchor --></a><h2 class="main-title">AI-ECG For Mortality Prediction</h2>
+<p id="id1372">Despite recent advances in bedside mortality prediction tools in the CICU, these models and clinical biomarkers are not without limitations, including the need to obtain blood samples and run laboratory assays. An additional limitation is the lack of integration of cardiac function markers, which may be an essential component of risk stratification in CICU patients (Jentzer et al., <a href="#B19">2019a</a>). The AI-ECG presumably identifies electrical signals reflecting underlying myocardial disease that may contribute to increased mortality. Therefore, AI-ECG algorithms that can predict underlying myocardial disease such as AF and LVSD may be used to construct models that aid in mortality prediction. This might then identify high-risk patients who may benefit from more invasive and extensive testing early in their CICU admission (Jentzer et al., <a href="#B22">2021b</a>).</p>
+<p id="id1373">Another CICU study demonstrated that an AI-ECG algorithm designed to predict LVSD could identify impacts of myopathic processes on cardiac electrical activity and predict outcomes based on these changes prior to the development of mechanical dysfunction (Jentzer et al., <a href="#B22">2021b</a>). This study population included 11,266 adults with a mean age of 67.6 ± 15 years and 37.3% female admitted to the Mayo Clinic Rochester CICU from January 1, 2007 to April 30, 2018. They applied the established ECG algorithm that was designed to predict the probability of LVSD to the first ECG performed after CICU admission to determine whether the probability of LVSD identified by AI-ECG was associated with clinical outcomes. They observed that a higher probability of LVSD provided by the AI-ECG was associated with an increased risk of hospital mortality and 1-year mortality even after adjustment for standard prognostic variables (Jentzer et al., <a href="#B22">2021b</a>). This was true even though the AI-ECG algorithm was imperfect at detecting echocardiographic LVSD. The added mortality risk associated with a higher AI-ECG LVSD probability was not entirely explained by the presence of reduced LVEF by echocardiography. Importantly, the AI-ECG had an even stronger association with mortality in patients without significant LVSD by echocardiography, implying that the AI-ECG was likely identifying subclinical myocardial disease that carried prognostic information (Jentzer et al., <a href="#B22">2021b</a>). A higher AI-ECG LVSD probability prediction was associated with increased risk of hospital and 1-year mortality even after stratification by echocardiographic LVEF (Jentzer et al., <a href="#B22">2021b</a>). Upon further analysis of the 1-year mortality prediction, patients with a true positive AI-ECG (i.e., both the AI-ECG and the TTE showed LVSD) had a higher 1-year mortality than patients with either a false negative AI-ECG or a false positive AI-ECG; patients with a true negative AI-ECG (i.e., both the AI-ECG and the TTE showed no evidence of LVSD) had the lowest mortality (Jentzer et al., <a href="#B22">2021b</a>). The patients with either false positive or false negative AI-ECG results, in which there was a discordance between LVSD by AI-ECG and by TTE, had similar outcomes (Jentzer et al., <a href="#B22">2021b</a>). This highlights the clinical relevance of the ECG features identified by the AI-ECG algorithm, which carry as much prognostic relevance as the LVEF itself and contribute incrementally to outcome prediction (Jentzer et al., <a href="#B22">2021b</a>). One limitation is that it is unclear which ECG features were considered significant by the AI-ECG algorithm; thus, it makes it difficult to identify potential features contributing to the AI-ECG predictions (Jentzer et al., <a href="#B22">2021b</a>). Considering that the AI-ECG algorithm used in this analysis was not designed to predict mortality, it is remarkable that the same ECG features that predict LVSD also predict mortality.</p>
+<p id="id1374">Other analyses have emphasized the power of an AI-ECG algorithm to predict mortality outside of the CICU setting. Raghunath et al. demonstrated that the AI-ECG was able to predict 1-year mortality even in patients with a “normal” ECG by cardiologist interpretation (Raghunath et al., <a href="#B36">2020</a>). This large study trained an AI-ECG algorithm on 1,169,662 resting ECGs from 253,397 patients including predominantly outpatients. The AI model used in this study was implemented using Keras with a Tensorflow backend in Python and was thoroughly trained using the sample size and then tested for validation. It was ensured that ECGs used for training were not also used for testing (Raghunath et al., <a href="#B36">2020</a>). The model was able to predict 1-year all-cause mortality in this population with an AUC of 0.876, even when the ECG was interpreted as “normal” by expert cardiologist interpretation (Raghunath et al., <a href="#B36">2020</a>). This work highlights the importance of mortality prediction and the false reassurance a normal ECG may provide clinicians regarding the presence of prognostically-important underlying cardiac disease. If an AI-ECG algorithm could perform as well for predicting mortality in CICU patients as this algorithm did in a mixed cohort, then the level of performance would meet or exceed that demonstrated for any published ICU or CICU risk score. These studies further substantiate the idea that the use of AI-ECG algorithms may improve mortality prediction.</p>
+</div>
+<div class="section">
+<a id="s6"><!-- named anchor --></a><h2 class="main-title">Limitations and Future Directions</h2>
+<p id="id1375">While the advancements of artificial intelligence and its application to the CICU and specifically to mortality prediction is an ever-growing field, there are some limitations to its implementation to mortality prediction. AI-based models are heavily reliant on input data. Because there is so much input data available in the CICU, models can become compromised if the wrong data is used for model development. A thorough evaluation of potential data points must be considered prior to model development and multiple models may have to be developed to identify the optimal data points which may be time and cost consuming. An additional important aspect to consider with AI-based mortality prediction, is ability to explain the model and its prediction. Current prediction models provide an explanation for the model's predictions, allowing clinicians to trust the data that is yielding from the use of these models. While AI-based prediction models have the potential to out-perform traditional predictions, the features that contribute to the prediction of the AI-ECG model may not always be clear. This makes its methods difficult to explain and can be a hindrance to clinical adoption by practitioners.</p>
+<p id="id1376">Another potential limitation that AI-ECG has compared to traditional prediction models using risk scores is its incorporation of active clinical signs (e.g., vital signs and laboratory values) and patient symptoms in the prediction model. It is conceivable that integrating dynamic, real-time clinical and/or laboratory data with AI-ECG data could provide an even more accurate prediction of mortality, particularly if a CICU-specific mortality prediction AI-ECG model was developed. The advantage current prediction tools have over AI-ECG models is the emphasis on the patient's clinical factors such as age, severity of illness, vital signs, laboratory values, and symptoms. These are dynamic aspects of the patient's clinical presentation that are essential in predicting mortality and outcomes, yet currently available risk scores do not consistently integrate serial values to enhance risk prediction. If the AI-ECG algorithm could integrate patient clinical information in a dynamic fashion, the ability to predict mortality in the CICU may exceed what is currently available through risk score assessment. One retrospective study showed that when data from the electronic medical record and dynamic, serial monitoring of heart rate and blood pressure were applied to a high-performing prediction model using AI, sepsis could be predicted 4 h in advance (Nemati et al., <a href="#B33">2018</a>).</p>
+<p id="id1377">Additionally, AI-ECG algorithms could extend to incorporate continuous telemetry monitoring in CICU patients. The continuous nature of telemetry would allow the AI-ECG algorithm to interpret dynamic changes in the cardiac electrical activity throughout the patient's CICU course. Early incorporation of this concept has been shown in studies in which patterns and changes in continuous telemetry monitoring are analyzed to predict in hospital cardiac arrest. One study showed that a predictive model could be used to predict in hospital cardiac arrest and that trending telemetry changes was feasible (Do et al., <a href="#B15">2019</a>). Similar monitoring of telemetry changes has shown that machine learning and AI techniques can be applied to telemetry waveforms to also predict sepsis (Bravi et al., <a href="#B7">2012</a>). Preliminary studies have also applied AI models to predict hypotension (Chan et al., <a href="#B12">2020</a>). Sequential monitoring of variables used in a risk score may provide better mortality prediction than a single snapshot assessment. A similar idea can be considered with continuous telemetry monitoring with AI capabilities, whereby dynamic changes in cardiac activity can provide real-time mortality prediction updates and alerts for impending clinical events (e.g., predicting the onset of AF) that could guide management decisions.</p>
+<p id="id1378">An AI-ECG model might also be used in conjunction with the current prediction models, such as M-CARS, to better risk stratify CICU patients and predict in-hospital and post-discharge mortality. To date, no specific AI-ECG algorithm has been developed to predict mortality in CICU patients, leaving an opportunity to integrate AI-ECG data with clinical variables for risk prediction. Regarding the diagnostic performance of AI-ECG for various cardiac conditions, this needs to be meticulously compared against gold standard diagnostic criteria and re-validation may be needed in the CICU population where disease epidemiology might differ from populations used to derive models. Furthermore, diagnostic AI-ECG model performance optimization in CICU patients may require determination of population-specific cut-offs that could differ from other cohorts.</p>
+<p id="id1379">Ultimately, randomized controlled trials will be needed with the development of AI-ECG models to assess these models prospectively and compare then against currently implemented risk scores. As models begin to develop and prove useful, additional components and dynamics factors can be used to augment the prediction models.</p>
+</div>
+<div class="section">
+<a id="s7"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<p id="id1380">The ability to identify occult disease processes and predict patient outcomes is important in the care of CICU patients. This capability has clinical benefits that include early mortality prediction, identification of patients who may benefit from invasive testing or intervention, and identification of patient who may not need ICU-level of care. The interest in predicting outcomes in ICU settings is exemplified by the recent proliferation of prediction tools (<a href="#T6">Table 6</a>). Although many of these tools are valuable, many lack validation in the CICU population and there is considerable variability in their performance. Various AI-ECG algorithms have demonstrated excellent predictive abilities in the CICU and may fill some of the gaps left by traditional prediction models.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T6"><!-- named anchor --></a><h5 class="label">Table 6</h5>
+<div class="caption"><p class="first" id="id1381">Summary of mentioned prediction tools.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id1382"><!-- named anchor --></a><thead>
+<a id="id1383"><!-- named anchor --></a><tr>
+<a id="id1384"><!-- named anchor --></a><th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1385"><!-- named anchor --></a><b>Prediction tool</b>
+</th>
+<th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1386"><!-- named anchor --></a><b>Assessment population</b>
+</th>
+</tr>
+</thead>
+<tbody>
+<a id="id1387"><!-- named anchor --></a><tr>
+<a id="id1388"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1389"><!-- named anchor --></a>Braden skin score</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1390"><!-- named anchor --></a>Predict risk of skin pressure injury in admitted patients</td>
+</tr>
+<tr>
+<a id="id1391"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1392"><!-- named anchor --></a>TIMI, GRACE, and Zwolle risk scores</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1393"><!-- named anchor --></a>Developed for patients with AMI or ACS</td>
+</tr>
+<tr>
+<a id="id1394"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1395"><!-- named anchor --></a>EFFECT, OPTIMIZE, GWTG-HF</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1396"><!-- named anchor --></a>Developed for patients with acute decompensated HF</td>
+</tr>
+<tr>
+<a id="id1397"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1398"><!-- named anchor --></a>M-CARS</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1399"><!-- named anchor --></a>Mortality prediction tool designed for CICU patient populations</td>
+</tr>
+<tr>
+<a id="id1400"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1401"><!-- named anchor --></a>Jentzer et al., <a href="#B21">2021a</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1402"><!-- named anchor --></a>Predict the risk of LVSD in CICU patients using AI-ECG</td>
+</tr>
+<tr>
+<a id="id1403"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1404"><!-- named anchor --></a>Kashou et al., <a href="#B27">2021</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1405"><!-- named anchor --></a>Prediction of LVSD in patients with AF in the CICU using AI-ECG</td>
+</tr>
+<tr>
+<a id="id1406"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1407"><!-- named anchor --></a>Jentzer et al., <a href="#B22">2021b</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1408"><!-- named anchor --></a>Prediction of outcomes based on prediction of LVSD using AI-ECG</td>
+</tr>
+<tr>
+<a id="id1409"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1410"><!-- named anchor --></a>Raghunath et al., <a href="#B36">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id1411"><!-- named anchor --></a>Use of AI-ECG to predict mortality, not limited to the CICU patient population</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+<a id="s8"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id1412">NR wrote the first draft of the manuscript. JJ, PN, and AK wrote sections of the manuscript. All authors were involved in the conception and outlining of the manuscript. All authors contributed to manuscript revision, read, and approved the submitted version.</p>
+</div>
+<div class="section">
+<a id="conf1"><!-- named anchor --></a><h2 class="main-title">Conflict of Interest</h2>
+<p id="id1413">The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</div>
+<div class="section">
+<a id="s9"><!-- named anchor --></a><h2 class="main-title">Publisher's Note</h2>
+<p id="id1414">All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+</div>
+</div>
+<div id="article-back" class="back"><div class="back-section">
+<a id="id1415"><!-- named anchor --></a><div class="section ref-list">
+<a id="id1415"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">1</span></span> <a id="B1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1416"><!-- named anchor --></a>W. T. AbrahamG. C. FonarowN. M. AlbertW. G. StoughM. GheorghiadeB. H. Greenberg. (2008). Predictors of in-hospital mortality in patients hospitalized for heart failure: insights from the organized program to initiate lifesaving treatment in hospitalized patients with heart failure (OPTIMIZE-HF). J. Am. Coll. Cardiol.52, 347–356. 10.1016/j.jacc.2008.04.02818652942</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">2</span></span> <a id="B2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1417"><!-- named anchor --></a>E. M. AntmanM. CohenP. J. BerninkC. H. McCabeT. HoracekG. Papuchis. (2000). The TIMI risk score for unstable angina/non-ST elevation MI: a method for prognostication and therapeutic decision making. JAMA284, 835–842. 10.1001/jama.284.7.83510938172</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">3</span></span> <a id="B3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1418"><!-- named anchor --></a>Z. I. AttiaP. A. FriedmanP. A. NoseworthyF. Lopez-JimenezD. J. LadewigG. Satam. (2019a). Age and sex estimation using artificial intelligence from standard 12-lead ECGs. Circ. Arrhythm. Electrophysiol.12:e007284. 10.1161/CIRCEP.119.00728431450977PMC7661045</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">4</span></span> <a id="B4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1419"><!-- named anchor --></a>Z. I. AttiaS. KapaF. Lopez-JimenezP. M. McKieD. J. LadewigG. Satam. (2019b). Screening for cardiac contractile dysfunction using an artificial intelligence-enabled electrocardiogram. Nat. Med.25, 70–74. 10.1038/s41591-018-0240-230617318</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">5</span></span> <a id="B5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1420"><!-- named anchor --></a>N. BergstromB. J. BradenA. LaguzzaV. Holman (1987). The braden scale for predicting pressure sore risk. Nurs. Res.
+36, 205–210. 10.1097/00006199-198707000-000023299278</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">6</span></span> <a id="B6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1421"><!-- named anchor --></a>E. A. BohulaJ. N. KatzS. van DiepenC. L. AlviarV. M. Baird-ZarsJ.-G. Park. (2019). Demographics, care patterns, and outcomes of patients admitted to cardiac intensive care units: the critical care cardiology trials network prospective North American Multicenter Registry of Cardiac Critical Illness. JAMA Cardiol.4, 928–935. 10.1001/jamacardio.2019.246731339509PMC6659157</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">7</span></span> <a id="B7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1422"><!-- named anchor --></a>A. BraviG. GreenA. LongtinA. J. E. Seely (2012). Monitoring and identification of sepsis development through a composite measure of heart rate variability. PLoS ONE
+7:e45666. 10.1371/journal.pone.004566623029171PMC3446945</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">8</span></span> <a id="B8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1423"><!-- named anchor --></a>T. BreenB. BrueskeM. S. SidhuD. H. MurphreeK. B. KashaniG. W. Barsness. (2020). Abnormal serum sodium is associated with increased mortality among unselected cardiac intensive care unit patients. J. Am. Heart Assoc.9:e014140. 10.1161/JAHA.119.01414031914877PMC7033827</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">9</span></span> <a id="B9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1424"><!-- named anchor --></a>T. J. BreenC. E. BennettS. Van DiepenJ. KatzN. S. AnavekarJ. G. Murphy. (2021a). The mayo cardiac intensive care unit admission risk score is associated with medical resource utilization during hospitalization. Mayo Clin Proc Innov Qual Outcomes5, 839–850. 10.1016/j.mayocpiqo.2020.12.00934514335PMC8424127</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">10</span></span> <a id="B10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1425"><!-- named anchor --></a>T. J. BreenB. BrueskeM. S. SidhuK. B. KashaniN. S. AnavekarG. W. Barsness. (2021b). Abnormal serum chloride is associated with increased mortality among unselected cardiac intensive care unit patients. PLoS ONE16:e0250292. 10.1371/journal.pone.025029233901227PMC8075550</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">11</span></span> <a id="B11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1426"><!-- named anchor --></a>T. J. BreenM. PadkinsC. E. BennettN. S. AnavekarJ. G. MurphyM. R. Bell. (2021c). Predicting 1-year mortality on admission using the mayo cardiac intensive care unit admission risk score. Mayo Clin. Proc. 96, 2354–2365. 10.1016/j.mayocp.2021.01.03134366138</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">12</span></span> <a id="B12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1427"><!-- named anchor --></a>B. ChanB. ChenA. SedghiP. LairdD. MasloveP. Mousavi (2020). Generalizable deep temporal models for predicting episodes of sudden hypotension in critically ill patients: a personalized approach. Sci. Rep.
+10:11480. 10.1038/s41598-020-67952-032651401PMC7351714</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">13</span></span> <a id="B13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1428"><!-- named anchor --></a>G. ChristopoulosJ. Graff-RadfordC. L. LopezX. YaoZ. I. AttiaA. A. Rabinstein. (2020). Artificial intelligence;electrocardiography to predict incident atrial fibrillation. Circ. Arrhythm. Electrophysiol.13:e009355. 10.1161/CIRCEP.120.00935533185118PMC8127001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">14</span></span> <a id="B14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1429"><!-- named anchor --></a>G. De LucaH. SuryapranataA. W. van 't HofM. J. de BoerJ. C. HoorntjeJ. H. Dambrink. (2004). Prognostic assessment of patients with acute myocardial infarction treated with primary angioplasty: implications for early discharge. Circulation109, 2737–2743. 10.1161/01.CIR.0000131765.73959.8715159293</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">15</span></span> <a id="B15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1430"><!-- named anchor --></a>D. H. DoA. KuoE. S. LeeD. MortaraD. ElashoffX. Hu. (2019). Usefulness of trends in continuous electrocardiographic telemetry monitoring to predict in-hospital cardiac arrest. Am. J. Cardiol.124, 1149–1158. 10.1016/j.amjcard.2019.06.03231405547PMC6744991</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">16</span></span> <a id="B16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1431"><!-- named anchor --></a>F. L. FerreiraD. P. BotaA. BrossC. MélotJ. L. Vincent (2001). Serial evaluation of the SOFA score to predict outcome in critically ill patients. JAMA
+286, 1754–1758. 10.1001/jama.286.14.175411594901</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">17</span></span> <a id="B17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1432"><!-- named anchor --></a>P. A. GladdingW. HewittT. T. Schlegel (2020). Going deep with ECG and aortic stenosis: touchdown or incomplete pass?
+J. Am. Heart Assoc.
+9:e016193. 10.1161/JAHA.120.01619332200715PMC7428629</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">18</span></span> <a id="B18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1433"><!-- named anchor --></a>C. B. GrangerR. J. GoldbergO. DabbousK. S. PieperK. A. EagleC. P. Cannon. (2003). Predictors of hospital mortality in the global registry of acute coronary events. Arch. Intern. Med163, 2345–2353. 10.1001/archinte.163.19.234514581255</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">19</span></span> <a id="B19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1434"><!-- named anchor --></a>J. C. JentzerN. S. AnavekarC. BennettD. H. MurphreeM. T. KeeganB. Wiley. (2019a). Derivation and validation of a novel cardiac intensive care unit admission risk score for mortality. J. Am. Heart Assoc.8:e013675. 10.1161/JAHA.119.01367531462130PMC6755843</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">20</span></span> <a id="B20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1435"><!-- named anchor --></a>J. C. JentzerN. S. AnavekarJ. A. Brenes-SalazarB. WileyD. H. MurphreeC. Bennett. (2019b). Admission braden skin score independently predicts mortality in cardiac intensive care patients. Mayo Clin. Proc.94, 1994–2003. 10.1016/j.mayocp.2019.04.03831585582</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">21</span></span> <a id="B21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1436"><!-- named anchor --></a>J. C. JentzerA. H. KashouZ. I. AttiaF. Lopez-JimenezS. KapaP. A. Friedman. (2021a). Left ventricular systolic dysfunction identification using artificial intelligence-augmented electrocardiogram in cardiac intensive care unit patients. Int. J. Cardiol.326, 114–123. 10.1016/j.ijcard.2020.10.07433152415</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">22</span></span> <a id="B22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1437"><!-- named anchor --></a>J. C. JentzerA. H. KashouF. Lopez-JimenezZ. I. AttiaS. KapaP. A. Friedman. (2021b). Mortality risk stratification using artificial intelligence-augmented electrocardiogram in cardiac intensive care unit patients. Eur. Heart J. Acute Cardiovasc. Care10, 532–541. 10.1093/ehjacc/zuaa02133620440PMC8245143</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">23</span></span> <a id="B23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1438"><!-- named anchor --></a>J. C. JentzerX. Rossello (2021). Past, present, and future of mortality risk scores in the contemporary cardiac intensive care unit. Eur. Heart J. Acute Cardiovasc. Care
+10, 940–946. 10.1093/ehjacc/zuab07234453848</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">24</span></span> <a id="B24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1439"><!-- named anchor --></a>J. C. JentzerS. van DiepenG. W. BarsnessJ. N. KatzB. M. WileyC. E. Bennett. (2019c). Changes in comorbidities, diagnoses, therapies and outcomes in a contemporary cardiac intensive care unit population. Am. Heart J.215, 12–19. 10.1016/j.ahj.2019.05.01231260901</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">25</span></span> <a id="B25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1440"><!-- named anchor --></a>J. C. JentzerS. van DiepenD. H. MurphreeA. S. IsmailM. T. KeeganD. A. Morrow. (2020). Admission diagnosis and mortality risk prediction in a contemporary cardiac intensive care unit population. Am. Heart J.224, 57–64. 10.1016/j.ahj.2020.02.01832305724</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">26</span></span> <a id="B26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1441"><!-- named anchor --></a>A. E. W. JohnsonA. A. KramerG. D. Clifford (2013). A new severity of illness scale using a subset of acute physiology and chronic health evaluation data elements shows comparable predictive accuracy<sup>*</sup>. Crit. Care Med.
+41, 1711–1718. 10.1097/CCM.0b013e31828a24fe23660729</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">27</span></span> <a id="B27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1442"><!-- named anchor --></a>A. H. KashouP. A. NoseworthyF. Lopez-JimenezZ. I. AttiaS. KapaP. A. Friedman. (2021). The effect of cardiac rhythm on artificial intelligence-enabled ECG evaluation of left ventricular ejection fraction prediction in cardiac intensive care unit patients. Int. J. Cardiol.339, 54–55. 10.1016/j.ijcard.2021.07.00134242690</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">28</span></span> <a id="B28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1443"><!-- named anchor --></a>J. N. KatzB. R. ShahE. M. VolzJ. R. HortonL. K. ShawL. K. Newby. (2010). Evolution of the coronary care unit: Clinical characteristics and temporal trends in healthcare delivery and outcomes<sup>*</sup>. Crit. Care Med.38, 375–381. 10.1097/CCM.0b013e3181cb0a6320029344</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">29</span></span> <a id="B29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1444"><!-- named anchor --></a>W. A. KnausD. P. WagnerE. A. DraperJ. E. ZimmermanM. BergnerP. G. Bastos. (1991). The APACHE III prognostic system. Risk prediction of hospital mortality for critically ill hospitalized adults. Chest100, 1619–1636. 10.1378/chest.100.6.16191959406</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">30</span></span> <a id="B30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1445"><!-- named anchor --></a>D. S. LeeP. C. AustinJ. L. RouleauP. P. LiuD. NaimarkJ. V. Tu (2003). Predicting mortality among patients hospitalized for heart failurederivation and validation of a clinical model. JAMA
+290, 2581–2587. 10.1001/jama.290.19.258114625335</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">31</span></span> <a id="B31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1446"><!-- named anchor --></a>M. LyleS. H. WanD. MurphreeC. BennettB. M. WileyG. Barsness. (2020). Predictive value of the get with the guidelines heart failure risk score in unselected cardiac intensive care unit patients. J. Am. Heart Assoc.9:e012439. 10.1161/JAHA.119.01243931986993PMC7033864</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">32</span></span> <a id="B32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1447"><!-- named anchor --></a>P. E. MillerJ. JentzerJ. N. Katz (2021). Are unselected risk scores in the cardiac intensive care unit needed?
+J. Am. Heart Assoc.
+10:e021940. 10.1161/JAHA.121.02194034658248PMC8751845</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">33</span></span> <a id="B33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1448"><!-- named anchor --></a>S. NematiA. HolderF. RazmiM. D. StanleyG. D. CliffordT. G. Buchman (2018). An interpretable machine learning model for accurate prediction of sepsis in the ICU. Crit. Care Med.
+46, 547–553. 10.1097/CCM.000000000000293629286945PMC5851825</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">34</span></span> <a id="B34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1449"><!-- named anchor --></a>M. PadkinsT. BreenN. AnavekarG. BarsnessK. KashaniJ. C. Jentzer (2021). Association between albumin level and mortality among cardiac intensive care unit patients. J. Intensive Care Med.
+36, 1475–1482. 10.1177/088506662096387533016174</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">35</span></span> <a id="B35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1450"><!-- named anchor --></a>P. N. PetersonJ. S. RumsfeldL. LiangN. M. AlbertA. F. HernandezE. D. Peterson. (2010). A validated risk score for in-hospital mortality in patients with heart failure from the American Heart Association get with the guidelines program. Circ. Cardiovasc. Qual. Outcomes3, 25–32. 10.1161/CIRCOUTCOMES.109.85487720123668</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">36</span></span> <a id="B36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1451"><!-- named anchor --></a>S. RaghunathA. E. Ulloa CernaL. JingD. P. vanMaanenJ. StoughD. N. Hartzel. (2020). Prediction of mortality from 12-lead electrocardiogram voltage data using a deep neural network. Nat. Med.26, 886–891. 10.1038/s41591-020-0870-z32393799</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">37</span></span> <a id="B37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1452"><!-- named anchor --></a>H. A. RayesS. VallabhajosyulaG. W. BarsnessN. S. AnavekarR. S. GoM. S. Patnaik. (2020). Association between anemia and hematological indices with mortality among cardiac intensive care unit patients. Clin. Res. Cardiol.109, 616–627. 10.1007/s00392-019-01549-031535171PMC7224152</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">38</span></span> <a id="B38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1453"><!-- named anchor --></a>G. H. TisonJ. ZhangF. N. DellingR. C. Deo (2019). Automated and interpretable patient ECG profiles for disease detection, tracking, and discovery. Circ. Cardiovasc. Qual. Outcomes
+12:e005289. 10.1161/CIRCOUTCOMES.118.00528931525078PMC6951431</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">39</span></span> <a id="B39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id1454"><!-- named anchor --></a>J. E. ZimmermanA. A. KramerD. S. McNairF. M. Malila (2006). Acute Physiology and Chronic Health Evaluation (APACHE) IV: hospital mortality assessment for today's critically ill patients. Crit. Care Med.
+34, 1297–1310. 10.1097/01.CCM.0000215112.84523.F016540951</p></div>
+</div>
+</div>
+</div>
+</div></div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>Artificial Intelligence</p>
+<div class="metadata-area"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>electrocardiogram</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>ECG interpretation</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>artificial intelligence</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>mortality prediction</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>cardiac intensive care unit</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Counts: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Figures: </span>0</p>
+<p class="metadata-entry"><span class="generated">Tables: </span>6</p>
+<p class="metadata-entry"><span class="generated">Equations: </span>0</p>
+<p class="metadata-entry"><span class="generated">References: </span>39</p>
+<p class="metadata-entry"><span class="generated">Pages: </span>11</p>
+<p class="metadata-entry"><span class="generated">Words: </span>7590</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
