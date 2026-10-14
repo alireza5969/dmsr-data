@@ -351,6 +351,13 @@ commit_changes <-
   function(commit_message = "Save progress") {
     gert::git_add(".")
 
+    staged <- gert::git_status(staged = TRUE)
+
+    if (nrow(staged) == 0) {
+      message("Nothing to commit, skipping.")
+      return(invisible(FALSE))
+    }
+
 
     gert::git_commit(commit_message)
     gert::git_push()
