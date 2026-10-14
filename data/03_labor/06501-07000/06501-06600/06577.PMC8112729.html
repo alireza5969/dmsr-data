@@ -1,0 +1,796 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Syed, Syed, Sexton, Syeda, Garza, Zozus, Syed, Begum, Syed, Sanford, and Prior: Application of Machine Learning in Intensive Care Unit (ICU) Settings Using MIMIC Dataset: Systematic Review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Informatics (MDPI)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Informatics (MDPI)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>319</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>nihpa</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101674771</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Informatics (MDPI)</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2227-9709</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="nihms-1699534.pdf">nihms-1699534.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="https://www.mdpi.com/2227-9709/8/1/16/htm">https://www.mdpi.com/2227-9709/8/1/16/htm</a></p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk"><p class="first" id="id1">This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p></div>
+</div>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>3 March 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">print</span>): </span>March 2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>8</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>1<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>381551<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>16</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8112729</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8112729.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8112729</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8112729</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id</span>): </span>NIHMS1699534</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>33981592</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3390/informatics8010016</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id-alternative</span>): </span>NIHMS1699534</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">manuscript-id-alternative</span>): </span>NIHPA1699534</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Application of Machine Learning in Intensive Care Unit (ICU) Settings Using MIMIC Dataset: Systematic Review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Mahanazuddin Syed<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#CR1">*</a><span class="generated">]</span><span class="generated">[</span><a href="#FN2">†</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Shorabuddin Syed<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#FN2">†</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Kevin Sexton<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#A2">2</a><span class="generated">]</span><span class="generated">[</span><a href="#A3">3</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Hafsa Bareen Syeda<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Maryam Garza<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Meredith Zozus<span class="generated">[</span><a href="#A4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Farhanuddin Syed<span class="generated">[</span><a href="#A5">5</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Salma Begum<span class="generated">[</span><a href="#A6">6</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Abdullah Usama Syed<span class="generated">[</span><a href="#A7">7</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a>Joseph Sanford<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span><span class="generated">[</span><a href="#A8">8</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id12"><!-- named anchor --></a>Fred Prior<span class="generated">[</span><a href="#A1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="A1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>Department of Biomedical Informatics, University of Arkansas for Medical Sciences (UAMS), Little Rock, Arkansas 72205, USA.</p>
+<p class="metadata-entry"><a id="A2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>Department of Surgery, University of Arkansas for Medical Sciences (UAMS), Little Rock, Arkansas 72205, USA.</p>
+<p class="metadata-entry"><a id="A3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>Department of Health Policy and Management, University of Arkansas for Medical Sciences (UAMS), Little Rock, Arkansas 72205, USA.</p>
+<p class="metadata-entry"><a id="A4"><!-- named anchor --></a><span class="generated">[</span>4<span class="generated">] </span>Department of Population Health Sciences, University of Texas Health Science Center at San Antonio, San Antonio, Texas 78229, USA.</p>
+<p class="metadata-entry"><a id="A5"><!-- named anchor --></a><span class="generated">[</span>5<span class="generated">] </span>Shadan Institute of Medical Sciences, College of Medicine, Hyderabad, Telangana 500086, India.</p>
+<p class="metadata-entry"><a id="A6"><!-- named anchor --></a><span class="generated">[</span>6<span class="generated">] </span>Department of Information Technology, University of Arkansas for Medical Sciences (UAMS), Little Rock, Arkansas 72205, USA.</p>
+<p class="metadata-entry"><a id="A7"><!-- named anchor --></a><span class="generated">[</span>7<span class="generated">] </span>Department of Information Science, University of Arkansas at Little Rock (UALR), Little Rock, Arkansas 72205, USA.</p>
+<p class="metadata-entry"><a id="A8"><!-- named anchor --></a><span class="generated">[</span>8<span class="generated">] </span>Department of Anesthesiology, University of Arkansas for Medical Sciences (UAMS), Little Rock, Arkansas 72205, USA.</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id13"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><span class="generated"> Contributed by</span>: </span><a id="FN1"><!-- named anchor --></a><p id="P1"> <b>Author Contributions:</b> Conceptualization, M.S., F.P., and S.S.; methodology, M.S. and S.S.; formal analysis, all authors; investigation, all authors; resources, K.S.; data curation, all authors; writing—original draft preparation, M.S. and S.S.; writing—review and editing, all authors; validation, all authors; visualization, all authors; supervision, J.S.; project administration, A.U.S. and S.B.; funding acquisition, None. All authors have read and agreed to the published version of the manuscript.</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Equal contributor</span>: </span><a id="FN2"><!-- named anchor --></a><p id="P2">† These authors contributed equally to this work.</p></p>
+<p class="metadata-entry"><span class="generated"><a id="CR1"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>*<span class="generated">] </span>Correspondence: <a href="mailto:msyed2@uams.edu">msyed2@uams.edu</a>; Tel.: +1 (501) 686-8447</p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="P3">Modern Intensive Care Units (ICUs) provide continuous monitoring of critically ill patients susceptible to many complications affecting morbidity and mortality. ICU settings require a high staff-to-patient ratio and generates a sheer volume of data. For clinicians, the real-time interpretation of data and decision-making is a challenging task. Machine Learning (ML) techniques in ICUs are making headway in the early detection of high-risk events due to increased processing power and freely available datasets such as the Medical Information Mart for Intensive Care (MIMIC). We conducted a systematic literature review to evaluate the effectiveness of applying ML in the ICU settings using the MIMIC dataset. A total of 322 articles were reviewed and a quantitative descriptive analysis was performed on 61 qualified articles that applied ML techniques in ICU settings using MIMIC data. We assembled the qualified articles to provide insights into the areas of application, clinical variables used, and treatment outcomes that can pave the way for further adoption of this promising technology and possible use in routine clinical decision-making. The lessons learned from our review can provide guidance to researchers on application of ML techniques to increase their rate of adoption in healthcare.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="S1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<h5 class="label">1.</h5>
+<p id="P4">Artificial intelligence (AI) encompasses a broad-spectrum of technologies that aim to imitate cognitive functions and intelligent behavior of humans [<a href="#R1">1</a>]. Machine Learning (ML) is a subfield of AI that focuses on algorithms that allow computers to define a model for complex relationships or patterns from empirical data without being explicitly programmed [<a href="#R2">2</a>]. ML, powered by increasing availability of healthcare data, is being used in a variety of clinical applications ranging from diagnosis to outcome prediction [<a href="#R1">1</a>,<a href="#R3">3</a>]. The predictive power of ML improves as the number of samples available for learning increases [<a href="#R4">4</a>,<a href="#R5">5</a>].</p>
+<p id="P5">ML algorithms can be supervised or unsupervised based on the type of learning rule employed. In supervised learning, an algorithm is trained using well-labeled data. Thereafter, the machine predicts on unseen data by applying knowledge gained from the training data [<a href="#R6">6</a>]. Most adopted supervised ML models are Random Forest (RF), Support Vector Machines (SVM), and Decision Tree algorithms [<a href="#R6">6</a>]. In unsupervised learning, there is no ground truth labeling required. Instead, the machine learns from the inherent structure of the unlabeled data [<a href="#R7">7</a>]. Either type of ML is an iterative process in which the algorithm tries to find the optimal combination of both model variables and variable weights with the goal of minimizing error in the predicted outcome [<a href="#R5">5</a>,<a href="#R6">6</a>]. If the algorithm performs with a reasonably low error rate, it can be employed for making predictions where outputs are not known. However, while developing a ML model, an optimal bias-variance tradeoff should be selected to optimize prediction error rate [<a href="#R8">8</a>]. Improper selection of bias and variance results in two problems: (1) underfitting and (2) overfitting [<a href="#R9">9</a>]. Finding the “sweet spot” between the bias and variance is crucial to avoid both underfitting and overfitting [<a href="#R8">8</a>,<a href="#R10">10</a>].</p>
+<p id="P6">Deep learning (DL), a subcategory of machine learning, achieves great power and flexibility compared to conventional ML models by drawing inspiration from biological neural networks to solve a wide variety of complex tasks, including the classification of medical imaging and Natural Language Processing (NLP) [<a href="#R10">10</a>–<a href="#R14">14</a>]. Most widely used DL models are variants of Artificial Neural Network (ANN) and Multi-Layer Perceptron (MLP). In general, ML models are data driven and they rely on a deep understanding of the system for prediction, thereby, empowering users to make informed decision.</p>
+<p id="P7">To provide better patient care and facilitate translational research, healthcare institutions are increasingly leveraging clinical data captured from Electronic Health Records (EHR) systems [<a href="#R15">15</a>]. Of these systems, the Intensive Care Unit (ICU) generates an immense volume of data, and requires a high staff-to-patient ratio [<a href="#R16">16</a>,<a href="#R17">17</a>]. To avoid adverse events and prolonged ICU stays, early detection and intervention on patients vulnerable to complications is crucial; for these reasons, the ML literature is increasingly using ICU patient data for clinical event prediction and secondary usage, such as sepsis and septic shock [<a href="#R18">18</a>]. ML techniques in ICUs are making headway in the early detection of high-risk events due to increased processing power and freely available datasets such as the Medical Information Mart for Intensive Care (MIMIC) [<a href="#R19">19</a>]. The data available in the MIMIC database includes highly structured data from time-stamped, nurse-verified physiological measurements made at the bedside, as well as unstructured data, including free-text interpretations of imaging studies provided by the radiology department [<a href="#R13">13</a>].</p>
+<p id="P8">The primary aim of this study was to conduct a systematic literature review on the effectiveness of applying ML technologies using MIMIC dataset. Specifically, we summarized the clinical area of application, disease type, clinical variables, data type, ML methodology, scientific findings, and challenges experienced across the existing ICU-ML literature.</p>
+</div>
+<div class="section">
+<a id="S2"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<h5 class="label">2.</h5>
+<p id="P9">This systematic literature review followed the guidelines of the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) framework for preparation and reporting [<a href="#R20">20</a>].</p>
+<div class="section">
+<a id="S3"><!-- named anchor --></a><h3 class="section-title">Eligibility Criteria</h3>
+<h5 class="label">2.1.</h5>
+<p id="P10">This study focused on peer-reviewed publications that applied ML techniques to analyze retrospective ICU data available from publicly available MIMIC dataset, which includes discrete structured clinical data, physiological waveforms data, free text documents, and radiology imaging reports.</p>
+</div>
+<div class="section">
+<a id="S4"><!-- named anchor --></a><h3 class="section-title">Data Sources and Search Strategy</h3>
+<h5 class="label">2.2.</h5>
+<p id="P11">Three search engines were used: PubMed, Web of Science, and the CINAHL. We restricted our search to research articles published in English and in peer-reviewed journals or conferences available from the inception of each database through 30 October 2020. The search syntax was built with the guidance of a professional librarian and included search terms: “Machine Learning”, “Deep Learning”, “Artificial Intelligence”, “Neural Network”, “Supervised Learning”, “Support Vector Machine”, “SVM”, “Intensive Care Unit”, “ICU”, “Critical Care”, “Intensive Care”, “MIMIC”, “MIMIC-II”, “Medical Information Mart for Intensive Care”, “Beth Israel Deaconess Medical Center”. <a href="#F1">Figure 1</a> illustrates the process of identifying eligible publications.</p>
+</div>
+<div class="section">
+<a id="S5"><!-- named anchor --></a><h3 class="section-title">Study Selection</h3>
+<h5 class="label">2.3.</h5>
+<p id="P12">Following the systematic search process, 322 publications were retrieved. Of that, 113 duplicate publications were removed, leaving 209 potentially relevant articles for the title and abstract screening. Two teams (HB, SS and MS, SB) screened these articles independently, leading to the removal of another 89 publications, and 120 publications were retained for a full-text assessment. These were assessed for eligibility, resulting in 61 total publications that were included in the final analysis. Disagreements were resolved by an independent review by third person (AS).</p>
+</div>
+<div class="section">
+<a id="S6"><!-- named anchor --></a><h3 class="section-title">Data Collection and Analysis</h3>
+<h5 class="label">2.4.</h5>
+<p id="P13">A quantitative descriptive analysis was performed on the qualified studies that had applied ML technique in the ICU settings using MIMIC database. Data elements extracted for this analysis included: (a) type of disease (b) type of data (c) clinical area of application (d) ML techniques and (e) year of publication. After the extraction and analysis, we summarized and reported the findings in tables in accordance with the aim of the study.</p>
+</div>
+</div>
+<div class="section">
+<a id="S7"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<h5 class="label">3.</h5>
+<p id="P14">The search strategy yielded a total of 322 articles, which were published and made available as of 30 October 2020. Of which, 61 publications were selected for further analyses. These publications were categorized into seven themes based on the effectiveness of applying ML techniques in various ICU settings. These themes are identified based on ML algorithms to predict, monitor, and improve patient outcomes. Descriptions of each theme and related publications are listed in <a href="#T1">Table 1</a>.</p>
+<p id="P15">Majority of the studies in our review focused on predicting mortality (21 studies) and followed by risk stratification (10 studies). Multiple studies focused on predicting the onset date of specific diseases such as sepsis and septic shock (eight studies), cardiac diseases (seven studies), and acute kidney injury (AKI) (six studies).</p>
+<p id="P16">Details of each study including clinical applications, ML models and clinical variables used, sample size, and model performance of the qualified studies is provided in the <a href="#SD1">Supplementary Table S1</a>.</p>
+<p id="P17">In our review, both traditional ML and DL models were used in the classification tasks. Based on best-performing models reported by the studies, traditional ML was used in 36 studies and DL was used in 25 studies, respectively. In traditional ML algorithms, SVM and RF were most commonly used whereas in DL, Long Short-Term Memory (LSTM) was employed. Majority of the studies have used discrete clinical variables, and eight publications used both discrete and unstructured data such as discharge summaries, nursing notes, radiology reports, etc. as an input.</p>
+<p id="P18">Thirty-six studies applied imputation methods, and the remaining 25 either completely removed the records with missing data or did not mention it. Fifty-two studies used cross-validation to evaluate model performance. Forty-eight studies used feature identification to improve accuracy.</p>
+</div>
+<div class="section">
+<a id="S8"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<h5 class="label">4.</h5>
+<p id="P19">The aim of this systematic review was to provide an up-to-date and holistic view of the current ML applications in ICU settings using MIMIC data in the attempt to predict clinical outcomes. Our review revealed ML application was widely adopted in areas such as mortality, risk stratification, readmission, and infectious disease in critically ill patients using retrospective data. This review may be used to provide insights for choosing key variables and best performing models for further research.</p>
+<p id="P20">The application of ML techniques within the ICU domain is rapidly expanding with improvement of modern computing, which has enabled the analysis of huge volumes of complex and diverse data [<a href="#R1">1</a>]. ML expands on existing statistical techniques, utilizing methods that are not based on a priori assumptions about the distribution of the data, but deriving insights directly from the data [<a href="#R80">80</a>,<a href="#R81">81</a>].</p>
+<p id="P21">With ICUs being complex settings that generate a variety of time-sensitive data, more and more ML-based studies have begun tapping the openly available, large tertiary care hospital data (MIMIC). Our screening resulted in 61 publications that utilized MIMIC data to train and test ML models enabling reproducibility. The majority of these publications focused on predicting mortality, sepsis, AKI, and readmissions.</p>
+<div class="section">
+<a id="S9"><!-- named anchor --></a><h3 class="section-title">Mortality Prediction</h3>
+<h5 class="label">4.1.</h5>
+<p id="P22">Mortality prediction for ICU patients is critical and crucial for assessing severity of illness and adjudicating the value of treatments, and timely interventions. ML algorithms developed for predicting mortality in ICUs focused mainly on in-hospital mortality and 30 days mortality at discharge. Studies by Marafino et al. [<a href="#R22">22</a>], Pirracchio et al. [<a href="#R23">23</a>], Hoogendoorn et al. [<a href="#R24">24</a>], Awad et al. [<a href="#R26">26</a>], Davoodi et al. [<a href="#R29">29</a>], and Weissman et al. [<a href="#R31">31</a>] predicted in-hospital mortality, whereas Du et al. [<a href="#R25">25</a>] predicted 28 days mortality at discharge, and Zahid et al. [<a href="#R30">30</a>] predicted both 30 days and in-hospital mortality. Most studies focusing on predicting in-hospital mortality looked at mortality after 24 h of ICU admission. However, one in particular, Awad et al. [<a href="#R26">26</a>], predicted mortality within 6 h of admission. Marafino et al. [<a href="#R22">22</a>] predicted mortality using only nursing notes from the first 24 h of ICU admission, whereas Weissman et al. [<a href="#R31">31</a>] improved mortality prediction by combining structured and unstructured data generated within the first 48 h of the ICU stay. Davoodi et al. [<a href="#R29">29</a>] and Hoogendoorn et al. [<a href="#R24">24</a>] predicted after 24 h and within a median of 72 h, respectively. Studies by Tang et al. [<a href="#R33">33</a>], Caicedo-Torres et al. [<a href="#R36">36</a>], Sha et al. [<a href="#R38">38</a>], and Zhang et al. [<a href="#R41">41</a>] predicted in-hospital mortality irrespective of the admission or discharge time.</p>
+<p id="P23">For mortality prediction, all of the studies used three main categories of clinical variables: (1) demographics, (2) vital signs, and (3) laboratory test variables. In addition to the most commonly used data elements, other clinical information such as medications, intake/output variables, risk scores, and comorbidities were also utilized. Weissman et al. [<a href="#R31">31</a>] and Zhang et al. [<a href="#R41">41</a>] used clinical variables from both structured and unstructured data types for mortality prediction.</p>
+<p id="P24">Multiple studies predicted mortality on disease-specific patient cohorts. Celi et al. [<a href="#R21">21</a>] and Lin et al. [<a href="#R35">35</a>] predicted in-hospital mortality on AKI patients. Lin et al. [<a href="#R35">35</a>] predicted mortality based on five important variables (urine output, systolic blood pressure, age, serum bicarbonate level, and heart rate). In addition, the study by Lin et al. [<a href="#R35">35</a>] also revealed that the effect of kidney injury markers, such as cystatin C and neutrophil gelatinase-associated lipocalin on subclinical injury, had not yet been analyzed, which can provide AKI prognostic information. This is due to lack of data availability in MIMIC. Garcia-Gallo et al. [<a href="#R37">37</a>] and Kong et al. [<a href="#R40">40</a>] predicted mortality on sepsis patients, and specifically, Garcia-Gallo et al. [<a href="#R37">37</a>] identified patients that are on 1-year mortality trajectory. Anand et al. [<a href="#R34">34</a>] claimed that the risk of mortality in diabetic patients could be better predicted using a combination of limited variables: HbA1c, mean glucose during stay, diagnoses upon admission, age, and type of admission. To compute the “diagnosis upon admission” variable, the study utilized Charlson Comorbidity Index, Elixhauser Comorbidity Index, and Diabetic Severity Index. The authors further claimed that combining diabetic-specific metrics and using the fewest possible variables would result in better mortality risk prediction in diabetic patients.</p>
+<p id="P25">In our review, studies have used both traditional ML (10 studies) and DL methods (11 studies) to predict mortality. In traditional ML techniques, Random Forest, Decision Tree, and Logistic Regression were the most commonly used algorithms. However, recent studies by Caicedo-Torres et al. [<a href="#R36">36</a>], Du et al. [<a href="#R25">25</a>], and Zahid et al. [<a href="#R30">30</a>] have used DL methods for mortality prediction with a promising accuracy ranging from 0.86–0.87 as reported in the <a href="#SD1">Supplementary Table S1</a>. Traditional ML models can be easily interpretable when compared to DL models that have many levels of features and hidden layers to predict outcomes. Understanding the features that contribute towards the prediction plays an important role for clinical decision-making [<a href="#R82">82</a>,<a href="#R83">83</a>]. For example, one of the most cited studies by Pirracchio et al. [<a href="#R23">23</a>] developed a mortality prediction algorithm (Super Learner) using a combination of traditional ML models; the results of which were easily interpretable by clinical researchers. In general, DL techniques are employed to improve prediction accuracy by training on large volumes of data [<a href="#R12">12</a>]. Zahid et al. [<a href="#R30">30</a>] developed a DL model (Self-Normalizing Neural Network (SNN)) that performed marginally better than the Pirracchio et al. [<a href="#R23">23</a>] mortality prediction rate (Area Under the Receiver Operating Characteristic curve (AUROC) of SNN: 0.86 and Super Learner: 0.85). However, interpreting the results of DL models is challenging because of multiple hidden layers and they are often treated as black-box models. To address this limitation, Caicedo-Torres et al. [<a href="#R36">36</a>] and Sha et al. [<a href="#R38">38</a>] demonstrated the interpretability of the model in visualizations that will allow clinicians to make informed decisions.</p>
+</div>
+<div class="section">
+<a id="S10"><!-- named anchor --></a><h3 class="section-title">Acute Kidney Injury (AKI) Prediction</h3>
+<h5 class="label">4.2.</h5>
+<p id="P26">AKI is one of the common complications among adult patients in the intensive care unit (ICU). AKI patients are at risk for adverse clinical outcomes such as prolonged ICU and hospitalization stays, high morbidity, and mortality. Application of ML in AKI care has been mainly focused on early prediction of an AKI event and risk stratification. In our review, studies employed traditional ML techniques to predict AKI events and XGBoost was the most commonly used algorithm.</p>
+<p id="P27">Using the MIMIC dataset, Zimmerman et al. [<a href="#R68">68</a>], Sun et al. [<a href="#R69">69</a>], and Li et al. [<a href="#R84">84</a>] predicted AKI after 24 h of ICU admission. Sun et al. [<a href="#R69">69</a>] and Li et al. [<a href="#R84">84</a>] used clinical unstructured notes generated during the first 24 h of ICU stay, whereas Zimmerman et al. [<a href="#R68">68</a>] used structured clinical variables for prediction. The AUROC of predicting AKI within the first 24 h in Sun et al. [<a href="#R69">69</a>], Zimmerman et al. [<a href="#R68">68</a>], and Li et al. [<a href="#R84">84</a>] was reported as 0.83, 0.783, and 0.779, respectively. Additional details on the type of clinical variables, sample size, and ML model are listed in <a href="#SD1">Supplementary Table S1</a>.</p>
+<p id="P28">To define and classify AKI, three standard guidelines have been published and used in clinical settings: (1) Risk, Injury, Failure, Loss, End-Stage (RIFLE), (2) Acute Kidney Injury Network (AKIN), and (3) Kidney Disease: Improving Global Outcomes (KDIGO). In our results, most studies used KDIGO guidelines to create ground truth labels and is based on serum creatinine (SCr) and urine output. The SCr is one of the important predictor variables in AKI; however, it is a late marker of AKI, which delays diagnosis and care [<a href="#R85">85</a>]. In clinical settings, it is highly desirable to early predict the AKI event for better intervention strategies. To address the aforementioned clinical need, Zimmerman et al. [<a href="#R68">68</a>] predicted SCr values for 48 and 72 h based on 24 h SCr values and other clinical variables. Li et al. [<a href="#R84">84</a>] extracted key features from clinical notes, such as diuretic and insulin medications using NLP instead of completely depending on SCr. Even though urine output is one of the defined metrics of AKI, Zimmerman et al. [<a href="#R68">68</a>] reported it as not a significant predictor [<a href="#R86">86</a>]. Further investigation should focus on the effect of urine output on predicting AKI and its impact.</p>
+</div>
+<div class="section">
+<a id="S11"><!-- named anchor --></a><h3 class="section-title">Sepsis and Septic Shock</h3>
+<h5 class="label">4.3.</h5>
+<p id="P29">Sepsis is one of the leading causes of death among ICU patients and hospitalized patients overall [<a href="#R87">87</a>]. As sepsis progresses, patients from pre-shock state are highly likely to develop septic shock. Early recognition of sepsis and initiation of treatment will reduce mortality and morbidity [<a href="#R88">88</a>]. In our review, eight studies applied ML techniques to predict sepsis or septic shock events. Of these, four applied traditional ML algorithms and the other four used DL methods. XGBoost and LSTM were the most commonly used algorithms, of which the details of variables, sample size, and model performances are provided in the <a href="#SD1">Supplementary Table S1</a>.</p>
+<p id="P30">The Scherpf et al. [<a href="#R55">55</a>] model predicted sepsis 3 h prior to the onset with an AUROC of 0.81. The results of our review also reveal that most studies focused on early predicting of pre-shock state using hemodynamic measurements. The common variables used in ML models are arterial pressure, heart rate, labs, risk scores including Glasgow Coma Scores (GCS) and Sequential Organ Failure Assessment (SOFA) scores, and respiratory rate.</p>
+<p id="P31">For predicting pre-shock state, Liu et al. [<a href="#R54">54</a>] and Kam et al. [<a href="#R53">53</a>] used a combination of these variables along with lab findings with the Area under the Curve (AUC) performance reported as 0.93 and 0.929, respectively. One of the interesting findings of the Liu et al. [<a href="#R54">54</a>] study was that serum lactate was the primary predictor variable indicating a patient’s risk level of entering septic shock, and is used as a biomarker for sepsis patient risk stratification. The study also reported, “A patient with serum lactate concentration one standard deviation above the population mean is approximately five times as likely to transition into shock than a patient with average serum lactate concentration” [<a href="#R54">54</a>]. The hemodynamic measurements can be derived from waveform data or can be extracted as discrete data elements from EHR. Ghosh et al. [<a href="#R52">52</a>] used three waveforms: mean arterial pressure, heart rate, and respiratory rate to derive hemodynamic predictor variables, whereas Liu et al. [<a href="#R54">54</a>] and Kam et al. [<a href="#R53">53</a>] used discrete measurements.</p>
+</div>
+<div class="section">
+<a id="S12"><!-- named anchor --></a><h3 class="section-title">ICU Readmission</h3>
+<h5 class="label">4.4.</h5>
+<p id="P32">Intensive Care Units (ICU) provide care to critically ill patients, which is often costly and labor-intensive. Prolong ICU stays increases cost burden to both patients and hospitals. Early predicting unplanned readmissions may help in ICU resources allocation and improve patient health outcomes. Details of the studies qualified in this theme are listed in the <a href="#SD1">Supplementary Table S1</a>. Desautels et al. [<a href="#R76">76</a>] identified patients who are likely to suffer unplanned ICU readmission: his model reported an AUROC of 0.71. Rojas et al. [<a href="#R78">78</a>] and Lin et al. [<a href="#R79">79</a>] focused on identifying patients that were re-admitted within 30 days of discharge. The best AUROC reported by Lin et al. [<a href="#R79">79</a>] and Rojas et al. [<a href="#R78">78</a>] is 0.791 and 0.78, respectively. The common predictor variables used in all three studies include: vital signs, demographics, comorbidities, and labs. Our findings revealed that there has been limited research done on predicting readmissions and the reported model AUROCs in literature are not promising (less than 80%) using MIMIC data.</p>
+</div>
+<div class="section">
+<a id="S13"><!-- named anchor --></a><h3 class="section-title">ML Model Optimization</h3>
+<h5 class="label">4.5.</h5>
+<p id="P33">The performance of a given model heavily depended on data pre-processing, feature identification, and model validation. The missing data problem is arguably the most common issue encountered by machine learning practitioners when analyzing real-world healthcare data [<a href="#R89">89</a>]. Researchers in general choose to address the missing data by either imputing or removing the observations [<a href="#R89">89</a>]. The imputation can be done using simple-to-complex techniques: for example, in the study done by Lin et al. [<a href="#R35">35</a>], missing observations were imputed using the mean value of the variable, whereas Davoodi et al. [<a href="#R29">29</a>] and Zhang et al. [<a href="#R67">67</a>] used sophisticated imputation techniques, Gaussian and Multivariate Imputation by Chained Equation (MICE), respectively. Substituting observed values with estimated observations introduces bias that may distort the data distribution or introduce spurious associations influencing model accuracy. To minimize this, imputation methods should be carefully selected, especially for prospective data. Imputation methodology depends on aim of the study, importance of data elements, percentage of missing data, and ML model used.</p>
+<p id="P34">Feature importance technique is often employed to identify the highest ranked features. ML models with only important features improve the accuracy and computing time [<a href="#R90">90</a>]. Cross-validation (CV) of a ML algorithm is vital to estimate a model’s predictive power and generalized performance on the unseen data [<a href="#R91">91</a>,<a href="#R92">92</a>]. K-fold CV is often used to reduce the pessimistic bias by using more training data to teach the model. Our analysis found 52 studies used various validation techniques. Five-fold and 10-fold CV were the most common validation method used.</p>
+<p id="P35">This review has some inherent limitations. First, there is the possibility of studies missed due to the search methodology. Second, we removed sixteen publications where full text was not available, and this may have introduced bias. Finally, a comparison of ML model performance was not possible in the quantitative analysis even though the studies used the MIMIC dataset for training and validating ML models. This is due to the fact that ML performance is dependent on the data elements selected for prediction, model parameters used, and size of the dataset.</p>
+</div>
+<div class="section">
+<a id="S14"><!-- named anchor --></a><h3 class="section-title">Key Points and Recommendations</h3>
+<h5 class="label">4.6.</h5>
+<p id="P36">The aim of the study was to perform a comprehensive literature review on ML application in ICU settings using MIMIC dataset. The key points of our review and recommendations for future research provided therein are enlisted below.</p>
+<div class="list">
+<a id="L2"><!-- named anchor --></a><ul>
+<li><p id="P37">Recent proliferation of publicly available MIMIC datasets allowed researchers to provide effective ML-based solutions in an attempt to solve complex healthcare problems. However, reproducibility of ML models is lacking due to inconsistent reporting of clinical variables selected, data pre-processing, and model specifications during the development. Future studies should follow standard reporting guidelines to accurately disclose model specifications.</p></li>
+<li><p id="P38">Significant work has been done in predicting mortality within 6 to 72 h of hospital admission on retrospective data. However, prospective implementation is lacking. To adapt to dynamics of clinical events, we recommend exposing these models to prospective trials before moving it to routine clinical practice.</p></li>
+<li><p id="P39">ML model performance heavily depends on clinical variables utilized. We identified and summarized the variables used by different model across the themes. Future studies should focus on performing a detailed analysis of these variables for improved performance.</p></li>
+<li><p id="P40">Unstructured clinical notes have valuable and time-sensitive information critical for decision-making. Eight studies in our review taped into clinical notes to mine important information. However, recent advancements in NLP techniques like Bidirectional Encoder Representations from Transformers (BERT) and Embeddings from Language Models (ELMo) have not been explored.</p></li>
+<li><p id="P41">Interpretable ML models allow clinicians to understand and improve model performance. However, only two studies have resorted to visualization-based interpretations in the review.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="S15"><!-- named anchor --></a><h2 class="main-title">Conclusions</h2>
+<h5 class="label">5.</h5>
+<p id="P42">ML is gaining traction in the ICU setting. This systematical review aimed to assemble the current ICU literature that utilized ML methods to provide insights into the areas of application and treatment outcomes using MIMIC dataset. Our work can pave the way for further adoption and overcome hurdles in employing ML technology in clinical care. This study identified the most important clinical variables used in the design and development of ML models for predicting mortality and infectious disease in critically ill patients, which can provide insights for choosing key variables for further research. We also discovered that predicting disease classification and treatment outcomes using supervised and unsupervised ML is possible with high predictive value on retrospective data. Prospective validation is still lacking, possibly due to the limitations with implementation and real-time disparate data processing.</p>
+</div>
+<div class="section">
+<a id="SM1"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="SD1"><!-- named anchor --></a><h5 class="label">Supplementary Table S1: Summary of 61 studies qualified for quantitative descriptive analysis.</h5>
+<a id="d40e729" href="NIHMS1699534-supplement-Supplementary_Table_S1__Summary_of_61_studies_qualified_for_quantitative_descriptive_analysis_.pdf"></a>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="S16"><!-- named anchor --></a><h2 class="main-title">Funding:</h2>
+<p id="P43">This study was supported in part by the Translational Research Institute (TRI), grant UL1 TR003107 received from the National Center for Advancing Translational Sciences of the National Institutes of Health (NIH). The content of this manuscript is solely the responsibility of the authors and does not necessarily represent the official views of the NIH.</p>
+</div>
+<div class="back-section">
+<a id="id15"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="FN3"><!-- named anchor --></a><p id="P44"><span class="generated">[1]</span> <b>Supplementary Materials:</b> Table S1: Summary of 61 studies qualified for quantitative descriptive analysis. The following are available online at <a target="xrefwindow" href="https://www.mdpi.com/2227-9709/8/1/16/s1" id="id14">https://www.mdpi.com/2227-9709/8/1/16/s1</a>.</p>
+</div>
+<div class="footnote">
+<a id="FN4"><!-- named anchor --></a><p id="P45"><span class="generated">[2]</span> <b>Conflicts of Interest:</b> The authors declare no conflict of interest.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id16"><!-- named anchor --></a><div class="section ref-list">
+<a id="id16"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="R1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id17"><!-- named anchor --></a>F Jiang, Y Jiang, H Zhi, Y Dong, H Li, S Ma, Artificial intelligence in healthcare: past, present and future. Stroke Vasc Neurol2017;2(4):230–43.2950778410.1136/svn-2017-000101PMC5829945</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="R2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id18"><!-- named anchor --></a>J Martins, C Magalhães, M Rocha, NS Osório. Machine Learning-Enhanced T Cell Neoepitope Discovery for Immunotherapy Design. Cancer informatics2019;18:1176935119852081-.3120541310.1177/1176935119852081PMC6535895</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="R3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id19"><!-- named anchor --></a>Z Ahmed, K Mohamed, S Zeeshan, X Dong. Artificial intelligence with multi-functional machine learning platform development for better healthcare and precision medicine. Database : the journal of biological databases and curation2020;2020:baaa010.3218539610.1093/database/baaa010PMC7078068</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="R4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id20"><!-- named anchor --></a>RL Figueroa, Q Zeng-Treitler, S Kandula, LH Ngo. Predicting sample size required for classification performance. BMC medical informatics and decision making2012;12:8-.2233638810.1186/1472-6947-12-8PMC3307431</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="R5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id21"><!-- named anchor --></a>JT Senders, O Arnaout, AV Karhade, HH Dasenbrock, WB Gormley, ML Broekman, Natural and Artificial Intelligence in Neurosurgery: A Systematic Review. Neurosurgery2018;83(2):181–92.2894591010.1093/neuros/nyx384</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="R6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id22"><!-- named anchor --></a>S Uddin, A Khan, ME Hossain, MA Moni. Comparing different supervised machine learning algorithms for disease prediction. BMC medical informatics and decision making2019;19(1):281-.3186434610.1186/s12911-019-1004-8PMC6925840</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="R7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id23"><!-- named anchor --></a>L Cleret de Langavant, E Bayen, K Yaffe. Unsupervised Machine Learning to Identify High Likelihood of Dementia in Population-Based Surveys: Development and Validation Study. Journal of medical Internet research2018;20(7):e10493–e.2998684910.2196/10493PMC6056741</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="R8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id24"><!-- named anchor --></a>M Belkin, D Hsu, S Ma, S Mandal. Reconciling modern machine-learning practice and the classical bias-variance trade-off. Proceedings of the National Academy of Sciences of the United States of America2019;116(32):15849–54.3134107810.1073/pnas.1903070116PMC6689936</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="R9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id25"><!-- named anchor --></a>SM Borstelmann. Machine Learning Principles for Radiology Investigators. Acad Radiol2020;27(1):13–25.3181837910.1016/j.acra.2019.07.030</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="R10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id26"><!-- named anchor --></a>G Chartrand, PM Cheng, E Vorontsov, M Drozdzal, S Turcotte, CJ Pal, Deep Learning: A Primer for Radiologists. RadioGraphics2017;37(7):2113–31.2913176010.1148/rg.2017170077</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="R11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id27"><!-- named anchor --></a>JJ Torres, P Varona. Modeling Biological Neural Networks. In: G Rozenberg, T Bäck, JN Kok, editors. Handbook of Natural Computing. Berlin, Heidelberg:Springer Berlin Heidelberg; 2012. p.533–64.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="R12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id28"><!-- named anchor --></a>D Chen, S Liu, P Kingsbury, S Sohn, CB Storlie, EB Habermann, Deep learning and alternative learning strategies for retrospective real-world clinical data. NPJ digital medicine2019;2:43-.3130438910.1038/s41746-019-0122-0PMC6550223</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="R13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id29"><!-- named anchor --></a>J Jang, A Ankit, J Kim, YJ Jang, HY Kim, JH Kim, A Unified Deep-Learning Model for Classifying the Cross-Country Skiing Techniques Using Wearable Gyroscope Sensors. Sensors (Basel, Switzerland)2018;18(11):3819.10.3390/s18113819PMC626388430405087</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="R14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id30"><!-- named anchor --></a>ML Giger. Machine Learning in Medical Imaging. Journal of the American College of Radiology2018;15(3):512–20.2939849410.1016/j.jacr.2017.12.028</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="R15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id31"><!-- named anchor --></a>NL Downing, J Rolnick, SF Poole, E Hall, AJ Wessels, P Heidenreich, Electronic health record-based clinical decision support alert for severe sepsis: a randomised evaluation. BMJ Quality &amp;amp; Safety2019;28(9):762.10.1136/bmjqs-2018-008765PMC686096730872387</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="R16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id32"><!-- named anchor --></a>V Kizzier-Carnahan, KA Artis, V Mohan, JA Gold. Frequency of Passive EHR Alerts in the ICU: Another Form of Alert Fatigue?Journal of patient safety2019;15(3):246–50.2733160010.1097/PTS.0000000000000270PMC5820226</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="R17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id33"><!-- named anchor --></a>V Huddar, BK Desiraju, V Rajan, S Bhattacharya, S Roy, CK Reddy. Predicting Complications in Critical Care Using Heterogeneous Clinical Data. IEEE Access2016;4:7988–8001.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="R18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id34"><!-- named anchor --></a>HM Giannini, JC Ginestra, C Chivers, M Draugelis, A Hanish, WD Schweickert, A Machine Learning Algorithm to Predict Severe Sepsis and Septic Shock: Development, Implementation, and Impact on Clinical Practice. Crit Care Med2019;47(11):1485–92.3138983910.1097/CCM.0000000000003891PMC8635476</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="R19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id35"><!-- named anchor --></a>AEW Johnson, TJ Pollard, L Shen, L-WH Lehman, M Feng, M Ghassemi, MIMIC-III, a freely accessible critical care database. Scientific data2016;3:160035-.2721912710.1038/sdata.2016.35PMC4878278</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="R20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id36"><!-- named anchor --></a>A Liberati, DG Altman, J Tetzlaff, C Mulrow, PC Gøtzsche, JPA Ioannidis, The PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate healthcare interventions: explanation and elaboration. BMJ2009;339:b2700.1962255210.1136/bmj.b2700PMC2714672</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="R21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id37"><!-- named anchor --></a>LA Celi, S Galvin, G Davidzon, J Lee, D Scott, R Mark. A Database-driven Decision Support System: Customized Mortality Prediction. J Pers Med2012;2(4):138–48.2376689310.3390/jpm2040138PMC3678286</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="R22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id38"><!-- named anchor --></a>BJ Marafino, WJ Boscardin, RA Dudley. Efficient and sparse feature selection for biomedical text classification via the elastic net: Application to ICU risk stratification from nursing notes. J Biomed Inform2015;54:114–20.2570066510.1016/j.jbi.2015.02.003</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="R23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id39"><!-- named anchor --></a>R Pirracchio, ML Petersen, M Carone, MR Rigon, S Chevret, MJ van der Laan. Mortality prediction in intensive care units with the Super ICU Learner Algorithm (SICULA): a population-based study. Lancet Respir Med2015;3(1):42–52.2546633710.1016/S2213-2600(14)70239-5PMC4321691</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="R24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id40"><!-- named anchor --></a>M Hoogendoorn, A El Hassouni, K Mok, M Ghassemi, P Szolovits. Prediction using patient comparison vs. modeling: a case study for mortality prediction. Conf Proc IEEE Eng Med Biol Soc2016;2016:2464–7.10.1109/EMBC.2016.759122928268823</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="R25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id41"><!-- named anchor --></a>D Hao, MM Ghassemi, F Mengling. The effects of deep network topology on mortality prediction. Conf Proc IEEE Eng Med Biol Soc2016;2016:2602–5.10.1109/EMBC.2016.759126328268855</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="R26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id42"><!-- named anchor --></a>A Awad, M Bader-El-Den, J McNicholas, J Briggs. Early hospital mortality prediction of intensive care unit patients using an ensemble learning approach. Int J Med Inform2017;108:185–95.2913262610.1016/j.ijmedinf.2017.10.002</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="R27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id43"><!-- named anchor --></a>A Meyer, D Zverinski, B Pfahringer, J Kempfert, T Kuehne, SH Sundermann, Machine learning for real-time prediction of complications in critical care: a retrospective study. Lancet Respir Med2018;6(12):905–14.3027495610.1016/S2213-2600(18)30300-X</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="R28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id44"><!-- named anchor --></a>S Purushotham, C Meng, Z Che, Y Liu. Benchmarking deep learning models on large healthcare datasets. J Biomed Inform2018;83:112–34.2987947010.1016/j.jbi.2018.04.007</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="R29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id45"><!-- named anchor --></a>R Davoodi, MH Moradi. Mortality prediction in intensive care units (ICUs) using a deep rule-based fuzzy classifier. J Biomed Inform2018;79:48–59.2947111110.1016/j.jbi.2018.02.008</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="R30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id46"><!-- named anchor --></a>MAH Zahid, J Lee, editors. Mortality prediction with self normalizing neural networks in intensive care unit patients.Proceedings of 2018 IEEE EMBS International Conference on Biomedical &amp; Health Informatics (BHI); 20184–7 March 2018. p.226–9.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="R31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id47"><!-- named anchor --></a>GE Weissman, RA Hubbard, LH Ungar, MO Harhay, CS Greene, BE Himes, Inclusion of Unstructured Clinical Text Improves Early Prediction of Death or Prolonged ICU Stay. Crit Care Med2018;46(7):1125–32.2962998610.1097/CCM.0000000000003148PMC6005735</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="R32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id48"><!-- named anchor --></a>SS Jain, IN Sarkar, PC Stey, RS Anand, DR Biron, ES Chen. Using Demographic Factors and Comorbidities to Develop a Predictive Model for ICU Mortality in Patients with Acute Exacerbation COPD. AMIA Annu Symp Proc2018;2018:1319–28.30815176PMC6371239</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="R33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id49"><!-- named anchor --></a>F Tang, C Xiao, F Wang, J Zhou. Predictive modeling in urgent care: a comparative study of machine learning approaches. JAMIA Open2018;1(1):87–98.3198432110.1093/jamiaopen/ooy011PMC6951928</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="R34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id50"><!-- named anchor --></a>RS Anand, P Stey, S Jain, DR Biron, H Bhatt, K Monteiro, Predicting Mortality in Diabetic ICU Patients Using Machine Learning and Severity Indices. AMIA Jt Summits Transl Sci Proc2018;2017:310–9.29888089PMC5961793</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="R35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id51"><!-- named anchor --></a>K Lin, Y Hu, G Kong. Predicting in-hospital mortality of patients with acute kidney injury in the ICU using random forest model. Int J Med Inform2019;125:55–61.3091418110.1016/j.ijmedinf.2019.02.002</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="R36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id52"><!-- named anchor --></a>W Caicedo-Torres, J Gutierrez. ISeeU: Visually interpretable deep learning for mortality prediction inside the ICU. J Biomed Inform2019;98:103269.3143055010.1016/j.jbi.2019.103269</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="R37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id53"><!-- named anchor --></a>JE Garcia-Gallo, NJ Fonseca-Ruiz, LA Celi, JF Duitama-Munoz. A machine learning-based model for 1-year mortality prediction in patients admitted to an Intensive Care Unit with a diagnosis of sepsis. Med Intensiva2018.10.1016/j.medin.2018.07.01630245121</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="R38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id54"><!-- named anchor --></a>Y Sha, MD Wang. Interpretable Predictions of Clinical Outcomes with An Attention-based Recurrent Neural Network. Acm bcb2017;2017:233–40.3257762810.1145/3107411.3107445PMC7310714</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="R39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id55"><!-- named anchor --></a>FS Ahmed, L Ali, BA Joseph, A Ikram, R Ul Mustafa, SAC Bukhari. A statistically rigorous deep neural network approach to predict mortality in trauma patients admitted to the intensive care unit. J Trauma Acute Care Surg 2020;89(4):736–42.10.1097/TA.000000000000288832773672</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="R40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id56"><!-- named anchor --></a>G Kong, K Lin, Y Hu. Using machine learning methods to predict in-hospital mortality of sepsis patients in the ICU. BMC Med Inform Decis Mak 2020;20(1):251.10.1186/s12911-020-01271-2PMC753111033008381</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41.</span> <a id="R41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id57"><!-- named anchor --></a>D Zhang, C Yin, J Zeng, X Yuan, P Zhang. Combining structured and unstructured data for predictive models: a deep learning approach. BMC Med Inform Decis Mak 2020;20(1):280.10.1186/s12911-020-01297-6PMC759696233121479</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42.</span> <a id="R42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id58"><!-- named anchor --></a>BJ Marafino, JM Davies, NS Bardach, ML Dean, RA Dudley. N-gram support vector machines for scalable procedure and diagnosis classification, with applications to clinical free text data from the intensive care unit. J Am Med Inform Assoc2014;21(5):871–5.2478620910.1136/amiajnl-2014-002694PMC4147615</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43.</span> <a id="R43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id59"><!-- named anchor --></a>A DervishiFuzzy risk stratification and risk assessment model for clinical monitoring in the ICU. Comput Biol Med2017;87:169–78.2859921610.1016/j.compbiomed.2017.05.034</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44.</span> <a id="R44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id60"><!-- named anchor --></a>Z Chen, VY Bird, R Ruchi, MS Segal, J Bian, SR Khan, Development of a personalized diagnostic model for kidney stone disease tailored to acute care by integrating large clinical, demographics and laboratory data: the diagnostic acute care algorithm - kidney stones (DACA-KS). BMC Med Inform Decis Mak2018;18(1):72.3011962710.1186/s12911-018-0652-4PMC6098647</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45.</span> <a id="R45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id61"><!-- named anchor --></a>EM Cramer, MG Seneviratne, H Sharifi, A Ozturk, T Hernandez-Boussard. Predicting the Incidence of Pressure Ulcers in the Intensive Care Unit Using Machine Learning. EGEMS (Wash DC)2019;7(1):49.3153498110.5334/egems.307PMC6729106</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46.</span> <a id="R46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id62"><!-- named anchor --></a>J Xia, S Pan, M Zhu, G Cai, M Yan, Q Su, A Long Short-Term Memory Ensemble Approach for Improving the Outcome Prediction in Intensive Care Unit. Comput Math Methods Med2019;2019:8152713.3182758910.1155/2019/8152713PMC6885179</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47.</span> <a id="R47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id63"><!-- named anchor --></a>S Rongali, AJ Rose, DD McManus, AS Bajracharya, A Kapoor, E Granillo, Learning Latent Space Representations to Predict Patient Outcomes: Model Development and Validation. J Med Internet Res2020;22(3):e16374.3220250310.2196/16374PMC7136840</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48.</span> <a id="R48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id64"><!-- named anchor --></a>DH Lee, M Yetisgen, L Vanderwende, E Horvitz. Predicting severe clinical events by learning about life-saving actions and outcomes using distant supervision. J Biomed Inform 2020;107:103425.10.1016/j.jbi.2020.10342532348850</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49.</span> <a id="R49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id65"><!-- named anchor --></a>L Su, C Liu, D Li, J He, F Zheng, H Jiang, Toward Optimal Heparin Dosing by Comparing Multiple Machine Learning Methods: Retrospective Study. JMIR Med Inform2020;8(6):e17648.3256808910.2196/17648PMC7338927</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50.</span> <a id="R50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id66"><!-- named anchor --></a>G Eickelberg, LN Sanchez-Pinto, Y Luo. Predictive modeling of bacterial infections and antibiotic therapy needs in critically ill adults. J Biomed Inform 2020;109:103540.10.1016/j.jbi.2020.103540PMC753014232814200</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51.</span> <a id="R51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id67"><!-- named anchor --></a>T Desautels, J Calvert, J Hoffman, M Jay, Y Kerem, L Shieh, Prediction of Sepsis in the Intensive Care Unit With Minimal Electronic Health Record Data: A Machine Learning Approach. JMIR Med Inform2016;4(3):e28.2769409810.2196/medinform.5909PMC5065680</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52.</span> <a id="R52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id68"><!-- named anchor --></a>S Ghosh, J Li, L Cao, K Ramamohanarao. Septic shock prediction for ICU patients via coupled HMM walking on sequential contrast patterns. J Biomed Inform2017;66:19–31.2801123310.1016/j.jbi.2016.12.010</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53.</span> <a id="R53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id69"><!-- named anchor --></a>HJ Kam, HY Kim. Learning representations for the early detection of sepsis with deep neural networks. Comput Biol Med2017;89:248–55.2884382910.1016/j.compbiomed.2017.08.015</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54.</span> <a id="R54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id70"><!-- named anchor --></a>R Liu, JL Greenstein, SJ Granite, JC Fackler, MM Bembea, SV Sarma, Data-driven discovery of a novel sepsis pre-shock state predicts impending septic shock in the ICU. Sci Rep2019;9(1):6145.3099253410.1038/s41598-019-42637-5PMC6467982</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55.</span> <a id="R55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id71"><!-- named anchor --></a>M Scherpf, F Gräßer, H Malberg, S Zaunseder. Predicting sepsis with a recurrent neural network using the MIMIC III database. Comput Biol Med2019;113:103395.3148000810.1016/j.compbiomed.2019.103395</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56.</span> <a id="R56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id72"><!-- named anchor --></a>J Fagerström, M Bång, D Wilhelms, MS Chew. LiSep LSTM: A Machine Learning Algorithm for Early Detection of Septic Shock. Sci Rep2019;9(1):15132.3164116210.1038/s41598-019-51219-4PMC6805937</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57.</span> <a id="R57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id73"><!-- named anchor --></a>W Song, SY Jung, H Baek, CW Choi, YH Jung, S Yoo. A Predictive Model Based on Machine Learning for the Early Detection of Late-Onset Neonatal Sepsis: Development and Observational Study. JMIR Med Inform2020;8(7):e15965.3273523010.2196/15965PMC7428919</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58.</span> <a id="R58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id74"><!-- named anchor --></a>RQ Yao, X Jin, GW Wang, Y Yu, GS Wu, YB Zhu, A Machine Learning-Based Prediction of Hospital Mortality in Patients With Postoperative Sepsis. Front Med (Lausanne)2020;7:445.3290361810.3389/fmed.2020.00445PMC7438711</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59.</span> <a id="R59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id75"><!-- named anchor --></a>J Lee, RG Mark. An investigation of patterns in hemodynamic data indicative of impending hypotension in intensive care. Biomed Eng Online2010;9:62.2097399810.1186/1475-925X-9-62PMC2976741</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60.</span> <a id="R60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id76"><!-- named anchor --></a>J Lee, R Mark. A Hypotensive Episode Predictor for Intensive Care based on Heart Rate and Blood Pressure Time Series. Comput Cardiol (2010)2011;2010(26–29 Sept. 2010):81–4.21874161PMC3162312</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61.</span> <a id="R61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id77"><!-- named anchor --></a>N Paradkar, SR Chowdhury. Coronary artery disease detection using photoplethysmography. Conf Proc IEEE Eng Med Biol Soc2017;2017:100–3.10.1109/EMBC.2017.803677229059820</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62.</span> <a id="R62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id78"><!-- named anchor --></a>DA Kaji, JR Zech, JS Kim, SK Cho, NS Dangayach, AB Costa, An attention based deep learning model of clinical events in the intensive care unit. PLoS One2019;14(2):e0211057.3075909410.1371/journal.pone.0211057PMC6373907</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63.</span> <a id="R63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id79"><!-- named anchor --></a>LA Barrett, SN Payrovnaziri, J Bian, Z He. Building Computational Models to Predict One-Year Mortality in ICU Patients with Acute Myocardial Infarction and Post Myocardial Infarction Syndrome. AMIA Jt Summits Transl Sci Proc2019;2019:407–16.31258994PMC6568079</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64.</span> <a id="R64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id80"><!-- named anchor --></a>SN Payrovnaziri, LA Barrett, D Bis, J Bian, Z He. Enhancing Prediction Models for One-Year Mortality in Patients with Acute Myocardial Infarction and Post Myocardial Infarction Syndrome. Stud Health Technol Inform2019;264:273–7.3143792810.3233/SHTI190226PMC6785831</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65.</span> <a id="R65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id81"><!-- named anchor --></a>M Cherifa, A Blet, A Chambaz, E Gayat, M Resche-Rigon, R Pirracchio. Prediction of an Acute Hypotensive Episode During an ICU Hospitalization With a Super Learner Machine-Learning Algorithm. Anesth Analg2020;130(5):1157–66.3228712310.1213/ANE.0000000000004539</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66.</span> <a id="R66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id82"><!-- named anchor --></a>MA Morid, ORL Sheng, G Del Fiol, JC Facelli, BE Bray, S Abdelrahman. Temporal Pattern Detection to Predict Adverse Events in Critical Care: Case Study With Acute Kidney Injury. JMIR Med Inform2020;8(3):e14272.3218175310.2196/14272PMC7109618</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67.</span> <a id="R67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id83"><!-- named anchor --></a>Z Zhang, KM Ho, Y Hong. Machine learning for the prediction of volume responsiveness in patients with oliguric acute kidney injury in critical care. Crit Care2019;23(1):112.3096166210.1186/s13054-019-2411-zPMC6454725</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68.</span> <a id="R68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id84"><!-- named anchor --></a>LP Zimmerman, PA Reyfman, ADR Smith, Z Zeng, A Kho, LN Sanchez-Pinto, Early prediction of acute kidney injury following ICU admission using a multivariate panel of physiological measurements. BMC Med Inform Decis Mak2019;19(Suppl 1):16.3070029110.1186/s12911-019-0733-zPMC6354330</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69.</span> <a id="R69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id85"><!-- named anchor --></a>M Sun, J Baron, A Dighe, P Szolovits, RG Wunderink, T Isakova, Early Prediction of Acute Kidney Injury in Critical Care Setting Using Clinical Notes and Structured Multivariate Physiological Measurements. Stud Health Technol Inform2019;264:368–72.3143794710.3233/SHTI190245</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70.</span> <a id="R70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id86"><!-- named anchor --></a>Y Wang, Y Wei, H Yang, J Li, Y Zhou, Q Wu. Utilizing imbalanced electronic health records to predict acute kidney injury by ensemble learning and time series model. BMC Med Inform Decis Mak 2020;20(1):238.10.1186/s12911-020-01245-4PMC750762032957977</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71.</span> <a id="R71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id87"><!-- named anchor --></a>A Mikhno, CM Ennett. Prediction of extubation failure for neonates with respiratory distress syndrome using the MIMIC-II clinical database. Conf Proc IEEE Eng Med Biol Soc2012;2012:5094–7.10.1109/EMBC.2012.634713923367074</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72.</span> <a id="R72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id88"><!-- named anchor --></a>J Behar, J Oster, Q Li, GD Clifford. ECG signal quality during arrhythmia and its application to false alarm reduction. IEEE Trans Biomed Eng2013;60(6):1660–6.2333565910.1109/TBME.2013.2240452</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73.</span> <a id="R73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id89"><!-- named anchor --></a>X Wang, Y Gao, J Lin, H Rangwala, R Mittu, editors. A Machine Learning Approach to False Alarm Detection for Critical Arrhythmia Alarms. Proceedings of 2015 IEEE 14th International Conference on Machine Learning and Applications (ICMLA); 20159–11 Dec. 2015. p.202–7.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74.</span> <a id="R74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id90"><!-- named anchor --></a>Y Ding, X Ma, Y Wang. Health status monitoring for ICU patients based on locally weighted principal component analysis. Comput Methods Programs Biomed2018;156:61–71.2942807710.1016/j.cmpb.2017.12.019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75.</span> <a id="R75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id91"><!-- named anchor --></a>O Ren, AEW Johnson, EP Lehman, M Komorowski, J Aboab, F Tang, , editors. Predicting and Understanding Unexpected Respiratory Decompensation in Critical Care Using Sparse and Heterogeneous Clinical Data. Proceedings of 2018 IEEE International Conference on Healthcare Informatics (ICHI); 20184–7 June 2018. p.144–51.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76.</span> <a id="R76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id92"><!-- named anchor --></a>T Desautels, R Das, J Calvert, M Trivedi, C Summers, DJ Wales, Prediction of early unplanned intensive care unit readmission in a UK tertiary care hospital: a cross-sectional machine learning approach. BMJ Open2017;7(9):e017199.10.1136/bmjopen-2017-017199PMC564009028918412</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77.</span> <a id="R77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id93"><!-- named anchor --></a>CJ McWilliams, DJ Lawson, R Santos-Rodriguez, ID Gilchrist, A Champneys, TH Gould, Towards a decision support tool for intensive care discharge: machine learning algorithm development using electronic healthcare data from MIMIC-III and Bristol, UK. BMJ Open2019;9(3):e025925.10.1136/bmjopen-2018-025925PMC642991930850412</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78.</span> <a id="R78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id94"><!-- named anchor --></a>JC Rojas, KA Carey, DP Edelson, LR Venable, MD Howell, MM Churpek. Predicting Intensive Care Unit Readmission with Machine Learning Using Electronic Health Record Data. Ann Am Thorac Soc2018;15(7):846–53.2978730910.1513/AnnalsATS.201710-787OCPMC6207111</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79.</span> <a id="R79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id95"><!-- named anchor --></a>YW Lin, Y Zhou, F Faghri, MJ Shaw, RH Campbell. Analysis and prediction of unplanned intensive care unit readmission using recurrent neural networks with long short-term memory. PLoS One2019;14(7):e0218942.3128375910.1371/journal.pone.0218942PMC6613707</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80.</span> <a id="R80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id96"><!-- named anchor --></a>LN Sanchez-Pinto, Y Luo, MM Churpek. Big Data and Data Science in Critical Care. Chest2018;154(5):1239–48.2975297310.1016/j.chest.2018.04.037PMC6224705</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81.</span> <a id="R81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id97"><!-- named anchor --></a>T Panch, P Szolovits, R Atun. Artificial intelligence, machine learning and health systems. Journal of global health2018;8(2):020303-.3040590410.7189/jogh.08.020303PMC6199467</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82.</span> <a id="R82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id98"><!-- named anchor --></a>T Davenport, R Kalakota. The potential for artificial intelligence in healthcare. Future healthcare journal2019;6(2):94–8.10.7861/futurehosp.6-2-94PMC661618131363513</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83.</span> <a id="R83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id99"><!-- named anchor --></a>R Elshawi, MH Al-Mallah, S Sakr. On the interpretability of machine learning-based model for predicting hypertension. BMC medical informatics and decision making2019;19(1):146-.3135799810.1186/s12911-019-0874-0PMC6664803</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84.</span> <a id="R84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id100"><!-- named anchor --></a>Y Li, L Yao, C Mao, A Srivastava, X Jiang, Y Luo, editors. Early Prediction of Acute Kidney Injury in Critical Care Setting Using Clinical Notes. Proceedings of 2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM); 20183–6 Dec. 2018. p.683–6.10.1109/bibm.2018.8621574PMC776890933376624</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85.</span> <a id="R85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id101"><!-- named anchor --></a>HR de Geus, MG Betjes, J Bakker. Biomarkers for the prediction of acute kidney injury: a narrative review on current status and future challenges. Clin Kidney J2012;5(2):102–8.2283380710.1093/ckj/sfs008PMC3341843</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86.</span> <a id="R86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id102"><!-- named anchor --></a>T-Y Tsai, H Chien, F-C Tsai, H-C Pan, H-Y Yang, S-Y Lee, Comparison of RIFLE, AKIN, and KDIGO classifications for assessing prognosis of patients on extracorporeal membrane oxygenation. Journal of the Formosan Medical Association2017;116(11):844–51.2887433010.1016/j.jfma.2017.08.004</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87.</span> <a id="R87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id103"><!-- named anchor --></a>F Ogundipe, V Kodadhala, T Ogundipe, A Mehari, R Gillum. Disparities in Sepsis Mortality by Region, Urbanization, and Race in the USA: a Multiple Cause of Death Analysis. Journal of Racial and Ethnic Health Disparities2019;6(3):546–51.3060757710.1007/s40615-018-00553-w</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">88.</span> <a id="R88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id104"><!-- named anchor --></a>V Liu, GJ Escobar, JD Greene, J Soule, A Whippy, DC Angus, Hospital Deaths in Patients With Sepsis From 2Independent Cohorts. JAMA2014;312(1):90–2.2483835510.1001/jama.2014.5804</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">89.</span> <a id="R89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id105"><!-- named anchor --></a>F Tang, H Ishwaran. Random Forest Missing Data Algorithms. Statistical analysis and data mining2017;10(6):363–77.2940356710.1002/sam.11348PMC5796790</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">90.</span> <a id="R90"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id106"><!-- named anchor --></a>NM Khan, CN Madhav, A Negi, IS Thaseen, editors. Analysis on Improving the Performance of Machine Learning Models Using Feature Selection Technique. Proceedings of Intelligent Systems Design and Applications; 20202020//. p.69–77.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">91.</span> <a id="R91"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id107"><!-- named anchor --></a>S Tabe-Bordbar, A Emad, SD Zhao, S Sinha. A closer look at cross-validation for assessing the accuracy of gene regulatory networks and models. Scientific reports2018;8(1):6620-.2970034310.1038/s41598-018-24937-4PMC5920056</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">92.</span> <a id="R92"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id108"><!-- named anchor --></a>S RaschkaModel Evaluation, Model Selection, and Algorithm Selection in Machine Learning. ArXiv2018;abs/1811.12808.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-floats" class="back">
+<h2 class="main-title"><span class="generated">Floating objects</span></h2>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">Figure 1.</h5>
+<div class="caption"><p class="first" id="P46">Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) flow diagram of systematic identification, screening, eligibility, and inclusion of publications that applied Machine Learning (ML) techniques in Intensive Care Unit (ICU) settings using Medical Information Mart for Intensive Care (MIMIC) dataset.</p></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1.</h5>
+<div class="caption"><p class="first" id="P47">An overview of the 61 publications in the literature, classified into seven themes and their descriptions. The themes are listed according to the frequency of publication (percentage and absolute count).</p></div>
+<table frame="box" rules="all">
+<a id="id109"><!-- named anchor --></a><colgroup span="1">
+<a id="id110"><!-- named anchor --></a><col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+<col align="left" valign="middle" span="1">
+</colgroup>
+<thead>
+<a id="id116"><!-- named anchor --></a><tr>
+<a id="id117"><!-- named anchor --></a><th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id118"><!-- named anchor --></a>S.NO</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id119"><!-- named anchor --></a>Theme</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>Description</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>Publication References</th>
+<th align="left" valign="top" rowspan="1" colspan="1">
+<a id="id122"><!-- named anchor --></a>Publications Count (%)</th>
+</tr>
+</thead>
+<tbody>
+<a id="id123"><!-- named anchor --></a><tr>
+<a id="id124"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>1</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>Mortality Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>Publications focused on prediction hospital and ICU mortality.</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>[<a href="#R21">21</a>–<a href="#R41">41</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>21 (34.4)</td>
+</tr>
+<tr>
+<a id="id130"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>2</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>Risk Stratification</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id133"><!-- named anchor --></a>Publications focused on assessing the risk of treatments.</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a>[<a href="#R17">17</a>,<a href="#R42">42</a>–<a href="#R50">50</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>10 (16.4)</td>
+</tr>
+<tr>
+<a id="id136"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id137"><!-- named anchor --></a>3</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>Sepsis and Septic Shock Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>Publications focused on prediction of sepsis or septic shock.</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>[<a href="#R51">51</a>–<a href="#R58">58</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id141"><!-- named anchor --></a>8 (13.1)</td>
+</tr>
+<tr>
+<a id="id142"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id143"><!-- named anchor --></a>4</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>Cardiac episodes Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id145"><!-- named anchor --></a>Publications focused on predicting cardiac events such as cardiac disease, myocardial infarction.</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id146"><!-- named anchor --></a>[<a href="#R59">59</a>–<a href="#R65">65</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id147"><!-- named anchor --></a>7 (11.5)</td>
+</tr>
+<tr>
+<a id="id148"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id149"><!-- named anchor --></a>5</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id150"><!-- named anchor --></a>Acute Kidney Injury Prediction</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id151"><!-- named anchor --></a>Publications focused on early prediction and onset prediction of acute kidney injury.</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id152"><!-- named anchor --></a>[<a href="#R66">66</a>–<a href="#R70">70</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id153"><!-- named anchor --></a>6 (9.8)</td>
+</tr>
+<tr>
+<a id="id154"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id155"><!-- named anchor --></a>6</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>Resource Management</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>Publications focused on ICU staff and resource management by suppressing false alarms in ICU.</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id158"><!-- named anchor --></a>[<a href="#R71">71</a>–<a href="#R75">75</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id159"><!-- named anchor --></a>5 (8.2)</td>
+</tr>
+<tr>
+<a id="id160"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id161"><!-- named anchor --></a>7</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id162"><!-- named anchor --></a>ICU Readmission</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>Publications focused on prediction of discharge and readmission.</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>[<a href="#R76">76</a>–<a href="#R79">79</a>]</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>4 (6.6)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>intensive care unit</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>critical care</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>MIMIC</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>deep learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>systematic review</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>sepsis</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>acute kidney injury</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-manuscript</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
