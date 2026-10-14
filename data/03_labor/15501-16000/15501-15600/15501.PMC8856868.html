@@ -1,0 +1,1708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Zhao, Hu, Wang, Yin, Jiang, and Zhu: Identification of gastric cancer with convolutional neural networks: a systematic review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Multimed Tools Appl</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Multimed Tools Appl</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3814</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>phenaturepg</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101555932</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Multimedia Tools and Applications</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>1380-7501</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1573-7721</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="11042_2022_Article_12258.pdf">11042_2022_Article_12258.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk"><p class="first" id="id1">This article is made available via the PMC Open Access Subset for unrestricted research re-use and secondary analysis in any form or by any means with acknowledgement of the original source. These permissions are granted for the duration of the World Health Organization (WHO) declaration of COVID-19 as a global pandemic.</p></div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>25 February 2021</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>20 June 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>14 January 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>18 February 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">print</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>81</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>8<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>401308<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Pages: </span>11717-11736</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8856868</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8856868.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8856868</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8856868</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35221775</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1007/s11042-022-12258-8</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>12258</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Project of Research Planning Foundation on Humanities and Social Sciences of the Ministry of Education</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>20YJAZH144</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Identification of gastric cancer with convolutional neural networks: a systematic review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group">
+<p class="metadata-entry"><a id="id2"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-1280-5298<span class="generated">] </span>Yuxue Zhao<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p>
+<p class="metadata-entry"><span class="generated">(Equal contributor)</span></p>
+</div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group">
+<p class="metadata-entry"><a id="id3"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0001-6384-4954<span class="generated">] </span>Bo Hu<span class="generated">[</span><a href="#Aff2">2</a><span class="generated">]</span></p>
+<p class="metadata-entry"><span class="generated">(Equal contributor)</span></p>
+</div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Ying  Wang<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Xiaomeng Yin<span class="generated">[</span><a href="#Aff3">3</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Yuanyuan Jiang<span class="generated">[</span><a href="#Aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-3533-8581<span class="generated">] </span>Xiuli Zhu<span class="generated">[</span><a href="#Aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">15820022927@163.com</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="Aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>grid.410645.20000 0001 0455 0905School of Nursing, Department of Medicine, Qingdao University, No. 15, Ningde Road, Shinan District, Qingdao, 266073 China </p>
+<p class="metadata-entry"><a id="Aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>grid.415468.a0000 0004 1761 4893Department of Thoracic Surgery, Qingdao Municipal Hospital, Qingdao, China </p>
+<p class="metadata-entry"><a id="Aff3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>grid.415468.a0000 0004 1761 4893Pediatrics Intensive Care Unit, Qingdao Municipal Hospital, Qingdao, China </p>
+<p class="metadata-entry"><a id="Aff4"><!-- named anchor --></a><span class="generated">[</span>4<span class="generated">] </span>grid.452402.50000 0004 1808 3430International Medical Services, Qilu Hospital of Shandong University, Jinan, China </p>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="Par18">The identification of diseases is inseparable from artificial intelligence. As an important branch of artificial intelligence, convolutional neural networks play an important role in the identification of gastric cancer. We conducted a systematic review to summarize the current applications of convolutional neural networks in the gastric cancer identification. The original articles published in Embase, Cochrane Library, PubMed and Web of Science database were systematically retrieved according to relevant keywords. Data were extracted from published papers. A total of 27 articles were retrieved for the identification of gastric cancer using medical images. Among them, 19 articles were applied in endoscopic images and 8 articles were applied in pathological images. 16 studies explored the performance of gastric cancer detection, 7 studies explored the performance of gastric cancer classification, 2 studies reported the performance of gastric cancer segmentation and 2 studies analyzed the performance of gastric cancer delineating margins. The convolutional neural network structures involved in the research included AlexNet, ResNet, VGG, Inception, DenseNet and Deeplab, etc. The accuracy of studies was 77.3 – 98.7%. Good performances of the systems based on convolutional neural networks have been showed in the identification of gastric cancer. Artificial intelligence is expected to provide more accurate information and efficient judgments for doctors to diagnose diseases in clinical work.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="Sec1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="Par22">Gastric cancer is the cancer of the cavity organs with the highest incidence [<a href="#CR11">11</a>], which is a serious threat to human health. The prognosis of gastric cancer is closely related to disease stage. The diagnosis and treatment of early gastric cancer is helpful to the recovery of patients, and the 5-year survival rate of patients can exceed 90% [<a href="#CR59">59</a>]. However, most patients have been already at an advanced stage when they are diagnosed [<a href="#CR73">73</a>]. Due to the limited treatment, the survival rate of advanced gastric cancer is low and the prognosis is poor [<a href="#CR26">26</a>]. With the advancement of medical technology and the enhancement of people’s health awareness, the diagnosis and treatment of gastric cancer has become an urgent need for more patients. Therefore, to improve the accuracy of gastric cancer identification, especially early gastric cancer, has become the focus of current researches.</p>
+<p id="Par23">Gastric cancer is evaluated by endoscopy, pathological pictures, imaging examination, etc. First, endoscopy has been widely used in the detection of gastric cancer. Image-enhanced endoscopy, such as narrow-band imaging [<a href="#CR57">57</a>] and linked color imaging [<a href="#CR52">52</a>], can accurately analyze the surface structure. The studies showed that the application of these endoscopic methods could improve the accuracy of gastrointestinal tumor diagnosis [<a href="#CR10">10</a>, <a href="#CR27">27</a>]. However, a study showed that 10% of upper gastrointestinal cancers were still missed by endoscopy [<a href="#CR41">41</a>]. Even if two experts participate in an endoscopy unit, there would be missed diagnosis [<a href="#CR61">61</a>]. The reason was that doctors' accurate diagnosis of gastroscopy images required years of experience accumulation. Secondly, histopathological image recognition is the gold standard of tumor diagnosis. The shortage of pathologists has led to a huge workload for pathologists and diagnostic errors [<a href="#CR68">68</a>]. Finally, imaging examination plays an important role in the evaluation of lymph node metastasis of gastric cancer. Imaging examination is mainly based on morphological characteristics of the lesions. For example, perigastric adipose tissue is rich so it’s indistinguishable from lymph nodes. Coupled with the inexperience of doctors, missed diagnosis and misdiagnosis may occur. In particular, when the number of patients is large, the accuracy of diagnosis will inevitably decrease [<a href="#CR12">12</a>].</p>
+<p id="Par24">With the increasing requirements of more accurate detection, classification and segmentation or delineating margins, artificial intelligence (AI) is booming in medical applications. AI is to make machines think like people. Machine learning is one of the most important parts of AI. Compared with traditional machine learning, such as support vector machines and Bayesian networks, deep learning has better accuracy and flexibility, and can be more easily adapted to different fields and applications. Convolution neural network (CNN) is one of the most prominent algorithms for image processing in deep learning (Fig. <a href="#Fig1">1</a>). The basic structure of CNN includes convolution layer, pooling layer, full connection layer [<a href="#CR69">69</a>]. The convolutional layer performs feature extraction from a large amount of data. The pooling layer compresses the input feature map to extract the main features. And it can reduce the dimension of the extracted feature information, simplify the network calculation complexity, and improve the calculation speed. The function of the fully connected layer is to fit together all the features and send the output value to the classifier to get the final prediction result.</p>
+<p id="Par25"><div class="fig panel" style="display: float; clear: both">
+<a id="Fig1"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption">
+<p class="first" id="id8">The relationship between artificial intelligence, machine learning, deep learning and convolutional neural network</p>
+<p id="id9"> CNN: Convolutional neural network</p>
+</div>
+</div></p>
+<p id="Par26">Classic CNN structures include AlexNet [<a href="#CR29">29</a>], ResNet [<a href="#CR14">14</a>], VGG [<a href="#CR53">53</a>], Inception [<a href="#CR60">60</a>] and DenseNet [<a href="#CR20">20</a>], etc. Network depth refers to the number of layers that need to update parameters through training, such as convolutional layers, fully connected layers, etc. The basic structure of AlexNet includes 8 layers in total. There are 5 convolutional layers, followed by 3 fully connected layers. The accuracy of AlexNet has a big improvement compared to traditional methods. The kernel size of the first 4 convolutional layers are 11 × 11, 5 × 5, 3 × 3, 3 × 3, and 3 × 3. The kernel size of the first graphics processing unit is 3 × 3 and the kernel size of the second graphics processing unit is 5 × 5 in the fifth convolution layer. The channels of the 5 convolutional layers are 96, 256, 384, 384 and 256 respectively. The first two fully connected layers have 4096 neurons respectively, and the final output softmax has 1000 neurons.</p>
+<p id="Par27">The VGG network is developed on the basis of the AlexNet network. Compared with AlexNet, VGG uses the convolution kernel with 3 × 3, and the pooling kernel with 2 × 2. The developer changed the original three fully connected layers that were the same as AlexNet in the network into one 7 × 7 and two 1 × 1 convolutional layers in turn. The entire network is divided according to the number of layers. The most widely used is VGG-16, which is 13 convolutional layers and 3 fully connected layers.</p>
+<p id="Par28">GoogLeNet is a deep neural network model based on the inception module launched by Google. The inception module replaces the traditional operations of convolution and activation. Inception is characterized by the use of 1 × 1 convolution for dimensionality reduction, while convolution and re-aggregation can be performed on multiple scales. This network structure replaces all the fully connected layers with simple global average pooling, which greatly reduces the total number of parameters of the model. Subsequently, the model has been improving. Inception-v2, Inception-v3, Inception-v4 and other versions have been developed.</p>
+<p id="Par29">ResNet has been designed a residual block to allow us to train deeper networks and increase model performance. There are 5 different depth structures in PyTorch’s official code, which are 18, 34, 50, 101 and 152 layers. The more common network is ResNet-50. It has a total of 50 layers of structure, including 49 convolutional layers and a fully connected layer. The size of the convolution kernel includes three types: 1 × 1, 3 × 3, and 7 × 7.</p>
+<p id="Par30">DenseNet is a convolutional neural network with dense connection. The emergence of DenseNet breaks away from the fixed thinking of deepening the number of network layers (ResNet) and widening the network structure (Inception) to improve network performance. Its advantage is that the network is narrower and has fewer parameters.</p>
+<p id="Par31">CNN has excellent performance in many fields, such as computer vision and natural language processing. Especially in the field of computer vision, CNN is the important model for image classification, image retrieval, object detection and semantic segmentation. For example, agile CNN was used to diagnose the benign and malignant pulmonary nodules in chest CT images [<a href="#CR72">72</a>]. Meanwhile, CNN showed good diagnostic performance in the diagnosis of liver lesions [<a href="#CR70">70</a>] and breast ultrasound images [<a href="#CR45">45</a>]. CNN can also be used for pathological image classification. For example, fully connected CNN with extreme learning machine model was used to classify hepatocellular carcinoma nuclei [<a href="#CR32">32</a>]. CNN was also used for histopathological classification of osteosarcoma [<a href="#CR43">43</a>] and epithelial matrix pathological image classification [<a href="#CR19">19</a>].</p>
+<p id="Par32">In order to help doctors identify gastric cancer more accurately and in less time, a number of computer-aided diagnosis schemes have been developed [<a href="#CR2">2</a>, <a href="#CR25">25</a>, <a href="#CR63">63</a>]. Computer-aided diagnosis can help doctors reduce omissions and mischaracterizations of gastric tumor changes, thereby helping to solve the limitations of current doctors’ lack of experience in examinations. Deep learning, especially CNN, has become a smarter and more accurate image processing technology. CNN is expected to become the mainstream application technology in the AI identification of gastric cancer.</p>
+<p id="Par33">The purpose of this system review is to summarize all current applications of CNN in gastric cancer identification and evaluate the performance of CNN in gastric cancer identification. This research can contribute to solving the knowledge gap in the development of CNN in gastric cancer identification.</p>
+</div>
+<div class="section">
+<a id="Sec2"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<div class="section">
+<a id="Sec3"><!-- named anchor --></a><h3 class="section-title">Literature search</h3>
+<p id="Par34">Literature retrieval was completed from Embase, Cochrane Library, PubMed, Web of Science database on 17th September, 2020 to find out the CNN study of gastric cancer's medical images . The PRISMA checklist was used for reporting the systematic review. We used medical subject headings and free-text words to search. The search terms in this article mainly include “machine learning”, “artificial Intelligence”, “convolutional neural network”, “deep learning”, “data mining”, “algorithm”, “tumor”, “neoplasm”, “carcinoma”, “cancer”, “lesion”, “endoscope”, “pathology”, “computed tomography”, “ultrasonography”, “x-ray”, “Magnetic Resonance Imaging”, “stomach”, “gastric”, “digestive system”, “diagnosis”, “identification”, “classification”, “detection”, “segmentation”. There was no time limit on the publication of included articles.</p>
+<p id="Par35">To describe the proposed CNN performance in the identification of gastric cancer, we compared measures of precision, sensitivity, specificity, area under the curve (AUC) and accuracy (if available) in the models.</p>
+</div>
+<div class="section">
+<a id="Sec4"><!-- named anchor --></a><h3 class="section-title">Selection criteria</h3>
+<p id="Par36">The following inclusion and exclusion criteria were used to select the study. The inclusion criteria were:</p>
+<p id="Par37"><div class="list">
+<a id="id10"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="Par38">Studies on the identification of gastric cancer images or lesions,</p></li>
+<li><p id="Par39">Using models based on CNN or the main components of CNN,</p></li>
+<li><p id="Par40">The diagnostic performance indexes of AI algorithm include precision, accuracy, sensitivity, specificity or AUC,</p></li>
+<li><p id="Par41">Studies of human subjects,</p></li>
+<li><p id="Par42">Publications in English.</p></li>
+</ol>
+</div></p>
+<p id="Par43">Guidelines, case reports, review articles, abstracts of conference papers, letters to editors and editorials were not included in this study.</p>
+</div>
+<div class="section">
+<a id="Sec5"><!-- named anchor --></a><h3 class="section-title">Data extraction and quality assessment</h3>
+<p id="Par44">The two authors (XY and YJ) extracted the data independently. The forms filled out by each author were compared, and dissenting opinions were resolved through review and discussion. In case of unresolved differences, the third evaluator acted as the final arbiter. The authors extracted following contents from the article: (a) author information (b) year of publication (c) study design (d) data set source (e) basic information about patients (f) number of images (g) number of lesions (h) CNN tasks (classification, detection, segmentation and delineating margins) (i) whether independent test sets are used (j) types of medical images or lesions.</p>
+<p id="Par45">We carefully evaluated quality of the studies included in systematic review. The Quality Assessment on Diagnostic Accuracy Studies (QUADAS-2) [<a href="#CR65">65</a>] was used to evaluate quality of the included study. The tool consists of 4 areas: patient selection, index test, reference standard, and flow and timing [<a href="#CR65">65</a>]. Each area is assessed on the basis of high, low or unclear bias risks, and the first 3 areas are also assessed on the basis of high, low or ambiguous concerns about applicability [<a href="#CR65">65</a>]. Review Manager version 5.3 (RevMan for Windows 10, Nordic Cochrane Centre) was used to generate summary diagrams of methodology quality assessment.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec6"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<div class="section">
+<a id="Sec7"><!-- named anchor --></a><h3 class="section-title">Search results</h3>
+<p id="Par46">A total of 27 studies were included in this study. Figure <a href="#Fig2">2</a> showed the PRISMA flow chart of research selection, which summarized the process of research and retrieval selection. A total of 6925 articles were selected for retrieval and deduplication in the database. 1071 irrelevant articles were deleted in the preliminary screening. The full texts of 98 articles were evaluated. Finally, 27 articles which met the inclusion criteria and were suitable for systematic evaluation were included (Fig. <a href="#Fig2">2</a>).</p>
+<p id="Par47"><div class="fig panel" style="display: float; clear: both">
+<a id="Fig2"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id11">PRISMA flowchart shows the searched articles using convolutional neural networks in gastric cancer image</p></div>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec8"><!-- named anchor --></a><h3 class="section-title">Characteristics of data</h3>
+<p id="Par48">In all the studies, 19 articles [<a href="#CR3">3</a>, <a href="#CR6">6</a>, <a href="#CR7">7</a>, <a href="#CR15">15</a>, <a href="#CR17">17</a>, <a href="#CR22">22</a>, <a href="#CR31">31</a>, <a href="#CR34">34</a>, <a href="#CR36">36</a>–<a href="#CR38">38</a>, <a href="#CR40">40</a>, <a href="#CR46">46</a>, <a href="#CR51">51</a>, <a href="#CR62">62</a>, <a href="#CR64">64</a>, <a href="#CR66">66</a>, <a href="#CR71">71</a>, <a href="#CR74">74</a>] were about the application of CNN in gastric cancer diagnosis in the field of endoscopy and 8 articles [<a href="#CR8">8</a>, <a href="#CR18">18</a>, <a href="#CR21">21</a>, <a href="#CR33">33</a>, <a href="#CR35">35</a>, <a href="#CR48">48</a>, <a href="#CR56">56</a>, <a href="#CR58">58</a>] were the application of CNN in the identification of gastric pathological images. A total of 99,777 patients, 1,422,523 images and 2605 lesions were included in this review. The average age of the patients involved in the dataset was 49.9 years old, and the range was 26 – 92 years old. Male patients accounted for 50.9% and female patients accounted for 49.1%. Most studies were based on images analysis and only one study [<a href="#CR15">15</a>] was based on lesions analysis. 2 studies [<a href="#CR46">46</a>, <a href="#CR51">51</a>] analyzed both the images and the lesions. The detailed features of the study were shown in Table <a href="#Tab1">1</a>. The data set with the best performance in each article were selected. The performance results were shown in Table <a href="#Tab2">2</a>.</p>
+<p id="Par49"><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id12">Studies on convolutional neural network and gastric cancer</p></div>
+<table frame="hsides" rules="groups">
+<a id="id13"><!-- named anchor --></a><thead>
+<a id="id14"><!-- named anchor --></a><tr>
+<a id="id15"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id16"><!-- named anchor --></a>Ref</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id17"><!-- named anchor --></a>Year</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id18"><!-- named anchor --></a>Study design</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id19"><!-- named anchor --></a>Location</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id20"><!-- named anchor --></a>Patients</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id21"><!-- named anchor --></a>Images or Lesions</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id22"><!-- named anchor --></a>Images</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id23"><!-- named anchor --></a>Lesions</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id24"><!-- named anchor --></a>Types of medical images or lesions</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id25"><!-- named anchor --></a>Task</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id26"><!-- named anchor --></a>Independent test set</th>
+</tr>
+</thead>
+<tbody>
+<a id="id27"><!-- named anchor --></a><tr>
+<a id="id28"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id29"><!-- named anchor --></a>An et al. [<a href="#CR3">3</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id30"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id31"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id32"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id33"><!-- named anchor --></a>1095</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id34"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id35"><!-- named anchor --></a>2488</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id36"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id38"><!-- named anchor --></a>Delineating Margins</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id39"><!-- named anchor --></a>No</td>
+</tr>
+<tr>
+<a id="id40"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id41"><!-- named anchor --></a>Cho et al. [<a href="#CR7">7</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id42"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id43"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id44"><!-- named anchor --></a>Korea</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id45"><!-- named anchor --></a>846</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id46"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id47"><!-- named anchor --></a>3105</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id48"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id49"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id50"><!-- named anchor --></a>Detect invasion depth</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id51"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id52"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id53"><!-- named anchor --></a>Cho et al. [<a href="#CR6">6</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id54"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id55"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id56"><!-- named anchor --></a>Korea</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a>1269</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id58"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id59"><!-- named anchor --></a>5017</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id61"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id62"><!-- named anchor --></a>Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id64"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>Hirasawa et al. [<a href="#CR15">15</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>2018</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id67"><!-- named anchor --></a>Prospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id68"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id69"><!-- named anchor --></a>69</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id70"><!-- named anchor --></a>Lesions</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id71"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id72"><!-- named anchor --></a>77</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id74"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id76"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a>Horiuchi et al. [<a href="#CR17">17</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id78"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id79"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id80"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id81"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id82"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id83"><!-- named anchor --></a>2828</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id84"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id85"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id86"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id87"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id88"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id89"><!-- named anchor --></a>Ikenoyama et al. [<a href="#CR22">22</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id92"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id93"><!-- named anchor --></a>2779</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id94"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id95"><!-- named anchor --></a>16,524</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id96"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id97"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id98"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id99"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id100"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id101"><!-- named anchor --></a>Lee et al. [<a href="#CR31">31</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id102"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id103"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id104"><!-- named anchor --></a>Korea</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id105"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id106"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id107"><!-- named anchor --></a>787</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id108"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id110"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id111"><!-- named anchor --></a>No</td>
+</tr>
+<tr>
+<a id="id112"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id113"><!-- named anchor --></a>Li et al. [<a href="#CR34">34</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id114"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id115"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id116"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id117"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id118"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a>2429</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id120"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id121"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id124"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id125"><!-- named anchor --></a>Ling et al. [<a href="#CR36">36</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id126"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id127"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id128"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a>342</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id130"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id131"><!-- named anchor --></a>4969</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id132"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id133"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id134"><!-- named anchor --></a>Delineating Margins</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id135"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id136"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id137"><!-- named anchor --></a>Liu et al. [<a href="#CR37">37</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a>2018</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id139"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id140"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id141"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id142"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id143"><!-- named anchor --></a>3871</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id144"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id145"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id146"><!-- named anchor --></a>Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id147"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id148"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id149"><!-- named anchor --></a>Lui et al. [<a href="#CR38">38</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id150"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id151"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id152"><!-- named anchor --></a>Hong Kong, China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id153"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id154"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id155"><!-- named anchor --></a>3000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id156"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id157"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id158"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id159"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id160"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id161"><!-- named anchor --></a>Luo et al. [<a href="#CR40">40</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id164"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a>84,424</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id166"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id167"><!-- named anchor --></a>1,036,496</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id168"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id169"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id170"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id171"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id172"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id173"><!-- named anchor --></a>Nagao et al. [<a href="#CR46">46</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id174"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id175"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id176"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>1084</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id178"><!-- named anchor --></a><p class="first" id="id179">Images/</p>
+<p id="id180">Lesions</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id181"><!-- named anchor --></a>16,557</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id182"><!-- named anchor --></a>2434</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id184"><!-- named anchor --></a>Detect invasion depth</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id185"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id186"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id187"><!-- named anchor --></a>Shibata et al. [<a href="#CR51">51</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id188"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id189"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id190"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id191"><!-- named anchor --></a>135</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id192"><!-- named anchor --></a><p class="first" id="id193">Images/</p>
+<p id="id194">Lesions</p>
+</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id195"><!-- named anchor --></a>1741</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id196"><!-- named anchor --></a>94</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id197"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id198"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id199"><!-- named anchor --></a>No</td>
+</tr>
+<tr>
+<a id="id200"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id201"><!-- named anchor --></a>Ueyama et al. [<a href="#CR62">62</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id202"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id203"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id204"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a>349</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id206"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id207"><!-- named anchor --></a>7874</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id208"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id209"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id210"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id211"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id212"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id213"><!-- named anchor --></a>Wang et al. [<a href="#CR64">64</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id214"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id215"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id216"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id217"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id218"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id219"><!-- named anchor --></a>104,864</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id220"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id221"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id222"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id223"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id224"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id225"><!-- named anchor --></a>Wu et al. [<a href="#CR66">66</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id226"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id227"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id228"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id229"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id230"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id231"><!-- named anchor --></a>9351</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id232"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id234"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id235"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id236"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id237"><!-- named anchor --></a>Yoon et al. [<a href="#CR71">71</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id238"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id239"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id240"><!-- named anchor --></a>Korea</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id241"><!-- named anchor --></a>800</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id243"><!-- named anchor --></a>11,539</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id244"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id245"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id246"><!-- named anchor --></a>Detection/ Detect invasion depth</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id247"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id248"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id249"><!-- named anchor --></a>Zhu et al. [<a href="#CR74">74</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id250"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id251"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id252"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id253"><!-- named anchor --></a>993</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id254"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id255"><!-- named anchor --></a>993</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id256"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a>Endoscopic</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>Detect invasion depth</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id259"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id260"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id261"><!-- named anchor --></a>Qu et al. [<a href="#CR48">48</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id262"><!-- named anchor --></a>2018</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id263"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id264"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id265"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id266"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id267"><!-- named anchor --></a>48,000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id268"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id269"><!-- named anchor --></a>Pathological</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id270"><!-- named anchor --></a>Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id271"><!-- named anchor --></a>No</td>
+</tr>
+<tr>
+<a id="id272"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id273"><!-- named anchor --></a>Cho et al. [<a href="#CR8">8</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id274"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id275"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id276"><!-- named anchor --></a>Korea</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id277"><!-- named anchor --></a>432</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id278"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id279"><!-- named anchor --></a>803</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id280"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id281"><!-- named anchor --></a>Pathological</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id282"><!-- named anchor --></a>Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id283"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id284"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id285"><!-- named anchor --></a>Iizuka et al. [<a href="#CR21">21</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id286"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id287"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id288"><!-- named anchor --></a>Japan</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id289"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id290"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id291"><!-- named anchor --></a>5103</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id292"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id293"><!-- named anchor --></a>Pathological</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id294"><!-- named anchor --></a>Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id295"><!-- named anchor --></a>Yes</td>
+</tr>
+<tr>
+<a id="id296"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id297"><!-- named anchor --></a>Sun et al. [<a href="#CR58">58</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id298"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id299"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id300"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id301"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id302"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id303"><!-- named anchor --></a>500</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id304"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id305"><!-- named anchor --></a>Pathological</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id306"><!-- named anchor --></a>Segmentation</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id307"><!-- named anchor --></a>No</td>
+</tr>
+<tr>
+<a id="id308"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id309"><!-- named anchor --></a>Liang et al. [<a href="#CR35">35</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id310"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id311"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id312"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id313"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id314"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id315"><!-- named anchor --></a>1900</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id316"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id317"><!-- named anchor --></a>Pathological</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id318"><!-- named anchor --></a>Segmentation</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id319"><!-- named anchor --></a>No</td>
+</tr>
+<tr>
+<a id="id320"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id321"><!-- named anchor --></a>Hu et al. [<a href="#CR18">18</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id322"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id323"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id324"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id325"><!-- named anchor --></a>30</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id326"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id327"><!-- named anchor --></a>65,328</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id328"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id329"><!-- named anchor --></a>Pathological</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id330"><!-- named anchor --></a>Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id331"><!-- named anchor --></a>No</td>
+</tr>
+<tr>
+<a id="id332"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id333"><!-- named anchor --></a>Li et al. [<a href="#CR33">33</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id334"><!-- named anchor --></a>2019</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id335"><!-- named anchor --></a>Prospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id336"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id337"><!-- named anchor --></a>120</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id338"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id339"><!-- named anchor --></a>48,000</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id340"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id341"><!-- named anchor --></a>Pathological</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id342"><!-- named anchor --></a>Classification</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id343"><!-- named anchor --></a>No</td>
+</tr>
+<tr>
+<a id="id344"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id345"><!-- named anchor --></a>Song et al. [<a href="#CR56">56</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id346"><!-- named anchor --></a>2020</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id347"><!-- named anchor --></a>Retrospective</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id348"><!-- named anchor --></a>China</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id349"><!-- named anchor --></a>4210</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id350"><!-- named anchor --></a>Images</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id351"><!-- named anchor --></a>6917</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id352"><!-- named anchor --></a>NR</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id353"><!-- named anchor --></a>Pathological</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id354"><!-- named anchor --></a>Detection</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id355"><!-- named anchor --></a>Yes</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><p class="first" id="id356">Note: NR: Not reported</p></div>
+</div></p>
+<p id="Par50"><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id357">Studies of Images that provided evaluation index results</p></div>
+<table frame="hsides" rules="groups">
+<a id="id358"><!-- named anchor --></a><thead>
+<a id="id359"><!-- named anchor --></a><tr>
+<a id="id360"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id361"><!-- named anchor --></a>Ref</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id362"><!-- named anchor --></a>Precision<br class="br">(%)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id363"><!-- named anchor --></a>Accuracy (%)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id364"><!-- named anchor --></a>Sensitivity (%)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id365"><!-- named anchor --></a>Specificity (%)</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id366"><!-- named anchor --></a>AUC<br class="br">(%)</th>
+</tr>
+</thead>
+<tbody>
+<a id="id367"><!-- named anchor --></a><tr>
+<a id="id368"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id369"><!-- named anchor --></a>An et al. [<a href="#CR3">3</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id370"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id371"><!-- named anchor --></a>88.9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id372"><!-- named anchor --></a> N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id373"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id374"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id375"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id376"><!-- named anchor --></a>Cho et al. [<a href="#CR7">7</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id377"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id378"><!-- named anchor --></a>77.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id379"><!-- named anchor --></a>80.4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id380"><!-- named anchor --></a>80.7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id381"><!-- named anchor --></a>88.7</td>
+</tr>
+<tr>
+<a id="id382"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id383"><!-- named anchor --></a>Cho et al. [<a href="#CR6">6</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id384"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id385"><!-- named anchor --></a>81.9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id386"><!-- named anchor --></a>75.9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id387"><!-- named anchor --></a>85.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id388"><!-- named anchor --></a>87.7</td>
+</tr>
+<tr>
+<a id="id389"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id390"><!-- named anchor --></a>Hirasawa et al. [<a href="#CR15">15</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id391"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id392"><!-- named anchor --></a>98.6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id393"><!-- named anchor --></a>92.2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id394"><!-- named anchor --></a> N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id395"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id396"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id397"><!-- named anchor --></a>Horiuchi et al. [<a href="#CR17">17</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id398"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id399"><!-- named anchor --></a>85.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id400"><!-- named anchor --></a>95.4</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id401"><!-- named anchor --></a>71.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id402"><!-- named anchor --></a> N/A</td>
+</tr>
+<tr>
+<a id="id403"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id404"><!-- named anchor --></a>Ikenoyama et al. [<a href="#CR22">22</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id405"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id406"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id407"><!-- named anchor --></a>58.40</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id408"><!-- named anchor --></a>87.30</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id409"><!-- named anchor --></a>75.7</td>
+</tr>
+<tr>
+<a id="id410"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id411"><!-- named anchor --></a>Lee et al. [<a href="#CR31">31</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id412"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id413"><!-- named anchor --></a>96.49</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id414"><!-- named anchor --></a> N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id415"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id416"><!-- named anchor --></a>97</td>
+</tr>
+<tr>
+<a id="id417"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id418"><!-- named anchor --></a>Li et al. [<a href="#CR34">34</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id419"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id420"><!-- named anchor --></a>90.91</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id421"><!-- named anchor --></a>91.18</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id422"><!-- named anchor --></a>90.64</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id423"><!-- named anchor --></a> N/A</td>
+</tr>
+<tr>
+<a id="id424"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id425"><!-- named anchor --></a>Ling et al. [<a href="#CR36">36</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id426"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id427"><!-- named anchor --></a>88.1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id428"><!-- named anchor --></a> N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id429"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id430"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id431"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id432"><!-- named anchor --></a>Liu et al. [<a href="#CR37">37</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id433"><!-- named anchor --></a>99</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id434"><!-- named anchor --></a>96</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id435"><!-- named anchor --></a>99</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id436"><!-- named anchor --></a> N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id437"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id438"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id439"><!-- named anchor --></a>Lui et al. [<a href="#CR38">38</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id440"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id441"><!-- named anchor --></a>91.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id442"><!-- named anchor --></a>97.1</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id443"><!-- named anchor --></a>85.9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id444"><!-- named anchor --></a>91</td>
+</tr>
+<tr>
+<a id="id445"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id446"><!-- named anchor --></a>Luo et al. [<a href="#CR40">40</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id447"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id448"><!-- named anchor --></a>92.8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id449"><!-- named anchor --></a>94.2</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id450"><!-- named anchor --></a>92.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id451"><!-- named anchor --></a> N/A</td>
+</tr>
+<tr>
+<a id="id452"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id453"><!-- named anchor --></a>Nagao et al. [<a href="#CR46">46</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id454"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id455"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id456"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id457"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id458"><!-- named anchor --></a>95.90</td>
+</tr>
+<tr>
+<a id="id459"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id460"><!-- named anchor --></a>Shibata et al. [<a href="#CR51">51</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id461"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id462"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id463"><!-- named anchor --></a>96</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id464"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id465"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id466"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id467"><!-- named anchor --></a>Ueyama et al. [<a href="#CR62">62</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id468"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id469"><!-- named anchor --></a>98.70</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id470"><!-- named anchor --></a>98</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id471"><!-- named anchor --></a>100</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id472"><!-- named anchor --></a> N/A</td>
+</tr>
+<tr>
+<a id="id473"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id474"><!-- named anchor --></a>Wang et al. [<a href="#CR64">64</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id475"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id476"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id477"><!-- named anchor --></a>79.622</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id478"><!-- named anchor --></a>78.48</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id479"><!-- named anchor --></a> N/A</td>
+</tr>
+<tr>
+<a id="id480"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id481"><!-- named anchor --></a>Wu et al. [<a href="#CR66">66</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id482"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id483"><!-- named anchor --></a>92.5</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id484"><!-- named anchor --></a>94.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id485"><!-- named anchor --></a>91.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id486"><!-- named anchor --></a> N/A</td>
+</tr>
+<tr>
+<a id="id487"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id488"><!-- named anchor --></a>Yoon et al. [<a href="#CR71">71</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id489"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id490"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id491"><!-- named anchor --></a>91.0</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id492"><!-- named anchor --></a>97.6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id493"><!-- named anchor --></a>98.1</td>
+</tr>
+<tr>
+<a id="id494"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id495"><!-- named anchor --></a>Zhu et al. [<a href="#CR74">74</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id496"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id497"><!-- named anchor --></a>89.16</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id498"><!-- named anchor --></a>76.47</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id499"><!-- named anchor --></a>95.56</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id500"><!-- named anchor --></a>94</td>
+</tr>
+<tr>
+<a id="id501"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id502"><!-- named anchor --></a>Qu et al. [<a href="#CR48">48</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id503"><!-- named anchor --></a>86.9</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id504"><!-- named anchor --></a> N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id505"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id506"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id507"><!-- named anchor --></a>96.3</td>
+</tr>
+<tr>
+<a id="id508"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id509"><!-- named anchor --></a>Cho et al. [<a href="#CR8">8</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id510"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id511"><!-- named anchor --></a>78</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id512"><!-- named anchor --></a>100</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id513"><!-- named anchor --></a>56</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id514"><!-- named anchor --></a>100</td>
+</tr>
+<tr>
+<a id="id515"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id516"><!-- named anchor --></a>Iizuka et al. [<a href="#CR21">21</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id517"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id518"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id519"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id520"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id521"><!-- named anchor --></a>98</td>
+</tr>
+<tr>
+<a id="id522"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id523"><!-- named anchor --></a>Sun et al. [<a href="#CR58">58</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id524"><!-- named anchor --></a>91.6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id525"><!-- named anchor --></a> N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id526"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id527"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id528"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id529"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id530"><!-- named anchor --></a>Liang et al. [<a href="#CR35">35</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id531"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id532"><!-- named anchor --></a>91.09</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id533"><!-- named anchor --></a> N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id534"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id535"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id536"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id537"><!-- named anchor --></a>Hu et al. [<a href="#CR18">18</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id538"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id539"><!-- named anchor --></a>94.38</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id540"><!-- named anchor --></a>94.99</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id541"><!-- named anchor --></a>93.76</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id542"><!-- named anchor --></a> N/A</td>
+</tr>
+<tr>
+<a id="id543"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id544"><!-- named anchor --></a>Li et al. [<a href="#CR33">33</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id545"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id546"><!-- named anchor --></a>96.5</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id547"><!-- named anchor --></a>96.6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id548"><!-- named anchor --></a>96.7</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id549"><!-- named anchor --></a> N/A</td>
+</tr>
+<tr>
+<a id="id550"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id551"><!-- named anchor --></a>Song et al. [<a href="#CR56">56</a>]</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id552"><!-- named anchor --></a>N/A</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id553"><!-- named anchor --></a>87.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id554"><!-- named anchor --></a>99.6</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id555"><!-- named anchor --></a>84.3</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id556"><!-- named anchor --></a>98.6</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><p class="first" id="id557">Note: N/A: Not available</p></div>
+</div></p>
+<p id="Par51">All studies evaluated by the QUADAS tool had a high risk of bias or were unclear in one area at least, except Ikenoyama et al. [<a href="#CR22">22</a>]. High-risk researches [<a href="#CR3">3</a>, <a href="#CR6">6</a>–<a href="#CR8">8</a>, <a href="#CR17">17</a>, <a href="#CR18">18</a>, <a href="#CR21">21</a>, <a href="#CR31">31</a>, <a href="#CR33">33</a>–<a href="#CR38">38</a>, <a href="#CR46">46</a>, <a href="#CR48">48</a>, <a href="#CR51">51</a>, <a href="#CR56">56</a>, <a href="#CR58">58</a>, <a href="#CR66">66</a>, <a href="#CR71">71</a>] in one of the seven fields at least were rated as low methodological quality. Figure <a href="#Fig3">3</a> showed the literature quality evaluation results. Besides, in order to better understand the inclusion study, we used Word Art (<a target="xrefwindow" href="https://wordart.com/" id="id558">https://wordart.com/</a>) to analyze the co-occurrence map of keywords, as shown in Fig. <a href="#Fig4">4</a>. We found that the hot keywords were artificial intelligence, convolutional neural network, deep learning, endoscopy, narrow band imaging, cancer, classification, diagnosis, which were consistent with the focus of identification of gastric cancer.</p>
+<p id="Par52"><div class="fig panel" style="display: float; clear: both">
+<a id="Fig3"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id559">The literature quality evaluation results. High: The relevant entry in each area is high risk in risk of bias; high concerns in applicability concerns; Unclear: The relevant entry in each area is unclear risk in risk of bias; unclear concerns in applicability concerns; Low: The relevant entry in each area is low risk in risk of bias; low concerns in applicability concerns. Cho 2020 a: Refers to the study whose first author is Bum-Joo Cho [<a href="#CR7">7</a>]. Cho 2020 b: Refers to the study whose first author is Kyung-Ok Cho [<a href="#CR8">8</a>]</p></div>
+</div></p>
+<p id="Par53"><div class="fig panel" style="display: float; clear: both">
+<a id="Fig4"><!-- named anchor --></a><h5 class="label">Fig. 4</h5>
+<div class="caption"><p class="first" id="id560">Keyword analysis of word cloud containing papers</p></div>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec9"><!-- named anchor --></a><h3 class="section-title">Detection (16 Studies)</h3>
+<p id="Par54">There are 16 studies [<a href="#CR7">7</a>, <a href="#CR15">15</a>, <a href="#CR17">17</a>, <a href="#CR22">22</a>, <a href="#CR31">31</a>, <a href="#CR34">34</a>, <a href="#CR38">38</a>, <a href="#CR40">40</a>, <a href="#CR46">46</a>, <a href="#CR51">51</a>, <a href="#CR56">56</a>, <a href="#CR62">62</a>, <a href="#CR64">64</a>, <a href="#CR66">66</a>, <a href="#CR71">71</a>, <a href="#CR74">74</a>] on the application of CNN in the detection of gastric cancer. 15 studies [<a href="#CR7">7</a>, <a href="#CR15">15</a>, <a href="#CR17">17</a>, <a href="#CR22">22</a>, <a href="#CR31">31</a>, <a href="#CR34">34</a>, <a href="#CR38">38</a>, <a href="#CR40">40</a>, <a href="#CR46">46</a>, <a href="#CR51">51</a>, <a href="#CR62">62</a>, <a href="#CR64">64</a>, <a href="#CR66">66</a>, <a href="#CR71">71</a>, <a href="#CR74">74</a>] were published in the field of gastric endoscopy. Among them, 4 studies [<a href="#CR7">7</a>, <a href="#CR46">46</a>, <a href="#CR71">71</a>, <a href="#CR74">74</a>] included the detection of invasion depth of gastric cancer. A study [<a href="#CR56">56</a>] was based on CNN to judge the benign and malignant pathological images.</p>
+<p id="Par55">All articles evaluated the detection performance of CNN with one of the five indicators of precision, accuracy, sensitivity, specificity or AUC at least. 11 studies [<a href="#CR7">7</a>, <a href="#CR15">15</a>, <a href="#CR17">17</a>, <a href="#CR31">31</a>, <a href="#CR34">34</a>, <a href="#CR38">38</a>, <a href="#CR40">40</a>, <a href="#CR56">56</a>, <a href="#CR62">62</a>, <a href="#CR66">66</a>, <a href="#CR74">74</a>] described the accuracy, ranging from 77.3 to 98.6%. 14 studies [<a href="#CR7">7</a>, <a href="#CR15">15</a>, <a href="#CR17">17</a>, <a href="#CR22">22</a>, <a href="#CR34">34</a>, <a href="#CR38">38</a>, <a href="#CR40">40</a>, <a href="#CR51">51</a>, <a href="#CR56">56</a>, <a href="#CR62">62</a>, <a href="#CR64">64</a>, <a href="#CR66">66</a>, <a href="#CR71">71</a>, <a href="#CR74">74</a>] described sensitivity, ranging from 58.40 to 99.6%. 12 studies [<a href="#CR7">7</a>, <a href="#CR17">17</a>, <a href="#CR22">22</a>, <a href="#CR34">34</a>, <a href="#CR38">38</a>, <a href="#CR40">40</a>, <a href="#CR56">56</a>, <a href="#CR62">62</a>, <a href="#CR64">64</a>, <a href="#CR66">66</a>, <a href="#CR71">71</a>, <a href="#CR74">74</a>] described specificity, ranging from 71.0 to 100%. In the studies [<a href="#CR7">7</a>, <a href="#CR22">22</a>, <a href="#CR31">31</a>, <a href="#CR38">38</a>, <a href="#CR46">46</a>, <a href="#CR56">56</a>, <a href="#CR71">71</a>, <a href="#CR74">74</a>] that provided AUC, the AUC was greater than or equal to 75.7% (Table <a href="#Tab2">2</a>).</p>
+<p id="Par56">Hirasawa et al. [<a href="#CR15">15</a>], Luo et al. [<a href="#CR40">40</a>], Li et al. [<a href="#CR34">34</a>], Cho et al. [<a href="#CR7">7</a>], Ikenoyama et al. [<a href="#CR22">22</a>] and Song et al. [<a href="#CR56">56</a>] used multi-center, multi-institutional data sets. Hirasawa et al. [<a href="#CR15">15</a>] retrospectively obtained a large number of images from two hospitals and two clinics in Japan to establish a gastric cancer image diagnosis system with an accuracy rate of 98.6%. Luo et al. [<a href="#CR40">40</a>] collected data from five hospitals in China for analysis to ensure sufficient and diverse data.</p>
+<p id="Par57">Narrow-band imaging was used in 4 studies [<a href="#CR17">17</a>, <a href="#CR34">34</a>, <a href="#CR38">38</a>, <a href="#CR62">62</a>] and white light imaging was used in 8 studies [<a href="#CR7">7</a>, <a href="#CR31">31</a>, <a href="#CR40">40</a>, <a href="#CR51">51</a>, <a href="#CR64">64</a>, <a href="#CR66">66</a>, <a href="#CR71">71</a>, <a href="#CR74">74</a>]. 3 studies [<a href="#CR15">15</a>, <a href="#CR22">22</a>, <a href="#CR46">46</a>] used images with standard white light, chromoendoscopy using indigo carmine spraying and narrow-band imaging. Song et al. [<a href="#CR56">56</a>] used the H&amp;E-stained whole slide images for training and testing on CNN.</p>
+<p id="Par58">From the technical perspective, CNN structures in different studies have their own characteristics. Hirasawa et al. [<a href="#CR15">15</a>] and Ikenoyama et al. [<a href="#CR22">22</a>] used a Single Shot MultiBox Detector method without changing their algorithm. Single Shot MultiBox Detector is a deep CNN consisting of 16 or more layers. To train and test CNN, both studies used the Caffe deep learning framework with a global learning rate of 0.0001. In the study of Hirasawa et al. [<a href="#CR15">15</a>], CNN analyzed more than 2,000 test images in only 47 s. This high rate of recognizing and judging images far exceeded the recognition ability of human beings.</p>
+<p id="Par59">Horiuchi et al. [<a href="#CR17">17</a>] chose the GoogLeNet structure which was a 22-layer CNN to process the data. And the Caffe deep learning framework was used to train and verify the CNN system. The test speed of this model on images could reach 0.02 s/image. Li et al. [<a href="#CR34">34</a>] used the Inception-v3 model, which consisted of 11 Inception modules. An important feature of Inception-v3 was that it split a larger two-dimensional convolution into a smaller one-dimensional convolution, which improved computational efficiency of the model. The Keras deep learning framework was used to train the Inception-v3 model.</p>
+<p id="Par60">Lui et al. [<a href="#CR38">38</a>] constructed an image classifier based on pre-trained ResNet. The ResNet structure has 5 convolutional layers and 3 fully connected layers. Nagao et al. [<a href="#CR46">46</a>], Shibata et al. [<a href="#CR51">51</a>], Ueyama et al. [<a href="#CR62">62</a>] and Zhu et al. [<a href="#CR74">74</a>] used the ResNet-50 structure to identify gastric cancer images or lesions. Nagao et al. [<a href="#CR46">46</a>], Ueyama et al. [<a href="#CR62">62</a>] and Zhu et al. [<a href="#CR74">74</a>] all adopted transfer learning methods to build the identification system. Shibata et al. [<a href="#CR51">51</a>] proposed a Mask R-CNN method, which introduced ResNet-50 as the backbone. The mask layer consisted of 7 convolutional layers.</p>
+<p id="Par61">Yoon et al. [<a href="#CR71">71</a>] used the VGG-16 model, which included 16 convolutional layers and a rectified linear unit. The research adapted the last layer of VGG-16 into a two-dimensional fully connected layer to classify the input endoscopic images. Wu et al. [<a href="#CR66">66</a>] aimed to establish an early gastric cancer diagnosis system for esophagogastroduodenoscopy without blind spots. This study combined VGG-16 and ResNet-50 to identify images. The TensorFlow deep learning framework was used to train, validate and test the system.</p>
+<p id="Par62">Cho et al. [<a href="#CR7">7</a>] used Inception-ResNet-v2 and the DenseNet-161 models to distinguish gastric cancer images. The results showed that in the external verification set, the average AUC values of Inception-ResNet-v2 and the DenseNet-161 could reach 0.769 and 0.887, respectively. Lee et al. [<a href="#CR31">31</a>] used Inception-v3, ResNet-50 and VGG-16 structures to detect gastric benign ulcers and cancers. Depth is important for many visual recognition tasks. The ResNet-50 architecture used in this study showed the best results. Wang et al. [<a href="#CR64">64</a>] combined the three CNN structures of AlexNet, GoogLeNet and VGG to construct a multi-column convolutional neural network. The results showed that the ensemble model was superior to other single classifiers in image analysis. The network structure was implemented by using the Caffe framework.</p>
+<p id="Par63">Luo et al. [<a href="#CR40">40</a>] developed a real-time artificial intelligence-assisted image recognition system, which was based on the DeepLab-v3 algorithm. It has been applied in clinical practice. Song et al. [<a href="#CR56">56</a>] used DeepLab-v3 architecture to help pathologists identify benign and malignant images of stomach's entire slide.</p>
+<p id="Par64">The performance of CNN in the detection of gastric cancer was compared with that of experts in 5 studies [<a href="#CR22">22</a>, <a href="#CR34">34</a>, <a href="#CR38">38</a>, <a href="#CR40">40</a>, <a href="#CR66">66</a>]. Luo et al. [<a href="#CR40">40</a>] showed that the accuracy of expert level can be achieved when using CNN-based diagnosis system to assist non-expert doctors in disease diagnosis. Li et al. [<a href="#CR34">34</a>] found that the specificity and accuracy of CNN’s diagnostic system was not significantly different from that of experts, but CNN’s diagnostic sensitivity was significantly higher than that of experts. Lui et al. [<a href="#CR38">38</a>] pointed out that the accuracy and AUC of the AI system were superior to all junior endoscopes. Wu et al. [<a href="#CR66">66</a>] found that the detection performance of Deep CNN was better than that of endoscopy at all levels. Ikenoyama et al. [<a href="#CR22">22</a>] compared the diagnostic ability of CNN with 67 endoscopists. The results showed that the sensitivity of CNN was significantly higher than endoscopists (by 26.5%; 95% confidence interval, 14.9 – 32.5%) and the detection time was greatly shortened.</p>
+</div>
+<div class="section">
+<a id="Sec10"><!-- named anchor --></a><h3 class="section-title">Classification (7 Studies)</h3>
+<p id="Par65">7 studies [<a href="#CR6">6</a>, <a href="#CR8">8</a>, <a href="#CR18">18</a>, <a href="#CR21">21</a>, <a href="#CR33">33</a>, <a href="#CR37">37</a>, <a href="#CR48">48</a>] used CNN to classify gastric cancer. 2 studies [<a href="#CR6">6</a>, <a href="#CR37">37</a>] reported the classification of CNN in endoscopic images and 5 studies [<a href="#CR8">8</a>, <a href="#CR18">18</a>, <a href="#CR21">21</a>, <a href="#CR33">33</a>, <a href="#CR48">48</a>] reported the classification level of CNN in pathological images.</p>
+<p id="Par66">Liu et al. [<a href="#CR37">37</a>] and Qu et al. [<a href="#CR48">48</a>] reported the precision of 99% and 86.9%, respectively. In the 5 studies [<a href="#CR6">6</a>, <a href="#CR8">8</a>, <a href="#CR18">18</a>, <a href="#CR33">33</a>, <a href="#CR37">37</a>] reporting accuracy and sensitivity, the range of accuracy was 78 – 96.5% and the sensitivity was 75.9 – 100%. In the 4 studies [<a href="#CR6">6</a>, <a href="#CR8">8</a>, <a href="#CR18">18</a>, <a href="#CR33">33</a>] reporting specificity, the ranged was 56 – 96.7%. In the 4 studies [<a href="#CR6">6</a>, <a href="#CR8">8</a>, <a href="#CR21">21</a>, <a href="#CR48">48</a>] reporting AUC, the AUC range was 87.7 – 100%.</p>
+<p id="Par67">Cho et al. [<a href="#CR6">6</a>], Iizuka et al. [<a href="#CR21">21</a>] and Li et al. [<a href="#CR33">33</a>] used multicentre data sets. Cho et al. [<a href="#CR6">6</a>] collected 5017 white lights images to establish a classification model. The images of gastric cancer were divided into five categories: advanced gastric cancer, early gastric cancer, highgrade dysplasia, lowgrade dysplasia and non-neoplastic lesions. Iizuka et al. [<a href="#CR21">21</a>] used data from two hospitals and The Cancer Genome Atlas to the analyze whole slide images of stomach and colon. In addition, Li et al. [<a href="#CR33">33</a>] used prospective data sets from two Chinese hospitals.</p>
+<p id="Par68">Cho et al. [<a href="#CR6">6</a>] used 3 CNN structures of Inception-v4, ResNet-152 and Inception-ResNet-v2. Inception-RESNET-v2 was the best structure for gastric cancer classification with an accuracy of 81.9%. Liu et al. [<a href="#CR37">37</a>] proposed a new transfer learning deep CNN method. 4 typical pre-trained CNNs were selected to construct the classifier, namely VGG-16, Inception-v3, Inception-ResNet-v2 and ResNet-50. All the original network architecture of the CNN model in the article was kept before the first fully connected layer and a new 3 layers are added: the global average convergence layer and 4 fully connected layers. The results showed that the CNN’s classification performance of fine-tuning pre-training proposed was better than that of traditional manual features and trained CNN. The transfer learning of CNN structure had a strong potential in the classification of narrow-band imaging images of the stomach. Qu et al. [<a href="#CR48">48</a>] proposed a CNN scheme using two-level fine-tuning and introduced an intermediate data set related to the target, which could solve the problem of insufficient data. The program used VGG-16, AlexNet and Inception-v3 methods. Cho et al. [<a href="#CR8">8</a>] established an automatic classifier using whole slide images from 432 patients from The Cancer Genome Atlas. AlexNet, ResNet-50 and Inception-v3 architectures to classify whole slide images were used in the study.</p>
+<p id="Par69">Iizuka et al. [<a href="#CR21">21</a>] used Inception-v3 network as the architecture of the classification model. And a depth multiplier of 0.35 was used to reduce the number of parameters, thus achieving a more streamlined structure. Hu et al. [<a href="#CR18">18</a>] proposed a Spectral-Spatial-CNN method to classify the hyperspectral images of gastric cancer. Its performance was better than that of artificial neural network and support vector machine. Li et al.[<a href="#CR33">33</a>] used ResNet-34 combined with a spectral spatial classification method to classify gastric cancer tissues, including a convolutional layer and 4 residual block residual modules.</p>
+<p id="Par70">Cho et al. [<a href="#CR6">6</a>], Cho et al. [<a href="#CR8">8</a>], Iizuka et al. [<a href="#CR21">21</a>] and Li et al. [<a href="#CR33">33</a>] used TensorFlow to train, test and verify the model. The deep learning model proposed by Hu et al. [<a href="#CR18">18</a>] was implemented by the Keras framework.</p>
+</div>
+<div class="section">
+<a id="Sec11"><!-- named anchor --></a><h3 class="section-title">Segmentation (2 Studies)</h3>
+<p id="Par71">Sun et al. [<a href="#CR58">58</a>] and Liang et al. [<a href="#CR35">35</a>] reported the application of CNN in the segmentation of gastric cancer pathological images. Sun et al. [<a href="#CR58">58</a>] proposed a multi-scale embedded network to segment pathological images. ResNet-101 was selected as the backbone network of the segmentation model. The pixel-level accuracy reached 91.60% and mean Intersection over Union was 82.65%. Liang et al. [<a href="#CR35">35</a>] used a pathological image segmentation model based on the combination of full convolution network and the patch-based method. The model framework consisted of 30 convolutional layers, 7 pooling layers, 7 down-sampling layers and an output layer. This study proposed the reiterative learning method, which enabled full convolution network to achieve good segmentation effect in the case of using the gastric cancer pathological data set without manual annotation. The accuracy of training on sequential patches in the 1th iteration was about 5% better than patch model. The recall rate of training on mixed patches in the 1th iteration was 5.29% higher than patch model.</p>
+</div>
+<div class="section">
+<a id="Sec12"><!-- named anchor --></a><h3 class="section-title">Delineating margins (2 Studies)</h3>
+<p id="Par72">A real-time monitoring system was developed by Ling et al. [<a href="#CR36">36</a>]. This system was used to accurately identify the differentiation state of early gastric cancer and delineate the edge in magnifying narrow-band imaging endoscopy. The study used multi-center data sets from Nanjing Gulou Hospital and Wuhan University People’s Hospital in China. An et al. [<a href="#CR3">3</a>] established a system based on fully convolutional neural network for sketching the edges of early gastric cancer in indigo carmine chromoendoscopy or white light endoscopy. 2 studies had all introduced Unet++ for more accurate segmentation of the image range. The accuracy of the system was 85.7% for chromoendoscopy images and 88.9% for white light endoscopy images. The resection area predicted by the system covered all the lesion areas of all patients, while the resection area based on magnifying narrow-band imaging only covered all cancer areas of 80.00% of the patients.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec13"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="Par73">The lack of access to primary health care and the correctness of diagnosis represent a major challenge for the global health care system [<a href="#CR54">54</a>, <a href="#CR55">55</a>]. In recent years, the application of machine learning algorithms in medicine has been more and more extensive, from simpler traditional machine learning methods to newly developed deep learning methods [<a href="#CR23">23</a>, <a href="#CR44">44</a>, <a href="#CR47">47</a>]. Both endoscopy and pathological examination are operator-dependent, and the diagnosis process is completely subjective [<a href="#CR16">16</a>, <a href="#CR49">49</a>]. However, artificial intelligence-assisted inspection may help to provide another opinion and avoid reliance on operators in diagnostic tests [<a href="#CR49">49</a>]. The application of the algorithm has a great driving force for improving the reliability of clinical diagnosis and promoting the development of medical and health undertakings.</p>
+<p id="Par74">Our systematic review shows that the CNN models of gastric cancer perform well in detection, classification, segmentation and delineating margins. There is no uniform standard and evaluation standard for the specific CNN model design. It is an ideal research process to compare the precision, accuracy, sensitivity, specificity or AUC of CNN with other model methods and data sets in the studies. In all studies, the precision, accuracy, sensitivity, specificity or AUC were greater than 70% except Ikenoyama et al. [<a href="#CR22">22</a>] and Cho et al. [<a href="#CR8">8</a>]</p>
+<p id="Par75">All articles were published between 2018 and 2020. This shows that CNN has developed rapidly in the identification of cancer in recent years, and the application of deep learning in medical decision-making is more extensive. The countries involved in the research were concentrated in China, Japan,South Korea and Hong Kong, China. We infer that more studies on gastric cancer in these countries are related to the higher incidence of gastric cancer than in other countries.</p>
+<p id="Par76">9 studies [<a href="#CR6">6</a>, <a href="#CR15">15</a>, <a href="#CR21">21</a>, <a href="#CR22">22</a>, <a href="#CR33">33</a>, <a href="#CR34">34</a>, <a href="#CR36">36</a>, <a href="#CR40">40</a>, <a href="#CR56">56</a>] used multi-center, multi-institutional data sets. At the same time, most of the researches processed the images that did not conform to the standards. During model training and testing, the image quality of model recognition is high. An important prerequisite for the application of AI in medical decision-making is sufficient and high-quality medical images. A number of data sets for pathological image studies are derived from The Cancer Genome Atlas [<a href="#CR9">9</a>, <a href="#CR28">28</a>]. However, there is no uniform and public large-scale image database in the endoscopic examination of gastric cancer. Data acquisition is still a major challenge.</p>
+<p id="Par77">CNN has great potential in image recognition. Compared with traditional machine learning, it has better discrimination performance. Developers can process images by using a more mature network structure, such as VGG. CNN can also be combined with transfer learning and parameter fine-tuning to make the network structure and data more coordinated, which can alleviate the problem of insufficient training data and over-fitting. Since AlexNet was proposed in 2012, CNN has ushered in explosive development. With the emergence of networks such as VGG, Inception, and ResNet, CNN’s network depth is getting larger and larger to ensure accuracy. And it is more inclined to use smaller convolution kernels to ensure calculation speed. CNN is gradually developing towards lightweight and rapid development. The emergence of MobileNet [<a href="#CR30">30</a>] which can meet needs of mobile terminals makes CNN’s development prospects broader.</p>
+<p id="Par78">The application of AI in gastrointestinal diseases is increasingly mature. A review published by Min et al. [<a href="#CR42">42</a>] evaluated the performance of deep learning in the disease detection through gastrointestinal endoscopy and compared it with healthcare professionals. The results of CNN’s endoscope diagnosis were encouraging, but its diagnostic ability was highly dependent on the quality and quantity of training data. A meta-analysis showed that machine learning performs well in the diagnosis of helicobacter pylori infection based on patients and images [<a href="#CR4">4</a>]. Another meta-analysis showed that AI was more accurate in the diagnosis of esophageal and gastric neoplastic lesions, with AUC &gt; 0.88 [<a href="#CR39">39</a>]. Many diseases are increasingly inclined to use artificial intelligence to assist diagnosis. For example, during the global novel coronavirus pneumonia epidemic, some scholars used deep learning algorithm to identify chest CT images [<a href="#CR67">67</a>]. In the test set, AUC could be achieved with the accuracy, sensitivity and specificity of 0.819, 0.760, 0.811 and 0.615, respectively [<a href="#CR67">67</a>].</p>
+<p id="Par79">At present, AI technology is widely used, but it still has some limitations. Currently, one of the limitations of deep learning is interpreting and understanding questions related to how AI models make decisions, known as “black box” questions [<a href="#CR1">1</a>]. The emergence of explainable AI offers hope for solving this problem [<a href="#CR50">50</a>]. Secondly, there are moral and safety issues such as the privacy of patients data and how to determine who is responsible for patients' misdiagnosis or incorrect treatment.</p>
+<p id="Par80">Despite some challenges, the prospect of AI is very exciting. The biggest feature of AI is efficient calculation and accurate decision-making. Technically, CNN’s predictions can be automated. The creation of a telemedicine service platform and even AI automatic diagnosis services are very likely to be realized. With the continuous accumulation of available data, the performance and reliability of AI will continue to be improved. It can be used as a tool for identification of endoscopic pictures or pathological slices and used to discover diseases and predict the depth of invasion. It can also be used to classify the type of cancer and to delineate the edges of pathological slices. The CNN-based identification technology for gastric cancer is expected to become the mainstream deep learning technology in the next few decades. We believe that doctors and pathologists can use the results provided by CNN as a reference to solve the diagnosis of difficult cases in the near future. At the same time, it is no longer necessary to examine the images of all patients one by one, but only to identify those unclear and difficult images, which will greatly reduce the burden of work. AI can also play an important role in areas where the economy is underdeveloped and medical resources are relatively scarce. The diversification of online medical methods, such as online consultation, has led to the rapid development of telemedicine services. Based on the telemedicine service platform, CNN can identify patient images in areas where lacking professional doctors, greatly improving the medical level of remote areas. We hope to see that clinicians, pathologists and artificial intelligence work together to support healthcare.</p>
+<p id="Par81">The advantages of this review included the careful selection of research reports on CNN algorithms evaluated in gastric cancer images. We avoided other redundant studies that evaluate non-CNN-based learning algorithms and articles that were not original studies. We compared the data sources of researches, the number of images and the performance of each model, etc., and strictly evaluated the quality of the research. In addition, previous studies [<a href="#CR13">13</a>, <a href="#CR24">24</a>, <a href="#CR69">69</a>] have reviewed the application of AI to gastric diseases, but this research was the first to focus entirely on the application of CNN in gastric cancer. At the same time, this study elaborated on the details of various CNNs, and fully excavated CNN’s information in gastric cancer detection, classification, segmentation and delineating margins, etc. This can provide more comprehensive help for future CNN-based research on gastric cancer identification.</p>
+<p id="Par82">There are also limitations in this study. First of all, this study only summarized the results of gastric cancer imaging published by CNN in English, and did not include excellent articles in other languages. Secondly, it is difficult to make simple comparisons of performance due to the different difficulty of images or lesions evaluation. Third, images included in research came from different countries and regions, and the research objects were from different races, so the images were heterogeneous. At the same time, there were differences in methods and evaluation indicators. No meta-analysis is carried out on the article. Fourth, most of the current studies were retrospective and mainly based on still images. The recent guideline [<a href="#CR5">5</a>] points out that AI needs to be validated in multicenter randomized controlled trials before routine clinical use, so prospective and multicenter studies are needed in the future.</p>
+</div>
+<div class="section">
+<a id="Sec14"><!-- named anchor --></a><h2 class="main-title">Conclusions</h2>
+<p id="Par83">In the summary of CNN’s research on medical images, it finds that CNN is a good tool for identifying gastric cancer. All the studies showed good identification performance and the model accuracy of all studies was 77.3 – 98.7%. CNN is expected to become an important tool to help doctors and pathologists improve the accuracy and efficiency of disease identification.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id571"><!-- named anchor --></a><h4 class="block-title">Abbreviations</h4>
+<div class="def-list">
+<a id="id561"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id562">
+<div class="def-term cell" id="id563"><p>AI</p></div>
+<div class="def-def cell" id="id564"><p class="first" id="Par19">artificial intelligence</p></div>
+</div>
+<div class="def-item row" id="id565">
+<div class="def-term cell" id="id566"><p>CNN</p></div>
+<div class="def-def cell" id="id567"><p class="first" id="Par20">convolution neural network</p></div>
+</div>
+<div class="def-item row" id="id568">
+<div class="def-term cell" id="id569"><p>AUC</p></div>
+<div class="def-def cell" id="id570"><p class="first" id="Par21">area under the curve</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id577"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id572"><!-- named anchor --></a><p id="id573"><span class="generated">[1]</span> <b>Publisher’s Note</b></p>
+<p id="id574">Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+<div class="footnote">
+<a id="id575"><!-- named anchor --></a><p id="id576"><span class="generated">[2]</span> Yuxue Zhao and Bo Hu contributed equally to this work, so Yuxue Zhao and Bo Hu were co-first author.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id579"><!-- named anchor --></a><h2 class="main-title">Author contributions</h2>
+<p id="id578">Conception and design: Yuxue Zhao, Bo Hu, Ying Wang, Xiuli Zhu. Data analysis and interpretation: Yuxue Zhao, Bo Hu, Ying Wang, Xiaomeng Yin, Yuanyuan Jiang, Xiuli Zhu. Article drafting: Yuxue Zhao, Bo Hu, Xiaomeng Yin, Yuanyuan Jiang. Critical revision of the article for important intellectual content: Xiuli Zhu. All authors discussed the results and approved the final manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id581"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id580">The study was supported by Project of Research Planning Foundation on Humanities and Social Sciences of the Ministry of Education [grant numbers 20YJAZH144].</p>
+</div>
+<div class="back-section">
+<a id="id582"><!-- named anchor --></a><h2 class="main-title">Declarations</h2>
+<h3 class="section-title">Conflict of interest</h3>
+<p id="Par84">None to declare.</p>
+</div>
+<div class="back-section">
+<a id="Bib1"><!-- named anchor --></a><div class="section ref-list">
+<a id="Bib1"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="CR1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id583"><!-- named anchor --></a>Acs B, Rantalainen M, Hartman J (2020) Artificial intelligence as the next step towards precision pathology. 288(1):62–81. 10.1111/joim.1303010.1111/joim.1303032128929</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="CR2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id584"><!-- named anchor --></a>H AliM YasminM SharifMH RehmaniComputer assisted gastric abnormalities detection using hybrid texture descriptors for chromoendoscopy imagesComput Methods Programs Biomed2018157394710.1016/j.cmpb.2018.01.01329477434</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="CR3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id585"><!-- named anchor --></a>P AnDM YangJ WangLL WuJ ZhouZ ZengX HuangY XiaoS HuYY ChenF YaoMW GuoQ WuYN YangHG YuA deep learning method for delineating early gastric cancer resection margin under chromoendoscopy and white light endoscopyGastric Cancer202023588489210.1007/s10120-020-01071-732356118</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="CR4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id586"><!-- named anchor --></a>Bang CS, Lee JJ (2020) Artificial intelligence for the prediction of helicobacter pylori infection in endoscopic images: systematic review and meta-analysis of diagnostic test accuracy. 22(9):e21983. 10.2196/2198310.2196/21983PMC752794832936088</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="CR5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id587"><!-- named anchor --></a>Bisschops R, East JE, Hassan C, Hazewinkel Y, Kamiński MF, Neumann H, Pellisé M, Antonelli G, Bustamante Balen M, Coron E, Cortas G, Iacucci M, Yuichi M, Longcroft-Wheaton G, Mouzyka S, Pilonis N, Puig I, van Hooft JE, Dekker E (2019) Advanced imaging for detection and differentiation of colorectal neoplasia: European Society of Gastrointestinal Endoscopy (ESGE) Guideline - Update 2019. Endoscopy 51(12):1155–1179. 10.1055/a-1031-765710.1055/a-1031-765731711241</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="CR6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id588"><!-- named anchor --></a>BJ ChoCS BangSW ParkYJ YangSI SeoH LimWG ShinJT HongYT YooSH HongJH ChoiJJ LeeGH BaikAutomated classification of gastric neoplasms in endoscopic images using a convolutional neural networkEndoscopy201951121121112910.1055/a-0981-613331443108</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="CR7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id589"><!-- named anchor --></a>BJ ChoCS BangJJ LeeCW SeoJH KimPrediction of submucosal invasion for gastric neoplasms in endoscopic images using deep-learningJ Clin Med2020961410.3390/jcm9061858PMC735620432549190</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="CR8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id590"><!-- named anchor --></a>KO ChoSH LeeHJ JangFeasibility of fully automated classification of whole slide images based on deep learningKorean J Physiol Pharmacol2020241899910.4196/kjpp.2020.24.1.8931908578PMC6940498</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="CR9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id591"><!-- named anchor --></a>Cooper LA, Demicco EG (2018) PanCancer insights from The Cancer Genome Atlas: the pathologist’s perspective. 244(5):512–524. 10.1002/path.502810.1002/path.5028PMC624035629288495</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="CR10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id592"><!-- named anchor --></a>Dohi O, Majima A, Naito Y, Yoshida T, Ishida T, Azuma Y, Kitae H, Matsumura S, Mizuno N, Yoshida N (2020) Can image-enhanced endoscopy improve the diagnosis of Kyoto classification of gastritis in the clinical setting? 32(2):191–203. 10.1111/den.1354010.1111/den.1354031550395</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="CR11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id593"><!-- named anchor --></a>Florea A, Sangaré L, Lowe K (2020) A multinational assessment of gastric, esophageal, and colorectal cancer burden: a report of disease incidence, prevalence, and fatality. 51 (3):965-971. 10.1007/s12029-019-00328-410.1007/s12029-019-00328-431784876</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="CR12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id594"><!-- named anchor --></a>Y GaoZD ZhangS LiYT GuoQY WuSH LiuSJ YangL DingBC ZhaoS LiY LuDeep neural network-assisted computed tomography diagnosis of metastatic lymph nodes from gastric cancerChin Med J2019132232804281110.1097/cm9.000000000000053231856051PMC6940067</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="CR13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id595"><!-- named anchor --></a>Gonçalves WGE, Dos Santos MHP, Lobato FMF, Ribeiro-Dos-Santos Â, de Araújo GS (2020) Deep learning in gastric tissue diseases: a systematic review. 7(1):e000371. 10.1136/bmjgast-2019-00037110.1136/bmjgast-2019-000371PMC717040132337060</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="CR14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id596"><!-- named anchor --></a>He K, Zhang X, Ren S, Sun J (2016) Deep residual learning for image recognition. Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 770–778</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="CR15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id597"><!-- named anchor --></a>T HirasawaK AoyamaT TanimotoS IshiharaS ShichijoT OzawaT OhnishiM FujishiroK MatsuoJ FujisakiT TadaApplication of artificial intelligence using a convolutional neural network for detecting gastric cancer in endoscopic imagesGastric Cancer201821465366010.1007/s10120-018-0793-229335825</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="CR16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id598"><!-- named anchor --></a>SA HoogenboomU BagciW MBArtificial intelligence in gastroenterology. The current state of play and the potential. How will it affect our practice and when?Tech Innov Gastrointest Endosc2020222424710.1016/j.tgie.2019.150634</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="CR17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id599"><!-- named anchor --></a>Y HoriuchiK AoyamaY TokaiT HirasawaS YoshimizuA IshiyamaT YoshioT TsuchidaJ FujisakiT TadaConvolutional neural network for differentiating gastric cancer from gastritis using magnified endoscopy with narrow band imagingDig Dis Sci20206551355136310.1007/s10620-019-05862-631584138</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="CR18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id600"><!-- named anchor --></a>BL HuJ DuZF ZhangQ WangTumor tissue classification based on micro-hyperspectral technology and deep learningBiomed Opt Express201910126370638910.1364/boe.10.00637031853405PMC6913401</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="CR19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id601"><!-- named anchor --></a>Y HuangH ZhengC LiuX DingG RohdeEpithelium-stroma classification via convolutional neural networks and unsupervised domain adaptation in histopathological imagesIEEE J Biomed Health Inform20172161625163210.1109/jbhi.2017.269173828410112</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="CR20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id602"><!-- named anchor --></a>Huang G, Liu Z, Laurens V, Weinberger KQ (2017) Densely connected convolutional networks. In: 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), pp 2261-2269. 10.1109/CVPR.2017.243</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="CR21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id603"><!-- named anchor --></a>O IizukaF KanavatiK KatoM RambeauK ArihiroM TsunekiDeep learning models for histopathological classification of gastric and colonic epithelial tumoursSci Rep20201011110.1038/s41598-020-58467-932001752PMC6992793</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="CR22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id604"><!-- named anchor --></a>Ikenoyama Y, Hirasawa T, Ishioka M, Namikawa K, Yoshimizu S, Horiuchi Y, Ishiyama A, Yoshio T, Tsuchida T, Takeuchi Y, Shichijo S, Katayama N, Fujisaki J, Tada T (2020) Detecting early gastric cancer: Comparison between the diagnostic ability of convolutional neural networks and endoscopists. Dig Endosc 10. 10.1111/den.1368810.1111/den.13688PMC781818732282110</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="CR23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id605"><!-- named anchor --></a>PR JeyarajER Samuel NadarComputer-assisted medical image classification for early diagnosis of oral cancer employing deep learning algorithmJ Cancer Res Clin Oncol2019145482983710.1007/s00432-018-02834-730603908PMC11810191</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="CR24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id606"><!-- named anchor --></a>Jin P, Ji X, Kang W, Li Y, Liu H, Ma F, Ma S, Hu H, Li W, Tian Y (2020) Artificial intelligence in gastric cancer: a systematic review. 146(9):2339–2350. 10.1007/s00432-020-03304-910.1007/s00432-020-03304-9PMC1180434332613386</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="CR25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id607"><!-- named anchor --></a>T KanesakaTC LeeN UedoKP LinHZ ChenJY LeeHP WangHT ChangComputer-aided diagnosis for identifying and delineating early gastric cancers in magnifying narrow-band imagingGastrointest Endosc20188751339134410.1016/j.gie.2017.11.02929225083</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="CR26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id608"><!-- named anchor --></a>H KataiT IshikawaK AkazawaY IsobeI MiyashiroI OdaS TsujitaniH OnoS TanabeT FukagawaS NunobeY KakejiA NashimotoFive-year survival analysis of surgically resected gastric cancer cases in Japan: a retrospective analysis of more than 100,000 patients from the nationwide registry of the Japanese Gastric Cancer Association (2001-2007)Gastric Cancer201821114415410.1007/s10120-017-0716-728417260</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="CR27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id609"><!-- named anchor --></a>JW KimUsefulness of narrow-band imaging in endoscopic submucosal dissection of the stomachClin Endosc201851652753310.5946/ce.2018.18630453446PMC6283758</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="CR28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id610"><!-- named anchor --></a>SC KosarajuJ HaoHM KohM KangDeep-Hipo: Multi-scale receptive field deep learning for histopathological image analysisMethods202017931310.1016/j.ymeth.2020.05.01232442672</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="CR29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id611"><!-- named anchor --></a>Krizhevsky A, Sutskever I, Hinton GE (2012) ImageNet classification with deep convolutional neural networks. Proceedings of the Advances in Neural Information Processing Systems, 1097–1105</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="CR30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id612"><!-- named anchor --></a>U KulkarniSMM GurlahosurSV BhogarQuantization friendly MobileNet (QF-MobileNet) architecture for vision based applications on embedded platformsNeural Nnetw2021136283910.1016/j.neunet.2020.12.02233429131</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="CR31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id613"><!-- named anchor --></a>JH LeeYJ KimYW KimS ParkYI ChoiYJ KimDK ParkKG KimJW ChungSpotting malignancies from gastric endoscopic images using deep learningSurg Endosc Other Interv Tech201933113790379710.1007/s00464-019-06677-230719560</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="CR32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id614"><!-- named anchor --></a>S LiH JiangW PangJoint multiple fully connected convolutional neural network with extreme learning machine for hepatocellular carcinoma nuclei gradingComput Biol Med20178415616710.1016/j.compbiomed.2017.03.01728365546</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="CR33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id615"><!-- named anchor --></a>YP LiLY DengXH YangZ LiuXP ZhaoFR HuangSQ ZhuXD ChenZQ ChenWM ZhangEarly diagnosis of gastric cancer based on deep learning combined with the spectral-spatial classification methodBiomed Opt Express201910104999501410.1364/boe.10.00499931646025PMC6788605</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="CR34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id616"><!-- named anchor --></a>L LiY ChenZ ShenX ZhangJ SangY DingX YangJ LiM ChenC JinC ChenC YuConvolutional neural network for the diagnosis of early gastric cancer based on magnifying narrow band imagingGastric Cancer202023112613210.1007/s10120-019-00992-231332619PMC6942561</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="CR35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id617"><!-- named anchor --></a>QK LiangY NanG CoppolaKL ZouW SunD ZhangYN WangGZ YuWeakly supervised biomedical image segmentation by reiterative learningIEEE J Biomed Health Inform20192331205121410.1109/jbhi.2018.285004029994489</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="CR36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id618"><!-- named anchor --></a>Ling TS, Wu LL, Fu YW, Xu QW, An P, Zhang J, Hu S, Chen YY, He XQ, Wang J, Chen X, Zhou J, Xu YM, Zou XP, Yu HG (2020) A deep learning-based system for identifying differentiation status and delineating the margins of early gastric cancer in magnifying narrow-band imaging endoscopy. Endoscopy :9. 10.1055/a-1229-092010.1055/a-1229-092032725617</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="CR37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id619"><!-- named anchor --></a>X LiuC WangJ BaiG LiaoFine-tuning pre-trained convolutional neural networks for gastric precancerous disease classification on magnification narrow-band imaging imagesNeurocomputing202039225326710.1016/j.neucom.2018.10.100</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="CR38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id620"><!-- named anchor --></a>TKL LuiKKY WongLLY MakEWP ToVWM TsuiZ DengJ GuoL NiMKS CheungWK LeungFeedback from artificial intelligence improved the learning of junior endoscopists on histology prediction of gastric lesionsEndosc Int Open202082E139e14610.1055/a-1036-611432010746PMC6976335</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="CR39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id621"><!-- named anchor --></a>TKL LuiVWM TsuiWK LeungAccuracy of artificial intelligence-assisted detection of upper GI lesions: a systematic review and meta-analysisGastrointest Endosc2020924821830e82910.1016/j.gie.2020.06.03432562608</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="CR40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id622"><!-- named anchor --></a>H LuoG XuC LiL HeL LuoZ WangB JingY DengY JinY LiB LiW TanC HeSR SeeruttunQ WuJ HuangDW HuangB ChenSB LinQM ChenCM YuanHX ChenHY PuF ZhouY HeRH XuReal-time artificial intelligence for detection of upper gastrointestinal cancer by endoscopy: a multicentre, case-control, diagnostic studyLancet Oncol201920121645165410.1016/S1470-2045(19)30637-031591062</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41.</span> <a id="CR41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id623"><!-- named anchor --></a>S MenonN TrudgillHow commonly is upper gastrointestinal cancer missed at endoscopy? A meta-analysisEndosc Int Open201422E465010.1055/s-0034-136552426135259PMC4476431</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42.</span> <a id="CR42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id624"><!-- named anchor --></a>J MinM KwakJ ChaOverview of deep learning in gastrointestinal endoscopyGut Liver201913438839310.5009/gnl1838430630221PMC6622562</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43.</span> <a id="CR43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id625"><!-- named anchor --></a>R MishraO DaescuP LeaveyD RakhejaA SenguptaConvolutional neural network for histopathological analysis of osteosarcomaJ Comput Biol201825331332510.1089/cmb.2017.015329083930</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44.</span> <a id="CR44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id626"><!-- named anchor --></a>R MiyakiS YoshidaS TanakaY KominamiY SanomuraT MatsuoS OkaB RaytchevT TamakiT KoideK KanedaM YoshiharaK ChayamaA computer system to be used with laser-based endoscopy for quantitative diagnosis of early gastric cancerJ Clin Gastroenterol201549210811510.1097/mcg.000000000000010424583752</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45.</span> <a id="CR45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id627"><!-- named anchor --></a>WK MoonYW LeeHH KeSH LeeCS HuangRF ChangComputer-aided diagnosis of breast ultrasound images using ensemble learning from convolutional neural networksComput Methods Programs Biomed202019010536110.1016/j.cmpb.2020.10536132007839</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46.</span> <a id="CR46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id628"><!-- named anchor --></a>S NagaoY TsujiY SakaguchiY TakahashiC MinatsukiK NiimiH YamashitaN YamamichiY SetoT TadaK KoikeHighly accurate artificial intelligence systems to predict the invasion depth of gastric cancer: efficacy of conventional white-light imaging, nonmagnifying narrow-band imaging, and indigo-carmine dye contrast imagingGastrointest Endosc202092486610.1016/j.gie.2020.06.04732592776</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47.</span> <a id="CR47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id629"><!-- named anchor --></a>HHN PhamM FutakuchiA BychkovT FurukawaK KurodaJ FukuokaDetection of lung cancer lymph node metastases from whole-slide histopathologic images using a two-step deep learning approachAm J Pathol2019189122428243910.1016/j.ajpath.2019.08.01431541645</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48.</span> <a id="CR48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id630"><!-- named anchor --></a>J QuN HirutaK TeraiH NosatoM MurakawaH SakanashiGastric pathology image classification using stepwise fine-tuning for deep neural networksJ Healthc Eng201820181310.1155/2018/8961781PMC603329830034677</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49.</span> <a id="CR49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id631"><!-- named anchor --></a>M RantalainenD KlevebringJ LindbergE IvanssonG RosinL KisF CelebiogluI FredrikssonK CzeneJ FrisellJ HartmanJ BerghH GrönbergSequencing-based breast cancer diagnostics as an alternative to routine biomarkersSci Rep201663803710.1038/srep3803727901097PMC5128815</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50.</span> <a id="CR50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id632"><!-- named anchor --></a>Samek W, Wiegand T, Müller KR (2017) Explainable artificial intelligence: understanding, visualizing and interpreting deep learning models</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51.</span> <a id="CR51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id633"><!-- named anchor --></a>Shibata T, Teramoto A, Yamada H, Ohmiya N, Saito K, Fujita H (2020) Automated detection and segmentation of early gastric cancer from endoscopic images using mask R-CNN. Appl Sci 10(11). 10.3390/app10113842</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52.</span> <a id="CR52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id634"><!-- named anchor --></a>Shinozaki S, Osawa H, Hayashi Y, Lefor AK, Yamamoto H (2019) Linked color imaging for the detection of early gastrointestinal neoplasms. 12:1756284819885246. 10.1177/175628481988524610.1177/1756284819885246PMC682689931700545</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53.</span> <a id="CR53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id635"><!-- named anchor --></a>Simonyan K, Zisserman A (2015) Going deeper with convolutions. Proceedings of the 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) abs/1409.1556, 1–9</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54.</span> <a id="CR54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id636"><!-- named anchor --></a>H SinghA MeyerE ThomasThe frequency of diagnostic errors in outpatient care: estimations from three large observational studies involving US adult populationsBMJ Qual Saf201423972773110.1136/bmjqs-2013-002627PMC414546024742777</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55.</span> <a id="CR55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id637"><!-- named anchor --></a>H SinghG SchiffM GraberI OnakpoyaM ThompsonThe global burden of diagnostic errors in primary careBMJ Qual Saf201726648449410.1136/bmjqs-2016-005401PMC550224227530239</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56.</span> <a id="CR56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id638"><!-- named anchor --></a>ZG SongSM ZouWX ZhouY HuangLW ShaoJ YuanXN GouW JinZB WangX ChenXH DingJH LiuCK YuC KuCC LiuZ SunG XuYF WangXQ ZhangDD WangSH WangW XuRC DavisHY ShiClinically applicable histopathological diagnosis system for gastric cancer detection using deep learningNat Commun2020111910.1038/s41467-020-18147-832855423PMC7453200</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57.</span> <a id="CR57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id639"><!-- named anchor --></a>K SumiyamaPast and current trends in endoscopic diagnosis for early stage gastric cancer in JapanGastric Cancer201720Suppl 1202710.1007/s10120-016-0659-427734273</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58.</span> <a id="CR58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id640"><!-- named anchor --></a>MY SunGH ZhangH DangXQ QiXG ZhouQ ChangAccurate gastric cancer segmentation in digital pathology images using deformable convolution and multi-scale embedding networksIEEE Access20197755307554110.1109/access.2019.2918800</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59.</span> <a id="CR59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id641"><!-- named anchor --></a>H SuzukiI OdaS AbeM SekiguchiG MoriS NonakaS YoshinagaY SaitoHigh rate of 5-year survival among patients with early gastric cancer undergoing curative endoscopic submucosal dissectionGastric Cancer201619119820510.1007/s10120-015-0469-025616808</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60.</span> <a id="CR60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id642"><!-- named anchor --></a>Szegedy C, Wei L, Jia Y, Sermanet P, Rabinovich A (2015) Going deeper with convolutions. 2015 IEEEConference on Computer Vision and Pattern Recognition (CVPR), 1–9</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61.</span> <a id="CR61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id643"><!-- named anchor --></a>H ToyoizumiM KaiseH ArakawaJ YonezawaY YoshidaM KatoN YoshimuraK GodaH TajiriUltrathin endoscopy versus high-resolution endoscopy for diagnosing superficial gastric neoplasiaGastrointest Endosc200970224024510.1016/j.gie.2008.10.06419386304</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62.</span> <a id="CR62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id644"><!-- named anchor --></a>H UeyamaY KatoY AkazawaN YatagaiH KomoriT TakedaK MatsumotoK UedaK MatsumotoM HojoT YaoA NagaharaT TadaApplication of artificial intelligence using a convolutional neural network for diagnosis of early gastric cancer based on magnifying endoscopy with narrow-band imagingJ Gastroenterol Hepatol (Australia)202010.1111/jgh.15190PMC798444032681536</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63.</span> <a id="CR63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id645"><!-- named anchor --></a>S WangY ZhuL YuH ChenH LinX WanX FanPA HengRMDL: Recalibrated multi-instance deep learning for whole slide gastric image classificationMed Image Anal20195810154910.1016/j.media.2019.10154931499320</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64.</span> <a id="CR64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id646"><!-- named anchor --></a>H WangS DingD WuY ZhangS YangSmart connected electronic gastroscope system for gastric cancer screening using multi-column convolutional neural networksInt J Prod Res201957216795680610.1080/00207543.2018.1464232</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65.</span> <a id="CR65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id647"><!-- named anchor --></a>PF WhitingAW RutjesME WestwoodS MallettJJ DeeksJB ReitsmaMM LeeflangJA SternePM BossuytQUADAS-2: a revised tool for the quality assessment of diagnostic accuracy studiesAnn Intern Med2011155852953610.7326/0003-4819-155-8-201110180-0000922007046</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66.</span> <a id="CR66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id648"><!-- named anchor --></a>L WuW ZhouX WanJ ZhangL ShenS HuQ DingG MuA YinX HuangJ LiuX JiangZ WangY DengM LiuR LinT LingP LiQ WuP JinJ ChenH YuA deep neural network improves endoscopic detection of early gastric cancer without blind spotsEndoscopy201951652253110.1055/a-0855-353230861533</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67.</span> <a id="CR67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id649"><!-- named anchor --></a>X WuH HuiM NiuL LiL WangB HeX YangL LiH LiJ TianY ZhaDeep learning-based multi-view fusion model for screening 2019 novel coronavirus pneumonia: A multicentre studyEur J Radiol202012810904110.1016/j.ejrad.2020.10904132408222PMC7198437</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68.</span> <a id="CR68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id650"><!-- named anchor --></a>Y XuZ JiaL WangYA F ZLarge scale tissue histopathology image classification, segmentation, and visualization via deep convolutional activation featuresBMC Bioinform201718128110.1186/s12859-017-1685-xPMC544675628549410</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69.</span> <a id="CR69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id651"><!-- named anchor --></a>YJ YangCS BangApplication of artificial intelligence in gastroenterologyWorld J Gastroenterol201925141666168310.3748/wjg.v25.i14.166631011253PMC6465941</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70.</span> <a id="CR70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id652"><!-- named anchor --></a>Yasaka K, Akai H (2018) Deep learning with convolutional neural network for differentiation of liver masses at dynamic contrast-enhanced CT: a preliminary Study. 286(3):887–896. 10.1148/radiol.201717070610.1148/radiol.201717070629059036</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71.</span> <a id="CR71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id653"><!-- named anchor --></a>HJ YoonS KimJH KimJS KeumSI OhJ JoJ ChunYH YounH ParkIG KwonSH ChoiSH NohA lesion-based convolutional neural network improves endoscopic detection and depth prediction of early gastric cancerJ Clin Med2019891010.3390/jcm8091310PMC678118931454949</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72.</span> <a id="CR72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id654"><!-- named anchor --></a>Zhao X, Liu L, Qi S (2018) Agile convolutional neural network for pulmonary nodule classification using CT images. 13(4):585–595. 10.1007/s11548-017-1696-010.1007/s11548-017-1696-029473129</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73.</span> <a id="CR73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id655"><!-- named anchor --></a>LF ZhuP MaYL HuY FengP LiH WangYB GuoQS MaoWJ XueHCCR-1 is a Novel Prognostic Indicator for Gastric Cancer and Promotes Cell ProliferationJ Cancer201910153533354210.7150/jca.2246231293658PMC6603419</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74.</span> <a id="CR74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id656"><!-- named anchor --></a>Y ZhuQC WangMD XuZ ZhangJ ChengYS ZhongYQ ZhangWF ChenLQ YaoPH ZhouQL LiApplication of convolutional neural network in the diagnosis of the invasion depth of gastric cancer based on conventional endoscopyGastrointest Endosc201989480610.1016/j.gie.2018.11.01130452913</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Classification</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Convolutional neural network</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Detection</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Diagnosis</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Gastric cancer</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">issue-copyright-statement</span>: </span>© Springer Science+Business Media, LLC, part of Springer Nature 2022</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
