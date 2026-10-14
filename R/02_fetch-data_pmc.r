@@ -55,6 +55,17 @@ for (i in seq_along(pmcids)) {
 
   pmcid <- pmcids[i]
 
+  current_list <- 
+    fs::dir_ls(
+      "data/03_labor/",
+      recurse = TRUE, 
+      glob = "*.html"
+      ) %>%
+    stringr::str_extract("PMC.*.html") %>%
+    stringr::str_remove(".html")
+  
+  if (pmcid %in% current_list) next
+
   cat100 <-
     dir_names_distribute_workload(i, 2e4, 1e2)
   cat500 <-
