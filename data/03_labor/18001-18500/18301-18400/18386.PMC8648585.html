@@ -1,0 +1,1239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Menezes, Rizwan, Saad Ali, Hassan, Khetpal, Aqil, Madadin, Jamal Siddiqi, and Shariq Usman: Postmortem findings in COVID-19 fatalities: A systematic review of current evidence</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Leg Med (Tokyo)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Leg Med (Tokyo)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3815</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>pheelsevier</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>100889186</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Legal Medicine (Tokyo, Japan)</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">print</span>): </span>1344-6223</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1873-4162</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="main.pdf">main.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2021 Elsevier B.V. All rights reserved.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2021, Elsevier B.V.</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk"><p class="first" id="id1">Since January 2020 Elsevier has created a COVID-19 resource centre with free information in English and Mandarin on the novel coronavirus COVID-19. The COVID-19 resource centre is hosted on Elsevier Connect, the company's public news and information website. Elsevier hereby grants permission to make all its COVID-19-related research that is available on the COVID-19 resource centre - including this research content - immediately available in PubMed Central and other publicly funded repositories, such as the WHO COVID database with rights for unrestricted research re-use and analyses in any form or by any means with acknowledgement of the original source. These permissions are granted for free by Elsevier for as long as the COVID-19 resource centre remains active.</p></div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>12 October 2020</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>18 August 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>1 December 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">print</span>): </span>February 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>7 December 2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>54</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>395143<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Page: </span>102001</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC8648585</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC8648585.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>8648585</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>8648585</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>34952452</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1016/j.legalmed.2021.102001</p>
+<p class="metadata-entry"><span class="generated">Publisher Item ID: </span>S1344-6223(21)00165-6</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>102001</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Postmortem findings in COVID-19 fatalities: A systematic review of current evidence</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Ritesh G. Menezes<span class="generated">[</span><a href="#af005">a</a><span class="generated">]</span><span class="generated">[</span><a href="#cor1">⁎</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Tehlil Rizwan<span class="generated">[</span><a href="#af010">b</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Syed Saad Ali<span class="generated">[</span><a href="#af015">c</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Wardah Hassan<span class="generated">[</span><a href="#af015">c</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Akash Khetpal<span class="generated">[</span><a href="#af015">c</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Mohammad Aqil<span class="generated">[</span><a href="#PC_affihBS4jDOs2">d</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Mohammed Madadin<span class="generated">[</span><a href="#af005">a</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Tariq Jamal Siddiqi<span class="generated">[</span><a href="#PC_affLibfGVP097">e</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Muhammad Shariq Usman<span class="generated">[</span><a href="#PC_affLibfGVP097">e</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="af005"><!-- named anchor --></a><span class="generated">[</span>a<span class="generated">] </span>Department of Pathology, College of Medicine, King Fahd Hospital of the University, Imam Abdulrahman Bin Faisal University, Dammam, Saudi Arabia</p>
+<p class="metadata-entry"><a id="af010"><!-- named anchor --></a><span class="generated">[</span>b<span class="generated">] </span>Department of Medicine, AMITA Health Saint Joseph Hospital, Chicago, IL, USA</p>
+<p class="metadata-entry"><a id="af015"><!-- named anchor --></a><span class="generated">[</span>c<span class="generated">] </span>Department of Internal Medicine, Dow Medical College, Dow University of Health Sciences, Karachi, Pakistan</p>
+<p class="metadata-entry"><a id="PC_affihBS4jDOs2"><!-- named anchor --></a><span class="generated">[</span>d<span class="generated">] </span>Deanship of Library Affairs, Imam Abdulrahman Bin Faisal University, Dammam, Saudi Arabia</p>
+<p class="metadata-entry"><a id="PC_affLibfGVP097"><!-- named anchor --></a><span class="generated">[</span>e<span class="generated">] </span>Department of Medicine, University of Mississippi Medical Center, Jackson, MS, USA</p>
+</div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group"><div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id11"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="cor1"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>⁎<span class="generated">] </span>Corresponding author.</p>
+</div>
+</div></div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id12">The severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is responsible for the ongoing pandemic of coronavirus disease 2019 (COVID-19). Almost 17 months after the first COVID-19 case was reported, the exact pathogenesis of the virus is still open to interpretation. Postmortem studies have been relatively scarce due to the high infectivity rate of the virus. We systematically reviewed the literature available for studies that reported gross, histological, microscopic, and immunohistochemical findings in COVID-19 fatalities with the aim of reporting any recurrent findings among different demographics. PubMed and Scopus were searched up till the second of May 2021 and 46 studies with a total of 793 patients were shortlisted after the application of inclusion and exclusion criteria. The selected studies reported gross, histological, microscopic, and immunohistochemical autopsy findings in the lungs, heart, liver, gallbladder, bowels, kidney, spleen, bone marrow, lymph nodes, CNS, pancreas, endocrine/exocrine glands, and a few other miscellaneous locations. The SARS-CoV-2 virus was detected in multiple organs and so was the presence of widespread microthrombi. This finding suggests that the pathogenesis of this highly infectious virus might be linked to some form of coagulopathy. Further studies should focus on analyzing postmortem findings in a larger number of patients from different demographics in order to obtain more generalizable results.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s0005"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<h5 class="label">1</h5>
+<p id="p0025">Coronavirus disease 2019 (COVID-19) is a highly contagious infectious disease caused by the severe acute respiratory syndrome-coronavirus-2 (SARS-CoV-2). This disease mainly manifests as fever, dry cough, dyspnea, and myalgias. However, presentations can range from mild flu-like symptoms to severe and fatal respiratory failure. Furthermore, it is well-established from clinical studies that COVID-19 is not a disease restricted to the lungs and can in fact progress to a systemic disease involving multiple organs <a href="#b0005">[1]</a>. A potential explanation for this phenomenon could be the interaction between SARS-CoV-2 and its receptor – the angiotensin-converting enzyme 2 (ACE2) <a href="#b0010">[2]</a>. ACE2 is a cell surface protein that is expressed not only on type II pneumocytes of the lung but also on myocardial cells, enterocytes, bile duct cells, and vascular endothelium, potentially giving the virus access to all these tissues <a href="#b0015">[3]</a>.</p>
+<p id="p0030">Despite the knowledge that COVID-19 is a multisystemic disease, the exact pathophysiology behind organ damage remains elusive. A primary reason for this is the lack of studies outlining postmortem findings in COVID-19 patients. Autopsy findings can help unravel the mechanisms of disease processes and thus, can provide crucial information to guide therapeutic measures <a href="#b0020">[4]</a>. Most published studies, however, have focused on clinical manifestations of COVID-19, its characteristic radiographic findings, and potential treatments. Postmortem studies have been scarce and often include only a few patients. A major limitation of small-sized autopsy studies is their inability to conclusively demonstrate whether the findings are due to COVID-19 induced damage or due to unrelated comorbidities. This is further complicated by the fact that the majority of patients who die from COVID-19 often suffer from multiple pre-existing comorbidities <a href="#b0025">[5]</a>.</p>
+<p id="p0035">In this study, we systematically reviewed the literature to identify studies reporting gross, histological, microscopic, and immunohistochemical findings on postmortem examination of COVID-19 patients. We postulated that any finding which was a direct consequence of COVID-19 infection would be seen as a recurring theme across multiple studies with different patient demographics. The aim of this systematic review is to highlight the most prominent findings in each organ in a concise and digestible format.</p>
+</div>
+<div class="section">
+<a id="s0010"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<h5 class="label">2</h5>
+<p id="p0040">This study adheres to the reporting guidelines established by the Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) <a href="#b0030">[6]</a>.</p>
+<p id="p0045">PubMed and Scopus were searched up till the first week of May 2021. The following search string was entered in each database: (COVID-19 OR COVID19 OR coronavirus disease 2019 OR SARS-cov2) AND (histopatholog* OR histolog* OR pathophyiolog* OR postmortem OR autopsy). Additionally, PubMed automatically expands the query by searching for MeSH terms as well. The expanded search details and number of search results from each database are displayed in <a href="#t0005">Table 1</a>
+. All articles retrieved via the search strategy were exported to EndNote Reference Library, where duplicates were identified and removed. The remaining articles were assessed and shortlisted independently by two investigators based on their relevance to the eligibility criteria. Titles and abstracts were reviewed first, after which the full-text was read. Another two investigators were consulted in case of discrepancies. The literature search has been summarized in a PRISMA flowchart (<a href="#f0005">Fig. 1</a>
+).<div class="table-wrap panel" style="display: float; clear: both">
+<a id="t0005"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id13">Search strategy.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id14"><!-- named anchor --></a><thead>
+<a id="id15"><!-- named anchor --></a><tr>
+<a id="id16"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id17"><!-- named anchor --></a>Database</th>
+<th colspan="1" rowspan="1">
+<a id="id18"><!-- named anchor --></a>Search details</th>
+<th colspan="1" rowspan="1">
+<a id="id19"><!-- named anchor --></a>Articles retrieved</th>
+</tr>
+</thead>
+<tbody>
+<a id="id20"><!-- named anchor --></a><tr>
+<a id="id21"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id22"><!-- named anchor --></a>PubMed</td>
+<td colspan="1" rowspan="1">
+<a id="id23"><!-- named anchor --></a>(“covid 19″[All Fields] OR ”covid 19″[MeSH Terms] OR “covid 19 vaccines”[All Fields] OR “covid 19 vaccines”[MeSH Terms] OR “covid 19 serotherapy”[All Fields] OR “covid 19 serotherapy”[Supplementary Concept] OR “covid 19 nucleic acid testing”[All Fields] OR “covid 19 nucleic acid testing”[MeSH Terms] OR “covid 19 serological testing”[All Fields] OR “covid 19 serological testing”[MeSH Terms] OR “covid 19 testing”[All Fields] OR “covid 19 testing”[MeSH Terms] OR “sars cov 2″[All Fields] OR ”sars cov 2″[MeSH Terms] OR “severe acute respiratory syndrome coronavirus 2″[All Fields] OR ”ncov“[All Fields] OR ”2019 ncov“[All Fields] OR ((”coronavirus“[MeSH Terms] OR ”coronavirus“[All Fields] OR ”cov“[All Fields]) AND 2019/11/01:3000/12/31[Date - Publication]) OR (”covid 19″[MeSH Terms] OR “covid 19″[All Fields] OR ”covid19″[All Fields]) OR (“covid 19″[MeSH Terms] OR ”covid 19″[All Fields] OR “coronavirus disease 2019″[All Fields]) OR ”SARS-cov2″[All Fields]) AND (“histopatholog*”[All Fields] OR “histolog*”[All Fields] OR “pathophyiolog*”[All Fields] OR (“autopsy”[MeSH Terms] OR “autopsy”[All Fields] OR “postmortem”[All Fields] OR “postmortems”[All Fields]) OR (“autopsied”[All Fields] OR “autopsy”[MeSH Terms] OR “autopsy”[All Fields] OR “autopsies”[All Fields]))</td>
+<td colspan="1" rowspan="1">
+<a id="id24"><!-- named anchor --></a>842</td>
+</tr>
+<tr>
+<a id="id25"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id26"><!-- named anchor --></a>Scopus</td>
+<td colspan="1" rowspan="1">
+<a id="id27"><!-- named anchor --></a>(COVID-19 OR COVID 19 OR coronavirus disease 2019 OR SARS-CoV-2) AND (histopatholog* OR histolog* OR pathophysiolog* OR postmortem OR autopsy)</td>
+<td colspan="1" rowspan="1">
+<a id="id28"><!-- named anchor --></a>1073</td>
+</tr>
+</tbody>
+</table>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="f0005"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id29">PRISMA flowchart.</p></div>
+</div></p>
+<p id="p0050">Studies were included if they reported postmortem examination findings (gross, histological, microscopic, immunohistochemical) in COVID-19 patients. Studies reporting findings of biopsies of living COVID-19 patients were excluded.</p>
+</div>
+<div class="section">
+<a id="s0015"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<h5 class="label">3</h5>
+<p id="p0055">The initial search of electronic databases yielded 1915 results. After the application of inclusion and exclusion criteria, 46 studies on postmortem findings in COVID-19 patients were shortlisted for our qualitative analysis <a href="#b0035">[7]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0060">[12]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0080">[16]</a>, <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>, <a href="#b0095">[19]</a>, <a href="#b0100">[20]</a>, <a href="#b0105">[21]</a>, <a href="#b0110">[22]</a>, <a href="#b0115">[23]</a>, <a href="#b0120">[24]</a>, <a href="#b0125">[25]</a>, <a href="#b0130">[26]</a>, <a href="#b0135">[27]</a>, <a href="#b0140">[28]</a>, <a href="#b0145">[29]</a>, <a href="#b0150">[30]</a>, <a href="#b0155">[31]</a>, <a href="#b0160">[32]</a>, <a href="#b0165">[33]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>, <a href="#b0185">[37]</a>, <a href="#b0190">[38]</a>, <a href="#b0195">[39]</a>, <a href="#b0200">[40]</a>, <a href="#b0205">[41]</a>, <a href="#b0210">[42]</a>, <a href="#b0215">[43]</a>, <a href="#b0220">[44]</a>, <a href="#b0225">[45]</a>, <a href="#b0230">[46]</a>, <a href="#b0235">[47]</a>, <a href="#b0240">[48]</a>, <a href="#b0245">[49]</a>, <a href="#b0250">[50]</a>, <a href="#b0255">[51]</a>, <a href="#b0260">[52]</a>. 793 COVID-19 patients that had undergone postmortem biopsies or autopsies were included in the study. The studies included mostly elderly patients and the average age ranged from 60 to 80 years. Characteristics of individual studies have been provided in <a href="#t0010">Table 2</a>
+<b>.</b> The key gross findings of each organ system have been summarized in <a href="#f0010">Fig. 2</a>
+and the key histological, microscopic and immunohistochemical findings have been summarized in <a href="#t0015">Table 3</a>
+.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="t0010"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id30">Study characteristics.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id31"><!-- named anchor --></a><thead>
+<a id="id32"><!-- named anchor --></a><tr>
+<a id="id33"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id34"><!-- named anchor --></a>Author</th>
+<th colspan="1" rowspan="1">
+<a id="id35"><!-- named anchor --></a>Country</th>
+<th colspan="1" rowspan="1">
+<a id="id36"><!-- named anchor --></a>Number of patients</th>
+<th colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>Mean age (Years)</th>
+<th colspan="1" rowspan="1">
+<a id="id38"><!-- named anchor --></a>Organ(s) assessed</th>
+</tr>
+</thead>
+<tbody>
+<a id="id39"><!-- named anchor --></a><tr>
+<a id="id40"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id41"><!-- named anchor --></a>Ackermann et al. <a href="#b0035">[7]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id42"><!-- named anchor --></a>Germany</td>
+<td colspan="1" rowspan="1">
+<a id="id43"><!-- named anchor --></a>7</td>
+<td colspan="1" rowspan="1">
+<a id="id44"><!-- named anchor --></a>68 ± 9.2</td>
+<td colspan="1" rowspan="1">
+<a id="id45"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id46"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id47"><!-- named anchor --></a>Barton et al. <a href="#b0040">[8]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id48"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id49"><!-- named anchor --></a>2</td>
+<td colspan="1" rowspan="1">
+<a id="id50"><!-- named anchor --></a>59.5</td>
+<td colspan="1" rowspan="1">
+<a id="id51"><!-- named anchor --></a>Neck, lungs, CVS, CNS, GI, hepatobiliary, genitourinary, musculoskeletal, endocrine, immunological systems</td>
+</tr>
+<tr>
+<a id="id52"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id53"><!-- named anchor --></a>Bryce et al. <a href="#b0045">[9]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id54"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id55"><!-- named anchor --></a>67</td>
+<td colspan="1" rowspan="1">
+<a id="id56"><!-- named anchor --></a>69</td>
+<td colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a>Lungs, lymph nodes, CVS, bone marrow, spleen, kidney, liver, GI, CNS</td>
+</tr>
+<tr>
+<a id="id58"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id59"><!-- named anchor --></a>Buja et al. <a href="#b0050">[10]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id61"><!-- named anchor --></a>26</td>
+<td colspan="1" rowspan="1">
+<a id="id62"><!-- named anchor --></a>34–76</td>
+<td colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>Heart, lung, spleen, liver, kidney, testis</td>
+</tr>
+<tr>
+<a id="id64"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>Carsana et al. <a href="#b0055">[11]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>Italy</td>
+<td colspan="1" rowspan="1">
+<a id="id67"><!-- named anchor --></a>38</td>
+<td colspan="1" rowspan="1">
+<a id="id68"><!-- named anchor --></a>69</td>
+<td colspan="1" rowspan="1">
+<a id="id69"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id70"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id71"><!-- named anchor --></a>Fox et al. <a href="#b0070">[14]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id72"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>4</td>
+<td colspan="1" rowspan="1">
+<a id="id74"><!-- named anchor --></a>44–76</td>
+<td colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>Lung, heart, kidney, spleen, pancreas, and liver</td>
+</tr>
+<tr>
+<a id="id76"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a>Lax et al. <a href="#b0075">[15]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id78"><!-- named anchor --></a>Austria</td>
+<td colspan="1" rowspan="1">
+<a id="id79"><!-- named anchor --></a>11</td>
+<td colspan="1" rowspan="1">
+<a id="id80"><!-- named anchor --></a>80.5</td>
+<td colspan="1" rowspan="1">
+<a id="id81"><!-- named anchor --></a>Lungs, heart, kidneys, liver, pancreas, spleen, thyroid, submandibular glands, adrenals, gallbladder, small and large intestine</td>
+</tr>
+<tr>
+<a id="id82"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id83"><!-- named anchor --></a>Menter et al. <a href="#b0085">[17]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id84"><!-- named anchor --></a>Switzerland</td>
+<td colspan="1" rowspan="1">
+<a id="id85"><!-- named anchor --></a>21</td>
+<td colspan="1" rowspan="1">
+<a id="id86"><!-- named anchor --></a>76</td>
+<td colspan="1" rowspan="1">
+<a id="id87"><!-- named anchor --></a>Lung, liver, heart and kidney, bone marrow, brain</td>
+</tr>
+<tr>
+<a id="id88"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id89"><!-- named anchor --></a>Wichmann et al. <a href="#b0115">[23]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>Germany</td>
+<td colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>12</td>
+<td colspan="1" rowspan="1">
+<a id="id92"><!-- named anchor --></a>73</td>
+<td colspan="1" rowspan="1">
+<a id="id93"><!-- named anchor --></a>Heart, lungs, liver, kidneys, spleen, pancreas, brain, prostate and testes (in males), ovaries (in females), small bowel, saphenous vein, common carotid artery, pharynx, and muscle.</td>
+</tr>
+<tr>
+<a id="id94"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id95"><!-- named anchor --></a>Duarte‐Neto et al. <a href="#b0065">[13]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id96"><!-- named anchor --></a>Brazil</td>
+<td colspan="1" rowspan="1">
+<a id="id97"><!-- named anchor --></a>10</td>
+<td colspan="1" rowspan="1">
+<a id="id98"><!-- named anchor --></a>69</td>
+<td colspan="1" rowspan="1">
+<a id="id99"><!-- named anchor --></a>Lungs, liver, heart, kidneys, spleen, brain, skin, skeletal muscle and testis</td>
+</tr>
+<tr>
+<a id="id100"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id101"><!-- named anchor --></a>Schaller et al. <a href="#b0090">[18]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id102"><!-- named anchor --></a>Germany</td>
+<td colspan="1" rowspan="1">
+<a id="id103"><!-- named anchor --></a>12</td>
+<td colspan="1" rowspan="1">
+<a id="id104"><!-- named anchor --></a>79</td>
+<td colspan="1" rowspan="1">
+<a id="id105"><!-- named anchor --></a>Lung, heart, liver, spleen, kidney, brain, pleural effusion, and cerebrospinal fluid (CSF)</td>
+</tr>
+<tr>
+<a id="id106"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id107"><!-- named anchor --></a>Tian et al. <a href="#b0100">[20]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id108"><!-- named anchor --></a>China</td>
+<td colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a>4</td>
+<td colspan="1" rowspan="1">
+<a id="id110"><!-- named anchor --></a>59–81</td>
+<td colspan="1" rowspan="1">
+<a id="id111"><!-- named anchor --></a>Lungs, liver, and heart</td>
+</tr>
+<tr>
+<a id="id112"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id113"><!-- named anchor --></a>Martines et al. <a href="#b0080">[16]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id114"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id115"><!-- named anchor --></a>8</td>
+<td colspan="1" rowspan="1">
+<a id="id116"><!-- named anchor --></a>73.5</td>
+<td colspan="1" rowspan="1">
+<a id="id117"><!-- named anchor --></a>Lungs, liver, kidney, heart</td>
+</tr>
+<tr>
+<a id="id118"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a>Varga et al. <a href="#b0105">[21]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id120"><!-- named anchor --></a>Switzerland</td>
+<td colspan="1" rowspan="1">
+<a id="id121"><!-- named anchor --></a>3</td>
+<td colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a>66</td>
+<td colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>Kidney, lung, heart, liver, small intestine</td>
+</tr>
+<tr>
+<a id="id124"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id125"><!-- named anchor --></a>Wang et al. <a href="#b0110">[22]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id126"><!-- named anchor --></a>China</td>
+<td colspan="1" rowspan="1">
+<a id="id127"><!-- named anchor --></a>2</td>
+<td colspan="1" rowspan="1">
+<a id="id128"><!-- named anchor --></a>64.5</td>
+<td colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a>Liver, lung</td>
+</tr>
+<tr>
+<a id="id130"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id131"><!-- named anchor --></a>Su et al. <a href="#b0095">[19]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id132"><!-- named anchor --></a>China</td>
+<td colspan="1" rowspan="1">
+<a id="id133"><!-- named anchor --></a>26</td>
+<td colspan="1" rowspan="1">
+<a id="id134"><!-- named anchor --></a>69</td>
+<td colspan="1" rowspan="1">
+<a id="id135"><!-- named anchor --></a>Kidney</td>
+</tr>
+<tr>
+<a id="id136"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id137"><!-- named anchor --></a>Xu et al. <a href="#b0120">[24]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a>China</td>
+<td colspan="1" rowspan="1">
+<a id="id139"><!-- named anchor --></a>10</td>
+<td colspan="1" rowspan="1">
+<a id="id140"><!-- named anchor --></a>68.3</td>
+<td colspan="1" rowspan="1">
+<a id="id141"><!-- named anchor --></a>Spleen</td>
+</tr>
+<tr>
+<a id="id142"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id143"><!-- named anchor --></a>Casagrande et al. <a href="#b0060">[12]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id144"><!-- named anchor --></a>Germany</td>
+<td colspan="1" rowspan="1">
+<a id="id145"><!-- named anchor --></a>14</td>
+<td colspan="1" rowspan="1">
+<a id="id146"><!-- named anchor --></a>77</td>
+<td colspan="1" rowspan="1">
+<a id="id147"><!-- named anchor --></a>Eyes</td>
+</tr>
+<tr>
+<a id="id148"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id149"><!-- named anchor --></a>Flikweert et al. <a href="#b0170">[34]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id150"><!-- named anchor --></a>Netherlands</td>
+<td colspan="1" rowspan="1">
+<a id="id151"><!-- named anchor --></a>7</td>
+<td colspan="1" rowspan="1">
+<a id="id152"><!-- named anchor --></a>73</td>
+<td colspan="1" rowspan="1">
+<a id="id153"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id154"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id155"><!-- named anchor --></a>Zhao et al. <a href="#b0260">[52]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id156"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id157"><!-- named anchor --></a>17</td>
+<td colspan="1" rowspan="1">
+<a id="id158"><!-- named anchor --></a>65.24</td>
+<td colspan="1" rowspan="1">
+<a id="id159"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id160"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id161"><!-- named anchor --></a>Wu et al. <a href="#b0250">[50]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a>China</td>
+<td colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a>10</td>
+<td colspan="1" rowspan="1">
+<a id="id164"><!-- named anchor --></a>70</td>
+<td colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id166"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id167"><!-- named anchor --></a>Haslbauer et al. <a href="#b0180">[36]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id168"><!-- named anchor --></a>Switzerland</td>
+<td colspan="1" rowspan="1">
+<a id="id169"><!-- named anchor --></a>11</td>
+<td colspan="1" rowspan="1">
+<a id="id170"><!-- named anchor --></a>69.5</td>
+<td colspan="1" rowspan="1">
+<a id="id171"><!-- named anchor --></a>Lungs, heart, liver, gallbladder, small bowel</td>
+</tr>
+<tr>
+<a id="id172"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id173"><!-- named anchor --></a>Grosse et al. <a href="#b0175">[35]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id174"><!-- named anchor --></a>Austria</td>
+<td colspan="1" rowspan="1">
+<a id="id175"><!-- named anchor --></a>14</td>
+<td colspan="1" rowspan="1">
+<a id="id176"><!-- named anchor --></a>82</td>
+<td colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>Lungs, heart</td>
+</tr>
+<tr>
+<a id="id178"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id179"><!-- named anchor --></a>Li et al. <a href="#b0195">[39]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id180"><!-- named anchor --></a>China</td>
+<td colspan="1" rowspan="1">
+<a id="id181"><!-- named anchor --></a>28</td>
+<td colspan="1" rowspan="1">
+<a id="id182"><!-- named anchor --></a>69</td>
+<td colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id184"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id185"><!-- named anchor --></a>Beigmohammadi et al. <a href="#b0130">[26]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id186"><!-- named anchor --></a>Iran</td>
+<td colspan="1" rowspan="1">
+<a id="id187"><!-- named anchor --></a>7</td>
+<td colspan="1" rowspan="1">
+<a id="id188"><!-- named anchor --></a>67.8</td>
+<td colspan="1" rowspan="1">
+<a id="id189"><!-- named anchor --></a>Lungs, heart, liver</td>
+</tr>
+<tr>
+<a id="id190"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id191"><!-- named anchor --></a>Bruce-Brand et al. <a href="#b0140">[28]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id192"><!-- named anchor --></a>South Africa</td>
+<td colspan="1" rowspan="1">
+<a id="id193"><!-- named anchor --></a>4</td>
+<td colspan="1" rowspan="1">
+<a id="id194"><!-- named anchor --></a>59.7</td>
+<td colspan="1" rowspan="1">
+<a id="id195"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id196"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id197"><!-- named anchor --></a>Fiel et al. <a href="#b0165">[33]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id198"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id199"><!-- named anchor --></a>2</td>
+<td colspan="1" rowspan="1">
+<a id="id200"><!-- named anchor --></a>49.5</td>
+<td colspan="1" rowspan="1">
+<a id="id201"><!-- named anchor --></a>Liver</td>
+</tr>
+<tr>
+<a id="id202"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id203"><!-- named anchor --></a>Deinhardt-Emmer et al. <a href="#b0160">[32]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id204"><!-- named anchor --></a>Germany</td>
+<td colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a>11</td>
+<td colspan="1" rowspan="1">
+<a id="id206"><!-- named anchor --></a>72.2</td>
+<td colspan="1" rowspan="1">
+<a id="id207"><!-- named anchor --></a>Lungs, heart, liver, gallbladder, small bowel</td>
+</tr>
+<tr>
+<a id="id208"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id209"><!-- named anchor --></a>Chmielik et al. <a href="#b0145">[29]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id210"><!-- named anchor --></a>Poland</td>
+<td colspan="1" rowspan="1">
+<a id="id211"><!-- named anchor --></a>3</td>
+<td colspan="1" rowspan="1">
+<a id="id212"><!-- named anchor --></a>61</td>
+<td colspan="1" rowspan="1">
+<a id="id213"><!-- named anchor --></a>Lungs, heart</td>
+</tr>
+<tr>
+<a id="id214"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id215"><!-- named anchor --></a>Valdivia-Mazeyra et al. <a href="#b0245">[49]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id216"><!-- named anchor --></a>Spain</td>
+<td colspan="1" rowspan="1">
+<a id="id217"><!-- named anchor --></a>18</td>
+<td colspan="1" rowspan="1">
+<a id="id218"><!-- named anchor --></a>68</td>
+<td colspan="1" rowspan="1">
+<a id="id219"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id220"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id221"><!-- named anchor --></a>Roden et al. <a href="#b0220">[44]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id222"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id223"><!-- named anchor --></a>8</td>
+<td colspan="1" rowspan="1">
+<a id="id224"><!-- named anchor --></a>79</td>
+<td colspan="1" rowspan="1">
+<a id="id225"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id226"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id227"><!-- named anchor --></a>Nie et al. <a href="#b0210">[42]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id228"><!-- named anchor --></a>China</td>
+<td colspan="1" rowspan="1">
+<a id="id229"><!-- named anchor --></a>19</td>
+<td colspan="1" rowspan="1"><a id="id230"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id231"><!-- named anchor --></a>Lungs, liver</td>
+</tr>
+<tr>
+<a id="id232"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>Solomon et al. <a href="#b0240">[48]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id234"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id235"><!-- named anchor --></a>18</td>
+<td colspan="1" rowspan="1">
+<a id="id236"><!-- named anchor --></a>62</td>
+<td colspan="1" rowspan="1">
+<a id="id237"><!-- named anchor --></a>Brain</td>
+</tr>
+<tr>
+<a id="id238"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id239"><!-- named anchor --></a>Santoriello et al. <a href="#b0225">[45]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id240"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id241"><!-- named anchor --></a>42</td>
+<td colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>71.5</td>
+<td colspan="1" rowspan="1">
+<a id="id243"><!-- named anchor --></a>Kidney</td>
+</tr>
+<tr>
+<a id="id244"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id245"><!-- named anchor --></a>Matschke et al. <a href="#b0205">[41]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id246"><!-- named anchor --></a>Germany</td>
+<td colspan="1" rowspan="1">
+<a id="id247"><!-- named anchor --></a>43</td>
+<td colspan="1" rowspan="1">
+<a id="id248"><!-- named anchor --></a>51</td>
+<td colspan="1" rowspan="1">
+<a id="id249"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id250"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id251"><!-- named anchor --></a>Lindner et al. <a href="#b0200">[40]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id252"><!-- named anchor --></a>Italy</td>
+<td colspan="1" rowspan="1">
+<a id="id253"><!-- named anchor --></a>39</td>
+<td colspan="1" rowspan="1">
+<a id="id254"><!-- named anchor --></a>85</td>
+<td colspan="1" rowspan="1">
+<a id="id255"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id256"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a>Barisione et al. <a href="#b0125">[25]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>Italy</td>
+<td colspan="1" rowspan="1">
+<a id="id259"><!-- named anchor --></a>8</td>
+<td colspan="1" rowspan="1">
+<a id="id260"><!-- named anchor --></a>76</td>
+<td colspan="1" rowspan="1">
+<a id="id261"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id262"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id263"><!-- named anchor --></a>De Michele et al. <a href="#b0155">[31]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id264"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id265"><!-- named anchor --></a>40</td>
+<td colspan="1" rowspan="1">
+<a id="id266"><!-- named anchor --></a>71.5</td>
+<td colspan="1" rowspan="1">
+<a id="id267"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id268"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id269"><!-- named anchor --></a>Youd and Moore <a href="#b0255">[51]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id270"><!-- named anchor --></a>UK</td>
+<td colspan="1" rowspan="1">
+<a id="id271"><!-- named anchor --></a>9</td>
+<td colspan="1" rowspan="1">
+<a id="id272"><!-- named anchor --></a>72.1</td>
+<td colspan="1" rowspan="1">
+<a id="id273"><!-- named anchor --></a>Lungs, heart, liver, gallbladder, small bowel, spleen</td>
+</tr>
+<tr>
+<a id="id274"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id275"><!-- named anchor --></a>Kantonen et al. <a href="#b0185">[37]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id276"><!-- named anchor --></a>Finland</td>
+<td colspan="1" rowspan="1">
+<a id="id277"><!-- named anchor --></a>4</td>
+<td colspan="1" rowspan="1">
+<a id="id278"><!-- named anchor --></a>68.25</td>
+<td colspan="1" rowspan="1">
+<a id="id279"><!-- named anchor --></a>Brain</td>
+</tr>
+<tr>
+<a id="id280"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id281"><!-- named anchor --></a>Skok et al. <a href="#b0235">[47]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id282"><!-- named anchor --></a>Austria</td>
+<td colspan="1" rowspan="1">
+<a id="id283"><!-- named anchor --></a>28</td>
+<td colspan="1" rowspan="1">
+<a id="id284"><!-- named anchor --></a>82.9</td>
+<td colspan="1" rowspan="1">
+<a id="id285"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id286"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id287"><!-- named anchor --></a>Sauter et al. <a href="#b0230">[46]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id288"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id289"><!-- named anchor --></a>8</td>
+<td colspan="1" rowspan="1">
+<a id="id290"><!-- named anchor --></a>57.5</td>
+<td colspan="1" rowspan="1">
+<a id="id291"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id292"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id293"><!-- named anchor --></a>Konopka et al. <a href="#b0190">[38]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id294"><!-- named anchor --></a>USA</td>
+<td colspan="1" rowspan="1">
+<a id="id295"><!-- named anchor --></a>8</td>
+<td colspan="1" rowspan="1">
+<a id="id296"><!-- named anchor --></a>55.9</td>
+<td colspan="1" rowspan="1">
+<a id="id297"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id298"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id299"><!-- named anchor --></a>Remmelink et al. <a href="#b0215">[43]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id300"><!-- named anchor --></a>Belgium</td>
+<td colspan="1" rowspan="1">
+<a id="id301"><!-- named anchor --></a>17</td>
+<td colspan="1" rowspan="1">
+<a id="id302"><!-- named anchor --></a>71</td>
+<td colspan="1" rowspan="1">
+<a id="id303"><!-- named anchor --></a>Lungs, heart, liver, kidney</td>
+</tr>
+<tr>
+<a id="id304"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id305"><!-- named anchor --></a>Damiani et al. <a href="#b0150">[30]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id306"><!-- named anchor --></a>Italy</td>
+<td colspan="1" rowspan="1">
+<a id="id307"><!-- named anchor --></a>9</td>
+<td colspan="1" rowspan="1">
+<a id="id308"><!-- named anchor --></a>58</td>
+<td colspan="1" rowspan="1">
+<a id="id309"><!-- named anchor --></a>Lungs</td>
+</tr>
+<tr>
+<a id="id310"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id311"><!-- named anchor --></a>Borczuk et al. <a href="#b0135">[27]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id312"><!-- named anchor --></a>Italy, USA</td>
+<td colspan="1" rowspan="1">
+<a id="id313"><!-- named anchor --></a>68</td>
+<td colspan="1" rowspan="1">
+<a id="id314"><!-- named anchor --></a>73</td>
+<td colspan="1" rowspan="1">
+<a id="id315"><!-- named anchor --></a>Lungs</td>
+</tr>
+</tbody>
+</table>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="f0010"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id316">Key postmortem findings on gross examination.</p></div>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="t0015"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id317">Summary of key postmortem histologic and immunohistochemical findings in each organ.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id318"><!-- named anchor --></a><thead>
+<a id="id319"><!-- named anchor --></a><tr>
+<a id="id320"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id321"><!-- named anchor --></a>Organ/System</th>
+<th colspan="1" rowspan="1">
+<a id="id322"><!-- named anchor --></a>Histologic and microscopic findings</th>
+<th colspan="1" rowspan="1">
+<a id="id323"><!-- named anchor --></a>Immunohistochemical findings</th>
+</tr>
+</thead>
+<tbody>
+<a id="id324"><!-- named anchor --></a><tr>
+<a id="id325"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id326"><!-- named anchor --></a>Lungs</td>
+<td colspan="1" rowspan="1">
+<a id="id327"><!-- named anchor --></a>-Diffuse alveolar damage (DAD) (78.4%; 226/288)<br class="br">-Intra alveolar neutrophilic infiltration (35%; 68/194)<br class="br">-Widespread thromboemboli with microangiopathy (50%; 113/225)<br class="br">-Fibrinoid necrosis of small vessels (73%; 19/26)<br class="br">-Viral particles in type 1 and type 2 pneumocytes</td>
+<td colspan="1" rowspan="1">
+<a id="id328"><!-- named anchor --></a>- CD3+, CD4+, CD8+ and CD45+ lymphocytes<br class="br">-CD68+ macrophages<br class="br">-CD61+ megakaryocytes<br class="br">-Scant CD57+ NK cells.<br class="br">-TTF-1 and CK-7+ alveolar pneumocytes with CK 5/6 expression</td>
+</tr>
+<tr>
+<a id="id329"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id330"><!-- named anchor --></a>Heart</td>
+<td colspan="1" rowspan="1">
+<a id="id331"><!-- named anchor --></a>-Enlarged myocytes with darkened cytoplasm, nuclear polymorphism, focal edema and fibrosis. (76%; 105/138)<br class="br">-Lymphocytic infiltration in myocardium and epicardium (26%; 28/107)<br class="br">-Senile cardiac amyloidosis (20%; 11/54)<br class="br">-Apoptotic bodies<br class="br">-Intimal and medial thickening of vessels.<br class="br">-Lymphocytic endotheliitis and thrombosis of myocardial veins. (16%; 4/24)</td>
+<td colspan="1" rowspan="1">
+<a id="id332"><!-- named anchor --></a>-CD4+ &gt; CD8+ lymphocytes<br class="br">-Less CD3+ and rarer CD68+ macrophages</td>
+</tr>
+<tr>
+<a id="id333"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id334"><!-- named anchor --></a>Liver</td>
+<td colspan="1" rowspan="1">
+<a id="id335"><!-- named anchor --></a>-Micro and macro vesicular liver steatosis (59%; 91/154)<br class="br">-Mild, focal lymphocytic lobular infiltration, centrilobular sinusoidal dilation, ischemic coagulative necrosis with neutrophilic infiltration (67.9%; 36/53)<br class="br">-Lymphocytic and plasma cell infiltrate with signs of fibrosis in portal venules. (70.1%; 17/24)<br class="br">-Endotheliitis of submucosal vessels with apoptotic bodies<br class="br">-Viral particles in cytoplasm of hepatocytes.<br class="br">-Swollen mitochondria, dilated endoplasmic reticulum, decreased glycogen granules and binuclear hepatocytes with apoptotic cells. (100%; 4/4)</td>
+<td colspan="1" rowspan="1">
+<a id="id336"><!-- named anchor --></a>-Increased CD68+ Kupffer cells.<br class="br">-Infrequent CD4+ and few CD8+ lymphocytes.<br class="br">-CD61+ early organizing thrombi in portal venules</td>
+</tr>
+<tr>
+<a id="id337"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id338"><!-- named anchor --></a>Kidney</td>
+<td colspan="1" rowspan="1">
+<a id="id339"><!-- named anchor --></a>-Acute tubular injury (ATI) (32.4%; 58/179)<br class="br">-Cellular swelling and edematous expansion in distal tubule and collecting ducts.<br class="br">-Hemosiderin granules in tubular epithelium.<br class="br">-Chronic inflammatory infiltrate with interstitial fibrosis and tubular atrophy<br class="br">-Congested glomeruli and peritubular capillaries with thrombi. (10.5%; 17/162)<br class="br">-Glomerular mesangial expansion and hyalinosis of arterioles.<br class="br">-Lymphocyte endotheliitis.<br class="br">-Multiple vesicles, attached ribosomes and double membranes in podocyte cytoplasm.<br class="br">-Viral particles in cytoplasm of proximal tubular epithelium and glomerular endothelial cells. (14%; 11/76)</td>
+<td colspan="1" rowspan="1">
+<a id="id340"><!-- named anchor --></a>-Mix of T and B lymphocytes with some macrophages.<br class="br">-CD235+ microvascular erythrocytic obstruction.<br class="br">-Occlusion of peritubular capillaries confirmed by CD31 stain for endothelial cells.<br class="br">-ACE2+ in proximal tubular and parietal epithelial cells of severe ATI patients.</td>
+</tr>
+<tr>
+<a id="id341"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id342"><!-- named anchor --></a>Spleen</td>
+<td colspan="1" rowspan="1">
+<a id="id343"><!-- named anchor --></a>-Enlarged with red pulp expansion due to congestion and lymphoplasmacytic infiltrate. (24%; 13/54)<br class="br">-White pulp atrophy with absent marginal zones. (50%; 30/61)<br class="br">-Some thrombi with hemorrhagic areas. (81%; 9/11)<br class="br">-Acute splenitis with septic neutrophilic leukocytosis of red pulp. (28%; 6/21)<br class="br">-Viral particles in macrophage cytoplasm. (20%; 2/10)</td>
+<td colspan="1" rowspan="1">
+<a id="id344"><!-- named anchor --></a>-Decreased CD3. CD4 and CD8+ T lymphocytes.<br class="br">-CD20+ B cells in lymphoid sheath around splenic artery.<br class="br">-CD20 and CD21 stain showed atrophic splenic nodules.<br class="br">-CD68+ macrophages mostly in medullary sinuses.</td>
+</tr>
+<tr>
+<a id="id345"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id346"><!-- named anchor --></a>Lymph nodes</td>
+<td colspan="1" rowspan="1">
+<a id="id347"><!-- named anchor --></a>-Lymphocyte depletion with absent germinal centers. (53%; 17/32)<br class="br">-Dilated sinuses and vessels.<br class="br">-Increase in reactive plasmablasts. (55%; 5/9)<br class="br">-Sinus histiocytosis with focal hemophagocytosis in thoracic LNs. (16%; 11/67)<br class="br">-Microthrombi in vessels. (3%; 2/67)<br class="br">-Viral particles in cytoplasm.</td>
+<td colspan="1" rowspan="1">
+<a id="id348"><!-- named anchor --></a>-Decreased CD3+ T cells.<br class="br">-CD4+ &gt; CD8+ T cells.</td>
+</tr>
+<tr>
+<a id="id349"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id350"><!-- named anchor --></a>Bone marrow</td>
+<td colspan="1" rowspan="1">
+<a id="id351"><!-- named anchor --></a>-Reactive lymphocytic infiltrate. (11/11)<br class="br">-Hemophagocytosis (6%; 4/67)<br class="br">
+</td>
+<td colspan="1" rowspan="1">
+<a id="id352"><!-- named anchor --></a>-Prominent hyperplasia of CD8+ T cells.</td>
+</tr>
+<tr>
+<a id="id353"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id354"><!-- named anchor --></a>Adrenal glands</td>
+<td colspan="1" rowspan="1">
+<a id="id355"><!-- named anchor --></a>-Nodular to diffuse adrenocortical hyperplasia in Zona fasciculata. (86%)<br class="br">-Signs of shock</td>
+<td colspan="1" rowspan="1"><a id="id356"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id357"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id358"><!-- named anchor --></a>CNS</td>
+<td colspan="1" rowspan="1">
+<a id="id359"><!-- named anchor --></a>-Widespread microthrombi in cerebral arteries.<br class="br">-Acute parenchymal microhemorrhages.<br class="br">-Focal T lymphocytic infiltrate.</td>
+<td colspan="1" rowspan="1"><a id="id360"><!-- named anchor --></a></td>
+</tr>
+<tr>
+<a id="id361"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id362"><!-- named anchor --></a>Misc. locations</td>
+<td colspan="1" rowspan="1">
+<a id="id363"><!-- named anchor --></a>-<b>Pharynx -</b> Chronic Pharyngitis with hyperemia and alternating dense lymphocytic infiltrates.<br class="br">-<b>Testis –</b> Orchitis and thrombi in testis. (8%; 3/36)<br class="br">-<b>Prostate –</b>Thrombosis (66%; 6/9)<br class="br">-<b>Skeletal muscle -</b> Myositis and necrotic fibers (20%; 2/10)<br class="br">-<b>Viral RNA in</b> - pharynx, saphenous vein and retina.</td>
+<td colspan="1" rowspan="1"><a id="id364"><!-- named anchor --></a></td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<div class="section">
+<a id="s0020"><!-- named anchor --></a><h3 class="section-title">Pulmonary findings</h3>
+<h5 class="label">3.1</h5>
+<p id="p0060">The lungs were evaluated in 36 studies <a href="#b0190">[38]</a>, <a href="#b0195">[39]</a>, <a href="#b0230">[46]</a>, <a href="#b0235">[47]</a>, <a href="#b0035">[7]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0080">[16]</a>, <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>, <a href="#b0100">[20]</a>, <a href="#b0105">[21]</a>, <a href="#b0110">[22]</a>, <a href="#b0115">[23]</a>, <a href="#b0125">[25]</a>, <a href="#b0130">[26]</a>, <a href="#b0135">[27]</a>, <a href="#b0140">[28]</a>, <a href="#b0145">[29]</a>, <a href="#b0150">[30]</a>, <a href="#b0155">[31]</a>, <a href="#b0160">[32]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>, <a href="#b0210">[42]</a>, <a href="#b0215">[43]</a>, <a href="#b0220">[44]</a>, <a href="#b0245">[49]</a>, <a href="#b0250">[50]</a>, <a href="#b0255">[51]</a>. On macroscopic examination, approximately half of the lungs (212/371; 57.9%) were heavy and congested with a red, maroon-like appearance <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0085">[17]</a>, <a href="#b0115">[23]</a>, <a href="#b0160">[32]</a>, <a href="#b0175">[35]</a>, <a href="#b0190">[38]</a>, <a href="#b0215">[43]</a>, <a href="#b0220">[44]</a>, <a href="#b0235">[47]</a>, <a href="#b0255">[51]</a>, <a href="#b0035">[7]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0130">[26]</a>, <a href="#b0135">[27]</a>, <a href="#b0140">[28]</a>. The parenchyma was patchy to diffusely edematous and the consistency was firm yet friable in 61.0% (156/247) of the lungs <a href="#b0040">[8]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0070">[14]</a>, <a href="#b0085">[17]</a>, <a href="#b0115">[23]</a>, <a href="#b0130">[26]</a>, <a href="#b0145">[29]</a>, <a href="#b0160">[32]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>, <a href="#b0195">[39]</a>, <a href="#b0245">[49]</a>. On the cut surface, 77 out of 189 patients (40.7%) had multiple, bilateral, small pulmonary artery thrombi with multiple areas of hemorrhages grossly visible <a href="#b0050">[10]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0195">[39]</a>, <a href="#b0210">[42]</a>, <a href="#b0220">[44]</a>, <a href="#b0235">[47]</a>, <a href="#b0245">[49]</a>, <a href="#b0135">[27]</a>, <a href="#b0140">[28]</a>, <a href="#b0145">[29]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>. Thrombosis of medium or small-sized arteries associated with infarction was found in all the 35/35 (100%) cases <a href="#b0075">[15]</a>, <a href="#b0140">[28]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>, <a href="#b0215">[43]</a>, <a href="#b0230">[46]</a>, <a href="#b0235">[47]</a>, <a href="#b0245">[49]</a>, <a href="#b0150">[30]</a>, <a href="#b0155">[31]</a>, <a href="#b0160">[32]</a>. Pulmonary embolism obstructing the main pulmonary artery was found in around 13.5% (29/215) of the patients <a href="#b0045">[9]</a>, <a href="#b0125">[25]</a>, <a href="#b0135">[27]</a>, <a href="#b0145">[29]</a>, <a href="#b0150">[30]</a>, <a href="#b0160">[32]</a>, <a href="#b0215">[43]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>. Amongst a total of 70 patients, 41 patients (58.6%) had focal to diffuse areas of consolidation with severe and extensive suppurative bronchopneumonic infiltrates <a href="#b0070">[14]</a>, <a href="#b0085">[17]</a>, <a href="#b0115">[23]</a>, <a href="#b0145">[29]</a>, <a href="#b0155">[31]</a>, <a href="#b0195">[39]</a>, <a href="#b0220">[44]</a>, <a href="#b0245">[49]</a>, <a href="#b0255">[51]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>.</p>
+<p id="p0065">Histologically, there was evidence of diffuse alveolar damage (DAD). The early exudative phase of DAD is characterized by edema of the bronchial and alveolar lining, capillary congestion, and early hyaline membrane formation without interstitial organization. This finding was found in approximately all of the cases 226/288 (78.4%) <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>, <a href="#b0100">[20]</a>, <a href="#b0115">[23]</a>, <a href="#b0190">[38]</a>, <a href="#b0195">[39]</a>, <a href="#b0215">[43]</a>, <a href="#b0220">[44]</a>, <a href="#b0230">[46]</a>, <a href="#b0235">[47]</a>, <a href="#b0035">[7]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0125">[25]</a>, <a href="#b0130">[26]</a>, <a href="#b0135">[27]</a>, <a href="#b0140">[28]</a>, <a href="#b0145">[29]</a>, <a href="#b0150">[30]</a>, <a href="#b0155">[31]</a>, <a href="#b0160">[32]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>, <a href="#b0245">[49]</a>, <a href="#b0250">[50]</a>, <a href="#b0255">[51]</a>. Patients who had a prolonged hospital stay displayed evidence of proliferative phase and early fibrotic phase. These phases are characterized by alveolar hyperplasia, presence of desquamated type II pneumocytes consisting of cytomegaly and nucleomegaly with bright eosinophilic nucleoli in the alveolar spaces. The presence of stromal cells, fibroblasts, and intra alveolar fibrin deposits with thickened intra alveolar septa is consistent with the fibrinous and organizing phase of DAD and was found in 40.3% (164/406) of hospitalized patients <a href="#b0035">[7]</a>, <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>, <a href="#b0100">[20]</a>, <a href="#b0115">[23]</a>, <a href="#b0125">[25]</a>, <a href="#b0130">[26]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0190">[38]</a>, <a href="#b0195">[39]</a>, <a href="#b0230">[46]</a>, <a href="#b0235">[47]</a>, <a href="#b0250">[50]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0150">[30]</a>, <a href="#b0155">[31]</a>, <a href="#b0160">[32]</a>, <a href="#b0210">[42]</a>, <a href="#b0215">[43]</a>, <a href="#b0220">[44]</a>. Interestingly, complete fibrosis was seen in 46 patients, characterized by the complete destruction of pulmonary parenchyma <a href="#b0090">[18]</a>, <a href="#b0155">[31]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0195">[39]</a>, <a href="#b0210">[42]</a>, <a href="#b0245">[49]</a>. Intra alveolar neutrophilic infiltration, consistent with bronchopneumonia, ranging from focal to diffuse was also found in small subsets of patients (35%; 68/194) <a href="#b0045">[9]</a>, <a href="#b0075">[15]</a>, <a href="#b0085">[17]</a>, <a href="#b0100">[20]</a>, <a href="#b0135">[27]</a>, <a href="#b0150">[30]</a>, <a href="#b0170">[34]</a>, <a href="#b0175">[35]</a>, <a href="#b0190">[38]</a>, <a href="#b0195">[39]</a>, <a href="#b0215">[43]</a>, <a href="#b0220">[44]</a>, <a href="#b0230">[46]</a>, <a href="#b0235">[47]</a>, <a href="#b0245">[49]</a>, <a href="#b0255">[51]</a>. This finding could be secondary to infection or aspiration <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0090">[18]</a>.</p>
+<p id="p0070">Pulmonary vasculature was examined in 225 patients. Histological examination of the pulmonary vasculature showed widespread thrombosis and thromboembolism with microangiopathy in 50% of patients <a href="#b0035">[7]</a>, <a href="#b0040">[8]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0085">[17]</a>, <a href="#b0100">[20]</a>, <a href="#b0115">[23]</a>, <a href="#b0125">[25]</a>, <a href="#b0145">[29]</a>, <a href="#b0155">[31]</a>, <a href="#b0220">[44]</a>, <a href="#b0230">[46]</a>, <a href="#b0235">[47]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>. Vessel walls were infiltrated by neutrophils, which were associated with hemorrhagic infarction of lung parenchyma. Fibrinoid necrosis of small vessels was a common finding, seen in 73% of patients <a href="#b0100">[20]</a>, <a href="#b0135">[27]</a>, <a href="#b0145">[29]</a>, <a href="#b0210">[42]</a>.</p>
+<p id="p0075">Immunohistochemistry showed inflammatory cell infiltrates which included the presence of CD3+, CD4+, CD8+, and CD45+ lymphocytes, and CD68+ macrophages in interstitial space, alveolar space, bronchioles, and blood vessels in 70 out of 194 patients (30%) that were examined <a href="#b0035">[7]</a>, <a href="#b0040">[8]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0090">[18]</a>, <a href="#b0125">[25]</a>, <a href="#b0130">[26]</a>, <a href="#b0140">[28]</a>, <a href="#b0145">[29]</a>, <a href="#b0160">[32]</a>, <a href="#b0175">[35]</a>, <a href="#b0220">[44]</a>, <a href="#b0230">[46]</a>. However, CD20+ B-lymphocytes were rare <a href="#b0040">[8]</a>, <a href="#b0065">[13]</a>, <a href="#b0230">[46]</a>. CD4+ and CD8+ lymphocytes varied from scarce in exudative DAD to forming small aggregates in patients with fibroproliferative DAD in 13 out of 26 patients (50%). CD57+ NK cells were also scant <a href="#b0065">[13]</a>, <a href="#b0140">[28]</a>, <a href="#b0160">[32]</a>, <a href="#b0180">[36]</a>. The most striking feature was the presence of CD61+ resident pulmonary megakaryocytes with nuclear hyperchromasia and atypia. Around 69% (123/178) of the patients had formations of platelet–fibrin aggregates in alveolar capillaries leading to thrombi <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0085">[17]</a>, <a href="#b0125">[25]</a>, <a href="#b0135">[27]</a>, <a href="#b0155">[31]</a>, <a href="#b0190">[38]</a>, <a href="#b0210">[42]</a>, <a href="#b0230">[46]</a>, <a href="#b0245">[49]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>. On DNA stain, pneumocytes with increased RNA in alveolar space showed aggregation <a href="#b0070">[14]</a>.</p>
+<p id="p0080">Ultra-structural examination showed changes in the tissue directly related to viral infection. Viral particles in type I and II pneumocytes showed enveloped, spike like projections and electro-lucent core with peripheral electron-dense granules of the sectioned nucleocapsid <a href="#b0045">[9]</a>, <a href="#b0055">[11]</a>. The particles were localized along plasmalemmal membranes and within cytoplasmic vacuoles. The diameter of the particles was 82 nm and the projection was about 13 nm in length <a href="#b0055">[11]</a>. Platelets and fibrin plugs with entrapped neutrophils were also detected in the lumina of alveolar capillaries in approximately two-thirds of patients (62.6%; 66/106) <a href="#b0050">[10]</a>, <a href="#b0055">[11]</a>, <a href="#b0140">[28]</a>, <a href="#b0245">[49]</a>.</p>
+</div>
+<div class="section">
+<a id="s0025"><!-- named anchor --></a><h3 class="section-title">Cardiac findings</h3>
+<h5 class="label">3.2</h5>
+<p id="p0085">The heart was evaluated postmortem in 19 studies <a href="#b0100">[20]</a>, <a href="#b0105">[21]</a>, <a href="#b0115">[23]</a>, <a href="#b0130">[26]</a>, <a href="#b0145">[29]</a>, <a href="#b0160">[32]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>, <a href="#b0215">[43]</a>, <a href="#b0255">[51]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0080">[16]</a>, <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>. On gross examination, the findings were mainly due to viral independent pre-existing pathologies and co-morbidities such as hypertension (HTN), diabetes mellitus (DM), and past ischemic injury <a href="#b0065">[13]</a>, <a href="#b0100">[20]</a>, <a href="#b0115">[23]</a>. The heart was weighed in 53 patients and the weight ranged from 280 g to 690 g (normal weight 250 g −350 g) <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0160">[32]</a>, <a href="#b0175">[35]</a>, <a href="#b0215">[43]</a>, <a href="#b0255">[51]</a>. There was significant evidence for left, right, or biventricular myocardial hypertrophy and dilatation mainly due to hypertrophic and dilated cardiomyopathy. Moderate to marked atherosclerosis narrowing, scarring of the myocardium post-myocardial infarction, and congestive heart disease (CHD) was also common (33.7%; 58/172 patients) <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>, <a href="#b0075">[15]</a>, <a href="#b0100">[20]</a>, <a href="#b0115">[23]</a>, <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>, <a href="#b0215">[43]</a>. The cut surface of the heart was firm and red-brown in all patients evaluated (100%; 4/4) <a href="#b0070">[14]</a>.</p>
+<p id="p0090">On histologic examination, enlargement of myocytes with nuclear polymorphism, focal edema and myocardial and interstitial fibrosis were found in around 76% of patients (105/138) with pre-existing hypertension and atherosclerotic cardiovascular disease <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>, <a href="#b0075">[15]</a>, <a href="#b0080">[16]</a>, <a href="#b0100">[20]</a>, <a href="#b0145">[29]</a>, <a href="#b0160">[32]</a>. 26% of patients had mild to moderate lymphocytic infiltration in the epicardial and myocardial tissues <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0090">[18]</a>, <a href="#b0130">[26]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>. However, full-fledged epicarditis and myocarditis, as seen in viral infection, was uncommon and noted only in 8 out of 41 patients (19%) <a href="#b0050">[10]</a>, <a href="#b0080">[16]</a>, <a href="#b0100">[20]</a>, <a href="#b0105">[21]</a>. Wichmann et al. and Buja et al. found one case each out of a total of 38 patients (5%) that had lymphocytic myocarditis with mononuclear cell infiltration <a href="#b0050">[10]</a>, <a href="#b0115">[23]</a>. In patients with ischemic injury and shock, peracute focal necrosis of cardiomyocytes was visible, but there were no large, confluent areas of myocyte necrosis <a href="#b0085">[17]</a>, <a href="#b0215">[43]</a>, <a href="#b0255">[51]</a>. Lymphocytes were found adjacent to and not surrounding the degenerating myocytes <a href="#b0070">[14]</a>, <a href="#b0130">[26]</a>, <a href="#b0175">[35]</a>. Senile cardiac amyloidosis was also found in 20% of patients (11/54) <a href="#b0075">[15]</a>, <a href="#b0085">[17]</a>, <a href="#b0160">[32]</a>, <a href="#b0180">[36]</a>, <a href="#b0255">[51]</a>. Immunostaining was done in 93 patients. Only 19 patients (19%) showed a predominance of CD4+ lymphocytes over CD8+ lymphocytes, with a lesser number of CD3+ T cells and even rarer CD68+ macrophages <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0130">[26]</a>.</p>
+<p id="p0095">Evaluation of the vessels showed intimal and medial thickening with luminal narrowing attributed to hypertrophic cardiomyopathy. Accumulation of inflammatory cells associated with endothelium as well as apoptotic bodies in the heart was also seen. Furthermore, there was some evidence of lymphocytic endotheliitis and thrombosis of myocardial veins (16%; 4/24) <a href="#b0065">[13]</a>, <a href="#b0075">[15]</a>, <a href="#b0105">[21]</a>.</p>
+</div>
+<div class="section">
+<a id="s0030"><!-- named anchor --></a><h3 class="section-title">Hepatic/gallbladder/bowel findings</h3>
+<h5 class="label">3.3</h5>
+<p id="p0100">The liver, gallbladder, and bowel were evaluated in 23 studies <a href="#b0130">[26]</a>, <a href="#b0145">[29]</a>, <a href="#b0150">[30]</a>, <a href="#b0160">[32]</a>, <a href="#b0165">[33]</a>, <a href="#b0175">[35]</a>, <a href="#b0195">[39]</a>, <a href="#b0210">[42]</a>, <a href="#b0255">[51]</a>, <a href="#b0260">[52]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0080">[16]</a>, <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>, <a href="#b0100">[20]</a>, <a href="#b0105">[21]</a>, <a href="#b0110">[22]</a>, <a href="#b0115">[23]</a>. Macroscopically, the liver was unremarkable. However, in 4.7% of patients (4/86) there was evidence of cirrhosis <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0260">[52]</a>, features including nutmeg congestion with multiple cysts, as reported by Bryce and his colleagues (2/67) <a href="#b0045">[9]</a>.</p>
+<p id="p0105">Amongst a total of 154 patients, 91 were found to have micro and macro vesicular liver steatosis ranging from mild to severe, predominately pericentrally. Periportal steatosis on histological examination was also found, indicating the presence of nonalcoholic fatty liver disease (NAFLD), which was likely a pre-existing condition <a href="#b0065">[13]</a>, <a href="#b0100">[20]</a>, <a href="#b0110">[22]</a>, <a href="#b0130">[26]</a>, <a href="#b0145">[29]</a>, <a href="#b0160">[32]</a>, <a href="#b0175">[35]</a>, <a href="#b0210">[42]</a>, <a href="#b0260">[52]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0075">[15]</a>, <a href="#b0080">[16]</a>, <a href="#b0085">[17]</a>. About 67.9% of patients (36/53) showed evidence for mild, focal lymphocytic lobular infiltration, centrilobular sinusoidal dilation, ischemic coagulative necrosis with neutrophilic infiltration and venous outflow obstruction leading to chronic hepatic congestion <a href="#b0075">[15]</a>, <a href="#b0165">[33]</a>, <a href="#b0175">[35]</a>, <a href="#b0215">[43]</a>, <a href="#b0255">[51]</a>, <a href="#b0260">[52]</a>. These findings are very non-specific and are common in terminally ill patients with co-morbidities such as hypertension, diabetes mellitus and shock <a href="#b0045">[9]</a>, <a href="#b0065">[13]</a>, <a href="#b0085">[17]</a>, <a href="#b0100">[20]</a>, <a href="#b0110">[22]</a>, <a href="#b0115">[23]</a>. Portal changes were also present in 11 patients and included mild to moderate lymphocytic and plasma cells infiltrate and ductal proliferation with signs of fibrosis <a href="#b0050">[10]</a>, <a href="#b0075">[15]</a>, <a href="#b0090">[18]</a>, <a href="#b0175">[35]</a>.</p>
+<p id="p0110">Immunostaining showed increased CD68+ cells in hepatic sinusoids characterized by Kupffer cell activation and proliferation. Most (55.1 %; 16/29), had infrequent CD4+ and few CD8+ lymphocytes in liver lobule and portal areas <a href="#b0065">[13]</a>, <a href="#b0075">[15]</a>, <a href="#b0110">[22]</a>, <a href="#b0260">[52]</a>. CD61+ early organizing thrombi involving portal venules were also found (17/24) <a href="#b0045">[9]</a>, <a href="#b0165">[33]</a>. Furthermore, fibrin microthrombi in liver sinusoids, seen in thirteen out of twenty-seven patients, were reported by Duarte-Neto et al and Zhao et al <a href="#b0065">[13]</a>, <a href="#b0260">[52]</a>.</p>
+<p id="p0115">Electron microscopic examination identified the presence of typical coronavirus particles characterized by a spike-like structure in the cytoplasm of hepatocytes. A few fragmented virions were also visible. One out of two patients that were evaluated showed SARS-CoV 2 cytopathy as the hepatic mitochondria were swollen, the endoplasmic reticulum was dilated and there were decreased glycogen granules in hepatocytes <a href="#b0110">[22]</a>. Binuclear hepatocytes with apoptotic cells were also observed in all (100%; 4/4) patients <a href="#b0050">[10]</a>, <a href="#b0110">[22]</a>, <a href="#b0165">[33]</a>.</p>
+<p id="p0120">The gastrointestinal system was macroscopically unremarkable (20/67) <a href="#b0045">[9]</a> and there were no notable histopathological abnormalities in the esophagus, stomach, small intestine, and colon (28/75) <a href="#b0045">[9]</a>, <a href="#b0080">[16]</a>. However, Lax et al. <a href="#b0075">[15]</a> reported the detection of viral RNA on a section obtained from colonic mucosa. Histology of the liver and small intestine endothelium showed endotheliitis of the submucosal vessels and the presence of apoptotic bodies (9/12) <a href="#b0105">[21]</a>, <a href="#b0130">[26]</a>, <a href="#b0165">[33]</a>.</p>
+</div>
+<div class="section">
+<a id="s0035"><!-- named anchor --></a><h3 class="section-title">Renal findings</h3>
+<h5 class="label">3.4</h5>
+<p id="p0125">The kidneys were evaluated in 15 studies <a href="#b0105">[21]</a>, <a href="#b0115">[23]</a>, <a href="#b0215">[43]</a>, <a href="#b0225">[45]</a>, <a href="#b0255">[51]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0080">[16]</a>, <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>, <a href="#b0095">[19]</a>. Gross and histopathological findings are mainly attributed to pre-existing conditions and co-morbidities such as HTN, DM, and shock. However, in some studies, direct viral injury to the kidneys has also been postulated.</p>
+<p id="p0130">On gross examination, the weight of the kidneys ranged from 80 g to 270 g for the right kidney and 35 g to 305 g for the left kidney. The macroscopic findings in kidneys are mostly attributed to shock, as seen in almost half of the patients (53%; 23/43) <a href="#b0065">[13]</a>, <a href="#b0085">[17]</a>, <a href="#b0115">[23]</a>. Around one-fourth of patients showed evidence of old infarction/chronic inflammation, nephrolithiasis, multiple cysts, and shrinkage (25%; 3/12) <a href="#b0115">[23]</a>, <a href="#b0215">[43]</a>, <a href="#b0255">[51]</a>.</p>
+<p id="p0135">On histological examination, 32.4% of patients (58/179) had an acute tubular injury (ATI) in proximal tubules which was characterized by loss of brush border, vacuolar degeneration, dilatation of tubular lumen, occasional frank necrosis, detachment of epithelium with bare tubular basement membrane and regenerative changes with flattened tubular epithelium <a href="#b0045">[9]</a>, <a href="#b0065">[13]</a>, <a href="#b0095">[19]</a>, <a href="#b0215">[43]</a>, <a href="#b0225">[45]</a>, <a href="#b0075">[15]</a>, <a href="#b0080">[16]</a>, <a href="#b0085">[17]</a>. Lax et al. reported that the tubules were filled with proteinaceous masses <a href="#b0075">[15]</a>. The distal tubules and collecting ducts had cellular swelling and edematous expansion. Hemosiderin granules were present in tubular epithelium. Pigmented casts suggestive of rhabdomyolysis, due to increased levels of creatine phosphokinase, were also present in some patients. Acute pyelonephritis, with foci of bacteria and diffuse polymorphonuclear casts in the tubular lumen, was seen in two out of 26 patients (7%) <a href="#b0095">[19]</a>. Focal and sparse chronic inflammatory infiltrate was found in areas with interstitial fibrosis and tubular atrophy <a href="#b0085">[17]</a>.</p>
+<p id="p0140">The glomeruli showed arteriosclerosis, benign nephrosclerosis, and nodular glomerulosclerosis (Kimmelstein – Wilson syndrome) in 56 out of 173 patients (32.3%) with preexisting chronic conditions like HTN, chronic kidney disease, and DM <a href="#b0065">[13]</a>, <a href="#b0075">[15]</a>, <a href="#b0085">[17]</a>, <a href="#b0215">[43]</a>, <a href="#b0225">[45]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>. There was frequent congestion of glomeruli and peritubular capillaries with platelet–fibrin aggregates forming thrombi. These findings were reported in 10.5% of patients (17/162) who had deep venous thrombosis (DVT), disseminated intravascular coagulation (DIC), and pulmonary embolism (PE) <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>, <a href="#b0085">[17]</a>, <a href="#b0095">[19]</a>, <a href="#b0225">[45]</a>. One patient had an anemic infarct <a href="#b0085">[17]</a>.Glomerular mesangial expansion and hyalinosis of arterioles were also present <a href="#b0065">[13]</a>, <a href="#b0215">[43]</a>. Three patients showed mesangial nodular sclerosis <a href="#b0045">[9]</a>, <a href="#b0095">[19]</a>, <a href="#b0225">[45]</a>.</p>
+<p id="p0145">Immunostaining showed the expected mix of T and B lymphocytes in areas of scarring with lymphocytic infiltrate. There were some scattered macrophages. CD235a staining confirmed the presence of microvascular obstruction by erythrocytes. There was a frequent aggregation of erythrocytes in segmental glomerular capillary loops. CD61 stain was minimal, showing no platelet component. CD31 stain for endothelial cells showed complete occlusion of the peritubular capillaries <a href="#b0095">[19]</a>. ACE2 expression was prominent in proximal tubular cells and parietal epithelial cells in patients with severe ATI. The ACE2 stain lacked expression in glomeruli and endothelial cells in 4 out of 93 patients (4%) <a href="#b0045">[9]</a>, <a href="#b0095">[19]</a>.</p>
+<p id="p0150">The ultrastructural examination showed the activation of podocytes and endothelial cells. The podocyte cytoplasm, examined in 9% of patients (2/21), had multiple vesicles, attached ribosomes, and double membranes <a href="#b0085">[17]</a>. Viral particles were identified in 14% (11/76) of the patients in the glomerular endothelial cells and cytoplasm of the renal proximal tubular epithelium <a href="#b0050">[10]</a>, <a href="#b0085">[17]</a>, <a href="#b0095">[19]</a>, <a href="#b0105">[21]</a>. Lymphocyte endothelitis in the kidney was present in 1 out of 3 patients examined <a href="#b0105">[21]</a>.</p>
+</div>
+<div class="section">
+<a id="s0040"><!-- named anchor --></a><h3 class="section-title">Spleen/bone marrow/lymph nodes</h3>
+<h5 class="label">3.5</h5>
+<p id="p0155">The immunologic organs were evaluated in 12 studies <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>, <a href="#b0115">[23]</a>, <a href="#b0120">[24]</a>, <a href="#b0210">[42]</a>, <a href="#b0255">[51]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>. On gross examination, the spleen was mostly unremarkable. However, splenomegaly, chronic congestion, and non-specific splenitis were observed in 6% (5/82) of patients <a href="#b0115">[23]</a>, <a href="#b0255">[51]</a>. On histological examination, the spleen was enlarged in 24% of patients (13/54) with the expansion of red pulp by congestion and lymphoplasmacytic infiltrate <a href="#b0050">[10]</a>, <a href="#b0210">[42]</a>, <a href="#b0255">[51]</a>. In 50% of patients (30/61), there was atrophy of the white pulp due to lymphocyte depletion with the absence of marginal zones <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>, <a href="#b0075">[15]</a>, <a href="#b0120">[24]</a>, <a href="#b0210">[42]</a>, <a href="#b0255">[51]</a>. The ratio of red pulp to white pulp was found to be increased with varying degrees <a href="#b0120">[24]</a>. Hemophagocytic histiocytes with preservation of white pulp were observed by Bryce and his colleagues <a href="#b0045">[9]</a>. Buja et al. found no microthrombi or morphological features of vasculitis or microangiopathic process. There was no evidence of macrophages with features of hemophagocytosis and hemaphagocytic lymphohistiocytosis <a href="#b0050">[10]</a>. Menter et al. noted that in around 28% of patients (6/21) there was the presence of acute splenitis and septic neutrophilic leukocytosis of the red pulp in patients who had bronchopneumonia <a href="#b0085">[17]</a>. On immunostaining, there was a low prevalence of CD3+, CD4+, and CD8+ T lymphocytes with an accumulation of CD20+ B cells in the lymphoid sheath around the splenic artery. CD20 and CD21 immunostaining showed that the quantity of white pulp was normal and the splenic nodules were atrophic. CD68+ stain showed no significant changes in the distribution and quantity of macrophages with more CD68+ cells in the medullary sinuses. Few CD56+ cells were found. Coronavirus particles were found in the cytoplasm of macrophages under electron microscope in 2 out of 10 patients (20%) <a href="#b0120">[24]</a>.</p>
+<p id="p0160">Light microscope examination of a lymph node showed evidence of lymphocyte depletion with a complete absence of germinal centers associated with dilatation of sinuses and vessels in nearly half of the patients (53%;17/32), as well as an increase in reactive plasmablasts consistent with activated immune response seen in 5 out of 9 patients (55%) <a href="#b0075">[15]</a>, <a href="#b0085">[17]</a>. Hilar and posterior mediastinal lymph nodes were enlarged in all 11 patients evaluated <a href="#b0075">[15]</a>. Bryce and his colleagues examined thoracic lymph nodes that showed sinus histiocytosis with focal hemophagocytosis in 11 cases out of 67 and multinucleate histiocyte in one case. There was also some evidence of microthrombi in lymph node vessels <a href="#b0045">[9]</a>. Immunohistochemistry showed decreased CD3+ T lymphocytes with no overt loss of B and T lymphocytes. There was a predominance of CD4+ lymphocytes over CD8+ lymphocytes with CD4+ to CD8+ ratios ranging from approximately 5:1 to 30:1 <a href="#b0045">[9]</a>. Electron microscope examination of a lymph node showed corona-virus induced organelle-like replicative structures consistent with double-membrane vesicles and intracytoplasmic spherical virus particles with a characteristic electron-dense envelope and fine peplomeric projections <a href="#b0045">[9]</a>.</p>
+<p id="p0165">Bone marrow showed normal hematopoiesis with reactive lymphocytic infiltrate in almost all cases <a href="#b0075">[15]</a>. However, reactive left-shifted myelopoiesis and prominent hyperplasia of cytotoxic CD8+ T cells were also seen in 60% (3/5) cases examined by Menter et al <a href="#b0085">[17]</a>. Out of 6 cases examined by Bryce et al., hemophagocytosis was identified in 4 (66%) <a href="#b0045">[9]</a>.</p>
+</div>
+<div class="section">
+<a id="s0045"><!-- named anchor --></a><h3 class="section-title">Pancreatic/endocrine/exocrine findings</h3>
+<h5 class="label">3.6</h5>
+<p id="p0170">The exocrine and endocrine glands were evaluated in 5 studies <a href="#b0040">[8]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>, <a href="#b0115">[23]</a>, <a href="#b0255">[51]</a>. On gross examination, Wichmann and colleagues found normal adrenal glands in 7 patients. However, 4 patients out of 12 (33%) demonstrated micronodular hyperplasia and one patient had an adenoma <a href="#b0115">[23]</a>. Histologic examination was unremarkable except for 55% of patients who had nodular to diffuse adrenocortical hyperplasia mainly in the zona fasciculate <a href="#b0075">[15]</a>. Adrenal glands showed signs of shock in patients examined by Menter and colleagues <a href="#b0085">[17]</a>.</p>
+<p id="p0175">The thyroid was normal in 8 patients out of 11 and the remaining 3(27%) had a nodular goiter <a href="#b0075">[15]</a>, <a href="#b0255">[51]</a>. 4 out of 11 deceased patients had focal pancreatitis with pancreatic parenchymal necrosis and calcifications. The submandibular glands showed a mild to moderate degree of lipomatosis in around one-third of patients (36%; 4/11) <a href="#b0075">[15]</a>.</p>
+</div>
+<div class="section">
+<a id="s0050"><!-- named anchor --></a><h3 class="section-title">CNS findings</h3>
+<h5 class="label">3.7</h5>
+<p id="p0180">The CNS was evaluated in 9 studies <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>, <a href="#b0065">[13]</a>, <a href="#b0085">[17]</a>, <a href="#b0090">[18]</a>, <a href="#b0115">[23]</a>, <a href="#b0205">[41]</a>, <a href="#b0240">[48]</a>, <a href="#b0255">[51]</a>. No visible gross abnormalities were found in the 36 brains that were examined by autopsy <a href="#b0040">[8]</a>, <a href="#b0205">[41]</a>, <a href="#b0240">[48]</a>. Microscopically, Bryce and his colleagues found widespread microthrombi in cerebral arteries associated with acute infarction in 30% of their patients. These infarctions showed variable distribution. One case showed a large cerebral artery territory infarct, while others were small and patchy in the deep parenchyma. Interestingly, the vascular congestion was out of proportion as there were acute parenchymal microhemorrhages within the necrotic area of infarction. Two patients had global anoxic injury and 1 had severe hypoxic injury <a href="#b0045">[9]</a>, <a href="#b0255">[51]</a>. Duarte-Neto et al. attributed findings in the brain to co-morbidities such as hypertension and direct viral injury to the neuronal tissue. Sixteen patients in his study along with Solomon et al study with (46.4%) had cerebral small vessel disease <a href="#b0065">[13]</a>, <a href="#b0240">[48]</a>. 24 out of 31 patients (77.4%) had mild hypoxic injury <a href="#b0085">[17]</a>, <a href="#b0240">[48]</a>, <a href="#b0255">[51]</a>. However, no inflammatory infiltrate or neuronal necrosis was found on microscopic examination <a href="#b0085">[17]</a>. Focal T-lymphocytes infiltrate suggesting focal emerging encephalitis were also found in 36 out of 110 cases (32.7%) <a href="#b0045">[9]</a>, <a href="#b0205">[41]</a>. There was no loss of myelin seen on Luxol-Fast-blue/H&amp;E-stained sections. Menter et al. detected low levels of RNA copy numbers in the brain. However, values in the olfactory bulb were higher than those in the brainstem <a href="#b0085">[17]</a>.</p>
+</div>
+<div class="section">
+<a id="s0055"><!-- named anchor --></a><h3 class="section-title">Findings in other miscellaneous locations</h3>
+<h5 class="label">3.8</h5>
+<p id="p0185">Pharyngeal mucosa was examined in some cases by Wichmann et al. The examination was consistent with signs of chronic pharyngitis – hyperemia and alternating dense lymphocytic infiltrates. Quantitative reverse transcription PCR detected SARS-CoV-2 RNA in the pharynx in three-fourths of patients (75%; 9/12) <a href="#b0115">[23]</a>.</p>
+<p id="p0190">The arteries were mostly atherosclerotic while the veins had thrombosis and phlebosclerosis. Four patients examined by Wichmann et al. had detectable viral RNA in the saphenous vein. Out of 9 patients, 6 patients had thrombosis of the prostate. Duarte-Neto et al. and Buja et al. found fibrin thrombi in the testis in 3 out of a total of 36 patients (8%) <a href="#b0050">[10]</a>, <a href="#b0065">[13]</a>. Two patients examined by Duarte-neto et al. had orchitis. Myositis and necrotic fibers in skeletal muscles were also noted in 20% of patients (2/10) by Duarte-neto et al. <a href="#b0065">[13]</a>. Furthermore, there was some evidence of the presence of viral RNA of SARS-Cov2 in the retina of 3 out of 14 (21%) COVID-19 patients <a href="#b0060">[12]</a>.</p>
+</div>
+</div>
+<div class="section">
+<a id="s0060"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<h5 class="label">4</h5>
+<p id="p0195">This systematic review highlights the fact that the SARS-CoV-2 virus, while primarily a pulmonary pathogen, does not limit itself only to the lungs. This is exemplified by the detection of SARS-CoV-2 in multiple organs, along with damage to these organs. Furthermore, the presence of widespread microthrombi in almost every organ suggests that the pathophysiology of the virus involves some form of coagulopathy. Future studies should focus on establishing a concrete link between the process of coagulation and the virus’ pathogenesis. Some studies included in this review might have misinterpreted coincidental findings as virus dependent. The presence of comorbidities in some of the patients in the studies included in this review might have contributed to some of the findings. These findings might be mistaken to be unique to the pathophysiology of the virus; therefore, it is essential that future studies focus on younger patients with a fewer number of comorbidities to obtain generalizable results.</p>
+</div>
+<div class="section">
+<a id="s0065"><!-- named anchor --></a><h2 class="main-title">Authors’ contributions statement</h2>
+<h5 class="label">5</h5>
+<p id="p0200">Concept and manuscript design: RGM, MM, TJS, MSU; Literature search: TR, SAA, WH, AK, MA; Interpretation of the literature: RGM, TR, SAA, WH, AK; Creation of the figures or tables: MA, MM, TJS, MSU; Manuscript drafting or revising the manuscript for intellectual content: All the authors; Reading and approving the final draft for submission: All the authors.</p>
+</div>
+<div class="section">
+<a id="s0070"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="p0205">This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.</p>
+</div>
+<div class="section">
+<a id="id365"><!-- named anchor --></a><h2 class="main-title">Declaration of Competing Interest</h2>
+<p id="p0210">The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="bi005"><!-- named anchor --></a><div class="section ref-list">
+<a id="bi005"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1</span> <a id="b0005"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0005"><!-- named anchor --></a>C. HuangY. WangX. LiClinical features of patients infected with 2019 novel coronavirus in Wuhan, ChinaLancet39520204975063198626410.1016/S0140-6736(20)30183-5PMC7159299</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2</span> <a id="b0010"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0010"><!-- named anchor --></a>J. LanJ. GeJ. YuStructure of the SARS-CoV-2 spike receptor-binding domain bound to the ACE2 receptorNature58120202152203222517610.1038/s41586-020-2180-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3</span> <a id="b0015"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0015"><!-- named anchor --></a>M.S. UsmanT.J. SiddiqiM.S. KhanA meta-analysis of the relationship between renin-angiotensin-aldosterone system inhibitors and COVID-19Am. J. Cardiol.13020201591613262418910.1016/j.amjcard.2020.05.038PMC7266568</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4</span> <a id="b0020"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0020"><!-- named anchor --></a>M. SalernoF. SessaA. PiscopoNo autopsies on COVID-19 deaths: a missed opportunity and the lockdown of scienceJ. Clin. Med.9202014723242298310.3390/jcm9051472PMC7291342</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5</span> <a id="b0025"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0025"><!-- named anchor --></a>B.T. BradleyH. MaioliR. JohnstonHistopathology and ultrastructural findings of fatal COVID-19 infections in Washington State: a case seriesLancet39620203203323268249110.1016/S0140-6736(20)31305-2PMC7365650</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6</span> <a id="b0030"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0030"><!-- named anchor --></a>A. LiberatiD.G. AltmanJ. TetzlaffThe PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: explanation and elaborationJ. Clin. Epidemiol.622009e1e341963150710.1016/j.jclinepi.2009.06.006</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7</span> <a id="b0035"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0035"><!-- named anchor --></a>M. AckermannS.E. VerledenM. KuehnelPulmonary vascular endothelialitis, thrombosis, and angiogenesis in Covid-19N. Engl. J. Med.38320201201283243759610.1056/NEJMoa2015432PMC7412750</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8</span> <a id="b0040"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0040"><!-- named anchor --></a>L.M. BartonE.J. DuvalE. StrobergCovid-19 autopsies, Oklahoma, USAAm. J. Clin. Pathol.15320207257333227574210.1093/ajcp/aqaa062PMC7184436</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9</span> <a id="b0045"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0045"><!-- named anchor --></a>C. BryceZ. GrimesE. PujadasPathophysiology of SARS-CoV-2: targeting of endothelial cells renders a complex disease with thrombotic microangiopathy and aberrant immune response: the Mount Sinai COVID-19 autopsy experiencemedRxiv2020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10</span> <a id="b0050"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0050"><!-- named anchor --></a>L.M. BujaD.A. WolfB. ZhaoEmerging spectrum of cardiopulmonary pathology of the coronavirus disease 2019 (COVID-19): report of three autopsies from Houston, Texas and review of autopsy findings from other United States citiesCardiovasc. Pathol.4820201072333243413310.1016/j.carpath.2020.107233PMC7204762</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11</span> <a id="b0055"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0055"><!-- named anchor --></a>L. CarsanaA. SonzogniA. NasrPulmonary post-mortem findings in a series of COVID-19 cases from northern Italy: a two-centre descriptive studyLancet. Infect. Dis.202020113511403252619310.1016/S1473-3099(20)30434-5PMC7279758</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12</span> <a id="b0060"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0060"><!-- named anchor --></a>M. CasagrandeA. FitzekK. PüschelDetection of SARS-CoV-2 in human retinal biopsies of deceased COVID-19 patientsOcul. Immunol. Inflamm.2820207217253246925810.1080/09273948.2020.1770301</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13</span> <a id="b0065"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0065"><!-- named anchor --></a>A.N. Duarte-NetoR.A. MonteiroL.F. da SilvaPulmonary and systemic involvement in COVID-19 patients assessed with ultrasound-guided minimally invasive autopsyHistopathology7720201861973244317710.1111/his.14160PMC7280721</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14</span> <a id="b0070"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0070"><!-- named anchor --></a>S.E. FoxA. AkmatbekovJ.L. HarbertPulmonary and cardiac pathology in African American patients with COVID-19: an autopsy series from New OrleansLancet Respir. Med.820206816863247312410.1016/S2213-2600(20)30243-5PMC7255143</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15</span> <a id="b0075"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0075"><!-- named anchor --></a>S.F. LaxK. SkokP. ZechnerPulmonary arterial thrombosis in COVID-19 with fatal outcome: results from a prospective, single-center, clinicopathologic case seriesAnn. Intern. Med.17320203503613242207610.7326/M20-2566PMC7249507</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16</span> <a id="b0080"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0080"><!-- named anchor --></a>R.B. MartinesJ.M. RitterE. MatkovicPathology and pathogenesis of SARS-CoV-2 associated with fatal coronavirus disease, United StatesEmerg. Infect. Dis.262020200520153243731610.3201/eid2609.202095PMC7454055</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17</span> <a id="b0085"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0085"><!-- named anchor --></a>T. MenterJ.D. HaslbauerR. NienholdPost-mortem examination of COVID19 patients reveals diffuse alveolar damage with severe capillary congestion and variegated findings in lungs and other organs suggesting vascular dysfunctionHistopathology7720201982093236426410.1111/his.14134PMC7496150</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18</span> <a id="b0090"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0090"><!-- named anchor --></a>T. SchallerK. HirschbuhlK. BurkhardtPostmortem examination of patients with COVID-19JAMA3232020251825203243749710.1001/jama.2020.8907PMC7243161</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19</span> <a id="b0095"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0095"><!-- named anchor --></a>H. SuM. YangC. WanRenal histopathological analysis of 26 postmortem findings of patients with COVID-19 in ChinaKidney Int.9820202192273232720210.1016/j.kint.2020.04.003PMC7194105</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20</span> <a id="b0100"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0100"><!-- named anchor --></a>S. TianY. XiongH. LiuPathological study of the 2019 novel coronavirus disease (COVID-19) through postmortem core biopsiesMod. Pathol.332020100710143229139910.1038/s41379-020-0536-xPMC7156231</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21</span> <a id="b0105"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0105"><!-- named anchor --></a>Z. VargaA.J. FlammerP. SteigerEndothelial cell infection and endotheliitis in COVID-19Lancet3952020141714183232502610.1016/S0140-6736(20)30937-5PMC7172722</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22</span> <a id="b0110"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0110"><!-- named anchor --></a>Y. WangS. LiuH. LiuSARS-CoV-2 infection of the liver directly contributes to hepatic impairment in patients with COVID-19J. Hepatol.7320208078163243783010.1016/j.jhep.2020.05.002PMC7211738</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23</span> <a id="b0115"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0115"><!-- named anchor --></a>D. WichmannJ.-P. SperhakeM. LutgehetmannAutopsy findings and venous thromboembolism in patients with COVID-19: a prospective cohort studyAnn. Intern. Med.17320202682773237481510.7326/M20-2003PMC7240772</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24</span> <a id="b0120"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0120"><!-- named anchor --></a>X. XuX.N. ChangH.X. PanPathological changes of the spleen in ten patients with coronavirus disease 2019 (COVID-19) by postmortem needle autopsyChin. J. Pathol.49202057658210.3760/cma.j.cn112151-20200401-0027832340089</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25</span> <a id="b0125"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0125"><!-- named anchor --></a>E. BarisioneF. GrilloL. BallFibrotic progression and radiologic correlation in matched lung samples from COVID-19 post-mortemsVirchows Arch.47820214714853298952510.1007/s00428-020-02934-1PMC7521863</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26</span> <a id="b0130"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0130"><!-- named anchor --></a>M.T. BeigmohammadiB. JahanbinM. SafaeiPathological findings of postmortem biopsies from lung, heart, and liver of 7 deceased COVID-19 patientsInt. J. Surg. Pathol.2920211351453255217810.1177/1066896920935195PMC8041443</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27</span> <a id="b0135"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0135"><!-- named anchor --></a>A.C. BorczukS.P. SalvatoreS.V. SeshanCOVID-19 pulmonary pathology: a multi-institutional autopsy cohort from Italy and New York CityMod. Pathol.332020215621683287941310.1038/s41379-020-00661-1PMC7463226</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28</span> <a id="b0140"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0140"><!-- named anchor --></a>C. Bruce-BrandB.W. AllwoodC.F. KoegelenbergPostmortem lung biopsies from four patients with COVID-19 at a tertiary hospital in Cape Town, South AfricaS. Afr. Med. J.1102020119512003340396510.7196/SAMJ.2020.v110i12.15290</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29</span> <a id="b0145"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0145"><!-- named anchor --></a>E. ChmielikJ. Jazowiecka-RakusG. DyduchCOVID-19 autopsies: a case series from PolandPathobiology88202178873325417110.1159/000512768PMC7801982</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30</span> <a id="b0150"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0150"><!-- named anchor --></a>S. DamianiM. FiorentinoA. De PalmaPathological post‐mortem findings in lungs infected with SARS‐CoV‐2J. Pathol.253202131403293039410.1002/path.5549</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31</span> <a id="b0155"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0155"><!-- named anchor --></a>S. De MicheleY. SunM.M. YilmazForty postmortem examinations in COVID-19 patientsAm. J. Clin. Pathol.15420207487603287668010.1093/ajcp/aqaa156PMC7499554</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32</span> <a id="b0160"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0160"><!-- named anchor --></a>S. Deinhardt-EmmerD. WittschieberJ. SanftEarly postmortem mapping of SARS-CoV-2 RNA in patients with COVID-19 and the correlation with tissue damageElife102021<span class="object-id">e60361</span>10.7554/eLife.60361PMC800967733781385</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33</span> <a id="b0165"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0165"><!-- named anchor --></a>M.I. FielS.M. El JamalA. Paniz-MondolfiFindings of hepatic severe acute respiratory syndrome coronavirus-2 infectionCell. Mol. Gastroenterol. Hepatol.1120217637703299205210.1016/j.jcmgh.2020.09.015PMC7521427</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34</span> <a id="b0170"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0170"><!-- named anchor --></a>A.W. FlikweertM.J. GrootenboersD.C. YickLate histopathologic characteristics of critically ill COVID-19 patients: different phenotypes without evidence of invasive aspergillosis, a case seriesJ. Crit. Care5920201491553267400110.1016/j.jcrc.2020.07.002PMC7340597</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35</span> <a id="b0175"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0175"><!-- named anchor --></a>C. GrosseA. GrosseH.J. SalzerAnalysis of cardiopulmonary findings in COVID-19 fatalities: high incidence of pulmonary artery thrombi and acute suppurative bronchopneumoniaCardiovasc. Pathol.4920201072633278411010.1016/j.carpath.2020.107263PMC7365076</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36</span> <a id="b0180"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0180"><!-- named anchor --></a>J.D. HaslbauerV. PerrinaM. MatterRetrospective post-mortem SARS-CoV-2 RT-PCR of autopsies with COVID-19-suggestive pathology supports the absence of lethal community spread in Basel, Switzerland, before February 2020Pathobiology882021951053316140910.1159/000512563PMC7705940</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37</span> <a id="b0185"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0185"><!-- named anchor --></a>J. KantonenS. MahzabinM.I. MayranpaaNeuropathologic features of four autopsied COVID‐19 patientsBrain Pathol.302020101210163276208310.1111/bpa.12889PMC7436498</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38</span> <a id="b0190"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0190"><!-- named anchor --></a>K.E. KonopkaT. NguyenJ.M. JentzenDiffuse alveolar damage (DAD) resulting from coronavirus disease 2019 infection is morphologically indistinguishable from other causes of DADHistopathology7720205705783254274310.1111/his.14180PMC7323403</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39</span> <a id="b0195"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0195"><!-- named anchor --></a>Y. LiJ. WuS. WangProgression to fibrosing diffuse alveolar damage in a series of 30 minimally invasive autopsies with COVID‐19 pneumonia in Wuhan, ChinaHistopathology7820215425553292659610.1111/his.14249PMC8848295</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40</span> <a id="b0200"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0200"><!-- named anchor --></a>D. LindnerA. FitzekH. BrauningerAssociation of cardiac infection with SARS-CoV-2 in confirmed COVID-19 autopsy casesJAMA Cardiol.52020128112853273055510.1001/jamacardio.2020.3551PMC7385672</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41</span> <a id="b0205"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0205"><!-- named anchor --></a>J. MatschkeM. LutgehetmannC. HagelNeuropathology of patients with COVID-19 in Germany: a post-mortem case seriesLancet Neurol.1920209199293303173510.1016/S1474-4422(20)30308-2PMC7535629</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42</span> <a id="b0210"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0210"><!-- named anchor --></a>X. NieL. QianR. SunMulti-organ proteomic landscape of COVID-19 autopsiesCell1842021775791.e143350344610.1016/j.cell.2021.01.004PMC7794601</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43</span> <a id="b0215"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0215"><!-- named anchor --></a>M. RemmelinkR. De MendoncaN. D’HaeneUnspecific post-mortem findings despite multiorgan viral spread in COVID-19 patientsCrit. Care2420204953278790910.1186/s13054-020-03218-5PMC7422463</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44</span> <a id="b0220"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0220"><!-- named anchor --></a>A.C. RodenM.C. BoisT.F. JohnsonThe spectrum of histopathologic findings in lungs of patients with fatal coronavirus disease 2019 (COVID-19) infectionArch. Pathol. Lab. Med.145202111213282190210.5858/arpa.2020-0491-SA</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45</span> <a id="b0225"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0225"><!-- named anchor --></a>D. SantorielloP. KhairallahA.S. BombackPostmortem kidney pathology findings in patients with COVID-19J. Am. Soc. Nephrol.312020215821673272771910.1681/ASN.2020050744PMC7461662</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46</span> <a id="b0230"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0230"><!-- named anchor --></a>J.L. SauterM.K. BaineK.J. ButnorInsights into pathogenesis of fatal COVID‐19 pneumonia from histopathology with immunohistochemical and viral RNA studiesHistopathology7720209159253261408610.1111/his.14201PMC7361244</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47</span> <a id="b0235"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0235"><!-- named anchor --></a>K. SkokE. StelzlM. TraunerPost-mortem viral dynamics and tropism in COVID-19 patients in correlation with organ damageVirchows Arch.47820213433533281503610.1007/s00428-020-02903-8PMC7438212</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48</span> <a id="b0240"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0240"><!-- named anchor --></a>I.H. SolomonE. NormandinS. BhattacharyyaNeuropathological features of Covid-19N. Engl. J. Med.38320209899923253058310.1056/NEJMc2019373PMC7304421</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49</span> <a id="b0245"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0245"><!-- named anchor --></a>M.F. Valdivia-MazeyraC. SalasJ.M. Nieves-AlonsoIncreased number of pulmonary megakaryocytes in COVID-19 patients with diffuse alveolar damage: an autopsy study with clinical correlation and review of the literatureVirchows Arch.47820214874963291526510.1007/s00428-020-02926-1PMC7483503</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50</span> <a id="b0250"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0250"><!-- named anchor --></a>J.H. WuX. LiB. HuangPathological changes of fatal coronavirus disease 2019 (COVID-19) in the lungs: report of 10 cases by postmortem needle autopsyChi. J. Pathol.49202056857510.3760/cma.j.cn112151-20200405-0029132486534</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51</span> <a id="b0255"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0255"><!-- named anchor --></a>E. YoudL. MooreCOVID-19 autopsy in people who died in community settings: the first seriesJ. Clin. Pathol.7320208408443260592010.1136/jclinpath-2020-206710</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52</span> <a id="b0260"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0260"><!-- named anchor --></a>C.L. ZhaoA. RapkiewiczM. Maghsoodi-DeerwesterPathological findings in the postmortem liver of patients with coronavirus disease 2019 (COVID-19)Hum. Pathol.109202159683330707810.1016/j.humpath.2020.11.015PMC7722493</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="ak005"><!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
+<p id="p0215">None.</p>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Coronavirus disease 2019</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>COVID-19</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Postmortem findings</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Systematic review</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
