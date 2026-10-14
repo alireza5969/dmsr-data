@@ -1,0 +1,2451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Vo, Nguyen, Kha, and Le: On the road to explainable AI in drug-drug interactions prediction: A systematic review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Comput Struct Biotechnol J</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Comput Struct Biotechnol J</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>2373</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>csbj</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101585369</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Computational and Structural Biotechnology Journal</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2001-0370</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>AAAS Science Partner Journal Program</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="main.pdf">main.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2022 The Author(s)</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>12 March 2022</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>15 April 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>15 April 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>19 April 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>20</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>395563<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Pages: </span>2112-2123</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9092071</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9092071.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9092071</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9092071</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35832629</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1016/j.csbj.2022.04.021</p>
+<p class="metadata-entry"><span class="generated">Publisher Item ID: </span>S2001-0370(22)00138-6</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">On the road to explainable AI in drug-drug interactions prediction: A systematic review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Thanh Hoa Vo<span class="generated">[</span><a href="#af005">a</a><span class="generated">]</span><span class="generated">[</span><a href="#fn1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Ngan Thi Kim Nguyen<span class="generated">[</span><a href="#af010">b</a><span class="generated">]</span><span class="generated">[</span><a href="#fn1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Quang Hien Kha<span class="generated">[</span><a href="#af015">c</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Nguyen Quoc Khanh Le<span class="generated">[</span><a href="#af020">d</a><span class="generated">]</span><span class="generated">[</span><a href="#af025">e</a><span class="generated">]</span><span class="generated">[</span><a href="#af030">f</a><span class="generated">]</span><span class="generated">[</span><a href="#cor1">⁎</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Email: </span><a href="mailto:khanhlee87@gmail.com">khanhlee87@gmail.com</a></p>
+<p class="metadata-entry"><span class="generated">Email: </span><a href="mailto:khanhlee@tmu.edu.tw">khanhlee@tmu.edu.tw</a></p>
+</div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="af005"><!-- named anchor --></a><span class="generated">[</span>a<span class="generated">] </span>Master Program in Clinical Genomics and Proteomics, College of Pharmacy, Taipei Medical University, Taipei 110, Taiwan</p>
+<p class="metadata-entry"><a id="af010"><!-- named anchor --></a><span class="generated">[</span>b<span class="generated">] </span>School of Nutrition and Health Sciences, College of Nutrition, Taipei Medical University, Taipei 11031, Taiwan</p>
+<p class="metadata-entry"><a id="af015"><!-- named anchor --></a><span class="generated">[</span>c<span class="generated">] </span>International Master/Ph.D. Program in Medicine, College of Medicine, Taipei Medical University, Taipei 110, Taiwan</p>
+<p class="metadata-entry"><a id="af020"><!-- named anchor --></a><span class="generated">[</span>d<span class="generated">] </span>Professional Master Program in Artificial Intelligence in Medicine, College of Medicine, Taipei Medical University, Taipei 106, Taiwan</p>
+<p class="metadata-entry"><a id="af025"><!-- named anchor --></a><span class="generated">[</span>e<span class="generated">] </span>Research Center for Artificial Intelligence in Medicine, Taipei Medical University, Taipei 106, Taiwan</p>
+<p class="metadata-entry"><a id="af030"><!-- named anchor --></a><span class="generated">[</span>f<span class="generated">] </span>Translational Imaging Research Center, Taipei Medical University Hospital, Taipei 110, Taiwan</p>
+</div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group"><div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id6"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="cor1"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>⁎<span class="generated">] </span>Corresponding author at: Professional Master Program in Artificial Intelligence in Medicine, College of Medicine, Taipei Medical University, Taipei 106, Taiwan. <a href="mailto:khanhlee87@gmail.com">khanhlee87@gmail.com</a><a href="mailto:khanhlee@tmu.edu.tw">khanhlee@tmu.edu.tw</a></p>
+<p class="metadata-entry"><a id="fn1"><!-- named anchor --></a><p id="np005">1 These authors contributed equally to this work.</p></p>
+</div>
+</div></div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Graphical abstract</h4></div>
+<div class="cell"><div class="fig panel"><a id="f0020"><!-- named anchor --></a></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title">Highlights</h4></div>
+<div class="cell"><p id="id7"><div class="list">
+<a id="l0005"><!-- named anchor --></a><ul style="list-style-type: none">
+<li><p id="p0005"><span class="label">•</span> A systematic review on applications of explainable AI in drug-drug interaction prediction.</p></li>
+<li><p id="p0010"><span class="label">•</span> Review is conducted on a comprehensive set of 94 papers from five prestigious databases.</p></li>
+<li><p id="p0015"><span class="label">•</span> Discussions on the promises and challenges of explainable AI algorithms for drug-drug interaction prediction.</p></li>
+</ul>
+</div></p></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id8">Over the past decade, polypharmacy instances have been common in multi-diseases treatment. However, unwanted drug-drug interactions (DDIs) that might cause unexpected adverse drug events (ADEs) in multiple regimens therapy remain a significant issue. Since artificial intelligence (AI) is ubiquitous today, many AI prediction models have been developed to predict DDIs to support clinicians in pharmacotherapy-related decisions. However, even though DDI prediction models have great potential for assisting physicians in polypharmacy decisions, there are still concerns regarding the reliability of AI models due to their black-box nature. Building AI models with explainable mechanisms can augment their transparency to address the above issue. Explainable AI (XAI) promotes safety and clarity by showing how decisions are made in AI models, especially in critical tasks like DDI predictions. In this review, a comprehensive overview of AI-based DDI prediction, including the publicly available source for AI-DDIs studies, the methods used in data manipulation and feature preprocessing, the XAI mechanisms to promote trust of AI, especially for critical tasks as DDIs prediction, the modeling methods, is provided. Limitations and the future directions of XAI in DDIs are also discussed.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s0005"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<h5 class="label">1</h5>
+<p id="p0020">Drug-drug interactions (DDIs) usually happen in polypharmacy instances when the effects of a drug alter that of others in a combined regimen. In treatment, preferably, synergistic action and therapeutic benefit are expected. However, in multi-diseases treatment, adverse drug events (ADEs) that cause toxicity or reduced treatment effect may also inevitably happen. These can eventually lead to increased morbidity and mortality in patients <a href="#b0005">[1]</a>, <a href="#b0010">[2]</a>, <a href="#b0015">[3]</a>. In addition, an increased number of recently frequent launches and approval of new drugs and indications in marketed medicines introduces more possible DDIs occurrences <a href="#b0020">[4]</a>, <a href="#b0025">[5]</a>. However, wet-lab experiments for verifying DDIs can drain researchers' time and resources and make it difficult for numerous and regular adoptions. Therefore, artificial intelligence (AI) models have been applied to predict DDIs <a href="#b0030">[6]</a>, <a href="#b0035">[7]</a>, <a href="#b0040">[8]</a>, <a href="#b0045">[9]</a>. These models have been continuously studied and improved along with the expansion and completeness of drug-database resources to support clinical decisions.</p>
+<p id="p0025">However, since the introduction of AI-models in DDIs recognition, many efforts have been applied to boost the predictive power of algorithms by putting forward more complex systems, turning these models into those called “black-box AI” that hinder the ability of users to explain how these models work <a href="#b0050">[10]</a>. Specifically, higher performance models are associated with more sophisticated systems, but lower performance tools with simple approaches are easier to comprehend <a href="#b0055">[11]</a>. Despite various benefits given by widespread industrial adoption of machine learning (ML) models, a critical domain as healthcare should be taken more seriously due to its immense value to humans. Additionally, from a human-oriented research angle, the ambiguity of complicated models in making predictive decisions hamper its successful adoption in medical settings as unable-to-interpreted systems are difficult to be trusted. Since the fundamental application of AI in drug treatment must first do with DDIs, explainable DDIs-AI models are pivotal for clinicians and patients to understand and trust their prediction. In response, the ignition of the field explainable artificial intelligence (XAI), which concentrates on methods to interpret ML models, has revived over recent years. XAI can facilitate clinical applications of DDIs prediction models regarding their requirement of robust yet human-understandable systems to provide clear justifications and promote safety, reliability, and transparency.</p>
+<p id="p0030">This review focuses on the advances of recently developed DDIs prediction models regarding their data manipulation technique, feature selection process, modeling approach, XAI method, and the challenge of assuring explainability and transparency of DDIs-prediction models without compromising the predictive power of these systems.</p>
+</div>
+<div class="section">
+<a id="s0010"><!-- named anchor --></a><h2 class="main-title">Study selection</h2>
+<h5 class="label">2</h5>
+<p id="p0035">The Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guideline was referenced when conducting literature reviewing <a href="#b0060">[12]</a>. We searched five electronic databases up to December 2021: Cochrane Library, PubMed, EMBASE, IEEE, and Scopus. The search strategy combined the Medical Subject Headings terms and free terms “drug drug interaction” or “drug-drug interaction”, in combination with “artificial intelligence” or “machine learning” or “deep learning” or “neural network” and “prediction model”.</p>
+<p id="p0040">The eligibility criteria consisted of DDI predictive models that were built up using ML - and/or DL-based algorithms. The articles were screened and selected independently by two reviewers (N.T.K.N and H.T.V.), and disagreements were resolved by the third reviewer (N.Q.K.L.). All the retrieved publications were entered into reference-manager software (EndNote X9, Excel 2018).</p>
+<p id="p0045">We identified 643 records through Cochrane Library, IEEE, PubMed, EMBASE, Scopus database,  and two records from reference lists of review paper. After removing 215 duplicates, 116 records were excluded according to the screening of titles and abstracts. Of 314 remaining research studies, 220 studies were removed after evaluating the selection criteria: (1) related to DDIs, (2) related to predictive model, (3) focused on ML or/and DL. As a result, we had 94 different research studies. <a href="#f0005">Fig. 1</a> shows the flow diagram of the systematic search. <a href="#t0005">Table 1</a> shows the detailed information of 94 selected studies.<div class="fig panel" style="display: float; clear: both">
+<a id="f0005"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id9">PRISMA diagram showing our literature strategy search.</p></div>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="t0005"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id10">Input data type of all papers reviewed in this study.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id11"><!-- named anchor --></a><thead>
+<a id="id12"><!-- named anchor --></a><tr>
+<a id="id13"><!-- named anchor --></a><th colspan="1" rowspan="1">
+<a id="id14"><!-- named anchor --></a>No.</th>
+<th colspan="1" rowspan="1">
+<a id="id15"><!-- named anchor --></a>Method</th>
+<th colspan="1" rowspan="1">
+<a id="id16"><!-- named anchor --></a>Authors</th>
+<th colspan="1" rowspan="1">
+<a id="id17"><!-- named anchor --></a>Year</th>
+<th colspan="1" rowspan="1">
+<a id="id18"><!-- named anchor --></a>Input data</th>
+<th colspan="1" rowspan="1">
+<a id="id19"><!-- named anchor --></a>Algorithm</th>
+<th colspan="1" rowspan="1">
+<a id="id20"><!-- named anchor --></a>Performance</th>
+</tr>
+</thead>
+<tbody>
+<a id="id21"><!-- named anchor --></a><tr>
+<a id="id22"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id23"><!-- named anchor --></a>1</td>
+<td colspan="1" rowspan="1">
+<a id="id24"><!-- named anchor --></a>TML</td>
+<td colspan="1" rowspan="1">
+<a id="id25"><!-- named anchor --></a>Cheng et al. <a href="#b0030">[6]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id26"><!-- named anchor --></a>2014</td>
+<td colspan="1" rowspan="1">
+<a id="id27"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id28"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id29"><!-- named anchor --></a>AUC ∼ 0.565 to 0.666</td>
+</tr>
+<tr>
+<a id="id30"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id31"><!-- named anchor --></a>2</td>
+<td colspan="1" rowspan="1"><a id="id32"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id33"><!-- named anchor --></a>Hunta et al. <a href="#b0270">[54]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id34"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id35"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id36"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>AUC = 0.901</td>
+</tr>
+<tr>
+<a id="id38"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id39"><!-- named anchor --></a>3</td>
+<td colspan="1" rowspan="1"><a id="id40"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id41"><!-- named anchor --></a>Deepika et al. <a href="#b0405">[81]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id42"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id43"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id44"><!-- named anchor --></a>meta classifier</td>
+<td colspan="1" rowspan="1">
+<a id="id45"><!-- named anchor --></a>F1-score = 0.909</td>
+</tr>
+<tr>
+<a id="id46"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id47"><!-- named anchor --></a>4</td>
+<td colspan="1" rowspan="1"><a id="id48"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id49"><!-- named anchor --></a>Dhami et al. <a href="#b0255">[51]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id50"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id51"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id52"><!-- named anchor --></a>kernel learning</td>
+<td colspan="1" rowspan="1">
+<a id="id53"><!-- named anchor --></a>Accuracy &gt; 0.7</td>
+</tr>
+<tr>
+<a id="id54"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id55"><!-- named anchor --></a>5</td>
+<td colspan="1" rowspan="1"><a id="id56"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a>Mahadevan et al. <a href="#b0240">[48]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id58"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id59"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>ensemble learning</td>
+<td colspan="1" rowspan="1">
+<a id="id61"><!-- named anchor --></a>Accuracy &gt; 0.9</td>
+</tr>
+<tr>
+<a id="id62"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>6</td>
+<td colspan="1" rowspan="1"><a id="id64"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>Zhang et al. <a href="#b0350">[70]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id67"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id68"><!-- named anchor --></a>ensemble learning</td>
+<td colspan="1" rowspan="1">
+<a id="id69"><!-- named anchor --></a>AUC = 0.9951</td>
+</tr>
+<tr>
+<a id="id70"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id71"><!-- named anchor --></a>7</td>
+<td colspan="1" rowspan="1"><a id="id72"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>Song et al. <a href="#b0420">[84]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id74"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id76"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a>AUC &gt; 0.97</td>
+</tr>
+<tr>
+<a id="id78"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id79"><!-- named anchor --></a>8</td>
+<td colspan="1" rowspan="1"><a id="id80"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id81"><!-- named anchor --></a>Qian et al. <a href="#b0300">[60]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id82"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id83"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id84"><!-- named anchor --></a>gradient boosting</td>
+<td colspan="1" rowspan="1">
+<a id="id85"><!-- named anchor --></a>AUC = 0.689</td>
+</tr>
+<tr>
+<a id="id86"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id87"><!-- named anchor --></a>9</td>
+<td colspan="1" rowspan="1"><a id="id88"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id89"><!-- named anchor --></a>Wang et al. <a href="#b0425">[85]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id92"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id93"><!-- named anchor --></a>AUC = 0.985</td>
+</tr>
+<tr>
+<a id="id94"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id95"><!-- named anchor --></a>10</td>
+<td colspan="1" rowspan="1"><a id="id96"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id97"><!-- named anchor --></a>Rohani et al. <a href="#b0395">[79]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id98"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id99"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id100"><!-- named anchor --></a>integrated similarity-constrained matrix factorization</td>
+<td colspan="1" rowspan="1">
+<a id="id101"><!-- named anchor --></a>F1-score = 0.885</td>
+</tr>
+<tr>
+<a id="id102"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id103"><!-- named anchor --></a>11</td>
+<td colspan="1" rowspan="1"><a id="id104"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id105"><!-- named anchor --></a>Zhan et al. <a href="#b0460">[92]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id106"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id107"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id108"><!-- named anchor --></a>Bayesian networks coupled with level-wise algorithm</td>
+<td colspan="1" rowspan="1">
+<a id="id109"><!-- named anchor --></a>Precision = 0.5445</td>
+</tr>
+<tr>
+<a id="id110"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id111"><!-- named anchor --></a>12</td>
+<td colspan="1" rowspan="1"><a id="id112"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id113"><!-- named anchor --></a>Huang et al. <a href="#b0705">[141]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id114"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id115"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id116"><!-- named anchor --></a>Chemical Sequential Pattern Mining</td>
+<td colspan="1" rowspan="1">
+<a id="id117"><!-- named anchor --></a>AUC = 0.91</td>
+</tr>
+<tr>
+<a id="id118"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a>13</td>
+<td colspan="1" rowspan="1"><a id="id120"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id121"><!-- named anchor --></a>Hung et al. <a href="#b0470">[94]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id124"><!-- named anchor --></a>ensemble learning</td>
+<td colspan="1" rowspan="1">
+<a id="id125"><!-- named anchor --></a>Accuracy = 0.7</td>
+</tr>
+<tr>
+<a id="id126"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id127"><!-- named anchor --></a>14</td>
+<td colspan="1" rowspan="1"><a id="id128"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id129"><!-- named anchor --></a>Dang et al. <a href="#b0245">[49]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id130"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id131"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id132"><!-- named anchor --></a>XGBoost</td>
+<td colspan="1" rowspan="1">
+<a id="id133"><!-- named anchor --></a>F1-score = 0.65</td>
+</tr>
+<tr>
+<a id="id134"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id135"><!-- named anchor --></a>15</td>
+<td colspan="1" rowspan="1"><a id="id136"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id137"><!-- named anchor --></a>Patrick et al. <a href="#b0360">[72]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id138"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id139"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id140"><!-- named anchor --></a>ensemble learning</td>
+<td colspan="1" rowspan="1">
+<a id="id141"><!-- named anchor --></a>AUC &gt; 0.9</td>
+</tr>
+<tr>
+<a id="id142"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id143"><!-- named anchor --></a>16</td>
+<td colspan="1" rowspan="1"><a id="id144"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id145"><!-- named anchor --></a>Dewulf et al. <a href="#b0710">[142]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id146"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id147"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id148"><!-- named anchor --></a>combined multi-regression</td>
+<td colspan="1" rowspan="1">
+<a id="id149"><!-- named anchor --></a>AUC = 0.843</td>
+</tr>
+<tr>
+<a id="id150"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id151"><!-- named anchor --></a>17</td>
+<td colspan="1" rowspan="1"><a id="id152"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id153"><!-- named anchor --></a>Mei et al. <a href="#b0415">[83]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id154"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id155"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id156"><!-- named anchor --></a>L2-regularized logistic regression</td>
+<td colspan="1" rowspan="1">
+<a id="id157"><!-- named anchor --></a>AUC = 0.9884</td>
+</tr>
+<tr>
+<a id="id158"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id159"><!-- named anchor --></a>18</td>
+<td colspan="1" rowspan="1"><a id="id160"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id161"><!-- named anchor --></a>Thomas et al. <a href="#b0085">[17]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id162"><!-- named anchor --></a>2011</td>
+<td colspan="1" rowspan="1">
+<a id="id163"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id164"><!-- named anchor --></a>ensemble learning</td>
+<td colspan="1" rowspan="1">
+<a id="id165"><!-- named anchor --></a>F1-score = 0.657</td>
+</tr>
+<tr>
+<a id="id166"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id167"><!-- named anchor --></a>19</td>
+<td colspan="1" rowspan="1"><a id="id168"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id169"><!-- named anchor --></a>Minard et al. <a href="#b0715">[143]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id170"><!-- named anchor --></a>2011</td>
+<td colspan="1" rowspan="1">
+<a id="id171"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id172"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id173"><!-- named anchor --></a>F1-score = 0.5965</td>
+</tr>
+<tr>
+<a id="id174"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id175"><!-- named anchor --></a>20</td>
+<td colspan="1" rowspan="1"><a id="id176"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id177"><!-- named anchor --></a>Garcia-Blasco et al. <a href="#b0080">[16]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id178"><!-- named anchor --></a>2011</td>
+<td colspan="1" rowspan="1">
+<a id="id179"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id180"><!-- named anchor --></a>RF</td>
+<td colspan="1" rowspan="1">
+<a id="id181"><!-- named anchor --></a>F1-score = 0.6341</td>
+</tr>
+<tr>
+<a id="id182"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id183"><!-- named anchor --></a>21</td>
+<td colspan="1" rowspan="1"><a id="id184"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id185"><!-- named anchor --></a>Boyce et al. <a href="#b0435">[87]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id186"><!-- named anchor --></a>2012</td>
+<td colspan="1" rowspan="1">
+<a id="id187"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id188"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id189"><!-- named anchor --></a>F1-score = 0.859</td>
+</tr>
+<tr>
+<a id="id190"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id191"><!-- named anchor --></a>22</td>
+<td colspan="1" rowspan="1"><a id="id192"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id193"><!-- named anchor --></a>Zhang et al. <a href="#b0445">[89]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id194"><!-- named anchor --></a>2012</td>
+<td colspan="1" rowspan="1">
+<a id="id195"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id196"><!-- named anchor --></a>single kernel</td>
+<td colspan="1" rowspan="1">
+<a id="id197"><!-- named anchor --></a>AUC = 0.924</td>
+</tr>
+<tr>
+<a id="id198"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id199"><!-- named anchor --></a>23</td>
+<td colspan="1" rowspan="1"><a id="id200"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id201"><!-- named anchor --></a>Hailu et al. <a href="#b0095">[19]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id202"><!-- named anchor --></a>2013</td>
+<td colspan="1" rowspan="1">
+<a id="id203"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id204"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id205"><!-- named anchor --></a>F1-score = 0.5</td>
+</tr>
+<tr>
+<a id="id206"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id207"><!-- named anchor --></a>24</td>
+<td colspan="1" rowspan="1"><a id="id208"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id209"><!-- named anchor --></a>Bjorne et al. <a href="#b0090">[18]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id210"><!-- named anchor --></a>2013</td>
+<td colspan="1" rowspan="1">
+<a id="id211"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id212"><!-- named anchor --></a>Turku Event Extraction System</td>
+<td colspan="1" rowspan="1">
+<a id="id213"><!-- named anchor --></a>F1-score = 0.59</td>
+</tr>
+<tr>
+<a id="id214"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id215"><!-- named anchor --></a>25</td>
+<td colspan="1" rowspan="1"><a id="id216"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id217"><!-- named anchor --></a>Bobic et al. <a href="#b0475">[95]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id218"><!-- named anchor --></a>2013</td>
+<td colspan="1" rowspan="1">
+<a id="id219"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id220"><!-- named anchor --></a>LibLINEAR, perceptron Naïve Bayes</td>
+<td colspan="1" rowspan="1">
+<a id="id221"><!-- named anchor --></a>F1-score = 0.704</td>
+</tr>
+<tr>
+<a id="id222"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id223"><!-- named anchor --></a>26</td>
+<td colspan="1" rowspan="1"><a id="id224"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id225"><!-- named anchor --></a>Yan et al. <a href="#b0365">[73]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id226"><!-- named anchor --></a>2013</td>
+<td colspan="1" rowspan="1">
+<a id="id227"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id228"><!-- named anchor --></a>Drug-Entity-Topic</td>
+<td colspan="1" rowspan="1">
+<a id="id229"><!-- named anchor --></a>AUC = 0.96</td>
+</tr>
+<tr>
+<a id="id230"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id231"><!-- named anchor --></a>27</td>
+<td colspan="1" rowspan="1"><a id="id232"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id233"><!-- named anchor --></a>Zhang et al.<a href="#b0450">[90]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id234"><!-- named anchor --></a>2015</td>
+<td colspan="1" rowspan="1">
+<a id="id235"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id236"><!-- named anchor --></a>Label Propagation</td>
+<td colspan="1" rowspan="1">
+<a id="id237"><!-- named anchor --></a>AUC = 0.864</td>
+</tr>
+<tr>
+<a id="id238"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id239"><!-- named anchor --></a>28</td>
+<td colspan="1" rowspan="1"><a id="id240"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id241"><!-- named anchor --></a>Ben Abacha A et al.<a href="#b0190">[38]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id242"><!-- named anchor --></a>2015</td>
+<td colspan="1" rowspan="1">
+<a id="id243"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id244"><!-- named anchor --></a>Hybrid CRF based</td>
+<td colspan="1" rowspan="1">
+<a id="id245"><!-- named anchor --></a>F1-score = 0.6398</td>
+</tr>
+<tr>
+<a id="id246"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id247"><!-- named anchor --></a>29</td>
+<td colspan="1" rowspan="1"><a id="id248"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id249"><!-- named anchor --></a>Bokharaeian et al. <a href="#b0155">[31]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id250"><!-- named anchor --></a>2016</td>
+<td colspan="1" rowspan="1">
+<a id="id251"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id252"><!-- named anchor --></a>bag of word kernel</td>
+<td colspan="1" rowspan="1">
+<a id="id253"><!-- named anchor --></a>sign test p-value &lt; 0.0001</td>
+</tr>
+<tr>
+<a id="id254"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id255"><!-- named anchor --></a>30</td>
+<td colspan="1" rowspan="1"><a id="id256"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id257"><!-- named anchor --></a>Mahendran et al. <a href="#b0720">[144]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id258"><!-- named anchor --></a>2016</td>
+<td colspan="1" rowspan="1">
+<a id="id259"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id260"><!-- named anchor --></a>bag of word</td>
+<td colspan="1" rowspan="1">
+<a id="id261"><!-- named anchor --></a>F1-score = 0.769</td>
+</tr>
+<tr>
+<a id="id262"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id263"><!-- named anchor --></a>31</td>
+<td colspan="1" rowspan="1"><a id="id264"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id265"><!-- named anchor --></a>Zhang et al. <a href="#b0140">[28]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id266"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id267"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id268"><!-- named anchor --></a>ensemble learning</td>
+<td colspan="1" rowspan="1">
+<a id="id269"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id270"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id271"><!-- named anchor --></a>32</td>
+<td colspan="1" rowspan="1"><a id="id272"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id273"><!-- named anchor --></a>Celebi et al. <a href="#b0375">[75]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id274"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id275"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id276"><!-- named anchor --></a>RF</td>
+<td colspan="1" rowspan="1">
+<a id="id277"><!-- named anchor --></a>AUC = 0.91</td>
+</tr>
+<tr>
+<a id="id278"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id279"><!-- named anchor --></a>33</td>
+<td colspan="1" rowspan="1"><a id="id280"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id281"><!-- named anchor --></a>Javed et al. <a href="#b0410">[82]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id282"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id283"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id284"><!-- named anchor --></a>RF</td>
+<td colspan="1" rowspan="1">
+<a id="id285"><!-- named anchor --></a>Accuracy = 0.954</td>
+</tr>
+<tr>
+<a id="id286"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id287"><!-- named anchor --></a>34</td>
+<td colspan="1" rowspan="1"><a id="id288"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id289"><!-- named anchor --></a>Xie et al. <a href="#b0210">[42]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id290"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id291"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id292"><!-- named anchor --></a>LR</td>
+<td colspan="1" rowspan="1">
+<a id="id293"><!-- named anchor --></a>Precision = 0.9</td>
+</tr>
+<tr>
+<a id="id294"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id295"><!-- named anchor --></a>35</td>
+<td colspan="1" rowspan="1">
+<a id="id296"><!-- named anchor --></a>DL</td>
+<td colspan="1" rowspan="1">
+<a id="id297"><!-- named anchor --></a>Polak et al. <a href="#b0295">[59]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id298"><!-- named anchor --></a>2005</td>
+<td colspan="1" rowspan="1">
+<a id="id299"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id300"><!-- named anchor --></a>ANN</td>
+<td colspan="1" rowspan="1">
+<a id="id301"><!-- named anchor --></a>AUC = 0.82</td>
+</tr>
+<tr>
+<a id="id302"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id303"><!-- named anchor --></a>36</td>
+<td colspan="1" rowspan="1"><a id="id304"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id305"><!-- named anchor --></a>Herrero-Zazo et al. <a href="#b0265">[53]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id306"><!-- named anchor --></a>2016</td>
+<td colspan="1" rowspan="1">
+<a id="id307"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id308"><!-- named anchor --></a>ANN</td>
+<td colspan="1" rowspan="1">
+<a id="id309"><!-- named anchor --></a>F1-score = 0.64</td>
+</tr>
+<tr>
+<a id="id310"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id311"><!-- named anchor --></a>37</td>
+<td colspan="1" rowspan="1"><a id="id312"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id313"><!-- named anchor --></a>Ryu et al. <a href="#b0035">[7]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id314"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id315"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id316"><!-- named anchor --></a>DNN</td>
+<td colspan="1" rowspan="1">
+<a id="id317"><!-- named anchor --></a>Accuracy = 0.924</td>
+</tr>
+<tr>
+<a id="id318"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id319"><!-- named anchor --></a>38</td>
+<td colspan="1" rowspan="1"><a id="id320"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id321"><!-- named anchor --></a>Lee et al. <a href="#b0275">[55]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id322"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id323"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id324"><!-- named anchor --></a>RWR coupled with KNN</td>
+<td colspan="1" rowspan="1">
+<a id="id325"><!-- named anchor --></a>AUC = 0.67</td>
+</tr>
+<tr>
+<a id="id326"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id327"><!-- named anchor --></a>39</td>
+<td colspan="1" rowspan="1"><a id="id328"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id329"><!-- named anchor --></a>Karim et al. <a href="#b0725">[145]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id330"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id331"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id332"><!-- named anchor --></a>Graph Auto-Encoders</td>
+<td colspan="1" rowspan="1">
+<a id="id333"><!-- named anchor --></a>AUC = 0.98</td>
+</tr>
+<tr>
+<a id="id334"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id335"><!-- named anchor --></a>40</td>
+<td colspan="1" rowspan="1"><a id="id336"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id337"><!-- named anchor --></a>Rohani et al. <a href="#b0385">[77]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id338"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id339"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id340"><!-- named anchor --></a>ANN</td>
+<td colspan="1" rowspan="1">
+<a id="id341"><!-- named anchor --></a>AUC from 0.954 to 0.994</td>
+</tr>
+<tr>
+<a id="id342"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id343"><!-- named anchor --></a>41</td>
+<td colspan="1" rowspan="1"><a id="id344"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id345"><!-- named anchor --></a>Lee et al. <a href="#b0400">[80]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id346"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id347"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id348"><!-- named anchor --></a>auto-encoder coupled with a deep feed-forward network</td>
+<td colspan="1" rowspan="1">
+<a id="id349"><!-- named anchor --></a>Accuracy &gt; 0.95</td>
+</tr>
+<tr>
+<a id="id350"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id351"><!-- named anchor --></a>42</td>
+<td colspan="1" rowspan="1"><a id="id352"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id353"><!-- named anchor --></a>Hou et al. <a href="#b0225">[45]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id354"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id355"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id356"><!-- named anchor --></a>DNN</td>
+<td colspan="1" rowspan="1">
+<a id="id357"><!-- named anchor --></a>AUC = 0.942</td>
+</tr>
+<tr>
+<a id="id358"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id359"><!-- named anchor --></a>43</td>
+<td colspan="1" rowspan="1"><a id="id360"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id361"><!-- named anchor --></a>Liu et al. <a href="#b0730">[146]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id362"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id363"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id364"><!-- named anchor --></a>multilayer bidirectional LSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id365"><!-- named anchor --></a>F1-score = 0.7243</td>
+</tr>
+<tr>
+<a id="id366"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id367"><!-- named anchor --></a>44</td>
+<td colspan="1" rowspan="1"><a id="id368"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id369"><!-- named anchor --></a>Karim et al. <a href="#b0330">[66]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id370"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id371"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id372"><!-- named anchor --></a>Convolutional-LSTM network</td>
+<td colspan="1" rowspan="1">
+<a id="id373"><!-- named anchor --></a>F1-score = 0.92</td>
+</tr>
+<tr>
+<a id="id374"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id375"><!-- named anchor --></a>45</td>
+<td colspan="1" rowspan="1"><a id="id376"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id377"><!-- named anchor --></a>Shukla et al. <a href="#b0485">[97]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id378"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id379"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id380"><!-- named anchor --></a>convolutional mixture density RNN</td>
+<td colspan="1" rowspan="1">
+<a id="id381"><!-- named anchor --></a>Accuracy = 0.982</td>
+</tr>
+<tr>
+<a id="id382"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id383"><!-- named anchor --></a>46</td>
+<td colspan="1" rowspan="1"><a id="id384"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id385"><!-- named anchor --></a>Deng et al. <a href="#b0250">[50]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id386"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id387"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id388"><!-- named anchor --></a>Multi DNN</td>
+<td colspan="1" rowspan="1">
+<a id="id389"><!-- named anchor --></a>F1-score = 0.7585</td>
+</tr>
+<tr>
+<a id="id390"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id391"><!-- named anchor --></a>47</td>
+<td colspan="1" rowspan="1"><a id="id392"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id393"><!-- named anchor --></a>Lin et al. <a href="#b0340">[68]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id394"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id395"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id396"><!-- named anchor --></a>Knowledge Graph Neural Network</td>
+<td colspan="1" rowspan="1">
+<a id="id397"><!-- named anchor --></a>AUC = 0.9912</td>
+</tr>
+<tr>
+<a id="id398"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id399"><!-- named anchor --></a>48</td>
+<td colspan="1" rowspan="1"><a id="id400"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id401"><!-- named anchor --></a>Zhang et al. <a href="#b0310">[62]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id402"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id403"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id404"><!-- named anchor --></a>multi-modal deep auto-encoders</td>
+<td colspan="1" rowspan="1">
+<a id="id405"><!-- named anchor --></a>F1-score = 0.8498</td>
+</tr>
+<tr>
+<a id="id406"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id407"><!-- named anchor --></a>49</td>
+<td colspan="1" rowspan="1"><a id="id408"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id409"><!-- named anchor --></a>Feng et al. <a href="#b0260">[52]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id410"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id411"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id412"><!-- named anchor --></a>GCN-DNN</td>
+<td colspan="1" rowspan="1">
+<a id="id413"><!-- named anchor --></a>F1-score = 0.84</td>
+</tr>
+<tr>
+<a id="id414"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id415"><!-- named anchor --></a>50</td>
+<td colspan="1" rowspan="1"><a id="id416"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id417"><!-- named anchor --></a>Shankar et al. <a href="#b0355">[71]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id418"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id419"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id420"><!-- named anchor --></a>ANN</td>
+<td colspan="1" rowspan="1">
+<a id="id421"><!-- named anchor --></a>AUC = 0.69</td>
+</tr>
+<tr>
+<a id="id422"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id423"><!-- named anchor --></a>51</td>
+<td colspan="1" rowspan="1"><a id="id424"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id425"><!-- named anchor --></a>Masumshah et al. <a href="#b0510">[102]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id426"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id427"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id428"><!-- named anchor --></a>ANN</td>
+<td colspan="1" rowspan="1">
+<a id="id429"><!-- named anchor --></a>F1-score = 0.936</td>
+</tr>
+<tr>
+<a id="id430"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id431"><!-- named anchor --></a>52</td>
+<td colspan="1" rowspan="1"><a id="id432"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id433"><!-- named anchor --></a>Zitnik et al. <a href="#b0370">[74]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id434"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id435"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id436"><!-- named anchor --></a>spectral convolution</td>
+<td colspan="1" rowspan="1">
+<a id="id437"><!-- named anchor --></a>AUC = 0.928</td>
+</tr>
+<tr>
+<a id="id438"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id439"><!-- named anchor --></a>53</td>
+<td colspan="1" rowspan="1"><a id="id440"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id441"><!-- named anchor --></a>Lin et al. <a href="#b0280">[56]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id442"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id443"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id444"><!-- named anchor --></a>CNNs, auto-encoders with Siamese network</td>
+<td colspan="1" rowspan="1">
+<a id="id445"><!-- named anchor --></a>F1-score = 0.9117</td>
+</tr>
+<tr>
+<a id="id446"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id447"><!-- named anchor --></a>54</td>
+<td colspan="1" rowspan="1"><a id="id448"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id449"><!-- named anchor --></a>Schwarz et al. <a href="#b0305">[61]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id450"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id451"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id452"><!-- named anchor --></a>multi-modal neural network</td>
+<td colspan="1" rowspan="1">
+<a id="id453"><!-- named anchor --></a>AUPRC from 0.77 to 0.92</td>
+</tr>
+<tr>
+<a id="id454"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id455"><!-- named anchor --></a>55</td>
+<td colspan="1" rowspan="1"><a id="id456"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id457"><!-- named anchor --></a>Luo et al. <a href="#b0285">[57]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id458"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id459"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id460"><!-- named anchor --></a>graph convolutional auto-encoder network</td>
+<td colspan="1" rowspan="1">
+<a id="id461"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id462"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id463"><!-- named anchor --></a>56</td>
+<td colspan="1" rowspan="1"><a id="id464"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id465"><!-- named anchor --></a>Nyamabo et al. <a href="#b0325">[65]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id466"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id467"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id468"><!-- named anchor --></a>graph neural network</td>
+<td colspan="1" rowspan="1">
+<a id="id469"><!-- named anchor --></a>AUC = 0.9838</td>
+</tr>
+<tr>
+<a id="id470"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id471"><!-- named anchor --></a>57</td>
+<td colspan="1" rowspan="1"><a id="id472"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id473"><!-- named anchor --></a>Chen et al. <a href="#b0535">[107]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id474"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id475"><!-- named anchor --></a>structure</td>
+<td colspan="1" rowspan="1">
+<a id="id476"><!-- named anchor --></a>integrated modules neural network</td>
+<td colspan="1" rowspan="1">
+<a id="id477"><!-- named anchor --></a>AUC = 0.9994</td>
+</tr>
+<tr>
+<a id="id478"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id479"><!-- named anchor --></a>58</td>
+<td colspan="1" rowspan="1"><a id="id480"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id481"><!-- named anchor --></a>Pathak et al. <a href="#b0145">[29]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id482"><!-- named anchor --></a>2013</td>
+<td colspan="1" rowspan="1">
+<a id="id483"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id484"><!-- named anchor --></a>Linked Data</td>
+<td colspan="1" rowspan="1">
+<a id="id485"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id486"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id487"><!-- named anchor --></a>59</td>
+<td colspan="1" rowspan="1"><a id="id488"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id489"><!-- named anchor --></a>Zhao et al. <a href="#b0170">[34]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id490"><!-- named anchor --></a>2016</td>
+<td colspan="1" rowspan="1">
+<a id="id491"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id492"><!-- named anchor --></a>Syntax CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id493"><!-- named anchor --></a>F1-score = 0.686</td>
+</tr>
+<tr>
+<a id="id494"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id495"><!-- named anchor --></a>60</td>
+<td colspan="1" rowspan="1"><a id="id496"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id497"><!-- named anchor --></a>Liu et al. <a href="#b0205">[41]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id498"><!-- named anchor --></a>2016</td>
+<td colspan="1" rowspan="1">
+<a id="id499"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id500"><!-- named anchor --></a>CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id501"><!-- named anchor --></a>F1-score = 0.6975</td>
+</tr>
+<tr>
+<a id="id502"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id503"><!-- named anchor --></a>61</td>
+<td colspan="1" rowspan="1"><a id="id504"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id505"><!-- named anchor --></a>Quan et al. <a href="#b0545">[109]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id506"><!-- named anchor --></a>2016</td>
+<td colspan="1" rowspan="1">
+<a id="id507"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id508"><!-- named anchor --></a>multichannel CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id509"><!-- named anchor --></a>F1-score = 0.702</td>
+</tr>
+<tr>
+<a id="id510"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id511"><!-- named anchor --></a>62</td>
+<td colspan="1" rowspan="1"><a id="id512"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id513"><!-- named anchor --></a>Zhang et al. <a href="#b0120">[24]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id514"><!-- named anchor --></a>2016</td>
+<td colspan="1" rowspan="1">
+<a id="id515"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id516"><!-- named anchor --></a>SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id517"><!-- named anchor --></a>F1-score = 0.8497</td>
+</tr>
+<tr>
+<a id="id518"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id519"><!-- named anchor --></a>63</td>
+<td colspan="1" rowspan="1"><a id="id520"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id521"><!-- named anchor --></a>Suárez-Paniagua et al. <a href="#b0525">[105]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id522"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id523"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id524"><!-- named anchor --></a>CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id525"><!-- named anchor --></a>F1-score = 0.6198</td>
+</tr>
+<tr>
+<a id="id526"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id527"><!-- named anchor --></a>64</td>
+<td colspan="1" rowspan="1"><a id="id528"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id529"><!-- named anchor --></a>Zheng et al. <a href="#b0650">[130]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id530"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id531"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id532"><!-- named anchor --></a>RNN with LSTM units</td>
+<td colspan="1" rowspan="1">
+<a id="id533"><!-- named anchor --></a>F1-score = 0.773</td>
+</tr>
+<tr>
+<a id="id534"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id535"><!-- named anchor --></a>65</td>
+<td colspan="1" rowspan="1"><a id="id536"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id537"><!-- named anchor --></a>Kavuluru et al. <a href="#b0615">[123]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id538"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id539"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id540"><!-- named anchor --></a>character-level RNNs</td>
+<td colspan="1" rowspan="1">
+<a id="id541"><!-- named anchor --></a>F1-score = 0.7081</td>
+</tr>
+<tr>
+<a id="id542"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id543"><!-- named anchor --></a>66</td>
+<td colspan="1" rowspan="1"><a id="id544"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id545"><!-- named anchor --></a>Wang et al. <a href="#b0735">[147]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id546"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id547"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id548"><!-- named anchor --></a>RNN with LSTM and an attention mechanism</td>
+<td colspan="1" rowspan="1">
+<a id="id549"><!-- named anchor --></a>F1-score = 0.715</td>
+</tr>
+<tr>
+<a id="id550"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id551"><!-- named anchor --></a>67</td>
+<td colspan="1" rowspan="1"><a id="id552"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id553"><!-- named anchor --></a>Yi et al. <a href="#b0645">[129]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id554"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id555"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id556"><!-- named anchor --></a>RNN</td>
+<td colspan="1" rowspan="1">
+<a id="id557"><!-- named anchor --></a>F1-score = 0.722</td>
+</tr>
+<tr>
+<a id="id558"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id559"><!-- named anchor --></a>68</td>
+<td colspan="1" rowspan="1"><a id="id560"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id561"><!-- named anchor --></a>Jiang et al. <a href="#b0635">[127]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id562"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id563"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id564"><!-- named anchor --></a>skeleton-LSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id565"><!-- named anchor --></a>F1-score = 0.714</td>
+</tr>
+<tr>
+<a id="id566"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id567"><!-- named anchor --></a>69</td>
+<td colspan="1" rowspan="1"><a id="id568"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id569"><!-- named anchor --></a>Li et al. <a href="#b0480">[96]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id570"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id571"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id572"><!-- named anchor --></a>relation classification framework based on topic modeling</td>
+<td colspan="1" rowspan="1">
+<a id="id573"><!-- named anchor --></a>F1-score = 0.48</td>
+</tr>
+<tr>
+<a id="id574"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id575"><!-- named anchor --></a>70</td>
+<td colspan="1" rowspan="1"><a id="id576"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id577"><!-- named anchor --></a>Wang et al. <a href="#b0600">[120]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id578"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id579"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id580"><!-- named anchor --></a>LSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id581"><!-- named anchor --></a>F1-score = 0.72</td>
+</tr>
+<tr>
+<a id="id582"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id583"><!-- named anchor --></a>71</td>
+<td colspan="1" rowspan="1"><a id="id584"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id585"><!-- named anchor --></a>Zhang et al. <a href="#b0165">[33]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id586"><!-- named anchor --></a>2017</td>
+<td colspan="1" rowspan="1">
+<a id="id587"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id588"><!-- named anchor --></a>hierarchical RNN</td>
+<td colspan="1" rowspan="1">
+<a id="id589"><!-- named anchor --></a>F1-score = 0.729</td>
+</tr>
+<tr>
+<a id="id590"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id591"><!-- named anchor --></a>72</td>
+<td colspan="1" rowspan="1"><a id="id592"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id593"><!-- named anchor --></a>Xu et al. <a href="#b0130">[26]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id594"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id595"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id596"><!-- named anchor --></a>bidirectional LSTM network</td>
+<td colspan="1" rowspan="1">
+<a id="id597"><!-- named anchor --></a>F1-score = 0.7115</td>
+</tr>
+<tr>
+<a id="id598"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id599"><!-- named anchor --></a>73</td>
+<td colspan="1" rowspan="1"><a id="id600"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id601"><!-- named anchor --></a>Sun et al. <a href="#b0560">[112]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id602"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id603"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id604"><!-- named anchor --></a>Deep CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id605"><!-- named anchor --></a>F1-score = 0.845</td>
+</tr>
+<tr>
+<a id="id606"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id607"><!-- named anchor --></a>74</td>
+<td colspan="1" rowspan="1"><a id="id608"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id609"><!-- named anchor --></a>Lim et al. <a href="#b0105">[21]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id610"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id611"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id612"><!-- named anchor --></a>recursive neural network</td>
+<td colspan="1" rowspan="1">
+<a id="id613"><!-- named anchor --></a>F1-score = 0.838</td>
+</tr>
+<tr>
+<a id="id614"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id615"><!-- named anchor --></a>75</td>
+<td colspan="1" rowspan="1"><a id="id616"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id617"><!-- named anchor --></a>Zhou et al. <a href="#b0630">[126]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id618"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id619"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id620"><!-- named anchor --></a>BiLSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id621"><!-- named anchor --></a>F1-score = 0.7299</td>
+</tr>
+<tr>
+<a id="id622"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id623"><!-- named anchor --></a>76</td>
+<td colspan="1" rowspan="1"><a id="id624"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id625"><!-- named anchor --></a>Zhang et al. <a href="#b0100">[20]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id626"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id627"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id628"><!-- named anchor --></a>RNN-CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id629"><!-- named anchor --></a>F1-score = 0.648</td>
+</tr>
+<tr>
+<a id="id630"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id631"><!-- named anchor --></a>77</td>
+<td colspan="1" rowspan="1"><a id="id632"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id633"><!-- named anchor --></a>Zitnik et al. <a href="#b0565">[113]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id634"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id635"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id636"><!-- named anchor --></a>spectral convolution</td>
+<td colspan="1" rowspan="1">
+<a id="id637"><!-- named anchor --></a>AUC = 0.928</td>
+</tr>
+<tr>
+<a id="id638"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id639"><!-- named anchor --></a>78</td>
+<td colspan="1" rowspan="1"><a id="id640"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id641"><!-- named anchor --></a>Paniagua et al. <a href="#b0520">[104]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id642"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id643"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id644"><!-- named anchor --></a>CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id645"><!-- named anchor --></a>F1-score = 0.6456</td>
+</tr>
+<tr>
+<a id="id646"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id647"><!-- named anchor --></a>79</td>
+<td colspan="1" rowspan="1"><a id="id648"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id649"><!-- named anchor --></a>Hou et al. <a href="#b0500">[100]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id650"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id651"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id652"><!-- named anchor --></a>LSTM- DNN</td>
+<td colspan="1" rowspan="1">
+<a id="id653"><!-- named anchor --></a>F1-score = 0.875</td>
+</tr>
+<tr>
+<a id="id654"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id655"><!-- named anchor --></a>80</td>
+<td colspan="1" rowspan="1"><a id="id656"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id657"><!-- named anchor --></a>Sahu et al. <a href="#b0595">[119]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id658"><!-- named anchor --></a>2018</td>
+<td colspan="1" rowspan="1">
+<a id="id659"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id660"><!-- named anchor --></a>LSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id661"><!-- named anchor --></a>F1-score = 0.6939</td>
+</tr>
+<tr>
+<a id="id662"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id663"><!-- named anchor --></a>81</td>
+<td colspan="1" rowspan="1"><a id="id664"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id665"><!-- named anchor --></a>Zhang et al. <a href="#b0465">[93]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id666"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id667"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id668"><!-- named anchor --></a>variational autoencoder</td>
+<td colspan="1" rowspan="1">
+<a id="id669"><!-- named anchor --></a>F1-score = 0.579</td>
+</tr>
+<tr>
+<a id="id670"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id671"><!-- named anchor --></a>82</td>
+<td colspan="1" rowspan="1"><a id="id672"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id673"><!-- named anchor --></a>Xiong et al. <a href="#b0570">[114]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id674"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id675"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id676"><!-- named anchor --></a>combined GCNN and BiLSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id677"><!-- named anchor --></a>F1-score = 0.77</td>
+</tr>
+<tr>
+<a id="id678"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id679"><!-- named anchor --></a>83</td>
+<td colspan="1" rowspan="1"><a id="id680"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id681"><!-- named anchor --></a>Liu et al. <a href="#b0730">[146]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id682"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id683"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id684"><!-- named anchor --></a>non-linear unsupervised neural network + RF</td>
+<td colspan="1" rowspan="1">
+<a id="id685"><!-- named anchor --></a>F1-score = 0.8498</td>
+</tr>
+<tr>
+<a id="id686"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id687"><!-- named anchor --></a>84</td>
+<td colspan="1" rowspan="1"><a id="id688"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id689"><!-- named anchor --></a>Sun et al. <a href="#b0215">[43]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id690"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id691"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id692"><!-- named anchor --></a>recurrent hybrid CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id693"><!-- named anchor --></a>F1-score = 0.7548</td>
+</tr>
+<tr>
+<a id="id694"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id695"><!-- named anchor --></a>85</td>
+<td colspan="1" rowspan="1"><a id="id696"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id697"><!-- named anchor --></a>Shtar et al. <a href="#b0505">[101]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id698"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id699"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id700"><!-- named anchor --></a>ensemble-based classifier</td>
+<td colspan="1" rowspan="1">
+<a id="id701"><!-- named anchor --></a>AUC 0.807 to 0.990</td>
+</tr>
+<tr>
+<a id="id702"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id703"><!-- named anchor --></a>86</td>
+<td colspan="1" rowspan="1"><a id="id704"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id705"><!-- named anchor --></a>Xu et al. <a href="#b0125">[25]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id706"><!-- named anchor --></a>2019</td>
+<td colspan="1" rowspan="1">
+<a id="id707"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id708"><!-- named anchor --></a>full-attention network</td>
+<td colspan="1" rowspan="1">
+<a id="id709"><!-- named anchor --></a>F1-score = 0.712</td>
+</tr>
+<tr>
+<a id="id710"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id711"><!-- named anchor --></a>87</td>
+<td colspan="1" rowspan="1"><a id="id712"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id713"><!-- named anchor --></a>Wu et al. <a href="#b0540">[108]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id714"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id715"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id716"><!-- named anchor --></a>stacked bidirectional GRU + CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id717"><!-- named anchor --></a>F1-score = 0.75</td>
+</tr>
+<tr>
+<a id="id718"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id719"><!-- named anchor --></a>88</td>
+<td colspan="1" rowspan="1"><a id="id720"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id721"><!-- named anchor --></a>Zhu et al. <a href="#b0180">[36]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id722"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id723"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id724"><!-- named anchor --></a>bidirectional transformer + BiGRU</td>
+<td colspan="1" rowspan="1">
+<a id="id725"><!-- named anchor --></a>F1-score = 0.809</td>
+</tr>
+<tr>
+<a id="id726"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id727"><!-- named anchor --></a>89</td>
+<td colspan="1" rowspan="1"><a id="id728"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id729"><!-- named anchor --></a>Liu et al. <a href="#b0135">[27]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id730"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id731"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id732"><!-- named anchor --></a>stacked autoencoders + weighted SVM</td>
+<td colspan="1" rowspan="1">
+<a id="id733"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id734"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id735"><!-- named anchor --></a>90</td>
+<td colspan="1" rowspan="1"><a id="id736"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id737"><!-- named anchor --></a>Park et al. <a href="#b0160">[32]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id738"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id739"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id740"><!-- named anchor --></a>Attention-based Graph Convolutional Networks</td>
+<td colspan="1" rowspan="1">
+<a id="id741"><!-- named anchor --></a>F1-score = 0.7686</td>
+</tr>
+<tr>
+<a id="id742"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id743"><!-- named anchor --></a>91</td>
+<td colspan="1" rowspan="1"><a id="id744"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id745"><!-- named anchor --></a>Zaikis et al. <a href="#b0640">[128]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id746"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id747"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id748"><!-- named anchor --></a>stacked Bi-LSTM + CNN</td>
+<td colspan="1" rowspan="1">
+<a id="id749"><!-- named anchor --></a>–</td>
+</tr>
+<tr>
+<a id="id750"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id751"><!-- named anchor --></a>92</td>
+<td colspan="1" rowspan="1"><a id="id752"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id753"><!-- named anchor --></a>Allahgholi et al. <a href="#b0115">[23]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id754"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id755"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id756"><!-- named anchor --></a>ANN</td>
+<td colspan="1" rowspan="1">
+<a id="id757"><!-- named anchor --></a>Accuracy = 0.954</td>
+</tr>
+<tr>
+<a id="id758"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id759"><!-- named anchor --></a>93</td>
+<td colspan="1" rowspan="1"><a id="id760"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id761"><!-- named anchor --></a>Warikoo et al. <a href="#b0175">[35]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id762"><!-- named anchor --></a>2020</td>
+<td colspan="1" rowspan="1">
+<a id="id763"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id764"><!-- named anchor --></a>Lexically-aware Transformer-based BERT</td>
+<td colspan="1" rowspan="1">
+<a id="id765"><!-- named anchor --></a>F1-score = 0.645</td>
+</tr>
+<tr>
+<a id="id766"><!-- named anchor --></a><td colspan="1" rowspan="1">
+<a id="id767"><!-- named anchor --></a>94</td>
+<td colspan="1" rowspan="1"><a id="id768"><!-- named anchor --></a></td>
+<td colspan="1" rowspan="1">
+<a id="id769"><!-- named anchor --></a>Fatehifar et al. <a href="#b0200">[40]</a>
+</td>
+<td colspan="1" rowspan="1">
+<a id="id770"><!-- named anchor --></a>2021</td>
+<td colspan="1" rowspan="1">
+<a id="id771"><!-- named anchor --></a>text</td>
+<td colspan="1" rowspan="1">
+<a id="id772"><!-- named anchor --></a>LSTM</td>
+<td colspan="1" rowspan="1">
+<a id="id773"><!-- named anchor --></a>F1-score = 0.783</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="id774"><!-- named anchor --></a><p id="id775"><span class="generated">[i]</span> TML: traditional machine learning, DL: deep learning, '-'the information was not reported in the original paper.</p>
+</div></div>
+</div></p>
+<p id="p0050">The flowchart of AI-based DDI prediction model is illustrated in <a href="#f0010">Fig. 2</a>. From the whole flowchart, we would like to conduct our review based on two main aspects: input data (DDIs extraction and feature preprocessing) and AI algorithms (traditional machine learning and deep learning). The evolution of DDI prediction models separated by these two aspects is also shown in <a href="#f0015">Fig. 3</a>.<div class="fig panel" style="display: float; clear: both">
+<a id="f0010"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id776">Overall workflow of traditional ML and DL for DDIs prediction.</p></div>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="f0015"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id777">Evolution of DDI prediction models separated by different input data and algorithms.</p></div>
+</div></p>
+</div>
+<div class="section">
+<a id="s0015"><!-- named anchor --></a><h2 class="main-title">Dataset, input data, and features for AI-DDIs studies</h2>
+<h5 class="label">3</h5>
+<p id="p0055">In response to the growing number of pharmaceutical drugs entering the market over the past decades, many drug-related information databases have been updating and expanding to facilitate DDIs prediction <a href="#b0065">[13]</a>, <a href="#b0070">[14]</a>, <a href="#b0075">[15]</a>. Generally, most DDIs studies referred to datasets from DDIExtraction 2011 <a href="#b0080">[16]</a>, <a href="#b0085">[17]</a>, DDIExtraction 2013 <a href="#b0090">[18]</a> and DrugBank database <a href="#b0095">[19]</a>. These public sources provide various types of drugs' characteristics and DDIs events to leverage AI approaches for DDIs discovery. The quantitative information about the DDIs is a necessary part of creating the described system. The data record format usually has binary characters encoded as 1 if there is an interaction between two drugs and 0 if there is a lack of known interaction.</p>
+<p id="p0060">Depending on the DDIs features-based view of different approaches, appropriate data extraction and feature preprocessing methods for DDIs prediction tasks can be applied.</p>
+<div class="section">
+<a id="s0020"><!-- named anchor --></a><h3 class="section-title">DDIs information retrieved from text-based sources</h3>
+<h5 class="label">3.1</h5>
+<p id="p0065">This method involves extracting DDIs information in the form of biomedical text, especially in scientific literature since these sources represent valuable information for the retrieval of knowledge about the interaction between drugs. The amount of biomedical literature, which holds a vast amount of DDIs, has been growing over the past years and facilitating many DDIs extracting studies <a href="#b0100">[20]</a>, <a href="#b0105">[21]</a>, <a href="#b0110">[22]</a>. Aside from studies using public available DDI corpus <a href="#b0115">[23]</a>, <a href="#b0120">[24]</a>, some studies have also used additional user-generated content to compensate for the limits of delayed updates of the medical database <a href="#b0125">[25]</a>, <a href="#b0130">[26]</a>. In addition, multi-information sources DDI corpora have been constructed based on useful information from FDA adverse event reports <a href="#b0135">[27]</a>, <a href="#b0140">[28]</a>, electronic health records (EHRs) <a href="#b0145">[29]</a>, <a href="#b0150">[30]</a>, or by following specific annotation guidelines <a href="#b0155">[31]</a> to construct corpus for DDIs extracting.</p>
+<p id="p0070">In these DDIs extraction approaches, feature preprocessing is essential. In detail, tokenization and lower casing are the first vital steps in reducing the sparsity of feature space. Also, many dimensionally reduction text preprocessing techniques have been used for DDIs extraction. Some compression techniques such as sentence pruning <a href="#b0160">[32]</a> and anaphora resolution have been applied <a href="#b0165">[33]</a>; Zhao used syntax word embedding strategy <a href="#b0170">[34]</a> instead of the common word embedding technique, some used Bidirectional Encoder Representations from Transformers (BERT) that relies on attention mechanism to capture high-quality contextual information <a href="#b0175">[35]</a>, <a href="#b0180">[36]</a>. The domain-specific ontologies approach attempted to use ancestors' sequences in the ontology to represent each entity <a href="#b0185">[37]</a>. Bokharaeian <i>et al.</i>
+<a href="#b0155">[31]</a> proposed clause dependency features to improve the relation extraction performance. Also, Ben Abacha et al. <a href="#b0190">[38]</a> used the CRF-based algorithm trained by a set of linguistic and semantic features for the drug name recognition. Later, the DDIs extraction task was built on a hybrid method of both feature-based and kernel-based machine learning approaches. Moreover, the imbalanced class distribution problem has also been considered in many articles since this issue can diminish the power of classification <a href="#b0195">[39]</a>, <a href="#b0200">[40]</a>. Liu et al. used several rules to filter negative instances <a href="#b0205">[41]</a>; others added random negative sampling as part of the active learning algorithm to deal with the imbalanced issue <a href="#b0210">[42]</a> or use focal loss function to mitigate against this problem <a href="#b0215">[43]</a>.</p>
+</div>
+<div class="section">
+<a id="s0025"><!-- named anchor --></a><h3 class="section-title">Molecule-based input data and feature preprocessing for DDIs prediction</h3>
+<h5 class="label">3.2</h5>
+<p id="p0075">Usually, DDIs studies utilize chemical, molecular, and pharmacological properties information to elucidate drug interactions insights. In detail, the chemical properties of drugs are typically described via the simplified molecular-input line-entry system (SMILES). This flexible chemical notation allows the generation of computer-feedable input <a href="#b0220">[44]</a>. These SMILES structural representations of drugs are post-processed to capture features of drug pairs associated with DDIs events <a href="#b0225">[45]</a>. Moreover, pharmacological properties such as targets <a href="#b0040">[8]</a>, <a href="#b0230">[46]</a>, enzymes, transporters, genes and proteins <a href="#b0030">[6]</a>, <a href="#b0235">[47]</a>, interaction pathways like enzymes and transporters <a href="#b0240">[48]</a>, <a href="#b0245">[49]</a>, <a href="#b0250">[50]</a>, <a href="#b0255">[51]</a>, <a href="#b0260">[52]</a>, <a href="#b0265">[53]</a>, <a href="#b0270">[54]</a>, <a href="#b0275">[55]</a>, <a href="#b0280">[56]</a>, <a href="#b0285">[57]</a>, <a href="#b0290">[58]</a>, <a href="#b0295">[59]</a>, <a href="#b0300">[60]</a>, <a href="#b0305">[61]</a> can also be manipulated to represent drugs features through a set of descriptors. Network interaction mining <a href="#b0310">[62]</a>, <a href="#b0315">[63]</a>, <a href="#b0320">[64]</a> and molecular graph representations have also been used to describe substructures of drugs that come in distinctive shapes and sizes or the structural relations between entities <a href="#b0325">[65]</a>, <a href="#b0330">[66]</a>, <a href="#b0335">[67]</a>, <a href="#b0340">[68]</a>. Additionally, to overcome the lack of data overlap between chemical content and biological characteristics, the combined structure-based input that includes both chemical and biological data by hybridizing cheminformatics and bioinformatics techniques to link all chemical information and biological effects have also been applied to serve as a meaningful method for DDIs discovery in many studies <a href="#b0345">[69]</a>, <a href="#b0350">[70]</a>, <a href="#b0355">[71]</a>.</p>
+<p id="p0080">Many techniques have also been applied to cover multi pharmacological facets of DDI by admitting heterogeneous characterizations from various data sources that represent different drug characteristics and physiological effects <a href="#b0360">[72]</a>, <a href="#b0365">[73]</a>, <a href="#b0370">[74]</a>. The knowledge graphs (KGs)–based features integrated from multiple sources such as DrugBank, PharmGKB, and KEGG drugs <a href="#b0375">[75]</a> were used to overcome the limited information issue in single-source methods. Along with this, some efforts have been made to address the problem of increased noise in the integrated similarity. The similarity selection heuristic process ranks matrices based on the entropy calculated in each matrix and calculates their pair-wise distance for the final selection based on redundancy minimization <a href="#b0380">[76]</a>, <a href="#b0385">[77]</a>.</p>
+<p id="p0085">The classification feature constructing step usually requires the similarity analysis of paired drugs. In most studies, the chemical structural similarity was measured using the structures of the compound of drugs on DrugBank represented by their SMILES <a href="#b0030">[6]</a>. Structural representation of the drugs can be constructed using different molecular fingerprints generation techniques. The principle of this technique is to represent a molecule as a bit vector that codes the attendance or non-attendance of specifically assigned bit position structural features. Similarity measurements between molecular fingerprints are calculated using different methods; one commonly applied technique uses the Tanimoto coefficient <a href="#b0040">[8]</a>, <a href="#b0240">[48]</a>, <a href="#b0390">[78]</a>. Besides, many studies combine various drug-drug similarity measures representing relations between chemical, molecular physiological, or target pathways of drugs for the DDIs prediction task to gain more helpful information about DDIs <a href="#b0395">[79]</a>, <a href="#b0400">[80]</a>. On the other hand, the network-based features processing method exploits the topological properties of the DDI network. Node2vec for Feature Network (FN) construction was used in <a href="#b0405">[81]</a> to present drug features as low-dimensional feature vectors.</p>
+</div>
+</div>
+<div class="section">
+<a id="s0030"><!-- named anchor --></a><h2 class="main-title">Conventional ML-based prediction models of DDIs</h2>
+<h5 class="label">4</h5>
+<p id="p0090">Given the advanced computer science development and growing network pharmacology approaches, the development of a traditional ML-based model using multi-dimensional drug properties has been widely applied as a promising strategy to predict unknown DDIs <a href="#b0410">[82]</a>, <a href="#b0415">[83]</a>.</p>
+<div class="section">
+<a id="s0035"><!-- named anchor --></a><h3 class="section-title">Single ML algorithm-based predictive model</h3>
+<h5 class="label">4.1</h5>
+<p id="p0095">Support vector machine (SVM) was a common algorithm used to predict DDIs due to its high performance with a broad range AUC value of 0.565 – 0.985 <a href="#b0095">[19]</a>, <a href="#b0270">[54]</a>, <a href="#b0030">[6]</a>, <a href="#b0420">[84]</a>, <a href="#b0425">[85]</a>, <a href="#b0430">[86]</a>, <a href="#b0435">[87]</a>. Indeed, the number of recruiting features has a certain role in the predictive model, e.g., a study applied the features reducing method and achieved an increase of 0.02 in the F-measure score (0.5786 vs 0.5965) of the predictive model <a href="#b0430">[86]</a>. Kernel machines are a class of algorithms for pattern analysis whose best-known member is the SVM. Kernel classifiers were used for classifying the drug pairs, including all-paths graph (APG), k-band shortest path spectrum (kBSPS), and the shallow linguistic (SL) kernel <a href="#b0085">[17]</a>, <a href="#b0155">[31]</a>, <a href="#b0440">[88]</a>, <a href="#b0445">[89]</a>. Noteworthy, Thomas et al. <a href="#b0085">[17]</a> showed that SL and APG outperformed other methods, such as case-based reasoning and ensemble learning based on F1-score (0.606 vs. 0.416 and 0.583, respectively). Also, Zhang et al. <a href="#b0450">[90]</a> used the label propagation algorithms to work with the scenario where only a small portion of nodes in the undirected weighted network being labeled. In the meantime, logistic regression (LR) algorithm has been less used to establish DDIs prediction model. Xie et al. <a href="#b0455">[91]</a> integrated active learning, random negative sampling, and uncertainty sampling in clinical safety DDI information retrieval (DDI-IR) analysis using SVM and LR. In addition, Drug-Entity-Topic (DET) model following Bayes-rules was an example in leveraging augmented text-mining features to improve prediction performance in terms of discrimination and calibration <a href="#b0365">[73]</a>. Due to the growing demand for adverse DDIs (ADDIs) signal detection, Bayesian network framework and domain knowledge were combined to identify direct associations between a combination of medicines and the target ADEs <a href="#b0460">[92]</a>. Furthermore, gradient boosting-based algorithm XGBoost was employed to achieve robust DDI prediction even for drugs whose interaction profiles were completely unseen during training <a href="#b0300">[60]</a>. XGBoost performed better or comparable to other algorithms, such as SVM, random forest, and the standard gradient boosting in terms of predictive performance and speed in DDIs prediction <a href="#b0245">[49]</a>, <a href="#b0300">[60]</a>.</p>
+</div>
+<div class="section">
+<a id="s0040"><!-- named anchor --></a><h3 class="section-title">Ensemble learning predictive model</h3>
+<h5 class="label">4.2</h5>
+<p id="p0100">Ensemble methods use multiple learning algorithms to obtain better predictive performance than separate models in DDIs prediction <a href="#b0085">[17]</a>, <a href="#b0165">[33]</a>, <a href="#b0240">[48]</a>, <a href="#b0360">[72]</a>, <a href="#b0465">[93]</a>, <a href="#b0470">[94]</a>. Combined ML algorithms using LibLINEAR, which consists of linear SVM, Naïve Bayes, and Voting Perceptron classifiers, outperformed the original (unbalanced) train corpora model based on F-score (70.4% vs. 69.0%)<a href="#b0475">[95]</a>. Similarly, a heterogeneous network-assisted inference (HNAI) framework consisting of five different ML algorithms, including Naive Bayes (NB), decision tree (DT), k-nearest neighbors (k-NN), LR, and SVM, was proposed to detect the unknown DDIs with AUC of 0.67, higher than that of separated algorithms (NB:0.66, DT:0.565, k-NN:0.6, LR:0.655, and SVM:0.666) <a href="#b0030">[6]</a>. Other ensemble methods including genetic algorithm and LR in classifier ensemble rule for DDIs prediction could obtain AUC value up to 1 and accuracy&gt;90%, regardless of approved and unproved drug pairs being selected <a href="#b0240">[48]</a>. One of the significant concerns for developing a high-accuracy DDIs prediction model is integrating heterogeneous drug features. Thus, Zhang et al. <a href="#b0310">[62]</a> proposed a multi-modal deep auto-encoders based drug representation learning method (DDI-MDAE) to predict DDIs from large-scale, noisy and sparse data. DDI-MDAE encompasses RF classifier in the positive-unlabeled learning setting. Another computational experiment established a sparse feature learning ensemble method with linear neighborhood regularization (SFLLN) to predict DDIs, even unknown DDIs. Although SFLLN presented high accuracy and outperformed benchmark methods, it costs a reasonable amount of running time <a href="#b0350">[70]</a>.</p>
+</div>
+</div>
+<div class="section">
+<a id="s0045"><!-- named anchor --></a><h2 class="main-title">Deep learning-based prediction model of DDIs</h2>
+<h5 class="label">5</h5>
+<p id="p0105">As many as the number of drugs have entered the market over the past decades, the deep and complex interactions between drugs can go far beyond the capacity of simple traditional ML algorithms <a href="#b0480">[96]</a>. Therefore, DL, with multiple processing layers-concepts, is applied in DDIs prediction due to its ability to deal with complex relations <a href="#b0485">[97]</a>. Inspired by the architecture of human brains <a href="#b0490">[98]</a>, the superior performance of DL in classification tasks over conventional methods leverages its growing application in DDIs prediction. Unlike the traditional ML method, which depends on hand-crafted features engineering, DL performed the data representation and prediction in a joint task. In a complex, ill-defined, and highly nonlinear problem as DDIs prediction, DL emerges as a suitable approach for solving these stochastic issues. DL can be seen as representation learning, in which the machine, which involves multiple sequential layers, can develop its feature representations <a href="#b0495">[99]</a>. We devoted this section to describing all leading DL frameworks in the DDIs extraction and prediction tasks since DL entered the field.</p>
+<div class="section">
+<a id="s0050"><!-- named anchor --></a><h3 class="section-title">Artificial neural network (ANN)</h3>
+<h5 class="label">5.1</h5>
+<p id="p0110">ANN is a data-driven algorithm that seeks hidden functional relations from the dataset. In ANN, many neurons are connected in complex interconnections to solve linear or nonlinear problems. Previous studies have successfully manipulated ANN models for DDIs prediction tasks <a href="#b0500">[100]</a>, <a href="#b0505">[101]</a>. The two layers ANN model has been used in the study of Rohani <i>et al.</i>
+<a href="#b0385">[77]</a> to work on a feature set of different similarity matrices collected from five different data sources. Masumshah <i>et al.</i>
+<a href="#b0510">[102]</a> used a feed-forward neural network with fully connected layers and the ReLU activation function was used between layers of the model as a sigmoid activation function for the output layer. Additionally, Shtar et al. <a href="#b0505">[101]</a> applied the ANN and propagation method over DDI graph nodes represented by an adjacency matrix. They used an XGBoost classifier for the DDIs classification, which output a binary value representing whether there is an interaction between the drug pairs or not.</p>
+</div>
+<div class="section">
+<a id="s0055"><!-- named anchor --></a><h3 class="section-title">Convolutional neural network (CNN)</h3>
+<h5 class="label">5.2</h5>
+<p id="p0115">CNN, which was inspired by the pattern of the animal Visual Cortex <a href="#b0515">[103]</a>, has been introduced as an effective approach to deal with data with a grid pattern. The main goal of CNN is to transform the input into an easy-to-process form without compromising the prediction power. This characteristic makes CNN a potential candidate for the DDIs extraction task <a href="#b0520">[104]</a>, <a href="#b0525">[105]</a> that requires valuable feature learning aspects and massive datasets scalability. The central concept of CNNs utilizes hidden convolution and pooling layers to identify spatially localized features via a set of receptive fields in kernel form. Usually, a CNN architecture consists of convolution, pooling, and fully connected layers. According to the task, it is also essential to have a suitable activation function. For example, a sigmoid function is often used in binary classification, while the softmax function is often applied in multiclass classification <a href="#b0530">[106]</a>. Different forms of CNN have been proposed for DDI prediction as follows.</p>
+<div class="section">
+<a id="s0060"><!-- named anchor --></a><h4 class="subsection-title">Conventional CNN</h4>
+<h5 class="label">5.2.1</h5>
+<p id="p0120">Chen <i>et al.</i>
+<a href="#b0535">[107]</a> used the CNN in the feature fusion module of their model, which was designed using a bi-level strategy with cross-and-scalar-level units. The CNN was used to learn the local and global features in the cross-level unit. The element-wise product was used in the scalar-level unit to get the fine-grained interactive feature between two features. These features will be concatenated to predict DDIs in the classifier module. The method proposed by Wu <i>et al.</i>
+<a href="#b0540">[108]</a> adopted two CNNs and the maximum pooling operation to extract features in the two location features from the word features preprocessed by the attention mechanism with a recurrent neural network (RNN). These features were then before fed into a softmax function to get the normalized probability score for each class. The model of Quan <i>et al.</i>
+<a href="#b0545">[109]</a> takes a DDIs instance represented by the word embedding and feeds them into the convolutional layer to get the filtered features. Then, the max-pooling layer extracts the essential local features; this layer also helps reduce the complexity of the model by reducing the feature dimension. Finally, in this model, a softmax layer is used for classifying DDIs types.</p>
+</div>
+<div class="section">
+<a id="s0065"><!-- named anchor --></a><h4 class="subsection-title">Dependency-based CNN</h4>
+<h5 class="label">5.2.2</h5>
+<p id="p0125">The process of feeding local information into convolution operation in traditional CNN is not practical considering the case of long-distance relationships between words in candidate DDIs instances. Attempts to enlarge the window can lead to the data sparsity problem. Therefore, the dependency-based convolutional model (Dep-CNN) has been applied to capture long-distance dependencies between words of a sentence and extract DDIs from candidate instances. Dep-CNN performs convolution operation on adjacent words in word sentences and dependency parsing trees of candidate DDIs instances. In the model proposed by Liu <i>et al.</i>
+<a href="#b0550">[110]</a>, they first generate a dependency parsing tree where each node corresponds to a word in the instance and syntactic dependency between two words denoted by the directed edge. Their Dep-CNN model is a four-layer neural network, consisting of a look-up table layer, a convolutional layer, a max-pooling layer, and a softmax progressing layer to feed the feature vector to a fully connected neural network for classification.</p>
+</div>
+<div class="section">
+<a id="s0070"><!-- named anchor --></a><h4 class="subsection-title">Deep CNN</h4>
+<h5 class="label">5.2.3</h5>
+<p id="p0130">Considering various properties in texts, the successful application of Deep CNN (DCNN) in identifying complex patterns of image and video in computer vision <a href="#b0555">[111]</a> suggested its application in DDIs extraction task. Sun <i>et al.</i>
+<a href="#b0560">[112]</a> proposed a DCNN model which utilized a small convolution architecture to operate directly at the word level of the raw biomedical text input to get the embedding-based convolutional features. Then, the softmax classifier will be used to operate these features and extract DDIs from biomedical literature.</p>
+</div>
+</div>
+<div class="section">
+<a id="s0075"><!-- named anchor --></a><h3 class="section-title">Graph convolutional neural network (GCNN)</h3>
+<h5 class="label">5.3</h5>
+<p id="p0135">In many DDIs prediction approaches, the molecular structure of drugs has been extensively exploited to extract the characteristics of the drug that link to the DDIs events. In non-Euclidean domains, where complex relationships and interdependencies between molecular structure representation of drugs or interactions between drug targets betokened as graphs <a href="#b0565">[113]</a>, the application of GCNN in DDIs prediction was introduced. The most fundamental part of a GCNN is a graph, a data structure consisting of two components: nodes and edges <a href="#b0505">[101]</a>. The nodes usually represent the drug and edges are associated with interactions between nodes <a href="#b0570">[114]</a>. The first graph convolutional network was proposed by Bruna <i>et al.</i>
+<a href="#b0575">[115]</a> for applying neural networks to graph-structured data. Also, a model called SC-DDIS was introduced by Liu <i>et al.</i>
+<a href="#b0370">[74]</a> can learn the final embedding of drugs via a graph spectral CNN. Besides, it deals with the multiple complex structured entities that consist of two graph types: local graph for structured entities and global graph to capture structured entities' interactions. Wang <i>et al.</i>
+<a href="#b0425">[85]</a> proposed a graph to GCNN model called GoGNN to extract features in both graphs in a hierarchical fashion to leverage the DDIs prediction performance.</p>
+</div>
+<div class="section">
+<a id="s0080"><!-- named anchor --></a><h3 class="section-title">Recurrent neural network</h3>
+<h5 class="label">5.4</h5>
+<p id="p0140">RNN is highly manipulated in NLP <a href="#b0580">[116]</a>, <a href="#b0585">[117]</a> and it mainly deals with sequential data. What makes RNNs differ from CNNs is their memory mechanism that gets information for the prior inputs to influence the current input and output. The DDIs extraction task is considered a relation extraction task in NLP. Many have utilized the long short term memory (LSTM) network to extract DDIs from literature <a href="#b0590">[118]</a>, <a href="#b0595">[119]</a>, <a href="#b0600">[120]</a>. Even though Char-RNNs are more common for modeling morphologically richer languages <a href="#b0605">[121]</a> and were introduced for text classification <a href="#b0610">[122]</a>. Kavuluru <i>et al.</i>
+<a href="#b0615">[123]</a> has also considered the role of character-level embedding in DDIs extraction, and they used an LSTM on the character embedding to extract the word vectors.</p>
+<p id="p0145">Luo <i>et al.</i>
+<a href="#b0285">[57]</a> presented a model that used an LSTM model for DDIs prediction in diabetes using the embedded drug-induced transcriptome data. The LSTM is a typical RNN architecture introduced by Hochreiter and Schmidhuber <a href="#b0620">[124]</a> to deal with the problem of long-term dependencies. In LSTM, cells in the hidden layers contain an input gate, an output gate, and a forget gate to control the flow of information required for the Prediction. Also, the gated recurrent units (GRU) was introduced to address the short-term memory problem of the RNNs model <a href="#b0625">[125]</a>. However, unlike the LTSM, GRUs use hidden states and two gates: reset and update gate to control the information to retain for the prediction.</p>
+<p id="p0150">For the DDIs extraction task, a hierarchical RNN was introduced by Zhang <i>et al.</i>
+<a href="#b0165">[33]</a>. This model framework considers the shortest dependency path (SDP) between two entities and uses the RNN to learn the feature representation of sentence sequence and SDP for extracting DDIs. Zhou et al. <a href="#b0630">[126]</a> introduced an attention-based BiLSTM model to encode biomedical text sentences.</p>
+<p id="p0155">Besides, considering the difference between DDIs instance and typical sentence, Jiang <i>et al.</i>
+<a href="#b0635">[127]</a> used a skeleton structure to represent the DDIs instances and the LSTM model to work with the structure (skeleton-LSTM). In their framework, a sentence is first tokenized into token units followed by a corresponding skeleton unit, distance to the first drug, and distance to the second drug. These units are input to the embedding layer of the skeleton-LSTM.</p>
+<p id="p0160">However, traditional Encoder-Decoder architecture using RNN or LSTM remained several drawbacks as it can cause the information loss problem, especially in the case of long sentences. Attention mechanism has been applied to deal with the problem mentioned above <a href="#b0640">[128]</a>. The model proposed by Yi <i>et al.</i>
+<a href="#b0645">[129]</a> used a bidirectional RNN layer to generate a sentence matrix as the word's semantic representation. Then, the attention layer is applied to create the final representation by combining several relevant sentences of the same drug pairs. The softmax classifier was used to classify specific DDIs. Zheng <i>et al.</i>
+<a href="#b0650">[130]</a> also introduced a model to classify DDIs from texts using a combined attention mechanism and an RNN with LSTM units.</p>
+</div>
+</div>
+<div class="section">
+<a id="s0085"><!-- named anchor --></a><h2 class="main-title">Interpretability methods in XAI and XAI in DDIs prediction</h2>
+<h5 class="label">6</h5>
+<p id="p0165">The surge in the predictive performance of AI tools is achieved by increasing model complexity. This turns these models into black-box systems and causes uncertainty regarding their operation mechanism. This ambiguity hinders the wide adaptation of AI models in critical domains like healthcare. As a result, eXplainable Artificial Intelligence (XAI) focuses on understanding behind the prediction of AI models to accommodate the demand for transparency in AI tools. Interpretability methods of AI models can be classified based on the type of algorithms, the interpretation scale, and the data type <a href="#b0655">[131]</a>. Additionally, based on the purposes of interpretability, approaches can be categorized as white-box models creation, black-box models explanation, enhancement of model fairness and predictive sensitivity testing <a href="#b0660">[132]</a>.</p>
+<p id="p0170">In terms of methods to explain DL models, the gradient-based attribution method <a href="#b0665">[133]</a> attempts to explain the prediction by attributing them to the network's input features. This method is often applied when predictions are made from a DNN system and therefore, can be potential approach for some black-box DNN models in DDIs prediction like <a href="#b0550">[110]</a>, <a href="#b0560">[112]</a>. Moreover, the DeepLIFT is a popular algorithm applied on top of DNN models that showed considerable advantages compared to gradient-based methods <a href="#b0670">[134]</a>. On the other hand, Guided BackPropagation method can be applied to network structures <a href="#b0675">[135]</a>. Under this, a convolutional layer with improved stride can replace max-pooling in CNN to deal with accuracy loss. This approach suggests a potential application in some CNN-based DDIs prediction such as <a href="#b0555">[111]</a>. On top of this, the <a href="#b0680">[136]</a> was proposed in NLP-based neural networks. This method used rationales (small pieces of input text) and tried to produce the same prediction as the full-text input type. Under this method, the architecture consists of two components, generator and encoder, to look for text subsets highly related to the prediction result. Since the DDIs extraction task is conducted via NLP-based models <a href="#b0545">[109]</a>, <a href="#b0570">[114]</a>, the above methods should be considered for application to promote the clarity of these models.</p>
+<p id="p0175">Apart from this, methods to create white-box models such as linear, decision tree, rule-based models, or sophisticated yet transparent models have also been proposed in XAI. However, due to the limited predictive power, especially in the NLP-based domain as in the DDIs extraction task, these approaches are given less interest. Additionally, various methods have been proposed to tackle fairness in AI. Nevertheless, a minimal number of these scientific pieces of literature considered fairness in non-tabular data such as text-based information for DDIs extraction. While many DDIs studies applied the word embedding method <a href="#b0310">[62]</a>, <a href="#b0545">[109]</a>, it was revealed that vectorized representing of text data could carry strong bias <a href="#b0685">[137]</a>. Therefore, methods to assure fairness should be taken into more consideration in DDIs studies. Furthermore, some methods aim to analyze the sensitivity of AI models to ensure the reliability of those tools. In the Adversarial Example-based Sensitivity Analysis, Zugner <i>et al.</i>
+<a href="#b0690">[138]</a> used this approach to study the graph-structured data. This method considers modifying node connections or node features to attack node classification models. Since graph-based methods are widely applied in DDIs studies <a href="#b0335">[67]</a>, <a href="#b0340">[68]</a>, approaches as in the above research suggest potential application in DDIs prediction model. Also, using perturbations to the word embeddings <a href="#b0695">[139]</a> in RNN should also be considered. Significantly, the input reduction method in the study of Feng <i>et al.</i>
+<a href="#b0700">[140]</a> to reveal oversensitivity in NLP models can be a possible approach in DDIs extracting studies. Literature regarding the explosion of the weakness of DL models in NLP-tasks is complete; however, applications in DDIs- NLP models are still limited.</p>
+<p id="p0180">In the DDIs study of Schwarz <i>et al.</i>
+<a href="#b0305">[61]</a>, an attempt has been made to offer their model interpretability using the Attention scores computed at all layers of modeling. Using these scores, the contribution of the similarity matrices to the drug representation vectors is determined and the drug characteristics that lead to better encoding are selected. This approach leverages information that passes through all layers of the network.</p>
+</div>
+<div class="section">
+<a id="s0090"><!-- named anchor --></a><h2 class="main-title">Challenges and opportunities</h2>
+<h5 class="label">7</h5>
+<p id="p0185">Though traditional ML performed effectively in extracting DDIs, even from the unstructured package insert (aka drug product label) <a href="#b0435">[87]</a>, conventional ML-based methods still have several drawbacks. ML-based models are learned from positive and negative data, making it difficult in real-world domains due to the lack of true negative DDIs or a “gold standard” non-DDI. Therefore, it is necessary to identify positive data from many unlabeled data containing positive and negative samples and avoid biased sampling by random negative sampling and validation set updating. Additionally, it is unknown whether there is DDI between two drugs in a negative class dataset because some new DDIs drug pairs may not be reported yet. Another issue is different types of DDI data, such as clinical drug safety and pharmacokinetic data with different targeted samples and proportions in DDI-relevant databases or articles. Also, it is more time-consuming to accomplish the annotated corpora and determine optimal parameters in traditional ML-based methods. Hence, DNN models, including CNN and sequential neural networks such as RNN, have been referred to as an optimal resolution for feature selection and DDIs extraction without complicated feature engineering <a href="#b0600">[120]</a>. However, we assumed that several paths should be investigated in future work. First, drug-related textual data sources, such as patent information, are essential. Second, it is unknown how to use drug domain knowledge or semi-structured drugs, such as paragraph that describes the pharmacodynamics or mechanism of action, protein binding, or experimental properties of a drug in building up predictive models.</p>
+<p id="p0190">In addition, DL with superior performance and capability to automatically generate hierarchical input for the classification tasks has gained huge research attention in DDIs prediction domain. Still, these DL methods are neither easily explainable nor commonly trusted by medical staff because of their explainability deficiency. In the DDIs prediction field, only a few studies have considered the explainable aspect of their models, which leaves plenty of room to improve, innovate, and ensure predictive performance and model interpretability in ML-based DDIs prediction models. We, therefore, think that either approaches to explain black-box models, methods to create high-accuracy white-box models, strategies to ensure models fairness, or strict sensitivity analyses of models in DDIs prediction should be given more consideration in the coming years to produce trust and fairness in these models' performance and bring them closer to clinical application. Since XAI aims to explain the machine learning models, its application does not lead to less accuracy in current models. Also, further studies can show the potential of XAI in sacrificing accuracy in the field of DDIs extraction task (NLP) if text based approach is usually used for replenishment of databases and one can refine the found dependencies in the initial sources. Addressing it may open a new road in the application of XAI in DDI prediction in the future, especially for DDI extraction task using NLP.</p>
+</div>
+<div class="section">
+<a id="s0095"><!-- named anchor --></a><h2 class="main-title">Conclusion</h2>
+<h5 class="label">8</h5>
+<p id="p0195">The management of DDIs, which can cause ADEs and affect patients' health, plays a crucial role in pharmacovigilance and medical practice. The main contribution of this study is the establishment of detailed taxonomy of existing models for predicting DDIs. Given remarkable breakthroughs in DDIs prediction over the past years, weakness in terms of model interpretability exposed considerable limits. We, therefore, believe that XAI in DDIs prediction still holds many potential aspects to unlock in future studies.</p>
+</div>
+<div class="section">
+<a id="s0100"><!-- named anchor --></a><h2 class="main-title">CRediT authorship contribution statement</h2>
+<p id="p0200"><b>Thanh Hoa Vo:</b> Conceptualization, Methodology, Formal analysis, Data curation, Writing – original draft, Writing – review &amp; editing, Visualization. <b>Ngan Thi Kim Nguyen:</b> Methodology, Formal analysis, Validation, Writing – original draft, Writing – review &amp; editing, Visualization. <b>Quang Hien Kha:</b> Validation, Data curation. <b>Nguyen Quoc Khanh Le:</b> Conceptualization, Methodology, Formal analysis, Investigation, Data curation, Writing – original draft, Writing – review &amp; editing, Visualization, Supervision, Funding acquisition.</p>
+</div>
+<div class="section">
+<a id="id778"><!-- named anchor --></a><h2 class="main-title">Declaration of Competing Interest</h2>
+<p id="p0205">The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="bi005"><!-- named anchor --></a><div class="section ref-list">
+<a id="bi005"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1</span> <a id="b0005"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0005"><!-- named anchor --></a>M. AskariFrequency and nature of drug-drug interactions in the intensive care unitPharmacoepidemiol Drug Saf22420134304372342079310.1002/pds.3415</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2</span> <a id="b0010"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0010"><!-- named anchor --></a>R. RaschettiSuspected adverse drug events requiring emergency department visits or hospital admissionsEur J Clin Pharmacol541219999599631019275810.1007/s002280050582</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3</span> <a id="b0015"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0015"><!-- named anchor --></a>D.S. BudnitzNational surveillance of emergency department visits for outpatient adverse drug eventsJAMA296152006185818661704721610.1001/jama.296.15.1858</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4</span> <a id="b0020"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0020"><!-- named anchor --></a>A.M. ReisS.H. CassianiEvaluation of three brands of drug interaction software for use in intensive care unitsPharm World Sci32620108228282096363410.1007/s11096-010-9445-2</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5</span> <a id="b0025"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0025"><!-- named anchor --></a>P. VonbachEvaluation of frequently used drug interaction screening programsPharm World Sci30420083673741841569510.1007/s11096-008-9191-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6</span> <a id="b0030"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0030"><!-- named anchor --></a>F. ChengZ. ZhaoMachine learning-based prediction of drug–drug interactions by integrating drug phenotypic, therapeutic, chemical, and genomic propertiesJ Am Med Inform Assoc21e22014e278e2862464427010.1136/amiajnl-2013-002512PMC4173180</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7</span> <a id="b0035"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0035"><!-- named anchor --></a>J.Y. RyuH.U. KimS.Y. LeeDeep learning improves prediction of drug–drug and drug–food interactionsProc Natl Acad Sci U S A115182018E43042966622810.1073/pnas.1803294115PMC5939113</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8</span> <a id="b0040"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0040"><!-- named anchor --></a>S. VilarSimilarity-based modeling in large-scale prediction of drug-drug interactionsNat Protoc992014214721632512252410.1038/nprot.2014.151PMC4422192</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9</span> <a id="b0045"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0045"><!-- named anchor --></a>S. VilarE. UriarteL. SantanaN.P. TatonettiC. FriedmanDetection of drug-drug interactions by modeling interaction profile fingerprintsPLoS ONE832013<span class="object-id">e58321</span>10.1371/journal.pone.0058321PMC359289623520498</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10</span> <a id="b0050"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0050"><!-- named anchor --></a>Gunning, D., et al., <i>XAI—Explainable artificial intelligence.</i> Science Robotics, 2019. <b>4</b>(37): p. eaay7120.10.1126/scirobotics.aay712033137719</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11</span> <a id="b0055"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0055"><!-- named anchor --></a>David Gunning, M.S., Jaesik Choi, Timothy Miller, Simone Stumpf and Guang-Zhong Yang, <i>XAI−−Explainable artificial intelligence.</i> Sci. Robotics, 2019. <b>eaay7120</b>.10.1126/scirobotics.aay712033137719</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12</span> <a id="b0060"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0060"><!-- named anchor --></a>M.J. PageThe PRISMA 2020 statement: an updated guideline for reporting systematic reviewsBMJ2021202037210.1136/bmj.n71PMC800592433782057</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13</span> <a id="b0065"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0065"><!-- named anchor --></a>D.S. WishartDrugbank: a comprehensive resource for in silico drug discovery and explorationNucleic Acids Res1342006(D668-72. 16381955.)10.1093/nar/gkj067PMC134743016381955</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14</span> <a id="b0070"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0070"><!-- named anchor --></a>M. Whirl-CarrilloAn evidence-based framework for evaluating pharmacogenomics knowledge for personalized medicineClin Pharmacol Ther202110.1002/cpt.2350PMC845710534216021</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15</span> <a id="b0075"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0075"><!-- named anchor --></a>M. KanehisaKEGG as a reference resource for gene and protein annotationNucleic Acids Res44D12015D457D4622647645410.1093/nar/gkv1070PMC4702792</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16</span> <a id="b0080"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0080"><!-- named anchor --></a>García Blasco, S., et al. <i>Automatic drug-drug interaction detection: A machine learning approach with maximal frequent sequence extraction</i>. in <i>CEUR Workshop Proceedings</i>. 2011. CEUR Workshop Proceedings.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17</span> <a id="b0085"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0085"><!-- named anchor --></a>Thomas, P., et al., <i>Relation extraction for drug-drug interactions using ensemble learning.</i> 1st Challenge task on Drug-Drug Interaction Extraction (DDIExtraction 2011), 2011: p. 11-18.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18</span> <a id="b0090"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0090"><!-- named anchor --></a>Björne, J., S. Kaewphan, and T. Salakoski. UTurku: drug named entity recognition and drug-drug interaction extraction using SVM classification and domain knowledge. in Second Joint Conference on Lexical and Computational Semantics (* SEM), Volume 2: Proceedings of the Seventh International Workshop on Semantic Evaluation (SemEval 2013). 2013.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19</span> <a id="b0095"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0095"><!-- named anchor --></a>Hailu, N., L. Hunter, and K.B. Cohen. UColorado_SOM: extraction of drug-drug interactions from biomedical text using knowledge-rich and knowledge-poor features. in Second Joint Conference on Lexical and Computational Semantics (* SEM), Volume 2: Proceedings of the Seventh International Workshop on Semantic Evaluation (SemEval 2013). 2013.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20</span> <a id="b0100"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0100"><!-- named anchor --></a>Y. ZhangA hybrid model based on neural networks for biomedical relation extractionJ Biomed Inform81201883922960198910.1016/j.jbi.2018.03.011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21</span> <a id="b0105"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0105"><!-- named anchor --></a>S. LimK. LeeJ. KangDrug drug interaction extraction from the literature using a recursive neural networkPLoS ONE1312018<span class="object-id">e0190926</span>10.1371/journal.pone.0190926PMC578630429373599</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22</span> <a id="b0110"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0110"><!-- named anchor --></a>J. LiuDrug-Drug Interaction Extraction Based on Transfer Weight Matrix and Memory NetworkIEEE Access72019101260101268</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23</span> <a id="b0115"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0115"><!-- named anchor --></a>M. AllahgholiADDI: Recommending alternatives for drug-drug interactions with negative health effectsComput Biol Med1252020<span class="object-id">103969</span>10.1016/j.compbiomed.2020.10396932836102</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24</span> <a id="b0120"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0120"><!-- named anchor --></a>Zhang, Y., et al., <i>Extracting drug-enzyme relation from literature as evidence for drug drug interaction.</i> J Biomed Semantics, 2016. <b>7</b>: p. 11-11.10.1186/s13326-016-0052-6PMC478018826955465</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25</span> <a id="b0125"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0125"><!-- named anchor --></a>B. XuIncorporating User Generated Content for Drug Drug Interaction Extraction Based on Full Attention MechanismIEEE Trans Nanobioscience18320193603673114464110.1109/TNB.2019.2919188</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26</span> <a id="b0130"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0130"><!-- named anchor --></a>B. XuFull-attention Based Drug Drug Interaction Extraction Exploiting User-generated Content2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)2018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27</span> <a id="b0135"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0135"><!-- named anchor --></a>N. LiuC.B. ChenS. KumaraSemi-Supervised Learning Algorithm for Identifying High-Priority Drug-Drug Interactions Through Adverse Event ReportsIEEE J Biomed Health Inform241202057683139556710.1109/JBHI.2019.2932740</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28</span> <a id="b0140"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0140"><!-- named anchor --></a>W. ZhangPredicting potential drug-drug interactions by integrating chemical, biological, phenotypic and network dataBMC Bioinf18120171810.1186/s12859-016-1415-9PMC521734128056782</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29</span> <a id="b0145"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0145"><!-- named anchor --></a>J. PathakR.C. KieferC.G. ChuteUsing linked data for mining drug-drug interactions in electronic health recordsStud Health Technol Inform192201368268623920643PMC3909652</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30</span> <a id="b0150"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0150"><!-- named anchor --></a>J.D. DukeLiterature based drug interaction prediction with clinical assessment using electronic medical records: novel myopathy associated drug interactionsPLoS Comput Biol882012<span class="object-id">e1002614</span>10.1371/journal.pcbi.1002614PMC341543522912565</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31</span> <a id="b0155"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0155"><!-- named anchor --></a>B. BokharaeianA. DiazH. ChitsazEnhancing extraction of drug-drug interaction from literature using neutral candidates, negation, and clause dependencyPLoS ONE11102016<span class="object-id">e0163480</span>10.1371/journal.pone.0163480PMC504747127695078</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32</span> <a id="b0160"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0160"><!-- named anchor --></a>C. ParkJ. ParkS. ParkAGCN: Attention-based graph convolutional networks for drug-drug interaction extractionExpert Syst Appl1592020<span class="object-id">113538</span></p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33</span> <a id="b0165"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0165"><!-- named anchor --></a>Y. ZhangDrug–drug interaction extraction via hierarchical RNNs on sequence and shortest dependency pathsBioinformatics345201782883510.1093/bioinformatics/btx659PMC603091929077847</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34</span> <a id="b0170"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0170"><!-- named anchor --></a>Z. ZhaoDrug drug interaction extraction from biomedical literature using syntax convolutional neural networkBioinformatics32222016344434532746662610.1093/bioinformatics/btw486PMC5181565</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35</span> <a id="b0175"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0175"><!-- named anchor --></a>N. WarikooY.-C. ChangW.-L. HsuLBERT: Lexically aware Transformer-based Bidirectional Encoder Representation model for learning universal bio-entity relationsBioinformatics373202040441210.1093/bioinformatics/btaa72132810217</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36</span> <a id="b0180"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0180"><!-- named anchor --></a>Y. ZhuExtracting drug-drug interactions from texts with BioBERT and multiple entity-aware attentionsJ Biomed Inform1062020<span class="object-id">103451</span>10.1016/j.jbi.2020.10345132454243</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37</span> <a id="b0185"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0185"><!-- named anchor --></a>A. LamuriasBO-LSTM: classifying relations via long short-term memory networks along biomedical ontologiesBMC Bioinf20120191010.1186/s12859-018-2584-5PMC632383130616557</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38</span> <a id="b0190"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0190"><!-- named anchor --></a>A.B. AbachaText mining for pharmacovigilance: Using machine learning for drug name recognition and drugâ€“drug interaction extraction and classificationJ Biomed Inform5820151221322643235310.1016/j.jbi.2015.09.015</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39</span> <a id="b0195"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0195"><!-- named anchor --></a>M.F.M. ChowdhuryA. LavelliImpact of less skewed distributions on efficiency and effectiveness of biomedical relation extractionProceedings of COLING 2012: Posters2012</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40</span> <a id="b0200"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0200"><!-- named anchor --></a>M. FatehifarH. KarshenasDrug-Drug interaction extraction using a position and similarity fusion-based attention mechanismJ Biomed Inform1152021<span class="object-id">103707</span>10.1016/j.jbi.2021.10370733571676</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41</span> <a id="b0205"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0205"><!-- named anchor --></a>S. LiuDrug-Drug Interaction Extraction via Convolutional Neural NetworksComput Math Methods Med2016201669183812694183110.1155/2016/6918381PMC4752975</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42</span> <a id="b0210"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0210"><!-- named anchor --></a>W. XieIntegrated Random Negative Sampling and Uncertainty Sampling in Active Learning Improve Clinical Drug Safety Drug-Drug Interaction Information RetrievalFront Pharmacol112225202110.3389/fphar.2020.582470PMC813000734017245</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43</span> <a id="b0215"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0215"><!-- named anchor --></a>X. SunDrug-Drug Interaction Extraction via Recurrent Hybrid Convolutional Neural Networks with an Improved Focal LossEntropy (Basel)211201910.3390/e21010037PMC751414333266753</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44</span> <a id="b0220"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0220"><!-- named anchor --></a>D. WeiningerSMILES, a chemical language and information system. 1. Introduction to methodology and encoding rulesJ Chem Inf Comput Sci28119883136</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45</span> <a id="b0225"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0225"><!-- named anchor --></a>Hou, X.a.Y., Jiaying and Hu, Pingzhao, Predicting Drug-Drug Interactions Using Deep Neural Network, in Proceedings of the 2019 11th International Conference on Machine Learning and Computing. 2019, Association for Computing Machinery: New York, NY, USA. p. 168–172.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46</span> <a id="b0230"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0230"><!-- named anchor --></a>X.M. ZhaoPrediction of drug combinations by integrating molecular and pharmacological dataPLoS Comput Biol7122011<span class="object-id">e1002323</span>10.1371/journal.pcbi.1002323PMC324838422219721</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47</span> <a id="b0235"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0235"><!-- named anchor --></a>Luo, H., et al., <i>DDI-CPI, a server that predicts drug-drug interactions through implementing the chemical-protein interactome.</i> Nucleic Acids Res, 2014. <b>42</b>(Web Server issue): p. W46-52.10.1093/nar/gku433PMC408609624875476</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48</span> <a id="b0240"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0240"><!-- named anchor --></a>A.A. MahadevanA Predictive Model for Drug-Drug Interaction Using a Similarity Measure2019 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)2019IEEE</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49</span> <a id="b0245"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0245"><!-- named anchor --></a>L.H. DangMachine Learning-Based Prediction of Drug-Drug Interactions for Histamine Antagonist Using Hybrid Chemical FeaturesCells1011202130923483131510.3390/cells10113092PMC8621088</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50</span> <a id="b0250"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0250"><!-- named anchor --></a>Y. DengA multimodal deep learning framework for predicting drug-drug interaction eventsBioinformatics36152020431643223240750810.1093/bioinformatics/btaa501</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51</span> <a id="b0255"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0255"><!-- named anchor --></a>D.S. DhamiDrug-Drug Interaction Discovery: Kernel Learning from Heterogeneous SimilaritiesSmart Health9–1020188810010.1016/j.smhl.2018.07.007PMC628926630547078</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52</span> <a id="b0260"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0260"><!-- named anchor --></a>Y.-H. FengS.-W. ZhangJ.-Y. ShiDPDDI: a deep predictor for drug-drug interactionsBMC Bioinf211202041910.1186/s12859-020-03724-xPMC751348132972364</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53</span> <a id="b0265"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0265"><!-- named anchor --></a>M. Herrero-ZazoM. LilleD.J. BarlowApplication of Machine Learning in Knowledge Discovery for Pharmaceutical Drug-drug InteractionsKDWeb2016</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54</span> <a id="b0270"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0270"><!-- named anchor --></a>S. HuntaN. AunsriT. YooyativongIntegrated action crossing method for Drug-Drug Interactions prediction in noncommunicable diseases based on neural networks2017 International Conference on Digital Arts, Media and Technology (ICDAMT)2017</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55</span> <a id="b0275"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0275"><!-- named anchor --></a>I. LeeH. NamIdentification of drug-target interaction by a random walk with restart method on an interactome networkBMC Bioinf198201820810.1186/s12859-018-2199-xPMC599875929897326</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56</span> <a id="b0280"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0280"><!-- named anchor --></a>S. LinMDF-SA-DDI: predicting drug–drug interaction events based on multi-source drug fusion, multi-source feature fusion and transformer self-attention mechanismBrief Bioinform202110.1093/bib/bbab42134671814</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57</span> <a id="b0285"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0285"><!-- named anchor --></a>Q. LuoNovel deep learning-based transcriptome data analysis for drug-drug interaction prediction with an application in diabetesBMC Bioinf221202131810.1186/s12859-021-04241-1PMC819412334116627</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58</span> <a id="b0290"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0290"><!-- named anchor --></a>R.K. Olha MarushchakDesigning of Information Model for Prediction of Drug-drug Interactions based on Calculation of Target and Therapeutic Similarity3rd International Conference on Informatics &amp; Data-Driven Medicine. 2020. Sweden: CEUR Workshop Proceedings2020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59</span> <a id="b0295"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0295"><!-- named anchor --></a>Polak, S.a.B., J. and Mendyk, A, <i>Neural System for in silico Drug-Drug Interaction Screening</i>, in <i>Control and Automation and International Conference on Intelligent Agents, Web Technologies and Internet Commerce (CIMCA-IAWTIC'06)</i>. 2005. p. 75-80.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60</span> <a id="b0300"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0300"><!-- named anchor --></a>S. QianS. LiangH. YuLeveraging genetic interactions for adverse drug-drug interaction predictionPLoS Comput Biol1552019<span class="object-id">e1007068</span>10.1371/journal.pcbi.1007068PMC655379531125330</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61</span> <a id="b0305"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0305"><!-- named anchor --></a>K. SchwarzAttentionDDI: Siamese attention-based deep learning method for drug–drug interaction predictionsBMC Bioinf221202141210.1186/s12859-021-04325-yPMC837973734418954</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62</span> <a id="b0310"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0310"><!-- named anchor --></a>Y. ZhangPredicting drug-drug interactions using multi-modal deep auto-encoders based network embedding and positive-unlabeled learningMethods179202037463249760310.1016/j.ymeth.2020.05.007</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63</span> <a id="b0315"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0315"><!-- named anchor --></a>M.L. UdrescuA. UdrescuDrug Repurposing Method Based on Drug-Drug Interaction Networks and Using Energy Model LayoutsQ. VanhaelenComputational Methods for Drug Repurposing2019Springer New YorkNew York, NY18520110.1007/978-1-4939-8955-3_1130547443</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64</span> <a id="b0320"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0320"><!-- named anchor --></a>M. TakarabeNetwork-based analysis and characterization of adverse drug-drug interactionsJ Chem Inf Model51112011297729852194293610.1021/ci200367w</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65</span> <a id="b0325"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0325"><!-- named anchor --></a>A.K. NyamaboH. YuJ.-Y. ShiSSI–DDI: substructure–substructure interactions for drug–drug interaction predictionBrief Bioinform226202110.1093/bib/bbab13333951725</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66</span> <a id="b0330"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0330"><!-- named anchor --></a>Decker, M.R.K.a.M.C.a.J.B.J.a.M.U.a.O.B.a.S., <i>Drug-Drug Interaction Prediction Based on Knowledge Graph Embeddings and Convolutional-LSTM Network</i>, in <i>10th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics, ACM-BCB</i>. 2019, Association for Computing Machinery, Inc: Niagara Falls, United States.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67</span> <a id="b0335"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0335"><!-- named anchor --></a>M. SunF. WangO. ElementoJ. ZhouStructure-Based Drug-Drug Interaction Detection via Expressive Graph Convolutional Networks and Deep SetsProceedings of the AAAI Conference on Artificial Intelligence2020AAAI Press</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68</span> <a id="b0340"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0340"><!-- named anchor --></a>Z.Q. Xuan LinZ.-J. WangT. MaK.G.N.N. Xiangxiang ZengKnowledge Graph Neural Network for Drug-Drug Interaction PredictionProceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence2020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69</span> <a id="b0345"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0345"><!-- named anchor --></a>Bo Peng, X.N. <i>Deep Learning for High-Order Drug-Drug Interaction Prediction</i>. in <i>In 10th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics (ACM-BCB ’19)</i>. 2019. NY,USA.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70</span> <a id="b0350"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0350"><!-- named anchor --></a>W. ZhangSFLLN: A sparse feature learning ensemble method with linear neighborhood regularization for predicting drug–drug interactionsInf Sci4972019189201</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71</span> <a id="b0355"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0355"><!-- named anchor --></a>S. ShankarPredicting adverse drug reactions of two-drug combinations using structural and transcriptomic drug representations to train an artificial neural networkChem Biol Drug Des97320216656733300679910.1111/cbdd.13802</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72</span> <a id="b0360"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0360"><!-- named anchor --></a>M.T. PatrickAdvancement in predicting interactions between drugs used to treat psoriasis and its comorbidities by integrating molecular and clinical resourcesJ Am Med Inform Assoc2862021115911673354484710.1093/jamia/ocaa335PMC8200269</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73</span> <a id="b0365"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0365"><!-- named anchor --></a>S. YanX. JiangY. ChenText Mining Driven Drug-Drug Interaction DetectionProceedings. IEEE International Conference on Bioinformatics and Biomedicine201334935510.1109/BIBM.2013.6732517PMC413397825131635</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74</span> <a id="b0370"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0370"><!-- named anchor --></a>T. LiuModeling polypharmacy effects with heterogeneous signed graph convolutional networksAppl Intell512021</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75</span> <a id="b0375"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0375"><!-- named anchor --></a>R. CelebiEvaluation of knowledge graph embedding approaches for drug-drug interaction prediction in realistic settingsBMC Bioinf201201972610.1186/s12859-019-3284-5PMC692149131852427</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76</span> <a id="b0380"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0380"><!-- named anchor --></a>R.S. OlayanH. AshoorV.B. BajicDDR: efficient computational method to predict drug-target interactions using graph mining and machine learning approachesBioinformatics3472018116411732918633110.1093/bioinformatics/btx731PMC5998943</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77</span> <a id="b0385"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0385"><!-- named anchor --></a>N. RohaniC. EslahchiDrug-Drug Interaction Predicting by Neural Network Using Integrated SimilaritySci Rep912019136453154114510.1038/s41598-019-50121-3PMC6754439</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78</span> <a id="b0390"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0390"><!-- named anchor --></a>D. BajuszA. RáczK. HébergerWhy is Tanimoto index an appropriate choice for fingerprint-based similarity calculations?J Cheminform712015202605234810.1186/s13321-015-0069-3PMC4456712</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79</span> <a id="b0395"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0395"><!-- named anchor --></a>N. RohaniC. EslahchiA. KatanforoushISCMF: Integrated similarity-constrained matrix factorization for drug–drug interaction predictionNetwork Modeling Analysis in Health Informatics and Bioinformatics91202011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80</span> <a id="b0400"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0400"><!-- named anchor --></a>G. LeeC. ParkJ. AhnNovel deep learning model for more accurate prediction of drug-drug interaction effectsBMC Bioinf201201941510.1186/s12859-019-3013-0PMC668528731387547</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81</span> <a id="b0405"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0405"><!-- named anchor --></a>S.S. DeepikaT.V. GeethaA meta-learning framework using representation learning to predict drug-drug interactionJ Biomed Inform8420181361472995903310.1016/j.jbi.2018.06.015</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82</span> <a id="b0410"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0410"><!-- named anchor --></a>R. JavedAn Efficient Pattern Recognition Based Method for Drug-Drug Interaction Diagnosis2021 1st International Conference on Artificial Intelligence and Data Analytics (CAIDA)2021</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83</span> <a id="b0415"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0415"><!-- named anchor --></a>S. MeiK. ZhangA machine learning framework for predicting drug–drug interactionsSci Rep1112021176193447550010.1038/s41598-021-97193-8PMC8413337</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84</span> <a id="b0420"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0420"><!-- named anchor --></a>D. SongSimilarity-based machine learning support vector machine predictor of drug-drug interactions with improved accuraciesJ Clin Pharm Ther44220192682753056531310.1111/jcpt.12786</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85</span> <a id="b0425"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0425"><!-- named anchor --></a>Wang, H., et al., GoGNN: graph of graphs neural network for predicting structured entity interactions, in Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence. 2021: Yokohama, Yokohama, Japan. p. Article 183.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86</span> <a id="b0430"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0430"><!-- named anchor --></a>A.-L. MinardFeature selection for drug-drug interaction detection using machine-learning based approachesChallenge Task on Drug-Drug Interaction Extraction (DDI) SEPLN2011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87</span> <a id="b0435"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0435"><!-- named anchor --></a>R. BoyceG. GardnerH. HarkemaUsing natural language processing to identify pharmacokinetic drug-drug interactions described in drug package insertsProceedings of the 2012 Workshop on Biomedical Natural Language Processing2012Association for Computational Linguistics:Montreal, Canada206213</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">88</span> <a id="b0440"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0440"><!-- named anchor --></a>D.S. DhamiDrug-drug interaction discovery: kernel learning from heterogeneous similaritiesSmart Health92018881003054707810.1016/j.smhl.2018.07.007PMC6289266</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">89</span> <a id="b0445"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0445"><!-- named anchor --></a>Y. ZhangA Single Kernel-Based Approach to Extract Drug-Drug Interactions from Biomedical LiteraturePLoS ONE7112012<span class="object-id">e48901</span>10.1371/journal.pone.0048901PMC348680423133662</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">90</span> <a id="b0450"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0450"><!-- named anchor --></a>P. ZhangF. WangJ. HuR. SorrentinoLabel Propagation Prediction of Drug-Drug Interactions Based on Clinical Side EffectsSci Rep52015123392619624710.1038/srep12339PMC5387872</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">91</span> <a id="b0455"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0455"><!-- named anchor --></a>W. XieIntegrated Random Negative Sampling and Uncertainty Sampling in Active Learning Improve Clinical Drug Safety Drug-Drug Interaction Information RetrievalFront Pharmacol112021222510.3389/fphar.2020.582470PMC813000734017245</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">92</span> <a id="b0460"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0460"><!-- named anchor --></a>C. ZhanDetecting high-quality signals of adverse drug-drug interactions from spontaneous reporting dataJ Biomed Inform1122020<span class="object-id">103603</span>10.1016/j.jbi.2020.10360333153975</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">93</span> <a id="b0465"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0465"><!-- named anchor --></a>Y. ZhangZ. LuExploring Semi-supervised V ariational Autoencoders for Biomedical Relation ExtractionMethods166201910.1016/j.ymeth.2019.02.021PMC670845530822516</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">94</span> <a id="b0470"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0470"><!-- named anchor --></a>T.N.K. HungAn AI-based Prediction Model for Drug-drug Interactions in Osteoporosis and Paget's Diseases from SMILESMol Inform2022210026410.1002/minf.20210026434989149</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">95</span> <a id="b0475"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0475"><!-- named anchor --></a>Bobić, T., J. Fluck, and M. Hofmann. SCAI: Extracting drug-drug interactions using a rich feature vector. in Second Joint Conference on Lexical and Computational Semantics (* SEM), Volume 2: Proceedings of the Seventh International Workshop on Semantic Evaluation (SemEval 2013). 2013.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">96</span> <a id="b0480"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0480"><!-- named anchor --></a>D. LiA Topic-modeling Based Framework for Drug-drug Interaction Classification from Biomedical TextAMIA Annu Symp Proc2016201678979828269875PMC5333320</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">97</span> <a id="b0485"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0485"><!-- named anchor --></a>P. Kumar ShuklaEfficient prediction of drug-drug interaction using deep learning modelsIET Syst Biol14420202112163273727910.1049/iet-syb.2019.0116PMC8687321</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">98</span> <a id="b0490"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0490"><!-- named anchor --></a>T.J. SejnowskiThe unreasonable effectiveness of deep learning in artificial intelligenceProc Natl Acad Sci11748202030033300383199264310.1073/pnas.1907373117PMC7720171</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">99</span> <a id="b0495"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0495"><!-- named anchor --></a>A. EstevaA guide to deep learning in healthcareNat Med251201924293061733510.1038/s41591-018-0316-z</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">100</span> <a id="b0500"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0500"><!-- named anchor --></a>W.J. HouB. CeesayExtraction of drug-drug interaction using neural embeddingJ Bioinform Comput Biol166201818400273056747710.1142/S0219720018400279</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">101</span> <a id="b0505"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0505"><!-- named anchor --></a>G. ShtarL. RokachB. ShapiraDetecting drug-drug interactions using artificial neural networks and classic graph similarity measuresPLoS ONE1482019<span class="object-id">e0219796</span>10.1371/journal.pone.0219796PMC667505231369568</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">102</span> <a id="b0510"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0510"><!-- named anchor --></a>R. MasumshahR. AghdamC. EslahchiA neural network-based method for polypharmacy side effects predictionBMC Bioinf221202138510.1186/s12859-021-04298-yPMC830559134303360</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">103</span> <a id="b0515"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0515"><!-- named anchor --></a>K. FukushimaNeocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in positionBiol Cybern3641980193202737036410.1007/BF00344251</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">104</span> <a id="b0520"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0520"><!-- named anchor --></a>V. Suárez-PaniaguaI. Segura-BedmarEvaluation of pooling operations in convolutional architectures for drug-drug interaction extractionBMC Bioinf198201820910.1186/s12859-018-2195-1PMC599876629897318</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">105</span> <a id="b0525"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0525"><!-- named anchor --></a>V. Suárez-PaniaguaI. Segura-BedmarP. MartínezExploring convolutional neural networks for drug-drug interaction extractionDatabase (Oxford)201710.1093/database/bax019PMC546757328605776</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">106</span> <a id="b0530"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0530"><!-- named anchor --></a>M. LapinAnalysis and Optimization of Loss Functions for Multiclass, Top-k, and Multilabel ClassificationIEEE Trans Pattern Anal Mach Intell4072018153315542892089610.1109/TPAMI.2017.2751607</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">107</span> <a id="b0535"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0535"><!-- named anchor --></a>Y. ChenMUFFIN: multi-scale feature fusion for drug–drug interaction predictionBioinformatics371720212651265810.1093/bioinformatics/btab16933720331</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">108</span> <a id="b0540"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0540"><!-- named anchor --></a>H. WuDrug-drug interaction extraction via hybrid neural networks on biomedical literatureJ Biomed Inform1062020<span class="object-id">103432</span>10.1016/j.jbi.2020.10343232335223</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">109</span> <a id="b0545"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0545"><!-- named anchor --></a>C. QuanMultichannel Convolutional Neural Network for Biological Relation ExtractionBiomed Res Int2016201618504042805397710.1155/2016/1850404PMC5174749</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">110</span> <a id="b0550"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0550"><!-- named anchor --></a>S. LiuDependency-based convolutional neural network for drug-drug interaction extraction2016 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)2016</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">111</span> <a id="b0555"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0555"><!-- named anchor --></a>T. ZengDeep convolutional neural networks for annotating gene expression patterns in the mouse brainBMC Bioinf161201514710.1186/s12859-015-0553-9PMC443295325948335</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">112</span> <a id="b0560"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0560"><!-- named anchor --></a>X. SunDeep Convolution Neural Networks for Drug-Drug Interaction Extraction2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)2018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">113</span> <a id="b0565"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0565"><!-- named anchor --></a>M. ZitnikM. AgrawalJ. LeskovecModeling polypharmacy side effects with graph convolutional networksBioinformatics34132018i457i4662994999610.1093/bioinformatics/bty294PMC6022705</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">114</span> <a id="b0570"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0570"><!-- named anchor --></a>W. XiongExtracting Drug-drug Interactions with a Dependency-based Graph Convolution Neural Network2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)2019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">115</span> <a id="b0575"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0575"><!-- named anchor --></a>J. BrunaSpectral networks and deep locally connected networks on graphs2nd International Conference on Learning Representations2014</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">116</span> <a id="b0580"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0580"><!-- named anchor --></a>R. CollobertNatural Language Processing (Almost) from ScratchJ Mach Learn Res12201124932537</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">117</span> <a id="b0585"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0585"><!-- named anchor --></a>Sutskever, I., O. Vinyals, and Q.V. Le, <i>Sequence to sequence learning with neural networks</i>, in <i>Proceedings of the 27th International Conference on Neural Information Processing Systems - Volume 2</i>. 2014, MIT Press: Montreal, Canada. p. 3104–3112.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">118</span> <a id="b0590"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0590"><!-- named anchor --></a>Zhang, S., et al. <i>Bidirectional Long Short-Term Memory Networks for Relation Classification</i>. in <i>PACLIC</i>. 2015.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">119</span> <a id="b0595"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0595"><!-- named anchor --></a>S.K. SahuA. AnandDrug-drug interaction extraction from biomedical texts using long short-term memory networkJ Biomed Inform86201815243014238510.1016/j.jbi.2018.08.005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">120</span> <a id="b0600"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0600"><!-- named anchor --></a>W. WangDependency-based long short term memory network for drug-drug interaction extractionBMC Bioinf1816201757810.1186/s12859-017-1962-8PMC575152429297301</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">121</span> <a id="b0605"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0605"><!-- named anchor --></a>Y. KimCharacter-aware neural language modelsProceedings of the Thirtieth AAAI Conference on Artificial Intelligence2016AAAI PressPhoenix, Arizona27412749</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">122</span> <a id="b0610"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0610"><!-- named anchor --></a>Zhang, X., J. Zhao, and Y. LeCun, <i>Character-level convolutional networks for text classification</i>, in <i>Proceedings of the 28th International Conference on Neural Information Processing Systems - Volume 1</i>. 2015, MIT Press: Montreal, Canada. p. 649–657.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">123</span> <a id="b0615"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0615"><!-- named anchor --></a>R. KavuluruA. RiosT. TranExtracting Drug-Drug Interactions with Word and Character-Level Recurrent Neural NetworksIEEE International Conference on Healthcare Informatics. IEEE International Conference on Healthcare Informatics2017, 2017,51210.1109/ICHI.2017.15PMC563988329034375</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">124</span> <a id="b0620"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0620"><!-- named anchor --></a>S. HochreiterJ. SchmidhuberLong Short-Term MemoryNeural Comput98199717351780937727610.1162/neco.1997.9.8.1735</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">125</span> <a id="b0625"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0625"><!-- named anchor --></a>Cho, K., et al. <i>On the Properties of Neural Machine Translation: Encoder–Decoder Approaches</i>. in <i>Proceedings of SSST-8, Eighth Workshop on Syntax, Semantics and Structure in Statistical Translation</i>. 2014.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">126</span> <a id="b0630"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0630"><!-- named anchor --></a>D. ZhouL. MiaoY. HePosition-aware deep multi-task learning for drug-drug interaction extractionArtif Intell Med872018182955924910.1016/j.artmed.2018.03.001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">127</span> <a id="b0635"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0635"><!-- named anchor --></a>Z. JiangL. GuQ. JiangDrug drug interaction extraction from literature using a skeleton long short term memory neural network2017 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)2017</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">128</span> <a id="b0640"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0640"><!-- named anchor --></a>D. ZaikisI. VlahavasDrug-Drug Interaction Classification Using Attention Based Neural Networks11th Hellenic Conference on Artificial Intelligence2020Association for Computing MachineryAthens, Greece3440</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">129</span> <a id="b0645"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0645"><!-- named anchor --></a>Z. YiDrug-drug interaction extraction via recurrent neural network with multiple attention layersInternational Conference on Advanced Data Mining and Applications2017Springer</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">130</span> <a id="b0650"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0650"><!-- named anchor --></a>W. ZhengAn attention-based effective neural model for drug-drug interactions extractionBMC Bioinf181201744510.1186/s12859-017-1855-xPMC563485029017459</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">131</span> <a id="b0655"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0655"><!-- named anchor --></a>A. AdadiM. BerradaPeeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)IEEE Access201821693536</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">132</span> <a id="b0660"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0660"><!-- named anchor --></a>Guidotti, R., et al., <i>A Survey of Methods for Explaining Black Box Models.</i> ACM Comput. Surv., 2018. <b>51</b>(5): p. Article 93.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">133</span> <a id="b0665"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0665"><!-- named anchor --></a>Simonyan, K., A. Vedaldi, and A. Zisserman, <i>Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps.</i> CoRR, 2014. abs/1312.6034.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">134</span> <a id="b0670"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0670"><!-- named anchor --></a>Shrikumar, A., P. Greenside, and A. Kundaje, <i>Learning important features through propagating activation differences</i>, in <i>Proceedings of the 34th International Conference on Machine Learning - Volume 70</i>. 2017, JMLR.org: Sydney, NSW, Australia. p. 3145–3153.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">135</span> <a id="b0675"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0675"><!-- named anchor --></a>Springenberg, J.T., et al., <i>Striving for Simplicity: The All Convolutional Net.</i> CoRR, 2015. abs/1412.6806.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">136</span> <a id="b0680"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0680"><!-- named anchor --></a>R.B. Tao LeiT. JaakkolaRationalizing Neural Predictions2016 Conference on Empirical Methods in Natural Language Processing2016Association for Computational LinguisticsAustin, Texas</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">137</span> <a id="b0685"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0685"><!-- named anchor --></a>T. BolukbasiMan is to computer programmer as woman is to homemaker? debiasing word embeddingsAdv Neural Inform Processing Syst292016</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">138</span> <a id="b0690"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0690"><!-- named anchor --></a>Zügner, D., A. Akbarnejad, and S. Günnemann, <i>Adversarial Attacks on Neural Networks for Graph Data</i>, in <i>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</i>. 2018, Association for Computing Machinery: London, United Kingdom. p. 2847–2856.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">139</span> <a id="b0695"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0695"><!-- named anchor --></a>Miyato, T., A.M. Dai, and I. Goodfellow, <i>Adversarial training methods for semi-supervised text classification.</i> arXiv preprint arXiv:1605.07725, 2016.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">140</span> <a id="b0700"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0700"><!-- named anchor --></a>Feng, S., et al., <i>Pathologies of neural models make interpretations difficult.</i> arXiv preprint arXiv:1804.07781, 2018.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">141</span> <a id="b0705"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0705"><!-- named anchor --></a>K. HuangCASTER: Predicting Drug Interactions with Chemical Substructure RepresentationProceedings of the AAAI Conference on Artificial Intelligence2020702709</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">142</span> <a id="b0710"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0710"><!-- named anchor --></a>P. DewulfM. StockB. De BaetsCold-Start Problems in Data-Driven Prediction of Drug-Drug Interaction EffectsPharmaceuticals (Basel)145202110.3390/ph14050429PMC814765134063324</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">143</span> <a id="b0715"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0715"><!-- named anchor --></a>A.-L. MinardFeature selection for drug-drug interaction detection using machine-learning based approachesIn Challenge Task on Drug-Drug Interaction Extraction (DDI), SEPLN2011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">144</span> <a id="b0720"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0720"><!-- named anchor --></a>D. MahendranR.D. NawarathnaAn automated method to extract information in the biomedical literature about interactions between drugs2016 Sixteenth International Conference on Advances in ICT for Emerging Regions (ICTer)2016</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">145</span> <a id="b0725"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0725"><!-- named anchor --></a>Karim, M.R., et al., <i>Drug-Drug Interaction Prediction Based on Knowledge Graph Embeddings and Convolutional-LSTM Network</i>, in <i>Proceedings of the 10th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics</i>. 2019, Association for Computing Machinery: Niagara Falls, NY, USA. p. 113–123.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">146</span> <a id="b0730"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0730"><!-- named anchor --></a>Liu, S.a.H., Ziyang and Qiu, Yang and Chen, Yi-Ping Phoebe and Zhang, Wen, Structural Network Embedding using Multi-modal Deep Auto-encoders for Predicting Drug-drug Interactions, in 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). 2019, IEEE.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">147</span> <a id="b0735"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="h0735"><!-- named anchor --></a>Wang, Y., et al., <i>Dependency and AMR Embeddings for Drug-Drug Interaction Extraction from Biomedical Literature</i>, in <i>Proceedings of the 8th ACM International Conference on Bioinformatics, Computational Biology,and Health Informatics</i>. 2017, Association for Computing Machinery: Boston, Massachusetts, USA. p. 36–43.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="ak005"><!-- named anchor --></a><h2 class="main-title">Acknowledgments</h2>
+<p id="p0210">This work was supported by the Ministry of Science and Technology, Taiwan [grant number MOST110-2221-E-038-001-MY2].</p>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review Article</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Explainable artificial intelligence</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Drug-drug interaction</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Deep learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Chemical structures</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Natural language processing</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>

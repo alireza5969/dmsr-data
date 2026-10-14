@@ -1,0 +1,1620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Mirchi, Warsi, Zhang, Wong, Suresh, Mithani, Erdman, and Ibrahim: Decoding Intracranial EEG With Machine Learning: A Systematic Review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Front Hum Neurosci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Front Hum Neurosci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>645</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>fronthumneuro</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101477954</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>Front. Hum. Neurosci.</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Frontiers in Human Neuroscience</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1662-5161</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Frontiers Media SA</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="fnhum-16-913777.pdf">fnhum-16-913777.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>Copyright © 2022 Mirchi, Warsi, Zhang, Wong, Suresh, Mithani, Erdman and Ibrahim.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022, Mirchi, Warsi, Zhang, Wong, Suresh, Mithani, Erdman and Ibrahim</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>06 April 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>31 May 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>27 June 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>16</p>
+<p class="metadata-entry"><span class="generated">Issue: </span><span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>400081<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>913777</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9271576</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9271576.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9271576</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9271576</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35832872</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3389/fnhum.2022.913777</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Decoding Intracranial EEG With Machine Learning: A Systematic Review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id2"><!-- named anchor --></a>Nykan Mirchi<span class="generated">[</span><a href="#aff1"><sup>1</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#c001"><sup>*</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1752257/overview" id="id3">http://loop.frontiersin.org/people/1752257/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Nebras M. Warsi<span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Frederick Zhang<span class="generated">[</span><a href="#aff4"><sup>4</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Simeon M. Wong<span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff5"><sup>5</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/532190/overview" id="id7">http://loop.frontiersin.org/people/532190/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a>Hrishikesh Suresh<span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>Karim Mithani<span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Lauren Erdman<span class="generated">[</span><a href="#aff6"><sup>6</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff7"><sup>7</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff8"><sup>8</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1531223/overview" id="id11">http://loop.frontiersin.org/people/1531223/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id12"><!-- named anchor --></a>George M. Ibrahim<span class="generated">[</span><a href="#aff2"><sup>2</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff3"><sup>3</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff5"><sup>5</sup></a><span class="generated">]</span><span class="generated">[</span><a href="#aff9"><sup>9</sup></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><span class="generated">URI: </span><a target="xrefwindow" href="http://loop.frontiersin.org/people/1206269/overview" id="id13">http://loop.frontiersin.org/people/1206269/overview</a></p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><sup>1</sup>Faculty of Medicine, University of Toronto, Toronto, ON, Canada</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><sup>2</sup>Division of Neurosurgery, Hospital for Sick Children, Department of Surgery, University of Toronto, Toronto, ON, Canada</p>
+<p class="metadata-entry"><a id="aff3"><!-- named anchor --></a><sup>3</sup>Institute of Biomedical Engineering, University of Toronto, Toronto, ON, Canada</p>
+<p class="metadata-entry"><a id="aff4"><!-- named anchor --></a><sup>4</sup>Faculty of Medicine, University of Ottawa, Ottawa, ON, Canada</p>
+<p class="metadata-entry"><a id="aff5"><!-- named anchor --></a><sup>5</sup>Program in Neuroscience and Mental Health, Hospital for Sick Children Research Institute, Toronto, ON, Canada</p>
+<p class="metadata-entry"><a id="aff6"><!-- named anchor --></a><sup>6</sup>Vector Institute for Artificial Intelligence, MaRS Centre, Toronto, ON, Canada</p>
+<p class="metadata-entry"><a id="aff7"><!-- named anchor --></a><sup>7</sup>Department of Computer Science, University of Toronto, Toronto, ON, Canada</p>
+<p class="metadata-entry"><a id="aff8"><!-- named anchor --></a><sup>8</sup>Hospital for Sick Children, Toronto, ON, Canada</p>
+<p class="metadata-entry"><a id="aff9"><!-- named anchor --></a><sup>9</sup>Institute of Medical Science, University of Toronto, Toronto, ON, Canada</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id14"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id15"><!-- named anchor --></a><p id="id16"> Edited by: Mark Stecker, Self-Employed, Fresno, United States</p></p>
+<p class="metadata-entry"><span class="generated"><span class="generated"> Edited by</span>: </span><a id="id17"><!-- named anchor --></a><p id="id18"> Reviewed by: Waldemar Karwowski, University of Central Florida, United States; Elliot H. Smith, The University of Utah, United States</p></p>
+<p class="metadata-entry"><span class="generated"><a id="c001"><!-- named anchor --></a>Correspondence to: </span>*Correspondence: Nykan Mirchi <a href="mailto:nykan.mirchi@mail.utoronto.ca">nykan.mirchi@mail.utoronto.ca</a></p>
+<p class="metadata-entry"><a id="fn001"><!-- named anchor --></a><p id="id19"> This article was submitted to Brain Imaging and Stimulation, a section of the journal Frontiers in Human Neuroscience</p></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id20">Advances in intracranial electroencephalography (iEEG) and neurophysiology have enabled the study of previously inaccessible brain regions with high fidelity temporal and spatial resolution. Studies of iEEG have revealed a rich neural code subserving healthy brain function and which fails in disease states. Machine learning (ML), a form of artificial intelligence, is a modern tool that may be able to better decode complex neural signals and enhance interpretation of these data. To date, a number of publications have applied ML to iEEG, but clinician awareness of these techniques and their relevance to neurosurgery, has been limited. The present work presents a review of existing applications of ML techniques in iEEG data, discusses the relative merits and limitations of the various approaches, and examines potential avenues for clinical translation in neurosurgery. One-hundred-seven articles examining artificial intelligence applications to iEEG were identified from 3 databases. Clinical applications of ML from these articles were categorized into 4 domains: i) seizure analysis, ii) motor tasks, iii) cognitive assessment, and iv) sleep staging. The review revealed that supervised algorithms were most commonly used across studies and often leveraged publicly available timeseries datasets. We conclude with recommendations for future work and potential clinical applications.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="s1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id21">Intracranial electroencephalography (iEEG) provides exquisite detail with which to study neural activity. Stereotactic EEG (sEEG), strips, grids and depth electrodes are among the most common iEEG modalities. Modern diagnostic and treatment strategies for neurological conditions such as epilepsy rely heavily on interpreting iEEG signals to extract meaningful information that can impact clinical decision making (Lachaux et al., <a href="#B61">2003</a>). Furthermore, the study of these signals can serve to uncover the neural syntax associated with both healthy and diseased states by using explainable ML algorithms to shed light on important features that differentiate these states.</p>
+<p id="id22">Machine learning (ML) is a rapidly growing field that has shown significant potential in complex biomedical applications (Rajkomar et al., <a href="#B95">2019</a>). Simply, ML refers to algorithms that can make seemingly intelligent decisions after identifying and learning from hidden patterns in large pre-existing data. Training these algorithms on large biologic datasets for example has enabled the identification of complex patterns not apparent to human experts and informed intelligent decision-making without explicit programming (Kotsiantis et al., <a href="#B57">2007</a>). Examples of success in these endeavors include automated diagnostic algorithms in radiology (Syeda-Mahmood, <a href="#B114">2018</a>) and pathology (Bera et al., <a href="#B15">2019</a>).</p>
+<p id="id23">ML algorithms can be dichotomized into “supervised” and “unsupervised” learning approaches. An overview of these methodologies is illustrated in <a href="#F1">Figure 1</a>. Supervised learning involves the use of labeled data during training such that the algorithm learns to associate certain patterns with a predefined label (for example, data associated with seizure vs. non-seizure states) (Kotsiantis et al., <a href="#B57">2007</a>). Unsupervised learning involves unlabelled data where the algorithm is provided a large dataset and learns to group certain signals together <i>without</i> a priori knowledge of classification. Each method possesses respective advantages and pitfalls. Deep learning approaches, which were initially designed based on a simplified model of interconnected nodes that mimic neuronal connections, also warrant special note. Each node is analogous to a cell body and the connections (“synapses”) between nodes are assigned weights during training analogous to the strength of synaptic connections between neurons. A primary advantage of deep learning compared to standard ML is that these algorithms can learn from the raw data and automatically extract meaningful information thereby bypassing human-intensive feature selection steps. However, it is important to consider that deep networks can take significantly longer to train and often require larger sample sizes than commonly available in neurosurgical populations.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id24">Overview of artificial intelligence and machine learning. Artificial intelligence includes machine learning (ML) which can be divided into standard machine learning or deep learning. In standard ML, raw iEEG signal is preprocessed followed by feature extraction and selection. Feature extraction involves breaking down the raw signal into individual quantifiable components such as power at various frequencies. Feature selection on the other hand involves selecting a subset of these components to be used to train a model. These features can either be fed to a supervised learning algorithm in addition to group labels, or an unsupervised learning algorithm that does not contain labels. Examples of supervised algorithms include support vector machines (SVM), K-nearest neighbors (KNN), artificial neural networks (ANN) or linear discriminant analysis (LDA). These classify the features into the group labels provided as inputs. Examples of unsupervised algorithms include non-negative matrix factorization (NNMF), fuzzy-c-means (FCM), and soft clustering. These will classify the features into groups based on similarity. Deep learning does not require feature extraction and selection. The processed or unprocessed signal can be fed directly into the deep learning model to classify the signals.</p></div>
+</div>
+<p id="id25">Despite the potential for application of ML to iEEG data, evidence to support the utilization of different ML techniques is limited, and considerable heterogeneity has been reported in the literature. As such, the present systematic review aims to: 1) assess the current landscape of ML utilization in iEEG and 2) examine the relative benefits and limitations of ML approaches as they relate to specific neurosurgical problems.</p>
+</div>
+<div class="section">
+<a id="s2"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<div class="section">
+<a id="id26"><!-- named anchor --></a><h3 class="section-title">Search Strategy</h3>
+<p id="id27">In order to identify published, peer-reviewed articles that employ ML in the context of iEEG data, we performed a systematic search of articles using 3 commonly accessed medicine and engineering databases: OVID MEDLINE, IEEE, and Web of Science. We selected these databases as we aimed to capture the breadth of applications of this technology in the fields of science, medicine, and engineering. The search was conducted on August 18<sup>th</sup>, 2020. Our inclusion criteria comprised of two categories of keywords which must appear in either the article title, abstract or article keywords. The first category comprised of machine learning keywords (“machine learning”, “deep learning”, “artificial intelligence”, “neural network$”), while the second category comprised of keywords relevant to intracranial EEG (“stereoelectroencephalography”, “stereotactic EEG”, “sEEG”, “electrocorticography”, “ECoG”, “intracranial EEG”, “intracranial electroencephalography”, “iEEG”). Relevant articles were required to contain at least one keyword from the first category and at least one from the second category. A detailed summary of our search strategy and yield is provided in the <a href="#SM1">Supplementary Material 1</a>.</p>
+</div>
+<div class="section">
+<a id="id28"><!-- named anchor --></a><h3 class="section-title">Article Filtering</h3>
+<p id="id29">The PRISMA guidelines (Moher et al., <a href="#B80">2009</a>) were followed to filter through articles in a systematic and transparent manner (<a href="#F2">Figure 2</a>). Following our database search, 674 articles were found (OVID MEDLINE: 159, IEEE: 225, Web of Science: 290). One-hundred-sixty-five duplicates were removed leaving 509 for title and abstract filtering. Three-hundred-seventy-three articles were excluded following this first step of filtering as they did not fit our inclusion criteria for the following reasons: reviews, editorials, case reports, conference proceedings, book sections, animal studies, not relevant to intracranial EEG or machine learning. Two independent reviewers (NM, NW) then filtered the full text of 136 remaining articles. Disagreements were resolved by discussion and, when required, a third adjudicator (GMI). Twenty-nine articles were excluded for the following reasons: preliminary results, not clinical application, brief book series, not machine learning, animal studies, not intracranial EEG, not relevant, abstract only. Following this step, 107 articles were selected for this review.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F2"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id30">PRISMA analysis of articles searched, filtered and included in the systematic review. Six-hundred-seventy-four articles were identified through database searching in OVID MEDLINE, IEEE, and Web of Science. Duplicates were removed leaving 509 abstracts for screening. Three-hundred-seventy-three articles were excluded as they did not fit out inclusion criteria. From the remaining 136 articles, 29 were excluded following full-text screening. The remaining 107 articles were analyzed in this study.</p></div>
+</div>
+</div>
+<div class="section">
+<a id="id31"><!-- named anchor --></a><h3 class="section-title">Data Collection</h3>
+<p id="id32">Each full-text article was reviewed and data regarding demographics, data acquisition, machine learning application, and types of features were gathered into a spreadsheet.</p>
+<div class="section">
+<a id="id33"><!-- named anchor --></a><h4 class="subsection-title">Demographics</h4>
+<p id="id34">Demographics data was composed of year of publication, country of origin, name of the journal, journal category (medical, engineering/computer science, or multidisciplinary). The country of origin was defined by the affiliation of the first author.</p>
+</div>
+<div class="section">
+<a id="id35"><!-- named anchor --></a><h4 class="subsection-title">Data Acquisition</h4>
+<p id="id36">Data acquisition comprised of intracranial recording method. This includes sEEG, and electrocorticographic (ECoG) strips or grids, or depth electrodes. A fourth option was available if the studies did not specify the type of recording method used. The source of EEG data was also compiled as free-text entries to track whether studies used their own data, or data obtained from online databases.</p>
+</div>
+<div class="section">
+<a id="id37"><!-- named anchor --></a><h4 class="subsection-title">Machine Learning</h4>
+<p id="id38">The application of machine learning algorithms was classified into four broad categories. Due to the heterogeneity of studies in these fields, studies in the seizure and motor categories were further subdivided as follows:</p>
+<div class="list">
+<a id="id39"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="id40"><b>Seizure</b>: seizure prediction/detection, surgical outcome prediction, pathological tissue detection, high-frequency oscillation (HFO) detection/classification, seizure onset zone (SOZ)/epileptic focus localization, bad channel detection, spike detection, tumor tissue detection.</p></li>
+<li><p id="id41"><b>Motor</b>: movement classification, motor imagery, speech production.</p></li>
+<li><p id="id42"><b>Cognitive tasks</b></p></li>
+<li><p id="id43"><b>Sleep Staging</b>.</p></li>
+</ol>
+</div>
+<p id="id44">The type of ML algorithm was categorized into four groups: Standard supervised ML includes popular algorithms such as support vector machines (SVM), K-nearest neighbors (KNN), single-layered artificial neural networks (ANN), linear discriminant analysis (LDA) and any others that did not fit the definition of deep learning. Deep learning algorithms include recurrent neural networks (RNN), convolutional neural networks (CNN) and multi-layered neural networks (LeCun et al., <a href="#B64">2015</a>). The third option applied to studies that employed both standard ML and deep learning methods. The last option included unsupervised machine learning algorithms such as non-negative matrix factorization (NNMF) amongst others. We also recorded whether a study employed one or multiple types of algorithm for purposes of comparing classification performance. Studies which compared their algorithm performance with previously published algorithms trained on the same data were considered one algorithm as they did not themselves train multiple algorithms.</p>
+<p id="id45">A summary of relevant feature selection steps was also collected in order to understand the data extraction approach utilized by each study. For purposes of comparison, feature selection approaches were split into two main categories: 1) higher order feature selection algorithms; and 2) physically interpretable features (raw or hand-crafted). Studies that used higher-order feature-selection algorithms were defined as those in which the feature selection/pre-processing workflows contained one or more of: i) non-standard time-frequency transforms; ii) dimensionality reduction of feature space; iii) abstract feature selection algorithms; or iv) abstract features (entropy, fractal dimension, etc.).</p>
+<p id="id46">Performance metrics of the best final algorithms from each paper were recorded to gain insight on relative performance based on algorithmic and feature selection decisions. As algorithm performance can only be fairly compared between studies where both studies use the same dataset, this step was only done in studies employing the same publicly available datasets further discussed in Section Intracranial EEG Datasets. Although accuracy may be considered a sufficient measure of performance, it holds many caveats whereby it may give a false impression of performance in highly unbalanced data. As such, we opted to record all performance metrics presented within each study to provide a more objective picture. These include accuracy, area-under-ROC-curve, sensitivity, specificity, precision, positive predictive value, and/or negative predictive value. As model specificity was most commonly reported in all included studies, this metric is used to compare performance of algorithms between studies. If this metric was not provided, accuracy is used for comparison. Where studies solely reported cross-validation performance, a single mean performance metric was tabulated. In others that split their data into validation and testing sets, both the validation and testing performance were compiled and the testing performance was used for comparison.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="s3"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<p id="id47">One-hundred-seven articles were included in the systematic review (Hellmann, <a href="#B43">1999</a>; Petrosian et al., <a href="#B90">2000</a>; D'Alessandro et al., <a href="#B26">2005</a>; Hill et al., <a href="#B45">2006</a>; Firpi et al., <a href="#B35">2007a</a>,<a href="#B36">b</a>; Chan et al., <a href="#B19">2008</a>; Shenoy et al., <a href="#B107">2008</a>; Demirer et al., <a href="#B28">2009</a>; Liu et al., <a href="#B67">2009</a>, <a href="#B68">2012</a>; Mirowski et al., <a href="#B78">2009</a>; Scherer et al., <a href="#B103">2009</a>; Yanagisawa et al., <a href="#B131">2009</a>; Ayala et al., <a href="#B12">2011</a>; Chua et al., <a href="#B21">2011</a>; Kharbouch et al., <a href="#B54">2011</a>; Benz et al., <a href="#B14">2012</a>; Yang et al., <a href="#B132">2012</a>; Ikeda et al., <a href="#B49">2014</a>; McMullen et al., <a href="#B74">2014</a>; Zhang et al., <a href="#B135">2014</a>, <a href="#B136">2015</a>; Combrisson and Jerbi, <a href="#B23">2015</a>; Li et al., <a href="#B65">2015</a>; Memarian et al., <a href="#B77">2015</a>; Wang and Lyu, <a href="#B123">2015</a>; Yuan et al., <a href="#B134">2015</a>; Zheng et al., <a href="#B139">2015</a>; Boussen et al., <a href="#B17">2016</a>; Geng et al., <a href="#B38">2016</a>, <a href="#B39">2020</a>; Schrouff et al., <a href="#B104">2016</a>; Song and Zhang, <a href="#B110">2016</a>; Zhang and Parhi, <a href="#B137">2016</a>; Andrade et al., <a href="#B4">2017</a>; Antoniades et al., <a href="#B9">2017</a>; Chen et al., <a href="#B20">2017</a>; Combrisson et al., <a href="#B24">2017</a>; Elahian et al., <a href="#B30">2017</a>; Hosseini et al., <a href="#B46">2017</a>, <a href="#B47">2018</a>, <a href="#B48">2020</a>; Jrad et al., <a href="#B51">2017</a>; Khambhati et al., <a href="#B53">2017</a>; Kragel et al., <a href="#B58">2017</a>; Kremen et al., <a href="#B60">2017</a>, <a href="#B59">2019</a>; Parvez and Paul, <a href="#B89">2017</a>; Raghu and Sriraam, <a href="#B94">2017</a>; Sathish et al., <a href="#B102">2017</a>; Tomlinson et al., <a href="#B116">2017</a>; Vidyaratne and Iftekharuddin, <a href="#B122">2017</a>; Alickovic et al., <a href="#B3">2018</a>; Arora et al., <a href="#B10">2018</a>; Baud et al., <a href="#B13">2018</a>; Derner et al., <a href="#B29">2018</a>; Grinenko et al., <a href="#B42">2018</a>; Hermiz et al., <a href="#B44">2018</a>; Kiral-Kornek et al., <a href="#B55">2018</a>; Manzouri et al., <a href="#B73">2018</a>; Muller et al., <a href="#B82">2018</a>; O'Leary et al., <a href="#B86">2018</a>; Pan et al., <a href="#B88">2018</a>; Ramsey et al., <a href="#B96">2018</a>; Rutigliano et al., <a href="#B100">2018</a>; Shoaran et al., <a href="#B108">2018</a>; Truong et al., <a href="#B118">2018</a>, <a href="#B117">2019</a>; Tuyisenge et al., <a href="#B119">2018</a>; Varatharajah et al., <a href="#B121">2018</a>; Wu et al., <a href="#B127">2018</a>; Xie et al., <a href="#B128">2018</a>; Angrick et al., <a href="#B7">2019a</a>,<a href="#B8">b</a>; Cimbalnik et al., <a href="#B22">2019</a>; Klimes et al., <a href="#B56">2019</a>; Lai et al., <a href="#B63">2019</a>, <a href="#B62">2020</a>; Livezey et al., <a href="#B69">2019</a>; Mahmoodian et al., <a href="#B70">2019</a>; Medvedev et al., <a href="#B75">2019</a>; Meisel and Bailey, <a href="#B76">2019</a>; Nejedly et al., <a href="#B85">2019a</a>,<a href="#B84">b</a>; Pailla et al., <a href="#B87">2019</a>; Principe et al., <a href="#B92">2019</a>; Saboo et al., <a href="#B101">2019</a>; Sumsky and Santaniello, <a href="#B112">2019</a>; Thomas et al., <a href="#B115">2019</a>; Weidemann et al., <a href="#B124">2019</a>; Abou Jaoude et al., <a href="#B1">2020</a>; Akter et al., <a href="#B2">2020</a>; Burrello et al., <a href="#B18">2020</a>; Daoud and Bayoumi, <a href="#B27">2020</a>; Ghoroghchian et al., <a href="#B40">2020</a>; Gong et al., <a href="#B41">2020</a>; Karthick et al., <a href="#B52">2020</a>; Lian et al., <a href="#B66">2020</a>; Makaram et al., <a href="#B71">2020</a>; Makin et al., <a href="#B72">2020</a>; Rashid et al., <a href="#B97">2020</a>; RaviPrakash et al., <a href="#B98">2020</a>; Sciaraffa et al., <a href="#B105">2020</a>; Yu et al., <a href="#B133">2020</a>; Zhao et al., <a href="#B138">2020</a>; Zhu et al., <a href="#B140">2020</a>). Information regarding each article was collected into four categories: demographics, data acquisition, machine learning model, types of features. A succinct summary of studies employing publicly available datasets and reporting best AI model performance is presented in <a href="#T1">Table 1</a> while a more extensive table containing all studies is available in <a href="#SM1">Supplementary Material 2</a>.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id48">Summary of literature on artificial intelligence in intracranial EEG.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id49"><!-- named anchor --></a><thead>
+<a id="id50"><!-- named anchor --></a><tr>
+<a id="id51"><!-- named anchor --></a><th valign="top" align="left" colspan="2" rowspan="1">
+<a id="id52"><!-- named anchor --></a><b>Application</b>
+</th>
+<th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id53"><!-- named anchor --></a><b>Dataset</b>
+</th>
+<th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id54"><!-- named anchor --></a><b>Authors</b>
+</th>
+<th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id55"><!-- named anchor --></a><b>Recording Method</b>
+</th>
+<th valign="top" align="center" colspan="2" style="border-bottom: thin solid #000000;" rowspan="1">
+<a id="id56"><!-- named anchor --></a><b>Machine Learning</b>
+</th>
+<th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id57"><!-- named anchor --></a><b>Features</b>
+</th>
+</tr>
+<tr>
+<a id="id58"><!-- named anchor --></a><th rowspan="1" colspan="1"><a id="id59"><!-- named anchor --></a></th>
+<th rowspan="1" colspan="1"><a id="id60"><!-- named anchor --></a></th>
+<th rowspan="1" colspan="1"><a id="id61"><!-- named anchor --></a></th>
+<th rowspan="1" colspan="1"><a id="id62"><!-- named anchor --></a></th>
+<th rowspan="1" colspan="1"><a id="id63"><!-- named anchor --></a></th>
+<th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id64"><!-- named anchor --></a><b>Category</b>
+</th>
+<th valign="top" align="left" rowspan="1" colspan="1">
+<a id="id65"><!-- named anchor --></a><b>Best Al Performance</b>
+</th>
+<th rowspan="1" colspan="1"><a id="id66"><!-- named anchor --></a></th>
+</tr>
+</thead>
+<tbody>
+<a id="id67"><!-- named anchor --></a><tr>
+<a id="id68"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id69"><!-- named anchor --></a>Seizure</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id70"><!-- named anchor --></a>Seizure Detection / Prediction</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id71"><!-- named anchor --></a>Freiburg</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id72"><!-- named anchor --></a>Yu et al., <a href="#B133">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id73"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id74"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id75"><!-- named anchor --></a>87.7% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id76"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id77"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id78"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id79"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id80"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id81"><!-- named anchor --></a>Geng et al., <a href="#B39">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id82"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id83"><!-- named anchor --></a>Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id84"><!-- named anchor --></a>98.09% (ss), 98.69% (sp)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id85"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id86"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id87"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id88"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id89"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id90"><!-- named anchor --></a>Lian et al., <a href="#B66">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id91"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id92"><!-- named anchor --></a>Standard and Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id93"><!-- named anchor --></a>95.67% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id94"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id95"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id96"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id97"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id98"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id99"><!-- named anchor --></a>Truong et al., <a href="#B117">2019</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id100"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id101"><!-- named anchor --></a>Standard and Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id102"><!-- named anchor --></a>88.86 (auc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id103"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id104"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id105"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id106"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id107"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>Meisel and Bailey, <a href="#B76">2019</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id109"><!-- named anchor --></a>Strips/grids</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id110"><!-- named anchor --></a>Standard and Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id111"><!-- named anchor --></a>Not reported</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id113"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id114"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id115"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id116"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id117"><!-- named anchor --></a>Mahmoodian et al., <a href="#B70">2019</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id118"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id119"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>96.8% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id121"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id122"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id123"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id124"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id125"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>Alickovic et al., <a href="#B3">2018</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id129"><!-- named anchor --></a>100% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id130"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id131"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id132"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id133"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id134"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>Parvez and Paul, <a href="#B89">2017</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id136"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id137"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>95.4% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id140"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id141"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id142"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id143"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>Zhang and Parhi, <a href="#B137">2016</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id145"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id146"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id147"><!-- named anchor --></a>100% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id148"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id149"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id150"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id151"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id152"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id153"><!-- named anchor --></a>Geng et al., <a href="#B38">2016</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id154"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id155"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>96.72% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id158"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id159"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id160"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id161"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id162"><!-- named anchor --></a>Song and Zhang, <a href="#B110">2016</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>85.73% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id166"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id167"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id168"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id169"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id170"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id171"><!-- named anchor --></a>Zheng et al., <a href="#B139">2015</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id172"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id173"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id174"><!-- named anchor --></a>92% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id176"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id177"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id178"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id179"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id180"><!-- named anchor --></a>Wang and Lyu, <a href="#B123">2015</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id181"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>98.8% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id184"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id185"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id186"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id187"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id188"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id189"><!-- named anchor --></a>Yuan et al., <a href="#B134">2015</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id190"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id191"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id192"><!-- named anchor --></a>94.41% (ss), 96.97% (sp), 96.87% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id193"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id194"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id195"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id196"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id197"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a>Zhang et al., <a href="#B136">2015</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id199"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id200"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id201"><!-- named anchor --></a>92.94% (ss), 97.47% (sp), 97.57% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id202"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id203"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id204"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id205"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id206"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id207"><!-- named anchor --></a>Zhang et al., <a href="#B135">2014</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id208"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id209"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>89.33% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id212"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id213"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id214"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id215"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id216"><!-- named anchor --></a>Liu et al., <a href="#B68">2012</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id217"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id218"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id219"><!-- named anchor --></a>94.46% (ss), 95.26% (sp), 95.33 (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id220"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id221"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id222"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id223"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id224"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id225"><!-- named anchor --></a>Chua et al., <a href="#B21">2011</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id226"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>78% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id229"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id230"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id231"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id232"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id233"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id234"><!-- named anchor --></a>Liu et al., <a href="#B67">2009</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id235"><!-- named anchor --></a>Strips/grids and Depth electrodes</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id236"><!-- named anchor --></a>Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id237"><!-- named anchor --></a>93.75% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id238"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id239"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id240"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id241"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id242"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id243"><!-- named anchor --></a>Mirowski et al., <a href="#B78">2009</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id244"><!-- named anchor --></a>Strips/grids and Depth electrodes</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id245"><!-- named anchor --></a>Standard and Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id246"><!-- named anchor --></a>71% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id247"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id248"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id249"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id250"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id251"><!-- named anchor --></a>Bonn</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id252"><!-- named anchor --></a>Gong et al., <a href="#B41">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id253"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id254"><!-- named anchor --></a>Standard and Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id255"><!-- named anchor --></a>99.79% (acc CE), 98.96% (acc DE), 83.13% (acc CD), 98.75% (acc CD-E), 85.75% (acc CDE)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id256"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id257"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id258"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id259"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id260"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id261"><!-- named anchor --></a>Vidyaratne and Iftekharuddin, <a href="#B122">2017</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id262"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id263"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id264"><!-- named anchor --></a>99.8% (acc CD-E), 99% (ss CD-E), 100% (sp CD-E)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id265"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id266"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id267"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id268"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id269"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id270"><!-- named anchor --></a>Raghu and Sriraam, <a href="#B94">2017</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id271"><!-- named anchor --></a>Strips/grids and Depth electrodes</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id272"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id273"><!-- named anchor --></a>97.68% (acc CE), 94.56% (acc DE), 84.58% (acc CDE), 57.8% (acc CD)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id274"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id275"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id276"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id277"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id278"><!-- named anchor --></a>EPILEPSIAE</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id279"><!-- named anchor --></a>Ghoroghchian et al., <a href="#B40">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id280"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id281"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id282"><!-- named anchor --></a>0.89 (auc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id283"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id284"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id285"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id286"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id287"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id288"><!-- named anchor --></a>Manzouri et al., <a href="#B73">2018</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id289"><!-- named anchor --></a>Strips/grids and Depth electrodes</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id290"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id291"><!-- named anchor --></a>0.98 (auc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id292"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id293"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id294"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id295"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id296"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id297"><!-- named anchor --></a>O'Leary et al., <a href="#B86">2018</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id298"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id299"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id300"><!-- named anchor --></a>97.7% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id301"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id302"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id303"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id304"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id305"><!-- named anchor --></a>Mayo-UPenn</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id306"><!-- named anchor --></a>Hosseini et al., <a href="#B47">2018</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id307"><!-- named anchor --></a>Strips/grids and Depth electrodes</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id308"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id309"><!-- named anchor --></a>97% (acc), 98% (ss), 96% (sp)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id310"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id311"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id312"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id313"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id314"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id315"><!-- named anchor --></a>Hosseini et al., <a href="#B46">2017</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id316"><!-- named anchor --></a>Strips/grids</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id317"><!-- named anchor --></a>Standard and Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id318"><!-- named anchor --></a>96% (acc), 97% (ss)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id319"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id320"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id321"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id322"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>Bern-Barcelona</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id324"><!-- named anchor --></a>Sathish et al., <a href="#B102">2017</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id325"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a>99.6% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id328"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id329"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id330"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id331"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id332"><!-- named anchor --></a>Freiburg<br class="br"> and<br class="br"> Mayo-Upenn</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id333"><!-- named anchor --></a>Truong et al., <a href="#B118">2018</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id334"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id335"><!-- named anchor --></a>Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id336"><!-- named anchor --></a>94.7% (acc; Freiburg), 96.18% (acc; M-UP cross-validation), 88.81% (acc; M-UP testing)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id337"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id338"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id339"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id340"><!-- named anchor --></a>SOZ / Epileptic Focus Localization</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id341"><!-- named anchor --></a>Bonn<br class="br"> and<br class="br"> Bern-Barcelona</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id342"><!-- named anchor --></a>Daoud and Bayoumi, <a href="#B27">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id343"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id344"><!-- named anchor --></a>Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id345"><!-- named anchor --></a>Bern-Barcelona<br class="br"> 93.21% (acc), 90.50% (ss), 95.92% (sp)<br class="br"> Bonn<br class="br"> 96% (acc), 93% (ss), 99% (sp)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id346"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id347"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id348"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id349"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id350"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id351"><!-- named anchor --></a>Chen et al., <a href="#B20">2017</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id352"><!-- named anchor --></a>Not specified</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id353"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id354"><!-- named anchor --></a>Bern-Barcelona<br class="br"> 83.07% (acc), 83.05% (ss), 83.09% (sp)<br class="br"> Bonn<br class="br"> 88.00% (acc), 92.24% (ss), 83.76% (sp)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id355"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id356"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id357"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id358"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id359"><!-- named anchor --></a>Mayo-Upenn</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id360"><!-- named anchor --></a>Hosseini et al., <a href="#B48">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id361"><!-- named anchor --></a>Depth electrodes</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id362"><!-- named anchor --></a>Standard and Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id363"><!-- named anchor --></a>98% (acc), 96 (ss), 97% (sp)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id364"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id365"><!-- named anchor --></a><td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id366"><!-- named anchor --></a>Motor</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id367"><!-- named anchor --></a>Motor Imagery</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id368"><!-- named anchor --></a>BCI Competition III</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id369"><!-- named anchor --></a>Rashid et al., <a href="#B97">2020</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id370"><!-- named anchor --></a>Strips/grids</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id371"><!-- named anchor --></a>Deep</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id372"><!-- named anchor --></a>Training<br class="br"> 99.64% (acc), 100% (ss), 99.28 (sp)<br class="br"> Testing<br class="br"> 97% (acc), 96% (ss), 98% (sp)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id373"><!-- named anchor --></a>Standard</td>
+</tr>
+<tr>
+<a id="id374"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id375"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id376"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id377"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id378"><!-- named anchor --></a>Li et al., <a href="#B65">2015</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id379"><!-- named anchor --></a>Strips/grids</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id380"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id381"><!-- named anchor --></a>92% (acc)</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id382"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id383"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id384"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id385"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id386"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id387"><!-- named anchor --></a>Yang et al., <a href="#B132">2012</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id388"><!-- named anchor --></a>Strips/grids</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id389"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id390"><!-- named anchor --></a>Training<br class="br"> 88% (acc)<br class="br"> Validation<br class="br"> 80% (acc)<br class="br"> Testing<br class="br"> 80% (acc)<br class="br"> Overall<br class="br"> 86%</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id391"><!-- named anchor --></a>Higher order</td>
+</tr>
+<tr>
+<a id="id392"><!-- named anchor --></a><td rowspan="1" colspan="1"><a id="id393"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id394"><!-- named anchor --></a></td>
+<td rowspan="1" colspan="1"><a id="id395"><!-- named anchor --></a></td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id396"><!-- named anchor --></a>Demirer et al., <a href="#B28">2009</a>
+</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id397"><!-- named anchor --></a>Strips/grids</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id398"><!-- named anchor --></a>Standard</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id399"><!-- named anchor --></a>Training<br class="br"> 95%<br class="br"> Testing<br class="br"> 73%</td>
+<td valign="top" align="left" rowspan="1" colspan="1">
+<a id="id400"><!-- named anchor --></a>Higher order</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot">
+<p class="first" id="id401"><i><b>Keywords</b></i></p>
+<p id="id402"><i><span style="text-decoration: underline">Performance measures</span></i></p>
+<p id="id403"><i>acc, accuracy; auc, area under curve; sp, specificity; ss, sensitivity</i>.</p>
+</div>
+</div>
+<div class="section">
+<a id="id404"><!-- named anchor --></a><h3 class="section-title">Demographics</h3>
+<p id="id405">The number of publications per year is illustrated in <a href="#F3">Figure 3A</a>. A dramatic increase in the number of publications was observed from 2017 onwards. The majority of articles before 2017 utilized standard machine learning algorithms as opposed to deep learning or unsupervised learning. For comparison, the use of deep learning or both (standard ML and deep learning) made up only 20% of articles published in 2017 compared to 68% of those published in 2020.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F3"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<div class="caption"><p class="first" id="id406">Demographics of 107 articles reviewed. <b>(A)</b> The number of publications in the field of machine learning and iEEG dramatically increased in 2017 incorporating more deep learning and unsupervised learning models. <b>(B)</b> Just under half of articles reviewed were published in a medical journal and a similar proportion were published in an engineering or computer science journal. A minority was published in a multidisciplinary journal. <b>(C)</b> Almost half of the studies were conducted in North America. The United States published the most papers, followed by China, Germany and Canada.</p></div>
+</div>
+<p id="id407">Fifty-one articles were published in medical journals while 50 were published in engineering or computer science journals. Six articles were published in multidisciplinary journals. This distribution is illustrated in <a href="#F3">Figure 3B</a>.</p>
+<p id="id408">The distribution of country of origin for each article is displayed in <a href="#F3">Figure 3C</a>. The majority of articles originated from the United States of America (46/107, 42%), followed by China (18/107, 17%), Germany (7/107, 7%) and Canada (6/107, 6%).</p>
+</div>
+<div class="section">
+<a id="id409"><!-- named anchor --></a><h3 class="section-title">Data Acquisition</h3>
+<p id="id410">The types of intracranial recording varied across each study. Some articles employed only one type of intracranial recording, while others used two methods. Articles which did not specify their method of intracranial EEG recording were simply labeled as unspecified iEEG. The distribution of intracranial recording method is illustrated in <a href="#F4">Figure 4A</a>. Of those which specified a recording technique, ECoG strips or grids were used most frequently (53/107 articles), followed by depth electrodes (23/107) and sEEG (9/107). Thirty-seven articles were labeled as unspecified iEEG. Some articles used more than one method, hence this sum is greater than the number of articles.</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F4"><!-- named anchor --></a><h5 class="label">Figure 4</h5>
+<div class="caption"><p class="first" id="id411">Types of iEEG recording and classification algorithm employed. <b>(A)</b> Less than half of the publications employed electrocorticography techniques such as strips and grids. The second most popular recording method was depth electrodes followed by a minority of stereotactic EEG. One third of the articles did not specify the type of recording method. <b>(B)</b> The majority of studies employ standard supervised machine learning (ML) only, while only 18% used deep learning (DL) only. Thirteen percent used both standard and deep learning while a minority used unsupervised learning.</p></div>
+</div>
+<p id="id412">Just over half of the articles analyzed in this review reported using their own datasets (57/107, 53%). The 50 remaining reported the use of at least one pre-existing dataset, either from their own research group or a freely available dataset available online. Some publications use more than one source of data.</p>
+<div class="section">
+<a id="id413"><!-- named anchor --></a><h4 class="subsection-title">Intracranial EEG Datasets</h4>
+<p id="id414">Pre-existing iEEG datasets are utilized in a number of these papers. The most popular of these include the Freiburg (Andrzejak et al., <a href="#B6">2012</a>) (21/50, 42%), the UBonn (Andrzejak et al., <a href="#B5">2001</a>) dataset (6/50, 12%), BCI Competition III (Blankertz et al., <a href="#B16">2006</a>) (4/50, 8%), Mayo Clinic (Stead et al., <a href="#B111">2010</a>) (3/50, 6%), Bern-Barcelona (3/50, 6%), and EPILEPSIAE (3/50, 6%). The Freiburg EEG database is composed of grid, strip and depth electrode recordings from 21 patients suffering from medically intractable focal epilepsy. The UBonn dataset is composed of strips and depth electrodes recorded from epilepsy patients. It is divided into 5 sets where A and B are scalp EEG and C, D and E are iEEG recordings from patients with temporal lobe epilepsy. Sets C and D are composed of inter-ictal intervals while set E shows ictal activity. The BCI Competition III includes 8 scalp and intracranial EEG datasets involving motor imagery and P300 speller paradigms. Specifically, only dataset 1 includes ECoG grids, while the remaining solely include scalp EEG. The Mayo Clinic dataset is composed of strips, grids and depth electrode recordings from 11 epilepsy patients. The Bern-Barcelona dataset comprises of strips and depth electrodes from 5 pharmacoresistant temporal lobe patients. Finally, the EPILEPSIAE database is the product of a collaboration between epilepsy centers in Portugal, France and Germany. It contains both scalp and intracranial EEG recordings including grids and depth electrodes.</p>
+</div>
+</div>
+<div class="section">
+<a id="id415"><!-- named anchor --></a><h3 class="section-title">Machine Learning</h3>
+<p id="id416">The ML applications for each article were grouped into 4 categories, all illustrated in <a href="#F5">Figure 5</a>. Four articles employed machine learning for more than one application, thereby leading to 111 counts for 107 articles. The vast majority of applications relate to seizures (74/111, 67%), followed by motor (25/111, 23%), cognitive tasks (8/111, 7%), and sleep staging (4/111, 4%).</p>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F5"><!-- named anchor --></a><h5 class="label">Figure 5</h5>
+<div class="caption"><p class="first" id="id417">Applications of machine learning in intracranial EEG. The applications were divided into 4 categories: seizure, motor, cognitive tasks. Over half of the articles were relevant to seizures. Four studies had more than one application thereby leading to a total of 111 applicants for 107 articles.</p></div>
+</div>
+<div class="section">
+<a id="id418"><!-- named anchor --></a><h4 class="subsection-title">Applications</h4>
+<p id="id419">The seizure category is divided into 8 subcategories in which seizure detection/prediction (43/74, 58%) and SOZ/epileptic focus localization (11/74, 15%) were the most popular. The motor category is composed of 3 subcategories where movement classification makes up half of the applications (12/25, 48%).</p>
+</div>
+<div class="section">
+<a id="id420"><!-- named anchor --></a><h4 class="subsection-title">Algorithm</h4>
+<p id="id421">The majority of articles reviewed in this study employed standard supervised ML methods only (68/107, 63%), followed by DL only (19/107, 18%). Fourteen articles employed both standard ML and DL in order to compare algorithm performance. Unsupervised learning made up a minority of articles found (6/107, 6%). An illustration of this distribution is presented in <a href="#F4">Figure 4B</a>. The majority of studies presented results from a single algorithm (78/107, 73%) rather than multiple algorithms (29/107, 27%).</p>
+</div>
+<div class="section">
+<a id="id422"><!-- named anchor --></a><h4 class="subsection-title">Comparing Algorithmic Performance</h4>
+<p id="id423">Performance metrics for each study employing a publicly available dataset are summarized in <a href="#T1">Table 1</a>. Five public datasets were identified amongst the studies employing ML for seizure detection or prediction. Amongst studies utilizing the same dataset, a variety of different metrics were reported. It is also important to note that while some studies employ all patient data from public datasets, some may only select a subgroup of participant data from a dataset. Therefore, <a href="#T1">Table 1</a> provides the specific recording method as reported by the authors.</p>
+<p id="id424">Amongst the studies utilizing the Freiburg dataset, 11 reported metrics on the entire set of 21 patients (Liu et al., <a href="#B68">2012</a>; Zhang et al., <a href="#B135">2014</a>, <a href="#B136">2015</a>; Yuan et al., <a href="#B134">2015</a>; Geng et al., <a href="#B38">2016</a>, <a href="#B39">2020</a>; Parvez and Paul, <a href="#B89">2017</a>; Alickovic et al., <a href="#B3">2018</a>; Mahmoodian et al., <a href="#B70">2019</a>; Meisel and Bailey, <a href="#B76">2019</a>; Yu et al., <a href="#B133">2020</a>). Within this group, deep learning methods achieved significantly higher sensitivity for seizure detection compared to standard methods (mean 0.922 vs. 0.980, <i>p</i> = 0.019 by Student's <i>t</i>-test). Few of these studies, however, reported specificity thereby making a performance comparison based on this metric more difficult. In those using the Freiburg dataset and exclusively investigating standard machine learning (Chua et al., <a href="#B21">2011</a>; Liu et al., <a href="#B68">2012</a>; Zhang et al., <a href="#B135">2014</a>, <a href="#B136">2015</a>; Wang and Lyu, <a href="#B123">2015</a>; Yuan et al., <a href="#B134">2015</a>; Zheng et al., <a href="#B139">2015</a>; Geng et al., <a href="#B38">2016</a>; Song and Zhang, <a href="#B110">2016</a>; Zhang and Parhi, <a href="#B137">2016</a>; Parvez and Paul, <a href="#B89">2017</a>; Alickovic et al., <a href="#B3">2018</a>; Mahmoodian et al., <a href="#B70">2019</a>; Yu et al., <a href="#B133">2020</a>), SVM was the most popular. Fewer studies employed the Bonn dataset, where deep learning and a vector machine algorithm achieved greater accuracies compared to a standard multilayer perceptron (MLP) with a single hidden layer (Raghu and Sriraam, <a href="#B94">2017</a>; Vidyaratne and Iftekharuddin, <a href="#B122">2017</a>; Gong et al., <a href="#B41">2020</a>). Studies using EPILEPSIAE data all employed standard ML but specificity metrics were not reported for comparison (Manzouri et al., <a href="#B73">2018</a>; O'Leary et al., <a href="#B86">2018</a>; Ghoroghchian et al., <a href="#B40">2020</a>). Those using the Mayo-UPenn show similar accuracies with deep learning and a combination classifier of standard supervised algorithms (Hosseini et al., <a href="#B46">2017</a>, <a href="#B47">2018</a>; Truong et al., <a href="#B118">2018</a>).</p>
+<p id="id425">Three datasets were employed by studies for SOZ or epileptic focus localization. Two studies used the Bonn and Bern-Barcelona datasets where a deep MLP (more than one hidden layer) (Daoud and Bayoumi, <a href="#B27">2020</a>) outperformed a standard SVM (Chen et al., <a href="#B20">2017</a>) by achieving greater specificity. The only study that employed the Mayo-UPenn dataset in this context revealed a greater specificity with an LSTM-SVM in comparison to an LSTM alone (Hosseini et al., <a href="#B48">2020</a>). This is particularly interesting as it shows that combining a deep learning approach for feature extraction and selection with a standard SVM model may further outperform deep learning alone.</p>
+<p id="id426">A single publicly available dataset was found amongst the motor studies in the context of motor imagery classification. Three of the 4 studies employing the BCI Competition III dataset split their data into a training and testing group (Demirer et al., <a href="#B28">2009</a>; Yang et al., <a href="#B132">2012</a>; Rashid et al., <a href="#B97">2020</a>) while one only reported their validation accuracy (Li et al., <a href="#B65">2015</a>). Amongst the standard ML methods, SVM (Demirer et al., <a href="#B28">2009</a>) achieved a greater accuracy than LVQ (Li et al., <a href="#B65">2015</a>) and ANN (Yang et al., <a href="#B132">2012</a>) in validation sets, but the ANN performed better in testing. This may indicate that although the SVM may performed well in training, it appears to overfit the training data and did not generalize as well as the ANN in this context. However, the most recent study using this dataset employed deep learning and achieved significantly greater accuracies compared to all previous standard ML methods in both training and testing (Rashid et al., <a href="#B97">2020</a>).</p>
+<p id="id427">All studies involved in cognitive tasks or sleep staging used unique datasets and therefore cannot be effectively compared based on classification performance. Amongst the cognitive task studies, two compared different types of algorithm within their own dataset. Though detailed statistical comparison is not possible, deep learning appeared to outperform linear regressions and SVM (Arora et al., <a href="#B10">2018</a>). A second study revealed that a combination of LSTM and CNN outperformed CNN alone thereby further probing the potential of combined approach (RaviPrakash et al., <a href="#B98">2020</a>). No sleep staging studies were reported to compare different algorithms.</p>
+</div>
+</div>
+<div class="section">
+<a id="id428"><!-- named anchor --></a><h3 class="section-title">Influence of Feature Selection</h3>
+<p id="id429">In general, studies focusing on seizure detection and prediction applied time-frequency representations of raw EEG signals. This was accomplished with bandpass filtering or signal decomposition using Fourier or wavelet transforms. Less commonly other signal decomposition methods were also used for this purpose, such as the Stockwell transform (Geng et al., <a href="#B39">2020</a>), harmonic wavelets (Vidyaratne and Iftekharuddin, <a href="#B122">2017</a>) or empirical mode decomposition (EMD) (Zheng et al., <a href="#B139">2015</a>). These transforms yield frequency-domain representations of the signal, namely the amplitudes of various frequency ranges in a given signal segment or epoch. These amplitudes were most often used to calculate statistical features such as the mean, variance, and standard deviation (Alickovic et al., <a href="#B3">2018</a>; Meisel and Bailey, <a href="#B76">2019</a>), as well as higher-order statistical features including skew and kurtosis (Mirowski et al., <a href="#B78">2009</a>; Hosseini et al., <a href="#B46">2017</a>). Amplitude at various frequencies were also be used to calculate the envelope (Wang and Lyu, <a href="#B123">2015</a>; Meisel and Bailey, <a href="#B76">2019</a>) (a function enclosing the peaks of the signal, or instantaneous amplitude), or line length (Baud et al., <a href="#B13">2018</a>) to capture spikes. Several algorithms in our dataset used bivariate or multivariate (i.e., features calculated from pairs or groups of electrodes) features including cross-correlation and phase-locking value between pairs of signals, as well as higher-order measures of synchrony such as non-linear interdependence, dynamical entrainment, and entropy in difference of phases (Mirowski et al., <a href="#B78">2009</a>; O'Leary et al., <a href="#B86">2018</a>).</p>
+<p id="id430">Signal entropy is a measure of the predictability of a signal–that is, disordered and unpredictable signals have high entropy and vice versa. Studies reviewed herein used entropy of various time series, in particular the raw EEG signal, frequency and power spectra, phase, as well as multi-electrode signals (Hosseini et al., <a href="#B46">2017</a>; Vidyaratne and Iftekharuddin, <a href="#B122">2017</a>; Mahmoodian et al., <a href="#B70">2019</a>). A closely related measure to entropy is fractal dimension, in that the latter measures the “roughness” of a signal at different scales. The fractal dimension of frequency- or time-domain signals can be estimated using box-counting methods, as well as the more formal Hausdorff dimension.</p>
+<p id="id431">SOZ localization depends on the detection and analysis of signal phenomena such as HFOs, phase-amplitude coupling (PAC), and interictal epileptiform discharges (IED). In particular, HFOs have been proposed as epileptogenic biomarkers with emerging prognostic utility in cortical resection outcomes (Jacobs et al., <a href="#B50">2010</a>; Frauscher et al., <a href="#B37">2017</a>). These events are first detected in raw EEG signals using well-validated detectors in the literature, such as the line-length and Cimbalnik-Stead HFO detectors. The rate of these events in specific electrodes are used to localize the epileptic focus, either as the sole feature (Sumsky and Santaniello, <a href="#B112">2019</a>) or in an ensemble with other first-order or abstract features (Klimes et al., <a href="#B56">2019</a>).</p>
+<p id="id432">Features for speech production, motor imagery, and cognitive tasks differed in key respects with those for seizure prediction. While high-frequency oscillations in high-gamma (70-135Hz) and ripple (135-200Hz) bands were most useful in seizure prediction (Pan et al., <a href="#B88">2018</a>), features sources from lower frequencies, such as theta (Livezey et al., <a href="#B69">2019</a>), alpha (Andrade et al., <a href="#B4">2017</a>; Hosseini et al., <a href="#B48">2020</a>), and beta bands (Yang et al., <a href="#B132">2012</a>) were most useful for speech, motor and cognitive tasks. In addition, features for these three categories generally focused on amplitude, spectral power and its transformations rather than measures of disorder like entropy and fractal dimension (Pan et al., <a href="#B88">2018</a>; Xie et al., <a href="#B128">2018</a>; Pailla et al., <a href="#B87">2019</a>; Thomas et al., <a href="#B115">2019</a>). In particular, the normalized (or Z-transformed) log-spectral power obtained from a morlet wavelet transform is commonly used in speech and cognitive tasks (Ikeda et al., <a href="#B49">2014</a>; Schrouff et al., <a href="#B104">2016</a>; Kragel et al., <a href="#B58">2017</a>; Arora et al., <a href="#B10">2018</a>; Weidemann et al., <a href="#B124">2019</a>).</p>
+<p id="id433">Hand-selected feature sets through these various methods may be ensemble-optimized to reduce dimensionality and redundancy, thereby making downstream classification more accurate and computationally efficient. Parallel arrays of time-varying features may be subject to dimensionality reduction using principal component analysis (PCA) or its variants as a data pre-processing step (Tomlinson et al., <a href="#B116">2017</a>; O'Leary et al., <a href="#B86">2018</a>; Yu et al., <a href="#B133">2020</a>). Some algorithms rely on feature selection using some optimization algorithm or neural network (Firpi et al., <a href="#B36">2007b</a>; Antoniades et al., <a href="#B9">2017</a>; Abou Jaoude et al., <a href="#B1">2020</a>), or even generating artificial features <i>de novo</i> using a genetic algorithm (Firpi et al., <a href="#B35">2007a</a>; Yang et al., <a href="#B132">2012</a>; Sathish et al., <a href="#B102">2017</a>).</p>
+<p id="id434">Measures such as fractal dimension and higher-order moments have unintuitive physical correlates and may not correlate with underlying biological signals. Thus, we compared “higher-order” feature selection algorithms with approaches with physically interpretable features to determine if differences in model performance arise. Studies that used higher-order feature-selection algorithms were defined as those in which the feature selection/pre-processing workflows contained one or more of: i) non-standard time-frequency transforms; ii) dimensionality reduction of feature space; iii) abstract feature selection algorithms; or iv) abstract features (entropy, fractal dimension, etc.). When comparing seizure prediction/detection algorithms that were tested on all 21 patients from the Freiburg iEEG dataset, “standard” and “higher-order” feature selection approaches did not differ in overall sensitivity (mean 0.966 vs. 0.930, <i>p</i> = 0.1696 by Student's <i>t</i>-test). This suggests that while higher-order input features have few biological and physical correlates, this penalty to interpretability does not necessarily translate into better model performance.</p>
+</div>
+</div>
+<div class="section">
+<a id="s4"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="id435">The study of iEEG provides unprecedented insight into the neural code, revealing the underpinnings of a variety of physiological and pathological brain processes. At present, the gold standard of iEEG analysis involves extraction of features through digital signal processing and analyses by human experts. However, ML is rapidly becoming a viable tool that may facilitate better understanding of intracranial data. In the current review, we describe the landscape of ML applied to iEEG. We also compare and contrast various methods and provide a synopsis of relative advantages and pitfalls.</p>
+<div class="section">
+<a id="id436"><!-- named anchor --></a><h3 class="section-title">Seizure</h3>
+<p id="id437">Machine learning applications to iEEG predominantly relate to epilepsy. The majority of studies reviewed herein focused on classification of signals as seizures or non-seizure events, while others employed ML for seizure onset prediction. In the latter, the algorithm identifies patterns in the pre-ictal signal in order to pre-emptively predict seizure onset. This is a particularly challenging task for humans to accomplish and therefore an ideal opportunity for the implementation of AI tools (Assi et al., <a href="#B11">2019</a>).</p>
+<p id="id438">Deep learning algorithms demonstrate the best performance in the classification of seizures and SOZ localization. Unlike an ML-informed approach, current practices of seizure detection are susceptible to inter-rater variability. A recent study studying seizure detection from ECoG signal revealed an interrater agreement of only 79% (Quigg et al., <a href="#B93">2015</a>). This supports the potential role of using ML-powered algorithms to better inform experts in complex cases thereby reducing variability.</p>
+<p id="id439">Another benefit of ML-based tools is the ability to integrate multiple data streams including EEG, electromyography (EMG), accelerometry (ACM), electrocardiography (ECG), near-infrared spectroscopy (NIRS), video, and electrodermal activity (EDA) inputs beyond what can be achieved by a human interpreter (Ulate-Campos et al., <a href="#B120">2016</a>). This type of approach has also been applied for other applications relevant to neurology such as early detection of Parkinson's disease (Prashanth et al., <a href="#B91">2016</a>), falls (Nahiduzzaman et al., <a href="#B83">2020</a>) and identification of cortical dysplasia (Mo et al., <a href="#B79">2019</a>). One of the studies reviewed utilized this multidimensional approach and achieved an accuracy of 95% for surgical outcome prediction in epilepsy patients, albeit on an in-house dataset (Memarian et al., <a href="#B77">2015</a>).</p>
+<p id="id440">Enhanced SOZ localization is an emerging area for increased ML utilization. Indeed, in medically-refractory epilepsy, post-operative seizure freedom rates remain in the range of 50–70% despite multimodal analytic tools to guide localization and resection of the putative epileptogenic zone (Englot et al., <a href="#B31">2011</a>, <a href="#B32">2012</a>). Accurate localization of the SOZ also remains the strongest predictor of positive surgical outcome (Jacobs et al., <a href="#B50">2010</a>). Through network-based analytic approaches, ML algorithms can provide more detailed localizations of seizure onset zones based on higher-order patterns not immediately apparent to experts, with the potential to improve post-operative outcomes. Studies reviewed herein demonstrate accuracies in excess of 90% using deep learning and 80% with standard ML (Chen et al., <a href="#B20">2017</a>; Daoud and Bayoumi, <a href="#B27">2020</a>; Hosseini et al., <a href="#B48">2020</a>). A growing body of literature also supports the use of ML in identifying spectral patterns such as high-frequency oscillations that may further refine SOZ localization (Jacobs et al., <a href="#B50">2010</a>; Weiss et al., <a href="#B125">2019</a>; Si, <a href="#B109">2020</a>).</p>
+<p id="id441">Beyond epilepsy, the breadth of ML use in neurosurgical outcome prediction spans multiple fields from neoplasms to spinal disease to arteriovenous malformations, with promising success. (Senders et al., <a href="#B106">2018</a>) Such applications of ML may not only guide the decision-making process of neurosurgical teams when selecting surgical candidates, but may also reveal patterns previously unknown to influence surgical outcome.</p>
+<p id="id442">Despite the significant potential of deep learning, there are several challenges to its clinical deployment. First, deep learning generally requires a significantly larger pool of data compared with standard ML algorithms, and datasets of this size may be clinically unavailable. A second limitation of deep learning relates to its status as a “blackbox” algorithm whereby the underlying decision-making process of the algorithm cannot be readily understood. A great deal of contemporary literature has examined this subject and is producing algorithmic approaches to explain such “blackbox” models. Examples include game theoretic “Shapley” values and permutation importance which provide insight through backpropagation of altered to retrospectively determined feature importance (Wong et al., <a href="#B126">2019</a>; Sundararajan and Najmi, <a href="#B113">2020</a>). Conversely, standard ML remains more transparent without the use of these complex middle-ground interpreters. Given the reported performance advantages of deep learning, we suggest that an area for substantial future research should relate to the development of clinical tools that may improve inherent sample sizes (such as the development of large, centralized databases). We also recommend that future work should also focus on deeper development of backpropagation tools to explain model predictions.</p>
+<p id="id443">Interestingly, the realm of neuro-oncology may also be impacted by these advanced AI technologies. A study reviewed herein presented a novel proof of concept using ML to differentiate healthy tissue from brain tumor tissue during awake craniotomy (Boussen et al., <a href="#B17">2016</a>). Although the gold standard of intraoperative mapping remains direct cortical stimulation, Boussen et al. were able to discriminate tumoral tissue from eloquent brain using an ANN based on spectral data from ECoG electrodes with a classification accuracy of 93.6%. The finding of profound spectral alteration within tumoral tissue when compared to healthy brain may serve as a useful intraoperative adjunct in awake surgery.</p>
+</div>
+<div class="section">
+<a id="id444"><!-- named anchor --></a><h3 class="section-title">Motor</h3>
+<p id="id445">A significant number of machine learning applications to iEEG relate to motor tasks. Our analysis of the model performances in this context provided a reminder on the importance of model generalizability. Although Demirer et al.'s SVM (Demirer et al., <a href="#B28">2009</a>) showed better validation metrics for motor imagery classification with the BCI Competition III dataset compared to Yang et al.'s ANN (Yang et al., <a href="#B132">2012</a>), the final testing accuracy was significantly lower. This finding poses a critical reminder with regards to overfitting. When a validation set is used to explicitly optimize a model, the metrics must be interpreted with caution as they may provide an overly optimistic estimate of model performance, as seen in the Demirer study. Therefore, whenever possible, performance should be evaluated on an unseen testing set once the model has been finalized to accurately judge generalization performance. As it relates to the classification of motors tasks, given the small number of studies for comparison, it is not possible to conclude whether an ANN or SVM would be superior in terms of motor classification tasks. However, it does underscore the importance of using unseen data to generate an unbiased estimate of model performance.</p>
+<p id="id446">The majority of movement classification studies employ algorithms to differentiate motor tasks such as upper limb movement (Yanagisawa et al., <a href="#B131">2009</a>; McMullen et al., <a href="#B74">2014</a>; Thomas et al., <a href="#B115">2019</a>) and hand or finger gesturing (Scherer et al., <a href="#B103">2009</a>; Pan et al., <a href="#B88">2018</a>; Xie et al., <a href="#B128">2018</a>; Pailla et al., <a href="#B87">2019</a>; Zhu et al., <a href="#B140">2020</a>) based on electrophysiological recordings. One study used a similar paradigm but trained their algorithm to differentiate rest, movement intention and movement execution (Combrisson et al., <a href="#B24">2017</a>). By distinguishing the vital steps of motor preparation based on neural correlates, ML in these cases can provide insight on the importance of specific features such as oscillatory phase and amplitude in understanding motor function. On the other hand, motor imagery tasks require participants to imagine performing a specific action. In these studies (Hill et al., <a href="#B45">2006</a>; Shenoy et al., <a href="#B107">2008</a>; Demirer et al., <a href="#B28">2009</a>; Yang et al., <a href="#B132">2012</a>; Li et al., <a href="#B65">2015</a>; Andrade et al., <a href="#B4">2017</a>; Rashid et al., <a href="#B97">2020</a>), algorithms were trained to identify when a participant imagined a specific action. Within the examined studies, we see that modern ML approaches can achieve a significant degree of accuracy–up to 98%-in these classification tasks.</p>
+<p id="id447">The relevance of combining iEEG signals with ML in these domains can relate to better tailoring of neuroprostheses to individual patient dynamics. Whereas, current myoelectric prostheses follow a “one-size-fits-all” approach, the adaptability of ML-based neuroprotheses could learn from the patient's individual movements and adapt to become more responsive and precise over time. Indeed, a recent survey of upper limb prothesis users reveals a desire for adaptable grip strength and individual finger and thumb movements (Cordella et al., <a href="#B25">2016</a>). Just as humans learn to adapt these composites of motor movements, a brain-computer interface (BCI) powered by machine learning may be able to learn to adapt as the user interacts with the environment. Furthermore, recent studies indicate that BCI prosthetics may play a role in reducing phantom limb pain (Yanagisawa et al., <a href="#B130">2020</a>). The underlying mechanism for this change has yet to be elucidated although it is believed to be related to neuroplasticity in the sensoricortex.</p>
+<p id="id448">The last sub-category of motor tasks relates to speech production (Ramsey et al., <a href="#B96">2018</a>; Livezey et al., <a href="#B69">2019</a>). Here, participants were asked to articulate sounds, phenomes or words presented on a screen. Algorithms were trained to differentiate these sounds based on iEEG. Unlike the traditional myoelectric or keyboard-based voice prothesis, neuroprostheses involve a BCI that can extract EEG signals to reconstruct the patient's speech. In this review, a single study (Makin et al., <a href="#B72">2020</a>) employed ML to reconstruct sentences from iEEG signal in a small number of participants, demonstrating a word error rate (measure of incorrect predictions) of 3% compared to the professional level of 5% (Xiong et al., <a href="#B129">2017</a>). Though these applications are clearly within their infancy, speech prostheses powered by ML may similarly learn from each individual patient's speech patterns to improve speech reconstruction performance with use.</p>
+</div>
+<div class="section">
+<a id="id449"><!-- named anchor --></a><h3 class="section-title">Cognitive Tasks</h3>
+<p id="id450">The study of cognitive performance is unique in that the neural circuitry and activity patterns remain poorly understood. This has limited the development of neuromodulatory interventions, such as deep brain or closed-loop stimulation that could potentially treat deficits in subdomains of cognition. A key role for ML therefore lies in its potential to identify activity distributed across neural assemblies related to specific tasks.</p>
+<p id="id451">Within the studies we report, memory was the most common cognitive task studied (Kragel et al., <a href="#B58">2017</a>; Arora et al., <a href="#B10">2018</a>; Derner et al., <a href="#B29">2018</a>; Saboo et al., <a href="#B101">2019</a>; Weidemann et al., <a href="#B124">2019</a>). Three studies employed standard ML including SVM and LR although no comparisons were made between different types of algorithm. Derner et al. (<a href="#B29">2018</a>) obtained average classification accuracies for memory recall in the range of 60%; similarly, Kragel et al. (<a href="#B58">2017</a>) presented AUCs of 0.59 and 0.68 with a classifier able to estimate memory task success during retrieval and encoding, respectively. Weidemann et al. (<a href="#B124">2019</a>) developed LR models that performed better than chance while also noticing that their memory performance prediction classifiers could generalize to unrelated lists. This supports that their classifier is trained to distinguish episodic memory without discriminating for sematic content (Weidemann et al., <a href="#B124">2019</a>). This has significant implications for the future development of closed-loop stimulation powered by ML which may be able to predict memory performance across a breadth of contexts. Arora et al. (<a href="#B10">2018</a>) is the only study that employed deep learning for memory task performance classification and showed that LSTM (mean AUC 0.72) modestly outperformed SVM (mean AUC 0.68) which itself significantly outperformed LR (mean AUC 0.59). Hence, there remains debate whether a modest improvement in performance outweighs the lack of transparency of LSTM in comparison with SVM.</p>
+<p id="id452">The complexity of neural activity during cognitive tasks is reflected in the relatively modest improvements in algorithm classification performance when compared to chance. However, despite these challenges, these models have shown practical utility in closed-loop stimulation for memory (Ezzyat et al., <a href="#B33">2018</a>).</p>
+<p id="id453">Other studies in the cognitive realm employed machine learning for unique purposes. Saboo et al. (<a href="#B101">2019</a>) employed a novel approach by comparing an unsupervised clustering model with LDA and SVM to identify active electrodes during a verbal memory task. Their unsupervised method significantly outperformed standard supervised ML reaching a sensitivity of 97% and specificity of 92.9% (Saboo et al., <a href="#B101">2019</a>). However, as the ground truth for these labels was defined by expert reviewers, the authors were unable to compare their performance with human experts as the algorithm aimed to recreate the human decisions. Nonetheless, this method provides a much faster alternative to the highly time-consuming and subjective process of human expert labeling (Saboo et al., <a href="#B101">2019</a>).</p>
+<p id="id454">In another, SVMs were used to differentiate whether participants were performing a mathematical or a memory task and achieved best accuracies of 89.51, 87.18 and 76.80% for 3 participants (Schrouff et al., <a href="#B104">2016</a>). Another study by Hermiz et al. (<a href="#B44">2018</a>) employed numerous approaches with a logistic regression to differentiate different types of auditory and visual stimuli achieving accuracies in the 80 to 95% range. Lastly, RaviPrakash et al. (<a href="#B98">2020</a>) developed a deep learning language comprehension algorithm able to differentiate whether participants are actively listening to a story, or listening to broadband noise. The authors achieved a greater performance with a combination algorithm of LSTM and CNN as opposed to CNN alone, with a classification accuracy of 83%. Although several studies in the field of cognition revealed a better performance of DL algorithms, the small sample size limits definitive conclusions.</p>
+</div>
+<div class="section">
+<a id="id455"><!-- named anchor --></a><h3 class="section-title">Sleep Staging</h3>
+<p id="id456">Studies identified in this review employed supervised (Kremen et al., <a href="#B60">2017</a>; Rutigliano et al., <a href="#B100">2018</a>; Principe et al., <a href="#B92">2019</a>) or unsupervised (Kremen et al., <a href="#B59">2019</a>) machine learning to differentiate sleep stages in patients diagnosed with epilepsy. Kremen et al. (<a href="#B60">2017</a>) employed SVM to classify awake states and slow wave sleep with an accuracy of 97.8% and 89.4% in healthy and epileptic tissue, respectively. A more recent study by this group (Kremen et al., <a href="#B59">2019</a>) obtained a 94% accuracy with unsupervised learning for more complex classification of three groups: awake states, N2 and N3 sleep. Rutigliano et al. (<a href="#B100">2018</a>) employed an ANN with a single hidden layer to classify wakefulness and non-REM sleep with an accuracy of 98.57%. As the labels were defined by a human neurologist, a comparison to expert performance cannot be established.</p>
+<p id="id457">The primary advantage of ML in this context is the speed of classification and accuracy of sleep-stage detection which would be of importance to a variety of neuromodulatory therapeutics that function during specific stages of sleep (Kremen et al., <a href="#B59">2019</a>). An example of such an approach includes closed-loop auditory stimulation during sleep for epilepsy (Fattinger et al., <a href="#B34">2019</a>). Furthermore, such tools can lessen the healthcare burden related to long waiting periods for patients awaiting formal sleep studies (Rotenberg et al., <a href="#B99">2010</a>).</p>
+</div>
+<div class="section">
+<a id="id458"><!-- named anchor --></a><h3 class="section-title">Limitations of ML Algorithms</h3>
+<p id="id459">The literature search conducted herein revealed that multiple different types of ML algorithms can be employed in the context of iEEG analysis and classification for variety of applications. However, each algorithm faces its own set of limitations. Generally, standard algorithms including SVM, KNN, and decisions trees may not be suitable for very large datasets. Training an SVM also involves numerous parameters which can be a lengthy process to optimize, and they can be also be biased if the number of features provided is greater than the number of samples in the training set. KNNs also perform poorly when using a large number of features and they are particularly sensitive to outliers or missing values. Decision trees can become hypersensitive to its input data whereby small changes in the input can have drastic effects on the output classification. As an ensemble of decision trees, RFs are can be limited by their interpretability and are often considered a black box. Similarly, deep learning models are generally criticized for their lack of interpretability, although novel methods attempting to elucidate how these complex multilayered models make decisions are discussed in the literature (Montavon et al., <a href="#B81">2018</a>). A thorough understanding of the dataset, as well as the goals of the ML algorithm are critical to select appropriate models that are best suited to data.</p>
+</div>
+<div class="section">
+<a id="id460"><!-- named anchor --></a><h3 class="section-title">Future Recommendations</h3>
+<p id="id461">Exploring the current ML literature, we identified three recommendations which may be useful for future work in ML and iEEG. First, we believe that future studies should aim to not only report performance metrics but provide a specific reference point for comparison–whether the best previous ML performance or contemporary expert performance. Such comparisons can help ground clinical interpretation of the data and identify the potential practical utilizations of ML in routine clinical practice. Second, large datasets representative of the target population may be advantageous over small datasets as these are more likely to generalize well when applied to new patients. This reinforces the importance of internal and external validation to ensure that algorithms can perform equally well with previously unseen data. Third, it may be advantageous to employ explainable ML algorithms rather than “black box” models in order to shed light on algorithms' decision-making processes. More transparent models may not only offer new knowledge on important features of disease but may also improve the trust from the medical community to employ these models clinically. A study centered around classification performance may employ a more convoluted algorithm while sacrificing interpretability while one aiming to provide new knowledge on the classification process may sacrifice some performance for interpretability.</p>
+</div>
+</div>
+<div class="section">
+<a id="s5"><!-- named anchor --></a><h2 class="main-title">Conclusions</h2>
+<p id="id462">Artificial intelligence is expected to have a significant impact on the future practice of neurosurgery. By identifying complex and hidden patterns that may be inconspicuous to human counterparts, ML algorithms may not only offer more accurate and more rapid tools to assist decision making but may also elucidate the underlying mechanisms involved in a number of neurological disorders.</p>
+<p id="id463">This study achieved both of our aims: to assess the current landscape of ML in iEEG, and to examine the relative benefits and limitations of ML approached as they related to neurosurgical problems. We conducted a systematic search across three databases encompassing the fields of medicine, science and engineering and identified 107 articles. We nonetheless recognize that some articles may have been missed within our systematic search considering the rapid rate at which papers within the realm of AI are currently being published.</p>
+<p id="id464">The studies reviewed herein reveal a promising future of AI in iEEG by shedding light on the variety of ML algorithms that can be employed to classify data in the context of seizures, motor tasks, cognitive tasks and sleep. Of these, supervised algorithms were most commonly employed with most articles published in the realm of seizures and epilepsy. The merits of using ML to tackle neurosurgical problems are broad including the development of more personalized neuroprostheses, standardizing seizure detection compared to human analyses, predicting surgical outcomes, and improving the speed and classification of sleep stages.</p>
+<p id="id465">As AI becomes increasingly utilized in medicine and surgery, we intend for this work to serve as a resource to aid in the interoperation and development of relevant technologies employing ML in the context of iEEG analysis.</p>
+</div>
+<div class="section">
+<a id="s6"><!-- named anchor --></a><h2 class="main-title">Data Availability Statement</h2>
+<p id="id466">The original contributions presented in the study are included in the article/<a href="#SM1">Supplementary Material</a>, further inquiries can be directed to the corresponding author/s.</p>
+</div>
+<div class="section">
+<a id="s7"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id467">NM and NW led the study and conducted the literature search, review and analyses. FZ conducted the statistical analyses and contributed to extracting content from the literature. SW and LE provided extensive input on machine learning. SW, HS, KM, LE, and GI assisted and provided input throughout the review process. NM, NW, and FZ wrote the manuscript with input and feedback from all authors. GI was in charge of the overall direction and planning. All authors contributed to the article and approved the submitted version.</p>
+</div>
+<div class="section">
+<a id="conf1"><!-- named anchor --></a><h2 class="main-title">Conflict of Interest</h2>
+<p id="id468">The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</div>
+<div class="section">
+<a id="s8"><!-- named anchor --></a><h2 class="main-title">Publisher's Note</h2>
+<p id="id469">All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="section">
+<a id="s9"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<p id="id470">The Supplementary Material for this article can be found online at: <a target="xrefwindow" href="https://www.frontiersin.org/articles/10.3389/fnhum.2022.913777/full#supplementary-material" id="id471">https://www.frontiersin.org/articles/10.3389/fnhum.2022.913777/full#supplementary-material</a></p>
+<div class="panel">
+<a id="SM1"><!-- named anchor --></a><a id="id472" href="Data_Sheet_1.docx"><div class="caption"><p class="first" id="id473">Click here for additional data file.</p></div></a>
+</div>
+<div class="panel">
+<a id="SM2"><!-- named anchor --></a><a id="id474" href="Data_Sheet_2.docx"><div class="caption"><p class="first" id="id475">Click here for additional data file.</p></div></a>
+</div>
+</div>
+<div class="back-section">
+<a id="id476"><!-- named anchor --></a><div class="section ref-list">
+<a id="id476"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">1</span></span> <a id="B1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id477"><!-- named anchor --></a>M. Abou JaoudeJ. JingH. SunC. S. JacobsK. R. PellerinM. B. Westover. (2020). Detection of mesial temporal lobe epileptiform discharges on intracranial electrodes using deep learning. Clin. Neurophysiol. 131, 133–141. 10.1016/j.clinph.2019.09.03131760212PMC6879011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">2</span></span> <a id="B2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id478"><!-- named anchor --></a>M. S. AkterM. R. IslamY. IimuraH. SuganoK. FukumoriD. Wang. (2020). Multiband entropy-based feature-extraction method for automatic identification of epileptic focus based on high-frequency components in interictal iEEG. Sci. Rep. 10, 7044. 10.1038/s41598-020-62967-z32341371PMC7184764</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">3</span></span> <a id="B3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id479"><!-- named anchor --></a>E. AlickovicJ. KevricA. Subasi (2018). Performance evaluation of empirical mode decomposition, discrete wavelet transform, and wavelet packed decomposition for automated epileptic seizure detection and prediction. Biomed. Signal Process. Control
+39, 94–102. 10.1016/j.bspc.2017.07.022</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">4</span></span> <a id="B4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id480"><!-- named anchor --></a>J. AndradeJ. CecilioM. SimoesF. SalesM. Castelo-Branco (2017). Separability of motor imagery of the self from interpretation of motor intentions of others at the single trial level: an EEG study. J. Neuroeng. Rehabil. 14, 63. 10.1186/s12984-017-0276-428651628PMC5485711</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">5</span></span> <a id="B5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id481"><!-- named anchor --></a>R. G. AndrzejakK. LehnertzF. MormannC. RiekeP. DavidC. E. Elger (2001). Indications of nonlinear deterministic and finite-dimensional structures in time series of brain electrical activity: Dependence on recording region and brain state. Phys. Rev. E.
+64, 61907. 10.1103/PhysRevE.64.06190711736210</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">6</span></span> <a id="B6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id482"><!-- named anchor --></a>R. G. AndrzejakK. SchindlerC. Rummel (2012). Nonrandomness, nonlinear dependence, and nonstationarity of electroencephalographic recordings from epilepsy patients. Phys. Rev. E.
+86, 46206. 10.1103/PhysRevE.86.04620623214662</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">7</span></span> <a id="B7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id483"><!-- named anchor --></a>M. AngrickC. HerffG. JohnsonJ. ShihD. KrusienskiT. Schultz (2019a). Interpretation of convolutional neural networks for speech spectrogram regression from intracranial recordings. Neurocomputing.
+342, 145–151. 10.1016/j.neucom.2018.10.080</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">8</span></span> <a id="B8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id484"><!-- named anchor --></a>M. AngrickC. HerffE. MuglerM. C. TateM. W. SlutzkyD. J. Krusienski. (2019b). Speech synthesis from ECoG using densely connected 3D convolutional neural networks. J. Neural Eng. 16, 036019. 10.1101/47864430831567PMC6822609</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">9</span></span> <a id="B9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id485"><!-- named anchor --></a>A. AntoniadesL. SpyrouD. Martin-LopezA. ValentinG. AlarconS. Sanei. (2017). Detection of interictal discharges with convolutional neural networks using discrete ordered multichannel intracranial EEG. IEEE Trans. Neural Syst. Rehabil. Eng. 25, 2285–2294. 10.1109/TNSRE.2017.275577028952945</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">10</span></span> <a id="B10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id486"><!-- named anchor --></a>A. AroraJ.-J. LinA. GasperianJ. MaldjianJ. SteinM. Kahana. (2018). Comparison of logistic regression, support vector machines, and deep learning classifiers for predicting memory encoding success using human intracranial EEG recordings. J. Neural Eng. 15, 066028. 10.1088/1741-2552/aae13130211695PMC9020643</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">11</span></span> <a id="B11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id487"><!-- named anchor --></a>E. B. AssiS. RihanaD. K. NguyenM. Sawan (2019). Effective connectivity analysis of iEEG and accurate localization of the epileptogenic focus at the onset of operculo-insular seizures. Epilepsy Res. 152, 42–51. 10.1016/j.eplepsyres.2019.02.00630878795</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">12</span></span> <a id="B12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id488"><!-- named anchor --></a>M. AyalaM. CabrerizoP. JayakarM. Adjouadi (2011). Subdural EEG classification into seizure and nonseizure files using neural networks in the gamma frequency band. J. Clin. Neurophysiol. 28, 20–29. 10.1097/WNP.0b013e31820512ee21221013</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">13</span></span> <a id="B13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id489"><!-- named anchor --></a>M. O. BaudJ. K. KleenG. K. AnumanchipalliL. S. HamiltonY.-L. TanR. Knowlton. (2018). Unsupervised learning of spatiotemporal interictal discharges in focal epilepsy. Neurosurgery.83, 683–691. 10.1093/neuros/nyx48029040672PMC6454796</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">14</span></span> <a id="B14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id490"><!-- named anchor --></a>H. L. BenzH. ZhangA. BezerianosS. AcharyaN. E. CroneX. Zheng. (2012). Connectivity analysis as a novel approach to motor decoding for prosthesis control. IEEE Trans. Neural Syst. Rehabil. Eng. 20, 143–152. 10.1109/TNSRE.2011.217530922084052PMC3327125</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">15</span></span> <a id="B15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id491"><!-- named anchor --></a>K. BeraK. A. SchalperD. L. RimmV. VelchetiA. Madabhushi (2019). Artificial intelligence in digital pathology—new tools for diagnosis and precision oncology. Nat. Rev. Clin. Oncol. 16, 703–715. 10.1038/s41571-019-0252-y31399699PMC6880861</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">16</span></span> <a id="B16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id492"><!-- named anchor --></a>B. BlankertzK.-R. MullerD. J. KrusienskiG. SchalkJ. R. WolpawA. Schlogl. (2006). The BCI competition III: validating alternative approaches to actual BCI problems. IEEE Trans. Neural Syst. Rehabil. Eng. 14, 153–159. 10.1109/TNSRE.2006.87564216792282</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">17</span></span> <a id="B17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id493"><!-- named anchor --></a>S. BoussenL. VellyC. BenarP. MetellusN. BruderA. Trebuchon (2016). <i>In vivo</i> tumour mapping using electrocorticography alterations during awake brain surgery: a pilot study. Brain Topogr. 29, 766–782. 10.1007/s10548-016-0502-627324381</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">18</span></span> <a id="B18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id494"><!-- named anchor --></a>A. BurrelloK. SchindlerL. BeniniA. Rahimi (2020). Hyperdimensional computing with local binary patterns: one-shot learning of seizure onset and identification of ictogenic brain regions using short-time iEEG recordings. IEEE Trans. Biomed. Eng. 67, 601–613. 10.1109/TBME.2019.291913731144620</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">19</span></span> <a id="B19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id495"><!-- named anchor --></a>A. M. ChanF. T. SunE. H. BotoB. M. Wingeier (2008). Automated seizure onset detection for accurate onset time determination in intracranial EEG. Clin. Neurophysiol. 119, 2687–2696. 10.1016/j.clinph.2008.08.02518993113</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">20</span></span> <a id="B20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id496"><!-- named anchor --></a>D. ChenS. WanF. S. Bao (2017). Epileptic focus localization using discrete wavelet transform based on interictal intracranial EEG. IEEE Trans. Neural Syst. Rehabil. Eng. 25, 413–425. 10.1109/TNSRE.2016.260439328113594</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">21</span></span> <a id="B21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id497"><!-- named anchor --></a>E. C.-P. ChuaK. PatelM. FitzsimonsC. J. Bleakley (2011). Improved patient specific seizure detection during pre-surgical evaluation. Clin. Neurophysiol. 122, 672–679. 10.1016/j.clinph.2010.10.00221130030</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">22</span></span> <a id="B22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id498"><!-- named anchor --></a>J. CimbalnikP. KlimesV. SladkyP. NejedlyP. JurakM. Pail. (2019). Multi-feature localization of epileptic foci from interictal, intracranial EEG. Clin. Neurophysiol. 130, 1945–1953. 10.1016/j.clinph.2019.07.02431465970PMC6759804</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">23</span></span> <a id="B23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id499"><!-- named anchor --></a>E. CombrissonK. Jerbi (2015). Exceeding chance level by chance: the caveat of theoretical chance levels in brain signal classification and statistical assessment of decoding accuracy. J. Neurosci. Methods
+250, 126–136. 10.1016/j.jneumeth.2015.01.01025596422</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">24</span></span> <a id="B24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id500"><!-- named anchor --></a>E. CombrissonM. Perrone-BertolottiJ. L. P. SotoG. AlamianP. KahaneJ.-P. Lachaux. (2017). From intentions to actions: neural oscillations encode motor processes through phase, amplitude and phase-amplitude coupling. Neuroimage.147, 473–487. 10.1016/j.neuroimage.2016.11.04227915117</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">25</span></span> <a id="B25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id501"><!-- named anchor --></a>F. CordellaA. L. CiancioR. SacchettiA. DavalliA. G. CuttiE. Guglielmelli. (2016). Literature review on needs of upper limb prosthesis users. Front. Neurosci. 10, 209. 10.3389/fnins.2016.0020927242413PMC4864250</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">26</span></span> <a id="B26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id502"><!-- named anchor --></a>M. D'AlessandroG. VachtsevanosR. EstellerJ. EchauzS. CranstounG. Worrell. (2005). A multi-feature and multi-channel univariate selection process for seizure prediction. Clin. Neurophysiol. 116, 506–516. 10.1016/j.clinph.2004.11.01415721064</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">27</span></span> <a id="B27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id503"><!-- named anchor --></a>H. DaoudM. Bayoumi (2020). Deep Learning Approach for Epileptic Focus Localization. IEEE Trans. Biomed. Circuits Syst. 14, 209–220. 10.1109/TBCAS.2019.295708731796417</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">28</span></span> <a id="B28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id504"><!-- named anchor --></a>R. M. DemirerM. S. OzerdemC. Bayrak (2009). Classification of imaginary movements in ECoG with a hybrid approach based on multi-dimensional Hilbert-SVM solution. J. Neurosci. Methods
+178, 214–218. 10.1016/j.jneumeth.2008.11.01119084556</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">29</span></span> <a id="B29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id505"><!-- named anchor --></a>M. DernerA. JahanbekamC. BauckhageN. AxmacherJ. Fell (2018). Prediction of memory formation based on absolute electroencephalographic phases in rhinal cortex and hippocampus outperforms prediction based on stimulus-related phase shifts. Eur. J. Neurosci. 47, 824–831. 10.1111/ejn.1387829473693</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">30</span></span> <a id="B30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id506"><!-- named anchor --></a>B. ElahianM. YeasinB. MudigoudarJ. W. WhelessA. Babajani-Feremi (2017). Identifying seizure onset zone from electrocorticographic recordings: a machine learning approach based on phase locking value. Seizure.
+51, 35–42. 10.1016/j.seizure.2017.07.01028772200</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">31</span></span> <a id="B31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id507"><!-- named anchor --></a>D. J. EnglotS. J. HanM. T. LawtonE. F. Chang (2011). Predictors of seizure freedom in the surgical treatment of supratentorial cavernous malformations. J. Neurosurg. 115, 1169–1174. 10.3171/2011.7.JNS1153621819194</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">32</span></span> <a id="B32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id508"><!-- named anchor --></a>D. J. EnglotD. D. WangJ. D. RolstonT. T. ShihE. F. Chang (2012). Rates and predictors of long-term seizure freedom after frontal lobe epilepsy surgery: a systematic review and meta-analysis. J. Neurosurg. 116, 1042–1048. 10.3171/2012.1.JNS11162022304450</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">33</span></span> <a id="B33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id509"><!-- named anchor --></a>Y. EzzyatP. A. WandaD. F. LevyA. KadelA. AkaI. Pedisich. (2018). Closed-loop stimulation of temporal cortex rescues functional networks and improves memory. Nat. Commun. 9, 1–8. 10.1038/s41467-017-02753-029410414PMC5802791</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">34</span></span> <a id="B34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id510"><!-- named anchor --></a>S. FattingerB. B. HeinzleG. RamantaniL. AbelaB. SchmittR. Huber (2019). Closed-loop acoustic stimulation during sleep in children with epilepsy: a hypothesis-driven novel approach to interact with spike-wave activity and pilot data assessing feasibility. Front. Hum. Neurosci. 13, 166. 10.3389/fnhum.2019.0016631164813PMC6536690</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">35</span></span> <a id="B35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id511"><!-- named anchor --></a>H. FirpiE. D. GoodmanJ. Echauz (2007a). Epileptic Seizure Detection Using Genetically Programmed Artificial Features. IEEE Trans. Biomed. Eng. 54, 212–224. 10.1109/TBME.2006.88693617278578</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">36</span></span> <a id="B36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id512"><!-- named anchor --></a>H. FirpiO. SmartG. WorrellE. MarshD. DlugosB. Litt (2007b). High-frequency oscillations detected in epileptic networks using swarmed neural-network features. Ann. Biomed. Eng. 35, 1573–1584. 10.1007/s10439-007-9333-717541826</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">37</span></span> <a id="B37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id513"><!-- named anchor --></a>B. FrauscherF. BartolomeiK. KobayashiJ. CimbalnikM. A. van ‘t KloosterS. Rampp. (2017). High-frequency oscillations: the state of clinical research. Epilepsia.58, 1316–1329. 10.1111/epi.1382928666056PMC5806699</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">38</span></span> <a id="B38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id514"><!-- named anchor --></a>D. GengW. ZhouY. ZhangS. Geng (2016). Epileptic seizure detection based on improved wavelet neural networks in long-term intracranial EEG. Biocybern. Biomed. Eng. 36, 375–384. 10.1016/j.bbe.2016.03.00126542318</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">39</span></span> <a id="B39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id515"><!-- named anchor --></a>M. GengW. ZhouG. LiuC. LiY. Zhang (2020). Epileptic seizure detection based on stockwell transform and bidirectional long short-term memory. IEEE Trans. NEURAL Syst. Rehabil. Eng. 28, 573–580. 10.1109/TNSRE.2020.296629031940545</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">40</span></span> <a id="B40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id516"><!-- named anchor --></a>N. GhoroghchianD. M. GroppeR. GenovT. A. ValianteS. C. Draper (2020). Node-centric graph learning from data for brain state identification. IEEE Trans. Signal Inf. Process. over Networks.
+6, 120–132. 10.1109/TSIPN.2020.2964230</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">41</span></span> <a id="B41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id517"><!-- named anchor --></a>C. GongX. ZhangY. Niu (2020). Identification of epilepsy from intracranial EEG signals by using different neural network models. Comput. Biol. Chem. 87, 107310. 10.1016/j.compbiolchem.2020.10731032599460</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">42</span></span> <a id="B42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id518"><!-- named anchor --></a>O. GrinenkoJ. LiJ. C. MosherI. Z. WangJ. C. BulacioJ. Gonzalez-Martinez. (2018). A fingerprint of the epileptogenic zone in human epilepsies. Brain.141, 117–131. 10.1093/brain/awx30629253102PMC5837527</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">43</span></span> <a id="B43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id519"><!-- named anchor --></a>G. Hellmann (1999). Multifold features determine linear equation for automatic spike detection applying neural nin interictal ECoG. Clin. Neurophysiol. 110, 887–894. 10.1016/S1388-2457(99)00040-110400202</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">44</span></span> <a id="B44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id520"><!-- named anchor --></a>J. HermizN. RogersE. KaestnerM. GanjiD. R. ClearyB. S. Carter. (2018). Sub-millimeter ECoG pitch in human enables higher fidelity cognitive neural state estimation. Neuroimage.176, 454–464. 10.1016/j.neuroimage.2018.04.02729678760</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">45</span></span> <a id="B45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id521"><!-- named anchor --></a>N. J. HillT. N. LalM. SchroderT. HinterbergerB. WilhelmF. Nijboer. (2006). Classifying EEG and ECoG signals without subject training for fast BCI implementation: comparison of nonparalyzed and completely paralyzed subjects. IEEE Trans. Neural Syst. Rehabil. Eng. 14, 183–186. 10.1109/TNSRE.2006.87554816792289</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">46</span></span> <a id="B46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id522"><!-- named anchor --></a>M. HosseiniD. PompiliK. ElisevichH. Soltanian-Zadeh (2017). Optimized deep learning for EEG big data and seizure prediction BCI <i>via</i> Internet of Things. IEEE Trans. Big Data
+3, 392–404. 10.1109/TBDATA.2017.2769670</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">47</span></span> <a id="B47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id523"><!-- named anchor --></a>M.-P. HosseiniD. PompiliK. ElisevichH. Soltanian-Zadeh (2018). Random ensemble learning for EEG classification. Artif. Intell. Med. 84, 146–158. 10.1016/j.artmed.2017.12.00429306539</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">48</span></span> <a id="B48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id524"><!-- named anchor --></a>M.-P. HosseiniT. X. TranD. PompiliK. ElisevichH. Soltanian-Zadeh (2020). Multimodal data analysis of epileptic EEG and rs-fMRI via deep learning and edge computing. Artif. Intell. Med. 104, 101813. 10.1016/j.artmed.2020.10181332498996</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">49</span></span> <a id="B49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id525"><!-- named anchor --></a>S. IkedaT. ShibataN. NakanoR. OkadaN. TsuyuguchiK. Ikeda. (2014). Neural decoding of single vowels during covert articulation using electrocorticography. Front. Hum. Neurosci. 8, 125. 10.3389/fnhum.2014.0012524639642PMC3945950</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">50</span></span> <a id="B50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id526"><!-- named anchor --></a>J. JacobsM. ZijlmansR. ZelmannC. É. ChatillonJ. HallA. Olivier. (2010). High-frequency electroencephalographic oscillations correlate with outcome of epilepsy surgery. Ann. Neurol. 67, 209–220. 10.1002/ana.2184720225281PMC3769290</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">51</span></span> <a id="B51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id527"><!-- named anchor --></a>N. JradA. KachenouraI. MerletF. BartolomeiA. NicaA. Biraben. (2017). Automatic detection and classification of high-frequency oscillations in depth-EEG signals. IEEE Trans. Biomed. Eng. 64, 2230–2240. 10.1109/TBME.2016.263339128113293</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">52</span></span> <a id="B52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id528"><!-- named anchor --></a>P. A. KarthickH. TanakaH. M. KhooJ. Gotman (2020). Could we have missed out the seizure onset: A study based on intracranial EEG. Clin. Neurophysiol. 131, 114–126. 10.1016/j.clinph.2019.10.01131760210</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">53</span></span> <a id="B53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id529"><!-- named anchor --></a>A. N. KhambhatiD. S. BassettB. S. OommenS. H. ChenT. H. LucasK. A. Davis. (2017). Recurring functional interactions predict network architecture of interictal and ictal states in neocortical epilepsy. eNeuro. 4, ENEURO.0091-16.2017. 10.1523/ENEURO.0091-16.201728303256PMC5343278</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">54</span></span> <a id="B54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id530"><!-- named anchor --></a>A. KharbouchA. ShoebJ. GuttagS. S. Cash (2011). An algorithm for seizure onset detection using intracranial EEG. EPILEPSY Behav. 22, S29–S35. 10.1016/j.yebeh.2011.08.03122078515PMC3713785</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">55</span></span> <a id="B55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id531"><!-- named anchor --></a>I. Kiral-KornekS. RoyE. NurseB. MashfordP. KarolyT. Carroll. (2018). Epileptic seizure prediction using big data and deep learning: toward a mobile system. EBIOMEDICINE.27, 103–111. 10.1016/j.ebiom.2017.11.03229262989PMC5828366</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">56</span></span> <a id="B56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id532"><!-- named anchor --></a>P. KlimesJ. CimbalnikM. BrazdilJ. HallF. DubeauJ. Gotman. (2019). NREM sleep is the state of vigilance that best identifies the epileptogenic zone in the interictal electroencephalogram. Epilepsia.60, 2404–2415. 10.1111/epi.1637731705527</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">57</span></span> <a id="B57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id533"><!-- named anchor --></a>S. B. KotsiantisI. ZaharakisP. Pintelas (2007). Supervised machine learning: a review of classification techniques. Emerg. Artif. Intell. Appl. Comput. Eng. 160, 3–24. 10.1007/s10462-007-9052-335161766</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">58</span></span> <a id="B58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id534"><!-- named anchor --></a>J. E. KragelY. EzzyatM. R. SperlingR. GorniakG. A. WorrellB. M. Berry. (2017). Similar patterns of neural activity predict memory function during encoding and retrieval. Neuroimage.155, 60–71. 10.1016/j.neuroimage.2017.03.04228377210PMC5789770</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">59</span></span> <a id="B59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id535"><!-- named anchor --></a>V. KremenB. H. BrinkmannJ. J. Van GompelM. SteadE. K. St LouisG. A. Worrell (2019). Automated unsupervised behavioral state classification using intracranial electrophysiology. J. Neural Eng. 16, 026004. 10.1088/1741-2552/aae5ab30277223</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">60</span></span> <a id="B60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id536"><!-- named anchor --></a>V. KremenJ. J. DuqueB. H. BrinkmannB. M. BerryM. T. KucewiczF. Khadjevand. (2017). Behavioral state classification in epileptic brain using intracranial electrophysiology. J. Neural Eng. 14, 26001. 10.1088/1741-2552/aa568828050973PMC5460075</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">61</span></span> <a id="B61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id537"><!-- named anchor --></a>J. P. LachauxD. RudraufP. Kahane (2003). Intracranial EEG and human brain mapping. J. Physiol. 97, 613–628. 10.1016/j.jphysparis.2004.01.01815242670</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">62</span></span> <a id="B62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id538"><!-- named anchor --></a>D. LaiX. ZhangW. ChenH. ZhangT. KangH. Yuan. (2020). Channel-wise characterization of high frequency oscillations for automated identification of the seizure onset zone. IEEE Access.8, 45531–45543. 10.1109/ACCESS.2020.2978290</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">63</span></span> <a id="B63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id539"><!-- named anchor --></a>D. LaiX. ZhangK. MaZ. ChenW. ChenH. Zhang. (2019). Automated detection of high frequency oscillations in intracranial EEG using the combination of short-time energy and convolutional neural networks. IEEE Access.7, 82501–82511. 10.1109/ACCESS.2019.2923281</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">64</span></span> <a id="B64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id540"><!-- named anchor --></a>Y. LeCunY. BengioG. Hinton (2015). Deep learning. Nature.
+521, 436–444. 10.1038/nature1453926017442</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">65</span></span> <a id="B65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id541"><!-- named anchor --></a>M. LiY. CuiD. HaoJ. Yang (2015). An adaptive feature extraction method in BCI-based rehabilitation. J. Intell. FUZZY Syst. 28, 525–535. 10.3233/IFS-141329</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">66</span></span> <a id="B66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id542"><!-- named anchor --></a>Q. LianY. QiG. PanY. Wang (2020). Learning graph in graph convolutional neural networks for robust seizure prediction. J. Neural Eng. 17, 035004. 10.1088/1741-2552/ab909d32375134</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">67</span></span> <a id="B67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id543"><!-- named anchor --></a>D. LiuZ. PangZ. Wang (2009). Epileptic seizure prediction by a system of particle filter associated with a neural network. EURASIP J. Adv. Signal Process. 2009, 638534. 10.1155/2009/638534</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">68</span></span> <a id="B68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id544"><!-- named anchor --></a>Y. LiuW. ZhouQ. YuanS. Chen (2012). Automatic seizure detection using wavelet transform and SVM in long-term intracranial EEG. IEEE Trans. Neural Syst. Rehabil. Eng. 20, 749–755. 10.1109/TNSRE.2012.220605422868635</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">69</span></span> <a id="B69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id545"><!-- named anchor --></a>J. A. LivezeyK. E. BouchardE. F. Chang (2019). Deep learning as a tool for neural data analysis: Speech classification and cross-frequency coupling in human sensorimotor cortex. PLoS Comput. Biol. 15, e1007091. 10.1371/journal.pcbi.100709131525179PMC6762206</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">70</span></span> <a id="B70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id546"><!-- named anchor --></a>N. MahmoodianA. BoeseM. FriebeJ. Haddadnia (2019). Epileptic seizure detection using cross-bispectrum of electroencephalogram signal. Seizure.
+66, 4–11. 10.1016/j.seizure.2019.02.00130769009</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">71</span></span> <a id="B71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id547"><!-- named anchor --></a>N. MakaramN. von EllenriederH. TanakaJ. Gotman (2020). Automated classification of five seizure onset patterns from intracranial electroencephalogram signals. Clin. Neurophysiol. 131, 1210–1218. 10.1016/j.clinph.2020.02.01132299004</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">72</span></span> <a id="B72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id548"><!-- named anchor --></a>J. G. MakinD. A. MosesE. F. Chang (2020). Machine translation of cortical activity to text with an encoder-decoder framework. Nat. Neurosci. 23, 575–582. 10.1038/s41593-020-0608-832231340PMC10560395</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">73</span></span> <a id="B73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id549"><!-- named anchor --></a>F. ManzouriS. HellerM. DuempelmannP. WoiasA. Schulze-Bonhage (2018). A comparison of machine learning classifiers for energy-efficient implementation of seizure detection. Front. Syst. Neurosci. 12, 43. 10.3389/fnsys.2018.0004330294263PMC6158331</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">74</span></span> <a id="B74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id550"><!-- named anchor --></a>D. P. McMullenG. HotsonK. D. KatyalB. A. WesterM. S. FiferT. G. McGee. (2014). Demonstration of a semi-autonomous hybrid brain–machine interface using human intracranial EEG, eye tracking, and computer vision to control a robotic upper limb prosthetic. IEEE Trans. Neural Syst. Rehabil. Eng. 22, 784–796. 10.1109/TNSRE.2013.229468524760914PMC4057363</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">75</span></span> <a id="B75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id551"><!-- named anchor --></a>V. A. MedvedevI. Agoureeva G A. M. Murro (2019). A Long Short-Term Memory neural network for the detection of epileptiform spikes and high frequency oscillations. Sci. Rep. 9, 19374. 10.1038/s41598-019-55861-w31852929PMC6920137</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">76</span></span> <a id="B76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id552"><!-- named anchor --></a>C. MeiselK. A. Bailey (2019). Identifying signal-dependent information about the preictal state: A comparison across ECoG, EEG and EKG using deep learning. EBIOMEDICINE.
+45, 422–431. 10.1016/j.ebiom.2019.07.00131300348PMC6642360</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">77</span></span> <a id="B77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id553"><!-- named anchor --></a>N. MemarianS. KimS. DewarJ. J. EngelR. J. Staba (2015). Multimodal data and machine learning for surgery outcome prediction in complicated cases of mesial temporal lobe epilepsy. Comput. Biol. Med. 64, 67–78. 10.1016/j.compbiomed.2015.06.00826149291PMC4554822</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">78</span></span> <a id="B78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id554"><!-- named anchor --></a>P. MirowskiD. MadhavanY. LeCunR. Kuzniecky (2009). Classification of patterns of EEG synchronization for seizure prediction. Clin. Neurophysiol. 120, 1927–1940. 10.1016/j.clinph.2009.09.00219837629</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">79</span></span> <a id="B79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id555"><!-- named anchor --></a>J.-J. MoJ.-G. ZhangW.-L. LiC. ChenN.-J. ZhouW.-H. Hu. (2019). Clinical value of machine learning in the automated detection of focal cortical dysplasia using quantitative multimodal surface-based features. Front. Neurosci. 12, 1008. 10.3389/fnins.2018.0100830686974PMC6336916</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">80</span></span> <a id="B80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id556"><!-- named anchor --></a>D. MoherA. LiberatiJ. TetzlaffD. G. AltmanD. AltmanG. Antes. (2009). Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. PLoS Med. 6, e1000097. 10.1371/journal.pmed.100009719621072PMC2707599</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">81</span></span> <a id="B81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id557"><!-- named anchor --></a>G. MontavonW. SamekK.-R. Müller (2018). Methods for interpreting and understanding deep neural networks. Digit. Signal Process. 73, 1–15. 10.1016/j.dsp.2017.10.011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">82</span></span> <a id="B82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id558"><!-- named anchor --></a>M. MullerK. SchindlerM. GoodfellowC. PolloC. RummelA. Steimer (2018). Evaluating resective surgery targets in epilepsy patients: A comparison of quantitative EEG methods. <i>J. Neurosci</i>. Methods.
+305, 54–66. 10.1016/j.jneumeth.2018.04.02129753683PMC6172189</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">83</span></span> <a id="B83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id559"><!-- named anchor --></a>M. NahiduzzamanM. TasnimN. T. NewazM. S. KaiserM. Mahmud (2020). “Machine learning based early fall detection for elderly people with neurological disorder using multimodal data fusion,” in International Conference on Brain Informatics (Padua, Italy: Springer), 204–214. 10.1007/978-3-030-59277-6_19</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">84</span></span> <a id="B84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id560"><!-- named anchor --></a>P. NejedlyJ. CimbalnikP. KlimesF. PlesingerJ. HalamekV. Kremen. (2019b). Intracerebral EEG Artifact Identification Using Convolutional Neural Networks. Neuroinformatics.17, 225–234. 10.1007/s12021-018-9397-630105544PMC6459786</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">85</span></span> <a id="B85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id561"><!-- named anchor --></a>P. NejedlyV. KremenV. SladkyJ. CimbalnikP. KlimesF. Plesinger. (2019a). Exploiting graphoelements and convolutional neural networks with long short term memory for classification of the human electroencephalogram. Sci. Rep. 9, 11383. 10.1038/s41598-019-47854-631388101PMC6684807</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">86</span></span> <a id="B86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id562"><!-- named anchor --></a>G. O'LearyD. M. GroppeT. A. ValianteN. VermaR. Genov (2018). NURIP: neural interface processor for brain-state classification and programmable-waveform neurostimulation. IEEE J. Solid-State Circuits
+53, 3150–3162. 10.1109/JSSC.2018.2869579</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">87</span></span> <a id="B87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id563"><!-- named anchor --></a>T. PaillaK. J. MillerV. Gilja (2019). Autoencoders for learning template spectrograms in electrocorticographic signals. J. Neural Eng. 16, 016025. 10.1088/1741-2552/aaf13f30524070</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">88</span></span> <a id="B88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id564"><!-- named anchor --></a>G. PanJ.-J. LiY. QiH. YuJ.-M. ZhuX.-X. Zheng. (2018). Rapid decoding of hand gestures in electrocorticography using recurrent neural networks. Front. Neurosci. 12, 555. 10.3389/fnins.2018.0055530210272PMC6119703</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">89</span></span> <a id="B89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id565"><!-- named anchor --></a>M. Z. ParvezM. Paul (2017). Seizure prediction using undulated global and local features. IEEE Trans. Biomed. Eng. 64, 208–217. 10.1109/TBME.2016.255313127093309</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">90</span></span> <a id="B90"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id566"><!-- named anchor --></a>A. PetrosianD. ProkhorovR. HomanR. DasheiffD. Wunsch (2000). Recurrent neural network based prediction of epileptic seizures in intra- and extracranial EEG. Neurocomputing.
+30, 201–218. 10.1016/S0925-2312(99)00126-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">91</span></span> <a id="B91"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id567"><!-- named anchor --></a>R. PrashanthS. D. RoyP. K. MandalS. Ghosh (2016). High-accuracy detection of early Parkinson's disease through multimodal features and machine learning. Int. J. Med. Inform. 90, 13–21. 10.1016/j.ijmedinf.2016.03.00127103193</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">92</span></span> <a id="B92"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id568"><!-- named anchor --></a>A. PrincipeM. LeyG. ConesaR. Rocamora (2019). Prediction error connectivity: A new method for EEG state analysis. Neuroimage.
+188, 261–273. 10.1016/j.neuroimage.2018.11.05230508680</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">93</span></span> <a id="B93"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id569"><!-- named anchor --></a>M. QuiggF. SunN. B. FountainB. C. JobstV. S. S. WongE. Mirro. (2015). Interrater reliability in interpretation of electrocorticographic seizure detections of the responsive neurostimulator. Epilepsia.56, 968–971. 10.1111/epi.1299825895054PMC5008166</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">94</span></span> <a id="B94"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id570"><!-- named anchor --></a>S. RaghuN. Sriraam (2017). Optimal configuration of multilayer perceptron neural network classifier for recognition of intracranial epileptic seizures. Expert Syst. Appl. 89, 205–221. 10.1016/j.eswa.2017.07.029</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">95</span></span> <a id="B95"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id571"><!-- named anchor --></a>A. RajkomarJ. DeanI. Kohane (2019). Machine learning in medicine. N. Engl. J. Med. 380, 1347–1358. 10.1056/NEJMra181425930943338</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">96</span></span> <a id="B96"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id572"><!-- named anchor --></a>N. F. RamseyE. SalariE. J. AarnoutseM. J. VansteenselM. G. BleichnerZ. V. Freudenburg (2018). Decoding spoken phonemes from sensorimotor cortex with high-density ECoG grids. Neuroimage.
+180, 301–311. 10.1016/j.neuroimage.2017.10.01128993231PMC6433278</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">97</span></span> <a id="B97"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id573"><!-- named anchor --></a>M. RashidM. IslamN. SulaimanB. S. BariR. K. SahaM. J. Hasan (2020). Electrocorticography based motor imagery movements classification using long short-term memory (LSTM) based on deep learning approach. SN Appl. Sci. 2, 211. 10.1007/s42452-020-2023-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">98</span></span> <a id="B98"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id574"><!-- named anchor --></a>H. RaviPrakashM. KorostenskajaE. M. CastilloK. H. LeeC. M. SalinasJ. Baumgartner. (2020). Deep learning provides exceptional accuracy to ecog-based functional language mapping for epilepsy surgery. Front. Neurosci. 14, 409. 10.3389/fnins.2020.0040932435182PMC7218144</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">99</span></span> <a id="B99"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id575"><!-- named anchor --></a>B. W. RotenbergC. F. GeorgeK. M. SullivanE. Wong (2010). Wait times for sleep apnea care in Ontario: a multidisciplinary assessment. Can. Respir. J. 17, 170–4. 10.1155/2010/42027520808975PMC2933773</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">100</span></span> <a id="B100"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id576"><!-- named anchor --></a>T. RutiglianoM. W. RivoltaR. PizziR. Sassi (2018). Composition of feature extraction methods shows interesting performances in discriminating wakefulness and NREM sleep. <i>IEEE Signal Process</i>. Lett. 25, 204–208. 10.1109/LSP.2017.2777919</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">101</span></span> <a id="B101"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id577"><!-- named anchor --></a>K. V. SabooY. VaratharajahB. M. BerryV. KremenM. R. SperlingK. A. Davis. (2019). Unsupervised machine-learning classification of electrophysiologically active electrodes during human cognitive task performance. Sci. Rep. 9, 17390. 10.1038/s41598-019-53925-531758077PMC6874617</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">102</span></span> <a id="B102"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id578"><!-- named anchor --></a>E. SathishN. SivakumaranS. P. SimonS. Raghavan (2017). Genetic algorithm based feature selection for classification of focal and non-focal intracranial electroencephalographic signals. J. Sci. Ind. Res. 76, 614–619.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">103</span></span> <a id="B103"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id579"><!-- named anchor --></a>R. SchererS. P. ZanosK. J. MillerR. P. N. RaoJ. G. Ojemann (2009). Classification of contralateral and ipsilateral finger movements for electrocorticographic brain-computer interfaces. Neurosurg. Focus.
+27, E12. 10.3171/2009.4.FOCUS098119569887</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">104</span></span> <a id="B104"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id580"><!-- named anchor --></a>J. SchrouffJ. Mourao-MirandaC. PhillipsJ. Parvizi (2016). Decoding intracranial EEG data with multiple kernel learning method. J. Neurosci. Methods.
+261, 19–28. 10.1016/j.jneumeth.2015.11.02826692030PMC4758824</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">105</span></span> <a id="B105"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id581"><!-- named anchor --></a>N. SciaraffaM. A. KladosG. BorghiniG. Di FlumeriF. BabiloniP. Arico (2020). Double-step machine learning based procedure for HFOs detection and classification. BRAIN Sci. 10, 220. 10.3390/brainsci1004022032276318PMC7226084</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">106</span></span> <a id="B106"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id582"><!-- named anchor --></a>J. T. SendersP. C. StaplesA. V. KarhadeM. M. ZakiW. B. GormleyM. L. D. Broekman. (2018). Machine learning and neurosurgical outcome prediction: a systematic review. World Neurosurg. 109, 476–486. 10.1016/j.wneu.2017.09.14928986230</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">107</span></span> <a id="B107"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id583"><!-- named anchor --></a>P. ShenoyK. J. MillerJ. G. OjemannR. P. N. Rao (2008). Generalized features for electrocorticographic BCIs. IEEE Trans. Biomed. Eng. 55, 273–280. 10.1109/TBME.2007.90352818232371</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">108</span></span> <a id="B108"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id584"><!-- named anchor --></a>M. ShoaranB. A. HaghiM. TaghaviM. FarivarA. Emami-Neyestanak (2018). Energy-efficient classification for resource-constrained biomedical applications. IEEE J. Emerg. Sel. Top. Circuits Syst. 8, 693–707. 10.1109/JETCAS.2018.2844733</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">109</span></span> <a id="B109"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id585"><!-- named anchor --></a>Y. Si (2020). Machine learning applications for electroencephalograph signals in epilepsy: a quick review. Acta Epileptol. 2, 5. 10.1186/s42494-020-00014-0</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">110</span></span> <a id="B110"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id586"><!-- named anchor --></a>Y. SongJ. Zhang (2016). Discriminating preictal and interictal brain states in intracranial EEG by sample entropy and extreme learning machine. J. Neurosci. Methods.
+257, 45–54. 10.1016/j.jneumeth.2015.08.02626335801</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">111</span></span> <a id="B111"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id587"><!-- named anchor --></a>M. SteadM. BowerB. H. BrinkmannK. LeeW. R. MarshF. B. Meyer. (2010). Microseizures and the spatiotemporal scales of human partial epilepsy. Brain.133, 2789–2797. 10.1093/brain/awq19020685804PMC2929333</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">112</span></span> <a id="B112"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id588"><!-- named anchor --></a>S. L. SumskyS. Santaniello (2019). Decision support system for seizure onset zone localization based on channel ranking and high-frequency EEG activity. IEEE J. Biomed. Heal. Informatics.
+23, 1535–1545. 10.1109/JBHI.2018.286787530176615</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">113</span></span> <a id="B113"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id589"><!-- named anchor --></a>M. SundararajanA. Najmi (2020). “The many Shapley values for model explanation.” In: International Conference on Machine Learning. PMLR, 9269–9278.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">114</span></span> <a id="B114"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id590"><!-- named anchor --></a>T. Syeda-Mahmood (2018). Role of big data and machine learning in diagnostic decision support in radiology. J. Am. Coll. Radiol. 15, 569–576. 10.1016/j.jacr.2018.01.02829502585</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">115</span></span> <a id="B115"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id591"><!-- named anchor --></a>T. M. ThomasD. N. CandreaM. S. FiferD. P. McMullenW. S. AndersonN. V. Thakor. (2019). Decoding native cortical representations for flexion and extension at upper limb joints using electrocorticography. IEEE Trans. Neural Syst. Rehabil. Eng. 27, 293–303. 10.1109/TNSRE.2019.289136230624221PMC6375785</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">116</span></span> <a id="B116"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id592"><!-- named anchor --></a>S. B. TomlinsonB. E. PorterE. D. Marsh (2017). Interictal network synchrony and local heterogeneity predict epilepsy surgery outcome among pediatric patients. Epilepsia.
+58, 402–411. 10.1111/epi.1365728166392</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">117</span></span> <a id="B117"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id593"><!-- named anchor --></a>N. D. TruongL. KuhlmannM. R. BonyadiD. QuerliozL. ZhouO. Kavehei (2019). Epileptic seizure forecasting with generative adversarial networks. IEEE Access.
+7, 143999–144009. 10.1109/ACCESS.2019.294469132745492</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">118</span></span> <a id="B118"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id594"><!-- named anchor --></a>N. D. TruongA. D. NguyenL. KuhlmannM. R. BonyadiJ. YangS. Ippolito. (2018). Integer convolutional neural network for seizure detection. IEEE J. Emerg. Sel. Top. CIRCUITS Syst. 8, 849–857. 10.1109/JETCAS.2018.2842761</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">119</span></span> <a id="B119"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id595"><!-- named anchor --></a>V. TuyisengeL. TrebaulM. BhattacharjeeB. Chanteloup-ForetC. Saubat-GuiguiI. Mindruta. (2018). Automatic bad channel detection in intracranial electroencephalographic recordings using ensemble machine learning. Clin. Neurophysiol. 129, 548–554. 10.1016/j.clinph.2017.12.01329353183PMC5819872</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">120</span></span> <a id="B120"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id596"><!-- named anchor --></a>A. Ulate-CamposF. CoughlinM. Gaínza-LeinI. S. FernándezP. L. PearlT. Loddenkemper (2016). Automated seizure detection systems and their effectiveness for each type of seizure. Seizure.
+40, 88–101. 10.1016/j.seizure.2016.06.00827376911</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">121</span></span> <a id="B121"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id597"><!-- named anchor --></a>Y. VaratharajahB. BerryJ. CimbalnikV. KremenJ. Van GompelM. Stead. (2018). Integrating artificial intelligence with real-time intracranial EEG monitoring to automate interictal identification of seizure onset zones in focal epilepsy. J. Neural Eng. 15, 046035. 10.1088/1741-2552/aac96029855436PMC6108188</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">122</span></span> <a id="B122"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id598"><!-- named anchor --></a>L. S. VidyaratneK. M. Iftekharuddin (2017). Real-Time Epileptic Seizure Detection Using EEG. IEEE Trans. Neural Syst. Rehabil. Eng. 25, 2146–2156. 10.1109/TNSRE.2017.269792028459693</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">123</span></span> <a id="B123"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id599"><!-- named anchor --></a>N. WangM. R. Lyu (2015). Extracting and selecting distinctive EEG features for efficient epileptic seizure prediction. IEEE J. Biomed. Heal. Informatics.
+19, 1648–1659. 10.1109/JBHI.2014.235864025248205</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">124</span></span> <a id="B124"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id600"><!-- named anchor --></a>C. T. WeidemannJ. E. KragelB. C. LegaG. A. WorrellM. R. SperlingA. D. Sharan. (2019). Neural activity reveals interactions between episodic and semantic memory systems during retrieval. J. Exp. Psychol. Gen., [Erratum in: J Exp Psychol Gen. (2019)0.148:782] 148, 1–12. 10.1037/xge000060430596439PMC6419095</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">125</span></span> <a id="B125"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id601"><!-- named anchor --></a>S. A. WeissZ. WaldmanF. RaimondoD. SlezakM. DonmezG. Worrell. (2019). Localizing epileptogenic regions using high-frequency oscillations and machine learning. Biomark. Med. 13, 409–418. 10.2217/bmm-2018-033531044598PMC6817967</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">126</span></span> <a id="B126"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id602"><!-- named anchor --></a>K. K. WongR. RostomilyS. T. C. Wong (2019). Prognostic gene discovery in glioblastoma patients using deep learning. Cancers. 11, 53. 10.3390/cancers1101005330626092PMC6356839</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">127</span></span> <a id="B127"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id603"><!-- named anchor --></a>M. WuT. WanM. DingX. WanY. DuJ. She (2018). A new unsupervised detector of high-frequency oscillations in accurate localization of epileptic seizure onset zones. IEEE Trans. Neural Syst. Rehabil. Eng. 26, 2280–2289. 10.1109/TNSRE.2018.287782030369447</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">128</span></span> <a id="B128"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id604"><!-- named anchor --></a>Z. XieO. SchwartzA. Prasad (2018). Decoding of finger trajectory from ECoG using deep learning. J. Neural Eng. 15, 036009. 10.1088/1741-2552/aa9dbe29182152</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">129</span></span> <a id="B129"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id605"><!-- named anchor --></a>W. XiongJ. DroppoX. HuangF. SeideM. L. SeltzerA. Stolcke. (2017). Toward human parity in conversational speech recognition. IEEE/ACM Trans. Audio, Speech, Lang. Process. 25, 2410–2423. 10.1109/TASLP.2017.2756440</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">130</span></span> <a id="B130"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id606"><!-- named anchor --></a>T. YanagisawaR. FukumaB. SeymourM. TanakaK. HosomiO. Yamashita. (2020). BCI training to move a virtual hand reduces phantom limb pain: a randomized crossover trial. Neurology.95, e417–e426. 10.1212/WNL.000000000000985832675074PMC7455320</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">131</span></span> <a id="B131"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id607"><!-- named anchor --></a>T. YanagisawaM. HirataY. SaitohA. KatoD. ShibuyaY. Kamitani. (2009). Neural decoding using gyral and intrasulcal electrocorticograms. Neuroimage.45, 1099–1106. 10.1016/j.neuroimage.2008.12.06919349227</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">132</span></span> <a id="B132"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id608"><!-- named anchor --></a>J. YangH. SinghE. L. HinesF. SchlagheckenD. D. IliescuM. S. Leeson. (2012). Channel selection and classification of electroencephalogram signals: an artificial neural network and genetic algorithm-based approach. Artif. Intell. Med. 55, 117–126. 10.1016/j.artmed.2012.02.00122503644</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">133</span></span> <a id="B133"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id609"><!-- named anchor --></a>Z. YuW. NieW. ZhouF. XuS. YuanY. Leng. (2020). Epileptic seizure prediction based on local mean decomposition and deep convolutional neural network. J. Supercomput. 76, 3462–3476. 10.1007/s11227-018-2600-6</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">134</span></span> <a id="B134"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id610"><!-- named anchor --></a>S. YuanW. ZhouQ. YuanX. LiQ. WuX. Zhao. (2015). Kernel collaborative representation-based automatic seizure detection in intracranial EEG. Int. J. Neural Syst. 25, 1550003. 10.1142/S012906571550003325653073</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">135</span></span> <a id="B135"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id611"><!-- named anchor --></a>Y. ZhangW. ZhouQ. YuanQ. Wu (2014). A low computation cost method for seizure prediction. Epilepsy Res. 108, 1357–1366. 10.1016/j.eplepsyres.2014.06.00725062892</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">136</span></span> <a id="B136"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id612"><!-- named anchor --></a>Y. ZhangW. ZhouS. Yuan (2015). Multifractal analysis and relevance vector machine-based automatic seizure detection in intracranial EEG. Int. J. Neural Syst. 25, 1550020. 10.1142/S012906571550020325986754</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">137</span></span> <a id="B137"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id613"><!-- named anchor --></a>Z. ZhangK. K. Parhi (2016). Low-complexity seizure prediction from iEEG/sEEG using spectral power and ratios of spectral power. IEEE Trans. Biomed. Circuits Syst. 10, 693–706. 10.1109/TBCAS.2015.247726426529783</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">138</span></span> <a id="B138"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id614"><!-- named anchor --></a>B. ZhaoW. HuC. ZhangX. WangY. WangC. Liu. (2020). Integrated automatic detection, classification and imaging of high frequency oscillations with stereoelectroencephalography. Front. Neurosci. 14, 546. 10.3389/fnins.2020.0054632581688PMC7287040</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">139</span></span> <a id="B139"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id615"><!-- named anchor --></a>Y. ZhengJ. ZhuY. QiX. ZhengJ. Zhang (2015). An automatic patient-specific seizure onset detection method using intracranial electroencephalography. Neuromodulation.
+18, 79–84. 10.1111/ner.1221425113135</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">140</span></span> <a id="B140"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id616"><!-- named anchor --></a>B. ZhuM. FarivarM. Shoaran (2020). ResOT: resource-efficient oblique trees for neural signal classification. IEEE Trans. Biomed. Circuits Syst. 1, 692–704. 10.1109/TBCAS.2020.300454432746347</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>Human Neuroscience</p>
+<div class="metadata-area"><p class="metadata-entry"><span class="generated">Subject: </span>Systematic Review</p></div>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>intracranial EEG (iEEG)</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>seizure</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>epilepsy</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>neurorecording</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>artificial intelligence</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>deep learning</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Counts: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Figures: </span>5</p>
+<p class="metadata-entry"><span class="generated">Tables: </span>1</p>
+<p class="metadata-entry"><span class="generated">Equations: </span>0</p>
+<p class="metadata-entry"><span class="generated">References: </span>140</p>
+<p class="metadata-entry"><span class="generated">Pages: </span>18</p>
+<p class="metadata-entry"><span class="generated">Words: </span>13298</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
