@@ -1,0 +1,1446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Mazzei, Ramjattan, and García: Machine Learning for Industry 4.0: A Systematic Review Using Deep Learning-Based Topic Modelling</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Sensors (Basel)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Sensors (Basel)</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>1660</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>sensors</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101204366</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>sensors</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Sensors (Basel, Switzerland)</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>1424-8220</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>Multidisciplinary Digital Publishing Institute  (MDPI)</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="sensors-22-08641.pdf">sensors-22-08641.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© 2022 by the authors.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1">Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">https://creativecommons.org/licenses/by/4.0/</a>).</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>05 October 2022</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>05 November 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>09 November 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>November 2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>22</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>22<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>422230<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>8641</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9697770</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9697770.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9697770</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9697770</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>36433236</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.3390/s22228641</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>sensors-22-08641</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Programme Erasmus+, Knowledge Alliances</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>621639-EPP-1-2020-1-IT-EPPKA2-KA</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>Ministry of University and Research (MUR)</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>DM MUR 1061/2022</p>
+<p class="metadata-entry"><span class="generated">Funding: </span>This work has been partially funded by Programme Erasmus+, Knowledge Alliances, Application No 621639-EPP-1-2020-1-IT-EPPKA2-KA, PLANET4: Practical Learning of Artificial iNtelligence on the Edge for indusTry 4.0. This research is supported by the Ministry of University and Research (MUR) as part of the PON 2014-2020 “Research and Innovation” resources—Green/Innovation Action—DM MUR 1061/2022.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Machine Learning for Industry 4.0: A Systematic Review Using Deep Learning-Based Topic Modelling</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Daniele Mazzei</p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Reshawn Ramjattan<span class="generated">[</span><a href="#c1-sensors-22-08641">*</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Óscar García</p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">Academic Editor</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="af1-sensors-22-08641"><!-- named anchor --></a>Department of Computer Science, University of Pisa, Largo B. Pontecorvo 3, 56127 Pisa, Italy</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id6"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="c1-sensors-22-08641"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>*<span class="generated">] </span>Correspondence: <a href="mailto:reshawn.ramjattan@phd.unipi.it">reshawn.ramjattan@phd.unipi.it</a></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell"><p class="first" id="id7">Machine learning (ML) has a well-established reputation for successfully enabling automation through its scalable predictive power. Industry 4.0 encapsulates a new stage of industrial processes and value chains driven by smart connection and automation. Large-scale problems within these industrial settings are a prime example of an environment that can benefit from ML. However, a clear view of how ML currently intersects with industry 4.0 is difficult to grasp without reading an infeasible number of papers. This systematic review strives to provide such a view by gathering a collection of 45,783 relevant papers from Scopus and Web of Science and analysing it with BERTopic. We analyse the key topics to understand what industry applications receive the most attention and which ML methods are used the most. Moreover, we manually reviewed 17 white papers of consulting firms to compare the academic landscape to an industry perspective. We found that security and predictive maintenance were the most common topics, CNNs were the most used ML method and industry companies, at the moment, generally focus more on enabling successful adoption rather than building better ML models. The academic topics are meaningful and relevant but technology focused on making ML adoption easier deserves more attention.</p></div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="sec1-sensors-22-08641"><!-- named anchor --></a><h2 class="main-title">1. Introduction</h2>
+<p id="id8">Industry 4.0, or the fourth industrial revolution, expresses the rapid changes to the industrial world due to the combined improvements of technologies that join the physical and digital worlds [<a href="#B1-sensors-22-08641">1</a>]. These technologies refer to the inter-connectivity of the internet of things (IoT), robotics and edge devices, as well as the smart automation brought by artificial intelligence [<a href="#B2-sensors-22-08641">2</a>,<a href="#B3-sensors-22-08641">3</a>,<a href="#B4-sensors-22-08641">4</a>]. Considering the large scale of industrial problems, the proven success in scalability and automation of Machine Learning’s (ML) predictive power holds a lot of potential to thrive here. Hence, in recent years, researchers and companies are exploring ML for industry 4.0 more and more, seeking these benefits [<a href="#B5-sensors-22-08641">5</a>]. Bertolini et al. put forward a review discussing the applications of Convolutional Neural Networks (CNNs) and Autoencoders to industry problems [<a href="#B6-sensors-22-08641">6</a>]. Similarly, Gupta and Farahat presented a tutorial at the 2020 ACM SIGKDD Conference on Knowledge Discovery and Data Mining, highlighting new methods for industrial AI such as deep Reinforcement Learning (RL) [<a href="#B7-sensors-22-08641">7</a>].</p>
+<p id="id9">However, industrial applications of ML are a complicated space due to the number of different intersecting domains, and the spike in interest over recent years, while positive, has made it challenging to thoroughly follow the trends of published work. A clear view of the area at scale allows interested parties to see evidence of rapidly increasing interest and, more specifically, where the attention of the community lies. This information is critical because it allows one to infer key points such as what research direction can be of useful contribution or what solution directions might be practical and worth real use.</p>
+<p id="id10">For analysing and extracting useful insights from large datasets of text, natural language processing (NLP) techniques have shown positive results [<a href="#B8-sensors-22-08641">8</a>]. Wang and Zhang reviewed different means of recognizing method entities in academic literature using NLP [<a href="#B9-sensors-22-08641">9</a>]. Firoozeh et al. also examine keyword extraction methods as a means of extracting knowledge from large text datasets [<a href="#B10-sensors-22-08641">10</a>]. Keyword extraction is a powerful means of understanding what an entire corpus is about. Topic modelling methods, on the other hand, can count and cluster important words in order to identify the major themes within the corpus [<a href="#B11-sensors-22-08641">11</a>]. An example of this is seen in the work by Jacobi et al. where they apply a topic modelling technique, Latent Dirichlet Allocation (LDA), to a news corpus [<a href="#B12-sensors-22-08641">12</a>]. This approach allows one to discover topics of semantic similarity with richer depth and less manual input than using keyword extraction or simple statistical counts on the corpus.</p>
+<p id="id11">This paper aims to provide a clear view of how ML methods intersect with industry 4.0 problems by analysing academic publications using NLP techniques. Through topic modelling, we were able to extract the main subareas of research from a dataset of scientific publications relevant to ML in industrial settings. Further analysis also allowed us to compare the use of ML techniques within each identified topic. Through these extractions, we answered the following research questions:<div class="list">
+<a id="id12"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="id13">What are the industry 4.0 problems where ML solutions see the most discussion?</p></li>
+<li><p id="id14">Which ML methods are used the most in these areas?</p></li>
+<li><p id="id15">How do the areas focused on in the academic literature compare to the areas of focus in the white papers of top industrial companies?</p></li>
+</ol>
+</div></p>
+<p id="id16">Instead of a traditional manual review of papers, the focus of this review is on the automatic extraction of insights in the field from a large unreadable corpus of papers. However, brief descriptions of a subset of the well-known ML methods and industry 4.0 problems are still important for a thorough introduction. Hence, the remainder of the introduction section will highlight these areas, but the systematic review is not limited to them.</p>
+<div class="section">
+<a id="sec1dot1-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">1.1. Machine Learning Methods</h3>
+<div class="section">
+<a id="sec1dot1dot1-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.1. Learning Paradigms</h4>
+<p id="id17">Before presenting specific methods, we must first clarify the major categories of learning paradigms they fall into.
+<div class="list">
+<a id="id18"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="id19">Supervised Learning. This refers to methods that are trained using labelled examples. They can be highly accurate and trustworthy if the inferences made in real use are similar enough to the examples used during training.</p></li>
+<li><p id="id20">Unsupervised Learning. This refers to methods that are used on unlabelled data. They are relatively less accurate but can be effective depending on the scenario and problem.</p></li>
+<li><p id="id21">Reinforcement Learning. This refers to methods that reward positive or correct behaviour and punishes incorrect behaviour. The difference is clarified here as it does not fall under the aforementioned learning paradigms but more on this type of learning is discussed in its relevant section below.</p></li>
+</ol>
+</div></p>
+</div>
+<div class="section">
+<a id="sec1dot1dot2-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.2. Neural Networks</h4>
+<p id="id22">An artificial neural network (ANN) is generally comprised of an input layer, one or many hidden layers of neurons and an output layer. An artificial neuron consists of input, weights applied to each input, a bias that is applied to the sum of the weighted inputs, and an activation function that converts the result to the expected form of the output (for example, the sigmoid function for a classification value of 0 or 1) [<a href="#B13-sensors-22-08641">13</a>,<a href="#B14-sensors-22-08641">14</a>,<a href="#B15-sensors-22-08641">15</a>].</p>
+<p id="id23">A neural network with a single hidden layer is typically called a perceptron network, while networks with many hidden layers are referred to as Deep Neural Networks or Deep Learning and are at the core of many modern and popular ML methods [<a href="#B16-sensors-22-08641">16</a>,<a href="#B17-sensors-22-08641">17</a>]. The various ML techniques we are about to discuss are deep neural networks that use different structures of layers as well as specific mechanics relevant to their types of data and problems.</p>
+</div>
+<div class="section">
+<a id="sec1dot1dot3-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.3. Convolutional Neural Networks</h4>
+<p id="id24">Convolutional Neural Networks (CNNs) are one of the most popular and successful deep learning architectures. Although based on Neural Networks, they are mainly used in the field of Computer Vision (CV), for image-based pattern recognition tasks such as image classification.</p>
+<p id="id25">Aside from input and output, the CNN architecture is typically composed of these types of layers: convolutional layers, pooling layers and fully connected layers. A convolutional layer computes the scalar product between a small region of the input image or matrix and a set of learnable parameters known as a kernel or filter. These calculations are the bulk of the CNN’s computational cost. The rectified linear unit (ReLU) activation function is also applied to the output before the next layer. A pooling layer performs downsampling, by replacing some output with a statistic derived from close information. This reduces the amount of input for the next layer, therefore reducing computational load. A fully connected layer is where all neurons are connected as in a standard ANN. This followed by an activation function helps produce scores in the expected format of the output (i.e., a classification score). Despite being computationally expensive, CNNs have seen many successful applications in recent years [<a href="#B18-sensors-22-08641">18</a>,<a href="#B19-sensors-22-08641">19</a>,<a href="#B20-sensors-22-08641">20</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot1dot4-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.4. Recurrent Neural Networks</h4>
+<p id="id26">Recurrent Neural Networks (RNNs) perform particularly well on problems with sequential data such as text or speech or instrument readings over time. This is because, unlike other deep learning algorithms, they have an internal memory that is meant to remember important aspects of the input. A feedback loop instead of forward-only neurons is what enables this memory. The output of some neurons can affect the following input to those neurons [<a href="#B21-sensors-22-08641">21</a>,<a href="#B22-sensors-22-08641">22</a>].</p>
+<p id="id27">However, because of the vanishing and exploding gradient problems caused by the way the neurons affect many others through memory in RNNs, their ability to learn effectively becomes limited. Hence, the Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) methods aimed to solve this issue and rose to popularity as well. They do so by using gates to determine what information to retain [<a href="#B23-sensors-22-08641">23</a>,<a href="#B24-sensors-22-08641">24</a>,<a href="#B25-sensors-22-08641">25</a>,<a href="#B26-sensors-22-08641">26</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot1dot5-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.5. Support Vector Machines</h4>
+<p id="id28">Support Vector Machines (SVMs) are linear models that can be used for both classification and regression problems. SVMs approximate the best lines or hyperplane for separating classes by maximising the margin between the line or hyperplane and the closest data points [<a href="#B27-sensors-22-08641">27</a>,<a href="#B28-sensors-22-08641">28</a>,<a href="#B29-sensors-22-08641">29</a>]. Although this best-fit separator can be used for regression, it is more commonly used for classification problems. It is considered to be a traditional ML method compared to its deep learning counterparts but can achieve good results with relatively lower compute and training data requirements.</p>
+</div>
+<div class="section">
+<a id="sec1dot1dot6-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.6. Decision Trees and Random Forests</h4>
+<p id="id29">Decision trees are graphs comprised of nodes that branch off based on thresholds. They can be constructed by recursively evaluating nodes or features to find the best predictive features [<a href="#B30-sensors-22-08641">30</a>,<a href="#B31-sensors-22-08641">31</a>]. By itself, it can be used to make predictions, but to increase the performance of the method and mitigate overfitting, an aggregated collection of decision trees called a random forest can be used. Random forests as an ensemble learning method can accomplish this by training some trees on subsets of the data or features and aggregating the results [<a href="#B32-sensors-22-08641">32</a>,<a href="#B33-sensors-22-08641">33</a>]. The technique of training trees on different samples or subsets of data is called bootstrap aggregating or “bagging” [<a href="#B34-sensors-22-08641">34</a>].</p>
+<p id="id30">They generally outperform decision trees but, depending on the data and problem, may not achieve an accuracy as high as gradient-boosted trees. Boosting is a technique where the random forest is an ensemble of weak learners or shallow decision trees that perform slightly better than guessing [<a href="#B35-sensors-22-08641">35</a>]. The intuition here is that weak learners are too simple to overfit and therefore their aggregated model is less likely to overfit. Gradient boosting builds on top of this by introducing gradient descent to minimize the loss in training [<a href="#B36-sensors-22-08641">36</a>,<a href="#B37-sensors-22-08641">37</a>]. An example of a popular and practical library implementation of gradient boosting is XGBoost [<a href="#B38-sensors-22-08641">38</a>].</p>
+<p id="id31">Much like the aforementioned SVMs, algorithms based on decision trees are considered to be more traditional than deep learning methods and work especially well in situations with low compute and limited training data.</p>
+</div>
+<div class="section">
+<a id="sec1dot1dot7-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.7. Autoencoders</h4>
+<p id="id32">Autoencoders are ANNs that follow the encoder–decoder architecture. They aim to learn efficient encodings of data in an unsupervised way. The encoder is responsible for learning how to produce these lower dimension representations from the input, while the decoder reconstructs the encodings to their original dimensions [<a href="#B39-sensors-22-08641">39</a>,<a href="#B40-sensors-22-08641">40</a>,<a href="#B41-sensors-22-08641">41</a>]. Autoencoders are commonly associated with dimensionality reduction, as a deep learning approach to the problem traditionally handled by methods such as Principal Component Analysis (PCA) [<a href="#B42-sensors-22-08641">42</a>]. Reconstruction by the decoder can be useful for evaluating the quality of encodings, generating new data or detecting anomalies if performance significantly differs from normal cases. So, generally, some common applications of autoencoders include anomaly detection, especially in cyber-security, facial recognition and image processing such as compression, denoising or feature detection [<a href="#B43-sensors-22-08641">43</a>,<a href="#B44-sensors-22-08641">44</a>,<a href="#B45-sensors-22-08641">45</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot1dot8-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.8. Reinforcement Learning</h4>
+<p id="id33">Unlike the previously described supervised and unsupervised learning methods, Reinforcement Learning (RL) trains models by rewarding and punishing behaviour [<a href="#B46-sensors-22-08641">46</a>,<a href="#B47-sensors-22-08641">47</a>]. The intuition behind this is to let models explore and discover optimal behaviours instead of trying explicitly to train that behaviour with many samples. In RL, the model is defined as an agent that can choose actions from a predefined set of possible choices. The agent receives a sequence of observations from its environment as the basis or input for deciding on actions. Depending on the action chosen the agent is rewarded or punished for it to learn the desired behaviour.</p>
+<p id="id34">This training is accomplished through defining concepts such as a policy, reward function and value function. A policy is a function that defines the agent’s behaviour, it maps the current observable state to an action and can be either deterministic or stochastic. A Value function estimates the expected return or reward of a certain state given a policy function. This allows the agent to assess different policies in a particular situation. The reward function returns a score based on the agent’s action in the environment’s state (i.e., a state–action pair).</p>
+<p id="id35">Deep RL is attained when deep neural networks are used to approximate any of the prior mentioned functions [<a href="#B48-sensors-22-08641">48</a>]. Proximal Policy Optimization (PPO), Advantage Actor-Critic (A2C) and Deep Q Networks (DQN) are some examples of popular Deep RL algorithms. RL also sees successful practical use areas such as games, robotic control, finance, recommender systems and load allocation in telecommunications or energy grids [<a href="#B49-sensors-22-08641">49</a>,<a href="#B50-sensors-22-08641">50</a>,<a href="#B51-sensors-22-08641">51</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot1dot9-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.9. Nearest Neighbour</h4>
+<p id="id36">The Nearest Neighbour (NN) method is a simple algorithm that finds a defined number of samples closest to the new input point [<a href="#B52-sensors-22-08641">52</a>,<a href="#B53-sensors-22-08641">53</a>,<a href="#B54-sensors-22-08641">54</a>]. It is often used as a method for classifying new points based on the closest stored points, where closeness as a metric of similarity can be defined but is usually standard euclidean distance. Computation of the nearest neighbours can be conducted by brute force, or by methods devised to address brute force’s shortcomings such as K-D tree or Ball Tree [<a href="#B55-sensors-22-08641">55</a>,<a href="#B56-sensors-22-08641">56</a>]. Despite being such a simple method, NN has shown to be effective even for complex problems.</p>
+</div>
+<div class="section">
+<a id="sec1dot1dot10-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.1.10. Generative Adversarial Networks</h4>
+<p id="id37">Generative Adversarial Networks (GANs) are unsupervised models concerned with recognizing patterns in input data to produce new output samples that would pass as believable members of the original set. The GAN architecture consists of a generator, a DL model for producing new samples, and a discriminator, a DL model for discerning fake samples from real ones. The discriminator receives feedback based on the known labels of which samples are real and the generator receives feedback based on how well the discriminator discerns its output. Thus, the networks are trained in tandem [<a href="#B57-sensors-22-08641">57</a>]. Despite being the most recent of the discussed methods (first described in 2014), its adoption in real cases is growing rapidly given the high potential usefulness of generating data points to support meaningful problems with limited data availability. Direct applications aside from training data synthesis also include, among others, image processing such as restoration or superresolution, image-to-image translation, generating music and drug discovery [<a href="#B58-sensors-22-08641">58</a>,<a href="#B59-sensors-22-08641">59</a>].</p>
+</div>
+</div>
+<div class="section">
+<a id="sec1dot2-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">1.2. Industry 4.0 Problems</h3>
+<div class="section">
+<a id="sec1dot2dot1-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.1. Fault Detection and Diagnosis in Maintenance</h4>
+<p id="id38">Considering the strong implications for safety, efficiency and cost, monitoring for machine malfunctions in an effective manner is a task that is both common and of high importance in the industrial world. Therefore, the scalable automation of these Fault Detection and Diagnosis (FDD) systems through ML techniques is one of the most popular types of ML applications in the field [<a href="#B60-sensors-22-08641">60</a>,<a href="#B61-sensors-22-08641">61</a>,<a href="#B62-sensors-22-08641">62</a>].</p>
+<p id="id39">Given the nature of many faults such as signs of deterioration or surface defects on manufactured products, visual inspection is a regular and meaningful aspect of FDD systems. Hence, CNNs are regularly utilized in systems that aspire to automate this [<a href="#B63-sensors-22-08641">63</a>,<a href="#B64-sensors-22-08641">64</a>,<a href="#B65-sensors-22-08641">65</a>,<a href="#B66-sensors-22-08641">66</a>,<a href="#B67-sensors-22-08641">67</a>,<a href="#B68-sensors-22-08641">68</a>].</p>
+<p id="id40">However, with the unique variety of the machines, products and components FDD systems must deal with, procuring large image datasets for each of them to leverage CNNs is no easy task. Time-series sensors that record metrics such as pressure, vibration or temperature are far more common in industry settings. So models that attempt to automate FDD through those relevant data types are also seen. With the success and popularity of CNNs, some still try to apply them to this data by using visualizations of the time-series data [<a href="#B69-sensors-22-08641">69</a>]. However, models that specifically focus on these data types such as RNNs, although not as commonly seen, are developed and deserve as much attention [<a href="#B70-sensors-22-08641">70</a>,<a href="#B71-sensors-22-08641">71</a>,<a href="#B72-sensors-22-08641">72</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot2dot2-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.2. Predicting Remaining Useful Lifetime</h4>
+<p id="id41">In a similar vein to FDDs, the efficiency and planning of industry maintenance can be empowered by predicting how much useful time a machine or part has left. This can be applied to components that need regular replacement such as bearings or batteries [<a href="#B73-sensors-22-08641">73</a>,<a href="#B74-sensors-22-08641">74</a>], or in more challenging cases, can be sudden rapid failures in complex processes such as ion milling [<a href="#B75-sensors-22-08641">75</a>]. With the stronger temporal aspect to this problem, sequence models are more commonly seen [<a href="#B75-sensors-22-08641">75</a>,<a href="#B76-sensors-22-08641">76</a>,<a href="#B77-sensors-22-08641">77</a>] but creative approaches using other methods such as autoencoders [<a href="#B78-sensors-22-08641">78</a>], decision trees [<a href="#B79-sensors-22-08641">79</a>], RL [<a href="#B80-sensors-22-08641">80</a>] and GANs [<a href="#B81-sensors-22-08641">81</a>] have also been presented.</p>
+</div>
+<div class="section">
+<a id="sec1dot2dot3-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.3. Autonomous Operation</h4>
+<p id="id42">Automation of repetitive operations is another impactful area for leveraging ML in industry 4.0. Robotic operation is one of the most direct approaches to this and most commonly makes use of CNNs or RL or both [<a href="#B82-sensors-22-08641">82</a>,<a href="#B83-sensors-22-08641">83</a>,<a href="#B84-sensors-22-08641">84</a>]. RL is an effective method for developing agents or models that are dynamic and adaptable to the same tasks in different environments, while CNNs are useful here for recognizing visual features in tasks such as object detection or aiding RL agents in observing the environment space. These applications can be as generic as automated pick and place [<a href="#B85-sensors-22-08641">85</a>] or as use-case specific as, for example, automating coastal cranes for shipping containers [<a href="#B86-sensors-22-08641">86</a>]. UAV navigation for smart agriculture is also another strong growing application worth mentioning [<a href="#B87-sensors-22-08641">87</a>,<a href="#B88-sensors-22-08641">88</a>].</p>
+<p id="id43">However, autonomous operation also reaches other aspects of industrial businesses such as customer service or marketing operations [<a href="#B89-sensors-22-08641">89</a>,<a href="#B90-sensors-22-08641">90</a>]. As these domains are inherently more digital, they are a source of simpler and easier but still effective forms of automation.</p>
+</div>
+<div class="section">
+<a id="sec1dot2dot4-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.4. Forecasting Load</h4>
+<p id="id44">Load forecasting refers to predicting changes in demand over time, typically regarding energy or electrical grids. Load forecasting is critical for adequate preparation to cater for increased demands. For example, consider a power company that may need to acquire additional materials such as natural gas to meet the expected demands. Accurate forecasting will not only result in better services but can significantly improve economic and environmental efficiency in their energy usage [<a href="#B91-sensors-22-08641">91</a>,<a href="#B92-sensors-22-08641">92</a>].</p>
+<p id="id45">As a temporal regression problem, this industry 4.0 use case is one of the few where deep sequence models such as RNNs or LSTMs are used much more than alternative models [<a href="#B93-sensors-22-08641">93</a>,<a href="#B94-sensors-22-08641">94</a>,<a href="#B95-sensors-22-08641">95</a>]. Furthermore, while there is evidence that shows they do perform well, they are not exempt from common industrial challenges in adoption and practical use such as data availability or complex system integration.</p>
+</div>
+<div class="section">
+<a id="sec1dot2dot5-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.5. Optimizing Energy Consumption</h4>
+<p id="id46">The case of optimizing energy consumption in industrial settings, in some ways, can be viewed as an extension of the previously described load forecasting problem. There is also some similar usage of ML, in that models are often designed for forecasting energy consumption [<a href="#B96-sensors-22-08641">96</a>,<a href="#B97-sensors-22-08641">97</a>].</p>
+<p id="id47">These forecasts can be useful in supporting decisions to optimize the response to that demand. An example of this is seen in work conducted by [<a href="#B98-sensors-22-08641">98</a>], where they optimize demand responses through a rule and ML-based model for controlling and regulating a heat pump and thermal storage. Similarly, in [<a href="#B99-sensors-22-08641">99</a>], IoT-based data collection was used to optimize energy consumption for a food manufacturer by providing them with analysis results to support decisions. Other examples of specific approaches to optimizing energy consumption include offloading ML compute to the edge or fog [<a href="#B100-sensors-22-08641">100</a>], using RL for optimizing the trajectory of UAVs in intelligent transportation systems and smart agriculture [<a href="#B101-sensors-22-08641">101</a>,<a href="#B102-sensors-22-08641">102</a>] and using the ant colony optimization algorithm to improve routing performance and therefore energy consumption in wireless sensor networks [<a href="#B103-sensors-22-08641">103</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot2dot6-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.6. Cyber-Security</h4>
+<p id="id48">One of the most general and common use cases faced in industry 4.0 regardless of the specific field is Cyber-Security. As digitization increases more and more so does the need to sufficiently protect those digital assets and processes. The importance and priority of security are also notably higher for supervisory control and data acquisition (SCADA) systems [<a href="#B104-sensors-22-08641">104</a>]. This is because SCADA is a category of applications for controlling industrial processes and therefore a digital interface to large-scale physical components. Furthermore, the historic ramifications of famous attacks such as Stuxnet act as evidence of the threat and dangers posed by poor security practices [<a href="#B105-sensors-22-08641">105</a>].</p>
+<p id="id49">Malicious attacks can be viewed as very unusual behaviour the system does not expect in regular use, and because of this, from an ML standpoint it is often formulated as an anomaly detection problem. Traditional methods such as k-Nearest Neighbours-based clustering algorithms or decision trees can be used to approach this problem [<a href="#B106-sensors-22-08641">106</a>,<a href="#B107-sensors-22-08641">107</a>,<a href="#B108-sensors-22-08641">108</a>], but in recent years deep autoencoders have seen a lot of successful use [<a href="#B109-sensors-22-08641">109</a>,<a href="#B110-sensors-22-08641">110</a>,<a href="#B111-sensors-22-08641">111</a>,<a href="#B112-sensors-22-08641">112</a>]. This is performed by training on data, such as activity logs or network requests, that is almost all normal and non-malicious. If the malicious activity goes through the autoencoder then, because it is anomalous and unlike previous data, the decoder would reconstruct it more poorly than usual.</p>
+<p id="id50">It must be noted however that although the formulation of anomaly detection is effective and popular, it is not perfect in the case of complex attack sequences trying to mimic normal behaviour. To that end, other methods for security and intrusion detection are still just as important. For example, RL has also seen use in vulnerability analysis by seeking to train agents to be both attackers and defenders for the system being evaluated and learn complex attack behaviours [<a href="#B113-sensors-22-08641">113</a>,<a href="#B114-sensors-22-08641">114</a>,<a href="#B115-sensors-22-08641">115</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot2dot7-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.7. Localizing Assets</h4>
+<p id="id51">While the Global Positioning System (GPS) is often sufficient for determining location in outdoor environments, the indoor localization of assets is a more challenging problem due to the lack of line of sight to satellites. This is useful for several applications including security by tracking entry to unauthorized areas, factory safety by ensuring the right need number of people is maintained and data analytics by providing an additional means of monitoring processes and key performance indicators (KPIs) such as idle time or loading time [<a href="#B116-sensors-22-08641">116</a>].</p>
+<p id="id52">For indoor localization Wi-Fi fingerprinting has become one of the most common technology choices as it does not require a line of sight and can work with any Wi-Fi-capable device without any additional hardware [<a href="#B117-sensors-22-08641">117</a>]. Deep learning has successfully supported this area by enabling cases such as self-calibrating fingerprint databases for localization with autoencoders [<a href="#B118-sensors-22-08641">118</a>] or recognizing received signal strength (RSS) patterns in device-free localization with autoencoders and CNNs [<a href="#B119-sensors-22-08641">119</a>,<a href="#B120-sensors-22-08641">120</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot2dot8-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.8. Soft Sensors</h4>
+<p id="id53">The complexity of industrial processes, especially in cases such as the chemical, bioprocess or steel industries, is often reflected in a large number of sensor metrics and variables for monitoring, controlling and optimizing these processes. Soft Sensors are software-based data-driven ways to estimate, simplify and model these large numbers of physical sensors with varying constraints [<a href="#B121-sensors-22-08641">121</a>,<a href="#B122-sensors-22-08641">122</a>]. By having this representation of the process’s state, it becomes easier to detect faults, recognize changes in performance through tracking and optimize decisions in scheduling or supply chain management. Traditional statistical methods such as PCA or support vector machines (SVM) have often been applied to soft sensing [<a href="#B123-sensors-22-08641">123</a>], but modern methods such as autoencoders that can produce latent representations of data well have also seen use [<a href="#B111-sensors-22-08641">111</a>,<a href="#B124-sensors-22-08641">124</a>].</p>
+</div>
+<div class="section">
+<a id="sec1dot2dot9-sensors-22-08641"><!-- named anchor --></a><h4 class="subsection-title">1.2.9. Logistics and Resource Allocation</h4>
+<p id="id54">The efficiency of logistical issues such as delivery schedules, manufacturing pipelines, raw material management and the allocation of resources throughout all processes are incredibly important to lowering costs and maximizing productivity in industrial companies [<a href="#B125-sensors-22-08641">125</a>,<a href="#B126-sensors-22-08641">126</a>], while these issues are still handled quite well by optimization algorithms such as particle swarm or ant colony optimization [<a href="#B127-sensors-22-08641">127</a>,<a href="#B128-sensors-22-08641">128</a>,<a href="#B129-sensors-22-08641">129</a>,<a href="#B130-sensors-22-08641">130</a>,<a href="#B131-sensors-22-08641">131</a>]. There has been increasing interest and usage of RL for these problems [<a href="#B132-sensors-22-08641">132</a>,<a href="#B133-sensors-22-08641">133</a>]. RL and its exploratory behaviour-driven means of solving problems can allow for greater flexibility in adapting to unforeseen circumstances, especially in the case of the ever-changing and unique needs some companies may have. That being said, RL solutions are complex to develop and implement as is, this becomes even more challenging when companies must find a way to integrate them into their already complex processes so optimization algorithms still stand as the stronger simpler source of solutions.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<a id="sec2-sensors-22-08641"><!-- named anchor --></a><h2 class="main-title">2. Related Works</h2>
+<p id="id55">There have been several reviews and surveys in the space of ML for industry 4.0. Some focus on specific ML application areas such as predictive maintenance [<a href="#B60-sensors-22-08641">60</a>,<a href="#B134-sensors-22-08641">134</a>,<a href="#B135-sensors-22-08641">135</a>], soft sensing [<a href="#B136-sensors-22-08641">136</a>] and fault detection [<a href="#B137-sensors-22-08641">137</a>]. Some try to be more comprehensive, looking at ML applied to an entire industry or common pipelines, such as manufacturing [<a href="#B138-sensors-22-08641">138</a>,<a href="#B139-sensors-22-08641">139</a>,<a href="#B140-sensors-22-08641">140</a>,<a href="#B141-sensors-22-08641">141</a>,<a href="#B142-sensors-22-08641">142</a>], transportation [<a href="#B143-sensors-22-08641">143</a>,<a href="#B144-sensors-22-08641">144</a>] and energy systems [<a href="#B145-sensors-22-08641">145</a>,<a href="#B146-sensors-22-08641">146</a>].</p>
+<p id="id56">While others, in a similar vein to this paper, aim to cover the entire area of ML for industry 4.0. For example, the tutorial by Gupta and Farahat exemplified impactful industrial applications based on categories of ML methods [<a href="#B7-sensors-22-08641">7</a>]. Similarly, work in [<a href="#B142-sensors-22-08641">142</a>] and [<a href="#B147-sensors-22-08641">147</a>] provide an overview of how ML methods can enhance solutions to industrial problems. However, although a review based on manually read papers can provide an in-depth analysis, they are limited to amounts that can be feasibly read and only observe a limited sample of the industry 4.0 literature. The aforementioned reviews are useful and impactful works, but cannot provide insight on some questions, such as what industrial business functions receive the most attention or which receive too little, without quantitative results.</p>
+<p id="id57">Hence, systematic reviews of this nature have also been explored, for example by Bertolini et al. [<a href="#B6-sensors-22-08641">6</a>]. They first curated a dataset of papers by querying the Scopus, Web of Science and Google Scholar databases. They then performed a series of restrictions to refine the dataset down to 147 papers which they manually reviewed. A similar approach was taken by Liao et al. by manually vetting papers included in their analysis [<a href="#B148-sensors-22-08641">148</a>]. Such an approach can extract highly relevant and representative papers for detailed insights, such as key applications and techniques, through manual review.</p>
+<p id="id58">Even so, larger-scale insights can be attained by working with the bigger datasets that are possible given the massive trustworthy databases available. Lee and Lim explore an industry 4.0 review based on text-mining and provided insightful clarity on the state of the field [<a href="#B149-sensors-22-08641">149</a>]. Nonetheless, their method was only semi-automated and included a limited dataset of 660 articles up to 2018. Advanced NLP methods, specifically Topic Modelling, enable the automated analysis of large-scale document sets that are infeasible for manual reading. The effectiveness of Topic Modelling for analysing research fields was exemplified by the work of Mazzei et al. surveying Social Robotics [<a href="#B150-sensors-22-08641">150</a>] and Atzeni et al. observing ML and Wi-Fi [<a href="#B151-sensors-22-08641">151</a>]. This approach can be useful for understanding the space at large by allowing the insights to be truly data-centric rather than heavily influenced by the sampling method. That is, its benefit over manual reviews is that it can cover a vast number of publications, infeasible for manual reading, and discover its topics. To the best of our knowledge, at the time of writing, there are no systematic reviews such as this for ML in industry 4.0.</p>
+</div>
+<div class="section">
+<a id="sec3-sensors-22-08641"><!-- named anchor --></a><h2 class="main-title">3. Methodology</h2>
+<p id="id59">This section will detail the steps behind obtaining, preparing and analysing our data with respect to our goals and previously discussed approach. We break down the methodology into the steps of paper gathering, preprocessing, meta-analysis, topic modelling and topic analysis.</p>
+<div class="section">
+<a id="sec3dot1-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">3.1. Paper Gathering</h3>
+<p id="id60">Our dataset curation follows the structure provided by the PRISMA statement for reporting on systematic reviews. <a href="#sensors-22-08641-f001">Figure 1</a> illustrates the structure followed. Note that all of the report screening was completed after retrieving the data due to the limitations of the database APIs used.</p>
+<p id="id61">The papers retrieved for this study were sourced from Scopus and Web of Science via their respective APIs. These databases are commonly used for systematic reviews and their comprehensiveness has been studied [<a href="#B152-sensors-22-08641">152</a>,<a href="#B153-sensors-22-08641">153</a>]. The query presented in Listing 1 was used for both sources. The query constrains results to mention both a term referring to industrial settings as well as a term strongly relevant to machine learning or some of its most popular methods. Due to the limitations of the database providers, only paper titles, abstracts and metadata were collected.</p>
+<div class="array"><table><tbody>
+<a id="id62"><!-- named anchor --></a><tr>
+<a id="id63"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id64"><!-- named anchor --></a><b>Listing 1.</b> Paper Retrieval Query.</td>
+</tr>
+<tr>
+<a id="id65"><!-- named anchor --></a><td align="left" valign="middle" rowspan="1" colspan="1">
+<a id="id66"><!-- named anchor --></a>
+(‘industrial’ OR ‘industry 4.0’)<br class="br">
+AND<br class="br">
+(‘deep learning’ OR ‘machine learning’<br class="br">
+      OR ‘artificial intelligence’ OR ‘convolutional neural’<br class="br">
+      OR ‘recurrent neural net’ OR ‘long short-term memory’<br class="br">
+      OR ‘deep autoencoder’ OR ‘reinforcement learn’<br class="br">
+      OR ‘generative adversarial network’ OR ‘deep neural’)<br class="br">
+</td>
+</tr>
+</tbody></table></div>
+<p id="id67">Scopus returned 42,072 papers and Web of Science returned 71,989. After removing duplicates, the dataset had 71,074 papers with 21,283 and 49,825 coming from Scopus and Web of Science, respectively. We then restricted the dataset to papers from the most recent 6 years because changes in the trends of ML and data analytics are rapid, and we are more interested in the currently prevailing topics than those of a decade ago.</p>
+<p id="id68"><a href="#sensors-22-08641-f002">Figure 2</a> shows Google Trends’ interests over time for Machine Learning and industry 4.0. There was a substantial increase in interest for both topics beginning in January 2016. Furthermore, <a href="#sensors-22-08641-f003">Figure 3</a> shows the publications over time from the initial papers retrieved, and there is a clear spike in the number of papers from 2016 onward. These observations further support our decision to restrict our analysis to the last 6 years. Hence, the final corpus consisted of 45,783 papers from January 2016 to February 2022.</p>
+</div>
+<div class="section">
+<a id="sec3dot2-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">3.2. Preprocessing</h3>
+<p id="id69">Data cleaning tasks firstly consisted of catering for the differences in the fields returned by the two databases in order the merge paper sets for analysis. Secondly, the main text corpus to be analyzed was prepared. This included the following: combining the title, keywords and abstract fields, converting all characters to lowercase, lemmatization and lastly, removing punctuation, digits and stopwords.</p>
+</div>
+<div class="section">
+<a id="sec3dot3-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">3.3. Meta-Analysis</h3>
+<p id="id70">The preliminary analysis was aimed at supporting our attempt to answer the research questions targeted in <a href="#sec1-sensors-22-08641">Section 1</a>. This meta-analysis included: a plot of papers over time, a count and comparison of paper source types, and counts of papers that directly reference key popular ML methods.</p>
+</div>
+<div class="section">
+<a id="sec3dot4-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">3.4. Topic Modelling</h3>
+<p id="id71">The topic modelling performed on the corpus utilized the BERTopic algorithm [<a href="#B154-sensors-22-08641">154</a>]. This technique was chosen over others such as LDA [<a href="#B155-sensors-22-08641">155</a>] or NMF [<a href="#B156-sensors-22-08641">156</a>] because BERTopic requires less effort in hyperparameter tuning and it trampolines off of the successful transformer-based model, BERT [<a href="#B157-sensors-22-08641">157</a>]. It also empirically showed better results in topic coherence and topic diversity on benchmark datasets [<a href="#B154-sensors-22-08641">154</a>].</p>
+<p id="id72">As described in its original article, the BERTopic algorithm comprises the following major steps:<div class="list">
+<a id="id73"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="id74"><b>Paper Embeddings with BERT</b>. Converting the text of the input papers to a numerical representation is the first step. BERT is used for this because it extracts embeddings according to the context of the words and the number of available pre-trained models makes it easier to obtain more accurate extractions. The Sentence-BERT implementation and pre-trained models are commonly used and were used in this case as well [<a href="#B158-sensors-22-08641">158</a>].</p></li>
+<li><p id="id75"><b>Embedding Dimensionality Reduction with UMAP</b>. Before clustering the embeddings to discover topics, dimensionality reduction is performed using UMAP because many clustering algorithms perform poorly on high-dimension data. UMAP was chosen because of its good performance in retaining information [<a href="#B159-sensors-22-08641">159</a>].</p></li>
+<li><p id="id76"><b>Paper Clustering with HDBSCAN</b>. With the dimensionality reduced to a reasonable amount, the embeddings are then clustered. HDBSCAN is chosen by the author because it does not force data points into clusters. It instead considers them outliers and it works well with UMAP since UMAP maintains structure well even in a low dimensional space [<a href="#B160-sensors-22-08641">160</a>].</p></li>
+<li><p id="id77"><b>Topic Representation with c-TF-IDF</b>. For deriving important representative words for the clusters of documents, a class-based variant of TF-IDF [<a href="#B161-sensors-22-08641">161</a>] that generalizes the method to a group of documents is used. Thus, resulting in a list of words representing a topic for each cluster. This representation is also used to give greater control over the number of clusters by merging similar and uncommon topics.</p></li>
+</ol>
+</div></p>
+</div>
+<div class="section">
+<a id="sec3dot5-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">3.5. Topic Analysis</h3>
+<p id="id78">Upon the generation of the topic words by the prior step, we assessed the quality of the result by observing approximate visualizations of the clusters and manually vetting small random samples of each topic. If the quality of the result was deemed subpar, we adjusted the HDBSCAN hyperparameters, such as <span class="inline-formula"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="mm1" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mo>_</mml:mo><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mo>_</mml:mo><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>z</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:mrow></mml:math></span> (the minimum size of clusters) and <span class="inline-formula"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="mm2" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mo>_</mml:mo><mml:mi>s</mml:mi><mml:mi>a</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mi>l</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:mrow></mml:math></span> (how conservative the clusters should be when determining outliers), and repeated the process. The topic labels were manually determined based on the produced topic words and the sample vetting. We then analyzed each topic to observe: the percentage present in the corpus for each topic, the counts of papers referencing important ML methods within each topic and the keywords by count for each topic.</p>
+</div>
+<div class="section">
+<a id="sec3dot6-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">3.6. Garnering an Industry Perspective</h3>
+<p id="id79">Our third research question sought to examine a comparison between the areas focused on in the academic literature versus those in the white papers of top industrial companies. To that end, we manually gathered a small sample of such white papers and extracted the key ML for industry 4.0 topics. The query, “[company] white papers industry 4.0 machine learning ai”, was used on a popular search engine, Google, for a brief list of top professional consulting companies. The blogs and websites of these companies were also directly checked. The companies and their works included McKinsey &amp; Company [<a href="#B162-sensors-22-08641">162</a>,<a href="#B163-sensors-22-08641">163</a>,<a href="#B164-sensors-22-08641">164</a>,<a href="#B165-sensors-22-08641">165</a>,<a href="#B166-sensors-22-08641">166</a>], Accenture [<a href="#B167-sensors-22-08641">167</a>,<a href="#B168-sensors-22-08641">168</a>,<a href="#B169-sensors-22-08641">169</a>], Microsoft [<a href="#B170-sensors-22-08641">170</a>,<a href="#B171-sensors-22-08641">171</a>], Bain &amp; Company [<a href="#B172-sensors-22-08641">172</a>], Deloitte [<a href="#B173-sensors-22-08641">173</a>], PriceWaterhouseCoopers [<a href="#B174-sensors-22-08641">174</a>,<a href="#B175-sensors-22-08641">175</a>] and Boston Consulting Group [<a href="#B176-sensors-22-08641">176</a>,<a href="#B177-sensors-22-08641">177</a>,<a href="#B178-sensors-22-08641">178</a>]. The papers were manually vetted and selected for a similar degree of relevance and recency to our academic corpus, resulting in a set of 17 white papers. These papers were not included in the academic paper corpus or analyzed using the topic modelling procedure, they were manually reviewed and their main ML for industry 4.0 topics were extracted. The topics were extracted if the authors considered them to be of significant potential value to industrial companies.</p>
+</div>
+<div class="section">
+<a id="sec3dot7-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">3.7. Meta-Analysis Results</h3>
+<p id="id80">A comparison of paper source types is presented in <a href="#sensors-22-08641-t001">Table 1</a>. Additionally, to gauge the presence of common ML techniques, we counted the papers that mention key popular ML methods in their title, abstract or keywords. This was conducted by writing lists of identifying terms for each ML method considered. The counts of papers referencing these ML methods are shown in <a href="#sensors-22-08641-f004">Figure 4</a>; however, “Neural Networks”, with a count of 36,229 papers, were excluded from that chart as it would overshadow the other results and affect readability.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec4-sensors-22-08641"><!-- named anchor --></a><h2 class="main-title">4. Results</h2>
+<div class="section">
+<a id="sec4dot1-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">4.1. Topic Modelling Results</h3>
+<p id="id81"><a href="#sensors-22-08641-f005">Figure 5</a> shows plots of the topic words and c-TF-IDF scores produced by the topic modelling model after tuning the clustering hyperparameters. By further reducing the dimensions of the embeddings to two during the UMAP step, we produced a visualization of the topic clusters as shown in <a href="#sensors-22-08641-f006">Figure 6</a>. This visualization as well as the sample vetting described in <a href="#sec3dot4-sensors-22-08641">Section 3.4</a> allowed us to confirm that the topics cover the majority of the papers aside from outliers and capture their main themes. Based on reviewing the full lists of topic words and samples for each topic, the labels presented in <a href="#sensors-22-08641-t002">Table 2</a> depict the primary topics found and their percentage of presence in the dataset.</p>
+<p id="id82">However, with the size of our corpus, the top 3 topics are wide-spanning branches of the ML for industry 4.0 subfields. They also encompass several thousands of papers, which helps emphasize the significance of those areas but impede our ability to examine specific research directions. Hence we further analyzed the top three results by repeating the topic modelling, tuning and labelling processes on them to produce their sub-topics, while considering sub-topics, the top 20 topics are put forward in <a href="#sensors-22-08641-t003">Table 3</a>.</p>
+<p id="id83">Furthermore, the counts by paper for ML methods were repeated for each topic. The resulting counts are reported in <a href="#sensors-22-08641-f007">Figure 7</a>.</p>
+</div>
+<div class="section">
+<a id="sec4dot2-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">4.2. Industry Perspective Results</h3>
+<p id="id84">By manually reviewing the previously mentioned collection of white papers from consulting companies, we curated lists of high potential value areas in ML for industry 4.0 for each paper. These areas or topics were categorized, grouped and visualized in the mind map illustrated in <a href="#sensors-22-08641-f008">Figure 8</a>.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec5-sensors-22-08641"><!-- named anchor --></a><h2 class="main-title">5. Discussion</h2>
+<div class="section">
+<a id="sec5dot1-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">5.1. Meta-Analysis</h3>
+<p id="id85">The meta-analysis results do not all directly contribute to answering our research questions, but they provide useful context on the state of the area and our data. The publications over time show the increasing interest in the area of ML for industry 4.0, with a strong spike in the last 6 years. By looking at the trend of publications with five or more citations, we see that the spike’s significance is less than 30% of its counterpart. This can be attributed to recency and the suddenness of the spike leading to many similar works competing. However, the trend of the spike in interest is maintained and allows us to estimate if the trend holds for impactful or popular papers.</p>
+<p id="id86">The paper sources of our corpus are dominated by articles and conference papers, an expected result. Unexpectedly, the percentage of articles outshines the conference papers, a counter-intuitive result since Computer Science research findings tend to be published in conference papers [<a href="#B179-sensors-22-08641">179</a>]. Examining the results further we saw that for Scopus, the percentage of conference papers and articles were 67.9% and 25.5% respectively, while for Web of Science it was 20.8% and 73.3%. A likely contributor to this is that Scopus has better coverage of conference material, as previous work by Pranckutė has shown [<a href="#B180-sensors-22-08641">180</a>]. Hence, considering the Web of Science results outnumbered Scopus 33,632 to 12,151, it skews the final counts. Additionally, ML for industry 4.0 is much more interdisciplinary than the typical Computer Science sub-field so the tendency may not hold as well as usual.</p>
+</div>
+<div class="section">
+<a id="sec5dot2-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">5.2. RQ 1: What Are the Industry 4.0 Problems Where ML Solutions See the Most Discussion?</h3>
+<p id="id87">Towards answering this question we used topic modelling to extract insights from a large corpus and rationalized the choice of a deep learning-based approach in BERTopic. The modelling produced the top topic words for each cluster of papers, and we used the top 10 topic words in addition to manually vetted samples of clusters to assign final topic labels. The word scores in <a href="#sensors-22-08641-f005">Figure 5</a> represent a quick look at what BERTopic produced. The topic words in that figure are the most common words in the topic defined by the algorithm. By themselves they clearly hint to what the topic is about, but to give accurate labels to each topic we also manually vetted random sample papers from each. The 2D visualization of the labelled corpus shown in <a href="#sensors-22-08641-f006">Figure 6</a> makes it clear that the topics covered the corpus sufficiently with reasonable clusters. The clusters are cleanly separated and illustrate the differences in topic presence at a glance.</p>
+<p id="id88">From <a href="#sensors-22-08641-t002">Table 2</a> we can see that the top three topics are wide branches of the overall area. It is a useful observation to see their dominance at a general level but a closer inspection was deemed appropriate to meet the specificity of the remaining topics for a fairer comparison. The remaining 7 of that table were more specific cases of ML but the top 10 encapsulate the variety of the problems discussed in ML for industry 4.0.</p>
+<p id="id89">Topics 0 and 1, “Predictive Models and Digital Systems for Industrial Machines” and “Robotic Automation”, are fairly general areas but show a significant focus on smart production applications. Topic 2, “Modelling for Agriculture and Water Treatment”, was a less expected observation. Smart agriculture is home to large branches of ML applications such as the classification of plants and crop health or using soil characteristics to inform decisions and actions. Hence it is understandable as a key topic. Water treatment on the other hand is a more specific class of industrial applications. The grouping of the two together is likely around the term “water” itself and can be construed as the model failing to distinguish the difference based on the implied context. This is a known limitation of BERTopic, where the topic representation stage is applied to bags-of-words and does not explicitly leverage the embedded representations in this step. This issue in addition to how wide of an area the top 3 topics cover, motivated further analysis on these three subsets by repeating the topic modelling procedure.</p>
+<p id="id90">That process resulted in <a href="#sensors-22-08641-t003">Table 3</a> where we see a similar degree of specificity across the topics. The general result of smart production being the most significant remained, but now we gain greater insight into the observation. Security and intrusion detection was the most prevalent area. taking into account the high potential costs and damage of cyber-attacks, the risks taken on by increasingly digitized systems and the regulatory compliances companies must meet, it is a logical finding that security is the most studied topic in the area. Similarly, another of the top 20 is gait recognition, a biometric authenticator often used as an added physical security measure [<a href="#B181-sensors-22-08641">181</a>]. Forecasting load and power demands, as well as optimization of job scheduling, are ultimately concerned with the goal of dynamically improving logistic processes in the supply chain. Sentiment analysis and recommender systems are a part of optimizing and personalizing customer service and are the only topic in the table concerned with this business function. The general theme of the remaining top 20 topics is of automating smart production tasks. Noteworthy inclusions among them, are “Fault diagnosis and detection” and “Predictive maintenance and RUL forecasting”. These are both focused on automating tasks that reduce the downtime of machines and are frequently a dominant topic in manual reviews.</p>
+</div>
+<div class="section">
+<a id="sec5dot3-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">5.3. RQ 2: Which ML Methods Are Used the Most in These Areas?</h3>
+<p id="id91">In a step toward answering the question “Which ML methods are the most common in the area?”, we counted the papers mentioning certain popular methods in their title, abstract and keywords. Across the entire corpus, Convolutional Neural Networks (CNNs) were the most common, with almost double the count of the second most common method. CNNs stand among the most popular deep learning methods given the recent string of successes in the computer vision domain. If we are to discuss how appropriate the choice of this model type is we must also consider the type of data most common in industrial settings for the problems many seek to solve. We cannot deduce this across the entire corpus easily, so we also look at the same count applied to each topic cluster of papers.</p>
+<p id="id92">From <a href="#sensors-22-08641-f007">Figure 7</a> we can see the method counts per topic. Convolutional neural networks (CNNs) are dominant in the top three topics but not by the magnitude the previous count figure alluded to. The clearest gap in usage is for the robotic automation topic. This is likely due to a combination of how much image data is present in that space and the popularity of computer vision applications in general.</p>
+<p id="id93">Reinforcement learning (RL) is the second most popular for topic 1, “Robotic Automation”, which is interesting because the practical applications of this area are not as solidified as some of those in supervised learning. That result adds to the argument that robotic automation in industry 4.0 is a prime area for impactful real-world use of RL. This topic also has a higher than usual count for generative adversarial networks (GANs), which suggests that the space is often looked upon for the newer but exciting machine learning techniques. RL also has the highest count for the “optimization of job scheduling” topic but more traditional optimization techniques not covered in the scope of this review are more likely to be the standard solutions to this problem.</p>
+<p id="id94">Recurrent neural networks (RNNs) see higher counts in topics where sequential or time-series data are more prominent, such as topic 3, “Forecasting load and power demands”, and topic 7, “Sentiment analysis and recommender systems”. However, it can be argued that for topic 0, “Predictive Models and Digital Systems for Industrial Machines”, one might expect to see RNNs over CNNs due to the heavy presence of multivariate time-series data in industrial machine sensors. The fact that autoencoders see a much higher count there than anywhere else attests to this. Thus, CNNs may be seeing more common use due to their popularity.</p>
+<p id="id95">Meanwhile, the more traditional methods, support vector machines (SVMs) and decision trees see consistent mentions across all topics, likely due to their simplicity, lower computational demands and well-established reputations in the space of machine learning.</p>
+</div>
+<div class="section">
+<a id="sec5dot4-sensors-22-08641"><!-- named anchor --></a><h3 class="section-title">5.4. RQ 3: How Do the Areas Focused on in the Academic Literature Compare to the Areas of Focus in the White Papers of Top Industrial Companies?</h3>
+<p id="id96">Answering this question required a look at ML for industry 4.0 from the high-level perspective of top companies. To that end, we reviewed the recent and relevant white papers of top consulting companies to provide a foundation for comparing the academic literature’s focuses. We chose top consulting companies as they are often the ones providing guidance and insight to industry actors directly. These consulting companies can be considered leading experts in their practical domains, they also have an incentive to share their insights and trends publicly. The mind map shown in <a href="#sensors-22-08641-f008">Figure 8</a> was the result.</p>
+<p id="id97">If we categorize the topic modelling results presented similarly, each of the major categories in the mind map, such as smart production or connectivity, would be represented, while not every minor category, such as marketing or Virtual and Augmented Reality (VR/AR), is present in the topics extracted, this is understandable considering we look only at the top 20 specific topics. Moreover, some areas are inherently less “publishable” than others. For example, if a team were to discover a competitive edge in Product Development, publishing those findings could reduce that edge or eliminate it. Similarly, some areas provide more opportunities to publish by having a plethora of valuable use cases where ML models can be applied. Robotic automation and predictive maintenance are examples of such areas.</p>
+<p id="id98">A limitation of the mind map is that it does not consider comparisons between the topics it covers when in reality not all of the high-potential areas shown are equal in impact and development complexity. So to gauge these aspects for our comparison, we also look at the specific results of the McKinsey &amp; Company global survey on the state of AI in 2021 [<a href="#B166-sensors-22-08641">166</a>]. They surveyed 1843 participants, representing a full range of regions, industries, company sizes, functional specialities, and tenures, on their adoption and usage of AI. The survey shows that manufacturing use cases had the highest impact on decreasing costs. Hence, it makes sense that the academic literature would show a significant focus on smart production areas as well. Likewise, “Sentiment analysis and recommender systems” may seem like an inconsistent result among the other topics, but Customer Care and Personalization falls under Service Operations which, according to their survey, is the most commonly adopted AI use case category.</p>
+<p id="id99">From this, we can posit that the academic literature generally aligns with the major focuses of industry experts. However, despite the aforementioned caveats, we believe that some areas still deserve more attention. Companies are focused not only on individual problems or use cases but also on the bigger picture of how they connect to the rest of their pipelines and how they integrate with existing systems. Therefore, we believe it would be worthwhile for future works to reflect this. Topics that lean towards this goal include democratized technology, Human–Machine-Interaction through digital twins and VR/AR, risk control concerning AI and ML in marketing.</p>
+</div>
+</div>
+<div class="section">
+<a id="sec6-sensors-22-08641"><!-- named anchor --></a><h2 class="main-title">6. Limitations and Promising Directions</h2>
+<p id="id100">One of the major limitations standing in the way of practical ML advancements that can help close the gaps between industry and academia is the availability of relevant data. Useful datasets certainly exist but given the variety of sources that occur from industry to industry, it is difficult to find truly comprehensive public datasets. The use of GANs to generate training samples for problems with limited data is therefore an interesting and useful direction of work, especially considering the large amounts of data DL methods require.</p>
+<p id="id101">Another key issue is the complexity of deploying and integrating new ML systems. Large companies are likely to have capable teams and additional infrastructure in place to properly facilitate ML, but the vast majority of small to medium enterprises (SMEs) that do not have this would need to make an upfront investment for engineers or consultancy to explore the benefits of ML to their specific cases. Democratized technology and smart integration through IoT show great promise for simplifying the path to ML adoption. They enable general but useful ML solutions to be tried and built upon instead of upfront cost, thus smoothening the rate of investment required by SMEs.</p>
+<p id="id102">Computer vision solutions have seen a lot of success and popularity in industry 4.0 and the attention it receives is well deserved. However, models that revolve around common existing sensors for machines (temperature, pressure, vibration etc.) and software (ERP, CRM, MES, etc.) would likely be cheaper in terms of computation and hardware. Therefore, time-series ML models relevant to these rich data sources are also a promising direction for advancing ML in industry 4.0.</p>
+</div>
+<div class="section">
+<a id="sec7-sensors-22-08641"><!-- named anchor --></a><h2 class="main-title">7. Conclusions</h2>
+<p id="id103">Machine learning has a lot of potential value in industry 4.0 due to its scalable automation. This notion is supported by the spike in relevant publications over the last six years. With that much research activity, comprehensive reviews are needed to provide a foundation for guiding new studies and industry action plans, while there are several high-quality reviews in the field, not many attempt to review the area on a large scale and none utilize Topic Modelling to maximize the literature coverage. We aimed to do such a review by gathering papers from the Scopus and Web of Science databases, building a topic model using BERTopic, analysing the results and comparing it to a manually reviewed industry perspective.</p>
+<p id="id104">We targeted our research towards three research questions, “What are the Industry 4.0 problems where ML solutions see the most discussion?”, “Which ML methods are used the most in these areas?” and “How do the areas focused on in the academic literature compare to the areas of focus in the white papers of top industrial companies?”. From reviewing the top 10 topics, we found that the most frequent problems fell under Security, Smart Production, IoT Connectivity, Service Optimization, Robotic Automation and Logistics Optimization. By counting the mentions of ML methods for each topic, we saw that CNNs were the most dominant despite the high presence of time-series data in industrial settings. We manually reviewed 17 company white papers to garner an industry perspective and compared them to our topics extracted from academic literature. In comparing the two, we observed that the coverage of areas generally aligned well, and the higher presence of smart production topics was justified given its real-world impact and the fact that some areas are more easily publishable than others.</p>
+<p id="id105">However, we also recognized that companies are focused on higher-level goals rather than just individual ML use cases or improvements. Hence, we remarked that the topics supporting ML adoption and integration deserve attention and increased focus in future works. Examples of these areas include democratized technology, digital twins, human-AI-interaction and AI risk control.</p>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id108"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id106"><!-- named anchor --></a><p id="id107"><span class="generated">[1]</span> <b>Publisher’s Note:</b> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id110"><!-- named anchor --></a><h2 class="main-title">Author Contributions</h2>
+<p id="id109">Conceptualization, D.M. and R.R.; methodology, D.M. and R.R.; software, R.R.; validation, D.M. and R.R.; formal analysis, R.R.; investigation, R.R.; resources, R.R.; data curation, R.R.; writing—original draft preparation, R.R.; writing—review and editing, D.M. and R.R.; visualization, R.R.; supervision, D.M.; project administration, D.M. All authors have read and agreed to the published version of the manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id112"><!-- named anchor --></a><h2 class="main-title">Institutional Review Board Statement</h2>
+<p id="id111">Not applicable.</p>
+</div>
+<div class="back-section">
+<a id="id114"><!-- named anchor --></a><h2 class="main-title">Informed Consent Statement</h2>
+<p id="id113">Not applicable.</p>
+</div>
+<div class="back-section">
+<a id="id116"><!-- named anchor --></a><h2 class="main-title">Data Availability Statement</h2>
+<p id="id115">The dataset generated during the current study is not publicly available as it contains proprietary information that the authors acquired through a license. Information on how to obtain it and reproduce the analysis is available in the presented work or from the corresponding author on request.</p>
+</div>
+<div class="back-section">
+<a id="id118"><!-- named anchor --></a><h2 class="main-title">Conflicts of Interest</h2>
+<p id="id117">The authors declare no conflict of interest.</p>
+</div>
+<div class="back-section">
+<a id="id119"><!-- named anchor --></a><div class="section ref-list">
+<a id="id119"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1.</span> <a id="B1-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id120"><!-- named anchor --></a>H. LasiP. FettkeH.G. KemperT. FeldM. HoffmannIndustry 4.0Bus. Inf. Syst. Eng.2014623924210.1007/s12599-014-0334-4</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2.</span> <a id="B2-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id121"><!-- named anchor --></a>Y. LuIndustry 4.0: A survey on technologies, applications and open research issuesJ. Ind. Inf. Integr.2017611010.1016/j.jii.2017.04.005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3.</span> <a id="B3-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id122"><!-- named anchor --></a>E. OztemelS. GursevLiterature review of Industry 4.0 and related technologiesJ. Intell. Manuf.20203112718210.1007/s10845-018-1433-8</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4.</span> <a id="B4-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id123"><!-- named anchor --></a>M. WollschlaegerT. SauterJ. JasperneiteThe future of industrial communication: Automation networks in the era of the internet of things and industry 4.0IEEE Ind. Electron. Mag.201711172710.1109/MIE.2017.2649104</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5.</span> <a id="B5-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id124"><!-- named anchor --></a>R.A. KhalilN. SaeedM. MasoodY.M. FardM.S. AlouiniT.Y. Al-NaffouriDeep learning in the industrial internet of things: Potentials, challenges, and emerging applicationsIEEE Internet Things J.20218110161104010.1109/JIOT.2021.3051414</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6.</span> <a id="B6-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id125"><!-- named anchor --></a>M. BertoliniD. MezzogoriM. NeroniF. ZammoriMachine Learning for industrial applications: A comprehensive literature reviewExpert Syst. Appl.202117511482010.1016/j.eswa.2021.114820</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7.</span> <a id="B7-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id126"><!-- named anchor --></a>C. GuptaA. FarahatDeep Learning for Industrial AI: Challenges, New Methods and Best PracticesProceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data MiningVirtual Event6–10 July 202035713572</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8.</span> <a id="B8-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id127"><!-- named anchor --></a>A. ShahidM.T. AfzalM. AbdarM.E. BasiriX. ZhouN.Y. YenJ.W. ChangInsights into relevant knowledge extraction techniques: A comprehensive reviewJ. Supercomput.2020761695173310.1007/s11227-019-03009-y</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9.</span> <a id="B9-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id128"><!-- named anchor --></a>Y. WangC. ZhangK. LiA review on method entities in the academic literature: Extraction, evaluation, and applicationScientometrics20221272479252010.1007/s11192-022-04332-7</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10.</span> <a id="B10-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id129"><!-- named anchor --></a>N. FiroozehA. NazarenkoF. AlizonB. DailleKeyword extraction: Issues and methodsNat. Lang. Eng.20202625929110.1017/S1351324919000457</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11.</span> <a id="B11-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id130"><!-- named anchor --></a>C.B. AsmussenC. MøllerSmart literature review: A practical topic modelling approach to exploratory literature reviewJ. Big Data201969310.1186/s40537-019-0255-7</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12.</span> <a id="B12-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id131"><!-- named anchor --></a>C. JacobiW. Van AtteveldtK. WelbersQuantitative analysis of large amounts of journalistic texts using topic modellingDigit. J.201648910610.1080/21670811.2015.1093271</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13.</span> <a id="B13-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id132"><!-- named anchor --></a>B. KroseP.V.D. SmagtAn Introduction to Neural NetworksMIT PressCambridge, MA, USA2011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14.</span> <a id="B14-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id133"><!-- named anchor --></a>C.M. BishopNeural networks and their applicationsRev. Sci. Instrum.1994651803183210.1063/1.1144830</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15.</span> <a id="B15-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id134"><!-- named anchor --></a>J.A. AndersonAn Introduction to Neural NetworksMIT PressCambridge, MA, USA1995</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16.</span> <a id="B16-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id135"><!-- named anchor --></a>J. JantzenIntroduction to Perceptron NetworksDTU LibraryNew Delhi, India1998</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17.</span> <a id="B17-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id136"><!-- named anchor --></a>A. CanzianiA. PaszkeE. CulurcielloAn analysis of deep neural network models for practical applicationsarXiv20161605.07678</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18.</span> <a id="B18-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id137"><!-- named anchor --></a>K. O’SheaR. NashAn introduction to convolutional neural networksarXiv20151511.08458</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19.</span> <a id="B19-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id138"><!-- named anchor --></a>S. AlbawiT.A. MohammedS. Al-ZawiUnderstanding of a convolutional neural networkProceedings of the 2017 International Conference on Engineering and Technology (ICET)Antalya, Turkey21–23 August 201716</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20.</span> <a id="B20-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id139"><!-- named anchor --></a>J. GuZ. WangJ. KuenL. MaA. ShahroudyB. ShuaiT. LiuX. WangG. WangJ. CaiRecent advances in convolutional neural networksPattern Recognit.20187735437710.1016/j.patcog.2017.10.013</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21.</span> <a id="B21-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id140"><!-- named anchor --></a>L.R. MedskerL. JainRecurrent neural networksDes. Appl.200156467</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22.</span> <a id="B22-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id141"><!-- named anchor --></a>L. MedskerL.C. JainRecurrent Neural NETWORKS: Design and ApplicationsCRC PressBoca Raton, FL, USA1999</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23.</span> <a id="B23-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id142"><!-- named anchor --></a>S. HochreiterJ. SchmidhuberLong short-term memoryNeural Comput.199791735178010.1162/neco.1997.9.8.17359377276</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24.</span> <a id="B24-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id143"><!-- named anchor --></a>G. Van HoudtC. MosqueraG. NápolesA review on the long short-term memory modelArtif. Intell. Rev.2020535929595510.1007/s10462-020-09838-1</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25.</span> <a id="B25-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id144"><!-- named anchor --></a>J. ChungC. GulcehreK. ChoY. BengioEmpirical evaluation of gated recurrent neural networks on sequence modelingarXiv20141412.3555</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26.</span> <a id="B26-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id145"><!-- named anchor --></a>R. DeyF.M. SalemGate-variants of gated recurrent unit (GRU) neural networksProceedings of the 2017 IEEE 60th International Midwest Symposium on Circuits and Systems (MWSCAS)Boston, MA, USA6–9 August 201715971600</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27.</span> <a id="B27-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id146"><!-- named anchor --></a>W.S. NobleWhat is a support vector machine?Nat. Biotechnol.2006241565156710.1038/nbt1206-156517160063</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28.</span> <a id="B28-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id147"><!-- named anchor --></a>M.A. HearstS.T. DumaisE. OsunaJ. PlattB. ScholkopfSupport vector machinesIEEE Intell. Syst. Their Appl.199813182810.1109/5254.708428</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29.</span> <a id="B29-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id148"><!-- named anchor --></a>I. SteinwartA. ChristmannSupport Vector MachinesSpringer Science &amp; Business MediaBerlin/Heidelberg, Germany2008</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30.</span> <a id="B30-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id149"><!-- named anchor --></a>A.J. MylesR.N. FeudaleY. LiuN.A. WoodyS.D. BrownAn introduction to decision tree modelingJ. Chemom. J. Chemom. Soc.20041827528510.1002/cem.873</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31.</span> <a id="B31-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id150"><!-- named anchor --></a>Y.Y. SongL. YingDecision tree methods: Applications for classification and predictionShanghai Arch. Psychiatry2015271302612026510.11919/j.issn.1002-0829.215044PMC4466856</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32.</span> <a id="B32-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id151"><!-- named anchor --></a>G. BiauE. ScornetA random forest guided tourTest20162519722710.1007/s11749-016-0481-7</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33.</span> <a id="B33-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id152"><!-- named anchor --></a>L. BreimanRandom forestsMach. Learn.20014553210.1023/A:1010933404324</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34.</span> <a id="B34-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id153"><!-- named anchor --></a>L. BreimanBagging predictorsMach. Learn.19962412314010.1007/BF00058655</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35.</span> <a id="B35-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id154"><!-- named anchor --></a>Y. FreundR.E. SchapireExperiments with a new boosting algorithmProceedings of the ICML, Thirteenth International Conference on International Conference on Machine LearningBari, Italy3–6 July 1996Volume 96148156</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36.</span> <a id="B36-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id155"><!-- named anchor --></a>J.H. FriedmanGreedy function approximation: A gradient boosting machineAnn. Stat.2001291189123210.1214/aos/1013203451</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37.</span> <a id="B37-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id156"><!-- named anchor --></a>Y. FreundR.E. SchapireA decision-theoretic generalization of on-line learning and an application to boostingJ. Comput. Syst. Sci.19975511913910.1006/jcss.1997.1504</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38.</span> <a id="B38-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id157"><!-- named anchor --></a>T. ChenC. GuestrinXgboost: A scalable tree boosting systemProceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data MiningSan Francisco, CA, USA13–17 August 2016785794</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39.</span> <a id="B39-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id158"><!-- named anchor --></a>C.Y. LiouW.C. ChengJ.W. LiouD.R. LiouAutoencoder for wordsNeurocomputing2014139849610.1016/j.neucom.2013.09.055</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40.</span> <a id="B40-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id159"><!-- named anchor --></a>V. BadrinarayananA. KendallR. CipollaSegnet: A deep convolutional encoder-decoder architecture for image segmentationIEEE Trans. Pattern Anal. Mach. Intell.2017392481249510.1109/TPAMI.2016.264461528060704</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41.</span> <a id="B41-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id160"><!-- named anchor --></a>C. ZhouR.C. PaffenrothAnomaly detection with robust deep autoencodersProceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data MiningHalifax, NS, Canada13–17 August 2017665674</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">42.</span> <a id="B42-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id161"><!-- named anchor --></a>S. WoldK. EsbensenP. GeladiPrincipal component analysisChemom. Intell. Lab. Syst.19872375210.1016/0169-7439(87)80084-9</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">43.</span> <a id="B43-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id162"><!-- named anchor --></a>M. Yousefi-AzarV. VaradharajanL. HameyU. TupakulaAutoencoder-based feature learning for cyber security applicationsProceedings of the 2017 International Joint Conference on Neural Networks (IJCNN)Anchorage, AK, USA14–19 May 201738543861</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">44.</span> <a id="B44-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id163"><!-- named anchor --></a>S. GaoY. ZhangK. JiaJ. LuY. ZhangSingle sample face recognition via learning deep supervised autoencodersIEEE Trans. Inf. Forensics Secur.2015102108211810.1109/TIFS.2015.2446438</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">45.</span> <a id="B45-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id164"><!-- named anchor --></a>D. BankN. KoenigsteinR. GiryesAutoencodersarXiv20202003.05991</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">46.</span> <a id="B46-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id165"><!-- named anchor --></a>R.S. SuttonA.G. BartoReinforcement Learning: An IntroductionMIT PressCambridge, MA, USA2018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">47.</span> <a id="B47-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id166"><!-- named anchor --></a>L.P. KaelblingM.L. LittmanA.W. MooreReinforcement learning: A surveyJ. Artif. Intell. Res.1996423728510.1613/jair.301</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">48.</span> <a id="B48-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id167"><!-- named anchor --></a>Y. LiDeep reinforcement learning: An overviewarXiv20171701.07274</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">49.</span> <a id="B49-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id168"><!-- named anchor --></a>N.C. LuongD.T. HoangS. GongD. NiyatoP. WangY.C. LiangD.I. KimApplications of deep reinforcement learning in communications and networking: A surveyIEEE Commun. Surv. Tutor.2019213133317410.1109/COMST.2019.2916583</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">50.</span> <a id="B50-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id169"><!-- named anchor --></a>A.S. PolydorosL. NalpantidisSurvey of model-based reinforcement learning: Applications on roboticsJ. Intell. Robot. Syst.20178615317310.1007/s10846-017-0468-y</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">51.</span> <a id="B51-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id170"><!-- named anchor --></a>Y. LiReinforcement learning applicationsarXiv20191908.06973</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">52.</span> <a id="B52-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id171"><!-- named anchor --></a>T. CoverP. HartNearest neighbor pattern classificationIEEE Trans. Inf. Theory196713212710.1109/TIT.1967.1053964</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">53.</span> <a id="B53-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id172"><!-- named anchor --></a>N. BhatiaVandanaSurvey of nearest neighbor techniquesarXiv20101007.0085</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">54.</span> <a id="B54-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id173"><!-- named anchor --></a>L.E. PetersonK-nearest neighborScholarpedia20094188310.4249/scholarpedia.1883</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">55.</span> <a id="B55-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id174"><!-- named anchor --></a>J.L. BentleyMultidimensional binary search trees used for associative searchingCommun. ACM19751850951710.1145/361002.361007</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">56.</span> <a id="B56-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id175"><!-- named anchor --></a>S.M. OmohundroFive Balltree Construction AlgorithmsInternational Computer Science Institute BerkeleyBerkeley, CA, USA1989</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">57.</span> <a id="B57-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id176"><!-- named anchor --></a>I. GoodfellowJ. Pouget-AbadieM. MirzaB. XuD. Warde-FarleyS. OzairA. CourvilleY. BengioGenerative adversarial networksCommun. ACM20206313914410.1145/3422622</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">58.</span> <a id="B58-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id177"><!-- named anchor --></a>J. GuiZ. SunY. WenD. TaoJ. YeA review on generative adversarial networks: Algorithms, theory, and applicationsIEEE Trans. Knowl. Data Eng.202110.1109/TKDE.2021.3130191</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">59.</span> <a id="B59-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id178"><!-- named anchor --></a>A. AggarwalM. MittalG. BattineniGenerative adversarial network: An overview of theory and applicationsInt. J. Inf. Manag. Data Insights2021110000410.1016/j.jjimei.2020.100004</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">60.</span> <a id="B60-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id179"><!-- named anchor --></a>A. AbidM.T. KhanJ. IqbalA review on fault detection and diagnosis techniques: Basics and beyondArtif. Intell. Rev.2021543639366410.1007/s10462-020-09934-2</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">61.</span> <a id="B61-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id180"><!-- named anchor --></a>R. IqbalT. ManiakF. DoctorC. KaryotisFault detection and isolation in industrial processes using deep learning approachesIEEE Trans. Ind. Inform.2019153077308410.1109/TII.2019.2902274</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">62.</span> <a id="B62-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id181"><!-- named anchor --></a>S. SchwendemannZ. AmjadA. SikoraA survey of machine-learning techniques for condition monitoring and predictive maintenance of bearings in grinding machinesComput. Ind.202112510338010.1016/j.compind.2020.103380</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">63.</span> <a id="B63-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id182"><!-- named anchor --></a>L. LiK. OtaM. DongDeep learning for smart industry: Efficient manufacture inspection system with fog computingIEEE Trans. Ind. Inform.2018144665467310.1109/TII.2018.2842821</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">64.</span> <a id="B64-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id183"><!-- named anchor --></a>D. WeimerB. Scholz-ReiterM. ShpitalniDesign of deep convolutional neural network architectures for automated feature extraction in industrial inspectionCIRP Ann.20166541742010.1016/j.cirp.2016.04.072</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">65.</span> <a id="B65-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id184"><!-- named anchor --></a>D. TabernikS. ŠelaJ. SkvarčD. SkočajSegmentation-based deep-learning approach for surface-defect detectionJ. Intell. Manuf.20203175977610.1007/s10845-019-01476-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">66.</span> <a id="B66-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id185"><!-- named anchor --></a>H. KhorasganiA. HasanzadehA. FarahatC. GuptaFault detection and isolation in industrial networks using graph convolutional neural networksProceedings of the 2019 IEEE International Conference on Prognostics and Health Management (ICPHM)San Francisco, CA, USA17–20 June 201917</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">67.</span> <a id="B67-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id186"><!-- named anchor --></a>S. DasC.D. HollanderS. SulimanAutomating Visual Inspection with Convolutional Neural NetworksProceedings of the Annual Conference of the PHM SocietyScottsdale, AZ, USA23–26 September 2019Volume 11</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">68.</span> <a id="B68-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id187"><!-- named anchor --></a>R.M. SouzaE.G. NascimentoU.A. MirandaW.J. SilvaH.A. LepiksonDeep learning for diagnosis and classification of faults in industrial rotating machineryComput. Ind. Eng.202115310706010.1016/j.cie.2020.107060</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">69.</span> <a id="B69-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id188"><!-- named anchor --></a>A. GlaeserV. SelvarajS. LeeY. HwangK. LeeN. LeeS. LeeS. MinApplications of deep learning for fault detection in industrial cold forgingInt. J. Prod. Res.2021594826483510.1080/00207543.2021.1891318</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">70.</span> <a id="B70-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id189"><!-- named anchor --></a>D. ParkS. KimY. AnJ.Y. JungLiReD: A light-weight real-time fault detection system for edge computing using LSTM recurrent neural networksSensors201818211010.3390/s1807211029966374PMC6068676</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">71.</span> <a id="B71-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id190"><!-- named anchor --></a>Y. HuangC.H. ChenC.J. HuangMotor fault detection and feature extraction using RNN-based variational autoencoderIEEE Access2019713908613909610.1109/ACCESS.2019.2940769</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">72.</span> <a id="B72-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id191"><!-- named anchor --></a>M. AlrifaeyW.H. LimC.K. AngA novel deep learning framework based RNN-SAE for fault detection of electrical gas generatorIEEE Access20219214332144210.1109/ACCESS.2021.3055427</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">73.</span> <a id="B73-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id192"><!-- named anchor --></a>F. WangX. FanF. WangJ. LiuBackup battery analysis and allocation against power outage for cellular base stationsIEEE Trans. Mob. Comput.20181852053310.1109/TMC.2018.2842733</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">74.</span> <a id="B74-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id193"><!-- named anchor --></a>L. RenY. SunJ. CuiL. ZhangBearing remaining useful life prediction based on deep autoencoder and deep neural networksJ. Manuf. Syst.201848717710.1016/j.jmsy.2018.04.008</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">75.</span> <a id="B75-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id194"><!-- named anchor --></a>W. HuangH. KhorasganiC. GuptaA. FarahatS. ZhengRemaining useful life estimation for systems with abrupt failuresProceedings of the Annual Conference of the PHM Society, SeptemberPhiladelphia, PA, USA24–27 September 20182427</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">76.</span> <a id="B76-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id195"><!-- named anchor --></a>P. MalhotraV. TvA. RamakrishnanG. AnandL. VigP. AgarwalG. ShroffMulti-sensor prognostics using an unsupervised health index based on LSTM encoder-decoderarXiv20161608.06154</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">77.</span> <a id="B77-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id196"><!-- named anchor --></a>Y. WuM. YuanS. DongL. LinY. LiuRemaining useful life estimation of engineered systems using vanilla LSTM neural networksNeurocomputing201827516717910.1016/j.neucom.2017.05.063</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">78.</span> <a id="B78-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id197"><!-- named anchor --></a>H. YanJ. WanC. ZhangS. TangQ. HuaZ. WangIndustrial big data analytics for prediction of remaining useful life based on deep learningIEEE Access20186171901719710.1109/ACCESS.2018.2809681</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">79.</span> <a id="B79-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id198"><!-- named anchor --></a>S. SpiegelF. MuellerD. WeismannJ. BirdCost-sensitive learning for predictive maintenancearXiv20181809.10979</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">80.</span> <a id="B80-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id199"><!-- named anchor --></a>C. ZhangC. GuptaA. FarahatK. RistovskiD. GhoshEquipment health indicator learning using deep reinforcement learningProceedings of the Joint European Conference on Machine Learning and Knowledge Discovery in DatabasesDublin, Ireland10–14 September 2018488504</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">81.</span> <a id="B81-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id200"><!-- named anchor --></a>S. ZhengA. FarahatC. GuptaGenerative adversarial networks for failure predictionProceedings of the Joint European Conference on Machine Learning and Knowledge Discovery in DatabasesWurzburg, Germany16–20 September 2019621637</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">82.</span> <a id="B82-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id201"><!-- named anchor --></a>J. ArentsM. GreitansSmart industrial robot control trends, challenges and opportunities within manufacturingAppl. Sci.20221293710.3390/app12020937</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">83.</span> <a id="B83-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id202"><!-- named anchor --></a>M. SaravananP.S. KumarA. SharmaIoT enabled indoor autonomous mobile robot using CNN and Q-learningProceedings of the 2019 IEEE International Conference on Industry 4.0, Artificial Intelligence, and Communications Technology (IAICT)Bali, Indonesia1–3 July 2019713</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">84.</span> <a id="B84-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id203"><!-- named anchor --></a>Y.P. PaneS.P. NageshraoJ. KoberR. BabuškaReinforcement learning based compensation methods for robot manipulatorsEng. Appl. Artif. Intell.20197823624710.1016/j.engappai.2018.11.006</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">85.</span> <a id="B85-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id204"><!-- named anchor --></a>A. LobbezooY. QianH.J. KwonReinforcement Learning for Pick and Place Operations in Robotics: A SurveyRobotics20211010510.3390/robotics10030105</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">86.</span> <a id="B86-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id205"><!-- named anchor --></a>M. MaqsoodI. MehmoodR. KharelK. MuhammadJ. LeeW. AlnumayExploring the role of deep learning in industrial applications: A case study on coastal crane casting recognitionHum. Cent. Comput. Inf. Sci.202111114</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">87.</span> <a id="B87-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id206"><!-- named anchor --></a>P.K.R. MaddikuntaS. HakakM. AlazabS. BhattacharyaT.R. GadekalluW.Z. KhanQ.V. PhamUnmanned aerial vehicles in smart agriculture: Applications, requirements, and challengesIEEE Sens. J.202121176081761910.1109/JSEN.2021.3049471</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">88.</span> <a id="B88-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id207"><!-- named anchor --></a>J. KimS. KimC. JuH.I. SonUnmanned aerial vehicles in agriculture: A review of perspective of platform, control, and applicationsIEEE Access2019710510010511510.1109/ACCESS.2019.2932119</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">89.</span> <a id="B89-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id208"><!-- named anchor --></a>W. ShalabyA. ArantesT. GonzalezDiazC. GuptaBuilding chatbots from large scale domain-specific knowledge bases: Challenges and opportunitiesProceedings of the 2020 IEEE International Conference on Prognostics and Health Management (ICPHM)Detroit, MI, USA8–10 June 202018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">90.</span> <a id="B90-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id209"><!-- named anchor --></a>A. MiklosikN. EvansImpact of big data and machine learning on digital transformation in marketing: A literature reviewIEEE Access2020810128410129210.1109/ACCESS.2020.2998754</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">91.</span> <a id="B91-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id210"><!-- named anchor --></a>E.A. FeinbergD. GenethliouLoad forecastingApplied Mathematics for Restructured Electric Power SystemsSpringerBerlin/Heidelberg, Germany2005269285</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">92.</span> <a id="B92-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id211"><!-- named anchor --></a>A. AlmalaqG. EdwardsA review of deep learning methods applied on load forecastingProceedings of the 2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA)Cancun, Mexico18–21 December 2017511516</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">93.</span> <a id="B93-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id212"><!-- named anchor --></a>B. YildizJ.I. BilbaoA.B. SproulA review and analysis of regression and machine learning models on commercial building electricity load forecastingRenew. Sustain. Energy Rev.2017731104112210.1016/j.rser.2017.02.023</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">94.</span> <a id="B94-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id213"><!-- named anchor --></a>H. ShiM. XuR. LiDeep learning for household load forecasting—A novel pooling deep RNNIEEE Trans. Smart Grid201795271528010.1109/TSG.2017.2686012</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">95.</span> <a id="B95-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id214"><!-- named anchor --></a>N.K. ThokalaA. BapnaM.G. ChandraA deployable electrical load forecasting solution for commercial buildingsProceedings of the 2018 IEEE International Conference on Industrial Technology (ICIT)Lyon, France20–22 February 201811011106</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">96.</span> <a id="B96-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id215"><!-- named anchor --></a>J.S. ChouD.S. TranForecasting energy consumption time series using machine learning techniques based on usage patterns of residential householdersEnergy201816570972610.1016/j.energy.2018.09.144</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">97.</span> <a id="B97-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id216"><!-- named anchor --></a>E. García-MartínC.F. RodriguesG. RileyH. GrahnEstimation of energy consumption in machine learningJ. Parallel Distrib. Comput.2019134758810.1016/j.jpdc.2019.07.007</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">98.</span> <a id="B98-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id217"><!-- named anchor --></a>F. PallonettoM. De RosaF. MilanoD.P. FinnDemand response algorithms for smart-grid ready residential buildings using machine learning modelsAppl. Energy20192391265128210.1016/j.apenergy.2019.02.020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">99.</span> <a id="B99-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id218"><!-- named anchor --></a>S. JagtapS. RahimifardL.N. DuongReal-time data collection to improve energy efficiency: A case study of food manufacturerJ. Food Process. Preserv.202246e1433810.1111/jfpp.14338</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">100.</span> <a id="B100-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id219"><!-- named anchor --></a>A.A. AlliM.M. AlamSecOFF-FCIoT: Machine learning based secure offloading in Fog-Cloud of things for smart city applicationsInternet Things2019710007010.1016/j.iot.2019.100070</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">101.</span> <a id="B101-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id220"><!-- named anchor --></a>C.H. LiuX. MaX. GaoJ. TangDistributed energy-efficient multi-UAV navigation for long-term communication coverage by deep reinforcement learningIEEE Trans. Mob. Comput.2019191274128510.1109/TMC.2019.2908171</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">102.</span> <a id="B102-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id221"><!-- named anchor --></a>M. ZhuX.Y. LiuX. WangDeep reinforcement learning for unmanned aerial vehicle-assisted vehicular networksarXiv20191906.05015</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">103.</span> <a id="B103-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id222"><!-- named anchor --></a>K.C. ChuD.J. HorngK.C. ChangNumerical optimization of the energy consumption for wireless sensor networks based on an improved ant colony algorithmIEEE Access2019710556210557110.1109/ACCESS.2019.2930408</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">104.</span> <a id="B104-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id223"><!-- named anchor --></a>G. YadavK. PaulArchitecture and security of SCADA systems: A reviewInt. J. Crit. Infrastruct. Prot.20213410043310.1016/j.ijcip.2021.100433</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">105.</span> <a id="B105-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id224"><!-- named anchor --></a>R. LangnerStuxnet: Dissecting a cyberwarfare weaponIEEE Secur. Priv.20119495110.1109/MSP.2011.67</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">106.</span> <a id="B106-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id225"><!-- named anchor --></a>S. KalyaniK.S. SwarupParticle swarm optimization based K-means clustering approach for security assessment in power systemsExpert Syst. Appl.201138108391084610.1016/j.eswa.2011.02.086</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">107.</span> <a id="B107-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id226"><!-- named anchor --></a>M. JabbarS. SamreenIntelligent network intrusion detection using alternating decision treesProceedings of the 2016 International Conference on Circuits, Controls, Communications and Computing (I4C)Bangalore, India4–6 October 201616</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">108.</span> <a id="B108-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id227"><!-- named anchor --></a>G. MeenaR.R. ChoudharyA review paper on IDS classification using KDD 99 and NSL KDD dataset in WEKAProceedings of the 2017 International Conference on Computer, Communications and Electronics (Comptelix)Jaipur, India1–2 July 2017553558</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">109.</span> <a id="B109-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id228"><!-- named anchor --></a>A.H. MunaN. MoustafaE. SitnikovaIdentification of malicious activities in industrial internet of things based on deep learning modelsJ. Inf. Secur. Appl.201841111</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">110.</span> <a id="B110-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id229"><!-- named anchor --></a>C. WangB. WangH. LiuH. QuAnomaly detection for industrial control system based on autoencoder neural networkWirel. Commun. Mob. Comput.20202020889792610.1155/2020/8897926</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">111.</span> <a id="B111-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id230"><!-- named anchor --></a>T. WongZ. LuoRecurrent auto-encoder model for large-scale industrial sensor signal analysisProceedings of the International Conference on Engineering Applications of Neural NetworksBristol, UK3–5 September 2018203216</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">112.</span> <a id="B112-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id231"><!-- named anchor --></a>P. DixitS. SilakariDeep learning algorithms for cybersecurity applications: A technological and status reviewComput. Sci. Rev.20213910031710.1016/j.cosrev.2020.100317</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">113.</span> <a id="B113-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id232"><!-- named anchor --></a>J. YanH. HeX. ZhongY. TangQ-learning-based vulnerability analysis of smart grid against sequential topology attacksIEEE Trans. Inf. Forensics Secur.20161220021010.1109/TIFS.2016.2607701</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">114.</span> <a id="B114-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id233"><!-- named anchor --></a>T.T. NguyenV.J. ReddiDeep reinforcement learning for cyber securityIEEE Trans. Neural Netw. Learn. Syst.201910.1109/TNNLS.2021.312187034723814</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">115.</span> <a id="B115-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id234"><!-- named anchor --></a>A. UpretyD.B. RawatReinforcement learning for iot security: A comprehensive surveyIEEE Internet Things J.202088693870610.1109/JIOT.2020.3040957</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">116.</span> <a id="B116-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id235"><!-- named anchor --></a>R. MautzIndoor Positioning TechnologiesETH ZurichZurich, Switzerland2012</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">117.</span> <a id="B117-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id236"><!-- named anchor --></a>C. BasriA. El KhadimiSurvey on indoor localization system and recent advances of WIFI fingerprinting techniqueProceedings of the 2016 5th International Conference on Multimedia Computing and Systems (ICMCS)Marrakech, Morocco29 September–1 October 2016253259</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">118.</span> <a id="B118-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id237"><!-- named anchor --></a>L. ZhengB.J. HuJ. QiuM. CuiA deep-learning-based self-calibration time-reversal fingerprinting localization approach on Wi-Fi platformIEEE Internet Things J.202077072708310.1109/JIOT.2020.2981723</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">119.</span> <a id="B119-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id238"><!-- named anchor --></a>L. ZhaoH. HuangX. LiS. DingH. ZhaoZ. HanAn accurate and robust approach of device-free localization with convolutional autoencoderIEEE Internet Things J.201965825584010.1109/JIOT.2019.2907580</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">120.</span> <a id="B120-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id239"><!-- named anchor --></a>Z. LiK. XuH. WangY. ZhaoX. WangM. ShenMachine-learning-based positioning: A survey and future directionsIEEE Netw.2019339610110.1109/MNET.2019.1800366</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">121.</span> <a id="B121-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id240"><!-- named anchor --></a>X. ZhuK.U. RehmanB. WangM. ShahzadModern soft-sensing modeling methods for fermentation processesSensors202020177110.3390/s2006177132210053PMC7146123</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">122.</span> <a id="B122-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id241"><!-- named anchor --></a>P. KadlecB. GabrysS. StrandtData-driven soft sensors in the process industryComput. Chem. Eng.20093379581410.1016/j.compchemeng.2008.12.012</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">123.</span> <a id="B123-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id242"><!-- named anchor --></a>C. ShangF. YouData analytics and machine learning for smart process manufacturing: Recent advances and perspectives in the big data eraEngineering201951010101610.1016/j.eng.2019.01.019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">124.</span> <a id="B124-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id243"><!-- named anchor --></a>R. XieN.M. JanK. HaoL. ChenB. HuangSupervised variational autoencoders for soft sensor modeling with missing dataIEEE Trans. Ind. Inform.2019162820282810.1109/TII.2019.2951622</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">125.</span> <a id="B125-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id244"><!-- named anchor --></a>M. ChristopherLogistics &amp; Supply Chain ManagementPearsonLondon, UK2016</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">126.</span> <a id="B126-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id245"><!-- named anchor --></a>M. AkbariLogistics outsourcing: A structured literature reviewBenchmark. Int. J.2018251548158010.1108/BIJ-04-2017-0066</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">127.</span> <a id="B127-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id246"><!-- named anchor --></a>B. SurajitA. TelukdarieBusiness logistics optimization using industry 4.0: Current status and opportunitiesProceedings of the 2018 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM)Bangkok, Thailand16–19 December 201815581562</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">128.</span> <a id="B128-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id247"><!-- named anchor --></a>M. ZohalH. SoleimaniDeveloping an ant colony approach for green closed-loop supply chain network design: A case study in gold industryJ. Clean. Prod.201613331433710.1016/j.jclepro.2016.05.091</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">129.</span> <a id="B129-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id248"><!-- named anchor --></a>L.Y. ZhangM.L. TsengC.H. WangC. XiaoT. FeiLow-carbon cold chain logistics using ribonucleic acid-ant colony optimization algorithmJ. Clean. Prod.201923316918010.1016/j.jclepro.2019.05.306</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">130.</span> <a id="B130-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id249"><!-- named anchor --></a>L.M. MaiyarJ.J. ThakkarEnvironmentally conscious logistics planning for food grain industry considering wastages employing multi objective hybrid particle swarm optimizationTransp. Res. Part Logist. Transp. Rev.201912722024810.1016/j.tre.2019.05.006</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">131.</span> <a id="B131-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id250"><!-- named anchor --></a>Y. LiM.K. LimM.L. TsengA green vehicle routing model based on modified particle swarm optimization for cold chain logisticsInd. Manag. Data Syst.201811947349410.1108/IMDS-07-2018-0314</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">132.</span> <a id="B132-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id251"><!-- named anchor --></a>S. ZhengC. GuptaS. SeritaManufacturing dispatching using reinforcement and transfer learningProceedings of the Joint European Conference on Machine Learning and Knowledge Discovery in DatabasesWurzburg, Germany16–20 September 2019655671</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">133.</span> <a id="B133-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id252"><!-- named anchor --></a>F. WangC. ZhangJ. LiuY. ZhuH. PangL. SunIntelligent edge-assisted crowdcast with deep reinforcement learning for personalized QoEProceedings of the IEEE INFOCOM 2019-IEEE Conference on Computer CommunicationsParis, France29 April–2 May 2019910918</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">134.</span> <a id="B134-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id253"><!-- named anchor --></a>J. DalzochioR. KunstE. PignatonA. BinottoS. SanyalJ. FavillaJ. BarbosaMachine learning and reasoning for predictive maintenance in Industry 4.0: Current status and challengesComput. Ind.202012310329810.1016/j.compind.2020.103298</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">135.</span> <a id="B135-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id254"><!-- named anchor --></a>A. Diez-OlivanJ. Del SerD. GalarB. SierraData fusion and machine learning for industrial prognosis: Trends and perspectives towards Industry 4.0Inf. Fusion2019509211110.1016/j.inffus.2018.10.005</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">136.</span> <a id="B136-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id255"><!-- named anchor --></a>Q. SunZ. GeA survey on deep learning for data-driven soft sensorsIEEE Trans. Ind. Inform.2021175853586610.1109/TII.2021.3053128</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">137.</span> <a id="B137-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id256"><!-- named anchor --></a>T.P. CarvalhoF.A. SoaresR. VitaR.d.P. FranciscoJ.P. BastoS.G. AlcaláA systematic literature review of machine learning methods applied to predictive maintenanceComput. Ind. Eng.201913710602410.1016/j.cie.2019.106024</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">138.</span> <a id="B138-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id257"><!-- named anchor --></a>T. KotsiopoulosP. SarigiannidisD. IoannidisD. TzovarasMachine learning and deep learning in smart manufacturing: The smart grid paradigmComput. Sci. Rev.20214010034110.1016/j.cosrev.2020.100341</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">139.</span> <a id="B139-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id258"><!-- named anchor --></a>T. WuestD. WeimerC. IrgensK.D. ThobenMachine learning in manufacturing: Advantages, challenges, and applicationsProd. Manuf. Res.20164234510.1080/21693277.2016.1192517</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">140.</span> <a id="B140-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id259"><!-- named anchor --></a>A. DoganD. BirantMachine learning and data mining in manufacturingExpert Syst. Appl.202116611406010.1016/j.eswa.2020.114060</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">141.</span> <a id="B141-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id260"><!-- named anchor --></a>A. SharmaZ. ZhangR. RaiThe interpretive model of manufacturing: A theoretical framework and research agenda for machine learning in manufacturingInt. J. Prod. Res.2021594960499410.1080/00207543.2021.1930234</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">142.</span> <a id="B142-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id261"><!-- named anchor --></a>R. RaiM.K. TiwariD. IvanovA. DolguiMachine learning in manufacturing and industry 4.0 applicationsInt. J. Prod. Res.2021594773477810.1080/00207543.2021.1956675</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">143.</span> <a id="B143-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id262"><!-- named anchor --></a>Y. WangD. ZhangY. LiuB. DaiL.H. LeeEnhancing transportation systems via deep learning: A surveyTransp. Res. Part C Emerg. Technol.20199914416310.1016/j.trc.2018.12.004</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">144.</span> <a id="B144-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id263"><!-- named anchor --></a>H. NguyenL.M. KieuT. WenC. CaiDeep learning methods in transportation domain: A reviewIET Intell. Transp. Syst.201812998100410.1049/iet-its.2018.0064</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">145.</span> <a id="B145-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id264"><!-- named anchor --></a>D.A. NarcisoF. MartinsApplication of machine learning tools for energy efficiency in industry: A reviewEnergy Rep.202061181119910.1016/j.egyr.2020.04.035</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">146.</span> <a id="B146-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id265"><!-- named anchor --></a>A. MosaviM. SalimiS. Faizollahzadeh ArdabiliT. RabczukS. ShamshirbandA.R. Varkonyi-KoczyState of the art of machine learning models in energy systems, a systematic reviewEnergies201912130110.3390/en12071301</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">147.</span> <a id="B147-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id266"><!-- named anchor --></a>L. DuanL. Da XuData analytics in industry 4.0: A surveyInf. Syst. Front.202110.1007/s10796-021-10190-0PMC838409334456613</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">148.</span> <a id="B148-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id267"><!-- named anchor --></a>Y. LiaoF. DeschampsE.d.F.R. LouresL.F.P. RamosPast, present and future of Industry 4.0—A systematic literature review and research agenda proposalInt. J. Prod. Res.2017553609362910.1080/00207543.2017.1308576</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">149.</span> <a id="B149-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id268"><!-- named anchor --></a>C. LeeC. LimFrom technological development to social advance: A review of Industry 4.0 through machine learningTechnol. Forecast. Soc. Chang.202116712065310.1016/j.techfore.2021.120653</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">150.</span> <a id="B150-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id269"><!-- named anchor --></a>D. MazzeiF. ChiarelloG. FantoniAnalyzing social robotics research with natural language processing techniquesCogn. Comput.20211330832110.1007/s12559-020-09799-1</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">151.</span> <a id="B151-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id270"><!-- named anchor --></a>D. AtzeniD. BacciuD. MazzeiG. PrencipeA Systematic Review of Wi-Fi and Machine Learning Integration with Topic Modeling TechniquesSensors202222492510.3390/s2213492535808430PMC9269691</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">152.</span> <a id="B152-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id271"><!-- named anchor --></a>J. ZhuW. LiuA tale of two databases: The use of Web of Science and Scopus in academic papersScientometrics202012332133510.1007/s11192-020-03387-8</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">153.</span> <a id="B153-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id272"><!-- named anchor --></a>P. MongeonA. Paul-HusThe journal coverage of Web of Science and Scopus: A comparative analysisScientometrics201610621322810.1007/s11192-015-1765-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">154.</span> <a id="B154-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id273"><!-- named anchor --></a>M. GrootendorstBERTopic: Neural topic modeling with a class-based TF-IDF procedurearXiv20222203.05794</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">155.</span> <a id="B155-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id274"><!-- named anchor --></a>D.M. BleiA.Y. NgM.I. JordanLatent dirichlet allocationJ. Mach. Learn. Res.200339931022</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">156.</span> <a id="B156-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id275"><!-- named anchor --></a>W. XuX. LiuY. GongDocument clustering based on non-negative matrix factorizationProceedings of the 26th Annual International ACM SIGIR Conference on Research and Development in Informaion RetrievalToronto, ON, Canada28 July–1 August 2003267273</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">157.</span> <a id="B157-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id276"><!-- named anchor --></a>J. DevlinM.W. ChangK. LeeK. ToutanovaBert: Pre-training of deep bidirectional transformers for language understandingarXiv20181810.04805</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">158.</span> <a id="B158-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id277"><!-- named anchor --></a>N. ReimersI. GurevychSentence-BERT: Sentence Embeddings using Siamese BERT-NetworksProceedings of the 2019 Conference on Empirical Methods in Natural Language Processing, Association for Computational LinguisticsHong Kong, China3–7 November 2019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">159.</span> <a id="B159-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id278"><!-- named anchor --></a>L. McInnesJ. HealyJ. MelvilleUmap: Uniform manifold approximation and projection for dimension reductionarXiv20181802.03426</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">160.</span> <a id="B160-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id279"><!-- named anchor --></a>L. McInnesJ. HealyS. Astelshdbscan: Hierarchical density based clusteringJ. Open Source Softw.2017220510.21105/joss.00205</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">161.</span> <a id="B161-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id280"><!-- named anchor --></a>J. RamosUsing tf-idf to determine word relevance in document queriesProceedings of the First Instructional Conference on Machine LearningWashington, DC, USA21–24 August 2003Volume 2422948</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">162.</span> <a id="B162-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id281"><!-- named anchor --></a>E. GregolinskaR. KhanamF. LefortP. ParthasarathyCapturing the True Value of Industry 4.0Technical ReportMcKinsey &amp; CompanyNew York, NY, USA2022</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">163.</span> <a id="B163-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id282"><!-- named anchor --></a>A. EdlichR. JoganiG. PhalinS. KaniyarDriving Impact at Scale from Automation and AITechnical ReportMcKinsey &amp; CompanyNew York, NY, USA2019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">164.</span> <a id="B164-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id283"><!-- named anchor --></a>F. GarmsC. JansenC. SchmitzS. HallerstedeA. TschiesnerCapturing Value at Scale in Discrete Manufacturing with Industry 4.0Technical ReportMcKinsey &amp; CompanyNew York, NY, USA2019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">165.</span> <a id="B165-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id284"><!-- named anchor --></a>A. BehrendtE. de BoerT. KasahB. KoerberN. MohrG. RichterLeveraging Industrial IoT and Advanced Technologies for Digital TransformationTechnical ReportMcKinsey &amp; CompanyNew York, NY, USA2021</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">166.</span> <a id="B166-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id285"><!-- named anchor --></a>M. CompanyGlobal Survey: The State of AI in 20212021Available online: <a target="xrefwindow" href="https://www.mckinsey.com/business-functions/quantumblack/our-insights/global-survey-the-state-of-ai-in-2021" id="id286">https://www.mckinsey.com/business-functions/quantumblack/our-insights/global-survey-the-state-of-ai-in-2021</a>(accessed on 6 May 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">167.</span> <a id="B167-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id287"><!-- named anchor --></a>D. AboodA. QuilliganR. NarsalayIndustry X.0 Combine and ConquerTechnical ReportAccentureDublin, Ireland2019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">168.</span> <a id="B168-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id288"><!-- named anchor --></a>E. SchaefferJ. CabanesA. GuptaManufacturing the FutureTechnical ReportAccentureDublin, Ireland2018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">169.</span> <a id="B169-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id289"><!-- named anchor --></a>AccentureTechnology Trends 20212021Available online: <a target="xrefwindow" href="https://www.accenture.com/_acnmedia/Thought-Leadership-Assets/PDF-3/Accenture-Tech-Vision-2021-Full-Report.pdf" id="id290">https://www.accenture.com/_acnmedia/Thought-Leadership-Assets/PDF-3/Accenture-Tech-Vision-2021-Full-Report.pdf</a>(accessed on 6 May 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">170.</span> <a id="B170-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id291"><!-- named anchor --></a>M. CorporationIntelligent Manufacturing Made Easy with Microsoft Azure2020Available online: <a target="xrefwindow" href="https://azure.microsoft.com/en-us/resources/intelligent-manufacturing-azure/" id="id292">https://azure.microsoft.com/en-us/resources/intelligent-manufacturing-azure/</a>(accessed on 6 May 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">171.</span> <a id="B171-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id293"><!-- named anchor --></a>P. CooperMicrosoft. How You Can Use IoT to Power Industry 4.0 InnovationAvailable online: <a target="xrefwindow" href="https://azure.microsoft.com/en-us/blog/how-you-can-use-iot-to-power-industry-4-0-innovation/" id="id294">https://azure.microsoft.com/en-us/blog/how-you-can-use-iot-to-power-industry-4-0-innovation/</a>(accessed on 6 May 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">172.</span> <a id="B172-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id295"><!-- named anchor --></a>J. TerinoP. HanburyJ. SobelIndustry 4.0: Getting Digital Manufacturing RightTechnical ReportBain &amp; CompanyBoston, MA, USA2019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">173.</span> <a id="B173-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id296"><!-- named anchor --></a>DeloitteDeloitte Survey on AI Adoption in Manufacturing2020Available online: <a target="xrefwindow" href="https://www2.deloitte.com/cn/en/pages/consumer-industrial-products/articles/ai-manufacturing-application-survey.html" id="id297">https://www2.deloitte.com/cn/en/pages/consumer-industrial-products/articles/ai-manufacturing-application-survey.html</a>(accessed on 6 May 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">174.</span> <a id="B174-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id298"><!-- named anchor --></a>PricewaterhouseCoopersDigital Champions: How Industry Leaders Build Integrated Operations Ecosystems to Deliver End-to-End Customer Solutions2018Available online: <a target="xrefwindow" href="https://www.strategyand.pwc.com/gx/en/insights/industry4-0.html" id="id299">https://www.strategyand.pwc.com/gx/en/insights/industry4-0.html</a>(accessed on 6 May 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">175.</span> <a id="B175-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id300"><!-- named anchor --></a>PricewaterhouseCoopersConnected and Autonomous Supply Chain Ecosystems 20252020Available online: <a target="xrefwindow" href="https://www.pwc.com/gx/en/industries/industrial-manufacturing/digital-supply-chain.html" id="id301">https://www.pwc.com/gx/en/industries/industrial-manufacturing/digital-supply-chain.html</a>(accessed on 6 May 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">176.</span> <a id="B176-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id302"><!-- named anchor --></a>I. ColotlaD. BlandC. KnizekD. SpindelndreierAvoiding the Hidden Hazards of Industry 4.0Technical ReportBoston Consulting GroupBoston, MA, USA2018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">177.</span> <a id="B177-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id303"><!-- named anchor --></a>B.C. GroupOur Perspective on Industry 4.0Available online: <a target="xrefwindow" href="https://www.bcg.com/capabilities/manufacturing/industry-4.0" id="id304">https://www.bcg.com/capabilities/manufacturing/industry-4.0</a>(accessed on 6 May 2022)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">178.</span> <a id="B178-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id305"><!-- named anchor --></a>D. KüpperM. LorenzK. KuhlmannO. BouffaultJ. Van WyckS. KöcherJ. SchlageterAI in the Factory of the FutureTechnical ReportBoston Consulting GroupBoston, MA, USA2018</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">179.</span> <a id="B179-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id306"><!-- named anchor --></a>L.I. MehoUsing Scopus’s CiteScore for assessing the quality of computer science conferencesJ. Inf.20191341943310.1016/j.joi.2019.02.006</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">180.</span> <a id="B180-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id307"><!-- named anchor --></a>R. PranckutėWeb of Science (WoS) and Scopus: The titans of bibliographic information in today’s academic worldPublications202191210.3390/publications9010012</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">181.</span> <a id="B181-sensors-22-08641"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id308"><!-- named anchor --></a>C. WanL. WangV.V. PhohaA survey on gait recognitionACM Comput. Surv. (CSUR)2018518910.1145/3230633</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-floats" class="back">
+<h2 class="main-title"><span class="generated">Floating objects</span></h2>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-22-08641-f001"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id309">PRISMA flow diagram of dataset curation. ** Count includes exclusions by both humans and automated tools.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-22-08641-f002"><!-- named anchor --></a><h5 class="label">Figure 2</h5>
+<div class="caption"><p class="first" id="id310">Google Trends’ interest over time for Machine Learning and industry 4.0.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-22-08641-f003"><!-- named anchor --></a><h5 class="label">Figure 3</h5>
+<div class="caption"><p class="first" id="id311">ML in industry 4.0 publications and citations since 1999.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-22-08641-f004"><!-- named anchor --></a><h5 class="label">Figure 4</h5>
+<div class="caption"><p class="first" id="id312">ML Methods by paper count for corpus.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-22-08641-f005"><!-- named anchor --></a><h5 class="label">Figure 5</h5>
+<div class="caption"><p class="first" id="id313">Plots of topic words by c-TF-IDF scores from topic modelling entire corpus.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-22-08641-f006"><!-- named anchor --></a><h5 class="label">Figure 6</h5>
+<div class="caption"><p class="first" id="id314">Visualization of topic clusters by further reducing embedding dimensions.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-22-08641-f007"><!-- named anchor --></a><h5 class="label">Figure 7</h5>
+<div class="caption"><p class="first" id="id315">Count of papers by ML term mentions for each topic.</p></div>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="sensors-22-08641-f008"><!-- named anchor --></a><h5 class="label">Figure 8</h5>
+<div class="caption"><p class="first" id="id316">Mind map of high potential value areas for ML in industry 4.0, by mentions in top consulting companies’ white papers.</p></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="sensors-22-08641-t001"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<span class="object-id">sensors-22-08641-t001_Table 1</span><div class="caption"><p class="first" id="id317">Paper sources for corpus.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id318"><!-- named anchor --></a><thead>
+<a id="id319"><!-- named anchor --></a><tr>
+<a id="id320"><!-- named anchor --></a><th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">
+<a id="id321"><!-- named anchor --></a>Source Type</th>
+<th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">
+<a id="id322"><!-- named anchor --></a>Count</th>
+<th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">
+<a id="id323"><!-- named anchor --></a>% of  Data</th>
+</tr>
+</thead>
+<tbody>
+<a id="id324"><!-- named anchor --></a><tr>
+<a id="id325"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id326"><!-- named anchor --></a>Article</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id327"><!-- named anchor --></a>27,767</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id328"><!-- named anchor --></a>60.65</td>
+</tr>
+<tr>
+<a id="id329"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id330"><!-- named anchor --></a>Conference Paper</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id331"><!-- named anchor --></a>15,664</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id332"><!-- named anchor --></a>34.21</td>
+</tr>
+<tr>
+<a id="id333"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id334"><!-- named anchor --></a>Review</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id335"><!-- named anchor --></a>1496</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id336"><!-- named anchor --></a>3.27</td>
+</tr>
+<tr>
+<a id="id337"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id338"><!-- named anchor --></a>Book/Chapter</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id339"><!-- named anchor --></a>504</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id340"><!-- named anchor --></a>1.1</td>
+</tr>
+<tr>
+<a id="id341"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id342"><!-- named anchor --></a>Other</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id343"><!-- named anchor --></a>352</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id344"><!-- named anchor --></a>0.77</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="sensors-22-08641-t002"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<span class="object-id">sensors-22-08641-t002_Table 2</span><div class="caption"><p class="first" id="id345">Top 10 results of topic modelling.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id346"><!-- named anchor --></a><thead>
+<a id="id347"><!-- named anchor --></a><tr>
+<a id="id348"><!-- named anchor --></a><th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">
+<a id="id349"><!-- named anchor --></a>Topic</th>
+<th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">
+<a id="id350"><!-- named anchor --></a>% of  Data</th>
+</tr>
+</thead>
+<tbody>
+<a id="id351"><!-- named anchor --></a><tr>
+<a id="id352"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id353"><!-- named anchor --></a>0. Predictive Models and Digital Systems for Industrial Machines</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id354"><!-- named anchor --></a>25.44</td>
+</tr>
+<tr>
+<a id="id355"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id356"><!-- named anchor --></a>1. Robotic Automation</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id357"><!-- named anchor --></a>16.33</td>
+</tr>
+<tr>
+<a id="id358"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id359"><!-- named anchor --></a>2. Modelling for Agriculture and Water Treatment</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id360"><!-- named anchor --></a>10.45</td>
+</tr>
+<tr>
+<a id="id361"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id362"><!-- named anchor --></a>3. Forecasting Load and Power Demands</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id363"><!-- named anchor --></a>3.25</td>
+</tr>
+<tr>
+<a id="id364"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id365"><!-- named anchor --></a>4. Tool wear, Cutting Parameters &amp; Surface Materials for Milling</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id366"><!-- named anchor --></a>3.01</td>
+</tr>
+<tr>
+<a id="id367"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id368"><!-- named anchor --></a>5. Prediction and Modelling of Thermic Processes &amp; Fluid Production</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id369"><!-- named anchor --></a>2.56</td>
+</tr>
+<tr>
+<a id="id370"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id371"><!-- named anchor --></a>6. Prediction and Modelling for COVID-19 &amp; Medical Devices</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id372"><!-- named anchor --></a>2.37</td>
+</tr>
+<tr>
+<a id="id373"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id374"><!-- named anchor --></a>7. Sentiment Analysis and Recommender Systems</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id375"><!-- named anchor --></a>2.37</td>
+</tr>
+<tr>
+<a id="id376"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id377"><!-- named anchor --></a>8. Optimization of Job Scheduling</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id378"><!-- named anchor --></a>1.91</td>
+</tr>
+<tr>
+<a id="id379"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id380"><!-- named anchor --></a>9. Gait Recognition and Modelling using Sensors, Wearables and Images</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id381"><!-- named anchor --></a>1.30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="sensors-22-08641-t003"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<span class="object-id">sensors-22-08641-t003_Table 3</span><div class="caption"><p class="first" id="id382">Top 20 results of topic modelling inclusive of sub-topics.</p></div>
+<table frame="hsides" rules="groups">
+<a id="id383"><!-- named anchor --></a><thead>
+<a id="id384"><!-- named anchor --></a><tr>
+<a id="id385"><!-- named anchor --></a><th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">
+<a id="id386"><!-- named anchor --></a>Topic</th>
+<th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">
+<a id="id387"><!-- named anchor --></a>% of  Data</th>
+</tr>
+</thead>
+<tbody>
+<a id="id388"><!-- named anchor --></a><tr>
+<a id="id389"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id390"><!-- named anchor --></a>0. Security and Intrusion Detection</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id391"><!-- named anchor --></a>4.38</td>
+</tr>
+<tr>
+<a id="id392"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id393"><!-- named anchor --></a>1. Fault Diagnosis and Detection</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id394"><!-- named anchor --></a>3.88</td>
+</tr>
+<tr>
+<a id="id395"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id396"><!-- named anchor --></a>2. Forecasting Load and Power Demands</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id397"><!-- named anchor --></a>3.25</td>
+</tr>
+<tr>
+<a id="id398"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id399"><!-- named anchor --></a>3. Industrial IoT and Wireless Communication</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id400"><!-- named anchor --></a>3.05</td>
+</tr>
+<tr>
+<a id="id401"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id402"><!-- named anchor --></a>4. Tool wear, Cutting Parameters and Surface Materials for Milling</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id403"><!-- named anchor --></a>3.01</td>
+</tr>
+<tr>
+<a id="id404"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id405"><!-- named anchor --></a>5. Prediction and Modelling of Thermal Processes and Fluid Production</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id406"><!-- named anchor --></a>2.56</td>
+</tr>
+<tr>
+<a id="id407"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id408"><!-- named anchor --></a>6. Prediction and Modelling for COVID-19 and Medical Devices</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id409"><!-- named anchor --></a>2.37</td>
+</tr>
+<tr>
+<a id="id410"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id411"><!-- named anchor --></a>7. Sentiment Analysis and Recommender Systems</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id412"><!-- named anchor --></a>2.37</td>
+</tr>
+<tr>
+<a id="id413"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id414"><!-- named anchor --></a>8. Reinforcement Learning for Robotics in Assembly and Planning</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id415"><!-- named anchor --></a>2.00</td>
+</tr>
+<tr>
+<a id="id416"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id417"><!-- named anchor --></a>9. Optimization of Job Scheduling</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id418"><!-- named anchor --></a>1.91</td>
+</tr>
+<tr>
+<a id="id419"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id420"><!-- named anchor --></a>10. Modelling Control of Robotic Manipulators</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id421"><!-- named anchor --></a>1.83</td>
+</tr>
+<tr>
+<a id="id422"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id423"><!-- named anchor --></a>11. Modelling for Processing Wastewater and Water Treatment</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id424"><!-- named anchor --></a>1.80</td>
+</tr>
+<tr>
+<a id="id425"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id426"><!-- named anchor --></a>12. Predictive Maintenance and RUL Forecasting</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id427"><!-- named anchor --></a>1.63</td>
+</tr>
+<tr>
+<a id="id428"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id429"><!-- named anchor --></a>13. Adaptive Motor Control</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id430"><!-- named anchor --></a>1.60</td>
+</tr>
+<tr>
+<a id="id431"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id432"><!-- named anchor --></a>14. Quality Inspection</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id433"><!-- named anchor --></a>1.37</td>
+</tr>
+<tr>
+<a id="id434"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id435"><!-- named anchor --></a>15. Fuzzy Risk Analysis and Safety Management</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id436"><!-- named anchor --></a>1.36</td>
+</tr>
+<tr>
+<a id="id437"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id438"><!-- named anchor --></a>16. Pose Estimation for Grasping Objects</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id439"><!-- named anchor --></a>1.33</td>
+</tr>
+<tr>
+<a id="id440"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id441"><!-- named anchor --></a>17. Gait Recognition and Modelling using Sensors and Images</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id442"><!-- named anchor --></a>1.30</td>
+</tr>
+<tr>
+<a id="id443"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id444"><!-- named anchor --></a>18. Engineering Education and Skill Development</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id445"><!-- named anchor --></a>1.16</td>
+</tr>
+<tr>
+<a id="id446"><!-- named anchor --></a><td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id447"><!-- named anchor --></a>19. Forecasting Crop Yields</td>
+<td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<a id="id448"><!-- named anchor --></a>1.03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>machine learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>industry 4.0</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>topic modelling</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>deep learning</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>systematic review</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
