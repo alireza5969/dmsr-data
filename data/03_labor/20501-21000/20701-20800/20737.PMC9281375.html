@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Morrison, Bedinger, Beevers, and McClymont: Exploring the raison d’etre behind metric selection in network analysis: a systematic review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>Appl Netw Sci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>Appl Netw Sci</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>3814</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>phenaturepg</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101732938</p>
+<p class="metadata-entry"><span class="generated">Title: </span>Applied Network Science</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2364-8228</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="41109_2022_Article_476.pdf">41109_2022_Article_476.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© The Author(s) 2022</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License: </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by/4.0/<p id="id1"><b>Open Access</b>This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <a target="xrefwindow" href="https://creativecommons.org/licenses/by/4.0/" id="id2">http://creativecommons.org/licenses/by/4.0/</a>.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>1 October 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>27 May 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>14 July 2022</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">print</span>): </span>2022</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>7</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>1<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>412442<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>50</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC9281375</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC9281375.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>9281375</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>9281375</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>35854964</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1007/s41109-022-00476-w</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>476</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>http://dx.doi.org/10.13039/501100000266Engineering and Physical Sciences Research Council</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>EP/NE30419/1</p>
+<p class="metadata-entry"><span class="generated">Award Recipient: </span>L. Beevers</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Exploring the <i>raison d’etre</i> behind metric selection in network analysis: a systematic review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-4612-081X<span class="generated">] </span>D. Morrison<span class="generated">[</span><a href="#Aff1"><span class="warning">{ label needed for aff[@id='Aff1'] }</span></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry">dh48@hw.ac.uk</p></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0001-6097-1595<span class="generated">] </span>M. Bedinger<span class="generated">[</span><a href="#Aff1"><span class="warning">{ label needed for aff[@id='Aff1'] }</span></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-1597-273X<span class="generated">] </span>L. Beevers<span class="generated">[</span><a href="#Aff1"><span class="warning">{ label needed for aff[@id='Aff1'] }</span></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0003-0235-7786<span class="generated">] </span>K. McClymont<span class="generated">[</span><a href="#Aff1"><span class="warning">{ label needed for aff[@id='Aff1'] }</span></a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell"> </div>
+<div class="cell"><div class="metadata-group"><p class="metadata-entry"><a id="Aff1"><!-- named anchor --></a>grid.9531.e0000000106567444School of Energy, Geosciences, Infrastructure and Society, Heriot-Watt University, William Arrol Building, Room W.A. 3.36/3.37, 2 Third Gait, Currie, Edinburgh, EH14 4AS UK </p></div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<p class="first" id="Par1">Network analysis is a useful tool to analyse the interactions and structure of graphs that represent the relationships among entities, such as sectors within an urban system. Connecting entities in this way is vital in understanding the complexity of the modern world, and how to navigate these complexities during an event. However, the field of network analysis has grown rapidly since the 1970s to produce a vast array of available metrics that describe different graph properties. This diversity allows network analysis to be applied across myriad research domains and contexts, however widespread applications have produced polysemic metrics. Challenges arise in identifying which method of network analysis to adopt, which metrics to choose, and how many are suitable. This paper undertakes a structured review of literature to provide clarity on <i>raison d’etre</i> behind metric selection and suggests a way forward for applied network analysis. It is essential that future studies explicitly report the rationale behind metric choice and describe how the mathematics relates to target concepts and themes. An exploratory metric analysis is an important step in identifying the most important metrics and understanding redundant ones. Finally, where applicable, one should select an optimal number of metrics that describe the network both locally and globally, so as to understand the interactions and structure as holistically as possible.</p>
+<div class="section">
+<a id="id7"><!-- named anchor --></a><h3 class="section-title">Supplementary Information</h3>
+<p id="id8">The online version contains supplementary material available at 10.1007/s41109-022-00476-w.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="section">
+<a id="Sec1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="Par14">As urbanisation increases, cities have become hubs of the modern world. Abundant with people, resources and services which drive the growth of technology, the economy and society; all of which are intertwined with one another (Cristiano et al. <a href="#CR26">2020</a>). They operate as urban ‘systems’, and represent networks of different interacting and co-evolving constituent parts (van Meeteren <a href="#CR86">2019</a>). It is estimated that 55% of the world’s population live in urban areas, with projected increases of up to 70% by 2050 (United Nations <a href="#CR85">2018</a>). In order to maintain reliable functioning of the urban system, there will be associated increases in assets to accommodate this growing population. Expansion of the urban system in tandem with a changing climate leaves constituent parts (e.g. local economy; technical infrastructure) susceptible to potentially huge losses in the event of a perturbation (Bouwer et al. <a href="#CR11">2007</a>; Alfieri et al. <a href="#CR1">2017</a>).</p>
+<p id="Par15">Recent shocks to the system, have highlighted how complex and interconnected our urban systems really are. For example, the global outbreak of COVID-19 has impacted healthcare, education, employment, travel and wellbeing—all supported by individual systems that are reliant on each other. Understanding this ‘domino’ effect within urban systems is therefore paramount and risk management must progress by treating risks not in isolation, but instead by considering how risk permeates throughout the elements within the urban system as a whole. Past approaches to the management of urban systems have been critiqued as reductionist, i.e. where feedback effects and interactions between parts have not been sufficiently acknowledged (Cavallo and Ireland <a href="#CR15">2014</a>). In such approaches, any risk posed to a constituent part was self-contained within itself, implying that it does not pose any risk to the wider system (Clark-Ginsberg et al. <a href="#CR22">2018</a>). However, methods such as <i>Network Analysis</i> enable elements within a system to be mapped and linked together, presenting a more comprehensive approach to assessing urban systems.</p>
+<p id="Par16">Network analysis is born from <i>Graph Theory</i>, where entities of a specified nature (e.g. services, people, houses, infrastructure, cities etc.) are represented as ‘vertices’ or ‘nodes’ that are each connected through a series of ‘edges’ or ‘links’. The use of graph theory for representing systems such as cities is relatively new, and is achieved through the following steps: (1) Identify network <i>typologies</i> (e.g. emergency facilities, households) (2) Define <i>connections</i> (e.g. emergency facilities provide relief to households and businesses) (3) Define <i>rules</i> (e.g. households and businesses are associated with their closest emergency facilities, such as fire stations, hospitals etc.) and (4) Build the <i>graph</i> in the form of an ‘adjacency matrix’ or ‘edge list’ (Fig. <a href="#Fig1">1</a>) (Arosio et al. <a href="#CR3">2020</a>). When the graph is established, the structure and characteristics of the network can be analysed through an array of metrics.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig1"><!-- named anchor --></a><h5 class="label">Fig. 1</h5>
+<div class="caption"><p class="first" id="id9">Adjacency matrix (left) to graph/network (right)</p></div>
+</div></p>
+<p id="Par17">Network metrics help to describe a network at either a local level (which looks at individual elements i.e. particular nodes or edges) or a global level (which looks at the network as a whole) (Miele et al. <a href="#CR61">2019</a>). The most established and commonly used metrics are those developed by Freeman (<a href="#CR40">1979</a>): Betweenness Centrality, Degree Centrality and Closeness Centrality. The concept of centrality is one that pertains to the local level of a network, and seeks to quantify the position, importance or influence of an element in a network. Centrality originated in Social Network Analysis (SNA) (Newman <a href="#CR66">2010</a>), therefore many characteristics that metrics such as Betweenness, Degree and Closeness describe are sociological in origin. However, centrality metrics have also been used to describe physical networks such as neural topology of the brain (Saberi et al. <a href="#CR77">2021</a>); technical networks such as water distribution systems (Giustolisi et al. <a href="#CR43">2019</a>); and multi-mode networks such as those modelling tangible and intangible elements in an urban system (Beevers et al. <a href="#CR7">2022</a>; McClymont et al. <a href="#CR59">2021</a>).</p>
+<p id="Par18">The transferability of centrality metrics across domains and contexts highlights a particular strength of network analysis in that many different systems, from the brain to entire cities, can be represented. However, Miele et al. (<a href="#CR61">2019</a>) argues there is a risk of blind use of metrics and other issues surrounding metric selection. The ease and availability of network analysis software allows end users to calculate a range of metrics without fully understanding the mathematics. It is therefore essential that the adopted metric is truly able to describe the characteristics of the system in question and is applied and interpreted by the researcher in an appropriate manner. Global metrics (e.g. Density, Diameter) are used to compare different networks, however simple characteristics that vary across each network (e.g. number of nodes) can influence the results of global metrics. In addition, multiple metrics are often chosen without clarification of how they each make different contributions to the analysis, which can lead to redundant results if the chosen metrics are in some way correlated.</p>
+<p id="Par19">Given the wide range of possible applications of network analysis, one might ask: when should I use a certain metric and not another? What are the reasons for choosing network metrics and is it fair to assume that common metrics (i.e. centrality) can consistently describe the same system characteristic across a wide range of scenarios and domains? How many metrics are appropriate to use? Are some metrics more versatile across contexts than others?</p>
+<p id="Par20">To explore these questions, this study looks at the wider urban systems and disaster management literature to find the <i>raison d’etre</i> behind metric selection in network analysis. We identify the most common types of network analysis and the supporting metrics to fulfil study objectives, therefore answering “<i>who uses what, where, and why?</i>”<i>.</i> This study aims to reflect on past selection and application of network metrics across the fields of urban systems and disaster management, to avoid misinterpretation of results due to inappropriate metric selection and maximise the usefulness of network analysis in future.</p>
+</div>
+<div class="section">
+<a id="Sec2"><!-- named anchor --></a><h2 class="main-title">Methodology</h2>
+<p id="Par21">The materials used to conduct this review were retrieved from Scopus. Our analysis sought to identify research papers from the fields of disaster management and urban systems that feature network analysis. Papers were limited to journal or conference articles, written in English, with no upper or lower limit on publication date. In order to meet the PRISMA criteria of systematic reviews (Liberati et al. <a href="#CR54">2009</a>) we outline the search terms used to systematically identify relevant literature and predefined inclusion and exclusion criteria to ensure reproducibility. The initial literature search was conducted on 16th March 2021 and the full research workflow is summarised in Fig. <a href="#Fig2">2</a>. Search queries in Scopus were as follows;</p>
+<p id="Par22">TITLE-ABS-KEY ("FLOOD MANAGEMENT" OR "DROUGHT MANAGEMENT" OR "DISASTER RISK REDUCTION" OR "DISASTER MANAGEMENT" OR "HAZARD MANAGEMENT" OR "URBAN SYSTEMS" OR "COMPLEX ADAPTIVE SYSTEMS") AND TITLE-ABS-KEY ("NETWORK ANALYSIS" OR "NETWORK THEORY" OR "NETWORK SCIENCE" OR "GRAPH THEORY" OR "GRAPH ANALYSIS" OR "GRAPH METRIC").<div class="fig panel" style="display: float; clear: both">
+<a id="Fig2"><!-- named anchor --></a><h5 class="label">Fig. 2</h5>
+<div class="caption"><p class="first" id="id10">Research workflow</p></div>
+</div></p>
+<p id="Par23">The initial search in Scopus returned a total of 476 papers, which after duplicates were removed was reduced to 465 papers. 21 papers were unavailable on Scopus for review therefore 443 papers were carried forward for Stage 2.</p>
+<p id="Par24">Strict inclusion and exclusion criteria were established to keep within the scope of this review (Table <a href="#Tab1">1</a>). These criteria act as a means in which to filter out studies as per Stage 2 of the research workflow, where the abstracts of the 443 papers were screened for eligibility. During the abstract-screening stage, papers were manually examined to determine whether they met the pre-defined eligibility criteria for the qualitative analysis. The primary purpose of this stage was to ensure that there was a technical application of network analysis that adopted one or more metrics. Papers that used network analysis as a form of visualisation only with no quantitative analysis were excluded. Moreover, Bayesian and neural network-based papers were excluded as these tend to be more events-based, focused on probabilities between events and extracting new insights from granular data through deep/machine learning. Here our focus is on structure-based network insights, e.g., whether one element of the network has more influence than another. The abstract screening process provided 346 papers for the full-text screening in Stage 3.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id11">Inclusion and exclusion criteria adopted to identify papers within the scope of the review</p></div>
+<table frame="hsides" rules="groups">
+<a id="id12"><!-- named anchor --></a><thead>
+<a id="id13"><!-- named anchor --></a><tr>
+<a id="id14"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id15"><!-- named anchor --></a>Inclusion criteria</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id16"><!-- named anchor --></a>Exclusion criteria</th>
+</tr>
+</thead>
+<tbody>
+<a id="id17"><!-- named anchor --></a><tr>
+<a id="id18"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id19"><!-- named anchor --></a>Studies that include a technical application of network analysis in the context of disaster management, urban systems and/or complex adaptive systems, to gain structure-based network insights</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id20"><!-- named anchor --></a><p class="first" id="id21">Studies that use “network” as a general descriptive term and do not explicitly include applications of network/graph theory</p>
+<p id="id22">Papers that adopt methods such as neural networks and Bayesian networks which aim to gain insights about probabilities of events</p>
+<p id="id23">Discourse papers on urban systems, complex adaptive systems, and disaster management</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="Par25">The full-text screening process in Stage 3 is an extension of the abstract screening stage. This stage involved full-text screening of 346 papers, in which the following information was documented in Excel; network method used, metrics adopted, research domain and context. Given that metrics that quantify centrality of a network have since been diversified, in that they extend out with SNA, it was necessary to distinguish between identified metrics and what particular branch of network analysis they were applied to. Moreover, distinguishing between research domain and context was also necessary since, for example, the disaster management domain comprises a wide range of contexts (i.e. different hazards and disasters). Out of 346 papers that qualified for full-text screening, 155 papers were identified for a richer, manual qualitative analysis. These papers served as the database that form the results and discussion of this review.</p>
+<p id="Par26">The final stage of the research workflow was to manually review the final 155 papers as comprehensively as possible using the documented information in excel as a guide, and also served to validate the initial information extracted during the full-text screening stage to minimise potential error. For example, each study had the adopted metrics recorded, therefore an aim of the analysis was to identify (if any) the rationale behind metric selection. Identifying the rationale behind metric selection for each of the 155 papers and comparing with the quantitative excel database (i.e. what metrics were used in what domain and context) facilitated answering the research questions. For instance, studies that share a research domain and context (e.g. examining the emergency response network after a flood) may adopt different metrics, or one study may adopt just one, whereas another adopts several metrics; is there an explicit reason for this? In addition, the characteristics that a metric is aiming to describe in a particular study were mapped to each metric for use in a frequency analysis. This aims to provide an understanding of how versatile metrics are in describing certain properties of a network. The literature search in this review covers multiple (albeit related) domains in its Scopus search (i.e. hazard management, disaster management, flood management, drought management + urban systems and Complex Adaptive Systems (CAS).</p>
+</div>
+<div class="section">
+<a id="Sec3"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<div class="section">
+<a id="Sec4"><!-- named anchor --></a><h3 class="section-title">Publication trend</h3>
+<p id="Par27">Figure <a href="#Fig3">3</a> below outlines the timeline of network analysis applications in the 155 identified papers used in the analysis, as discussed in “<a href="#Sec2">Methodology</a>” section. For this review, the earliest identified application of network analysis was in 1975. Following this, no applications of network analysis were featured until 2005. From then onwards, a sharp increase can be observed, with the largest annual peak in 2020 (32 applications). The sharp rise suggests that the value of network analysis is of increasing interest to researchers focused on extreme events. Conceptually, research in this area has increasingly acknowledged the systemic interconnectedness of events and impacts (Pederson et al. <a href="#CR71">2006</a>). Practically, the influx of ‘Big Data’ from 2005 (van Rijmenam <a href="#CR87">2013</a>) has created greater opportunities for insights into system behaviour, and facilitated analysis of more sophisticated networks, e.g. with geocoded social media data (Songchon et al. <a href="#CR80">2021</a>).<div class="fig panel" style="display: float; clear: both">
+<a id="Fig3"><!-- named anchor --></a><h5 class="label">Fig. 3</h5>
+<div class="caption"><p class="first" id="id24">Network analysis publication trend</p></div>
+</div></p>
+<p id="Par28">Regarding the domains in which these studies are applied, 87 of the 155 (56%) papers analysed were within disaster management. The breadth of disaster management studies accounted for all hazards such as floods, tsunamis, earthquakes, hurricanes, terrorism, cyber-security and disease outbreaks. The remaining 44% of papers were related to “urban systems” and “CAS” and were diverse in their research domains, with applications in: sustainable development, supply-chain management, healthcare, transport and critical infrastructure, ecology and wider climate-related research such as water resources and emissions. The balance between network publications in urban systems and disaster management highlights an almost even application on short-term problems concerned with direct shocks, or disturbances (disaster management) and longer-term more complex problems such as urban planning in systems research.</p>
+</div>
+<div class="section">
+<a id="Sec5"><!-- named anchor --></a><h3 class="section-title">Network methods</h3>
+<p id="Par29">In total, we identified 31 unique network analysis methods that can be grouped into 8 categories (Table <a href="#Tab2">2</a>). Figure <a href="#Fig4">4</a> provides a breakdown of each individual method.<div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id25">Network analysis methods</p></div>
+<table frame="hsides" rules="groups">
+<a id="id26"><!-- named anchor --></a><thead>
+<a id="id27"><!-- named anchor --></a><tr>
+<a id="id28"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id29"><!-- named anchor --></a>Method category</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id30"><!-- named anchor --></a>Broad category definition</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id31"><!-- named anchor --></a>No. of papers</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id32"><!-- named anchor --></a>Percentage (%)<sup>a</sup>
+</th>
+</tr>
+</thead>
+<tbody>
+<a id="id33"><!-- named anchor --></a><tr>
+<a id="id34"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id35"><!-- named anchor --></a>Social network analysis</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id36"><!-- named anchor --></a>Networks that examine social structure of graph, where nodes typically represent actors/people</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id37"><!-- named anchor --></a>69</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id38"><!-- named anchor --></a>42</td>
+</tr>
+<tr>
+<a id="id39"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id40"><!-- named anchor --></a>GIS-based network</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id41"><!-- named anchor --></a>A graph in which the nodes and edges are defined based on georeferenced data</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id42"><!-- named anchor --></a>22</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id43"><!-- named anchor --></a>13</td>
+</tr>
+<tr>
+<a id="id44"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id45"><!-- named anchor --></a>Routing problem</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id46"><!-- named anchor --></a>Typically, the same as GIS-based networks, however main objective is finding optimal/shortest path in the network</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id47"><!-- named anchor --></a>20</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id48"><!-- named anchor --></a>1312</td>
+</tr>
+<tr>
+<a id="id49"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id50"><!-- named anchor --></a>Ecological network analysis</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id51"><!-- named anchor --></a>Network methods that follow typical ENA approaches, where flows between systems/nodes are analysed</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id52"><!-- named anchor --></a>17</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id53"><!-- named anchor --></a>1210</td>
+</tr>
+<tr>
+<a id="id54"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id55"><!-- named anchor --></a>Modelling/simulation</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id56"><!-- named anchor --></a>Computational model-based methods in which network analysis is incorporated</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id57"><!-- named anchor --></a>16</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id58"><!-- named anchor --></a>10</td>
+</tr>
+<tr>
+<a id="id59"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id60"><!-- named anchor --></a>Standard network</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id61"><!-- named anchor --></a>Networks that follow standard structures</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id62"><!-- named anchor --></a>12</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id63"><!-- named anchor --></a>7</td>
+</tr>
+<tr>
+<a id="id64"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id65"><!-- named anchor --></a>Complex network</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id66"><!-- named anchor --></a>Networks that follow complex structures</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id67"><!-- named anchor --></a>3</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id68"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id69"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id70"><!-- named anchor --></a>Content analysis</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id71"><!-- named anchor --></a>Textual/bibliographic based network methods</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id72"><!-- named anchor --></a>3</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id73"><!-- named anchor --></a>2</td>
+</tr>
+<tr>
+<a id="id74"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id75"><!-- named anchor --></a>Other</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id76"><!-- named anchor --></a>Any method that does not fall into any of the above categories</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id77"><!-- named anchor --></a>4</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id78"><!-- named anchor --></a>2</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><p class="first" id="id79"><sup>a</sup>Some studies use multiple methods, therefore total % is &gt; 100</p></div>
+</div><div class="fig panel" style="display: float; clear: both">
+<a id="Fig4"><!-- named anchor --></a><h5 class="label">Fig. 4</h5>
+<div class="caption"><p class="first" id="id80">Map of identified network methods according to categories</p></div>
+</div></p>
+<p id="Par30">The most popular method was SNA, accounting for just under half of all studies (42%, 69/155 papers). Applications of SNA were predominantly in the disaster management domain (65%, 45/69 papers), where the context was mainly focused on Emergency Management Networks (EMN) such as how Governments and Local Authorities responded to previous disasters. For more detailed information on networks in EMNs, we refer the reader to the review by Du et al. (<a href="#CR33">2020</a>).</p>
+<p id="Par31">The next most popular network methods are GIS-based networks (13%, 22/155 papers) and routing-problem-based networks (12%, 20/155 papers). Whilst we acknowledge that routing problem-based networks are also spatial in nature, we categorise them differently based on the method objective; GIS-based networks in this review refer to networks developed using georeferenced data that are diverse in research domain, context and aim. For example Ceron et al. (<a href="#CR19">2020</a>) examine meteorological topology of the system using radar-derive rainfall data and Sun et al. (<a href="#CR81">2019</a>) investigate regional economic development of urban agglomerations in China. On the other hand, routing-problem-based networks are exclusive within the disaster management domain (95%, 19/20 papers), where there is a focus on evacuation, emergency service response or access to relief facilities. One exception is a wider transport-related application of a routing problem by Guettiche and Kheddouci (<a href="#CR45">2019</a>) who examine critical transport nodes and links to mitigate congestion. Thus two of the most popular network analysis methods (SNA and Routing Problem methods) are almost exclusively focused on disaster management, it suggests that there is a lack of methodological diversity in the domain, with respect to network analysis techniques.</p>
+<p id="Par32">In contrast, 6 out of 8 method categories (approximately 51% of papers) are within the wider urban systems domains outlined previously. The modelling/simulation methods category consists of 6 different methods (Fig. <a href="#Fig4">4</a>) which incorporate network analysis with applications in critical infrastructure (Pumpuni-Lenss et al. <a href="#CR73">2017</a>) and urban development (Sun et al. <a href="#CR81">2019</a>). Moreover, simulation methods such as Agent-based Modelling (ABM) are integrated within SNA, routing problems and Ecological Network Analysis (ENA) (7 papers).</p>
+<p id="Par33">Applications of ENA are typically applied in the same area of urban and sustainable development (66%, 12/18 papers), with exceptions in ecology (Borrett et al. <a href="#CR10">2006</a>), climate (Chen et al. <a href="#CR20">2015</a>) and aviation (Burns et al. <a href="#CR13">2008</a>; DeLaurentis and Ayyalasomayajula <a href="#CR28">2009</a>).</p>
+<p id="Par34">Celik and Corbacioglu (<a href="#CR17">2018</a>), Comfort et al. (<a href="#CR24">2013</a>) and Jin et al. (<a href="#CR49">2014</a>) feature as examples of typical ‘complex networks’, mainly small-world and scale-free networks. Both applications of complex network featured in this review are exclusive to disaster management.</p>
+</div>
+<div class="section">
+<a id="Sec6"><!-- named anchor --></a><h3 class="section-title">Network metrics</h3>
+<p id="Par35">In total 38 global metrics and 41 local metrics were identified from the qualitative analysis of 155 papers, with a pool of 79 metrics available overall. Additional file <a href="#MOESM1">1</a>: Table S1 provides a summary table with the definitions of each metric and a classification as either “Global” or “Local”. Global metrics typically describe characteristics, topology, and structure at the network/system level. Conversely, local metrics are typically centrality-based measures that describe the characteristics of a network at the node/edge level. The split between global and local metrics is roughly even, where out of all 79 metrics, global metrics account for 48% and local metrics 52%.</p>
+<div class="section">
+<a id="Sec7"><!-- named anchor --></a><h4 class="subsection-title">Local metrics</h4>
+<p id="Par36">Overall, the top three most frequently occurring local metrics were Betweenness Centrality (51%, 79/155 papers), Degree Centrality (32%, 50/155 papers) and Characteristic Path Length (i.e. mean path length or shortest/optimal path; 28%, 44/155 papers). Developed by Freeman (<a href="#CR40">1979</a>) (alongside Closeness Centrality; the 4th most frequently occurring metric. 15%, 23/155 papers) the concept of centrality was developed in the context of social networks. Given that SNA is also the most popular form of network analysis (every application of SNA utilises at least one centrality metric), it is no surprise that they are the most popular metrics. Similarly, the prevalence of GIS-based networks and Routing problems (53%, 42/79 papers) highlighted in “<a href="#Sec6">Network metrics</a>” section can also explain the popularity of path length as a metric, as the applications of routing problems are typically associated with evacuation behaviour, and thus shortest and optimal path lengths are the objective in these studies (see Xuefen and Lim <a href="#CR90">2016</a>).</p>
+<p id="Par37">Whilst centrality metrics are most popular where SNA is concerned, of particular interest is how these metrics were applied across the other categories of network analysis described in Table <a href="#Tab2">2</a>, and in what domains. Of the papers that did not use SNA, 40% (34/86 papers) adopted centrality measures, highlighting that these metrics are versatile out with social networks. Beyond the established centrality which dominate local analysis, there are 8 additional centrality metrics that cumulatively account for &lt; 1% (7 papers). These are as follows: Cascading Centrality and Random Centrality (Der Sarkissian et al. <a href="#CR29">2020</a>), Directed Alternative Centrality and Directed Alternative Power (Zheng et al. <a href="#CR94">2020</a>), Egobetweenness Centrality (Hossain and Kuti <a href="#CR47">2010</a>), Percolation Centrality (Dong et al. <a href="#CR32">2020</a>), Power Centrality (Radulescu et al. <a href="#CR74">2020</a>), and Status Centrality (Ongkowijoyo and Doloi <a href="#CR68">2017</a>; Tang and Lai <a href="#CR83">2019</a>). All but three of these centrality measures (Directed Alternative Centrality, Directed Alternative Power and Power Centrality) were applied in the context of disaster management using either spatial networks or SNA, whereas the other three were applied in urban systems in the context of smart cities (SNA) or examining spatial interaction, migration and inter-city flows (spatial network). Although all these studies have deviated from the norm by including lesser-known centrality metrics, only Zheng et al. (<a href="#CR94">2020</a>) did not supplement their analysis with one of either Betweenness, Closeness or Degree Centrality. Figure <a href="#Fig5">5</a> summarises the distribution of local metrics.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig5"><!-- named anchor --></a><h5 class="label">Fig. 5</h5>
+<div class="caption"><p class="first" id="id81">Frequency of local network metrics</p></div>
+</div></p>
+</div>
+<div class="section">
+<a id="Sec8"><!-- named anchor --></a><h4 class="subsection-title">Global metrics</h4>
+<p id="Par38">Figure <a href="#Fig6">6</a> illustrates the most popular global metrics. The top three most popular global metrics were Density (26%, 41/155 papers), Centralisation (13%, 20/155 papers), and Throughflow (9.7%, 15/155 papers) joint with Clustering Coefficient (9.7%, 15/155 papers). Density and Centralisation are complementary ‘global' metrics to Betweenness and Degree Centrality, as they provide an overview of a network as a whole, as opposed to the centrality of individual nodes. Largely these metrics are applied in SNA. There are few instances in which Density (7 papers) and Centralisation (2 papers) were adopted out with SNA. For example, Wang et al. (<a href="#CR88">2020</a>) adopt density as a topological measure of a Human-Spatial system based on geocoded social media data before, during and after Hurricane Harvey. He et al. (<a href="#CR46">2019</a>) use Density to assess the hierarchical structure of China’s ‘megaregions’ to explore the urbanisation process.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig6"><!-- named anchor --></a><h5 class="label">Fig. 6</h5>
+<div class="caption"><p class="first" id="id82">Frequency of global network metrics</p></div>
+</div></p>
+<p id="Par39">In addition to established metrics such as Degree, Betweenness, Density and Centralisation, there are several bespoke applications of metrics that are unique to particular studies. In an exploratory analysis of the ‘World City Network’, Derudder and Taylor (<a href="#CR30">2005</a>) present ‘Global Network Connectivity’ (GNC) which is an aggregated measure of a city’s connectivity in relation to other cities and ‘City Cliquishness’, which is derived from an already popular means of assessing the structure of a network through ‘clique analysis’ (6%, 10/155 papers).</p>
+<p id="Par40">Similar to the points raised in “<a href="#Sec7">Local metrics</a>” section, where centrality metrics are largely associated with applications of SNA, the same can be said for ENA. This approach is built around network ‘flows’ (Throughflow), in which the flows (e.g. energy, resources, passengers) are used to analyse the interaction between multiple systems (Fath et al. <a href="#CR38">2007</a>). Throughflow is both a global (system level) and local (node level) metric (Borrett et al. <a href="#CR10">2006</a>; Finn <a href="#CR39">1980</a>). Whilst ENA is always associated with flows there are instances where ENA has been supplemented with additional metrics which are also unique to ENA: Average Mutual Information (AMI), Development Capacity and Ascendency (Bodini <a href="#CR8">2012</a>; Bodini et al. <a href="#CR9">2012</a>), Network Utility (e.g. Gao et al. <a href="#CR41">2021</a>), Control (Tan et al. <a href="#CR82">2018</a>; Yang et al. <a href="#CR91">2020</a>), Network Flux (Liu et al. <a href="#CR56">2011</a>), Stability (Fan and Fang <a href="#CR36">2019</a>) and Mixed Trophic Impact (Gao et al. <a href="#CR41">2021</a>).</p>
+</div>
+<div class="section">
+<a id="Sec9"><!-- named anchor --></a><h4 class="subsection-title">Number of metrics used</h4>
+<p id="Par41">Figure <a href="#Fig7">7</a> below summarises the distribution of metrics across the 155 papers. The distribution is right-skewed, indicating that a majority of papers adopted 1–2 metrics in a network analysis, with an average metric count of approximately 3.<div class="fig panel" style="display: float; clear: both">
+<a id="Fig7"><!-- named anchor --></a><h5 class="label">Fig. 7</h5>
+<div class="caption"><p class="first" id="id83">Distribution of metrics based on how many metrics are adopted across the 155 papers.</p></div>
+</div></p>
+<p id="Par42">At the extremes of the distribution, there are 4 occurrences in which there were no explicitly stated metrics adopted in the analysis. For example, Pastor-Escuredo et al. (<a href="#CR70">2020</a>) adopt SNA in the context of Flood Risk Management (FRM) to propose a rapid multi-dimensional impact assessment framework using social media data. In contrast, another SNA-based approach by Ongkowijoyo and Doloi (<a href="#CR68">2017</a>) adopts 8 metrics: Density, Centralisation, Degree Centrality, Closeness Centrality, Betweenness Centrality, Eigenvector Centrality, Status Centrality and Risk Criticality. The emphasis towards local level metrics suggests that various characteristics of the nodes within the network are necessary to describe. Romascanu et al. (<a href="#CR76">2020</a>) highlight that historically, consistent centrality measures are not adopted when identifying central nodes within networks. When examining this in the context of this review, it is found that 17% of SNA studies adopt only one metric. This therefore begs the question as to why some applications of network analysis do not aspire to describe the system in question as holistically as possible, through a suite of metrics which describe different aspects of the network.</p>
+<p id="Par43">Whilst these examples are based on SNA approaches, it is important to highlight that the number of metrics adopted is context dependent, with respect to the chosen network method. For example, ENA is unique in that it does not require the same indicators as SNA as it focuses on flows, as opposed to characteristics such as centrality. Therefore the typical metrics adopted in this approach are Throughflow (at both system and node level) or Network Utility (with additional metrics adopted as highlight previously in “<a href="#Sec8">Global metrics</a>” section). Similarly, Routing Problems are less concerned with characterising the important nodes, instead the shortest/optimal route is the priority, therefore Characteristic Path Length is often the only metric adopted (70%, 14/20 papers).</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec10"><!-- named anchor --></a><h3 class="section-title">Network characteristics</h3>
+<p id="Par44">The previous section, “<a href="#Sec5">Network methods</a>” and <a href="#Sec6">Network metrics</a>” aimed to give an overview of the state-of-the-art regarding network methods and metrics. This section explores the extent to which the rationale behind use of particular metrics is reported and made transparent. In other words: what do we hope to learn about systems through network analysis? Why are particular metrics used, and what key concepts or system properties are thought to be targeted by each?</p>
+<p id="Par45">In a small proportion (6%, 10/155 papers) of papers there was a lack of transparency and explicit reporting around the rationale behind metric selection. This suggests that there is no particular ‘blind use’ of metrics with the vast majority of papers providing a description of how the metric relates to the system in question, or at least a generic definition. Of the papers where no explicit rationale or definition is provided however, the typical metrics adopted are those which featured most frequently in “<a href="#Sec7">Local metrics</a>” section (Degree Centrality, Betweenness Centrality) and “<a href="#Sec8">Global metrics</a>” section (Density, Centralisation, Clustering Coefficient). This suggests that their level of establishment is commonplace, such that it is assumed they require no detailed explanation.</p>
+<p id="Par46">Figure <a href="#Fig8">8</a> illustrates the most frequently occurring characteristics described by the identified metrics. Table <a href="#Tab3">3</a> provides a summary of the top 8 characteristics with their frequencies. It is no surprise that the most frequently occurring characteristic is <i>connectivity</i>. In total, 12 metrics were described as measures of connectivity. In some cases, the distinction between metrics of connectivity are related to the scale of the network being measured. For example, Degree Centrality can measure node (local) connectivity, whilst Cohesion is a measure of system (global) connectivity. It is clear therefore that it is less of case that connectivity is a priority in network analysis, but more the <i>nature</i> of the connectivity that is important (Fig. <a href="#Fig8">8</a>).<div class="fig panel" style="display: float; clear: both">
+<a id="Fig8"><!-- named anchor --></a><h5 class="label">Fig. 8</h5>
+<div class="caption"><p class="first" id="id84">Word cloud revealing the most common characteristics described by metrics</p></div>
+</div><div class="table-wrap panel" style="display: float; clear: both">
+<a id="Tab3"><!-- named anchor --></a><h5 class="label">Table 3</h5>
+<div class="caption"><p class="first" id="id85">Top 8 characteristics with frequency</p></div>
+<table frame="hsides" rules="groups">
+<a id="id86"><!-- named anchor --></a><thead>
+<a id="id87"><!-- named anchor --></a><tr>
+<a id="id88"><!-- named anchor --></a><th align="left" colspan="1" rowspan="1">
+<a id="id89"><!-- named anchor --></a>Characteristic</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id90"><!-- named anchor --></a>Frequency</th>
+<th align="left" colspan="1" rowspan="1">
+<a id="id91"><!-- named anchor --></a>Associated metrics</th>
+</tr>
+</thead>
+<tbody>
+<a id="id92"><!-- named anchor --></a><tr>
+<a id="id93"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id94"><!-- named anchor --></a>Connectivity</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id95"><!-- named anchor --></a>34</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id96"><!-- named anchor --></a>Characteristic Path Length, Betweenness, Degree, Closeness, k-core, Clustering Coefficient, Disruption Index, Cohesion, Global efficiency, Centralisation, Global Network Connectivity, Density</td>
+</tr>
+<tr>
+<a id="id97"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id98"><!-- named anchor --></a>Importance</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id99"><!-- named anchor --></a>20</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id100"><!-- named anchor --></a>Betweenness, Degree, Closeness, Eigenvector, Edge Importance Index, Link Criticality, PageRank, Node Interdependence</td>
+</tr>
+<tr>
+<a id="id101"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id102"><!-- named anchor --></a>Accessibility</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id103"><!-- named anchor --></a>12</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id104"><!-- named anchor --></a>Characteristic Path Length</td>
+</tr>
+<tr>
+<a id="id105"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id106"><!-- named anchor --></a>Influence</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id107"><!-- named anchor --></a>12</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id108"><!-- named anchor --></a>Betweenness, Degree, Closeness, Eigenvector, Status</td>
+</tr>
+<tr>
+<a id="id109"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id110"><!-- named anchor --></a>Flows</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id111"><!-- named anchor --></a>10</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id112"><!-- named anchor --></a>Betweenness, Degree, Closeness, Edge Interdependence, Node Strength, Throughflow</td>
+</tr>
+<tr>
+<a id="id113"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id114"><!-- named anchor --></a>Information</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id115"><!-- named anchor --></a>8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id116"><!-- named anchor --></a>Betweenness, Degree, Closeness, Edge Interdependence, Node Strength</td>
+</tr>
+<tr>
+<a id="id117"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id118"><!-- named anchor --></a>Position</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id119"><!-- named anchor --></a>8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id120"><!-- named anchor --></a>Betweenness, Degree</td>
+</tr>
+<tr>
+<a id="id121"><!-- named anchor --></a><td align="left" colspan="1" rowspan="1">
+<a id="id122"><!-- named anchor --></a>Power</td>
+<td char="." align="char" colspan="1" rowspan="1">
+<a id="id123"><!-- named anchor --></a>8</td>
+<td align="left" colspan="1" rowspan="1">
+<a id="id124"><!-- named anchor --></a>Betweenness, Degree, Closeness</td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p id="Par47">The interchangeability of characteristics that metrics can describe is also highlighted in Table <a href="#Tab3">3</a>. Betweenness, Degree, Closeness and Eigenvector Centrality are all mentioned as describing a node’s <i>importance</i>, <i>influence</i>, <i>position</i> and <i>power</i>. Given that all of these metrics are mathematically different, it suggests that there are different ways in which a node can be “important” or “influential”. Furthermore, the main centrality metrics feature in most of the characteristics described such as being measures to describe “information flows”, therefore network metrics are highly diverse and context dependent.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec11"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<div class="section">
+<a id="Sec12"><!-- named anchor --></a><h3 class="section-title">Who uses what? And where?</h3>
+<p id="Par48">With respect to “who” is using network analysis amongst the targeted areas in a broad sense, the applications of network analysis reviewed here were somewhat evenly spread across disaster management (with respect to all kinds of hazards) and urban systems CAS literature (a breadth of contexts). When disaggregating this further by specific network analysis techniques, it is clear that there is a wide range of different methods available. This highlights that in the areas of disaster management and urban systems, network analysis has been significantly diversified since the original conception of SNA in the 1970s (see Zhang <a href="#CR93">2010</a>).</p>
+<p id="Par49">Advances in computational power and data availability have not only facilitated more advanced applications of SNA, but have allowed integration with other computational methods such as modelling and simulation. For example, Rodrigueza and Estuar (<a href="#CR75">2018</a>) use SNA as a basis for understanding disaster behaviour in an ABM. Furthermore, network analysis has evolved beyond the study of sociology, as the importance of transport and critical infrastructure has become a modern concern. For example, georeferenced data has enabled path analysis of transport and mobility, or the “actors” (nodes) in a network no longer need to be people or organisations, but instead businesses, homes and emergency facilities in “Hybrid-social physical networks” (Bozza et al. <a href="#CR12">2017</a>). Furthermore, graph theory has facilitated systems-oriented methods such as ENA, which not only pertains to ecosystems, but the interactions between physical systems such as cities across the world (Bodini et al. <a href="#CR9">2012</a>).</p>
+<p id="Par50">With respect to “who uses what”, despite the availability of a wide range of specific network analysis methods, there is siloing within the reviewed research domains. A majority (65%) of disaster management studies used either SNA or Routing Problems. However, the application of network methods is broader in the urban systems domain, where 6 out of 8 method categories (Table <a href="#Tab2">2</a>) were used in 51% of studies overall. The focus on SNA and routing-problem-based networks within disaster management suggests that there are established priorities, yet also highlights gaps where network analysis may also be able to fill. For instance, the primary application of SNA is centred around response networks and organisational collaboration during previous disasters, where two extreme events (i.e. floods) are compared to examine how networks have evolved between two past points in time. This is intended to examine the preparedness of a nation or region. However, the prevalence of such applications suggest that there may be an overemphasis on understanding past events, instead of more directly preparing for future events. Applications that are more present- or future-oriented (i.e. evacuation and emergency service response modelling across spatial transport networks) do suggest that there is some element of future preparation involved, however, as they are based on shortest/optimal path problems, they mostly represent preparedness in the context of spatial movement, rather than abstract social collaboration. Because looking to future preparedness requires dealing with a great deal of uncertainty regarding how context may change from the present, and it is crucial to understand the more fundamental (but highly complex) dynamics behind preparedness in the present before introducing those future uncertainties, these findings are understandable. However, the high prevalence of SNA or Routing Problems suggests more could be done to expand the conceptualisation of research problems—and diversify the application of network analysis techniques—within disaster management (Bedinger et al. <a href="#CR6">2019</a>). This review suggests that disaster management should therefore turn towards the wider urban systems literature for inspiration regarding alternative network analysis methods that consider the interdependency of multiple systems as opposed to mobility only. For instance, ENA applications in urban systems studies often model the interactions between different sectors (Liu et al. <a href="#CR56">2011</a>).</p>
+<p id="Par51">With respect to “where”, we have further disaggregated this review by the focus of specific network analysis techniques—in other words, whether the metrics used have a local or global perspective. A wide range of metrics were identified in the chosen research domains with an almost equal representation between global and local.</p>
+<p id="Par52">It should be acknowledged that this discussion emphasises centrality metrics, due to their overwhelming popularity, and that a comprehensive discussion of reviewed applications for each of the 79 metrics would be cumbersome and out with the scope of this study.</p>
+<p id="Par53">Unsurprisingly, the most frequently used of all metrics (both global and local) were all local metrics of centrality (Freeman <a href="#CR40">1979</a>): Betweenness, Degree, and Closeness. These are sociological in origin, and have coevolved with the development of SNA, whereby they have typically been used to describe social entities. However, the diversification of network analysis has led to a diversification of metrics in two ways. First, SNA is no longer only “social”—it is the go-to network analysis method regardless of the phenomenon being studied. Although centrality metrics are grounded in SNA, and thus would be assumed to pertain to sociological entities, these metrics have been used to describe a host of other entities, or to describe economic proxies whilst the main method is still SNA. This is important as it begs the question as to why in disaster management there remains such a focus on applying SNA to mainly social-based networks, rather than extending this to different sectors that are interconnected and are at risk (e.g. health care, economy, transport). Second, centrality metrics are frequently applied in methods other than SNA (e.g. ABM), and the concept of centrality has developed beyond metrics proposed by Freeman (<a href="#CR40">1979</a>) to other centrality metrics.</p>
+<p id="Par54">The versatility of centrality metrics and the availability of many other metrics (global and local) highlights the value of network analysis. Although this does present issues as well.</p>
+</div>
+<div class="section">
+<a id="Sec13"><!-- named anchor --></a><h3 class="section-title">How many metrics should I use? When should I use this metric and not the other?</h3>
+<p id="Par55">It is challenging to definitively answer how many metrics one should use in network analysis, as this depends on context, adopted method, time, resources, and knowledge of the end user. However, based on the results in “<a href="#Sec9">Number of metrics used</a>” section, three things are clear; the average number of metrics observed in this review is three; the majority of studies adopt fewer than 3; and there is wide variation across the studies (i.e. some studies adopt several (8) and some adopt none at all). Centrality metrics are typically used to capture specific characteristics of a network, such as evaluating how a single node is connected to the rest (degree centrality), which provides a static overview of network structure. From a more dynamic perspective, betweenness centrality evaluates how ‘information’ propagates through the network. Other centrality metrics, such as eigenvector centrality aim to fill the gaps of basic nodal metrics such as degree centrality, as it includes ‘information’ (such as a nodes influences) whilst also describing the connectivity as degree centrality evaluates. Given these three perspectives, this could possibly explain why typically studies returned in this review adopt an average of three metrics. This would therefore assume that there is a minimum number of characteristics required to evaluated a network.</p>
+<p id="Par56">If the purpose of having an array of metrics is to capture different characteristics of a network, then it could be argued that more metrics are better, as each metric would contribute to holistically describing the system. However, this is where context becomes important. For example, Cui and Li (<a href="#CR27">2020</a>) aimed to measure two concepts: social capital and how it is used in community resilience. Both of these concepts are multi-faceted and represent complex sociological interactions, such as sense of belonging, collective efficacy, trust, and reciprocity. To achieve this, Cui and Li (<a href="#CR27">2020</a>) adopt one global metric (Density) and seven local metrics (Betweenness, Degree, Closeness, Path Length, Efficiency, Constraint, Structural Holes) as appropriate to these concepts. In a different context, Balsiger and Ingold (<a href="#CR5">2016</a>) aimed to investigate how actors within flood governance collaborate and share information based on perceptions of sustainability, using just one local metric (Degree Centrality). Degree Centrality uses the concept of “Structural embeddedness” (see Granovetter <a href="#CR44">1992</a>) which describes how embedded an actor is in the network based on how central they are (i.e. how many actors they are connected to). Both studies clearly define their objectives and achieve them through appropriate metrics; the former study’s scope is wider or more complex, therefore a wider range of metrics is perhaps necessary.</p>
+<p id="Par57">However, one could also use the latter study to highlight inconsistent metric applications between studies measuring similar concepts. Balsiger and Ingold (<a href="#CR5">2016</a>) and another study (Comfort et al. <a href="#CR25">2016</a>) both aim to examine collaboration. Comfort et al. (<a href="#CR25">2016</a>) use another sociological concept: “bridging” actors. These are defined as actors that link between two indirectly connected actors, and this can be measured using Betweenness Centrality. If the objectives of the two studies are similar, why has one adopted Betweenness Centrality and the other has not? Further contradicting these observations is Faas et al. (<a href="#CR35">2017</a>), whose objective is also analysing bridging actors, however in this instance, Degree Centrality is the only metric presented in the paper. These examples show it is difficult to justify which and how many metrics should be used, based only on referencing past applications of disaster management and urban systems research, because the existing body of work is inconsistent.</p>
+<p id="Par58">So how should we justify which and how many metrics should be used? The fundamental aims of network analysis are arguably to represent complex concepts (e.g. multi-faceted social interactions) with a systems perspective (i.e. what is happening both locally and globally). Selecting only one metric is insufficient to achieve either. One metric can only cover one concept, and either global or local characteristics. Therefore at least one global and one local metric is desirable. In addition, more is not necessarily better, as this runs the risk of redundancy if the results of the chosen metrics are correlated (Miele et al. <a href="#CR61">2019</a>).</p>
+<p id="Par59">Therefore, we would argue that an important step in selecting network metrics is a correlation analysis in order to minimise this risk. For example, the R package, <i>Central Informative Nodes in Network Analysis</i> (CINNA) (see Ashtiani et al. <a href="#CR4">2019</a>) enables comparisons across numerous measures of centrality to identify the most important metrics using Principal Component Analysis (PCA) and pairwise associations.</p>
+</div>
+<div class="section">
+<a id="Sec14"><!-- named anchor --></a><h3 class="section-title">Are some metrics more versatile than others? Can common metrics consistently describe the same characteristic across contexts?</h3>
+<p id="Par60">The results in Sects. “<a href="#Sec6">Network metrics</a>” and “<a href="#Sec10">Network characteristics</a>” sections highlight that there is diversity in terms of what characteristics of a system or entities can describe. Moreover, the above discussion has alluded to versatility amongst metrics in that two metrics can describe the same thing and that terminology is interchangeable. This raises the question, does interchangeable terminology represent versatility? Or inconsistency in reporting? Furthermore, beyond the most common metrics, what about the less popular ones?</p>
+<p id="Par61">In favour of the argument of inconsistency is the fact that there were studies (albeit a small percentage) which provided no rationale or explanation of metric choice. Katerndahl (<a href="#CR50">2012</a>) uses SNA to understand how research collaboration within academic faculties impacts productivity at the individual and departmental level, however does not provide any definition or rationale behind the use of Degree, Betweenness and Eigenvector Centrality. Similarly, Comfort et al. (<a href="#CR24">2013</a>) and Oh (<a href="#CR67">2017</a>) provide no rationale for their selection of metrics. Kim and Hastak (<a href="#CR51">2018</a>) provide no rationale for Density, yet describe Degree, Betweenness and Eigenvector centralities as metrics to explain “prominence or importance”, without distinguishing how these three centrality metrics differ and why all three are required to measure the same concept. In contrast, Liu and Lim (<a href="#CR55">2016</a>) provide no definitions for the centrality metrics Betweenness and Degree, yet provide definitions and interpretations of Centralisation and Density. Moreover, Comfort and Zhang (<a href="#CR23">2020</a>) explain the rationale behind Betweenness Centrality and the External/Internal Index, but omit any explanation of Density or Diameter. Tozer and Klenk (<a href="#CR84">2019</a>) use only Degree in a Bibliometric analysis but provide no rationale as to what it represents. Ma et al. (<a href="#CR57">2020</a>) simply state that degree measures structure. Finally, Pheungpha et al. (<a href="#CR72">2019</a>) and Zelenkauskaite et al. (<a href="#CR92">2012</a>) do not specify which metrics or measure of centrality is being used, respectively. In these instances, it appears the analysis was qualitative and that the relationships (i.e. who was connected to who) was of primary interest. Rather than specific failures to adequately outline methodological choices, we believe these instances speak to a larger issue of “letting the researcher decide” how to communicate about network analysis in non-mathematical fields. This is a barrier to a more transparent, higher standard of interdisciplinary network science.</p>
+<p id="Par62">In terms of versatility, it appears that it is not necessarily always a case of <i>which</i> characteristic is being measured but a case of <i>how</i>. The most frequently occurring characteristic is <i>connectivity.</i> In the context of Routing Problem based methods, this typically refers to how connections between nodes are disrupted as a result of a hazard in which the optimal path length is impacted due to a loss of connectivity (Espada et al. <a href="#CR34">2015</a>). <i>Accessibility</i> is also a frequently appearing characteristic which is interchangeable with connectivity in this context. Connectivity is used as a generic term when adopting centrality metrics, in which Degree, Betweenness and Closeness describe different aspects of connectivity. For example, Čerba et al. (<a href="#CR18">2017</a>) describe the connectivity of semantic resources in terms of quantity (Degree), distance and relation (Closeness) and whether nodes act as <i>bridges</i> (independent, or indirectly connected nodes; described by Betweenness) or not. Optimal connectivity is therefore described as a node which is connected to many others, acts as a bridge and is close to each other nodes. However, whilst in this instance connectivity appears to be a characteristic described by three measures of centrality, there are several examples of this that do not relate to well-known and oft-used centrality metrics. Derudder and Taylor (<a href="#CR30">2005</a>) use the GNC metric to measure a city’s connectivity in relation to other cities. This metric does not consider centrality. Furthermore, “Connectivity” is also a metric that represents the minimum amount of nodes or edges that would need to be removed to fragment the network into two or more isolated subgroups (Diestel <a href="#CR31">2005</a>) and Samarasinghe and Strickert (<a href="#CR78">2013</a>) claim that Density is a global indicator of connectivity. It is no surprise that connectivity is the most frequently occurring characteristic, given that networks are fundamentally about connection.</p>
+<p id="Par63">Similarly, the same applies for <i>importance</i> and <i>influence.</i> Kim and Hastak (<a href="#CR51">2018</a>) state that Degree, Betweenness and Eigenvector centrality are used to explain the importance of actors in an SNA analysis of social media data post-disaster. Taking a selection of examples from the application of SNA to measure response networks in disaster management, Calliari et al. (<a href="#CR14">2019</a>) use Degree to assess the <i>influence</i> of the most central actors in the network, Celik and Corbacioglu (<a href="#CR17">2018</a>) use Degree to highlight the most <i>important</i> and well-connected actors, and Celik and Corbacioglu (<a href="#CR16">2016</a>) and Cui and Li (<a href="#CR27">2020</a>) both measure the <i>power</i> of actors using Degree. Moreover, Celik and Corbacioglu (<a href="#CR16">2016</a>) use Betweenness as a means of measuring an actors’ <i>position</i> in the network, yet Htein et al. (<a href="#CR48">2018</a>) measure such actor-level <i>positioning</i> using Degree (with respect to Centralisation). Mathematically, Degree Centrality is simply the number of other nodes which a given node is connected to (Freeman <a href="#CR40">1979</a>). Therefore, it is recognisable in the context of social networks that a well-connected actor plays a prominent role in the network, and possesses influence and importance. However, the nature of this influence and importance is not only a function of the amount of connections. For instance, Meilani and Hardjosoekarto (<a href="#CR60">2020</a>) and Chen et al. (<a href="#CR21">2020</a>) make a distinction between Degree and Eigenvector Centrality by stating that power is measured in the latter not by how <i>many</i> connections a node has, but <i>who</i> the connections are. In both examples, nodes represent actors within disaster risk reduction efforts after an event and the <i>power</i> is identified by examining nodes who are both mutually high in Eigenvector Centrality, thus identifying <i>who</i> is most powerful differently than Degree Centrality affords.</p>
+<p id="Par64">Whilst centrality metrics are most popular where SNA is concerned, of particular interest is how else these metrics have been applied. A number of studies adopted centrality measures out with SNA, and described entities other than people or organisations. For example, Lao et al. (<a href="#CR53">2016</a>) use degree centrality to weight edges in their network to represent air passengers, thus providing a measure of a city’s centrality. Arora and Ventresca (<a href="#CR2">2018</a>) use Betweenness and Closeness centrality for preferential linking in the synthesis of resilient Supply Chain Networks (SCN), where centrality measures act as proxies for price, performance and quality. Mu et al. (<a href="#CR63">2020</a>) examine the spatial distribution of green space and physical factors to explore alternative green space planning strategies using Degree, Closeness and Betweenness. Garrett et al. (<a href="#CR42">2017</a>) adopt Degree, Closeness, Betweenness, Eigenvector as measures of centrality to explore food security and agricultural networks (alongside Cliques, Diameter and Path Length). In disaster management, centrality measures are typically associated with road networks and critical infrastructure; Fan and Mostafavi (<a href="#CR37">2019</a>) use degree centrality with social media data in a graph-based event detection model to identify disruption of critical infrastructure. Papilloud et al. (<a href="#CR69">2020</a>) characterise flood exposure of road network using Edge Betweenness Centrality (EBC) and Sasabe et al. (<a href="#CR79">2020</a>) also apply EBC in road network risk analysis. Alongside Lao et al. (<a href="#CR53">2016</a>), these instances were the only three in which Betweenness Centrality was measured at edges instead of nodes.</p>
+<p id="Par65">Whilst interchangeable terminology for some metrics is a prevalent theme emerging from this review, there are instances in which the metric being described is more definitive. A metric that is terminologically consistent across studies is Throughflow, used in ENA. Whilst the nature of the flows may vary between study, the purpose of applying the metric remains the same. Throughflow is classed as both a global and local metric. Locally, the flows can measure the importance of a node, whereas at a system level, the Total System Throughflow (TST) can indicate if a system is at a steady state if the sum of all inflows is equal to outflows. Measuring TST indicates the level of activity that pertains to the system in question, and this can be useful to characterise the system’s level of growth (e.g. economic growth in a city) (Bodini et al. <a href="#CR9">2012</a>). This presents a useful insight into the methods of network analysis as it is clear that SNA has evolved beyond sociology in terms of method and metrics, and its background in sociology has perhaps fostered the level of versatility, interchangeability, and at times, ambiguity as to what metrics actually mean for those interpreting their results. ENA on the other hand is far more clear-cut, as it depends on measuring flows in terms of materials and resources, not the roles of individuals which are far more difficult to quantify.</p>
+<p id="Par66">Moreover, there is also more consistency and less ambiguity in studies that adopt bespoke/composite/less popular/less generalisable metrics. Nakatani et al. (<a href="#CR65">2018</a>) demonstrate adaptability of network analysis by using a well-established economic indicator, the Herfindahl–Hirschman Index (see Matsumoto et al. <a href="#CR58">2012</a>) to measure the vulnerability of supply-chains. In contrast to vulnerability (an assessment of weak network links) is criticality, which measures importance (Knoop et al. <a href="#CR52">2012</a>). Mitsakis et al. (<a href="#CR62">2016</a>) adopt the Unified Network Performance Measure (UNPM) to assess the performance of a transportation network against technological and natural disasters. Developing on the approach by Nagurney and Qiang (<a href="#CR64">2008</a>), the UNPM is an example of a metric that has been developed to measure the performance of a network in a specific context, therefore the meaning of “importance” in comparison to that described by centrality measures is less ambiguous. An additional example of bespoke metrics are Travel Alternative Diversity and Network Spare Capacity Dimension by Xu et al. (<a href="#CR89">2018</a>). These are measures of redundancy in a transport network and aim quantify alternative travel routes and how much spare capacity the network has under normal and disruptive conditions.</p>
+</div>
+</div>
+<div class="section">
+<a id="Sec15"><!-- named anchor --></a><h2 class="main-title">Conclusions</h2>
+<div class="section">
+<a id="Sec16"><!-- named anchor --></a><h3 class="section-title">Summary of findings</h3>
+<p id="Par67">The modern world is highly complex and comprises of numerous interconnected entities. Understanding the interactions between these parts is of great importance if the fragility of the urban system is to be understood and mitigated. To do so requires advanced analytical methods that are able to quantify the importance of a particular component and examine its role in the system with respect to other parts upon which it may rely. Network methods have significantly increased in popularity as the availability of data and specialised software enables such analyses. Network analysis is not a restrictive technique as it can be applied across various contexts and domains, such as understanding the key actors and processes in social networks to supply-chain management. It is highly diverse, even beyond the scope of this review which covers disaster management and urban systems exclusively. Within the confines of these research domains, this review highlights some key issues in network analysis related to: the range of network methods in disaster management and urban systems, the selection of appropriate metrics to describe characteristics and whether or not metrics versatile, and how many metrics are necessary for a holistic analysis.</p>
+<p id="Par68">First, the concepts of graph theory and network analysis have developed well beyond original applications (SNA). It has developed into a research domain of its own and has become highly diverse in terms of what problems it seeks to answer; spanning from analysis of social systems, ecological systems, economic systems and infrastructure to name a few. In addition, it has purpose as a standalone method, but also as a supplementary method to simulation and modelling problems, such as human behaviour. Furthermore, SNA remains the most popular method, however extends beyond social entities. However, despite the diversity, siloing exists between the research domains examined in this review. Answering “<i>who uses what, and where?</i>”, we find that the majority of this diversity is found in the wider urban systems literature. Disaster management could take inspiration from this domain as it may benefit from applying SNA more broadly, out with the contexts of EMN. Furthermore, methods such as ENA may be appropriate in the context of systems-oriented approaches. Network analysis coupled with ABM is gaining traction. It should also be emphasised that whilst we discuss methodological diversity, this is constrained to the two specified research domains examined as part of this review. As a result, for network analysis applications more broadly, there are likely be additional methods that this review has not covered.</p>
+<p id="Par69">Second, answering “<i>who uses what, and why?</i>”, we find that the centrality metrics have evolved in tandem with the methodologies. Sociological in origin, centrality metrics are not constrained to quantifying the properties and characteristics of social entities. They can be applied to networks describing cities and air passenger flows. However, the versatility of these metrics has led to diverging meanings and interchangeable terminology. This makes it difficult to underpin an appropriate metric to analyse networks with, as it may be the case that the same metric describes one characteristic in one instance, and then something different in the other. Furthermore, out with centrality, there is a vast range of metrics that have been developed for a specific purpose, making them ‘bespoke’. Metrics can also that utilise established indices coupled with network principles (such as centrality) to form composite metrics. This review identified 79 metrics in total, many of which are not discussed, however it is clear that there are many metrics that are not being used.</p>
+<p id="Par70">Finally, answering the <i>raison d’etre</i> further, knowing when to select one metric and not the other, alongside how many metrics to adopt in an analysis is a point of importance. This review finds that the average number of metrics adopted is three, however nearly 20% of papers adopt only one. Given that metrics can either be categorised as global or local, selecting only one metric potentially fails to capture the necessary characteristics of the network. In contrast, there are instances where studies adopt up to eight metrics in an attempt to capture <i>all</i> characteristics. However, this approach falls short due to the fuzzy lexicon of certain metrics in that multiple are reported to describe the same thing. This potentially results in redundant analysis and multicollinearity between metrics.</p>
+</div>
+<div class="section">
+<a id="Sec17"><!-- named anchor --></a><h3 class="section-title">A way forward</h3>
+<p id="Par71">In light of the above findings, we outline a way forward researchers embarking on network analysis. The steps outlined acts as points to consider when approaching problems that require analysis of a network.<div class="list">
+<a id="id125"><!-- named anchor --></a><ol style="list-style-type: decimal">
+<li><p id="Par72"><i>Define target concepts and/or frameworks that support the study objectives.</i> It is then possible to map these concepts to the entities in the network and establish what characteristics are being measured. Characteristics can then be mapped to appropriate metrics. We refer the reader to supplementary material for a full list of the metrics identified in this review and definitions. One can also cast the net wider and use the CINNA package in R (see Ashtiani et al. <a href="#CR4">2019</a>) which provides metrics beyond those identified in this review.</p></li>
+<li><p id="Par73"><i>Make a metrics shortlist.</i> Ensuring your target concepts are in line with a shortlist of possible metrics by reviewing applications of similar metrics in the research domain of interest, make a shortlist of metrics for testing.</p></li>
+<li><p id="Par74"><i>Perform an exploratory metric analysis.</i> Using packages like CINNA, it is possible to perform PCA and Correlation analysis on a multitude of variables. PCA describes which of the shortlisted metrics contribute to the analysis most and describe how much of the variance within results. Correlation analysis is a quick way of identifying redundant metrics. Revise shortlist if necessary.</p></li>
+<li><p id="Par75"><i>Adopt at least more than one metric and understand the maths.</i> Mapping concepts such as social characteristics to mathematical formulas is difficult and it is possible that one may interpret the results different from what the maths describes. It is therefore important that in the final analysis, more than one metric is adopted to get an idea of how interpretation of results may change depending on the metric outputs in question. Furthermore, where possible, describe the network at both local and global scales.</p></li>
+<li><p id="Par76"><i>Be explicit.</i> Outline explicitly the rationale behind metric selection, what they aim to measure and describe, how the maths translates to the target concepts and rules of interpretation.</p></li>
+</ol>
+</div></p>
+</div>
+</div>
+<div class="section">
+<a id="id126"><!-- named anchor --></a><h2 class="main-title">Supplementary Information</h2>
+<div class="section">
+<a id="Sec18"><!-- named anchor --></a><p class="first" id="id127"><div class="panel">
+<a id="MOESM1"><!-- named anchor --></a><a id="id128" href="41109_2022_476_MOESM1_ESM.docx"><div class="caption"><p class="first" id="id129"><b>Additional file 1. Table S1.</b> Network metric definitions.</p></div></a>
+</div></p>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id167"><!-- named anchor --></a><h4 class="block-title">Abbreviations</h4>
+<div class="def-list">
+<a id="id130"><!-- named anchor --></a><div class="def-list table">
+<div class="def-item row" id="id131">
+<div class="def-term cell" id="id132"><p>ABM</p></div>
+<div class="def-def cell" id="id133"><p class="first" id="Par2">Agent-based modelling</p></div>
+</div>
+<div class="def-item row" id="id134">
+<div class="def-term cell" id="id135"><p>FRM</p></div>
+<div class="def-def cell" id="id136"><p class="first" id="Par3">Flood risk management</p></div>
+</div>
+<div class="def-item row" id="id137">
+<div class="def-term cell" id="id138"><p>CAS</p></div>
+<div class="def-def cell" id="id139"><p class="first" id="Par4">Complex adaptive systems</p></div>
+</div>
+<div class="def-item row" id="id140">
+<div class="def-term cell" id="id141"><p>CINNA</p></div>
+<div class="def-def cell" id="id142"><p class="first" id="Par5">Central informative nodes in network analysis</p></div>
+</div>
+<div class="def-item row" id="id143">
+<div class="def-term cell" id="id144"><p>ENA</p></div>
+<div class="def-def cell" id="id145"><p class="first" id="Par6">Ecological network analysis</p></div>
+</div>
+<div class="def-item row" id="id146">
+<div class="def-term cell" id="id147"><p>EBC</p></div>
+<div class="def-def cell" id="id148"><p class="first" id="Par7">Edge betweenness centrality</p></div>
+</div>
+<div class="def-item row" id="id149">
+<div class="def-term cell" id="id150"><p>EMN</p></div>
+<div class="def-def cell" id="id151"><p class="first" id="Par8">Emergency management networks</p></div>
+</div>
+<div class="def-item row" id="id152">
+<div class="def-term cell" id="id153"><p>GNC</p></div>
+<div class="def-def cell" id="id154"><p class="first" id="Par9">Global network connectivity</p></div>
+</div>
+<div class="def-item row" id="id155">
+<div class="def-term cell" id="id156"><p>PCA</p></div>
+<div class="def-def cell" id="id157"><p class="first" id="Par10">Principal component analysis</p></div>
+</div>
+<div class="def-item row" id="id158">
+<div class="def-term cell" id="id159"><p>SNA</p></div>
+<div class="def-def cell" id="id160"><p class="first" id="Par11">Social network analysis</p></div>
+</div>
+<div class="def-item row" id="id161">
+<div class="def-term cell" id="id162"><p>TST</p></div>
+<div class="def-def cell" id="id163"><p class="first" id="Par12">Total system throughflow</p></div>
+</div>
+<div class="def-item row" id="id164">
+<div class="def-term cell" id="id165"><p>UNPM</p></div>
+<div class="def-def cell" id="id166"><p class="first" id="Par13">Unified network performance measure</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="back-section">
+<a id="id171"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id168"><!-- named anchor --></a><p id="id169"><span class="generated">[1]</span> <b>Publisher's Note</b></p>
+<p id="id170">Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id173"><!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
+<p id="id172">The work presented would not have been possible were it not for the funding provided by EPSRC.</p>
+</div>
+<div class="back-section">
+<a id="id175"><!-- named anchor --></a><h2 class="main-title">Author contributions</h2>
+<p id="id174">DM, MB, LB and KM contributed to the design and implementation of the research. DM contributed to the main analysis. All authors contributed to writing the manuscript. There are no other persons who satisfied the criteria for authorship but are not listed. All authors read and approved the final manuscript.</p>
+</div>
+<div class="back-section">
+<a id="id177"><!-- named anchor --></a><h2 class="main-title">Funding</h2>
+<p id="id176">This work was undertaken as part of the ‘<i>Water Resilient Cities: Climate Uncertainty and Urban Vulnerability to Hydro-hazards</i>’ project, funded by the Engineering and Physical Sciences Research Council (EPSRC). Grant number EP/NE30419/1.</p>
+</div>
+<div class="back-section">
+<a id="id179"><!-- named anchor --></a><h2 class="main-title">Availability of data and materials</h2>
+<p id="id178">Not applicable.</p>
+</div>
+<div class="back-section">
+<a id="id180"><!-- named anchor --></a><h2 class="main-title">Declarations</h2>
+<h3 class="section-title">Consent for publication</h3>
+<p id="Par77">Not required.</p>
+<h3 class="section-title">Competing interests</h3>
+<p id="Par78">None.</p>
+</div>
+<div class="back-section">
+<a id="Bib1"><!-- named anchor --></a><div class="section ref-list">
+<a id="Bib1"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">1</span></span> <a id="CR1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id181"><!-- named anchor --></a>L AlfieriB BisselinkF DottoriG NaumannA de RooP SalamonK WyserL FeyenGlobal projections of river flood risk in a warmer worldEarth's Future20175217118210.1002/2016EF000485</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">2</span></span> <a id="CR2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id182"><!-- named anchor --></a>V AroraM VentrescaModeling topologically resilient supply chain networksAppl Netw Sci20183131910.1007/s41109-018-0070-7</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">3</span></span> <a id="CR3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id183"><!-- named anchor --></a>M ArosioMLV MartinaR FigueiredoThe whole is greater than the sum of its parts: a holistic graph-based assessment approach for natural hazard risk of complex systemsNat Hazard202020252154710.5194/nhess-20-521-2020</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">4</span></span> <a id="CR4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id184"><!-- named anchor --></a>M AshtianiM MirzaieM JafariCINNA: an R/CRAN package to decipher central informative nodes in network analysisBioinformatics20193581436143710.1093/bioinformatics/bty81930239607</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">5</span></span> <a id="CR5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id185"><!-- named anchor --></a>J BalsigerK IngoldIn the eye of the beholder: network location and sustainability perception in flood preventionEnviron Policy Gov201626424225610.1002/eet.1715</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">6</span></span> <a id="CR6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id186"><!-- named anchor --></a>M BedingerL BeeversL ColletA VisserAre we doing ‘systems’ research? A review of methods for climate change adaptation to hydro-hazards in a complex worldSustainability2019114116310.3390/su11041163</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">7</span></span> <a id="CR7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id187"><!-- named anchor --></a>Beevers L, Bedinger M, McClymont K, Morrison D, Aitken G, Quinn AV (2022) Modelling Systematic COVID-19 impacts in cities. Springer, Nature (Urban Sustainability)</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">8</span></span> <a id="CR8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id188"><!-- named anchor --></a>A BodiniBuilding a systemic environmental monitoring and indicators for sustainability: what has the ecological network approach to offer?Ecol Ind201215114014810.1016/j.ecolind.2011.09.032</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">9</span></span> <a id="CR9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id189"><!-- named anchor --></a>A BodiniC BondavalliS AllesinaCities as ecosystems: growth, development and implications for sustainabilityEcol Model201224518519810.1016/j.ecolmodel.2012.02.022</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">10</span></span> <a id="CR10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id190"><!-- named anchor --></a>SR BorrettSJ WhippleBC PattenRR ChristianIndirect effects and distributed control in ecosystems: temporal variation of indirect effects in a seven-compartment model of nitrogen flow in the Neuse River Estuary, USA—time series analysisEcol Model20061941–3 SPEC. ISS.17818810.1016/j.ecolmodel.2005.10.011</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">11</span></span> <a id="CR11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id191"><!-- named anchor --></a>LM BouwerRP CromptonE FaustP HöppeRA Pielke JrConfronting disaster lossesScience2007318585175375310.1126/science.114962817975052</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">12</span></span> <a id="CR12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id192"><!-- named anchor --></a>A BozzaD AsproneF ParisiG ManfrediAlternative resilience indices for city ecosystems subjected to natural hazardsComput-Aided Civ Infrastruct Eng201732752754510.1111/mice.12275</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">13</span></span> <a id="CR13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id193"><!-- named anchor --></a>MC BurnsCJ RocaBM MoixThe spatial implications of the functional proximity deriving from air passenger flows between European metropolitan urban regionsGeoJournal2008711375210.1007/s10708-008-9144-x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">14</span></span> <a id="CR14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id194"><!-- named anchor --></a>E CalliariM MichettiL FarniaE RamieriA network approach for moving from planning to implementation in climate change adaptation: evidence from southern MexicoEnviron Sci Policy201993201914615710.1016/j.envsci.2018.11.025</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">15</span></span> <a id="CR15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id195"><!-- named anchor --></a>A CavalloV IrelandPreparing for complex interdependent risks: a systems of systems approach to building disaster resilienceInt J Disaster Risk Reduct2014918119310.1016/j.ijdrr.2014.05.001</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">16</span></span> <a id="CR16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id196"><!-- named anchor --></a>S CelikS CorbaciogluFrom linearity to complexity: emergent characteristics of the 2006 Avian Influenza Response System in TurkeySaf Sci20169051310.1016/j.ssci.2016.01.006</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">17</span></span> <a id="CR17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id197"><!-- named anchor --></a>S CelikS CorbaciogluOrganizational learning in adapting to dynamic disaster environments in Southern TurkeyJ Asian Afr Stud201853221723210.1177/0021909616677368</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">18</span></span> <a id="CR18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id198"><!-- named anchor --></a>O ČerbaK JedličkaV ČadaK CharvátCentrality as a method for the evaluation of semantic resources for disaster risk reductionISPRS Int J Geo-Inf20176823710.3390/ijgi6080237</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">19</span></span> <a id="CR19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id199"><!-- named anchor --></a>W CeronLB SantosGD NetoMG QuilesOA CandidoCommunity detection in very high-resolution meteorological networksIEEE Geosci Remote Sens Lett202017112007201010.1109/LGRS.2019.2955508</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">20</span></span> <a id="CR20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id200"><!-- named anchor --></a>S ChenB ChenM SuNonzero-sum relationships in mitigating urban carbon emissions: a dynamic network simulationEnviron Sci Technol20154919115941160310.1021/acs.est.5b0265426340508</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">21</span></span> <a id="CR21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id201"><!-- named anchor --></a>W ChenH ZhangLK ComfortZ TaoExploring complex adaptive networks in the aftermath of the 2008 Wenchuan earthquake in ChinaSaf Sci2020125202010460710.1016/j.ssci.2020.104607</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">22</span></span> <a id="CR22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id202"><!-- named anchor --></a>A Clark-GinsbergL AbolhassaniEA RahmatiComparing networked and linear risk assessments: from theory to evidenceInt J Disaster Risk Reduct20183021622410.1016/j.ijdrr.2018.04.031</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">23</span></span> <a id="CR23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id203"><!-- named anchor --></a>LK ComfortH ZhangOperational networks: adaptation to extreme events in ChinaRisk Anal2020405981100010.1111/risa.1344231943307</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">24</span></span> <a id="CR24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id204"><!-- named anchor --></a>Comfort LK, Ertan G, Oh N, Haase T (2013) Network evolution in disaster management: a comparison of response systems evolving after the 2005 and 2008 gulf coast hurricanes. In: Proceedings of the 2013 IEEE 2nd international network science workshop, NSW 2013, pp 42–49. 10.1109/NSW.2013.6609193</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">25</span></span> <a id="CR25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id205"><!-- named anchor --></a>LK ComfortJ BertJE SongWicked problems in real time: uncertainty, information, and the escalation of EbolaInf Polity201621327328910.3233/IP-160394</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">26</span></span> <a id="CR26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id206"><!-- named anchor --></a>S CristianoA ZucaroG LiuS UlgiatiF GonellaOn the systemic features of urban systems. A look at material flows and cultural dimensions to address post-growth resilience and sustainabilityFront Sustain Cities202021210.3389/frsc.2020.00012</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">27</span></span> <a id="CR27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id207"><!-- named anchor --></a>P CuiD LiA SNA-based methodology for measuring the community resilience from the perspective of social capitals: take Nanjing, China as an exampleSustain Cities Soc20205310188010.1016/j.scs.2019.101880</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">28</span></span> <a id="CR28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id208"><!-- named anchor --></a>DA DeLaurentisS AyyalasomayajulaExploring the synergy between industrial ecology and system of systems to understand complexity a case study in air transportationJ Ind Ecol200913224726310.1111/j.1530-9290.2009.00121.x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">29</span></span> <a id="CR29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id209"><!-- named anchor --></a>R Der SarkissianC AbdallahJM ZaninettiS NajemModelling intra-dependencies to assess road network resilience to natural hazardsNat Hazards2020103112113710.1007/s11069-020-03962-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">30</span></span> <a id="CR30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id210"><!-- named anchor --></a>B DerudderP TaylorThe cliquishness of world citiesGlob Netw200551719110.1111/j.1471-0374.2005.00108.x</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">31</span></span> <a id="CR31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id211"><!-- named anchor --></a>R DiestelGraph theory. Graduate texts in mathematics20055BerlinSpringer12</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">32</span></span> <a id="CR32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id212"><!-- named anchor --></a>S DongA MostafiziH WangJ GaoX LiMeasuring the topological robustness of transportation networks to disaster-induced failures: a percolation approachJ Infrastruct Syst20202620402000910.1061/(asce)is.1943-555x.0000533</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">33</span></span> <a id="CR33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id213"><!-- named anchor --></a>L DuY FengLY TangW KangW LuNetworks in disaster emergency management: a systematic reviewNat Hazards202010.1007/s11069-020-04009-5</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">34</span></span> <a id="CR34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id214"><!-- named anchor --></a>RJ EspadaA ApanK McDougallVulnerability assessment and interdependency analysis of critical infrastructures for climate adaptation and flood mitigationInt J Disaster Resil Built Environ20156331334610.1108/IJDRBE-02-2014-0019</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">35</span></span> <a id="CR35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id215"><!-- named anchor --></a>AJ FaasALK VelezC FitzGeraldBL NowellTA SteelmanPatterns of preference and practice: bridging actors in wildfire response networks in the American NorthwestDisasters201741352754810.1111/disa.1221127654318</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">36</span></span> <a id="CR36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id216"><!-- named anchor --></a>Y FanC FangResearch on the synergy of urban system operation—based on the perspective of urban metabolismSci Total Environ201966244645410.1016/j.scitotenv.2019.01.25230695744</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">37</span></span> <a id="CR37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id217"><!-- named anchor --></a>C FanA MostafaviA graph-based method for social sensing of infrastructure disruptions in disastersComput-Aided Civ Infrastruct Eng201934121055107010.1111/mice.12457</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">38</span></span> <a id="CR38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id218"><!-- named anchor --></a>BD FathUM ScharlerRE UlanowiczB HannonEcological network analysis: network constructionEcol Model20072081495510.1016/j.ecolmodel.2007.04.029</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">39</span></span> <a id="CR39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id219"><!-- named anchor --></a>JT FinnFlow analysis of models of the Hubbard Brook ecosystemEcology198061356257110.2307/1937422</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">40</span></span> <a id="CR40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id220"><!-- named anchor --></a>LC FreemanCentrality in social networksSoc Netw19791321523910.1016/0378-8733(78)90021-7</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">41</span></span> <a id="CR41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id221"><!-- named anchor --></a>H GaoX TianY ZhangL ShiF ShiEvaluating circular economy performance based on ecological network analysis: a framework and application at city levelResour Conserv Recycl202116810525710.1016/j.resconrec.2020.105257</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">42</span></span> <a id="CR42"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id222"><!-- named anchor --></a>KA GarrettKF AndersenF AscheRL BowdenGA ForbesPA KulakowB ZhouResistance genes in global crop breeding networksPhytopathology2017107101268127810.1094/PHYTO-03-17-0082-FI28742460</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">43</span></span> <a id="CR43"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id223"><!-- named anchor --></a>O GiustolisiL RidolfiA SimoneTailoring centrality metrics for water distribution networksWater Resour Res20195532348236910.1029/2018WR023966</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">44</span></span> <a id="CR44"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id224"><!-- named anchor --></a>M GranovetterR EcclesN NohriaProblems of explanation in economic sociologyNetworks and organizations: structure, form, and action1992BostonHarvard Business School Press2556</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">45</span></span> <a id="CR45"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id225"><!-- named anchor --></a>M GuetticheH KheddouciCritical links detection in stochastic networks: application to the transport networksInt J Intell Comput Cybern2019121426910.1108/IJICC-04-2018-0055</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">46</span></span> <a id="CR46"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id226"><!-- named anchor --></a>D HeZ SunP GaoDevelopment of economic integration in the central Yangtze River Megaregion from the perspective of urban network evolutionSustainability (Switzerland)201910.3390/su11195401</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">47</span></span> <a id="CR47"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id227"><!-- named anchor --></a>L HossainM KutiDisaster response preparedness coordination through social networksDisasters201034375578610.1111/j.1467-7717.2010.01168.x20345465</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">48</span></span> <a id="CR48"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id228"><!-- named anchor --></a>MK HteinS LimTN ZawThe evolution of collaborative networks towards more polycentric disaster responses between the 2015 and 2016 Myanmar floodsInt J Disaster Risk Reduct201831August96498210.1016/j.ijdrr.2018.08.003</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">49</span></span> <a id="CR49"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id229"><!-- named anchor --></a>L JinW JiongD YangW HuapingD WeiA simulation study for emergency/disaster management by applying complex networks theoryJ Appl Res Technol201412222322910.1016/S1665-6423(14)72338-7</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">50</span></span> <a id="CR50"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id230"><!-- named anchor --></a>D KaterndahlCo-evolution of departmental research collaboration and scholarly outcomesJ Eval Clin Pract20121861241124710.1111/j.1365-2753.2012.01881.x22776292</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">51</span></span> <a id="CR51"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id231"><!-- named anchor --></a>J KimM HastakSocial network analysis: characteristics of online social networks after a disasterInt J Inf Manag2018381869610.1016/j.ijinfomgt.2017.08.003</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">52</span></span> <a id="CR52"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id232"><!-- named anchor --></a>VL KnoopM SnelderHJ van ZuylenSP HoogendoornLink-level vulnerability indicators for real-world networksTransp Res Part A Policy Pract201246584385410.1016/j.tra.2012.02.004</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">53</span></span> <a id="CR53"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id233"><!-- named anchor --></a>X LaoX ZhangT ShenM SkitmoreComparing China’s city transportation and economic networksCities201653435010.1016/j.cities.2016.01.006</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">54</span></span> <a id="CR54"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id234"><!-- named anchor --></a>A LiberatiDG AltmanJ TetzlaffC MulrowPC GøtzscheJPA IoannidisM ClarkePJ DevereauxJ KleijnenD MoherThe PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: explanation and elaborationPLoS Med200967e1000100e100012810.1371/journal.pmed.100010019621070PMC2707010</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">55</span></span> <a id="CR55"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id235"><!-- named anchor --></a>X LiuS LimIntegration of spatial analysis and an agent-based model into evacuation management for shelter assignment and routingJ Spat Sci201661228329810.1080/14498596.2016.1147393</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">56</span></span> <a id="CR56"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id236"><!-- named anchor --></a>GY LiuZF YangB ChenY ZhangEcological network determination of sectoral linkages, utility relations and structural characteristics on urban ecological economic systemEcol Model2011222152825283410.1016/j.ecolmodel.2011.04.034</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">57</span></span> <a id="CR57"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id237"><!-- named anchor --></a>X MaW LiuX ZhouC QinY ChenY XiangX ZhangM ZhaoEvolution of online public opinion during meteorological disastersEnviron Hazards202019437539710.1080/17477891.2019.1685932</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">58</span></span> <a id="CR58"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id238"><!-- named anchor --></a>A MatsumotoU MerloneF SzidarovszkySome notes on applying the Herfindahl–Hirschman IndexAppl Econ Lett201219218118410.1080/13504851.2011.570705</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">59</span></span> <a id="CR59"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id239"><!-- named anchor --></a>K McClymontM BedingerL BeeversG WalkerD MorrisonPP SantosK ChmutinaJ Von MedingE RajuAnalysing city-scale resilience using a novel systems approachUnderstanding disaster risk: a multidimensional approach20211AmsterdamElsevier179201</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">60</span></span> <a id="CR60"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id240"><!-- named anchor --></a>NL MeilaniS HardjosoekartoDigital weberianism bureaucracy: alertness and disaster risk reduction (DRR) related to the Sunda Strait volcanic tsunamiInt J Disaster Risk Reduct202051September10189810.1016/j.ijdrr.2020.101898</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">61</span></span> <a id="CR61"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id241"><!-- named anchor --></a>V MieleC MatiasS RobinS DrayNine quick tips for analyzing network dataPLoS Comput Biol2019151211010.1371/journal.pcbi.1007434PMC692231531856181</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">62</span></span> <a id="CR62"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id242"><!-- named anchor --></a>E MitsakisJM SalanovaI StamosE ChaniotakisNetwork criticality and network complexity indicators for the assessment of critical infrastructures during disasters2016ChamSpringer191205</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">63</span></span> <a id="CR63"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id243"><!-- named anchor --></a>B MuC LiuG TianY XuY ZhangAL MayerR LvR HeG KimConceptual planning of urban-rural green space from a multidimensional perspective: a case study of zhengzhou, ChinaSustainability202012712010.3390/su12072863</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">64</span></span> <a id="CR64"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id244"><!-- named anchor --></a>A NagurneyQ QiangA network efficiency measure with application to critical infrastructure networksJ Glob Optim200840126127510.1007/s10898-007-9198-1</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">65</span></span> <a id="CR65"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id245"><!-- named anchor --></a>J NakataniK TaharaK NakajimaI DaigoH KurishimaY KudohK MatsubaeY FukushimaT IharaY KikuchiA NishijimaY MoriguchiA graph theory-based methodology for vulnerability assessment of supply chains using the life cycle inventory databaseOmega2018751339135110.1016/j.omega.2017.03.003</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">66</span></span> <a id="CR66"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id246"><!-- named anchor --></a>MEJ NewmanNetworks: an introduction2010OxfordOxford University Press</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">67</span></span> <a id="CR67"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id247"><!-- named anchor --></a>N OhDimensions of strategic intervention for risk reduction and mitigation: a case study of the MV Sewol incidentJ Risk Res201720121516153310.1080/13669877.2016.1179210</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">68</span></span> <a id="CR68"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id248"><!-- named anchor --></a>C OngkowijoyoH DoloiDetermining critical infrastructure risks using social network analysisInt J Disaster Resil Built Environ20178152610.1108/IJDRBE-05-2016-0016</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">69</span></span> <a id="CR69"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id249"><!-- named anchor --></a>T PapilloudV RöthlisbergerS LoretiM KeilerFlood exposure analysis of road infrastructure: comparison of different methods at national levelInt J Disaster Risk Reduct202010.1016/j.ijdrr.2020.101548</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">70</span></span> <a id="CR70"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id250"><!-- named anchor --></a>D Pastor-EscuredoY TorresM Martínez-TorresPJ ZufiriaRapid multi-dimensional impact assessment of floodsSustainability (Switzerland)202010.3390/su12104246</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">71</span></span> <a id="CR71"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id251"><!-- named anchor --></a>Pederson P, Dudenhoeffer D, Hartley S, Permann M (2006) Critical infrastructure interdependency modelling: a survey of critical infrastructure interdependency modelling. Technical report. A. Idaho National Laboratory. 10.2172/911792</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">72</span></span> <a id="CR72"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id252"><!-- named anchor --></a>N PheungphaB SupriyonoAF WijayaS SujarwotoModes of network governance in disaster relief: the case of the Bangkok flood relief, 2011Public Administr Issues201920196779310.17323/1999-5431-2019-0-6-77-93</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">73</span></span> <a id="CR73"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id253"><!-- named anchor --></a>G Pumpuni-LenssT BlackburnA GarstenauerResilience in complex systems: an agent-based ApproachSyst Eng201720215817210.1002/sys.21387</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">74</span></span> <a id="CR74"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id254"><!-- named anchor --></a>CM RadulescuS SlavaAT RadulescuR ToaderDC ToaderGD BocaA pattern of collaborative networking for enhancing sustainability of smart citiesSustainability (Switzerland)202010.3390/su12031042</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">75</span></span> <a id="CR75"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id255"><!-- named anchor --></a>Rodrigueza RC, Estuar MRJE (2018) Social network analysis of a disaster behavior network: an agent-based modeling approach. In: Proceedings of the 2018 IEEE/ACM international conference on advances in social networks analysis and mining, ASONAM 2018, pp 1100–1107. 10.1109/ASONAM.2018.8508651</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">76</span></span> <a id="CR76"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id256"><!-- named anchor --></a>A RomascanuH KerR SieberS GreenidgeS LumleyD BushS MorganR ZhaoM BrunilaUsing deep learning and social network analysis to understand and manage extreme floodingJ Contingencies Crisis Manag202028325126110.1111/1468-5973.12311</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">77</span></span> <a id="CR77"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id257"><!-- named anchor --></a>M SaberiR KhosrowabadiA KhatibiB MisicG JafariTopological impact of negative links on the stability of resting-state brain networkSci Rep202110.1038/s41598-021-81767-7.PMC7838299PMC783829933500525</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">78</span></span> <a id="CR78"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id258"><!-- named anchor --></a>S SamarasingheG StrickertMixed-method integration and advances in fuzzy cognitive maps for computational policy simulations for natural hazard mitigationEnviron Model Softw20133918820010.1016/j.envsoft.2012.06.008</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">79</span></span> <a id="CR79"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id259"><!-- named anchor --></a>M SasabeK FujiiS KasaharaRoad network risk analysis considering people flow under ordinary and evacuation situationsEnviron Plan B Urban Anal City Sci202047575977410.1177/2399808318802940</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">80</span></span> <a id="CR80"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id260"><!-- named anchor --></a>C SongchonG WrightLC BeeversQuality assessment of crowdsourced social media data for urban flood managementComput Environ Urban Syst202110.1016/j.compenvurbsys.2021.101690</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">81</span></span> <a id="CR81"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id261"><!-- named anchor --></a>Q SunS WangK ZhangF MaX GuoT LiSpatial pattern of urban system based on gravity model and whole network analysis in eight urban agglomerations of ChinaMath Probl Eng201910.1155/2019/6509726</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">82</span></span> <a id="CR82"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id262"><!-- named anchor --></a>LM TanH ArbabiQ LiY ShengTD DensleyM MayfieldD CocaEcological network analysis on intra-city metabolism of functional urban areas in England and WalesResour Conserv Recycl201813817218210.1016/j.resconrec.2018.06.010</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">83</span></span> <a id="CR83"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id263"><!-- named anchor --></a>P TangS LaiA framework for managing public security risks with complex interactions in cities and its application evidenced from Shenzhen City in ChinaCities201995April10239010.1016/j.cities.2019.102390</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">84</span></span> <a id="CR84"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id264"><!-- named anchor --></a>L TozerN KlenkUrban configurations of carbon neutrality: insights from the Carbon Neutral Cities AllianceEnviron Plan C Politics Space201937353955710.1177/2399654418784949</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">85</span></span> <a id="CR85"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id265"><!-- named anchor --></a>United Nations (2018) World Urbanization Prospects: The 2018 Revision. Online Edition</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">86</span></span> <a id="CR86"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id266"><!-- named anchor --></a>Van Meeteren M (2019) Urban system. The Wiley Blackwell Encyclopedia of Urban and Regional Studies, pp 1–11</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">87</span></span> <a id="CR87"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id267"><!-- named anchor --></a>van Rijmenam M (2013) A short history of big data. <a target="xrefwindow" href="https://datafloq.com/read/big-data-history/239" id="id268">https://datafloq.com/read/big-data-history/239</a>. Accessed 22 Sept 2021</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">88</span></span> <a id="CR88"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id269"><!-- named anchor --></a>Y WangJE TaylorMJ GarvinMeasuring resilience of human-spatial systems to disasters: framework combining spatial-network analysis and fisher informationJ Manag Eng20203640402001910.1061/(asce)me.1943-5479.0000782</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">89</span></span> <a id="CR89"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id270"><!-- named anchor --></a>X XuA ChenS JansuwanC YangS RyuTransportation network redundancy: complementary measures and computational methodsTransp Res Part B Methodol2018114688510.1016/j.trb.2018.05.014</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">90</span></span> <a id="CR90"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id271"><!-- named anchor --></a>L XuefenS LimIntegration of spatial analysis and an agent-based model into evacuation management for shelter assignment and routingJ Spat Sci201661228329810.1080/14498596.2016.1147393</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">91</span></span> <a id="CR91"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id272"><!-- named anchor --></a>Z YangW GaoX ZhaoC HaoX XieSpatiotemporal patterns of population mobility and its determinants in Chinese cities based on travel big dataSustainability (Switzerland)202010.3390/SU12104012</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">92</span></span> <a id="CR92"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id273"><!-- named anchor --></a>Zelenkauskaite A, Bessis N, Sotiriadis S, Asimakopoulou E (2012) Interconnectedness of complex systems of internet of things through social network analysis for disaster management. In: Proceedings of the 2012 4th international conference on intelligent networking and collaborative systems, INCoS 2012, pp 503–508. 10.1109/iNCoS.2012.25</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">93</span></span> <a id="CR93"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id274"><!-- named anchor --></a>M ZhangB FurhtSocial network analysis: history, concepts, and researchHandbook of social network technologies and applications2010BerlinSpringer321</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label"><span class="generated">94</span></span> <a id="CR94"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id275"><!-- named anchor --></a>W ZhengA KuangX WangJ ChenMeasuring network configuration of the Yangtze River middle reaches urban agglomeration: based on modified radiation modelChin Geogr Sci202030467769410.1007/s11769-020-1131-2</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Review</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<h4 class="block-title">Keywords</h4>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Network analysis</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Graph theory</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Urban systems</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Disaster management</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>Natural hazards</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY</p>
+<p class="metadata-entry"><span class="generated"><span class="data">issue-copyright-statement</span>: </span>© The Author(s) 2022</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
