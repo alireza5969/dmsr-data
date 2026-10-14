@@ -1,0 +1,887 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Blood, Tran, Caleo, Saw, Dieng, Shackleton, Soyer, Arnold, Mann, and Morton: Implementation of patient-reported outcome measures and patient-reported experience measures in melanoma clinical quality registries: a systematic review</title>
+<link rel="stylesheet" type="text/css" href="jats-preview.css">
+</head>
+<body>
+<div id="article-front" class="front">
+<div class="metadata two-column table"><div class="row">
+<div class="cell">
+<h4 class="generated">Journal Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-ta</span>): </span>BMJ Open</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">iso-abbrev</span>): </span>BMJ Open</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain-id</span>): </span>1609</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">pmc-domain</span>): </span>bmjo</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">nlm-id</span>): </span>101552874</p>
+<p class="metadata-entry"><span class="generated">Journal ID (<span class="data">publisher-id</span>): </span>bmjopen</p>
+<p class="metadata-entry"><span class="generated">Title: </span>BMJ Open</p>
+<p class="metadata-entry"><span class="generated">ISSN (<span class="data">electronic</span>): </span>2044-6055</p>
+<p class="metadata-entry"><span class="generated">Publisher: </span>BMJ Publishing Group</p>
+</div>
+</div>
+<div class="cell">
+<h4 class="generated">Article Information</h4>
+<div class="metadata-group">
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="bmjopen-2020-040751.pdf">bmjopen-2020-040751.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="bmjopen-2020-040751.pdf">bmjopen-2020-040751.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="bmjopen-2020-040751.reviewer_comments.pdf">bmjopen-2020-040751.reviewer_comments.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Self URI: </span><a href="bmjopen-2020-040751.draft_revisions.pdf">bmjopen-2020-040751.draft_revisions.pdf</a></p>
+<p class="metadata-entry"><span class="generated">Copyright statement: </span>© Author(s) (or their employer(s)) 2021. Re-use permitted under CC BY-NC. No commercial re-use. See rights and permissions. Published by BMJ.</p>
+<p class="metadata-entry"><span class="generated">Copyright: </span>2021</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">License (<span class="data">open-access, <a href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</a></span>): </span></p>
+<div class="metadata-chunk">https://creativecommons.org/licenses/by-nc/4.0/<p id="id1">This is an open access article distributed in accordance with the Creative Commons Attribution Non Commercial (CC BY-NC 4.0) license, which permits others to distribute, remix, adapt, build upon this work non-commercially, and license their derivative works on different terms, provided the original work is properly cited, appropriate credit is given, any changes made indicated, and the use is non-commercial. See: <a target="xrefwindow" href="http://creativecommons.org/licenses/by-nc/4.0/" id="id2">http://creativecommons.org/licenses/by-nc/4.0/</a>.</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Date received: </span>27 May 2020</p>
+<p class="metadata-entry"><span class="generated">Date revision received: </span>14 January 2021</p>
+<p class="metadata-entry"><span class="generated">Date accepted: </span>01 February 2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">collection</span>): </span>2021</p>
+<p class="metadata-entry"><span class="generated">Publication date (<span class="data">electronic</span>): </span>11 February 2021</p>
+<p class="metadata-entry"><span class="generated">Volume: </span>11</p>
+<p class="metadata-entry"><span class="generated">Issue: </span>2<span class="generated"> (<span class="data">pmc-issue-id</span> ID: </span>372910<span class="generated">)</span></p>
+<p class="metadata-entry"><span class="generated">Electronic Location
+      Identifier: </span>e040751</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid</span>): </span>PMC7880114</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcid-ver</span>): </span>PMC7880114.1</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaid</span>): </span>7880114</p>
+<p class="metadata-entry"><span class="generated">Article Id (<span class="data">pmcaiid</span>): </span>7880114</p>
+<p class="metadata-entry"><span class="generated">PubMed ID: </span>33574144</p>
+<p class="metadata-entry"><span class="generated">DOI: </span>10.1136/bmjopen-2020-040751</p>
+<p class="metadata-entry"><span class="generated">Publisher ID: </span>bmjopen-2020-040751</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>http://dx.doi.org/10.13039/501100000925National Health and Medical Research Council</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>APP1135285</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>APP1137127</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>APP1150989</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>http://dx.doi.org/10.13039/501100004365Sydney Medical School</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>Summer Scholarship</p>
+<p class="metadata-entry"><span class="generated">Funded by: </span>http://dx.doi.org/10.13039/501100001774University of Sydney</p>
+<p class="metadata-entry"><span class="generated">Award ID: </span>Robinson Fellowship</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+<div class="metadata centered"><h1 class="document-title">Implementation of patient-reported outcome measures and patient-reported experience measures in melanoma clinical quality registries: a systematic review</h1></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id3"><!-- named anchor --></a>Zachary Blood<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id4"><!-- named anchor --></a>Anh Tran<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id5"><!-- named anchor --></a>Lauren Caleo<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id6"><!-- named anchor --></a>Robyn Saw<span class="generated">[</span><a href="#aff2">2</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id7"><!-- named anchor --></a>Mbathio Dieng<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id8"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0002-7673-4655<span class="generated">] </span>Mark Shackleton<span class="generated">[</span><a href="#aff3">3</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id9"><!-- named anchor --></a>H Peter Soyer<span class="generated">[</span><a href="#aff4">4</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id10"><!-- named anchor --></a>Chris Arnold<span class="generated">[</span><a href="#aff5">5</a><span class="generated">]</span><span class="generated">[</span><a href="#aff6">6</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id11"><!-- named anchor --></a>Graham J Mann<span class="generated">[</span><a href="#aff7">7</a><span class="generated">]</span><span class="generated">[</span><a href="#aff8">8</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><div class="metadata-group"><p class="metadata-entry"><a id="id12"><!-- named anchor --></a><span class="generated">[</span>http://orcid.org/0000-0001-7834-0572<span class="generated">] </span>Rachael L Morton<span class="generated">[</span><a href="#aff1">1</a><span class="generated">]</span></p></div></div>
+<div class="cell"><div class="metadata-group"></div></div>
+</div></div>
+<div class="metadata two-column table"><div class="row">
+<div class="cell empty"></div>
+<div class="cell"><div class="metadata-group">
+<p class="metadata-entry"><a id="aff1"><!-- named anchor --></a><span class="generated">[</span>1<span class="generated">] </span>NHMRC Clinical Trials Centre, The University of Sydney, Sydney, New South Wales, Australia</p>
+<p class="metadata-entry"><a id="aff2"><!-- named anchor --></a><span class="generated">[</span>2<span class="generated">] </span>Melanoma Institute Australia, North Sydney, New South Wales, Australia</p>
+<p class="metadata-entry"><a id="aff3"><!-- named anchor --></a><span class="generated">[</span>3<span class="generated">] </span>Department of Medicine, Monash University, Clayton, Victoria, Australia</p>
+<p class="metadata-entry"><a id="aff4"><!-- named anchor --></a><span class="generated">[</span>4<span class="generated">] </span>The University of Queensland Diamantina Institute, Dermatology Research Centre, The University of Queensland, Saint Lucia, Queensland, Australia</p>
+<p class="metadata-entry"><a id="aff5"><!-- named anchor --></a><span class="generated">[</span>5<span class="generated">] </span>Skin Health Institute, Melbourne, Victoria, Australia</p>
+<p class="metadata-entry"><a id="aff6"><!-- named anchor --></a><span class="generated">[</span>6<span class="generated">] </span>BioGrid Australia, Parkville, Victoria, Australia</p>
+<p class="metadata-entry"><a id="aff7"><!-- named anchor --></a><span class="generated">[</span>7<span class="generated">] </span>Western Clinical School, Westmead Millennium Institute, The University of Sydney, Sydney, New South Wales, Australia</p>
+<p class="metadata-entry"><a id="aff8"><!-- named anchor --></a><span class="generated">[</span>8<span class="generated">] </span>John Curtin School of Medical Research, Australian National University, Canberra, Australian Capital Territory, Australia</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Author notes: </span></p>
+<div class="metadata-chunk">
+<a id="id13"><!-- named anchor --></a><p class="metadata-entry"><span class="generated"><a id="id14"><!-- named anchor --></a>Correspondence to: </span><span class="generated">[</span>Correspondence to<span class="generated">] </span> Professor Rachael L Morton; <a href="mailto:Rachael.morton@ctc.usyd.edu.au">Rachael.morton@ctc.usyd.edu.au</a></p>
+</div>
+</div>
+</div></div>
+</div></div>
+<hr class="section-rule">
+<div class="metadata two-column table"><div class="row">
+<div class="cell" style="text-align: right"><h4 class="callout-title"><span class="generated">Abstract</span></h4></div>
+<div class="cell">
+<div class="section">
+<a id="id15"><!-- named anchor --></a><h3 class="section-title">Objectives</h3>
+<p id="id16">To identify patient-reported outcome measures (PROMs) and patient-reported experience measures (PREMs) in clinical quality registries, for people with cutaneous melanoma, to inform a new Australian Melanoma Clinical Outcomes Registry; and describe opportunities and challenges of routine PROM/PREM collection, especially in primary care.</p>
+</div>
+<div class="section">
+<a id="id17"><!-- named anchor --></a><h3 class="section-title">Design</h3>
+<p id="id18">Systematic review.</p>
+</div>
+<div class="section">
+<a id="id19"><!-- named anchor --></a><h3 class="section-title">Primary and secondary outcome measures</h3>
+<p id="id20">Which PROMs and PREMs are used in clinical quality registries for people with cutaneous melanoma, how they are collected, frequency of collection, participant recruitment methods and funding models for each registry.</p>
+</div>
+<div class="section">
+<a id="id21"><!-- named anchor --></a><h3 class="section-title">Results</h3>
+<p id="id22">1134 studies were identified from MEDLINE, PreMEDLINE, Embase, PsychInfo, Cochrane Database of Abstracts of Reviews of Effects databases and TUFTS Cost-Effectiveness Analysis Registry, alongside grey literature, from database inception to 5th February 2020. Following screening, 14 studies were included, identifying four relevant registries: Dutch Melanoma Registry, Adelphi Real-World Disease-Specific Programme (Melanoma), Patient-Reported Outcomes Following Initial treatment and Long-term Evaluation of Survivorship Registry, and Cancer Experience Registry. These used seven PROMs: EuroQol-5 Dimensions, Functional Assessment of Cancer-General (FACT-G) and FACT-Melanoma (FACT-M), European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire-Cancer 30 (EORTC QLQ-C30), Fatigue Assessment Scale Hospital Anxiety and Depression Scale, Patient-Reported Outcome Measures Information System-29 and one PREM; EORTC QLQ-Information Module 26. PROMs/PREMs in registries were reported to improve transparency of care; facilitate clinical auditing for quality assessment; enable cost-effectiveness analyses and create large-scale research platforms. Challenges included resource burden for data entry and potential collection bias toward younger, more affluent respondents. Feedback from patients with melanoma highlighted the relevance of PROMs/PREMs in assessing patient outcomes and patient experiences.</p>
+</div>
+<div class="section">
+<a id="id23"><!-- named anchor --></a><h3 class="section-title">Conclusions</h3>
+<p id="id24">Clinical registries indicate PROMs/PREMs for melanoma care can be incorporated and address important gaps, however cost and collection bias may limit generalisability.</p>
+</div>
+<div class="section">
+<a id="id25"><!-- named anchor --></a><h3 class="section-title">PROSPERO registration number</h3>
+<p id="id26">CRD42018086737.</p>
+</div>
+</div>
+</div></div>
+<hr class="part-rule">
+</div>
+<div id="article-body" class="body">
+<div class="boxed-text panel" style="display: float; clear: both">
+<a id="BX1"><!-- named anchor --></a><div class="caption"><h3 class="section-title">Strengths and limitations of this study</h3></div>
+<div class="list">
+<a id="id27"><!-- named anchor --></a><ul>
+<li><p id="id28">Patient-reported outcome measures (PROMs) and patient-reported experience measures (PREMs) have been highlighted by melanoma consumers (patients and carers) as important measures of quality that should be incorporated into clinical quality registries. Patients with melanoma provided feedback on the importance of this review and its relevance to patient outcomes and patient experiences.</p></li>
+<li><p id="id29">This study captures publications of PROM and PREM collection across a range of database types.</p></li>
+<li><p id="id30">Provides insight into PROM and PREM collection as described by authors directly involved in their respective registry, where published.</p></li>
+<li><p id="id31">Only clinical quality registries in the public domain with melanoma-specific search terms were identifiable and included.</p></li>
+<li><p id="id32">Evaluation of the validity of identified PROMs/PREMs from primary studies was not undertaken.</p></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<a id="s1"><!-- named anchor --></a><h2 class="main-title">Introduction</h2>
+<p id="id33">Patient-reported outcome measures (PROMs) are described as ‘measurements of any aspect of a patient’s health status that come directly from the patient’.<a href="#R1">1</a> These tools are commonly used to assess patients’ self-perception of their functional status, health or quality of life. Patient-reported experience measures (PREMs) focus on patients’ satisfaction with care and cover topics such as dignity and respect; consistency and coordination of care; adequate involvement in, and explanation of care; trust and communication with nurses and doctors; and satisfactory discharge information.<a href="#R2">2</a> While these measures were originally developed for use in research, increasingly they are being used for broader purposes, such as inclusion in routine healthcare or clinical quality registries for quality assurance and benchmarking.<a href="#R3">3</a></p>
+<p id="id34">PROMs and PREMs can be applied in several stages, such as initial patient evaluations, during treatment and in follow-up.<a href="#R4">4</a> These tools can complement the existing roles of clinical quality registries as platforms for quality assessment and benchmarking, as well as for large-scale research projects. In the case of cancer, the Prostate Cancer Outcomes Registry–Australia and New Zealand uses the 26-item Expanded Prostate Cancer Index Composite survey to assess the impact of diagnosis and treatment in men with prostate cancer towards improving patient well-being.<a href="#R5">5</a> Data collected by this registry have resulted in tailored strategies and targeted programmes to address important gaps in patient care.<a href="#R6">6 7</a></p>
+<p id="id35">With the support from key partner organisations, funding was raised through the Melanoma March event to develop the Australian Melanoma Clinical Outcomes Registry (MelCOR). Collection of PROMs and PREMs is an important goal of MelCOR, however challenges in this are apparent. PROMs and PREMs are not routinely collected as a part of melanoma care (including primary care) in Australia, which tends to focus mostly on traditional outcomes such as prevention of recurrence, diagnosing subsequent primary melanomas<a href="#R8">8</a> and maximising life expectancy after diagnosis. Surgical morbidity parameters such as wound complications, pain and numbness are often added to these traditional measures.<a href="#R9">9</a> However, patient reports of diagnosis and treatment experiences are typically not evaluated, despite these being an important indicator of quality of care. For example, patient’s self-perception of keloid scarring following diagnostic excision or other surgery on the face or hands may be associated with significant psychological morbidity including anxiety, poor self-esteem and a decreased quality of life.<a href="#R10">10</a></p>
+<p id="id36">As the value and usefulness of MelCOR will be enhanced by inclusion of PROMs and PREMs, we sought to understand which tools capture the most relevant generic and disease-specific information for people with cutaneous melanoma, and the opportunities and challenges associated with routine PROMs and PREMs collection. The aim of this systematic review was to identify PROMs and PREMs that are used in clinical quality registries and that might be applied to patients with early-stage cutaneous melanoma, including in primary care and specialist settings where much of the initial evaluation and management of this cancer occurs.</p>
+</div>
+<div class="section">
+<a id="s2"><!-- named anchor --></a><h2 class="main-title">Methods</h2>
+<p id="id37">A systematic review of relevant literature was conducted. The search strategy included patients treated for cutaneous melanoma of any stage, to maximise the number of potential identifiable registries in this disease context, along with articles discussing the advantages and challenges of PROMs or PREMs implementation in registries. Five databases were searched from inception to December 2017: MEDLINE (including PreMEDLINE), Embase, PsychInfo, Cochrane Database of Abstracts of Reviews of Effects, and TUFTS Cost-Effectiveness Analysis Registry, without language restriction. Reference lists of relevant articles were hand searched for additional publications. Grey literature including digital theses, government reports (eg, the Australian Quality and Safety Commission), and industry reports (eg, International Consortium for Health Outcomes Measurement) were also searched. A secondary search of MEDLINE (including PreMEDLINE), Embase, PsychInfo and the Cochrane Database was conducted from December 2017 until 3rd February 2020. Guidelines for the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)<a href="#R11">11</a> were followed, where applicable.</p>
+<div class="section">
+<a id="s2-1"><!-- named anchor --></a><h3 class="section-title">Patient and public involvement</h3>
+<p id="id38">Two patients with melanoma provided feedback on the importance of this review and its relevance to patient outcomes. The PROSPERO protocol for the systematic review was circulated to melanoma consumer representatives, then face-to-face feedback about PROMs/PREMs in the new MelCOR Registry was sought. This occurred alongside the MelCOR Steering Committee meeting in 2018.</p>
+</div>
+<div class="section">
+<a id="s2-2"><!-- named anchor --></a><h3 class="section-title">Search strategy</h3>
+<p id="id39">‘Patient reported outcome measures’ and ‘patient reported experience measures’ (including abbreviations PROMs or PREMs), along with related keywords for patients (consumers, participants) and outcomes (satisfaction, experience, assessment, symptom-measure), or quality of life, were combined with Boolean logic (AND/OR) with terms for melanoma (including lentigo maligna), to identify relevant studies (<a href="#SP1">online supplemental appendix 1</a>). Medical Subject Headings were adapted to each database as appropriate (<a href="#F1">figure 1</a>—PRISMA flow chart).</p>
+<div class="panel">
+<a id="SP1"><!-- named anchor --></a><h5 class="label">Supplementary data</h5>
+<span class="object-id">10.1136/bmjopen-2020-040751.supp1</span><p id="id40"><a target="xrefwindow" href="bmjopen-2020-040751supp001.pdf" id="SS1">bmjopen-2020-040751supp001.pdf</a></p>
+</div>
+<div class="fig panel" style="display: float; clear: both">
+<a id="F1"><!-- named anchor --></a><h5 class="label">Figure 1</h5>
+<div class="caption"><p class="first" id="id41">Preferred Reporting Items for Systematic Reviews and Meta-Analyses flow chart.</p></div>
+</div>
+</div>
+<div class="section">
+<a id="s2-3"><!-- named anchor --></a><h3 class="section-title">Eligibility criteria</h3>
+<p id="id42">Publications involving the use of PROMs and/or PREMs in clinical registries reporting adults with cutaneous melanoma of any disease stage (ie, stage 0–IV) were included. PROMs and PREMs completed by proxy (eg, caregivers) were also included. Populations with mixed cancer that included cutaneous melanoma were eligible, however populations with non-cutaneous melanoma (eg, uveal melanoma), and patients with non-melanoma skin cancers only, were excluded. Studies that only used clinician-reported outcomes were excluded, as were PROMs/PREMs collected solely for research purposes (eg, within a clinical trial). All primary study types were eligible, and grey literature was also searched, with government reports and digital theses included. Cost-effectiveness analyses were included up to the full-text screening stage, and their reference lists hand searched for relevant articles. Review articles were excluded.</p>
+</div>
+<div class="section">
+<a id="s2-4"><!-- named anchor --></a><h3 class="section-title">Study screening and data extraction</h3>
+<p id="id43">Citations and abstracts were imported into Covidence (Cochrane systematic review management program) for screening purposes. Title and abstracts were screened by two independent reviewers (ZB, AT), with discrepancies resolved through discussion, and consultation with a third reviewer (RLM) where necessary. Full-text articles were assessed if the paper was deemed to meet the inclusion criteria, was a cost-effectiveness study or the abstract did not contain sufficient information. Clinical registries from included studies which used PROMs and/or PREMs data collection from people with melanoma of any stage were identified for data extraction. For each clinical registry identified through this review, the PROMs/PREMs used, patient demographics, method of collection, collection time points and purpose of the registry were identified. Any descriptive text relating to advantages or challenges of registry collection was also extracted. The COnsensus-based Standards for the selection of health status Measurement Instruments four-point checklist and International Society for Quality of Life Research user’s guide to implementing patient-reported outcome assessment in clinical practice were not used to assess instrument quality, as a critique of PROMs/PREMs used in registries was not an aim of this systematic review. Likewise, quality assessment of individual studies was not performed, as the role of this review was to identify relevant clinical registries present in published works, and the PROMs/PREMs they collected. Risk of bias in individual studies was described; studies were not excluded due to bias.</p>
+</div>
+</div>
+<div class="section">
+<a id="s3"><!-- named anchor --></a><h2 class="main-title">Results</h2>
+<p id="id44">Database and hand searching yielded 1134 articles, with 988 articles remaining after removal of duplicates (<a href="#F1">figure 1</a>). Following abstract and full-text screening, 14 relevant articles remained for analysis.<a href="#R12">12–25</a> These studies used either data collected from these registries to answer a research question, or were articles commenting on the advantages and challenges of PROM/PREM collection and implementation via a registry. A summary is provided in <a href="#T1">table 1</a>. Four relevant clinical registries were identified, each from published literature: the Dutch Melanoma Treatment Registry, Adelphi Real-World Disease-Specific Programme (Melanoma), the Cancer Experience Registry, and the Patient-Reported Outcomes Following Initial treatment and Long-term Evaluation of Survivorship (PROFILES) registry. One registry, the Eindhoven Cancer Registry, was cited in the context of its utility for recruiting participants to the PROFILES registry.<a href="#R23">23</a> This registry was not included in our analysis, however, as it did not meet our inclusion criteria of collecting PROM/PREM data from people with melanoma. Across the 4 included registries, 10 PROMs and 1 PREM were used. A summary of findings including PROM/PREM collection method, frequency, participant recruitment and funding for each registry is presented in <a href="#T2">table 2</a>.</p>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T1"><!-- named anchor --></a><h5 class="label">Table 1</h5>
+<div class="caption"><p class="first" id="id45">Summary of included studies</p></div>
+<table frame="hsides" rules="groups">
+<a id="id46"><!-- named anchor --></a><thead>
+<a id="id47"><!-- named anchor --></a><tr>
+<a id="id48"><!-- named anchor --></a><td align="left" valign="bottom" rowspan="1" colspan="1">
+<a id="id49"><!-- named anchor --></a>Author and year of study</td>
+<td align="left" valign="bottom" rowspan="1" colspan="1">
+<a id="id50"><!-- named anchor --></a>Country</td>
+<td align="left" valign="bottom" rowspan="1" colspan="1">
+<a id="id51"><!-- named anchor --></a>Registry featured</td>
+<td align="left" valign="bottom" rowspan="1" colspan="1">
+<a id="id52"><!-- named anchor --></a>Study design</td>
+<td align="left" valign="bottom" rowspan="1" colspan="1">
+<a id="id53"><!-- named anchor --></a>Population</td>
+<td align="left" valign="bottom" rowspan="1" colspan="1">
+<a id="id54"><!-- named anchor --></a>n (total)</td>
+<td align="left" valign="bottom" rowspan="1" colspan="1">
+<a id="id55"><!-- named anchor --></a>PROMs/PREMs reported</td>
+</tr>
+</thead>
+<tbody>
+<a id="id56"><!-- named anchor --></a><tr>
+<a id="id57"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id58"><!-- named anchor --></a>Byrne <i>et al</i>,<a href="#R15">15</a> 2017</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id59"><!-- named anchor --></a>UK</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id60"><!-- named anchor --></a>Adelphi Real-World<br class="br">Disease-Specific<br class="br">Programme (Melanoma)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id61"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id62"><!-- named anchor --></a>Patients with melanoma, breast cancer, gastric, non-small cell lung and prostate cancer</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id63"><!-- named anchor --></a>4899</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id64"><!-- named anchor --></a>FACT-G</td>
+</tr>
+<tr>
+<a id="id65"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id66"><!-- named anchor --></a>Hallworth <i>et al</i>,<a href="#R16">16</a> 2017</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id67"><!-- named anchor --></a>UK</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id68"><!-- named anchor --></a>Adelphi Real-World<br class="br">Disease-Specific<br class="br">Programme (Melanoma)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id69"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id70"><!-- named anchor --></a>Patients with melanoma, non-small cell lung and prostate cancer</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id71"><!-- named anchor --></a>4899</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id72"><!-- named anchor --></a>FACT-G</td>
+</tr>
+<tr>
+<a id="id73"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id74"><!-- named anchor --></a>Rider <i>et al</i>,<a href="#R22">22</a> 2017</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id75"><!-- named anchor --></a>UK</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id76"><!-- named anchor --></a>Adelphi Real-World<br class="br">Disease-Specific<br class="br">Programme (Melanoma)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id77"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id78"><!-- named anchor --></a>Patients with melanoma, breast cancer, gastric, non-small cell lung and prostate cancer</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id79"><!-- named anchor --></a>4899</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id80"><!-- named anchor --></a>FACT-G</td>
+</tr>
+<tr>
+<a id="id81"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id82"><!-- named anchor --></a>Buchanan <i>et al</i>,<a href="#R12">12</a> 2017</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id83"><!-- named anchor --></a>USA</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id84"><!-- named anchor --></a>Adelphi Real-World<br class="br">Disease-Specific<br class="br">Programme (Melanoma)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id85"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id86"><!-- named anchor --></a>Patients with melanoma</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id87"><!-- named anchor --></a>183</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id88"><!-- named anchor --></a>FACT-M, EQ-5D</td>
+</tr>
+<tr>
+<a id="id89"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id90"><!-- named anchor --></a>Buzaglo <i>et al</i>,<a href="#R14">14</a> 2017</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id91"><!-- named anchor --></a>USA</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id92"><!-- named anchor --></a>Cancer Experience Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id93"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id94"><!-- named anchor --></a>Melanoma survivors</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id95"><!-- named anchor --></a>56</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id96"><!-- named anchor --></a>Registry-specific items (‘financial impact of cancer’, ‘cost of care communication’)</td>
+</tr>
+<tr>
+<a id="id97"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id98"><!-- named anchor --></a>Buzaglo <i>et al</i>,<a href="#R13">13</a> 2016 (abstract)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id99"><!-- named anchor --></a>USA</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id100"><!-- named anchor --></a>Cancer Experience Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id101"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id102"><!-- named anchor --></a>N/A</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id103"><!-- named anchor --></a>N/A</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id104"><!-- named anchor --></a>N/A</td>
+</tr>
+<tr>
+<a id="id105"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id106"><!-- named anchor --></a>Jochems <i>et al,</i><a href="#R20">20</a> 2017 (summary)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id107"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id108"><!-- named anchor --></a>Dutch Melanoma<br class="br">Treatment Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id109"><!-- named anchor --></a>Longitudinal cohort</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id110"><!-- named anchor --></a>Patients with melanoma—all stages</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id111"><!-- named anchor --></a>1472</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id112"><!-- named anchor --></a>EQ-5D-3L, FACT-G, FACT-M</td>
+</tr>
+<tr>
+<a id="id113"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id114"><!-- named anchor --></a>Horevoorts <i>et al</i>,<a href="#R17">17</a> 2017 (abstract)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id115"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id116"><!-- named anchor --></a>PROFILES Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id117"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id118"><!-- named anchor --></a>Survivors of melanoma, basal/squamous cell carcinoma, prostate cancer, ovary cancer, endometrial cancer, thyroid cancer, Hodgkin’s or non-Hodgkin's lymphoma, chronic lymphatic leukaemia or multiple myeloma</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id119"><!-- named anchor --></a>Not reported</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id120"><!-- named anchor --></a>EORTC QLQ-C30, DS14,<br class="br">HADS, FAS, EORTC QLQ-<br class="br">INFO-25, DS14</td>
+</tr>
+<tr>
+<a id="id121"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id122"><!-- named anchor --></a>Husson <i>et al</i>,<a href="#R41">41</a> 2018<br class="br">(abstract)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id123"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id124"><!-- named anchor --></a>PROFILES Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id125"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id126"><!-- named anchor --></a>Patients with a diagnosis of colon cancer, rectum cancer, melanoma, basal/squamous cell carcinoma, endometrial cancer, ovarian cancer, prostate cancer, thyroid cancer, Hodgkin’s or non-Hodgkin's lymphoma, chronic lymphocytic leukaemia or multiple myeloma</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id127"><!-- named anchor --></a>6895</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id128"><!-- named anchor --></a>EORTC QLQ-C30</td>
+</tr>
+<tr>
+<a id="id129"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id130"><!-- named anchor --></a>Huibertse <i>et al</i>,<a href="#R18">18</a> 2017</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id131"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id132"><!-- named anchor --></a>PROFILES Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id133"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id134"><!-- named anchor --></a>Melanoma or prostate cancer survivors</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id135"><!-- named anchor --></a>767</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id136"><!-- named anchor --></a>EORTC QLQ-C30 V.3.0,<br class="br">MSPSS, IOC V.2.0 (‘health worries subscale’), study-specific items</td>
+</tr>
+<tr>
+<a id="id137"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id138"><!-- named anchor --></a>Mols <i>et al</i>,<a href="#R21">21</a> 2012</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id139"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id140"><!-- named anchor --></a>PROFILES Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id141"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id142"><!-- named anchor --></a>Survivors of melanoma, colorectal cancer, Hodgkin’s or non-Hodgkin's lymphoma, or multiple myeloma</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id143"><!-- named anchor --></a>2892</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id144"><!-- named anchor --></a>Study-specific items</td>
+</tr>
+<tr>
+<a id="id145"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id146"><!-- named anchor --></a>Van de Wal <i>et al</i>,<a href="#R25">25</a> 2016</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id147"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id148"><!-- named anchor --></a>PROFILES Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id149"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id150"><!-- named anchor --></a>Stage I or II survivors of melanoma, colorectal, endometrial, and thyroid cancers, or Hodgkin’s and non-Hodgkin's lymphoma</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id151"><!-- named anchor --></a>2615</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id152"><!-- named anchor --></a>IOC (‘health worries subscale’), SF-36,<br class="br">EORTC QLQ-C30,<br class="br">EORTC QLQ-INFO25<br class="br">(three items)</td>
+</tr>
+<tr>
+<a id="id153"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id154"><!-- named anchor --></a>Van de Wal <i>et al</i>,<a href="#R24">24</a> 2014</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id155"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id156"><!-- named anchor --></a>PROFILES Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id157"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id158"><!-- named anchor --></a>Stage I or II survivors of melanoma, colorectal, endometrial, and thyroid cancers, or Hodgkin’s and non-Hodgkin's lymphoma</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id159"><!-- named anchor --></a>2615</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id160"><!-- named anchor --></a>IOC (‘health worries subscale’)</td>
+</tr>
+<tr>
+<a id="id161"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id162"><!-- named anchor --></a>Van de Poll-Franse <i>et al</i>,<a href="#R23">23</a><br class="br">2011 (summary)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id163"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id164"><!-- named anchor --></a>PROFILES Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id165"><!-- named anchor --></a>Cross-sectional</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id166"><!-- named anchor --></a>N/A</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id167"><!-- named anchor --></a>N/A</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id168"><!-- named anchor --></a>EORTC QLQ-C30,<br class="br">EORTC QLQ-INFO26,<br class="br">FAS, HADS</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="T1_FN1"><!-- named anchor --></a><p id="id169"><span class="generated">[i]</span> DS14, Type-D Scale; EQ-5D, EuroQol-5 Dimensions; FACT-G, Functional Assessment of Cancer Therapy-General; FACT-M, Functional Assessment of Cancer Therapy-Melanoma; FAS, Fatigue Assessment Scale; HADS, Hospital Anxiety and Depression Scale; IOC, Impact of Cancer; MSPSS, Multidimensional Scale of Perceived Social Support; PREMs, patient-reported experience measures; PROFILES, Patient-Reported Outcomes Following Initial treatment and Long-term Evaluation of Survivorship; PROMs, patient-reported outcome measures; EORTC QLQ-C30, European Organisation for Research and Treatment of Cancer Core Quality of Life Questionnaire 30; EORTC QLQ-INFO25, European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire-Information Module 25; EORTC QLQ-INFO26, European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire-Information Module 26; SF-36, Short Form-36 item.</p>
+</div></div>
+</div>
+<div class="table-wrap panel" style="display: float; clear: both">
+<a id="T2"><!-- named anchor --></a><h5 class="label">Table 2</h5>
+<div class="caption"><p class="first" id="id170">Summary of registries using PROM and/or PREM data, including people with melanoma</p></div>
+<table frame="hsides" rules="groups">
+<a id="id171"><!-- named anchor --></a><thead>
+<a id="id172"><!-- named anchor --></a><tr>
+<a id="id173"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id174"><!-- named anchor --></a>Registry name</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id175"><!-- named anchor --></a>Country</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id176"><!-- named anchor --></a>PROMs/<br class="br">PREMs collected</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id177"><!-- named anchor --></a>Collection method</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id178"><!-- named anchor --></a>Collection time points</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id179"><!-- named anchor --></a>Inclusion criteria</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id180"><!-- named anchor --></a>Method of participant identification</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id181"><!-- named anchor --></a>Languages offered</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id182"><!-- named anchor --></a>Funding</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id183"><!-- named anchor --></a>Data availability</td>
+</tr>
+</thead>
+<tbody>
+<a id="id184"><!-- named anchor --></a><tr>
+<a id="id185"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id186"><!-- named anchor --></a>Dutch<br class="br">Melanoma<br class="br">Treatment<br class="br">Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id187"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id188"><!-- named anchor --></a>EQ-5D,<br class="br">FACT-G,<br class="br">FACT-M</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id189"><!-- named anchor --></a>Online, facilitated by clinic</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id190"><!-- named anchor --></a>Every 3 months</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id191"><!-- named anchor --></a>Patients with stage IIIc–IV melanoma</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id192"><!-- named anchor --></a>Patients referred to participating melanoma centres</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id193"><!-- named anchor --></a>Dutch</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id194"><!-- named anchor --></a>Combination of pharmaceutical companies, health insurance companies and melanoma centres</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id195"><!-- named anchor --></a>Annual report, data available to contributors by application</td>
+</tr>
+<tr>
+<a id="id196"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id197"><!-- named anchor --></a>Adelphi Real-World Disease-Specific<br class="br">Programme<br class="br">(Melanoma)</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id198"><!-- named anchor --></a>UK, USA,<br class="br">France,<br class="br">Germany,<br class="br">Italy, Spain</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id199"><!-- named anchor --></a>EQ-5D,<br class="br">FACT-G,<br class="br">FACT-M</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id200"><!-- named anchor --></a>‘Patient self-completing records’ completed following consultation</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id201"><!-- named anchor --></a>Once, during defined survey periods</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id202"><!-- named anchor --></a>Patients with stage IIIb–IV melanoma</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id203"><!-- named anchor --></a>Sample of patients taken from participating physicians</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id204"><!-- named anchor --></a>English,<br class="br">French,<br class="br">German,<br class="br">Italian,<br class="br">Spanish</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id205"><!-- named anchor --></a>Private company</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id206"><!-- named anchor --></a>Subscription basis</td>
+</tr>
+<tr>
+<a id="id207"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id208"><!-- named anchor --></a>PROFILES</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id209"><!-- named anchor --></a>The<br class="br">Netherlands</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id210"><!-- named anchor --></a>EORTC<br class="br">QLQ-C30,<br class="br">FAS,<br class="br">HADS,<br class="br">EORTC<br class="br">QLQ-INFO26</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id211"><!-- named anchor --></a>Online or paper-based</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id212"><!-- named anchor --></a>1–4 times/year</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id213"><!-- named anchor --></a>Cancer survivors, following primary treatment</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id214"><!-- named anchor --></a>Recruited from the Eindhoven Cancer Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id215"><!-- named anchor --></a>Dutch</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id216"><!-- named anchor --></a>Comprehensive Cancer<br class="br">Centre South, Centre of Research on Psychology in Somatic Diseases, The<br class="br">Netherlands<br class="br">Organisation for<br class="br">Scientific Research</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id217"><!-- named anchor --></a>Available for non-commercial research</td>
+</tr>
+<tr>
+<a id="id218"><!-- named anchor --></a><td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id219"><!-- named anchor --></a>Cancer<br class="br">Experience<br class="br">Registry</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id220"><!-- named anchor --></a>International</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id221"><!-- named anchor --></a>PROMIS-29</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id222"><!-- named anchor --></a>Online</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id223"><!-- named anchor --></a>Once, at registration</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id224"><!-- named anchor --></a>Individuals with a diagnosis of cancer, or carers of patients with cancer</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id225"><!-- named anchor --></a>Self-elected participation through online website</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id226"><!-- named anchor --></a>English</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id227"><!-- named anchor --></a>Cancer Support Community</td>
+<td align="left" valign="top" rowspan="1" colspan="1">
+<a id="id228"><!-- named anchor --></a>Annual report, publications from the Cancer Support<br class="br">Community</td>
+</tr>
+</tbody>
+</table>
+<div class="table-wrap-foot"><div class="footnote">
+<a id="T2_FN1"><!-- named anchor --></a><p id="id229"><span class="generated">[i]</span> EQ-5D, EuroQol-5 Dimensions; FACT-G, Functional Assessment of Cancer Therapy-General; FACT-M, Functional Assessment of Cancer Therapy-Melanoma; FAS, Fatigue Assessment Scale; HADS, Hospital Anxiety and Depression Scale; PREMs, patient-reported experience measures; PROFILES, Patient-Reported Outcomes Following Initial treatment and Long-term Evaluation of Survivorship; PROMIS-29, Patient-Reported Outcome Measures Information System-29; PROMs, patient-reported outcome measures; EORTC QLQ-C30, European Organisation for Research and Treatment of Cancer Core Quality of Life Questionnaire 30; EORTC QLQ-INFO26, European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire-Information Module 26.</p>
+</div></div>
+</div>
+<div class="section">
+<a id="s3-1"><!-- named anchor --></a><h3 class="section-title">The Dutch Melanoma Treatment Registry</h3>
+<p id="id230">The Dutch Melanoma Treatment Registry is a registry of patients based in the Netherlands with unresectable stage IIIc or IV melanoma. It is used for clinical auditing, improving the transparency of quality of care in the treatment of melanoma, to detail the effects and costs associated with treatment, and serves as a database for melanoma research. This registry collects three PROMs: EuroQol-5 Dimensions (EQ-5D), Functional Assessment of Cancer Therapy-General (FACT-G)<a href="#R26">26</a> and FACT-Melanoma (FACT-M).<a href="#R27">27</a> It also collects treatment activity through a Resource Use Questionnaire-Melanoma (RUQ-M). The Dutch Melanoma Treatment Registry aims to collect PROMs every 3 months and the RUQ-M every 6 months. Questions about employment and time lost from work due to melanoma and its treatment are used to quantify productivity gains and losses, and are often used in economic evaluations undertaken from a societal perspective. Data are prospectively collected using a web-based programme from patients diagnosed with metastatic melanoma who attend participating treatment centres.</p>
+</div>
+<div class="section">
+<a id="s3-2"><!-- named anchor --></a><h3 class="section-title">The Adelphi Real-World Disease-Specific Programme (Melanoma)</h3>
+<p id="id231">The Adelphi Real-World Disease-Specific Programme (Melanoma) is a privately owned international healthcare database based in the UK, used for research purposes. Adelphi collates disease-specific programmes on over 60 diseases, including melanoma, with data used for both medical and market research. The Melanoma programme collects three PROMs; the EQ-5D, FACT-G and FACT-M from patients with all stages of melanoma under the care of participating clinicians, from multiple countries. Here, participating clinicians are asked to collect data on the next 10 patients being consulted for the disease of interest, with these patients asked to self-complete the relevant PROMs.<a href="#R28">28</a></p>
+<div class="section">
+<a id="s3-2-1"><!-- named anchor --></a><h4 class="subsection-title">PROFILES Registry</h4>
+<p id="id232">The PROFILES Registry is a Netherlands-based registry of cancer survivors and collects information from patients will all stages of melanoma. It exists to identify outcome and psychosocial risk assessment, analyse behavioural and biological factors associated with the outcomes of cancer treatment, and evaluate psychosocial and physical care needs in cancer survivors. It collects three PROMs: the European Organisation for Research and Treatment of Cancer Core Quality of Life Questionnaire-Cancer 30 questions (EORTC QLQ-C30),<a href="#R29">29</a> Fatigue Assessment Scale (FAS)<a href="#R30">30</a> and Hospital Anxiety and Depression Scale (HADS).<a href="#R31">31</a> In addition, it collects one PREM, the EORTC QLQ-Information Module 26 (EORTC QLQ-INFO26)<a href="#R32">32</a>; a measure of patient satisfaction regarding the information they receive during treatment.</p>
+</div>
+</div>
+<div class="section">
+<a id="s3-3"><!-- named anchor --></a><h3 class="section-title">The Cancer Experience Registry</h3>
+<p id="id233">Finally, the Cancer Experience Registry is a US-based registry which all patients with cancer are eligible to register for, regardless of cancer type or stage. For melanoma it collects PROMs through the Patient-Reported Outcome Measures Information System-29 (PROMIS-29).<a href="#R33">33</a> It also has a registry-specific survey with specific patient experience items including treatment decision-making, body image and financial impact of cancer. Run by the Cancer Support Community, a not-for-profit organisation, patients self-elect to register to the Cancer Experience Registry through their online website, where they are provided with an informed consent waiver, and are invited to complete the survey. This information is used primarily for research purposes.</p>
+</div>
+</div>
+<div class="section">
+<a id="s4"><!-- named anchor --></a><h2 class="main-title">Discussion</h2>
+<p id="id234">The four registries identified in this review varied considerably with regard to purpose of data collection and methods for data collection and dissemination. Registries specific for melanoma, namely the Dutch Melanoma Treatment Registry and Adelphi Real-World Disease-Specific Programme (Melanoma) both favoured the use of health-related quality of life (HR-QoL) PROMs: EQ-5D, FACT-G and FACT-M in their data collection. The EQ-5D is a generic questionnaire, aimed at general populations, while the FACT-G and FACT-M are both disease-specific questionnaires aimed toward people undergoing cancer therapy and melanoma-specific treatment, respectively. As such, the data collected provide a comprehensive overview of participant HR-QoL and facilitate comparisons between registries.</p>
+<p id="id235">PROMs collected in registries of people with mixed cancer types, such as PROFILES, used the EORTC QLQ-C30 which is a cancer-specific measure of HR-QoL. Specific comorbidities, such as fatigue and depression, are measured by separate instruments, namely the FAS and HADS. Conversely, the Cancer Experience Registry used PROMIS-29, a generalised PROM, and paired this with registry-specific items relating to the experience of melanoma treatment. PROFILES was the only identified registry that used a validated PREM, the EORTC QLQ-INFO26, assessing satisfaction with information received during treatment.</p>
+<p id="id236">We noted registries tended to use PROMs developed in their geographical regions. European union (EU)-based registries used measures developed in the EU, such as those from the EORTC and EuroQol Group, whereas the US-based Cancer Experience Registry used the US-developed PROMIS-29. Given calibrated PROMs assessing similar constructs can be cross-walked, it is not necessary for registries to select identical measures to be considered comparable with one another. However, restricting patient-reported outcomes to validated PROMs or PREMs, as opposed to non-standardised questionnaires, is important for any findings to be generalisable.</p>
+<p id="id237">Each registry applied a different method of participant recruitment and data collection, with associated advantages and disadvantages. The majority of registries favoured an online approach (Dutch Melanoma Treatment Registry, PROFILES and Cancer Experience Registry). The Cancer Experience Registry was unique in that it functions independently of treatment centres and existing cancer registries, with all participants volunteering to join through their online website. This presents an efficient means of collecting data, and minimises missing values and costs associated with active participant recruitment, printing/mailing of surveys and data entry. However, while the internet has a high penetrance in many countries including Australia, internet use (and smart phone apps) are associated with younger age groups and a higher socioeconomic status.<a href="#R34">34</a> As such, this method may run the risk of sample bias.</p>
+<p id="id238">One potential solution to this is to supplement online tools with paper-based collection, a strategy employed by the PROFILES Registry. Here, patients meeting the criteria of a ‘cancer survivor’ within the existing Eindhoven Cancer Registry were actively recruited via mail, through their treating clinician.<a href="#R23">23</a> This mail package included a link to a secure website for response to the survey items, and also included a paper copy which could be mailed back, should the participant not have internet access. Another alternative to online collection could involve a call-based interactive voice-response system, although this method was not observed in the identified registries.</p>
+<p id="id239">Similarly, the Dutch Melanoma Treatment Registry mailed eligible participants an invitation to join the registry, however data collection was conducted either through a web-based ‘patient portal’ system or collected through a method at the discretion of the participating institution, before forwarding the results to the Dutch Institute for Clinical Auditing. Here, patients were contacted regularly to provide up-to-date patient-reported outcome data. One issue inherent to this collection method is that while patients were free to complete their feedback in their own time, the timing and environment in which it was completed would have been variable, and thus poorly controlled. Conversely, the Adelphi Real-World Disease-Specific Programme (Melanoma) Registry had participants complete their feedback form directly following consultation with their clinician, therefore minimising bias relating to the timing of collection.</p>
+<p id="id240">The use of large-scale clinical quality registries introduces a broad set of valuable applications. For registries involving patients undergoing active treatment, the use of PROMs and PREMs allow for benchmarked feedback on quality of care and medical practice variation provided by participating centres (including primary care providers), or cancer registries, as well as providing cost-effectiveness data of new treatment options to industry (eg, medical and pharmaceutical companies) and health technology agencies such as Medical Services Advisory Committee in Australia. It can improve accountability of melanoma treatment, by providing feedback to participating centres/clinicians of the health outcomes of their patients. For example, the Dutch Melanoma Treatment Registry provided fortnightly feedback on clinician’s quality of care.<a href="#R20">20</a> This can translate into a change in clinical care for patients with poor health outcomes. These registries also provide a robust platform for research and can be used in annual reports on the quality of life of people with melanoma.</p>
+<p id="id241">A key challenge of implementing PROMs and PREMs in a melanoma registry on a national scale is their cost. For example, the costs associated with the Dutch Melanoma Treatment Registry are data entry, analysis, validation and training staff in data management, estimated to amount to €500 per patient registered.<a href="#R35">35</a> These costs might be reduced by developing strict criteria regarding which items are relevant to all registered patients, and which items are relevant only to a subset of those registered. Efficiency of data collection via integration with electronic health records and data linkage is another key consideration in reducing costs.<a href="#R35">35</a> As discussed previously, web-based collection provides a cost-efficient method of data acquisition, though carries with it the risk of introducing sample bias. Importantly, self-assessment tools have been shown to have similar reliability whether administered online or paper-based.<a href="#R36">36 37</a> As such, combining online and paper-based collection methods is a feasible compromise and may result in an increased volume of completed questionnaires, as illustrated by the PROFILES Registry. With respect to funding, the registries identified here were primarily funded by private companies, non-profit organisations or directly from melanoma treatment/research centres.</p>
+<p id="id242">While this review suggests registry collection of PROMs/PREMs is feasible and describes various methods by which large-scale melanoma registries can integrate PROMs and PREMs, our analysis is limited to clinical quality registries identified from published and grey literature. Although the study search was comprehensive and we did not apply a language restriction, we are aware that other clinical quality registries may exist (eg, in hospital or health service databases), however any such registries outside the public domain were unable to be included. Reporting bias is also possible, if primary study authors did not use common search terms. A further limitation of our study was the inability to report on the validation of each PROM/PREM for use in melanoma care, due to incomplete reporting and assessment of instrument validation in the primary studies.</p>
+<p id="id243">We found there was little evidence of how PROM and PREM data are currently being used in daily clinical practice. This is largely due to the fact that local (non-registry) datasets are more likely to be used in clinical care, and not identified by systematic review, for example, the ePROMs-MEL Study that is currently underway in Australia.<a href="#R38">38</a> Developing future registries within electronic health records could overcome this and provide greater integration with existing online health systems. Nonetheless, insights into the use of PROMs and PREMs in clinical practice with respect to melanoma diagnosis and treatment may provide useful strategies for data collection and feedback at a registry level. Our future plan for MelCOR is to pilot the feasibility and acceptability of the above-mentioned PROMs and PREMs with the addition of a new validated instrument, Melanoma Concerns Questionnaire,<a href="#R39">39 40</a> among patients, clinicians, researchers and registry stakeholders.</p>
+<p id="id244">In summary, current examples provide evidence that clinical quality registries can feasibly incorporate PROMs and PREMs for melanoma care and will inform how best to implement these tools in our new MelCOR. Specific instruments such as the EQ-5D, FACT-M and QLQC–INFO26 may be useful to integrate into MelCOR, although further research as outlined above, is required to evaluate the acceptability of these, particularly in primary care. The integration of a general PROM, a disease-specific PROM and a PREM in future registries would provide a wide breadth of data for quality assurance, to minimise clinical practice variation and as a research platform. Cost and sample bias may limit generalisability. Importantly, routine assessment and identification of patients who have poor PROMs and PREMs provide an opportunity to deliver a clinical intervention that may improve HR-QoL, improving overall melanoma care for patients.</p>
+</div>
+<div class="section">
+<a id="id245"><!-- named anchor --></a><h2 class="main-title">Supplementary Material</h2>
+<div class="panel">
+<a id="d39e318"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Reviewer comments</h4></div>
+<a id="id246" href="bmjopen-2020-040751.reviewer_comments.pdf"></a>
+</div>
+<div class="panel">
+<a id="d39e319"><!-- named anchor --></a><div class="caption"><h4 class="subsection-title">Author's manuscript</h4></div>
+<a id="id247" href="bmjopen-2020-040751.draft_revisions.pdf"></a>
+</div>
+</div>
+</div>
+<div id="article-back" class="back">
+<div class="back-section">
+<a id="id249"><!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
+<p class="first" id="id248">We thank Melina Willson from the Cochrane Breast Cancer Methods Group at the NHMRC Clinical Trials Centre, University of Sydney, for her guidance with Covidence software.</p>
+</div>
+<div class="back-section">
+<a id="id266"><!-- named anchor --></a><h2 class="main-title">Notes</h2>
+<div class="footnote">
+<a id="id250"><!-- named anchor --></a><p id="id251"><span class="generated">[3]</span> <b>Twitter:</b> @RachaelMorton12</p>
+</div>
+<div class="footnote">
+<a id="id252"><!-- named anchor --></a><p id="id253"><span class="generated">[4]</span> <b>Contributors:</b> ZB—search strategy design, article screening, data extraction/analysis and manuscript preparation. AT—article screening, interpretation of results and reviewing the final manuscript. LC—interpretation of results and reviewing the final manuscript. RS—study design, interpretation of results and reviewing the final manuscript. MD—study design, interpretation of results, drafting and reviewing the final manuscript. MS—study design, interpretation of results and reviewing the final manuscript. HPS—study design, interpretation of results and reviewing the final manuscript. CA—study conception, interpretation of results and reviewing the final manuscript. GJM—study design, interpretation of results and reviewing the final manuscript. RLM—study conception and design, student supervision, interpretation of results and reviewing the final manuscript.</p>
+</div>
+<div class="footnote">
+<a id="id254"><!-- named anchor --></a><p id="id255"><span class="generated">[5]</span> <b>Funding:</b> This study was supported by an NHMRC Centre of Research Excellence in Melanoma Grant APP1135285, and a University of Sydney Summer Scholarship to ZB. RLM is supported by an NHMRC TRIP Fellowship APP1150989 ‘Incorporating patient-reported outcome measures (PROMs) into clinical registries’ and a University of Sydney Robinson Fellowship. HPS holds an NHMRC MRFF Next Generation Clinical Researchers Program Practitioner Fellowship APP1137127. RS is supported by Melanoma Institute Australia.</p>
+</div>
+<div class="footnote">
+<a id="id256"><!-- named anchor --></a><p id="id257"><span class="generated">[6]</span> <b>Competing interests:</b> RS has received honoraria for advisory board participation from MSD, Novartis and Qbiotics, and speaking honoraria from BMS. HPS is a shareholder of MoleMap NZ and e-derm consult GmbH, and undertakes regular teledermatological reporting for both companies. HPS is a Medical Consultant for Canfield Scientific, Revenio Research Oy and also a Medical Advisor for First Derm. CA is a Director of BioGrid Australia.</p>
+</div>
+<div class="footnote">
+<a id="id258"><!-- named anchor --></a><p id="id259"><span class="generated">[7]</span> <b>Patient consent for publication:</b> Not required.</p>
+</div>
+<div class="footnote">
+<a id="id260"><!-- named anchor --></a><p id="id261"><span class="generated">[8]</span> <b>Provenance and peer review:</b> Not commissioned; externally peer reviewed.</p>
+</div>
+<div class="footnote">
+<a id="id262"><!-- named anchor --></a><p id="id263"><span class="generated">[9]</span> <b>Data availability statement:</b> All data relevant to the study are included in the article or uploaded as supplemental information. All data extracted from included studies are contained in tables 1 and 2 of this manuscript.</p>
+</div>
+<div class="footnote">
+<a id="id264"><!-- named anchor --></a><p id="id265"><span class="generated">[10]</span> <b>Supplemental material:</b> This content has been supplied by the author(s). It has not been vetted by BMJ Publishing Group Limited (BMJ) and may not have been peer-reviewed. Any opinions or recommendations discussed are solely those of the author(s) and are not endorsed by BMJ. BMJ disclaims all liability and responsibility arising from any reliance placed on the content. Where the content includes any translated material, BMJ does not warrant the accuracy and reliability of the translations (including but not limited to local regulations, clinical guidelines, terminology, drug names and drug dosages), and is not responsible for any error and/or omissions arising from translation and adaptation or otherwise.</p>
+</div>
+</div>
+<div class="back-section">
+<a id="id267"><!-- named anchor --></a><div class="section ref-list">
+<a id="id267"><!-- named anchor --></a><h2 class="main-title">References</h2>
+<div class="ref-list table">
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">1</span> <a id="R1"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id268"><!-- named anchor --></a>ValderasJM, AlonsoJPatient reported outcome measures: a model-based classification system for research and clinical practice. Qual Life Res2008;17:1125–35. 10.1007/s11136-008-9396-418836850</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">2</span> <a id="R2"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id269"><!-- named anchor --></a>BlackN, VaraganumM, HutchingsARelationship between patient reported experience (PREMs) and patient reported outcomes (PROMs) in elective surgery. BMJ Qual Saf2014;23:534–42. 10.1136/bmjqs-2013-00270724508681</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">3</span> <a id="R3"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id270"><!-- named anchor --></a>BlackNPatient reported outcome measures could help transform healthcare. BMJ2013;346:f167. 10.1136/bmj.f16723358487</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">4</span> <a id="R4"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id271"><!-- named anchor --></a>OsobaDTranslating the science of patient-reported outcomes assessment into clinical practice. JNCI Monographs2007;2007:5–11. 10.1093/jncimonographs/lgm00217951224</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">5</span> <a id="R5"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id272"><!-- named anchor --></a>HoqueDME, SampurnoF, RuseckaiteR, et alStudy protocol of an equivalence randomized controlled trial to evaluate the effectiveness of three different approaches to collecting patient reported outcome measures (PROMs) data using the prostate cancer outcomes Registry-Victoria (PCOR-VIC). BMC Health Serv Res2017;17:75. 10.1186/s12913-017-1981-128114981PMC5260085</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">6</span> <a id="R6"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id273"><!-- named anchor --></a>OngWL, EvansSM, MillarJLUnder-utilisation of high-dose-rate brachytherapy boost in men with intermediate-high risk prostate cancer treated with external beam radiotherapy. J Med Imaging Radiat Oncol2018;62:256–61. 10.1111/1754-9485.1269929271056</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">7</span> <a id="R7"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id274"><!-- named anchor --></a>OngWL, EvansSM, EvansM, et alTrends in conservative management for low-risk prostate cancer in a population-based cohort of Australian men diagnosed between 2009 and 2016. Eur Urol Oncol2019;7410.1016/j.euo.2019.04.00631411964</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">8</span> <a id="R8"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id275"><!-- named anchor --></a>YouldenDR, YoulPH, SoyerHP, et alDistribution of subsequent primary invasive melanomas following a first primary invasive or in situ melanoma Queensland, Australia, 1982-2010. JAMA Dermatol2014;150:526–34. 10.1001/jamadermatol.2013.985225093216</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">9</span> <a id="R9"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id276"><!-- named anchor --></a>MortonDL, CochranAJ, ThompsonJF, et alSentinel node biopsy for early-stage melanoma: accuracy and morbidity in MSLT-I, an international multicenter trial. Ann Surg2005;242:302–11. 10.1097/01.sla.0000181092.50141.fa16135917PMC1357739</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">10</span> <a id="R10"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id277"><!-- named anchor --></a>LeeEH, KlassenAF, LawsonJL, et alPatient experiences and outcomes following facial skin cancer surgery: a qualitative study. Australas J Dermatol2016;57:e100–4. 10.1111/ajd.1232325833383PMC5461874</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">11</span> <a id="R11"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id278"><!-- named anchor --></a>MoherD, LiberatiA, TetzlaffJ, et alPreferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. PLoS Med2009;6:e1000097. 10.1371/journal.pmed.100009719621072PMC2707599</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">12</span> <a id="R12"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id279"><!-- named anchor --></a>BuchananJ, MurugappanS, MoonR, et alHumanistic burden of disease in earlier stage metastatic (stage IIIb/c-IVM1a) versus late stage metastatic (IVM1b/c) melanoma patients in a real-world setting in the U.S. J Clin Oncol2017;35:956110.1200/JCO.2017.35.15_suppl.9561</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">13</span> <a id="R13"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id280"><!-- named anchor --></a>BuzagloJ, GrobR, PandhiNElevating the patient voice: innovative strategies for improving patient-centered care through qualitative and quantitative systems of reporting patient experiences of underserved populations. Pscyho-oncology2016;25:21–2.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">14</span> <a id="R14"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id281"><!-- named anchor --></a>BuzagloJS, MillerMF, ZaletaAK, et alFinancial toxicity and cancer-related distress among melanoma survivors. J Clin Oncol2017;35:958810.1200/JCO.2017.35.15_suppl.9588</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">15</span> <a id="R15"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id282"><!-- named anchor --></a>ByrneK, SimpsonS, BennettB, et alHealth-Related quality of life in oncology – are we getting better?Value in Health2017;20:A45610.1016/j.jval.2017.08.327</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">16</span> <a id="R16"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id283"><!-- named anchor --></a>HallworthP, SimpsonS, BennettB, et alAre there differences in Fact-G scores between different tumour types for an EU population using real world data?Value in Health2017;20:A45610.1016/j.jval.2017.08.325</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">17</span> <a id="R17"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id284"><!-- named anchor --></a>HorevoortsNMF, VlooswijkC, Van De Poll-FranseLCore cancer outcomes from the population-based profiles registry. J Evid Based Med2017;10:39.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">18</span> <a id="R18"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id285"><!-- named anchor --></a>HuibertseLJ, van EenbergenM, de RooijBH, et alCancer survivors' preference for follow-up care providers: a cross-sectional study from the population-based PROFILES-registry. Acta Oncol2017;56:278–87. 10.1080/0284186X.2016.126739828068157</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">19</span> <a id="R19"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id286"><!-- named anchor --></a>dRBHO, KiefferJM, et alIndependent prognostic value of the EORTC QLQ-C30 summary score on all-cause mortality: results from the population-based profiles registry. J Clin Oncol2018;36(15_suppl):1007010.1200/JCO.2018.36.15_suppl.10070</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">20</span> <a id="R20"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id287"><!-- named anchor --></a>JochemsA, SchouwenburgMG, LeenemanB, et alDutch melanoma treatment registry: quality assurance in the care of patients with metastatic melanoma in the Netherlands. Eur J Cancer2017;72:156–65. 10.1016/j.ejca.2016.11.02128030784</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">21</span> <a id="R21"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id288"><!-- named anchor --></a>MolsF, ThongMSY, VissersP, et alSocio-Economic implications of cancer survivorship: results from the profiles registry. Eur J Cancer2012;48:2037–42. 10.1016/j.ejca.2011.11.03022196035</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">22</span> <a id="R22"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id289"><!-- named anchor --></a>RiderA, SimpsonS, BennettB, et alGenerating patient reported outcome norms for an EU cancer population using real world data (FACT-G). Annals of Oncology2017;28:v51810.1093/annonc/mdx385.022</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">23</span> <a id="R23"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id290"><!-- named anchor --></a>van de Poll-FranseLV, HorevoortsN, van EenbergenM, et alThe patient reported outcomes following initial treatment and long term evaluation of survivorship registry: scope, rationale and design of an infrastructure for the study of physical and psychosocial outcomes in cancer survivorship cohorts. Eur J Cancer2011;47:2188–94. 10.1016/j.ejca.2011.04.03421621408</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">24</span> <a id="R24"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id291"><!-- named anchor --></a>van de WalM, de Poll-FranseL, PrinsJFear of recurrence in cancer survivors: a study from the population-based profiles registry. Psycho-Oncology2014;23:343–4.10.1002/pon.400226464337</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">25</span> <a id="R25"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id292"><!-- named anchor --></a>van de WalM, van de Poll-FranseL, PrinsJ, et alDoes fear of cancer recurrence differ between cancer types? A study from the population-based profiles registry. Psychooncology2016;25:772–8. 10.1002/pon.400226464337</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">26</span> <a id="R26"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id293"><!-- named anchor --></a>BruckerPS, YostK, CashyJ, et alGeneral population and cancer patient norms for the functional assessment of cancer Therapy-General (FACT-G). Eval Health Prof2005;28:192–211. 10.1177/016327870527534115851773</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">27</span> <a id="R27"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id294"><!-- named anchor --></a>CormierJN, RossMI, GershenwaldJE, et alProspective assessment of the reliability, validity, and sensitivity to change of the functional assessment of cancer Therapy-Melanoma questionnaire. Cancer2008;112:2249–57. 10.1002/cncr.2342418383513</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">28</span> <a id="R28"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id295"><!-- named anchor --></a>AndersonP, BenfordM, HarrisN, et alReal-world physician and patient behaviour across countries: Disease-Specific Programmes - a means to understand. Curr Med Res Opin2008;24:3063–72. 10.1185/0300799080245704018826746</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">29</span> <a id="R29"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id296"><!-- named anchor --></a>AaronsonNK, AhmedzaiS, BergmanB, et alThe European organization for research and treatment of cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology. J Natl Cancer Inst1993;85:365–76. 10.1093/jnci/85.5.3658433390</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">30</span> <a id="R30"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id297"><!-- named anchor --></a>MichielsenHJ, De VriesJ, Van HeckGLPsychometric qualities of a brief self-rated fatigue measure: the fatigue assessment scale. J Psychosom Res2003;54:345–52. 10.1016/s0022-3999(02)00392-612670612</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">31</span> <a id="R31"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id298"><!-- named anchor --></a>SnaithRPThe hospital anxiety and depression scale. Health Qual Life Outcomes2003;1:29. 10.1186/1477-7525-1-2912914662PMC183845</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">32</span> <a id="R32"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id299"><!-- named anchor --></a>ArrarasJI, Kuljanic-VlasicK, BjordalK, et alEORTC QLQ-INFO26: a questionnaire to assess information given to cancer patients a preliminary analysis in eight countries. Psychooncology2007;16:249–54. 10.1002/pon.104716858744</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">33</span> <a id="R33"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id300"><!-- named anchor --></a>CellaD, RileyW, StoneA, et alThe patient-reported outcomes measurement information system (PROMIS) developed and tested its first wave of adult self-reported health outcome item banks: 2005-2008. J Clin Epidemiol2010;63:1179–94. 10.1016/j.jclinepi.2010.04.01120685078PMC2965562</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">34</span> <a id="R34"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id301"><!-- named anchor --></a>WangbergSC, AndreassenHK, ProkoschH-U, et alRelations between Internet use, socio-economic status (SES), social support and subjective health. Health Promot Int2008;23:70–7. 10.1093/heapro/dam03918083686</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">35</span> <a id="R35"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id302"><!-- named anchor --></a>RitterP, LorigK, LaurentD, et alInternet versus mailed questionnaires: a randomized comparison. J Med Internet Res2004;6:e29. 10.2196/jmir.6.3.e2915471755PMC1550608</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">36</span> <a id="R36"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id303"><!-- named anchor --></a>RaatH, MangunkusumoRT, LandgrafJM, et alFeasibility, reliability, and validity of adolescent health status measurement by the child health questionnaire child form (CHQ-CF): Internet administration compared with the standard paper version. Qual Life Res2007;16:675–85. 10.1007/s11136-006-9157-117286197PMC1832149</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">37</span> <a id="R37"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id304"><!-- named anchor --></a>VallejoMA, JordánCM, DíazMI, et alPsychological assessment via the Internet: a reliability and validity study of online (vs paper-and-pencil) versions of the general health Questionnaire-28 (GHQ-28) and the symptoms Check-List-90-Revised (SCL-90-R). J Med Internet Res2007;9:e2. 10.2196/jmir.9.1.e217478411PMC1794673</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">38</span> <a id="R38"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id305"><!-- named anchor --></a>Morton RLDK, RPMS, BartulaIePROMs-MEL. ANZCTR study registration ACTRN126200011499542020.</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">39</span> <a id="R39"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id306"><!-- named anchor --></a>WinstanleyJB, WhiteEG, BoyleFM, et alWhat are the pertinent quality-of-life issues for melanoma cancer patients? aiming for the development of a new module to accompany the EORTC core questionnaire. Melanoma Res2013;23:167–74. 10.1097/CMR.0b013e32835e593223358427</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">40</span> <a id="R40"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id307"><!-- named anchor --></a>WinstanleyJ, WhiteE, SawR, et alDevelopment of the melanoma concerns questionnaire (MCQ-28); refinement of the EORTC QLQ-MEL38 module. Psychooncology2020;29:321–30. 10.1002/pon.525131652387</p></div>
+</div>
+<div class="row">
+<div class="ref-label cell"><p class="ref-label"><span class="label">41</span> <a id="R41"><!-- named anchor --></a></p></div>
+<div class="ref-content cell"><p class="citation"><a id="id308"><!-- named anchor --></a>HussonO, de RooijBH, KiefferJM, et alIndependent prognostic value of the EORTC QLQ-C30 summary score on all-cause mortality: results from the population-based profiles registry. Journal of Clinical Oncology2018;36:1007010.1200/JCO.2018.36.15_suppl.10070</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-footer" class="footer">
+<hr class="part-rule">
+<div class="metadata">
+<h4 class="generated">Article Information (continued)</h4>
+<div class="metadata-group">
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk"><p class="metadata-entry"><span class="generated">Subject: </span>Oncology</p></div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Categories: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Subject: </span>1506</p>
+<p class="metadata-entry"><span class="generated">Subject: </span>1717</p>
+</div>
+</div>
+<p class="metadata-entry"><span class="generated">Series title: </span>Original research</p>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Keywords: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated">Keyword: </span>clinical audit</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>dermatological tumours</p>
+<p class="metadata-entry"><span class="generated">Keyword: </span>public health</p>
+</div>
+</div>
+<div class="metadata-area">
+<p class="metadata-entry"><span class="generated">Custom metadata: </span></p>
+<div class="metadata-chunk">
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-qastatus</span>: </span>0</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-live</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-embargo</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-status-released</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-open-access</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-olf</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-manuscript</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-legally-suppressed</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-pdf</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-has-supplement</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-pdf-only</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-suppress-copyright</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-real-version</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-is-scanned-article</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-preprint</span>: </span>no</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-prop-in-epmc</span>: </span>yes</p>
+<p class="metadata-entry"><span class="generated"><span class="data">pmc-license-ref</span>: </span>CC BY-NC</p>
+<p class="metadata-entry"><span class="generated"><span class="data">special-feature</span>: </span>unlocked</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="part-rule">
+<div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
+</div>
+</body>
+</html>
