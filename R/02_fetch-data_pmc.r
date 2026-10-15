@@ -115,3 +115,9 @@ for (i in seq_along(pmcids)) {
     )
   }
 }
+
+
+# In the next step, the repo will be pushed to github and it will randomly
+# download > 20,000 PMC XML records and convert them to HTML.
+# Next, I will use script 03 to clean the fetched HTML files.
+# Only those that already contain some keywords will be kept
