@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Badiola-Bengoa, Mendez-Zorrilla, and Mukhopadhyay: A Systematic Review of the Application of Camera-Based Human Pose Estimation in the Field of Sport and Physical Exercise</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2191,5 +2214,137 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Human Pose Estimation (HPE) consists of estimating the position of different parts of the body, such as the joints in a 2D or 3D space depending on the estimation type, normally from visual information, such as images, and sometimes through other additional data obtained by different types of sensors, such as inertial sensors or depth sensors. This field of research can be considered a combination of Data Processing and Artificial Intelligence, more specifically, Computer Vision.
+
+Since 2014, and mainly the past 5 years, the use and interest in HPE has increased, mainly due to the introduction of Deep Learning to the field [1]. The methodology has evolved from the first simple neural networks to the complex Convolutional Neural Networks (CNN) of today. The use of filters to obtain lines, edges, silhouettes, and other remarkable characteristics of the elements contained in images, as well as the capability of providing information to a system that can learn some characteristics and then detect them when a similar situation is given, have supposed an inflection point.
+
+There are some available surveys that give an overall view on the papers as well as the State Of The Art (SOTA) systems, such as [2,3]. The first one is focused on monocular approaches, while the second survey gives an overall view of the different types of HPE systems, such as 2D and 3D, single view and multi-view, single person, and multi-person, and so on. Depending on the different characteristics of the problem, different types of systems can be found. A view of the available public datasets, as well as the used metrics, is presented as well..
+
+Both surveys and preliminary analysis of the available papers about HPE show how the applications of HPE have increased. Different uses of these types of systems can be found, such as in the field of health [4], Human Computer Interaction (HCI) [5], Motion Capture (MoCap) systems [6], Virtual Reality (VR) [7], Augmented Reality [8], exergames [9], and so on. For some applications, the systems are based on general-purpose systems that have shown very good performance in benchmarks. In the recent literature, we can find some examples of general-purpose HPE systems, which implement innovative methods and in which different systems will be probably based, such as [10], which additionally includes the publicly available code. This system could be a very good starting point to develop a HPE system applied to Sport and Physical Exercise (SPE), as it has obtained very good results in a benchmark with images in the wild, and thus in the context of in-the-wild predictions, could be a very good option. Another good starting point for applying HPE in SPE is the system developed in [11], which is publicly available as well. This system is specialized in situations of self-contact, so, it could be a very good base for developing a HPE system applied in yoga, for instance.
+
+This paper consists of a systematic review based on the PRISMA guidelines, in which the objective is to provide a similar analysis of the literature as provided by other HPE survey or literature review papers, but that is focused on the application of HPE to the field of SPE, highlighting some aspects related with these systems as well as applying an analysis and review that follows the criteria specified throughout the paper. The importance of the evaluation, taking into account the used metrics and data, as well as the provided information and detail of the process, is highlighted, but other aspects related to the quality of the work and the paper are considered too. The innovations and evolution of this specific field, as well as the problems and opportunities, will be presented.
+
+As it can be seen in the literature reviews related to general-purpose HPE systems, those systems are trained in a variety of contexts and actions, but they are not specifically focused on SPE. The movements in sport and during physical exercise tend to be different from the “standard” movements, sometimes being very explosive movements, others including occlusions of other players or tools, and others including more challenging body positions, such as in gymnastics or yoga. So, even if a general-purpose system can be applied in those contexts, depending on the sport, exercise, or specific needs, it will not perform as well as a more specialized system that is adapted to each context and trained with specific data. This is why it is important to analyze if a general-purpose system can be used in SPE, in which sports it performs better as well as getting to know the needs of adaptations to improve the performance, even if the evaluation metrics and base architectures are the same.
+
+Several research questions are presented in Table 1, and by the literature review. The discussion section will try to give answers to these questions, as well as reach some conclusions.
+
+The structure of this paper is as follows. Section 2 presents the evaluation methods used by the authors. The evaluation of the systems is considered one of the most important aspects of any system, as it serves as a tool to measure the performance of a system and be able to compare it with other authors’ works. The most used metrics, as well as datasets, will be analyzed, highlighting the fact that there are few 2D datasets for training HPE systems specialized for its application in the field of SPE, such as Leeds Sports Pose, Penn Action, and PoseTrack, and some others which are not specifically designed for this area, but include some content about some sports or physical activities, such as the broadly used ones as 2D HPE benchmarks, Common Objects in Context (COCO), and Max Planek Institut Informatik (MPII). Then, analyzing the availability of 3D datasets, a lack of sample amount as well as variety in terms of activities is detected, being able to find some datasets such as Demo for Martial Arts, Dancing and Sport Dataset (MADS), but still not being enough to improve specialized systems on SPE. Then, the literature review is presented, first, introducing the used methodology and criteria for the paper evaluation. Finally, the paper finishes with a discussion about the analyzed field, presenting some key ideas and conclusions, as well as giving some ideas of the possible future paths of the topic of HPE application in SPE.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Analysis of the System Evaluation Methods
+
+As mentioned previously, before presenting the used methodology for the systematic review, it will be interesting to analyze the evaluation methods used by most authors, to understand how the performance of this type of system is evaluated. There are two key elements involved in the evaluation of an HPE system: metrics and data.
+
+### 2.1. Metrics
+
+The most used metricsthrough the analyzed literature are two, the first one being the evaluation metric used for the public benchmark COCO, and the second one a metric that can be used in 2D as well as 3D human pose estimation:
+
+Object Keypoint Similarity (OKS):
+
+○ Commonly used in the COCO Keypoint Challenge.
+
+○ It is formulated as Equation (1):
+
+○ Where di is the Euclidean distance between the detected keypoint and the corresponding ground truth, vi is the visibility flag of the ground truth, δ(vi&gt;0) is referring to those samples that are labeled, s is the object’s scale (square root of the object segment area), and kis a per-keypoint constant that controls falloff.
+
+○ To put it simply, OKS plays the same role that Intersection over Union plays in object detection. It is calculated from the distance between predicted points and ground truth points normalized by the scale of the person. Typically, standard average precision and recall scores are reported in papers: AP50 (Average Precision at OKS = 0.50) AP75, AP (the mean of AP scores at 10 positions, OKS = 0.50, 0.55..., 0.90, 0.95), APM for medium objects, APL for large objects, and Average recall (AR) at OKS = 0.50, 0.55..., 0.90, 0.955.
+
+Percentage of Correct Keypoints (PCK): A detected joint is considered correct if the distance between the predicted and the true joint is within a certain threshold.
+
+○ Some examples:
+
+◾ PCKh@0.5 is when the threshold = 50% of the head bone link
+
+◾ PCK@0.2 = Distance between predicted and true joint &lt; 0.2 * torso diameter
+
+○ Sometimes 150 mm is taken as the threshold.
+
+○ This alleviates the shorter limb problem since shorter limbs have smaller torsos and head bone links.
+
+○ PCK is used for 2D and 3D (PCK3D). Again, the higher the better.
+
+Apart from the previously presented metrics, the use of other metrics can be seen in the works by several authors, such as Root-Mean-Square Error (RMSE) and Mean Per Joint Position Error (MPJPE) [12], or their own evaluation metrics, including some parameters from the estimation that are not normally included, such as Frames Per Second (FPS) in combination with sensitivity and precision in [13] or their own accuracy calculation methods that are explained in the papers [14,15]. Another metric used in some evaluations is Percentage of Correct Parts (PCP), which calculates the detection rate of limbs. The problem of this metric has been widely discussed by different authors, such as in [16], in which the benchmark MPII is introduced. With PCP, a limb is considered as detected if the distance between the detected limb and the ground truth limb is smaller than half of the limb length.There is a penalization in relation with short limbs, as they must be localized with higher precision. This is one of the most important reasons why most authors prefer to use PCK or PCKh, as the distance between the estimated and the ground truth joins is normalized with respect to the torso size, which makes the evaluation of the estimation equal throughout all the limbs.
+
+Other metrics are used apart from the estimation of the joints of the body, such as in [17,18] focused on the estimation of the Center of Posture (CoP) or Center of Mass (CoM). In those cases, the error is calculated in relation to the ground truth location.
+
+### 2.2. Data
+
+Just like metrics, data is another key point of the evaluation of these types of systems. It is probably one of the most important elements related to the development of any deep learning system, as, apart from conforming the comparison tool between systems, the data is what gives to the system samples from which it should learn. Having good quality publicly available datasets is essential for the machine learning field; thus, taking into account its importance, a summary of the most important and high quality publicly available datasets related to the application of HPE in the field of sport are provided in Table A1 and Table A2 (all the tables of this section, Table A1, Table A2, Table A3 and Table A4, are included in Appendix A. Data). Apart from the datasets containing only content related to the field of sport, other datasets which are not developed specifically for that task can be interesting to use due to the nature of the actions present in the datasets, including SPE activities. These can be found in Table A3.
+
+Additionally, an overall analysis of the data type and sources used by some of the most remarkable papers has been performed, providing a summary in Table A4. The papers presented in this table have been selected following the filtering method and criteria explained in the methodology section. As seen in the table, there is a big variety concerning the used data, including, for example, public overall HPE datasets, those focused specifically on SPE, and those developed using MoCap systems for a specific use case.
+
+As it can be seen in Table A1, Table A2, Table A3 and Table A4, the first and most important conclusion that can be reached is that there is a lack of 3D HPE datasets for the development of this kind of system in the field of SPE. Only 2 high-quality public 3D HPE datasets can be found, and both are quite specialized to specific SPEs. One to martial arts and dance, and another one to football. So, there is no general sport or exercise dataset available in 3D, and there is a lack of this type of dataset for other activities different from those mentioned.
+
+Regarding publicly available 2D HPE dataset specifically developed for its application in sport, only 2 general sports datasets have been found, which, even being more than what has been found in relation with 3D, can still be considered insufficient for the development of those systems. In this case, the images of the datasets include different types of sport and actions, which could be beneficial for the generalization of the problem in the field of sport. Apart from that, another publicly available dataset is focused on football. As for the 3D dataset, a lack of variety in specialized datasets exists, as some sports need a big data amount including use cases in which the most common problems of those cases are faced, as in yoga for rare positions, gymnastics for different body orientations, swimming for underwater conditions, and specific conditions and wearable tools of different sports.
+
+Most of the 2D datasets are created using manual annotations, while most 3D datasets are generated using a MoCap system, such as Kinect or other more complex commercial ones. This could be the reason to have more 2D datasets available and more variety from the point of view of actions, actors, scenarios, and so on. As the process of manual annotation is easier from the technological point of view and can be applied in different contexts easily, it allows authors to work in this area in a deeper and wider way, while authors that want to work with 3D data need to use public datasets created using a MoCap system, and because of this have a limited amount of variety, or get their own MoCap system, and still have the limitations of the needed setup for its use. The only work that addresses the problem of generating ground truth for 3D HPE outside the lab environment is [19], generating the 3D HPE benchmark focused on football KTH Multiview Football Dataset.
+
+A deeper analysis of Table A4 is provided in the results sections of this paper.
+
+## 3. Methodology
+
+In the following sections, the methodology that has been followed for the systematic review will be explained, including what has been analyzed, how and the sources of the papers. For this systematic review, one reviewer screened each record of the literature, the main author of this paper, being 2021/08/01 the last date when the different paper databases were consulted.
+
+### 3.1. Inclusion and Exclusion Criteria
+
+Three exclusion criteria have been applied for the review:
+
+Date: only papers from the year 2014 to 2021 have been included in the search, as 2014 is the year in which authors started to use Deep Learning for HPE tasks, so, the performance improved and its use started to increase.
+
+Publication type: only papers published in journals and conferences with high impact in the field of Computer Science have been included.
+
+Estimation type: only HPE has been considered, understood as an overall body pose estimation, as explained in the introduction. So, for example, no eye-pose estimation or hand-pose estimation has been considered during the research. In any case, only general-purpose systems have been found related to those two pose estimation systems, not specifically applied in SPE.
+
+The inclusion criteria are explained in the following paragraphs, but, in summary, any paper from 2014 to 2021, and published in a journal or a conference of high impact, is included, and if it includes any of the terms explained in the next lines and are related with the topic of HPE applied to SPE, which includes a high variety of sports and physical exercise activities, such as running, walking and jumping, not being necessary to practice them in a competitive way.
+
+In order to search for the papers related to the topic of this literature review, the following terms were used, in conjunction with the term ‘Human Pose Estimation’: sport, martial art, soccer, basketball, football, tennis, squash, athlete, athletics, sprint, olympics, swimming, jump, hockey, rowing, cycling, rugby, badminton, baseball, volleyball, boxing, dance, gymnastics, climbing, running cricket, golf, and padel. It should be taken into account that the search took place using the terms as conjunction, so, including different terms will not limit the obtained results. The main term to be searched is ‘sport’, as it should appear in the keywords or other relevant sections of any other paper including any other term searched. Anyway, as some papers could be focused in terms such as ‘athlete’ or ‘olympics’, more than in the term ‘sport’, they have been included as an added value, including the most common sports. In total, more than 500,000 papers were obtained as results of the search in the Association for Computing Machinery Digital Library (ACM DL), more than 280 in the Web of Science (WOS), and more than 25 in dblp. In the case of ACM DL, a big part of the papers was not directly related with the topic, as they are related with general HPE or with hand or objectpost estimation, while in WOS and dblp, mostly all the papers were related with the topic. An initial filtering was applied to the first 160 most relevant papers from each paper dataset from 2014 to 2020, and the first most relevant 80 papers from 2021, removing duplicated or very similar ones, obtaining 20 papers as output. This process can be easily visualized in the flow diagram contained in Figure 1. One paper is considered to be part of the most relevant group if it fulfills the inclusion and exclusion criteria, and the results of the study are properly documented, so, if qualitative and/or quantitative results are provided, and/or if the used method is publicly available and can contribute to the work of other authors.
+
+Other paper repositories were considered for inclusion in the research, but as most of them were not as specialized in Computer Science as ACM DL, WOS and dblp are, the number of relevant papers was not so big and the quality was not so high. For example, Pubmed was considered to be included in the research, but the focus of this search engine is on medicine, so the number of papers related to the current topic was not so high, and the perspective of the work was different, so it has was not included.
+
+### 3.2. Quality Criteria
+
+It is considered essential to specify how the evaluation of the papers from the first filtering was applied, to be completely transparent and as objective as possible. With this objective, a table of classification criteria (see Table 2), with their category, description, possible values, and importance in the evaluation process was created. The objective of the table is to provide a view of the most representative papers of the past years related to the application of HPE in the field of sport and physical activity. The metrics defined in Table 2 are defined by the authors attending to the content of the paper itself and other quality metrics not usually evaluated, such as replicability through the code or datasets, performance, or innovation.
+
+The criteria were selected looking at the most important aspects of the works related to the topic, and the filtering described in Figure 1. In order to understand Table 2 properly, it is considered of interest to mention in detail some criteria: (1) all the criteria are supposed to be as objective as possible, even if there is some subjective interpretation, such as in the criterion of Innovation. There is some level of subjectivity in terms of the importance is given to each of the criteria by the weight attribute. Some criteria are binary variables, as only if the criterion is fulfilled or not is wanted to analyze, while other criteria accept 3 values or even ranges from one value to other. (2) criterion 10 only measures if the paper has any citations apart from the author’s ones. This has been established like that because taking into account the low amount of available research about this specific topic, the number of citations is very low, so, any citation, out of the self-citations, is considered a quality measure, as this indicates that the work itself, as well as the publication of the method and results during the research and development, have been of interest and useful to other works. The specificity of the work can be a handicap in terms of citations, so, considering the low amount of research in the field and this fact, we decided to evaluate the papers giving most of the importance to the research and development work, as well to the results, and give less importance to the citations of the paper.
+
+As expressed before in the paper, the evaluation of the systems is considered very important when analyzing the work done, as it serves as a way of comparison with other systems as well as a tool to measure the quality of the work. So, as it can be seen in the table, not providing information related to the evaluation process would mean a reduction of the result of the paper evaluation of at least 3.5 points out of 11, so, applying these eligibility criteria the paper would be considered at least 30% worse.
+
+As seen in Table 2, different variables are assessed, even if a little bit of subjectiveness can influence the analysis, those variables are objective. For example, different performance variables were taken into account when analyzing the developed systems by the authors, including accuracy and error, which, at the same time, can include different metrics, such as OKS, PCK, RMSE, and PCP. Another performance variable taken into account during the analysis was FPS, as in some cases the speed of the system can be essential for the applicability of the application in the analyzed context. Other factors that influence the analysis of the papers include how the used data is gathered, the quality of the data, the availability, and the limitations, which could be due to the low amount of samples, or the low variety of the images.
+
+### 3.3. Information Sources
+
+As indicated earlier, three paper databases with high-quality computer science papers were selected, which are summarized in Table 3.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

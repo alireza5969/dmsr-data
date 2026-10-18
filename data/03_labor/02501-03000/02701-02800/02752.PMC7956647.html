@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Imtiaz and Sacchetti: A Systematic Review of Sensing Technologies for Wearable Sleep Staging</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3467,5 +3490,82 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+It is estimated that more than 3.5 million people in the United Kingdom and more than 70 million people in United States suffer from some sort of sleep disorder [1,2]. Apart from having a major impact on the quality of lives of individuals, sleep disorders also result in a huge financial impact on the economy stemming from expensive treatments, reduced productivity, road accidents, and many other areas that involve alertness and quick judgement [3,4]. Diagnosis of sleep disorders is an expensive procedure that requires performing a sleep study known as polysomnography (PSG) to monitor multiple parameters and physiological signals during sleep [5]. These may include neural activity (EEG), eye movements (EOG), muscle activity (EMG), heart rhythms (ECG), and breathing functions. Together these signals, or a combination of them, are used to perform sleep scoring and to identify, or rule out, the presence of multiple sleep disorders.
+
+Polysomnography is usually performed at sleep clinics in the presence of trained technicians, typically using four to six EEG electrodes; two EOG electrodes; four EMG electrodes; two ECG electrodes; and additional sensors such as pulse oximeter, sound probes, etc. The signals obtained from these sensors are analysed and scored into one of the different stages of sleep. Human sleep is broadly classified into into Wake, REM (rapid eye movement), and NREM (non-rapid eye movement) stages [6]. The NREM stage is further divided into N1, N2, and N3 stages (or S1, S3, S3, and S4 based on the older Rechtschaffen and Kales (R&amp;K) rules for classification) [7]. The process of assigning a sleep stage to each block of 30-second PSG signal is known as sleep staging or sleep scoring.
+
+Despite the importance of PSG for the diagnosis of sleep disorders, its high cost coupled with the necessity of clinical admission and long waiting lists [8] limits its usage outside of specialised clinics. Additionally, manual analysis and scoring of sleep from PSG traces is a tedious task that can take 2–4 h for scoring data from an entire night sleep [9]. The advent of low-power wearable sensors and edge computing has resulted in several systems being developed to make PSG easier and to make it possible to perform sleep monitoring with automatic sleep detection and staging over multiple nights at the home of patients [10]. Researchers have used several sensors to obtain physiological parameters during sleep and developed various methods for their processing to classify them into sleep stages. Two intrinsically linked areas of research have emerged, with one focusing on signal acquisition and the other on signal processing. In the case of signal acquisition, there is a push towards finding alternative sources of sleep information than those traditionally used for PSG. This involves developing new sensors, interfacing circuitry, inplementing low-power hardware, as well as integrating everything into smaller packages. The signal processing research focuses heavily on using techniques to perform feature extraction and on taking advantage of the advances in machine learning for classification.
+
+While several review papers have focused on the algorithmic accuracy of different methods for automatic sleep detection and staging using a variety of physiological signals [11], this paper presents a systematic review of the sensing technologies available to acquire those signals. It focuses on systems and methods that are useful for long-term sleep monitoring through the use of home-based wearable devices. It presents a comprehensive discussion of the relevant sensing technologies focused on their suitability, limitations, usability, as well as their ability to extract signals that can reliably be used for automatic sleep detection and staging. The rest of this paper is organised as follows. Section 2 describes the review methodology used to identify candidate papers for this review. Section 3 synthesises the results presenting an overview of the different sensing modalities that are used for wearable sleep detection and staging. For each sensing modality, the challenges associated with signal acquisition, reliability, usability, and accuracy are discussed as well as a review of the different papers that have used the sensing modality in the context of automatic sleep staging. Finally, Section 4 discusses the overall landscape of sensing technologies looking at the different trade-offs that need to be taken into account when designing a wearable device for sleep detection and staging.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Methodology
+
+### 2.1. Data Sources
+
+This systematic review is performed using the guidelines of the Preferred Reporting Items for Systematic Reviews and meta-Analysis (PRISMA) statement [12]. It includes peer-reviewed articles written in English language published between 2010 and 2021. The lower limit of year 2010 is used because of the more recent developments in the area of wearable computing and systems. The initial list of articles was compiled by searching on the PubMed, SCOPUS, and IEEEXplore databases. The electronic search terms used with PubMed (as well as other databases) included wearable sleep staging, wearable sleep scoring, wearable sleep, wearable sleep eeg, wearable sleep ecg, wearable sleep sensors, wearable sleep breathing, wearable sleep plethysmography, wearable sleep ppg, wearable sleep actigraphy, and wearable sleep movement. The search made use of the binary OR operator to look for the presence of these terms in the title, abstract, or keywords of the articles and limited the publication year to be at least 2010. Additional articles were obtained from the bibliographies of articles found. The date of the last search was 8 February 2021. The initial search resulted in 813 articles that were further screened to remove duplicates and assessed against the eligibility criteria described in the next section. A flow diagram for identification, screening, and eligibility of the papers to be included in the review is shown in Figure 1.
+
+### 2.2. Eligibility Criteria
+
+The initial set of articles were filtered to remove the duplicates and to narrow down the scope in order to include only articles that were focused on designing a system or algorithm for wearable sleep detection and staging. This may include either a sensor designed specifically for sleep staging, including distinction between sleep and wake, or a method developed using data from a sensing source that could be used in a wearable context. This resulted in 181 articles that were deemed relevant. This number was further reduced to 90 after the full-text was assessed against the following eligibility criteria.
+
+Does the article present a sensor/method for sleep staging?
+
+Does the sensor/method in article classify at least one stage of sleep (including wake as it is considered a distinct stage based on both the R&amp;K and AASM rules of classification)?
+
+Is the sensor/method for use for staging human sleep?
+
+Does the article discuss potential use of the sensor/method in wearable context? If not, is the sensor/method obviously suitable for wearable use (e.g., wrist-based devices)?
+
+Is the sensor/method designed for monitoring overnight sleep (i.e., not only daytime naps)?
+
+Is the sensing modality clearly defined?
+
+Has the work being presented been validated against a reference method?
+
+Does the study report at least one quantifiable measure of accuracy?
+
+### 2.3. Data Extraction
+
+Data from each study was extracted into a spreadsheet that had columns for all the variables sought for this review. Where relevant, accuracy measures were computed from the reported metrics in the paper and entered into this spreadsheet. From each study presenting a system or method for automatic sleep staging, data were sought on the sensing modality of the system used for data collection, the classification accuracy of the method, the sleep stages being classified, the validation reference, the location of data collection, the age range of subjects, population size, and the source of data (i.e., an actual device or an existing database).
+
+### 2.4. Risk of Bias
+
+There is a risk of bias in individual studies reporting results based on different validation references. Even when the validation reference is the same, manual scoring by sleep technicians is subjective and hence may have some influence on the reported results. Additionally, sample size, study location, stages classified, and the reporting metrics themselves can also impact the results. To minimise these risks, two well-known measures of overall accuracy have been used and only those studies that report at least one of these measures were included. Furthermore, the other variables that may have an impact are clearly reported in the results.
+
+Overall, the studies that have been included focus on systems and methods designed for use in wearable sleep systems. Many studies do not mention the wearable or ambulatory nature of devices. Hence, an assessment was made for each study (with insufficient context) to determine its eligibility against a subjective criterion of its possible use in a wearable context.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

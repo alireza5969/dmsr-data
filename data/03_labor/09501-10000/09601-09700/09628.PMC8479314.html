@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Garcia Santa Cruz, Bossa, Sölter, and Husch: Public Covid-19 X-ray datasets and their impact on model bias – A systematic review of a significant problem</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2136,5 +2159,137 @@ dataset is occasionally mixed with the <i>Cohen/IEEE8023</i> dataset (<a href="#
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Since the end of 2019, the novel coronavirus SARS-CoV-2 gained worldwide attention and eventually developed to the global COVID-19 pandemic in early 2020 (Sohrabi et al., 2020). Reliable diagnosis and stratification play a vital role in the management of cases and the allocation of potentially limited resources, like intensive care unit (ICU) beds. Hence, there is an urgent necessity to create trustworthy tools for diagnosis and prognosis of the disease. While most of the people with COVID-19 infection do not develop pneumonia (Cleverley et al., 2020), the early identification of COVID-19 induced pneumonia cases is essential.
+
+To this end, imaging modalities such as planar X-ray, computed tomography (CT) and sometimes ultrasound are employed. When assessing the different pros and cons of the imaging modalities, the global scale of the COVID-19 pandemic and the need for imaging also in countries with less developed healthcare systems impose additional constraints to consider (cf. Greenspan et al., 2020).
+
+Ultrasound is a very interesting non-invasive complementary modality described to assess lung damage. Some COVID-19 ultrasound datasets have been released recently (Born, Wiedemann, Cossio, Buhre, Brändle, Leidermann, Aujayeb, Moor, Rieck, Borgwardt, 2021, Born, Wiedemann, Cossio, Buhre, Brändle, Leidermann, Aujayeb, 2021, Almeida, Bilbao, Ruby, Rominger, López-De-Ipiña, Dahl, ElKaffas, Sanabria, 2020). However, ultrasound needs medical specialist expertise to be carried out and the amount of publicly available data is still limited. Therefore, CT and Chest X-ray (CXR) might be considered the primary modalities in COVID-19 imaging.
+
+CT yields the highest diagnostic sensitivity, however, it is very complex to apply in an intensive care unit setting, and expected to be frequently inaccessible for patients in less developed health care systems. In contrast, CXR yields lower diagnostic sensitivity but is a widely available, fast, minimal-invasive, and relatively cheap tool to diagnose and monitor COVID-19 induced pneumonia (Aljondi and Alghamdi, 2020). CXR is easy to apply, being applicable even in anaesthetised patients receiving intensive care treatment using portable scanners and expected to be much more widely available in less developed healthcare systems than any other imaging method. Additionally, the nature of the data - individual 2D images - is resulting in much easier data management compared to the image stacks of CT or the (arbitrary angle) sequences of ultrasound. As a result, very large public datasets are available for CXR and the present work prioritised their analysis.
+
+### Motivation
+
+Machine learning, and in particular deep learning methods, promise to assist medical staff in coherent diagnosis and interpretation of images (Choy, Khalilzadeh, Michalski, Do, Samir, Pianykh, Geis, Pandharipande, Brink, Dreyer, 2018, McBee, Awan, Colucci, Ghobadi, Kadom, Kansagra, Tridandapani, Auffermann, 2018). A remarkable amount of machine learning models has been proposed in a very short amount of time to tackle the problems of COVID-19 diagnosis, quantification and stratification from X-Ray imaging (Shoeibi, Khodatars, Alizadehsani, Ghassemi, Jafari, Moridian, Khadem, Sadeghi, Hussain, Zare, et al., Islam, Karray, Alhajj, Zeng, et al., Ilyas, Rehman, Naït-Ali).
+
+However, there is a growing awareness in the community that the presence of different sources of bias significantly decreases the overall generalisation ability of the models, leading to overestimated model performance reported in internal validation compared to evaluation on independent test data (Soneson, Gerster, Delorenzi, 2014, Cohen, Hashir, Brooks, Bertrand, Zech, Badgeley, Liu, Costa, Titano, Oermann, 2018, Maguolo, Nanni). In addition, numerous journal editorials are calling for better development, evaluation and reporting practices of machine learning models aimed for clinical application (Mateen, Liley, Denniston, Holmes, Vollmer, 2020, Nagendran, Chen, Lovejoy, Gordon, Komorowski, Harvey, Topol, Ioannidis, Collins, Maruthappu, 2020, Campbell, Lee, Abrmoff, Keane, Ting, Lum, Chiang, 2020, Health, 2020, O’Reilly-Shah, Gentry, Walters, Zivot, Anderson, Tighe, 2020, Health, 2019, Stevens, Mortazavi, Deo, Curtis, Kao, 2020). Underneath, there are growing concerns about ethics and the risk of harmful outcomes of using AI in medical applications (Campolo, Sanfilippo, Whittaker, Crawford, 2018, Geis, Brady, Wu, Spencer, Ranschaert, Jaremko, Langer, Borondy Kitts, Birch, Shields, van den Hoven van Genderen, Kotter, Wawira Gichoya, Cook, Morgan, Tang, Safdar, Kohli, 2019, Brady, Neri, 2020).
+
+To avoid or at least be able to detect potential bias, it is important that datasets and models are well documented. Some aspects of dataset building, such as criteria for subject inclusion and exclusion, recruitment method, patterns in missing data, and many more, may influence model accuracy and introduce bias in prediction models. Among the most common sources of bias are unknown confounders and selection bias (Steyerberg, 2009, Griffith, Morris, Tudball, Herbert, Mancano, Pike, Sharp, Sterne, Palmer, Davey Smith, Tilling, Zuccolo, Davies, Hemani, 2020, Greenland, Robins, Pearl, 1999, Heckman, 1979). In both cases, the presence of a spurious association between predictors and outcomes might be learned by the model, leading to undetected overfitting resulting in models not capable of generalizing and eventually failing transportation to clinical application (see Fig. 1 and Wolff et al. (2019)).
+
+### Tools for model evaluation and information extraction
+
+In the last years, several guidelines and checklists to evaluate prediction model quality, risk of bias and transparency, depending on model characteristics, have been proposed. An essential requirement to apply such tools is access to detailed dataset documentation.
+
+#### (untitled)
+
+##### Model evaluation
+
+PROBAST (Prediction model Risk Of Bias Assessment Tool, Wolff et al. (2019) was developed to evaluate the risk of bias and the applicability to the intended population and setting of diagnostic and prognostic prediction model studies. TRIPOD (Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis, Moons et al. (2015) aims to improve reporting and understanding of prediction model studies. A third example of a quality assessment tool, in this case specifically designed for machine learning and artificial intelligence research, is given by a set of 20 critical questions proposed in Vollmer et al. (2020), to account for transparency, reproducibility, ethics, and effectiveness (TREE). These tools require answering specific questions about participant selection criteria and setting, its numbers, information about predictors and outcomes, and whether all of these choices were appropriate for the model intended use.
+
+##### Information extraction
+
+The CHARMS checklist (Critical Appraisal and Data Extraction for Systematic Reviews of Prediction Modelling Studies, Moons et al. (2014) was designed as a data extraction tool for systematic review of prediction modelling studies, including machine learning models. It is not specifically designed to evaluate datasets, however a large part of its items are devoted to extract information from data used in the studies. The BIAS checklist (Biomedical Image Analysis Challenges, Maier-Hein et al., 2020) is intended to improve the transparency of reporting biomedical image analysis challenges regardless of application field, image modality or task category. The main aim of the initiative is to standardise and facilitate the review process to raise the interpretability and the reproducibility of the results of biomedical challenges by better reporting, as a potential solution to fully exploit their potential and maximise their capacity to move forward in the field (Maier-Hein et al., 2018). Up to our knowledge, there are no other tools, protocols or statements, exclusively designed for dataset evaluation.
+
+### State-of-the-Art
+
+In a recent review and critical appraisal of prediction models for diagnosis and prognosis of COVID-19 (Wynants et al., 2020), all evaluated models were rated at high risk of bias. The authors concluded that they “do not recommend any of these reported prediction models for use in current practice”. For the subset of diagnostic models based on medical imaging two main causes for high risk of bias were identified: 1) a lack of information to assess selection bias (such as how controls were selected or which subset of patients underwent imaging); and 2) a lack of clear reporting of image annotation procedures and quality control measures. Similar conclusions were obtained in another publication specifically addressing machine learning models using chest X-ray and CT images (Roberts et al., 2021). They found a high or unclear risk of bias in all studies and that the reported results were extremely optimistic, mainly due to limitation in the datasets or combination of datasets used.
+
+### Aim &amp; contribution
+
+Given the previously described disappointing state-of-the-art, we hypothesise that the current main obstacle towards building clinically applicable machine learning models for COVID-19 is not the machine learning techniques per se, but instead access to reliable training data that, on the one hand captures the problem complexity, but on the other does not induce undetected bias to the models.
+
+Therefore, there is a need to raise awareness of such problems and to aid modellers to efficiently find the right dataset for their particular problem, supporting the creation of robust models. Consequently, this paper focuses on data instead of models, giving an overview of current publicly available COVID-19 chest X-ray datasets and identifying strengths and limitations, including the most evident potential sources of bias.
+
+We systematically evaluated the quality of COVID-19 chest X-ray datasets and their utility for training prediction models using an adapted version of the CHARMS tool and an adapted version of BIAS. Dataset quality is measured by the amount and the detail in the description of the dataset variables and of the dataset building process. Model designers need this information to evaluate the risk of bias and the generalizability, for example, using tools such as PROBAST, TRIPOD or TREE. The utility is determined by the data structure (e.g. cross-sectional vs longitudinal), the available potential outcomes (e.g. image annotations or survival information), and the amount of dataset information provided (e.g. sample size and information on missing data).
+
+Thus, this paper provides a more in-depth description of datasets than previous works (Shuja, Alanazi, Alasmary, Alashaikh, 2020, Sohan, Shoeibi, Khodatars, Alizadehsani, Ghassemi, Jafari, Moridian, Khadem, Sadeghi, Hussain, Zare, et al., Islam, Karray, Alhajj, Zeng, et al., Ilyas, Rehman, Naït-Ali), that have focused on surveying papers describing methods, and on identifying the datasets used to train these methods, without assessing the quality or utility of the datasets.
+
+### Paper structure
+
+In Section 2 the methodology used to systematic search for datasets and evaluate their potential for clinical prediction models is given. Next, in Section 3, the datasets selected for review are analysed in detail on their provided information content to assess the risk of bias. Moreover, in order to put this review in the context of the current model development scenario, an analysis on dataset usage in published papers was conducted and a general overview and discussion of the most commonly used datasets is given. In Section 4 the insights from this analysis are discussed. Finally, some recommendations for researchers aiming at clinical prediction model building are given in Section 5.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+In this section, the search strategy for datasets is explained, the eligibility criteria are discussed, and subsequently the application of information extraction tools is described.
+
+### Dataset search, eligibility &amp; selection
+
+To identify publicly available COVID-19 X-ray datasets which are sufficiently documented to asses their risk of bias, two search strategies were combined: a direct search for datasets using a specialised dataset search engine, and an indirect search for datasets by screening in published papers for dataset references. To this end the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses, (Moher et al., 2015) statement was adapted to the given special situation, where the final objects of interest are datasets instead of studies (see Fig. 2 ). Therefore, two separate PRISMA flows from identification to eligibility, for the direct and indirect case, were introduced.
+
+The identification step of the direct approach consisted of querying the google research dataset search 1 with “covid” &amp; “x-ray”. For the indirect approach PubMed, medRxiv and arXiv were queried for any combination of {“covid”, “covid-19”}, {“x-ray”} and {“dataset”, “data set”, “machine learning”, “deep learning”}. The search was restricted to the time interval between 1st of January 2020 to 31st of March 2021.
+
+Next, in the PRISMA screening step, all papers obtained in the indirect approach were excluded if they were not concerned with COVID-19, the main text was not written in English or they did not contain any reference to a chest X-ray dataset. From the remaining papers all references to X-ray datasets were extracted and assigned as an annotation to the paper record. Datasets with no clear origin were tagged as not identified and those that were not openly available (at least by simple registration) were marked as private. All other datasets were labelled with an identifier and, if not yet previously encountered, added to a running list of identified publicly available datasets. In the end this procedure yielded the set of all unique dataset references encountered.
+
+Datasets from the direct search approach were excluded if they were not (publicly) available or did not contain any chest X-ray data. The remaining datasets were de-duplicated to yield a second set of unique chest X-ray datasets.
+
+In the eligibility step of both the direct and indirect approach the extracted datasets were investigated in further detail and excluded if they did not qualify for an in-depth risk of bias analysis of COVID-19 X-ray datasets. First of all, this excludes all datasets which do not contain any real COVID-19 related cases, excluding non-COVID and synthetic datasets.
+
+Furthermore, to be able to address questions on the risk of bias, a sufficient documentation of the dataset origin and population composition has to be available (see Section 1.2). Any dataset, from which one cannot reconstruct the collection procedure of the samples must be deemed of high risk of bias per se. Thus, all datasets containing no further information except the images themselves (no info), or solely the origin of their collection (no meta) were excluded. Additionally, to be able to coherently address questions on patient selection/enrolment criteria and outcome definition, all datasets that were not collected under the same protocol but are merely a collection of case reports (case collection) were also excluded.
+
+Finally all datasets which are copies, modifications or aggregations (remix) of other datasets were excluded. They carry at least the same risk of bias as their underlying primary source datasets, and thus their minimal risk can be derived from the analysis of primary datasets included in the analysis. Additionally, merged dataset carry a special risk of being confounded by dataset identity (DeGrave, Janizek, Lee, 2020, Garcia Santa Cruz, Sölter, Bossa, Husch, 2020) and thus have to be deemed at high risk of bias if not treated accordingly (see also Section 3.3.3).
+
+The full code and annotation data (including a list with the discarded datasets) to reproduce the extraction process is made publicly available2 .
+
+### Dataset information extraction
+
+Due to the lack of specific tools to evaluate datasets for their suitably to train reliable models, two different information extraction tools, the CHARMS checklist and the BIAS tool (see Section 1.2), were adapted and employed to conduct an in-deep analysis of the selected sets.
+
+#### CHARMS
+
+The following domains from the CHAMRS checklist were used for dataset evaluation: data source, participant description, outcomes, predictors, sample size and missing data. The domains about model (development, performance and evaluation), results and interpretation were omitted. The detailed definition of each item can be found in the Supplementary material 1, Table S1.
+
+The information on Participant description, including recruitment method, inclusion and exclusion criteria, is needed to determine the applicability and generalizability of the model, whether the study population is representative of the target population, and to discard the presence of selection mechanisms that can introduce bias. Information about received treatments could be relevant if they affect the outcome of prognostic models.
+
+The Outcomes to be predicted will depend on the purpose of the intended model, i.e. whether it is a prognostic or a diagnostic model. Radiological findings, lesion segmentations and differential diagnosis could be suitable outcomes for diagnostic models, when they are measured close in time to the image acquisition. When there are multiple images from the same subject acquired at different time-points (longitudinal data), a prognostic model could be trained, where features from the later image are predicted from the earlier one. Time to death or discharge, or whether ICU, supplementary oxygen or other life support treatments were needed, could also be used in prognostic models.
+
+Outcomes based on image findings could sometimes be determined a posteriori (e.g. with a post-hoc annotation by a radiologist), however a precise definition of them is essential to describe model applicability. It is also important to specify whether outcomes were obtained blinded to predictors and/or the other way round, because this affects the causal model assumption and the strategies to mitigate bias (see Castro et al., 2020). Furthermore, model performance could be overestimated in the absence of blinding, in particular when the outcome require subjective interpretation, as is the case for radiological diagnosis (Moons et al., 2014).
+
+The main predictor considered here is the X-ray lung image, however other measurements could be incorporated (additionally) into prediction models. Details of the image acquisition protocol and acquisition device description are important as they could be a significant source of confounding when merging images from different sources. In addition, the model performance could be reduced if applied to images acquired using a different setting than in the training set.
+
+Finally, a large enough sample size and the amount and treatment of missing data are highly relevant to avoid overfitting and confounding, respectively (Moons et al., 2019).
+
+Appropriate sample size will depend on several aspects of the model development process, such as the number of predictors, its preprocessing and the magnitude of the effect to be predicted. For example, a model using as predictors the volume of a lung lesion and a few other prespecified scalar biomarkers may need much less training data than a neural network system using the whole image, because the latter model includes several orders of magnitude more of learnable parameters.
+
+#### BIAS
+
+Despite not been a dataset review tool, the BIAS checklist provides specific questions about dataset origin, purpose, distribution and intended use which are considered highly valuable for our in-depth dataset analysis.
+
+The adapted version of BIAS checklist employed in this work is given in (Supplementary material 1, Table S2). For further reading refer to the Appendix A: BIAS Reporting Guideline of Maier-Hein et al. (2020). Similarly to CHARMS, only items related to datasets were kept.
+
+### Analysis of the dataset use frequency
+
+To analyse the dataset usage pattern in peer-reviewed publications, the result of the dataset screening was further evaluated for the subset of PubMed papers. In the screening procedure the records of these papers got annotated with their dataset reference (see Section 2.1). Additionally, the date of the article was extracted from the &lt;MedlineCitation&gt;&lt;Article&gt;&lt;ArticleDate&gt; meta data tag.3 When this date was not speficied the &lt;MedlineCitation&gt;&lt;Article&gt;&lt;Journal&gt;&lt;JournalIssue&gt;&lt;PubDate&gt; was used instead.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

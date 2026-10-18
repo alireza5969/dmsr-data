@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Johnson, O’Keefe, Sutton, and Marshall: The Systematic Review Toolbox: keeping up to date with tools to support evidence synthesis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -670,5 +693,83 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+The Systematic Review Toolbox (SR Toolbox) was developed in 2014 by Christopher Marshall (CM) as part of his PhD surrounding tools that can be used to support the systematic review process within software engineering [1]. Whilst originally developed for the field of computer science, the methodologies for conducting systematic reviews and evidence synthesis are applicable across disciplines. Therefore, the scope of the SR Toolbox was expanded to include health topics. Its aim is to assist researchers by providing an open, free and searchable web-based catalogue of tools and guidance papers that assist with various tasks within the systematic review and wider evidence synthesis process. The SR Toolbox is regularly maintained by conducting a specialised search on MEDLINE, before being screened according to a defined inclusion and exclusion criteria by a single Editor, checked by a second editor (see Additional file 1: Supplementary Material). Guidance and software tools that meet the eligibility criteria are added to the SR Toolbox on a rolling basis.
+
+In January 2022, the SR Toolbox website gained approximately 28,500 hits and 6100 visits from around 4500 unique visitors, showing the popularity of the platform and its potential reach to researchers looking to find tools and guidance for use within evidence syntheses. However, since the initial launch of the SR Toolbox in 2014, there has been an increase in the number and types of evidence syntheses being produced. Many systematic review typologies and taxonomies had been developed since the SR Toolbox’s inception, including large numbers of review types. For example, Booth et al. (2016) identified 22 review types [2], Cook et al. (2017) identify 9 [3], while the typology by Munn et al. (2018) suggested there were 10 different review types [4].
+
+More recently, a taxonomy proposed by Sutton et al (2019) incorporating research from several other previously published works suggests that 48 review types exist [5], which can be broadly categorised into seven review “families”:
+
+Traditional reviews (that tend to use a purposive sampling approach as opposed to a systematic approach);
+
+Systematic reviews;
+
+Review of reviews;
+
+Rapid reviews;
+
+Qualitative systematic reviews;
+
+Mixed-methods reviews; and
+
+Purpose-specific reviews (i.e. reviews that are tailored to individual needs, such as Health Technology Assessment).
+
+In the version of the SR Toolbox prior to 2022, the ability to search by review type was limited and not reflective of the expanding evidence synthesis landscape. The SR Toolbox’s ability to suggest support for the varying demands of different review types was therefore limited.
+
+Additionally, although there is now a large array of tools available to support the process of conducting systematic reviews and other forms of evidence syntheses, a potential barrier to adoption includes inexperience of some of the underlying principles of tools, such as machine learning [6]. In the iteration of the SR Toolbox maintained until 2022, software tools were searchable according to their underlying approach (e.g. text mining, machine learning, visualisation), discipline (healthcare, social sciences, software engineering or multidisciplinary), and their financial cost (e.g. completely free or payment required). “Other” tools were only searchable by discipline and type (e.g. guideline, reporting standards). As such, for those with less experience or knowledge of the processes underpinning software tools, effective searching of the SR Toolbox could potentially be challenging.
+
+We therefore set out to update the SR Toolbox interface, so it continues to be able to respond to the needs of users within a changing and continually developing evidence synthesis landscape, as well as being more accessible to a wide variety of researchers. In this paper, we describe our methods for reconstructing the platform by conducting a mapping exercise of all tools within the SR Toolbox to re-categorise them and check their validity. In addition, we also describe a brief analysis based on the mapping exercise to identify review types and processes that are both well-served and underserved by the tools currently contained within the platform.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### SR Toolbox update methods
+
+In February 2022, we embarked on a mapping exercise of all software and other tools indexed within the SR Toolbox to inform the restructuring of the platform. A coding tool was developed in Excel to extract data relevant to each tool indexed within the SR Toolbox to that point. Domains were either completed using free text or ticked using a check box. Details of domains assessed and how they were coded are detailed in Table 1.
+
+Part of the coding framework was adapted from the review family taxonomy proposed by Sutton et al. (2019) [5]. However, we did not include traditional reviews and purpose-specific reviews within the mapping exercise. This is because traditional reviews as described by the Sutton taxonomy were not considered systematic enough to be within scope for the SR Toolbox, while purpose-specific reviews were too broad and (potentially) too diverse to include in a systematic manner, as they include a wide variety of evidence syntheses including scoping reviews, mapping reviews and Health Technology Assessment [5]. Although both scoping reviews and mapping reviews are part of the purpose-specific family within the Sutton taxonomy [5], we separated these into their own categories. This is because it has been noted that scoping reviews are growing in number [7], while mapping reviews are becoming increasingly conducted as a way of visually representing the breadth of a body of evidence, despite being rare until as recently as 2010 [8]. Mapping reviews can also be considered distinct from scoping reviews, as although both present a broad overview of evidence relating to a topic, they are highly visual in nature [9]. Furthermore, it has been posited that scoping reviews can act as a precursor to a predefined systematic review, whereas mapping reviews may aim to identify research areas for systematic review or gaps in the evidence base [5].
+
+All records currently contained within the SR Toolbox up to February 2022 (n = 352) were manually extracted and coded according to the framework by a single reviewer (EEJ). The same reviewer checked all current records to ensure that hyperlinks were not broken and that tools still appeared to be active. If links to software tools were no longer active and could not be located elsewhere, these were excluded from the mapping exercise and, subsequently, the SR Toolbox (N = 5). Tools and guidance could be coded to more than one review family and more than one stage of a review, where appropriate. A second reviewer (HOK) checked a small percentage of the records coded for accuracy before the spreadsheet was imported into a Microsoft Access database.
+
+Microsoft Access databases are relational, meaning that relationships can be built between tables. We included a table for tool details, tool type, review stage, review family, publications, and cost. The tool details table acted as the main reference point, with all other tables being related to it via interim linker tables (Fig. 1).
+
+The tables contained in the local database in Access were exported as separate CSV files, then imported using phpMyAdmin to create the same database, online, in MySQL. Custom structured query language (SQL) statements, which accounted for any combination of user query, were hard coded into the website’s hypertext preprocessor (PHP) scripts. Furthermore, the graphical user interface that facilitates users in running advanced searches was updated to reflect the updated database and new tool categories.
+
+### Analysis methods
+
+We undertook a basic analysis of the different software tools and guidance documents included within the SR Toolbox up to February 2022 in order to assess: what review families were being covered by the included tools; what review stages and aspects were being covered by the included tools; how up to date included software tools are; and the trajectory of research for guidance and reporting documents relating to evidence syntheses.
+
+Using the same coding document developed in Excel for the mapping exercise described above, we filtered the spreadsheet to contain either relevant software tools or relevant guidance so they could be analysed as separate entities. From here, we tabulated the number of times tools or guidance documents were checked against each review family or review stage. We also added an additional column to the spreadsheet to indicate where tools or guidance documents could be applicable to multiple review families or multiple review stages; these were manually coded within the spreadsheet. The numbers tabulated from each of these exercises were used to create tables and graphs demonstrating the volume of tools in each category.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

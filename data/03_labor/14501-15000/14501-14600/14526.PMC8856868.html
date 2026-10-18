@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Zhao, Hu, Wang, Yin, Jiang, and Zhu: Identification of gastric cancer with convolutional neural networks: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1704,5 +1727,89 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Gastric cancer is the cancer of the cavity organs with the highest incidence [11], which is a serious threat to human health. The prognosis of gastric cancer is closely related to disease stage. The diagnosis and treatment of early gastric cancer is helpful to the recovery of patients, and the 5-year survival rate of patients can exceed 90% [59]. However, most patients have been already at an advanced stage when they are diagnosed [73]. Due to the limited treatment, the survival rate of advanced gastric cancer is low and the prognosis is poor [26]. With the advancement of medical technology and the enhancement of people’s health awareness, the diagnosis and treatment of gastric cancer has become an urgent need for more patients. Therefore, to improve the accuracy of gastric cancer identification, especially early gastric cancer, has become the focus of current researches.
+
+Gastric cancer is evaluated by endoscopy, pathological pictures, imaging examination, etc. First, endoscopy has been widely used in the detection of gastric cancer. Image-enhanced endoscopy, such as narrow-band imaging [57] and linked color imaging [52], can accurately analyze the surface structure. The studies showed that the application of these endoscopic methods could improve the accuracy of gastrointestinal tumor diagnosis [10, 27]. However, a study showed that 10% of upper gastrointestinal cancers were still missed by endoscopy [41]. Even if two experts participate in an endoscopy unit, there would be missed diagnosis [61]. The reason was that doctors' accurate diagnosis of gastroscopy images required years of experience accumulation. Secondly, histopathological image recognition is the gold standard of tumor diagnosis. The shortage of pathologists has led to a huge workload for pathologists and diagnostic errors [68]. Finally, imaging examination plays an important role in the evaluation of lymph node metastasis of gastric cancer. Imaging examination is mainly based on morphological characteristics of the lesions. For example, perigastric adipose tissue is rich so it’s indistinguishable from lymph nodes. Coupled with the inexperience of doctors, missed diagnosis and misdiagnosis may occur. In particular, when the number of patients is large, the accuracy of diagnosis will inevitably decrease [12].
+
+With the increasing requirements of more accurate detection, classification and segmentation or delineating margins, artificial intelligence (AI) is booming in medical applications. AI is to make machines think like people. Machine learning is one of the most important parts of AI. Compared with traditional machine learning, such as support vector machines and Bayesian networks, deep learning has better accuracy and flexibility, and can be more easily adapted to different fields and applications. Convolution neural network (CNN) is one of the most prominent algorithms for image processing in deep learning (Fig. 1). The basic structure of CNN includes convolution layer, pooling layer, full connection layer [69]. The convolutional layer performs feature extraction from a large amount of data. The pooling layer compresses the input feature map to extract the main features. And it can reduce the dimension of the extracted feature information, simplify the network calculation complexity, and improve the calculation speed. The function of the fully connected layer is to fit together all the features and send the output value to the classifier to get the final prediction result.
+
+Classic CNN structures include AlexNet [29], ResNet [14], VGG [53], Inception [60] and DenseNet [20], etc. Network depth refers to the number of layers that need to update parameters through training, such as convolutional layers, fully connected layers, etc. The basic structure of AlexNet includes 8 layers in total. There are 5 convolutional layers, followed by 3 fully connected layers. The accuracy of AlexNet has a big improvement compared to traditional methods. The kernel size of the first 4 convolutional layers are 11 × 11, 5 × 5, 3 × 3, 3 × 3, and 3 × 3. The kernel size of the first graphics processing unit is 3 × 3 and the kernel size of the second graphics processing unit is 5 × 5 in the fifth convolution layer. The channels of the 5 convolutional layers are 96, 256, 384, 384 and 256 respectively. The first two fully connected layers have 4096 neurons respectively, and the final output softmax has 1000 neurons.
+
+The VGG network is developed on the basis of the AlexNet network. Compared with AlexNet, VGG uses the convolution kernel with 3 × 3, and the pooling kernel with 2 × 2. The developer changed the original three fully connected layers that were the same as AlexNet in the network into one 7 × 7 and two 1 × 1 convolutional layers in turn. The entire network is divided according to the number of layers. The most widely used is VGG-16, which is 13 convolutional layers and 3 fully connected layers.
+
+GoogLeNet is a deep neural network model based on the inception module launched by Google. The inception module replaces the traditional operations of convolution and activation. Inception is characterized by the use of 1 × 1 convolution for dimensionality reduction, while convolution and re-aggregation can be performed on multiple scales. This network structure replaces all the fully connected layers with simple global average pooling, which greatly reduces the total number of parameters of the model. Subsequently, the model has been improving. Inception-v2, Inception-v3, Inception-v4 and other versions have been developed.
+
+ResNet has been designed a residual block to allow us to train deeper networks and increase model performance. There are 5 different depth structures in PyTorch’s official code, which are 18, 34, 50, 101 and 152 layers. The more common network is ResNet-50. It has a total of 50 layers of structure, including 49 convolutional layers and a fully connected layer. The size of the convolution kernel includes three types: 1 × 1, 3 × 3, and 7 × 7.
+
+DenseNet is a convolutional neural network with dense connection. The emergence of DenseNet breaks away from the fixed thinking of deepening the number of network layers (ResNet) and widening the network structure (Inception) to improve network performance. Its advantage is that the network is narrower and has fewer parameters.
+
+CNN has excellent performance in many fields, such as computer vision and natural language processing. Especially in the field of computer vision, CNN is the important model for image classification, image retrieval, object detection and semantic segmentation. For example, agile CNN was used to diagnose the benign and malignant pulmonary nodules in chest CT images [72]. Meanwhile, CNN showed good diagnostic performance in the diagnosis of liver lesions [70] and breast ultrasound images [45]. CNN can also be used for pathological image classification. For example, fully connected CNN with extreme learning machine model was used to classify hepatocellular carcinoma nuclei [32]. CNN was also used for histopathological classification of osteosarcoma [43] and epithelial matrix pathological image classification [19].
+
+In order to help doctors identify gastric cancer more accurately and in less time, a number of computer-aided diagnosis schemes have been developed [2, 25, 63]. Computer-aided diagnosis can help doctors reduce omissions and mischaracterizations of gastric tumor changes, thereby helping to solve the limitations of current doctors’ lack of experience in examinations. Deep learning, especially CNN, has become a smarter and more accurate image processing technology. CNN is expected to become the mainstream application technology in the AI identification of gastric cancer.
+
+The purpose of this system review is to summarize all current applications of CNN in gastric cancer identification and evaluate the performance of CNN in gastric cancer identification. This research can contribute to solving the knowledge gap in the development of CNN in gastric cancer identification.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Literature search
+
+Literature retrieval was completed from Embase, Cochrane Library, PubMed, Web of Science database on 17th September, 2020 to find out the CNN study of gastric cancer's medical images . The PRISMA checklist was used for reporting the systematic review. We used medical subject headings and free-text words to search. The search terms in this article mainly include “machine learning”, “artificial Intelligence”, “convolutional neural network”, “deep learning”, “data mining”, “algorithm”, “tumor”, “neoplasm”, “carcinoma”, “cancer”, “lesion”, “endoscope”, “pathology”, “computed tomography”, “ultrasonography”, “x-ray”, “Magnetic Resonance Imaging”, “stomach”, “gastric”, “digestive system”, “diagnosis”, “identification”, “classification”, “detection”, “segmentation”. There was no time limit on the publication of included articles.
+
+To describe the proposed CNN performance in the identification of gastric cancer, we compared measures of precision, sensitivity, specificity, area under the curve (AUC) and accuracy (if available) in the models.
+
+### Selection criteria
+
+The following inclusion and exclusion criteria were used to select the study. The inclusion criteria were:
+
+Studies on the identification of gastric cancer images or lesions,
+
+Using models based on CNN or the main components of CNN,
+
+The diagnostic performance indexes of AI algorithm include precision, accuracy, sensitivity, specificity or AUC,
+
+Studies of human subjects,
+
+Publications in English.
+
+Guidelines, case reports, review articles, abstracts of conference papers, letters to editors and editorials were not included in this study.
+
+### Data extraction and quality assessment
+
+The two authors (XY and YJ) extracted the data independently. The forms filled out by each author were compared, and dissenting opinions were resolved through review and discussion. In case of unresolved differences, the third evaluator acted as the final arbiter. The authors extracted following contents from the article: (a) author information (b) year of publication (c) study design (d) data set source (e) basic information about patients (f) number of images (g) number of lesions (h) CNN tasks (classification, detection, segmentation and delineating margins) (i) whether independent test sets are used (j) types of medical images or lesions.
+
+We carefully evaluated quality of the studies included in systematic review. The Quality Assessment on Diagnostic Accuracy Studies (QUADAS-2) [65] was used to evaluate quality of the included study. The tool consists of 4 areas: patient selection, index test, reference standard, and flow and timing [65]. Each area is assessed on the basis of high, low or unclear bias risks, and the first 3 areas are also assessed on the basis of high, low or ambiguous concerns about applicability [65]. Review Manager version 5.3 (RevMan for Windows 10, Nordic Cochrane Centre) was used to generate summary diagrams of methodology quality assessment.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

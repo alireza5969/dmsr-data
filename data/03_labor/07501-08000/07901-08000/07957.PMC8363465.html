@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Zhang, Liu, Mitsuhashi, and Matsuo: Accuracy of Deep Learning Algorithms for the Diagnosis of Retinopathy of Prematurity by Fundus Images: A Systematic Review and Meta-Analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1284,5 +1307,67 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Retinopathy of prematurity (ROP) occurs in preterm infants on supplemental oxygen, which helps to improve survival but may contribute to blindness [1]. The ROP grades are complicated and include aggressive ROP (AP-ROP), prethreshold ROP, or regression of ROP, as well as stages, zones, extent, and preplus/plus diseases of ROP [1, 2]. ROP can be diagnosed by binocular direct or indirect ophthalmoscopy [3], and fundus photographs are taken by digital retinal cameras, such as RetCam. Due to difficulties associated with eye contact photography in newborns and limited technological expertise of ophthalmologists, as well as financial and ethical issues, ROP screening is not a common practice. However, early treatment can improve the structural and functional outcomes [4]. Therefore, developing a screening method for early diagnosis of ROP is essential.
+
+Artificial intelligence has the potential to revolutionize the current disease diagnosis pattern in ophthalmology and generate a significant clinical impact [5]. Deep learning (DL), a technology of machine learning (ML), was introduced to artificial neural networks in 2000 [6]. DL can automatically grade images and has been applied to ophthalmology for signal processing and diagnostic retinal imaging [5, 7]. The deep convolutional neural network/convolutional neural network (DCNN/CNN) is a DL technique that is widely used to interpret medical images through classifiers. It is a multilayer structure comprising a convolutional layer, a nonlinear processing unit, and a subsampling layer [8]. DL must be trained with high mathematical precision but can be implemented using a lower precision computer; thus, the automatic detection system can be applied in a general hospital.
+
+In recent years, DL algorithms have been widely applied to ophthalmology for the diagnosis of various diseases, such as diabetic retinopathy (DR), age-related macular degeneration (AMD), and ROP [5, 9]. However, due to the lack of a public database for ROP and hence the difficulty in obtaining a large clinical dataset, the development of DL algorithms for diagnosing ROP lags behind other retinal diseases. Some studies have used DL models to process retinal images by vessel segmentation or zone identification and have recommended the application of the feature-based images for further clinical diagnosis or DL model building [10–12]. Some studies followed this flow to build an entire DL model for diagnosing ROP. They applied the model to extract features relevant to ROP, such as tortuosity and dilation of vessel, and applied these images to the classifiers of the DL model [13]. Other studies have suggested that using original retinal images to build a DL model without limited features may reserve more information [13, 14]. Some accuracy measurements, such as accuracy, sensitivity, and specificity, were calculated to evaluate the performance of DL algorithms in detecting ROP using fundus images compared to the clinical methods.
+
+The validation dataset is used to tune the model's hyperparameters, whereas the test dataset provides an unbiased evaluation of a final model fit. Most studies have only verified the DL model through internal validation using a test dataset derived from the training dataset, rather than external validation that uses an independent test dataset. We typically diagnose diseases using a plethora of diagnostic methods, but DL limits evidence to images. The DL model is complex and a “black-box” that the mechanism is unknown. These reasons make the diagnostic results unstable and unreliable, hindering their use in clinical practice. Therefore, we conducted a meta-analysis to summarize and compare the published evidence to evaluate the accuracy of DL algorithms for the diagnosis of ROP by fundus images.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Methods
+
+### 2.1. Systematic Review
+
+We followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines, which are based on Cochrane's Handbook for Systematic Reviews, to conduct and report on the current study [15, 16]. For our study, we searched the following public databases: PubMed, EMBASE, Web of Science, and Institute of Electrical and Electronics Engineers Xplore Digital Library (IEEE). We systematically searched using the most appropriate free-text terms (“Retinopathy of Prematurity (MeSH),” OR “Prematurity Retinopathy”, OR “Retrolental Fibroplasia”) AND (“Deep learning (MeSH),” OR “Hierarchical learning,” OR “Convolutional Neural Network,” OR “Deep Neural Network”) to find relevant articles published between January 1, 2000, and June 13, 2021. In addition, the relevant articles were tracked through automatic e-mail alerts from the databases during the preparation of our manuscript.
+
+### 2.2. Inclusion and Exclusion Criteria
+
+Two authors (Zhang and Liu) independently screened the titles and abstracts for retrieved articles to be considered for the systematic review. We selected the articles from the initial screening and retained them for full-text review, excluding editorials, letters to the editor, reviews, commentary, policy, contribution, conference, book, and articles with traditional methods for detecting ROP. All the included studies had to fulfill the following criteria: (1) the studies were restricted to peer-reviewed articles published in English (conference abstracts or proceedings were excluded), (2) the studies provided information on the dataset, diagnosis, and grading criteria of ROP, and the number of research object (e.g., images, cases (eyes), or infants) in each group, (3) the studies described the DL algorithms for distinguishing ROP using a binary classifier and provided an evaluation, such as accuracy, sensitivity, and specificity, using the area under the receiver operating characteristics curve (AUC, AUROC), or precision and recall, using the area under the precision-recall curve (AUPR). All the studies meeting the inclusion criteria at this stage were additionally reviewed by the same two authors to ensure they were appropriate for the final analysis. Disagreements were resolved by discussion with another expert (Matsuo).
+
+### 2.3. Data Extraction and Quality Assessment
+
+Two researchers (Zhang and Liu) individually retrieved all information from the selected articles and extracted the following items: author, publication year, dataset characteristics, definition and grade of ROP, DL model, training, validation and test set characteristics, and all accuracy values of validation and testing. True-positive (TP), true-negative (TN), false-positive (FP), and false-negative (FN) values were calculated for a meta-analysis. If the TP/TN/FP/FN values were not quantitatively expressed or could not be calculated from the composition of dataset and accuracy measurements, the study was excluded.
+
+Unlike ordinary diagnostic accuracy studies, there are no generally accepted and appropriate quality criteria for evaluating the accuracy of DL algorithms. We referred to the Quality Assessment of Diagnostic Accuracy Studies-2 (QUADAS-2) [17] and PLASTER (a framework for evaluating DL performance) [18] to select some assessment factors, such as image selection and preprocessing, clear description of DL algorithms and algorithm evaluation, reference standards to label images for the classifier of the CNN, and flow and timing of ROP. Inconsistent results between authors in data extraction and quality assessment were resolved through discussion.
+
+### 2.4. Statistical Analysis
+
+A meta-analysis was conducted using Meta-analysis of diagnostic and screening tests (Meta-DiSc, Version: 1.4, Universidad Complutense, Barcelona, Spain) [19]. An overall test performance was evaluated by separately combining TP/TN/FP/FN values of the validation and test datasets in each study. Separate subgroup analyses were performed: the validation and test dataset, separately and the definition of ROP and the grade of ROP, separately. The DerSimonian–Laird random-effects model was applied to the pooled data. The descriptive forest plot for pooled sensitivity and specificity values, positive and negative likelihood ratio (PLR/NLR), diagnostic odds ratios (DOR), and the AUC of summary receiver operating characteristics curves (SROC) [20] were used to summarize overall test performance. Statistical significance was expressed with 95% confidence intervals (CIs). The AUC criteria are 0.90–1 (excellence), 0.80–0.90 (good), 0.70–0.80 (fair), 0.60–0.70 (poor), and 0.50–0.60 (failure).
+
+Threshold effect and nonthreshold effect testing were used to examine heterogeneity, assess potential biases, and evaluate the accuracy factors. The threshold effect exists when different cutoffs or thresholds are used to define a positive (or negative) test result in different studies [19]. The nonthreshold effect may exist in case of chance and variations in the study population, index test, reference standard, study design, and conducted partial verification bias [21]. For DL models, the nonthreshold effect may be caused by image segmentation methods, feature extraction methods, and classifiers. A Spearman correlation coefficient (r) between the logit of true-positive rate (TPR) and logit of false-positive rate (FPR, 1-specificity) was calculated, and a strong positive correlation r with a p value less than 0.05 suggests the threshold effect [18]. If there was a threshold effect, the included studies might have used different thresholds to define positive and negative results; therefore, the sensitivity and specificity values were heterogeneous, and the pooled results should be referred to with caution [22]. The nonthreshold effect test, using the chi-square value of pooled accuracy estimate and Cochran-Q value of DOR, was implemented. If the heterogeneity was beyond the specifications, the test results would have a low p value [19, 23].</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Kukafka, Ahmed Kamal, Mahmoud, Lim, Naser, Gabashvili, Saeed, Sheikh Abdullah, Che-Hamzah, and Abdul Ghani: Accuracy of Using Generative Adversarial Networks for Glaucoma Detection: Systematic Review and Bibliometric Analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1495,5 +1518,115 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+### Medical and Statistical Overview
+
+Blindness and visual impairments often result from cataracts, age-related macular degeneration, and glaucoma [1,2]. Glaucoma is a neurodegenerative disease that damages the optic nerve and causes visual field loss [3]. As it is an asymptomatic disease, it is known as the silent thief of sight [4], and patients are unaware of the infection until their vision is irreversibly impaired. Among affected individuals, 50% are ignorant of the disorder [5-7]. Early phases of glaucoma have no symptoms or visual field changes [8]. As the disease progresses, a slow narrowing of the visual field can occur. If left untreated, glaucoma may contribute to total blindness [9]. Loss of vision usually begins on the eye’s side and then approaches the middle.
+
+Statistically, glaucoma affects millions of people globally, with more than 64 million cases recorded in 2013, and other studies have estimated that 76 million people will be affected by 2020 and 111.5 million by 2040 [9,10]. Glaucoma is the second leading cause of blindness worldwide, preceded by cataracts [11], and it impacts 4.5 million individuals [9,12], more than 10% of the gross population [10]. Owing to the asymptotic function of glaucoma, approximately 70% of individuals with glaucoma are unaware of the illness’s existence [13,14] in the early stage. Thus, we need to provide an early detection and evaluation method [15]. Once glaucoma is detected, a more effective follow-up takes place as a cure can slow down the transmission of the disease [8].
+
+Cataracts may be reversed by surgery, while glaucoma causes lifelong blindness. Elevated intraocular pressure (IOP) is the most common cause of glaucoma. The tonometer measures IOP. However, IOP is not always an accurate and adequate indicator of glaucoma, because glaucoma does not always cause a rise in IOP [16] but rather a deterioration of the optic nerve head (ONH). Visual information flows through the ONH to the brain. The ONH consists of a bright spherical area called the optic disc (OD) and a wider circle-like area called the optic cup (OC). Figure 1 shows these structures in ocular images.
+
+ONH assessment is a widely used glaucoma screening tool that utilizes differential division to distinguish between glaucomatous and normal images [17]. Manual calculations of ONH geometric structures, such as the cup-to-disc ratio (CDR); inferior, superior, nasal, and temporal (ISNT) rule; disc diameter; and rim area, are recommended as diagnostic features for glaucoma screening [18-20]. Among them, the CDR is a reliable therapeutic feature for early glaucoma screening and diagnosis [21,22]. Each of the derived CDR parameters (diameter or area) is the ratio between the OC and the OD. CDR values rise when the illness progresses and become higher than approximately 0.6-0.7 when the patient has a stronger chance of developing glaucoma [23]. Based on an earlier study [24], a CDR of at least 0.65 is deemed glaucomatous in clinical practice. The CDR score tracks the development of glaucoma over time, effectively screening the condition early [25]. Currently, to check for retinal diseases, specialists tend to manually extract the blood vessel (BV), OD, or OC from retinal images. Accurate segmentation of the retinal structure is very important during the diagnostic process. However, doing this process manually is very labor intensive, time consuming, and risky in terms of human mistakes. Furthermore, the analysis results may lack objectivity, as different experts may produce different results. Therefore, it is important to automate retinal image segmentation/classification while minimizing expert interference.
+
+### Research Background
+
+The development of medical imaging technology has helped to accelerate the detection of diseases. Additionally, several studies have been conducted using image processing techniques to automatically process medical images without the intervention of experts [26]. Several studies [22,27,28] have examined vascular tracking and OD and OC segmentation using fundoscopic images. The main segmentation techniques depend on visual features such as color and contrast thresholding, region segmentation, and boundary recognition. Such methods use a learned classifier to classify pixels as foreground pixels (eg, OD, OC, or BV) or as background pixels (regions out of the area of interest) [29,30]. However, most of these methods are based on hand-crafted features (eg, texture, red green blue [RGB] color, gradient and Gabor filter), which are susceptible to low image contrast, pathological regions, and have a lack of deep feature extraction.
+
+In recent years, automatic learning has been significantly improved with the assistance of machine learning (ML) techniques [31]. According to several studies [32,33], ML and deep learning (DL) algorithms have evolved to the point that they can compete with and sometimes even outperform humans on certain tasks, such as object detection [34] and image classification on ImageNet [35]. Currently, deep learning methods (DLMs) are an active research field because they can automatically generate and learn extremely complex features from input data. In particular, DLMs with deeper and complicated perceptron layers [eg, convolutional neural networks (CNNs)] have shown better performance in object detection than other methods [33]. Researchers have attempted to use various types of architectures, such as GoogLeNet [36], AlexNet [33], and DenseNet [37], for glaucoma diagnosis with the introduction of deep neural networks. Such research mainly focuses on 2 aspects: using DL for complex and deep feature extraction and utilizing medical features and spatial domain knowledge in the detection process. However, the use of deep fully connected networks is susceptible to imbalanced learning problems such as high false-negative or false-positive rates, leading to more fake or skinny branches than those of the ground truth [38,39]. In other words, retinal BV segmentation still has issues such as false pathological information segmentation and low microvascular segmentation [40].
+
+For addressing complex learning issues, deep architectures often have advantages over shallow architectures; for example, deep CNNs have demonstrated significant efficiency improvements over conventional vision-based models [41]. A fully connected convolutional network has been used to address insufficient public data. Such methods, however, create very fuzzy vessels with false positives along with tiny and weak roots. This error primarily occurs because the CNNs used in current methods depend solely on pixel-level objective feature to equate the standard image to the image created by the model and are incapable of adapting actively to the fundus image of the natural vascular structure [42]. Empirical studies have proven that deep CNNs can learn invariant representations and attain human-level success if sufficient training data are provided. However, one of the leading shortfalls of DLMs is the lack of available data. Medical data annotation often requires specific domain experts. This shortage leads to the need for CNN training approaches with a limited number of annotated data. However, this can easily lead to underfitting, and as a result, high error rates on both training and testing data are recorded. Lahiri et al [43] demonstrated the effectiveness of using generative adversarial networks (GANs) [44] to perform some discriminative task with only 0.8%-1.6% of the amount of annotation data used by other methods.
+
+GANs belong to the family of unsupervised learning algorithms that have proven their merits in generating synthetic images close to real images and solving image-to-image translation problems in the natural domain [45,46]. GANs have gradually shown their extraordinary ability and have started to shine brilliantly in various application fields [45,47,48]. Inspired by the prevailing learning capability of GANs, Wu et al [49] proposed the generative adversarial network with U-net, referred as (U-GAN), which includes an attention gate model in the generator and a densely connected convolutional network to segment the BVs automatically. Lahiri et al [50] proposed deep convolutional GANs (DCGANs) for retinal segmentation to segment the region of interest (ROI) from a given image. In addition to segmentation tasks, the synthesis of retinal images is a large part of the literature. Haoqi and Ogawara [51] trained a GAN model to learn the mappings of vessels from retinal images to segmented images for training a model to generate a synthesized image close to a given real image.
+
+To date, several review articles summarizing the technology of DL in ophthalmology have been published [20,52-55]. Nevertheless, none of them have particularly focused on the emerging breakthrough GAN techniques using fundus photographs. Moreover, despite the rapid development of telecommunication technology, only a few study groups have examined the possibility of integrating artificial intelligence (AI) technologies with teleophthalmology [56]. To the best of our knowledge, no researchers have adopted telescreening for glaucoma using DL techniques, particularly the GAN.
+
+Shedding light on the importance of telecommunication technology in DL techniques is a current and very urgent need. Alongside the emergence of newer low-cost handheld devices, glaucoma screening will become more available, even to distant and poor communities. In addition, maintaining social distance is very important for mitigating the spread of the coronavirus pandemic. This paper summarizes the work in the literature on glaucoma diagnosis and highlights the challenges and gaps of current studies to uncover the possibilities of filling these gaps with the recommended suggestions. We aim to elucidate all research efforts, such as the GAN architectures mentioned earlier, that have been developed in response to the new and disruptive technology, mapping the research landscape from the literature onto a coherent taxonomy of the key features that characterize such an emerging line of research. Finally, the future work of this research will be proposed and described in detail.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Basic Theory of GANs
+
+We start by reviewing the concept of GANs [44]. GANs consist of 2 separate neural networks, a generation network (G) and a discriminator network (D), plus a noise vector (z) sampled from a known distribution (eg, a Gaussian distribution), which is used to generate data points (fake samples; see Figure 2). A 2-player min-max game inspires the basic idea of this technique. The goal is to train the generator G to learn to capture the potential distribution in the real data sample and generate a new sample close to the real data to deceive the discriminator. The discriminator D is a binary classifier that attempts to discriminate whether the input data are real or fake [44]. To win the game, both G and D need to continuously improve their generation and discrimination capabilities, respectively. The training process lasts until both G and D reach a convergence point (Nash equilibrium), where G generates an output distribution very close to the real data distribution [42,57,58].
+
+Mathematically, let G be parameterized by θ, which takes random noise z as input and produces synthetic images G(z) as output. The generated G(z) is mapped from a distribution G(z; θ) ∼ pg. Additionally, the training data set x is sampled from the real data distribution pdata, and the objective function of the generator network is used to train G to approximate pdata using pg. By contrast, the discriminator (D) takes either the original image x or G(z) as input and indicates whether the input is from a true data distribution (x) or a synthetic data distribution G(z) by outputting a probability of D(x) or D(G[z]). This can be seen in the followig equation, where pdata(x) is the true data distribution and pz(z) is the noise distribution.
+
+However, the training mechanism of such a model is critical. Unbalanced training between the G and D networks leads to model collapse. This happens when D is trained much better than G. In this case, D is able to easily discriminate between the real and synthetic images generated by G and reject all its outputs; thus, the loss log{1 − D(G[z])} saturates, and G learns nothing from the zero gradient. To avoid the model collapse issue, the loss function of G should be trained to maximize logD(G[z]) instead of minimizing log{1 − D(G[z])}. This can avoid the saturation of the gradient and provides the same gradient direction as that yielded by the old loss function.
+
+### Extension Models of GANs
+
+The first GAN [44] was composed of fully connected layers. Later, the DCGAN [59] introduced the use of fully CNNs to increase training stability and improve efficiency. Since then, many GAN models have followed this set up as the main components of GAN architecture. Unlike the DCGAN, the Wasserstein GAN (WGAN) [60] increases the permutation in the fully connected layer. In this model, the Wasserstein distance metric is used instead of the Jensen–Shannon divergence to measure the distance between the generated data distribution and the real data distribution. Therefore, the problems of model collapse and training instability were partially solved in this model. Subsequently, an improved version of the WGAN called the WGAN-GP (gradient penalty) [61] was proposed. The WGAN-GP depends on gradient penalty replacement so that it can solve slow training problems encountered by the WGAN. Moreover, inspired by the WGAN, Mao et al [62] proposed the least-squares GAN (LSGAN) to improve the quality of the generated images. The main idea of the LSGAN is to use a new loss function in the D network for smooth and unsaturated gradients.
+
+The original GAN randomly generated a date distribution that is beyond our control, as the output depends on random noise. Therefore, a conditional GAN (cGAN) was invented to add a vector c as a conditional input to the noise vector z so that the generator could generate the required data. Hence, the generator output of the cGAN was defined by G(c,z).
+
+Since the cGAN was proposed, many articles have used the cGAN applications, for example, Pix2Pix [45], a cGAN-based technique proposed by PatchGAN to map a set of images to another image using N × N pixels. It classifies each N × N path of the image and averages all the scores of patches to obtain the final score for the image. The main limitation of Pix2Pix is that it requires images x1 and y1 that are paired with each other in the training stage. By contrast, CycleGAN [47], which is also a cGAN-based technique, utilizes an image translation method that does not need paired data, even though Pix2Pix still outperforms CycleGAN’s remarkable margin.
+
+Another variation of the GAN combines a variational autoencoder (VAE) and a GAN in a single model named VAE-GAN [63]. The idea behind this technique is to exploit the strength of both the GAN and VAE, as the GAN can generate sharp images but misses some modes while the VAE produces blurry images but with a large variety. Studies have demonstrated that VAE-GAN images are better than those produced by the VAE or GAN alone.
+
+### Information Sources
+
+Guided by [64], we conducted a comprehensive search to find all GANs-based articles related to glaucoma by searching the best and most reliable libraries: (1) Scopus, (2) ScienceDirect, (3) IEEE Xplore, (4) Web of Science, and (5) PubMed Central. This collection includes technical and medical literature, perfectly reflecting all research activities in this discipline.
+
+### Study Selection Procedure
+
+The method for choosing appropriate studies was on the basis of 2 stages: screening and filtering. Successively, both stages met the same criterion for inclusion and exclusion. Both duplicates and unrelated studies by title and abstract skimming were omitted during the first stage. Then, the result in a set of papers was entirely read, analyzed, and summarized in the filtration stage.
+
+### Search
+
+This work was carried out between March 2020 and November 2020. Various keyword combinations were used in the search of highly reputable libraries (IEEE Xplore, Science Direct, PubMed, Scopus, and Web of Science). Our search query consist of 2 parts that are connected with each other using the operator “and.” The following set of keywords (“glaucoma,” “optic disk,” “blood vessels”) and (“receptive field,” “loss function,” “GAN,” “generative adversarial network,” “deep learning,” “convolutional neural network,” “CNN,” Encoder) belong to the first and second parts, respectively. The operator “or” is used to connect keywords within the same part. Based on this, our study scope is formulated.
+
+The quest focused on different journals and conferences and omitted books and all other forms of literature. Therefore, we mainly concentrated on up-to-date and applicable scientific studies related to the use of GANs in retinal disease, especially glaucoma. Figure 3 shows the research query and inclusion criteria used in this work.
+
+### Validity of the Collected Papers (Scope Validation)
+
+The total number of keywords in the collected papers was 115. To validate our research scope, we analyzed these keywords and categorized them according to their co-occurrences. Then, we set a threshold indicating the co-occurrences of each keyword across all papers. Let k≥3, where k is a threshold. As a result, we obtained 15 keywords out of 115 that met the threshold. That is, each of these 15 keywords occurred at least three times in all the collected papers.
+
+Figure 4 illustrates the connections of these 15 keywords to each other. The size of each circle indicates how frequently a single corresponding keyword occurred. The more frequently a keyword occurred, the larger circle size it gets, for example, the keyword “deep learning” has the biggest circle size in the diagram, which means it is the most frequently appeared keyword in the collected papers. The second factor is the color, which indicates how often a single keyword occurred per year. The last factor is the total link strength, which indicates the total connection of a keyword to other keywords. The more frequently 2 keywords appeared in the same article, the thicker is the line drawn between them. For example, the keywords “deep learning” and “glaucoma” were linked by a thicker line than the line between the keywords “generative adversarial network” and “glaucoma,” which means that both “deep learning” and “glaucoma” appeared together in the collected articles more than the keywords “generative adversarial network” and “glaucoma” did. This indication reveals that GANs have been used less than other DL techniques in glaucoma detection.
+
+Table 1 shows the occurrences and the total link strength of the 15 keywords that met our threshold (k≥3). Deep learning is the most frequently occurring keyword, which has uniquely appeared 20 times in the collected articles and 27 times with other different keywords. GANs occurred 17 times, with 18 connections to other keywords, while the keyword glaucoma occurred 8 times, with 12 connections to other keywords. In conclusion, these highest scores for the aforementioned keywords empirically demonstrated the validity of our search query that is used to collect literature publications. Furthermore, it proves that our research scope revolves around 3 main keywords, namely, deep learning, generative adversarial network, and glaucoma, as they have the biggest circle sizes with the thickest connection among them.
+
+### Inclusion and Exclusion Criteria
+
+In this section, papers that met the criteria in Figure 3 were included. We taxonomized the included papers on a general and in-depth diagram consisting of 2 paper groups, namely, the development studies group and the reviews and surveys group. The papers in the first group were classified according to 8 consecutive layers. In the literature, researchers classified GANs into 2-4 categories; these categories were separately used by different researchers, as referenced accordingly in the points below. However, in our taxonomy, we combined them all. Furthermore, we added 4 more classification criteria as follows: (1) method architecture (direct, hierarchical, iterative) [32]; (2) model structure (2 players, multiple players) [65]; (3) GAN category (optimization function, structure, and conditional) [66-68]; and (4) generator backbone (U-Net based or CNN based) [69].
+
+Further, we added 4 additional categories as follows: (1) type of GAN used in a paper (eg, variational autoencoder with GAN [VAEGAN], DCGAN, cGAN, CycleGAN); (2) discriminator’s receptive field (PixelGAN, PatchGAN, ImageGAN); (3) landmarks used during the segmentation/classification process (single, multiple); (4) paper contributions (segmentation, classification, image synthesis, mixed).
+
+The exclusion criteria followed in this paper were as follows: (1) ML approaches, (2) 3D-based imaging methods (optical coherence tomography), (3) between-class papers, and (4) out-of-scope papers.
+
+### Data Collection Process
+
+All papers from different sources were summarized and saved in a single spreadsheet file for simplicity and a quick review. Significant remarks and comments were illustrated by full-text reading in our analysis scope and classification stage, which further refined our taxonomy. Finally, our results were summarized on an Excel sheet (Microsoft) and listed in a tabular format. The additional data set includes a list of articles, publishing source, articles’ abstracts and contributions, the tools used in papers, audiences, objectives, architecture-based categorization table, and a list of relevant figures.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

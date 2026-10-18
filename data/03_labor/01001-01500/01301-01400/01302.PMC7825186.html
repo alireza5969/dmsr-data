@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Baniqued, Stanyer, Awais, Alazmani, Jackson, Mon-Williams, Mushtaq, and Holt: Brain–computer interface robotics for hand rehabilitation after stroke: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2563,5 +2586,121 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Background
+
+There is growing interest in the use of robotics within the field of rehabilitation. This interest is driven by the increasing number of people requiring rehabilitation following problems such as stroke (with an ageing population), and the global phenomenon of insufficient numbers of therapists able to deliver rehabilitation exercises to patients [1, 2]. Robotic systems allow a therapist to prescribe exercises that can then be guided by the robot rather than the therapist. An important principle within the use of such systems is that the robots assist the patient to actively undertake a prescribed movement rather than the patient’s limb being moved passively. This means that it is necessary for the system to sense when the patient is trying to generate the required movement (given that, by definition, the patient normally struggles with the action). One potential solution to this issue is to use force sensors that can detect when the patient is starting to generate the movement (at which point the robot’s motors can provide assistive forces). It is also possible to use measures of muscle activation (EMGs) to detect the intent to move [3]. In the last two decades there has been a concerted effort by groups of clinicians, neuroscientists and engineers to integrate robotic systems with brain signals correlated with a patient trying to actively generate a movement, or imagine a motor action, to enhance the efficacy and effectiveness of stroke rehabilitation- these systems fall under the definition of Brain Computer Interfaces, or BCIs [4].
+
+BCIs allow brain state-dependent control of robotic devices to aid stroke patients during upper limb therapy. While BCIs in their general form have been in development for almost 50 years [5] and were theoretically made possible since the discovery of the scalp-recorded human electroencephalogram (EEG) in the 1920s [6], their application to rehabilitation is more recent [7–9]. Graimann et al. [10] defined a BCI as an artificial system that provides direct communication between the brain and a device based on the user’s intent; bypassing the normal efferent pathways of the body’s peripheral nervous system. A BCI recognises user intent by measuring brain activity and translating it into executable commands usually performed by a computer, hence the term “brain–computer interface”.
+
+Most robotic devices used in upper limb rehabilitation exist in the form of exoskeletons or end-effectors. Robotic exoskeletons (i.e., powered orthoses, braces) are wearable devices where the actuators are biomechanically aligned with the wearer’s joints and linkages; allowing the additional torque to provide assistance, augmentation and even resistance during training [11]. In comparison, end-effector systems generate movement through applying forces to the most distal segment of the extremity via handles and attachments [11]. Rehabilitation robots are classified as Class II-B medical devices (i.e., a therapeutic device that administers the exchange of energy, mechanically, to a patient) and safety considerations are important during development [12, 13]. Most commercial robots are focused on arms and legs, each offering a unique therapy methodology. There is also a category of device that target the hand and finger. While often less studied than the proximal areas of the upper limb, hand and finger rehabilitation are core component in regaining activities of daily living (ADL) [14]. Many ADLs require dexterous and fine motor movements (e.g. grasping and pinching) and there is evidence that even patients with minimal proximal shoulder and elbow control can regain some hand capacity long-term following stroke [15].
+
+The strategy of BCI-robot systems (i.e. systems that integrate BCI and robots into one unified system) in rehabilitation is to recognise the patient's intention to move or perform a task via a neural or physiological signal, and then use a robotic device to provide assistive forces in a manner that mimics the actions of a therapist during standard therapy sessions [16]. The resulting feedback is patient-driven and is designed to aid in closing the neural loop from intention to execution. This process is said to promote use-dependent neuroplasticity within intact brain regions and relies on the repeated experience of initiating and achieving a specified target [17, 18]; making the active participation of the patient in performing the therapy exercises an integral part of the motor re-learning process [19, 20].
+
+The aforementioned scalp-recorded EEG signal is a commonly used instrument for data acquisition in BCI systems because it is non-invasive, easy to use and can detect relevant brain activity with high temporal resolution [21, 22]. In principle, the recognition of motor imagery (MI), the imagination of movement without execution, via EEG can allow the control of a device independent of muscle activity [10]. It has been shown that MI-based BCI can discriminate motor intent by detecting event-related spectral perturbations (ERSP) [23, 24] and/or event-related desynchronisation/synchronisation (ERD/ERS) patterns in the µ (9–11 Hz) and β (14–30 Hz) sensorimotor rhythm of EEG signals [24]. However, EEG also brings with it some challenges. These neural markers are often concealed by various artifacts and may be difficult to recognise through the raw EEG signal alone. Thus, signal processing (including feature extraction and classification) is a vital part of obtaining a good MI signal for robotic control. A general pipeline for EEG data processing involves several steps. First, the data undergo a series of pre-processing routines (e.g., filtering and artifact removal) before feature extraction and classification for use as a control signal for the robotic hand. There are variety of methods to remove artifact from EEG and these choices depend on the overall scope of the work [25]. For instance, Independent Component Analysis (ICA) and Canonical Correlation Analysis (CCA) can support real-time applications but are dependent on manual input. In contrast, regression and wavelet methods are automated but support offline applications. There also exist automated and real-time applications such as adaptive filtering or using blind source separation (BSS) based methods. Recently, the research community has been pushing real-time artifact rejection by reducing computational complexity e.g. Enhanced Automatic Wavelet-ICA (EAWICA) [26], hybrid ICA—Wavelet transform technique (ICA-W) [27] or by developing new approaches such as adaptive de-noising frameworks [28] and Artifact Subspace Reconstruction (ASR) [29]. Feature extraction involves recognising useful information (e.g., spectral power, time epochs, spatial filtering) for better discriminability among mental states. For example, the common spatial patterns (CSP) algorithm is a type of spatial filter that maximises the variance of band pass-filtered EEG from one class to discriminate it from another [30]. Finally, classification (which can range from linear and simple algorithms such as Linear Discriminant Analysis (LDA), Linear Support Vector Machine (L-SVM) up to more complex techniques in deep learning such as Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN) [31, 32] involves the translation of these signals of intent to an action that provides the user feedback and closes the loop of the motor intent-to-action circuit.
+
+The potential of MI-based BCIs has gained considerable attraction because the neural activity involved in the control of the robotic device may be a key component in the rehabilitation itself. For example, MI of movement is thought to activate some of the neural networks involved in movement execution (ME) [33–36]. The resulting rationale is that encouraging the use of MI could increase the capacity of the motor cortex to control major muscle movements and decrease the necessity to use neural circuits damaged post-stroke. The scientific justification for this approach was first provided by Jeannerod [36] who suggested that the neural substrates of MI are part of a shared network that is also activated during the simulation of action by the observation of action (AO) [36]. These ‘mirror neuron’ systems are thought to be an important component of motor control and learning [36]—hence the belief that activating these systems could aid rehabilitation. The use of a MI-BCI to control a robot in comparison to traditional MI and physical practice provides a number of benefits to its user and the practitioner. These advantages include the fact that the former can provide a more streamlined approach such as sensing physiological states, automating visual and/or kinaesthetic feedback and enriching the task and increasing user motivation through gamification. There are also general concerns around the utility of motor imagery without physical movement (and the corresponding muscle development that comes from these) and it is possible that these issues could be overcome through a control strategy that progressively reduces the amount of support provided by the MI-BCI system and encourages active motor control [37, 38].
+
+A recent meta-analysis of the neural correlates of action (MI, AO and ME) quantified ‘conjunct’ and ‘contrast’ networks in the cortical and subcortical regions [33]. This analysis, which took advantage of open-source historical data from fMRI studies, reported consistent activation in the premotor, parietal and somatosensory areas for MI, AO and ME. Predicated on such data, researchers have reasoned that performing MI should cause activation of the neural substrates that are also involved in controlling movement and there have been a number of research projects that have used AO in combination with MI in neurorehabilitation [39–41] and motor learning studies [42, 43] over the last decade.
+
+One implication of using MI and AO to justify the use of BCI approaches is that great care must be taken with regard to the quality of the environment in which the rehabilitation takes place. While people can learn to modulate their brain rhythms without using motor imagery and there is variability across individuals in their ability to imagine motor actions, MI-driven BCI systems require (by design at least) for patient to imagine a movement. Likewise, AO requires the patients to clearly see the action. This suggests that the richness and vividness of the visual cues provided is an essential part of an effective BCI system. It is also reasonable to assume that feedback is important within these processes and thus the quality of feedback should be considered as essential. Afterall, MI and AO are just tools to modulate brain states [40] and the effectiveness of these tools vary from one stroke patient to another [44]. Finally, motivation is known to play an important role in promoting active participation during therapy [20, 45]. Thus, a good BCI system should incorporate an approach (such as gaming and positive reward) that increases motivation. Recent advances in technology make it far easier to create a rehabilitation environment that provides rich vivid cues, gives salient feedback and is motivating. For example, the rise of immersive technologies, including virtual reality (VR) and augmented reality (AR) platforms [45–47], allows for the creation of engaging visual experiences that have the potential to improve a patient’s self-efficacy [48] and thereby encourage the patient to maintain the rehabilitation regime. One specific example of this is visually amplifying the movement made by a patient when the movement is of limited extent so that the patient can see their efforts are producing results [49].
+
+In this review we set out to examine the literature to achieve a better understanding of the current value and potential of BCI-based robotic therapy with three specific objectives:
+
+Identify how BCI technologies are being utilised in controlling robotic devices for hand rehabilitation. Our focus was on the study design and the tasks that are employed in setting up a BCI-hand robot therapy protocol.
+
+Document the readiness of BCI systems. Because BCI for rehabilitation is still an emerging field of research, we expected that most studies would be in their proof-of-concept or clinical testing stages of development. Our purpose was to determine the limits of this technology in terms of: (a) resolution of hand MI detection and (b) the degree of robotic control.
+
+Evaluate the clinical significance of BCI-hand robot systems by looking at the outcome measures in motor recovery and determine if a standard protocol exists for these interventions.
+
+It is important to note that there have been several recent reviews exploring BCI for stroke rehabilitation. For example, Monge-Pereira et al. [50] compiled EEG-based BCI studies for upper limb stroke rehabilitation. Their systematic review (involving 13 clinical studies on stroke and hemiplegic patients) reported on research methodological quality and improvements in the motor abilities of stroke patients. Cervera et al. [51] performed a meta-analysis on the clinical effectiveness of BCI-based stroke therapy among 9 randomised clinical trials (RCT). McConnell et al. [52] undertook a narrative review of 110 robotic devices with brain–machine interfaces for hand rehabilitation post-stroke. These reviews, in general, have reported that such systems provide improvements in both functional and clinical outcomes in pilot studies or trials involving small sample sizes. Thus, the literature indicates that EEG-based BCI are a promising general approach for rehabilitation post-stroke. The current work complements these previous reports by providing the first systematic examination on the use of BCI-robot systems for the rehabilitation of fine motor skills associated with hand movement and profiling these systems from a technical and clinical perspective.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Protocol registration
+
+Details of the protocol for this systematic review were registered on the International Prospective Register of Systematic Reviews (PROSPERO) and can be accessed at http://www.crd.york.ac.uk/PROSPERO (ID: CRD42018112107).
+
+### Search strategy and eligibility
+
+An in-depth search of articles from January 2010 to October 2019 was performed on Ovid MEDLINE, Embase, PEDro, PsycINFO, IEEE Xplore and Cochrane Library. Only full-text articles published in English were selected for this review. Table 1 shows the combination of keywords used in the literature searching.
+
+The inclusion criteria for the articles were: (1) publications that reported the development of an EEG-based BCI; (2) studies targeted towards the rehabilitation of the hand after stroke; (3) studies that involved the use of BCI and a robotic device (e.g., exoskeleton, end-effector type, platform-types, etc.); (4) studies that performed a pilot test on healthy participants or a clinical trial with people who have had a stroke. The articles were also screened for the following exclusion criteria: (1) studies that targeted neurological diseases other than stroke; (2) studies that used other intention sensing mechanisms (electromyography/EMG, electrooculography/EOG, non-paretic hand, other body parts, etc.).
+
+Two authors performed independent screenings of titles and abstracts based on the inclusion and exclusion criteria. The use of a third reviewer was planned a priori in cases where a lack of consensus existed around eligibility. However, consensus was achieved from the first two authors during this stage. Full-text articles were then obtained, and a second screening was performed until a final list of studies was agreed to be included for data extraction.
+
+### Data extraction
+
+The general characteristics of the study and their corresponding results were extracted from the full-text articles by the reviewers following the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) checklist. Data fields were extracted and categorised as follows:
+
+Participant characteristics: sample population, healthy or stroke patients, handedness, age, sex, acute or chronic stroke classification, and mean duration since stroke
+
+Study design: general description of study design, experimental and control groups
+
+Task design: description of the task instructed, and stimuli presentation (cue and feedback modalities, i.e.: visual, kinaesthetic, auditory, etc.)
+
+Technical specifications of the system: EEG system used (including number of channels), robot device used (e.g. hand exoskeleton, end-effector, etc.), actuation mode, and control strategy
+
+Main outcomes of the study: clinical outcomes (for studies involving stroke patients), classification accuracies (participant, group and study-levels), other significant findings
+
+This data extraction strategy allowed us to further evaluate the technology and clinical use of the BCI-robot systems used in this study.
+
+### Technology evaluation
+
+#### EEG acquisition
+
+The signal acquisition element of an EEG-based BCI is critical to its success in recognising task-related intent. To better understand current practice, we gathered the type of electrode used (i.e., standard saline-soaked, gel or dry electrodes), the number of channels and its corresponding placement in the EEG cap. To illustrate where signals are recorded from, we plotted the frequency with which electrodes were used across studies on a topographical map using the 10–20 international electrode placement system.
+
+#### Signal processing
+
+We evaluated the signal processing strategies used by each study looking specifically at the feature extraction and classification techniques within the data pipeline. For the studies that reported classification accuracies (i.e., comparing the predicted class against the ground truth), we were able to compare their results among the current state-of-the-art classification accuracies published in literature.
+
+#### Robot-assisted rehabilitation
+
+As the receiving end of the BCI pipeline and the provider of kinaesthetic feedback to the user, the robot-assisted device for hand rehabilitation plays a key role in providing the intervention in this therapy regimen. The robot components were evaluated based on their actuation type, targeted body-part (i.e., single-finger, multi-finger, whole hand), and control strategy. We also reported on commercially available systems, which having passed a series of regulatory processes making them fit for commercial use, were classified as gold standard devices.
+
+#### Technological readiness
+
+We assessed the development stages of the system as a whole by performing a Technological Readiness Assessment (TRA). Using this strategy, we were able to determine the maturity of the systems through a Technology Readiness Level (TRL) scale of 1–9 and quantify its implementation in a research or clinical setting [56]. Since a BCI-robot for rehabilitation can be categorised as a Class II-B medical device we have adapted a customised TRL scale to account for these requirements [56]. The customised TRL accounts for prototype development and pilot testing in human participants (TRL 3), safety testing (TRL 4–5), and small scale (TRL 6) to large scale (TRL 7–8) clinical trials. Performing a TRA on each device should allow us to map out where the technology is in terms of adoption and perceived usefulness. For example, if most of the studies have used devices that have TRL below the clinical trials stage (TRL 6–8), then we can have some confidence that said BCI-robot system is not yet widely accepted in the clinical community. In this way we can focus on questions that improve our understanding on the factors that impede its use as a viable therapy option for stroke survivors.
+
+### Clinical use
+
+#### Clinical outcomes measures
+
+For studies involving stroke patients, clinical outcomes were obtained based on muscle improvement measures such as Fugl-Meyer Motor Assessment Upper Extremity (FMA-UE) scores [53], Action Research Arm Test (ARAT) scores [54], United Kingdom Medical Research Council (UK-MRC) muscle grade [55], Grip Strength (GS) Test and Pinch Strength (PS) Test scores (i.e., kilogram force collected using an electronic hand dynamometer) among others.
+
+#### Physiotherapy evidence database (PEDro) scale for methodological quality
+
+A methodological quality assessment was also performed for clinical studies based on the PEDro Scale [57]. This scale evaluates studies with a checklist of 11 items based on experts’ consensus criteria in physiotherapy practice. The complete details of the criteria can be found online [58]. A higher score in the PEDro scale (6 and above) implied better methodological quality but are not used as a measure of validity in terms of clinical outcomes. Pre-defined scores from this scale were already present in studies appearing in the PEDro search. However, studies without PEDro scores or are not present in the PEDro database at all had to be manually evaluated by the authors against the 11-item checklist (five of seven studies).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

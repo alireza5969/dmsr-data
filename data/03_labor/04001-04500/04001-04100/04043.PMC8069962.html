@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Prasanth, Caban, Keller, Courtine, Ijspeert, Vallery, von Zitzewitz, and Klenk: Wearable Sensor-Based Real-Time Gait Detection: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1933,5 +1956,79 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+### 1.1. Motivation
+
+Traditionally, performing gait analysis required a dedicated laboratory and expensive equipment, which has limited its scope of applications. Recent advancements in technology have led to reliable, affordable, and wearable sensors for gait analysis that enable its use outside of a laboratory environment and during activities of daily living. One of its primary uses has been in diagnosing walking impairment in people with gait disabilities [1,2,3,4] and inspires control mechanisms of exoskeletons [5,6] and prostheses [7], among other applications [8,9,10,11,12]. More specifically, real-time gait analysis has proven essential in applications necessitating real-time control such as exoskeletons and prostheses, as well as gait rehabilitation involving Functional Electrical Stimulation (FES) [13,14] or Epidural Electrical Stimulation (EES) [15].
+
+Physiological human gait is a quasi-periodic, synergistic process involving the timely actuation of several lower-limb muscles, well-coordinated by neurons in the brain and the spinal cord [5]. Gait disorders and disabilities can arise due to various reasons including amputation of lower limbs, neurological diseases such as Parkinson’s, cerebral palsy and Huntington’s, as well as through stroke or paralysis following an injury to the brain or the spinal cord. This review is particularly motivated by the use of real-time gait analysis in an on-going clinical study (STIMO, ClinicalTrials.gov, NCT02936453): a First-in-Man study to confirm the safety and feasibility of a closed-loop EES in combination with overground robot assisted rehabilitation training for patients with chronic incomplete spinal cord injury (SCI) [16].
+
+We first carried out a systematic review and meta analysis across four major scientific databases (Scopus, Web of Science, Cochrane and PubMed) to identify the current state of the art in wearable sensor-based real-time gait analysis. We then extracted studies that focused on pathological gait and analyzed the most common sensors and techniques used in clinical applications.
+
+### 1.2. Previous Reviews
+
+Before moving into the details of our study, we will briefly discuss our analysis of existing review articles from literature, the results of which are summarized in Table 1. It can be noted from the table that reviews done so far are either specific to a particular category of gait detection method, are not systematic, lack coverage across major citation databases or focus only on wearable sensing. Furthermore, throughout the literature, we noticed the synonymous usage of the terminologies gait detection, gait event detection, and gait phase detection. Although we appreciate the specific difference in terminologies, for the sake of brevity, we will use gait detection to imply gait event and/or gait phase detection.
+
+Among the 11 review studies analyzed, only four of them were systematic reviews. Taborri et al. [17] performed a systematic review on wearable and non-wearable sensors used in gait detection. The study identified various wearable sensors such as inertial measurement units (IMU), insole pressure sensors (IPS), electromyography (EMG) and electroneurogram (ENG), and non-wearable sensors such as opto-electronic systems, force plates, and ultrasonic sensors. The study, however, was limited to sensors and did not provide any review of gait detection methods. Panebianco et al. [18] performed a systematic review covering PubMed, Scopus, and Web of Science. Although the search keywords were not restrictive to rule-based methods, all 17 of the studies involved were limited to rule-based methods. Caldasa et al. [19] performed a systematic review across major databases such as Web of Science, ScienceDirect, IEEE, PubMed/MEDLINE, SCOPUS, CINAHL, and Cochrane, thereby ensuring an exhaustive coverage. However, the review was limited to only artificial intelligence-based gait detection methods using inertial measurements, resulting in only 22 studies that met the acceptance criteria. Chen et al. [20] performed a systematic review focusing particularly on quantifiable gait measures and tangible evaluation techniques that are based on wearable sensors, particularly inertial measurement units (IMU). The study also includes a review of nonlinear analysis techniques such as phase portrait, Poincaré map, Lyapunov exponent (for gait stability assessment), and elliptical Fourier analysis (for gait complexity assessment). The study, however, did not report any real-time gait analysis methods. It can be noticed from these systematic reviews that they are either limited to review of sensors or to a specific category of gait detection method or did not consider real-time gait detection methods. Finally, none of these studies presented information about pathological aspects of wearable sensor-based gait detection.
+
+To the best of the authors’ knowledge, there does not exist a systematic literature review that identifies various wearable sensing options, real-time gait analysis methods, and presents pathological aspects of wearable sensor-based gait detection. We therefore performed a systematic review and meta-analysis across the four major scientific databases mentioned earlier, following the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) standard [21], covering 1262 articles, as will be discussed in the next sections.
+
+### 1.3. Structure of the Report
+
+The remainder of the article is organized into three sections. In Section 2, we describe the methods followed in setting up the systematic review. In Section 3, we present and discuss the results regarding: the search results in general in Section 3.1, gait events and gait phases in Section 3.2, wearable sensors in Section 3.3, algorithms used for wearable sensor-based real-time gait analysis in Section 3.4, and interpretations towards clinical applications in Section 3.5. Finally, in Section 4, we present the conclusions.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Method: Setting up the Review
+
+### 2.1. Choice of Databases
+
+Haddaway et al. [28] classified scientific literature databases into two categories: Academic Citation Database (ACDB) and Academic Citation Search Engine (ACSE). ACDBs include the traditional Boolean string-based search engines such as Scopus, Web of Science and PubMed, while ACSEs include Google scholar and semantic/natural language-based search engines such as Microsoft Academic Search and Semantic Scholar. We first explored both categories before making a choice.
+
+We considered nine of the most popular ACDBs in our selection process: CINAHL, EBSCO, ACM digital library, IEEE Xplore, Science Direct, Scopus, Web of Science, Cochrane, and PubMed. CINAHL, EBSCO, and ACM digital libraries were not included in the study because of a lack of access to them. We could not include IEEE Xplore since it limits the number of search terms to 15, which is noticeably lower than the number of keywords used in this study (see Table 2). However, this should not impact the comprehensiveness of our study, since IEEE articles are already indexed in Scopus and Web of Science. Science Direct was not included, as a recent update in their search keyword input framework limited us from inputting all our keywords, thereby making it unsuitable for our systematic review. However, this should not impact the comprehensiveness of our study since Science Direct and Scopus share the same database [29] and come from the same parent company (Elsevier). Finally, we decided not to include ACSEs in the review primarily because of deficient repeatability and reproducibility of search results, among other factors [28,30,31,32]. The remaining databases were thus Scopus, Web of Science, Cochrane and PubMed. ACDBs such as Scopus and Web of Science use a selective procedure to safeguard against low-quality or low-impact material being indexed [33], while Cochrane and PubMed are expected to add more clinically relevant studies.
+
+### 2.2. Choice of Keywords for Search
+
+To establish an appropriate search phrase, a pre-search was carried out first, collecting a list of keywords used by gait analysis researchers. In an attempt to find an optimum keyword-combination from the list, we analyzed these keyword-combinations by taking the conducted search results (from Scopus) to VOS-viewer [34], a metadata analysis software. VOS-viewer performs clustering of search results based on title, abstract and keywords of corresponding articles and illustrates the results graphically as shown in Figure 1. This gives us a bigger picture of the nature of articles returned by the search engine for the corresponding choice of keywords. The size of each node indicates the relative relevance (based on the frequency of occurrence of keywords) of that topic among the list of articles returned by the search query. This procedure was iterated and refined several times before arriving at the final search phrase listed in Table 2. We believe that it made the decision-making less subjective and biased. Although this study is not limited to any particular wearable sensor, we included the keywords ‘IMU’ and ‘insole’ (see Table 2) explicitly so as not to miss out articles related to these two types of sensors, while also retaining the word ‘sensor’ in the search phrase to make it inclusive for every other type of wearable sensors.
+
+### 2.3. Carrying Out the Review in a Systematic Manner
+
+In this study, we followed the PRISMA standard for systematic review. A total of 1262 articles were part of the review, including 1221 articles retrieved from the four databases (see Figure 2) and an additional 41 articles added later from bibliographies of the former. Figure 3 shows the PRISMA flow diagram illustrating the screening procedure followed. The screening procedure was performed independently by the two lead authors of our study. Studies for which the authors had difference of opinion on their exclusion (such as studies that were at the border line of the exclusion criteria) were mutually discussed and decided upon. Although assessment of paper quality is not mandated by the PRISMA standard, the authors’ choice of databases ensured that low-quality and low-impact material was not considered.
+
+We classify the most commonly used gait features into intra-stride (within stride) and inter-stride (between strides) features, and into temporal and spatial features. Intra-stride features are of higher granularity, looking at the gait in more detail, while inter-stride features are of lower granularity. The choice of each depends on the application. Examples of each category are listed in Table 3.
+
+In this review, we focus on intra-stride temporal gait features (ISTGFs), the rationale being that inter-stride features can be obtained from related intra-stride features (e.g., stride duration and cadence can be obtained from temporal information of consecutive heel strikes). We therefore believe that detecting sufficient ISTGFs is sufficient for insightful gait analysis in practice. In addition, ISTGFs are necessary for real-time control applications such as in the clinical study [16] that has served as a particular motivation for this review. Hence, studies not estimating the ISTGFs (such as indoor localization algorithms, gait reconstruction methods and activity classification methods) were excluded from this review.
+
+Other major reasons for exclusion are listed in the PRISMA flow diagram (see Figure 3). Studies not involving bipedal systems, studies not involving wearable systems, and studies devoted purely to (wearable) sensor development are directly excluded. When both a conference version of an article and its extended journal version appeared in our search results, the conference version was excluded. In a rare observation, we noted two sets of nearly duplicate conference publications from the same set of authors [7,36,37,38]. In this case, only the latest ones were considered for further review. Finally, if an article was found to compare, list, or review multiple gait event detection methods introduced in other studies, the original studies were included in the review rather than the former.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

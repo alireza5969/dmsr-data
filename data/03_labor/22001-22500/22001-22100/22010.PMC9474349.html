@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Fatania, Mohamud, Clark, Nix, Short, O’Connor, Scarsbrook, and Currie: Intensity standardization of MRI prior to radiomic feature extraction for artificial intelligence research in glioma—a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1174,5 +1197,55 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Adult-type diffuse gliomas are a varied group of highly invasive and heterogenous brain tumours (Fig. 1), with an annual US incidence of 5–6/100,000 and glioblastoma (GBM, the most aggressive glioma) accounting for nearly 50% [1]. Despite maximal safe resection of enhancing tumour, and adjuvant therapy with concomitant temozolomide chemotherapy and 60 Grey in 30 fractions of radiotherapy, followed by 6 cycles of temozolomide (‘Stupp protocol’), median overall survival of patients with GBM remains poor at 12–15 months [2, 3].
+
+Multiparametric MRI (mpMRI), with its excellent soft tissue contrast, is frequently used to characterise these tumours [4]. Growing interest in using artificial intelligence (AI) to augment information provided by MRI includes, but is not limited to, non-invasive prediction of cytogenetic alterations, distinguishing treatment effects from pseudoprogression, and distinguishing infiltrative non-enhancing tumour from oedema [5].
+
+Radiomics is a quantitative analytic method of extracting mineable data from medical imaging, and machine learning is typically used to correlate radiomic features and patient-specific data relating to prognosis and/or outcome [6]. Quantitative assessment of the whole tumour volume and surrounding tissues is attractive in the study of a heterogenous disease, which is hampering current treatment strategies [5]. Many radiomic studies evaluating types of diffuse glioma aim to predict prognosis [7], non-invasively diagnose genetic and molecular changes [8] (which play a key role in diagnosis, prognosis, and management), and distinguish between treatment effects and tumour progression [9].
+
+Despite its promise, radiomics has largely been limited to small retrospective proof-of-principle studies, without sufficient evidence to support translation into radiological practice [10]. MRI-based radiomics is limited by the non-biological, scanner-dependent variation in image signal intensity [11–14]. MR intensity does not map easily to a physical tissue property, in contrast to CT, and shows variation between timepoints, vendors, magnetic field strengths, and acquisition settings [15–18]. Radiomic features are highly sensitive to the values of the signal intensities in the image, and non-biological alteration must be removed. Therefore, MRI signal intensity must be standardised, i.e. the range and distribution of voxel intensity must be similar across patients, prior to radiomic analysis to ensure that the results are reproducible [11]. Despite this, there is a lack of consensus as to the optimal method when characterising diffuse glioma. Although not a specific diagnosis, diffuse glioma is a useful grouping, as they often share the same radiomics pipeline and are a commonly studied group of related tumours [13, 16]. We aim to perform a systematic review of the literature examining the efficacy of different MRI intensity standardisation procedures prior to the extraction of radiomic features in the setting of adult-type diffuse glioma.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and methods
+
+### Search strategy and selection criteria
+
+This systematic review was undertaken according to the ‘Preferred Reporting Items for Systematic Reviews and Meta-Analysis’ (PRISMA) statement. A search of MEDLINE, EMBASE, and SCOPUS databases was performed on 5 October 2021 using the following concepts, linked by the “AND” operator, including synonymous terms that were linked with the “OR” operator: (1) MRI, (2) radiomics, (3) intensity standardisation, and (4) glioma. No limit was placed on the date, language, location, or type of study. Exclusion criteria were the following: non-human based, not regarding adult-type diffuse gliomas, non-original research, non-MR radiomics, no mention of intensity standardisation, or no assessment of the effect of intensity standardisation (compared to another method or to no standardisation). After removing duplicates, articles were screened based on titles and abstract, and subsequently the full text. References in the included articles were manually reviewed. Full search strategy, methodology, and PRISMA checklist are available in the supplementary files.
+
+### Quality assessment
+
+Quality Assessment of Diagnostic Accuracy Studies 2 (QUADAS-2) was used to assess the risk of bias [19]. QUADAS-2 was used because the objective was to evaluate performance of any given intensity standardisation method, when compared to either no standardisation or another method. QUADAS-2 assesses four domains: (1) patient selection—description of how patients were recruited such as inclusion and exclusion criteria; (2) index test—how the index test was conducted and interpreted; (3) reference standard—how the reference test was conducted and interpreted; and (4) flow and timing—patients that did not have the index or reference test or were excluded from final analysis. Each domain was assessed for risk of bias and the first three domains were also assessed for applicability and categorised as either low risk, high risk, or unclear. The index test was taken to be the intensity standardisation method under investigation, and the reference test was either no standardisation or an alternative method used as a comparator. Two reviewers (F.M., K.F.) independently reviewed each study and any disagreement resolved by consensus.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

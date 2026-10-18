@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Frittoli, Vivaldo, Costallat, and Appenzeller: Gastrointestinal involvement in systemic lupus erythematosus: A systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1761,5 +1784,55 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Systemic lupus erythematosus (SLE) is an autoimmune disease with systemic inflammatory manifestations. Skin, kidney, central nervous system involvement, in addition to hematological abnormalities are most frequently observed [1].
+
+Gastrointestinal involvement is a common complain observed in 40–60% of SLE patients [2]. A clinically recognized gastrointestinal manifestations have been described in 8–10% of patients [2,3]. Autopsy studies, on the other hand, report findings of gastrointestinal involvement in 60–70% of patients, suggesting that subclinical or unrecognized involvement is common [3].
+
+Most gastrointestinal manifestations are usually mild [4]. Vasculitis and thrombosis may be responsible for life-threatening manifestations, leading to ischemia, perforation and infarction if not early diagnosed and adequately treated [5].
+
+In this article we performed a systematic review of clinically severe and potential life-threatening gastrointestinal manifestations and discuss clinical presentation, pathogenesis and treatment.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+We performed a systematic review of the literature and limited our search to articles published in the English literature from January 2000 to December 2020. The search of relevant references for the exploration of the electronic database in PubMed and Embase using the following MeSH terms: systemic lupus erythematosus, protein-losing enteropathy, ascites, pancreatitis, vasculitis, intestinal vasculitis, enteritis and diarrhea. The articles have been selected when presented this terms in Title/Summary. Bibliographies of articles were reviewed for additional literature not identified through the PubMed and Embase search.
+
+An evaluation of the studies was made using as inclusion criteria: 1. Original articles; 2. Articles in English; 3. Patients with Systemic Lupus Erythematosus 4. Patients who presented gastrointestinal manifestations due to SLE.
+
+Exclusion criteria: 1. Studies before to the year 2000; 2. Patients with manifestations not due to disease activity or other connective tissue disease knowingly responsible for gastrointestinal involvement were excluded from the analyses; 3. Articles using animal models; 4. Studies containing overlapping or insufficient data.
+
+At the end of the analysis, 141 relevant articles were included in this study and the PRISM flowchart is shown in Fig. 1.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

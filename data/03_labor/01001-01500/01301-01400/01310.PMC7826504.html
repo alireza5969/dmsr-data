@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Raymond, Imbert, Cousin, Duflot, Varin, Wils, and Lamoureux: Pharmacogenetics of Direct Oral Anticoagulants: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -912,5 +935,43 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Dabigatran, rivaroxaban, apixaban, edoxaban, and betrixaban are direct oral anticoagulants (DOACs). Their mechanism of action is based on the direct inhibition of coagulation factors: either thrombin (factor IIa) for dabigatran, or Stuart factor (Xa) for rivaroxaban, apixaban, edoxaban, and betrixaban. DOACs are alternative treatments to oral anti-vitamin K anticoagulants (AVK: fluindione, warfarin, and acenocoumarol). However, the inter-individual variability of these treatments is significant, and can lead to hemorrhagic or thromboembolic events. This variability could be related to polymorphisms of genes coding for proteins responsible for the activation, transport, or metabolism of DOACs, such as CES1, ABCB1, CYP3A4, and CYP3A5 (Table 1). Their pharmacokinetic and pharmacodynamic variability is also impacted by drug interactions when CYP450 or P-glycoprotein inducers or inhibitors are co-administered. DOACs are not subject to pharmacogenetic testing in clinical practice, unlike other cardiovascular drugs (antiplatelet agents, anti-vitamin K, and statins), for which such testing is recommended [1].</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+A literature review was conducted using PubMed in order to identify studies evaluating the impact of CYP genetic polymorphisms on DOAC exposure, taking into account adverse events. The terms “DABIGATRAN”, “RIVAROXABAN”, “APIXABAN”, “EDOXABAN”, and “BETRIXABAN” have been crossed with “PHARMACOGENETICS”, “PHARMACOGENOMICS”, “POLYMORPHISM”, “CYP3A4”, “CYP3A5”, or “ABCB1” and “BLEEDING”, “HEMORRHAGE”, or “THROMBOEMBOLIC EVENTS”. “DABIGATRAN” and “EDOXABAN” have been also crossed with “CES”.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

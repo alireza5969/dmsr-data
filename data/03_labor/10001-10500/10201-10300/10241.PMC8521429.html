@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Kocar, Müller, Ludolph, and Kassubek: Feature selection from magnetic resonance imaging data in ALS: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2394,5 +2417,51 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Amyotrophic lateral sclerosis (ALS) is a progressive neurodegenerative disease that affects several brain regions in a distinctive propagation pattern, with emphasis on the motor neurons.1 To diagnose ALS as early as possible is a task of high clinical relevance for the optimized patients’ care and the opportunity to be enrolled in clinical trials. With advances in neuroimaging in neurodegenerative diseases like ALS,2,3 it has been speculated that cerebral magnetic resonance imaging (MRI) may be able to provide insights that support an early diagnosis. Multiparametric, quantitative MRI has been discussed as a way to achieve a composite neuroimaging index.3 However, the amount of biomarkers, as well as their (non-linear) interactions, makes a straightforward approach likely unsuccessful. Machine learning (ML) might be the missing piece to integrate multiparametric MRI data into a useful classifier.4 In a classification problem, the ML model is presented with a dataset and the correct outcomes (supervised learning). By model-specific rules, the model is fit to the data to predict the outcome. The model that is created in this process can then be used to predict the outcome of new data, that is, in a diagnostic set-up, a given patient’s data are used to predict the correct diagnosis. With advanced ML techniques, the promise for highly personalized medicine emerged. However, it was quickly realized that ML models in medicine could not outperform health professionals, even in favorable comparisons,5 so a more realistic approach may be to restrict ML to very specific tasks. One of these tasks is quantitative neuroimaging, supporting (qualitative) human visual inspection.
+
+In ALS, several studies have incorporated ML in a diagnostic pursuit (for a review, see Grollemund et al.6). In an early approach using a linear support vector machine (SVM), independent component analysis (ICA) from resting-state functional MRI (rs-fMRI) data yielded 71% accurate classification.7 With a similar approach, but using a multiple kernel SVM on rs-fMRI data, a 87% accurate classification was achieved.8 However, there was no independent test sample, and overfitting might have occurred, that is, the model cannot be generalized because it fitted the training data too tightly. Using T1-weighted (T1w) and diffusion tensor imaging (DTI) data, various classification models achieved an accuracy of 78–90%,910–11 although high accuracy might have resulted from model overfitting, given that features were not defined a priori or samples were limited. By the use of ML classifiers on texture data gathered from the corticospinal tract, 70–80% accuracy was reported.12 Interestingly, when re-training general image recognition models like ResNet or VCG-16, a 60–63% accuracy was still achieved.13,14 Although these results are promising, overfitting remains one of the main challenges in ML. One of the most important mechanisms behind overfitting is the sample to feature ratio (SFR) which is a general parameter that helps assessing how many features an ML model can process before overfitting or underfitting is likely to occur.6 As a general rule, 10–15 samples per feature have been proposed; however, modern ML algorithms may even work with lower numbers.15 To date, there are few databases that collect MR images from patients with ALS in a meaningful amount, and even those may not be able to establish a reasonable ML model without some preselection of MRI features. In 2016, Grolez et al. published a systematic review that provides a useful collection of ALS-specific neuroimaging biomarkers that could be used for feature selection.16 The current review updates this previous work by specifically addressing ML models. To this end, we conducted a systematic review on neuroimaging in ALS, in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines.17 To this end, we reviewed all available studies over the previous 4 years (i.e. from 2017 onward) that could contribute to disease classification. We compiled these data into a comprehensive list of findings that can be used as features in an ML model.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Search strategy and study selection
+
+The literature review and study selection were conducted in accordance with the PRISMA guidelines.17 In March, 2021, a systematic search was conducted on the online library PubMed (https://www.ncbi.nlm.nih.gov/pubmed/). The search queries were ALS AND MRI, ALS AND ‘magnetic resonance imaging’, ALS AND neuroimaging, ‘amyotrophic lateral sclerosis’ AND MRI, ‘amyotrophic lateral sclerosis’ AND ‘magnetic resonance imaging’, and ‘amyotrophic lateral sclerosis’ AND neuroimaging. Only publications that were listed after 1 January 2017 were considered for this review. Regarding prior publications, we refer to the systematic review by Grolez et al.16 and to the meta-analyses by Shen et al.18 and Gorges et al.19 Our search yielded 632 database entries. In a cross-reference search, additional 7 records were found for a total of 639. These records were carefully checked by an experienced reviewer for the following criteria: the studies had to be published in a peer-reviewed journal in the English language; only human studies with in vivo cranial MRI were considered; and there had to be a group of healthy control subjects or mimic disorders and a group of subjects with sporadic ALS, according to common diagnostic guidelines. Primary lateral sclerosis (PLS), progressive bulbar palsy (PBP), and pure lower motor neuron disease (LMND) were considered as ALS spectrum disorders and thus also included.3,20,21 There had to be cross-sectional data, and inferential statistics had to be conducted on these data. Solely longitudinal data or regression analyses were not considered, as these would not help distinguishing ALS from healthy controls. However, if there were appropriate data in Supplementary Material, these studies could still be included. From the 639 entries, 213 reports were identified as eligible. In the full-text review, 62 reports were excluded due to the following exclusion criteria: genetic as opposed to sporadic ALS (n = 16), no healthy control group (n = 24), conditions other than ALS (n = 7), no inferential statistics (n = 3), only statistical regression (n = 7), or data that were already reported elsewhere (n = 5). In total, 151 studies were included in this systematic review. Figure 1 summarizes the literature review and study inclusion process according to the PRISMA guidelines. No automated tools were used in this systematic review. Ethics approval and informed consent were not required for this systematic review.
+
+### Semi-quantitative analysis
+
+During the full-text review, all data that could be used for disease classification in an ML model were noted, both from the report itself and from its Supplementary Material if provided. In a semi-quantitative synthesis, it was analyzed which brain areas were most commonly reported. This was done by counting how many studies reported a brain region as a significant finding. We categorized these regions into ‘major’ and ‘minor’ findings, based upon the quantity of studies that reported each finding. This procedure was repeated for each MRI modality. The goal of this semi-quantitative analysis was to provide a comprehensive list of findings that could be used for disease classification in an ML model. As this approach relies solely on the quantity of reports, underreporting or overreporting of specific results can bias the analysis.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

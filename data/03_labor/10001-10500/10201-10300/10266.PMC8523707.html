@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Straczkiewicz, James, and Onnela: A systematic review of smartphone-based human activity recognition methods for health research</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1192,5 +1215,51 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Progress in science has always been driven by data. More than 5 billion mobile devices were in use in 20201, with multiple sensors (e.g., accelerometer and GPS) that can capture detailed, continuous, and objective measurements on various aspects of our lives, including physical activity. Such proliferation in worldwide smartphone adoption presents unprecedented opportunities for the collection of data to study human behavior and health. Along with sufficient storage, powerful processors, and wireless transmission, smartphones can collect a tremendous amount of data on large cohorts of individuals over extended time periods without additional hardware or instrumentation.
+
+Smartphones are promising data collection instruments for objective and reproducible quantification of traditional and emerging risk factors for human populations. Behavioral risk factors, including but not limited to sedentary behavior, sleep, and physical activity, can all be monitored by smartphones in free-living environments, leveraging the personal or lived experiences of individuals. Importantly, unlike some wearable activity trackers2, smartphones are not a niche product but instead have become globally available, increasingly adopted by users of all ages both in advanced and emerging economies3,4. Their adoption in health research is further supported by encouraging findings made with other portable devices, primarily wearable accelerometers, which have demonstrated robust associations between physical activity and health outcomes, including obesity, diabetes, various cardiovascular diseases, mental health, and mortality5–9. However, there are some important limitations to using wearables for studying population health: (1) their ownership is much lower than that of smartphones10; (2) most people stop using their wearables after 6 months of use11; and (3) raw data are usually not available from wearable devices. The last point often forces investigators to rely on proprietary device metrics, which lowers the already low rate of reproducibility of biomedical research in general12 and makes uncertainty quantification in the measurements nearly impossible.
+
+Human activity recognition (HAR) is a process aimed at the classification of human actions in a given period of time based on discrete measurements (acceleration, rotation speed, geographical coordinates, etc.) made by personal digital devices. In recent years, this topic has been proliferating within the machine learning research community; at the time of writing, over 400 articles had been published on HAR methods using smartphones. This is a substantial increase from just a handful of articles published a few years earlier (Fig. 1). As data collection using smartphones becomes easier, analysis of the collected data is increasingly identified as the main bottleneck in health research13–15. To tackle the analytical challenges of HAR, researchers have proposed various algorithms that differ substantially in terms of the type of data they use, how they manipulate the collected data, and the statistical approaches used for inference and/or classification. Published studies use existing methods and propose new methods for the collection, processing, and classification of activities of daily living. Authors commonly discuss data filtering and feature selection techniques and compare the accuracy of various machine learning classifiers either on previously existing datasets or on datasets they have collected de novo for the purposes of the specific study. The results are typically summarized using classification accuracy within different groups of activities, such as ambulation, locomotion, and exercise.
+
+To successfully incorporate developments in HAR into research in public health and medicine, there is a need to understand the approaches that have been developed and identify their potential limitations. Methods need to accommodate physiological (e.g., weight, height, age) and habitual (e.g., posture, gait, walking speed) differences of smartphone users, as well as differences in the built environment (e.g., buildings and green spaces) that provide the physical and social setting for human activities. Moreover, the data collection and statistical approaches typically used in HAR may be affected by location (where the user wears the phone on their body) and orientation of the device16, which complicates the transformation of collected data into meaningful and interpretable outputs.
+
+In this paper, we systematically review the emerging literature on the use of smartphones for HAR for health research in free-living settings. Given that the main challenge in this field is shifting from data collection to data analysis, we focus our analysis on the approaches used for data acquisition, data preprocessing, feature extraction, and activity classification. We provide insight into the complexity and multidimensionality of HAR utilizing smartphones, the types of data collected, and the methods used to translate digital measurements into human activities. We discuss the generalizability and reproducibility of approaches, i.e., the features that are essential and applicable to large and diverse cohorts of study participants. Lastly, we identify challenges that need to be tackled to accelerate the wider utilization of smartphone-based HAR in public health studies.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+Our systematic review was conducted by searching for articles published up to December 31, 2020, on PubMed, Scopus, and Web of Science databases. The databases were screened for titles, abstracts, and keywords containing phrases “activity” AND (“recognition” OR “estimation” OR “classification”) AND (“smartphone” OR “cell phone” OR “mobile phone”). The search was limited to full-length journal articles written in English. After removing duplicates, we read the titles and abstracts of the remaining publications. Studies that did not investigate HAR approaches were excluded from further screening. We then filtered out studies that employed auxiliary equipment, like wearable or ambient devices, and studies that required carrying multiple smartphones. Only studies that made use of commercially available consumer-grade smartphones (either personal or loaner) were read in full. We excluded studies that used the smartphone microphone or video camera for activity classification as they might record information about an individual’s surroundings, including information about unconsented individuals, and thus hinder the large-scale application of the approach due to privacy concerns. To focus on studies that mimicked free-living settings, we excluded studies that utilized devices strapped or glued to the body in a fixed position.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

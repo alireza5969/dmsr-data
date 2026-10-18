@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>D’Antoni, Russo, Ambrosio, Bacco, Vollero, Vadalà, Merone, Papalia, Denaro, and Tchounwou: Artificial Intelligence and Computer Aided Diagnosis in Chronic Low Back Pain: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1759,5 +1782,101 @@ Memory (LSTM), Synthetic Minority Oversampling TEchnique (SMOTE).</p>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+In the last few decades, Artificial Intelligence (AI) has been revolutionizing the healthcare industry thanks to innovative computational tools able to support and even substitute human intelligence in some specific tasks [1]. To date, AI is being applied to almost any aspect of daily life, thanks to its capacity to handle the unprecedented amount of information recorded every nanosecond by computer systems, e.g., vocal assistants, car security devices, and smart home detectors. Due to the huge quantity of data and the ever-increasing use of digital processing in clinical practice, the employment of AI in medical research has been increasingly investigated in several studies [2]. Indeed, AI-based systems have been shown to perform automatic segmentation and data extraction from radiological datasets [3] as well as to support diagnosis, treatment, and outcome evaluation in different fields, including spine surgery [2].
+
+The use of AI in spine surgery has been exploited for different tasks, including the segmentation of spinal structures [4], identification of degenerated discs [5], detection of vertebral fractures [6], classification of scoliotic curves [7], and several more. In a previous systematic review on the application of Computer Vision to the management of low back pain (LBP), we have demonstrated that AI systems achieved Sørensen–Dice scores &gt;90% with regard to segmentation of vertebrae, intervertebral discs (IVDs), spinal canal, and lumbar muscles, whereas studies focusing on structure localization and identification demonstrated an accuracy &gt;80% [8].
+
+LBP is primarily caused by intervertebral disc degeneration, representing the main cause of disability in the world, with a huge impact on patients’ quality of life as well as on socioeconomic and working conditions [9]. Diagnosing and treating LBP often requires a multidisciplinary approach involving the acquisition of radiological images, patient-reported outcome (PROMs) evaluation questionnaires, and angular and linear measurements. Therefore, the ultimate decision is often guided by the elaboration of several data using an algorithmic approach [10,11]. Computer-aided diagnosis (CAD) is a field of AI employing machine learning methods to specifically analyze both imaging and non-imaging data in order to classify patients’ conditions and to support clinicians in the formulation of a correct diagnosis [12]. While having been firstly adopted for the diagnosis of breast cancer [12], CAD systems are now utilized in several fields, including the detection of osteoporosis [13], individuation of missed polyps during colonoscopy [14] and many others. Applications of CAD to LBP are numerous and involve several data sources (e.g., magnetic resonance imaging—MRI—and computed tomography—CT—datasets, clinical notes, surface sensor and electrophysiological measurements), as well as numerous ancillary AI tasks (e.g., segmentation, classification, regression).
+
+The diagnosis of disc abnormalities can be easily performed by an experienced professional, even if affected by notable variability among experts (Alomari et al. [15] report that “there is over 50% inter- and intra-observer variability in the MRI interpretation that urges the need for standardized mechanisms in MRI interpretation”). This aspect can be automatized in AI systems specifically focusing on Computer Vision, with encouraging results from preliminary studies. For example, Won et al. [16] reported: “Spinal stenosis Grading agreement between the experts was 77.5% and 75.0% in terms of accuracy and F1 scores”. The main advantage of CAD systems is to carry out multiple tasks on large datasets resulting in a definite outcome with a high degree of accuracy when compared to the human counterpart. However, the real added value of AI in CAD systems is to combine different pieces of information (demographics, patient-reported outcome measures, clinic notes, radiological data, etc.) in order to better predict a specific diagnosis and improve patient outcomes. All of these aspects have been recently reviewed by Mallow et al. [17]. Briefly, although clinicians achieve high accuracy scores in some easy tasks such as detecting disc bulging, AI models achieve very similar results while reducing the diagnosis time, as well as excluding inter- and intra-observer variability. In addition, the diagnosis of some diseases is still challenging for medical practitioners, and can actually be aided and improved by AI.
+
+In this review, we have systematically reviewed the available literature on the application of CAD systems to the management of LBP. The state of the art on the present technology and individual results of included studies will be thoroughly discussed, in order to describe the actual evidence and potential future applications of these ground-breaking tools.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+In order to perform an exhaustive research of AI articles related to LBP, we performed literature research on PubMed, Scopus, and Web of Science. The search keywords utilized for both the medical and the AI part are reported in Table 1. At least one of the search keywords for the medical and the AI part had to be included in the title or in the abstract of the articles.
+
+### 2.1. Inclusion and Exclusion Criteria
+
+The aim of this study was to gather all the articles concerning the utilization of AI in the diagnosis of LBP and lumbar degenerative diseases. Straightforwardly, all the selected articles had to meet all the following inclusion criteria:
+
+Chronic LBP or lumbar degenerative diseases must have been between the main topics of the article. We included articles on the diagnosis of diseases related to chronic LBP, and treating at least one of the structures involved in LBP (i.e., vertebrae, discs, muscles, spinal canal);
+
+AI must have been used in the article. We included articles exploiting AI methods falling in the areas of computer vision, machine learning and neural networks (NNs), regardless of the type of data utilized (e.g., images, text data, clinical data);
+
+Aim of the study: all the articles included must have been focused on a CAD system;
+
+Subjects included in the study: all the articles must have been based on studies of human low back and related pathology, regardless of age or employment of the included individuals;
+
+Validation procedures: results must have been reported on a test set different from the training set;
+
+Language: all articles must have been written in English.
+
+Conversely, articles that were excluded did not meet the inclusion criteria for one of the following reasons:
+
+A different medical problem was considered: we excluded articles which did not consider chronic LBP and its related anatomical structures and medical data. For example, we excluded studies that focused only on cervical or thoracic vertebrae, and studies focusing on acute LBP and osteoporosis;
+
+AI was not considered: we excluded studies that did not utilize AI-based techniques in the diagnosis or management of LBP;
+
+Diagnosis was not provided: we excluded studies using Computer-Vision-based methods that, although focusing on LBP related structures, limited to the segmentation or identification of lumbar structures;
+
+Animal studies: we excluded studies based on vertebral structures of animals, e.g., goats or mice;
+
+Results reproducibility: we excluded articles that did not use a K-fold cross-validation procedure or reported a clear division of the dataset between a training set and a test set.;
+
+Not in English: we excluded all the articles written in a language different from English.
+
+In our previous study, we have defined three main categories in which the utilization of AI in LBP can be split, namely Computer Vision, CAD, and Decision Support Systems (DSS) (Figure 1). Computer Vision is the field of AI that deals with how computers can gain a high-level understanding from digital images or videos. With regard to LBP, its main applications concern feature extraction and image segmentation, which have been widely discussed in our previous systematic review [8].
+
+CAD is a group of techniques which help medical practitioners identify a pathology or quantify the grade of a disease. It can be divided into two distinct tasks, namely classification and regression, in which machine or deep learning models are used to assign a predefined label or to generate a numeric output, respectively. In practice, classification is used to identify or categorize a disease, whereas regression is used to produce a numerical output as a quantitative evaluation of some measure [18].
+
+DSS are systems that allow medical practitioners or patients to enhance the decision-making process in order to improve the outcome of subjects suffering from a specific disease. The goal of the vast majority of DSS is outcome prediction, i.e., the prediction of the improvement that a patient would experience after exposure to a defined therapy. By predicting the extent to which a patient would benefit from a specific treatment, DSS may provide the physician with practical tools to assess, for example, whether or not surgery may be preferable to conservative treatment. However, a DSS only provides a suggestion to the physician, who is responsible for the final decision on the treatment to be undertaken. Finally, DSS can be used for prevention, e.g., by providing the user with recommendations or correct practice for preventing the onset of a disease [19].
+
+### 2.2. Evaluation Metrics
+
+Among the articles included, different tasks resorted to different metrics to evaluate the performance of systems under investigation. However, considering the large amount of studies reported in this review, different metrics were also considered within the same task.
+
+With regard to the Classification task, we reported the results in terms of Accuracy (Acc), where available. For brevity purposes, let us consider a binary Classification task, e.g., Positive vs. Negative. Given a test set composed of N samples, defining the True Positives TP as the number of Positive samples correctly classified, and the True Negatives TN as the number of Negative samples correctly classified, Accuracy is defined as:
+
+With regard to the Regression task, the vast majority of the studies included in this review report the performance in terms of the Mean Absolute Error (MAE). Let us consider a sequence of original values x(t) and a sequence of predicted values x˜(t). The MAE for a sequence of N timestamps is defined as:
+
+In some cases, percentage error values are used to evaluate performance, the meaning of which varies according to the investigated task.
+
+### 2.3. Quality of Evidence
+
+The methodological quality of the included studies was assessed independently by two reviewers (L.A. and F.R.), and any disagreement was solved by the intervention of a third reviewer (G.V.). The risk of bias and applicability of included studies were evaluated by using customized assessment criteria based on the Quality Assessment of Diagnostic Accuracy Studies (QUADAS-2) [20]. This tool is based on four domains: patient selection, index test, reference standard, and flow and timing. Each domain is evaluated in terms of risk of bias, and the first three domains are also assessed in terms of concerns regarding applicability. Fifty studies were rated on a 3-point scale, reflecting concerns about risk of bias and applicability as low, unclear or high, as shown in Figure 2 (the details of the analysis are presented in Tables S1 and S2 in the Supplementary Materials).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

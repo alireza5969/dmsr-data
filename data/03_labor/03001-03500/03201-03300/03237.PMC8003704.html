@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Zhang, D’Haeseleer, Coelho, Vanden Abeele, Vanrumste, and Sabatini: Recognition of Bathroom Activities in Older Adults Using Wearable Sensors: A Systematic Review and Recommendations</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1746,5 +1769,87 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Globally, the population is ageing rapidly. By 2050, the number of people aged 60 years and older is expected to double to 2.1 billion [1]. This ageing process introduces physical and social challenges for older adults [2,3,4,5]. One prominent element is the decreased ability of performing Activities of Daily Living (ADL), which affects older adults’ ability to live independently at home. In the past years, a variety of devices have been used and researched to overcome limitations related to ageing and to help older adults stay independently at home, including wearable sensors, cameras, audio recorders and Internet of Things devices [6,7,8,9,10]. These devices can be used for recognising specific situations and activities in the daily life of older adults. Additionally, such devices can also be extended with functionalities that alert clinical staff, caregivers or trusted family members when a suspicious situation occurs [11,12,13]. Wearable sensors in particular, mainly accelerometers, have already been widely applied for the monitoring daily activities [12,14,15]. Compared to cameras and audio recorders, wearable sensors are superior in the number of recognised activities [10] and the protection of privacy and security of users. Compared to environmental sensors (presence, pressure, temperature etc.), wearable sensors can detect more complex activities rather than only one action. For example, the water flow detection sensor attached to the sink can detect the flow of water. However, it cannot detect whether the person is washing their hands or washing their face. To detect an activity, it should be combined with other sensors, which increases the complexity of device set-up. Compared to radar sensors, wearable sensors are not limited by the customised hardware set up and environmental interference [16].
+
+The performance on ADL is usually assessed to predict the ability of an older adult to live independently [17,18] and to indicate functional frailty. For example, the Katz Index of Independence in Activities of Daily Living, is a scale to measure six ADLs (bathing, dressing, toileting, transferring, feeding and continence). The performance score is evaluated based on whether the participant can perform activities by themselves or not [19]. The final scores are then used by care providers to estimate care needs and by care planners for the distribution of health care resources [20]. Additionally, the performance quality on ADL can reveal the functional status of older adults, which can form the basis for therapeutic decisions, particularly when applied to certain diseases that are associated with old age, e.g., chronic obstructive pulmonary disease [21] and stroke [22].
+
+ADLs can be categorised into different ways, but the most researched and monitored group is composed of the basic ADL (BADL). These BADLs involve bathing, grooming, maintaining dental hygiene, nail and hair care, dressing, toileting, continence, walking and feeding [17]. Among these BADLs, bathroom activities take up a large ratio. Bathroom activities are prominent in taking care of personal hygiene and preventing the spread of communicable disease [23].
+
+However, to the best of the authors’ knowledge, few studies have been conducted on bathroom activity monitoring for older adults, especially using wearable sensors [6,7,9,24,25,26,27]. Therefore, the objective of this study is to review such studies and examine the actual studied bathroom activities, used wearable sensors, different applied methodologies and the activity recognition techniques. From this review, recommendations are generated for future studies.
+
+This article presents a systematic review study of related work surrounding the field of bathroom activity recognition in older adults using wearable sensors. Literature encompassing conferences and journal papers were investigated to not only build the state-of-the-art but also lay the ground for recommendations as well.
+
+This systematic review focuses particularly on the following research questions (RQ):
+
+RQ1. Which bathroom activities are explored in current studies?
+
+RQ2. Which wearable sensors are used?
+
+RQ3. Which methodology, regarding the setup of the experiment, the number and type of participants, and the method of annotating the activities, is used in the current experiments?
+
+RQ4. Which activity recognition techniques are investigated for bathroom activities?
+
+To this end, Section 2 presents the methodology for selecting the search query and therefore including all relevant papers. Next, the retained studies are presented individually in Section 3, followed by a discussion in Section 4 where all research questions are answered. Additionally, at the end of each research question, recommendations are proposed to researchers who want to perform activity recognition in bathroom activities for older adults. A summary on the conducted systematic review is given in Section 5.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Methods
+
+The focus of this review is on bathroom activities, such as bathing, showering, (un-)dressing, grooming, toileting and brushing teeth, recognised via wearable sensors. The protocol for searching and selecting papers was according to the recommended PRISMA guidelines on preferred reporting items for systematic reviews and meta-analyses [28], schematically represented in Figure 1.
+
+### 2.1. Search Query
+
+In order to find all relevant studies, keywords were organised into four categories, classified by concept; i.e., older adults as target population, activity recognition as outcome, bathroom activities as specification, and wearable sensors as materials. In two iterations, the researchers Y.Z, I.D, and J.C (also co-authors of the paper) identified and discussed relevant synonyms for these keywords. As only few papers were found in a pilot test, search criteria were expanded in order to not miss any relevant studies. The final set can be found in Table 1. By combining these concepts with the logical AND operator, the final query was formed.
+
+Papers were searched in six libraries, both technological and general: IEEE Xplore, Science Direct, PubMed, Scopus, Web of Science and ACM. The keywords searching fields covered title, keyword and abstract. This search included all relevant papers, which were published in English until March 2020. Some libraries were limited in their advanced search feature, e.g., max. 15 search terms (IEEE), max. 8 logical operators (Science Direct, ACM) or only 2000 results to download (Scopus). Therefore, depending on the limitations of the library, smaller subcategories were generated to create and retrieve all possible combinations. Note that these combinations for all search terms were generated via a coded computer program to avoid mistakes and forgotten combinations. The subcategories of these keywords can be found in Appendix A.
+
+### 2.2. Inclusion and Exclusion Criteria
+
+To be included in the study, the paper should focus on older adults as the target population, but the age of participants was not limited. Papers should focus on at least one bathroom activity, i.e., bathing, showering, (un-)dressing, grooming, toileting or brushing teeth. In addition, at least one wearable sensor, either worn on the body or in pockets, should be used to recognise activities. Studies that included other activities or additionally implemented different sensors were retained at first. Afterwards, a distinction was made between wearable sensors and other sensors, in order to gain insights into these different approaches. However, the final analysis was limited to papers using wearable sensors. In addition, all papers needed to be published in English and should be of sufficient length to warrant a scientific contribution, e.g., at least 1500 words. Notes or one-page papers were excluded.
+
+### 2.3. Search Procedure
+
+As a result of querying in the six different libraries, 5621 papers were found. Zotero [29] was used as the management tool. An overview of the screening procedure is shown in Figure 1. Due to the aforementioned need of performing different searches and combinations, many duplicates were found, with a total of 1359 duplicated papers being excluded. The remaining 4262 papers were divided over three researchers to be further investigated. Papers were screened at first on titles and 4049 papers were excluded. This large number is due to the fact that Web of Science also includes “Keywords Plus®” [30], i.e., extra keywords based on references used in the paper, and also lemmatisation, i.e., including related words, often used in libraries. By these broader search terms, we wanted to guarantee that all relevant papers were included. However, this also implied finding a big number of papers to exclude based on a title screening. For example, aged or old are often used to describe participants’ age in general, and also hygiene was often found related to “oral hygiene”, e.g., “Caries Increment and Oral Hygiene Changes in 6- and 12-Year-Old Children”.
+
+Next, papers were screened on the abstract (n = 213) and, afterwards, the entire paper was read (n = 109). When in doubt, the papers were discussed with all three researchers before including or excluding them, resulting in 50 papers. Review papers were initially retained and screened [31,32,33], making sure that all relevant papers mentioned by these studies were included as well. Based on this screening, two papers [9,34] on activity recognition of older adults were added. These two papers were not included in our initial findings as they did not cover all the keywords from the four concepts in the searching filed. The paper in [9] did not include the keywords of “older adults” and the paper in [34] did not include the keywords of “bathroom activity”.
+
+Finally, papers were excluded based on eligibility, removing an additional 39 papers. The eligibility screening process is illustrated in Figure 2. Among the 50 papers, six papers were literature review papers. The other 44 papers were research papers, including bathroom activities recognition for older adults, using wearable sensors or other types of the sensors. Two extra research papers were included which were mentioned from the review papers. Thus, in total 46 research papers were screened for eligibility.
+
+Among these 46 papers, studies in seven papers used wearable sensors. The other 39 papers used other types of sensors, among which audio recorders, video/image recorders, radar sensors, inertial measurement unit (IMU) sensors (accelerometer and/or gyroscope) attached to the object instead of the human body and environmental sensors. Audio recorders were used for detecting activities related to water flowing, e.g., washing hands [35,36,37,38,39], washing face [36], toileting [38,40,41] or bathing [40]. Video/image recorders were usually used for detecting washing hands [35,39,42,43,44], washing face [36] and dressing [45,46,47,48]. Radar sensors were used for detecting standing/sitting while showering [49], entering the bathtub [49,50] and sitting on/leaving toilet [51]. IMU sensors were attached to the water pipe for detecting washing and bathing [52], on the robot for detecting dressing [46], and in the soap bar for hand washing [37]. Multiple environmental sensors were combined for detecting bathing/showering [34,36,40,53,54,55,56,57,58,59], toileting [34,36,38,40,41,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70], dressing [45,58,71,72], general personal hygiene activity [54,61], washing hands [36,37,38], washing face [36] and grooming [58,70].
+
+Compared with wearable sensors, other types of sensors have limitations for detecting bathroom activities. First, the bathroom setting is a private environment, especially for activities like bathing, dressing and toileting. Thus, videos or images should be handled with the utmost care to protect the privacy of the users [34,36]. Second, using only an environmental sensor or audio recordings, the number of detectable activities are limited. As afore-described, environmental sensors usually only detect one action, which is not useful for detecting complex activities of daily living in the bathroom, which include a sequence of multiple actions [36,39,53]. Audio sensors can detect activities that create typical sounds, like washing hands [36,39]. However, it is limited in detecting dressing and combing hair, and it is noise-sensitive [52,56]. Therefore, with an increased number of activities that need to be detected, the number of sensors also increases. These reasons motivate the choice to focus on wearable devices for bathroom activity monitoring.
+
+In conclusion, a final set of seven papers were studied in depth. All three authors analysed the selected studies and extracted data regarding target population, activities, sensor use, participants, setup of the experiment, feature extraction and recognition techniques. An overview of this information is shown in Table 2 and Table 3.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Jekel, Brim, von Reppert, Staib, Cassinelli Petersen, Merkaj, Subramanian, Zeevi, Payabvash, Bousabarah, Lin, Cui, Brackett, Mahajan, Omuro, Johnson, Chiang, Malhotra, Scheffler, Aboian, and Wong: Machine Learning Applications for Differentiation of Glioma from Brain Metastasis—A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1891,5 +1914,67 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Gliomas and brain metastases are the most common brain malignancies and account for a substantial proportion of cancer-related mortality [1]. Brain metastases (BM) occur in 2% of patients with cancer at the point of diagnosis, appear in 12.1% of patients with metastatic disease to any site [2], and occur with the site of primary tumor being unknown in up to 15% of patients at first presentation with cerebral metastasis [3]. Gliomas make up more than 30% of the overall tumors of the central nervous system (CNS) and account for 81% of total CNS malignancies [4]. Clinical management of gliomas and brain metastases varies immensely, thus requiring differential diagnosis early in the course of evaluation.
+
+Magnetic resonance imaging (MRI) is currently regarded as the reference standard for evaluation of cerebral malignancies and their effects on the brain, therapeutic response, and overall disease progression [5]. Classic metastatic disease to the brain can be easily differentiated in clinical practice from gliomas in the setting of multiple metastases and imaging features of defined lesion borders and prominent surrounding edema. On the contrary, solitary parenchymal brain metastases, which are seen in approximately 30% of patients with CNS metastasis [5,6,7], can mimic the appearance of higher-grade gliomas, in particular glioblastoma (GBM), and complicate accurate diagnosis, especially when the primary site of cancer is unknown upon first discovery of metastasis. In conventional high-resolution MRI, definitive diagnosis of the lesion can be ambiguous. For example, rim-enhancing lesions in contrast-enhanced T1 sequences are most often found to be high-grade gliomas (40%), closely followed by brain metastases (30%) [7]. While recent research has shown added value of advanced MR imaging techniques, such as MR perfusion and spectroscopy, for tumor differentiation, these methods are not always implemented in standard clinical practice, and standard imaging protocols often feature conventional MRI only.
+
+The increasing volume of medical imaging data and the exponential growth of computational power over the course of the last years has propelled the investigation of machine learning (ML) applications in neuroradiology, especially for tasks that require specialized expertise. ML algorithms can perform complex tasks without explicit programming, but instead by learning analytically through exposure to data with the subsequent ability to model complex associations, e.g., for image segmentation or image interpretation [8]. Several studies have developed predictive ML models for increased diagnostic performance in differentiation of cerebral metastatic disease from glioma, however, incorporation of these algorithms into clinical practice has not been achieved yet, as per the ACR Data Science Institute AI Central [9].
+
+We present a literature review, as well as summary reports on average model performance to identify the most promising approaches reported in the current body of literature. We aim to detect shared pitfalls to clinical implementation in the field of differentiation of brain metastases and gliomas. Through our assessment of quality of reporting, we aim to systematically analyze the shortcomings that are common in the literature and, ultimately, formulate recommendations for researchers engaging in this growing field. We aim to identify, to which degree the opacity of reporting and lack of standardization in algorithm development prevail in the literature, which, as pointed out previously [10,11], are detrimental to clinical translation and FDA clearance of ML models.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+### 2.1. Database Search
+
+This systematic review was registered with the International Prospective Register of Systematic Reviews (PROSPERO) under the registration number CRD42020209938 and conducted according to the guidelines of the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses of Diagnostic Test Accuracy) [12] statement. To collect all relevant original research on the applications of AI in neuro-oncology, database searches of Ovid Embase, OVID MEDLINE, Cochrane trials (CENTRAL), and Web of Science—Core Collection were conducted by a clinical librarian (A.B.) in September 2020, January 2021, and September 2021, respectively. The search strategy included both keywords and controlled vocabulary combining the terms for: “artificial intelligence”, “machine learning”, “deep learning”, “radiomics”, “magnetic resonance imaging”, “glioma”, as well as related terms. The search strategy was independently reviewed by a second institutional librarian. All publications identified by the search were subjected to a screening in Covidence software (Veritas Health Innovation Ltd. Melbourne, Australia). The search identified 12,470 candidate articles (Figure 1). 152 duplicates were removed and screening of the remaining 12,318 articles was conducted by a neuroradiology attending (M.A.), radiology resident (H.S.) and three graduate students (L.J., W.B. and M.v.R.). The board-certified neuroradiology attending (M.A.) resolved ambiguous screening conflicts. The abstract review further excluded 10,995 articles that lacked pertinence to neuro-oncology and ML. A total of 1323 articles were reviewed at full-text level and evaluated for eligibility for inclusion in the review. For reviewer-independent uniformity in screening, 8 exclusion criteria were predefined: (1) Abstract-only; (2) No application of ML reported; (3) Not an original article; (4) Not published in English; (5) No investigation of glioma/glioblastoma; (6) Unrelated to MRI, magnetic resonance spectroscopy (MRS), and positron emission tomography (PET) imaging; (7) No human research subjects; (8) Duplicates. Due to fulfilment of at least one of those criteria, 437 additional studies were excluded. 886 eligible full text studies were then reviewed by either a radiology resident (H.S.) or a graduate student (L.J., W.B. and G.C.P.), in addition to a second review by the board-certified neuroradiologist (M.A.). Twenty-nine studies that were identified to specifically investigate the differentiation of glioma from brain metastasis were then analyzed in the present study. The search strategy is provided in the Supplementary Materials (Figure S1).
+
+### 2.2. Data Extraction and Aggregation
+
+The data extraction was performed independently by two reviewers (L.J., W.B.) using predefined tables in Microsoft Excel. Disagreements were discussed in regular team meetings and were resolved with a supervising neuroradiology attending (M.A.) until consensus was reached. Data points compiled in this study include: article characteristics (title, author, publication year), data characteristics (data source, dataset size, types and number of tumors for training/testing/validation, model validation technique), class balancing (ratio of glioma to brain metastases), model characteristics (best performing ML classifier, classification task, type of features and imaging sequences used for classification, outcome measures for classifier performance) (Table 1), and reporting characteristics. Whenever referred to in this study, internal validation describes measures for assessment of quality and robustness of the model and its ability to predict outcomes on unseen data. Some studies report three-way partitioning of their dataset into training, validation, and testing sets. In this context, validation data serves to mathematically optimize and finetune model hyperparameters and should not be confused with overall internal validation.
+
+### 2.3. Descriptive Statistics and Performance Evaluation Metrics
+
+All performance metrics (accuracy, sensitivity, specificity, area under the receiver operating characteristics curve (AUC)) for the best performing classifier from each study were aggregated, tabulated, and displayed using GraphPad Prism version 8.3.4 (GraphPad Software, San Diego, CA, USA, www.graphpad.com (accessed on 1 March 2022)). As benchmark for definition of the best performing classifier from a study, we referred strictly to the AUC. When AUC was not reported, classification accuracy was considered for the classifier ranking. The performance metrics of the best classifiers were pooled; however, only algorithms with pairwise classification between gliomas and brain metastases were considered for this synthesis. The remaining studies presented multiclass approaches and did not provide dichotomized model discrimination measures. Internally validated and externally validated classification results were reported separately.
+
+### 2.4. Assessment of Quality of Reporting
+
+The present systematic review also includes a thorough assessment of reporting quality. We conducted a TRIPOD [41] adherence evaluation for model development studies, a reporting guideline with 22 main items and 65 adherence elements in total. The TRIPOD scores were evaluated by two reviewers and, in case of disagreement, consensus by discussion was made. For calculation of TRIPOD adherence scores, we followed the appraisal guidelines [42]. Average TRIPOD adherence score and average degree of item satisfaction, indicated as adherence index (ADI) ranging from 0 to 1, were determined using Microsoft Excel.
+
+### 2.5. Statistical Analysis
+
+Reporting quality was compared in study cohorts published before and during/after 2019. The difference in median TRIPOD adherence score was examined for statistical significance using the Mann-Whitney U test in MedCalc version 20.019 (MedCalc Software bv, Ostend, Belgium; https://www.medcalc.org (accessed on 1 March 2022); 2021). Differences in mean AUC between study subsets were tested for statistical significance via Student’s t-test using GraphPad Prism version 8.3.4. All eligible studies that reported AUC (area under the ROC curve) and standard error of mean (SEM) or 95% confidence intervals (CI), were subjected to a meta-analysis using MedCalc. In one study, SEM was imputed from reported standard deviation (SD) of the mean and sample size. These metrics were subjected to a random effects model. Results of this quantitative analysis were then illustrated in a forest plot [43]. Heterogeneity within the analyzed studies was then examined via the Higgins I2-test [44].</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

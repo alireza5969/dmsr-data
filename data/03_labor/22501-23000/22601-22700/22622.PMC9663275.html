@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Ong, Pauzi, and Gan: Text mining in mosquito-borne disease: A systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -988,5 +1011,63 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+The mosquito-borne disease is one of the central public health issues globally, which causing more than 700,000 deaths annually (WHO-World Health Organization, 2020). The recent advances in text mining technologies that have been used to prevent and predict the course of many public health issues are undoubtedly valuable (Simpson and Demner-Fushman, 2012) and they hold the promise of managing diseases in the coming future (Safdari et al., 2021). The rapid progress and growth in text mining are attributable to improvements in machine learning algorithms and the surge in the volume of text data available on the internet (Tran, 2019). Text mining (TM) is “the discovery and extraction of interesting, nontrivial knowledge from free or unstructured text” (Kao and Poteet, 2007). The state of text mining in public health is reviewed relatively regularly. However, numerous studies and surveys (Simpson and Demner-Fushman, 2012; Safdari et al., 2021; Kao and Poteet, 2007) strongly indicate that general-purpose text mining tools are not well suited for the mosquito-borne disease domain because it is highly specialized. In this context, Zweigenbaum et al. (2007) explained the importance of specific subject knowledge for annotating the correct entity in biomedical text. Cowell and Smith (2010) explored the role of named entities in the identification and classification of the epidemic of infectious diseases. They emphasized the role of ontology-based text mining system in the domain, such as the name for the mosquito that carried the virus. To tackle the issue of inconsistent entities in text mining related to mosquito-borne diseases, Rajapakse et al. (2008) developed an ontology-centric navigation infrastructure in an acquisition engine that standardizes multiple text resources on dengue and enables data integration and knowledge sharing.
+
+Despite the restricted nature of the domain, text mining is of interest to both researchers and the public community. Some web-based tools, such as ProMed-mail (http://www.promedmail.org), facilitate open data resources access to the community. Such tools are manually curated systems that provide access to reports by public health experts. BioCaster is a public health surveillance system that detects biomedical rumors (Collier et al., 2008). Nevertheless, due to the specific goals of text mining in mosquito-borne diseases, public health personnel, epidemiologists, and entomologists are better positioned to define useful tasks. This is also supported by the work of Cohen and Hunter (2008), who note that the most fruitful method of biomedical text mining will require the efforts and the abilities of both epidemiologists and computational linguist.
+
+These text mining techniques hold the potential to combat complicated mosquito-borne diseases such as malaria and dengue. For instance, Villanes et al. (2018) discovered a new cluster of dengue fever in India by using news media. On the other hand, Carlos et al. (2017) analyzed and predicted the outbreak of dengue in a shorter time by using a large volume of data from social media. In contrast, traditional syndromic-based surveillance of mosquito-borne disease approaches is mostly manual and involves multiple stages. This usually causes a delay in providing the data to public health personnel for decision-making (Lee et al., 2021). Recently, real-time or near real-time web-based data sources have allowed rapid responses in contrast to traditional surveillance systems (Newkirk et al., 2012; Neill, 2012) and have successfully contributed to infectious disease management and control. The incidences are detected rapidly by using web-based data form social media platforms. In such situations, the users’ postings have led to a tremendous increase in public engagement. For mosquito-borne diseases, previous studies (Safdari et al., 2021; Ghani et al., 2022; García-Díaz et al., 2020; Saire, 2019a, 2019b) are focused on the early detection of diseases and mostly covered the technologies, applications, corpus sources, and their limitations in the general biomedical and public health domain. However, to the best of our knowledge, a recent review of text mining in the mosquito-borne disease domain is not available.
+
+In this paper, we aim to review the available text mining techniques published in the domain of mosquito-borne disease, mainly in the past few years when the data mining technologies has flourished. We also discuss the future challenges and directions. Specifically, we evaluate a set of research questions that allows us to obtain the latest trends of text mining in mosquito-borne disease. Furthermore, we aim to obtain an overview of the recent technologies used for analyzing the data used by these systems. These research questions (RQs) are stated as follows:
+
+RQ1: What are the most common sources of the corpus used for text mining in mosquito-borne disease?
+
+RQ2: Which text mining techniques are commonly used among authors of research papers in text mining of mosquito-borne diseases?
+
+RQ3: What are the usages of text mining in mosquito-borne disease?
+
+RQ4: What are the limitations and challenges of text mining in mosquito-borne diseases?
+
+The methodology for the selection of these articles is discussed in Section 2, and the results are reported in Section 3. We address RQ1 by discussing a few corpora that involve data collection and mining techniques in Section 3.1. In Section 3.2, we answer RQ2 by further reviewing a few main text mining techniques by using both literature review and articles selection by subject experts, although the actual work of text mining is much broader and diverse. Subsequently, in Section 3.3, we continue with the techniques applied in mosquito-borne disease management, which answers RQ3. To answer RQ4, Section 4 mainly discusses the limitations and challenges. Section 4.2 highlights the original contribution of this writing. It consists of a visualization of the trend and statistical analysis of the articles for the four questions, followed by a conclusion and future work in Section 5.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Article selection and methodology
+
+We applied bibliometric methods and leveraged the Boolean logic search technique to the databases. We expand the keyword of “mosquito-borne disease” according to the World Health Organization (2020), which are “Malaria” (caused the most fatal diseases), “Dengue” (the most prevalent disease), “Zika” (recently emerged and outbreak), and four of the re-emerging diseases – “Chikungunya”, “Yellow fever”, “West Nile fever” and “Japanese encephalitis”. The selection criteria for the research articles were set to incorporate papers published from 2016 to 2021 taking into account the Zika outbreak in 2015, the years with the most related publications. The scientific databases of PubMed and Scopus were explored to provide a comprehensive bibliography of research papers on text mining in mosquito-borne disease literature. The selection of databases was based on two main rationales: (1) the peer-reviewed process of the articles that required indexing in the database, therefore ensuring the quality and reliability of the selected articles. (2) PubMed was the main database for most of the publications of infectious diseases, including mosquito-borne diseases.
+
+For Scopus, we advanced searched database for query: ((TITLE-ABS-KEY (text AND mining) AND TITLE-ABS-KEY (malaria)) AND PUBYEAR &gt; 2015) OR ((TITLE-ABS-KEY (text AND mining) AND TITLE-ABS-KEY (dengue)) AND PUBYEAR &gt; 2015) OR ((TITLE-ABS-KEY (text AND mining) AND TITLE-ABS-KEY (zika)) AND PUBYEAR &gt; 2015) OR ((TITLE-ABS-KEY (text AND mining) AND TITLE-ABS-KEY (chikungunya)) AND PUBYEAR &gt; 2015). Ultimately, 46 articles were extracted based on the search terms. PubMed, which accesses the MEDLINE database, was also searched for publications by searching this resource with the following query: ((text mining) AND (malaria)) OR ((text mining) AND (dengue)) OR ((text mining) AND (zika)). From this search we obtained 112 articles.
+
+A total of 294 articles were thus identified in the initial query of the databases. We further filtered the articles by removing articles in conference proceedings from 2016 to 2021 and obtained a total of 158 articles. Each of the abstracts and titles of the articles was assessed independently by each author of this paper. If the abstract, title or both explained the text mining technique and the mosquito-borne disease, then we considered them for further research; otherwise, they were filtered out. According to this procedure, an article was selected only when all the authors agreed on its relevance to the text mining in mosquito-borne disease. The next step was to consider the articles that had utilized text mining in their methodologies, such as relation/event extraction, named entities recognition (NER), part of speech (POS), linguistic-based, or statistics-based. Fig. 2.1 describes the procedures followed in selecting the relevant articles for this study.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

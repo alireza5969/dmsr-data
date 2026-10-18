@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Banerjee, Chen, Fatemifar, Zeina, Lumbers, Mielke, Gill, Kotecha, Freitag, Denaxas, and Hemingway: Machine learning for subtype definition and risk prediction in heart failure, acute coronary syndromes and atrial fibrillation: systematic review of validity and clinical utility</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1000,5 +1023,83 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Background
+
+Disease definitions rely on expert consensus, informed by best available evidence [1–3]. Machine learning (ML), the use of algorithms to describe patterns in datasets with (supervised) or without (unsupervised) the need to define them a priori, is increasingly used in research for definition [4] and risk prediction [5]. However, established evaluation frameworks for clinical utility of such models [6, 7] have not been applied.
+
+Better definitions for cardiovascular disease (CVD), the single greatest disease burden in the UK and globally [6], may improve prevention and treatment by characterising target populations, enabling comparability and generalisability across study designs and populations. Heart failure (HF), acute coronary syndromes (ACS) and atrial fibrillation (AF) are among the commonest CVDs globally [8, 9]. Despite frequent changes in disease definitions [3, 10, 11], continued diagnostic and prognostic uncertainties have led to ML research in all three diseases [12–17]. HF, ACS and AF frequently overlap, so phenotyping and risk prediction are relevant across diseases. To date, no existing ML models are routinely used for CVD management, and their phase of clinical utility is unknown, partly due to a lack of clear criteria.
+
+Unlike drugs and devices [18, 19], the pathway to translation from research to routine use is unclear for ML. The AI-TREE criteria (Additional file_Web table 1) were developed for ML healthcare research [20], but consensus is lacking for best practice or regulatory requirements for implementation [21, 22]. Importance of such guidelines is emphasised by systematic reviews showing that ML performs no better than logistic regression or healthcare professionals in prediction across diseases, with high risk of bias and limited external validation in published studies [23, 24].
+
+Evidence for ML in subtype definition and risk prediction in HF, ACS and AF has not been assimilated. Moreover, it is unclear how application of ML in CVD compares with other diseases. Our aims were to (i) develop a simple framework for clinical utility and validity of ML models in healthcare and (ii) conduct a systematic review to evaluate methods and results of ML for subtype definition or risk prediction in HF, AF and ACS.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+We followed the Preferred Reporting Items for Systematic reviews and Meta-Analysis (PRISMA) statement, with a protocol agreed by all authors, without prospectively registering.
+
+### Systematic review
+
+#### Identification of studies
+
+We searched PubMed, MEDLINE and Web of Science databases from 1 January 2000 until 31 December 2019. Our search terms, agreed by co-authors, pertained to machine learning, clustering, cardiovascular disease, heart failure, atrial fibrillation, acute coronary syndromes, subtype and risk prediction. Reference lists and expert recommendations were taken into account, to identify grey literature, including conference reports and proceedings, guidelines, working papers and theses (Additional file_Search strategy).
+
+#### Selection of studies
+
+All abstracts were independently screened and then full text of selected abstracts were respectively assessed for eligibility by two reviewers (from AB, SC and MZ), and conflicts were resolved by a third reviewer (AB or SC).
+
+#### Inclusion and exclusion criteria
+
+Studies were eligible if the publication presented:
+
+(i) ML models for disease subtype definition/clustering for HF, ACS and AF; or
+
+(ii) Risk prediction for HF, ACS or AF
+
+Studies were excluded if they:
+
+(i) Were not original empirical data
+
+(ii) Were not English language
+
+(iii) Were not peer-reviewed (e.g. a published dissertation was not eligible)
+
+(iv) Did not concern models developed for humans
+
+(v) Did not have full text available
+
+#### Data extraction
+
+Tools for extraction were adapted and developed with consensus among co-authors from published frameworks for new risk markers (AHA [6]), diagnostic accuracy (QUADAS-2 [25]), prognostic tools (CHARMS [26], PROGRESS [7], TRIPOD [27]) and ML (AI-TREE [20], Christodoulou [23]) (Additional file_Web table 2). The author, year and country of study, clinical setting, data source, outcome, comparator methods, ML method(s) and covariates were extracted. The final checklist was in the three stages of the translational pathway (“development”, “validation” and “impact”) as per AHA and PROGRESS statements [6, 7]. There were seven domains under the three main stages: clinical relevance, patients, algorithms (“development”), internal validation, external validation (“validation”), and clinical utility and effectiveness (“impact”). The questions for each domain were from published guidelines as above with similar extraction items for subtype definition and risk prediction studies. Data extraction was by two independent reviewers (from AB, MZ and SC), and disagreements were resolved by a third reviewer (AB or SC). Quantitative analysis was beyond the scope of this review and its aims.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

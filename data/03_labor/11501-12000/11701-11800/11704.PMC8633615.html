@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Patra, Sharma, Vekaria, Adekkanattu, Patterson, Glicksberg, Lepow, Ryu, Biernacka, Furmanchuk, George, Hogan, Wu, Yang, Bian, Weissman, Wickramaratne, Mann, Olfson, Campion, Weiner, and Pathak: Extracting social determinants of health from electronic health records using natural language processing: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1333,5 +1356,65 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+Social determinants of health (SDoH) are circumstances in which people are born, live, learn, work, and age and are closely tied to individuals’ health behaviors, lifestyle, and interpersonal relations. The upstream distribution of wealth, power, and resources at local, national, and global levels can trickle down to impact individual health outcomes and potentially lead to health disparities (https://www.who.int/gender-equity-rights/understanding/sdh-definition/en/). Several studies have investigated associations of SDoH with differential health outcomes, such as the effects of food insecurity on developing diabetes1; socioeconomic status, neighborhood, employment, race, and social support on breast cancer risk and survival2; and housing quality on mental health.3 Not surprisingly, risky health behaviors and maldistribution of SDoH have been associated with increased financial burdens on patients and providers.4
+
+The annual County Health Rankings (https://www.countyhealthrankings.org/explore-health-rankings/measures-data-sources/county-healthrankings-model) gauge the impact of a wide range of health factors by ranking the health outcomes of the over 3000 counties across the United States. Figure 1 theorizes how upstream improvements in policies and programs impact health factors and ultimately ripple into downstream community health outcomes.5 Social, economic, and physical environment factors contribute the most to health outcomes (50%), followed by health behaviors (30%). Just 20% of health outcomes are attributed to clinical care. Case in point, according to the Centers for Disease Control and Prevention (CDC), 39% of deaths from chronic lower respiratory disease resulted from social and environmental exposure to secondhand smoke, allergens, occupational agents, and other indoor and outdoor air pollutants. To a lesser degree, 33% of premature stroke deaths were attributed to risky health behaviors (tobacco use, alcohol use, and sedentary lifestyles) and their related clinical manifestations—high blood pressure, high cholesterol, heart disease, diabetes, obesity, and previous stroke (https://www.cdc.gov/media/releases/2014/p0501-preventable-deaths.html).
+
+Such evidence suggests a strong association between nonclinical factors with clinical outcomes and has increased clinical and public health interest in incorporating SDoH into patient profiles on a much broader scale. Collecting and understanding SDoH information offers significant potential and can uncover important contextual information about patients’ lifestyles to supplement clinical findings. Most US health systems and providers use electronic health records (EHRs) to document patient clinical information. In the last decade, adoption of EHRs has widely expanded, however qualitative information about patients’ lifestyles is usually documented in unstructured clinical notes. Although SDoH information is often collected, the lack of standardized data elements, assessment tools, measurable inputs, and data collection practices in clinical notes greatly limits the access to this information. Attempts to improve standardization at the national level have been made by the Protocol for Responding to and Assessing Patients’ Assets, Risks, and Experiences (PRAPARE) (https://www.cdc.gov/media/releases/2014/p0501-preventable-deaths.html) and the National Academy of Medicine (https://nam.edu/social-determinants-of-health-101-for-health-care-five-plus-five/). Furthermore, the International Classification of Diseases, Ninth Revision (ICD-9) and Tenth Revision (ICD-10) V-codes (V-60-62) and Z-codes (Z55–Z65) have been implemented for diagnostic use; however, Truong et al6 noted that these codes are extremely underutilized, with less than 2% of inpatient hospitalizations having a Z-coded diagnosis during the first 2 years of their availability. A more comprehensive, coherent, and user-friendly set of codes could be developed to improve SDoH documentation and increase rates of adoption in healthcare settings.
+
+Traditionally, extracting valuable information from unstructured data is performed manually through chart review, which can be time-consuming. However, recent advances in natural language processing (NLP) offer more efficient, automated approaches to unlock and analyze insightful information from existing EHR data. Currently, about 80% of medical data are unstructured and do not fit into easily actionable categories, including clinician encounter notes, discharge summaries, patient-reported information, and radiology/pathology reports,7 but they can be indexed and leveraged to guide more informed clinical decision-making. Various clinical decision support systems are being developed using EHRs, and many healthcare organizations are allocating substantial resources to support the integration of NLP technologies in an effort to expand the amount of usable data, enhance analytic insights, and improve patient outcomes.8,9
+
+Recent studies specified the scope and importance of NLP or information retrieval (IR) methods to extract SDoH information from clinical notes.10–12 However, there are several different designs of SDoH identification/extraction tools in recent literature, and the utility of each tool depends largely on the type of SDoH in question. Furthermore, the lack of a comprehensive review that delineates the tools available and their most suitable purposes may hinder efficient progress on this research problem in terms of deciphering what has and has not been explored. In this review, we investigated various NLP techniques for SDoH lexicon curation and implementation of SDoH extraction systems that have been developed for extracting SDoH data from unstructured clinical notes in EHR systems. We list EHR systems and categories of SDoH concepts extracted using NLP techniques and tools.
+
+We also identified 2 relevant works that study the implementation of SDoH in EHR databases.13,14 Chen et al13 studied the integration of SDoH in EHRs, their impact on risk prediction, and the specific outcomes. In addition, Bompelli et al14 studied artificial intelligence (AI) methods to extract SDoH from EHRs. They briefly discussed different NLP methods used for identifying SDoH from EHRs and surveyed the papers that studied the healthcare outcomes using SDoH. These studies, while informative, do not describe the details of NLP methodologies used for SDoH from clinical text which is the major focus of this systematic review .</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## MATERIALS AND METHODS
+
+### Searching methods and screening
+
+An initial literature survey was conducted to identify SDoH-related keywords that could be used for searching relevant publications. We also identified keywords related to multiple categories of SDoH from the County Health Rankings model. A total of 73 SDoH-related keywords were identified in addition to variants of “natural language processing” and “electronic health records” (see Supplementary Table S1).
+
+We searched 3 scholarly databases—ACL Anthology, PubMed, and Scopus—between October 2020 and February 2021 with the goal of identifying all relevant articles related to SDoH extraction from EHRs using NLP methods. This review followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines.15 For PubMed and Scopus, we created queries for each SDoH keyword. A total of 3301 publications were identified from PubMed (n = 2672) and Scopus (n = 629) using our search strategy. Search-related observations are reported in the Supplementary File. After removing duplicates, we screened 1874 publications from PubMed and Scopus, during which 1746 publications were further excluded as not relevant, or not having the full text available. In the case of ACL Anthology, 3101 publications were identified. Although the search results could not be saved, all 3101 publications were screened during this stage. The screening resulted in 128 articles from PubMed and Scopus, and 11 articles from ACL Anthology for the full text review. The PRISMA workflow is shown in Figure 2 and example queries for each database are provided in Supplementary Table S2.
+
+### Full text review
+
+To be eligible for inclusion in the review, the articles needed to focus on the description, evaluation, or use of NLP or text mining algorithm/pipeline to identify or extract SDoH information from EHRs. Two authors (BGP and MMS) independently reviewed each full text article and discussed to reach consensus if there were any discrepancies. There were several reasons for exclusion, for example, if the article was not relevant to NLP, EHRs, or any SDoH categories that we intended to study. SDoH categories that were not evaluated in the County Health Rankings (such as race, ethnicity, mental health conditions, or stress) were not included in our study. Other reasons for exclusion included if the SDoH extraction was performed on non-EHR data (eg, survey results, homelessness assistance program applications, or social media data), or if the publication involved non-English EHR systems. Finally, we excluded studies that were not peer-reviewed articles, such as abstracts and commentary, perspective, or opinion pieces.
+
+### Data
+
+A final total of 82 publications were included in this study at the end of the full text review process. We also searched references of all 82 articles, and most of these publications overlap with our search results. The included articles were published between 2005 and 2021, as illustrated in Figure 3. Authors BGP and MMS performed the data extraction and analysis of all 82 publications.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

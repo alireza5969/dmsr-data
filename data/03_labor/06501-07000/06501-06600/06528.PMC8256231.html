@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Dogan, Tiwari, Jabbar, and Guggari: A systematic review on AI/ML approaches against COVID-19 outbreak</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3139,5 +3162,163 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+COVID-19, novel coronavirus, was announced in Wuhan, China, in December 2019 as a group of fatal respiratory infections and spread quickly as a pandemic [1]. Coronaviruses are pronounced zoonotic in nature and readily spread amongst people [2]. It is still a burning issue to investigate how it is transferred into animal reserves and others [3]. Because no vaccine and decided medication for COVID-19 found until the beginning of 2021, social distancing was stated as the most effective tactic to control and prevent [4]. In addition to social distancing, quarantine is also a critical part of controlling and avoiding the spread of the virus. According to John Hopkins University, the total confirmed cases is 107.5 million, and global death is over 2.3 million in the world [5]. The most affected ten countries are the United States, Brazil, India, Russia, France, Spain, Italy, Turkey, Germany and Colombia. The COVID-19 pandemic is not only a medical contagious but also an economical contagious [6]. Consequently, it is necessary to build an artificial intelligence-based healthcare system because it can quickly and precisely detect cases and avoid the pandemic.
+
+Artificial intelligence (AI) and machine learning (ML) [7] have been recognized as the most potent and hopeful analytical tools in the healthcare domain [8]. Although many health problems are handled by bioinformaticians and statisticians instead of data scientists, a massive amount of data generated in the healthcare creates a necessity to produce more beneficial tools to distinguish exceptional cases from big data. AI computing performs various cognitive functions like humans in a machine to act or react to input data. On the other hand, classical computing has no autonomous intelligence since it requires a hand-code to react to data [9]. It cannot react when an unpredicted state has occurred. Therefore, AI tools continually adapt their reaction to adjust creating their behaviors. In an AI method, computers are designed to analyze, interpret and solve a problem. In machine learning, one of the principal forms of AI, machines learn reactions to use in the future for the same inputs when they face a particular result.
+
+The applicability of AI/ML for epidemiological research of COVID-19 is explored in the literature. Initially, it identifies the relevant key explanatory variables then uses the dimensionality reduction technique to remove redundant features or information. It utilizes Random forest and gradient boosted machine learning models to measure the relative influence of the explanatory variables. This method also determines the interconnections among key explanatory variables, COVID-19 case and death counts. The study shows that air pollution has a high impact on COVID-19 casualties [10]. COVIDetectioNet [11] is proposed to detect the COVID-19. It uses in-depth features generated from the convolution and fully connected layers of the AlexNet architecture. This method has three steps such as pre-learned in-depth features ensemble, feature selection, and classification. It uses the relief algorithm for feature selection and the support vector machine model for classification. This method uses a tenfold cross-validation method to calculate the accuracy.
+
+Deep learning (DL) models are very effective for time-series datasets. In the literature, the prediction of COVID-19 cases using time series data is discussed with DL techniques. Some models, such as long short-term memory (LSTM), are used to predict the time-series datasets. Integration of a convolutional neural network (CNN) and Long short-term memory (LSTM) detects COVID-19 automatically using X-ray images. CNN is used for deep feature extraction, and detection is performed using LSTM using the extracted features [12]. The sample size is a significant challenge with the existing method. Samples contain multiple disease symptoms is one more challenge of this method. Similarly, the prediction of confirmed cases, deaths and recoveries in 10 major countries affected due to COVID-19 is studied. Autoregressive integrated moving average (ARIMA), Support Vector Machine (SVM), LSTM and bidirectional LSTM can be applied for prediction purposes [13]. The superiority of the models can be measured various performance metrics such as root mean square error, mean absolute error and [TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$R^2$$\end{document}R2 score. Multiple CNN models like ResNet, Inception net V3, Xception net can be used to detect COVID-19 using chest X-ray scans. The small sample size is the main disadvantage of these methods. Due to overfitting, these methods are unable to produce high accuracy [14].
+
+AI/ML techniques have been widely applied to detect new molecules on the way to ascertain COVID-19. Many data scientists adopt AI tools to discover new medicines for the cure, to use X-rays and computational tomography (CT) scans by image processing, to identify the infectious people [15]. AI tools can also develop tracking software to classify people who breach the quarantine rule. AI-embedded thermal cameras and smartphones are practiced to catch infected patients [16]. In a general manner, AI is utilized to identify, track and predict outbreaks by diagnosing the virus. The drones and robots are used to transport food and medicine to related areas or people [17]. Some researches benefit from AI advantages to develop drugs and prepare vaccines [18, 19].
+
+Chest X-ray images have demonstrated a highly effective screening technique for diagnosing the COVID-19. Various hybrid techniques are adopted to detect the COVID-19. Recently, a hybrid DL called COVID-CheXNet is demonstrated to identify the COVID-19. In the beginning, the contrast X-ray image is enhanced using contrast-limited adaptive histogram equalization, and the noise level is reduced with the help of the Butterworth bandpass filter. It uses two pre-trained models such as ResNet34 and HRNet, to identify the COVID-19. Each model’s score is fused to obtain the final class whether the individual is affected by the COVID-19 or not [20]. Similarly, a transfer learning-based hybrid 2D/3D CNN architecture for COVID-19 detection. It uses a pre-trained VGG16 deep model, a shallow 3D CNN. It is also combined with a depth-wise separable convolution layer (to preserve the valuable features) and a spatial pyramid pooling module (to extract multi-level representations). It uses the dataset with three classes such as COVID-19, pneumonia and normal. It achieves reasonable performance concerning sensitivity, specificity and accuracy [21]. A comprehensive study is performed to understand the automatic detection of COVID-19 based on X-ray images using both machine learning and deep learning models. The method’s novelty is demonstrated using COVID-19 vs. Normal dataset and adopt transfer learning to showcase the accuracy. Experimental results indicate that the ResNet50 model performs better as compared to other pre-trained models [22].
+
+The number of studies on COVID-19 increases day by day because of its popularity and necessity. Researchers need to get a piece of quick information about related studies in this area. In the field of healthcare, AI/ML techniques have been implemented for many applications. For example, because of the availability of MRI, X-ray, and CT images, they have been widely applied for the COVID-19 outbreaks. Although AI/ML applications provide satisfactory solutions to the COVID-19 pandemic, these solutions have a wide diversity in nature. There is no comprehensive study discussing the AI/ML techniques used for the COVID-19 pandemic from different perspectives. Therefore, to fill this scientific gap in the literature, the study’s motivation is to analyze the potential studies using the AI/ML methods [23, 24] for several purposes about the current COVID-19. The study analyzes research on COVID-19 using AI/ML techniques from various perspectives, such as data types, software/tools, applied methods, drug and vaccines. This research’s novelty includes systematically addressing AI/ML techniques as an emerging discipline with tremendous applications in the pandemic. These techniques can be used to understand the nature of this virus and further predict the upcoming issues related to pandemics. This study discusses the significance of AI/ML in resolving the COVID-19 pandemic crisis by examining 264 latest references from seven accessible databases in a systematic way.
+
+Contributions of this study include
+
+This study mainly focuses on different AI/ML techniques that were applied for the COVID-19 outbreak.
+
+This study highlights the reasons for applying AI/ML techniques to the pandemic.
+
+This study explains the data perspective of COVID-19 studies regarding measurement types of study success and data types.
+
+This review research gives direction to researchers about the various repositories available for COVID-19 outbreak so that researchers can easily access.
+
+This study focuses on the current situation of drug and vaccine discovery and how AI/ML methods can help in the drug development.
+
+This study lists various software platforms available to implement AI/ML methods in the COVID-19 outbreak.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Research methodology
+
+According to Brereton et al. [25], a systematic review of the literature is a method of identifying, evaluating, and interpreting all existing work on a particular research question, subject area or interest. A systematic literature search is conducted with a set of research questions. It aims to answer these questions using a secure, rigorous and auditable methodology [26]. The steps taken in this study are shown in Fig. 1. The process steps in this study are described in the following subsections
+
+### Research questions
+
+The main objective of this systematic literature review is to describe, analyze and synthesize the studies related to the AI/ML implementations in the COVID-19 outbreak. To obtain a more detailed and comprehensive view of the subject, the overall objective is based on the following six research questions (RQs) with motivations.
+
+RQ 1: What are the most frequently applied AI/ML techniques in COVID-19?
+
+RQ 2: Why AI/ML approaches are applied in COVID-19?
+
+RQ 3: What is the data perspective of studies?
+
+RQ 4: What is the current situation in drugs preparation?
+
+RQ 5: What software platforms are used?
+
+RQ 6: Which data sources can be reached?
+
+### Databases and search strategy
+
+Seven online academic search engines were used to find related studies.
+
+ACM Digital Library
+
+ArXiv.org
+
+Elsevier
+
+IEEE Xplore Digital Library
+
+PubMed
+
+Springer
+
+Wiley Online Library
+
+### Inclusion/exclusion criteria
+
+After collecting the studies, duplicate articles were removed. If there are more than one studies, only the most complete version was chosen. Later, studies were selected using the following inclusion and exclusion criteria to find answers to identified research questions and identify the most appropriate studies.
+
+Inclusion criteria:
+
+Studies applying at least one AI/ML algorithm
+
+Studies producing solution to at least one of the COVID-19 problem
+
+Studies containing experimental work using COVID-19 datasets
+
+Studies that explicitly address the COVID-19 issue
+
+Studies written in English only
+
+Studies published before 2019
+
+Extended abstracts and poster work
+
+Studies that mention AI/ML techniques but are not part of the COVID-19 outbreak
+
+Studies that mention COVID-19 techniques but do not use AI/ML techniques
+
+Theoretical studies without application
+
+### Study selection
+
+The articles defined by the search terms from the databases were initially considered only metadata (title and summary). All works related to the subject were scanned. However, since the number of studies found was too large, a second selection was made according to the keywords. The keyword is a way of reducing the time needed to develop the classification scheme and to ensure that the plan considers current work [27]. The full text was examined for the suitability of the articles at the end of the second stage. In the third step, reference lists of related articles were scanned to find extra articles. At the end of the final phase, 264 studies were found eligible for the review.
+
+### Data extraction
+
+A data extraction form was used to collect relevant data from the selected studies to answer research questions. Selected studies were evaluated three times in different days by different authors.
+
+RQ 1: AI/ML algorithms and techniques used for COVID-19 should be defined.
+
+RQ 2: Objective of AI/ML approaches should be given.
+
+RQ 3: The data type, data size, study reliability should be investigated.
+
+RQ 4: AI architecture for protein structure and drug analysis should be identified.
+
+RQ 5: AI/ML-based software specific to COVID-19 outbreak should be given.
+
+RQ 6: Data sources should be searched with a direct link.
+
+### Data collection
+
+The electronic databases include international indexed journals and conferences searched and defined concerning AI/ML approaches against COVID-19. ACM ([TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$n = 72$$\end{document}n=72), arXiv ([TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$n = 136$$\end{document}n=136), Elsevier ([TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$n=113$$\end{document}n=113), IEEE Xplore ([TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$n=68$$\end{document}n=68), PubMed ([TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$n = 111$$\end{document}n=111), Springer ([TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$n=88$$\end{document}n=88) and Wiley ([TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$n = 64$$\end{document}n=64) databases were scanned. 27 additional studies have been identified by manually searching the reference lists from important studies.
+
+### Threads to validity
+
+It is essential to consider the factors that affect validity to know the strengths and weaknesses of a systematic review [28]. The factors are mainly related to study selection, data extraction and researcher bias in this research.
+
+To find out related studies, the seven search engines mentioned above were scanned. However, it may not be possible to have other relevant works on the results. For this threat, reference lists of selected studies were searched manually to find other related studies, and 27 research were added to the list.
+
+Data extraction is one of the most critical tasks in this work. To reduce the likelihood of extracting wrong data, studies were evaluated twice on different days, and the data needed to answer the RQs were collected.
+
+When selecting and extracting data, it is possible to mention researcher bias [29]. It is a useful systematic review method that one researcher selects studies, and another researcher checks them [30]. The studies in this study were evaluated independently by two researchers and tried to prevent the researcher bias.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

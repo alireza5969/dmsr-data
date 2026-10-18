@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Mourmouris, Tzelves, Roidi, and Fotsali: COVID-19 transmission: a rapid systematic review of current knowledge</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1351,5 +1374,65 @@ Second Department of Urology, Athens Medical School, National and Kapodistrian U
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Coronavirus disease 2019 (COVID-19) was declared a global pandemic on March 11, 2020 by the World Health Organization; since then, the disease has spread to more than 129 million people and has claimed more than 2,8 milllion lives [1]. This novel coronavirus disease has proven, so far, to be both highly transmittable (unlike severe acute respiratory syndrome [SARS] and Middle East respiratory syndrome [MERS]) and not too fatal (unlike Ebola) [2]. Numerous reports concerning vehicles of transmission have been published, implicating a vast spectrum of possible transmission routes, including fomites [3], asymptomatic transmission (through simple exhalation) [4], and body fluids and secretions. In this systematic review, the first in the current literature according to our knowledge, we analyzed all available data on the possible transmission routes of COVID-19.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and Methods
+
+### Objective
+
+This study was performed to identify potential and definite sources of transmission of COVID-19.
+
+### Types of Studies
+
+Due to the acute nature of the pandemic, all types of studies were considered eligible for inclusion; therefore, cohort studies (prospective and retrospective), case reports (including 3 or fewer cases) and case series (more than 3 cases), comments, research letters, laboratory studies, reviews, and meta-analyses were included. We excluded studies that did not focus on transmission routes of the disease. Only studies in English, or studies with an abstract available in English, from which adequate data extraction could be performed, were included.
+
+### Search Methods
+
+Due to time constraints and the acute nature of the pandemic, we decided to search only PubMed/MEDLINE from inception until January 28, 2021. The snowball procedure was performed in order to identify studies from the references of the included studies. The search was conducted using terms “COVID-19,” “novel coronavirus,” “SARS-CoV-2,” “transmission,” “transmissibility,” and their synonyms using Boolean operators (OR, AND). Two authors (LT, PM) independently searched the database and disagreements were resolved through consensus with a third reviewer.
+
+### Selection of Studies
+
+Two authors (LT, PM) independently assessed the titles and abstracts, and after the initial stage of exclusion of irrelevant studies, they retrieved the full texts for further assessment. A flow diagram (Figure 1) visually depicts the study selection process.
+
+### Data Extraction
+
+Two authors (LT, PM) independently performed data extraction from the included studies based on a prespecified Excel sheet. The data extracted were relevant to the study characteristics (author, journal, year, country, type), the demographic characteristics of patients (age, sex ratio, proposed route of transmission, comorbidities) and specific data related to the disease (positive samples, duration of positive samples, antibody titers). The last author (AF) reviewed the 2 Excel sheets and disagreements were resolved through consensus.
+
+### Risk of Bias Assessment
+
+We assessed the risk of bias using the Newcastle-Ottawa scale [5] for cohort studies. Due to the lack of standardized tools for assessing case reports and case series, we used the Joanna Briggs checklist for case series [6] and the criteria established by Pierson [7] to evaluate case reports.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

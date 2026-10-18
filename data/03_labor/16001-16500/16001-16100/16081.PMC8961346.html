@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Lovis, Zhou, Benítez-Andrades, Lu, Xu, Nguyen, Geng, Pfob, and Sidey-Gibbons: Machine Learning–Based Short-Term Mortality Prediction Models for Patients With Cancer Using Electronic Health Record Data: Systematic Review and Critical Appraisal</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2169,5 +2192,77 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+### Background
+
+Cancer therapies, including chemotherapy, immunotherapy, radiation, and surgery, aim to cure and reduce the risk of recurrence in early-stage disease and improve survival and quality of life for late-stage disease. However, cancer therapy is invariably associated with negative effects, including toxicity, comorbidities, financial burden, and social disruption. There is growing recognition that therapies are sometimes started too late, and many patients die while receiving active therapy [1-3]. For instance, a systematic review summarized that the percentage of patients with lung cancer receiving aggressive treatments during the last month of their life ranged from 6.4% to &gt;50% [4]. Another retrospective comparison study revealed that the proportion of patients with gynecologic cancer undergoing chemotherapy or invasive procedures in their last 3 months was significantly higher in 2011 to 2015 than in 2006 to 2010 [5]. Research has shown that the aggressiveness of care at the end of life in patients with advanced cancers is associated with extra costs and a reduction in the quality of life for patients and their families [4,6].
+
+In the United States, national guidelines state that gold standard cancer care should avoid the provision of aggressive care in the final months of life [7]. Avoiding aggressive care at the end of life currently requires clinicians to make judgments based on their experience as to when a patient is nearing the end of their life [8]. Research has shown that these decisions are difficult to make because of a lack of scientific, objective evidence to support the clinicians’ judgment in palliative or related discussion initiation [2,9,10]. Thus, a decision support tool enabling the early identification of patients of oncology who may not benefit from aggressive care is needed to support better palliative care management and reduce clinicians’ burden [2].
+
+In recent years, there have been substantial changes in both the type and quantity of patient data collected using electronic health records (EHR) and the sophistication and availability of the techniques used to learn the complex patterns within that data. By learning these patterns, it is possible to make predictions for individual patients’ future health states [11]. The process of creating accurate predictions from evident patterns in past data is referred to as machine learning (ML), a branch of artificial intelligence research [12]. There has been growing enthusiasm for the development of ML algorithms to guide clinical problems. Using ML to create robust, individualized predictions of clinical outcomes, such as the risk of short-term mortality [13,14], may improve care by allowing clinical teams to adjust care plans in anticipation of a forecasted event. Such predictions have been shown to be acceptable for use in clinical practice [15] and may one day become a fundamental aspect of clinical practice.
+
+ML applications have been developed to support mortality predictions for a variety of populations, including but not limited to patients with traumatic brain injury, COVID-19 disease of 2019, and cancers, as well as patients admitted to emergency departments and intensive care units. These applications have consistently demonstrated promising performances across studies [16-19]. Researchers have also applied ML techniques to create tools supporting various clinical tasks involved in the care of patients of oncology, with most applications focusing on the prediction of cancer susceptibility, recurrence, treatment response, and survival [14,19,20]. However, the performance of ML applications in supporting mortality predictions for patients of oncology has not yet been systematically examined and synthesized.
+
+In addition, as the popularity of ML in clinical medicine has risen, so too has the realization that applying complex algorithms to big data sets does not in itself result in high-quality models [11,21]. For example, subtle temporal-regional nuances in data can cause models to learn relationships that are not repeated over time and space. This can lead to poor future performance and misleading predictions [22]. Algorithms may also learn to replicate human biases in data and, as a result, could produce predictions that negatively affect disadvantaged groups [23,24]. Recent commentary has drawn attention to various issues in the transparency, performance, and reproducibility of ML tools [25-27]. A comparison of 511 scientific papers describing the development of ML algorithms found that, in terms of reproducibility, ML for health care compared poorly to other fields [28]. Issues of algorithmic fairness and performance are especially pertinent when predicting patient mortality. If done correctly, these predictions could help patients and their families receive gold standard care at the end of life; if done incorrectly, there is a risk of causing unnecessary harm and distress at a deeply sensitive time.
+
+Another aspect of mortality affecting the algorithm performance is its rare occurrence in most populations. There are known issues that are commonly encountered when trying to predict events from data sets in which there are far fewer events than nonevents, which is known as class imbalance. One such issue is known as the accuracy paradox—the case in which an ML algorithm presents with high accuracy but a failure to identify occurrences of the rare outcome it was tasked to predict [29,30]. During the model training process, many algorithms seek to maximize their accuracy across the entire data set. In the case of a data set in which only 10% of patients experienced a rare outcome—as is often the case with data sets containing mortality—an algorithm could achieve an apparently excellent accuracy of 0.90 by simply predicting that every patient would live. The resulting algorithm would be clinically useless on account of its failure to identify patients who are at risk of dying. If handled incorrectly, the class imbalance problem can lead algorithms to prioritize the predictions of the majority class. For this reason, it is especially important to evaluate multiple performance metrics when assessing algorithms that predict rare events.
+
+### Objective
+
+The purpose of this systematic review is to critically evaluate the current evidence to (1) summarize ML-based model performance in predicting ≤1-year mortality for patients with cancer, (2) evaluate the practice and reporting of ML modeling, and (3) provide suggestions to guide future work in the area. In this study, we seek to evaluate models identifying patients with cancer who are near the end of their life and may benefit from end-of-life care to facilitate the better provision of care. As the definitions of aggressive care at the end of life vary from initiation of chemotherapy or invasive procedures or admission to the emergency department or intensive care unit within 14 days to 6 months [1,4,5], we focused on ≤1-year mortality of patients with cancer to ensure that we include all ML models that have the potential to reduce the aggressiveness of care and support the better provision of palliative care for cancer populations.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Overview
+
+We conducted this systematic review following the Joanna Briggs Institute guidelines for systematic reviews [31]. To facilitate reproducible reporting, we present our results following the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) statement [32]. This review was prospectively registered in PROSPERO (International Prospective Register of Systematic Reviews; PROSPERO ID: CRD42021246233). The protocol for this review has not been published.
+
+### Search Strategy
+
+We searched Ovid MEDLINE, Ovid Embase, Clarivate Analytics Web of Science, Elsevier Scopus, and IEEE Xplore databases from the date of inception to October 2020. The following concepts were searched using subject headings keywords as needed: cancer, tumor, oncology, machine learning, artificial intelligence, performance metrics, mortality, cancer death, survival rate, and prognosis. The terms were combined using AND/OR Boolean statements. A full list of search terms along with a complete search strategy for each database used is provided in Multimedia Appendix 1. In addition, we reviewed the reference lists of each included study for relevant studies.
+
+### Study Selection
+
+A total of 2 team members screened all the titles and abstracts of the articles identified in the search for studies. A senior ML researcher (CSG) resolved the discrepancies between the 2 reviewers. We then examined the full text of the remaining articles using the same approach but resolved disagreements via consensus. Studies were included if they (1) developed or validated ML-based models predicting ≤1-year mortality for patients of oncology, (2) made predictions using EHR data, (3) reported model performance, and (4) were original research published through a peer-reviewed process in English. We excluded studies if they (1) focused on risk factor investigation; (2) implemented existing models; (3) were not specific to patients with cancer; (4) used only image, genomic, clinical trial, or publicly available data; (5) predicted long-term (&gt;1 year) mortality or survival probability; (6) created survival stratification using unsupervised ML approaches; and (7) were not peer-reviewed full papers. We defined short-term mortality as death happening within ≤1 year after receiving cancer diagnostics or certain treatments for this review.
+
+### Critical Appraisal
+
+We evaluated the risk of bias (ROB) of each included study using the prediction model ROB assessment tool [33]. A total of 2 reviewers independently conducted the assessment for all the included studies and resolved conflicts by consensus.
+
+### Data Extraction and Synthesis
+
+For data extraction, we developed a spreadsheet based on the items in the transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD) [34] through iterative discussions. A total of 4 reviewers independently extracted information about sampling, data sources, predictive and outcome variables, modeling and evaluation approaches, model performance, and model interpretations using the spreadsheet from the included studies, with each study extracted by 2 reviewers. Discrepancies were discussed among all reviewers to reach a consensus. The collected data items are available in Multimedia Appendix 2 [35]. To summarize the evidence, we grouped the studies using TRIPOD’s classification for prediction model studies (Textbox 1) and summarized the data narratively and descriptively by group. To estimate the performance of each ML algorithm, we averaged the area under the receiver operating characteristic curve (AUROC) for each type of ML algorithm across the included studies and estimated SE for 95% CI calculation using the averaged AUROC and pooled validation sample size for each type of ML algorithm. In addition, we conducted a sensitivity analysis to assess the impact of studies that were outliers either on the basis of their sample size or their risk of bias.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

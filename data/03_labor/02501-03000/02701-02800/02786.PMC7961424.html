@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Rum, Sten, Vendrame, Belluscio, Camomilla, Vannozzi, Truppa, Notarantonio, Sciarra, Lazich, Mannini, Bergamini, and Peham: Wearable Sensors in Sports for Persons with Disability: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1775,5 +1798,85 @@ Excluded:
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+### 1.1. Background
+
+Over the last few years, the interest in sports for persons with disability has grown at an impressive rate. The Paralympic winter games of 2018 in PyeongChang hosted 343 thousand spectators, which was twice the attendance at Turin 2006 games, and had a cumulative international TV audience of 2.02 billion views [1]. Simultaneously, the participation in sports by a growing number of persons with disabilities has been observed, with evidence showing the positive impact of sport on quality of life, physical health and psycho-social wellbeing in this population [2,3,4]. Given the large variety of disabilities and how they specifically affect and influence the sports practice, advances in research and technology play a key role in providing tools for a safe, inclusive and effective participation in sport.
+
+### 1.2. Wearable Technologies in Sport
+
+To date, technology has been used to improve and support the athlete’s training and development in both elite and amateur sports for non-disabled and people with disabilities [5,6,7,8]. Many technologies are currently available to monitor sport performance and one of the most represented tools is motion capture. Stereophotogrammetric systems are widely regarded as the gold standard for motion capture, as they are the most accurate technique to track the kinematics of human movement [9]. However, this technology can only be used in a small area of observation and requires time and skill for the calibration procedures, thereby being mostly adopted in laboratories than in outdoor or in-field environments [9]. Video analysis and radio frequency tracking systems are also frequently used for movement analysis in sports, although less accurate and informative than stereophotogrammetric systems [10,11]. In the last decades, an increase in the application of wearable technologies in the sport field has been observed as they can be used with less restrictions compared to the above-mentioned technological tools [5,12,13]. These technologies are adopted to measure different components of an athlete’s movement as well as to explore the relation between the athlete’s body and the sport equipment. Several relevant kinematic and kinetic parameters can be estimated with inertial sensors [5,12,13], while other characteristics of movement in space are measured by pedometers [14], GPS [11,14] and position data loggers [11]. The force output that is exerted through the athlete motion during the sport gesture can also be measured by different types of force sensors [11,13]. Further wearable sensors, such as heart rate sensors, wireless electromyography (EMG) devices and portable metabolimeters, allow to measure and track physiological parameters in many different conditions [13,15,16]. From the results of two recent reviews [12,13], inertial and EMG sensors appeared to be the most widely used wearable sensors in sport biomechanics.
+
+The inertial sensors used in sport applications are typically based on microelectromechanical system (MEMS) technology, which allows to realize small, light-weight and relatively affordable wearable devices. These MEMS sensors typically refer to accelerometers and gyroscopes with one, two or three sensing axes that are often combined into an inertial measurement unit (IMU). Often, a 3D magnetometer is also included; in this case, the term magneto-inertial measurement unit (MIMU) is commonly used [5]. An accelerometer measures the acceleration along its sensitive axis, including the gravitational acceleration. It can measure linear acceleration in a given direction and, when in quasi-static conditions, assess sensor inclination with respect to gravity. In addition, when a person moves, it allows to measure different acceleration patterns depending on the movement. Therefore, analyzing features of the accelerometer signal can aid, for example, in identifying movement type, analyzing its characteristics or detecting pathological alteration of the movement pattern [17,18,19]. Theoretically, once the contribution of gravity on each sensor axis is known and removed, an accelerometer could be used to track position through double integration of the inertial acceleration but, in practice, the presence of noise leads to unbounded integration drift [9]. A gyroscope measures the angular velocity around its sensitive axis. Three-dimensional orientation can be obtained by numerically integrating this signal within the framework of the kinematic differential equations that relate the time derivatives of the orientation parameters to angular velocity. However, the accuracy of this integration is hindered by errors due to integration drift. Moreover, the initial conditions of the integration process must be determined. To this aim, magnetometers can be used to obtain complementary information to the accelerometer for the definition of a 3D inertial system of reference. Magnetometers measure the Earth’s magnetic field vector components, whose projection on the horizontal plane is used to define an axis orthogonal to gravity. Therefore, it allows the estimation of the orientation in the horizontal plane which cannot be obtained using accelerometers, though it is strongly affected by magnetic disturbances. Despite all elements in a MIMU having limitations, the nine-dimensional MIMU signals can be used to accurately estimate the sensor’s orientation in a global frame defined using the gravity and magnetic North directions [19]. This is possible thanks to the redundancy of information achievable by merging accelerometers, gyroscopes and magnetometers, using ad hoc sensor fusion techniques, such as complementary or non-linear Kalman filtering [20].
+
+Surface EMG sensors register electrical muscle activity at the skin site over the muscle belly, with bipolar setups being the most commonly used [21,22]. The summation of consecutive action potentials is registered during an observed motor task and post-processed to remove noise or to normalize the signal for inter- and intra-subject comparison [23,24]. EMG signal provides information to quantify muscle effort, through signal rectification and integration or the computation of peak amplitude, and to identify specific muscle activation patterns and synergies, which are defined by temporal events (i.e., onset and offset of muscle activation) [25,26]. In sport applications, EMG analysis is commonly performed to assess muscle activation amplitude or to detect EMG activity onset and offset; in further cases, frequency analysis allows the estimation of muscle fatigue [13]. Nowadays, the advent of commercially available, wearable and portable wireless EMG systems favors the study of how the movement is executed and controlled by the central nervous system. In fact, surface EMG sensors are also embedded into athletic garments for their use in indoor and outdoor environments [15].
+
+### 1.3. Applications of Wearable Technologies in Sport for People with Disabilities
+
+Given their ecological and versatile properties, wearable sensors can provide objective measurement methods that can be applied in real sport-life situation and finely fit within several purposes. Aside from those general to all athletes population, the following aspects are specific to athletes with disabilities: athlete classification, sport equipment customization, and monitoring the athlete’s technique to prevent injury while designing successful training protocols.
+
+One of the greatest challenges in the use of technological tools to assess sport performance of people with disabilities is that the disability rarely affects two individuals in the same manner, thereby introducing larger inter-subject variability with respect to able-bodied individuals [10]. In Paralympics and other sport competitions, athletes with disabilities compete in different classes or categories in accordance with the principle that “classification is undertaken to ensure that the impact of impairment is minimized and sporting excellence determines which athlete or team is ultimately victorious” [27]. In 2009, the International Paralympic Committee (IPC) Position Stand on Classification in Paralympic sport [28] promoted the development of such classification systems to increase participation in sport among people with disabilities by minimizing the impact of impairment on the outcome of competition. To move forward with respect to assigning the class/category in which an athlete competes based on the subjective evaluation by experts, the development of evidence-based classification based on technological tools have become fundamental. The IPC’s handbook states that the impairment type and severity should be considered when classifying athletes, with 10 types of impairment being currently recognized in the Paralympic classification. In this regard, research should develop objective and reliable measures of both athlete’s severity of impairment and related functional limitation, also investigating the association between the two in a large representative sample [28]. How much a given impairment with a given severity affects an athlete ability to perform a given sport-related task is thus a question to be answered through large scale studies, and wearable systems represent a feasible and practical solution to accomplish this purpose.
+
+Furthermore, the large variety of impairments in athletes with disabilities also influences sport equipment design. In modern competitive sport, equipment plays a central role as the technological developments in manufacturing have provided both tools and materials to improve its ergonomics and performance-enhancing properties. While this is true for non-disabled athletes, it becomes even more relevant in athletes with disabilities, who often use assistive devices in the everyday life and require individual-specific adjustments to their equipment during the sport practice [10]. From wheelchair sports to winter Paralympic sports, the need to assess performance outcomes in relation to both equipment and athlete-equipment interface, particularly in condition of real sport practice, has become fundamental for improving sport equipment design [6,7,8,29].
+
+Finally, monitoring the athlete’s technique directly in field through wearables is beneficial to all athletes to prevent injury while designing successful training protocols. Specific to athletes with disabilities, performance can be assessed in consideration of their impairment and adjusted on a quantitative rather than qualitative base. As stated by Curran et al. [10], the kinematic analysis of performance in sport for people with disability is the most important element for evidence-based training. Therefore, technical solutions that provide quantitative information about the athlete’s technique are fundamental to reinforce correct movement execution and to avoid injuries [11]. This application builds upon general evidence on the use of wearable sensors to monitor performance for training optimization [5,12] or modifiable risk factors with the aim of preventing injury [30,31].
+
+### 1.4. The Aim
+
+Previous reviews on the applications of wearable technology in sports did not specifically focus on athletes with disabilities, providing more general indications on the topic [5,12,13,32,33]. Literature does however highlight wearable sensors advantages and potential to support athletes with disabilities at all athletic levels and in different application fields. Therefore, the aim of this review was to provide information to future researchers, athletes and trainers to support evidence-based practice by exploring literature regarding the use of wearable sensors in sport for people with disabilities. Within this framework, we assessed which sports and motor tasks have been studied, which type of wearable sensors have been used for extracting which parameters and the available evidence on whether the four aforementioned applications (e.g., athlete classification, sports equipment customization, injury prevention and performance characterization for training optimization) were implemented using wearable sensors.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Methods and Material
+
+### 2.1. Search Strategy
+
+The systematic search was carried out from the Scopus, Web of Science, EBSCO and PubMed databases until May 2020. The keywords within the search strategy were grouped into three categories: wearable sensors, sport and disability (for more details on the search strings, please refer to the Appendix A). The wearable sensors category included the terms for the different type of sensors, such as accelerometer, gyroscope, IMU, electromyography, force transducer, pressure sensor, and devices for heart rate and oxygen consumption monitoring. The sport category included the taxonomy of sport activities related to the 28 Paralympic sports sanctioned by the International Paralympic Committee (IPC, https://www.paralympic.org/sports (accessed on 14 May 2020)) and other forms of sport that can be practiced by people with disability. The disability category included general terms for disability and impairment.
+
+### 2.2. Eligibility Criteria
+
+Criteria for inclusion/exclusion are summarized in Table 1. Only articles published in English were considered for inclusion. Articles were excluded if they were a review or short conference/congress abstracts, while case-report studies were included. Since the aim of the review was to collect current evidence on kinematic, kinetic and physiological parameters obtained through wearable sensors in sport for people with disability, only studies using sensors which are portable or mounted either on the body or equipment were included. To gather information relevant to the context of sport practice, papers investigating motor tasks other than sport-related movements, i.e., daily physical activity, were excluded. Studies were included only if they involved human participants: (a) with disability and (b) non-disabled performing a sport-related activity typically performed by athletes with disabilities (adaptive sport tasks, e.g., handcycling). To reduce population heterogeneity related to different types of disability, papers that involved people with cognitive disability only were excluded.
+
+### 2.3. Review Process
+
+The retrieved articles were imported into the Rayyan online software (http://rayyan.qcri.org (accessed on 14 May 2020) [34]) and duplicates from the multiple database search were removed. The review process of title and abstract was performed by two independent reviewers (L.R. and O.S.) according to the inclusion and exclusion criteria. Both reviewer’s results were compared through discussion and any conflicts were discussed and resolved by the consensus of other authors (E.B., A.M., V.C., G.V., V.B., L.T.). Full text papers were then retrieved and further evaluated for inclusion according to the eligibility criteria.
+
+### 2.4. Quality Assessment
+
+The quality assessment of the included papers was performed by two reviewers independently (L.R. and O.S.) adopting the 14-item checklist proposed by Kmet and colleagues [35]. Each item of the scale had three levels of scoring (yes = 2, partial = 1, and no = 0) and any conflict between reviewer’s opinion was resolved through discussion and consensus. A final quality score was obtained for each paper by dividing the sum of all item scores by the highest possible score, with the score ranging from 0 (low quality) to 1 (high quality).
+
+### 2.5. Data Extraction
+
+The following details were extracted from the included articles: publication year and journal; investigated sport and sport-related movement; type of disability; aim; type of target application (athlete classification, injury prevention, training optimization or equipment customization); setting (in-field or laboratory); athlete level (elite or amateur); sample size and relevant details (number of participants with/without disability and grouping characteristics); type of sensors adopted; sensor setup (placement and data transmission); parameter extracted from specific sensors; data acquisition and processing (sampling frequency and filtering); main findings and final conclusions.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

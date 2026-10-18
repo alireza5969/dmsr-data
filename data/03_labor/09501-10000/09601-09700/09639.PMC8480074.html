@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Grueso and Viejo-Sobera: Machine learning methods for predicting progression from mild cognitive impairment to Alzheimer’s disease dementia: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -7842,5 +7865,65 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Background
+
+The increase in lifespan experienced in Western societies has largely been driven by medical and technological advances [1]; however, this improvement has resulted in an increasing number of people diagnosed with neurocognitive disorders. In 2010, dementia was associated with $604 billion of healthcare expenses in the USA [2]. Every year, ten million new cases of dementia are registered, and by 2050, it is estimated that 135 million people will have some degree of dementia [3]. Age is the main risk factor for dementia; the prevalence is 1–2% at the age of 65 but reaches 30% at the age of 85. From all neurodegenerative disorders, about 60–90% are characterized as Alzheimer’s disease (AD) dementia subtype (depending on the diagnostic criteria used) [4], for which there is yet no cure.
+
+Patients are typically diagnosed with AD when the symptoms of a cognitive decline have already manifested, i.e., when dementia has appeared. In such cases, the diagnosis is determined too late, failing to implement preventive protocols to reduce cognitive decline. Pharmacological and non-pharmacological treatments have proven to be effective in reducing cognitive and behavioral symptoms in the early stages of the disease [5]. In light of these treatments, recent studies have focused on detecting patients with cognitive impairment that have not reached dementia in order to delay or prevent its development. The last edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) includes a specific category for this type of patients called a mild neurocognitive disorder, analogous to the mild cognitive impairment (MCI) whose main characteristic is having minor memory impairment [4] (throughout this review, MCI will be used instead of mild neurocognitive disorder as it is more frequent in the scientific literature). MCI can, in some cases, be a prodromal stage of dementia, especially for AD [6]. It is worth mentioning at this point that AD should be considered as a continuum, where patients with MCI that will eventually progress to AD dementia already have AD, but the cognitive symptoms have not yet fully manifested. For this reason, it is important to differentiate between those MCI patients that will progress to AD dementia and those who will remain stable.
+
+In late stages, when dementia symptoms have already appeared, AD is easier to confirm with neuroimaging techniques and cerebrospinal fluid evaluations for the presence of neurofibrillary clews, beta-amyloid and tau proteins [7], and temporal cortex atrophy [4]. Nevertheless, in the early stages, although biomarkers may be present in magnetic resonance image (MRI) and/or positron emission tomography (PET) results, the detection of MCI to AD dementia progression remains challenging in the clinical practice [8, 9]. To overcome this challenge, the scientific community now has access to thousands of neuroimaging longitudinal datasets from healthy, MCI, and AD subjects along with other variables (i.e., demographic, genetic, and cognitive measurements, etc.) stored in public databases such as the Alzheimer disease neuroimaging initiative (ADNI) (http://adni.loni.usc.edu). These datasets can be compared and analyzed to perform classification and automatic detection of AD and MCI progression [10, 11] using newly developed computer-aided techniques like machine learning (ML) algorithms. Then, these new tools could be transferred to the clinic to assist in the early diagnosis and prognosis.
+
+The ML paradigm consists of training an algorithm with a dataset; in this case, neuroimaging results together with other clinical variables, to extract common factors that help classify subjects according to a variable of interest. In the case of an early diagnosis of AD and distinction from a stable MCI condition, for example, the algorithm learns to classify the data according to the specific diagnosis and extracts which factors have been the most relevant for the differentiation between the groups. Subsequently, the trained algorithm can be used to classify a specific individual for which we do not know the diagnosis and thus manage to assist in the therapeutic approach [12–14]. This technique can be applied to any disease that occurs with morphological changes or with characteristic neural patterns. See Arbabshirani, Plis, Sui, &amp; Calhoun [15] for a review of the same objective and methodology but applied to autism, attention deficit disorder, and schizophrenia.
+
+Recent work has demonstrated that ML algorithms are able to classify images from AD, MCI, and healthy participants with very high accuracy levels [16, 17]. Although such classification has provided valuable information about AD biomarkers, for this technology to have a more substantial clinical impact by empowering a clinician to administer a customized treatment protocol, it is necessary to determine and predict whether a MCI patient will progress to AD dementia or remain stable. The goal of this systematic review is to analyze the existing classification methods based in ML algorithms applied to neuroimaging data in combination with other variables for predicting MCI to AD dementia progression.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+To perform this systematic review, we followed the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) guidelines [18, 19]. A systematic search was done to find studies that included ML methods to predict MCI to AD dementia progression using neuroimaging techniques. Progression to AD dementia from MCI is established when, during a follow-up period (3 years for ADNI and 1 year for AddNeuroMed databases), a patient that was initially classified as MCI, is diagnosed with Alzheimer (that is a “progressive MCI” or pMCI) based on clinical criteria (MMSE and CDR scales, and NINCDS/ADRDA criteria for probable AD dementia [20, 21]). Patients are considered “stable MCI” (sMCI), when they were diagnosed as MCI at baseline and the diagnosis remained as MCI during the follow-up.
+
+Only articles written in English and published between January 2010 and May 2021 (included) were selected. Articles published before 2010 were not included because the technological (e.g., computational power, graphical processing units) and methodological (e.g., ML and deep learning algorithm development) gap between those studies and the current standards make them hardly comparable. In fact, even the comparison between articles published in the early vs. the late 2010s presents methodological gaps. These differences are not only due to better methods but mainly to technological advances that were not possible before and early 2010s, and the growth of the ADNI database.
+
+We performed an advanced search concatenating terms with Boolean operators in PubMed, PsycINFO, and Web of Science databases as follows: (“computational neuroscience” OR “artificial intelligence” OR “machine learning” OR “deep learning” OR “neural network*”) AND (“neuroimag*”) AND (“Alzheimer*” OR “AD dementia”) AND (“mild cognitive impairment” OR “MCI”) AND (“conversion” OR “predict*” OR “follow-up”).
+
+After removing duplicates, the eligibility criteria were applied by two independent reviewers (SG and RVS) to select only the articles that included (1) prediction of MCI to AD dementia conversion, (2) use of neuroimaging data, (3) classification methods based on ML algorithms, and (4) accuracy results.
+
+Once the selection of studies was concluded, the following data was extracted for each study: (1) first author and year of publication, (2) groups, (3) sample size and mean age, (4) database, (5) neuroimaging technique used and variables selected, (6) classification method, (7) validation method, (8) accuracy achieved, and (9) area under the ROC curve.
+
+We also analyzed the risk of bias of the selected studies. The aspects considered in the analysis of bias were based on the Cochrane guidelines for systematic reviews [22], but the exact criteria were adapted by taking into account the particular methodology and goals of the studies, focused on creating and validating a classification model in large datasets. The criteria used are detailed in Table 1.
+
+We also performed an interpretability analysis based on the framework proposed by Kohoutová et al. [23]. These authors have developed three levels of assessment for the interpretability of ML models in neuroimaging based on the model itself, the feature selection and characteristics, and biological factors; also, each level has several sublevels. Model-level assessment consists of evaluating the model as a whole and testing it in different contexts and conditions. The sublevels include sensitivity and specificity, generalizability, behavioral analysis, representational analysis, and analysis of confounds. Feature-level assessment consists of evaluating the significance of individual features used in prediction, including stability, feature importance, and visualization. Finally, the biology-level assessment is a validation of the model based on its neurobiological plausibility and it has two sublevels: literature (relationship of the model with previous literature) and invasive studies (the possibility of using more invasive methods).
+
+We assessed whether the studies included in the review complied with each of the sublevels, but we did not include behavioral analysis, representational analysis, and invasive studies sub-levels. Behavior analysis sub-level was not considered because the only “behavior” of the model is to classify subjects, and the behavior is measured as accuracy, which is included in the sensitivity and specificity sublevels. Representational analysis compares the model with other models, other brain regions, or other experimental settings; in our review, the main goal of almost all studies was to find neural patterns that predict AD dementia, and therefore, it is common to use the whole brain as a feature. Also, there is only one experimental setting aimed to find maximum classification accuracy so it cannot be compared to similar experiments in the same study, only with similar literature (which represents another sub-level). Finally, the invasive studies sub-level is not applicable because the long-term objective of these investigations is to find a non-invasive method of predicting AD dementia as soon as possible.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

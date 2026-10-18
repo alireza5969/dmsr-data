@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Seinen, Fridgeirsson, Ioannou, Jeannetot, John, Kors, Markus, Pera, Rekkas, Williams, Yang, van Mulligen, and Rijnbeek: Use of unstructured text in prognostic clinical prediction models: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1013,5 +1036,77 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+Prognostic prediction models are increasingly common in clinical research and practice.1,2 Prognostic models predict which patients, among a target population of patients, will experience some clinical outcome during a window of time in the future, the prediction horizon. The predictors used by the model are measured during an observation window prior to the time of prediction (Figure 1). The growing availability of observational data in electronic health records (EHRs) forms a rich source to develop prediction models in a data-driven manner.2,3 Although most clinical risk prediction research is centered on the use of structured data, such as coded conditions, measurements, and drug prescriptions, the majority of information in EHRs is typically stored in vast quantities of unstructured text, for example, nursing notes, discharge letters, or radiology reports.4 When compared with structured data, unstructured text lacks an organized structure or terminology, is large in terms of file size, and contains patient-sensitive information, which complicates its use for the construction of prediction models. However, information captured in text can be more detailed and extensive than in structured data, as it is not limited to specific code systems or input fields. Therefore, the use of text data in a prediction model could potentially provide information to better predict the outcome, improving model performance.
+
+The growing availability of unstructured text in EHR data, increased computational power, and progress in natural language processing (NLP) techniques are now enabling the use of text data for the development of prediction models. Several reviews have elucidated the use of text data in the clinical domain, focusing on the general task of extracting information from unstructured text5–11 or the diagnostic classification of patients, including case detection, patient identification, and phenotyping.4,9,12 However, the development of text-based prognostic prediction has not been extensively studied. Recently, Yang et al13 performed a large review of 579 prognostic prediction models, expanding on the review by Goldstein et al,2 but neither focused on the use of text data. Another review, by Yan et al14 studied the use of unstructured text in, specifically, early sepsis prediction. To our knowledge, no broad systematic review has been conducted on the development of text-based prognostic prediction models. As these models start to be developed, it becomes increasingly important to reflect on the work that has been done, summarize the methodological landscape, and discover whether text data have value supplementing structured data.
+
+Consequently, the objective of this review is to assess how information extracted from unstructured text in EHR data is utilized to develop and validate prognostic prediction models. We evaluated the studies on the study settings and populations, text processing methods and representations, machine learning methods and feature set combinations, performance evaluation and external validation, attention to model explainability, and model availability. Furthermore, we determined the value of text in addition to structured data by comparing the performance between models using different feature sets within the studies.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## MATERIALS AND METHODS
+
+### Review protocol
+
+This study followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA).15 The review protocol was registered on June 17, 2021, and is publicly available at the Open Science Framework Registries (https://osf.io/gw628).
+
+### Eligibility criteria
+
+This review targeted studies from the last 15 years (January 2005 to March 2021) describing the development and evaluation of prognostic clinical prediction models that incorporate information extracted in a data-driven manner from unstructured text in EHR data. A range of 15 years was chosen to allow for a broad search, including early studies developing prediction models in a data-driven manner. The 3 inclusion criteria are defined as follows. (1) The study described the development and evaluation of a prognostic clinical prediction model. (2) The model predictors were based on information extracted from unstructured text in an EHR database. (3) Information was automatically extracted from the unstructured text in a data-driven manner. Data-driven implies that the extraction of information from the text was exploratory and not restricted to features that were expected to be important. This allowed us to evaluate prediction models developed on all the available text, comparable to the exploratory development of prediction models on all structured data, instead of a limited set of concepts. Detailed inclusion criteria are provided in Table 1.
+
+### Literature search
+
+Four databases were used for the literature search: Embase, MEDLINE, the Web of Science core collection, and Google Scholar. The database choice and the search strategy creation were aided by a medical librarian. The search strategy consisted of 4 clauses that incrementally limited the search results: (1) Prediction models; (2) The medical domain or EHRs; (3) A notion of text data, clinical notes, or NLP methods; (4) The period from January 2005 till March 2021, studies in the English language, and excluding conference abstracts and animal research. The full search strategy can be found in Supplementary Table S1.
+
+### Screening
+
+The found studies were first screened for fulfilling the eligibility criteria based on the title and abstract. Those that were found relevant underwent a second screening for inclusion based on the full text. In both screening phases, 1 reviewer (TS) screened all studies and 10 other reviewers (EF, SI, DJ, LJ, JK, AM, VP, AR, RW, and CY) independently screened 1/10th of the total number of studies. This resulted in each study being screened by 2 independent reviewers. Any discrepancies between them, in both screening phases, were resolved in a consensus meeting.
+
+### Study quality assessment
+
+To assess the quality of the studies 1 reviewer (TS) determined their adherence to the transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD) statement16 using the TRIPOD adherence form (https://www.tripod-statement.org/adherence/).
+
+### Data extraction and synthesis
+
+Data for analysis were extracted from the included studies by 1 reviewer (TS) using a predefined set of data items, outlined in Table 2. Some items are based on clinical prediction item sets from the critical appraisal and data extraction for systematic reviews of prediction modeling studies (CHARMS) checklist17 and the TRIPOD statement.16 Ten data item topics were distinguished: (1) general publication information, (2) study setting, (3) study population, (4) unstructured text predictors, (5) structured data predictors, (6) machine learning methods and feature sets, (7) internal and (8) external validation, (9) model explainability, and (10) model availability.
+
+The input for text representation methods consisted of a list of both sparse and dense numeric vector representations. Sparse representations included Bag-of-Words, Term Frequency—Inverse Document Frequency (TFIDF), and clinical concept extraction. Dense vector representations included topic models, word and document embeddings, and summarizing scores, such as a sentiment score. Combinations of representations were possible. The machine learning methods were of varying complexity and interpretability, ranging from methods with relatively low complexity and high interpretability, such as linear or logistic regression, to increasingly more complex random forests, gradient boosting, support vector machines (SVM), and deep neural network methods.
+
+Model explainability indicates whether a model is understandable to humans and whether the model’s behavior can be described in the entire feature space.18 However, determining the explainability of a model is not an objective or trivial task.19 Therefore, we assessed instead if a study paid attention to model explainability, regardless of whether the developed model could be considered explainable or not. This was assessed by the presentation of global feature importance, the feature importance over all predictions, or local feature importance, the contribution of features to a specific prediction.
+
+If a study reported on multiple prediction problems, for example, a study reporting on both hospital readmission and in-hospital mortality prediction during intensive care unit (ICU) admission, the data items were extracted for each reported problem separately. The model and validation data items were only extracted for the—self-reported—best performing structured, text, and combined-data models in each problem. For data items with free text input, the results were manually categorized after data extraction to enable analysis.
+
+We performed a meta-analysis on the reported model performance, comparing the structured, text, and combined-data models, for each prediction problem. The differences in the area under the receiver operating characteristic curve (AUC) were calculated for each reported feature set comparison: text and structured data (ΔAUCTS = AUCT–AUCS), combined and structured data (ΔAUCCS = AUCC–AUCS), and combined and text data (ΔAUCCT = AUCC-AUCT). The AUC differences indicate the relative performance difference between the uses of the 3 feature sets within each prediction problem and are suitable to be compared across studies.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

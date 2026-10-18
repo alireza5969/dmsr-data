@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Yan, Gustad, and Nytrø: Sepsis prediction, early detection, and identification using clinical text for machine learning: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2241,5 +2264,65 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+Sepsis is a life-threatening illness caused by the body’s immune response to an infection that leads to multi-organ failure.1 Annually, there are 31.5 million sepsis cases, 19.4 million severe sepsis cases, and 5.3 million sepsis deaths estimated in high-income countries.2 Studies have shown that early identification of sepsis following rapid initiation of antibiotic treatment improves patient outcomes,3 and 6 h of treatment delay is shown to increase the mortality risk by 7.6%.4 Unfortunately, sepsis is commonly misdiagnosed and mistreated because deterioration with organ failure is also common in other diseases.5–8 The heterogeneity in infection source, immune responses, and pathophysiological changes make identification and therefore sepsis treatment difficult. Additionally, the diversity in age, gender, and comorbidities affect the symptoms and outcome of septic patients.7
+
+Machine learning (ML) has been employed to improve sepsis outcomes through early detection. ML can utilize structured and unstructured data from electronic health records (EHRs).9–14 Structured clinical data come in a fixed format, such as age, vital signs, and laboratory data, which make data preprocessing easier. In contrast, clinical notes are in unstructured free-text form, such as progress notes, nursing notes, chief complaints, or discharge summaries. Clinical notes contain abbreviations, grammatical errors, and mis-spellings. Using clinical text is a complex, time-consuming process because it requires using natural language processing (NLP) to extract features that transform text into a machine-understandable representation.15–22 This usually requires assistance from clinical experts to convert text into machine-interpretable representations that capture clinical knowledge for specific clinical domains. The effort required to utilize unstructured clinical text can deter researchers; however, unstructured clinical text contains valuable information.16,22–25 Multiple studies and a review25 have shown that using unstructured clinical text has increased model performance to detect or predict colorectal surgical complications,26 postoperative acute respiratory failure,27 breast cancer,28 pancreatic cancer,29 fatty liver disease,30 pneumonia,31 inflammatory bowel disease,32,33 rheumatoid arthritis,34–36 multiple sclerosis,37 and acute respiratory infection.38,39
+
+Prior reviews related to sepsis detection and prediction include: sepsis detection using Systemic Inflammatory Response Syndrome (SIRS) screening tools,40 sepsis detection using SIRS and organ dysfunction criteria with EHR vital signs and laboratory data,41 clinical perspectives on the use of ML for early detection of sepsis in daily practice,14 ML for diagnosis and early detection of sepsis patients,9–13 infectious disease clinical decision support,42 and healthcare-associated infections mentioning sepsis.43–45 However, to the best of our knowledge, no reviews focus on the effect of utilizing unstructured clinical text for sepsis prediction, early detection, or identification; this makes it challenging to assess and utilize text in future ML and NLP sepsis research.
+
+## OBJECTIVE
+
+The review aims to gain an overview of studies utilizing clinical text in ML for sepsis prediction, early detection, or identification.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## MATERIALS AND METHODS
+
+This systematic review follows the Preferred Reporting Items for Systematic review and Meta-Analyses guidelines.46
+
+### Search strategy
+
+Relevant articles were identified from 2 clinical databases (PubMed and Scopus) and 3 computer science databases (ACM DL, dblp, and IEEE Xplore) using defined search terms. The 3 sets of search terms included: (1) “sepsis,” “septic shock,” or “systemic inflammatory response syndrome”; (2) “natural language processing,” “machine learning,” “artificial intelligence,” “unstructured data,” “unstructured text,” “clinical note,” “clinical notes,” “clinical text,” “free-text,” “free text,” “record text,” “narrative,” or “narratives”; and (3) detect, identify, recognize, diagnosis, predict, prognosis, progress, develop, or onset. Searches on clinical databases were performed using all 3 sets of search terms and excluded animal-related terms. Whereas searches on computer science databases only used the first set of search terms. No additional search restrictions, such as date, language, and publication status, were included. Additional articles were identified from relevant review articles or backward reference and forward citation searches of eligible articles. Complete search strategies are in Supplementary Table S1.
+
+The search was initially conducted using only computer science databases on December 10, 2019 and was updated to include clinical databases on December 14, 2020. The first search found that 4 of 454 articles met inclusion criteria,47–50 and the second search uncovered 2 more articles that met inclusion criteria (6 of 1335 articles).51,52 Those 2 searches did not contain the search terms: “systemic inflammatory response syndrome,” “artificial intelligence,” identify, recognize, diagnosis, prognosis, progress, develop, and onset. Hence, a search on May 15, 2021, including those terms, found 2 additional articles.53,54 To ensure inclusion of other relevant articles, a broader search was conducted on September 3, 2021 to include the following terms: “unstructured data,” “unstructured text,” “clinical note,” “clinical notes,” “clinical text,” “free-text,” “free text,” “record text,” “narrative,” or “narratives.” This resulted in 1 additional article.55
+
+### Study selection
+
+Titles, abstracts, and keywords were screened using Zotero v5.0.96.3 (Corporation for Digital Scholarship, Vienna, VA) and Paperpile (Paperpile LLC, Cambridge, MA). Screening removed duplicates and articles that did not contain the following terms: (1) text, (2) notes, or (3) unstructured. Full-text articles were evaluated to determine if the study used unstructured clinical text for the identification, early detection, or prediction of sepsis onset in ML. Thus, selected articles had to rely on methods that automatically improve based on what they learn and not rely solely on human-curated rules. Additionally, articles solely focusing on predicting sepsis mortality were excluded as these articles are based on already established sepsis cases. Reviews, abstract-only articles, and presentations were removed. Additionally, a backward and forward search was performed on eligible full-text articles.
+
+### Data extraction
+
+One author independently extracted data, which a second author verified. Any discrepancies were resolved either through discussion with the third author by assessing and comparing data to evidence from the studies or by directly communicating with authors from included articles. The following information was extracted: (1) general study information including authors and publication year, (2) data source, (3) sample size, (4) clinical setting, (5) sepsis infection definition, (6) task and objective, (7) characteristics of structured and unstructured data, (8) underlying ML and NLP techniques, and (9) evaluation metrics.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

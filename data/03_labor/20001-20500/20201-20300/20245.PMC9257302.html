@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Jordão, Raimundo, Jacinto, Garrido, Martins, Estevens, Nogueira, Fernandes, Macedo, and Nzwalo: Etiology and clinical characteristics of pediatric non-neoplastic posterior reversible encephalopathy: systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -464,5 +487,43 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Although rare, posterior reversible encephalopathy syndrome (PRES) is becoming increasingly recognized in pediatrics.1 Childhood PRES presents with a variety of combined central nervous system manifestations namely headache, seizures, altered level of consciousness, behavior changes, cortical, and pyramidal signs.2–4 Typically, there is vasogenic edema involving posterior cerebral regions.2–4 Although reversible by definition, poor neurological functional outcome is a possibility in childhood PRES.5 For instance, in critically ill pediatric patients, when matched by age and severity of the underlying disease, children with PRES have higher mortality risk.6 The pathophysiology of PRES remains unclear, but endothelial lesion with disruption of the blood-brain barrier or exhaustion of the vascular autor-egulatory mechanisms leading to fluid and protein transudation in the brain are the principal hypothesis.6 There are previously published reviews of pediatric PRES. These reviews, however, were focused on very specific diseases or conditions,2–4 and did not address systematically the sociodemographic, clinical, and radiological evolution.7 Comparison of the etiologies and clinical and radiological manifestations of pediatric PRES can point toward the mechanisms and help clarifying the factors that might contribute to the prognosis. Thus, we reviewed the etiology, pathophysiological, clinical, and radiological aspects of non-oncology-related PRES in children.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+Pubmed and Scopus databases were used to search for relevant publications up to February 28, 2019 using the combination of the following MeSH terms: “posterior leukoencephalopathy syndrome” [MeSH Terms] OR (“posterior”[All Fields] AND “leucoencephalopathy”[All Fields] AND “syndrome”[All Fields]) OR “posterior leukoencephalopathy syndrome”[All Fields] OR (“posterior”[All Fields] AND “reversible”[All Field] AND “encephalopathy”[All Fields]) OR “posterior reversible encephalopathy syndrome” [All Fields]. This search was complemented by examining reference lists of the most relevant studies. Studies or case reports containing the description of clinical cases of childhood PRES; with available information about precipitants,sociodemographic,and clinical characteristics were included. We excluded article based on cancer-related PRES to overcome the possible limitation of prognosis or outcome being influenced by the disease itself not the occurrence of PRES. Cases without brain imaging confirmation or minimal etiological investigation (inflammatory, renal, cardiovascular, and hemato-logical) were not included. Non-English studies were also excluded. All obtained titles and abstracts were independently verified by 2 investigators. Disagreements regarding the inclusion of specific studies were resolved by a third investigator. This study was based mainly on information extracted from single case reports and therefore quality evaluation was not performed. The systematic review was registered and accepted at PROSPERO (CRD42020165798).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

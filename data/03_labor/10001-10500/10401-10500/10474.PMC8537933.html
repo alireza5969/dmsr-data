@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Mintoff, Borg, Pace, Claudio, and Romani: The Clinical Relevance of the Microbiome in Hidradenitis Suppurativa: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -931,5 +954,49 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Hidradenitis Suppurativa (HS) is a complex condition of the pilosebaceous unit (PSU). Patients experience multiple nodules, abscesses, and draining fistulae in intertriginous skin, which cause a significant impact on their quality of life [1]. The pathophysiology of HS is multifaceted and is the product of interactions between inflammation, a genetic tendency, the microbiome, and environmental factors [2]. The name Hidradenitis Suppurativa is misleading as it suggests the condition to be the result of purely infective processes involving the apocrine glands. This name is the subject of controversy, with some recommending that the disease should be renamed Acne Inversa [3,4]. The latter name conceptualizes the fact that unlike acne, patients with HS experience deep seated abscesses which involve skin that is not usually affected by acne (intertriginous skin), and which therefore hosts a distinct microbiome [5]. The propensity of HS to manifest as a purulent disease involving apocrine gland-bearing skin is undeniable. However, dismissing the pathophysiological processes at play as purely infective would be an oversimplification.
+
+The intricate role of the microbiome has been investigated in various cutaneous disorders, including psoriasis, atopic dermatitis, and other diseases of the PSU such as acne [6,7,8]. In this review, we scrutinize the existing literature with regard to how the skin microbiome in HS skin differs from that in healthy skin, whether it incites or potentiates disease, how it alters in response to therapy, and whether it can be manipulated to alter disease trajectory.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+A review of the literature pertaining to hidradenitis suppurativa and the cutaneous microbiome was conducted in PubMed, Science Direct, and Google scholar. The following Medical Subject Heading (MeSH) terms were used: “hidradenitis”, “suppurativa”, “acne”, “inversa”, “pathophysiology”, “microbiome”, “cutaneous”, “gut”, “intestinal”, “dysbiosis”, “biofilm”, “antibiotic”, “bacteria”, “fungi”, “probiotic”, “biomarker”. The Boolean operators used were “AND” and “OR”. Genomic studies investigating changes in the composition or characteristics of the skin microbiome in human or animal studies were included. Additionally, studies exploring the role of the gut–skin axis in HS, and the effects of diet or antibiotics in modulating HS skin microbiomes and disease risk, progression, and outcome were also included. The search covered articles published between January 1990 and July 2021 and was restricted to articles published in the English language. Furthermore, handsearching and citation review of relevant studies were also conducted to identify studies that were not captured by electronic database search.
+
+### Exclusion Criteria
+
+Studies were excluded if they did not directly investigate the association between the cutaneous microbiome and HS. More specifically, articles whose primary objective was the investigation of skin composition or gut microbiome in metabolic syndrome or its components were not included. Articles not written in the English language, reviews, editorial letters, and comments were excluded.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

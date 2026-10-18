@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Nannini, Koshenkova, Baloglu, Chaussemy, Noël, and Schott: Immune-related aseptic meningitis and strategies to manage immune checkpoint inhibitor therapy: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2054,5 +2077,47 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Currently, immune checkpoint inhibitors (ICIs) have become the standard of care for numerous cancers. In 2011, ipilimumab was approved by the Food and Drug Administration (FDA) to treat metastatic melanoma (MM), with an improvement in progression-free survival (PFS) of 4 months [1]. In 2015, nivolumab, an inhibitor of programmed death ligand 1 (PDL1), improved the overall response of MM patients compared to dacarbazine [2]. In 2017, the combination of nivolumab and ipilimumab achieved a median overall survival (OS) of 60 months compared to the 36.9 months achieved with nivolumab alone for the treatment of MM [3]. Consequently, the nivolumab plus ipilimumab combination became the new standard of care for BRAF-negative MM.
+
+However, ICIs induce unique side effects. Ipilimumab alone and its combination with nivolumab are associated with the highest rates of immune-related adverse effects (irAEs) among other immunotherapies, as 53% of patients treated with such regimens had grade 3–4 irAEs [4]. IrAEs can involve the central nervous system (CNS) and are often severe despite their rarity. Due to the difficulty in diagnosing neurological irAEs, the reported incidence of 1–5% is probably an underestimate [5]. In particular, immune-induced aseptic meningitis is associated with high rates of mortality and/or morbidity [7]. Systematic explorations with at least CNS imaging, lumbar puncture, viral screening and viral serology analysis are recommended by the European Society for Medical Oncology (ESMO) [8]. If meningeal irAEs cause sufficient concern, management typically features high-dose steroid administration for at least 4 to 6 weeks with decreasing doses [8].
+
+Whether ICIs should be resumed thereafter is still debated. After some irAEs develop, because of the lack of an efficient alternative option for metastatic disease treatment, resuming ICIs can be the best choice. The current review attempted to summarize reported knowledge about the management of immune-related meningitis and the reintroduction of ICIs.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methodology
+
+We searched for articles related to immune-related meningitis published on PubMed with the MesH terms “meningitis” and “immune checkpoint” up to November 19, 2021, using the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) method (Fig. 1.). We summarized primary articles and case reports to give a systematic overview of the subject.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Aloupogianni, Ishikawa, Kobayashi, and Obi: Hyperspectral and multispectral image processing for gross-level tumor detection in skin lesions: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3007,5 +3030,137 @@ E96-D(3), 739–741 (2013).ITISEF0916-853210.1587/transinf.E96.D.739</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+More people are diagnosed with skin cancer each year in the United States than all other cancers combined.1 Malignant melanoma (MM) and other skin cancer crude mortality rates increased up to twofold in Japan from 1999 to 2014, independent of the aging of the Japanese population.2 The increased workload demands increased effectiveness in the diagnosis and management of malignant lesions. Skin lesions of concern are evaluated clinically and/or histopathologically. Gross pathology, the intermediate stage between the two, remains a manual, labor-intensive, and non-standardized step in the diagnostic work flow,3 despite recent advances in digital pathology.4 Hyperspectral imaging (HSI) is an imaging modality that can assist gross pathology. HSI captures spectral signatures of tissue pixels dependent on substance concentrations inside the tissue and has been proven useful for staining and standardization in histopathology.5 In the past decade, several research groups have investigated applications of HSI and multispectral imaging (MSI) at the gross pathology stage, toward diagnosis and tumor classification of skin lesions, aiming to achieve noninvasive optical biopsies and increase diagnosis speed.
+
+### Obstacles in Pathology
+
+There is an inherent compromise in skin cancer diagnosis, to both not miss cases in the early stage and to avoid unnecessary excisions. The gold standard is a histopathological biopsy, which requires several days to produce results. Although the clinical setting differs between primary and secondary care, the compromise persists. Grossing is performed by an experienced anatomic pathologist, who evaluates the excised tissue specimen before the microscope evaluation. The purpose of anatomic pathology is to accurately determine tumor margins. Early detection in situ, namely before grossing, improves considerably the disease prognosis, especially for melanoma cancers. The current state-of-the-art in clinical practice is dermoscopy, which can improve the diagnosis of skin cancer, but still suffers in terms of specificity.6 Gross pathology lacks automation and cross-laboratory protocol standardization, which introduces discrepancies in diagnosis. In addition, it results in over-reliance on the skill of the pathologist. Therefore, patient and medical staff must wait for the biopsy, which apart from inducing costs due to the delay increases the probability of resection due to the unavailability of tumor margins pre- and intraoperatively. The discovery of compromised cancer margins results in increased overall treatment costs, treatment duration, and patient discomfort increase. Along with the increased prevalence of skin cancer1,2 and the shortage of experienced pathologists, a substantial workload is assigned to the pathology lab. Furthermore, amid the global Covid-19 pandemic, enhancing the digital flow and offering opportunities for remote education and diagnosis are quickly becoming the turning point of medical research.
+
+### Optical Properties of the Skin
+
+Optical properties of the tissue are commonly used in diagnostic systems. Considering the reflectance model, an incident illumination ray is partially refracted inside the target and partially reflected. Reflectance is a function of wavelength, modified by the target tissue in accordance to Beer–Lambert Law of absorbance.7 Light rays scatter heavily inside human skin, which is structured in layers.8 Carcinogenesis and associated metabolic changes, known as Warbung effect,9 modify the molecular structure of the affected tissue, altering the distribution of chromophores. These heterogeneous changes affect the ratio of absorbed and reflected light. Thus, the reflectance spectrum can be regarded as a descriptive signature of the chromophore contents of the tissue, analogous to the human fingerprint. Consequently, discordant signatures can describe atypical concentrations of skin chromophores and be an indicator of abnormal growths.10 HSI or MSI systems are one of the means to record such signatures.
+
+### Spectral Imaging
+
+A range of spectral imaging technologies have been developed, owing to its noninvasive nature.11 Raman spectroscopy (RS) uses fiber optic probes to capture information about the molecular fingerprint of a tissue. Although applications of RS in macrolevel diagnosis have been attempted, the complexity of the imaging system design and the need for guidance remains an obstacle.12 Another approach on ex vivo gross samples is multispectral Mueller polarimetry imaging,13 a complex laser-based technique. When depth-imaging is the focus, multispectral optoacoustic tomography can be employed. This label-free technique uses fast laser pulses that excite the tissue, producing waves that can be reconstructed using backpropagation.14 The main drawback of those methods in a gross-level application is the increased component complexity, need for customization, limited field of view, and bulky equipment. In addition, the aforementioned methods are point-based, which impedes wide-area snapshots and imaging duration. Alternatively, spectral imaging equipment can be used in combination with fluorescent agents, to provide labeled images of the tissue. Despite the labeling advantage, this approach suffers from poor spatial resolution and poor tissue mapping due to movement.
+
+### Hyper/Multispectral Imaging
+
+HSI was originally developed for remote sensing and space applications. However, HSI and MSI are emerging imaging modalities for medical applications, as they can capture the tissue’s spectral signature. RGB cameras mimic the behavior of cone cells in the human eye, showing three distinct wide-band responses to visible light. S-cells integrate radiation information in the range 420 to 440 nm, M-cells in 535 to 545 nm, and L-cells in 564 to 580 nm. RGB cameras have similar wide-band integration filters, therefore, are susceptible to metamerism, i.e., the inability to recognize different colors under a certain illumination.15 In contrast, HSI and MSI use narrow-band filters with a width of a few nm. The spectral range can be either at the visible wavelengths (VIS, 380 to 780 nm) or the near-infrared range (NIR, 780 to 2500 nm). Longer wavelengths offer the additional ability to penetrate through the deeper layers of the skin. Depending on the imaging equipment, it is possible to capture a two-dimensional (2D) surface instantly, with good spatial accuracy. HSI and MSI differ in terms of the number of channels. MSI systems are usually customized to the absorbance features of the target tissue. As a result, an MSI pixel describes essentially a feature vector, in contrast to the smooth HSI reflectance curves. In this study, we will consider images with ≤20 channels as MSI, while the rest will be considered HSI.16 We refer to both techniques jointly as hyper/multispectral imaging (HMSI).
+
+### Potential in Diagnosis
+
+The application of HMSI in pathology shows significant potential.17 First, it is a noncontact, noninvasive, nonionizing imaging method. HMSI does not modify the physical (cellular- and tissue-level) properties of the tissue while preserving the spatial dimension of the distribution of tissue chromophores. Second, HMSI is fast compared with histopathology. An image can be acquired and processed in a few seconds or minutes instead of days. Coupled with a semi- or fully automated processing tool, HMSI-based tumor segmentation can be implemented easily and with minimal training of the medical personnel. In turn, associated costs can be reduced, and resources can be reserved for the diagnosis of more difficult cases. Skin tissue, which is characterized of an increased presence of chromophores and surface inconsistencies, is an ideal target for colorimetric and texture analysis. Technological advances in hardware, GPU programming, and machine learning libraries facilitate the processing of HMSI data, which often require a few GB of memory per image. HMSI has been investigated for applications in tumor detection, dermoscopy,18 and temporal monitoring.19 Previous studies on commercial MSI-based diagnostic tools showed a considerable increase in sensitivity and specificity for histology guidance by dermatologists and non-dermatologist clinicians.20,21 Several studies report trends in applications22 and classifications schemes for HMSI.23 Specifically for medical applications, previous reviews focused on noninvasive methods,24 comparison of HMSI to RGB images and dermoscopy,25 and commercial systems26,27 for in situ melanoma detection, with mixed findings. However, as of writing this report, we are not aware of any systematic review that investigates HMSI for gross pathology for different types of skin lesions, including nonmelanoma cancers.
+
+### Objectives
+
+HMSI has the potential to standardize, accelerate, and facilitate diagnosis, by (a) producing tumor segmentation in the form of optical biopsies (intraoperatively) or by (b) clarifying cancer margins at the clinical stage (preoperatively). An HMSI imaging system combined with a powerful processing algorithm would reduce diagnostic costs, due to the lack of moving parts, fast acquisition, robustness, and application on multiple pathologies. Through this systematic review, we expect to identify current trends in data processing for HMSI-based segmentation schemes for skin lesions at the macroscopic level. In addition, we summarize HMSI acquisition systems and preprocessing techniques, as well as study effects and limitations.
+
+This study is structured as follows. In Sec. 2, we describe the methodology for this systematic review. In Secs. 34–5, we explain in detail proposed schemes for data acquisition, preprocessing, and classification/segmentation, respectively, show cumulative results from the review and explain subcategories. In Sec. 6, we discuss effects, drawbacks, and common limitations of HMSI processing for skin lesions. The final conclusions are summarized in the last section.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and Methods
+
+### Characteristics of the Skin
+
+The optical signature of a tissue is characterized by the concentrations of chromophores inside the tissue. The main chromophores of the skin are melanin (eumelanin and pheomelanin), oxygenated hemoglobin (HbO2), and deoxygenated hemoglobin (Hb), with strong absorbance in the VIS range. Lipids and water have strong absorbance in the NIR. Absorbance is proportional to the extinction coefficient for fixed concentration and optical path, according to the Beer–Lambert Law. The extinction coefficient spectra of skin chromophores are shown in Fig. 1. Response to characteristic peaks and valleys of these curves is routinely used in the development of HMSI systems.
+
+Human skin is an organ comprised of tissue layers consisting of three different types of cells, namely squamous, basal, and melanocytic cells. Malignancies appear when skin cells start to multiply uncontrollably. Although each skin cell category is responsible for different types of skin cancer, irregular growth of melanocytes is the cause of melanoma. Melanoma is the most aggressive skin cancer and is associated with most skin cancer-related deaths. Occasionally, irregular cell growth can be benign, with the example of nevi and Spitz nevi, which are nonthreatening melanocytic tumors. Therefore, discrimination between benign and malignant melanocytic lesions is difficult due to the similar cellular substrate. A common category for HMSI-related research is pigmented skin lesions (PSL), because of the enhanced and heterogeneous presence of skin chromophores. Pigmented skin lesions include MM, basal cell carcinoma (BCC), and squamous cell carcinoma. Another category rich in color information is injury lesions, bruises, and burns.
+
+Knowledge about spectral properties of skin tissue can assist the development of diagnostic models. A high rate of vascularization combined with a high amount of melanocytic cells, high hemoglobin, and melanin concentrations, respectively, can indicate the presence of malignancy. HbO2 and Hb show absorbance peaks around 430 nm, while HbO2 has a local minimum of absorbance at 470 nm. HbO2 shows twin peak absorbance at 550 and 570 nm and Hb a local peak at the same area. At 660 nm absorbance of HbO2 drops suddenly. After 730 nm, the absorbance of melanin starts to become prominent and HbO2 can be discriminated from Hb. Spectral bands at 950 nm provide information from the deeper layers of the skin. Borisova et al.29 and Zherdeva et al.30 showed that the reflectance spectra of pigmented MM above 600 nm are consistently lower than that of nevi or other pigmented lesions. Healthy tissue has consistently higher reflectance compared with lesion tissue. Healthy skin and pigmented lesions rich in blood content show a sudden reflectance hike at 570 nm, although reaching a different maximum reflectance value.
+
+### HMSI Imaging
+
+HMSI describes jointly HMSI systems. Some studies do not discriminate between HSI and MSI due to their similar nature. However, some notable differences are present. Due to obstacles in technology, initial remote sensing systems were capable only of MSI.16 MSI systems sample only specific wavelengths or wavelength bands. Therefore, one can select individual wavelengths with classification capabilities and record only their specific reflectance values, resulting in a small number of channels. As technology advanced, HSI systems became feasible. HSI systems sample the entire spectrum with a fixed step and provide continuous spectral signatures. In problems where target wavelengths are unknown, the continuous spectral signature might reveal a spectral pattern that is concealed in the MSI. On the other hand, the increase in the number of channels adds additional complexity in data storage and processing, as well as increases processing time.
+
+HMSI for pathology-related tasks is usually performed in the VIS range, where chromophore absorbance is highest. The NIR range is useful when detailed information for depth structures is required because longer wavelengths can penetrate deeper. However, the spatial quality of NIR tends to be reduced, due to increased scattering and attenuation phenomena. The quality of HMSI differs between in situ and ex vivo imaging, due to the influence of breathing and patient’s movement.
+
+### Review Methodology
+
+In this systematic review, we followed the methodology proposed in the updated 2020 Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) statement.31
+
+#### Eligibility criteria
+
+The goal of the review is to investigate the current status and trends regarding applications of MSI or HSI of skin tissues for the tasks of segmentation and classification at a macroscopic level. Imaging range is limited to VIS and NIR ranges, while datasets consist either of in situ or fresh ex vivo (&lt;3 h after excision) gross samples from humans and/or mammals. Studies using fluorescence and tomography are out of the scope of this review. The search for eligible manuscripts was conducted among full papers (journal, conference, and technical reports) written in English and published from 2010 to 2020.
+
+#### Information sources
+
+The digital libraries of Scopus and PubMed were used as information sources. Both search engines are free and index a comprehensive catalog of recent publications in the fields of life science and biomedical engineering. Database search and result retrieval were performed on October 20, 2021.
+
+#### Search strategy
+
+The search condition is described in Eq. 1. The keyword search was limited to Title and Abstract, and not full body, to avoid retrieving manuscripts with keyword mentions in passing. A list of result entries was retrieved and processed for duplicate entry identification:
+
+#### Selection process
+
+A researcher (EA) performed initial screening of search results, using Title and Abstract. Result items that linked to single-page or non-English reports were discarded. Eligibility criteria were applied liberally during the initial screening. Reports that passed the initial screening were retrieved and screened strictly for eligibility.
+
+#### Data collection process
+
+For each eligible report, a researcher (EA) summarized contents and extracted relevant data, which were examined by every researcher. All eligible studies were cross-referenced for updates, errata, and retractions.
+
+#### Data items
+
+Eligible outcomes were categorized broadly according to tissue state (in situ or ex vivo) and classification task. Outcomes from studies that included small datasets or no measured outcome were reduced in importance but were not excluded. The following data items were collected for each report; publication details (author, year), study design (imaging equipment, preprocessing, processing framework, ground truth domain), dataset characteristics (number of subjects, target lesions, in situ, or ex vivo), and performance (accuracy metrics, benefits, limitations).
+
+#### Risk of bias
+
+Selection of eligible studies was performed by one researcher (EA). To reduce bias in the selection process, the search was performed in two steps. Each candidate report was screened twice, with liberal and strict eligibility criteria. In addition, we searched two nonexclusive databases, increasing the chances of coming across a candidate study. Finally, we reviewed relevant reports that were references of or citations to eligible reports, as well as high impact reports, defined as having more than 50 citations on Google Scholar.
+
+#### Effect measures
+
+In pathology, there is an inherent compromise between not missing any dangerous lesion (high sensitivity) and not rushing patients to unnecessary treatment due to false positives (high specificity). The balance between the two depends on the targets defined by the clinic. Dermoscopy evaluation is the state-of-the-art for clinical evaluation. Histology-validated tumor margins remain the golden standard for skin lesion diagnosis.
+
+The effects of each eligible study were compared using accuracy (Acc.), sensitivity (Sens.), and specificity (Spec.) metrics. The metrics are calculated as
+
+Depending on the task, different types of ground truth can be used. Image-wide labels can be either a binary classification (malignant versus benign) or the disease name. Alternatively, the image can be split into patches, each with its patch-wide label. Finally, pixelwise labeling is a segmentation mask of disease/tumor pixels. The labels are usually created by medical personnel either (a) after the clinical examination using drawing tools, (b) by registration and mapping of gross pathology data to histology data, or (c) by labeling gross tissue itself using a fluorescent agent. The type of ground truth (dermoscopy, histology, or other) was reported, but not factored into evaluation.
+
+#### Synthesis methods
+
+Due to the heterogeneity of datasets, imaging equipment, and outcome measures, a meta-analysis could not be performed. Instead, we performed a narrative synthesis describing performance in different task categories and provided comparative plots and tables of performance metrics.
+
+#### Reporting bias assessment
+
+It should be noted that both screened and eligible reports may be affected by publication bias, as studies with nonsignificant results of HMSI applications did not reach the publication stage. In addition, some results, for example, comparisons to the golden standard or alternative methods, may be omitted from the studies due to selective reporting bias.32
+
+#### Certainty assessment
+
+For each study, sample size and methodology limitations were used for the certainty assessment of reported effects. In cases where fidelity estimates or feedback from medical personnel were reported, these were taken into account.
+
+#### Study selection
+
+The flowchart of publication search and selection is described in Fig. 2. The search returned 744 entries from Scopus and 714 entries from PubMed. Afterward, we screened for eligibility (a) reports that cited to and (b) reports that were cited by these initial reports. A total of 37 reports fulfilled the eligibility criteria. A list of all eligible studies and additional information (sample size, channel number, spectral range, validation labels, and tissue type) is provided in Table 1.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

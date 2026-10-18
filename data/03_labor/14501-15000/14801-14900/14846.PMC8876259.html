@@ -6,8 +6,31 @@
 Resistance to Drugs in Human Gastric Cancer Based on Data
 Mining Approaches: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1030,5 +1053,61 @@ This open-access article has been published under the terms of the Creative Comm
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Gastric cancer (GC) ranks as the fifth most common cancer worldwide (1) and the second most common cancer among Iranian men (2). The rate of GC is estimated at 18.7% per 10,000 males and 11.1% per 10,000 females in Iran (3). The major problems of patients with GC include the lack of a proper response to treatment, drug resistance, and metastasis that leads to a rapid increase in mortality among patients. Recently, cancer stem cells (CSCs) are proposed to be a cause for tumour growth, invasion, recurrence, metastasis potential, and resistance to traditional therapies (4). Most treatments have the capability to eliminate cancer cells but cannot eradicate CSCs (5). Despite the advances in different types of gastric adenocarcinoma treatments, the survival rate of patients is not satisfactory. Although there is enhanced detection of GC, the need exists to develop novel detection kits for early detection of GC (6), detect drug resistance in patients before or after chemotherapy and find those who are at increased risk for metastasis.
+
+microRNAs (miRNAs) are small, non-encoding RNA molecules, 18-24 nucleotides in length. They can bind to the target region of 3ˊ-untranslated regions (3ˊ-UTR) and control gene expressions at the post-transcriptional level by messenger RNA (mRNA) degradation or inhibition of protein translation (7, 8). They are known as oncogenes or tumour suppressors that can target several genes simultaneously (9). miRNAs have a stable structure and more than 50% of the miRNA genes are located in genomic regions associated with cancer (10). Thus, they are considered promising tools for detection of any stage of cancer development and cancer treatment (11). Likewise, miRNAs can control metastasis development through the expressions of a large number of target genes (12), regulation of self-renewal property and resistance to conventional treatments (13, 14).
+
+Recently, there is a tremendous demand for analysis and interpretation of large volumes of biological data. Hence, bioinformatics studies are analysis tools that help to store, organize, and analyse high-throughput data volumes. Clinical data mining techniques have made remarkable contributions to medical and clinical sciences (15). The overall aim of the present study is to find miRNAs that target stemness, epithelial-mesenchymal transition (EMT) and drug resistance in GC and identify target genes that are effective in this regulation. Understanding the mechanism of regulation by miRNAs, which target three important regulatory pathways in GC, can help with early detection of treatment-resistant patients and those at risk for metastasis following chemotherapy.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and Methods
+
+### Search strategy
+
+In this systematic review, we initially designed a systematic review to assess the stemness-regulating miRNAs. Relevant published papers were collected through a PubMed search engine (https://www.ncbi.nlm. nih.gov/). Keywords such as "stem cell" or "sphere" or "side population (SP) cell” and "miRNA profile" or "microRNA profile" and "gastric cancer" were used. The duplicated papers or papers without any information about GC stem cells (GCSCs) or miRNAs were excluded.
+
+Next, in order to obtain metastasis-regulating miRNAs, the COREMINE database (https://www.coremine.com/), as a text mining algorithm, was used to search keywords that included "metastasis," "gastric cancer", and "miRNA". In the third step, keywords, such as "gastric cancer", "drug resistance", and "miRNA" were chosen in the CORMINE to acquire a list of drug resistance-regulating miRNAs. Finally, R programming language (version 3.6.1) was used for the identification and analysis of drug resistance/ metastasis-regulating miRNAs based on the text mining method.
+
+### microRNA target
+
+miRNAs have a deregulated expression in various types of cancers and might influence cell signalling pathways. Putative miRNA targets are essential to discover relevant pathways and they were identified by the ONCO.IO database (https://onco.io/). The Enrichr database (https://amp.pharm.mssm.edu/Enrichr/) was used for further enrichment analysis, along with KEGG 2015 (https://www.genome.jp/kegg/) to obtain the top ten significant pathways regulated by the miRNA target genes. The role of each miRNA target, such as proliferation, drug resistance, apoptosis, invasion, and metastasis was identified in cellular processes regulation.
+
+### microRNA-target gene network
+
+As described earlier, the function of miRNAs is determined through their target genes. Hence, we created a regulatory network model to illustrate a better concept for miRNA-gene or miRNA-protein interactions through the ONCO.IO database.
+
+The Ethical Committee of Royan Institute reviewed and approved the study (IR.ACECR.ROYAN.1396.230).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

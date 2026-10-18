@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Mavragani, Smith, Ahmad, Mehdizadeh, Mendes, Moura, Van de Ven, Viana, Silva, Coutinho, Teixeira, Rodrigues, and Teles: Sensing Apps and Public Data Sets for Digital Phenotyping of Mental Health: Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1485,5 +1508,97 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+### Background
+
+Mental health issues have a high prevalence, with 1 in 10 people worldwide experiencing them at any one time [1] and common mental disorders such as depression being closely linked to suicide [2]. Mental disorders are “generally characterized by some combination of abnormal thoughts, emotions, behavior and relationships with others” [3]. Examples are depression, schizophrenia, excessive anxiety and stress, disorders caused by drug and alcohol abuse, and personality and delusional disorders. These disorders pose a significant burden on societies, both emotionally and financially. For example, the cost of mental health disorders in the European Union is estimated at €600 billion (~US $451 billion), or 4% of gross domestic product [4]. COVID-19 has had a further negative impact on global mental health [5].
+
+Mental disorders are usually diagnosed exclusively on the basis of symptoms, which are identified from patients’ interviews and self-reported experiences. Sometimes these experiences are gathered using ecological momentary assessment (EMA) solutions [6], but mostly therapists rely on patients remembering such experiences during sessions. EMA solutions are used as a research method to collect, at fixed or random moments, reports from individuals about perceptions of their behaviors and feelings, and what they have done or experienced. It is well known that the intervening time and current state of the patient bias his/her memory of the experience. In addition, biological tests to assist diagnosis remain hard to be developed [7]. Based on the need to develop solutions able to objectively diagnose and monitor mental health, different solutions have been proposed, such as mobile apps [8,9] and machine learning (ML) solutions [10], which are even more indicated today due to the global pandemic situation [11,12]. Digital phenotype solutions are examples that can expand the ability to identify and diagnose health conditions from the interactions of people with digital technologies [13]. Specifically, digital phenotyping of mental health (DPMH) [14] seems to be a promising approach not only to deal with the problem of diagnosing the issue, but also to be applied to the treatment.
+
+The omnipresent adoption of pervasive devices, including smartphones and wearable sensors, provides novel opportunities for tracking mental health status and disorders. Digital phenotyping refers to the “moment-by-moment quantification of the individual-level human phenotype in-situ using data from smartphones and other personal digital devices” [15], thereby removing limitations created by the aforementioned bias in self-reports.
+
+DPMH solutions require collecting and analyzing large amounts of different types of social and behavioral data that can represent experiences of the users and their interactions with people, places, and devices. These context data can be passively gathered, for instance, from ubiquitous sensors, social media, and health care systems [16]. After collection, pieces of raw data are usually preprocessed and transformed into useful data or data sets to be mined [17]. For example, these data sets may be analyzed or used as input to build ML models [18], including for DPMH, to produce valuable insights and evidence. Therefore, DPMH sensing apps are primarily responsible for collecting and preprocessing data, with the data sets produced being important for developing such models. This study systematically reviews the sensing apps and data sets for DPMH.
+
+### Definitions
+
+In the last few years, the number of smart devices, that is, mobile (eg, smartphone, tablet) and wearable (eg, smart band, smartwatch) devices, has grown globally. They have enabled the development of research in the health area, including mental health [10]. The term “digital phenotype”, defined by Jain and colleagues [13], refers to the identification of human behavior patterns, whereas “digital phenotyping” is a monitoring approach that can collect patients’ behavioral markers passively [19]. Therefore, DPMH solutions aim at collecting multimodal pieces of information from digital devices using sensing apps to combine them with electronic medical records to objectively contribute to the identification of symptoms of mental disorders. In this context, sensing apps are tools for mobile and wearable devices used to collect useful user information.
+
+Our vision of the digital phenotyping process organized in layers is presented in Figure 1. The process starts at the first layer with the collection of raw data from different sources (eg, global positioning system [GPS] sensors, keyboard inputs, voice, and social media). These data can be collected both actively, in which user inputs are explicitly required, and passively [20], which only requires the user’s permission to access context data. In the next layer, these data are processed to provide high-level information. High-level information represents not only human behaviors (eg, sociability, physical activity) and habits (eg, mobility, sleep) but also other information of interest for professionals (eg, environmental context, mood). Next, human behavioral patterns that compose digital phenotypes (eg, biomarkers, mood patterns) can be recognized using computational tools (eg, ML, data mining, statistical models). Finally, we visualize the application layer, which corresponds to digital phenotypes used by health professionals for evidence-based mental health care.
+
+### Related Work
+
+Since the aforementioned concepts were proposed in the literature, many research studies have been performed. For this reason, researchers have also reviewed different aspects regarding this research topic. Table 1 presents a list composed of related reviews.
+
+This review differs from the previous ones in the following aspects: First, instead of focusing on a specific mental state/disorder, this review presents an overview of how different types of devices and detection modalities have been used to monitor a wide variety of different mental states within the DPMH area. Second, this review covers not only active collection solutions, which are emphasized in most reviews, but also passive sensing proposals. Third, this review focuses on the technical features of sensing apps and data sets (eg, size, sensors used to collect data, and types of context data). Technical features can be identified to serve as a basis for the use or development of new apps (eg, physical and virtual sensors used to collect data, operating systems for which the apps were developed, types of context data collected, inferred information). Finally, not all previous reviews were conducted systematically. Our article therefore provides researchers with an overview of the available technological framework for DPMH and can serve as a preliminary guide for current and further research.
+
+### Objectives and Research Questions
+
+This systematic review intends to provide a technical characterization and summary of sensing apps and public data sets for DPMH. By “public” we mean data sets that are available for free download for use in other research endeavors. These 2 topics (ie, sensing apps and public data sets) are jointly addressed in this review as complementary content. When researchers do not have access to DPMH data sets, they need sensing apps. This paper therefore can be a starting point not only to gain knowledge on the current sensing apps for DPMH (which consequently enables the development of new solutions), but also to find reusable ones. Therefore, the objectives of this article are to (1) present results from a systematic search on digital libraries and data set repositories, and then identify and categorize them by considering their characteristics; (2) summarize their main features (measurable pieces of data that can be used for analysis or creation of ML models, such as data collection time stamp, context data produced by DPMH solutions, and data self-reported by users), which are useful for researchers, either mental health or information technology ones, to conduct further investigation and comment on their usefulness; and (3) identify trends in and research opportunities for DPMH. Results of this systematic review are also relevant for data engineers and ML specialists who make efforts in developing DPMH solutions.
+
+To achieve the objectives of this systematic review, we defined the following research questions for sensing apps (SA-RQs) and data sets (DS-RQs):
+
+SA-RQ1: What context data are collected through DPMH sensing apps?
+
+SA-RQ2: What high-level information can be inferred from the context data collected by DPMH sensing apps?
+
+SA-RQ3: How is the identified high-level information used to support mental health?
+
+DS-RQ1: What features are available in public data sets for DPMH?
+
+DS-RQ2: What high-level information can be derived from public data sets for DPMH?</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Design
+
+This study was conducted based on the guidelines for systematic literature reviews in software engineering proposed by Kitchenham and Charters [26]. This review followed 3 main phases: planning, conducting research, and dissemination of results. These phases were supported by the Parsif.al [27] tool, which provides an online shared work environment for planning and executing systematic reviews. In this section, we present how this review was planned and conducted.
+
+### Search Strategy
+
+The search aimed to identify data sets and studies that have presented sensing apps capable of collecting data. Two (JM and IM) researchers conducted an exhaustive search on January 14, 2021, on data set repositories and digital libraries. The search for data sets was performed in 20 repositories (Multimedia Appendix 1). The search for articles reporting sensing apps was conducted in the following digital libraries: ACM Digital Library, DOAJ, IEEE Xplore, Web of Science, PubMed, PsycInfo, ScienceDirect, and Scopus. These databases were selected because they collect reliable studies related to mental health informatics.
+
+We designed the search strings to retrieve data sets and articles presenting sensing apps for DPMH (Table 2). These search strings were carefully designed to meet the research focus. In the string to search data sets, we defined the 2 main terms (ie, mental health and digital phenotyping) and decided to use Boolean “OR” as the link for them to get comprehensive results. The search string for articles was developed based on the review objective, research questions, and their motivations. We used keywords and their synonyms to maximize results. To avoid missing papers, we evaluated the suitability of the string in a pilot search, in which we used those studies developed by Liang et al [14] (ScienceDirect) and Torous et al [15] (PubMed) as control articles. This pilot search was able to retrieve the cited studies, thus demonstrating its ability to find articles relevant for this review. At the end of the search, duplicate data sets and articles were identified and removed using the Parsif.al tool.
+
+### Selection Criteria
+
+A set of selection criteria was defined to track research articles and data sets. Textbox 1 presents the selection criteria for scientific studies with sensing apps and data sets. Importantly, no date range limits were applied to the literature included in the review. In the selection of scientific articles, criterion EC1 excluded studies presenting the development of EMA apps, and papers that do not present a new DPMH solution (eg, studies using a DPMH solution previously described/published in another paper). For data set selection, criterion EC1 excluded those data sets that were not publicly available, that is, those protected and not accessible to be reused by other researchers.
+
+In the selection phase, 2 researchers (JM and IM) performed the data set selection process based on the inclusion and exclusion criteria. In a second step, the same 2 researchers independently performed the study selection process. This process consisted of 3 sequential phases: (1) study screening by means of metadata analysis (ie, title, abstract, and keywords); (2) full-text analysis of the articles selected in the screening phase; and (3) conducting backward snowballing [28]. Next, the level of agreement between the selections was calculated using the Cohen κ coefficient [29]. In the end, the 2 researchers conducted discussions to resolve selection conflicts and, when there was no consensus, judges (2 other authors, namely, AT and DV) deliberated on the disagreements.
+
+### Data Extraction
+
+In this step, data were extracted from the selected articles and data sets to answer the research questions defined in this review. For this purpose, a data extraction form was designed by 2 authors (JM and IM) and validated by the judges. Specifically, we designed the items in the form to extract relevant information presented by the reviewed studies and data sets, thus enabling us to answer the research questions, and identify open issues and research trends. Multimedia Appendix 2 presents the items in the data extraction form.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

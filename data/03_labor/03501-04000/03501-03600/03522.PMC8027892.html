@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Aggarwal, Sounderajah, Martin, Ting, Karthikesalingam, King, Ashrafian, and Darzi: Diagnostic accuracy of deep learning in medical imaging: a systematic review and meta-analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -9707,5 +9730,213 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Artificial Intelligence (AI), and its subfield of deep learning (DL)1, offers the prospect of descriptive, predictive and prescriptive analysis, in order to attain insight that would otherwise be untenable through manual analyses2. DL-based algorithms, using architectures such as convolutional neural networks (CNNs), are distinct from traditional machine learning approaches. They are distinguished by their ability to learn complex representations in order to improve pattern recognition from raw data, rather than requiring human engineering and domain expertise to structure data and design feature extractors3.
+
+Of all avenues through which DL may be applied to healthcare; medical imaging, part of the wider remit of diagnostics, is seen as the largest and most promising field4,5. Currently, radiological investigations, regardless of modality, require interpretation by a human radiologist in order to attain a diagnosis in a timely fashion. With increasing demands upon existing radiologists (especially in low-to-middle-income countries)6–8, there is a growing need for diagnosis automation. This is an issue that DL is able to address9.
+
+Successful integration of DL technology into routine clinical practice relies upon achieving diagnostic accuracy that is non-inferior to healthcare professionals. In addition, it must provide other benefits, such as speed, efficiency, cost, bolstering accessibility and the maintenance of ethical conduct.
+
+Although regulatory approval has already been granted by the Food and Drug Administration for select DL-powered diagnostic software to be used in clinical practice10,11, many note that the critical appraisal and independent evaluation of these technologies are still in their infancy12. Even within seminal studies in the field, there remains wide variation in design, methodology and reporting that limits the generalisability and applicability of their findings13. Moreover, it is noted that there has been no overarching medical specialty-specific meta-analysis assessing diagnostic accuracy of DL performance, particularly in ophthalmology, respiratory medicine and breast surgery, which have the most diagnostic studies to date13.
+
+Therefore, the aim of this review is to (1) quantify the diagnostic accuracy of DL in speciality-specific radiological imaging modalities to identify or classify disease, and (2) to appraise the variation in methodology and reporting of DL-based radiological diagnosis, in order to highlight the most common flaws that are pervasive across the field.
+
+## Results
+
+### Search and study selection
+
+Our search identified 11,921 abstracts, of which 9484 were screened after duplicates were removed. Of these, 8721 did not fulfil inclusion criteria based on title and abstract. Seven hundred sixty-three full manuscripts were individually assessed and 260 were excluded at this step. Five hundred three papers fulfilled inclusion criteria for the systematic review and contained data required for sensitivity, specificity or AUC. Two hundred seventy-three studies were included for meta-analysis, 82 in ophthalmology, 115 in respiratory medicine and 82 in breast cancer (see Fig. 1). These three fields were chosen to meta-analyse as they had the largest numbers of studies with available data. Two hundred twenty-four other studies were included for qualitative synthesis in other medical specialities. Summary estimates of imaging and speciality-specific diagnostic accuracy metrics are described in Table 1. Units of analysis for each speciality and modality are indicated in Tables 2–4.
+
+### Ophthalmology imaging
+
+Eighty-two studies with 143 separate patient cohorts reported diagnostic accuracy data for DL in ophthalmology (see Table 2 and Supplementary References 1). Optical coherence tomography (OCT) and retinal fundus photographs (RFP) were the two imaging modalities performed in this speciality with four main pathologies being diagnosed—diabetic retinopathy (DR), age-related macular degeneration (AMD), glaucoma and retinopathy of prematurity (ROP).
+
+Only eight studies14–21 used prospectively collected data and 29 (refs. 14,15,17,18,21–45) studies validated algorithms on external datasets. No studies provided a prespecified sample size calculation. Twenty-five studies17,28,29,35,37,39,40,44–61 compared algorithm performance against healthcare professionals. Reference standards, definitions of disease and threshold for diagnosis varied greatly as did the method of internal validation used. There was high heterogeneity across all studies (see Table 2).
+
+Diabetic retinopathy: Twenty-five studies with 48 different patient cohorts reported diagnostic accuracy data for all, referable or vision-threatening DR on RFP. Twelve studies and 16 cohorts reported on diabetic macular oedema (DME) or early DR on OCT scans. AUC was 0.939 (95% CI 0.920–0.958) for RFP versus 1.00 (95% CI 0.999–1.000) for OCT.
+
+Age-related macular degeneration: Twelve studies reported diagnostic accuracy data for features of varying severity of AMD on RFP (14 cohorts) and 11 studies in OCT (21 cohorts). AUC was 0.963 (95% CI 0.948–0.979) for RFP versus 0.969 (95% CI 0.955–0.983) for OCT.
+
+Glaucoma: Seventeen studies with 30 patient cohorts reported diagnostic accuracy for features of glaucomatous optic neuropathy, optic discs or suspect glaucoma on RFP and five studies with 6 cohorts on OCT. AUC was 0.933 (95% CI 0.924–0.942) for RFP and 0.964 (95% CI 0.941–0.986) for OCT. One study34 with six cohorts on RFP provided contingency tables. When averaging across the cohorts, the pooled sensitivity was 0.94 (95% CI 0.92–0.96) and pooled specificity was 0.95 (95% CI 0.91–0.97). The AUC of the summary receiver-operating characteristic (SROC) curve was 0.98 (95% CI 0.96–0.99)—see Supplementary Fig. 1.
+
+Retinopathy of prematurity: Three studies reported diagnostic accuracy for identifying plus diseases in ROP from RFP. Sensitivity was 0.960 (95% CI 0.913—1.008) and specificity was 0.907 (95% CI 0.907–1.066). AUC was only reported in two studies so was not pooled.
+
+Others: Eight other studies reported on diagnostic accuracy in ophthalmology either using different imaging modalities (ocular images and visual fields) or for identifying other diagnoses (pseudopapilloedema, retinal vein occlusion and retinal detachment). These studies were not included in the meta-analysis.
+
+### Respiratory imaging
+
+One hundred and fifteen studies with 244 separate patient cohorts report on diagnostic accuracy of DL on respiratory disease (see Table 3 and Supplementary References 2). Lung nodules were largely identified on CT scans, whereas chest X-rays (CXR) were used to diagnose a wide spectrum of conditions from simply being ‘abnormal’ to more specific diagnoses, such as pneumothorax, pneumonia and tuberculosis.
+
+Only two studies62,63 used prospectively collected data and 13 (refs. 63–75) studies validated algorithms on external data. No studies provided a prespecified sample size calculation. Twenty-one54,63–67,70,72,76–88 studies compared algorithm performance against healthcare professionals. Reference standards varied greatly as did the method of internal validation used. There was high heterogeneity across all studies (see Table 3).
+
+Lung nodules: Fifty-six studies with 74 separate patient cohorts reported diagnostic accuracy for identifying lung nodules on CT scans on a per lesion basis, compared with nine studies and 14 patient cohorts on CXR. AUC was 0.937 (95% CI 0.924–0.949) for CT versus 0.884 (95% CI 0.842–0.925) for CXR. Seven studies reported on diagnostic accuracy for identifying lung nodules on CT scans on a per scan basis, these were not included in the meta-analysis.
+
+Lung cancer or mass: Six studies with nine patient cohorts reported diagnostic accuracy for identifying mass lesions or lung cancer on CT scans compared with eight studies and ten cohorts on CXR. AUC was 0.887 (95% CI 0.847–0.928) for CT versus 0.864 (95% CI 0.827–0.901) for CXR.
+
+Abnormal Chest X-ray: Twelve studies reported diagnostic accuracy for abnormal CXR with 13 different patient cohorts. AUC was 0.917 (95% CI 0.869–0.966), sensitivity was 0.873 (95% CI 0.762–0.985) and specificity was 0.894 (95% CI 0.860–0.929).
+
+Pneumothorax: Ten studies reported diagnostic accuracy for pneumothorax on CXR with 14 different patient cohorts. AUC was 0.910 (95% CI 0.863–0.957), sensitivity was 0.718 (95% CI 0.433–1.004) and specificity was 0.918 (95% CI 0.870–0.965). Five patient cohorts from two studies73,89 provided contingency tables with raw diagnostic accuracy. When averaging across the cohorts, the pooled sensitivity was 0.70 (95% CI 0.45–0.87) and pooled specificity was 0.94 (95% CI 0.90–0.97). The AUC of the SROC curve was 0.94 (95% CI 0.92–0.96)—see Supplementary Fig. 2.
+
+Pneumonia: Ten studies reported diagnostic accuracy for pneumonia on CXR with 15 different patient cohorts. AUC was 0.845 (95% CI 0.782–0.907), sensitivity was 0.951 (95% CI 0.936–0.965) and specificity was 0.716 (95% CI 0.480–0.953).
+
+Tuberculosis: Six studies reported diagnostic accuracy for tuberculosis on CXR with 17 different patient cohorts. AUC was 0.979 (95% CI 0.978–0.981), sensitivity was 0.998 (95% CI 0.997–0.999) and specificity was 1.000 (95% CI 0.999–1.000). Four patient cohorts from one study90 provided contingency tables with raw diagnostic accuracy. When averaging across the cohorts, the pooled sensitivity was 0.95 (95% CI 0.91–0.97) and pooled specificity was 0.97 (95% CI 0.93–0.99). The AUC of the SROC curve was 0.97 (95% CI 0.96–0.99)—see Supplementary Fig. 3.
+
+X-ray imaging was also used to identify atelectasis, pleural thickening, fibrosis, emphysema, consolidation, hiatus hernia, pulmonary oedema, infiltration, effusion, mass and cardiomegaly. CT imaging was also used to diagnose COPD, ground glass opacity and interstitial lung disease, but these were not included in the meta-analysis.
+
+### Breast imaging
+
+Eighty-two studies with 100 separate patient cohorts report on diagnostic accuracy of DL on breast disease (see Table 4 and Supplementary References 3). The four imaging modalities of mammography (MMG), digital breast tomosynthesis (DBT), ultrasound and magnetic resonance imaging (MRI) were used to diagnose breast cancer.
+
+No studies used prospectively collected data and eight91–98 studies validated algorithms on external data. No studies provided a prespecified sample size calculation. Sixteen studies62,91,92,94,97–107 compared algorithm performance against healthcare professionals. Reference standards varied greatly as did the method of internal validation used. There was high heterogeneity across all studies (see Table 4).
+
+Breast cancer: Forty-eight studies with 59 separate patient cohorts reported diagnostic accuracy for identifying breast cancer on MMG (AUC 0.873 [95% CI 0.853–0.894]), 22 studies and 25 patient cohorts on ultrasound (AUC 0.909 [95% CI 0.881–0.936]), and eight studies on MRI (AUC 0.868 [95% CI 0.850–0.886]) and DBT (AUC 0.908 [95% CI 0.880–0.937]).
+
+### Other specialities
+
+Our literature search also identified 224 studies in other medical specialities reporting on diagnostic accuracy of DL algorithms to identify disease. These included large numbers of studies in the fields of neurology/neurosurgery (78), gastroenterology/hepatology (24) and urology (25). Out of the 224 studies, only 55 compared algorithm performance against healthcare professionals, although 80% of studies in the field of dermatology did (see Supplementary References 4, Supplementary Table 1 and Supplementary Fig. 4).
+
+### Variation of reporting
+
+A key finding of our review was the large degree of variation in methodology, reference standards, terminology and reporting among studies in all specialities. The most common variables amongst DL studies in medical imaging include issues with the quality and size of datasets, metrics used to report performance and methods used for validation (see Table 5). Only eight studies in ophthalmology imaging14,21,32,33,43,55,108,109, ten studies in respiratory imaging64,66,70,72,75,79,82,87,89,110 and six studies in breast imaging62,91,97,104,106,111 mentioned adherence to the STARD-2015 guidelines or had a STARD flow diagram in the manuscript.
+
+Funnel plots were produced for the diagnostic accuracy outcome measure with the largest number of patient cohorts in each medical speciality, in order to detect bias in the studies included112 (see Supplementary Figs. 5–7). These demonstrate that there is high risk of bias in studies detecting lung nodules on CT scans and detecting DR on RFP, but not for detecting breast cancer on MMG.
+
+### Assessment of the validity and applicability of the evidenc
+
+The overall risk of bias and applicability using Quality Assessment of Diagnostic Accuracies Studies 2 (QUADAS-2) led to a majority of studies in all specialities being classified as high risk, particularly with major deficiencies in regard to patient selection, flow and timing and applicability of the reference standard (see Fig. 2). For the patient selection domain, a high or unclear risk of bias was seen in 59/82 (72%) of ophthalmic studies, 89/115 (77%) of respiratory studies and 62/82 (76%) or breast studies. These were mostly related to a case–control study design and sampling issues. For the flow and timing domain, a high or unclear risk of bias was seen in 66/82 (80%) of ophthalmic studies, 93/115 (81%) of respiratory studies and 70/82 (85%) of breast studies. This was largely due to missing information about patients not receiving the index test or whether all patients received the same reference standard. For the reference standard domain, concerns regarding applicability was seen in 60/82 (73%) of ophthalmic studies, 104/115 (90%) of respiratory studies and 78/82 (95%) of breast studies. This was mostly due to reference standard inconsistencies if the index test was validated on external datasets.
+
+## Discussion
+
+This study sought to (1) quantify the diagnostic accuracy of DL algorithms to identify specific pathology across distinct radiological modalities, and (2) appraise the variation in study reporting of DL-based radiological diagnosis. The findings of our speciality-specific meta-analysis suggest that DL algorithms generally have a high and clinically acceptable diagnostic accuracy in identifying disease. High diagnostic accuracy with analogous DL approaches was identified in all specialities despite different workflows, pathology and imaging modalities, suggesting that DL algorithms can be deployed across different areas in radiology. However, due to high heterogeneity and variance between studies, there is considerable uncertainty around estimates of diagnostic accuracy in this meta-analysis.
+
+In ophthalmology, the findings suggest features of diseases, such as DR, AMD and glaucoma can be identified with a high sensitivity, specificity and AUC, using DL on both RFP and OCT scans. In general, we found higher sensitivity, specificity, accuracy and AUC with DL on OCT scans over RFP for DR, AMD and glaucoma. Only sensitivity was higher for DR on RFP over OCT.
+
+In respiratory medicine, our findings suggest that DL has high sensitivity, specificity and AUC to identify chest pathology on CT scans and CXR. DL on CT had higher sensitivity and AUC for detecting lung nodules; however, we found a higher specificity, PPV and F1 score on CXR. For diagnosing cancer or lung mass, DL on CT had a higher sensitivity than CXR.
+
+In breast cancer imaging, our findings suggest that DL generally has a high diagnostic accuracy to identify breast cancer on mammograms, ultrasound and DBT. The performance was found to be very similar for these modalities. In MRI, however, the diagnostic accuracy was lower; this may be due to small datasets and the use of 2D images. The utilisation of larger databases and multiparametric MRI may increase the diagnostic accuracy113.
+
+Extensive variation in the methodology, data interpretability, terminology and outcome measures could be explained by a lack of consensus in how to conduct and report DL studies. The STARD-2015 checklist114, designed for reporting of diagnostic accuracy studies is not fully applicable to clinical DL studies115. The variation in reporting makes it very difficult to formally evaluate the performance of algorithms. Furthermore, differences in reference standards, grader capabilities, disease definitions and thresholds for diagnosis make direct comparison between studies and algorithms very difficult. This can only be improved with well-designed and executed studies that explicitly address questions concerning transparency, reproducibility, ethics and effectiveness116 and specific reporting standards for AI studies115,117.
+
+The QUADAS-2 (ref. 118) assessment tool was used to systematically evaluate the risk of bias and any applicability concerns of the diagnostic accuracy studies. Although this tool was not designed for DL diagnostic accuracy studies, the evaluation allowed us to judge that a majority of studies in this field are at risk of bias or concerning for applicability. Of particular concern was the applicability of reference standards and patient selection.
+
+Despite our results demonstrating that DL algorithms have a high diagnostic accuracy in medical imaging, it is currently difficult to determine if they are clinically acceptable or applicable. This is partially due to the extensive variation and risk of bias identified in the literature to date. Furthermore, the definition of what threshold is acceptable for clinical use and tolerance for errors varies greatly across diseases and clinical scenarios119.
+
+### Limitations in the literature
+
+#### Dataset
+
+There are broad methodological deficiencies among the included studies. Most studies were performed using retrospectively collected data, using reference standards and labels that were not intended for the purposes of DL analysis. Minimal prospective studies and only two randomised studies109,120, evaluating the performance of DL algorithms in clinical settings were identified in the literature. Proper acquisition of test data is essential to interpret model performance in a real-world clinical setting. Poor quality reference standards may result in the decreased model performance due to suboptimal data labelling in the validation set28, which could be a barrier to understanding the true capabilities of the model on the test set. This is symptomatic of the larger issue that there is a paucity of gold-standard, prospectively collected, representative datasets for the purposes of DL model testing. However, as there are many advantages to using retrospectively collected data, the resourceful use of retrospective or synthetic data with the use of labels of varying modality and quality represent important areas of research in DL121.
+
+#### Study methodology
+
+Many studies did not undertake external validation of the algorithm in a separate test set and relied upon results from the internal validation data; the same dataset used to train the algorithm initially. This may lead to an overestimation of the diagnostic accuracy of the algorithm. The problem of overfitting has been well described in relation to machine learning algorithms122. True demonstration of the performance of these algorithms can only be assumed if they are externally validated on separate test sets with previously unseen data that are representative of the target population.
+
+Surprisingly, few studies compared the diagnostic accuracy of DL algorithms against expert human clinicians for medical imaging. This would provide a more objective standard that would enable better comparison of models across studies. Furthermore, application of the same test dataset for diagnostic performance assessment of DL algorithms versus healthcare professionals was identified in only select studies13. This methodological deficiency limits the ability to gauge the clinical applicability of these algorithms into clinical practice. Similarly, this issue can extend to model-versus-model comparisons. Specific methods of model training or model architecture may not be described well enough to permit emulation for comparison123. Thus, standards for model development and comparison against controls will be needed as DL architectures and techniques continue to develop and are applied in medical contexts.
+
+#### Reporting
+
+There was varying terminology and a lack of transparency used in DL studies with regards to the validation or test sets used. The term ‘validation’ was identified as being used interchangeably to either describe an external test set for the final algorithm or for an internal dataset that is used to fine tune the model prior to ‘testing’. Furthermore, the inconsistent terminology led to difficulties understanding whether an independent external test set was used to test diagnostic performance13.
+
+Crucially, we found broad variation in the metrics used as outcomes for the performance of the DL algorithms in the literature. Very few studies reported true positives, false positives, true negatives and false negatives in a contingency table as should be the minimum for diagnostic accuracy studies114. Moreover, some studies only reported metrics, such as dice coefficient, F1 score, competition performance metric and Top-1 accuracy that are often used in computer science, but may be unfamiliar to clinicians13. Metrics such as AUC, sensitivity, specificity, PPV and NPV should be reported, as these are more widely understood by healthcare professionals. However, it is noted that NPV and PPV are dependent on the underlying prevalence of disease and as many test sets are artificially constructed or balanced, then reporting the NPV or PPV may not be valid. The wide range of metrics reported also leads to difficulty in comparing the performance of algorithms on similar datasets.
+
+### Study strengths and limitations
+
+This systematic review and meta-analysis statistically appraises pooled data collected from 279 studies. It is the largest study to date examining the diagnostic accuracy of DL on medical imaging. However, our findings must be viewed in consideration of several limitations. Firstly, as we believe that many studies have methodological deficiencies or are poorly reported, these studies may not be a reliable source for evaluating diagnostic accuracy. Consequently, the estimates of diagnostic performance provided in our meta-analysis are uncertain and may represent an over-estimation of the true accuracy. Secondly, we did not conduct a quality assessment for the transparency of reporting in this review. This was because current guidelines to assess diagnostic accuracy reporting standards (STARD-2015114) were not designed for DL studies and are not fully applicable to the specifics and nuances of DL research115. Thirdly, due to the nature of DL studies, we were not able to perform classical statistical comparison of measures of diagnostic accuracy between different imaging modalities. Fourthly, we were unable to separate each imaging modality into different subsets, to enable comparison across subsets and allow the heterogeneity and variance to be broken down. This was because our study aimed to provide an overview of the literature in each specific speciality, and it was beyond the scope of this review to examine each modality individually. The inherent differences in imaging technology, patient populations, pathologies and study designs meant that attempting to derive common lessons across the board did not always offer easy comparisons. Finally, our review concentrated on DL for speciality-specific medical imaging, and therefore it may not be appropriate to generalise our findings to other forms of medical imaging or AI studies.
+
+### Future work
+
+For the quality of DL research to flourish in the future, we believe that the adoption of the following recommendations are required as a starting point.
+
+#### Availability of large, open-source, diverse anonymised datasets with annotations
+
+This can be achieved through governmental support and will enable greater reproducibility of DL models124.
+
+#### Collaboration with academic centres to utilise their expertise in pragmatic trial design and methodology125
+
+Rather than classical trials, novel experimental and quasi-experimental methods to evaluate DL have been proposed and should be evaluated126. This may include ongoing evaluation of algorithms once in clinical practice, as they continue to learn and adapt to the population that they are implemented in.
+
+#### Creation of AI-specific reporting standards
+
+A major reason for the difficulties encountered in evaluating the performance of DL on medical imaging are largely due to inconsistent and haphazard reporting. Although DL is widely considered as a ‘predictive’ model (where TRIPOD may be applied) the majority of AI interventions close to translation currently published are predominantly in the field of diagnostics (with specifics on index tests, reference standards and true/false positive/negatives and summary diagnostic scores, centred directly in the domain of STARD). Existing reporting guidelines for diagnostic accuracy studies (STARD)114, prediction models (TRIPOD)127, randomised trials (CONSORT)128 and interventional trial protocols (SPIRIT)129 do not fully cover DL research due to specific considerations in methodology, data and interpretation required for these studies. As such, we applaud the recent publication of the CONSORT-AI117 and SPIRIT-AI130 guidelines, and await AI-specific amendments of the TRIPOD-AI131 and STARD-AI115 statements (which we are convening). We trust that when these are published, studies being conducted will have a framework that enables higher quality and more consistent reporting.
+
+#### Development of specific tools for determining the risk of study bias and applicability
+
+An update to the QUADAS-2 tool taking into account the nuances of DL diagnostic accuracy research should be considered.
+
+#### Updated specific ethical and legal framework
+
+Outdated policies need to be updated and key questions answered in terms of liability in cases of medical error, doctor and patient understanding, control over algorithms and protection of medical data132. The World Health Organisation133 and others have started to develop guidelines and principles to regulate the use of AI. These regulations will need to be adapted by each country to fit their own political and healthcare context134. Furthermore, these guidelines will need to proactively and objectively evaluate technology to ensure best practices are developed and implemented in an evidence-based manner135.
+
+## Conclusion
+
+DL is a rapidly developing field that has great potential in all aspects of healthcare, particularly radiology. This systematic review and meta-analysis appraised the quality of the literature and provided pooled diagnostic accuracy for DL techniques in three medical specialities. While the results demonstrate that DL currently has a high diagnostic accuracy, it is important that these findings are assumed in the presence of poor design, conduct and reporting of studies, which can lead to bias and overestimating the power of these algorithms. The application of DL can only be improved with standardised guidance around study design and reporting, which could help clarify clinical utility in the future. There is an immediate need for the development of AI-specific STARD and TRIPOD statements to provide robust guidance around key issues in this field before the potential of DL in diagnostic healthcare is truly realised in clinical practice.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+This systematic review was conducted in accordance with the guidelines for the ‘Preferred Reporting Items for Systematic Reviews and Meta-Analyses’ extension for diagnostic accuracy studies statement (PRISMA-DTA)136.
+
+### Eligibility criteria
+
+Studies that report upon the diagnostic accuracy of DL algorithms to investigate pathology or disease on medical imaging were sought. The primary outcome was various diagnostic accuracy metrics. Secondary outcomes were study design and quality of reporting.
+
+### Data sources and searches
+
+Electronic bibliographic searches were conducted in Medline and EMBASE up to 3rd January 2020. MESH terms and all-field search terms were searched for ‘neural networks’ (DL or convolutional or cnn) and ‘imaging’ (magnetic resonance or computed tomography or OCT or ultrasound or X-ray) and ‘diagnostic accuracy metrics’ (sensitivity or specificity or AUC). For the full search strategy, please see Supplementary Methods 1. The search included all study designs. Further studies were identified through manual searches of bibliographies and citations until no further relevant studies were identified. Two investigators (R.A. and V.S.) independently screened titles and abstracts, and selected all relevant citations for full-text review. Disagreement regarding study inclusion was resolved by discussion with a third investigator (H.A.).
+
+### Inclusion criteria
+
+Studies that comprised a diagnostic accuracy assessment of a DL algorithm on medical imaging in human populations were eligible. Only studies that stated either diagnostic accuracy raw data, or sensitivity, specificity, AUC, NPV, PPV or accuracy data were included in the meta-analysis. No limitations were placed on the date range and the last search was performed in January 2020.
+
+### Exclusion criteria
+
+Articles were excluded if the article was not written in English. Abstracts, conference articles, pre-prints, reviews and meta-analyses were not considered because an aim of this review was to appraise the methodology, reporting standards and quality of primary research studies being published in peer-reviewed journals. Studies that investigated the accuracy of image segmentation or predicting disease rather than identification or classification were excluded.
+
+### Data extraction and quality assessment
+
+Two investigators (R.A. and V.S.) independently extracted demographic and diagnostic accuracy data from the studies, using a predefined electronic data extraction spreadsheet. The data fields were chosen subsequent to an initial scoping review and were, in the opinion of the investigators, sufficient to fulfil the aims of this review. Data were extracted on (i) first author, (ii) year of publication, (iii) type of neural network, (iv) population, (v) dataset—split into training, validation and test sets, (vi) imaging modality, (vii) body system/disease, (viii) internal/external validation methods, (ix) reference standard, (x) diagnostic accuracy raw data—true and false positives and negatives, (xi) percentages of AUC, accuracy, sensitivity, specificity, PPV, NPV and other metrics reported.
+
+Three investigators (R.A., V.S. and GM) assessed study methodology using the QUADAS-2 checklist to evaluate the risk of bias and any applicability concerns of the studies118.
+
+### Data synthesis and analysis
+
+A bivariate model for diagnostic meta-analysis was used to calculate summary estimates of sensitivity, specificity and AUC data137. Independent proportion and their differences were calculated and pooled through DerSimonian and Laird random-effects modelling138. This considered both between-study and within-study variances that contributed to study weighting. Study-specific estimates and 95% CIs were computed and represented on forest plots. Heterogeneity between studies was assessed using I2 (25–49% was considered to be low heterogeneity, 50–74% was moderate and &gt;75% was high heterogeneity). Where raw diagnostic accuracy data were available, the SROC model was used to evaluate the relationship between sensitivity and specificity139. We utilised Stata version 15 (Stata Corp LP, College Station, TX, USA) for all statistical analyses.
+
+We chose to appraise the performance of DL algorithms to identify individual disease or pathology patterns on different imaging modalities in isolation, e.g., identifying lung nodules on a thoracic CT scan. We felt that combining imaging modalities and diagnoses would add heterogeneity and variation to the analysis. Meta-analysis was only performed where there were greater than or equal to three patient cohorts, reporting for each specific pathology and imaging modality. This study is registered with PROSPERO, CRD42020167503.
+
+### Reporting summary
+
+Further information on research design is available in the Nature Research Reporting Summary linked to this article.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

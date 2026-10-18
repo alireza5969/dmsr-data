@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Okifo, Ray, and Gudis: The Microbiology of Acute Exacerbations in Chronic Rhinosinusitis - A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -969,5 +992,55 @@ PMC690427831867289</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Chronic rhinosinusitis (CRS) is an inflammatory disorder of sinonasal cavity that remains one of the leading causes for patients to seek healthcare in the United States (Fokkens et al., 2020). Recent research has begun to characterize the microbiome of normal and diseased sinuses, but our understanding of the role of microbes in CRS remains limited. Mucosal dysbiosis appears to be both a central etiologic factor in the pathogenesis of CRS in addition to a consequence of CRS (Yaniv et al., 2020). Numerous other environmental and host mechanisms have been proposed to drive the pathophysiology of CRS including allergy, ciliary dysfunction, mucosal disruption, immunity derangements, and biofilm formation. Ultimately, patients with CRS tend to experience a course of illness characterized by variable degrees of chronic inflammation with periodic acute exacerbations in symptomology, known as acute exacerbations of chronic rhinosinusitis (AECRS).
+
+Enhanced understanding of the microbiology that contributes to AECRS will facilitate the development of targeted treatment regimens to improve symptoms and disease control, while also reducing the need for inappropriate antibiotic administration and the potential for antibiotic resistance. The purpose of this study is to systematically review the published literature to characterize the underlying microbiology of AECRS.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+We performed a systematic review utilizing the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) guidelines. A comprehensive search of Medline, Embase, Web of Science, and Google Scholar databases from January 1990-June 2021 was conducted to identify studies relating to the microbiology of acute exacerbations in CRS. A combination of terms was used to maximize the probability of finding all relevant publications, including but not limited to: “rhinitis”, “sinusitis”, “sinus”, “microbiology”, “acute exacerbation”, “chronic disease”, “bacteriology”, “cultures”, and “PCR”.
+
+### Study Selection
+
+Titles and abstracts of all the relevant studies were reviewed by 2 independent authors (OO and AR). Included studies addressed the microbiology of AECRS with either culture or PCR data; studies without culture or PCR data were excluded. Studies were excluded if they were pediatric, non-English, non-human studies, and case reports.
+
+### Data Extraction and Analysis
+
+Data included year of publication, study design, age range, diagnostic criteria, bacterial findings, and immune-histologic findings. After analysis of each article, summary tables were developed. In articles where various data groupings were provided, only the relevant data for the AECRS patient population were extracted and used for analysis.
+
+A summary of the methods is provided in Figure 1.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

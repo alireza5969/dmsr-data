@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Systematic Review of Artificial Intelligence in Acute Respiratory Distress Syndrome for COVID-19 Lung Patients: A Biomedical Imaging Perspective</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3077,5 +3100,55 @@ i4919, doi: 10.1136/bmj.i4919.PMC506205427733354</span></p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Covid-19 or Coronavirus is a disease that was declared a “public health emergency of international concern” or “pandemic” by the International Health Regulations Emergency Committee of the World Health Organization (WHO) on January 30, 2020. As of 20th May 2021, the WHO statistics showed more than 165 million people have been infected causing Acute Respiratory Distress Syndrome (ARDS), and nearly 3.4 million have lost their lives due to this virus [1]. There is a dire necessity to flatten the pandemic curve and prevent this severe illness during the “long-COVID-19” (beyond the COVID-19 era). The SARS-CoV-2 virus directly affects the human lungs, travels through the respiratory system and into the body [2]. However, the mutated ribonucleic acid (RNA) present in the virus makes it difficult to treat the infected patient. As per the Journal of the American College of Cardiology (JACC), cardiac troponin may help determine the risk of myocarditis [3], signaling a positive COVID-19 diagnosis [4]. Imaging, therefore, also plays a vital role in predicting and validating the severity of the infection [5]; however, the patient's vital clinical information further improves its ability to predict the severity better and lowers the mortality rate [6].
+
+Artificial Intelligence (AI) has been helpful in combating such diseases because of its ability to model extensive and non-linear covariates against COVID-19 deaths in a big data framework. In previous pandemics, models were developed to flatten their mortality curves. For example, the Zika epidemic [7], Influenza type A, the H1N1 pandemic [8], and the Chikungunya epidemic [9] had shown a correlation between their data streaming using telemedicine and the pandemic curve. More recently, in China, similar telemedicine models have been adapted [10]. Therefore, we firmly believe that predicting the severity of COVID-19 using AI through computational models will be significantly useful to address the lack of software “verification, scientific and clinical validation” (discussed in section VII.B) capabilities worldwide. Note that AI-based COVID-19 severity is determined by either (i) classifying the COVID-19 pneumonia patient scans against controls or other kinds of pneumonia or (ii) locating the diseased region in the lung scan(s). Ground Glass Opacities (GGO) can be used to validate the COVID-19 severity. This study is focused on (a) ARDS that deals with the lung gas exchange disorder caused by the SARS-CoV-2, and (b) imaging of infected lungs using Computed Tomography (CT) and Chest X-rays (CXR).
+
+In 2020, there have been six AI-based systematic reviews (aiSR) on ARDS [11]–[16]. However, they are incomplete, not well focused, and lack practical recommendations for safe and effective AI design for ARDS analysis. A detailed comparison among the six aiSR is discussed in the benchmarking section VII.A. In general, there are limited aiSR, which rank these studies, compute their mean scores, and determine the AI studies with low RoB. Further, this aiSR establishes a link between the AtheroPoint's artificial intelligence-based Bias (AP(ai)Bias) and previous RoB paradigms such as the Risk of Bias in Non-randomized Studies of Interventions (ROBINS-I) or Prediction model Risk Of Bias ASsessment Tool (PROBAST) for handling ARDS via CT or CXR.
+
+This aiSR uses Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) model for study selection. These studies are then analyzed to understand the role of AI in the detection of COVID-19 severity in radiological images and evaluate the RoB using AI attributes. It then presents the pathophysiology of COVID-19 leading to ARDS [17], followed by different AI techniques used in the lung segmentation and classification of the disease severity. Furthermore, to help understand the non-randomized trials’ outcome, we have proposed AP(ai)Bias, a novel bias estimation, that rates each of the ten AI attributes, computes cumulative and mean scores, and ranks the selected studies. Further, AP(ai)Bias is compared against qualitative paradigms such as ROBINS-I and PROBAST. Lastly, the aiSR presents several significant recommendations for lowering the RoB in the AI design for ARDS.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methodology
+
+### Search Strategy
+
+A detailed search was performed using PubMed, IEEE Xplore, ScienceDirect, ArXiv and Google Scholar. The keywords used for selecting studies were COVID-19, ARDS, deep learning, lung segmentation, classification, lung CT, X-ray, and AI. Fig. 1 shows the PRISMA model consisting of the studies used in this review. A total of 339 studies were identified, and duplicates were removed using the feature called “Find Duplicates” in EndNote software by Clarivate Analytics [18], thus, retaining 304 records. The three exclusion criteria were (i) studies not related to AI, (ii) non-relevant articles, and (iii) having insufficient data. This excluded 55, 56, and 104 studies (marked as E1, E2 (non-AI, but COVID-19), and E3 in Fig. 1), leading to the final selection of 89 studies.
+
+### Hypothesis and the Acceptability Criteria
+
+We hypothesize that “non-randomized Artificial Intelligence-based attributes can (a) detect, (b) classify, (c) estimate severity of the COVID-19 risk, and (d) meets the performance standards in lung infected ARDS patients.” Three acceptability criteria were: (i) for the AP(ai)Bias-based ranking method, the mean score must be greater than or equal to 80% for an AI-based study while taking into consideration all the AI attributes [19]. This was due to the consensus of the experienced team and five different classes for each AI attribute based on its strength (such as low, moderate, high-moderate, low-of-a-high, and high-of-a-high, ranging from 1 to 5). Similarly, for the (ii) ROBINS-I and (iii) PROBAST paradigms, our acceptability criterion must meet the score of 80% or above for AI-based studies to be in the low-RoB zone [19], [20].</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

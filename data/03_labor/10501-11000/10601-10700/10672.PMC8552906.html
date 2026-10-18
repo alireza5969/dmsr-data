@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Mollica, Leli, Puglisi, Sardi, and Sottotetti: Leptomeningeal carcinomatosis and breast cancer: a systematic review of current evidence on diagnosis, treatment and prognosis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1735,5 +1758,51 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Leptomeningeal carcinomatosis (LC) is defined as the infiltration by cancer cells of the pia mater, the arachnoid mater and the subarachnoid space.1 Although breast cancer (BC) is the tumour most commonly associated with leptomeningeal disease due to its high prevalence worldwide, LC remains a rare manifestation, occurring in up to 5% of patients with BC.2 However, it is characterized by a severe impact on morbidity and mortality and retains a dismal prognosis even in patients treated with multimodal, aggressive treatment.1
+
+The primary aim of this review was to conduct a complete revision of the literature on the topic from the past two decades focusing on recent advances in the diagnostic approach and management of the disease.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Literature review
+
+This review was designed to collect and evaluate evidence in the literature about (1) the clinical management and (2) current therapeutic options of leptomeningeal carcinomatosis in breast cancer. We performed a systematic review in compliance with the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) guidelines. Eligible articles were identified through a search in the MEDLINE database using the following string: “breast cancer” AND “leptomeningeal carcinomatosis” OR “leptomeningeal metastasis”. We initially included all studies published between January 2000 and June 4, 2021. This work was not eligible for PROSPERO database registration as it did not meet their inclusion criteria.
+
+### Results
+
+Our search was performed on June 4, 2021, and we retrieved 471 articles. After the exclusion of duplicates and articles not meeting prespecified criteria (absence of English translation), a total of 353 articles were selected for the next screening step. We excluded 111 articles considered not relevant for the objectives of this review. The remaining 242 articles were evaluated for eligibility. We decided to include only clinical trials, prospective studies, retrospective studies, other systematic reviews, and survey studies to increase the quality of the reported evidence. We excluded 136 articles that were case series, case reports, commentaries, studies on pharmacokinetics and preclinical studies. Finally, we excluded all the articles about LC that enrolled patients with different solid tumours and did not provide specific data for the BC subgroup (Figure 1).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

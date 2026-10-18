@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Dodd, Fielding, Carpenter, Thompson, and Elbourne: Statistical methods for non-adherence in non-inferiority trials: useful and used? A systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1339,5 +1362,65 @@ manuscript</h4></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Non-inferiority trials, which assess whether a new intervention is not worse than a proven comparator by more than a clinically acceptable amount, are becoming increasingly common.1–3 They are principally used when it is hoped that the new intervention may convey some advantage other than better efficacy (its effect under ideal conditions), such as improved safety, tolerability, convenience or reduced cost.4 5
+
+One of the challenges in these studies, and the focus of this review, is how participants not receiving their randomly assigned intervention according to the trial protocol (termed non-adherence or non-compliance) should be handled in the statistical analysis.6 Examples of non-adherence include not receiving a surgical intervention as planned, not taking all of the prescribed doses of a medication, or not attending all of the sessions of an exercise rehabilitation programme. Such non-adherence is common in trials and has been associated with poorer health outcomes.7–9 It can bias estimates of efficacy in either direction and so obtaining an accurate and reliable measure of adherence and accounting for any non-adherence in the statistical analysis of these studies is essential.10 11 Non-adherence may also be linked with missing outcome data if, for example, the trial protocol stipulates that further follow-up is no longer required once adherence drops below a specific threshold or if non-adherent participants become lost to follow-up. The terms adherence and compliance are often used interchangeably, though adherence is preferred here since it is felt to better reflect the partnership between the healthcare provider and participant.
+
+A simple approach to handling non-adherence is to define and analyse different analysis sets based on participants’ observed levels of adherence, with consistent results providing greater confidence in the trial conclusions.1 In the setting of non-inferiority trials, the intention-to-treat (ITT) and per-protocol (PP) populations have been advocated and are commonly used.4 12 13 However, agreement between the ITT and PP results of these trials does not guarantee that conclusions regarding non-inferiority are free from bias caused by differential, or non-random, non-adherence (where the factors leading to non-adherence are associated with outcomes).14–16
+
+Standard ITT analyses typically include all participants in their randomised groups irrespective of the intervention actually received.17 Thus, they reflect the effect of assigning individuals to interventions in clinical practice where not everyone is fully adherent (also known as the ‘effectiveness’ of an intervention). This approach preserves the balance in known and unknown prognostic factors afforded by randomisation and so any difference in outcomes between study arms can be attributed solely to the experimental intervention.18 However, in the presence of non-adherence, ITT analyses may yield biased estimates of efficacy (also known as the ‘causal effect’ of an intervention).19 In non-inferiority trials, where efficacy and effectiveness may be considered equally important, this can increase the probability of falsely claiming non-inferiority and, therefore, accepting a worse intervention.11
+
+Modified ITT (mITT) analyses are commonly used to address some of the limitations with standard ITT methods.20 This approach allows some randomised participants, such as those who never receive any of the allocated intervention or who are identified as ineligible after randomisation, to be excluded according to prespecified rules.18 However, across trials, there is substantial variability in how this population is defined and bias may be introduced by subjectively excluding individuals from analysis.18 20 In addition, mITT analyses are not typically used to account for the impact of non-adherence.
+
+PP analyses estimate the efficacy of interventions typically by excluding or censoring individuals with major protocol violations, including those who are non-adherent to their allocated intervention.1 6 17 Excluding participants in this way can lead to selection bias because non-adherent individuals generally differ from those who are fully adherent with respect to prognostic factors.21 22 Furthermore, using a PP analysis to address differential non-adherence is likely to reduce the protection provided by randomisation, so that trial arms are not fully comparable; this potentially biases the study results in either direction.11 In other words, any difference in outcomes between trial arms may no longer be due to the experimental intervention only. To obtain valid results from a PP analysis, we need to recover the protection due to randomisation, typically through a statistical method that (given certain assumptions) correctly adjusts for factors associated with both adherence and outcome (confounders).21
+
+Statistical techniques that attempt to account for the impact of non-adherence and thus estimate the causal effects of experimental interventions exist. These range from simple approaches, such as including observed adherence as a covariate within a regression model, which like PP analyses is susceptible to selection bias, to more sophisticated techniques, such as instrumental variable (IV) methods and inverse-probability weighting, which allow for non-adherence while attempting to maintain the balance produced by randomisation.23 24 Several of these methods attempt to estimate the complier average causal effect (CACE), which is the causal effect of an intervention for individuals who would always be fully adherent regardless of assignment (known as compliers).25 In other words, it is a comparison of the average outcome among those who are fully adherent in the experimental arm with the average outcome among the comparable group in the control arm who would fully adhere to the experimental intervention, if offered.
+
+It is unclear which of the alternative methods have been applied in the setting of non-inferiority trials, to what extent, and with what results. Therefore, this systematic review aimed to identify statistical methods that can be used to account for the impact of non-adherence to interventions (thereby estimating the causal effects of experimental interventions) in randomised non-inferiority trials. Secondary aims were to quantify the use of such methods in these studies and examine their impact on non-inferiority conclusions.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+The Ovid MEDLINE database was searched for terms related to adherence, non-inferiority trials and statistical methods for handling non-adherence in the titles, abstracts and keywords of papers published up to 31 December 2020 (full search strategy is provided in the online supplemental appendix 1). Eligibility based on identifying appropriate statistical methods was assessed using a three-stage process. First, two authors independently reviewed the title and abstract of each paper. Those where the comparison was not randomised, the primary analysis was not for non-inferiority, or the analysis assessed cost-effectiveness were excluded (cost-effectiveness analyses were not of interest because the focus of this review was on estimating the efficacy of interventions). Papers not published in English were also excluded. If the full text was unavailable, the abstract was reviewed against the eligibility criteria to ensure that key papers were not excluded. Next, an automated search of the full texts was performed in order to identify those containing the terms ‘compliance’, ‘adherence’ or ‘complier’. Finally, full-text reviews of the remaining papers were performed independently by two authors to identify (1) randomised trials with a primary analysis for non-inferiority that applied (or planned to apply, for protocol papers) statistical methods to account for the impact of non-adherence to interventions, and (2) methodology papers that described such statistical methods and included a non-inferiority trial application. Any discrepancies between reviewer pairs were discussed with a third author in order to reach a consensus. In addition, statisticians within the field were consulted in order to identify key publications, and the reference lists and citations of eligible papers searched for relevant analyses (performed by one author (MD)). Meta-analyses and systematic reviews identified were also searched for eligible non-inferiority trials. Where a trial’s published protocol and results paper were both eligible and reported the same statistical method of interest, the protocol paper was excluded to avoid double counting. Statistical analysis plans were requested for all eligible trials.
+
+A standardised electronic form was used to extract the relevant information from each paper considered eligible. This included details of the trial characteristics (journal, year of publication, disease area or patient population, unit of randomisation, type of experimental intervention, type of primary outcome and non-inferiority margin), non-adherence to the interventions (definitions and estimated levels of non-adherence), the statistical method attempting to account for non-adherence (name of the method, estimand, estimate of effect and confidence interval (CI), conclusion regarding non-inferiority and any advantages/disadvantages of the method stated) and any other analyses applied to the same outcome (analysis population, estimand, estimate of effect and CI, and conclusion regarding non-inferiority). Data extraction was performed by one author (MD). The primary outcome was the statistical method applied (or planned to be applied) in order to account for non-adherence to the interventions. Other outcomes were the impact of applying these methods on the trial conclusions (compared with other analyses applied to the same outcome, where available) and the advantages and disadvantages of the methods where stated by the authors. The impact of applying the methods of interest was assessed using trial results papers only.
+
+This systematic review was registered with PROSPERO and conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses statement.26 Information was largely combined using a narrative synthesis approach, that is, ‘synthesis of findings from multiple studies that relies primarily on the use of words and text to summarise and explain the findings of the synthesis’.27 All analyses were conducted using Stata V.15.1.
+
+### Patient and public involvement
+
+Patients or the public were not involved in the design, conduct, reporting, or dissemination plans of our research.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

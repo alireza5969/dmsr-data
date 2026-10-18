@@ -1,5 +1,6 @@
 library(magrittr)
-
+library(xml2)
+library(tibble)
 
 write_env_vars <-
   function(var_name, var_content, secret = FALSE) {
@@ -44,8 +45,7 @@ read_env_vars <-
 
 
 parse_pubmed <- function(x) {
-  library(xml2)
-  library(tibble)
+
 
   doc <- read_xml(paste0("<PubmedArticle>", x, "</PubmedArticle>"))
 
@@ -441,149 +441,82 @@ is_worthless <-
   }
 
 
-# Convert HTML files into two-tabbed HTML files with their text separated.
 
-add_text_tabs <- function(html_path,
-                          texts,
-                          output_path = NULL,
-                          article_label = "Article") {
-  stopifnot(
-    is.character(texts), length(texts) >= 1, !anyNA(texts),
-    is.character(article_label), length(article_label) == 1
-  )
-  if (!file_exists(html_path)) {
-    stop("HTML file not found: ", html_path, call. = FALSE)
+sections_to_markdown <-
+  function(df, stop_type = "methods", header = "##") {
+  
+      df <- df |> arrange(paragraph_id)
+    
+    # position of the last row belonging to the stop section (e.g. methods)
+    stop_rows <- which(df$section_type == stop_type)
+    if (length(stop_rows) == 0) {
+      stop("No rows with section_type == '", stop_type, "' were found.")
+    }
+    last_row <- max(stop_rows)
+    
+    df |>
+      slice(seq_len(last_row)) |>                       # methods + everything before it
+      filter(!is.na(paragraph_text),
+             str_trim(paragraph_text) != "") |>
+      group_by(section_index, section_title) |>
+      summarise(
+        first_id = min(paragraph_id),
+        text     = paste(paragraph_text, collapse = "\n\n"),
+        .groups  = "drop"
+      ) |>
+      arrange(first_id) |>                              # keep document order
+      mutate(md = paste0(header, " ", section_title, "\n\n", text)) |>
+      pull(md) |>
+      paste(collapse = "\n\n")
   }
+
+
+build_markdown <- function(d, base_header_level = 2) {
+  emitted <- character()
+  out <- character()
   
-  output_path <- output_path %||%
-    path(path_dir(html_path), str_c(path_ext_remove(path_file(html_path)), "_tabbed.html"))
-  
-  if (path_real(path_dir(output_path)) != path_real(path_dir(html_path))) {
-    warning(
-      "`output_path` is not in the same folder as `html_path`; ",
-      "keep them together so the iframe path resolves.",
-      call. = FALSE
-    )
-  }
-  
-  page <- build_tabbed_page(
-    article_src   = path_rel(html_path, start = path_dir(output_path)),
-    article_label = article_label,
-    texts         = texts
-  )
-  
-  write_file(page, output_path)
-  invisible(output_path)
-}
-
-# helpers ---------------------------------------------------------------
-
-`%||%` <- function(x, y) if (is.null(x)) y else x
-
-# Normalise newlines and escape &, <, > so the text is shown literally
-text_to_html <- function(text) {
-  text |>
-    str_replace_all("\r\n?", "\n") |>
-    htmlEscape()
-}
-
-# Tab labels: use names when given, otherwise "Text", "Text 1", "Text 2", ...
-tab_labels <- function(texts) {
-  labels <- names(texts) %||% rep("", length(texts))
-  labels[is.na(labels)] <- ""
-  default <- if (length(texts) == 1) "Text" else str_c("Text ", seq_along(texts))
-  labels[labels == ""] <- default[labels == ""]
-  labels
-}
-
-build_tabbed_page <- function(article_src, article_label, texts) {
-  # one row per extra tab; glue() is vectorised over these
-  n      <- seq_along(texts)
-  labels <- htmlEscape(tab_labels(texts))
-  bodies <- text_to_html(unname(texts))
-  
-  tab_buttons <- glue(
-    '<button class="tab" role="tab" id="tab-<<n>>" aria-controls="panel-<<n>>" aria-selected="false"><<labels>></button>',
-    .open = "<<", .close = ">>"
-  )
-  text_panels <- glue(
-    '<div class="panel text-panel" id="panel-<<n>>" role="tabpanel" aria-labelledby="tab-<<n>>">
-  <div class="inner"><pre><<bodies>></pre></div>
-</div>',
-.open = "<<", .close = ">>", .trim = FALSE
-  )
-  
-  glue(
-    page_template,
-    article_src   = URLencode(as.character(article_src)),
-    article_label = htmlEscape(article_label),
-    tab_buttons   = str_flatten(tab_buttons, "\n  "),
-    text_panels   = str_flatten(text_panels, "\n\n"),
-    .open  = "<<",
-    .close = ">>",
-    .trim  = FALSE
-  )
-}
-
-page_template <- r"-(<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title><<article_label>></title>
-<style>
-  html, body { height: 100%; margin: 0; }
-  body { display: flex; flex-direction: column; font-family: system-ui, sans-serif; background: #f4f4f4; }
-  .tabs { display: flex; gap: 4px; padding: 8px 12px 0; background: #2b2f36; flex: 0 0 auto; overflow-x: auto; }
-  .tab { border: 0; padding: 9px 18px; cursor: pointer; font: inherit; font-size: 14px; white-space: nowrap;
-         color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
-  .tab:hover { background: #454b56; }
-  .tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
-  .panel { flex: 1 1 auto; min-height: 0; background: #fff; display: none; }
-  .panel.active { display: block; }
-  iframe { width: 100%; height: 100%; border: 0; display: block; }
-  .text-panel { overflow: auto; }
-  .text-panel .inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
-  .text-panel pre { white-space: pre-wrap; word-wrap: break-word; margin: 0;
-                    font: 16px/1.65 Georgia, "Times New Roman", serif; color: #222; }
-</style>
-</head>
-<body>
-
-<div class="tabs" role="tablist">
-  <button class="tab" role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true"><<article_label>></button>
-  <<tab_buttons>>
-</div>
-
-<div class="panel active" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
-  <iframe src="<<article_src>>" title="<<article_label>>"></iframe>
-</div>
-
-<<text_panels>>
-
-<script>
-  const tabs = [...document.querySelectorAll('.tab')];
-  function show(id) {
-    tabs.forEach(t => {
-      const on = t.id === 'tab-' + id;
-      t.setAttribute('aria-selected', on);
-      document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on);
-    });
-    history.replaceState(null, '', '#' + id);
-  }
-  tabs.forEach((t, i) => {
-    t.addEventListener('click', () => show(t.id.replace('tab-', '')));
-    t.addEventListener('keydown', e => {
-      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
-        const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
-        n.focus(); n.click();
+  for (i in seq_len(nrow(d))) {
+    path <- if (is.na(d$section_path[i])) d$section_title[i] else d$section_path[i]
+    parts <- str_split(path, fixed(" > "))[[1]]
+    
+    # emit any header in the path that hasn't been written yet
+    # (this also adds parent headers that have no paragraphs of their own)
+    for (k in seq_along(parts)) {
+      key <- paste(parts[seq_len(k)], collapse = " > ")
+      if (!key %in% emitted) {
+        emitted <- c(emitted, key)
+        out <- c(out, paste0(strrep("#", base_header_level + k - 1), " ", parts[k]))
       }
-    });
-  });
-  const initial = location.hash.slice(1);
-  if (document.getElementById('tab-' + initial)) show(initial);
-</script>
-</body>
-</html>
-)-"
+    }
+    
+    txt <- d$paragraph_text[i]
+    if (!is.na(txt) && str_trim(txt) != "") out <- c(out, txt)
+  }
+  
+  paste(out, collapse = "\n\n")
+}
 
+split_intro_methods <- function(df, stop_type = "methods") {
+  df <- df |> arrange(paragraph_id)
+  
+  m <- which(df$section_type == stop_type)
+  if (length(m) == 0) {
+    
+    list(
+      intro   = NA_character_,
+      methods = NA_character_
+    )
+    
+  } else {
+    
+    intro_rows   <- if (min(m) > 1) df[seq_len(min(m) - 1), ] else df[0, ]
+    methods_rows <- df[min(m):max(m), ]
+    
+    list(
+      intro   = build_markdown(intro_rows),
+      methods = build_markdown(methods_rows)
+    )
+    
+  }
+  
+}

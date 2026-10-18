@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Dong, Zhou, Li, Rong, Fan, Zhou, and Kong: State of the art in parallel ankle rehabilitation robot: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1770,5 +1793,77 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Background
+
+The ankle joint complex (AJC) mainly consists of the tibia, fibula, talus and calcaneus, as shown in Fig. 1 [1]. The tibia and fibula are considered one unit to simplify the motions of the AJC, and the ankle joint involves the articulation between the tibia-fibula unit and the talus [1]. The AJC is of fundamental importance for balance, support, and propulsion. However, it is particularly susceptible to musculoskeletal and neurological injuries, especially neurological injuries such as the drop foot following stroke. Based on a report from the American Heart Association, approximately 795,000 people experience stroke in the United States each year [2]; stroke has poor prognosis and is associated with a high proportion of patients with drop foot, becoming the leading cause of permanent disabilities worldwide, with over 15 million new cases each year and 50 million stroke survivors [3]. An important factor in ankle dysfunction is damage to the central nervous system (CNS), which needs to be stimulated for reorganization and compensation and to promote the recovery of the motor system’s motor perception function [4]. Therefore, physiotherapy becomes essential for patients under this circumstance [5, 6]. During treatment, patients can regain their limited range of motion (ROM), restrengthen weak muscles, recover dynamic balance, and thus gradually restore motion functions [7]. However, this necessitates a long, repetitive, and intensive rehabilitation process, leading to a large burden and workload on the traditional ankle rehabilitation training, which is performed by therapists on a one-on-one hands-on basis to gradually stimulate and repair the damaged CNS [8]. In addition, traditional ankle rehabilitation training cannot provide sufficient training frequency and intensity due to limited time and resources [6]. Moreover, the rehabilitation training plans are developed based on therapists’ subjective clinical experience, which leads to the problem where therapists cannot accurately control the changes in complex forces, rehabilitation training forms and training parameters; hence, it is difficult to ensure accurate training of the affected limbs.
+
+Therefore, it is of vital importance to replace traditional ankle rehabilitation training by developing ankle rehabilitation robots, which have the benefits of providing long-term accurate and uniform rehabilitation training as well as the ability to adaptively modify the difficulty of rehabilitation training according to real-time feedback from training [9]. In addition, the application of robot-assisted ankle rehabilitation techniques allows real-time data collection throughout the training process to further determine the accuracy of the training [10], therein allowing an assessment of the biomechanical properties of the AJC [11] and mobility [12] to customize future treatments [13]. Particularly, these techniques can effectively reduce the labor intensity of medical staff, improve the effect of ankle rehabilitation training and compensate for the shortage of rehabilitation medical resources. The parallel ankle rehabilitation robots (PARRs) and wearable devices are the most studied technologies for ankle rehabilitation, in which, the PARRs have a fixed platform and can be used for multiple degree of freedom (DOF) rehabilitation with a small size and high rigidity, while wearable devices are known as exoskeleton or powered orthoses and are often used for gait training. The advantage of a PARR compared with a wearable device is that the lower leg will not follow the swing during the process of ankle rehabilitation training, which can allow avoiding a secondary injury to the ankle joint.
+
+Various reviews of robotic devices for ankle rehabilitation have been performed [6, 14–17]. However, references [6, 15–17] mainly focused on the mechanical design of ankle rehabilitation robots and covered both PARRs and wearable robots, while reference [14] focused on the effectiveness of robot-assisted therapy on ankle rehabilitation with both PARRs and wearable ones, and they concluded that wearable robots are more suitable for gait training, while PARRs are better suited for ankle exercises. Therefore, there is no systematic and comprehensive review specifically on the development of PARRs. With increasing research on PARRs, different mechanism configurations, actuator types, and rehabilitation training methods have been proposed, which may present a challenge to researchers new to this field.
+
+The purpose of this paper is to provide a systematic review of the state of the art in PARR technology, with consideration of the mechanism configurations, actuator types, and rehabilitation training methods, thus serving as a tutorial for engineers who will design or control PARRs, making them aware of the advantages and limitations of different mechanical and control choices. From a research point of view, this paper also proposes a taxonomy expansion and a review of future research directions. The following sections review the PARRs with regard to the mechanism configurations, actuator types with different trajectory tracking control techniques, and rehabilitation training methods; we also compare, analyze and summarize them separately. Finally, the research hotspots and trends are discussed, and we present the takeaways regarding PARRs as the findings of this review.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Search strategy
+
+The systematic review was conducted by performing a literature search with PubMed, Scopus, IEEE Xplore, and Web of Science, and the search was limited to English-language articles (i.e., journal articles and conference proceedings) published from January 1999 to September 2020. The reason that we chose January 1999 as the starting point for searches is that the first PARR was developed in 1999, named “ Rutgers Ankle” [18]. The electronic search keywords were “ parallel”, “ ankle” and “ robot”. Appropriate syntax using Boolean operators and wildcard symbols was used for each database to include a wider range of articles that may have used alternate spellings or synonyms.
+
+### Inclusion criteria
+
+Studies were eligible for inclusion if the following criteria were met:
+
+The device described is a parallel mechanism with at least 2-DOFs;
+
+The study focuses on ankle rehabilitation;
+
+The PARRs involved are developed with prototypes, not simply theoretical concept designs;
+
+The involved paper is a scientific article written in the English language and accessible to the authors.
+
+### Exclusion criteria
+
+Devices such as wearable ankle rehabilitation robots, ankle-foot prostheses and 1-DOF robotic ankle rehabilitation systems were excluded;
+
+Studies not related to ankle recovery were excluded as well;
+
+Studies with insufficient information on the PARR design were excluded;
+
+Non-English articles were excluded.
+
+### Data extraction
+
+The final search queries for the review were completed on September 30, 2020. A total of 65 articles representing 16 unique PARRs met the inclusion criteria, and the associated full articles were obtained by downloading them from electronic databases. Inside the selected articles, 57 out of the 65 ([TeX:] \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$87.7\%$$\end{document}87.7%) articles were published after 2009, which, combined with the increasing rate of stroke survivors, shows that research on PARRs has been very hot in the last decade. A summary of the article selection procedure can be seen in Fig. 2. During the article selection, we learned that many PARRs can realize ankle rehabilitation training in some DOFs through different mechanism configurations. In addition, only two actuator types have been found for actuating PARRs, i.e., pneumatic and electrically driven, which make full use of their respective advantages. For smooth and precise PARR control, many trajectory tracking control methods have been utilized to improve the control system. On this basis, different rehabilitation training methods have been realized and combined with some advanced control algorithms to improve the safety and comfort. Next, the selected articles with different PARRs are summarized in terms of the mechanism configurations, actuator types with different trajectory tracking control techniques, and rehabilitation training methods to ease their comparison.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

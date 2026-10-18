@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Xiang, Wang, Gu, Zhao, Shim, and Fernandez: Recent Machine Learning Progress in Lower Limb Running Biomechanics With Wearable Technology: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2707,5 +2730,71 @@ Sensors
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Machine learning approaches have been widely utilized in gait biomechanics studies in the past decades (Ferber et al., 2016; Halilaj et al., 2018; Xiang et al., 2022a). Most runners frequently suffer running-related injuries in the lower limb and foot (van Gent et al., 2007; Murr and Pierce, 2019). Based on learning-driven sensor data, machine learning and deep learning could provide gait monitoring in real-time, recommendations for running shoes (Koska and Maiwald, 2020; Young et al., 2020), and suggestions for running injury protection (Girka et al., 2020; Matijevich et al., 2020; Dempster et al., 2021). It is crucial to know how machine learning techniques are implemented in lower limb running biomechanics by exploring wearable sensor data.
+
+Traditional gait biomechanical analysis methods use statistical hypothesis tests based on discrete variables and summary metrics, such as the mean peak angles (Taylor et al., 2013; Halilaj et al., 2018; Dixon et al., 2019). A priori selection of features and sufficient background knowledge are essential to conducting further analysis and that may decrease the objectivity (Phinyomark et al., 2015, 2018). Consequently, these statistical tools cannot explain the complexity of multi-variables and process data-intense tasks (Halilaj et al., 2018). In the era of big data, machine learning as a growing data science method can process and analyze the large amounts of gait biomechanics data, for instance, wearable sensor data, and achieve state-of-the-art performance (Ferber et al., 2016).
+
+Machine learning incorporates supervised learning and unsupervised learning. In the realm of biomechanics, it has been utilized for dimensionality reduction of high-dimensional data (Phinyomark et al., 2015; Watari et al., 2018a), gait classification (Fukuchi et al., 2011; Taylor et al., 2013; Clermont et al., 2017), pathology detection (Bennetts et al., 2013; Christian et al., 2016; Li et al., 2020), and human activity recognition (Ordóñez and Roggen, 2016; Ignatov, 2018; Ihianle et al., 2020). Principle component analysis (PCA) as an unsupervised learning method is commonly used for feature extraction before training (Wu and Wang, 2008; Taylor et al., 2013; Phinyomark et al., 2014; Clermont et al., 2017; Mei et al., 2020; Suda et al., 2020). Clermont et al. (2017) classified competitive and recreational runners based on lower limb kinematics data using the support vector machine (SVM). Machine learning algorithms can also discriminate runners' experience level and gender via assessing running's spatiotemporal parameters (Clermont et al., 2019b). Bennetts et al. (2013) identified the typical peak plantar pressure distributions utilizing k-means clustering.
+
+Lower limb gait biomechanical studies are typically limited to the laboratory-based setting (Xiang et al., 2022b), such as measuring knee joint angles and moments using an optical motion capture system and force plates (Liu et al., 2020). Inertial measurement unit (IMU) is portable, lightweight, and low-cost, and can be used in an unconstrained environment (Fong and Chan, 2010; Ahamed et al., 2019). Wearable sensors have gained popularity for gait analysis in recent years. A recent systematic review from Camomilla et al. (2018) summarized the growing trend of utilizing wearable inertial sensors in the field of biomechanical analysis and activity classification. Picerno (2017) compared different approaches to evaluating lower limb joint kinematics by using IMU sensors. Deep learning is a subset of machine learning algorithms based on artificial neural networks (ANN). In recent years, it has been widely used in computer vision (Lee et al., 2009; Sermanet et al., 2013), speech recognition (Sainath et al., 2015), and medical image analysis (Ker et al., 2017; Shen et al., 2017). Deep neural network structures have advantages in processing time-series sensor data and require lower computational cost than traditional machine learning approaches. Integrated with deep learning algorithms, wearable sensors can be utilized for pattern recognition (Cust et al., 2019) and biomechanical variable prediction (Stetter et al., 2019; Hernandez et al., 2021) without experiment and environmental limitations.
+
+Hu et al. (2018) found that long short-term memory (LSTM) recurrent neural networks (RNN) can detect surface- and age-related differences in walking gait based on a single wearable IMU sensor. Ronao and Cho (2016) showed that the accelerometer and gyroscope sensor data adopting deep convolutional neural networks (CNN) achieved high accuracy for human activity recognition. Ordóñez and Roggen (2016) presented a deep learning framework of the convolutional and LSTM (DeepConvLSTM) for accurate human activity recognition. Convolutional layers act as feature extractors capturing spatial domain features from one-dimensional sensor data, while recurrent layers are used to extract temporal domain features (Hernandez et al., 2021). The performance improves by fusing the accelerometer, gyroscope, and magnetic field sensors compared to the acceleration or acceleration and angular velocity data (Ordóñez and Roggen, 2016).
+
+IMU sensors are heavily used technologies in distance running (Zrenner et al., 2020). Using inertial sensor-based data during running, one can classify different conditions and predict kinetical variables (Clermont et al., 2019b; Pogson et al., 2020). Jogging gait phase and period were detected and identified by lower extremity placed accelerometers and gyroscopes using machine learning algorithms (Mannini and Sabatini, 2012; Zdravevski et al., 2017). Kobsar et al. (2014) utilized PCA to classify training background from running experience. In a study by Pogson et al. (2020), PCA and multilayer perceptron (MLP) were adopted to predict ground reaction force (GRF) from trunk acceleration. Running speed conditions and running environments were assessed and classified using SVM with an IMU sensor placed on the participants' lower back during data collection (Benson et al., 2018b, 2020).
+
+In 2018, Benson et al. (2018a) reviewed the progress of IMU sensors in gait analysis. O'Reilly et al. (2018) evaluated the lower limb exercise detection accuracy of the wearable inertial sensor. However, that review retrieved articles till 2017 and did not include running gait. A systematic review from Farrahi et al. (2019) revealed that machine learning techniques could predict activity type and intensity based on raw acceleration data. Fong and Chan (2010) estimated the use of wearable sensors in lower limb biomechanics. The approaches to assessing lower limb joint kinematics by using wearable sensors have been summarized by Picerno (2017). A systematic review in 2019 illustrated wearable inertial sensors' performance in sport-specific movement recognition using machine learning and deep learning approaches (Rapp et al., 2021). Although there is a growing trend concerning machine learning in lower limb running biomechanics, particularly deep learning algorithms in wearable inertial sensor studies, there are few studies on the accuracy of machine learning approaches as utilized in lower limb running biomechanics integrating wearable inertial sensors. Furthermore, no compelling evidence illustrated the application scenes of different machine learning algorithms, the requirements of sensor placement based on the research goal, and how the model was assessed and validated in lower limb running biomechanics.
+
+Based on the currently existing knowledge gap, the purpose of this initial study is to conduct a systematic review regarding machine learning and deep learning approaches used in running biomechanics and was limited to the wearable sensors placed in lower limbs. By investigating the eligible studies, we hope: (1) to elaborate on different kinds of machine learning techniques used in running biomechanics and its performance; (2) to recommend suitable sensor placement locations to obtain decent accelerations or angular velocities or other biomechanical variables; (3) improve predictive accuracy for the related studies in gait analysis in the future.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Search Strategy
+
+This systematic review followed the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) recommendations (Moher et al., 2009). The protocol for this systematic review was registered on INPLASY (NO. 202210083). Electronic databases were retrieved in PubMed, Web of Science, SPORTDiscus, Scopus, IEEE Xplore, and ScienceDirect by one reviewer (L.X.) to identify original research articles published up to May 2021 (from 2000). The paper screening was conducted by two investigators independently (L.X. and A.W.). After an initial search, relative article information was input to Rayyan QCRI (Ouzzani et al., 2016) for duplicate removal, study screening, and identification. A backward search was conducted on the studies included. One study was added from the reference lists of included studies to review the flow for further paper screening. Non-English articles and conference proceedings, and dissertations were excluded. The retrieve strategy and limit conditions are shown in Table 1. Four different categories were used to identify relevant studies: wearable inertial sensor, machine learning and deep learning, lower limb, and running. By using Boolean operation, the retrieved studies at least contain one keyword in the full field. The flow diagram of the paper search and screen process is presented in Figure 1.
+
+### Eligibility Criteria
+
+Articles were selected based on the PICO principle (participants, intervention, comparisons, and outcomes). Our research identified studies that utilized machine learning and deep learning approaches and wearable inertial sensors to assess running biomechanics. For the included studies, wearable sensors must be placed in the participants' lower limbs. Only inertial sensors were selected in this review, including accelerometer, gyroscope, and magnetometer. Studies were removed if the statistical regression model rather than the machine learning approach was employed for the prediction. Energy expenditure and sprint performance assessment studies were not considered in this study. Studies using machine learning and wearable sensors only evaluating walking gait and human activity recognition were excluded.
+
+### Quality Assessment
+
+The methodological quality of the included studies was assessed by the modified QualSyst Assessment Tool for quantitative studies (Kmet et al., 2004). A total of ten items were identified in this scale for aspects of the research question, study design, statistical analysis, sample size, and results reporting. Each item was scored as “yes” = 2, “partial” = 1, or “no” = 0 given the degree of the specific criteria that were met. The risk of bias was initially evaluated by three investigators (L.X., A.W., and J.F.), independently and confirmed by two reviewers (A.W. and J.F.). Each study's score was calculated by summing 10 items' scores and dividing by the total score (Kandula et al., 2016; Capiau et al., 2020). The evaluation questions include If the question or objective is clearly described? Is design evident and appropriate to answer the study question? If the method of subject selection or source of information/input variables is described and appropriate? Is the subject's characteristics, input variables, or information sufficiently described? Is the outcome well defined and robust to measurement/misclassification bias? If means of assessment are reported? Is the sample size appropriate? If analysis is described and appropriate? If some estimate of variance is reported for the main results? Are the results reported in sufficient detail? Do the results support the conclusions?
+
+### Data Extraction
+
+Information was extracted from the included 24 studies based on participants and sensor characteristics, and machine learning approaches. Participant information included participant numbers, gender, age, type, and running speed during the data collection. Sensor characteristics contained sensor number, placement in the low limb, brand, and sampling frequency for data collection. For machine learning and deep learning, specific approaches, percentage of training and test dataset, cross-validation (CV) methods, data preprocessing, predictors, response, ground true reference, evaluation, and performance were extracted from the included literature.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

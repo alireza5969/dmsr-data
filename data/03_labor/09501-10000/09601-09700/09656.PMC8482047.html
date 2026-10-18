@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Al Hinai, Jammoul, Vajihi, and Afilalo: Deep learning analysis of resting electrocardiograms for the detection of myocardial dysfunction, hypertrophy, and ischaemia: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1260,5 +1283,61 @@ Global burden of cardiovascular diseases and risk factors, 1990–2019. J Am Col
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+The electrocardiogram (ECG) is one of the most commonly used diagnostic tools in clinical medicine, providing a broad range of information vital in the diagnosis and management of cardiovascular disease.1 The utility of the ECG extends broadly beyond acute hospital care to outpatient primary care, home care, preoperative screening, athletic screening, telemedicine, and self-monitoring.
+
+Computer-assisted interpretation of the ECG has become integral in clinical workflows since its introduction over 50 years ago, serving as an adjunct to physician interpretation.2,3 Traditional models are dependent on computer recognition and measurement of pre-defined ECG features (waves, segments, and intervals) and rules-based classification of their normality or abnormality. These classification rules are programmed by humans based on known criteria for various pathologies, such that the computer algorithm ‘sees’ what the expert human would see, but faster and more consistently without the influence of fatigue and other human factors. However, the performance of traditional models for computer-assisted ECG interpretation remains suboptimal,4,5 which has been attributed to the low accuracy of (archaic) classification rules and their lack of robustness in the face of imperfect tracings.
+
+To address this, artificial intelligence models have been applied to ECG analysis with varying success. Earlier models used machine learning algorithms such as support vector machines and random forests to predict the likelihood of specific cardiac pathologies irrespective of pre-defined classification rules; notwithstanding, training these models still required the analyst to laboriously define and extract (‘engineer’) the features of interest from the ECG tracing. More recent models employed deep learning (DL) algorithms such as convolutional neural networks to perform the feature engineering step or obviate the need for this step altogether, and ultimately improve efficiency and predictive accuracy. Deep learning is a form of representation-based learning that consists of an input layer for the raw ECG signals, multiple hidden layers for the signal analysis, and an output layer for the final prediction of cardiac pathology (Figure 1).6 Thus, the DL algorithm may ‘see’ informative features that the expert human may not visually appreciate or be trained to look for.
+
+Much of the published research on DL-based analysis of ECGs has focused on the detection of atrial arrhythmias from ambulatory ECG devices and wearables, with less emphasis on the detection of structural cardiac pathologies from the resting ECG. Structural cardiac pathologies such as heart failure (HF), hypertensive heart disease, and ischaemic heart disease are the pre-eminent causes of cardiovascular mortality and morbidity globally.7 Therefore, our goal was to conduct a systematic review to address this gap and ascertain whether DL models could be used to detect left ventricular (LV) systolic dysfunction, hypertrophy, and acute or chronic forms ischaemic heart disease.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+A systematic review was conducted to identify and aggregate published original studies that reported on DL-based analyses of resting ECGs (DL ECG) for the assessment of structural cardiac pathologies. The manuscript was prepared in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) guidelines.8
+
+### Data sources and search strategy
+
+PubMed MEDLINE was systematically searched from inception to 19 December 2019 and then focused on articles from 1 January 2009 to 19 December 2019 to correspond with the contemporary big bang of DL.9 The following search terms were used: (‘Artificial Intelligence’[Mesh] OR ‘artificial intelligence’ OR ‘machine learning’ OR ‘deep learning’) AND (‘Electrocardiography’[MeSH] or electrocardiogra* or ‘ECG’ or ‘EKG’). Search results were imported and screened using Rayyan (https://rayyan.qcri.org/)—a web-based software platform that allows duplicate reviewers to independently screen abstracts and full-text manuscripts and flag those that meet inclusion and exclusion criteria in a blinded fashion. In addition to our search results, references from retrieved studies were hand searched. When necessary, study investigators were contacted for clarification or to provide missing data. The complete list of search results may be made available upon request.
+
+### Study selection
+
+Two independent reviewers screened search results for articles that met the following inclusion criteria: (i) human adults; (ii) ≥18 years of age; (iii) underwent a resting surface ECG; (iv) end-to-end DL model used for analysis. Studies in which a DL algorithm was used for feature extraction and a non-DL algorithm was used for classification, or vice versa, were not considered to be end-to-end DL and therefore were not included. Exclusion criteria were: (i) underwent an ambulatory, stress, intracardiac, implantable, or bedside cardiac monitor ECG; (ii) non-original research articles (reviews, editorials, and opinions); and (iii) non-English language articles. The reviewers were blinded to each other’s selections for inclusion and exclusion, and disagreements were resolved by consensus with the senior author.
+
+### Data extraction
+
+Included studies were categorized according to whether the output of interest was prediction of LV dysfunction, hypertrophy, acute myocardial infarction, or stable ischaemic heart disease. For each study, the following parameters were extracted: author, journal, year of publication, number of patients, proportion of females, mean age, duration of ECG recording, number of ECG leads, and algorithms used. The following statistical metrics of model performance were extracted and presented for the test set of ECGs (i.e. ECGs other than those analysed as part of the training set): sensitivity, specificity, accuracy, and area under the receiver operating characteristics curve (AUC).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

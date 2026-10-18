@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Langdell, Taskindoust, Levites, Mateas, Sergesketter, Kaplan, Marcus, and Erdmann: Systematic Review of Tissue Expansion: Utilization in Non-breast Applications</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1663,5 +1686,51 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+First introduced in 1957 in the context of ear reconstruction, tissue expansion has evolved as a commonly used reconstructive technique.1 The advantages of using tissue expanders (TEs) include providing locally sourced vascularized tissue, decreasing donor site morbidity by obviating the need for free tissue transfer, and preserving local skin color, texture, and hair-bearing characteristics. TEs are not without drawbacks: a lengthy process of expansion, the need for multiple operations, and a temporary aesthetic deformity that may not be tolerated.
+
+The current plastic surgery literature provides robust data on utility and outcomes for tissue expansion in the context of breast reconstruction, burn reconstruction, and pediatric skin/soft tissue replacement. This study aimed to provide a similar assessment for less traditional indications for tissue expansion by systematically reviewing studies describing the use of TEs before index operations. Two case examples in which TEs are used to facilitate index operations (1 cranioplasty and 1 orthopedic procedure) are presented.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## METHODS
+
+The databases Medline (National Library of Medicine), Embase (Elsevier), and Scopus (Elsevier) were searched from inception to September 17, 2019. Each database was searched using a combination of keywords to represent the concepts of tissue expansion, surgery, and reconstruction. The full searches are available in SDC 1. (See appendix, Supplemental Digital Content 1, which displays the search strategy report. http://links.lww.com/PRSGO/B559.)
+
+The search was supported by a medical librarian. Non-human studies, editorials, comments, and conference abstracts were removed from the results when the databases allowed it. Search results were compiled in EndNote and then imported into Covidence. The risk of bias was not assessed.
+
+All English language studies that reported the results of tissue expansion in non-breast reconstruction patients were included. Exclusion criteria included the use of external stretching devices, intraoperative expansion only, and self-filling expanders. The publications were independently screened by 2 reviewers with conflicts broken by the first author (HL).
+
+Studies were then categorized into traditional and less traditional groups. Traditional was defined as studies utilizing TEs for burn reconstruction or skin/soft tissue replacement; less traditional publications encompassed all other applications. For these less traditional indications, we reviewed the patients’ age, disease etiology, TE specifications, final TE volume, and the process of tissue expansion. Complications analyzed were TE failure, TE exposure, TE infection, hematoma, wound dehiscence, superficial infection, skin flap necrosis, and any other reported complications. TE failure was defined as any instance in which a TE was removed prematurely. Superficial infection was defined as erythema that was reported to be limited to the skin and not involve the TE, and TE infection was specifically noted in the study to involve the expander. For studies describing traditional indications, we collected information about the indication for TE and number of patients.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

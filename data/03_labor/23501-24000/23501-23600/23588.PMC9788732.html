@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Rechciński and Kasprzak: A systematic review of nonsynonymous single nucleotide polymorphisms in the renin–angiotensin–aldosterone system</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -335,5 +358,45 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+The renin–angiotensin–aldosterone system (RAAS) is strongly involved in the pathogenesis of arterial hypertension, as well as in the occurrence of its complications. The diversity of the clinical course of this disease and the acceleration of target organ damage may depend not only on the presence of concomitant diseases, on environmental factors including lifestyle, quality of health care, utilization and adherence to proven preventive therapies, but also to some extent on genetic factors. The rapid development of genetics shows that nonsynonymous single nucleotide polymorphisms (SNP) are one of many types of human genome variability, which along with changes in epigenetic modulators (e.g., microRNA) or posttranscriptional modifications (e.g., methylation of DNA), play a role in shaping the final picture of the disease. Although transcriptional errors which lead to a single nucleotide swap from a wild to a mutated variant usually have a spontaneous nature, they may be also inherited by descendants and be of importance even in fetal life. In 2017 it was suggested that the role of polymorphisms in the RAAS assessed in various population studies was overestimated during the “candidate gene era” and that there is a need to reconsider the clinical significance of RAAS variants for individuals in the framework of “precision medicine” [1]. Surprisingly, in the review prepared by Ji et al. [1], genetic variants of some genes related to the RAAS were not associated with risk of cardiovascular diseases, but rather with abnormal thyroid function, schizophrenia, lead poisoning, fibrosis, angiotensin-converting-enzyme (ACE) induced cough or with lipoprotein concentrations. Additionally, some new technologies enabled using artificial intelligence for the prediction of SNPs importance with regard to the interactions of their products (protein-peptide) and, potentially — for their altered function [2]. The aim of this study was to critically review the results of studies on the most investigated RAAS SNPs published since 2017 to date.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+Two reviewers working independently extracted from PubMed database (www.pubmed.ncbi.nlm.nih.gov) the relevant publications released between January 1, 2017 and November 30, 2020. Studies with the following keywords (as inclusion criteria): SNP, RAAS, renin, angiotensinogen, angiotensin, aldosterone, angiotensin-converting enzyme, angiotensin-receptor were extracted. Reviews, meta-analyses, case reports, basic science studies with experimental medicinal compounds and studies performed in unique or specific populations were excluded. Only English-language, positive human studies or studies with human DNA were selected for this review of the latest reports on SNP in the RAAS. Figure 1 with flow-chart shows the selection of papers qualified for the present publication.
+
+In the first step, two authors reviewed the abstracts and excluded those not meeting eligibility criteria. The articles were included after two investigators independently recognized the article as eligible to this review. Differences between two reviewers were resolved by consensus. Twenty-two articles referring to 44 SNPs were finally chosen for inclusion in this review — these SNPs are presented on the Central illustration.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

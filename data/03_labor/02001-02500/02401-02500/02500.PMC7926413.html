@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Piñeiro-Fiel, Moscoso, Pubul, Ruibal, Silva-Rodríguez, Aguiar, and Caruso: A Systematic Review of PET Textural Analysis and Radiomics in Cancer</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1769,5 +1792,97 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Decades of research on cancer biology have revealed that tumors are heterogeneous entities at all scales (macroscopic, physiological, microscopic and genetic) [1,2,3,4], with different regions showing distinct morphological and phenotypic profiles [5,6,7]. Nowadays, it is widely accepted that tumor heterogeneity has profound implications in tumor development, therapeutic outcomes and survival [8,9,10,11], making it essential to develop methods for studying tumor heterogeneity in vivo [12].
+
+In this context, non-invasive imaging techniques, such as magnetic resonance (MR), computed tomography (CT) and positron emission tomography (PET) become relevant due to their ability to provide information on the whole tumor in one acquisition [13]. Nowadays, imaging is central to cancer management, having applications in screening, diagnosis, staging, prognosis and treatment response, among other things [14,15,16,17,18]. Mainly, PET has emerged as the predominant imaging modality, overperforming conventional imaging techniques for the evaluation of blood [19], head and neck [20] or lung cancer [21]; and it has been increasingly proposed as an ideal tool for characterizing the biology of tumors at the macroscopic scale [13,22,23,24,25]. Over the last years, there has been an increasing interest in extracting quantitative information from PET images using image analysis [26,27]. Thus, semi-quantitative parameters such as the standard uptake value (SUV), the metabolic tumor volume (MTV) or the total lesion glycolysis (TLG) [28] obtained from 18F-fluorodeoxyglucose PET (FDG-PET) images, have been demonstrated to provide relatively objective information useful for the diagnosis, earlier evaluation and monitoring of treatment response [24,25,28]. These parameters are now fully incorporated into clinical guidelines and commonly measured at most hospitals in developed countries [29].
+
+Several research studies have pointed out that high-order textural features derived from PET images can provide information about tumor heterogeneity, expanding the information available from clinical reports, laboratory tests and genomic or proteomic assays [26,27,30]. This has led to the incorporation of PET imaging to radiomics, a new medical imaging field exploiting image features to develop novel diagnostic, predictive and prognostic multiparametric models to support personalized clinical decisions and improve individualized treatment selection [27,31,32] (Figure 1). Textural analysis has long been applied in CT [33] and MRI [34], but it had not been introduced in PET until the last decade. Since then, increasing numbers of studies have suggested that PET textural features would be correlated with tumor biology and heterogeneity [35,36,37,38,39,40,41,42], providing valuable information for tailoring individual treatments [13,18,23,43,44,45,46].
+
+Despite the promising early reports, numerous studies have highlighted the challenges to be addressed before the use of PET radiomics becomes reliable and interpretable [46]. In addition to issues common to PET imaging itself, such as noise or partial volume effects [47,48,49], radiomics must deal with standardization issues related to the differences in acquisition and reconstruction parameters, post-processing techniques, tumor segmentation methods or even texture calculations [46,50,51,52,53]. The complex formulation of radiomics makes it challenging to explain pervasive findings such as the correlations displayed between different texture indices [54,55,56,57,58,59,60], as well as strong correlations between textural indices and tumor volume [61,62,63], which compromise the added value of these parameters in comparison with SUV or MTV. Furthermore, the variability in definitions and nomenclature of heterogeneity metrics themselves complicate any evaluation and comparison of published results [64]. Finally, there is no consensus about how many patients are needed, which textures must be extracted, or what methodologies should be applied for proper validation [24,46,52].
+
+Due to the prominent role of quantitative image analysis in the diagnosis, tumor characterization and prognosis of cancer patients, the development of reliable and well-validated image analysis methods is of paramount importance. Particularly, parallel with the popularization of PET radiomics, several authors have highlighted the methodological and statistical issues in their works. In the present work, we provide a systematic review on the topic of PET radiomics, with a special emphasis on the applied methodologies and validation strategies.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Experimental Section
+
+We computed this systematic review from 1 September to 15 October 2020. This review’s reporting complies with the PRISMA-P Preferred Reporting Items for Systematic Reviews and Meta-Analyses statement [65].
+
+### 2.1. Search Strategy/Eligibility Criteria
+
+We performed a comprehensive literature search to identify eligible articles in the PubMed database searching for the presence of the combination of terms “(PET) AND ((radiomics) OR (texture) OR (textural))”. Results were admitted from 1 January 1990, up to and including 15 October 2020. The included articles satisfied all the eligibility criteria given in the subsequent paragraphs.
+
+The inclusion criteria were (1) articles that included (in all fields) at least two of the search words specified in the search string; (2) studies based on human data specifying at least one tumor type; and (3) PET image was included.
+
+The exclusion criteria were as follows: (1) studies not within the field of interest, i.e., not related to medical imaging, or applying PET textural analysis to diseases other than cancer, (2) preclinical and or animal studies, (3) studies including only testing data (i.e., phantoms, simulated data), (4) studies including less than 20 patients (for studies including several types of cancer, the articles were included if they provided data from 20 or more patients of at least one type), (5) case reports, reviews, poster presentations, conference abstracts and expert opinion papers, (6) articles including only first-order PET features in their analysis (SUV, MTV, TLG, or histogram features) and (7) articles not written in English.
+
+### 2.2. Data Collection, Selection Process and Items
+
+After applying the inclusion and exclusion criteria, a review-specific electronic database (Microsoft Excel) was generated to handle document collection, data extraction forms and disseminate findings during all the study phases (abstract screening, eligibility and evaluation). As a final step, the full text of the included articles was evaluated.
+
+From each article, the following information was extracted and annotated in the database:
+
+Cancer of body organs or systems, such as blood, brain, breast, gynecological, head and neck, liver or lung. Articles including patients of several cancer types were included in each category separately.
+
+Number of patients in a study (for studies evaluating several types of cancers separately, the number of patients for each was included and evaluated under the corresponding category).
+
+Radiotracer in use.
+
+Imaging modalities included in the radiomics analysis: PET, PET+CT, PET+MRI, PET+CT+MRI, other (note that not using PET for radiomics was an exclusion criterion).
+
+Type and number of imaging features extracted: first-order features (intensity: SUV and histogram features, shape or volume) and high-order features (textures). For the high-order features, the radiomics matrices used for feature extraction were annotated (grey-level co-occurrence matrix (GLCM), grey-level size zone matrix (GLZSM), grey-level run length matrix (GLRLM) or other). We also annotated if works used wavelet processing for data augmentation.
+
+Objective defining whether the article is focused on diagnosis/staging, prognosis/treatment response or tumor characterization. Publications aiming at the evaluation of technical factors were included in a separated category.
+
+Level of statistical validation evaluated with an ad-hoc scale. We ranked it poor in case of the absence of statistical analysis, average if statistics and radiomics were available on a single cohort (i.e., ROC analysis, Cox regression), good when findings were corroborated on a separate subsample and very good if validation against an independent cohort was available (i.e., from a different center/scanner).
+
+We annotated if the analyzed work found first-order or high-order features useful for the defined objective when available. This information is not present in every paper, as some of them only report the number of features in the final model without detailing the features included after processing. Furthermore, when methodologies such as deep learning are applied, this information is not be available.
+
+### 2.3. Data Analysis
+
+Full-text reviews were performed by two of the authors independently (M.P.F. and J.S.R.). Afterwards, discrepancies in their interpretation were identified and solved by consensus between all the authors. An initial assessment of the number of articles on each cancer group was made to select the most representative tumor types. We provide a separate section for those representing more than 5% of the gathered papers in the Results. The rest of the articles were included in a single group labelled as “Other”.
+
+### 2.4. Quality Assessment
+
+The same two reviewers performed quality assessment of the included studies. The assessment was performed using the ROBVIS tool (https://www.riskofbias.info/, accessed on 10 February 2021). The studies were assessed for three items:
+
+The number of patients, where studies with fewer than 50 patients were considered to have a high risk of bias; between 50 and 100 patients, some concerns; and more than 100 patients, low risk of bias. This rationale was adapted from the recommendations provided by Gillies et al. [31].
+
+Risk of overfitting, where studies with fewer than three patients per evaluated features were considered to have a high risk of bias; between three and five, some concerns; and more than five patients per features, low risk of bias. This rationale was adapted from the recommendations provided by Papanikolaou et al. [66].
+
+Level of statistical validation, where studies providing poor validation according to the scale above were considered to have a high risk of bias; average validation, some concerns; and good” or very good validation, low risk of bias.
+
+Moreover, the overall score was given using the mode of the three punctuations. If the three scores were different, the overall score was “Some concerns”.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

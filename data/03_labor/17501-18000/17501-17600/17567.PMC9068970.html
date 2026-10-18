@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Qu, Zou, Ma, Chen, Luo, Fan, Jia, Gong, and Chen: Diagnostic Performance of Generative Adversarial Network-Based Deep Learning Methods for Alzheimer’s Disease: A Systematic Review and Meta-Analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1857,5 +1880,105 @@ I. RekikG. UnalE. AdeliS. H. Park (Cham: Springer International Publishing), 26�
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Alzheimer’s disease (AD) is the most common form of dementia and is characterized by a progressive decline in memory and other cognitive functions. Notably, the pathophysiological processes of AD begin decades before clinical symptoms appear (Sperling et al., 2011; Atri, 2019; Matsuda et al., 2019); thus, early diagnosis and intervention are particularly important in AD management (Martí-Juan et al., 2020; Ansart et al., 2021). Mild cognitive impairment (MCI) is the prodromal stage, with symptoms occurring up to decades before dementia onset (Petersen, 2004; Misra et al., 2009). Approximately 10–15% of patients with MCI may progress to AD (pMCI) each year (Petersen et al., 2001), while the remaining patients may remain stable in the MCI stage (sMCI) (Li et al., 2016; Spasov et al., 2019). Studies examining the difference between AD and cognitively normal groups and between patients with pMCI and sMCI might facilitate the prediction of disease progression and help to provide the time window for administering potential disease-modifying therapy.
+
+Neuroimaging biomarkers have been widely used in studies of AD to explain the underlying pathophysiological processes (McKhann et al., 2011; Chetelat, 2018). According to the National Institute on Aging and the Alzheimer’s Association (NIA-AA) research framework, biomarkers for the AD continuum were classified as AT(N) for amyloid, tau and neurodegeneration (Jack et al., 2016). A indicates amyloid-beta (Aβ) protein deposition, as reflected on amyloid positron emission tomography (PET) images (Jack et al., 2008). T indicates tau protein accumulation, as reflected by tau PET imaging (Cho et al., 2016). N indicates biomarkers of neurodegeneration or injury, including a reduction in glucose metabolism in the temporoparietal region, as reflected by fluorodeoxyglucose positron emission tomography (FDG-PET) imaging, and hippocampal atrophy observed using structural magnetic resonance imaging (MRI) (Jagust et al., 2007; Jack, 2011; Arbizu et al., 2018). The development of diagnostic methods based on these neuroimaging biomarkers is important to improve the diagnosis of AD, especially in the prodromal stage (Chetelat, 2018).
+
+Artificial intelligence (AI) has been increasingly important in clinical diagnosis for the past few years. Psychoradiology with AI are emerging research directions for brain disorders (Lui et al., 2016). As one of the most important AI techniques, deep learning performs well in image processing for image detection, classification, and segmentation (Lee et al., 2017; Suzuki, 2017). It has been applied in some studies to achieve an accurate diagnosis of AD based on features extracted from AD-related images. Multiple deep learning models are being applied for the early detection and prediction of AD, such as convolutional neural networks (CNNs) (Zhou J. et al., 2021), autoencoders (AEs) (Ju et al., 2019), and deep belief networks (DBNs) (Shen et al., 2019; Lin E. et al., 2021).
+
+The generative adversarial network (GAN) is a recent model first proposed by Goodfellow et al. (2014). It is a generative model mainly used for image processing based on the adversarial training of two components: the generative network (G) and the discriminative network (D). Fake images generated by this model, which highly resemble the real images, might exercise the same function as real images in disease diagnosis. In recent years, GAN has shown application value in diagnosing AD by providing image processing support, including quality improvement for low-dose PET images or 1.5-T MRIs (Wang et al., 2018; Ouyang et al., 2019; Zhou X. et al., 2021), predicting brain images at a future time point (Wegmayr et al., 2019; Zhao et al., 2021), data augmentation for network training (Islam and Zhang, 2020; Sajjad et al., 2021), and interconversion of PET and MRI data (Gao et al., 2021; Lin W. et al., 2021). With the GAN-based deep-learning classification framework, a more accurate diagnosis of AD is promising and may be achieved.
+
+Some recent reviews reported the application of GAN in AD predictions and image classification. Logan et al. (2021) reported the application value of GAN in improving image quality and converting the modality. However, only two studies were included, and the results for the AD diagnosis were not reported. Lin E. et al. (2021) reported the application of GAN in a mouse model of AD with genomic data. Both studies were not comprehensive and did not include any data analysis for the AD diagnosis. To our knowledge, a gap exists in the meta-analysis for GAN application in the diagnosis of AD. This study systemically reviewed studies examining the application of GAN-based deep learning methods in the diagnosis of AD and subsequently performed a meta-analysis evaluating their diagnostic performance to fill this gap.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and Methods
+
+This study was conducted according to the Preferred Reporting Items for a Systematic Review and Meta-analysis of Diagnostic Test Accuracy Studies (PRISMA-DTA) statement (McInnes et al., 2018).
+
+### Protocol and Registration
+
+This study was registered on PROSPERO with the registration number CRD42021275294.
+
+### Focused Question
+
+The focused question of this study is what is the performance of GAN in the diagnosis of AD?
+
+### Patients, Intervention, Comparison, Outcome and Study Design Criteria
+
+This study followed the Patients, Intervention, Comparison, Outcome and Study design (PICOS) criteria:
+
+Patients (P): patients with AD or MCI.
+
+Intervention (I): GAN-based deep learning methods for the diagnosis of AD. Specifically, the task of AD diagnosis referred to the AD vs. CN classification and pMCI vs. sMCI classification.
+
+Comparison (C): the deep learning methods without GAN.
+
+Outcome (O): the performance for the diagnosis of AD, including accuracy, sensitivity, specificity, and the area under the curve (AUC) of the summary receiver operating characteristic curve (SROC).
+
+Study design (S): studies using neuroimaging data.
+
+### Literature Search
+
+A search of the following electronic databases was performed by two researchers (CQ and YZ) independently in August 2021: MEDLINE (PubMed), Cochrane Library, EMBASE, and Web of Science. The database coverage was up to August 2021. In addition, a manual search was conducted of references of the initially included articles and relevant reviews. The detailed search strategy is displayed in Supplementary Material.
+
+### Inclusion and Exclusion Criteria
+
+The inclusion and exclusion criteria followed the PICOS criteria.
+
+Inclusion criteria: (1) participants who were clinically diagnosed with AD or MCI; (2) the application of GAN in the deep learning models; (3) report of the performance for diagnosis; and (4) diagnosis based on neuroimaging data (PET, MRI, etc.).
+
+Exclusion criteria: (1) participants diagnosed with other brain disorders, such as brain tumors; (2) report of an assessment of generated image quality only, such as the peak signal to noise ratio (PSNR) and structural similarity (SSIM); (3) diagnosis based on other subjects rather than images; (4) conference abstracts (published abstracts of papers participating in academic conferences without the full text), editorials, letters, or review articles.
+
+### Article Screening
+
+Two researchers (CQ and YZ) independently performed the screen according to the PICOS criteria. The initial screen was performed by reading titles and abstracts. The full text was then read for further screening. A consensus was finally reached through negotiation in cases of any divergence between the two researchers.
+
+### Data Extraction
+
+A self-developed data extraction form was used by two researchers (CQ and YZ) independently. The following data were collected: author, year, country, data, participants, structure of the model, type of GAN, function of GAN, classification task, and performance.
+
+### Quality Assessment
+
+The quality of the included studies was assessed by two researchers independently with the Quality Assessment of Diagnostic Accuracy Studies-2 (QUADAS-2) tool. Assessment domains were as follows: risk of bias (patient selection, index test, reference standard, and flow and timing) and applicability concerns (patient selection, index test, and reference standard).
+
+### Data Analysis
+
+Stata 15 and MetaDiSc 1.4 software were used to analyze the data. For the accuracy analysis, researchers calculated the odds ratio (OR) with a 95% confidence interval (CI). Cochran’s Q-test and Higgins inconsistency index (I2)-test were performed to test heterogeneity. A fixed-effects model was used when non-significant heterogeneity was observed (P &gt; 0.05 and I2 &lt; 50%); otherwise (P &lt; 0.05 or I2 &gt; 50%), a random-effects model was applied.
+
+The true positive (TP), false negative (FN), false-positive (FP), and true negative (TN) were calculated, and 2 × 2 tables were plotted based on the performance for diagnosis (accuracy, sensitivity, specificity, and other parameters) reported. Based on the data calculated above, researchers adopted a bivariate random-effects model to calculate the pooled sensitivity and specificity with their 95% CIs. An SROC curve was constructed, and the AUC was calculated. The Spearman correlation coefficient was obtained, and a value greater than 0.5 with P &lt; 0.05 indicated the presence of threshold effects. Heterogeneity was assessed using the same method described for accuracy. The narrative analysis was adopted for the studies excluded from the meta-analysis.
+
+According to the pooled sensitivity and specificity of neuroimaging biomarkers for diagnosis reported in some meta-analyses and rules for evaluating the AUC of classification models (Bloudek et al., 2011; Morris et al., 2016), we proposed that a method with great potential for clinical application should meet the following criteria: the pooled sensitivity or specificity was greater than 0.90 and the AUC was greater than 0.90.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

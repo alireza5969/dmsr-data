@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Manetti, Maiese, Baronti, Mezzetti, Frati, Fineschi, Turillazzi, and Kontos: MiRNAs as New Tools in Lesion Vitality Evaluation: A Systematic Review and Their Forensic Applications</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1392,5 +1415,45 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Wound vitality demonstration is one of the most challenging fields in forensic pathology. It has been classically based on the presence of inflammation, red cell infiltration, and tissue alterations at the histological examination [1,2,3,4]. However, the differentiation between vital reactions and post-mortem changes is not always clear [5,6,7]. In recent years, researchers focused on the detection of inflammatory cells, cytokines, apoptosis mediators, and other markers that are supposedly present in antemortem rather than post-mortem wounds, through immunohistochemical stains [6,7,8,9,10,11]. Nevertheless, some doubts about the reliability of these methods have arisen, and the lack of a standardized protocol and the operator dependency of this approach makes it difficult to correctly interpret the results [12].
+
+MicroRNAs (miRNAs) are short single-strand non-coding ribonucleic acids that have a fundamental role in the post-transcriptional regulation of gene expression, mainly inhibiting the mRNA translation [13,14,15]. Due to their ubiquity, they can be used as a diagnostic tool in different clinical areas, as well as in forensic pathology [16]. A differential miRNA expression in antemortem and post-mortem wounds has been observed [17,18,19]. This evidence opens new and promising possibilities to use them as lesion vitality markers. It is unlikely that a method alone could provide the trustworthiness needed in judicial cases, but the combination of histological, immunohistochemical, and genetic analysis may become a new tool in vitality diagnosis.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+The present systematic review was carried out according to the Preferred Reporting Items for Systematic Review (PRISMA) standards [20]. A systematic literature search and a critical review of the collected studies were conducted. An electronic search of PubMed, Science Direct Scopus, Google Scholar, and Excerpta Medica Database (EMBASE) from database inception to November 2020 was performed. The search terms were “miRNAs”, “wound vitality”, and “lesions vitality” in the title, abstract, and keywords. The bibliographies of all located papers were examined and cross-referenced to further identify relevant literature. A methodological appraisal of each study was conducted according to the PRISMA standards, including an evaluation of bias. The data collection process included study selection and data extraction. Two researchers (A.C.M., E.M.) independently examined the papers with titles or abstracts that appeared to be relevant and selected those that analyzed miRNAs involved in wound vitality demonstration and miRNAs involved in wound healing that may be further investigated as vitality markers in post-mortem samples. Researchers resolved their disagreement concerning works eligibility by consensus. Only papers in English were included in the research. Two investigators performed data extraction (A.B., E.M.), and two other investigators verified them (A.B., E.M.), which were again verified by two other investigators (A.M., E.T.). This study was exempt from institutional review board approval, as it did not involve human subjects.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

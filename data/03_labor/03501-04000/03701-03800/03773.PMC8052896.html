@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Byrnes, Khan, Haroon, McCawley, and Cheema: Management of colon-invading renal cell carcinoma: Operative technique and systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -653,5 +676,63 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+At detection, 5%–15% of renal cell carcinomas (RCCs) invade into the surrounding structures.[12] Extracapsular spread may involve psoas muscle, pancreas, spleen, small bowel, and colon.[345] Synchronous metastases commonly coexist and preclude surgical intervention. Overall, locally advanced disease confers a poor prognosis, with 5-year overall survival rates of &lt;5%.[67] Nonetheless, en bloc resection of involved organs remains the only potentially curative option.
+
+Direct colonic invasion by RCC is rare.[89] Here, we perform a systematic review of the literature to identify previously reported cases of colon-invading RCC. We also outline the operative approach for a recently encountered case of right-sided, colon-invading RCC.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## METHODS
+
+### Literature search
+
+A systematic review was conducted according to the Preferred Reporting Items for Systematic Review and Meta-Analysis (PRISMA) guidelines.[10] A study protocol has not been previously published.
+
+### Eligibility criteria
+
+All published reports of primary colon-invading RCC were eligible for inclusion. Case reports, case series, and cohort studies were eligible for inclusion. Conference abstracts were excluded. Eligible studies reported on clinicopathological characteristics, postoperative outcomes, and survival data, where available.
+
+### Study outcomes
+
+From the included studies, two reviewers extracted the following details: tumor size, laterality, structures invaded, staging, histopathological features, immunohistochemical features, and surgical management.
+
+### Search strategy
+
+Online databases were searched using the following combination of Medical Subject Heading terms: “renal cell carcinoma” OR “RCC” AND “colon.” PubMed, EMBASE, and Scopus databases were searched. The search was performed from inception until May 2020, with the last search performed on May 1, 2020. The titles and abstracts of citations were individually reviewed, and full texts of studies were retrieved, where available. Articles not in the English language were excluded. Reference bibliographies of the recovered studies were further assessed for potential additional publications suitable for inclusion.
+
+### Intraoperative photography and chart review
+
+A chart review was performed on a patient who presented with right-sided colon-invading RCC. The following details were extracted: clinicopathological characteristics, radiological images, intraoperative photographs, histopathological images, operative technique, and postoperative outcomes. Informed written consent was obtained from the patient.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

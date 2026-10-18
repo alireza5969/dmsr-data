@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Davri, Birbas, Kanavos, Ntritsos, Giannakeas, Tzallas, Batistatou, and Eloy: Deep Learning on Histopathological Images for Colorectal Cancer Diagnosis: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2164,5 +2187,77 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Colorectal cancer (CRC) is one of the most common types of gastrointestinal cancer, the second most common cancer in women and the third in men [1]. Despite existing variations, such as geographical distribution, age and gender differences, the CRC incidence, overall, is estimated to increase by 80% in the year 2035, worldwide [2]. This rising incidence of CRC is mainly due to changes in lifestyle, particularly dietary patterns [3]. Most CRCs are sporadic (70–80%), while approximately one third have a hereditary component [4]. Within the term CRC, a wide range of carcinoma subtypes is included, characterized by different morphological features and molecular alterations.
+
+The cornerstone of CRC diagnosis is the pathologic examination (biopsy or surgical excision) [5]. With the advent of screening methods, many precursor lesions are also detected and biopsied. Consequently, a wide range of pre-malignant lesions have been identified, and occasionally, a differential diagnosis between pre-malignant and malignant lesions is quite challenging [6]. The histopathological examination of the tissue remains the “gold standard” for diagnosis, with the first step being the optimal preparation of the histological section, stained with Hematoxylin and Eosin (H&amp;E) [7]. Further examination with special in situ methods, such as immunohistochemistry (IHC) and in situ hybridization (ISH), and other molecular techniques follows [8]. There are published guidelines for pre-analytical, analytical and post-analytical procedures in a pathology laboratory [9]. As expected, due to the high incidence of CRC, the diagnostic load in a routine pathology laboratory is very heavy and the introduction of an ever-growing list of morpho-molecular features to be examined and noted has made the diagnosis a time-consuming process [10]. All these factors, in combination with the shortage of pathologists worldwide, have led to delays in diagnosis, with consequences to the optimal healthcare of the patient.
+
+It has been shown that pathologists make a diagnosis based mainly on image-based pattern recognition [6]. With this strategy, architectural and cellular characteristics conform to already known features of a disease [11]. In several instances, an accurate diagnosis or estimation of prognostic and predictive factors is subject to personal interpretations, leading to inter- and intra-observer variability [12,13]. In a continuous effort to improve the accuracy of the pathology diagnosis, combined with the timely delivery of all vital information for optimal patient treatment, the new and breakthrough technologies can be of great value. Thus, in the last 5 years, the development of reliable computational approaches, using machine learning based on pattern recognition, has exponentially increased, as reflected in the plethora of published papers [14,15].
+
+The recent World Health Organization (WHO) classification for malignant epithelial tumors of the colorectum includes four main categories: adenocarcinoma (ADC) not otherwise specified (NOS), neuroendocrine tumor NOS, neuroendocrine carcinoma NOS and mixed neuroendocrine-non-neuroendocrine neoplasm (MiMEN) [16]. Of these, colorectal ADC is the most common (90%) and, by definition, it shows glandular and mucinous differentiation. Colorectal ADC has several histopathological subtypes, with specific morphologic, clinical, and molecular characteristics, i.e., serrated ADC, adenoma-like ADC, micropapillary ADC, mucinous ADC, poorly cohesive carcinoma, signet-ring cell carcinoma, medullary ADC, adenosquamous carcinoma, carcinoma undifferentiated NOS and carcinoma with sarcomatoid component.
+
+The diagnosis of CRC is only the first step for a complete pathology report. According to best-practice guidelines, the specific histologic subtype, the histologic grade, the TNM staging system, the lymphovascular and perineural invasion, and the tumor budding should be reported [9,16]. In recent years, the molecular pathological classification of CRC has been proposed, aiming to compliment the traditional histopathologic classification [4]. An integrated molecular analysis performed by the Cancer Genome Atlas Network, has classified CRC into three groups, including highly mutated tumors (~13%), ultra-mutated tumors (~3%) and chromosomal instability (CIN) tumors (~84%). In 2015, an expression-signature-based classification was proposed with four consensus molecular subtype (CMS) groups: CMS1 subtype (MSI-immune, 14%), CMS2 subtype (canonical, 37%), CMS3 subtype (metabolic, 13%) and CMS4 subtype (mesenchymal, 23%). In addition, molecular alterations are prevalent in CRC, consisting of Chromosomal Instability (CIN), Microsatellite Instability (MSI) and a CpG Island Methylator phenotype (CIMP). Defective mismatch repair (MMR) DNA mechanisms lead to increased mutations and, consequently, to MSI [17,18]. The majority of sporadic CRCs are characterized by CIN (~84%), and ~13–16% are hypermutated with an MSI status. The immunohistochemical detection of either an abnormal expression or a loss of expression of the mismatch repair proteins, MLH1, MSH2, MSH6, and PMS2, is of significant diagnostic and prognostic value in CRC, as well as for the detection of hereditary nonpolyposis colorectal cancer (HNPCC), also known as Lynch syndrome, which constitutes approximately 2% to 3% of all colorectal carcinomas [19,20,21].
+
+Histopathology image generations start with the standard procedure of tissue preparation. Biopsy or surgical specimens (representative sections) are formalin-fixed and paraffin-embedded. Then, the 4μm tissue sections are prepared and stained with H&amp;E dye [22]. The images are extracted after a scanning procedure. Several scanning systems can be used to digitize the whole slide [23], such as the Hamamatsu NanoZoomer series, the Omnyx scanner, the Zeiss scanners, the Pannoramic 250 Flash II, and the Leica Biosystems Aperio systems [24]. Most of the above scanners provide two optical magnifications, 20× and 40×, however, the user can also digitally undersample the image in different magnifications. A scanner needs several minutes for the scanning of the whole slide, while most of the system can deal with tens or hundreds of slides that are scanned automatically one-by-one. According to the digitalization, each pixel of a Whole Slide Image (WSI) corresponds to a physical area of several decades nm2. For example, in the 40× magnification mode, a Hamamatsu NanoZoomer scanner extracts an image, where the size of each pixel edge corresponds to 227 nm [25]. The latter image digitization provides an appropriate resolution for most of the histological findings, which presents a physical size of microns [26]. In most of the cases, the extracting images are storage either in a compressed JPEG-based format or an uncompressed TIFF format. Figure 1 presents the resolution of a WSI, scanned by a Hamamatsu NanoΖoomer 210.
+
+Machine learning is a branch of AI which is based on the concept that machines could have access to data and be able to learn on their own. AI has a broader scope and involves machines that are capable of carrying out tasks requiring intelligence. Machine learning techniques focus on the creation of intelligent software using statistical learning methods and require access to data for the learning procedure [27]. A branch of machine learning, which has drawn a lot of attention over the last few years, is DL. DL involves training artificial neural networks (ANNs) with multiple layers of artificial neurons (nodes). Neural networks are inspired from the human physiology of the brain, comprising a simplified artificial model of the human neural network. An ANN is a collection of connected artificial neurons. The simplest ANN architecture is the single layer feed forward neural network. In these types of networks, the information moves in one direction only, from the inputs’ nodes to the hidden layer nodes and then to the output nodes. The success and wide acceptance of ANNs relies on their capability to solve complex mathematical problems, nonlinear or stochastic, by using very simple computational operations. In contrast to a conventional algorithm, which needs complex mathematical and algorithmic operations and could only apply to one problem, an ANN is computationally and algorithmically very simple and its structure allows it to be applied in a wide range of problems [28].
+
+DL has rapidly developed during the last decade due to the significant increase in processing power and to the fact that, for the first time, artificial models are able to achieve more accurate results than humans in classification tasks [29]. Both DL and machine learning techniques in general affect our everyday life in various ways. From the simple-looking face recognition program used in Facebook, to the classification of abnormal/normal human cells in bioinformatics. For image analysis problems, such as the histological lesions’ detections, prognosis and diagnosis, DL approaches mainly employ Convolutional Neural Networks (CNNs) for segmentation and classification, while few studies employ another DL approach, called Generative Adversarial Networks (GANs), to improve the training set of images before classification.
+
+CNNs have produced high classification rates in modern computer vision applications. The term “convolutional” suggests that a deep neural network applies the mathematical convolution operation to at least one of its multiple hidden layers. Many CNN model variations have been implemented in recent years, which are based on a common layer pattern: (a) 1 input layer, (b) L-1 convolution layers and (c) 1 classification layer. The key feature of a sequential CNN is that it transforms the input data through neurons that are connected to neurons of the previous convolution layer. Initially, the raw image is loaded at the input layer, which is usually set to accept a three-dimensional spatial form of an image file (width × height × depth), with the depth, in this case, indicating the RGB (Red, Green, Blue) color channels. More technically, each of the convolution layers calculates the dot product between the area of the neurons in the input layer and the weights in a predetermined size of a filtering kernel (e.g., 3 × 3). In this way, local features can be detected through K declared kernels. As a result, all nodes (neurons) of each convolution layer calculate their activation value based on only one subset of spatially adjacent nodes on the filtered feature maps of each previous convolution layer. The most common deep network architectures, such as AlexNet and GoogleNet, use the same neuron type at each hidden layer [30,31]. These architectures achieve very high accuracy in classification problems, while their training is a computationally intensive and time-consuming process. Currently, many different architectures, such as VGG, DenseNet, ResNet, Inception.v3, etc., have been proposed, performing well under different conditions and problem parameters [31,32,33].
+
+GANs are also a DL approach applied on digital image analysis [34]. GANs are a smart way to train a model as a supervised learning problem, even if based on their principles they are unsupervised machine learning procedures. A typical GAN consists of two sub-models: (a) the generator network, where the training generates new samples with similar characteristics to the real ones and (b) the discriminator network, which provides a binary classification of the generating samples, discriminating the real (approved) samples from the fake ones. GANs have been rapidly evolved, especially in image processing and classification, providing a sophisticated approach to simulate images for CNN training, avoiding overtraining and overfitting. It is an alternative method of image augmentation which extracts simulated images using simple transformations such as rotation, shearing, stretching, etc.
+
+In this paper, a systematic review for the application of DL in colorectal cancer, using digital image analysis in histopathological images, is presented. The aim of the manuscript focuses on the investigation from both medical and technical viewpoints. The innovative contribution of this systematic review is the combination of the two viewpoints provided, presenting a more comprehensive analysis of AI-based models in CRC diagnosis. A deeper understanding on both medical and technical aspects of DL will better reveal the opportunities of implementing DL-based models in clinical practice, as well as overcome several challenges occurring for the optimal performance of the algorithms. According to the PRISMA guidelines [35], an expanded algorithm was used for searching the literature works. Specific inclusion and exclusion criteria have been defined to result in the final studies of interest, which have been categorized for both medical and technical points of views. In the next sections, significant backgrounds for both the clinical practice and the details about DL in image analysis are outlined, the method for the study selection is analyzed, and results are extensively discussed.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+### 2.1. Search Strategy
+
+We systematically searched PubMed from inception to 31 December 2021 for primary studies developing a DL model for the histopathological interpretation of large bowel biopsy tissues and CRC. For this purpose, we used the following algorithm: (convolutional neural networks OR CNN OR deep learning) AND ((cancer AND (colon OR colorectal OR intestin* OR bowel)) OR (adenocarcinoma AND (colon OR colorectal OR intestin* OR bowel)) OR (carcinoma AND (colon OR colorectal OR intestin* OR bowel)) OR (malignan* AND (colon OR colorectal OR intestin* OR bowel))) AND (biop* OR microscop* OR histolog* OR slide* OR eosin OR histopatholog*). The search was conducted on 14 January 2022.
+
+### 2.2. Study Eligibility Criteria
+
+The study was conducted according to the PRISMA guidelines and registered to PROSPERO 2020. Eligible articles were considered based on the following criteria. We included studies presenting the development of at least one DL model for the histopathological assessment of large bowel slides and CRC. Eligible applications of the DL models included diagnosis, tumor tissue classification, tumor microenvironment analysis, prognosis, survival and metastasis risk evaluation, tumor mutational burden characterization and, finally, microsatellite instability detection. We excluded articles that presented in vitro models, used endoscopic or radiological images instead of histological sections, and involved non-photonic microscopy. Furthermore, eligible articles should report original studies and not reviews/meta-analyses, concern humans and be written in English. Additionally, articles referring to organs other than the large bowel and benign entities were deemed ineligible.
+
+### 2.3. Study Selection
+
+All citations collected by the previously mentioned methodology were independently screened by four researchers, who were properly trained before the process started, using the online software Rayyan. Three of the researchers were scientifically capable of evaluating the medical aspect of the query and one of them was a CNN expert, able to assess the technical part. During the screening period, the researchers would meet regularly to discuss disagreements and continue training. Conflicts were resolved by consensus. The full texts of potentially eligible articles were later retrieved for further evaluation.
+
+### 2.4. Data Extraction
+
+To facilitate the data extraction process, we specially designed a spreadsheet form, which all researchers could access to import data from all the eligible articles. From each paper, we extracted information on first author, year and journal of publication, PubMed ID, title, aim of medical research, technical method, classification details, dataset and performance metrics.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

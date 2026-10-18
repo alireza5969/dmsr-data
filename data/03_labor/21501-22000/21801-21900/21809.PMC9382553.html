@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Lovis, Rezk, Nneji, Kurz, Hauser, Mehrtens, Krieghoff-Henning, Hekler, Kather, Fröhling, von Kalle, and Brinker: Uncertainty Estimation in Medical Image Classification: Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1057,5 +1080,83 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+### Overview
+
+Digital image analysis is a helpful tool to support physicians in their clinical decision-making. Originally, digital image analysis was performed by extracting handcrafted features from an input image. These features can be tuned to the underlying data, which means that for a specific disease, only specific features can be looked for in the observed image. With the advent of deep learning, however, a “black box” has been established that can, in the setting of supervised learning, intrinsically learn such features from labeled data. In recent years, deep learning–based methods have vastly outperformed traditional methods that rely on handcrafted features. With the learning-based methods, the focus has shifted from manually defining image features to providing clean and correctly annotated data to the learning system. With the data-centric approach, however, new challenges arise.
+
+In a clinical setting, when such algorithms are meant to be used as diagnostic assistance tools, the user has to be able to understand how the artificial intelligence (AI) system came up with the diagnosis. One key component in this regard is a measure of confidence of the AI system in its prediction. Such a measure is important to increase trust in the AI system, and it may improve clinical decision-making [1]. We will use the term “uncertainty estimation” for measures to evaluate model confidence. When the AI system provides a measure for its uncertainty, predictions with high uncertainties can be treated with extra care by medical experts. On the other hand, the human expert can better trust the prediction of an AI system where it reports low uncertainty. In this study, we review recent publications that have applied uncertainty estimation methods to medical image classification tasks. The area of uncertainty estimation in deep neural networks is an active research field, and the currently most popular methods have been proposed from 2016 onward. In the next section, we provide an overview of the most prominent methods for uncertainty estimation.
+
+In the results section, we categorize the reviewed works by the uncertainty estimation method they apply. We provide a table that serves as an overview of all the included studies. In the last section, we discuss the most frequently used metrics for evaluating the benefit of uncertainty estimation and give an outlook of possible future research directions with a focus on human-machine collaboration.
+
+### Technical Background
+
+In a classification task, the neural network is supposed to predict how likely it is for a given input x to belong to class y out of a fixed number of possible classes. The output of the neural network can be interpreted as a probability distribution over all classes, with each individual value indicating how likely it is for the input to belong to the respective class.
+
+In formula, the predictive distribution can be written as follows:
+
+The predictive distribution given input x and training data D is described as the integral over the likelihood p(y|x,θ) with prior p(θ|D) computed over the model’s parameters θ. In deep neural networks, this integral cannot be computed analytically. Therefore, methods that try to capture uncertainty in neural networks try to approximate the predictive distribution.
+
+Depending on the modeled uncertainty, the predictive uncertainty can be divided into aleatoric uncertainty and epistemic uncertainty. The aleatoric uncertainty describes the uncertainty inherent in the data, whereas the epistemic uncertainty captures the uncertainty of the model. The softmax output of a typical classification network is only able to capture aleatoric uncertainty [2].
+
+### Methods for Uncertainty Estimation
+
+Ovadia et al [3] compared several popular methods for uncertainty estimation. In this work, we name the methods that we discovered to be most popular and refer the reader to the respective works for a detailed description of the proposed methods. We categorize the methods into (1) model sampling, (2) single network methods, and (c) data augmentation.
+
+#### Model Sampling
+
+Sampling-based methods are easy to implement as they make use of existing network architectures. The 2 most popular methods are Monte Carlo dropout (MCDO) [4] and Deep Ensembles [5]. Both methods rely on several prediction runs of either an ensemble of multiple neural networks or a neural network with dropout layers to compute a predictive uncertainty.
+
+#### Single Network Methods
+
+The field of directly modifying the network architecture for improved uncertainty estimation is quite diverse. In the derivation of MCDO, the authors compare their approach to Gaussian processes (GPs). A GP is a method to estimate a distribution over functions [6] and can be applied to estimate uncertainties in neural networks.
+
+Approaches that have been included in the comparison by Ovadia et al [3] include stochastic variational inference (SVI) [7] and temperature scaling (TS) [8]. SVI applies the concept of variational inference to deep neural networks, whereas TS works as a post hoc method. By applying a scaling factor to the network output, TS can improve network calibration. Another method worth mentioning is evidential deep learning (EDL) [9]. EDL fits a Dirichlet distribution to the network output to estimate the network’s uncertainty.
+
+#### Data Augmentation
+
+Comparable to sampling multiple models, one can also compute a distribution of predictions by running the network on different augmentations of the input data. Ayhan and Berens [10] propose such a method for improved aleatoric uncertainty estimation called test-time data augmentation (TTA).</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Data Extraction
+
+For the systematic review, we searched through Google Scholar, PubMed, IEEE Xplore, and ScienceDirect to identify relevant works that apply uncertainty estimation methods to medical image classification. We limited our search to works that have appeared between January 2016 and October 2021. As search terms, we used “uncertainty,” “uncertainty estimation,” “network calibration,” and “out-of-distribution detection,” and we combined them with the terms “medical images,” “medical image analysis,” and “medical image classification.”
+
+### Selection Process
+
+The selection process was conducted according to the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines [11]. We found 320 potentially relevant publications from the database search. During title and abstract screening, we discarded the majority of the works, as they either did not estimate uncertainties at all or dealt with other image analysis problems such as image segmentation. From the first screening round, 65 papers were selected for full-text analysis. During the full-text analysis, we discarded several other works, as they turned out to deal with other problems including semantic segmentation. Eventually, 22 papers were included in the review. Figure 1 visualizes the selection process.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

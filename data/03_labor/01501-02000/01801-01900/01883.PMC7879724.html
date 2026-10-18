@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Eysenbach, Lee, Banik, Lin, Chen, and Wu: Efficiency and Quality of Data Collection Among Public Mental Health Surveys Conducted During the COVID-19 Pandemic: Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1450,5 +1473,45 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+The World Health Organization has recognized the importance of assessing population-level mental health during the COVID-19 pandemic. More than 463 articles on the mental health impact of COVID-19 have been published in 2020, and several more mental health surveys are underway [1]. Most of these studies evaluated the psychiatric symptoms among the general public and health care workers, and some others evaluated patients with COVID-19 or those with psychiatric disorders [2]. In a global crisis such as the COVID-19 pandemic, time-sensitive policy decision-making underscores the importance of fostering an agile empirical approach that can monitor population-level mental health in a timely manner. Any change in the mental health impact of COVID-19 is likely to be dynamic. For example, the 20% decrease in suicide rate in Japan observed during the early stage of the pandemic seemed to have reversed in August 2020, when a 7.7% rise was reported [3]. Therefore, a timely surveillance method is urgently needed to track the impact of COVID-19 on public mental health. This brief systematic review focused on studies on the general public conducted during the COVID-19 pandemic and analyzed the efficiency and quality of data collection in the existing literature.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+We used the following search strings to select relevant articles in the PubMed database: ((COVID-19) OR (SARS-CoV-2)) AND ((Mental health) OR (psychological) OR (psychiatry)). We screened the titles, abstracts, and texts of the published articles to exclude irrelevant studies. We also excluded articles published on preprint platforms such as bioRxiv, because we were unable to analyze the time between the receipt of the articles and their availability online. A PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) flow diagram detailing the study retrieval process is shown in Figure 1.
+
+We used the Newcastle-Ottawa Scale to evaluate the quality of each research article. The Newcastle-Ottawa Scale includes four criteria for selection bias, with scores ranging between 0 and 5; scores &lt;3 points are regarded as high risk for selection bias in a cross-sectional study [1,4]. The four quality assessment criteria were as follows: sample representativeness (1 point), predetermined and satisfactory sample size (1 point), comparability between respondents and nonrespondents (1 point), and ascertainment of the measurement tool (2 points for the validated measurement tool; 1 point for the nonvalidated measurement tool, but the tool is available or described).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

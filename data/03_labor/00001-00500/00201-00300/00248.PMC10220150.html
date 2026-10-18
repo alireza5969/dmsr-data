@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Dieckmeyer, Sollmann, Kupfer, Löffler, Paprottka, Kirschke, and Baum: Computed Tomography of the Spine</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2894,5 +2917,79 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Key Points
+
+Spinal CT has high potential for dose reduction of 50% or more for the majority of clinical applications.
+
+Options and limitations of dose reduction are highly dependent on the clinical indications and application-specific techniques can further increase the achievable dose reduction.
+
+Additional dose reduction can be expected from the clinical transition of artificial intelligence and photon counting CT in the upcoming years.
+
+## Introduction
+
+The number of computed tomography (CT) examinations performed has been on the rise for decades [1–3]. Increases in clinical application are related to technical developments, wider availability, and physician and patient demands [1, 2]. CT is at the forefront of imaging for multiple purposes, spanning from regular oncologic staging to acute imaging in the emergency trauma setting, contributing significantly to accurate diagnosis, optimized patient management, and improved treatment; however, the use of CT is inherently accompanied by exposure to ionizing radiation, which may cause radiation-induced malignancies [4, 5]. More specifically, it is assumed that about 2% of future cancer cases will be attributable to current application of imaging techniques [3, 6]. Thus, a general principle is to keep radiation exposure as low as reasonably achievable (ALARA principle) [7, 8]; however, in daily clinical routine, CT-related radiation exposure still varies considerably within and across institutions, given that well-defined and ubiquitous reference standards are frequently missing [9, 10]. One relevant aspect is that general recommendations are hard to determine considering the various scanner models and technologies, which may exert an impact on radiation exposure during scanning of different body regions.
+
+CT examinations of the spine are performed for different indications including fracture detection and trauma evaluation, assessment of degenerative changes, postoperative complications, and guidance of interventional procedures, such as periradicular infiltration (PRI) [11–13]. Particularly in musculoskeletal and neuroradiology departments, spinal CT constitutes a large proportion of the daily workload. Evidently, the most effective way to reduce CT-related radiation exposure is to use the technique only when the clinical value outweighs the risks and costs. Aside from that, various developments have emerged on both the acquisition and the reconstruction sides to achieve an optimized trade-off between image quality (IQ) and radiation exposure [14, 15]. Among others, dose reduction techniques include shielding of radiosensitive organs [16], beam-shaping filters [17] and, most importantly, the optimization of acquisition parameters, including tube voltage (kV), tube current, voxel size and slice thickness. Tube current is expressed either directly (as mA) or indirectly in terms of tube current-time product (as mAs). Different parameter combinations can lead to entirely different IQ at the same radiation dose.
+
+In clinical CT examinations, radiation exposure is normally controlled via tube current modulation, which nowadays is usually achieved by means of automatic exposure control (AEC) [18, 19]. By adjusting the tube current to the patient’s habitus in the axial plane and along the z‑axis, a considerable dose reduction can be achieved. Tube current reduction results in a decreased patient dose, as the amount of generated X‑ray photons is directly proportional to the tube current [20]; however, image noise increases exponentially, mostly driven by Poisson noise. Exponential noise increase can be avoided by pulse-width modulation of tube current or X‑ray flux. This technique, termed sparse-sampling CT, reduces projections generated during a 360° gantry rotation while the dose for each individual projection remains constant. Technical implementations are challenging as they require high voltage fast switching electrical elements or fast shuttering of the X‑ray source [21–23].
+
+Any dose reduction technique usually comes at the cost of increased image noise and artifacts. Adequate image reconstruction techniques can mitigate these drawbacks and are therefore a major component of CT dose reduction.
+
+Filtered back projection (FBP) is an analytical reconstruction algorithm relying on the exact mathematical relation between measured projection and reconstructed image data. The speed and robustness of FBP have made it the workhorse of CT reconstruction for decades [15, 24]; however, the assumption of noise-free data and the amplification of noise by the filter severely limit the quality of FBP-reconstructed CT images. In contrast, iterative reconstruction (IR) techniques can reduce image noise through iterative filtering or close to reality physical modeling of the data acquisition process [15]. IR algorithms can be categorized into three stages. Image domain-based reconstruction was the first clinically approved technique in 2009 and features high reconstruction speed; however, noise reduction is limited due to the rather simple iterative denoising only in image space. Hybrid IR algorithms, such as iDose (Philips Healthcare, Best, The Netherlands), ASIR (GE Healthcare, Milwaukee, WI, USA), or SAFIRE (Siemens Healthineers, Erlangen, Germany), feature increased noise reduction and reconstruction time through iterative filtering of both projection and image data. The last stage is represented by model-based IR algorithms (MBIR), which use advanced models in an iterative process of backward and forward projections. They achieve the highest level of noise reduction and ensuing dose reduction but are also computationally most demanding.
+
+The emergence of artificial intelligence (AI) bears great potential for further dose reduction at almost all stages of CT imaging. On the acquisition side, AI-based algorithms have been developed to automatically position the patient at the isocenter using an infrared camera, select the scan range for the required anatomical coverage, or determine tube parameters, in order to optimize patient exposure [25]. On the reconstruction side, AI can be applied to denoise reconstructed images or even perform the reconstruction itself [15, 25]. One common approach is to train a convolutional neural network (CNN) with (simulated) low dose (LD) or artificially noise-enhanced data to reconstruct standard dose (SD) high-quality CT images [26–29]. The application of a CNN is computationally inexpensive once it is trained and validated, when compared to MBIR algorithms. Besides improved IQ, noise reduction, and artifact reduction, reconstruction speed is thus another benefit of AI-based reconstruction. The use of AI in CT imaging will further reduce the required dose; however, study results usually cannot be readily generalized as AI networks are trained on specific datasets. This lack of generalizability must first be addressed to translate AI-based dose reduction to the patient and the ultimate clinical set-up.
+
+Dose reduction techniques are increasingly being used for spinal CT; however, they have not been systematically reviewed yet. Therefore, we aimed to systematically review dose reduction and clinical applications of LD-CT on the spine. Our objective was to determine the degree of clinically achievable dose reduction and the effects on IQ, diagnostic confidence, and patient outcomes. For this purpose, we focused on four major clinical indications: (i) vertebral fractures (VF) and spinal trauma, (ii) spinal degeneration, (iii) perioperative evaluation and (iv) interventional procedures.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Material and Methods
+
+### Search Strategy
+
+A search of the online database PubMed (http://www.ncbi.nlm.nih.gov/pubmed) was performed to identify studies evaluating methods to reduce radiation dose for spinal CT with respect to the following four clinical indications: (i) VF and spinal trauma, (ii) spinal degeneration, (iii) perioperative evaluation, and (iv) interventional procedures. Studies on CT dose reduction for evaluation of spinal metastases and inflammation were very scarce and therefore not included. The search was conducted by two persons (radiologists with 7 and 4 years of experience, respectively) without a beginning search date (search end date: 12 April 2022). Uncertainties about inclusion of a respective article, if present, were resolved by consensus through discussion with a third reviewer (board-certified consultant in radiology, 11 years of experience).
+
+The literature search was performed according to the preferred reporting items for systematic reviews and meta-analyses (PRISMA) guidelines [30, 31]. The used search terms for PubMed are available in the appendix.
+
+### Inclusion Criteria
+
+Studies were included if they met the following inclusion criteria: (1) study population: human studies including adult or pediatric patients; (2) study design: retrospective or prospective; (3) indications: diagnostic CT for present or suspected spinal pathology, CT for spinal intervention planning or guidance, or perioperative spinal CT; (4) scanning type: noncontrast and/or contrast-enhanced CT covering the entire spine or parts of the spine; (5) purpose: comparison of LD to SD protocols through CT data acquired at different dose levels, CT data acquired at a single dose level and additionally simulated at different dose levels, or CT data including a dose comparison between patient subgroups.
+
+### Exclusion Criteria
+
+Studies were not considered if they met the following exclusion criteria: (1) article type: case reports, case series, conference abstracts, letters, editorials, reviews, meta-analyses, or surveys; (2) language of publication other than English; (3) studies in cadavers, phantoms, or animals; (4) different acquisition technique (e.g., cone beam CT, fluoroscopy, conventional radiography); (5) studies with other purposes (e.g., comparison of shielding techniques, medical staff radiation exposure report).
+
+### Extraction of Data
+
+The following basic information was extracted: (1) author(s); (2) year of publication; (3) number of subjects (n) of the entire study and relevant patient subgroups (e.g., SD group, LD group); (4) scanned spine region, type of intervention (if applicable); (5) details on group comparisons (if applicable); (6) details on the used CT system, including number of detector rows, vendor, and model name; (7) image acquisition parameters; (8) image reconstruction algorithms and parameters; (9) dose reduction (in %) and reported dose values: CT dose index (CTDIvol), dose length product (DLP), and/or effective dose (E).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

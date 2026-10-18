@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>La Greca Saint-Esteven, Vuong, Tschanz, van Timmeren, Dal Bello, Waller, Pruschy, Guckenberger, Tanadini-Lang, and Fiorino: Systematic Review on the Association of Radiomics with Tumor Biological Endpoints</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -4806,5 +4829,87 @@ Netherlands Cancer Institute, Amsterdam, The Netherlands
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Cancer precision medicine involves therapy adaptation to improve clinical outcome based on patient-specific characteristics as well as the tumor-specific molecular profile. The advent of high-throughput gene-sequencing techniques in the last decade has allowed for the identification of multiple tumor molecular markers, also known as signature molecules, which correspond to genomic changes that affect gene and protein expression [1,2]. These encompass a great variety of biological molecules such as nucleic acids, proteins, peptides, lipid metabolites and other small molecules, and their assessment can be beneficial for diagnosis, prognosis, or prediction of therapy response. Besides assisting in clinical-decision processes, these signature molecules may also hold the potential for new personalized molecular targeted or immunologic therapies.
+
+On the other hand, the fast-evolving field of radiomics has experienced an increased interest in the past decade, especially within cancer research, due to accumulating evidence of an association between quantitative medical imaging features and clinical and biological endpoints [3]. The underlying principle behind radiomics is that medical images enclose latent information which can be unveiled through the extraction of radiomic features, i.e., quantitative features which describe the shape, size, intensity and texture of a region of interest. The most common imaging modalities used for this purpose are computed tomography (CT), magnetic resonance imaging (MRI), positron emission tomography (PET) and ultrasound (US). Recent advances in machine learning and computer hardware, together with the availability of large-scale medical imaging data, have redefined radiomics as a powerful tool for precision medicine in clinical-decision support systems [4]. Moreover, the non-invasiveness nature of radiomics supposes a great advantage when compared to current gold-standard techniques for tumor phenotype characterization.
+
+The purpose of this systematic review was to determine which radiomic features have been linked to tumor biology in peer-reviewed studies and, thus, could be potentially incorporated in cancer precision medicine. To this end, we chose to summarize current findings assessing the potential association of radiomics with ten classic proteins or genes which are relevant clinical prognostic markers, and which may be targeted by either small molecular inhibitors or antibodies. These are: anaplastic lymphoma kinase (ALK), v-raf murine sarcoma viral oncogene homolog B1 (BRAF), epidermal growth factor (EGFR), human epidermal growth factor receptor 2 (HER-2), isocitrate dehydrogenase (IDH), antigen Ki-67, kirsten rat sarcoma viral oncogene homolog (KRAS), programmed cell death ligand 1 (PD-L1), tumor protein p53 (TP-53) and vascular endothelial growth factor (VEGF).
+
+These factors, when mutated or over-expressed, play important roles in cancer progression and growth (EGFR, HER-2, KRAS, BRAF, ALK), angiogenesis (VEGF), cell cycle regulation and cell death (TP-53), the immune response (PD-L1), and metabolic regulation (IDH). At the same time, it is important to understand the proliferation kinetics (Ki-67 proliferation marker) of the respective cancer types as that can also influence the treatment response.
+
+EGFR, HER-2 and ALK are all receptor tyrosine kinases, located on the cell surface and activated through the binding of ligands, mostly growth factors. This leads to the activation of a whole range of downstream signaling cascades and results in cell survival, proliferation and migration [5,6].
+
+KRAS and BRAF are the genes responsible for making the proteins K-ras and B-raf, which are, amongst others, involved in important signaling pathways (e.g., Ras-Raf-MAPK, PI3-K-AKT) [7,8]. Mutation and down-/up-regulation of any of those kinases can lead to malignancy and especially cancer formation.
+
+VEGF is a signaling factor promoting the formation of new blood vessels. To grow and metastasize, solid cancers require blood supply, which they attain by expressing VEGF to form supporting vasculature [9].
+
+TP-53 is involved in the regulation and progression through the cell cycle; monitors genomic stability and can induce apoptosis. It is one of the most prominent tumor-suppressors [10].
+
+PD-L1 is involved in suppressing the adaptive arm of the immune system. By upregulating PD-L1 expression, cancer cells may evade the host immune system [11].
+
+IDH catalyzes the decarboxylation of isocitrate. Through this metabolic deregulation, cancer progression can be initiated or supported [12].
+
+Ki-67 is a protein that is present during all active phases of the cell cycle but absent in resting (quiescent) cells [13]. Therefore, this cellular proliferation marker is frequently used to distinguish fast growing cell populations, such has cancer cells, from normal cells.
+
+Throughout this review, the term “biomarker” refers, for the sake of simplicity, to any of the above-mentioned biological endpoints. This is also in accordance with the World Health Organization (WHO), which defines biomarker as “any substance, structure, or process that can be measured in the body, or its products and influences or predicts the incidence of outcome or disease” [14].</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+The analysis was conducted according to the PRISMA-P Preferred Reporting Items for Systematic Reviews and Meta-Analyses statement [15]. The protocol for this systematic review was registered at PROSPERO (CRD42020207220) and is available at https://www.crd.york.ac.uk/prospero/display_record.php?ID=CRD42020207220 (accessed on 11 June 2021). No amendments were performed with respect to the published protocol.
+
+### 2.1. Literature Search
+
+The search was conducted in PubMed database. According to PRISMA guidelines, article selection was carried out via multiple steps. The literature search was performed using the query “Radiomics [All Fields] AND keyword [All Fields]”, where keyword corresponded to one of the ten molecular markers under study (i.e., ALK, BRAF, EGFR, HER-2, IDH, Ki-67, KRAS, TP-53, PD-L1 and VEGF) and the possible variations in its naming (e.g., HER2 and HER-2). The full list of queries is provided in the Supplementary Materials (List S1). In total, twenty independent searches were performed. No records were included from other sources such as direct correspondence with authors. The search had no start date limit and was concluded on 31 March 2020.
+
+For each independent search, all retrieved studies were collected, and duplicates were posteriorly removed using the open-source reference management software Zotero [16].
+
+### 2.2. Eligibility Criteria
+
+During the first screening phase, those studies which did not fulfil the following requirements were excluded: (1) the article had to be written in English, (2) the study had to be a scientific article excluding reviews, (3) the topic had to be related to biomarkers in cancer. Following this step, every article was assigned to one of the following categories, depending on the cancer site: breast, central nervous system (CNS), gastrointestinal, liver, lung and others.
+
+The full-text articles were then assessed for eligibility. An article was excluded from the final analysis if at least one of the following criteria applied: (1) only one of the two groups, biomarker-negative or biomarker-positive, patients were included in the study, (2) the total number of patients was less than 40, (3) the association between the biomarker and radiomics features was not investigated, (4) the biomarker analyzed was not among the ten biomarkers defined in the search and (5) less than 20 image features were investigated.
+
+### 2.3. Analysis
+
+Those articles that satisfied the screening and eligibility criteria were included in the following analysis, with each tumor site corresponding to a dedicated subsection in this review. First, the distribution of the number of patients included within all the studies was evaluated. The frequency of investigation of a given biomarker for each tumor site was collected in a dedicated table, together with the total number of studies on each tumor site and on each biomarker.
+
+For each study, we gathered the following information when available: the studied biological endpoint and its alteration, e.g., mutation on a specific exon, over-expression, etc.; the imaging modality; the origin of the dataset; the training set size; the validation set size and type of validation, i.e., internal, temporally independent, external, leave-one-out-, 3-, 5- and 10-fold cross-validation (LOOCV, 3-CV, 5-CV, 10-CV) or bootstrap methods; the initial number of studied radiomic features; the application of feature reduction and feature robustness analysis methods; the reported performance, i.e., the area under the receiver-operating characteristic curve (AUC), classification accuracy or c-index; the public availability of the code and/or data; the reported quality score of the radiomics study, e.g., the transparent reporting of a multivariable prediction modelling for individual prognosis or diagnosis (TRIPOD) score [17] or Radiomics Quality Score (RQS) [4].
+
+Furthermore, radiomic features of the best performing models on the training set were identified for each combination of tumor site, biomarker and image modality, in order to provide, when possible, a visual interpretation of the findings. For consistency, performance on the training set was evaluated since external validation was only performed on a small fraction of the studies. Moreover, in this comparison, the selection was limited to models based solely on radiomic features, i.e., mixed models including clinical-radiological data were excluded. This process was done independently by each of the authors in the systematic review. If the study provided a visual interpretation of such features, it was recorded. Otherwise, whenever possible, the missing interpretation was provided by the authors.
+
+In accordance with PRISMA guidelines, a strategy for bias risk minimization was adopted as follows: the processes of screening, eligibility evaluation and extraction of data for the meta-analysis were performed independently by authors ALG, DV, FT, RDB and VW. Each author analyzed one specific tumor site. The more experienced authors JEvT, ST-L, MG and MP supervised the process and guaranteed a uniform and unbiased analysis throughout the different tumor sites. A detailed description of this process can be found on the PRISMA checklist in the Supplementary Materials (List S2).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

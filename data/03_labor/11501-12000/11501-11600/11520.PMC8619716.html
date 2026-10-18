@@ -6,8 +6,31 @@
 Characteristics on Poststroke Upper-limb Rehabilitation: A Systematic Review and
 Meta-analysis of Randomized Controlled Trials</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1399,5 +1422,77 @@ doi:10.1016/j.cegh.2018.05.005</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+As a novel rehabilitation method, BCI has attracted a lot of attention. A BCI records, analyzes, and decodes brain signals and translates them into commands for communication and control.1,2 The BCI system for stroke rehabilitation usually consists of 6 stages, as shown in Figure 1:
+
+Signal acquisition: A number of modalities for acquisition of brain signals are suitable for the BCI in stroke rehabilitation, namely electroencephalography (EEG), functional near-infrared spectroscopy (fNIRS), and magnetoencephalography (MEG). Due to its lower cost, higher temporal resolution, and portability, EEG is the most commonly used modality in BCI-based stroke rehabilitation.3
+
+Mental practice: In the motor imagery (MI)-based BCI studies, the patients are instructed to imagine moving the impaired hand without any physical movements, whereas in the intention of the movement (IM)-based BCI studies, the patients attempt to perform physical movement of the impaired hand if possible. The MI or IM produces brain waves, called movement-related cortical potentials (MRCPs) and event-related desynchronization/synchronization (ERD/ERS).4,5 MRCP and ERD/ERS are distinct movement-related brain patterns. MRCP is characterized as slow changes of the brain signals in the time domain. ERD and ERS are, respectively, described as a suppression and an enhancement in the power of the sensorimotor rhythms. For example, the power of beta rhythm (13-30 Hz) recorded over the sensorimotor regions has been shown to decrease before the motor task, reaches its minimum during the movement execution (ERD), and then recovers sharply after the end of the motor task (ERS).6 In the application of upper-limb stroke rehabilitation, the BCI is used to detect either MRCP or ERD\ERS in brain signals when the patient performs the relevant mental practice.
+
+Preprocessing: The recorded brain signals can be contaminated with artifacts caused by blinking, muscle activity, and other sources of noise. In the preprocessing stage, different spectral, temporal, and spatial algorithms are applied on the measured brain signals to reduce these artifacts. Among different preprocessing algorithms, the threshold-based artifact rejection, and 8 to 30 Hz band-pass filtering have been widely used in many BCI-based stroke rehabilitation studies.7
+
+Feature extraction: In this step, to detect movement-related brain patterns, a set of informative, nonredundant, and distinctive characteristics, named features are extracted from the preprocessed brain signals. The previous BCI-based stroke rehabilitation studies have often used one of the following 3 types of features, namely, common spatial patterns (CSP) features,8 filter bank CSP (FBCSP) features,9,10 and band power features.1112–13 CSP is a feature extraction algorithm that assigns different weights to different EEG channels, such that the weighted sum of the powers of brain signals is maximized for one class and minimized for the other class.14,15 In MI- and IM-based BCIs, the CSP features are the weighted sum of the powers of 8 to 30 Hz band-pass filtered brain signals, whereas FBCSP features are multiple CSP features extracted from a bank of brain signals filtered using different small band-pass filters.16
+
+Classification: The extracted features are fed to a classifier to detect whether or not the recorded brain signals prominently represent the movement-related brain patterns associated with the performed mental practice. If the movement-related brain patterns are detected, a control signal is sent to an external device to provide the feedback.
+
+Feedback: The patient is presented with feedback indicating whether the classification algorithm accurately interpreted their motor intention/imagination. The commonly used type of BCI feedback in stroke rehabilitation is kinesthetic, whereby following the detection of the movement-related brain patterns, the impaired hand is moved along a predefined trajectory. For instance, Ang et al9 and Biasiucci et al,17 respectively, used an Massachusetts Institute of Technology (MIT)–Manus robot and functional electrical stimulation (FES) in order to facilitate the movement of the impaired hand as the BCI feedback. The MIT-Manus robot is a wearable robot that has been extensively studied for providing individualized rehabilitation after stroke. During the intervention, the patient is instructed to move the affected arm towards a target. If needed, the robot facilitates the movement of the affected arm by providing assistive forces based on the patient’s speed and the direction of the movement. Although rehabilitation with the MIT-Manus robot can be potentially effective,18,19 if the patient does not engage well in generating voluntary attempts, the movements of the affected arm turn out to be completely passive. This leads to a great decrease in the possible benefits of the therapy.
+
+To enhance neuroplasticity in the poststroke upper-limb rehabilitation, the BCI links the movement-related brain patterns (generated during either MI or the IM of the affected arm) with feedback such as robotic-based movements, neuromuscular stimulation, virtual reality, etc.20 In other words, the BCI is coupled with the existing therapies to enhance their efficacy by making the rehabilitation more active.21
+
+Recently, a number of randomized controlled trials (RCTs) have investigated the efficacy of the BCI for poststroke upper-limb rehabilitation, and compared the outcomes with those obtained from other existing therapies.11,13,17,22 Despite the encouraging results in many of these RCTs, there is a significant variance in their reported BCI outcomes.9,10,13,17 This issue might be due to the heterogeneity among their BCI study designs,23 including differences in the performed mental practice, the extracted brain features, the type of feedback given to the patients, and the level of stroke chronicity in the participants. A meta-analysis conducted by Cervera et al24 reported positive effects of the BCI on upper-limb stroke rehabilitation in a short term. Another meta-analysis conducted by Bai et al25 considered the long-term efficacy of the BCI on upper-limb stroke rehabilitation. However, given the considerable heterogeneity in the motor function improvement among the BCI RCTs, there is a need for an extensive meta-analysis to assess the impact of different BCI designs on the treatment efficacy.
+
+This study conducts a systematic review and meta-analysis of the short-term and long-term effects of BCI on upper-limb rehabilitation after stroke. Importantly, we also study the impact of different BCI design characteristics on the efficacy of the poststroke upper-limb rehabilitation. The findings of this meta-analysis aim to improve future clinical trials by providing evidence-based information about different designs of the BCI used for rehabilitation.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Method
+
+This study was conducted in accordance with the preferred reporting items for systematic reviews and meta-analyses (PRISMA) checklist for systematic review and meta-analysis.26 PRISMA aims to help researchers effectively report the findings of systematic reviews and meta-analyses.27 The PRISMA checklist contains 27 items, which should be reported to ensure the transparency and completeness of the report. The 27 items are divided into 7 categories, including title, abstract, introduction, methods, results, discussion, and funding.
+
+We systematically searched PubMed, Physiotherapy Evidence-Based Database (PEDro), and Cochrane Library for the studies that published up until 25 April 2020. Supplemental Appendix 1 provides the detailed electronic search strategy that we used. The identified studies were included in this meta-analysis only if they met the following inclusion criteria:
+
+The study is written in English.
+
+The study design is a randomized controlled trial of upper-limb BCI rehabilitation, in which the 2 groups (ie, the experimental group and the control) are all stroke patients;
+
+The study reported the results of the Fugl-Mayer assessment for upper extremity (FMA-UE) before and after the intervention.
+
+We extracted the following details from each included studies: surname of the first author, year of the publication, aim of the study, brain imaging modality, number of participants, phase of the stroke (ie, chronic or subacute), length and frequency of the interventions, outcome measures, type of performed mental practice during the BCI intervention (ie, MI or IM), BCI feature extraction method, type of BCI feedback, and length of follow-up assessments after the intervention. The corresponding investigators were contacted if the included studies lacked some details.
+
+The PEDro scale is commonly used to measure the methodological quality of a clinical trial by considering 11 criteria (ie, eligibility criteria specified, random allocation, concealed allocation, baseline comparability, blinded subjects, blinded therapist, blinded assessor, adequate follow-up, intention to treat analysis, between-group statistical comparison for at least 1 key outcome, point and variability measures).30 The PEDro score is a score ranging from 0 to 10, which represents the total number of criteria, excluding the first one that has been satisfied in the clinical trial. A clinical trial with a score from 6 to 10 is considered as high quality, 4 to 5 as fair quality, and ≤3 as poor quality. In this study, 2 reviewers independently applied the PEDro scale to assess the methodological quality of the included studies. In the case of disagreement, a third reviewer was consulted and an agreement was reached.
+
+We conducted the meta-analysis using Comprehensive Meta-Analysis (CMA) version 3.0 software.31 CMA is a tool to perform meta-analysis, create forest plots, calculate effect sizes, and much more. We calculated the effect sizes for the pooled and individual studies using Hedge’s equation with correction for small studies.32 Due to considerable variations in characteristics of the included studies, random-effects models were used to estimate the pooled effect sizes and their 95% confidence intervals (CIs).33 In addition, we performed subgroup analyses to investigate the impact of different BCI design characteristics (ie, performed mental practice, extracted BCI features, type of the given BCI feedback, and the stroke phase) on treatment efficacy.
+
+We used the Higgins’ I2 statistic to assess heterogeneity across the included studies.34 Generally, I2 &gt; 50% could be considered as substantial heterogeneity. Finally, the probability of publication bias in our meta-analysis was assessed by plotting the funnel plot and applying Egger's regression test.35,36</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

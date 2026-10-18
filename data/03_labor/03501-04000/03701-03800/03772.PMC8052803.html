@@ -5,8 +5,31 @@
 <title>Genovese, Di Guardo, Monteleone, D’Urso, Colaleo, Leanza, and Palumbo: Hysteroscopy as An Investigational Operative Procedure in Primary
 and Secondary Infertility: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1187,5 +1210,55 @@ This open-access article has been published under the terms of the Creative Comm
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+During the last decade, infertility has had an increasing impact onthe health of Western countries’ populations. The most accepted definition of infertility is failure to conceive after 12 months or more of regular unprotected sexual intercourses (1).
+
+During the last 20 years, multiple factors have been addressed as causes of reduced spontaneous conception, among which intrauterine pathologies might play a crucial role. According to this, several treatments have been proposed to overcome infertility due to the presence of intrauterine affections. In this context, hysteroscopy is currently considered the gold standard for both assessment and management of intrauterine factors. Indeed, it allows a more precise diagnosis of endometrial abnormalities compared to non-invasive techniques such as transvaginal sonography (TVS), hysterosalpingography (HSG) and sonohysterography; above all, it allows for simultaneous treatment of an intrauterine pathology (2).
+
+The present study is a systematic review on the efficacy of diagnostic and/or operative hysteroscopy in improving reproductive outcomes for specific conditions in infertile women.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and Methods
+
+We systematically reviewed the literature from 2000 to 2020 by searching in PubMed, Embase, and the Cochrane Libraryby using the following keywords: infertility, hysteroscopy, pregnancy rate (PR), miscarriages, live birth rates (LBR), uterine malformations and metroplasty. In general, randomised controlled trials (RCT) were selected; if they were not available on a specific subject, less relevant studies were chosen. The patients included in this review were infertile women with or without endometrial abnormalities who sought spontaneous conception or required in vitro fertilization/ intracytoplasmic sperm injection (IVF/ICSI). The type of intervention analysed is diagnostic and/or operative hysteroscopy performed during the infertility evaluation and/or prior IVF/ICSI compared to no hysteroscopy in similar groups of patients.
+
+### Study population
+
+We divided the studied population according to indication and efficacy of hysteroscopy in improving reproductive outcomes. As result, we obtained the following four groups: group A: initial work-up of asymptomatic patients with negative ultrasound findings; group B: women with endometrial abnormalities at the TVS with or without abnormal uterine bleeding (AUB); group C: patients with genital tract malformations and/or recurrent abortions; and group D: women with negative ultrasound findings who required assisted reproductive technology (ART), IVF or ICSI.
+
+### Main outcomes
+
+The primary outcome was clinical PR (CPR), which was defined by at least TVS visualization of the gestational sac. The secondary outcome was miscarriage rate (MR), which was defined as pregnancy loss before 20 weeks of gestation.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

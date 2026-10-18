@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Kundeti, Vaidyanathan, Shivashankar, and Gorthi: Systematic review protocol to assess artificial intelligence diagnostic accuracy performance in detecting acute ischaemic stroke and large-vessel occlusions on CT and MR medical imaging</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -737,5 +760,104 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+### Background
+
+Stroke is a significant cause of global death and disability. Generally, there are two types of strokes, ischaemic (accounting for 85% of cases) and haemorrhagic/other (accounting for 15% of cases). Ischaemic stroke with large-vessel occlusion (LVO), variably defined as intracranial anterior and posterior circulation blockages, accounts for 24%–46% of all cases of acute ischaemic stroke (AIS).1 Diagnosing AIS involves excluding acute intracranial haemorrhage, identifying AIS signs, estimating the degree of baseline ischaemic damage, and detecting LVOs2 3 and collaterals. In this process, stroke mimics, seizures, tumours, infection and other acute neurologic diseases are ruled out. Medical professionals must select the appropriate treatment for patients with ischaemic stroke as quickly as possible to reduce the risk of death and disability.
+
+In 2015, five international, multicentre, randomised, controlled prospective trials were published in the New England Journal of Medicine.4–8 These trials demonstrated the importance of mechanical thrombectomy (MT) for improving the prognosis of patients with anterior circulation LVO compared with standard medical care. Subsequently, the American Heart Association/American Stroke Association (AHA/ASA) guidelines9 updated the patient selection criteria for MT based on DAWN (time from onset: 6–24 hours) and DEFUSE-3 eligibility (time from onset: 6–16 hours) and included a medical image diagnosis as part of the stroke workflow (class I; level of evidence, A).
+
+Generally, patients with ischaemic stroke need to reach a hospital that can treat stroke within a time window to allow for urgent clinical treatment decisions. The 2018 AHA/ASA guidelines extended the time window for endovascular therapy from 6 hours to ≤24 hours in select patients.10 Furthermore, the 2019 AHA/ASA guidelines11 stated that patients who wake-up with stroke symptoms &gt;4.5 hours after they were last known to be well or have unknown time of onset may benefit from IV alteplase administration within 4.5 hours of stroke symptom recognition.
+
+However, the time window is being increasingly replaced by the tissue window for decision making.12 13 While the observed onset of stroke symptoms defines the time window, the tissue window reflects the biological timing of dynamically evolving ischaemia. Thus, AHA/ASA guidelines11 recommend using brain imaging (eg, MR diffusion-weighted imaging (MR-DWI), non-invasive CT angiography (CTA) or MR angiography (MRA)) in the diagnosis of AIS and detection of LVOs (class I; level of evidence, A). Imaging modalities, such as advanced MRI and CT medical imaging, have been shown to be critical in improving clinical stroke care in clinical practice. For example, Hurford et al14 reported on AIS management using a CT imaging workflow. Currently used imaging techniques include non-contrast CT (NCCT), CTA, CT perfusion (CTP) and MRI. Additionally, some hospitals use MR-DWI, MRA and perfusion MR (MRP) in the diagnosis of AIS. Notably, CT and MRI stroke protocols are hospital specific, as imaging acquisition is not standardised.
+
+The expanding role of medical imaging in the diagnosis of stroke is gradually encouraging advancements in traditional image processing and artificial intelligence (AI) algorithms to automatically extract diagnostic information and aid specialists. On the onset of stroke, AI can support health specialists with the necessary diagnostic information to accelerate the diagnosis, while ensuring precise intervention decisions in less time. Several traditional image processing techniques used in the diagnosis of AIS include shape models, such as an atlas, active contours and region growing, which can assist clinicians in extracting diagnostic information. However, limitations of conventional models include their inability to scale performance with more data, limited customisability and strong dependence on precomputed features. AI can overcome these limitations, as it automates the feature extraction process generally performed using traditional image processing techniques. It differentiates the input images, deriving complex image features by importing the feature semantics into the classifier.15–17 Several AI models have been validated for infarct and penumbra segmentation in diagnosing ischaemic stroke on MRI in ISLES challenges (2015–2018).18 19 For LVO detection on CTA,16 a novel AI architecture known as Y-Net. Meijs and Manniesing20 use a three-dimensional fully convolutional neural network (CNN) to segment cerebral vasculature. Other studies have used traditional image processing and classifiers such as a random-forest model to detect LVOs.17 21 Furthermore, CTA collateral scoring based on AI models has been used to identify patients most likely to benefit from MT.22
+
+Liu et al23 reported that AI model performance is generally similar to that of healthcare (HC) professionals. However, only a few studies have externally validated results and even these are poorly reported. Murray et al24 reviewed studies on the use of AI in the diagnosis of AIS and detection of LVOs published between January 2014 and February 2019 in three bibliographic databases: PubMed, Medline and Embase. Although the review by Murray et al24 used loosely similar inclusion/exclusion criteria to those in our proposed study protocol, it lacked a diagnostic performance assessment of AI models compared with that of HC professionals in internal/external validation settings. Additionally, formal systematic review assessment tools, such as a bias risk assessment and summarisation of the model performance via meta-analysis, were not used. Suh et al25 reviewed studies on the feasibility of using various CTP data to predict haemorrhagic transformation only (no ischaemic changes) in AIS published before 30 October 2018 in two bibliographic databases: Ovid Medline and Embase. The authors performed a meta-analysis of 15 articles, comprising over 1134 patients. The articles were heterogeneous, according to Higgins I2 metrics, and multiple sub-group analyses were performed to solve this problem. Furthermore, Domingues et al26 presented a general survey on the use of deep learning (DL) architectures in imaging contexts (both three-dimensional and two-dimensional), extensively covering 180 articles on positron emission tomography and CT modalities published from 2014 to 2019. Although the paper is mostly narrative in style and lacks the use of systematic review tools, it discusses interesting problems in the use of DL models in medical imaging, such as the non-availability of imaging data with labels, overfitting, differences in imaging acquisitions and interpretability in the HC context.
+
+### Objective
+
+Considerable efforts have been made to implement AI models in clinical practice, and demonstration of AI models that are equal to, or exceed, human clinicians in terms of diagnostic performance always generates interest. However, a critical appraisal and thorough review of the body of evidence supporting AI-based diagnostics are required. Therefore, in this study protocol, we propose a rigorous systematic review to address the gaps identified above. Our main objective is to provide a comprehensive assessment of the performance of AI models in the diagnosis of AIS and LVO detection using brain imaging data (excluding perfusion examinations) as input. We will compare the results of AI models and clinicians using a unique search strategy to validate the findings in both internal and external validation clinical settings. We will assess potential biases and take into account issues in the study design, clinical value and reporting. Furthermore, if sufficient data are available, our secondary objective is to conduct a meta-analysis to summarise the diagnostic performance of AI algorithms in comparison to that of clinicians, other models (DL vs other models), and classifiers (such as CNN, support vector machine), random-forest and long short-term memory networks). Accordingly, we will be able to calculate pooled estimates of sensitivity and specificity. Additionally, we will perform subgroup analyses and a sensitivity analysis as part of our meta-analysis, as required.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods and analysis
+
+### Information sources
+
+We will extract studies from eight online bibliographic databases: OvidSP, Web of Science, Scopus, TRIP, ProQuest, CINAHL, IEEE and Embase. As AI methods generally became effective in 2012, we will search for articles published from January 2012 to May 2020. We will identify additional pertinent articles by searching for the data sources referenced in the studies that meet inclusion criteria. We will also manually search the reference list of all included studies to identify missed articles.
+
+### Search strategy
+
+Titles and abstracts will be searched using the queries indicated in table 1. Search terms such as “machine learning” and “deep learning” will be combined by using Boolean operators (eg, AND, OR) to create the queries. The results of different queries will be combined using the Boolean operator, AND. Wildcard characters (*) will be used to indicate any other character in a string (eg, patient* includes patients, scan* includes scans; see query #4 in table 1).
+
+### Inclusion and exclusion criteria
+
+We will adhere to the Preferred Reporting Items for Systematic Reviews and Meta-analyses Protocols guidelines,27 and reporting guidelines specific to prediction studies, as appropriate.28 In accordance with the PICOTS (population, interventions, comparators, outcomes, timing, and setting) framework,29 inclusion and exclusion criteria will be based on the type of patients, interventions, comparisons and outcomes, as shown in table 2. We will exclude data from non-human and duplicate studies.
+
+### Study overview
+
+A diagnosis of AIS can be determined based on several independent imaging protocols, such as MRI/MRA with perfusion-weighted imaging, NCCT+CTA+ CTP, NCCT+CTA for selected patients or NCCT and direct angiography. Perfusion studies (eg, CTP/MRP) are not within the scope of this study protocol. Although the identified articles might not have AI models built for all imaging protocols, we will consider AI models built on imaging modalities towards the study outcomes indicated in table 3. Various thresholds are applied to CT and MRP images to compute and define infarct and penumbra volumes on CTP.30 31 Furthermore, to detect infarcts on MR-DWI images, the apparent diffusion coefficient map is computed and a threshold of &lt;600×1e-6 mm2/s is applied. Similarly, in MRP cases, a threshold of &lt;4–6 s is applied to the Tmax map to compute the penumbra volume. We will pool the data accordingly, based on the above differences, to conduct a systematic review and meta-analysis, and if required, we will perform the necessary subgroup analyses.
+
+Detection of LVOs by quantification of the intracranial thrombus extent is measured using the clot burden score.2 3 Additionally, the presence/absence of collaterals determines the patient’s outcome for all cases of strokes. If the patient has good collaterals, there is more time to treat. Patients selected for MT based on a significant penumbra supported by collaterals, with a small core, can be treated up to 24 hours after onset and beyond. Most commonly, on CT, the Alberta Stroke Programme Early CT score (ASPECTS) and collaterals (not NCCT aspects),32 as well as the scores of Christoforidis et al33 34 and Miteff et al,35 and CTA collateral scores36 are used for collateral assessment.37 Various AI models address these study outcomes, broadly defining the problems as classification, segmentation, scoring and correlation models (as mapped in table 3).
+
+### Data management
+
+We will manage references from the bibliographic databases using Zotero standalone software V.5.0.88 (https://www.zotero.org/). Articles will be identified, screened and reviewed using Zotero. We will record the inclusion/exclusion status based on the predetermined eligibility criteria (table 2). Duplicate records will be detected and removed using the Zotero Duplication Detection feature or by using an Excel macro to manually compare the digital object identifiers. Full-text articles will be imported into Zotero and analysed.
+
+### Study screening and data extraction
+
+In the title/abstract review phase, two independent reviewers (BS and MKV) will perform the initial screening, manually searching the results and selecting articles for full-text retrieval. They will autonomously determine eligibility by screening the titles and abstracts of the retrieved studies and will retrieve data using a predefined data extraction form based on Critical Appraisal and Data Extraction for Systematic Reviews of Prediction Modelling Studies checklist, adjusted according to our systematic review-specific requirements (table 4). Consensus in the extracted data will be verified and any differences will be resolved by discussion and revaluation of the article. If a contradiction persists, the article will be referred to a third reviewer (SRK or SPG) for a final decision. The source imaging data used in each study will impact the results, potentially causing information bias. For example, studies may use validation through resampling, internal validation by split samples followed by cross-validation, or external validation using a separate dataset from a different geographical region.
+
+We will use similar sample sizes and stroke phase to assess and group the source imaging data.
+
+### Quality assessment
+
+The risk of bias will be initially evaluated by two independent reviewers (BS and SRK). A third reviewer (SPG) will then review each study using the Quality Assessment of Diagnostic Accuracy Studies (QUADAS-2) guidelines.38 We will classify the risk of bias as ‘low’, ’high’ or ‘unclear’. We will summarise the risk of bias across individual studies in a narrative summary in the systematic review phase. We will perform the QUADAS-2 analysis using Review Manager V.5.439 or STATA V.16.140 software.
+
+### Meta-analysis
+
+The techniques and assessments in AI-based studies vary and do not adhere to specific principles. In this study, we will evaluate the diagnostic performance of clinicians and AI models using only imaging data as input. We will base the reference standard (comparison) on studies presenting results with clinician-based external or internal validation. Some of the included studies may use other models as the reference standard. Due to a lack of a fixed reference standard, we cannot adequately compare these models. Thus, we will summarise the performance of AI models and clinicians separately in the systematic review and exclude these data from the meta-analysis.
+
+We will perform a meta-analysis to obtain the pooled estimate of the effect if the studies provide adequate data. Two reviewers (BS and MKV) will extract the two-way confusion matrix table and calculated metrics, such as the sensitivity and specificity, with confidence intervals to perform the meta-analysis. A third reviewer (SRK or SPG) will resolve the extracted data’s differences through discussion. Some included studies might not directly report all of the required data in a 2×2 table or the sensitivity and specificity, with CIs. We will compute the missing data using existing/reported study data, such as the sensitivity, specificity or 2×2 confusion matrix table, and the number of cases, with the calculator in Review Manager V.5.4 or Microsoft excel macros. Moreover, a single study might use the same AI model or clinicians for different classification tasks. We will consider only the related tasks for this systematic review. In multiple comparisons, we will include a single 2×2 table, reporting the highest accuracy for each comparison. If sufficient data are available for a meta-analysis, we will use the hierarchical summary receiver operating characteristic (HSROC) curve to calculate pooled estimates (sensitivity and specificity with 95% CI) for the diagnostic performance of AI models and clinicians based on the 2×2 confusion matrix table. If relevant, we will perform a sensitivity analysis (ie, limiting the analysis to studies at the lowest risk of bias in a secondary analysis) to incorporate the risk of bias assessments into the synthesis. We will use STATA V.16.1 to plot the HSROC curves. Different diagnostic thresholds used in the included studies may cause heterogeneity. Hence, we will consider the studies to be heterogeneous and will conduct our analysis accordingly. In case we have sufficient data to determine heterogeneity, we will use the I2 statistic (I2 &gt;60% indicates significant heterogeneity) to assess heterogeneity. We will adopt a random-effects model for the meta-analysis and use Review Manager V.5.4 and STATA V.16.1 to perform the meta-analysis. If sufficient data are available, we will use the Grading of Recommendations, Assessment, Development and Evaluations (GRADE) approach to evaluate the certainty of the evidence. Using GRADE profiler software, we will present the main findings of the systematic review as a summary of the findings table.
+
+### Subgroup analysis
+
+Although the diagnosis of AIS encompasses all diagnostic decisions, we will perform a separate subgroup analysis for the detection of LVOs and collaterals. In the clinical workflow, an LVO is identified only after an initial suspicion of AIS. Table 3 shows the mapping of AI models to the diagnosis of AIS and detection of LVOs and collaterals. Obtaining a diagnosis within the time window of &lt;24 hours is critical, as the patient is eligible for treatments such as MT. We will assess the performance of the AI model and standard reference as per the ‘model performance’ considerations defined in table 4.
+
+### Patient and public involvement
+
+Patients were not involved in the development of the research question, outcome measures and study design.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Yearley, Blitz, Patel, Chan, Baird, Friedman, Arnaout, Smith, Bernstock, and Payabvash: Machine Learning in the Classification of Pediatric Posterior Fossa Tumors: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2014,5 +2037,59 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Brain tumors are the second leading cause of death in children under 15 with an estimated incidence of 2–3.5 per 100,000 [1,2]. Posterior fossa tumors (PFTs) comprise 50–74% of childhood brain tumors, with the majority being juvenile pilocytic astrocytomas, medulloblastomas, ependymomas, and brainstem gliomas [3,4]. Central nervous system tumors in the pediatric population frequently present with nonspecific symptoms, which can lead to delays in diagnosis and treatment. One study found that the average time to diagnosis in a cohort of pediatric brain tumor patients was 7.7 months after symptom onset [5]. Given the rapid progression of some pediatric brain tumors, delays in diagnosis are associated with significant morbidity and mortality. Since treatment varies based on the type and grade of PFT, it is imperative to obtain an early diagnosis in this highly morbid group of malignancies. Histopathological diagnosis remains the standard of care for the diagnosis of PFTs. While accurate, this method is time consuming and requires a tissue specimen as well as access to a trained neuropathologist. While conventional magnetic resonance imaging (MRI) can be used to evaluate tumor location and impact on surrounding structures, it is of limited diagnostic value. Radiological differentiation between different PFTs is difficult and can be further complicated by tumor mimics such as demyelinating disorders and Alexander disease [6].
+
+Some progress has been made to improve the diagnostic accuracy of imaging with the addition of advanced MR sequences such as diffusion-weighted imaging (DWI). Using apparent diffusion coefficient (ADC) ratios, radiologists in one study were able to discriminate pilocytic astrocytomas from ependymomas with a sensitivity of 83% and a specificity of 78% [7]. The discovery that individual radiomic and molecular features correlated to distinct PFTs led to the application of artificial intelligence for the diagnosis and subclassification of these tumors. Prior work has shown that artificial intelligence is becoming an increasingly viable tool with the potential to improve diagnostic speed and accuracy [8,9]. Machine learning has already been heavily implemented in the diagnosis of brain tumors in both children and adults, with previous studies reporting algorithms that can differentiate gliomas, meningiomas, and pituitary tumors based on extracted imaging features with accuracies as high as 99% [10,11,12]. Additional work has shown the possibility of using these methods to not only differentiate between tumor types, but also to subclassify tumors by grade, stage, and even molecular features [12,13,14]. Similar methods are now being explored to diagnose and classify PFTs. In this systematic review and meta-analysis, we aim to identify and critique all the primary literature that applies machine learning to the diagnosis and classification of pediatric PFTs. We analyze the algorithm architecture and efficacy as well as study parameters, strengths, and limitations to assess the clinical readiness of such technology, provide recommendations of best practices, and highlight areas for improvement. This work serves as a case study on how machine learning classification algorithms can be applied to clinical diagnosis with recommendations that can be applied to other pathologies.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+This systematic review of the literature was completed according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines [15]. Standardized electronic searches were conducted in PubMed, EMBASE, and Web of Science to identify relevant articles. Searches were conducted using conjugated “AND” and “OR” statements with keywords related to machine learning, artificial intelligence, and pediatric PFTs (Supplementary). Searches included all articles in the English language from database inception to 31 July 2022.
+
+### 2.1. Inclusion and Exclusion Criteria
+
+All observational studies, clinical trials, case reports, and technical papers assessing the use of machine learning to diagnose or classify PFTs based on molecular or radiomic features were included. No limit was placed on sample size or timeframe. Review articles, abstracts, conference abstracts, and primary papers that did not study the application of a machine learning algorithm (MLA) to the diagnosis or classification of a pediatric PFT met the exclusion criteria. Papers that specifically subclassified pediatric PFTs by other criteria, such as prognosis, response to treatment, etc., were also excluded.
+
+Studies identified by the literature search were screened in two rounds, with the evaluation of appropriateness determined by consensus of the authors. Initially, title and abstract screening was conducted. Papers that met the exclusion criteria were excluded, and then a similar process was repeated with a full text review. Authors resolved all disagreements by consensus.
+
+### 2.2. Data Extraction
+
+Two authors independently extracted full texts of included articles into a standardized extraction table. Disagreements were decided by a two-author consensus. Data collected from each study covered study parameters including title and author, population size by tumor type, tumor type(s) being studied, study location(s), study timeframe, and ground truth used; algorithm parameters including type of input data, training set size, validation set size, test set size, method of image segmentation (manual vs. automatic), normalization used, presence/absence of texture analysis, deep learning model architecture, presence/absence of feature selection, and number of features extracted in final algorithm; algorithm performance statistics including sensitivity, specificity, accuracy, area under the curve (AUC), F1-score, Dice coefficient, positive predictive value, and negative predictive value; comparisons and analyses performed including comparison of the algorithm to a neuroradiologist, neuropathologist, or other clinical standard of care as well as the outcome of the comparison; and both algorithm as well as study limitations.
+
+### 2.3. Gold Standard Comparison
+
+For each paper that included a comparison of an MLA to a gold standard, the minimum and maximum AUCs or accuracies were collected for each method. The following calculations were conducted to compare the best- and worst-case efficacy of each diagnostic method: the difference between the maximum accuracy/AUC for the MLA and the minimum accuracy/AUC for the gold standard was computed. The same calculation was repeated with the maximum accuracy/AUC for the gold standard and the minimum accuracy/AUC for the MLA.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

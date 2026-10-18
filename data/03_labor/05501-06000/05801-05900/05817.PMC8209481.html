@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Quaak, van de Mortel, Thomas, and van Wingen: Deep learning applications for the classification of psychiatric disorders using neuroimaging data: Systematic review and meta-analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3121,5 +3144,77 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Clinical psychiatry is based on observation and self-report which are inherently subjective. There are no biomarkers available that could enable objective diagnosis or biology-based treatment targeting. Promising approaches for the development of biomarkers include non-invasive neuroimaging techniques such as structural or functional magnetic resonance imaging (MRI) that can capture the structure and function of the healthy and diseased brain. Over the last two decades, many neuroimaging studies have been performed to gain insight in the neural correlates of psychiatric disorders. Most of these studies have compared patients to controls and reported neuroanatomical or neurofunctional differences. This raised hopes of finding imaging biomarkers that could aid the diagnostic process. However, these studies typically relied on mass univariate analysis (group level statistical analysis) and reported group level differences in specific voxels or regions of interest (ROI) in the brain, whereas several psychiatric symptoms are best explained by network-level changes in structure and function rather than specific local alterations (Sheffield and Barch, 2016, Mulders et al., 2012, Kennedy and Courchesne, 2008, Rubinov and Sporns, 2010, Gong et al., 2009).
+
+As the vast amount of data in neuroimaging scans has made it challenging to integrate all the data available, the neuroimaging community has developed a growing interest in machine learning (ML) approaches. ML algorithms are mathematical models that are developed to learn patterns in existing data in order to make predictions on new data. A major advantage of ML techniques is their ability to take inter-regional correlations into account, enabling detection of subtle and spatially distributed effects in the brain (Orrù et al., 2012). Moreover, whereas mass-univariate results explain group differences, ML models allow statistical inference at the level of the individual that could aid individual diagnostic or prognostic decisions (Arbabshirani et al., 2017).
+
+Well-known pattern analysis methods, such as linear discriminant analysis (LDA), logistic regression (LR) and support vector machine (SVM) have been applied to neuroimaging data to detect psychiatric disease with varying degrees of success (Arbabshirani et al., 2017). Classification studies using ML algorithms on highly dimensional neuroimaging data usually require several preprocessing steps involving feature extraction and feature selection to reduce the input dimensions (Lu and Weng, 2007). These procedures require subjective feature choices that raise reproducibility issues (Samper-González et al., 2018).
+
+After breakthroughs in performance in a large variety of fields, deep learning (DL), a specific class of machine learning algorithms, has found its way into the neuroimaging community. DL models are hierarchical models that achieve increasingly higher levels of abstraction and complexity by stacking consecutive nonlinear transformations (see Fig. 1, Fig. 2, Box 1 and Vieira et al., 2017 for an introduction). This ability makes DL specifically suitable for neuroimaging applications as psychiatric and neurological disorders are often characterised by complex, subtle and diffuse patterns (Plis, 2014). Moreover, an essential difference between standard machine learning (SML) and DL techniques is that DL enables the learning of optimal feature representation from the raw data, eliminating the need for subjective feature engineering for SML techniques. This results in a more objective and less bias-prone process in DL (Vieira et al., 2017).
+
+A previous review from 2017 has shown that DL methods have been successfully applied in neuroimaging to classify Alzheimer, ADHD, and to predict disease conversion (Vieira et al., 2017). Since then, the advent of data-sharing initiatives and advances in DL have led to a large increase in DL applications in psychiatry. They show great promise for uncovering reproducible patterns of brain structure and function across larger and heterogeneous datasets (Durstewitz et al., 2019, Bzdok and Meyer-Lindenberg, 2018).
+
+However, there is still a lack of carefully designed comparisons to benchmark SML and DL performance in brain imaging tasks. Like preceding influential technologies, the expectations of future performance of DL in brain imaging might be hyped (Abrol et al., 2020) and it is still unclear to what extent it improves capturing the relationship between brain activity and behaviour. Whereas some studies suggest that DL does not improve prediction of behaviour as compared to simple, linear models (He et al., 2020, Schulz et al., 2019, Guerdan, et al., 2019, others claim that there exists both linear and non-linear relationships between brain connectivity and behaviour and that DL is best capable of fitting both (Bertolero and Bassett, 2020). DL seems to improve classification of brain age and sex prediction (Peng et al., 2021) and DL have been reported to improve AD detection (Vieira et al., 2017, Jo et al., 2019), but whether DL improves classification of psychiatric disease has yet to be determined.
+
+The datasets where DL models are known to outperform SML (i.e. Imagenet), have a relative high number of instances and low dimensionality as compared to brain imaging data. Since DL is a data-hungry technique, the question arises whether it can extract sufficient meaningful patterns out of the high dimensional data with a small amount of training data. To surpass this problem, various studies have used hand crafted input features with different levels of feature extraction along the spatial and/or temporal dimensions to reduce the input dimensionality. Although this is a practical solution to check what DL is capable of in comparison to SML, it also deprives DL of its main advantage: representation learning without feature engineering (Abrol et al., 2020). Given the endless choices in feature extraction, models and preprocessing steps, there is a large variety in DL modelling and features that have been applied to investigate psychiatric disorders. This leaves us with many questions regarding the type and input for DL applications and without any validated benchmark model.
+
+Given the high interest in DL within the field of neuroimaging for psychiatry and the wide variety of approaches, this review aims to give an overview of studies that have applied DL to neuroimaging data for the classification of psychiatric disorders. This review will solely focus on studies related to classification of psychiatric disorders and does not include studies on other neurological disorders such as Alzheimer’s Disease (AD) as AD has been extensively reviewed recently (Jo et al., 2019, Rathore et al., 2017, Ebrahimighahnavieh et al., 2020). Moreover, the pathology of many neurological disorders, including AD, largely involves anatomical changes, whereas psychiatric disorders usually involve subtle, functional alterations that are mainly investigated through functional brain scans. In this paper we will discuss the main themes that have emerged from our review and include a quantitative comparison of the performance of deep learning and standard machine learning techniques. Finally, we will make a number of recommendations for future research.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+We conducted a systematic review of published studies that used DL approaches for diagnostic classification of psychiatric disorders using neuroimaging. The search strategy is outlined in detail in the PRISMA flow diagram in Fig. 3.
+
+### Identification
+
+We conducted a literature search in PUBMED and IEEE Xplore using the following search string: (“deep learning” OR “deep architecture” OR “artificial neural network” OR “convolutional neural network” OR “convolutional network” OR “CNN” OR “recurrent neural network” OR “RNN” OR “Auto-Encoder” OR “Autoencoder” OR “Deep belief network” OR “DBN” OR “Restricted Boltzmann Machine” OR “RBM” OR “Long Short Term Memory” OR “Long Short-Term Memory” OR “LSTM” OR “Gated Recurrent Units” OR “GRU”) AND (psychiatry OR psychiatric OR classification OR diagnosis OR prediction OR prognosis OR outcome) AND (neuroimaging OR MRI OR “Magnetic Resonance Imaging” OR “fMRI” OR “functional Magnetic Resonance Imaging”) which is a combination of search terms used in previous reviews on deep learning in neuroimaging (Vieira et al., 2017, Jo et al., 2019). The search was limited to articles published from the 1st of January 2013 till the 30th of September 2019.
+
+In addition, articles in PubMed were identified that cited the previous systematic review on deep learning in neuroimaging of Vieira et al. (2017). Reference lists of identified articles were further searched to select those articles that were deemed appropriate. For the scope of this study, we excluded studies using PET or EEG, although there is some evidence that DL can be used in this type of data (Page et al., 2014). Following this approach, 1176 studies were identified.
+
+### Screening and inclusion
+
+64 Articles were eligible for full-text assessment based on title and abstract screening. Articles were included if they were a peer-reviewed full-text original research article written in English using a deep learning model for classification of a psychiatric disorder using (f)MRI. Upon full manuscript reading, 11 articles were excluded due to the lack of a clear performance measure (4), not performing a classification task of a psychiatric disorder (4), lack of a full manuscript (1), and not using a deep learning model (1), yielding a total of 53 included articles. For quantitative meta-analysis, we included 29 articles that reported sensitivity and specificity. For comparison with SML techniques, we included 15 articles that also reported sensitivity and specificity for DL and SML.
+
+From the 53 included papers there were 4 that developed a single model and tested classification performance for 2 different samples (different psychiatric disorders) (Sen et al., 2018, Pinaya et al., 2019, Matsubara et al., 2019, Wang et al., 2019). These papers are included twice: they are shown independently in the two corresponding tables and are analysed as independent studies, yielding a total of 57 studies for qualitative analysis, 32 for quantitative analysis for all DL studies and 16 for quantitative meta-analysis for DL-SML comparison.
+
+### Qualitative analysis
+
+The included studies were grouped per disorder. We extracted data from all studies to compare key aspects such as sample sizes, type of features, classifier and reported accuracies. Data extraction was done by two independent researchers and discussed on consistency until agreement was reached. Next, we composed a narrative review of findings from included studies per disorder. Finally, we included visual summaries for all studies combined to discuss occurring themes in the literature.
+
+### Quantitative meta-analysis
+
+All meta-analyses were conducted using the mada and metaphor package in R. As pooling sensitivities or specificities can be misleading (Gatsonis and Paliwal, 2006), we have pooled studies using diagnostic odds ratios (DOR) according to the Reitsma model and the Cochrane handbook for diagnostic tests of accuracy studies (Reitsma et al., 2005, Macaskill et al., 2010). The DOR considers both sensitivity and specificity. To visualize between study performance differences, a forest plot of the DORs with bootstrapped 95% confidence intervals is given, subdivided per disorder. In order to assess whether DL and SML models obtain different classification performances, we conducted meta-regression with classification method as covariate. We performed this subgroup analysis for DOR values in the metaphor package using bootstrapped confidence intervaIs. We also performed this meta-regression for sensitivity and false positive rates with confidence intervals provided by the mada package (Doebler and Holling, 2015). In addition, the meta-regression was repeated for the largest subgroups separately. Significance was set at an alpha level of 0.05.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Volpe, Pepa, Zaffaroni, Bellerba, Santamaria, Marvaso, Isaksson, Gandini, Starzyńska, Leonardi, Orecchia, Alterio, and Jereczek-Fossa: Machine Learning for Head and Neck Cancer: A Safe Bet?—A Clinically Oriented Systematic Review for the Radiation Oncologist </title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2497,5 +2520,83 @@ PMC612787230197940</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Cancers of the head and neck (HN) region involve anatomically complex and functionally essential structures, whose damage may severely compromise quality of life, especially in long-surviving patients (1). If the management of HN cancers (HNCs) has always been challenging in Radiation Oncology, in the last years, the clinical scenario has rapidly evolved, due to changes in the epidemiology of the disease (2–4), to the introduction of novel systemic therapies and surgical procedures (5–8) and to the availability of more sophisticated irradiation techniques (9–11). Additionally, as for other cancer sites, understanding on HN neoplasms is taking advantage from progresses in the fields of radiogenomics and quantitative imaging analysis (12–15). Such “big data”-based approaches are progressively being integrated into a more traditional body of knowledge on tumor biology and inter-patient variability which, arguably, may represent a concrete step toward a personalized medicine approach (16).
+
+Nevertheless, this increasing amount of information is hardly manageable by single practitioners, and there is an unprecedented demand of novel, informatics-based tools to structure and solve complex clinical questions. To this aim, machine learning (ML)—a branch of artificial intelligence (AI) relying on patterns and inference to execute a specific task—could provide Radiation Oncologists (ROs) with accurate models to optimize patients’ care paths (17).
+
+As compared with statistical methods, ML focuses on the identification of predictive patterns rather than on drawing inferences from a sample. Starting from sampling and power calculations, statistical models aim to assess whether a relationship between two or more variables describes a true effect and to interpret the extent of the above-mentioned relationship. A quantitative measure of confidence can therefore be provided to test hypothesis and/or verify assumptions (18). By contrast, ML makes use of general-purpose algorithms with no or minimal assumptions. While this may produce hardly interpretable and generalizable results, ML can be useful in case of poorly understood and complex phenomena, when the number of input variable exceeds the number of subjects and complicated nonlinear interactions are present (19). However, statistics- and ML-based models should not be regarded as antagonistic and mutually exclusive. As an example, some methods (i.e., bootstrapping) can be used for both the purpose of statistical inference and for the development of ML models, and a distinct boundary between the two is not always easily traceable.
+
+The choice of the most suitable ML algorithm to solve a given problem starts with the characterization of available data, which can be either labeled (e.g., implemented with additional information, such as: “this computed tomography (CT) slice contains the contour of the tumor”) or unlabeled (e.g., data do not contain any supplementary tag, such as a collection of CT slices). In the first case, the learning problem is of supervised nature, meaning that the algorithm uses labeled data (training set) to assign a class label to unseen, unlabeled instances (test set). Conversely, unsupervised learning uses unlabeled data to identify previously undetected patterns in the data set and reacts to the existence or absence of such patterns in new instances, without the need of human supervision. However, the aim of the model is the same: to assign similar, contiguous pixels with the correct label (PG vs. non-PG) by a computationally efficient and generalizable algorithm. Other than by input data type, models can be categorized according to their output. Broadly, if the output is a number (i.e., grade of acute toxicity per the Common Terminology Criteria of Adverse Events (CTCAE) system), the task is defined as a regression problem, if it is a class (i.e., tumor vs. nontumor), the task is called a classification problem, and if it is a set of input groups (i.e., clinical and dosimetric variables), it is a clustering problem.
+
+Following the idea of a “big-data” approach for cancer care, several publications in the field of Radiation Oncology have come to life, with algorithms encompassing segmentation accuracy, treatment planning optimization, and prediction of both oncological and toxicity outcomes (17, 20–22). A visual representation of the ML workflow applied in this clinical setting is provided in Figure 1. Given the lack of comparable efforts in current literature and the hotness of the topic, we decided to perform a clinically oriented systematic review of the available evidence for ML applications in HNCs. In doing so, we also chose to focus on the methodology of published works and to rate their quality according to a ML-dedicated checklist by Luo et al. (23), generated in 2016 by a multidisciplinary panel of experts in compliance with the Delphi method (24). Ultimately, our goal is to propagate awareness of ROs on ML applications in HNCs. Expectantly, this would contribute to fostering further research and collaboration among different professionals, and to define a novel, data-driven approach to clinical Radiation Oncology for this subset of patients.
+
+### Autosegmentation
+
+Segmentation of target volumes and organs at risk (OARs) is a critical component in the Radiation Oncology workflow. Following the recognition of intensity-modulated radiotherapy (IMRT) as a standard of care for HNC (25), accurate delineation has been associated with improved oncological and toxicity outcomes (26–28). Consequently, minimizing inter- and intraoperator variability in segmentation is crucial, and several guidelines have been published and updated to foster standardization in HNC contouring. Another relevant issue in the current clinical management is the time needed for completing the segmentation of an HNC case, which approximates 3.0 h (29): other than representing a significant commitment to the RO, time represents a limitation toward a more systematic use of adaptive radiotherapy (ART), which requires rapid recontouring and replanning (30). In this context, ML-based autosegmentation holds the promise of optimizing the clinical management for HNC patients and to increase consistency and reproducibility of delineated structures. ML can be implemented to either single or multiple autosegmentation atlases in order to improve registration and segmentation performance. Specifically, such model-based approaches can compare patient’s images with a reference gold standard (ground truth) and overcome acquired imaging limitations including low soft tissue contrast and presence of dental metal artifacts. However, inter- and intrapatient variability and large computational time for registration represent two significant pitfalls of the atlas-based approach (31). Deep learning has the potential to overcome these limitations and has already found several applications in the field of computer vision tasks which, as a whole, can be defined as the automatic extraction, analysis, and understanding of any relevant information from either a single image or a series of images through the construction of dedicated datasets (21, 32).
+
+### Treatment Planning
+
+Treatment planning for HNC is challenging: expertise in both the medical (i.e., knowledge of complex HN anatomy and patterns of disease recurrence, awareness of tolerance of healthy tissues to irradiation) and in the physical field (i.e., coverage of irregularly shaped target volumes, multiple dose prescription levels) is required, and timely delivery of radiotherapy (RT) is mandatory not to compromise oncological outcomes (33). In recent years, an increasing body of evidence has demonstrated that geometrical and anatomical variations can occur during the course of curative-intent treatments for HNC, thus leading to potentially meaningful modifications in dose distribution. Several variables have been investigated, and include, but are not limited to, patients’ weight loss, tumor response, and PG shrinkage (34, 35). The use of ART can quantify and overcome the dosimetric impact of these modifications and restore the desirable therapeutic ratio in this subset of patients (36). Yet, routine implementation of ART in clinical practice is limited by temporal and logistic issues: CT rescanning, recontouring, and replanning require efficient scheduling and execution and involve the whole staff of a Radiation Oncology Department, from radiation therapists to medical physicists.
+
+### Oncological Outcome Prediction
+
+Outcome prediction is crucial in the field of Radiation Oncology, especially in the era of personalized treatments. As deintensification strategies are being tested in clinical trials (37), and biological and quantitative imaging parameters are gaining the spotlight as promising prognosticators (38, 39), there is an increasing need for effective models integrating this growing body of information (13). A typical problem in outcomes prediction with ML is the management of time-dependent endpoints (i.e., overall survival (OS), local control, progression-free survival). These outcomes, often referred to as “right censored”, may not have yet occurred at the time of the last follow-up, but still require to be considered, as they could present at a later time. Although the pre-processing method for such variables is often influenced by the ML algorithm of choice, it has been recognized that inappropriate recognition of right-censored events may lead to poorly calibrated models (40–43).
+
+### Toxicity Outcomes Prediction
+
+Other than achieving disease control by the irradiation of the gross and clinical tumor volumes (GTV and CTV, respectively), the optimal radiation treatment plan aims at the preservation of healthy surrounding structures. Although the introduction of modern RT techniques has ameliorated the therapeutic ratio, acute and chronic RT-related toxicities still represent a significant burden for patients’ quality of life and may compromise timely treatment delivery (25). In recent years, refined anatomical knowledge of normal tissues (i.e., the coexistence of serial and parallel components in architecturally complex patterns in salivary glands) and the recognition of a stem cell compartment in healthy organs have shed light on the need of further improving dose distribution, especially when curative-intent treatments are delivered (44).
+
+To this aim, the use of spatial dose metrics, such as gradient and direction, may provide more comprehensive information than the sole absolute mean and maximum doses (45, 46). Additionally, genetic determinants are thought to impact on individual radiosensitivity/radioresistance of healthy tissues as much as for the 80% (47). ML may combine these emerging factors with more established determinants of toxicity, such as patient factors, administration of systemic therapies and absolute dosimetric parameters (48, 49). Adequate consideration of these covariables in dedicated algorithms could discriminate the probability for a given patient to experience a specific toxicity, and therefore contribute to refine clinical decisions (i.e., prophylactic feeding tube positioning in patients at high risk for severe weight loss) (47, 50).</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and Methods
+
+Study methodology complied with the outlines of the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) (51). Original manuscripts on ML applications for HNC were considered eligible for the analysis; publications encompassing any other cancers were excluded. Interventions included investigations on (auto)segmentation, treatment planning, and outcome prediction (either oncological or toxicity); works whose focus was exclusively diagnostic were considered beyond the scope of the current review. Full papers of any study design except systematic reviews and case reports were considered; only works written in English were included.
+
+### Search Strategy
+
+Electronic databases (namely, National Center for Biotechnology Information PubMed, Elsevier EMBASE and Elsevier Scopus) were screened up to May 2021 without date restrictions by an author experienced in bibliographic search (SV). Free text, Boolean operators, truncation, and proximity operators were tested. No filters were applied, in order not to exclude potentially relevant publications. The full-search strategy is provided in Supplementary Materials S1.
+
+Findings from the above-reported search were independently screened and selected based on titles by two Authors (SV, RS); disagreements were subsequently discussed in presence of three other authors (FB, MP, MZ). All types of ML algorithms were considered eligible for the analysis, as well as studies encompassing the use of extracted quantitative imaging features. The selection process is shown in Figure 2, while Figure 3 provides an overview of the algorithms considered for the analysis. A more detailed insight of ML models/algorithms included is provided in Table 1.
+
+### Quality Assessment of the Included Studies
+
+The quality of the studies included in the analysis was rated by an adapted version of the qualitative checklist originally developed by Luo et al. for the reporting of predictive modeling in biomedical research (23). This checklist, compared with others present in the literature, provides a multidisciplinary overview of ML models, as it was developed taking into account inputs from different professional figures usually involved in medical research, such as clinicians, statisticians, and ML experts. The organization of the checklist was maintained, and the following subsections were rated for each study: “Title and abstract”, “Introduction”, “Methods”, “Results”, and “Discussion”. Each of the 55 items required a dichotomous answer (yes or no, coded as 1 and 0, respectively); two items were divided into three subsections, thus allowing for a maximum achievable score of 58. The complete adapted Luo scoring system can be reviewed in detail in Supplementary Materials S2.
+
+### Statistical Analysis
+
+Descriptive statistics (median, mean, interquartile range (IQR), min, max, standard deviation) were provided for global score and methodological score from the modified Luo classification (23). Score differences across study groups (per task and use of quantitative imaging analysis) were assessed with Wilcoxon sum-rank test (when groups = 2) or Kruskal-Wallis test (when groups &gt;2) and graphically evaluated with boxplots. p-values corrected for false-discovery rate (FDR) were also provided to account for multiple testing, considering a threshold of 0.05. All statistical analyses were carried out using R version 3.6.1.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

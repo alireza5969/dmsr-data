@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Komolafe, Cao, Nguchu, Monkam, Olaniyi, Sun, Zheng, and Yang: Diagnostic Test Accuracy of Deep Learning Detection of COVID-19: A Systematic Review and Meta-Analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1730,5 +1753,79 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+Coronavirus disease 2019 (COVID-19) outbreak which was officially reported in the Wuhan city of China in December 2019 (1), is now found in all countries of the world. The disease exponentially grew into a global pandemic by March 11, 2020 as declared by the World Health Organization (WHO) (2). Although China, where the first cases of the disease were reported, is gradually recovering from this global pandemic, most countries are still being ravaged by this lethal virus pneumonia. The report on the WHO global pandemic website on 2nd June 2021, shows the total confirmed cases, deaths, new cases and vaccinated as 170,812,850, 3,557,586, 371,489 and 1,581,509,628 respectively (3).
+
+Despite the rollout of vaccines across the world, there are still new cases and new deaths recorded daily in some countries of the world. Most new cases reported are due to the second wave necessitating immediate and long-term solutions for early detection. This is crucial to the management of the disease to prevent the third wave due to the highly contagious nature of the disease. The gold standard diagnostic test for COVID-19 is the reverse transcriptase-polymerase chain reaction (RT-PCR) (4) but the time required for the result to be available is considerably long. This perceived shortcoming led to the development of a non-invasive assessment of COVID-19 patients. Radiologic assessment of the chest via plain chest radiography and chest computed tomography have been found useful in the management of COVID-19. Chest CT is capable of revealing some image features in patients with COVID-19 that do not show any detectable abnormalities on a plain radiograph (5). Radiologists' studies revealed that the imaging features of patients with the COVID-19 are bilateral, peripheral, multifocal ground-glass opacity, and consolidation, predominantly located at subpleural and peri-bronchovascular regions, were the typical features (1,5). However, other kinds of viral pneumonia can also mimic COVID-19 pneumonia thus making it difficult to differentiate (6).
+
+The field of machine learning (ML) cuts across multiple statistics-based techniques useful for radiologists in disease diagnosis which complements the currently adopted deep learning (DL) approach (7). The incorporation of ML into deep learning and artificial intelligence (AI) has shown great potentials in assisting decision-making for assessing severity and prediction of clinical outcomes of disease in COVID-19 patients (8,9). Li et al. (10) conducted a systematic and meta-analysis review on machine learning diagnosis of COVID-19 on 151 published studies and reported the sensitivity and specificity of 92.5% and 97.9% respectively on the XGBoost model. Recently, Li et al (11) carried out a multi-reader study for the grading of COVID-19 in chest radiography and observed that the AI system improved radiologist performance. Since the deep learning technique has been found useful in the diagnosis of COVID-19 (12,13), combining radiologist interpretation with the DL approach gives a promising result for the detection of COVID-19 (13). To this effect, the potential use of deep learning suggests a better future in the clinical diagnosis of COVID-19 as supported by Islam et al. (14). Li et al. (13) performed a multi-center retrospective study using a deep learning COVID-19 detection neural network (COVNet) to extract visual features from volumetric CT scans for detection of COVID-19. Accurate detection of distinct features of COVID-19, other than those of community-acquired pneumonia (CAP) and other lung infections, was achieved (13). A study by Javo et al. (15) to test the diagnostic accuracy of convolutional neural network (ResNet-50) on public chest CT datasets revealed that while the diagnostic accuracy achieved by a deep learning model showed no significant difference with that of radiologists at rule-in thresholds, differences were significant at rule-out suggestive of better results of deep learning with public datasets (9). Moezzi et al. (16) summarized the evidence evaluated using the meta-analysis approach on prediction of the accuracy of AI assisted CT scanning for COVID-19 using 36 studies. The study compared DL, ML, and AI systems. The result shows that AI systems performed slightly better than their corresponding DL and ML counterparts which implies that the AI systems will be useful in identifying COVID-19 symptoms. This study did not consider the effect of training data or how the network architectures affect DL detection ability. A systematic analysis with meta-analysis of the effect of deep learning network architectures and data types will provide a means to bridge this evidence gap which is the aim of this systematic review. This systematic review and meta-analysis aimed to summarize, all the available evidence to quantitatively evaluate the diagnostic test accuracy (DTA) of a deep learning algorithm for detection of COVID-19 in chest CT. In doing so, the review provides crucial new information on how network architecture and data types affect the performance of the DL algorithm in COVID-19 diagnosis.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## MATERIALS AND METHODS
+
+This systematic review and meta-analysis was prospectively registered at PROSPERO with the registration number CRD: 42020223202 (17) The systematic review was performed by two independent reviewers (TEK and YC or PM and EOO using a well-established review protocol known as Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) guidelines (18). The discrepancies between the two results were discussed by the two reviewers, and a more experienced third reviewer (XY or JZ) was consulted in case consensus was not reached.
+
+We conducted a meticulous search that focused on deep learning diagnosis of COVID-19 using chest CT images patients who reported well-documented information on diagnosis accuracy test or at least 2 × 2 confusion matrix that is the sensitivity and specificity. Our search includes clinical trials, cohort, prospective, and retrospective studies based on deep learning detection of COVID-19. It is important to note that most studies fall in the retrospective studies because the nature of deep learning requires a large number of datasets, and all literature reviews were excluded.
+
+### Data Sources and Searches
+
+PubMed, Inspec, Web of Science, and other biomedical databases were searched from inception with additional hand searched to unravel relevant literature from 1st January 2020 to 3rd December 2020. The same keywords were used for PubMed, Inspec, and Web of Science databases, which includes the following search terms: “computed tomography”, “COVID-19″, “2019-novel corona-virus”, “SARS-COV2”, or “Diagnosis of COVID-19 based on Deep Learning or Artificial Intelligence (AI)”. The complete search path algorithm which follows Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) is shown in Figure 1 .
+
+### Eligibility Criteria
+
+Literature was included in the study if it was based on deep learning diagnosis of COVID-19 using chest CT images both in screening and diagnostic protocol; well-documented information on diagnosis accuracy test at least sensitivity and specificity or 2 × 2 confusion matrix to compute other diagnostic test accuracy parameters. The included studies are composed majorly of retrospective with few prospective studies, an observer performance study, clinical trial, and comparative studies. The exclusion criteria comprised studies that involved literature reviews, studies on RT-PCR, other machine learning detection-based algorithms; detection using chest X-ray datasets or a combination of both chest CT and chest X-ray. Besides, studies devoid of useful information to compute the DTA and multiple publications were also excluded. For studies that reported the same study cohort or sub-set of the study, the most detailed one in terms of data availability was used.
+
+### Study Selection
+
+Articles retrieved were manually sorted and duplicates were removed using titles/abstracts, then followed by full text according to the predefined search criteria and final eligible studies were selected.
+
+### Data Collection Process
+
+We developed a standard extraction sheet which was consensually agreed upon by two independent reviewers team (TEK and YC or BAN and HS), to extract the information needed and resolve the conflict by consensus from eligible studies which includes: Nationality, data source, data partitioning, training model, deep learning techniques, training parameters, the total number of positive (cohort) vs control (negative) and other valuable information. Also, we extracted quantitative data for the meta-analysis which include (2 × 2) confusion matrix (True Positive (TP), False Negative (FN), True Negative (TN), and False Positive (FP)) needed to compute the required DTA like sensitivity, specificity, diagnostic odds ratios (DOR), recall, accuracy, precision, F1- Score, the positive and negative likelihood ratios and the AUC (19,20). The expressions of these assessment measures are given below:
+
+### Risk of Bias and Quality Appraisal
+
+The quality of included studies was assessed using a modified QUADAS-2 to ensure appropriateness for COVID-19 screening (21). The domains assessed were Patient Selection, Index Tests, Reference Standard, Flow and Timing, and Applicability. Two reviewers (TEK and YC) performed an independent quality assessment and the final result was based on consensus. The overall study quality pipeline is shown in Fig. 2
+
+### Statistical Data Analysis
+
+A univariate meta-analysis was performed separately for sensitivity, and specificity to estimate the diagnostic accuracy of each modality using the DerSimonian-Laird method of random effects model (RE) (22). We chose the RE model due to suspicion of high rates of heterogeneity that might be occasioned by differences in the network architecture used for the training, differences in training data across age, sex, and so on. The primary outcomes were sensitivity, specificity, summary receiver operating characteristic (SROC) curve, and diagnostic odds ratios (DOR). We calculated point estimates and 95% confidence intervals (CI) for each study to ensure consistency in sensitivity and specificity. To obtain a SROC curve, we used a bivariate meta-analysis of sensitivity and specificity using R version 3.6.2 with RStudio version 1.2.5042 implementing R-packages “mada” and “meta”, following which mean AUC of SROC was estimated (23). Secondary outcomes included positive likelihood and negative likelihood ratios, accuracy, precision and F1-score.
+
+Statistical heterogeneity between studies was evaluated with Cochran's Q test and the I2 statistic (19). For the Q statistic, values range 0%–40% imply insignificant heterogeneity, 30%–60% connote moderate heterogeneity, 75%–100% mean considerable heterogeneity. Publication bias was evaluated and visualized by constructing a funnel plot (25). All p-values were based on two-sided tests and p-value &lt;0.05 was considered to represent statistical significance. We conducted sub-group analysis by screening based on the deep learning techniques and training model (transfer learning and customized method).
+
+### Quality Assessment
+
+Quality assessment studies were rated as being of the moderate overall assessment of quality according to QUADAS2 (Fig. 2). About 5% of the included studies did not give details about patient selection, 5% provided unclear information about patient selection leading to high and unclear biases in patient selection as others are considered as having a low risk of bias. Also, three studies (16%) gave unclear information about how the index test was performed thus leading to an unclear risk of bias in the index test. Four studies (21%) focused on detection of COVID-19 from other pneumonia thus making the review question not match exactly the index test and about 5% of the studies did not give clear information on whether the review question matched the targeted condition thus proving high and unclear applicability concerns for the index test respectively. Eight studies (42%) provided no clear information about the interval between index test and reference standard test and how they were performed leading to unclear bias in flow and timing as others are considered as having a low risk of bias. A funnel plot was used to also assess the publication bias for the 19 studies that met the inclusion criteria. There is low publication bias in the study according to Liu (25) the points will be symmetrically distributed around the true effect in the shape of an inverted funnel when publication bias is very low as shown in Figure 3 . This was also supported by the QUADASS-2 assessment in Figure 2.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

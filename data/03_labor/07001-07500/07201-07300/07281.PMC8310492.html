@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Schwendicke, Chaurasia, Arsiwala, Lee, Elhennawy, Jost-Brinkmann, Demarco, and Krois: Deep learning for cephalometric landmark detection: systematic review and meta-analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1092,5 +1115,75 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Medical applications using artificial intelligence (AI) are increasingly common; one of the most prolific fields in this regard is computer vision, i.e., AI-based image analysis. Deep learning (DL), a subfield of machine learning, especially DL using convolutional neural networks (CNNs) has been demonstrated to be highly suitable for computer vision. One of the most common strategies in machine learning is supervised learning, where an algorithm is exposed to pairs of data and data labels (e.g., for computer vision, an image, and the corresponding image label). During the model “training” phase, these data pairs are repeatedly shown to the algorithm by which the DL model (specifically the model weights) is iteratively optimized to minimize the error in the model predictions. A well-trained DL model learnt to represent the (nonlinear) statistical structure of the input data and its relation to the given label [1] and is eventually capable to predict a label on new, i.e., unseen data (images).
+
+A range of relevant aspects when training and testing DL models (e.g., CNNs) for medical applications have been identified [2–4]: (1) The representativeness of the training and test datasets needs to be ensured if generalizability of the model is expected. (2) Labelling of images is complex, as there is seldom one hard “gold standard” (e.g., histological assessment) available; more often, multiple human experts label the same image, and a range of options to unify these “fuzzy” labels have been used [5]. Different strategies to establish a reliable gold standard are available, e.g., majority voting schemes. (3) The value of any model should be demonstrated, for example, by presenting its performance against that of the current standard of care (e.g., individual healthcare providers) on a separate test dataset. Presenting the performance of a model on the same dataset it learnt from will yield highly inflated performance metrics [6].
+
+Cephalometric radiographs are taken by orthodontists to quantitatively evaluate the skeletal relationship between the cranial base and the maxilla or mandible, the relationship between maxilla and mandible, and the dentoalveolar relationship. They also serve for determining the growth pattern through quantitative and qualitative evaluations and superimposition of serial radiographs [7]. Moreover, cephalograms are required for planning orthognathic surgery [8, 9]. A key task on such cephalometric 2-D radiographs or 3-D CT or cone beam CT (CBCT) images is landmark detection. While the value of cephalometric analysis and the definition of landmarks remains an issue of debate [10], automating this task has been identified as useful, particularly as landmarking is laborsome, requiring the time of experienced (and expensive) experts [11, 12]. Automated landmark detection for cephalometric analysis has been in the focus for decades, while DL has been demonstrated to possibly exceed less advanced (e.g., knowledge-based or atlas-based) systems [13]. Moreover, DL-based cephalometric software applications from different companies (e.g., CellmatIQ, Hamburg, Germany; ORCA AI, Herzliya, Israel; WebCeph, Gyeonggi-do, Korea) are by now available to orthodontists worldwide.
+
+The number of studies involving DL for landmark detection on 2-D and 3-D cephalometric imagery is increasing rapidly, while it remains uncertain how robust and consistent the emerging body of evidence is. Moreover, it is unclear if the accuracy of DL or the quality of the studies is improving over time, or if there are differences in accuracy on 2-D versus 3-D imagery. The present systematic review and meta-analysis evaluated studies employing DL for landmark detection on cephalometric 2-D or 3-D radiographs. Our research question was as follows: What is the accuracy of DL for detecting landmarks on cephalometric radiographs?</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and methods
+
+Reporting of this review and meta-analysis followed the PRISMA checklist [14]. The study protocol was registered after the initial screening stage (PROSPERO registry no. 227498). Our PICO question was as follows: In 2- or 3-D radiographic imagery suitable for cephalometric landmark detection (participants), comparing DL (intervention) versus conventional landmarking of individual experts or against a gold standard (e.g., of multiple experts) (control), what is the accuracy (outcome)?
+
+### Eligibility criteria
+
+The following selection criteria were applied: (1) diagnostic accuracy studies employing DL, e.g., CNNs; (2) trained and tested on 2-D- or 3-D cephalometric imagery like 2-D lateral or frontal radiographs or 3-D CT or CBCT, with minimum 5 relevant landmarks to be detected and sufficient detail to extract information on the train and test dataset sizes; (3) reporting their outcome as the mean deviation from a 2-mm prediction error threshold (e.g., studies reporting their accuracy to be below or above this threshold) (including mean and variance) or the proportion of landmarks correctly predicted within this 2-mm prediction error threshold; and (4) published 2015–2020, as we did not expect DL studies in this field to be published before that (mainly as DL was not available much earlier and the first applications in medicine evolved since 2015), in English. Only studies fulfilling all of the above-described criteria were included. Studies on non-radiographic data, cephalometrically irrelevant landmarks (e.g., those of the brain), or using non–deep learning methods (e.g., knowledge- or atlas-based or involving shallow machine learning) were excluded.
+
+### Information sources and search
+
+We systematically screened four electronic databases (Medline via PubMed, Embase via Ovid, IEEE Xplore, arXiv) for studies published up January 2015 to December 2020. Medline and Embase are widely used and partially complementary medical databases. IEEE (Institute of Electrical and Electronics Engineers) Xplore is a library for articles, proceedings, and standards in physics, computer science, engineering, and related fields, indexing 200+ journals and 3+ million conference papers. arXiv is an archive of electronic preprints for research articles of scientific topics such as physics, mathematics, computer science, and statistics. Archived articles may be published later in more traditional journals, and while arXiv is not peer reviewed, there are moderators who review the submissions [15]. The search was overall designed to account for different publication cultures across disciplines.
+
+A two-pronged search strategy, combining the technique of interest (AI, CNN, DL, etc.) and the diagnostic target (landmark detection, cephalometry, orthodontics), was applied. The search sequence was adapted for each database/repository, an example for Medline can be found in Fig. 1. Reviews or editorials were excluded, and cross-referencing from bibliographies was performed.
+
+### Screening
+
+Screening of titles or abstracts was independently performed by two reviewers (FS, AC). Any disagreement was resolved by discussion. All papers which were found to be potentially eligible were assessed in full text against the inclusion criteria. Inclusion and exclusion were decided by two reviewers in consensus (FS, AC).
+
+### Data collection, items, and preprocessing
+
+A pretested spreadsheet was used to collect data. Study characteristics, including country, year of publication, imagery (2-D lateral or frontal radiographs or 3-D imagery), dataset source, size and partitions (training, test), characteristics/architecture of the DL strategy used, number of landmarks detected, reference test and its unification in case of multiple annotators, comparators (current standard of care, e.g., clinicians), accuracy metrics, and findings, were extracted by two reviewers (FS, AC). If one study reported on several models or test datasets, these were extracted.
+
+### Quality assessment
+
+Risk of bias was assessed using the QUADAS-2 tool [16], accounting for bias in the data selection (no inappropriate exclusions, no case-control design, random or consecutive inclusion), index test (assessment blinded for and independent of reference test), reference test (valid reference test, assessment independent from index test), flow and timing (sufficient time between index and reference, all datapoints included in analysis), as well as applicability concerns for the data (data match review question), index test (test, conduct, and interpretation match review question), and reference test (the way landmarks were established matches review question). Risk of bias was assessed independently by two reviewers, who discussed their findings in case of disagreement to come to a consensus. We do not provide further guidance as to the certainty of the evidence (e.g., using any kind of grading), but provide descriptive statistics of the individual and overall risk of bias together with meta-analytic estimates.
+
+### Summary measures and data synthesis
+
+The criteria for a study to be included into meta-analysis was that it reported one of our two accuracy outcomes, the deviation from a 2-mm prediction error threshold (in mm) or the proportion of landmarks correctly predicted within this 2-mm prediction error threshold (reported as mean and measures of variance and/or sample size, allowing weighing of the study estimates). Our summary measures were the mean deviation from the 2-mm threshold (in mm; only one study reported this in another metric, namely pixels, and was therefore excluded) or the proportion of landmarks predicted within this 2-mm threshold, both with their 95% confidence intervals (CI). Heterogeneity was assessed using Cochrane’s Q and I2 statistics [17]. Random-effects models were used for meta-analysis; the statistical package metaphor [18], implemented in OpenMetaAnalyst [19], was employed. To allow weighting of studies for the synthesis of proportions, we recalculated the number of true predictions (within the 2-mm threshold) in the overall test dataset, accounting for its size and the number of landmarks predicted in each study. If studies reported on multiple test datasets, we handled them as independent units, accounting for this multiplicity of accuracy data. To explore reasons for heterogeneity, we performed subgroup analyses and mixed-effect meta-regression. For the latter, the unrestricted maximum likelihood method was used.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

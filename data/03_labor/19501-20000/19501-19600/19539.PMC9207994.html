@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Blomsma, de Rooy, Gerritse, van der Spek, Tewarie, Hillebrand, Otte, Stam, and van Dellen: Minimum spanning tree analysis of brain networks: A systematic review of network size effects, sensitivity for neuropsychiatric pathology, and disorder specificity</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -741,5 +764,75 @@ NeuroImage, 142, 407–420. 10.1016/j.neuroimage.2016.06.035, 27364472</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+A biomarker can be defined as a characteristic that is objectively measured and evaluated to indicate normal biologic processes, pathogenic processes, or pharmacologic responses to a therapeutic intervention (De Gruttola et al., 2001). In psychiatry, and to a lesser extent in neurology, clinical practice and therapeutic innovation lack biomarkers (First et al., 2018).
+
+Disturbances in the organization of macroscale brain networks are increasingly recognized as a pathophysiological characteristic of brain disease (Bullmore &amp; Sporns, 2009). A recurrent finding across neurological and psychiatric disorders is the loss of network efficiency or integration, and damage to hub regions (Bassett &amp; Bullmore, 2009; Crossley et al., 2014; Stam &amp; van Straaten, 2012). Brain network metrics may thus have the potential to serve as biomarkers that will aid the diagnostic process and guide treatment, provided that one or more reliable and reproducible indicators can be established (Douw et al., 2019; First et al., 2018). Thus far, however, different studies describing changes in brain networks for the same disorder have yielded contradictory results. These results can at least in part be explained by methodological issues (Fornito et al., 2013; Tijms et al., 2013; van den Heuvel et al., 2017; Van Diessen et al., 2013). In brain network research, one key issue is the definition of a ‘true’ connection or edge based on empirical data. Weighted connection estimates from inherently noisy data will introduce false positive connections in the network. Furthermore, comparing networks with differences in mean connection weights introduces possible bias since this influences graph measurements such as clustering coefficient and path length (van Wijk et al., 2010).
+
+A frequently used solution is to threshold connection weights, but this introduces the so-called “thresholding problem”: the choice of a threshold is often arbitrary (van Wijk et al., 2010; Fornito et al., 2012; Stam et al., 2014; Zalesky et al., 2016). Fixed thresholds may lead to different connection densities across subjects that bias higher order graph characteristics, while fixed densities include noisy edges or discard true edges (Ercsey-Ravasz et al., 2013). Attempts to normalize data may thus inherently introduce bias to graph theoretical measures. The thresholding problem contributes to poor reproducibility and limited interpretability of results.
+
+Stam and others put forward a theoretical solution, at least at the macroscale brain network analysis level, by reconstructing the minimum spanning tree (MST) (Stam et al., 2014). A tree is defined as a connected graph with a path between each pair of nodes, without forming any loops. A spanning tree is defined as a subgraph that includes all N nodes of the original graph and N − 1 links (m). When the sum of the weights of the links is minimized, this is called a MST of the connected weighted graph (Kruskal, 1956; Prim, 1957). Importantly, the MST will serve as the backbone of information flow in the network under conditions where link weights in the original graph show strong fluctuations (Van Mieghem &amp; Van Langen, 2005). Advantages of this approach are that the MST of the weighted connectivity matrix is unique, provided that its weights are unique. MST connections may be binarized to avoid density effects, and the number of links in the MST is fixed (Stam et al., 2014). And, importantly, MST characteristics can be interpreted along the lines of conventional metrics that characterize network topology (Tewarie et al., 2015a). Tewarie and others further demonstrated in silico that MST analysis indeed is reliable and reproducible, in the sense that it is relatively insensitive to bias and noise in simulated connectivity data (Tewarie et al., 2015a). MST metrics were unaffected by changes in density and average connectivity of a network, and global MST metrics are even robust against substantial levels of noise in the input data.
+
+Other, more data-driven thresholding approaches are also available, including efficiency cost optimization, proportional thresholding, and probabilistic thresholding (De Vico Fallani, Latora, &amp; Chavez, 2017; van den Heuvel et al., 2017; Váša, Bullmore, &amp; Patel, 2018). The MST has been proven to be theoretically and methodologically reliable for specific imaging modalities (van Dellen et al., 2018). Over the last few years, MST analysis has been applied to neuroimaging and neurophysiological data obtained with various acquisition techniques, such as magnetic resonance imaging (MRI), functional magnetic resonance imaging (fMRI), diffusion tensor imaging (DTI), electroencephalography (EEG), and magnetoencephalography (MEG).
+
+Here, we performed a systematic literature review and critically assessed whether the use of MST analysis to characterize brain networks holds promise for establishing the reproducibility and reliability necessary for the development of brain network–based biomarkers for neurological and psychiatric disorders. First, we analyzed how MST metrics are affected by different imaging modalities, node, and link definitions by comparing MST characteristics in empirical studies of healthy controls.
+
+Secondly, we assessed how results from different MST studies compare within and across categories of pathology, and attempted to interpret the changes in brain networks that occur in brain disease from a transdiagnostic perspective. After a systematic search for clinical MST studies, we categorized findings on (1) neurodevelopmental disorders, (2) adult psychiatric disorders, (3) neurodegenerative disorders, (4) multiple sclerosis, (5) epilepsy, and (6) other neuropsychiatric disorders.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## METHODS
+
+### Search Term and Search Strategy
+
+References were identified through searches of PubMed and EMBASE, using an array of terms covering brain connectivity in combination with MST. Exact search terms are specified in the Supporting Information. Furthermore, Google Scholar was used to search for articles from 2005 and onward citing the following key papers: Kruskal (1956), a seminal paper on graph theory; Stam et al. (2014), an extensive review on the methodological state of affairs in brain network research which has proposed the MST as a possible solution for various methodological issues; Tewarie et al. (2015a), a study showing the relevance and reliability of MST graph theoretical approach for studying brain networks (Kruskal, 1956; Stam et al., 2014; Tewarie et al., 2015a). For the paper by Kruskal, search results were further narrowed down by using the following search terms “brain OR neuronal OR cerebral.” Searches were conducted from inception to May 2020.
+
+The resulting articles were reviewed for relevance on title and abstract by two independent raters (FG and NB and/or BdR). If the article was deemed potentially relevant, the full text was also reviewed. In case of uncertainty about whether an article was eligible for inclusion, a third rater (EvD) coreviewed the article and was then included or excluded by consensus.
+
+Articles were included when they met the following criteria: published in English, assessing macroscale, whole-brain network topology through the use of one or more of these four imaging techniques that are broadly used in studies on neurological and psychiatric disorders: electroencephalography (EEG), magnetoencephalography (MEG), functional MRI (fMRI), DTI; conducted during resting-state and without intervention; having constructed a minimum spanning tree and reported at least one of the following MST measures: diameter, leaf fraction, leaf number, and kappa and tree hierarchy in a population with a neurological or psychiatric disorder. When available, numeric values for these measures were extracted from the original articles or Supporting Information.
+
+### MST Metrics
+
+MST measures that were analyzed included diameter, leaf fraction, and kappa and tree hierarchy, which describe the integration and efficiency of the network. A description of these measurements is provided in Table 1, where Figure 1 provides a schematic overview of MST topologies and corresponding characteristics.
+
+A small diameter combined with a high leaf fraction characterizes a more starlike, centralized network. In contrast, a large diameter with a low leaf fraction indicates a more linelike topology and decentralized network. A starlike network is characterized by short paths between the most remote nodes and thus facilitates efficient transfer of information across the network. However, the central node is burdened by a relatively large flow of information in such a network, possibly creating a greater chance of overload. Starlike networks will also be more vulnerable to targeted attacks to central hub nodes (Otte et al., 2015).
+
+### Meta-Analysis
+
+Due to limited available data, kappa and tree hierarchy were excluded from quantitative analysis. The MST variables diameter and leaf fraction were included in further quantitative analyses. First, we tested if MST variables were affected by network size. Mean values of MST metrics from healthy control groups were used for this analysis. Due to a limited number of data points, and the fact that some fMRI-based studies had considerably more nodes, we decided to use nonparametric linear regression method according to Siegel and others, to ensure robust regression (Siegel, Donner, &amp; Engel, 2012). For EEG and MEG data, we followed the authors’ frequency bands.
+
+Second, to analyze the network deviations in various brain disorders and interpret results from a transdiagnostic perspective, mean group effects on MST metrics were analyzed based on comparisons between clinical and control groups. We performed both fixed-effect and random-effects meta-analysis on the standardized difference of the mean estimates of mean leaf fraction per study and mean diameter per study. Studies were stratified by imaging modality. MEG/EEG studies were aggregated, but stratified for each frequency band. Heterogeneity was assessed using I^2 calculated based on Cochran’s Q. Analyses were performed using the meta package in R 3.6.1.
+
+Finally, we provided a narrative review to evaluate if MST analysis holds promise for biomarker development of brain disease, where insufficient data were available to draw definitive conclusions on quantitative outcomes.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

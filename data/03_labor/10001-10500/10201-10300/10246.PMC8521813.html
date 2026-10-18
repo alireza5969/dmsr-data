@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Ford, Curlewis, Squires, Griffiths, Stewart, and Jones: The Potential of Research Drawing on Clinical Free Text to Bring Benefits to Patients in the United Kingdom: A Systematic Review of the Literature</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1599,5 +1622,87 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Electronic Health Records (EHRs) are revolutionizing health care at the point of delivery, but also offer huge potential for discovery and research worldwide. The United Kingdom (UK) with its single-payer free-to-access universal health care provision, is particularly well-placed to advance health data science, and the government has invested widely in infrastructure for availability of data, dataset linkage, and analytical capability (1). In the UK, data contained in EHRs is widely used for health research, drug safety analyses, and service planning (2). EHRs have been demonstrated to be a particularly important data source in the UK for conducting epidemiological research within general practice (2–4), mental health (5, 6), hospital episodes (7), and specialist conditions such as cancer (8).
+
+In many cases, data are entered into EHRs in free text natural language in the form of clinic notes, letters and reports. This is particularly true of UK-based mental health records, GP clinic notes and letters, and hospital communications such as pathology or scan reports and discharge letters. These free text natural language data are considered unstructured, in comparison to clinical data stored in preset fields in records or entered in the form of clinical codes, in which a numeric or alphanumeric string represents a unique clinical concept such as a diagnosis or process of care (9). Natural Language Processing (NLP), alongside other methods, can be used to extract information from free text contained within EHRs (10), and therefore, unstructured EHR data can contribute to health research.
+
+However, clinical data and health records are considered highly personal, and thus fall under data protection laws of most jurisdictions, such as the General Data Protection Regulation (2018) in Europe, the UK Data Protection Act (2018) and HIPAA in the USA (11). Data need to be de-identified or anonymized before they can be shared outside the clinical environment for any secondary purposes such as research or service planning or improvement. De-identification of structured records happens when fields containing identifiers are stripped out before data-sharing; it is a fairly straightforward process to comply with current data governance regulations. However, de-identifying free text clinic notes, letters and reports is more complex, and is a rapidly evolving field. These data contain names of patients, health-care professionals and family members, they may contain addresses, dates of birth, and other identifying pieces of information, occurring potentially anywhere in the text. Globally, many groups have worked on bespoke algorithms for de-identifying local corpora of free text records using approaches such as rule-based algorithms, pattern matching, conditional random fields, neural networks, recurrent neural networks, and bidirectional transformers (12–19). One drawback of machine learning models is that they require very large marked-up datasets from which to learn, which are not readily available outside of clinical environments, and the lack of available training data hampers progress in this field.
+
+There is a lot of concern that de-identification of free text does not produce a perfect result, and some patient identifiers may slip through. Surveys and reviews have suggested that the best applications work at or above 90% accuracy for all types of personal health information, with systems working best on redacting name, date and age information and worst on profession and ID numbers (20–23). Portability of de-identification algorithms to new datasets is likely to be poor. Many teams now use a “hiding in plain sight” method where redacted identifiers are replaced with plausible substitutes, thus masking the few identifiers which slip through (24). A few studies have assessed the possibility of re-identification of patients from leaks in de-identified free text corpora. Two studies evaluated manual examination of de-identified notes by the original clinicians or by researchers with access to the data, in neither case was any patient correctly re-identified (25, 26). In a third study, using a complex reverse synthesis of de-identification methods, a simulated adversary could have identified 68% of data leaks correctly (27). Authors acknowledged that this mode of attack on de-identified data requires considerable effort and ingenuity from an adversary. At the current time, data custodians have few ways of quantifying or communicating the privacy risks to individuals associated with sharing automatically de-identified data. For this reason, text data which is used for research is often kept behind clinical firewalls or in specially designed data safe-havens.
+
+Because of this lack of clarity of how well privacy can be protected, in the UK, free text notes, letters and reports are generally stripped out of clinical datasets before they are shared for research outside of the clinical environment, for example with university-based research teams. Some teams have created bespoke de-identified free text clinical datasets within clinical firewalls, and bring researchers with NLP skills within the clinical environment to conduct the work (28) but these multi-disciplinary analytics teams are hard to assemble and fund, and are by no means the norm. Within advanced infrastructures, sometimes text data is accessed by sending NLP algorithms into safe-haven data storage and extracting only relevant clinical information in short excerpts or as structured data (29), but usually these algorithms need marked-up training data to develop and evaluate, so do not get round the problem of needing access to full free text entirely.
+
+There has been a concerted, UK-wide effort to clarify policy on sharing or re-using UK clinical free text, through funded research networks such as Healtex, Health Data Research-UK and others. It is clear that a society wide debate is needed on the balance between giving weight to the potential health benefits which could be realized from research analysis of clinical free text data, vs. prioritizing patient privacy. In the research literature and in policy and regulatory discourse around the use of patient data, there has been a notable failure to balance the privacy risks of data-sharing against the ethics of data non-use: not sharing data may be actively harmful, and cost lives, if progress in research is not made (30). We have worked on a portfolio of research to understand the wider context of governance that would be needed for free text data from UK NHS patient records to be shared at scale for research in a way that is acceptable to the public. We have engaged in deliberative research to elicit informed public opinion (31), scoped the data protection landscape and current governance practice for data-sharing, and engaged with other key stakeholders such as researchers, patient representatives, and regulators (32). Throughout our engagement work with UK-based stakeholders, it has been made clear that they want greater understanding of the benefits that improving access to medical free text for research could bring to patients or health-care services. Previous work has shown that adding free text to coded data can improve the accuracy of case detection in research and thus may improve research quality (9). But no study has yet brought together the available body of research using free text to produce a resource to describe to relevant stakeholders what the possible benefits to patients might be of conducting research using their clinical free text data, or what harms may be avoided. An understanding of the range of possible benefits in healthcare, achievable in the UK, available from research which uses clinical free text data, would enable stakeholders to weigh benefits against privacy risk when assessing whether they endorse researchers having access to free text data, and contribute to UK-wide policy on sharing of these data.
+
+We aimed to systematically review the literature of studies using clinical free text, conducted using data generated in UK healthcare systems, which reported direct or potential benefits to patients in terms of informing or improving the quality of their care. Given our aim to describe use of free text in the studies and create a taxonomy of potential clinical benefits to aid communication about the reasons for using free text data for research, we used a qualitative approach. This allowed us to synthesize results into an easily communicable set of findings for discussion with key stakeholders in this space and highlight potential case studies. We did not attempt to quantify the level of benefit achieved by the inclusion of free text in data used in the eligible studies.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+A study protocol was registered on PROSPERO (No. CRD42019141504) (33). The study is reported according to PRISMA reporting guidelines (34).
+
+### Search Strategy
+
+Two systematic database searches were carried out. The first involved a search of articles indexed in PubMed and Web of Science (WoS), conducted in July 2019, using the following search terms:
+
+(1) “electronic health records” or “electronic medical records” or “electronic patient records” or “hospital records” or “personal health records” or “computerized patient records” or “computerized medical records”; combined with (2) “text mining” or “natural language processing” or “free text” or “narrative.”
+
+No limits of date or location were put on this search. The second updated search was performed in March 2020. The same search string defined above was used to search PubMed and WoS. This search was limited to publications after July 2019, in order to update the previous search. Forwards and backwards searching of identified papers led to the identification of the Maudsley Biomedical Research Center (BRC) bibliography of CRIS publications which we examined (35). We further searched the published bibliographies of the Clinical Practice Research Datalink (CPRD) (36), The Health Improvement Network (THIN) (37) and the Secure Anonymized Information Linkage (SAIL) databank (38). All papers identified from searching these bibliographies were included if they met the eligibility criteria.
+
+### Eligibility Criteria
+
+To be eligible for this review, published research had to meet the following criteria: (1) Primary research using free text records, published in English; (2) UK health record databases or hospital data; (3) Information extracted from the text of (human, not veterinary) electronic medical records, medical letters or medical reports; and (4) report a benefit or potential benefit for patients, actionable in a clinical environment (i.e., not solely methods development or data/database quality evaluation). We defined direct or potential benefit as that the study produced a result or finding which could be translated into a change in care delivery or service access or design; or any other action in a clinical environment; which would improve the care for, or outcomes of, patients.
+
+### Screening and Study Selection
+
+Search results were screened first by title, then abstract, then full text against the eligibility criteria. All full text articles were examined and discussed between two authors (KC and one other member of the study team EF, KHJ, ES, or LG) to establish if they met inclusion criteria, where a decision could not be made, a third author arbitrated.
+
+### Critical Appraisal of Included Studies
+
+Because of the heterogeneity of study designs in the included papers we chose the Joanna Briggs Institute (JBI) Critical Appraisal Checklist for Analytical Cross Sectional Studies (39). The articles meeting eligibility criteria above were dual-screened by the authors. Any differences in scoring between the two authors were adjudicated by EF in discussion with KC, until a consensus was reached. Publication bias and selective reporting within studies were not assessed.
+
+### Data Extraction
+
+Characteristics of the included studies were extracted by multiple authors, including author(s), year of publication, country of publication, clinical research question, data source and type, number of patients and number of documents included in analysis, extraction method and purpose of free text in the study, summary of clinical findings, and any statement by authors of actual or potential clinical impact.
+
+### Data Synthesis
+
+Information about clinical benefit was thematically analyzed to create a taxonomy of benefits, according to the following research questions: (1) what are the main types of benefits achieved; (2) are benefits achieved for mental and physical health; and separately (3) is there any evidence that more benefit is achieved by the use or addition of free text compared to structured or coded clinical data?
+
+Firstly, data were identified by authors from the introduction, results or discussion sections which described a direct or potential benefit from the study for patients in terms of improvements to their health or to healthcare provision; these were then copied and pasted into a spreadsheet. The proposed benefits were iteratively examined and grouped (by EF and KC) until authors were content that themes covered all benefits emerging from the data. Papers were then re-read looking for evidence in support of these themes and examining whether they reported on physical or mental health. Themes were then reported in a narrative synthesis; examples from papers are given to support understanding and communication of themes.
+
+Finally, results sections were examined to identify if they reported any statistics showing accuracy or information extraction improvements comparing free text models with models that used only clinical coded data. Where found, these results were reported in a narrative synthesis.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

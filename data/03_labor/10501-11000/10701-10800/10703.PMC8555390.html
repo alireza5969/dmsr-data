@@ -6,8 +6,31 @@
 estado epiléptico refratário: uma breve revisão
 sistemática</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -707,5 +730,47 @@ topiramateEpilepsia2013546110611112358668610.1111/epi.12165</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+Status epilepticus (SE) is defined by the League Against Epilepsy (ILAE) Task Force as “a condition resulting either from the failure of the mechanisms responsible for seizure termination or from the initiation of mechanisms which lead to abnormally prolonged seizures”.(1) It is a medical emergency associated with high mortality that demands immediate medical care and prolonged hospital stay, incurring high health care costs.(2-6) The American Epilepsy Society establishes benzodiazepines as first-line treatment and fosphenytoin, valproic acid, levetiracetam, or intravenous phenobarbital as second-line.(7) The state of refractory disease is characterized by the failure of first- and second-line therapies. Currently, there are few controlled or randomized studies about refractory status epilepticus (RSE) and no drug with clear evidence to be useful as a third-line treatment, so therapeutic management often includes repeating second-line therapy or anesthetic doses of either thiopental, midazolam, pentobarbital, or propofol.(7)
+
+Topiramate (TPM) is being studied as an option in these refractory patients. It is a second-generation drug with an action mechanism against various epileptic syndromes with pleiotropic effects on different receptors and ion channels. Pathophysiological studies demonstrate that topiramate potentiates gamma-aminobutyric acid (GABA) through modulation of its GABAA receptor independent of benzodiazepines. This means that topiramate can help to overcome the benzodiazepine resistance observed in refractory epileptic patients.(8)
+
+Given the importance of clear evidence to guide RSE therapy and the lack of studies in this area, the purpose of this systematic review is to investigate the efficacy of TPM as an add-on therapy to patients with RSE compared with those who did not use it. Addressing this question is fundamental to instruct medical conduct, improve health care, and reduce costs of treatment. We carried out a systematic review to identify current evidence on the use of topiramate for RSE.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## METHODS
+
+To investigate the efficacy of topiramate as an add-on therapy to patients with RSE compared with those who did not use it, electronic searches were performed by two reviewers independently in March 2020 in four different databases: MEDLINE, Embase, Cochrane Library and Web of Science. The search terms were “status epilepticus”, “refractory”, “treatment,” and “topiramate”. No restrictions were used. The inclusion criteria were as follows: studies reporting the use of topiramate as a treatment for RSE and its outcomes (response rate, mortality rate, or long-term outcomes). Case reports, review articles, letters, conference abstracts and animal experiments were excluded. After the study selection, we performed descriptive and qualitative analyses. For each study, we evaluated the study design, the number of participants, the dose of topiramate administered, response rate 72 hours after the administration of TPM, the mortality rate in-hospital, and favorable long-term outcomes (i.e., discharge, back to baseline or rehabilitation). Only the data of patients who had TPM as the last drug were included.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Daniel, Aggarwal, Kalaivani, and Gupta: Prevalence of chronic obstructive pulmonary disease in India: A systematic review and meta-analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1036,5 +1059,45 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+Globally, chronic obstructive pulmonary disease (COPD) is among the leading causes of morbidity and mortality.[1] COPD was estimated to be the sixth leading cause of death in 2019.[2] According to the 2017 GBD study, of all the chronic respiratory diseases, COPD contributed 50% of all cases and 69% of years lived with disability.[3] More than 90% of COPD-related deaths occur in low- and middle-income countries (LMICs).[4] Apart from causing a huge economic burden, COPD causes disability and impairs the quality of life, loss of productivity, increased hospital admissions, and premature mortality.[5] The global prevalence of COPD, as per the estimates by Adeloye et al. is 11.37% (95% confidence interval [CI]: 10.76–11.96).[6] A review by Rehman et al. in 2019, to estimate the economic burden of COPD in Europe reported that the annual per-patient cost of work productivity loss was highest in Germany (€5735) and lowest in Greece (€998).[7]
+
+The diagnosis of COPD requires a broader approach which includes assessment based on symptoms, risk factors, and spirometry.[8] The prevalence of COPD is underestimated as most symptoms such as cough and dyspnea are ignored by the patients until they worsen, and are not confirmed by objective lung function tests.[91011] Spirometry is necessary to diagnose COPD, and is increasingly used in epidemiological studies to objectively assess airway obstruction.[121314] Even with increasing consensus on the use of spirometry, cut-off points for detecting airway limitation vary.[15] There is a lack of national-level estimates on the burden of COPD in India. Previous studies have attempted to review the status of COPD in India qualitatively.[16] Moreover, many of the estimates are based on varying definitions and diagnostic criteria of COPD. Hence, in order to address the above-mentioned methodological issues, we conducted a systematic review and meta-analysis to estimate the prevalence of COPD among adults diagnosed by spirometry in India.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## SEARCH STRATEGY
+
+A comprehensive literature search was conducted for studies published since their inception to December 31, 2020, in the following databases: Medline through PubMed, Embase, Cochrane Library, Scopus, and Google Scholar, without any language restriction, using MeSH terms and keywords. We used the Preferred reporting items for systematic review and meta-analysis statement for reporting systematic review and meta-analysis as a guide for this study.[17]</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

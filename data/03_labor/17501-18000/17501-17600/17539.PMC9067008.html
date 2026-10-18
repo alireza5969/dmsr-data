@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Lim, Hickey, Young, Macrae, and Kelly: Screening and risk reducing surgery for endometrial or ovarian cancers in Lynch syndrome: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1634,5 +1657,55 @@ PMC740894232708519</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Lynch syndrome is an autosomal dominant hereditary cancer syndrome caused by mutations in mismatch repair genes (MLH1, MSH2, MSH6, PMS2). Epithelial cell adhesion molecule (EPCAM) can also predispose to MSH2 deficient cancers. Before genetic testing, patients were diagnosed with Lynch syndrome using Amsterdam II criteria based on family history.1
+
+Mismatch repair carriers are at higher risk of multiple malignancies, including colorectal, endometrial, ovarian, gastric, small bowel, pancreatic, biliary, renal, bladder, prostate, skin, and brain cancers.2 Women have 13–47% lifetime risk of endometrial cancer, and 3–17% risk of ovarian cancer, depending on the mismatch repair gene.2 3 The management of gynecological cancer risk involves screening and/or risk reducing hysterectomy and salpingo-oophorectomy. The Manchester International Consensus Guidelines4 and Mallorca Group5 recommend risk reducing surgery in all mismatch repair carriers except for PMS2 carriers, without screening, while the US Multi-Society Task Force recommends screening for endometrial cancer by annual endometrial biopsy from 35 to 40 years.6 7
+
+Only one previous systematic review has evaluated the benefits of gynecological cancer screening in Lynch syndrome. This included five studies and concluded there was insufficient evidence to support screening for either endometrial or ovarian cancer.8 Our review provides an updated analysis of the evidence for the effectiveness of endometrial and ovarian cancer screening and risk reducing hysterectomy and bilateral salpingo-oophorectomy in cancer prevention.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Endometrial and Ovarian Cancer Screening
+
+Medline (Ovid), Embase, and PubMed databases were searched in August 2020 using relevant medical subject headings and keywords (Online Supplemental Table 1). Reference lists were searched for relevant articles. The same search was updated in November 2021. Articles meeting all of the following criteria were included: women with Lynch syndrome (by mismatch repair mutation or Amsterdam II criteria), screening methods for endometrial and/or ovarian cancer, intervention included endometrial biopsy, transvaginal ultrasound, or serum cancer antigen 125 (CA-125), and those where outcomes were number of cancers and/or endometrial hyperplasia.
+
+Articles meeting any of the following criteria were excluded: personal history of endometrial or ovarian cancer, non-Lynch syndrome hereditary cancer syndromes, other screening methods, screening was not for gynecological cancers, outcomes were cost effectiveness of screening or patient perception of screening, those not published in English, or did not contain patient data.
+
+### Risk Reducing Surgery
+
+Medline (Ovid), Embase, and PubMed databases were searched in August 2020 using relevant medical subject headings and keywords. Reference lists were searched for relevant articles. The same search was updated in November 2021. Similar inclusion and exclusion criteria to the above were applied detailed in Online Supplemental Table 1).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

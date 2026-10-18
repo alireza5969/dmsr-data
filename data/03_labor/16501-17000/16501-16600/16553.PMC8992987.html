@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Jiang, Luskus, Seyedi, Griner, Rad, Clifford, Boazak, Cotes, and Albu: Utilizing computer vision for facial behavior analysis in schizophrenia studies: A systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2066,5 +2089,65 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Schizophrenia is a severe psychiatric disorder with a lifetime prevalence of approximately 0.48% [1]. This conditionis slightly more common in males [2], appears generally during early adulthood [3], and causes significant social and functional impairment. In 2013, schizophrenia was thought to have an annual economic burden of $155 billion in the United States [4]. Since the identification of schizophrenia in the late 1800s, significant efforts have been made to characterize symptoms of the disorder. The 5th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) indicates that for a diagnosis of schizophrenia to be made, two or more of five symptom categories must be present [5]. These five symptom categories include delusions, hallucinations, disorganized speech, disorganized behavior, and negative symptoms [5]. Schizophrenia is an illness that demonstrates heterogeneity in its symptoms from person to person, and each of these symptom categories can vary vastly by presentation leading to overlap with other diagnoses. Additionally, schizophrenia has a heterogeneous longitudinal course, with some individuals having a relapsing remitting course, others chronic symptoms, and others with symptoms followed by remission [6].
+
+Currently, the diagnosis of schizophrenia is based on the self-report of the patient, what the interviewer observes, and collateral information, all of which can be highly subjective. Reducing subjectivity in establishing the diagnosis of schizophrenia is necessary from both a research perspective (to ensure treatments work for people with the same underlying condition) and a clinical perspective. Clinically, many people with schizophrenia have a lack of awareness that they have an illness [7], and those with poor insight may be at risk for nonadherence to antipsychotic medications and other negative outcomes [8]. Clinicians often are easily able to identify and evaluate positive symptoms of the illness, but may struggle more with the identification, assessment, and quantification of negative symptoms [9]. Negative symptoms contribute to the overall disability of the illness more than positive symptoms, and include symptoms such as a lack of motivation, social withdrawal, alogia (poverty of speech), and affective flatting. Affective flatting is defined by diminished emotional expressivity in the face, is an example of a negative symptom with the potential to objectively quantify. Despite recognition of impairment of facial expressions as a key diagnostic construct in schizophrenia, research in this area has been limited, and the most recent reviews on the topic are nearly two decades old [10, 11].
+
+Early analyses of facial expressions were primarily conducted using the Facial Action Coding System (FACS). FACS, developed by Ekman and Friesen in 1978, is a framework for developing objective and repeatable methods of coding of facial movement [12]. The system relies on trained rater coding of the presence and magnitude of multiple facial action units (AUs) such as facial, eye, and head movements. A visual illustration can be found in [13]. These ratings formalized the methodology for the evaluation of subject facial movement and expression. In the case of schizophrenia, the system allowed for the identification of variation in patient expression in negative emotionssuch as sadness and anger [14], reduction in patient expression of happiness [10], reduction in patient emotional expressions [3, 15], and reductions in facial responsivity [16]. Still, despite its strengths, FACS was an expensive and manually laborious methodology.
+
+Since the turn of the 21st century, machine learning has played an increasing role in mental health research [17], which is driven by rapid development of affective computing, increases in computing power, and ease of data acquisition. Incremental algorithm improvements progressing from the single layer perceptron to the convolutional neural network have also led to significant advances in the field of computer vision [18, 19]. The combination of these factors has led to the development of automated FACS software, such as Noldus FaceReader [20] and Openface 2.0 [21]. In regard to the FACS, the present state-of-the-art model [22] classifies AUs with F1-score and accuracy values of 0.55 and 0.91 respectively in the testing set of the EmotioNet dataset [23], consisting of 23 AUs presenting in 200,000 images.
+
+Given the potential applicability of these models, researchers have used them to evaluate facial expressivity. Facial expression models have been studied in depression [24, 25], autism [26], dementia [27, 28], and schizophrenia research. Despite the increasing adoption of this technology, a review of the present state of computer vision models in understanding facial expressions in schizophrenia has not been conducted. Previous reviews have investigated the usage of computer-vision-based facial information in medical applications in general [29, 30], but they focused more on the specific technical facial analyses adopted than the complete processing and analyzing pipeline, and few schizophrenia studies were discussed in detail.
+
+Here, we conduct a systematic review on the use of computer vision in the evaluation of facial expressivity in schizophrenia. A systematic narrative synthesis will be provided with the information presented in the text and tables to summarize and explain the characteristics and findings of the included studies. The narrative synthesis will describe the current work, its evolution, and clinical findings, in addition to discussing the data processing pipeline.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Searching methods
+
+We conducted a literature searchfor publications published before (including) December 2021, on Google Scholar and PubMed in February of 2022 using the following search terms: (“facial emotion” OR “facial expression” OR “facial analysis” OR “facial behavior” OR “facial action units”) AND “schizophrenia” AND “computer vision”. Multiple synonyms and sub-categories of facial behaviors were used in the first keyword set to cover a broad definition of facial behaviors, and the latter two keywords were selected to limit our search with studies that used computer vision in schizophrenia. Based on the articles we found in the search, we conducted a secondary search to include othernotable and relevant papers worthy of inclusion, which were written by the same group of authors, and included relevant articles which were cited by articles found in the primary search. The secondary process was adopted to enhance the review by including those relevant articles that were not discovered in the first search using a general search process. The detailed process can be found in the PRISMA flow diagram in Fig 1.
+
+### Inclusion and exclusion
+
+The inclusion and exclusion process is shown in Fig 1. Returned records were first filtered by the presence of related keywords in the titles, where titles without any related keyword were excluded. Those keywords include but not limited to “schizo-”, “psychosis”, “schizophrenia”, “schizophrenic”, “psychiatric/psychiatry” and “neuropsychiatric/neuropsychiatry”. Then the duplicated records were removed. After that, 45 records were screened by titles and abstracts, where 26 records were excluded because their titles were unrelated to the surveyed topic, they did not represent original research (thesis or review), because they did not related to schizophrenia (not schizophrenia), because they only consisted of human-rated subject affect or facial movement (not computer vision), or because they focused on the processing instead of the expression of facial behaviors (not expressing). Lastly, 19 records were assessed for eligibility where one was excluded because it did not relate to schizophrenia and another one was excluded because it was not peer-reviewed and had limited rigor.
+
+### Data collection
+
+A data collection survey was conducted by ZJ and ML to extract relevant data, including research goals, findings, interview types, interview structures, hardware used, types of data captured/used, data pre-processing method, behavioral features, statistical testing method, and model evaluation method. For the purposes of this review, we specifically report on clinical processes and data handling components that we discovered within the literature. From the clinical perspective, we report on how computer vision is currently used in the evaluation of schizophrenia, the general clinical findings in relation to those uses, and the interview structure during which data is collected. From the perspective of data handling, we evaluate the data pre-processing, the data processing, and hardware used in the literature.
+
+In addition, the reporting quality of the studies were assessed with Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis (TRIPOD) [31]. The completed quality assessment can be found in S2 Table.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

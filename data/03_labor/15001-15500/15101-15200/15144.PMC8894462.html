@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Lam, Chen, Wang, Iqbal, Darzi, Lo, Purkayastha, and Kinross: Machine learning for technical skill assessment in surgery: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3134,5 +3157,157 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Accurate and objective performance assessment is a cornerstone of any surgeon’s training. However, despite the wealth of innovation available to the modern-day surgeon, surgeons continue to rely on relatively blunt metrics, such as operative duration, postoperative outcomes, and complication rates in order to track their performance, which fails to truly capture the surgeon’s intraoperative performance. Whilst feedback on intraoperative performance is available from trainers, this tends to be infrequent, unstructured and prone to variation, leaving consistent tracking of performance difficult.
+
+The move to search for more structured and objective methods of assessing intraoperative performance is by no means novel. A wide variety of rating scales (Table 1), such as the Objective Structured Assessment of Technical Skills (OSATS)1 are available which allow expert raters to assess surgeons across domains such as flow of operation, tissue handling, or efficiency. These have also been appropriately adapted to specific specialties2–4 or to laparoscopic5 or robotic platforms6,7. Whilst the use of these scales is widespread amongst academic studies, the uptake within clinical practice remains limited. The reasons for this include the need for an expert reviewer, its time consuming and labor-intensive nature and its tendency to rater bias.
+
+A potential solution to these issues is the use of ML. ML can be defined as “the scientific discipline that focuses on how computers learn from data”8. Once it is trained or designed empirically, it can process the large volume of data available from the modern-day operating room seamlessly and produce rapid, automated, and reproducible feedback without the need for expert reviewers. The ever-increasing availability of computational power has seen ML be applied across numerous disciplines in medicine, with surgery being no exception. ML and artificial intelligence (AI) has been used across diverse applications in surgery ranging from surgical workflow analysis9, to autonomous performance of simple tasks10, and postoperative mortality risk prediction11. This widespread use of ML has led to the development of the field of Surgical Data Science, which aims to improve the quality and value of surgery through data collection, organization, analysis, and modeling12,13. Surgical skill assessment is a growing research topic and the last 10 years has seen rapid increase in the use of ML within this field. However, it remains unclear how and to what extent ML can be applied for surgical performance assessment.
+
+Therefore, the aim of this review is to systematically review the literature concerning ML and surgical performance assessment. The aims are primarily to summarize the major ML techniques used to date in surgical skill assessment and to identify the current challenges and barriers in the field; second to understand what the key sources of data used to develop these tools are and the tasks or procedures that have been assessed; and finally, to understand to what extent ML has been successfully employed to assess surgical performance objectively. Through this systematic review, we aim to define future directions and propose new criteria in this emerging field.
+
+## Results
+
+The literature search retrieved a total of 1896 studies. A further 5 studies were included through bibliometric cross-referencing. Following title and abstract screening, the full texts of 121 studies were analyzed and 66 studies were found to be eligible for inclusion (Fig. 1). Fig. 2 provides a framework of the technical skill assessment process detailing how novel data can be processed by trained models to provide an assessment of surgical performance. Table 2 provides an overview of all studies included within the review.
+
+### Surgical tasks and environment
+
+48/66 studies assessed the performance of benchtop tasks such as peg transfer, suturing, or knot tying, 10/66 studies used a simulator, and 8/66 studies assessed real-life surgery. Two studies employed the use of animal models in order to conduct procedures such as laparoscopic cholecystectomy. 20/66 studies assessed laparoscopic tasks, 26/66 studies assessed robotic tasks, and the remainder assessed a combination of open tasks such as hand tying or open suturing, or procedures such as arthroscopy14 and capsulorhexis15. The use of simulators allowed the assessment of more complicated tasks including procedures such as discectomy16 or hemilaminectomy17. Although studies assessing the performance of real surgery were limited in their number, their proportion has increased since 2018. These studies have investigated procedures across the fields of urology18–20, general surgery21,22, otolaryngology23,24 and ophthalmology25. Table 2 details the variety of tasks and environments used in the studies included in this review.
+
+### Data sources
+
+The data sources that form the basis of these ML tools can be divided into kinematic data (40/66) and video or image data (19/66). Seven studies used both kinematic and video data. Kinematic data for the most part was derived from the da Vinci robot (Intuitive USA), but external sensors have been worn by the surgeon or embedded in the instruments to track instrument movement. 10 studies used a simulator. There were few instances of datasets being used on more than one occasion. The most commonly used dataset was the JHU-ISI Gesture and Skill Assessment Working Set (JIGSAWS) dataset26 which was used by 10 studies. The size of datasets was small, with 20/66 studies having fewer than 10 participants (Table 2).
+
+### ML methods
+
+Whilst a variety of ML methods have been utilized to assess surgical performance, the most common ML methods used were HMM (14/66), SVM (17/66), and ANN (17/66). Incidentally, these three major ML methods coincide with the trends in research within this area; early research focused on the use of HMM before a shift in the field to SVM methods and more recently the use of ANN and deep learning (Fig. 3). Further details of these ML methods and other methods utilized in the studies included in the review are reviewed in Tables 3–7.
+
+### Assessment and accuracy
+
+52/66 studies reported accuracy rates. The majority of these studies reported accuracy rates of over 80% (Table 2). 31 studies reported accuracy rates of over 90% for at least one task. Accuracy rates for studies assessing the performance of real-life procedures varied between 77.4% and 91.1%. Although accuracy rates reported among these studies were high, these results should be interpreted with caution due to a number of factors.
+
+Firstly, the diverse spectrum of tasks ranging from simple tasks such as peg transfer to complex surgical procedures such as laparoscopic cholecystectomy makes meaningful comparison difficult. Secondly, although all included studies aimed to assess technical surgical performance, the manner in which this was attempted varied between studies. The majority of studies measured surgical performance through the classification of participants into novices or experts. However, other studies aimed to predict scores on global rating scales such as OSATS or GEARS. One study validated the ML-derived assessment metrics against patient outcomes18. Moreover, the definitions of novices and experts vary significantly between studies, ranging from the previous number of cases and stage of training to hours of experience. 29/66 studies employed the use of a rating scale such as OSATS in order to determine expertize while 13/66 studies failed to specify how expertize was determined. In addition, definitions of novices varied from medical students with no surgical experience at all to surgeons with less than 5 years of laparoscopic experience27.
+
+Finally, cross-validation techniques, a method for assessing the classification ability of the ML model, varied between studies. For example, use of leave-one-user-out (LOUO) validation compared to leave-one-super-trial-out (LOSO) can result in significant differences in accuracy levels. Models validated with the LOUO method tend to achieve lower accuracy scores, when compared with LOSO, as the model is validated on the trials of a surgeon where it has never been trained on. Therefore, the comparison of models with differing cross-validation techniques is problematic. A summary of common cross-validation techniques is presented in Table 8.
+
+### Quality Assessment
+
+The mean MERSQI score was 11.6. Scores ranged from 10.5 to 14.5. The majority of studies were designed as single group studies without randomization, single center in nature and had outcomes of skills and behaviors limiting their maximum possible score. The full table of results can be found in the Supplementary Data 2.
+
+## Discussion
+
+This systematic review demonstrates the variety of ML techniques used in the assessment of technical skill in surgery. A total of 66 studies employed the use of ML in order to perform technical skill assessment in surgery. The most commonly used ML models were HMM, SVM, and ANN. However, of the studies included in this systematic review which took place in 2019 or later, half involved the use of neural networks, which reflects its increase in popularity.
+
+31 studies reported accuracy rates of over 90% on determining performance on at least one task, highlighting the promise ML-based surgical performance assessment has to offer. This review demonstrates that ML-based surgical performance assessment has the potential to be incorporated into surgical training in order to deliver accurate performance assessment which is objective, reproducible and not resource intensive. This technology could allow surgical trainees to gain access to regular and consistent feedback, allowing them to track and progress up their learning curves more rapidly. Moreover, the benefits of ML-based surgical assessment tools could extend beyond surgical trainees; for example, allowing certifying bodies to deem surgical competence or assessing how surgeons perform with novel technologies or techniques in the operating room.
+
+Despite the significant promise that this field offers, this review highlights that ML-based surgical assessment tools are still within their relative infancy and that a tool, which can be delivered into clinical practice appears distant. We highlight three significant barriers to progress and suggest key future research goals.
+
+### Focus on basic tasks
+
+The majority of studies included in our systematic review focused on the assessment of performance in basic benchtop tasks such as suturing, peg transfer, and knot tying. Whilst the reported accuracy of determining novices and experts at these tasks were high, the translation of these techniques into life surgery is called into question. Real-life surgery has significant challenges to overcome when compared to an artificial benchtop environment. Algorithms have to contend with less predictable kinematic data as well as video which can be contaminated with blood and surgical smoke. Therefore, the applicability of techniques used in these environments may have limited value when employed in life surgery.
+
+Moreover, the value of determining novices and experts from these relatively trivial tasks may be limited beyond those initially learnt on laparoscopic or robotic platforms. Classification of surgeons into novices and experts may be purely a surrogate of familiarity with the platform rather than of actual surgical skill. In addition, it is questionable whether the measurement of performance on these tasks truly determines technical surgical skill rather than simply the dexterity of the participant. In one study, there were no statistically different objective performance indicators between robotic experts and training specialists, defined as non-surgeons with significant experience in benchtop robotic tasks28. It must be noted that multiple studies attempt to classify participants into novices, intermediates and experts. Efforts to differentiate between those with moderate levels of experience to experts will likely have more clinical transferability compared to studies, which aim to classify participants with significant disparities in ability, such as medical students against expert surgeons. Therefore, whilst the use of basic tasks is an obvious first step for those aiming to develop these ML tools due to the relative ease and speed of data collection, it must be recognized that the clinical value of such studies may be limited.
+
+### Lack of standardization of methods
+
+Across the 66 studies reviewed in our systematic review, there is significant variation amongst the studies carried out. Whilst the majority of studies compared novices to experts, definitions of novices and experts varied significantly. Novices varied from medical students with no surgical experience to residents on a defined surgical training programme whilst the definition of expert ranged from 50 cases to 1000 cases. While some studies classified participants against a ground truth of an expert-rated scale such as OSATS or GEARS, the majority of studies based expertize on hours of training or the number of cases performed. Some studies based expertize level on the stage of training which may not be an accurate representation of expertize level (for example, due to varying levels of exposure to robotic platforms), while other studies entirely failed to state how expertize was determined.
+
+In combination with the diverse range of tasks and different cross-validation techniques employed in these studies, the comparison of methods used to assess performance is challenging. Some success has been achieved with the JIGSAWS dataset26, an open-source annotated dataset of eight surgeons across three expertize levels performing a total of 103 basic robotic benchtop trials. The use of this dataset by multiple research groups has allowed the comparison of assessment techniques on a benchmark dataset. However, beyond the JIGSAWS dataset, we have found few studies have compared results across the same datasets. The majority of studies within our review present methods based on original data with varying methodology rendering comparison difficult.
+
+### Lack of data
+
+The datasets within this systematic review were small in nature with 20/66 studies comprising of fewer than 10 participants. In addition, the majority of data obtained from these studies were not open-source and therefore datasets were not reused across different groups. There is, however, increasing momentum for the sharing of datasets such as m2cai2016-tool29 released for the tool presence detection challenge at M2CAI 2016 and datasets used in the EndoVis challenges30. The increasing availability of open-source datasets will allow not only the benchmarking of results but also improved training and performance of models, as well as encouraging a global effort towards publishing more datasets.
+
+Whilst inadequate amount of data is a common problem amongst ML communities, acquisition of real-life surgical data poses its unique set of challenges. There is a lack of digitization and infrastructure across operating rooms meaning that those collecting data such as operative video are, for the most part, in the minority. Ultimately, for ML applications in surgery to flourish, a paradigm shift in the operating room towards large-scale collection of surgical data is needed in order to facilitate these applications. However, implementing these systems are not without issue and the surgical data science community continues to grapple with both the technical and ethical hurdles to its adoption13,31.
+
+### Moving forward
+
+Studies investigating performance assessment in surgery must move away from basic benchtop tasks and towards assessment of real-life surgery. However, the increasingly popular use of deep learning architectures requires large volume of intraoperative data. The priorities must be to ensure operating rooms are appropriately digitized and have the infrastructure to both collect and share intraoperative data. Not only will the sharing of these datasets improve the development of ML models and allow comparison of techniques but it will also encourage collaboration between groups to further research in this area. This will solve not only issues associated with the use of ML in surgical performance assessment but also issues across the whole field of surgical data science and the wider application of ML to surgery. Encouragingly, efforts have been made by the surgical data science community in order to identify the challenges and research targets associated with widespread data acquisition in the operating room and data sharing13,31. It is only through this that datasets can be acquired and utilized at scale.
+
+Future studies should aim to standardize methodology such that meaningful comparison can be made. Individual studies with varying skill levels of participants performing a wide variety of tasks are unlikely to be impactful when compared to studies with standardized methodology ideally on shared open-source datasets. Furthermore, skill assessment in surgery must move beyond a simplistic binary classification. The clinical applicability of being classified as a novice as opposed to an expert is limited; it is more important for trainees to understand why they have been classed as a novice than just to know that they have been classed as such. The focus within this field must move towards explainable techniques. Class activation maps are able to inform the surgeon which aspect of the task has weighted their classification towards a novice or expert, allowing the trainee to understand which part of the task they should look to improve upon in the future32,33. Not only must future performance assessment tools be accurate, but they must identify targets of improvement which are interpretable to the surgeon. The future performance assessment tool must move beyond a novice vs expert classifier and towards a clinically applicable tool, which can continuously assess surgeon performance and therefore advance surgeons up their learning curves more rapidly and maintain their performance.
+
+The significant promise lies in the emergence of novel frameworks within the ML community which may be able to counter the problems faced by neural networks, such as the large volume of training data required (Table 7). Generative adversarial networks (GAN), through the use of two competing neural networks, are able to generate novel data with the same features as the training data34. Its application has seen huge popularity in the fields of AI art and the creation of new photographs which appear superficially authentic to human observers. The application of GAN to ML-based surgical assessment could address issues with insufficient training data, which is often a limiting step within the development of these tools. Transformer networks35, an encoder-decoder architecture based on attention layers, have rapidly gained popularity within the field of Natural Language Processing due to its power for sequential modeling. ML-based surgical assessment tools could apply transformers and their capability to model temporal relationships to model surgical phase transitions. Clinicians must work in conjunction with ML scientists so that advances within ML development can be capitalized upon and applied within the field of ML-based surgical assessment. Furthermore, ML scientists must have an understanding of the surgical challenges and needs that they are trying to solve. It is only through a mutual awareness of each others’ fields that ML-based surgical assessment can advance.
+
+Finally, the development of ML-based surgical assessment tools is not limited to the technical challenges alone. The future use of ML for the purposes of surgical technical skill assessment may bring wider challenges. ML-based assessment of future surgical teams may challenge the rights of privacy for the surgeon and their team. Not only are there fears from surgeons that they will be constantly watched, but there are also concerns that such systems may influence surgeon’s behaviors. In addition, it is unclear what the rights of the future surgeon to opt-out are as well as the implications of doing so. Finally, it is unclear what the role of such systems may play in the role of determining surgical error. Whilst ML-based performance assessment tools may allow rapid, reproducible, and automated performance assessment and in doing so accelerate surgical education, we must also pre-empt the potential wider challenges of implementing such tools into clinical practice. We must look, not only at the development of these performance assessment tools, but also the challenges associated with their deployment. Ultimately, for research into ML-based performance assessment tools to be worthwhile they must be leveraged such that they can make the transition from benchtop to bedside.
+
+## Conclusions
+
+Despite research spanning 20 years, there is still significant progress to be made in the use of ML for technical skill assessment. The use of ML has the opportunity to allow surgeons to track their performance accurately, objectively, and reliably. Numerous ML methods have been utilized to assess surgical skill; however, the comparison of such techniques is difficult due to the wide variety of datasets, tasks, and study participants. We identify three key barriers to progress in the field: (1) a focus on basic benchtop tasks; (2) the lack of standardization between studies; (3) the lack of available datasets for the purpose of surgical assessment. Future efforts in the field must focus on moving beyond basic benchtop tasks and towards the assessment of real-life surgery which is interpretable and of clinical value for the surgeon. For this to be successful, operating rooms must adapt to allow intraoperative data to be acquired at scale and subsequently shared.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+This systematic review was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses statement (PRISMA)36. The systematic review was also registered on the International Prospective Register of Systematic Reviews (PROSPERO ID: CRD42020226071).
+
+### Search Strategy and Databases
+
+A comprehensive literature search was conducted using Medline (via Ovid), Embase, Web of Science, and the IEEEXplore database to account for technical papers. Example search terms included ‘machine learning’ and ‘artificial intelligence’ in addition to ‘surgical skill’, ‘surgical performance’, and ‘surgical assessment’. The full Medline, Embase, Web of Science, and IEEEXplore search strategies can be found in Supplementary Data 1. Free-text words were combined using Boolean operators, in addition to medical subject headings terms (MeSH). The search was performed in consultation with a professional librarian at Imperial College London in December 2020.
+
+All identified studies were uploaded to Covidence, a Cochrane-supported systematic review package tool. Initial screening was independently conducted by two investigators (KL and FMI) to determine if the eligibility criteria were met. Discrepancies were discussed and resolved either by consensus or by a third reviewer. Studies that met the inclusion criteria underwent full-text screening. In addition, supplemental references were examined for additional relevant articles.
+
+### Study selection criteria and outcome measures
+
+Studies published including the primary and secondary outcomes as detailed below were included. No language restrictions were applied. Inclusion criteria included any study that used ML to examine performance assessment of either a real-life operative procedure or a surgical benchtop task. Exclusion criteria included any study that did not assess performance or did not use a ML technique. The last search was conducted in December 2020. Studies with inadequately published data with regards to the primary and secondary outcome measures were also excluded.
+
+### Data extraction
+
+The primary outcome of this systematic review was to detail the ML techniques used in technical skill assessment in surgery and identify the current challenges and barriers in the field. Secondary objectives were to understand the types of data employed by these ML techniques, determine the procedures and tasks which have been investigated in these studies and determine the current accuracy of existing ML models used for surgical skill assessment. We determined real-life studies as studies that utilized data taken from real-life surgery, simulator studies as studies, which recorded data without the need for external sensors (able to automatically generate kinematics or metrics without noise and the need for preprocessing), and benchtop studies as any study that did not satisfy the previous two criteria.
+
+All study characteristics and outcome measures were independently extracted by two investigators (KL and FMI). Discrepancies were discussed and resolved either by consensus or by a third reviewer.
+
+### Quality Assessment (Risk of Bias)
+
+Quality assessment was conducted through the use of the Medical Education Research Study Quality Instrument (MERSQI)37. The 10-item tool assesses 6 domains, each with a maximum score of 3, (1) study design, (2) sampling, (3) type of data, (4) validity of evaluation instrument, (5) data analysis, (6) outcomes. Scores range from 0–18. Quality assessment was assessed by one reviewer and validated by a second.
+
+### Overview of ML methods
+
+HMM can be seen as a probabilistic method to predict the unobservable sequence (usually the underlying tasks, the movement orders of instruments, etc.) based on the probability of the sequence of occurrence of observable information (such as kinematic data of the surgical instruments, visual features, force exerted). In surgical skill assessment, HMM will enable the researcher to infer the underlying sequences of surgical tasks, instrument motion trajectories, etc., from the observable information captured during the operations and which can be used to distinguish and quantify the surgical dexterities of surgeons. For example, for the same surgical task, such as suturing, a novice may take more steps and time (i.e. a longer sequence of instrument movements) compared to an expert surgeon. A classic example can be found in Rosen et al.38.
+
+In early articles, HMM is widely used as the training method to assess surgical skill. HMM were applied to estimate the underlying surgical maneuvers from the observable kinematic/video data from the system when the surgeon participant performed surgical training tasks, and the participant’s training skill level was then deduced from the estimated data38–40. Although accuracy within this period achieved over 80%, the use of HMM failed to demonstrate sufficient benefit for it to be employed on a wider scale. However, the early use of HMM had led to the growing interests in the use of ML for the purpose of surgical skill assessment. The use of HMM declined at the start of the 2010s with the rise in popularity of ML methods such as SVM.
+
+SVM41,42 is a supervised ML method based on the Vapnik-Chervonenkis Dimension theory and structural risk minimization principle43 to address linear and nonlinear classification problems, which denote the distribution of the input dataset. Generally, the use of SVM classifiers consist of the training stage, validation stage, and test/prediction stage. The SVM classifier relies on the multi-dimensional handcrafted features and metrics relevant to the tasks of interest derived from original signals, such as bio-signal44, video45, kinematic data46. Such features include energy-based metrics14 (which include total work, the sum of the changes in potential energy, and the sum of the changes in kinetic energy when performing a specific task), computer vision-based features15 (such as duration, size, centrality, circularity, and motion stability), and other measurable indexes (such as the position, angle, and force application of instruments and volume of simulated tissue removed17. These features vectors or matrix are often linearly inseparable. Hence, conventional linear classifiers, such as Linear Discriminant Analysis, are not able to classify the tasks based on these feature vectors. However, the SVM classifier maps the original features from a low dimensional space to a higher dimensional space nonlinearly and transform the nonlinear problem into a linear separable one, so that the classification boundary or the ‘hyperplane’ (in the higher dimensional space) of the original features matrix can be determined by maximizing the margin between the key feature points (i.e. the support vectors).
+
+In essence, it avoids the traditional process from induction to deduction, realizes the efficient “transductive reasoning” from training samples to prediction samples (hence, maximizing the margin between the support vectors), and greatly simplifies common classification and regression problems. Therefore, it can yield high classification accuracy even with relatively small training data samples. However, since SVM calculates support vectors by quadratic programming, which involves the calculation of an m-order matrix, the storage and calculation of the matrix requires significant computational power and machine memory. In addition, computing resource will increase with the number of samples and therefore SVM can be difficult to train with large-scale training samples. SVM can be sensitive to missing data, parameters, and kernel function selection which has limited its widespread applications in big data analytics.
+
+ANN are inspired by the biological information processing mechanism of the human neural system. An ANN consists of a network of interconnected nodes (or neurons) to simulate the functions of the soma, dendrite, and axon of the neurons and the synaptic connections between the neurons to realize strategy representation or function approximation. ANN can learn and deduce the optimal approximation of highly complex nonlinear functions, given its ability to learn from the data. Common topological structures include multi-layered feed forward network, feedback network, recurrent neural network and competitive neural network47.
+
+The concept of ANN is to imitate the human’s cognitive abilities. Like the biological neurons in the human brain, neurons in ANN can gather information from multi-inputs (i.e. from their connected neurons or stimuli), process the information and output signals to its connected neurons (or the classification results). Both biological neural networks (BNN) and ANN can receive signals (electro-chemical signals in BNN, data signals in ANN), and release the processed signals to the connected neurons. Unlike BNN, ANN are designed with layered structures, where signals can be gathered and passed between layers but not across layers. Signals which are passed between neurons will be amplified or attenuated with the synaptic weights, and each neuron will activate or deactivate based on the weighted synaptic signals it receives. In other words, ANN learns and memorizes information through adjusting the synaptic weights between neurons. Deep learning or deep neural network (DNN) refers to ANN with many layers of neurons, and increasing the number of layers and neurons will increase the inferencing ability of the ANN, especially in highly complex nonlinear problems.
+
+The last few years have seen increasing numbers of applications of ANN in the field of surgical skill assessment, which can be categorized into conventional ANN (used mostly in earlier research), and DNN (used in recent research). The conventional sequential modeling-based ML methods, such as SVM, require the design of optimized data preprocessing functions, feature symbolization or quantification and feature selection processes which are a very complex process and require expert knowledge. In contrast, the new end-to-end48,49 method framework, (i.e. the DNN method), can learn the optimal features directly from the data and extract high-level abstract information, which will lead to high classification accuracy. This framework is gradually becoming the standard approach in ML. The emergence of different deep network topologies, such as Generative adversarial network (GAN)50 (which is designed for addressing insufficient available data sources for training the neural network), Convolutional neural network (CNN)51 (which is designed for learning the optimal features from data, especially for vision-based applications), Recurrent Neural Network (RNN)52 and Long-Short-Term Memory (LSTM)53 (which are designed for time series classification tasks), coupled with ever-increasing computational power due to the advances in the semiconductor industry, offer great potential in the development of objective surgical skill assessment tools.
+
+### Reporting Summary
+
+Further information on research design is available in the Nature Research Reporting Summary linked to this article.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

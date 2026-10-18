@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Pemberton, Zaki, Goodkin, Das, Steketee, Barkhof, and Vernooij: Technical and clinical validation of commercial automated volumetric MRI tools for dementia diagnosis—a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1062,5 +1085,203 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+In the clinical diagnosis of dementia, structural MRI plays a key role in excluding other pathologies, as well as revealing patterns of brain atrophy [1, 2]. These patterns can act as imaging biomarkers to assist nosological diagnosis and differentiation between subtypes of dementia [3]. In clinical neuroradiology, visual assessment of brain atrophy patterns is commonly supported through the use of visual rating scales, such as the global cortical atrophy (GCA) or medial temporal atrophy (MTA) scale [4]. These semi-quantitative measures have shown good diagnostic accuracy to distinguish dementia from normal ageing and can help mediate the subjectivity of visual assessment [5]. However, they are sensitive to the experience and perspective of the clinician and can be limited by their relatively coarse measurement of atrophy and floor and/or ceiling effects [6, 7]. These qualities make it difficult to use such scales to identify subtle volumetric abnormalities in younger patients. Also, sensitivity to abnormalities in prodromal dementia patients is still limited [7]. With the focus on developing prophylactic and disease-modifying treatments for dementia, the need for robust methods of distinguishing between healthy ageing and dementia in its early stages is increasingly important [8].
+
+These needs can potentially be addressed through the implementation of automated quantitative image analysis in the clinic. Volumetry is widely used in the research setting and has been used to effectively index morphological change from a variety of clinical interventions in phased and randomized controlled trials [9–17]. Quantitative volumetric reporting tools (QReports), which automatically quantify an individual patient’s regional brain volumes and compare them to healthy, age-specific reference populations, can potentially help neuroradiologists interpret the severity and distribution of brain atrophy and contextualize their findings by referencing normative brain volumes in healthy populations [18–23]. The limitations of routine visual assessment reveal the area of clinical need in which such tools can be integrated. Quantitative assessment of MRIs can provide more objective imaging biomarkers, contribute to the earlier identification of atrophy [24–26] and might improve the accuracy of radiological diagnosis of Alzheimer’s disease (AD) and other subtypes of dementia [18–23]. However, there remains a large discrepancy between the use of visual rating scales and the availability of QReports in the clinic. In a study of dementia imaging practices in Europe, 81.3% of the 193 centres surveyed reported routine use of the MTA scale, compared to only 5.7% regularly implementing QReports [27]. Respondents identified limited availability and concerns about time and interpretation difficulties as the barriers for use of these tools. Importantly, the survey also recognized the additional obstacles to implementation, including lack of standardization or clinical validation of proprietary tools, and the difficulty translating normative group-level quantitative data to the interpretation of individual patient data.
+
+With the surge of commercial QReports for application in dementia clinics, general radiologists and neuroradiologists must decide whether to start implementing these methods in their clinical practice. However, there is a scarcity of evidence regarding the clinical application of QReports, especially relating to the impact on clinical management. It is important to clarify their technical and clinical validity as well as the best practices for responsibly integrating these tools into the existing clinical workflow. To this end, the quantitative neuroradiology initiative (QNI) was developed as a framework for the technical and clinical validation necessary to embed automated image quantification software into the clinical neuroradiology workflow. The QNI framework comprises the following steps: (1) establishing an area of clinical need and identifying the appropriate proven imaging biomarker(s) for the disease in question; (2) developing a method for automated analysis of these biomarkers, by designing an algorithm and compiling reference data; (3) communicating the results via an intuitive and accessible quantitative report; (4) technically and clinically validating the proposed tool pre-use; (5) integrating the developed analysis pipeline into the clinical reporting workflow and (6) performing in-use evaluation [2].
+
+The aim of this review is to increase transparency by assessing the evidence surrounding the use of QReports according to these six steps. Evidence of step 1 has been outlined above; the area of clinical need we are addressing is dementia and the analysis of its associated volumetric biomarkers. Using steps 2–6 of the QNI framework as guidance, we present a systematic search methodology for finding (i) vendors of dementia and MRI-specific QReports that are either Conformité Européenne (CE) marked or certified by the Food and Drug Administration (FDA) and (ii) published evidence covering their technical/clinical evaluation and workflow/in-use evaluation. Furthermore, we present an unbiased narrative synthesis of the available evidence regarding the validation of volumetric tools applied in the memory clinic. In doing so, we aim to help neuroradiologists make informed decisions regarding these tools in their clinic.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+The methods used to find relevant companies and QReports are outlined below. The vendor and product names identified were subsequently used as the search terms for an extensive search of the technical/clinical validation and workflow/in-use evaluation studies in the literature. We have followed Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines [28–30] and our methodology has been registered in with the Prospective Register of Systematic Reviews (PROSPERO): number CRD42021233510.
+
+### Vendor and product search
+
+#### Inclusion and exclusion criteria
+
+The following inclusion criteria for proprietary QReports were used: (i) FDA or CE clearance, i.e. tool meets regulatory standards to be used clinically; (ii) target disorder of dementia/neurodegeneration, specified by companies for use in dementia MRI assessment; (iii) uses automated brain segmentation software (step 2 of the QNI framework); (iv) uses normative reference data for single-subject comparison; (v) MRI-based input and (vi) visualizes volumetry and atrophy-specific results presented in a structured report format (step 3 of the QNI framework).
+
+Our exclusion criteria for proprietary products were (i) research tools that are not currently certified for clinical use via CE or FDA approval; (ii) non-MRI-based tools, e.g. for PET, EEG or CT only; (iii) generates a QReport focusing on results other than volumetry/atrophy, e.g. white matter lesions, vasculature, electrophysiology, tractography, brain tumour analysis or PET/spectroscopy; (iv) lack of normative reference data for single-subject comparison.
+
+### Search methodology: FDA-cleared product identification
+
+#### Key word screening
+
+We used the FDA database search function to download basic information for each approved application (https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm). A total of 82,003 premarket 510(k) FDA notification clearances dating from 1996-present were downloaded in a text file from https://www.fda.gov/medical-devices/510k-clearances/downloadable-510k-files. By searching within this list using the keywords mentioned below, 828 “medical devices” were established for further review. Please note the words with an * are “wild-cards”, covering relevant suffixes of each word stem, for example “Radiolog*” covers “Radiology”, “Radiologist” and “Radiological”:
+
+Neuro*
+
+Brain
+
+Quant*
+
+MRI
+
+Hippocamp*
+
+Radiolog*
+
+Atroph*
+
+Cortical
+
+Cortex
+
+Dementia
+
+Volume
+
+Alzheimer*
+
+Memory
+
+Lobar
+
+Lobe
+
+Structur*
+
+Segment*
+
+Automat*
+
+#### Eligibility screening
+
+After manual checks of company name, date of approval, product name and description, 86 tools were deemed relevant for further examination. Several tools were excluded at this stage if their description mentioned other body parts, for example “wrist array coil”, or were considered hardware. After investigating their intended uses on the FDA application and company website, 28 tools required further checking. After removing older versions of the same software, 16 relevant tools were assessed against our inclusion criteria, after which 9 companies/QReports remained (see Fig. 1 for PRISMA flowchart).
+
+### Search methodology: CE-marked product identification
+
+Unfortunately, there is no freely available and searchable database of CE-marked medical devices yet, although plans are underway to deploy one this year (EUDAMED) [31]. Therefore, the same comprehensive method used by the FDA could not be applied. In lieu of this, detailed review of the websites of companies exhibiting at the most recent relevant medical imaging conferences (ISMRM, ESMRMB, RSNA, ECR, ESR AIX, ASNR, SIIM and ESNR) were used to find CE-marked quantitative tools. The website https://grand-challenge.org/aiforradiology/ was also used to cross-check the results. One hundred and nine companies were identified for further investigation; after checking the information on their websites against our inclusion criteria and following up with direct email contact where necessary, 8 were included.
+
+### Company and product features
+
+Given a large number of companies and wide range of features, one aim of this review is to provide an unbiased repository of technical features and characteristics to help clinicians and researchers select the most appropriate QReports for their individual investigations. After establishing a list of companies that met our inclusion criteria, all vendors were contacted to provide relevant information that was unavailable on their websites. The following features, deemed to be most relevant to clinicians and researchers, were decided in advance and then sought through website research and direct vendor contact:
+
+CE/FDA approval status
+
+Date of approval
+
+Target disorder
+
+Segmentation/volumetry method
+
+Lobar and sub-lobar parcellation/volumetry
+
+Cross-sectional only or also longitudinal analyses available
+
+Report processing time
+
+Details of a normative reference population
+
+Provision of segmentation overlays/atrophy heat maps
+
+Strategies to account for inter-scanner variability
+
+Image quality control method
+
+Report deployment/PACS integration procedure
+
+When all information had been collected, we contacted vendors again for final confirmation of their individual details prior to publication.
+
+### Literature search on technical and clinical validation of identified products
+
+The results of this systematic review are intended to help inform potential users of QReports, assumed to mainly be clinicians. Given the health-related implications of the results and in the interest of reproducibility, the methodology has been registered with the PROSPERO — Registration Number: CRD42021233510. In line with the PRISMA guidelines [28–30], a detailed search was conducted using the identified company and associated QReport names as search terms. Both names were searched in order to cover the full breadth of technical and clinical validation papers in the literature and to cover research conducted pre-branding or product naming. PubMed, Scopus and Ovid Medline “All fields” were accessed (latest search on 15 March 2021) using the search terms below; brackets are used to indicate that a term consisting of multiple words was used as a single search term:
+
+(ADM diagnostics) OR (Corinsights MRI)
+
+Brainminer OR diadem
+
+Brainreader OR neuroreader
+
+Combinostics OR cNeuro
+
+CorTechs OR NeuroQuant
+
+Corticometrics OR THINQ
+
+Icometrix OR (Icobrain dm)
+
+(JLK Inc.) OR JAD-02 K OR Atroscan
+
+(Jung diagnostics) OR biometrica
+
+mediaire OR mdbrain
+
+Pixyl OR Neuro.BV
+
+Quantib OR (Quantib ND)
+
+Quibim OR (Quibim Precision)
+
+Qynapse OR QYscore
+
+(Siemens Healthineers) OR (AI-Rad Companion)
+
+SyntheticMR OR (syMRI neuro)
+
+Vuno OR (Vuno Med)
+
+In conjunction, further relevant papers were searched through PubMed’s “related articles” function and cross-checking references from the initially identified studies and company websites. Finally, in order to capture studies published pre-branding, all vendors were contacted to provide further technical and clinical validation publications covering their QReports.
+
+### Study inclusion criteria
+
+Following steps 2–6 of the QNI six-step framework, the search terms described above were used to find peer-reviewed research covering technical and clinical validation, workflow integration and in-use evaluation for each QReport. Papers were reviewed for relevance and inclusion in our analysis on the basis that (i) they involve automated brain segmentation and volumetry results (ii) were published as original research in peer-reviewed academic journals or conference proceedings (conference posters were excluded) and (iii) fit into one of these four categories:
+
+#### Technical validation
+
+Papers presenting validation of the technical performance of brain segmentation technique and subsequent volumetric results, for example test–retest studies, standalone receiver operating characteristics or those comparing results (spatially and/or volumetrically) to manual segmentation and/or other state-of-the-art segmentation software, such as Freesurfer [32] or FSL-FIRST [33], regardless of disease area.
+
+#### Clinical validation (dementia)
+
+Testing the use of a QReport (tool meeting our inclusion criteria in “Vendor and product search” section) by clinicians (including but not limited to radiologists, neurologists, psychiatrists, neuropsychologists) on a dementia/memory clinic population within one or more of the following settings: (i) aiming to assess the QReport’s effect and impact on clinical management (i.e. usability and prognostic value); (ii) determining diagnostic accuracy, confidence, differential diagnoses vs. “ground truth” clinician-rated diagnoses, i.e. using receiver operating characteristics; (iii) percentage agreement or inter-rater reliability metrics; (iv) determining the correlation between automated volumetry and clinician-rated visual rating scales (e.g. MTA/Scheltens scale) and (v) clinical drug trials using the QReport’s results as an outcome measure in dementia trials.
+
+#### Clinical validation (other neurological disease)
+
+As above, but testing the use of a quantitative diagnostic report by clinicians in neurological diseases other than dementia or clinical drug trials using the QReport’s results as an outcome measure in trials of other neurological diseases.
+
+While the focus of this review is dementia, it is also relevant to document the other instances where volumetric analysis methods from the vendors identified have been tested by clinician end-users, as this is ultimately the most critical phase of validation. Therefore, a few such examples found in the literature have been included in our analyses. It is of also interest to see how the various QReports have been used for research purposes alongside technical and clinical validation. However, these have not been included in the final results of our literature search because the focus of this review is validation, which should be most relevant to their clinical use, rather than examining the current range of their applicability in research.
+
+#### Workflow integration and in-use evaluation
+
+Papers analysing any of (i) benefit to patients; (ii) the effect on radiologist reporting time; (iii) clinical and population perception or (iv) the overall socioeconomic effect of using QReports in the clinic.
+
+### Data extraction
+
+All full-text articles evaluated that met the inclusion criteria were split into “Technical Validation”, “Clinical Validation—Dementia”, “Clinical Validation—Other” and “Workflow integration and in-use evaluation”, and were blindly assessed by two raters. The search and categorizing were replicated and verified by an independent researcher and no critical issues were detected. All relevant studies were categorized along with general information such as title, authors, year of publication, journal, associated tool and website. The technical information and features of the tools were also data based and are documented in Table 1.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Booth, Grzeda, Chelliah, Roman, Al Busaidi, Dragos, Shuaib, Luis, Mirchandani, Alparslan, Mansoor, Lavrador, Vergani, Ashkan, Modat, and Ourselin: Imaging Biomarkers of Glioblastoma Treatment Response: A Systematic Review and Meta-Analysis of Recent Machine Learning Studies</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1407,5 +1430,97 @@ PMC728302232152622</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1 Introduction
+
+Glioblastoma is the most common primary malignant brain tumor with a median 14.6 month overall survival (1). This is in spite of a standard care regimen comprising maximal debulking surgery, followed by radiotherapy with concomitant temozolomide, followed by adjuvant temozolomide. Monitoring biomarkers (2) identify longitudinal change in the growth of tumor or give evidence of response to treatment, with magnetic resonance imaging (MRI) proving particularly useful in this regard. This is due both to the non-invasive nature of MRI, and its ability to capture the entire tumor volume and adjacent tissues, leading to its recommended incorporation into treatment response evaluation guidelines in trials (3, 4). Yet challenges occur when false-positive progressive disease (pseudoprogression) is encountered, which may take place during the 6 month period following the completion of radiotherapy and is manifest as an increase in contrast enhancement on T1-weighted MRI images, which reflects the non-specific disruption of the blood-brain barrier (Figure 1) (5, 6).
+
+Non-specific increased contrast enhancement occurs in approximately 50% of patients undergoing the standard care regimen. There is an approximately equal chance that the tumor may represent pseudoprogression or true progression because pseudoprogression occurs in approximately 10-30% of all patients (7, 8). For more than a decade, researchers have attempted to distinguish pseudoprogression from true progression at the time of increased contrast enhancement because of the substantial potential clinical impact. If there is true progression the treating clinical team typically will initiate a prompt modification in treatment strategy with termination of ineffectual treatment or initiation of second-line surgery or therapies (9). If there is pseudoprogression the treating clinical team typically will continue with the standard care regimen. However, the decision making can only be made retrospectively with current treatment response evaluation guidelines (4). A monitoring biomarker (2) that reliably distinguishes pseudoprogression from true progression at the time of increased contrast enhancement would fully inform the difficult decision contemporaneously.
+
+Under the standard care regimen, pseudoprogression occurs as an early-delayed treatment effect as opposed to radiation necrosis which is a late-delayed radiation effect (10). Radiation necrosis also manifests as non-specific increased contrast enhancement, however, pseudoprogression appears within 6 months of radiotherapy completion whereas radiation necrosis occurs beyond 6 months. Radiation necrosis occurs with an incidence an order of magnitude less than that of pseudoprogression (11). Another difference between the two entities is that much evidence suggests that pseudoprogression is significantly correlated with O6-methylguanine DNA methyltransferase (MGMT) promoter methylation. As with pseudoprogression, there is a need to distinguish radiation necrosis from true progression at the time of increased contrast enhancement because, again, there is substantial potential clinical impact. In particular, if there is true progression the treating clinical team typically would initiate second-line surgery or therapies. However, the decision making can only be made retrospectively with current treatment response evaluation guidelines (3). Therefore, a monitoring biomarker (2) that reliably distinguishes radiation necrosis from true progression at the time of increased contrast enhancement would fully inform the treating clinical team’s decision contemporaneously.
+
+Developing monitoring biomarkers to determine treatment response has been the subject of many studies, with many incorporating machine learning (ML). A review of such neuro-oncology studies up to September 2018 showed that the evidence is relatively low level, given that it has usually been obtained in single centers retrospectively and often without hold-out test sets (11, 12). The review findings suggested that those studies taking advantage of enhanced computational processing power to build neuro-oncology monitoring biomarker models, for example deep learning techniques using convolutional neural networks (CNNs), have yet to show benefit compared to ML techniques using explicit feature engineering and less computationally expensive classifiers, for example using support vector machines or even multivariate logistic regressions. Furthermore, studies show that using ML to make neuro-oncology monitoring biomarker models does not appear to be superior to applying traditional statistical methods when analytical validation and diagnostic performance is considered (the fundamental difference between ML and statistics is that statistics determines population inferences from a sample, whereas ML extracts generalizable predictive patterns). Nonetheless, the rapidly evolving discipline of applying radiomic studies to neuro-oncology imaging reflects a recent exponential increase in published studies applying ML to neuroimaging (13), and specifically to neuro-oncology imaging (14). It also mirrors the notable observation that in 2018, arXiv (a repository where computer science papers are self-archived before publication in a peer-reviewed journal) surpassed 100 new ML pre-prints per day (15). Given these developments, there is a need to appraise the evidence of ML applied to monitoring biomarkers determining treatment response since September 2018.
+
+The aim of the study is to systematically review and perform a meta-analysis of diagnostic accuracy of ML-based treatment response monitoring biomarkers for glioblastoma patients using recently published peer-reviewed studies. The study builds on previous work to incorporate the rapidly growing body of knowledge in this field (11, 16), providing promising avenues for further research.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2 Materials and Methods
+
+This systematic review and meta-analysis are registered with PROSPERO (CRD42021261965). The review was organized in line with the Preferred Reporting Items for Systematic Reviews and Meta-Analysis: Diagnostic Test Accuracy (PRISMA-DTA) (17) incorporating Cochrane review methodology relating to “developing criteria for including studies” (18), “searching for studies” (19), and “assessing methodological quality” (20).
+
+Pseudoresponse (bevacizumab-related response mimic), an important concern in the United States where it is licensed, was not the focus of the systematic review and meta-analysis.
+
+### 2.1 Search Strategy and Selection Criteria
+
+Recommendations were followed to perform a sensitive search (with low precision), including the incorporation of subject headings with exploded terms, and without any language restrictions (19). Search terms were applied to MEDLINE, EMBASE and the Cochrane Register to capture original research articles published from September 2018 to January 2021 (Supplementary Table S1). Pre-prints and non-peer reviewed material were excluded.
+
+#### 2.1.1 Inclusion Criteria
+
+Study participants included were adult glioblastoma patients treated with a standard care regimen (maximal debulking surgery, followed by radiotherapy with concomitant temozolomide, followed by adjuvant temozolomide) who underwent follow-up imaging to determine treatment response status (explicitly, differentiating true progression/recurrence from mimics of progression/recurrence (defined below), and designated as the target condition of the systematic review).
+
+#### 2.1.2 Exclusion Criteria
+
+Studies were excluded if they focused on pediatrics, pseudoresponse, or had no ML algorithm employed in the extraction or selection of features, or in classification/regression.
+
+#### 2.1.3 Index Test and Reference Standard
+
+The ML model determined the treatment response outcome, and was designated as the index test of the systematic review. Either clinicoradiological follow up or histopathology at re-operation or a combination of both, were designated as the reference standard of the systematic review. The bibliography of each included article was checked manually for other relevant studies.
+
+A neuroradiologist, T.C.B., and a data scientist, A.C., with 16 and 2 years, respectively, of experience in neuroimaging applied to neuro-oncology, independently performed the literature search and selection.
+
+### 2.2 Data Extracted and Risk of Bias Assessment
+
+For every study, risk of bias as well as concerns regarding applicability, were assessed by applying QUADAS 2 methodology (21) alongside proformas incorporating items from the Checklist for Artificial Intelligence in Medical Imaging (CLAIM) (22). Data was extracted from published studies to determine: whether the datasets analyzed contained any tumors other than glioblastomas, especially anaplastic astrocytomas and anaplastic oligodendrogliomas; the index test ML algorithm and any cross validation processes; training and hold-out test set information; what reference standard(s) were employed; non-imaging features and MRI sequence(s) included in the analysis.
+
+The appropriateness of reference standard follow-up imaging protocols was reviewed. The handling of confounding factors such as second-line medication therapy, temozolomide cessation, and steroid use were assessed. It was also determined whether the treatment response (target condition) used in the published study was appropriate. Under the standard care regimen, contrast-enhancing lesions enlarging due to pseudoprogression typically occur within 0-6 months after radiotherapy, whereas contrast-enhancing lesions enlarging due to radiation necrosis typically occur beyond this 6 month window, according to the evidence. When “post-treatment related effects” (PTRE) is employed as a term for treatment response outcome, the phenomena of pseudoprogression and radiation necrosis are both included (23, 24). These three terms therefore capture detail regarding the time period when the mimics of progression/recurrence occur. Deviations in the use of the three terms defined here were noted. Data on the length of follow-up imaging after contrast-enhancing lesions enlarged were additionally extracted and evaluated. Clinicoradiological strategies considered optimal in designating outcomes as PTRE or true progression/recurrence included the following: assigning an MRI scan as baseline after radiotherapy (25); excluding outcomes based on T2-w lesion enlargement (25); permitting a period of 6-month follow up from the first time when contrast-enhancing lesions enlarged; during this 6-month period having two subsequent follow-up scans as opposed to a single short interval “confirmatory” follow-up scan. Two follow-up scans mitigate against some scenarios where the contrast-enhancing lesions due to PTRE continue to enlarge over a short interval, and this continued enlargement is seen at a short interval scan confounding assessment by falsely “confirming” true progression (26, 27). This might be termed an “upslope effect”.
+
+A neuroradiologist (US attending, UK consultant), T.C.B., and a data scientist, A.C., with 16 and 2 years, respectively, of experience in neuroimaging applied to neuro-oncology, independently performed the data extraction and quality assessment. Discrepancies between the two reviewers were considered at a research meeting chaired by a third neuroradiologist (US attending, UK consultant), A.A-B. (8 years experience of neuroimaging applied to neuro-oncology), until a consensus was reached.
+
+### 2.3 Data Synthesis and Statistical Analysis
+
+#### 2.3.1 Performance Accuracy for Individual Studies
+
+Based on the published study data, 2 x 2 contingency tables were made for hold-out test sets from which the principal diagnostic accuracy measures of sensitivity (recall) and specificity were calculated. The area under the receiver operating characteristic curve (ROC-AUC) values and confidence intervals were extracted in studies where these were published. Additional secondary outcome measures of balanced accuracy, precision (positive predictive value) and F1-score were also determined from the contingency tables. In those studies where there was a discrepancy in the principal diagnostic accuracy measures and the accessible published study raw data, this was highlighted. If both internal and external hold-out test sets were published in a study, the principal diagnostic accuracy measures for the external test set alone were calculated. In studies without hold-out test sets, “no test set” was recorded (22) and the training set principal diagnostic accuracy measures from the training set were summarized. The unit of evaluation was per-patient. All test set data included glioblastoma.
+
+#### 2.3.2 Meta-Analysis
+
+The principal diagnostic accuracy measures of sensitivity (recall) and specificity were subject to meta-analysis. We determined two pooled primary measures of accuracy: the true positive rate (sensitivity/recall) and the false negative rate (1-specificity). A bivariate random-effect model (28), which allows for two important circumstances (29–31) (Supplementary Statistical Information), was chosen to determine the two pooled primary measures of accuracy. Briefly, the circumstances are first, that the values of the selected principal diagnostic accuracy measures are usually highly related to one another through the cut-off value. With an increase of sensitivity, specificity is likely to decrease and, as a consequence, these two measures are usually negatively correlated. Second, a relatively high level of heterogeneity is commonly observed among the results of diagnostic studies. This is verified in various ways ranging from visual assessment through chi-square based tests to random-intercept models decomposing total variance of results into between- and within- study levels. The bivariate random-effect model not only allows for the simultaneous analysis of diagnostic measures but also addresses their heterogeneity (28). Bivariate joint modelling of the primary measures of accuracy assumes that the logits of these quantities follow a bivariate normal distribution and allows for a non-zero correlation. Based on this assumption, a linear random-effect model is applied to the data and estimates of mean true positive rate (sensitivity) and false positive rate (1-specificity), along with their variances and correlation between them, can be obtained. The pooled estimates of true positive rate and false positive rate are initially estimated on the logit scale (Supplementary Statistical Information). To be interpretable they require transformation back to the original probability scale (ranging within 0-1 limits).
+
+The parameters of this model also allowed us to plot the summary ROC (SROC) curve and determine the summary ROC-AUC. Using a resampling approach (32), the model estimates were also used to derive the pooled measures of balanced accuracy as well as the positive and negative likelihood ratios and the diagnostic odds ratio.
+
+The meta-analysis was conducted by a statistician, M.G., with 15 years of relevant experience. All the statistical analyses were performed in R (v 3.6.1). The R package mada (v 0.5.10) (33) was used for the bivariate model. Since some of the 2 x 2 contingency table input cell values (true positive, false positive, false negative, true negative) derived from the individual studies contained zeros, a continuity correction (0.5) was applied.
+
+### 2.4 Prognostic Biomarkers Predicting Future Treatment Response
+
+Most studies of prognostic imaging biomarkers in glioblastoma predict the outcome measure of overall survival using baseline images. Nonetheless, we found a small group of studies using ML models that predicted the outcome measure of future treatment response using baseline images. The studies were examined using identical methodology to that applied to monitoring biomarkers.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

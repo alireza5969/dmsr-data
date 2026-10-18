@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Spohn, Bettermann, Bamberg, Benndorf, Mix, Nicolay, Fechter, Hölscher, Grosu, Chiti, Grosu, and Zamboglou: Radiomics in prostate cancer imaging for a personalized treatment approach - current aspects of methodology and a systematic review on validated studies</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2406,5 +2429,76 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+In global cancer statistics of men prostate cancer (PCa) is the most frequently diagnosed malignancies in the world and the fifth leading cause of death worldwide 1,2. Therefore, the development of accurate diagnostic tools is of great importance. Many modern imaging modalities provide a great value in screening, diagnosis, treatment response measurement and prognosis evaluation of PCa patients. A suspicious digital rectal examination and/or an elevation of prostate specific antigen (PSA) in blood serum lead to transrectal ultrasound (TRUS) guided biopsy for histopathologic verification of PCa 3. In recent years an augmented approach of this strategy, including magnetic resonance imaging (MRI), has gained traction in clinical application and was incorporated into guidelines 4. MRI is not only employed prior to biopsy, but for local staging and follow up 5. Nevertheless, diagnostic accuracy is still hampered by inter-observer variability and exactness of lesion detection does not seem to be warranted 6-8. In an attempt to improve interpretation, reporting and acquisition standards for global harmonization “Prostate Imaging - Reporting and Data System Version 2.1” (PI-RADSv2.1) were established 9. Bone scans and computer tomography (CT) used to be standard of care (SoC) for staging and re-staging. As of late prostate specific membrane antigen positron emission tomography (PSMA-PET) has been implemented into clinical practice as recommended in current guidelines for staging and restaging 10-13. Additionally, growing evidence proclaims the use of PSMA-PET for intraprostatic lesion detection and segmentation 14-18. In addition to an accurate diagnosis, proper and decisive risk stratification is crucial, due to a variety of treatment options in different clinical scenarios. However, recommended models for risk classification 5,19,20 might not always predict the final outcome in every disease stage of PCa 21,22. Thus, new concepts for adequate detection and risk stratification towards precision medicine and personalized treatment are required. With the rise of big data analysis, the computer-based extraction of pre-defined image features in terms of “hand-crafted” radiomic features (RF) is an emerging field in research that might satisfy this need. It is hypothesized that medical images contain more information than discernible visually by trained professionals. Simplified these RF might provide more information about a tumor or other tissues facilitating diagnosis, risk stratification and therapeutic outcome. The advantage of radiomics is the utilization of SoC images without additional required effort and the abundance of medical images available, which can be utilized for longitudinal monitoring. Another benefit is that radiomics examines whole tumors as opposed to biopsy schedules which are prone to sampling errors due to intratumoral heterogeneity 23,24. Thereby, radiomics offer great potential for personalization of therapeutic approaches, in particular for image-based disciplines such as radiation oncology. This review gives an overview of methodological aspects of radiomics firstly, followed by the methodology of our literature search and a qualitative synthesis of radiomics in prostate cancer subdivided by imaging modalities and based on a systematic search. There have been reviews on this topic but mostly focusing on MRI whereas our review includes all imaging modalities and concentrates on papers with internal or external validation 25-29.
+
+## Current Methodological Aspects of Radiomic Feature Extraction
+
+### Radiomics Pipeline
+
+The Radiomics Pipeline (Figure 1) is the entire sequence of data processing from imaging to a diagnostic, predictive or prognostic model based on RF. It is subdivided into three major operations.
+
+(1) Image acquisition and preprocessing
+
+(2) High-throughput feature extraction
+
+(3) Data integration and data analysis
+
+The Image Biomarker Standardization Initiative (IBSI) published a reference manual to harmonize the feature extraction by providing (i) definitions, (ii) a standardization of the radiomics pipeline, (iii) reference datasets and (iv) a reporting scheme 30.
+
+#### (1) Image acquisition and preprocessing
+
+All imaging modalities mentioned in the introduction can be utilized for PCa radiomics: TRUS, MRI, PSMA-PET, CT and bone scan. It is important to mention that heterogeneities in image acquisition und image reconstruction algorithms due to different local standards are culpable for missing repeatability and reproducibility of RF 31-34. Prospective trails with fixed imaging protocols could aim to ensure that a scan yields similar results in the same patient when repeated on the same system i.e. repeatability as well as on different systems and institutes i.e. reproducibility 33. After image acquisition the volume of interest (VOI) is delineated manually, semi-automatically or fully automatically. If manual segmentation is performed a sophisticated protocol should be used throughout the whole dataset to minimize inter-observer variability 35. Subsequently and before feature extraction images should be pre-processed, e.g., by intensity inhomogeneity correction or noise filtering for MR-images 32. It is known that preprocessing sequences can also have a significant impact on the robustness and reproducibility of RF and identification of generalizable and consistent preprocessing algorithms is a pivotal step 36.
+
+#### (2) High-throughput feature extraction
+
+The spatial and gray level information of the segmented voxels is used in numerous mathematical calculations to extract pre-defined “hand-crafted” RF. They can be computed with various open-source packages like PyRadiomics 37, IBEX 38, RaCat 39, QIFE 40, MaZda 41, CERR 42 or LIFEx 43 as well as commercial products 44. Additionally, radiomic codes implemented in MatLab ® are commonly used. It is very important to validate the used software tools, especially homemade software, with datasets provided by the IBSI 30, to increase reproducibility, robustness and comparability across different platforms. Current versions of PyRadiomics, LIFEx, RaCat, CERR and adapted version of IBEX comply with IBSI. Besides the extraction of hand-crafted RF, convolutional neuronal networks as a subfield of machine learning (ML) can be used for pattern recognition and image feature analyses by applying the actual images 45. This can be done in combination with predefined “hand-crafted” features 46,47, but mostly ML algorithms engineer models, based on large amounts of data, autonomously 48.
+
+#### (3) Data integration and data analysis
+
+Often a vast number of RF are computed, and the abundance of RF demands feature selection and/or reduction to avoid overfitting and to exclude not relevant or redundant features. Many features are correlated with each other; these redundant features might be depicted with heatmaps and should be omitted 49,50. Additionally, ML algorithms like minimum redundancy and maximum relevance or fisher score can be used to assess the correlation between RF 51,52. Other options for feature reduction are prioritizing robust features 34. An overview of feature reduction steps including quantitative comparisons of performance is given by Leger et al 53 and Parmar and colleagues 54. The analysis of the remaining features can be conducted by using the RF alone or in combination with other clinical parameters by applying classical statistical methods or ML for data integration and modelling. Examples of ML classifiers are random forests, support vector machines and nearest neighbors for instance 51,55. To avoid overfitting, it is recommended to control false positive results by correcting for multiple testing when the data analysis is based on classical statistical methods 56,57. After the generation of a model based on RF, validation should be executed to evaluate its performance and to assess generalizability 58. In recent years ever more emphasis has been laid on this last step 33-35. During an internal validation, the data is usually split in 3 datasets: (i) one training dataset for optimizing the parameters of a model, (ii) one validation dataset for hyperparameter optimization e.g., the depth of a tree or a deep-learning architecture and (iii) one test set for the final assessment. The latter might be used independently for validation. During cross-validation (CV) usually small datasets are divided accordingly in an iterative process. K-fold CV partitions the dataset in k subsets using one as a validation and the rest for training. This process is repeated for each subset. Leave-one-out CV operates similarly but leaves one patient for validation while using the rest for training CV should be used with caution especially with leave-one-out CV tending to be overly optimistic 59,60. External validation based on independent datasets from different institutes enables the highest quality of validation 58.
+
+### Hand-crafted Radiomic Features
+
+“Hand-crafted” RF 48 can be grouped in shape descriptors, 1st order features and texture features. Shape features describe the morphology of the VOI for instance the size, volume or diameter. 1st Order features are based on an intensity histogram derived of the segmented voxels 24. Texture features are more advanced and do not only rely on voxel intensities i.e., gray levels but on spatial information as well. First introduced by Haralick et al. the gray level co-occurrence matrix (GLCM) assesses the gray levels of pairs of neighboring voxels 61. Others like the gray level size zone matrix (GLSZM) 62 and the gray level run length matrix (GLRLM) 63 analyze groups of consecutive voxels, zones, or runs of connected voxels in one direction, respectively. For a more complete description of features, texture matrices and their mathematical calculations we recommend the IBSI and their documentation 30. High-order features are calculated on filter transformed images like wavelets or gaussian bandpass filer 24.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methodology
+
+Studies eligible for inclusion complied with the following criteria: articles had to be on PCa radiomics with predefined “hand-crafted” features derived from MRI, TRUS, CT, Choline- or PSMA-PET and needed to apply internal or external validation. Excluded were papers not written in English and non-original articles. Two of the co-authors (SKBS and ASB) performed independently a PubMed/Medline, EMBASE and Cochrane Library database search for the terms: (cancer of prostate[MeSH Terms]) AND ((texture features) OR (radiomics)). If the two independent readers included or excluded studies differently a third reader (CZ) decided on eligibility. This was performed in 11 cases. The time period considered in this literature review was from 1st of January 2014 64 to 1st of January 2021. 251 articles were located. Additionally, 22 manuscripts were identified through other sources (e.g., google scholar or references in screened manuscripts). 35 duplicates were removed. Only articles that met inclusion criteria were included. Finally, 77 studies were included in the qualitative synthesis. Please see Figure 2 for a detailed description of the performed literature search according to PRISMA 65. Due to heterogeneity of imaging modalities, in the applied Radiomics pipeline and the analyzed endpoints no quantitative analysis was performed. Additionally, we assessed whether the utilized software complied with IBSI.
+
+Furthermore, ongoing clinical trials were screened on “clinicaltrials.gov”. Studies eligible for inclusion fulfilled the following criteria: ongoing trials on PCa RFs with “hand-crafted” features derived of MRI, TRUS, CT or PSMA-PET. Trials with unknown status were excluded. CZ performed the search for the terms (“Condition or disease: prostate cancer” AND “radiomicsl” OR “texture features”). Six trials were located, and one trial (NCT03294122) was excluded due to unknown trial status.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

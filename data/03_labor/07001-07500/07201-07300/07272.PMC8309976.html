@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Wu, Chang, Yang, and Hsu: Botulinum Toxin Injection for Medically Refractory Neurogenic Bladder in Children: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -885,5 +908,47 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Neurogenic bladder is a complex disease which often seriously affects daily activities. It often presents as detrusor overactivity (DO), urinary leakage and hydronephrosis. DO results in decreased bladder capacity, low compliance and high intravesical pressure. These may result in cortical thinning, febrile urinary tract infection (UTI) and even loos of renal function [1,2]. Children with neurogenic bladder are at an increased risk of UTI and renal function deterioration.
+
+Routine management includes oral medications such as anticholinergics or β-3 agonists, timely clean intermittent catheterization (CIC) or long-term indwelling catheterization [3,4]. The goal is to reduce intravesical pressure to protect renal function. However, if the pressure remains high or lower urinary tract symptoms persist, intravesical botulinum toxin A (BTX-A) injection is considered as alternative to irreversible surgical interventions. Current studies have demonstrated improvements in both objective symptoms and subjective parameters by intravesical BTX-A injection. BTX-A treatment may avoid or delay complex reconstructive surgery [5,6,7,8]. However, there is little evidence on the effects of BTX-A on pediatric neurogenic bladder patients. Therefore, the aim of this study was to perform a systematic review of intravesical BTX-A injection on treating children with refractory neurogenic voiding dysfunction.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+We used the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines to report this systematic review [9]. We did not register a protocol for this systematic review. Three databases (Medline via PubMed, Cochrane, and EMBASE) were searched for qualified studies. The following keywords were used, along with Boolean operators: “neurogenic”, “bladder”, and “botulinum toxin”. The following search strategy was used on Medline via PubMed: (Botox, “neurogenic bladder”) and (botulinum toxin, “neurogenic bladder”). The search was conducted on 1 February 2021. Only articles published in English which included patients aged under 18 years were collected.
+
+After removing duplicates, the titles and abstracts of the studies were reviewed by two independent reviewers (Hsu and Wu). If the article is selected only by one reviewer, it will be retained first and analyzed in the next step. Case reports, current review articles, commentaries, editorials, letters and abstracts were excluded. Studies focusing on adult patients and those that included children along with others but did not report the outcomes of each subgroup separately were also excluded. Then the full texts were obtained and reviewed by all the authors. For any other related research, references were also checked manually. Studies focusing on non-neurogenic bladder were excluded. For each article, the following parameters were collected: type of study; patient numbers and genders; mean age of the patients; neurological disease(s); BTX-A treatment modality and duration; and clinical and urodynamic parameters for the safety and efficacy evaluation.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

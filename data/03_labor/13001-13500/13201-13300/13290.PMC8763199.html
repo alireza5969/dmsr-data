@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Ben-Sadoun, Michel, Annweiler, and Sacco: Human Fall Detection Using Passive Infrared Sensors with Low Resolution: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1455,5 +1478,91 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+One of the defining events of the 20th century and the beginning of the 21st century is the aging of the population. In 2019, people aged over 65 represented 20.3% of the European population and people aged over 85 represented 5.8%.1
+
+According to the World Health Organization
+
+With increasing age, numerous underlying physiological changes occur, and the risk of chronic disease rises. By age 60, the major burdens of disability and death arise from age-related losses in hearing, seeing and moving, and non-communicable diseases, including heart disease, stroke, chronic respiratory disorders, cancer and dementia.2
+
+The associations between physiological dysfunctions and chronic diseases can lead to disability. Disability refers to difficulties encountered in any or all three areas of functioning: impairments (problems in body function or structure), activity limitations (difficulties in executing activities) and participation restrictions (problems with involvement in any area of life).3,4 In 2012, falls were part of the world top 10 health conditions associated with disability in people aged over 60 years old.2 The social and economic costs associated with falls in older adults are also important. For example, falls were identified as the highest risk factors of nursing home admission in the world.5
+
+To our knowledge, research on falls in older adults began in the second part of the 20th century. Campbell et al6 reported in 1981 that respectively 34%, 45% and 54% of people aged over 65, 80 and 90 years old had experienced at least one fall in the previous year. More than 400 risk factors for falls are recognized. They could be classified as changeable (eg, polypharmacy or environmental factors) or not changeable (eg, age, gender, cognitive decline).
+
+The management of falls relies on various strategies: avoiding the first fall, fast intervention and treatment when fall occurs, and preventing recurrence. While the assessment and the treatment of fall consequences are better known today (see the recommendations of the American Geriatrics Society and British Geriatrics Society7), its early detection remains an important issue, especially for socially isolated older adults. The challenge is to initiate an early rescue process to limit the physiological and psychological consequences of the fall, especially those related to the time spent on the floor. To reduce this time, the use of Information and Communication Technologies (ICTs), called human fall detection systems, has been proposed in the two last decades.8,9 The human fall detection systems were initially distinguished by the type of devices and sensors used.10–13 Systems using wearable devices must be worn by a person under or over their clothes. They include different sensors such as gyroscopes, accelerometers, tilt-meters, myowaves and oscilloscopes. They have the advantage of being individual-centered, being easily combined in the same system14,15 or in several sub-systems placed at different areas on the body,16 having indoor as well as outdoor uses and including a manual or an automatic alarm. However, efficiency could decrease because of the inconsistent use of the device, and the difficulties to use the alarm, especially for older adults with cognitive decline. Systems using non-wearable devices should be deployed in the environment of the individuals. They include different technologies such as ambient-based sensors (pressure sensors, floor sensors, infrared sensors, microphones), vision-based sensors (normal, depth or thermal video cameras), and radio-frequency sensors (based on tracking fluctuating radio frequency signals or wireless channel status information, such as WiFi or Bluetooth, to detect rapid and intense body movement that shows abnormal changes in radio-frequency signals; see17 also for more details). The absence of any action required from the individual is the major advantage of non-wearable devices. Also, systems using these types of sensors can be connected to the electric network and therefore do not need an internal battery. They are used almost only indoors but they can also be used outdoors (see18 for an example of recent advance in this topic). Ambient-based devices are prone to environmental noise. Vision-based devices (known to be the most accurate of all) and acoustic-based devices pose ethical issues regarding the protection of privacy (detailed recording of movements, conversations, and ambient objects).
+
+Although each of these sensors can be connected directly to a computer containing the detection algorithms, they are mainly designed as a mini-system (ie, a capturing device) containing the sensor (or multiple sensors named “sensor fusion”), a microcontroller (containing the detection algorithms) and a wired (USB) or wireless (Wi-Fi, Xbee, Bluetooth, 3G) remote connection element. This type of system can be easily worn by the subject (on the clothes) or placed in a room (on the ceiling or on the wall). It can easily communicate with other similar systems, server and/or send alarms directly to a computer or a smartphone when a fall occurs (see for exemple14–16,19).
+
+Today, the influx of increasingly ingenious algorithmic detection methods over the past decade highlights the possibility of achieving very high levels of fall detection for all existing systems.12,13 Consequently, the dilemma effectiveness–ethical consideration (named also security–privacy balance) seems to be the real challenge for human fall detection by ICTs, particularly in the older population8 and in nursing homes.20
+
+Infrared sensors with a low resolution could be an efficient solution to answer this dilemma. Fall detection with system using passive infrared sensors with a low resolution was first proposed by Sixsmith &amp; Johnson.21 After disappointing results reported by their study, these sensors have experienced a new enthusiasm 10 years later, thanks to the “good performance” highlighted by the studies of Mashiyama et al.22,23 The passive infrared sensors with a low resolution measure thermal radiation from the scene and maps the spatial distribution of temperature in an array of pixels to give an image (not exceeding 32×32 pixels in general). They only capture the shape of the individual (difference in thermal radiation between the individual and the objects in the room), and provide a representation of the area analyses in one (eg, 1×8 pixels temperature distribution) or two dimensions (eg, 8×8 pixels temperature distribution). However, beyond 16×16 pixels, these sensors seem sufficient to clearly identify the silhouette of an individual.24 With a resolution lower than 16×16 pixels, if privacy seems guarantee, the effectiveness of fall detection depends even more on the architecture of the system, and on the algorithms running. For this reason, the objective of this systematic review is to draw up an exhaustive inventory of the uses of passive infrared sensors with a very low resolution in the human fall detection, and to question the effectiveness of this type of system.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and Methods
+
+### Protocol and Registration
+
+This systematic review was designed and conducted according to the Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA, version 2020).25 This protocol has not been registered in any international database of prospectively registered systematic reviews.
+
+### Eligibility Criteria
+
+The goal of this review was to identify studies that investigated the metrological qualities of passive infrared sensors with a very low resolution to identify falls or related conditions (eg, lying on the floor).
+
+Article databases, keywords related to the objective of the review, and conditions of eligibility were identified in a pre-search round carried out in July 2020. Only original research articles and conference papers published in English from inception of databases up to 26–28 November 2020 were included in this review. Review articles and grey literature (including PhD and Master’s thesis) were not retained. When the full-text of an article was not available, the authors were asked for a copy, while precising the objectives of our systematic review.
+
+PICO (Population, Intervention, Comparator, Outcome) criteria were: P) human adults, I) infrared sensors with a low resolution, C) evaluator observation or video recording, O) fall detection. Inclusion criteria were: i) protocols including passive infrared sensor with a resolution up to 16×16 pixels, and ii) protocols including fall detection or related conditions (eg, lying on floor). Exclusion criteria were: i) protocols including pyroelectric infrared sensors (infrared sensors that does not give spatial distribution of thermal radiation), and ii) protocols including another sensor which was combined with passive infrared sensor (eg, inertial, video, RGB-D, ultrasonic, accelerometer, pedometer, gyroscope, global positional system, or other similar sensors).
+
+### Information Sources and Search
+
+The bibliographic searches were conducted in several databases: IEEE Xplore Digital Library, MEDLINE (PubMed), MDPI, SpringerLink and ScienceDirect.
+
+Keywords used to perform the search were “fall detection”, “infrared”, “thermal” and “thermopile”. Keywords were associated with Boolean operator in each database. This strategy was chosen to avoid uncountable quantity responses regarding the multiple topics around infrared sensors. For example, in IEEE Xplore Digital Library, the three following search strings were employed: i) (“All Metadata”:“fall detection”) AND (“All Metadata”: infrared), ii) (“All Metadata”:“fall detection”) AND (“All Metadata”:thermal), iii) (“All Metadata”:“fall detection”) AND (“All Metadata”:thermopile).
+
+### Study Selection
+
+All identified articles were first recorded on Zotero and saved at “.ris” and “.enw” formats. Then, they were uploaded to Rayyan QRCI,26 a web-based abstract selection program. Duplicates were eliminated from the search results. Using Rayyan QRCI, potentially eligible articles were placed in the “maybe” folder and excluded articles were placed in the “excluded” folder. All articles were first sorted using their title and abstract. When title and abstract where not informative enough to sort the article, the full text was analyzed. At last, the full text of articles in the “maybe” folder was analyzed to determine the “included” articles.
+
+In addition to these bibliographic searches, manual searches in the reference list of the “included” articles and empirical searches in Google Scholar and Semantic Scholar were carried out.
+
+The whole process of selecting papers was conducted by one member of the team that fulfilled all the steps from the topic definition to “included” articles analysis.
+
+### Data Collection Process and Items
+
+The data were collected on a predefined table including: author’s information, year of publication, title of publication, sensor’s characteristics (eg, manufacturer, resolution, number of images per second chosen by the authors), type of postures (eg, stand up, sit on the chair or floor, lie on the floor) and/or movements tested (eg, standing up, walking, sitting, lying, falling), experimental procedures (type of room, number and position of the sensors, area of capture, ambient temperature, number of participants, procedures for performing postures and/or movements and total number of actions collected), detection methods (eg, background acquisition, foreground acquisition, signal filtration, background subtraction, the thresholds to extract the features, type of features, type of algorithms for action classification), and detection performance (eg, accuracy, precision, sensibility, specificity, F1-score).
+
+### Risk of Bias Assessment
+
+To our knowledge, there is no standard for assessing the risk of bias for studies that assess the accuracy of computer systems for detecting human activity. Consequently, a relative quality assessment of studies was conducted by the authors to identify potential study biases. The main identified biases will be presented at the end of the manuscript.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

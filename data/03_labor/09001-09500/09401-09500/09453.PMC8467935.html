@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Bottino, Tagliente, Pasquini, Napoli, Lucignani, Figà-Talamanca, Napolitano, Katsaounou, Georgopoulos, and Rovina: COVID Mortality Prediction with Machine Learning Methods: A Systematic Review and Critical Appraisal</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2671,5 +2694,89 @@ where TP, FP, TN, FN are respectively true positive, false positive, true negati
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+More than a year has passed since the report of the first case of coronavirus disease 2019 (COVID), and many deaths continue to occur. Despite the discovery of different vaccine formulas from different pharmaceutical companies, many problems related to mass production and distribution across the world still persist. This factor is accompanied by political and economic constraints that may further limit vaccine access [1]. For these reasons, pandemic containment is a hard task, resulting in increased deaths. At the time this manuscript is written, SARS-CoV-2 numbers reported by the World Health Organization (Ginevra, Switzerland) (https://covid19.who.int/, 31 May 2021) worldwide include: almost 173,005,553 people infected with SARS-CoV-2; more than 3,727,605 death cases and around 1,900,955,505 vaccine doses administered. Multiple hospitalizations, due to the rapid spread of the virus have required an improvement of patient management throughout the healthcare system. In this context, it is important to minimize the time required for resource allocation and clinical decision making, such as triage, choice of ventilation modality, admission to the intensive care unit. Currently, baseline machine learning (ML) and deep learning (DL) techniques are widely accepted thanks to their ability to obtain information from the input data without “a priori” definitions [2]. These approaches can be efficiently tested in healthcare applications such as diagnosis of diseases, analysis of medical images, collection of big data, research and clinical trials, management of smart health records, prediction of outbreaks [3]. Consequently, DL models are capable of solving complex tasks in the intricate clinical field [4]. ML is acquiring an increasingly sought-after role in predicting the outcome of COVID patients [3,5,6,7]. For instance, a mortality prediction model could rapidly and effectively help clinical decision-making for COVID patients at imminent risk of death. Recent studies reviewed predictive models for SARS-CoV-2 diagnosis and severity, length of hospital stay, intensive care unit (ICU) admission, mechanical ventilation modality outcomes [8,9,10,11,12], highlighting pitfalls of the machine and deep learning methods based on imaging data [13]; however, systematic reviews focused on prediction of COVID mortality outcome with ML methods, including DL techniques, are lacking in the literature.
+
+The aim of this review is to discuss the current state of the art of ML methods to predict COVID mortality by: (1) summarizing the existing published literature on baseline ML- and DL-based COVID mortality prognosis systems based on medical evaluations, laboratory exams and Computer Tomography (CT); (2) presenting relevant information including the type of data employed, the data splitting technique, the proposed ML methodology and evaluation metrics; (3) providing possible explanations of the best results obtained; (4) discussing challenging aspects of current studies, providing suggestions for future developments.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Literature Review Methods
+
+This systematic review considers the state of the art in ML and DL as applied to COVID mortality prediction. We performed a MEDLINE search on PubMed on 26 May 2021 using the terms “machine learning covid survival” (146 results), “machine learning covid mortality” (131 results), “deep learning covid survival” (49 results), “deep learning covid mortality” (45 results) and additional similar terms. The search results were filtered to remove: duplicates, ML approaches for SARS-CoV-2 diagnosis or prognosis besides mortality, preprint works, abstract works, papers that deviated from our purpose. We try to shed some light on peculiar characteristics of these studies in terms of: (i) data source, (ii) data partitioning, (iii) class of features, (iv) implemented features ranking method, (v) implemented ML technique, (vi) metrics evaluated for performance assessment.
+
+### 2.1. Data Source
+
+We emphasized the study location and whether the dataset of each study was public or private, single site or multicenter.
+
+### 2.2. Data Partitioning
+
+We focused on the type of model validation that each study used to split data into train and test groups. Particularly, we chose to report the number of subjects used for the train and test set, and the corresponding number of survived and non-survived subjects. Additionally, we categorized validations type in: internal, external, merged and prospective (in particular internal prospective or merged prospective); referring to Internal validation when the studies subdivided a single-site database into train and test groups; external validation when studies trained and tested the model using data from independent cohorts, obtained from different sites. Moreover, we referred to merged validation for studies that combined data from different sites producing a single database to split into train and test groups or used multisite publicly available epidemiological datasets. Finally, we indicated prospective validation when studies implemented a temporal validation, assessing temporal generalizability. In the case of internal prospective validation, data of hospitalized patients from a first timeframe was used for training and data of patients admitted at a different time from the same hospital was used for testing. Differently, prospective merged validation relied on multisite data to train the model and multisite data collected in a subsequent timeframe for testing.
+
+### 2.3. Class of Features
+
+We expected to collect papers with both clinical and imaging features. In the latter, we included hand-made extracted features with radiomic analysis and the features learned with the use of convolutional neural networks (CNN). Clinical features comprise demographic (e.g., age, sex, race), comorbidities (e.g., diabetes, heart disease), symptoms (e.g., cough, fever), vital signs (e.g., heart rate, oxygen saturation), laboratory values (e.g., glucose, creatinine, haemoglobin), disease treatment and clinical course (e.g., artificial ventilation, length of hospital stay, drugs). Clinical features can be classified in binary (yes/no: 0/1) and continuous features (numerical values). We considered binary features when studies associated them with 0/1 values or dichotomized continuous feature’s value in a binary form, defining a numerical range and setting the feature to 1 if the value is within that range, 0 otherwise. While we have referred to continuous features when studies used predictors (features used for prediction tasks) as continuous variables or dichotomized binary features in continuous features.
+
+### 2.4. Implemented Features Ranking Method
+
+To build a reliable model for solving classification, the feature set should contain as much useful information as possible, and a number of features as small as possible. It is necessary to filter out the irrelevant and redundant features by choosing a subset of relevant features to avoid over-fitting and tackle the problem of dimensionality [14]. Feature ranking (or selection or reduction) techniques are a good approach for features space dimensionality reduction [15]. Feature ranking improves features understanding and reduces the computational cost, increasing the efficiency of the classification. Since Shapley Additive Explanation (SHAP) and least absolute shrinkage and selection operator (LASSO) logistic regression algorithm are widely used methods for model interpretation and feature selection in survival studies [16,17,18,19], we highlighted whether the studies used these methods or others. Particularly SHAP is a method to explain individual predictions by computing the contribution of each feature to the prediction. LASSO is a new method for estimation in linear models based on regression analysis.
+
+### 2.5. Implemented ML Techniques
+
+With the aim of identifying the most used and performing methods, we focused on the prediction technique used in each work, highlighting whether it belonged to baseline ML or advanced DL algorithms. Since in literature there are many implementable and customizable algorithms, we expected to find several and different methods employed in the works included in this review. However, we expected to find techniques attributable to one of the following four classes, according to the characterized basic algorithm: (i) regression, (ii) classifier, (iii) neural network and (iv) ensemble learners. Particularly, we included in regression the algorithms that estimate the model function from the input features to numerical or continuous output. In classifiers, we included the algorithms that estimate the model function from the input features to discrete or categorical output. In neural networks, we comprehend architectures inspired by the neurons in the brain. Finally, we consider the ensemble models that combine several base models. In addition to the algorithm, we aimed to identify the K-fold cross-validation used in each work, a statistical method used to estimate the skill of a model, with k referring to the time of validations execution to reinforce the validity of the model.
+
+### 2.6. Metrics
+
+We highlighted the measures that each selected study reported to evaluate model performance, including Accuracy (ACC), Area Under the Curve—Receiving operator characteristic (AUC-ROC), Area Under the Precision-Recall Curve (AU-PRC); Sensitivity (SENS), Specificity (SPEC), Positive Predictive Value (PPV), Negative Predictive Value (NPV), F1-score, Matthew Correlation Coefficient (MCC), Balanced Accuracy (B-ACC).
+
+ACC is the fraction of predictions the model performed right:
+
+AUC-ROC provides an aggregate measure of performance across all possible classification thresholds;
+
+AU-PRC can be used to test all the possible positive predictive values and sensitivities obtained through a binary classification;
+
+SENS is the ability of a model to detect a true positive:
+
+SPEC is the ability of a model to detect a true negative:
+
+PPV is the model ability in not categorizing some people as having the condition when in fact they do not:
+
+NPV is the ability of a model in not categorizing some people as not having the condition when in fact they do:
+
+F1—score is defined as the harmonic mean of precision and recall:
+
+MCC is a measure not influenced by the unbalanced nature of a dataset:
+
+B-ACC is a metric that evaluates binary classifier performance considering the imbalanced dataset:</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

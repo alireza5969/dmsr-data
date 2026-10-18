@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Rastogi, Dogra, and Jude: COVID-19 and peripheral arterial complications in people with diabetes and hypertension: A systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2031,5 +2054,45 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+The global pandemic of COVID-19 has stirred the scientific community not only because of the scale of infection affecting millions of individuals but also because of the varied presentations involving multiple organ systems. Though, COVID-19 characteristically involves the respiratory system causing acute respiratory distress syndrome (ARDS) even more distinctive is the complications of COVID-19 pertaining to the vascular system. COVID-19 is associated with cytokine storm that precipitates disseminated intravascular coagulation and thrombotic microangiopathy involving the medium and small size vessels.[1] Multiple thrombotic complications and presentations have been ascribed to COVID-19 mainly acute coronary syndrome, pulmonary thromboembolism, stroke, mesenteric ischemia, renal artery thrombosis and peripheral arterial disease (PAD) [2].
+
+Involvement of the peripheral vasculature is relatively uncommon but there has been a surge in reported cases of peripheral gangrene after COVID-19 infection [2,3]. The cutaneous changes in COVID-19 secondary to arterial and venous thrombotic events manifest as gangrene of the extremities. The risk factors for peripheral gangrene in COVID-19 may be directly related to SARS-CoV-2 infection or secondary to cytokine storm, disseminated intravascular coagulation, hypercoagulability, thrombotic microangiopathy, use of inotropes in critically ill patients, cold antigen induced auto-immune phenomenon and complement activation or worsening of pre-existing diabetic peripheral vascular disease [4]. Peripheral gangrene in COVID-19 is more likely in patients with prior endothelial dysfunction secondary to hypertension or diabetes [4]. Patients with diabetes and foot complications are known to have poor survival and limb outcomes in the presence of co-existing peripheral arterial disease [5]. Studies have shown that patients with acute arterial thromboembolic lower limb complications due to COVID-19 are likely to have higher mortality (around 50%) compared to compared to similar patients without COVID-19 [6]. Therefore, we performed a systematic review of the reported cases of peripheral gangrene in COVID-19 patients, co-existing comorbidities, specific treatment given, and outcomes of limb amputations or death.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+We conducted a literature search in the electronic database of PubMed central and SCOPUS using MeSH terms “COVID-19”; SARS-CoV-2″AND “gangrene”, “peripheral gangrene”, “peripheral arterial disease”. The words were used interchangeably for articles published in any language from Jan 2020 until June 5, 2021. Two authors conducted an independent search for case reports, case series, intervention studies, original articles reporting peripheral gangrene as outcome in COVID-19 patients. Papers that included patients who became COVID-19 positive after the occurrence of peripheral ischemia were excluded from the analysis. All articles retrieved were collated, duplicates were removed and final list prepared. In addition, reference list of the included articles were checked for additional cases. The demographic characteristics of patient population, symptom onset and duration, risk factors for peripheral arterial disease other than COVID-19 like the presence of diabetes, hypertension, hyperlipidaemia, coronary artery disease, and smoking status were noted. The duration of hospital stays, treatment offered for peripheral gangrene and outcomes in the form of limb amputation, mortality and reasons for mortality were noted.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

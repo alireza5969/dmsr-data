@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Alsaleem, Dusin, and Akangire: Effect of Low Lactose Formula on the Short-Term Outcomes of Neonatal Abstinence Syndrome: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -601,5 +624,47 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Background
+
+Newborns exposed to various opioids and other illicit substances in utero as part of a treatment program or addictive behavior are at risk of withdrawal and development of neonatal abstinence syndrome (NAS) due to discontinuation of exposure after birth. The type and intensity of withdrawal depend on many factors, including but not limited to the substance used, gestational age at birth, polysubstance abuse, breastfeeding, and genetic polymorphisms.1 There has been a national increase in NAS incidence in the last decade. This incidence increase has resulted in a significant increase in the admissions to neonatal intensive care units and pediatric floors. A study that included 28 states reported a 300% increase in NAS diagnoses from 1999 to 2013.2 The care and extended hospital stay for each patient with NAS can cost the health care system up to $53 400 US dollars.3 The rise in incidence and the resulting medical and financial burdens have been substantial driving factors for studying this condition’s evaluation and management.4
+
+Treatment of symptoms associated with NAS is generally based on a combination of pharmacological and non-pharmacological measures. Multiple pharmacological treatment protocols are followed by using morphine, methadone, or other medications.1 However, starting medications for NAS treatment significantly increases the length of stay (LOS).5 For that reason, infants with mild to moderate NAS are most often managed with non-pharmacological measures, and most practices try to avoid pharmacological therapy. Research has recently focused on non-pharmacological factors, such as withdrawal scoring systems, rooming in with mother, minimizing surrounding environmental noise, nutritional management, gentle handling, on-demand feeding, swaddling, music and massage therapy, and skin-to-skin care with caregivers.1,6
+
+The literature has clearly shown that maternal breastmilk is beneficial for infants with NAS and significantly decreases the need for pharmacological therapy and the LOS.6 However, the evidence is less clear regarding the type of formula to be used if maternal breastmilk is unavailable or contraindicated. Given gastrointestinal (GI) system involvement of NAS, a recent trend has been observed of using low lactose formula (LLF) in infants with NAS.7,8 The non-evidence-supported use of these formulas is based on the hypothesis that partially hydrolyzed protein and low/free lactose carbohydrate decrease feeding intolerance and fussiness associated with NAS.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+In this systematic review, we aimed to understand whether the use of LLF decreases the severity and the duration of NAS symptoms among term and near-term infants (≥35 weeks of gestation) with NAS compared with infants who received regular standard formula (RSF).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

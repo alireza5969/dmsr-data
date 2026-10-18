@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Deng, Sun, Wang, Zeng, Yuan, Li, Li, Chen, Zhou, Wang, and Jiang: Evaluating machine learning models for sepsis prediction: A systematic review of methodologies</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2390,5 +2413,181 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Sepsis is a significant threat to patients' lives. A meta-analysis estimated about 31.5 million sepsis and 19.4 million severe sepsis cases occur each year, contributing to 5.3 million deaths worldwide (Fleischmann et al., 2016). This doomed scenario is further amplified under the current COVID-19 pandemic, where most of the deceased could be traced to sepsis (Alhazzani et al.,2020).
+
+In 2016, the Third International Consensus Definition for Sepsis and Septic Shock (Sepsis-3) defined sepsis as “life-threatening organ dysfunction resulting from dysregulated host responses to infection.” It pointed out sepsis' death risk and the necessity of early identification and intervention (Cecconi et al.,2018). Early warning and accurate prediction on sepsis, which provides opportunities for physicians to take preventative measures to alleviate its devastating consequences, is recognized by researchers. A successful early warning together with the best clinical technique provides the best chance to reduce mortality and lower the risk of the severe septic shock (Shashikumar et al.,2017; Mira et al.,2017; Singer et al.,2016). Some clinical prognostic tools, such as Sequential Organ Failure Assessment (SOFA), Modified Early Warning Score (MEWS), Systemic Inflammatory Response Syndrome (SIRS), and quick Sequential Organ Failure Assessment (qSOFA) have been developed to predict the risk of death after the onset of sepsis (Raith et al.,2017). But these are not sufficiently reliable because most values of the tested markers come from ICU admission, which can hardly be linked definitively to the onset of infection. Consequently, traditional methods have limitations to accurately identify or predict the onset of sepsis and make high a fidelity prognosis. A new methodology is clearly in need.
+
+Two systematic reviews evaluated the performance of machine learning models used in prediction for occurrence and prognosis of sepsis in the past (Fleuren et al.,2020; Islam et al.,2019). However, the influence brought about by the evolution of diagnostic criteria has never been discussed. Compared to the old criteria, Sepsis-3 needs more clinical data to complete SOFA assessment and to confirm infection. In addition, there has not been any consensus on how to establish a reasonable dataset, an appropriate feature-treatment method, and how to obtain a prediction of sepsis development dynamically. The goal of this review is to identify the characteristics and shortcomings in the models and methods in the previous studies, and try to establish a unified standard and evaluation tool for machine learning models in order to guide the model development in medical science in the future to make reliable predictions on this deadly ailment.
+
+## Results
+
+### Studies included
+
+A total of twenty-one studies are included in this review from two hundred and sixty-two potentially eligible papers based on our criteria (Figure 1). Most selected studies focused on early sepsis detection, prediction, and mortality. Only two aimed at predicting severe sepsis (Table 1). We notice that seven studies used data from The Medical Information Mart for Intensive Care (MIMIC) database. Two studies used data from the University of California San Francisco Medical Center database and the Beth Israel Deaconess Medical Center database (UCSF + BIDMC database).
+
+Thirteen studies described preprocessing methods for the clinical data with various methods, including filling missing data by mean, median or nearest measured values, K-means clustering, forward-filling, linear interpolations, and carry forward/backward extrapolations. Twelve studies provided detailed descriptions of sample sizes or proportions between training groups and test/verification groups. However, not a single study discussed the rationale for adopting their methods. Only six studies adopted the latest Sepsis-3 definition, and the others used old criteria (SIRS/ICD [the international classification of diseases definition]/Angus/the criteria of the Agency for Healthcare Research and Quality).
+
+• SIRS: Heart rate &gt;90 beats/min; Body temperature &gt;38°C or &lt;36°C; Respiration rate &gt;20 times/min or PaCO2&lt;32mm Hg; White blood cell count &gt;12 × 109/L or &lt; 4 × 109/L
+
+• Sepsis-3: infection + SOFA≥2
+
+### Quality evaluation
+
+Using the Joanna Briggs Institute Critical Appraisal (JBI) tool, Kwong et al. proposed a method to evaluate the quality of machine learning research. JBI is a checklist for cross-sectional research, which has been adopted by Islam et al. and Kwong et al. to evaluate quality of machine learning studies (Kwong et al.,2019; Islam et al.,2018). It consists of eight items. We first applied their tool to evaluate the included studies, and the results are shown in Table 2.
+
+### Prediction in time
+
+Considering that sepsis progression is time-sensitive, a good predictive model should be able to verify the accuracy at different times. However, we find only seven studies provided the information (see Table 3).
+
+### Performance in predictions
+
+Compared with traditional predictive tools in single studies, AUROC of machine learning models mostly scored more than 0.8, with some studies even over 0.9, which was significantly higher than the traditional predictive tools where the results were around 0.7 (Table S1). Meanwhile, two studies also detected sepsis. Their predictive models showed AUROC value around 0.9 (Table 3), demonstrating strong ability to distinguish sepsis from no-sepsis patients at 0 h. We are therefore confident that machine learning algorithms can effectively predict sepsis.
+
+### Time sensitivity
+
+The predictions can be divided into three categories: (1.) using only one model, (2.) using more than one model, and (3.) using the best model among several for the prediction. Among the 21 included studies, most belong to the third category and focused on the prediction of an early occurrence of sepsis. With the completion of information collection, the prediction performance of the third category at different hours is shown in Figure 2. Here, we make trend lines of AUROC in five studies, and find that the model's performance increased notably as the time gets closer to the onset of sepsis. The ideal time period for early sepsis prediction ranges from 0 to 24 h.
+
+### Mortality prediction
+
+There are eight studies targeted at predicting sepsis mortality in emergency departments or ICUs, and we list seven studies' models, algorithm, AUROC, and prediction time in Table 4. These researchers tried many algorithms to build their predictive models. In a study of 28-days mortality prediction by Perng et al., the use of convolutional neural networks (CNN) + SoftMax resulted in AUROC =0.92, which is the highest among all the models in the study. Meanwhile, it predicted 72-h mortality, proving that CNN + SoftMax was the best model (AUROC = 0.94). And we find Ke Li et al. used Gradient Boosting Decision Tree (GBDT) and random forest (RF) to predict in-hospital mortality. They attained remarkably high AUROC scores (0.992, 0.980) and demonstrated excellent predictive ability of ensemble learning and traditional machine learning algorithm in sepsis.
+
+### Feature engineering
+
+All studies collected vital signs and laboratory data. For vital signs, researchers collected body temperature, heart rate, blood pressure, and respiratory rate. For laboratory data, researchers collected white blood cell count, lactic acid etc. Furthermore, demographic characteristics, clinical scores, and other features were also included in a few studies. We show representative ten studies and list their results in Table 5.
+
+In general, feature preprocessing can also be divided into two categories. The studies in category one used feature engineering methods to identify the key factors/features that can be used for machine learning processes. For example, Bloch et al. recorded four vital signs of data at the frequency of 6 times an hour, found median, and calculated mean values. They obtained 20 features and selected the most important 4 in their machine learning models (Bloch et al.,2019). The studies in category two rely on researchers' expertise to choose what factors/variables should be used to devise models. For example, Barton et al. used six factors, including heart rate and respiratory rate to develop their models to predict sepsis occurrence (Barton et al.,2019). Mao et al. chose the data that are easily available in intensive care unit and emergency department as features (Mao et al.,2018).
+
+## Discussion
+
+As the first attempt to systematically review methodologies of sepsis prediction studies, we find that most studies focused on early prediction and detection of sepsis and mortality. Except for the results mentioned above, there are nine issues that we would like to address in this review.
+
+### Diagnostic criteria
+
+Those studies, which adopt old sepsis definition or improper inclusion criteria, performed adequately. They were however viewed as too lax in sample inclusion and lacking enough specificity and sensitivity. For example, Mao et al. and Bloch et al. considered patients over 18 years old with a slight limitation and selected SIRS as diagnostic criteria (Mao et al.,2018; Bloch et al.,2019). They all used large datasets and had enough patients meeting the SIRS criteria, which led to high AUROC values. Compared to older diagnostic criteria, the latest Sepsis-3 includes more stringent clinical features and describes sepsis more accurately.
+
+Large disparities are found among sepsis definitions, making it impossible to compare AUROC of each study to find the best machine learning model. However, it should be noted that Kam et al. used the long short-term memory (LSTM) model to predict sepsis occurrence and obtained high AUROC value (Kamand Kim, 2017). In addition, 1D CNN combined with SoftMax model was selected by Perng et al., which significantly improved the performance of mortality prediction compared to the traditional predictive models in the single study. The CNN model reached AUROC 0.92 while the traditional models, such as KNN, got AUROC only 0.84 (Perng et al., 2019). This is because deep learning algorithms can remove many redundant dimensions by self-learning (Kamand Kim,2017; Mücke et al.,2021), and multiclass classification problem can be resolved with SoftMax. We also noted that Ke Li et al. reported that GBDT and RF predicted sepsis mortality well. GBDT is an ensemble learning method and may correct the training results and reduce the degree of overfitting by a regularization function (Chen et al.,2020). However, there are conflicting l studies which reported not good performance of random forest (Table 4); thus, further studies are needed to determine the robustness of RF for sepsis prediction.
+
+### Prediction time
+
+Prediction times of the studies were different and AUROC changed with time (Figure 2). These characteristics corroborates with clinical experience. The closer to the onset of sepsis, the more accurately the model predicts. We find a study by Delahanty et al. where the results were inconsistent with other conclusions (Delahanty et al.,2019). This study used inappropriate inclusion criteria and concluded that neutrophil count had a negative effect on the RoS model, which was contrary to the pathophysiological mechanism. Therefore, we think the robustness of RoS should be further discussed. Because there is huge heterogeneity between studies predicting sepsis mortality, we cannot compare them reasonably to obtain similar rules.
+
+### Importance of feature engineering
+
+There are commonly two major steps in machine learning studies. The first is to extract features from input samples and the second is to feed feature vectors into the machine learning algorithm for training and making the prediction. It is especially important to select key features and reduce the data dimension, which is known as feature engineering or order reduction. Feature engineering can not only significantly reduce redundant information and improve computational efficiency but also keep lowest negative influence of complex data dimensions on model robustness (Dai et al., 2020). There are two categories of feature engineering among the studies: one is designed by the domain expertise while the other is designed using machine learning methods (Miotto et al.,2018).
+
+### Designed by the domain expertise
+
+Three studies chose features that were common and easily obtained in hospitals or based on the researchers' clinical experience. For example, several features that were common in the intensive care units (ICU) or emergency departments (systolic blood pressure, diastolic blood pressure, heart rate, respiratory rate, and body temperature) were selected in studies by Barton et al. and Mao et al. (Barton et al.,2019; Mao et al.,2018). However, only relying on clinical expertise could lead to strong subjectivity and may overlook some key features (Garcia et al.,2014). Even though the models performed adequately, the outcomes were difficult to be validated by external data; therefore, the applicability of these models is limited.
+
+### Designed by machine learning methods
+
+Traditional reduced-order or feature-extraction algorithms, represented by principal component analysis (PCA) or auto decoder-encoder methods, can reduce data dimensions and significantly improve model performance. Perng et al. increased the accuracy of support vector machine (SVM) from 74.33% to 78.91% using PCA to preprocess the data. Meanwhile, AUROC of SoftMax increased from 0.88 to 0.91 (Perng et al., 2019). We can see the same situation here again, where Thottakkara et al. succeeded in improving the accuracy and AUROC after using PCA to preprocess their data (Thottakkara et al.,2016).
+
+In addition, the deep feedforward neural network (DFN) can independently learn and obtain the most crucial features. For instance, Kam et al. used DFN to detect early sepsis (Kamand Kim,2017). In addition, LSTM, a deep recurrent neural network, was adopted to learn long-range dependencies and handle vanishing gradient. As a result, the accuracy, sensitivity, and AUROC of LSTM are the highest and the number of the final features is the smallest.
+
+### Data granularity
+
+Before processing data, researchers should first establish the definition for data granularity. The degree of data refinement and predictive performance can be improved by changing the granularity level (Dormosh et al.,2020). Here, we screened studies that refined data. In the 21 studies we included in this review, only Bloch et al. reported and discussed the issue of data granularity in detail, and the others did not mention this essential information at all (Bloch et al.,2019). Bloch et al. selected four features at the early stage and then expanded them to 20 features by calculating mean, median, minimum, maximum, and standard deviation. As a result, they obtained four satisfying features by ranking the features' importance. To some extent, it is another type of feature engineering used to explore intrinsic regularities of the clinical data.
+
+### Missing data
+
+It is inadequate to build predictive models when there are missing data (Beaulieu-Jones et al.,2018). There were 12 studies that reported their methods on how to deal with missing data; six studies filled the missing data with mean value or median value. Three studies used methods such as filling in missing data by liner interpolation or “carry forward/backward” extrapolation methods (Table 1). It is a consensus that missing data should be processed before conducting any analysis (Mehrabani-Zeinabad et al., 2020), but obviously in the machine learning research field on sepsis, this standard operation has not been widely followed.
+
+### Machine learning algorithms
+
+Various algorithms were applied, and their predictive performance is summarized in Tables 3 and 4, respectively. These consisted of popular current machine learning algorithms, including logistic regression, decision tree, support vector machine, random forest, and deep learning algorithms in supervised learning. The other category is unsupervised learning, including principal component analysis, K-means clustering, and autoencoder. Regardless of the influence of diagnostic criteria, the neural network-based algorithm performed better on average in sepsis detection, mortality, and early prediction. GBDT, which is a kind of classical and popular ensemble algorithm, may also have a broad prospect in sepsis prediction.
+
+### Continuous dataset
+
+The studies contained in this review established outcome prediction models based on sectional data. To the contrary, some researchers predicted sepsis by using continuous data (time series). Kamaleswaran et al., Mohammed et al., and Wyk et al. constructed models for predicting sepsis onset with continuous physiologic data streams (Mohammed et al., 2021; Kamaleswaran et al., 2021a, 2021b, van Wyk et al., 2019). After preprocessing, they put data into selected algorithms and obtain the best predictive model. In addition, Kamaleswaran et al. also studied the significance of continuous data in predicting sepsis patients' response for volume treatment. We noticed this study reported better performance based on continuous data than EMR (Kamaleswaran et al., 2021a, 2021b), high-frequency data containing more patients' information, which may account for this result. This was an interesting finding. In fact, our team is conducting a similar research currently, which will be reported later.
+
+### Data heterogeneity
+
+Predictive models of sepsis were mostly based on large databases. However, every sepsis patient is unique, therefore significant differences among the patients. For example, sepsis detection is to distinguish the confirmed sepsis patients from the non-sepsis patients, but it is difficult to carry out the classification in clinical settings because the symptoms and therapeutic medicine of every patient are different. There are large discrepancies among each individual patient so that it could be misleading to put all patients' data into a single dataset for training or testing when conducting machine learning. Therefore, all models mentioned above lack certain universality in machine learning protocols and cannot be used widely to assist any clinical decision-making (Fohner et al.,2019).
+
+Combined with clinical experience, researchers can collect necessary higher frequency clinical data every day to observe dynamical evolution of sepsis. Meanwhile, sepsis progression can be simulated by the machine learning model based on neural networks so that patients' prognosis will be predicted. Although we have discussed that we cannot solely rely on physician's experiences to select feature, it is necessary to integrate physician's experiences when transferring the model to new patient. It will mitigate the inherent heterogeneity. In a recent study, we have developed a deep learning method to integrate the clinical knowledge with clinical data to make successful short-term predictions (up to 48 h) for clinical practitioners (Lei et al.,2020).
+
+Based on the above discussions, we recommend strongly that future model development should incorporate clinical experience into data preprocessing instead of relying solely on the routinely collected data. Certain objective-oriented data preprocessing standard must be established so that the preprocessed data will be AI-ready for machine learning use.
+
+### Quality reevaluation and reporting standards
+
+Through comparative study, we believe the JBI is a crude tool for evaluating machine learning methods. Based on the analysis above, we propose a new quality evaluation tool for machine learning methods. (1.) The evaluation methodology should include an appropriate and accurate disease definition, a data preprocessing protocol, and reasonable inclusion criteria. For example, we think that only Sepsis-3 can describe patient conditions accurately and be a basis for patient inclusion. (2.) For common problems in clinical data, such as missing data, data redundancy, data collected in different forms, noisy data etc., one should develop a protocol to produce standardized or normalized datasets, making sparse data non-sparse and “smooth” and improve data granularity. (3.) To avoid data redundancy and improve computational efficiency, feature engineering should include how many types of the original features are included, how many key features are selected, and how many types are classified. (4.) The process of sample removing, and grouping should be provided in the flowchart, and the rationales clearly explained. (5.) One needs to introduce algorithms, including the rationale for their choices based on relevant mathematical and statistical principles. (6.) Every model needs to have a set of corresponding evaluation criteria. We suggest adopting AUROC as an evaluation standard for the model performance. (7.) Finally, a prospective validation process is needed to ensure the predictive model developed can be adapted to clinical settings.
+
+Based on the new criteria alluded to above, we reevaluate the models in the 21 studies. We score 1 for any item meeting a criterion above and 0 otherwise. Total score more than or equal to 8 is considered high quality, 5–8 (including 5) average quality, and less than 5 low qualities. The quality reevaluation results of this review are shown in Tables 2, 10 studies are ranked low and 11 average. There are no high-quality models based on the score table.
+
+It is obvious that there are significant differences in data sources, data preprocessing, and feature engineering among sepsis prediction models. In addition, using diverse types of evaluation indices and predicted sepsis occurrence in various times, could result in distinctive model performance. Naturally, we believe there should be a unified standard to be a guideline of machine learning models in clinical research and applications. Referring to Standards for Reporting Diagnostic Accuracy (STARD) and combining with the above quality evaluation table, we propose a new report list of machine learning models in clinical medicine (Table 6).
+
+### Conclusions
+
+Through a systematical review, we find that the number of studies using machine learning to predict the occurrence and mortality of sepsis grows rapidly in recent years, and the accuracy of predictions has improved considerably. However, there is no model that can be widely adopted in the real world yet, because of the lack of unified validation standard and procedure and the heterogeneity in a cohort of patients. In addition, the data collected from patients with sepsis are normally high-dimensional, highly heterogeneous, including both structured and unstructured data that evolve in a time-sensitive fashion and static data. Compared to traditional tools, deep neural networks are more suitable for this type of data. The traditional SIRS criteria cannot describe sepsis comprehensively due to the lack of sufficient features, and cannot be included for sepsis machine learning study. We note that studies based on Sepsis-3 just begin so that further studies are necessary. Hence, the new quality evaluation tool and reporting standard list suggested in this review would help improve the effective use of machine learning methods in clinical medicine.
+
+### Limitations of the study
+
+We do not have access to enough medical information on the treatment process of sepsis and therefore cannot evaluate its significance in the model development. Moreover, limited to very few open-source databases, it is difficult to compare them and have a meaningful discussion. We do not find any study that described the specific influence of data preprocessing and have not come to the conclusion on which method is the best.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## STAR★Methods
+
+### Resource availability
+
+#### Lead contact
+
+Further requests for resources and materials should be directed to and will be fulfilled by the Lead Contact, Hua Jiang (cdjianghua@qq.com).
+
+#### Materials availability
+
+This study did not yield new unique reagents.
+
+### Methods details
+
+#### Eligibility criteria
+
+There should be a consensus that eligible studies should provide clear data source based on Electronic Medical Record (EMR) or Electronic Healthy Record (EHR) from Emergency Department (ED) or Intensive Care Unit (ICU), so we can obtain disease and demographic information from the patients. In addition, we need AUROC and a clearly delineated detail of predictive models to compare and determine which model is the best. Considering the definition of sepsis has changed several times in the past, we require each study to provide at least one acceptable definition based on the current standard. We only study the prospection of machine learning algorithms in adults' sepsis and the target conditions include early detection and mortality of sepsis and severe sepsis.
+
+#### Search strategy
+
+A comprehensive literature retrieval is conducted in PubMed, ScienceDirect, Engineering Index (EI), Web of Science, China National Knowledge Infrastructure (CNKI) and WANFANG DATA for papers published between January 2010 and November 2021. Keywords like sepsis/machine learning/prediction are used for the search
+
+All the included papers are perused by two independent reviewers (TL and DHL), including title-abstract and full text. All disagreements between the two authors are resolved by a third author (TY) and principal investigators (HFD, HJ). The chosen papers are limited to languages in Chinese and English.
+
+#### Evaluating tool and reporting standard
+
+After rules of evaluating machine learning models on sepsis prediction are established, we realize that, like clinical medicine, there is the need for specialized tools for quality evaluation and reporting standard to guide research analogous to those used in evidence-based medicine. Therefore, based on the above analysis, we propose a new quality evaluation tool and a new reporting standard from the aspects of data acquisition, algorithm selection, feature engineering, and model building with reference to the Standards for Reporting Diagnostic Accuracy (STARD). These are more comprehensive than existing tools and standards, and more appropriate for machine learning research in medicine.
+
+### Quantification and statistical analysis
+
+This work systematically evaluate the method of statistical and quantification analysis of published researches. The authors of this work did not do further quantification analysis, eg, meta-analysis.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

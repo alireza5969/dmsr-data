@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Dalakleidi, Papadelli, Kapolos, and Papadimitriou: Applying Image-Based Food-Recognition Systems on Dietary Assessment: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3635,5 +3658,59 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Deviations from a healthy and balanced diet may hinder our wellness and lead to chronic and life-threatening diseases (1–4). To ensure a healthy and balanced diet, nutritionists or medical personnel often ask people to keep a manual record or recall the consumed meals and drinks daily. Recall or manual record-keeping methods consist of 3 main approaches: food records, 24-h dietary recall, and food-frequency questionnaires (FFQs) (5). Food records are based on notes of the individual during or after each consumed meal for a specific period of time. A 24-h dietary recall is based on the oral and written data that the individual provides to the medical professional/nutritionist/caregiver regarding the type and amount of consumed food during the previous day. FFQs are recall methods that store the frequency or portion size about food and beverage consumption over a long period of time, such as a month or a year. All methods of recall and manual record keeping are simple to follow and costless, but are tedious and the individuals often fail to comply for the whole period of the recording time (5) or often underestimate the quantity of consumed food/drinks up to 33% (6). In addition, individuals might fail to remember or even deliberately not record all details regarding their meals (6). Thus, methods for automatic record keeping can play a fundamental role in making dietary habits monitoring more objective and accurate.
+
+Researchers used pictures of common foods in different portion sizes for aiding users to fill in paper-based FFQs back in the 1980s (7). Recent approaches for diet monitoring that are based on mobile applications [MyFitnessPal, See How You Eat, MyPlate, Protein Tracker, Fooducate (8)] have been adopted by many researchers and practicing dietitians (9). Such mobile applications use input from the user in the form of images, dropdown menus, and text, and have shown great potential for aiding individuals in recording and improving their dietary habits, since the user is informed about the calorific content of the meal consumed and suggestions are provided about next meals for a healthy and balanced diet. However, such applications require a significant amount of input from the user; thus, they have similar drawbacks as recall and manual record-keeping approaches.
+
+To improve dietary intake monitoring, several automatic record keeping approaches have been proposed. Such methods are based on gesture recognition, chewing and swallowing recognition, and camera-based methods (10). Although sensors for gesture, chewing, and swallowing recognition are easy to wear, they can provide only general information about the consumed meal; thus, they can be useful only as additional, secondary information for food recognition (11).
+
+Camera-based methods use current mobile imaging technologies for dietary intake monitoring. To maximize the automation of the procedure of food record keeping the use of computer vision and machine-learning methods has been suggested (12). The flow of the dietary assessment systems combining a camera of the user's mobile device with computer vision methods, also called image-based food recognition systems (IBFRS), is as follows: 1) the user takes a photograph of the upcoming meal with a camera of his/her mobile device, 2) the image is preprocessed and the different types of food are divided from each other through segmentation techniques, 3) robust and discriminative features are then extracted, 4) classification of food items takes place, and 5) the volume of each food item is calculated and the energy and nutrients of the depicted meal are estimated using appropriate nutritional databases. Each phase has been implemented in a variety of ways to optimize the meal's calories and nutrient estimation results. A comparison of the different methodologies tried in each phase is a demanding task, since very different approaches have been adopted and several evaluation metrics exist (13). Moreover, image datasets used in such systems also vary significantly; thus, comparison remains an open challenge. Although automatic record keeping based on an IBFRS also has limitations, such as measurement error because of real-life conditions in the photograph setting (low lighting or other irrelevant objects on the scene) or because the user must remember to take a picture of the meal and its leftovers, research efforts aim already at minimizing the sources of such errors—for example, with the use of automatic text messages on the user's device (14). Thus, IBFRS can be an easy to use and objective tool for dietary assessment.
+
+To compare different approaches on food image recognition, datasets on which researchers can test their methodologies have been recently released publicly. An extensive overview of these datasets along with a critical discussion of related advantages and limitations will be described below. Moreover, information about the implementation of the several phases of dietary assessment systems for each of the reviewed papers will be presented focusing on their critical comparison. Open issues that should be tackled in the near future to further optimize the performance and adoption of IBFRS in dietetic professional practice will be thoroughly examined and discussed.
+
+The aim of this review is to present IBFRS combining a camera of the user's mobile device with computer vision methods for supporting dietary assessment. We investigated whether IBFRS can be more objective, user-friendly, and more educational than manual record or recall methods. All statistical and computational aspects of the topic are presented in a comprehensive manner so as to encourage dietitians to adopt such systems. Towards this goal, we also present current applications of IBFRS in different areas of dietetic and nutrition practice. Finally, we highlight that improvement in IBFRS will take place through interdisciplinary efforts at the intersection of computer science with nutrition and dietetics, so that the challenges of such systems are gradually set aside.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Search strategy
+
+In July 2021, PubMed (for the time period between 1 July 2016 until 1 July 2021) and Scopus (for the years 2016–2021) were searched by combining Boolean operators with suitable keywords. In particular, the following query was formed: (food AND image AND (classification OR recognition OR segmentation OR (dietary AND assessment))). A study was eligible when 1) it was peer reviewed, 2) it was written in English, and 3) it included the performance of either the segmentation or the classification or the volume estimation phase of a dietary assessment system based on food images.
+
+Two authors (KVD and KP) reviewed the articles and decided on their inclusion or exclusion. A study was excluded when the title implied that there was no association with the image-based food-recognition task and the study was out of the scope of this review. Studies that included IBFRS without presenting their performance in at least 1 of the segmentation, classification or volume, calories, and nutrients estimation phase were also excluded. In image classification, for example, 1 common performance metric is accuracy, which is the number of correctly classified images divided by the total number of examined images of a dataset. Studies that were published before 2016 were excluded in this systematic review, because, since then, image-processing tasks with a large volume of input data have been solved in short runtimes, which can also be used for mobile applications, with the adoption of graphics processing units (GPUs) that can accelerate complex, parallel calculations in a large volume of data (15).
+
+In this review, 159 titles were identified when the above-mentioned query was formed in the PubMed and Scopus databases and from other articles that the reviewers had already studied in the past. After removing 14 duplicates, 145 studies were screened by title and 49 were removed, since they were irrelevant to the subject of this study. Thus, 96 studies were assessed for eligibility by full-text reading. Eighteen studies were excluded because they were out of the scope of this review or they did not present the performance of the IBFRS presented. Finally, 78 studies were included for full-text review that included IBFRS for assessing dietary intake. The search strategy followed is outlined in Figure 1.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Bhalodiya, Lim Choi Keung, and Arvanitis: Magnetic resonance image-based brain tumour segmentation methods: A systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2036,5 +2059,81 @@ Emails: <a href="mailto:jayendra.bhalodiya@warwick.ac.uk">jayendra.bhalodiya@war
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Brain tumours are malignancies of brain tissues. Characterising such tissues and identifying related genes can help to estimate tumour spread, and further help to identify tumour grades for the treatment planning.1,2 Such characterisation comprises of the different tumour components assessment. Components such as tumour core, boundary of tumour core, peritumoral oedema, cellular proliferation (an increase of the number of cells), cellular infiltration (migration of cells or excessive growth) and vascular proliferation (leaky blood vessels) are of great clinical interest.1,3 Current practice involves various magnetic resonance imaging (MRI) approaches to visualise these tumour components.4 Particularly, the tumour core can be visible in T2-weighted MRI, and T1-weighted MRI, the enhanced boundary of tumour core can be seen in gadolinium-based T1-weighted MRI (T1-Gd), peritumoral oedema can be visible in fluid-attenuated inversion recovery (FLAIR) MRI, while cellular proliferation, cellular infiltration and vascular proliferation can be visualised in diffusion-weighted MRI and perfusion-weighted MRI.
+
+In the literature, MRI-based image processing methods addressed the outlining of tumour components.5 These methods can distinguish between healthy and tumour tissues. Moreover, they can distinguish among different tumour components within the tumour. Such methods are commonly known as segmentation methods,5 which can be manual, semi-automatic or automatic. With the increase of segmentation methods, the medical image analysis community has reviewed them using publicly available benchmark datasets (e.g. the brain tumour segmentation – BraTS dataset) to assess their performance.5,6 Additionally, individual reviews addressing only deep learning methods,7 only automated methods,8 classical reviews,9 and practical implications10 are reported. However, a systematic review to identify promising, and widely adapted brain tumor segmentation methods is not reported in the literature. Moreover, in the literature, individual methods, and their validation show technical advancements in most MR image-based approaches, but they are not fully explored in all MRI sequences in the imaging of brain tumours. For example, diffusion-weighted, and perfusion-weighted MRI are often overlooked or limited in brain tumor segmentation method development, and validation. In addition, a recent trend of deep learning methods has extensively contributed to the development of automatic segmentation methods, in order to avoid the subjective, and time-consuming nature of manual techniques. However, the performance of these deep learning methods relies on the data types used, single or multi-centre data collection, the number of available data samples for training, validation and testing of the approach. Therefore, it is crucial to explore the various studies in deep learning methods. Such a study can help understanding and justifying the need for further large open-access data repositories and alternative artificial intelligence (AI)-based techniques, such as transfer learning.
+
+In this systematic review, we addressed the following PICO (P: population, I: intervention, C: comparison, O: outcome) format research question:
+
+What automated brain tumour segmentation techniques can medical imaging specialists, and clinicians use to identify tumour components, compared to manual segmentation?
+
+To answer the above question, we reviewed brain tumour segmentation methods which are based on physics or mathematics models, deep learning models, and software or semi-automatic methods. The methods, which use at least four types of MRI sequences (T1-weighted, T1-Gd, T2-weighted and FLAIR MRI), are included in the synthesis as they are common in clinical practice. Articles based on images from other MRI sequences are discussed, individually. The accuracy measures and study population of the various segmentation methods are also reviewed. Moreover, deep learning architectures are reviewed for their underlying network architecture (for example, U-Net, VGG etc.) with a list of articles that adapted such architectures in their studies. Technical specifications of such architectures are listed in the discussion.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and methods
+
+### Study protocol
+
+A protocol for this study is prepared internally but not registered elsewhere. However, the PROSPERO database is checked to ensure the originality of the study.
+
+### Article search
+
+For source articles’ systematic identification, we have searched the following online databases: PubMed, Embase Ovid and Engineering Village. The different combinations of the keywords ‘glioma’, ‘medulloblastoma’, ‘brain tumour’ and ‘segmentation’ were used. After discussion among the authors, the combination, ‘glioma’, and ‘segmentation’, and ‘brain tumour’, was used for the article search. The search duration was defined to include articles published in the period from 2015 until 2020. In PubMed, the specific search filters were full-text, humans, English and segmentation keyword must be in the article title or abstract. In Engineering Village, the specific search filters were that the segmentation keyword must be in the abstract, and glioma, and brain tumour keywords must be in the subject or title or abstract. All the articles were stored using Zotero11 software. After removing the duplicates, study inclusion/exclusion criteria were applied.
+
+### Study inclusion/exclusion criteria
+
+Articles are screened at two levels for inclusion/exclusion. First, the articles are screened at the abstract, and title level. At this level, the studies, which are not segmentation studies, are excluded. The excluded studies are grouped into the following categories: clinical analysis studies, case studies, image pre-processing studies, general overall surveys, tumour classification studies, tumour detection and identification studies, information learning for model training studies, surgical planning studies, datasets and not accessible studies.
+
+Second, the segmentation studies are screened by reading the full text. At this level, the articles, which are eligible for synthesis, are identified by reviewing the imaging modalities, and associated data types used in their segmentation method. The studies, which are not MRI-based, are excluded. As a result, among the MRI-based studies, articles that utilised T1-weighted, T2-weighted, T1-Gd and FLAIR MRI are included for the final synthesis. All the inclusion/exclusion criteria are mentioned in the PRISMA12 diagram of Figure 1.
+
+### Data extraction
+
+After removing duplicates, all the articles are organised, as a table, in Microsoft Excel (Please refer to S1 Appendix). For each article, data is extracted according to the following parameters: publication id, publication type, publication year, author, article title, publisher, DOI, issue number, volume number, type of study, type of technical methodology, type of imaging modality, type of MRI, type of tumour, single or multi-centre data collection, the number of data samples and performance score.
+
+Among the aforementioned parameters, the ‘data samples’ parameter is sub-categorised into study population, training data, validation data and test data. The types of technical methods in image-based tumour segmentation are organised into three categories: physics or mathematics-based methods, deep learning-based methods and software or semi-automatic methods. The performance score of each segmentation method is retrieved from the respective article and included in our table. In articles, authors have used various performance score measures, which include match, accuracy, Jaccard similarity coefficient, Tanimoto similarity, Hausdorff distance, dice score, positive predictive value, specificity, sensitivity, negative predictive value, precision, recall, misclassification error, intersection over union, Lin's concordance correlation coefficient, quality measure, balanced error rate, kappa, correlation, mean square error, false-positive rate per patient, the extent of resection, mutual information, residual tumour volume, root mean square error, the ratio of overlap, coefficient of variation, agreement index, interoperator variance, F1 score, volume difference, peak signal-to-noise ratio, qualitative evaluation, difference ratio of pixels, similarity, overlap index, absolute error, percent error, the difference with the gold standard, paired t-test mean difference, linear regression and area under the curve. The details of each performance score matrix can be found in their respective articles as mentioned in the data extraction matrix (S1 Appendix). We synthesised the performance of each method in segmenting whole tumour (WT), non-enhancing tumour core (TC) and enhanced tumour (ET). The values are stored as a tuple of ‘whole tumour, tumour core, enhanced tumour’. Each missing value in a performance score tuple is recorded as null. As shown in the PRISMA diagram of Figure 1, the imaging modalities, and MRI sequences are identified at the eligibility level. Broadly, four imaging modalities have been identified: magnetic resonance imaging (MRI), computed tomography, positron emission tomography, and ultrasound. Specifically in MRI, the identified imaging sequences include T1-weighted MRI, gadolinium-enhanced T1-weighted MRI (T1-Gd), T2-weighted MRI, FLAIR MRI, diffusion-weighted MRI, fMRI, perfusion-weighted MRI, magnetic resonance spectroscopy, apparent diffusion constant, fractional anisotropy, diffusion tensor, dynamic susceptibility contrast, dynamic contrast enhancement, diffusion kurtosis, magnetisation prepared rapid gradient echo, T1-MPRAGE and T1-weighted with turbo field echo.
+
+### Risk of bias assessment
+
+All reviewers assessed studies or validated data extraction matrix independently. JMB assessed each study and populated data extraction matrix records. SLCK validated the data extraction matrix. TNA verified, and confirmed the data extraction matrix. The whole process was performed manually, and without using any automation tools.
+
+### Synthesis methods
+
+Studies are synthesised according to the publication year, technical methods used in method development (type of study), MRI sequences used in the segmentation method development, deep learning methods (technical architectures used in deep learning studies), performance score to evaluate accuracy in segmenting three tumour components – whole tumour, and tumour core, and enhanced tumour, study population, and specific studies with additional MRI sequences. The studies having at least T1-weighted, T2-weighted, T1-Gd and FLAIR MRI sequences used are included for the synthesis. The synthesis of a number of articles is visualised as a bar plot, and pie charts showing the total number of articles in each year, and category. The synthesis of the study population in terms of data samples used, and performance score measure in terms of median Dice score are visualised as results. The outcome is depicted as Matlab box plots as commonly found in the synthesised articles. Deep learning studies are tabulated to identify the most widely adapted deep learning technology.
+
+Benchmark review articles and particular imaging sequences studies are mentioned in the specific imaging studies’ section. Studies of segmentation methods using diffusion-weighted, and perfusion-weighted MRI, are reported individually.
+
+During the synthesis, the unavailable values of performance score measures and data samples are considered as null values.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

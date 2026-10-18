@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Kakouri, Kanti, Kapantais, Kokkinos, Lanaras, Farajian, Galanakis, Georgantopoulos, Vlahos, Mastorakos, Bargiota, Valsamakis, Rauter, Kotańska, Szafarz, and Kubacka: New Incretin Combination Treatments under Investigation in Obesity and Metabolism: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -890,5 +913,43 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Obesity is a chronic metabolic disease, which can be defined as an excessive accumulation of body fat that leads to increased morbidity and mortality. Obesity has been shown to increase the risk of various medical conditions, such as diabetes mellitus type 2, cardiovascular disease, gallbladder disease, nonalcoholic fatty liver disease, several types of malignancies (i.e., in colon, endometrium, breast, esophagus, kidney), osteoarthritis, obstructive sleep apnea, and mental health problems, leading to increased morbidity and mortality [1]. The worldwide prevalence of obesity has nearly tripled between 1975 and 2016 and continues to rise at an alarming rate, rendering it a global pandemic [2]. It is further estimated that up to 58% of the world’s adult population could be overweight or obese by 2030 if the upward trends continue [3]. Obesity in adults is defined as a BMI of 30 kg/m2 and above and overweight as a BMI between 25 and 29.9 kg/m2 [4]. The pathophysiology of the disease is complex, and multiple factors are involved. Obesity arises from a chronic positive energy balance, which occurs when energy intake exceeds energy expenditure [5]. A better understanding of the body weight regulation mechanisms and human metabolism remains challenging and will help create effective prevention and treatment strategies against obesity. Currently approved anti-obesity medications have variable weight loss response and weight maintenance along with essential adverse effects, which render it unavoidable to discontinue the therapy [6]. Therefore, it is of great importance to explore new anti-obesity agents with combined actions on multiple levels in the pathophysiological mechanisms involved in the progression and maintenance of obesity.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Methods
+
+A literature search was conducted using the database of PubMed and The ClinicalTrials.gov from September 2020 up to February 2021. A query of clinical trials registries (Clinicaltrials.gov) with the keyword “obesity” returned 9532 search results, which further contained 769 interventional completed studies with associated results using the keyword “interventional studies”. Out of the 769 studies, 492 were evaluating the effect of drugs either on obesity or in obese subjects. Out of 492, we evaluated only 56 clinical trials that provided available published results and were related to anti-obesity medications and incretin hormones.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Cleary, Prieto-Merino, Nitsch, and Aoun: A systematic review of statistical methodology used to evaluate progression of chronic kidney disease using electronic healthcare records</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -4133,5 +4156,105 @@ chronic kidney disease using electronic healthcare records </p>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Chronic kidney disease (CKD) is a growing public health problem [1, 2]. Risks associated with CKD include cardiovascular morbidity, death, and in rare cases progression to end-stage renal disease (ESRD) requiring renal replacement therapy (RRT) [3]. Severity of disease, mechanism of renal damage and rate of progression of disease vary between patients, and the disease may change course over time in response to changing risk factors [4, 5]. While a minority of patients progress to ESRD, the cost of RRT presents a substantial economic burden to public health services and is likely to increase further over the coming years as prevalence of RRT rises alongside population growth and an ageing population [6, 7]. Increasing adoption of electronic healthcare records (EHRs) offers an opportunity to study progression of kidney disease in real-world care, that may enable improved decision-making in clinical practice. Whilst there is the promise of big sample sizes to be analysed, constraints on data availability of renal function test results may complicate reliable evaluation in EHRs. Frequency of monitoring of renal function is likely to vary in routine care according to differing individual patient risk profiles, local healthcare policy, physician-related factors, area of management within the healthcare system, social factors, or temporary illness. This may lead to some members of the target population being less likely to be followed up for renal function, potentially leading to selection and ascertainment biases in the study of CKD progression that may result in unreliable conclusions.
+
+There are other methodological challenges in evaluation of CKD progression that are not specific to EHRs that should be considered by researchers. Deterioration in renal function over time is most commonly detected through changes of the estimated glomerular filtration rate (eGFR), usually derived from serum creatinine, sex, age, and ethnicity. Such creatinine-based GFR-estimating equations are imprecise, particularly at high levels of eGFR [8, 9]. Major changes in renal function in the context of acute illness are a sign of acute kidney injury (AKI). Although AKI is at least partially reversible in surviving patients, a history of AKI may accelerate subsequent loss in renal function. However, when researchers study eGFR decline over time, often statistical models are used that ignore the impact of acute drops in renal function on the subsequent trajectory. Population heterogeneity (caused by variation in risk factors both at baseline and evolving over time) may complicate analyses that assume a common mean linear trajectory of renal function loss over time, and it may be necessary to use more sophisticated methods if this assumption is violated that take this variability into account. Unmeasured confounding may also present issues, particularly if important confounders are not considered in the analysis. Competing events such as initiation of RRT or death complicate evaluation of progression outcomes. A previous systematic review by Boucquemont et al. in 2014 [10] reviewed statistical methods used to identify risk factors for progression of CKD, covering research on cohort studies published between 2002 and 2012. They summarised most used outcome measures and statistical models, critiquing handling of bias due to informative censoring, competing risks, correlation due to repeated measures, and non-normality of response, and proposed recommendations for best practice statistical methods and software packages.
+
+We performed a systematic review of all longitudinal analyses of renal function tests investigating the nature, burden or consequences of CKD progression using EHRs. We aimed to establish how data issues inherent to EHRs and methodological challenges were handled, how CKD progression was defined, what statistical methods were used and whether data issues were acknowledged in the context of reliability of study conclusions.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and methods
+
+### Protocol and registration
+
+There is no published protocol available for this systematic review. Prior to completion of data extraction, this review was registered in the PROSPERO international prospective register of systematic reviews (registration number CRD42020182587).
+
+### Eligibility criteria
+
+This is a review of statistical methodology covering all research studying the nature, burden or consequences of CKD progression using EHRs. Our intention was to focus on how researchers used renal function tests to study CKD progression. Initiation of dialysis is already a well-established clinically important outcome and as this was not the subject of the review, we excluded dialysis endpoints (as a measure of CKD progression) from review. Populations that had already initiated RRT at baseline or that were sampled on the basis of RRT initiation were excluded from review, since such populations are not appropriate for studying progression of CKD. (This criterion does not exclude patients that initiated RRT during follow-up.) Measures of CKD progression may constitute either exposures or outcomes of analysis. PICOS criteria are listed in the table below. There are no restrictions on sample size, population location or date of publication. Only studies reported in English language are included.
+
+### Searches
+
+We performed electronic searches of MEDLINE, EMBASE, Global Health and Web of Science databases through to 11th August 2021. A copy of the search strategy is provided in the supplementary materials S2 File.
+
+### Study selection
+
+This study had one lead reviewer and two supporting reviewers. The lead reviewer was responsible for screening all articles for eligibility, which involved scrutiny of abstracts followed by full-text review. The two supporting reviewers independently screened a sample of 50 articles each for eligibility. Consistency of agreement and reasons for disagreement were discussed. Clarity of inclusion/exclusion criteria was updated following discussion and prior to completion of eligibility review by the lead reviewer.
+
+### Data collection process
+
+The lead reviewer was responsible for data extraction for all eligible research articles. In addition, key items that were the subject of this review were validated by supporting reviewers who independently extracted the following items for all articles: (1) measure of change in renal function; (2) statistical methods used in analysis of changes in renal function; and (3) definitions of progression of CKD, if any. The lead reviewer developed a data extraction form in an Excel spreadsheet, which was reviewed and approved by supporting reviewers in the initial stages of data extraction.
+
+### Data items
+
+Information extracted from eligible research articles included details of the study population, study methodology and how data quality issues and other methodological issues were handled. Extracted items are listed below.
+
+#### Study population
+
+Data collection timeframe; Country of residence; Mean age; Percent male; Primary morbidity under study / reason for inclusion; Data source / healthcare setting
+
+#### Study methodology
+
+Date of publication; Study design; Research aims; Sample size (before and after exclusions for reasons of data completeness [for details, see below explanation of data completeness inclusion criteria and calculations of percentage of target population analysed]); Measure of renal function; Measure of change in renal function over time; Definition of progression (if any); Whether change in renal function was exposure or outcome; Duration of follow up for changes in renal function; Data completeness inclusion criteria and the minimum number of renal function tests required for analysis; Statistical tools used; Statistical model used.
+
+Some additional results were derived to quantify data completeness for analysis, including the percentage of the target population that were analysed after application of data completeness inclusion criteria and the percentage of patients that dropped out of analysis during the intended follow up period having met criteria for inclusion in analysis. Here, “data completeness inclusion criteria” refer to the study-specific inclusion criteria applied prior to main analyses being performed that aimed to retain only those patients with sufficient data completeness to be deemed suitable for analysis, with such criteria expected to vary between studies.
+
+Percentage of target population analysed was defined as:
+
+This was computable in some but not all studies, as it requires data on the total number of patients included in analysis as well as the number of patients that met population criteria before data completeness exclusion criteria were applied. (In propensity score matched cohort studies, propensity score matching criteria are included in population criteria, and we only compute percentage of target population analysed in the propensity score matched cohort, where this is possible.)
+
+Percentage of study population lost to follow up was defined as:
+
+Again, this was computable in some but not all studies, as it requires data on the number of patients analysed and the number of those patients that dropped out during the intended follow up period, for example due to death, initiation of RRT or other lack of follow up in routine care which could be for many different reasons.
+
+#### Handling of data quality issues and other methodological challenges
+
+Of the items below, details extracted included whether items were mentioned, whether information was provided on data completeness [if relevant], whether implications were acknowledged, whether challenges were tackled methodologically and any statistical methods used to attempt to overcome challenges:
+
+Handling of sample completeness / representativeness of the target population; Handling of informative drop-outs/censoring; Handling of missing longitudinal data; Handling of missing covariate data; Distributional checks/issues; Handling of within-patient correlation and variability of kidney function over time; Handling of population heterogeneity; Handling of confounding.
+
+### Risk of bias in individual studies
+
+Assessment of bias in individual studies was one of the main aims of this systematic review. Key measures of bias evaluated in individual studies were the percentage of the sample target population that were analysed and the percentage of the analysed study population that were lost to follow up. Study-specific measures were reported and bar charts were produced for these measures to demonstrate the potential for bias in individual studies due to informatively missing data.
+
+### Synthesis of results
+
+This review was descriptive with simple aggregation of collected data items only and no statistical analysis was performed. 4 separate summaries are provided to describe study population characteristics, study methodology used, acknowledgment and handling of data quality issues and other methodological challenges, and definitions of CKD progression. For studies exploring multiple outcomes or conducting multiple analyses of changes in renal function, the outcomes and analyses considered the primary focus regarding renal progression in each paper are summarised in the review.
+
+### Risk of bias across studies
+
+There was no single effect size of interest in this study and no meta-analysis was performed, as the review focussed on methodology used and investigators’ handling of data quality issues. Publication bias was therefore challenging to evaluate, as funnel plots and statistical tests could not be used. Efforts were made to maximise coverage of peer-reviewed literature in this field, including extraction of articles from 4 major databases. If research is missing from review due to publication in non-English languages, then data quality issues in such missing studies are likely to be similar to those in English language studies that were included. There will be clinical audit studies that are not peer-reviewed; these studies are likely to be of a similar of worse quality than reviewed studies because peer-reviewed literature is expected to go through certain research quality checks. In any case, as peer-reviewed literature is more likely to be used to inform policy than other research, this is arguably the optimal collection of research to assess the aims of this review.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

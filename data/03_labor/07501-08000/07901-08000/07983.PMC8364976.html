@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Castro, Loureiro, Henriques, and Nunes: Systematic Review of Intrapartum Fetal Heart Rate Spectral Analysis and an Application in the Detection of Fetal Acidemia</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1333,5 +1356,93 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+The fetus depends on the mother for oxygen and carbon dioxide exchange and for glucose supply, through the placenta, to maintain aerobic metabolism and adequate energy production. If there is a problem in maternal circulation, maternal respiratory function, placental blood supply, blood gas exchange within the placenta, or fetal and umbilical circulation, the fetus may suffer hypoxia. This decreased oxygen concentration in fetal arterial blood—hypoxemia—can lead to decreased oxygen in the tissues—hypoxia/metabolic acidosis—which, if not reversed, may cause a series of long-term sequelae, such as hypoxic-ischemic encephalopathy – (HIE) leading to the later development of cerebral palsy, or perinatal death (1). In order to prevent brain damage or perinatal death, it is important to diagnose hypoxia as soon as possible, allowing obstetrical interventions to reverse it before irreparable damage develops. To make this possible and practical to screen for, intrapartum fetal monitoring with cardiotocography (CTG), a technique which evaluates fetal heart rate (FHR) and uterine contractions, has been widely used to help detect fetal hypoxia/acidosis and prevent related adverse perinatal outcomes (2).
+
+FHR signals can be extracted using external or internal methods. The most common mode of acquisition in clinical practice is non-invasive and consists of using a Doppler probe applied on the maternal abdomen. In some situations, invasive FHR acquisition through an electrode placed on the fetal scalp (FSE), using fetal electrocardiogram, is preferred, enabling a more effective signal acquisition, when a satisfactory trace cannot be obtained by external FHR, for example, due to maternal obesity. FSE can only be used during labor, after the rupture of membranes and the beginning of cervical dilatation (3). Although not yet fully available in clinical practice, another promising technique is the transabdominal electrocardiogram which is more reliable than the ultrasound to acquire FHR signals, but still having some limitations in separating the fetal from the maternal heart rate signal. At last, fetal magnetocardiography (fMCG), the magnetic analog of fetal ECG, used in research settings and a highly effective method to evaluate fetal arrhythmias, uses the complexity of Superconducting Quantum Interference Device (SQUID) technology and is very expensive, therefore not being suitable for clinical routine use (4).
+
+CTG visual analysis has limitations regarding its validity, reproducibility, and inter and intra-observer agreement due to the complex nature of FHR traces (5, 6). In addition, it can sometimes lead to unnecessary obstetrical interventions, such as cesarean section and operative vaginal delivery, which are associated with maternal and perinatal risks (7–9). To tackle these problems, attempts have been made to analyze CTGs with computerized systems, automating the diagnosis of fetal hypoxia/acidosis (10). Linear and non-linear algorithms have been applied to FHR signals aiming at improving performance results in the prediction of acidemia (11–13). However, although promising results have been achieved with non-statistical and complex indices (14–16), only statistical tools have been included in clinical practice, probably enabling a more intuitive interpretation by the practicing obstetrician. A crucial feature of the FHR traces is variability, which is physiologically related to the fetal heart autonomous nervous system control (17). When compared to statistical indices, spectral analysis has been referred to as providing a more appropriate evaluation of the FHR non-linear periodic changes (18). As such, spectral analysis of the FHR has been extensively explored for the detection of several pathological conditions in the fetus (19–23).
+
+Spectral analysis determines the energy in specific frequency components of heart rate variability, and changes in the power distribution of the FHR have been considered as a predictor of fetal distress in antepartum and intrapartum settings, reflecting the autonomic nervous system (ANS) activity (24–26), which is activated by hypoxemia (25, 27). Parasympathetic and sympathetic systems compose the two divisions of the ANS, which regulates the body's unconscious actions. While the parasympathetic system acts in rest-and-digest and feed-and-breed situations, the sympathetic system acts in fight-or-flight situations. This method takes into consideration various frequency domains that cause complex heart rate changes and are related to diverse systems of the human body (28). Although several promising results were observed in various studies using this technique, comparison problems arise when different authors use a disparate selection of frequency bands to integrate the spectrum (24).
+
+Several methods have been proposed for power spectral estimation of real time series, which basically fall into two groups: non-parametric techniques such as the periodogram and the Welch method (modified periodogram), and parametric techniques which identify a model representing a good approximation of the sampled signal, such as autoregressive models. Autoregressive models are defined by some order, and their coefficients can be estimated by the least-squares procedure or through the Yule-Walker equations. While all spectral methods provide only estimates of the real power spectral density (PSD) of the signal and comparable results, non-parametric methods have the advantages of simplifying the algorithm and its high processing speed. On the other hand, parametric methods provide accurate PSD estimation even on a small number of samples but require the verification of the selected model's suitability and its order or complexity (29, 30).
+
+It is known that in the FHR power spectrum, one observes four regions, different from the components observed in the power spectrum of an adult heart rate signal (17, 29). These four components in the spectrum of the FHR have been proposed in 2003 by Signorini et al. (17) and adopted by several studies (3, 31–35). The lowest is the very low frequency (VLF), ranging from 0 to 0.03 Hz, being related to long period events and non-linear contributions; followed by the low frequency (LF), ranging from 0.03 to 0.15 Hz and being mainly associated with neural sympathetic activity. These two low frequency bands, VLF and LF, are also associated with clinical variability such as accelerations and decelerations. The next is a typical band of the FHR spectrum, the movement frequency (MF), located between 0.15 and 0.5 Hz, marking maternal breathing and fetal movements (36, 37). The high frequency (HF) ranges from 0.5 to 1 Hz and indicates the presence of fetal breathing. Other parameters are recommended besides these specific spectral power bands, such as FHR mean and variance values and the LF/(HF + MF) ratio. This ratio quantifies the autonomic balance between neural control mechanisms from sympathetic and parasympathetic origins (17), in parallel with the ratio formulated as LF/HF, normally calculated in adults (29).
+
+Thereby, the primary goal of this work was to determine which frequency bands are the best at screening fetal hypoxia/acidosis. First, a systematic review of the literature was conducted to collect all the different frequency domain bands used for FHR spectral analysis. Then, the power of the different bands found was computed on an open-access dataset using non-parametric spectral analysis in order to address their performance at screening fetal hypoxia/ acidosis.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Materials and Methods
+
+### Systematic Review of FHR Spectral Analysis
+
+A systematic review was conducted in order to obtain a collection of the original papers reporting FHR spectral analysis for revision of the spectral bands employed. All original research articles reporting spectral power analysis of real human fetal heart rate (or RR intervals) signals, published until the end of June 2020, and available in PubMed, were included in the analysis. For this purpose, papers were obtained from an online search on PubMed/Medline with the following query:
+
+(“spectral”[All Fields] OR “spectrally”[All Fields] OR “frequency domain”[All Fields] OR “frequency analysis”[All Fields] OR “frequency parameters”[All Fields] OR “linear models”[All Fields])
+
+AND “fetal heart rate”[All Fields]) AND (“human s”[All Fields] OR “humans”[MeSH Terms] OR “humans”[All Fields] OR “human”[All Fields]).
+
+From the set of papers obtained with the query described, two researchers, familiar with signal analysis, selected the papers to include. This selection was based on the title and abstract only, and performed independently, by each researcher. The papers to include were then distributed randomly to three of the authors who extracted, from the full paper, the relevant information for this study. During full revision of the studies, referenced papers, which were not captured by the query, were also manually selected. Previous studies have shown that the distribution of the frequency spectrum suffers changes with the baby maturation (38), hence the revision was limited to articles reporting analysis of signals referring to the term of pregnancy and to the intrapartum period. The exclusion criteria were: language other than English; no report of signal analysis (mainly reviews); reported analysis in simulated signals or from non-human fetuses; reported analysis on signals obtained from magnetocardiography (by its lack of applicability in clinical practice); and used data from the antepartum period. In the end, a consensus was reached about the papers that accurately reported spectral analysis of intrapartum FHR and that were included in the final revision. The information extracted from the studies, beyond the frequency bands used, included, if available, the employed spectral analysis method, the interpretation of the bands used, the type of signal spectrally analyzed (FHR or RR intervals) and its sampling frequency, and the signal acquisition mode.
+
+A total of 172 abstracts were identified for screening, selected automatically by the query, and 3 additional articles were obtained from reference checking during the eligibility step. After exclusions, 26 articles remained to be included in the review (Figure 1). This systematic review focused on the frequency spectral bands being used and reported for spectral analysis of FHR in the literature. It was not in the scope of this research to consider other information from those articles, commonly addressed in systematic reviews such as main outcomes, discriminatory validity or other results. In this research, the information retrieved from the reviewed studies concerned only the methodology regarding the spectral bands used.
+
+### Application in Fetal Acidemia Detection
+
+#### FHR Data
+
+In order to compare the performance of the various spectral indices used in the articles reviewed, the first open-access database for research analysis in intrapartum CTG was used, enabling the objective comparison between results from different methods (39). The open-access database CTU-UHB consists of a total of 552 intrapartum FHR recordings obtained, between April 2010 and August 2012, at the labor ward of the University Hospital in Brno, Czech Republic. Along with the intrapartum CTGs, relevant fetal (including biochemical parameters of umbilical arterial blood samples) and maternal clinical data were available (39). All recordings refer to singleton pregnancies, with more than 36 completed weeks. The CTU-UHB recordings start no more than 90 min before the delivery, and each is at most 90 min long, sampled at 4 Hz (39).
+
+Before labor, the arterial pH of a healthy fetus is around 7.35, whereas, at birth, the average pH of the umbilical artery blood is around 7.25. In this sense, moderate neonatal acidosis will occur when the pH is at least below 7.15 (40). However, not all fetuses in this situation are at risk for immediate or long-term complications, which will depend on the type of acidosis and its severity. Respiratory acidosis per se does not carry long-term neurological complications, while metabolic acidosis is related to prolonged hypoxia and needs more time to reverse, even after hypoxia is corrected. By its turn, prolonged metabolic acidosis, involving lower pH values, is associated with irreversible organ damage (40). Fetal metabolic acidosis is defined by an umbilical artery pH below 7.00 and a base-deficit in the extracellular fluid (BDecf) above 12 mmol/l (24, 40, 41). However, there is already an association with adverse short-term perinatal outcomes when pH values are below 7.05 and the BDecf is above 10 mmol/l (40). Lower arterial pH values are not common in regular cross-sectional studies or even in large randomized controlled trials conducted in the intrapartum setting and considering fetal acidemia as a main outcome measure (42, 43), being a rare event in nowadays' clinical practice (incidence lower than 0.6%) (42), in developed countries. Thus, cutoffs such as 7.20 (31), 7.15 (28), 7.10 (31), and 7.05 (35, 44) are regularly employed in studies of fetal acidemia/hypoxia detection. Accordingly, in this study, four different arterial pH cutoffs were considered for the definition of fetal acidemia: 7.05, 7.10, 7.15, and 7.20. The 7.00 pH cutoff was not considered for this analysis since only three of the included CTGs referred to newborns with an arterial pH below 7.00 (incidence of 0.54%, in line with the aforementioned literature).
+
+#### Signal Pre-processing
+
+Pre-processing of the FHR signal was required to remove artifacts and signal loss that is commonly present in the final minutes before delivery, related to the movements of the descending fetus and the pregnant woman who is pushing and the improper placement of the sensors. The algorithm used, described in detail in (3), detects samples lower than 60 bpm and above 200 bpm and consecutive differences higher than 25 bpm. The segments detected were then replaced by linear interpolation if referring to &lt;2 s. For longer periods, segments were substituted by the previous segment of the same length. All samples were rounded to units. After discarding the last 5 min of each recording, the final 30 min were selected for the following analyses. After pre-processing the available signal, FHR recordings with signal loss above 15% in the last hour (excluding the last 5 min) were rejected, ending with 246 traces selected for spectral analysis.
+
+#### Spectral Analysis
+
+Parseval's theorem states that the total energy of a signal in the time domain is equal to its energy in the frequency domain and, for this reason, the square of the magnitude of the Fourier Transform of a signal represents its power density (22). Using the Fast Fourier Transform (FFT) and the frequency domain bands reported in the literature, various indices of FHR's power spectral density (PSD) were computed.
+
+To estimate the PSD of the FHR, a non-parametric method was employed, the Welch method, with a window length of 256 samples with a 62.5% overlap, similarly to previous studies (3, 11, 13, 31, 34). The Welch periodogram-based estimation method corresponds to integrating the periodogram (using the rectangular method) in windows of overlapped segments, modified periodograms, that are averaged to obtain the PSD estimate, allowing an estimation of the average power of the signal. The integration was done between limited frequency ranges. The FHR power percentages were computed, following previous recommendations (45), corresponding to the power of each frequency band divided by the average power of the whole signal (46). These normalized values allow the detection of relative changes, instead of changes in the total power, that would mask the first ones (25).
+
+Computing a PSD estimation directly on the FHR signal results in a high impulse around 0 Hz frequency, the DC component, corresponding to the signal's average value over a period, disguising relevant signals with relatively small amplitude. Thus, after preprocessing the signals, and before the spectrum estimation, the mean FHR was removed for each signal to reduce the DC-offset of FHR. All preprocessing computations and spectral analysis were done using MATLAB (R2020b, MathWorks, Natick, MA, USA).
+
+### Statistical Analysis
+
+Descriptive measures and statistical tests were employed to properly compare the FHR power percentage of the acidemic and the non-acidemic fetuses on various frequency bands. The normality of quantitative variables was verified visually and confirmed with the Kolmogorov-Smirnov test. Since almost all indices could not be assumed as normally distributed, median and interquartile interval (first quartile, Q1 - third quartile, Q3) were employed. Categorical variables were described by absolute and relative frequencies.
+
+For the comparison between acidemic and non-acidemic groups of fetuses, the Mann-Whitney test was employed, comparing the distribution functions of the spectral indices between the two groups. Subsequently, and for the frequency bands where significant differences were found, a receiver operating characteristic (ROC) curve was computed (47). The spectral indices' ability to distinguish acidemic fetuses from non-acidemic ones was evaluated using the area under the ROC curve (AUROC). These curves relate sensitivity—ability to recognize acidemic fetuses correctly—and specificity—ability to identify non-acidemic fetuses—for each cutoff of the discriminating index (31), or power spectral band, in our case.
+
+For descriptive and inference statistics, SPSS Statistics (v.25; IBM SPSS, Chicago, IL) was used. For all statistical tests, a significance level of 0.05 was pre-defined.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

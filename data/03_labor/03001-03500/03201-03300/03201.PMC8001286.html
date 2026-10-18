@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Osman, Klopfenstein, Belfeki, Gendrin, Zayet, and Martinez-Sobrido: A Comparative Systematic Review of COVID-19 and Influenza</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3405,5 +3428,45 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Coronavirus disease 2019 (COVID-19), an infection caused by severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2), was first reported in December 2019, in Wuhan, province of Hubei in China. Since then, it has evolved into a worldwide pandemic and became one of the world’s toughest health problems [1]. Both SARS-CoV-2 and influenza virus share similarities such as viral shedding, route of transmission, and clinical presentation [2]. Influenza affects 5–10% of adults annually with most cases occurring during the winter season [3]. According to the World Health Organization (WHO), influenza’s epidemics are estimated to result in about 3 to 5 million cases of severe illness, and about 290,000 to 650,000 respiratory deaths [4].
+
+There have been few studies comparing COVID-19 with influenza mainly focused on epidemiological features in the general population [5]. However, no review study compared clinical, biological, and radiological characteristics between COVID-19 and influenza. With projections estimating the COVID-19 pandemic to last for another year [2] and it being the influenza season, it is crucial to evaluate the differences between the two diseases. The current study performed a systematic review to compare the clinical features and outcome, laboratory, and radiological findings of COVID-19 patients with influenza adult patients.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Methods
+
+This study is based on a review of published literature comparing COVID-19 and influenza. Literature search was done using PubMed to find MEDLINE indexed articles relevant to this study. As of 25 November 2020, the search has been conducted by combining the MeSH words “COVID-19” and “Influenza”. At first, citations that were not in English or in French and not a free full text were excluded. Then, we screened citations based on titles and abstracts. Those with irrelevant information or subjects, studies with focus other than comparing COVID-19 and influenza, studies with a population under 18 years old and case reports about coinfection between COVID-19 and influenza were excluded. A p-value &lt; 0.05 was considered significant to compare the two viruses.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

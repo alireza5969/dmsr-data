@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Jena, Mishra, Deepak, Kumar-M, Sharma, Patel, Kennedy, Kim, Sharma, and Sebastian: Response to SARS-CoV-2 vaccination in immune mediated inflammatory diseases: Systematic review and meta-analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1060,5 +1083,47 @@ provides the details of the included studies including site of the study, number
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Vaccination has emerged as an important strategy to mitigate the rates and adverse outcomes of COVID-19 infection. Various vaccines approved in different geographic regions have been shown to be efficacious in reducing infection rates and severe disease in randomized studies [[1], [2], [3]]. However, initial randomized studies of SARS-CoV-2 vaccines excluded patients with comorbidities including immune mediated inflammatory diseases (IMIDs) [[1], [2], [3]]. IMIDs may be associated with immune dysfunction related either to the underlying disease or use of immune-modulating drugs. Initially, there were concerns regarding a possible heightened risk of COVID-19 and worse outcomes of COVID-19 in IMIDs which was later refuted [4,5].Certain drugs were also recognized to adversely impact clinical outcomes in IMID patients infected with COVID-19 [[4], [5], [6]].
+
+There is a concern that underlying IMIDs or associated use of immune modifying drugs could attenuate responses to SARS-CoV-2 vaccination. Both antibody and T cell immune responses are considered to be relevant following SARS-CoV-2 vaccination. The development of these responses and their persistence or decay in time may determine the future need for booster dosing schedules. It is unclear if patients with IMIDs (or a subgroup of them) are candidates for monitoring serologic responses. It is important to recognize the subgroups likely to be at risk of suboptimal responses with respect to underlying disease, therapies or vaccine type. Responses to other vaccines like the hepatitis B vaccine and influenza are suboptimal in patients with inflammatory bowel disease (IBD) and IMIDs [7,8]. This is especially true for patients on immunosuppressive medications. This information however may not be directly applicable to SARS-CoV-2 vaccination because of differences with respect to virus and vaccine types. The mRNA and adenoviral vector-based technologies used in SARS-CoV-2 vaccine development are relatively new and the impact of underlying IMID and immune-modulating drugs on serological responses is uncertain. Individual studies, except for a few, may typically describe responses to one type of (single or two doses) vaccine in a particular subset of patients.
+
+In view of these uncertainties, we performed a systematic review on efficacy of SARS-CoV-2 vaccination in patients with IMIDs across the various vaccine platforms. We also attempted to clarify if the use of concomitant drugs (immunomodulators, corticosteroids, biologics, small molecules etc) had an impact on humoral responses following SARS-CoV-2 vaccination in these patients.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+This meta-analysis was conducted in accordance with the Meta-analysis Of Observational Studies in Epidemiology (MOOSE) group guidance [9].</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

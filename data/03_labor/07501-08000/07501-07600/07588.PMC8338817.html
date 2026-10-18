@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Tewarie, Senders, Kremer, Devi, Gormley, Arnaout, Smith, and Broekman: Survival prediction of glioblastoma patients—are we there yet? A systematic review of prognostic modeling for glioblastoma and its clinical potential</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1020,5 +1043,53 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Glioblastoma is the most common and aggressive type of primary brain tumor in adults [1–3]. It has one of the highest mortality rates among human tumors with a median survival of 12 to 15 months after diagnosis despite improved standard-of-care defined as maximal safe resection followed by radiotherapy plus concomitant and adjuvant temozolomide [1, 4].
+
+Survival statistics are well-described at the population level, and many factors that impact survival have been identified including age, Karnofsky performance status (KPS), O6-methylguanine-DNA methyltransferase (MGMT) promotor methylation status, isocitrate dehydrogenase (IDH), neurological deficit, extent of resection, and tumor multifocality and location among others [5–7]. Yet, predicting individual patient survival remains challenging [7].
+
+In recent years, prognostic models are increasingly being developed to predict survival of the individual glioblastoma patient [8, 9]. These prognostic models utilize a wide range of statistical and machine learning algorithms to analyze heterogenous data sources and predict individual patient survival. This systematic review aims to synthesize the current trends and provide an outlook concerning the possibility of clinical use of prognostic glioblastoma models and the future direction of survival modeling in glioblastoma patients.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Search strategy
+
+A search was performed in the Embase, Medline Ovid (PubMed), Web of science, Cochrane CENTRAL, and Google Scholar databases according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines (S1). A professional librarian was consulted for constructing the search syntax with the use of keywords for glioblastoma, prognostic modeling, and overall survival as well as their synonyms (S1). All prognostic models concerning survival in glioblastoma patients were included in our search syntax. Prediction model studies on glioblastoma patients with overall survival as the primary outcome were included. Predictor finding studies were excluded. These studies focus on characterizing the association between individual variables and the outcome at the cohort level (e.g., identifying risk factors of survival within a population), whereas prediction model studies seek to develop a model that predicts survival as accurately as possible in the individual patient utilizing the optimal combination of variables. No restrictions were applied with regard to the participant characteristics, format of the input data, type of algorithm, or validation of testing procedures. Case reports or articles written in languages other than Dutch or English were excluded. No restrictions based on the date of publication were used. This systematic search was complemented by screening the references of included articles to identify additional publications. Titles and abstracts of retrieved articles were screened by two independent authors. Two authors (IRT, SK) read the full texts of the potentially eligible articles independently. Discrepancies were solved by discussion including a third reviewer (JS).
+
+### Data extraction
+
+From all included studies, we extracted the year of publication, name of first author, title, abstract, source of data, selection criteria, events per variable, events, sample size, type of input, hyperparameter tuning, number of predictors in the best performing model, definition of overall survival, algorithm type, validation and testing procedure, performance metric, and model performance. To ensure a systematic approach of assessing validation of prognostic modeling in glioblastoma, all the extracted variables were based on the CHecklist for critical Appraisal and data extraction for systematic Reviews of prediction Modelling Studies (CHARMS) checklist [10]. The Prediction model Risk Of Bias ASsessment Tool (PROBAST) tool was used to assess the risk of bias in all included studies [11].</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

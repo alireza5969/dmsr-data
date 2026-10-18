@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Motosko and Tosti: Dermatologic Care of Hair in Transgender Patients: A Systematic Review of Literature</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -722,5 +745,54 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Characterized by distinct colors, textures, and styles, hair is intrinsically linked to personality and identity. For transgender and gender non-conforming patients, the appearance of hair is critical to refining society’s perception in their affirmed gender; this, in turn, affords them a greater sense of confidence and safety.
+
+The transgender population includes those with an array of identities in which the gender identity and/or expression differs from the sex the person was assigned at birth. Other patients may identify as non-binary or genderqueer, describing a gender identity and/or expression that falls outside the typical binary categories of male and female [1]. For the purposes of this article, the term transgender women refers to those assigned male at birth but who identify on the female end of the gender spectrum; transgender men refers to those assigned female at birth but who identify on the male end of the spectrum.
+
+Gender dysphoria—the distress that arises from the incongruity between the gender that was assigned to an individual at birth and the gender with which the individual identifies and expresses—has various treatment options, which depend on the individual patient’s goals. Hormonal therapy, gender-affirming procedures, and surgery can improve the alignment of patients’ physical characteristics with the gender that they choose to express.
+
+Despite the myriad therapeutic options available to transgender patients, individual interventions may fall short of achieving the desired effect on their hair, especially regarding masculinizing or feminizing hormonal therapy. Hormonal therapy alters hair growth; however, supplemental treatments are frequently required to achieve the hair growth patterns that patients desire.
+
+As altering patterns of hair growth continue to play an integral part in the affirmation of gender in patients with gender dysphoria, the relevance of dermatologic techniques must be emphasized. These interventions can be incorporated into masculinizing and feminizing therapy and may be increasingly important as the barriers to healthcare faced by transgender patients are recognized and addressed [2]. Therefore, this systematic review of current literature serves to characterize hair sequelae in response to the gender-affirming process and guide dermatologists in caring for the hair of their transgender patients. Given the relative paucity of literature on the topic, information derived from the systematic review was supplemented with the authors’ own experience and recommendations.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+The report was written in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) statements [3]. In April 2021, a comprehensive search of EMBASE, MEDLINE, Cochrane Central Register of Controlled Trials, and Cochrane Database of Systematic Reviews from each database’s inception through April 21, 2021, was carried out. Search terms included “transgender” and “hair.” Titles and abstracts were reviewed, and if deemed eligible, full-text articles were assessed. Articles were eligible for inclusion if they included data relating to hair changes or treatment in transgender individuals. Exclusion criteria included abstracts and review articles. No date or language restrictions were applied. The titles and abstracts of all articles were initially screened for potential inclusion. The full text was assessed if the title and abstract did not include enough information for exclusion and inclusion criteria to be applied. The full text of the remaining articles was then evaluated for inclusion.
+
+This article is based on previously conducted studies and does not contain any new studies with human participants or animals performed by any of the authors.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

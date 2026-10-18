@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Ata, Yousaf, Sardar, Javed, Iqbal, Khamees, Malkawi, and Yassin: Protocol for “Genetic composition of sickle cell disease in the Arab population: A systematic review”</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="hsr2450-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -546,5 +569,45 @@ PMC1069922727028397</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+SCD is a spectrum of hereditary hemoglobinopathies characterized by abnormal hemoglobin S (HbS) polymer. This results in a cascade of sickling and unsickling erythrocytes, ultimately leading to hemolysis.1 Other than chronic hemolytic anemia, it can also present with acute episodes of crisis, the vaso‐occlusive crisis being the most common. The disease also carries a mortality burden secondary to life‐threatening complications such as acute chest syndrome.2 SCD is relatively prevalent in the Middle East, with some countries having the highest prevalence globally (2.1%).3 It is estimated that the global burden of SCD will increase by up to 30% by 2050.4
+
+On the other hand, there is a recent advancement in the treatment of SCD. Some of the newly approved disease‐modifying agents include Voxelotor (1500 mg daily) and Crizanlizumab (5 mg/kg).5, 6 Additionally, there are recent trials on gene therapy in SCD with promising effectiveness.7 To analyze and anticipate treatment responsiveness of current therapies and to guide further studies focusing on gene therapy, it is vital to have an updated genetic database of SCD in the areas where it is prevalent. The last updated review on genotypes of SCD in the Arab population was published in 2011.8 Many studies describing genotypic and phenotypic variants of SCD have been published thereafter, creating a need to pool the updated genetic database of SCD in the 22 Arab countries. We will conduct a systematic review on all patients with reported genotypes of SCD from the Arab countries. Our primary outcome will be the genotypes, and secondary outcomes will be the mutational variations, haplotypes, and their correlations to phenotypes and treatments of SCD.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## METHODS
+
+This protocol is in accordance with the Preferred Reporting Items for Systematic Reviews and Meta‐Analyses (PRISMA) and PRISMA guidelines for Protocols (PRISMA‐P).9, 10 The protocol has been registered at the International Prospective Register of Systematic Reviews (PROSPERO; registration number: CRD42020218666).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

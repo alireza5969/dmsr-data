@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Pillai, Chincholkar, Dixit, and Pandey: A systematic review of proteomic biomarkers in oral squamous cell cancer</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3233,5 +3256,49 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Background
+
+Oral squamous cell cancer (OSCC) is the most common malignant neoplasm arising in the mucosa of oral cavity and includes subsites like the buccal mucosa, alveolus (upper and lower) tongue, palate, and lip [1]. Head and neck cancer accounts for more than 550,000 cases worldwide annually [2]. Oral cancers are more common in the Indian subcontinent, while cancer of the laryngopharynx is more common in other populations [3]. Overall, 57.5% of global oral cancers occur in Asia especially in India. It is 30% of all cancers in India, of which 60 to 80% of the patients present with advanced diseases as compared to 40% in developed countries, this also suggests lack of awareness and need for markers of early identification [4].
+
+Almost all of these malignancies are squamous cell carcinomas (SSCs) which historically in the developed world was associated mostly with alcohol and tobacco consumption and the combination of the two, producing a synergistic increase in the risk. However, over the past 20 years, investigators have found a growing proportion of HNSCC patients with human papillomavirus (HPV) positive tumors that develop in younger people and those having a lower or no intake of tobacco and alcohol, the association in oropharynx is higher than oral cavity [5].
+
+Improvement in understanding the steps leading to carcinogenesis will enable the identification and prediction of malignant progression at an earlier stage of OSCC. Cancer signifies deviation from normal signaling network toward a dysregulated cellular proliferation. Proteins with linkages to various pathways when altered the functional state may shift the equilibrium of the signaling network to enhance the survival of the affected cells or reduce its apoptosis [6]. Searching for such proteins is the main purpose of cancer proteomics. Proteins being the common molecule that participate in the cellular function are often affected by disease, response to treatment, and being disease free. Development of novel protein biomarkers of OSCC in the light of proteomics can help in early cancer diagnosis, treatment, and prognosis.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Material and methods
+
+This systematic review was performed as per PRISMA guidelines. A bibliographic search was performed for studies published till August 2021, using PubMed, Cochrane database, Google scholar, the National Library of Medicine, SpringerLink, and Science Open. The keywords used were “proteomic biomarkers,” AND “head and neck cancer,” AND “oral cancer.” The detailed search strategy for PubMed is detailed in Additional file 1. All relevant studies assessing proteomic characteristics of oral cancer and precancers were considered for analysis. Abstracts, incomplete articles, and non-comparative studies and article in language other than English were excluded. We performed a restriction of articles including only studies in humans; studies on cell line and animals were excluded.
+
+The review also discusses proteomics-based techniques that are used in the identification of proteins that are altered in the disease process or in response to treatment or disease stage and course, and such information could be used to individualize therapy. Research findings in the review are highlights from articles focusing on proteomic approaches toward diagnosis and detection of oral cancer; identification of biomarkers through proteolytic analysis carried out using mass spectrometry, 2D electrophoresis, and other proteomic techniques.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

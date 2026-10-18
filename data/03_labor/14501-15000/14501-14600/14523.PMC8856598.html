@@ -5,8 +5,31 @@
 <title>Fabião, Sassi, Pedrollo, Gerchman, Kramer, Leitão, and Pinto: Why do men have worse COVID-19-related outcomes? A systematic review
 and meta-analysis with sex adjusted for age</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -815,5 +838,49 @@ review and meta-analysisBMJ Open202010e04012910.1136/bmjopen-2020-040129PMC75395
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+In late 2019, the world was introduced to a new virus that was first described in the city of Wuhan, China. This virus was later named severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), and the related clinical syndrome was named coronavirus disease 2019 (COVID-19). Soon, COVID-19 spread worldwide and reached pandemic proportions in March 2020 (1). It was estimated that by September 2021, more than 219 million people around the globe were infected by COVID-19, with more than 4 million deaths.
+
+Several reports have identified risk factors for disease severity and mortality, especially older age, hypertension, diabetes, obesity, and cardiovascular disease. Nonetheless, the same reports showed an increased risk of complications in men (2). Notably, among the nine deaths initially reported in Italy in patients younger than 40 years, eight were men (2,3). The difference in clinical presentation between men and women may be directly mediated by sex hormones (4). As testosterone physiologically decreases in older males (5), age may play an important role in mediating adverse COVID-19 outcomes according to sex. In this sense, differences in COVID-19 severity and mortality between men and women would be greater in younger patients and the magnitude of the association would be weakened as age increases, following the predicted decrease in testosterone production in older people. With this in mind, we aimed to assess the differences between the sexes regarding mortality as well as severity of COVID-19, taking into account age as a covariate, evaluated by meta-regression and subgroup analyses.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Material and Methods
+
+We performed a systematic search and meta-analysis of observational cohorts reporting COVID-19 outcomes, which included detailed descriptions of patients' clinical profiles and disease severity (according to authors' definition: peripheral oxygen saturation of &lt;90%, need for intensive care unit admission, and/or need for mechanical ventilation) and/or mortality. The PubMed (Medline) and Cochrane Library databases were searched up to May 13th, 2021. The primary outcome was COVID-19-associated mortality and the secondary outcome was COVID-19 severity. This systematic review and meta-analysis was registered in PROSPERO (registration number 42020182924).
+
+The collected data included the author's name, year of publication, country of publication, and ages of the included participants, as well as the difference in age between groups, number of patients with severe COVID-19, number of patients with mild/moderate COVID-19, number of deaths due to COVID-19, and number of survivors. Data were extracted by two researchers (J.F. and B.S.), disagreements were solved by a third party (L.C.P.) and the quality of the analyzed studies was assessed using the Meta-Analyses of Observational Studies in Epidemiology (MOOSE) Guidelines (6).
+
+We performed direct meta-analyses and calculated the relative risk for both outcomes (COVID-19 mortality and severity). To analyze the influence of age on the outcomes (as a surrogate variable for hormonal reserve), we performed meta-regression using the mean age of study participants as a covariate. Furthermore, subgroup meta-analyses according to study participants' mean age (below 50 years, 51-60 years, and above 60 years) were planned. Heterogeneity was assessed by the Cochran Q test (a P value of 0.1 was considered statistically significant) and the I 2 test (values greater than 50% were considered to indicate elevated statistical heterogeneity). Publication bias was assessed by funnel plot analysis. Analyses were performed using R software version 4.0.3 “Bunny-Wunnies Freak Out” (The R Foundation for Statistical Computing).</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Surian, Bourgeois, and Dunn: The automation of relevant trial registration screening for systematic review updates: an evaluation study on a large dataset of ClinicalTrials.gov registrations</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -657,5 +680,89 @@ References</h2>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Background
+
+Systematic reviews provide efficient access to medical evidence for use in clinical decision-making and practice guidelines and policy development [1–3]. New evidence is accumulating at unprecedented rates in many domains, requiring systematic reviews to be almost continuously updated to remain current [4]. However, only around a third of reviews are updated within 2 years of being published, and the median update time is more than 5 years [5–7]. Even in application domains where systematic reviews are published frequently, it takes a median of 1.5 years from trial publication to inclusion in a first systematic review [8].
+
+The reason for these delays is that performing systematic reviews is resource-intensive and efforts are inefficiently allocated. Systematic reviews take on average 881 person-hours across 463 days to complete [9]. In many cases, the processes and data used to perform a review are inaccessible or not provided in a format that could be applied to avoid re-work [10]. When systematic reviews are updated, few lead to a substantive change in conclusion [11, 12], suggesting that the process could be improved by prioritizing systematic reviews where the accumulation of new evidence indicates a higher likelihood of a revised conclusion.
+
+Clinical study registries offer an opportunity to improve the efficiency of systematic review synthesis and updating but do not yet support informatics tools for this purpose. Registries have already been leveraged for a range of activities to improve the integrity and transparency of clinical trials, including reducing biases associated with trial non-publication and selective reporting practices [13–16]. Trial registries also have the potential to support systematic review processes by enabling a system to monitor ongoing trial activity and signal areas with higher rates of emerging evidence. This approach would depend on methods to accurately identify which clinical trial registrations were relevant to specific systematic review topics.
+
+The aim of this study was to evaluate a new method for identifying and ranking clinical trial registrations most relevant to a systematic review update. To do this, we made use of a large database of mined links between published systematic reviews and the registrations of included trials.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Study data
+
+The study data consisted of a set of published systematic reviews and sets of links to registered clinical trials included in the review. We retrieved systematic reviews available on PubMed on 21 October 2019 and published after 1 January 2007, using title keywords “systematic review” or “meta-analysis” in the title, and extracted the title, abstract, authors, publication date, PubMed ID, and Digital Object Identifier (DOI). The approach follows the methods used to populate a database of systematic reviews with mined links [17].
+
+Systematic review DOIs identified on PubMed were then used to query CrossRef to identify and extract reference lists associated with the systematic review article, where they were made available through the Initiative for Open Citations. These lists of DOIs representing the articles cited by the systematic review were then searched for on PubMed, where the presence of an NCT Number in the article abstract or metadata was used to determine if there was a corresponding registration for a completed trial on ClinicalTrials.gov (Fig. 1). This process assumes that the systematic review reference lists include studies used in the evidence synthesis and that the PubMed entries for other cited articles generally do not have abstract or metadata links to ClinicalTrials.gov registrations. Prior analyses involving manual validation of links between systematic review reference lists and trial registries suggest that this approach is highly specific (nearly all links are true positives) but can miss studies (many false negatives) that were not linked by metadata to registrations on ClinicalTrials.gov [18–20].
+
+For the evaluation and analysis, we included only those systematic reviews that had at least five links to trial registrations. For each of the trials identified via the above process, we extracted the text from the brief and official titles, summary, and detailed description in the ClinicalTrials.gov record, and used this text as the features in the experiments described below.
+
+### Feature representation
+
+We treated each trial registration as a single document and performed standard text pre-processing steps. Each word was converted to lowercase and stop words, punctuations, and names of the months removed. We also excluded numbers, unless the number was part of a combination of characters and numbers (e.g., H1N1, Omega-3). The Porter stemmer was then applied to convert each word to its word stem [21]. To reduce the number of uninformative common and very rare words, we applied typical thresholds to only include words that had more than one character and appeared in more than two trial registrations or less than 95% of all trial registrations. We chose not to map text to medical concepts based on the results of a previous study, which indicated better performance using words compared to medical concepts for linking ClinicalTrials.gov and abstracts of trial reports [20].
+
+Each trial registration was represented by one of three feature representations based on the extracted words. First, we used the Term Frequency-Inverse Document Frequency (TF-IDF). When calculating the TF-IDF score, we used the logarithm of the term frequency. Each trial registration was represented by a vector of the L2-normalised TF-IDF score of a word feature with a dimension equal to the size of the vocabulary. Second, we used Latent Dirichlet Allocation (LDA) to represent a trial registration as a vector of topic distribution. LDA method was first introduced by Blei et al. [22] to extract latent structures, or topics, in a corpus of text documents, where a document is represented by a distribution of topics and a topic is represented by a vector of word probabilities. In LDA, each document is represented by a bag of words, where the order of words is ignored. We used the implementation of LDA from Gensim for python programming language with a standard parameter setting [23, 24], and tested with 50, 100, 150, and 200 topics. Third, we used Paragraph Vector, or Doc2Vec, to represent a trial registration as a vector representation. Doc2Vec was proposed by Le and Mikolov [25], as an unsupervised method to learn a vector representation for text. We also used the implementation of Doc2Vec from Gensim for python programming language with distributed memory setting that preserves the word order in a document and tested with 50, 100, 150, and 200 vector dimensions. The selection of parameters for pre-processing and feature representation was based on our previous experience with similar corpora.
+
+### Experiment design and performance measures
+
+For each systematic review, we ordered the trial registrations by their completion dates and used 80% of older trial registrations as our training (seeding) set and the remaining 20% as a test set. The aim was to mimic how a systematic review would be updated to include results from newer trials, with the seeding set representing trials in an existing systematic review and the test set new trials that should be screened for inclusion in an update. The number of trial registrations per systematic review ranged from 4 to 55 in the seeding set and 1 to 13 in the test set.
+
+For each systematic review and starting from a seeding set of between 4 to 55 included trials, the task was then to rank all other trial registrations in ClinicalTrials.gov such that the 1 to 13 in the test set were ranked as high as possible. We evaluated the performance of our methods by measuring the number of trial registrations that needed to be screened to capture all test set trial registrations. This was reported as the median number of trial registrations screened to achieve 100% recall across each of the systematic reviews. We also calculated the median recall (by aggregating the recall values for all systematic reviews and taking the median) after screening a given number of trial registrations for each systematic review. Using the median recall, we determined which method resulted in the best trial ranking. We also evaluated whether the size of the seeding set (i.e., the number of trials already included in the review) contributed to the performance of each method.
+
+### Document similarity
+
+For each systematic review, we calculated the Euclidean distance between each of the trial registrations in the seeding set and the set of test trials as well as any trial registration in the dataset with completion dates after the systematic review’s publication date. The Euclidean distance uses the representation of each document (the weights associated with each of the words in the vocabulary) and is given by the square root of the sum of the differences between the corresponding weights in the two documents. As each trial registration in the dataset has different distance values to the trial registrations in the seeding set, we considered the smallest distance to any trial registration in the seeding set as the distance between a trial registration and the systematic review to which it might belong.
+
+Trial registrations were then ranked based on their distance values in ascending order and the retrieval process started from the trial registration with the smallest distance. This is similar to the ordered representation that would be used in tools that rank articles in search results from bibliographic databases to support screening [26–28].
+
+### Hierarchical agglomerative clustering
+
+Clustering methods seek to place items into groups (called clusters) and hard clustering methods seek to place items such that no items belong to more than one cluster. Agglomerative clustering methods are a type of hard clustering that start with each item in its own cluster and iteratively combines clusters until an optimal clustering is found. The hierarchical agglomerative clustering method groups the two most similar data points into the same cluster and then iteratively groups two newly formed clusters until only one cluster remains. It can be represented as a dendrogram (a hierarchical representation) where trial registrations are leaf nodes and groups of trial registrations are represented under other nodes in the hierarchy (Fig. 2).
+
+To compute the distance between clusters, we used single-linkage and Ward agglomerative methods and applied them to the 163,501 trial registrations in the dataset. The single-linkage agglomerative method takes the smallest distance between two points in two clusters as the distance between clusters, while the Ward agglomerative method uses the Ward variance minimization algorithm to compute the distance between two clusters [29]. We used the fastcluster library for python programming language to perform the hierarchical clustering on the trial registrations [30].
+
+Given a hierarchical representation of the trials, the traversal starts with the seeding set of example trials and traverses up the hierarchy in steps, recommending additional trials at the leaf nodes during the traversal up to the root node (Fig. 2). The trials were then ranked in the order they were encountered during the traversal. For example, in Fig. 2, the trial ranking would be 0, 3, 9, 2, 7, 6, and 5. As with the document similarity approach, we ignored any trial registration that was not in the test set or published after the publication date of the systematic review to simulate a systematic review update scenario.
+
+### Verified trial registrations
+
+The dataset used in the experiments described above is highly specific but imperfect set of examples of included trials. To examine the performance of the methods on a more realistic set of examples as a form of error analysis, we selected ten systematic reviews that were not included in the dataset above and manually verified the set of included trials with registrations on ClinicalTrials.gov. Systematic reviews were selected by searching for systematic reviews that examined novel therapeutics approved by the FDA in 2019.
+
+Trial registrations were identified by identifying the set of included trials from the full text of the systematic review and then following a standard approach for identifying registrations linked to the published results [19]. For each included trial, this includes checking for NCT Numbers in the published trial article abstract, metadata, and full text, and searching ClinicalTrials.gov for the intervention and comparing trial design features for returned results where no information about trial registration is included in the text of the article.
+
+After splitting the included trial registrations into seeding and test sets for the ten systematic reviews, the number of verified trial registrations ranged from 5 to 12 in the seeding set and from 1 to 2 in the test set. These ten systematic reviews with verified trial registrations were used to examine the performance of the methods in a more realistic scenario and to examine where and why the methods perform poorly for some systematic reviews.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

@@ -5,8 +5,31 @@
 <title>Bhandari, Marwah, Smith, Nguyen, Bhatti, Lim, and Lasocki: Machine learning imaging applications in the differentiation of true tumour progression from treatment‐related effects in brain tumours: A systematic review and meta‐analysis
 </title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="ara13436-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -4221,5 +4244,69 @@ Email: <a href="mailto:abhishta.bhandari@my.jcu.edu.au">abhishta.bhandari@my.jcu
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Treatment of brain tumours with radiotherapy and/or chemotherapy often leads to the development of treatment‐related effects (TRE), including pseudoprogression (PsP) and radiation necrosis (RN), which can be difficult to distinguish from true tumour progression (TTP).1 This is a major diagnostic challenge with important clinical implications. For example, a successful treatment may be incorrectly ceased if PsP is not identified; conversely, there may be a delay in instituting the correct treatment if TTP is not diagnosed. PsP is particularly recognized as an issue in the management of glioblastomas,2 where standard of care includes maximal resection of the tumour and radiotherapy plus chemotherapy.3 A substantial proportion of patients receiving treatment for glioblastoma develop PsP, with the literature reporting an incidence of between 10 and 30%.2 Difficulties in distinguishing PsP from true tumour progression (TTP) are not exclusive to glioblastoma either, with an incidence of 21% also reported for low‐grade gliomas.4 PsP is radiologically defined as an increase in contrast uptake after the completion of radiotherapy without true tumour growth, which reduces or improves without an alteration of treatment.5 Clinical definitions of PsP vary significantly, with some studies utilizing a 6‐month follow‐up period for diagnosis and others using 2‐month follow‐up.6 RN is recognized as a separate entity that generally occurs at a later stage after treatment than PsP and is particularly considered a diagnostic challenge in brain metastases treated with stereotactic radiosurgery (SRS). The increased clinical manifestation of late TRE such as RN can be attributed to the improved median survival of patients due to treatment with SRS and improvements in systemic treatments (such as immunotherapy).7, 8 The literature reports the incidence of RN in patients treated with SRS for brain metastases as 24–26%.9, 10 RN most commonly occurs 6–24 months after completion of treatment,11 but can occur as early as 3 months to as late as 19 years after treatment.12
+
+Follow‐up to determine whether the imaging changes regress is frequently impractical in the clinical setting; thus, there is a clinical need for making the distinction between TRE and TTP when routine imaging raises concern. Current imaging diagnostics to differentiate PsP from TTP in gliomas include the RANO (Response Assessment in Neuro‐Oncology) criteria13 and the more recent modified RANO criteria.14 However, an accuracy of only 82% has been reported using the RANO criteria to differentiate PsP from TTP,12 and assessment is subject to inter‐observer variability.15 Conventional MRI has limitations in the differentiation of TTP from RN in brain metastases treated with SRS.7, 8 The current gold standard for differentiating TRE from TTP remains histopathology, but there is the potential for patient morbidity due to its invasive nature.2 As a result, clinical decisions are often guided by imaging without histological confirmation.
+
+These challenges have prompted research into computational methods, such as Artificial Intelligence (AI) methodologies, as an alternative non‐invasive point of care method of distinguishing between TRE and TTP, expecting to overcome the limitations of conventional imaging interpretation. Firstly, the learning and generalization capabilities of AI models for objective assessment offer a means to address the issue of inter‐observer variability. Secondly, AI models can identify subtle imaging features not noticeable and appreciable with the human eye, improving the ability to provide a ‘virtual biopsy’ indicative of tumour histological characteristics.16 In isolation, or in combination with human radiologist assessment, there is an expectation that the use of AI models would result in an increase in accuracy.
+
+A simplified example of a typical ML pipeline is as follows: the image is (i) acquired through a standard clinical and/or dedicated research protocol; (ii) segmented, which can be conducted manually or semi‐automated/fully automated by algorithms performed on the whole brain; (iii) features are extracted, whether pre‐defined as in the case of radiomics, or without a pre‐definition in the case of deep learning (DL); (iv) features are selected as to remove redundant features and reduce computational power; (v) the ML algorithm is applied to a training data set, in which each data sample is linked to a desired clinical outcome (such as PSP); (vi) the trained ML model is applied to a previously unseen test data set for verification; (vii) a receiver operator (ROC) or precision recall curve is generated and the performance is measured, typically through the area under the curve (AUC) and the associated sensitivity and specificity scores.
+
+Given the potential advantages of ML models, the aim of this study was to perform a diagnostic test accuracy (DTA) systematic review examining the existing ML models for differentiating between TTP and TRE in brain tumours, examining gliomas and metastases separately. A diagnostic test accuracy (DTA) meta‐analysis is also performed.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+The methods followed were in line with the PRISMA‐DTA (Preferred Reporting Items for a Systematic Review and Meta‐analysis of Diagnostic Test Accuracy Studies) guidelines.
+
+### Search strategy
+
+The search was performed on 22 September 2020 in the following databases: PubMed, Scopus, Embase, Medline (Ovid) and ProQuest. The search was subsequently updated on 10 January 2021. The search strategy for PubMed is demonstrated below, with appropriate adaptations made as required in each database.
+
+(‘Machine learning’ OR ‘Neural network’ OR ‘Deep learning’ OR ‘Artificial intelligence’ OR ‘AI’ OR radiomic*) AND (glioma OR glioblastoma OR ‘brain tumor’ OR ‘brain tumor’ OR ‘brain neoplasm’ OR ‘brain cancer’) AND (pseudoprogression OR progression OR recurrence OR ‘radiation necrosis’).
+
+### Inclusion and exclusion criteria
+
+Studies were included if they met the following criteria: (i) Differentiated either glioma or metastasis TRE (RN and/or PsP) using computational imaging features, pre‐defined (such as radiomics) or DL‐derived; (ii) involved treatment with radiotherapy and/or chemotherapy; (iii) included adequate information that met the ML processing pipeline requirements, such as imaging acquisition parameters, segmentation method, features used, ML models and classification of results through follow‐up or histopathology; (iv) reported an AUC from a ROC curve or precision recall curve. The associated confidence interval or standard error was reported where available. If the ML processing pipeline characteristics were changed between experimentation, only the highest value was used. Only the test results (or validation) from ML models were used. Studies were excluded if they were non‐peer reviewed journal articles, reviews, studies focussing on paediatric patients, opinion articles and non‐English language articles.
+
+### Data extraction and analysis
+
+Data was extracted by the authors A.P.B and R.M, including the ML pipeline components and the main findings from the studies. The ML pipeline components extracted included the total number of patients in each group (whether TRE or TTP), imaging sequences used, segmentation method, features (as per PyRadiomics manual)17 and selection of ML models. The main findings included WHO grade, result (presented as an AUC, sensitivity and/or specificity) and diagnosis method. A meta‐analysis was performed in the STATAIC 12.0 software for groups that had sufficient data—the metandi package required a minimum of 4 studies with a reported sensitivity/specificity measure for the meta‐analysis. Pooled sensitivities and specificities were determined by back‐calculating and using hierarchical logistic regression.18 A hierarchical receiver operator curve (HSROC) was also generated for ML tasks that had more than four studies with appropriate data. A meta‐regression was performed in Meta‐DiSc19 on the meta‐analysed studies using a generalization of the Littenberg and Moses Linear model, which was weighted by the inverse of the variance.20 Co‐variates included non‐conventional imaging and deep learning use. A diagnostic odds ratio (dOR) and p‐value (where p &lt; 0.05 indicated an effect) were reported. STATAIC was also used to generate a Deeks' funnel plot used for assessing publication bias in diagnostic test accuracy studies; this included a p‐value.21
+
+### Quality assessment
+
+The quality assessment of the studies was conducted based on the PROBAST (Prediction model Risk Of Bias ASsessment Tool), which is used to assess diagnostic test risk of bias and applicability.22 The Checklist for Artificial Intelligence in Medical Imaging (CLAIM)23 was also administered, as this is a ML‐specific checklist that may report further ML methodological/reporting deficiencies. It is a recently published 42‐item checklist and is part of the EQUATOR (Enhancing the QUAlity and Transparency Of health Research) Network guidelines specifically designed to improve the quality of studies for clinical uptake. Assessors collectively evaluated one article first to resolve differences in interpretation. For each study, items were then scored and deficiencies in sections were noted for discussion.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

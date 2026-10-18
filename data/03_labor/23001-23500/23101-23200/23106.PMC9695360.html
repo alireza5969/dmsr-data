@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sánchez-Reolid, López de la Rosa, Sánchez-Reolid, López, Fernández-Caballero, Deserno, and Zhang: Machine Learning Techniques for Arousal Classification from Electrodermal Activity: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -5042,5 +5065,249 @@ Cho et al. [<a href="#B28-sensors-22-08886">28</a>]</td>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Arousal is a general physiological and psychological activation of an organism, varying on a continuum from deep sleep to intense excitation. Performing a systematic review of arousal-related papers is challenging, as arousal encompasses a wide terminology. The construct arousal is a term that corresponds to the level of cortical activation that is regulated by the ascending reticular activation system. Arousal varies from a level of over-activation, as in the case of intense emotions or alert states, to a best attentional level for intentional action, or to levels of under-activation, as in the case of relaxation or sleep states. For example, the term stress is closely related to arousal in many works. Hence, it is possible to use the terms distress (negative stress) and eustress (positive stress) [1]. Another number of important papers study the change in arousal for the detection and classification of emotions. Indeed, according to Russel’s model of emotions, arousal is one of the variables that writes down the state of excitement towards a situation or event that provokes an emotional change [2]. In addition, variations in arousal are at the heart of experimenting with task-oriented activities such as driving [3] or figuring out mental workload at work.
+
+There is a growing interest in developing methods for processing changes in arousal and using them in a variety of daily-living situations [4]. The most widely used technologies focus on the adoption of wearable devices. Such technologies usually work with the physiological conditions of the human body, using various variables to determine the activation state [5,6]. In fact, many researchers agree that variation in arousal correlates with increases in many physiological variables such as heart rate, electrodermal activity (EDA), breath intervals and skin temperature, among others [7,8]. Acquisition, processing and monitoring of physiological variables allow the creation of a map of the physical, mental and cognitive state of a subject [9,10]. Such a map is difficult to set up in many cases due to the origin of the physiological signals [11]. In any case, there are numerous physiological variables that are being used for arousal detection and its applications. We will focus on the analysis of EDA since it has been shown to be highly effective in the estimation of this excitement level.
+
+EDA is considered especially useful in assessment of the arousal level due to its connection with the sympathetic nervous system (SNS) through the sudomotor system [12]. Alterations in the state of activation are unequivocally reflected as variations in skin perspiration, which affects the conductivity (conductance) of the skin. The measurement of these changes is excellent for estimating the psycho-physical state. In this respect, many causal models are used to infer sympathetic activation (arousal) from EDA signals such as curve fitting, inverse filtering, general linear model for evoked skin conductance response (SCR), non-negative deconvolution, continuous deconvolution, dynamic causal model (DCM) for anticipated SCR and DCM for spontaneous fluctuations [13].
+
+We are not solely interested in EDA-based arousal detection in this systematic review, but the focus will be on the different machine learning (ML) methods used so far to classify excitement (arousal). Moreover, the review includes works using EDA alone or together with other physiological variables. Due to the substantial number of ML techniques and the proper nature of arousal, the present review is centred in classifying low versus high arousal (calm versus high excitement states), although considering both binary and multi-class methods. Moreover, given the diversity of the experiments found and the disparity in aims and design, our intention is to delve deeper into the possible connections among all the papers selected and to create a map of the most used techniques and their performance. In this sense, this review intends to create a conceptual map of the techniques used for EDA signal processing to help researchers find the best technique for processing such signals, allowing them to focus on fine tuning and optimisation of the different models. This map will contribute to the development of new processing and classification techniques.
+
+The remainder of the article is as follows. Section 2 provides a brief explanation about the methods followed to perform the review. Section 3 introduces a summary on the status of the topic addressed in the review. Section 4 describes the most relevant results and a discussion about the studies found. Finally, Section 5 offers the conclusions of this work.
+
+## 2. Review Protocol
+
+### 2.1. Search Strategy
+
+The reporting of this systematic review was guided by the standards of the Preferred Reporting Items for Systematic Review and Meta-Analysis (PRISMA) Statement [14]. A total of five scientific databases were selected for a wide search of ML and EDA in arousal detection. The selected databases were Scopus, IEEE Xplore, PubMed, ScienceDirect and ACM Digital Library. The selected papers were sought based on three distinct categories in the search criteria. The first focused on searching EDA-related terms like “skin conductance”, “electrodermal activity”, “galvanic skin response”. The second was centred on finding all the terms associated with arousal detection, such as “detection”, “identification” and “recognition” in conjunction with “stress”, “arousal”, “activation”, “agitation”, “excitement”, “emotion”, “mental workload”, “cognitive workload” and “pain” terms. Finally, the third term that completed the search chain aimed to look for classification methods in the field of Artificial Intelligence: “machine learning” and “deep learning”. The systematic review was conducted from the time records are kept in each of the databases until June 2022.
+
+The consultations were refined by successive searches to get as small a set of search terms as possible without losing the scope of the review. This allowed us to keep a manageable number of keywords without losing the perspective and focus of the systematic review. A series of inclusion and exclusion criteria were established to filter the desired information:
+
+Inclusion criteria
+
+– Publications implementing and evaluating the performance of ML-based methods and algorithms for low/high arousal level detection, identification and recognition using EDA as basis.
+
+– Articles written in English.
+
+Exclusion criteria
+
+– Literature with an unclear peer review process (grey literature): tutorials, toolkits, editorials, extended abstracts, PhD symposium papers, keynotes, research summaries and technical reports.
+
+– Systematic reviews (including meta-analyses) and survey documents.
+
+– Conference papers and book chapters.
+
+– Articles published after 30 June 2022.
+
+– Articles posted on a preprint database.
+
+Figure 1 details the scheme followed to obtain the final selection of the articles in the systematic review. The identification stage resulted in a total of 308 papers, of which 77 papers were obtained in Scopus, 32 in IEEE Xplore, 81 in ScienceDirect, 6 in PubMed and 112 in ACM Digital Library. The papers were selected and eliminated according to the inclusion and exclusion criteria mentioned above during the screening stage. A total of 105 duplicates were removed from the various databases. In addition, 88 articles were removed after reading their abstract as they were outside the scope of the review. The criterion was to select papers that used EDA signals alone or together with other signals and employing ML techniques. Finally, 40 articles from the remaining 107 articles were removed in the last stage (inclusion) after a thorough reading of the complete content. This way, 67 articles were left for study in this systematic review.
+
+### 2.2. Paper Classification Categories
+
+Two categories were proposed once all the articles had been examined. The first, shown in Table 1, classified the papers based on their scope of coverage in six groups: arousal, stress, emotion, physical pain, task-oriented and others. The group arousal focuses on those papers that deal with the detection, processing and usage of the EDA signals to determine the arousal level. Stress is centred on articles concerned with the detection and classification of some stress-inducing situations. The emotion group focuses on papers related to any aspect of detection and classification of emotional states. Another group of papers is related to physical pain detection. A fifth group (task-oriented) is dedicated to studies on changes in arousal when performing a single-task-oriented procedure such as driving a car. A sixth category refers to mental or cognitive workload. Lastly, the other classes stand for monitoring other human body states such as sleep and dehydration.
+
+The second categorisation is shown in Figure 2. The first resulting category, Biosignal, is grounded on the different bio-markers used for obtaining the arousal level. The specific bio-signals for the detection of arousal are presented. Dimensionality of the data source is also identified, i.e., whether a sole source or multiple indicators are used for detection. In addition, the type of data used for detection is provided, differentiating between raw data, processed data and two-dimensional matrix. The second category, Application, focuses on applications that employ diverse types of classifiers intended for a specific use. It centres on the goals to be achieved, focusing on the creation of applications for the detection, grouping, diagnosis and future prediction of arousal. Other basic classification principles are whether the application runs with a large or small number of participants and signals and whether the system is used offline or in real time. This category is not dealt with in depth in this article, as it falls beyond the scope of this paper. The last category, Learning Method, is focused on the use and relevance of different learning methods for the detection task. Most analysed works base their learning ability on supervised classification algorithms, while the use of unsupervised classifiers is minor.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 3. Methods on Arousal Detection
+
+The human body may be regarded as an electromechanical system composed of perceptual, affective and cognitive processes. Its dynamic changes allow one to take different measurements on various bio-signals. The temporal signals make it possible to establish the physical, psychological and cognitive state of the human being with adequate precision [88,89]. Most biological signals involve electrical activity and conductivity along with changes in flow, temperature, volume, pressure, sound and acceleration [60,90,91,92].
+
+There are many physiological variables which can be collected from the human body. The most common are the following. (a) The electrocardiogram (ECG) measures any change in heartbeat and pattern of beating [93,94]. (b) Electromyography (EMG) monitors changes in neuromuscular activity. (c) Blood volume pressure (BVP) measures changes in blood volume, which affects blood pressure by changing the cardiac output. (d) Electrooculography (EOG) allows monitoring of eye movements. (e) Pupillography or pupillometry (PUP) is based on the measurement of the pupil diameters under basal conditions and after applying different stimuli. (f) Electroencephalography (EEG) measures the variation of electrical signals produced in different areas of the brain. (g) Inter-breath (IBR) measures the rate of breathing. (h) Acceleration (ACC) monitors body movements. (i) Skin temperature (TMP) is used to quantify temperature variations. (j) Electrodermal activity (EDA) is used to check the arousal, this being an important variable for measuring the emotional state of a person. Table 2 describes the main properties of those bio-markers.
+
+### 3.1. Signal Acquisition and Processing
+
+Signal acquisition is one of the most important stages when using EDA (or any other bio-signal). Most authors referenced in this systematic review agree that a good acquisition process is crucial for the proper functioning of the later recognition system. Figure 3 shows the usual pathway for signal treatment. Here, the first stage is the acquisition of the raw signals by the EDA device. The next stage is pre-processing, which eliminates all the defects that have caused interference during the acquisition process. As part of this operation, artefacts are removed and the signal is filtered, making it softer and eliminating noise. The last stage is signal processing, where a series of features of the signal are obtained as a rule. ML models will later use these features.
+
+#### 3.1.1. Raw Signal Acquisition: Datasets and Experimental Design
+
+According to the outcomes of our systematic review, the authors always choose between two different procedures to acquire the raw signals. The first one is to create an experimental design as shown in Figure 4. A first step is to start the experiment; then begins the physiological baseline recording of the input data. Next, the person is subjected to a sensory stimulus, most commonly visual and auditory and the individual’s reactions are recorded. These stimuli trigger an autonomic response in the different systems [95,96]. The process is repeated as many times as necessary.
+
+An alternative procedure uses several datasets already validated by the scientific community. These datasets usually hold a number of other physiological signals registered in addition to the EDA signal for use in multi-class classifiers. The most common datasets for EDA analysis are MAHNOB [97], DEAP [98], BioVid [66] and UT Dallas Database [99].
+
+#### 3.1.2. Signal Pre-Processing: Normalisation, Artefact Removal and Noise Filtering
+
+Pre-processing cleans, adapts and prepares the signals for further processing. This process is also fundamental to many authors who agree that the effectiveness of a classification system starts at this stage. Usually, pre-processing includes three different steps: signal normalisation, detection and elimination of artefacts and filtering of noise.
+
+The first step aims at eliminating the subject-dependent baseline. This is done to reduce the amplitude of the variance [71,100,101,102]. Then, artefacts that interfere with the signal must be removed. A motion artefact (MAt) degrades signals very quickly and makes them unusable [23]. Artefacts are eliminated by deflecting the signal through various softening filters [103,104]. This procedure causes in most cases a loss of information in EDA signals. In addition, MAt detection consists of identifying each of the signal segments where the artefact removes it at later stages [22,23]. Noise reduction or elimination is strongly associated with the artefact detection and/or removal process. The most worrying noise in EDA signals is the high-frequency noise due to its slow evolution [92]. Therefore, the EDA signals are filtered to remove artefacts and noise recorded during the acquisition period. Two distinct types of filters are usually used; firstly, a low pass filter with a 4 Hz cut-off frequency and secondly, a Gaussian filter to attenuate the signals, artefacts and noise.
+
+#### 3.1.3. Signal Processing: EDA Deconvolution
+
+The measurement of EDA signals is usually conducted in two separate ways. The first manner is the exosomatic one, which is obtained from the variation of the resistance or conductance by injecting a small current into the skin. The second way, the endosomatic, is obtained from the measurement of the potential [105]. These measurements are composed of the convolution of two signals: a first signal that varies slowly, called the electrodermal level (EDL) and a second signal that varies rapidly, the electrodermal response (EDR). The EDL signal sets up the base level of the signal while the EDR is closely related to the activity of the sweat motor system, which is strongly associated with the sympathetic nervous system at the same time [106].
+
+Figure 5 sheds light on this division. In the endosomatic measurement lies the skin potential (SP), which, in turn, is divided into the skin potential response (SPR) as a phasic response and the skin potential level (SPL) as a baseline. On the other hand, exosomatic measurement is composed of two groups, AC and DC, depending on whether alternating or direct current is injected into the skin between the electrodes. For the EDR we have variables SCR, SRR, SYR or SZR related to conductance, resistance, admittance and impedance, while the variables SCL, SRL, SYL and SZL are used to evaluate the EDL.
+
+The deconvolution procedure consists of separating the EDR signal from the EDL. This process minimises external effects such as temperature and humidity on each participant’s baseline. It also mitigates the effects of gender, race, physical condition and age of the participant [107,108,109]. In this sense, it normalises the signal so that the EDR is used as a common indicator for all the participants who have undergone the same stimulus. A process of deconvolution/decomposition is needed to obtain the components needed both for endosomatic and exosomatic measurements. Figure 6 illustrates the deconvolution process of the skin conductance (SC). As can be seen in the figure, the SCR driver is used to detect the level of excitation of the individual.
+
+Mathematically, the sudomotor nerve function may be considered a driver with a train of impulses that evolve over time. This response is embedded in the SCR and SCL signals [110,111]. The outcome is presented by a convolution (“∗” symbol) of the driver with the impulse-response function (IRF), describing the impulse response flowing through time as shown in Equation (1).
+
+The SC signal is formed by the SCL and SCR signals, as displayed in Equation (2).
+
+Thus, the tonic signal driver is obtained by deconvolution (“/” symbol) of Equation (3) as:
+
+The process can be conducted in two manners. The first, the continuous decomposition analysis, decomposes SC data in continuous tonic and phasic activity. This approach, which is based on standard deconvolution, is fast and robust against artefacts. The second is discrete decomposition analysis, which separates the SC data in a tonic component and discrete phasic components with a no-negative deconvolution. This strategy captures and explores all deviations of the final response form and computes an in-depth full model of all parts within the entire dataset [92,111].
+
+Many authors agree that deconvolution produces a normalisation in the signal, allowing to compare between different captured signals and subjects [49,112].
+
+#### 3.1.4. Other EDA Processing Techniques
+
+Although most of the articles found in the reviewed literature refer to the deconvolution process, there are other techniques that are used for EDA signal processing. Here we will mention some of them.
+
+##### Complex Optimisation on EDA Signals (cvxEDA)
+
+A novel algorithm for the analysis of EDA signals uses convex optimisation methods. EDA is one of the most widely observed pathways of sympathetic nervous system activity and is expressed as a change in the electrical properties in skin conductance (SC) [17,113]. This model represents the SC as the composite of three terms: the phasic component, the tonic component and an additive white Gaussian noise that incorporates the model’s prediction errors as well as measurement errors and artefacts. The model is physiologically inspired and fully explains EDA using a rigorous method based on Bayesian statistics, convex mathematical optimisation and sparsity. One benefit of this method is its low computational cost and that it can be incorporated into a variety of wearable devices.
+
+##### Sparse Deconvolution Approach (sparsEDA)
+
+Staying with models that have a low computational cost, the sparse deconvolution-based method called sparsEDA should be mentioned. This fully automated method was proposed for tonic/phase decomposition of EDA data based on non-negative sparse deconvolution and multi-scale modelling of SCRs. This method aims to strike a balance between filtering noise and improving the relevant insights into the EDA signals [113,114]. This lightweight method can also be embedded in a wearable device.
+
+##### Spectral Analysis on EDA Signals
+
+Spectral analysis is another novel approach for signal processing, motivated in part by advances in the analysis of heart variability (HRV) [115]. This method evaluates the dynamics of the autonomic nervous system by calculating the power spectrum in two main bands, a low frequency band corresponding to the limits [0.08–0.24] Hz and a high frequency band corresponding to the limits [0.25–0.4] Hz. The peak of maximum activity would be around 0.34 Hz for a high arousal activation zone [113]. As this procedure is inspired by the spectral analysis of the HRV, the low frequency band is thought to be related to the activation of the sympathetic and parasympathetic systems, while the upper band is only due to the influence of the parasympathetic system.
+
+##### Cepstrum Analysis (CA)
+
+This is the discrete-time inverse Fourier transform of the logarithm of the magnitude (X) of the discrete-time Fourier transform (DTFT) of the signal. It is formulated as:
+
+##### Entropy Analysis (EA)
+
+This describes the randomness, uniformity and disorder of a given system. Many features of the entropy domain have been used to analyse EDA signals [118]. EA allows us to detect patterns in the signal by using Shannon entropy [119]:
+
+##### Identification of the Dynamics of the Autonomous System
+
+This approach consists of showing the dynamics of the autonomic system across different stimuli exposures [120]. For this purpose, several features are extracted from the EDA signals. A logistic regression (LOC) or receiver operating characteristic (ROC) process is then applied. These indices are concatenated for the different time windows of the signals that will later be processed by the LASSO regulation algorithm. Not all features survive this process, but the remaining ones supply much information about the condition of the participant. This allows for comparison in relation to the different situations or stimuli to which he/she has been exposed.
+
+##### Models to Extract Pulses from EDA Signals
+
+A systematic and robust approach to extract pulses from EDA data that preserve the statistical structure of physiologically derived data while excluding the noise has been developed [121]. This method exploits a total of seven parameters through four models (inverse Gaussian, log-normal, gamma and exponential) to figure out how to extract pulses. These pulses allow an assessment of the signal-to-noise profile of an entire data companion and the identification of individual subjects. From this emerges a line of analysis that is computationally accurate, statistically rigorous and physiologically based.
+
+##### Poral Valve Model
+
+This model favours the functioning of the activation of the autonomic system to produce a change of sweating in the skin. So, it models very efficiently the functioning of the different pores of the skin and its sweat activation, adopting a physiological approach to determine the different stages of activation or arousal produced [122].
+
+#### 3.1.5. Feature Extraction
+
+Feature extraction is usually performed using specially designed frameworks and methods. The most used frameworks are Ledalab [92] and cvxEDA [17] and the SparseEDA [112,114] method. Five main groups of features are distinguished: time domain features which refer to all the variables defined in terms of time; frequency domain features which refer to all the parameters defined in or based on frequency; statistical features defined as variables that belong to the statistical field; morphological features that quantify the shape of the signal; time-frequency features that characterise the signal in time and frequency domains simultaneously. Table 3 shows several features that usually characterise the different segments of SP, SC, as well as their tonic and phasic components (SPL, SPR, SCL and SCR). It should be noted that these features are used to characterise the signals more accurately. It is a good practice to use the best features that are most suited in relation to their contrasting performance.
+
+The following features are commonly used in the time domain: mean amplitude (Mean); amplitude standard deviation (SD), the SD first and second derivative (D1, D2), the SD means (D1M, D2M) and their standard deviations (D1SD and D2SD) [26]; sum rise time (SRT), sum fall time (SFT), rise rate mean (RM), rise rate standard deviation (RRSTD); decay rate mean (DCRM), decay rate standard deviation (DCRSD); phasic value mean (PHVM), phasic value standard deviation (PHVSD); startle time mean (STM), startle time standard deviation (STSD), startle RMS mean (STRMS), startle RMS standard deviation (STRMSSD); startle RMS overall (STRMSOV); electrodermal level (EDL), electrodermal response (EDR); cumulative maximum (CMax), cumulative minimum (CMin); smallest window elements (SWE); dynamic range (DR); root-mean square level (RMS), peak-magnitude-to-RMS ratio (PMRMSR); root-sum-of-squares level (RSSL); peak (P), peak location (PLoc), peak to peak time (PPT), analysis of peaks with a time difference of more than 50 ms (pNN50) [25,29,46,47,65,69].
+
+Distinctive features are available following the morphology of the signals: epoch-capacity (EC) is a relation between the number of epochs and the total number of them; epoch-peak (EP); epoch peak counter (EPC) is a number of epochs in all times; entropy (EN) [80]. On the other hand, there are features that result from different measurements such as arc length (AL), integral area (IN), normalised mean power (AP), root mean square (RMS), perimeter to area ratio (IL) and energy to perimeter ratio (EL) [26]. These parameters are due to the need to understand the morphological differences in the shape of the SCRDriver. As far as statistical parameters are concerned, let us highlight mean value (M), variance (Var), median value (MedVal), p-value (p-Val), Akaike information criterion (AKAIKE), Log-likelihood (LOG-LIKE), covariance matrix (COVMAT), transition probabilities lag (TPL), number of observations (NO), switching betas (beta-Numb), number of estimated parameters (STP), standard error coefficient (SCE), smoothed probabilities of regimes (SPR), conditional standard deviation (CSTD), four central moment (FCM), five central moments (FVCM), kurtosis (KU), skewness (SKU) and momentum (MO) [59,69].
+
+The following parameters are usually found in the frequency domain: sum spectral components (SSP), spectral power (SP), mean and spectral components (MSSP and SSPMed, respectively), frequency non-specific of skin conductance response (NSSCRs) and fast Fourier transform (FFT) for bandwidths F1 (0.1, 0.2), F2 (0.2, 0.3) and F3 (0.3, 0.4) [26,59,69,123,124,125]. Frequency bands with ranges [0.02–0.25 Hz], [0.25–0.40 Hz] and [0.40–1 Hz] have also been used as a measure of power spectral density (PSD) [113,126].
+
+Finally, for time-frequency features, STFT is a basic principle for characterising the signal simultaneously in both domains. It is an application of the conventional fast Fourier transform applied to successive data segments using a short-time window. The time-frequency flux measure (TFFlux), the time-frequency flatness measure (TFFlatness), the time-frequency energy measure (TFEnergy) and the mean of time-varying spectral amplitudes in frequency bands (TVSymp) [127] use this approach. Mel-frequency cepstral coefficients (MFCCs) were included to quantify the EDA signals. Lastly, Shannon entropy (EShannon) and its logarithmic representation (ELog) [49,128] have been found for entropy measures.
+
+### 3.2. Machine Learning for Arousal Classification
+
+As a rule, signal-based experiments yield a large number of extracted features to classify. ML techniques are used more than purely statistical ones to classify such enormous amount of data. Therefore, a comprehension of existing ML models, their main characteristics and methods of evaluation and their most relevant results is essential.
+
+#### Evaluation Metrics
+
+According to the literature studied, stress detection, physical pain detection, dehydration sensing and sleep monitoring are limited to a binary classification problem, while multi-class classifiers have been used for emotion detection and task-oriented applications. The different metrics that have been employed to measure performance are the following:
+
+Accuracy (ACR): degree of closeness to true value. In terms of TP (true positives), TN (true negatives), FP (false positives) and FN (false negatives):
+
+Precision (P): ratio of successful positive predictions.
+
+Recall (R) or Sensitivity (Se): fraction of relevant instances retrieved.
+
+Specificity (Sp) or true negative rate (TNR): proportion of negatives that are correctly identified.
+
+False positive rate (FPR): proportion of negative cases incorrectly identified as positive cases in the data.
+
+F1-score or F-measure: harmonic mean between precision and recall.
+
+Area under the curve (AUC) and receiver operating characteristics (ROC) curve: performance measurements for classification problems at various threshold settings.
+
+Precision-recall (PR) curve: this summarises the trade-off between the TPR and the positive predictive value for a predictive model using different probability thresholds.
+
+Confusion matrix (CM): a specific table disposition that allows one to visualise the performance of an algorithm.
+
+Cohen’s kappa-coefficient (κ): this is a measure of how closely the instances classified by the ML classifier match the data labelled as ground truth.
+
+Youden’s index (J): this is used to measure the sensitivity of each classifier.
+
+### 3.3. Classification Methods
+
+Different classification methods have been found in the papers analysed in this systematic review. These methods can be grouped in relation to distinct categories. In the first place, there is direct classification vs. hierarchical classification. Furthermore, there is long-term vs. short-term when considering the duration of the classification. Finally, we can distinguish between supervised and unsupervised learning methods. Another aspect that must be considered is that ML models have some limitations due to the substantial number of parameters managed. Consequently, it is necessary to know how to implement methods that help us to reduce the number of redundant or irrelevant parameters. Therefore, dimensionality reduction techniques are becoming significant in the areas of ML, data mining and bioinformatics.
+
+The feature reduction methods detailed next are usual to signal processing. Principal component analysis (PCA) is a standard statistical data analysis which tries to explain observable signals as a linear mixture of the orthogonal principal component that optimises the variance between the different components. Linear discriminant analysis (LDA) is typically used to reduce the dimensionality by maximising the space between the different classes. Finally, independent component analysis (ICA) is an analysis and data processing strategy that recovers unobservable signals or sources of monitored mixtures only under the assumption of mutual independence. These feature reduction techniques allow the leverage the computational cost since the resulting classifier is simpler and only attends to the key features of the signal. Many of the papers studied in this overview use such techniques and the results are really good compared to others that do not use them. Below, there is an explanation of the different methods used.
+
+#### 3.3.1. Direct vs. Hierarchical Classification
+
+We found direct and hierarchical classification methods in many articles analysed in this review. A direct classification consists in classifying the arousal of the person in a direct way considering one or more physiological variables. On the other hand, there are two distinct stages when a hierarchical classification is proposed. The arousal is established in a first stage and a more complex emotional state can be classified in a second stage [59].
+
+#### 3.3.2. Long-Term vs. Short-Term Affective State Classification
+
+Whether a classification of the emotional state should consider the duration of the experiment as well as the evolution of the signals over time are other aspects to be considered. The first issue to highlight is the need for a classifier that works quickly and is consistently robust over a long period. In this sense, a classification could be defined as short-term or long-term. The former is aimed at instantaneously finding results, while the latter is oriented towards long-term applications. A long-term classification is usually recommended in the context of stress detection [26].
+
+### 3.4. Supervised vs. Unsupervised Learning
+
+Within the different learning methodologies, there are (apart from reinforcement learning and stochastic learning) two other main groups, namely supervised and unsupervised learning [129].
+
+#### 3.4.1. Supervised Learning Methods
+
+Supervised learning techniques are based on training a classifier from a dataset that is already labelled. Once the system has learned to identify the different patterns, the classifier is able to effectively distinguish between the different classes. In our case, it must distinguish between low and high arousal, calm and stress and so on. There is a wide range of classifiers with supervised learning found in the papers selected:
+
+Support vector machines (SVMs) [130,131]. From the point of view of arousal detection from EDA, this is one of the most used algorithms, more concretely using linear [29,30,43,65], quadratic [29,46,71], polynomial [29,30,46], Gaussian [29,30] and radial [15,18,22,23,25,30,31,42,43,44,45,47,48,49,52,53,54,55,58,61,69,71,73,74,75,79,132,133] kernels.
+
+Auto-hidden Markov models (AHMMs) [57,59]. Different approaches have been used to find the status of each person from the EDA signals using AHMM [57,59].
+
+Discriminant analysis (DA). There are many classifiers based on DA, with the most common for the detection of arousal in EDA being: linear discriminant analysis (LDA) [25,70]; quadratic discriminant analysis (QDA) [27,30,49,52,81] and Gaussian discriminant analysis (GDA) [29].
+
+Decision trees (DTs) [134]. Within this type of classifier, the most used for arousal detection are tree medium, regression tree [27,42,45,61,80,81] and other ensemble methods like random forest and bagged tree [46,80].
+
+Naive Bayes. In this study, it has been found that the most used naive Bayes methods are naive–Bayes–Gaussian [42,44,52,61,80] and naive–Bayes–Gaussian with PCA [61,80].
+
+Logistic regression (LR). According to the references found, different papers have been published where this method is used as logistic regression [23,27,48,79] and a variant called zero-regression [48].
+
+A K-nearest neighbours (KNN) [135]. Within the different configurations that have been found are KNN-Fuzzy [46], KNN-Fine [46], KNN-Cubic [46,70], KNN- Medium [25,27,42,44,45,47,54,57,69,79] and KNN-Weighted [23].
+
+Artificial neural networks (ANNs). It should be noted that there are many topologies that have been used for the processing of the obtained features, such as feed-forward NN [69], multi-layer perceptron with back-propagation (MLP) [23,27,43,61,67,75,81], Bayesian probabilistic NN (BPNN) [44], probabilistic NN [61], one-dimensional convolutional NN (1D-CNN) [69,70] and, finally, convolutional NN (CNN) [15,44,49,53,71,73].
+
+Long short-term memory (LSTM) and recurrent neural networks (RNNs) [136,137]. In this systematic review, LSTM [34], ensemble-based methods like CNN + LSTM [34] and adaptive neurofuzzy inference system (ANFIS-based short-term) [25] have been used.
+
+#### 3.4.2. Unsupervised Learning Methods
+
+The second group of learning methods addressed is unsupervised learning [138]. This type of methods is based on learning by using an unlabelled dataset. The model obtained is automatically adapted to the observations. The model is created with clustering methods. According to the literature found in the systematic review the following unsupervised methods have been used:
+
+K-means is a clustering method, aimed at splitting an unlabelled dataset of n observations into k groups in which every single observation belongs to the group whose mean value is the closest [47].
+
+K-medoids is a grouping approach for the partitioning of a dataset into k groups or k-clusters, each group being represented by one of the group data points called cluster medoids [47].
+
+A self-organising map (SOM) is a type of ANN that is formed by the use of unsupervised learning to generate a low-dimensional map, typically two-dimensional [139]. In the selected literature we have found the use of SOMs for the detection of arousal [47,52].</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

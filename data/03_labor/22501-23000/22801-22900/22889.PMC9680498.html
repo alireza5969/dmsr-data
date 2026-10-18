@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Khan, Adam, Huang, Maldjian, Duong, Gastounioti, and Bennett: Deep Learning Prediction of Pathologic Complete Response in Breast Cancer Using MRI and Other Clinical Data: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -909,5 +932,55 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Neoadjuvant chemotherapy (NAC) [1] is commonly prescribed to reduce tumor burden prior to breast cancer surgical management, in order to improve surgical outcomes and potentially allow breast conservation in otherwise unresectable tumors or tumors requiring mastectomy [2]. Pathological complete response (pCR), defined as the absence of any residual invasive disease, is often used to assess NAC response via pathological analysis of biopsied or dissected tissue at the end of the NAC treatment course [3]. Patients with pCR are more likely to be candidates for breast-conserving surgery and are also likely to have longer progression-free survival and overall survival [3]. Thus, the ability to longitudinally monitor individual response to NAC and to determine patient’s likelihood to respond to NAC early in the treatment course is clinically important because it could help to minimize unnecessary toxic NAC and modify regimens mid-treatment to achieve better efficacy. A major challenge to date is the lack of reliable methods to assess efficacy early in the NAC course. Radiological prediction of pCR is a desirable alternative to pathology because it is non-invasive, and able to assess the entire breast at once without being limited to the biopsied area.
+
+Contrast-enhanced MRI (CE-MRI), in which images are acquired serially following a bolus injection of a contrast agent, provides important dynamic vascular and physiological information about the tumor that could be useful for predicting response to NAC [4]. Radiographic complete response based on CE-MRI has been shown to have high sensitivity and specificity to predicting pCR [5]. Response to therapy has proven to be a strong predictor of outcome, with patients who achieve pCR demonstrating improved survival compared with non-pCR patients While DCE is frequently used for this analysis, other pulse sequences such as T2 weighted images, and diffusion-weighted images can also be used to predict pCR.
+
+Machine learning (ML) is increasingly being used in radiology and medicine [6,7,8]. In contrast to conventional analysis methods which need to specify the relationships amongst data elements to outcomes, ML employs computer algorithms to identify relationships amongst different data elements to inform outcomes without the need to specify such relationships a priori. ML can outperform human experts in performing many tasks in medicine [9]. In addition to approximating physician skills, ML can also detect novel relationships not readily apparent to human perception, especially in large complex datasets. There are multiple types of learning methods (supervised, self-supervised, and unsupervised), each having its own advantages and disadvantages. Supervised learning learns from labeled data to perform tasks such as prediction and classification of data. A comparatively small data set is needed but the disadvantage is that labeled datasets for a specific task needs to be provided. Self-supervised learning exploits unlabeled data to yield labels. This eliminates the need for manually labeling data, which is a tedious process, but larger datasets are needed. Supervisory signals provide feedback to train the network, without requiring a labeled dataset. Unsupervised learning needs no corresponding classification or label, and the algorithm finds underlying patterns with each dataset. The disadvantage is that is it requires large datasets. One of the most popular unsupervised learning, deep learning (DL) methods [10] used on images is the Convolutional Neural Networks (CNN) [11]. CNN is well suited for image recognition and tasks that involve the processing of pixel data. CNN is particularly suitable for computer vision tasks and for applications where object recognition such as facial recognition and radiological images. CNN methods do not require radiologists to contour the tumor on images.
+
+In addition to imaging data, inclusion of other clinical data (such as demographic, race and ethnicity, molecular subtypes, and laboratory tests) could improve pCR prediction [12]. Molecular subtypes could significantly affect pCR. For example, HER2-positive (elaborating excess human epidermal growth factor receptor-2 protein) and triple-negative tumors achieved significantly higher rates of pCR compared to luminal A subtype tumors, which can aid physicians in creating treatment plans [12]. Hormone receptor positive (HR+) (breast cancer cells with estrogen and/or progesterone receptors) and HER2-positive cancers have receptors that can be targeted, allowing for directed therapy which can significantly improve prognosis. Inclusion of specific molecular subtypes could enhance the ability to predict pCR. Epigenetic factors should also be considered, as molecular status can change as treatment progresses, and MRI can prove to be valuable in monitoring changes over multiple timepoints. Young age has a negative prognosis and puts this cohort at increased risk of dying. The application of deep learning, with its ability to manage large and multiple complex datasets (including imaging and non-imaging data), holds promise of being able to accurately predict pCR to guide breast cancer management.
+
+There are many review papers on using ML analysis of MRI data to predict pCR in breast cancer (see reviews [13,14]) but most were of supervised ML, such as support vector machine, random forest, decision tree, extreme gradient boosting, Boosted tree, Bayesian methods, among others (see reviews [13,14]). Supervised ML methods use extracted image features (i.e., tumor volume, diameter, radiomic features), that usually require expert radiologists to contour the tumors and/or identify features to train the ML algorithms. By contrast, reviews that focus on DL methods (such as CNN) in which whole breast MRI images are used without manual contouring or annotation of the tumor to predict pCR is limited [13,14,15].
+
+We thus took on a review that focuses on DL which allows whole-breast MRI images without annotation or tumor segmentation (i.e., feature agnostic DL approach) to predict pCR in breast cancer. Our review differed from prior related reviews in that we compared image types used (i.e., DCE or post contrast), whether pre-training, transfer learning or data augmentation was used, whether CNN models include molecular subtypes, multiple treatment time points, multi-institutional data, as well as whether saliency maps (heatmaps) were provided. We also compared performance metrics across different DL studies that predict pCR.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+No ethics committee approval was required for this systematic review. With the use of Pubmed and Google Scholar, a search of literature was carried out to identify journal articles that presented deep learning techniques in breast MRI to show pCR. To narrow down the search, key words were utilized to accumulate eligible articles. The search terms used were a combination of: “breast MRI”, “deep learning” and “pCR (pathological complete response)”.
+
+The search of journal articles was narrowed down to original journal articles from 2015 to 1 November 2022. Only articles written in English and including an abstract were selected. The initial screening for eligibility was done by an independent researcher. Initially, articles that included deep learning and breast MRI were included. For this review, the topic was limited to deep learning with MRI and its applications to prediction of pCR post NAC. Segmentation of tumors, while possible with deep learning and found in our search, was not included in this review. We included papers that used ROI notation to assist prior to applying CNN. The PRISMA flowchart is shown in Figure 1.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

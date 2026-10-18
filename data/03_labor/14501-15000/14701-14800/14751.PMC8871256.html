@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Siouras, Moustakidis, Giannakidis, Chalatsis, Liampas, Vlychou, Hantes, Tasoulis, Tsaopoulos, and Antani: Knee Injury Detection Using Deep Learning on MRI Studies: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1275,5 +1298,87 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+### 1.1. Backdrop
+
+Knee injuries account for the largest percentage of sport-related, severe injuries (i.e., injuries that cause more than 21 days of missed sport participation) [1,2,3,4]. Anterior cruciate ligament (ACL) ruptures represent more than 50% of the cases, affecting 200,000 individuals in the United States each year [1,5,6,7]. Knee cartilage lesions affect around 900,000 individuals in the United States every year, resulting in over 200,000 surgical procedures [5,6,7,8]. Menisci injuries are the second most common knee impairment, with an incidence of 12–14% [9] and a prevalence of 60–70 cases per 100,000 in the United Kingdom [2]. ACL injuries alone account for an expenditure of more than $7 billion in the United States [10]. Both short- and long-term pain, disability, and negatively affected, health-related quality of life have all been strongly associated with knee injuries [11,12,13]. In regard to young and athletic individuals, the more time they spend engaging in occupational and/or recreational activities, the higher predisposition to knee injuries they have, which, in turn, contributes to a higher likelihood of developing osteoarthritis (OA) [14]. On average, half of the individuals, that have an injury that involved ACL and/or meniscal tear develop radiographically confirmed knee OA ten to 20 years post-injury [15,16]. Another two possible consequences of knee injuries are: (i) structural muscle injuries of the lower limb [17]; and (ii) tendinopathies [18]. All the above reflect the direct and indirect (lost wages, productivity, and disability) socio-economic burden conferred on the society by knee injuries. The high prevalence of knee injuries in the general population, and the resulting socio-economic impact, have created a necessity for developing accurate and cost-effective procedures that can detect and quantify the severity of knee injuries. Early diagnosis and, consequently, treatment of ligament rupture, menisci tear, and/or cartilage lesion can prevent early onset of knee OA [1].
+
+Arthroscopy is considered the “gold-standard” for the diagnosis of intra-articular knee pathologies, but is limited by potential complications and its invasive nature [19]. Therefore, magnetic resonance imaging (MRI) is the most widely used, non-invasive imaging technique for diagnosing knee injuries [20,21]. However, the MRI-based diagnosis of knee injuries can be a very challenging procedure, with the experience of clinicians playing a critical role in image interpretation. Human-based image interpretation pitfalls, such as subjectivity, distraction, and fatigue, as well as diagnostic uncertainties, often lead to erratic diagnoses, hindering the optimal management of knee injuries [22,23]. Moreover, clinical-diagnostic discrepancies among non-musculoskeletal radiologists and orthopedic surgeons are commonly encountered in everyday clinical practice [11].
+
+Due to the above-listed factors, as well as the exponentially increasing number of clinical examinations, the idea of using computers for improving the challenging task of image interpretation of medical examinations has been recently adopted by the scientific community [24]. Imaging data proliferation, algorithmic advances, and recent technological advances in fast computing have already resulted in a strong push towards the utilization of artificial intelligence (AI) algorithms in medical image analysis. The term AI broadly refers to any method that enables computers to mimic human intelligence [25]. Deep learning (DL) in particular is a class of machine-learning (ML) algorithms that is currently driving the AI boom [26]. Numerous applications of DL in medical image analysis have been reported, including skin cancer classification, diabetic retinopathy detection, lung nodule detection, and mammography cancer detection, among others [27]. The aforementioned AI-empowered solutions are expected to revolutionize medical sectors by improving the accuracy and productivity of different diagnostic and therapeutic measures in clinical practice [20].
+
+Drawing attention to the diagnosis of knee injuries, several early DL studies have exhibited better performance than traditional ML techniques, while in some cases they have proved to be even superior to radiologists [26]. However, the previously published review studies in the MRI field were either focused on other application domains (e.g., fracture detection [28]) or limited to the performance of the proposed networks without paying attention to their specifics (learning methodology, processing stages, technical limitations etc.) [29]. In the light of the advancements of AI technology and the increasing number of studies in this field, in this paper, we conducted a systematic literature review, covering all DL-oriented techniques that have been employed in the diagnostic process of knee injuries. The aim of this systematic review is to identify all recent studies that investigate the use of DL technology in the MRI-based diagnosis of the injured knee. It was decided that the primary focus would be on studies that examine at least one of the following pathologies: (i) injuries of knee ligaments; (ii) meniscus tears; and (iii) cartilage lesion.
+
+### 1.2. Machine Learning in a Nutshell: Definitions and Terminology
+
+To enhance the understanding of the readers and for the sake of completeness, this section quickly presents the relevant terminology and definitions with respect to ML and DL algorithms used in the studies involved in the present review. ML is a branch of AI that focuses on the development of algorithms that automatically learn to make accurate predictions by relying on experience (data) rather than on hard-coded instructions.
+
+Supervised ML systems (Figure 1) operate in two phases: the learning phase (training) and the testing one. In a traditional ML pipeline, a feature extraction/selection stage (also referred to as feature engineering) is first implemented to extract or identify the most informative features [16]. These features can be extracted from the input images, employing various algorithms including grey-level co-occurrence matrix (GLCM), first- and second-order statistics, and shape/edge features, among others [30]. Next, a ML model is fit to the extracted features and the optimal model parameters are obtained. During the testing phase, the trained model is shown previously unseen samples (represented as images or features extracted from images), which are then classified. As opposed to traditional programming, where the rules are manually crafted by a programmer, a supervised ML algorithm automatically formulates rules from the data.
+
+DL [31] is a subfield of ML that sets an alternative architectural paradigm by shifting the process of extracting features from images to the underlying learning mechanism. The most informative features for the task at hand are extracted by the algorithm itself. The mainstream DL architecture for computer vision applications is the convolutional neural network (CNN). A CNN typically consists of multiple building blocks (layers such as convolutional, pooling, and fully connected) that automatically extract increasingly abstract spatial hierarchies of features. The CNN training is carried out via a backpropagation algorithm. The huge popularity of CNNs is attributed to certain characteristics they possess, such as weight sharing and spatial invariance.
+
+Transfer learning is a common strategy where a network, that was pre-trained on a big dataset, is partly re-used to provide decisions on a problem with a different dataset. The main idea behind transfer learning is that generic features learned on a large dataset could be useful and applicable to other domain tasks with a potentially limited amount of accessible data. Numerous pre-trained networks are currently available, such as DenseNet [32], AlexNet [33], and VGG [34]. When employing DL with transfer learning for feature extraction, the pre-trained network is treated as an arbitrary feature extractor: the input image propagates through multiple layers until it reaches a pre-specified layer, the outputs of which are considered as the finally extracted features. Table 1 provides a brief presentation of the main ML and DL algorithms that were reported in the papers of this review.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+### 2.1. Reporting
+
+The present (systematic) review was performed in accordance with the preferred reporting items for systematic reviews and meta-analyses (PRISMA) guidelines [46]. Each step of the review process (literature search, study selection, and data extraction) was independently performed by 2 authors (A.S., S.M.). Discrepancies were resolved by a 3rd author (D.T.). The present study was not registered in a database prior to its conduction.
+
+### 2.2. Literature Search
+
+A structured literature search was conducted in the following databases: (a) MEDLINE (through PubMed), (b) CENTRAL (through Cochrane Library), and (c) EMBASE (through Elsevier). Articles cited by the retrieved papers, as well as articles citing the retrieved papers (using Google Scholar), were also identified through a supplementary manual search. Grey literature was examined based on conference abstracts, English abstracts (from articles not published in English), and the OpenGrey database. The potential eligibility of the articles was initially decided based on their title and abstract. Full texts were investigated to verify whether the initial qualifiers fulfill the inclusion criteria. The structured search strategy per database is quoted in Table S1.
+
+### 2.3. Eligibility Criteria
+
+The inclusion criteria were as follows: (i) papers were published between the 1st of January 2013 (the dawn of the DL era) and the 15th of November 2021 (date of final literature search); (ii) MRI images were used for the evaluation of knee injuries; (iii) knee-injury detection was conducted via AI-based algorithms, including both traditional ML and DL techniques; and (iv) the performance of the AI-based algorithms was compared to clinical, human-based evaluations.
+
+Papers were excluded according to the following criteria: (i) articles published before 2013; (ii) papers investigating OA or other bone pathology not directly linked with knee injuries; (iii) studies performed in animals; (iv) non-original research articles, such as protocols, reviews, meta-analysis, etc.; (v) articles not written in English (however, English abstracts were assessed as part of the grey literature); and (vi) book chapters, editorials and commentaries.
+
+### 2.4. Data Extraction
+
+Extracted data were placed into a custom Microsoft Excel spreadsheet using a standardized table. The following information was included for each of the articles: first author, publication year, database, description of data and models, and learning algorithm, including pre-processing, size of training and test samples, validation method, and obtained results.
+
+### 2.5. Statistical Analysis
+
+Multiple evaluation criteria were employed to assess the predictive capacity of the proposed learning algorithms. The most common evaluation metric considered in this review study was accuracy, along with the receiver operator characteristic curves (ROCs) that visualize the performance of a classification model at various likelihood ratio thresholds. These curves plot two factors: true positive rate (sensitivity = TP/(TP + FN)) versus the false positive rate (specificity = FP/(FP + TN)), where TP, FN, FP, and TN denote true positives, false negatives, false positives, and true negatives, respectively. The quantitative output of this curve is the AUC, which could be interpreted as an aggregated measure of performance across all possible classification thresholds.
+
+### 2.6. Quality Assessment
+
+Quality assessment was performed using a modified methodologic index for nonrandomized studies (MINORS) [47]. A seven-item checklist was considered, including information with respect to the following items: disclosure, study aim, input feature, ground truth label determination, dataset distribution, performance metric, and explanation of the applied AI models. Data were extracted and recorded using standardized forms (Microsoft Excel spreadsheet). To resolve conflicts over article selection, quality assessment, and data extraction, both observers (A.S., S.M.) convened a consensus meeting. The items were scored with 0 (not reported), 1 (reported but inadequate), or 2 (reported and adequate). The average modified MINORS score among all studies was 9.82 ± 1.99. It should be mentioned that the range of the score per item was between 0 and 44.
+
+As shown in Figure 2, all the reported studies (22) clearly stated the study aim, input features, and the performance achieved using appropriate metrics. A clear distribution and description of the dataset were reported in twenty studies (90.09%). Fifteen studies (68.18%) clearly described how they established the ground truth (AI’s reference standards), whereas the others were subjected to AI models that were inadequately trained. The most prevalent causes of quality point loss were failures to describe ground truth assignment. Last, but not least, more than half of the studies (54.54%) failed to disclose a conflict of interest declaration.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

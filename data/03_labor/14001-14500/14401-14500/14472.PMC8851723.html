@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Manktelow, Iftikhar, Bucholc, McCann, and O’Kane: Clinical and operational insights from data-driven care pathway mapping: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2332,5 +2355,167 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Background
+
+### Overview
+
+In very many healthcare systems around the world, patient care guidance in medical practice is implemented through clinical care pathways [1]. Defined as “complex interventions for the mutual decision making and organisation of care processes for a well-defined group of patients during a well-defined period” [2], the benefits espoused for their application include better patient outcomes and cost savings arising from operational efficiencies [3]. Similar positive outcomes are also proposed for the deployment of electronic health records [4]; together these advances comprise a useful framework for the implementation of evidence-based medicine (EBM). However, there exists a tension between the imperative to best deliver patient-centred care and the necessity for guidance to be clear, memorable, and easily interpretable by clinicians under pressure. Time spent interacting with the electronic record and referencing guidance is necessarily time not spent meaningfully interacting with the patient, but if a care pathway does not take account of a patient’s clinical history and circumstances it will not support personalisation of care. Guidance providers such as UK National Institute for Clinical Excellence (NICE) attempt to strike a balance, using health economic assessments based on the available data to classify for which patients a treatment is appropriate. The quality of this effort however can only be as good as the evidence base, and in the absence of specific studies on the applicability of treatment to particular patient groups, assumptions of statistical homogeneity in clinical trials mean that, to quote de Leon: “the current status of RCTs is that they can tell us which treatments are effective but not necessarily which patient should receive them” [5]. Particularly in patients with multimorbidity the risks and benefits of treatments may differ [6, 7], and the pressure to practice “defensive medicine” in an increasingly litigious environment [8] and a lack of resources to undertake labour-intensive rationalisation of treatment plans [9] compound this problem. The case has also been made that currently defined clinical care pathways may need to be substantially restructured, to take advantage of new diagnostic technologies [10].
+
+Responses to these challenges must take into account that a clinical care pathway as defined in [2] above is the “should-be” or formal pathway, a somewhat idealised construct intended to appropriately guide the patient care journey to achieve consistent best practice and optimal patient flow. Variations might arise from this defined pathway appropriately due to clinical acumen or patient complexity, or otherwise through unforeseen circumstances, organisational care boundaries, or deviations from guidance. In practice, the sequence of care processes experienced by a cohort of patients comprises a set of “de facto” pathways [11], corresponding in varying degree to the formally defined care pathway. Latterly, there has been increasing interest in applying algorithmic methods to accumulated electronic patient care data to determine these “de facto” care pathways.
+
+### Patient care process discovery
+
+Patient care processes are generally considered particularly challenging to describe and model in a realistic and comprehensive fashion. Methodologies for analysing and describing processes have often been derived from manufacturing or service industries; where the analysis proceeds from routinely collected data, the procedure used is often referred to as “process mining”. In such contexts, both the environment and the sequence of unit operations performed in the process are highly structured. Clinical care is likewise delivered in a highly structured environment, but also one that is highly dynamic and extremely complex [12]. The sequence of unit operations performed is often only partially defined, with certain sets of activities following absolute sequencing requirements (for example, anaesthesia must precede surgery), but which may be scheduled on an ad hoc basis according to the intervention of a clinician. Other activities such as general nursing care or routine observations may take place on a schedule unrelated to other activities. The inherent diversity of patients and hence care processes adds a further level of complexity to the picture; which may finally be compounded by variability in the quality of the available data, in terms of its granularity, accuracy, and completeness.
+
+In response to the challenge of interpreting this complex and often incomplete data pool, a broadly similar general procedure is followed. A particular data source is identified, which records some aspect of activities relating to clinical care. Depending on the environment and particular healthcare process being examined, the data may require substantial processing before it is suitable for use, unless it was collected solely for research or audit purposes: generally, data quality and completeness is a key issue. The types of data that are available for use depend very strongly on the context being explored, but may include include whole or filtered electronic health records, used primarily for clinical care; registries capturing care pathway information along with clinical data; or administrative data recorded from Hospital Information Systems, such as Patient Administration Systems or systems used to generate insurance billing reports. Only structured data can be directly interpreted; Wang et al. [13] review the active research topic of clinical information extraction, where Natural Language Processing (NLP) facilitates the automatic extraction of concepts, entities, events, and their associations from the unstructured free text commonplace in electronic health records.
+
+Temporal data may be present (for example, timestamps), or it may be implicit (for example, the sequence of recorded activities). The data may be filtered for relevance, sometimes drastically, or simplified, for example by aggregating synonyms or abstracting patterns.
+
+The system is then described from the data, generally in the form of an algorithmically derived “process model”, often represented as a network or connected graph of states and likelihood of transition between states. With the states representing care activities, this process model can be considered as a representation of a particular perspective on the aggregated de facto care pathways experienced by the patients in the dataset. The care pathways thus derived need not be linear in nature; iterative or cyclical pathways are common in many clinical domains. The process model often does not describe the entire data set, but only those possible paths through the states with sufficient “support” from the data. Often, some degree of clustering of the data is performed so that similar paths are merged in a consensus path with support from the variations. How tightly defined a process is and the quality of the data collected on it determines the extent of filtering and clustering required. In some cases the majority of the dataset is discarded, and in others all data is incorporated into the model. The steps involved in preprocessing the data may be revisited during the construction of the process model, or temporal data extracted at an earlier point may be utilised in the construction of the process model.
+
+### Review rationale
+
+Determination of de facto care pathways derived from accumulated electronic data has clear potential to enhance understanding of clinical services. To address the complex challenges outlined in the “Overview” section above, it is likely that further methods of analysis and additional data will need to be utilised in combination with the derived care pathways. Furthermore, assessments of the utility in practice of methods deriving and analysing de facto care pathways will be required. While these topics are frequently present in the research literature, we are unaware of any previous review which has considered these questions in depth. We thus undertook a comprehensive and systematic review of the literature in accordance with the PRISMA 2020 key reporting guideline [14], with such elaborations as were necessary due to the intersectional and evolving nature of the topic.
+
+### Objectives
+
+The literature being considered undertakes methodologically complex analysis of observational data to derive quantitative representations of practice, which are however often evaluated qualitatively. Comparison of practice across different settings may be presented, but outcomes compared may not be readily translatable for comparison with other studies given the variety of contexts and metrics possible. As such, utilising the PICOS framework endorsed by PRISMA for interventional studies would be unlikely to yield useful results, and we instead develop our review questions with reference to the Population—Phenomena of Interest—Context -Type of Studies (PPCT) framework developed by the Joanna Briggs Institute for reviews of mixed methods studies [15].
+
+In literature identifying as carrying out process mining, the set of derived care pathways would be described as a process model, and the frame of reference as a perspective [16]. We follow this terminology, though we do not restrict our review to literature that does so.
+
+With regard to the characteristics of the literature of interest described in Table 1, we therefore define the following review questions:
+
+Review Question 1: What are the main characteristics of the identified literature in terms of year of publication, clinical specialism considered, and country of origin of dataset?
+
+Review Question 2: The de facto care pathways experienced by patients might be defined from the perspective solely of their clinical context; of the healthcare practitioner undertaking their care; the location care is performed; or as care activities capturing some combination of these aspects of care, henceforth the “administrative/clinical” perspective. To what extent does the identified literature reflect these different perspectives?
+
+Review Question 3: What are the main characteristics of the literature in terms of application of further analysis to the derived de facto pathways, with or without integration with additional patient-related data?
+
+Review Question 4: To what extent and how has process mining of de facto care pathways shown practical utility?
+
+We treat Review question 1 quantitatively; undertake classifications of the literature to answer Review questions 2 and 3; and treat Review question 4 primarily in a narrative fashion.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Identification of search strategy
+
+Prior to initiating the search, we were aware of some literature that we considered of interest [17–21] and of the definitive 2016 review on the subject of process mining in healthcare by Rojas et al. [22]. Comparison of the literature of interest with that review indicated some variation in terminology used, particularly when considering terms present in the title, abstract, and keywords, the searchable content of curated indexed literature databases.
+
+We considered that the apparent variation in terminology used in the literature was characteristic of an emerging intersectional topic, and might be partly attributable to conceptually similar research being reported from different perspectives in journals from very different disciplines. For example, medical specialty journals might focus on the applicability of the methods applied in their clinical context, while computer science journals might place greater emphasis on the specifics of the implementation or the advances in methodology developed. Given this variation in terminology, exploratory efforts to construct search terms adequately capturing the diversity of the literature were only partly successful, and as we felt it would be inappropriate to inadvertently restrict the search to a particular domain the need for a modified approach to literature search was apparent.
+
+It has been proposed by Greenhalgh and Peacock [23] that in systematic reviews of complex or heterogeneous evidence in the field of health services research, “snowball” methods of forward (citation) and backwards (reference) searching are especially powerful. The approach is likewise recommended for systematic searches of information systems literature [24] and is referred to in PRISMA 2020 [14]. Preliminary experimentation with this methodology yielded positive results: it was therefore developed as presented below.
+
+### Search strategy
+
+The search strategy comprised the following tasks:
+
+Task 1: Construction of a suitable search term.
+
+Task 2: Identification of the optimal information source by application of the search term to a variety of literature databases.
+
+Task 3: Accumulation of an initial screened publication set from the selected database.
+
+Task 4: Screening of literature citing the initial publication set (forward search); removal of duplicates.
+
+Task 5: Filtering of referenced literature from the combined initial and forward search (backwards search) via a second search term, followed by manual screening.
+
+Task 6: Screening of literature identified in previous applicable reviews to identify any relevant publications not previously found, and screening of citations of that literature.
+
+Task 7: Search with the term constructed in Task 1 of a second database with different topic coverage.
+
+Task 8: Hand screening of relevant indexed journals not covered by the selected electronic database.
+
+### Search term construction (Task 1)
+
+We constructed our search term using concepts from the “Population” and “Phenomena of Interest” items of Table 1 above, with reference to the literature of interest already identified. The application of the “snowball” search methodology means the main requirement for the initial screened publication set is to achieve a broad representative sampling of the literature rather than complete coverage initially. In this case, the particular challenge is to capture relevant literature from across the data and process analytics communities.
+
+We initially include alternative and related terms to “clinical pathway”, particularly those present in the literature we are already aware of. The other concept in the first part of the “Phenomena of Interest” item relates to algorithmic information extraction, covered by the term “mining”. The “Population” item is referenced by adding the term “electronic record”. Since we wish to screen a wide variety of literature for our initial search, “mining” and “electronic record” are combined as alternatives rather than being required to both be present. The search term to be applied in tasks 2 and 3 of the search strategy is thus:
+
+While the lack of synonyms for electronic record might be considered to risk only a portion of the relevant literature being captured, addition of further terms did not readily improve coverage. In any case we anticipated that the further stage of the search will achieve good coverage beyond any limitations of the initial stage.
+
+As we anticipate a very large number of references to be identified in the backwards search (task 5 of the search strategy), a “filtering” search term is required. This filtering search term S2 is intended to remove methodological references not within the health informatics domain and is therefore based upon but less restrictive than the initial search term above:
+
+### Eligibility criteria
+
+With reference to the framework expressed in Table 1 above, we define the following inclusion and exclusion criteria:
+
+Inclusion Criteria 1: English language literature with available full text published after 2000. As the topic under examination is relatively recently established, no indexed content was excluded, for example book chapters and conference proceedings were included.
+
+Inclusion Criteria 2: As defined in the objectives above, literature involving the processing of a real (not synthetic) clinical dataset describing sequential activities relating the care of a set of patients to derive a representation of the care process that captures the variety of de facto care pathways experienced by patients. Initial rejection is on title and abstract, with inclusion after a further check of the full text.
+
+Exclusion Criteria 1: Literature where only very limited, extrapolated, or simulated patient data was used, or where the focus is exclusively methodological with no discussion of the derived de facto care pathways.
+
+Exclusion Criteria 2: Trials evaluating the effect of novel clinical interventions.
+
+### Information sources
+
+Suitable databases identified for evaluation in Task 2 were Dblp; Pubmed; Scopus; and Web of Science. Google Scholar was considered unsuitable as it does not offer a backwards (reference) search functionality.
+
+Table 2 presents the results of applying the search term S1 to the identified databases; MM searched title, keywords, and abstract on 13th January 2020.
+
+From the database search results above, it was clear that Scopus (Elsevier) was the most appropriate database on which to conduct Tasks 3 through 5 of the search strategy, particularly given its strong coverage in biomedical research [27]. In Scopus format, S1 is termed:
+
+TITLE-ABS-KEY (("clinical pathway*" OR "critical pathway*" OR "care pathway*" OR "clinical workflow" OR "careflow") AND ( "electronic record" OR "mining")).
+
+The secondary database used for Task 7 was selected to complement the focus of the primary database. For the purposes of selecting a database for Task 7 we considered the particular strength of Dblp to be computer science; Pubmed to be medical literature; and Scopus and Web of Science to be the life and physical sciences respectively. Given the absence of results from Dblp, for Task 7, Pubmed was identified as a database likely to have differing coverage to Scopus. In Pubmed format, S1 is termed:
+
+("clinical pathway*"[All Fields] OR "critical pathway*"[All Fields] OR "care pathway*"[All Fields] OR "clinical workflow"[All Fields] OR "careflow"[All Fields]) AND ("electronic record"[All Fields] OR "mining"[All Fields]).
+
+The initial search and screen (Task 3) was performed on 13th January 2020 by MM, and replicated by AI on 1st March 2021 with the search limited to publications between 1st January 2000 and 13th January 2020. The forward citation search and screen (Task 4) was performed initially by MM on 14th–15th January 2020, and by AI on 5th March 2021, again with the search limited to publications between 1st January 2000 and 13th January 2020. The reference filtering and screen was conducted by MM (Task 5) on 16th January 2020.
+
+Previous reviews considered in Task 6 were identified throughout the search process and combined with those found through unstructured searches and incidentally. For Task 8, sources listed in the Index of Information Systems Journals [25] were manually screened by MM on title and website to identify relevant journals which might publish in the field of medical informatics and are not indexed by either the primary or secondary search databases.
+
+### Study selection procedure
+
+Literature identified in the initial search (Task 3) and forward citation search (Task 4) were screened independently on title, abstract and full text by two authors (MM and AI) in accordance with the eligibility criteria, with discrepancies resolved through consensus and a third author available in cases of disagreement. The filtered backward (reference) search (Task 5) was screened by MM primarily, with recourse to AI as needed.
+
+Throughout Tasks 3–5, the inclusion and exclusion criteria were applied in a stepwise fashion, with initial screening conducted primarily on title and abstract with reference to the full text only in marginal cases. The intent was to not unduly restrict the search, as applying the exclusion criteria in this way allowed the references and citations of all literature initially appearing relevant to be assessed.
+
+### Data extraction
+
+Review Question 1: Following the framework outlined in the objectives, the date of publication, clinical domain, and country of origin of the dataset considered was extracted from the selected literature.
+
+Review Question 2: The review question identified four possible frames of reference or perspectives from which derived care pathways might be constructed. If a study only considered care activities from the perspective of the responsible clinical role; location, whether physically or administratively assigned; or the clinical context of the patient, it was assigned to that perspective. Where the presentation and sequencing of care activities was not strictly limited to one of these perspectives, it was assigned to the administrative/clinical perspective most commonly considered in process mining in healthcare.
+
+Review Questions 3 and 4: Literature applying supplemental techniques or utilising enhancing data was identified and held back for evaluation and classification during the data synthesis phase. Literature reporting practical utility for the results at any level of evidence was noted for narrative discussion after data synthesis.
+
+All data extraction was carried out principally by MM, with recourse to AI and MOK as required to establish consensus.
+
+### Data synthesis
+
+As described in the Review Rationale, Objectives and Review Question 3, derived de facto care pathways may be subject to further analysis, henceforth “supplemental techniques”; or they may be “enhanced” with further data from the source dataset or otherwise [26].
+
+Following Webster and Watson [24], the concepts of “supplemental techniques” and “enhancing data” as applied to derived care pathways were separated into units of analysis based on categorisations of these concepts constructed by two authors (MM in consultation with MOK) with regard to the relevant literature identified during the data extraction phase. The literature was then classified according to the units of analysis, deriving a “concept matrix”.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

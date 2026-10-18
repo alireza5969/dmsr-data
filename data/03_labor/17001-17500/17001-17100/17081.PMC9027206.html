@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Michaely, Aringhieri, Cioni, Neri, Khayyam, Madani, Kafieh, and Hekmatnia: Current Value of Biparametric Prostate MRI with Machine-Learning or Deep-Learning in the Detection, Grading, and Characterization of Prostate Cancer: A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1864,5 +1887,83 @@ Exclusion criteria:<div class="list">
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+### 1.1. Prostate Cancer
+
+Prostate cancer (PCA) is the second most common cancer in men worldwide and it accounts for up to 25% of all malignancies in Europe [1]. It is the third leading cause of cancer-related death in the United States and Europe [2,3]. The incidence of prostate cancer increases with rising age of patients, and prostate cancer and its management are becoming a major public health challenge. PCA aggressiveness can be linked to specific genes such as BRCA, and behavior such as smoking [4,5]. Accurate and early detection of prostate cancer is therefore paramount to achieve good overall patient outcomes. The tools available for assessing and detecting prostate cancer are digital rectal examination (DRE), PSA screening, transrectal ultrasound, and MRI whereby the latter received the highest amount of attention in the past decade due to its unprecedented capabilities in accuracy [6,7,8].
+
+In contrast to ultrasound and digital rectal examination, MRI offers an operator-independent tool for objectively assessing the entire prostate gland from base to apex and from the posterior peripheral zone (PZ) to the anterior fibromuscular stroma (AFMS) that are barely assessable with DRE [6,9].
+
+Magnetic resonance imaging of the prostate has a long history going back more than 20 years. In the initial phase, high resolution T2-weighted (T2w) imaging and spectroscopy were mainly used as tools for detecting prostate cancer. Yet, spectroscopy is slow and susceptible to artefacts and was not well perceived. In the recent decade, further developments have taken over including diffusion weighted imaging (DWI), dynamic contrast enhanced imaging (DCE). The entire prostate exam has been standardized worldwide and its reporting has been harmonized by the PIRADS (Prostate Imaging Reporting and Data System) system [10]. This classification system allows to objectively assess the prostate and potential cancerous zones and standardizes reporting over separate sites so that the overall performance of MRI is increased and is more reproducible compared to previous periods. With this development MRI of the prostate follows the trend to standardize the entire radiological procedure from image acquisition to data reporting to achieve a higher reliability, enhanced reproducibility, and a direct implication for radiology-based treatments as it has previously successfully demonstrated in breast imaging with BIRADS (Breast Imaging Reporting and Data System) [11].
+
+The report structuring provided by PIRADS is already a condensation of the imaging information and standardizes reporting and its output. This is one major step toward a more automated and operator-independent radiology. Moreover, the image acquisition parameters, slice orientations, and sequences with its specific sequence characteristics are governed by PIRADS [12]. This automatically sets the stage for a potential automated image analysis. In the past decade, artificial intelligence (AI) with its subdivisions of machine learning (ML), radiomics, and deep learning (DL) has become more prevalent. At this point in time, ML and DL are still no clinical standards. Radiomics, for example, use quantitative imaging features that are often unrecognizable to the human eye. Therefore, it is increasing the number of potential parameters to the multi-parametric approach of prostate MRI and with potential benefits for PCA detection and grading and beyond. DL techniques such as convoluted neural networks (CNN) are currently considered gold standard in computer vision and pattern recognition and hence have potential benefits for PCA detection and grading. With larger data sets as basis, they have the potential to automatically learn and deduct conclusions so that PCA recognition based on unperceivable features to the human eye might be possible. Despite numerous experimental studies which will be discussed further in this study, there is no standardized approach on how to use and implement DL and ML for prostate imaging now.
+
+The aim of this study is to elucidate the status of artificial intelligence in prostate imaging with a focus on the so-called bi-parametric (bp) approach of prostate MRI (bpMRI).
+
+### 1.2. Prostate Imaging Reporting and Data System
+
+PIRADS was established by key global experts in the field of prostate imaging from America and Europe (European Society of Urogenital Radiology (ESUR), American College of Radiology (ACR)) to facilitate and standardize prostate MRI with the aim of assessing the risk of clinically significant prostate cancer (csPCA). The first version of the PIRADS recommendations was published in December 2011, the latest and current update was published in 2019 (PIRADS v2.1) [10,12,13].
+
+Various studies have compared the predictive performance of PI-RADS v1 for the detection of csPCA compared to image-guided biopsy or radical prostatectomy (RP) specimens as standard of reference. In a 2015 study, Thompson reported multi-parametric MRI detection of csPCA had sensitivity of 96%, specificity of 36%, negative predictive value and positive predictive values of 92% and 52%; when PI-RADS was incorporated into a multivariate analysis (PSA, digital rectal exam, prostate volume, patient age) the area under the curve (AUC) improved from 0.776 to 0.879, p &lt; 0.001 [14]. A similar paper showed that PI-RADS v2 correctly identified 94–95% of prostate cancer foci ≥ 0.5 mL but was limited for the assessment of Gleason Score (GS) ≥ 4 + 3 csPCA ≤ 0.5 mL [15]. An experienced radiologist using PIRADS v2 is reported to achieve an AUC of 0.83 with 77% sensitivity and 81% specificity [16].
+
+### 1.3. Sequences for Prostate MRI
+
+The initial protocol for MRI of the prostate as provided by PIRADS included high-resolution multiplanar T2w-imaging, DWI, and DCE after the intravenous administration of paramagnetic gadolinium chelate contrast agent. This so-called multi parametric prostate MRI (mpMRI) is considered as the gold standard. T2w-imaging is used to demonstrate zonal anatomy of the prostate. Tumors can be well delineated, and their relation to the prostate capsule can be examined. Benign changes such as benign prostate hyperplasia, post-prostatic changes of the peripheral zone or scars can be identified. T2w-imaging is considered the gold standard for the transitional zone (TZ) of the prostate gland. In addition, T2w-imaging can be used to measure the volume of the prostate. The high anatomic information content of T2w-imaging makes this sequence the perfect roadmap for image-guided biopsy [12,17].
+
+DWI serves as an indirect measure of cellular density. In case of a malignant tumor with high cellular density, the ability of water to freely move in the interstitial compartment is decreased hence the diffusion is impaired. The images with high b-values and even those with more and more common-interpolated calculated b-values allow quick and easy depiction of these suspicious areas in the prostate. The calculated ADC maps give a quantitative measure of cellular density and can be considered as a molecular imaging tool for tumor aggressiveness. DWI imaging is considered as the reference sequence for the peripheral zone (PZ) of the prostate [12,17].
+
+Dynamic contrast enhancement (DCE) is considered as the weakest of the three used approaches for prostate imaging. In contrast to T2w-imaging and DWI, DCE is not being considered as a dominant sequence for any of the prostate zones. It only serves as a tiebreaker in very specific questions in the PIRADS system. In addition, it requires the intravenous administration of contrast agent with the risk of side-effects such as allergies, nephrogenic systemic fibrosis, or Gadolinium deposition in the body [18,19,20,21]. While the risk of nephrogenic systemic fibrosis is controllable by using little amounts of macrocyclic Gd-chelates, no harmful consequence for Gd-chelate depositions in the body has been found [22,23]. Nevertheless, patients often try to avoid contrast agent if feasible. Moreover, physicians embrace the idea of non-enhanced exams equally, as it speeds up the acquisition and reduces the number of potential complications. In addition, omitting contrast agent permits to save money.
+
+### 1.4. Multiparametric and Biparametric MRI of the Prostate
+
+With this in mind and the knowledge that the performance of DCE often yielded limited added value to T2w-imaging and DWI in mpMRI of the prostate bi-parametric MRI (bpMRI) of the prostate is gaining considerable support [15]. Meanwhile, there are several high-ranked studies such as the PROMIS trial and meta-analyses comparing mpMRI and bpMRI of the prostate [24,25,26]. Current data underline the high negative value of bpMRI in biopsy-naïve patients with a negative predictive value of up to 97% [27,28]. Whether bpMRI might be slightly less accurate in less-experience readers is not yet clearly proven [29,30]. A currently accepted position is that bpMRI of the prostate seems to be equally good as mpMRI of the prostate for patients with low and high risk for csPCA but DCE might be of worth in patients with intermediate risk and PIRADS 3 lesions [25,26,31,32,33,34,35] (Figure 1). bpMRI of the prostate is also commonly used for computer-based postprocessing using artificial intelligence. This is due to the fact that DCE contains a fourth dimension (time) which make those images harder to algin and match with two-dimensional anatomical images such as T2w-imaging and DWI. Another drawback of DCE is that image information is not obvious. The image information on contrast media arrival and distribution which is seen as a surrogate marker for microvascular density have to be extracted using semiquantitative or quantitative pharmacokinetic models which adds another layer of complexity on postprocessing, along with the increase of time necessary to report the exams.
+
+### 1.5. Artificial Intelligence (AI) for Image Postprocessing
+
+The availability of cheap and high computing power with the additional advent of postprocessing technologies and artificial intelligence such as machine learning techniques and deep neural networks has fostered the application of those techniques for radiology tasks such as tumor detection. The current hierarchical concept of AI is depicted in Figure 2.
+
+Machine-learning (ML) is a subfield of AI in which algorithms are trained to perform tasks by learning rules from data rather than explicit programming. Radiomics is seen as a method that extracts large numbers of features from radiological images using data characterization algorithms such as first order statistics, shape-based, histogram-based analyses, Gray Level Co-occurrence Matrix, Gray Level Run Length Matrix, Gray Level Size Zone Matrix, Gray Level Dependence Matrix, Neighboring Gray Tone Difference Matrix to name a few [36,37,38,39]. These features are said to have the potential to uncover disease characteristics that are hard to be appreciated by the naked eye. The hypothesis of radiomics is that distinctive imaging features between disease forms may be useful for detecting changes and potentially predicting prognosis and therapeutic response for various conditions such as e.g., detection of csPCA. These radiomic features are then often further analyzed using ML-techniques. An example of a radiomics ML-workflow is shown in Figure 3. An issue concerning ML-techniques is that it often requires the manual placement of a region of interest hence hereby introducing a potential source for errors and biases.
+
+Deep learning (DL) is a subfield of AI in which algorithms are trained to perform tasks by learning patterns from data rather than explicit programming. The key factors for the increasing attention that DL attracted in the past years are the availability of large quantities of labelled data, the inexpensive and powerful computing hardware particularly graphic-processing units and improvements in training techniques and architectures. DL is a type of representation learning in which the algorithms learn a composition of features that reflect the hierarchy of structures in the data. Current state-of-the-art for medical image recognition using DL techniques are so called convoluted neural networks (CNN). These networks are characterized by an architecture of connected non-linear functions that learn multiple levels of representations of the input data thereby extracting possibly millions of features [41]. Especially CNNs in which a series of convolution of filter layers are exploited are suitable for image processing [42]. Newer techniques such as transfer learning and data augmentation, or the application of generative methods help in mitigating existing limitations of CNN [43]. The entire process of data processing within the multiple layers of a CNN with convolution filters, pooling, and maximum filtering is beyond the scope of this study. Largely simplified, one might say that bottom layers of the CNN act as a feature extractor while the top layers of the CNN act as a classifier. An overview is given in Figure 4 in which the DL workflow is compared to radiomics or the standard radiology reading process [44]. The reason that CNN-based approaches are considered superior to radiomics is that radiomics depend on hand-crafted features which is limited, whereas CNN can generate features that are most appropriate to the problem itself [45].</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+Literature research for this study took place in August 2021. A PubMed query with the search terms “prostate” and “magnetic” and “deep learning” or “machine learning” or “radiomics” was performed. The aim was to retrieve those studies which made use of ML or DL techniques to facilitate tumor detection and grading. To make sure that only current techniques were included in the analysis only publications from the year 2019 to 2021 were included. Particularly in the field of CNN the technical improvement is rapidly evolving so that elder publications might not represent the current state-of-the-art. Total of 95 publications were initially retrieved. Of these, 66 were omitted for several reasons so that 29 publications were available for analysis (see Figure 5). Clinical data (question to be answered, number of patients, age, AI-technique, lesion segmentation, MRI-technique, sensitivity, specificity, accuracy, AUC) were then manually extracted and transferred to a Microsoft Excel 365 spreadsheet (Microsoft, Redmond, WA, USA). PRISMA guidelines were followed [46]. An overview of the study according to the PRISMA guidelines can be found in the Appendix A.
+
+This paper focuses on bpMRI. The current PIRADS guidelines state: “Given the limited role of DCE, there is growing interest in performing prostate MRI without DCE, a procedure termed “biparametric MRI” (bpMRI). A number of studies have reported data that supports the value of bpMRI for detection of csPCA in biopsy-naïve men and those with a prior negative biopsy”. The potential benefits of bpMRI include: (1) elimination of adverse events and gadolinium, (2) faster MRI-exam times, and (3) overall reduced costs [47]. These factors will potentially make bpMRI easily accessible. Remaining concerns are that the DCE sequence may serve as backup in case of image degradation of the DWI or T2w sequence. It seems as if DCE may be of less value for assessment of treatment of naïve prostate patients but remains essential in assessment for local recurrence following prior treatment, which however is a setting in which current PI-RADS assessment criteria do not apply. The conclusion of the PIRADS steering committee therefore advocates the use of mpMRI particularly in (1) patients with prior negative biopsies with unexplained raised PSA values, (2) those in active surveillance who are being evaluated for fast PSA doubling times or changing clinical/pathologic status, (3) men who previously had undergone a bpMRI exam that did not show findings suspicious for csPCA, and who remain at persistent suspicion of harboring disease, (4) biopsy-naïve men with strong family history, known genetic predispositions, elevated urinary genomic scores, and higher than average risk calculator scores for csPCA, and (5) men with a hip implant or other consideration that will likely degrade DWI [47].
+
+For this paper bpMRI was selected as most studies dealing with ML or DL techniques solely relay on T2w-imaging and DWI. DCE data were rarely included. In contrast to T2w-imaging and DWI the DCE-data must be postprocessed first to generate parameter maps. This process is not yet standardized as several pharmacokinetic models and hereof derived software implementations for postprocessing exist. Without generation of parameter maps a huge number of images would have to be fed into the ML/DL algorithms—a step that most research groups obviously did not want to undertake.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

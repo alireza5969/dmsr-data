@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Popa, Ismaiel, Cristina, Cristina, Chiarioni, David, Dumitrascu, and Seravalle: Non-Alcoholic Fatty Liver Disease: Implementing Complete Automated Diagnosis and Staging. A Systematic Review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1491,5 +1514,51 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+Non-alcoholic fatty liver disease (NAFLD) is a fast-growing pathology worldwide, being considered the most common chronic liver disease. It is diagnosed based on the presence of steatosis in more than 5% of hepatocytes without significant alcohol consumption. The term NAFLD consists of the spectrum ranging from the benign form known as non-alcoholic fatty liver (NAFL) and, possibly, deteriorating to the harsher form called non-alcoholic steatohepatitis (NASH) [1,2,3].
+
+Even though NAFLD is present also in normal weight patients, more than 80% of NAFLD patients are obese, having a body mass index (BMI) &gt; 30 kg/m2 [3,4,5,6]. NAFLD prevalence has been recently expanding globally, along with several metabolic diseases including obesity. NAFLD is expected to become the most frequent cause for liver transplant in less than a decade. Its prevalence ranges from 6%–35% of the global population, and approximately 30% of the United States are diagnosed with NAFLD (90 million persons) [3,4,5,6].
+
+Diagnosing NAFLD is laborious because the currently feasible serological and imagistic methods are not able to make a distinction between steatosis and NASH [3,4,5,6]. Liver biopsy is a technique capable of a precise diagnosis. Unfortunately, it is rarely recommended in clinical practice because of the increased risk of severe bleeding and life-threatening complications [3,4,5,6]. An alternative to liver biopsy are the recently developed imagistic methods, with a high diagnosis accuracy: magnetic resonance imaging (MRI) with proton density fat fraction (PDFF) and proton magnetic resonance spectroscopy (1 H-MRS) [2,3,4].
+
+The main domains in healthcare in which artificial intelligence (AI) applications are being used include diagnostic imaging, laboratory data, electrodiagnosis, electronic health records, and records from wearable devices. For this reason, our systematic review aims to provide a comprehensive overview of important studies of AI applications, which might help physicians in the management of NAFLD. Furthermore, we compared human expert NAFLD diagnosis accuracy, specificity, and sensitivity with automatic diagnosis systems, in case of the available selected studies provided this particular information.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+PubMed, EMBASE, Cochrane Library, and WILEY databases were filtered for relevant publications regarding AI applications in NAFLD. The search terms included: (non-alcoholic fatty liver disease OR NAFLD OR NAFL) AND (artificial intelligence OR machine learning OR neural networks OR deep learning OR automated diagnosis OR computer-aided diagnosis OR digital pathology OR automated ultrasound OR automated computer tomography OR automated magnetic imaging OR electronic health records). Exclusion criteria were: case reports, abstracts, letters to the editor, conference presentations, pediatric studies, studies written in languages other than English, and editorials (Figure 1).
+
+Two independent authors (S.L.P and A.I.) reviewed for eligibility titles, abstracts, and full text of eligible articles. Data extraction was also conducted independently by both reviewers. Extracted data on the “authors” names, year of publication, country or study population, sample size, study design, gender ratio, number and percentage of NAFLD patients, the method used to diagnose NAFLD, and artificial intelligence-based method were reported into three separate tables. Figure 1 shows the search strategy using the PRISMA flow diagram.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

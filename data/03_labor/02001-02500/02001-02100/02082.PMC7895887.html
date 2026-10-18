@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Windisch, Zwahlen, Giesel, Scholz, Lugenbiel, Debus, Haberkorn, and Adeberg: Clinical results of fibroblast activation protein (FAP) specific PET for non-malignant indications: systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -964,5 +987,51 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+The development of small molecules targeting fibroblast activation protein (FAP) as tracers for positron emission tomography (PET) in 2018 has sparked considerable interest mainly in the oncological community [1, 2].
+
+FAP has dipeptidyl peptidase as well as endopeptidase activity and its expression is limited on normal adult tissue. The expression can, however, increase significantly during tissue modelling, wound healing as well as in diseases such as arthritis, atherosclerosis and different cancers.
+
+While most studies therefore evaluate the application of FAP-specific PET in patients with various kinds of cancers, the use of FAP-specific PET in non-malignant indications has initially been limited to occasional case reports [3].
+
+However, as studies on FAP tracers in cancer began to grow in number and size, the amount of incidental findings of non-malignant diseases began to increase [4]. In addition, the promising results from the early case reports have caused the first dedicated studies on FAP-specific PET for non-malignant indications to be conducted which in turn have been met with more interest [5, 6].
+
+Herein, we therefore conducted a systematic review of the use of FAP-specific PET in non-malignant indications to summarize the available evidence, to indicate areas where the available evidence is limited and to highlight interesting case reports that might inspire future research.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+The review was conducted according to the PRISMA guidelines as applicable [7]. Studies published in English not earlier than 2018 that used FAP-specific PET in humans for any kind of non-malignant indication, either intentionally or unintentionally, were included. No limits regarding size of the patient collective or length of follow-up were applied. The MEDLINE database was searched on September 16th 2020 via the freely accessible PubMed interface. The query was designed to show results whose titles contained either of the words “fibroblast”, “FAP” or “FAPI” in combination with either “positron”, “PET” or “Imaging” (example syntax: “((Fibroblast[Title]) OR (FAP[Title]) OR (FAPI[Title])) AND ((PET[Title]) OR (Positron[Title]) OR (Imaging[Title]))”). After exclusion of duplicates, the titles were screened and only original research publications proceeded to full-text screening. All articles that did not contain any patients suffering from non-malignant disease or did not provide any information in addition to the presence of the disease were excluded. Risk of bias in individual studies was assessed by gathering the conflict of interest (COI) with a concrete relation to the submitted work and funding statements as reported in each publication.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

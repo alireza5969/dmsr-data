@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Hecker, Steckhan, Eyben, Schuller, and Arnrich: Voice Analysis for Neurological Disorder Recognition–A Systematic Review and Perspective on Emerging Trends</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -1152,5 +1175,165 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## 1. Introduction
+
+### 1.1. Neurological Disorders and Speech
+
+The burden of neurological disorders on the healthcare system is heavy (1). Neurological disorders manifest themselves with various symptoms at different disease stages. Recognition and diagnosis of most neurological disorders still rely on clinical examinations, mostly upon the manifestation of prominent symptoms. With modern machine learning approaches, researchers have attempted to quantify neurological disorders through various modalities from unobtrusive sensors to gain a longitudinal and holistic picture of the individual patient and course of disease (2). Speech, in particular, is a promising modality, since its production is shown to be very susceptible to slight perturbations caused by those disorders (3). Furthermore, voice recordings are unobtrusive and readily available through the widespread usage of smartphones and other smart devices (4).
+
+To record voice data in a clinical setting, the principle approach is to access a patient cohort and compare it with a representative healthy control cohort. An experimental protocol is developed, which includes a medical assessment to quantify the disorder as well as the recording of voice samples according to clearly defined speech elicitation tasks. The medical assessment provides a ‘ground truth' description of the disease status, and the voice recordings are then used to indirectly infer that disease status.
+
+Existing studies have regarded a multitude of neurological disorders, which were reported to have a measurable impact on voice. Those can be loosely grouped, for the scope of this review, into psychiatric disorders, neurodegenerative disorders and speech impairments. Psychiatric disorders encompass depression (3), anxiety, obsessive-compulsive disorder (OCD), post-traumatic stress disorder (PTSD) (5), schizophrenia (6), and, to a certain extent, stress (7). Neurodegenerative disorders include disorders leading to cognitive decline, such as Alzheimer's disease (AD) and mild cognitive impairment (MCI) (8, 9), as well as a broader range of disorders that do not primarily affect cognition, such as amyotrophic lateral sclerosis (ALS) (10), multiple sclerosis (MS) (11), and Parkinson's disease (PD) (12). Lastly, there are several disorders, which affect speech production itself, such as aphasia, dysarthria, and dysphonia. Aphasia is the inability to comprehend or formulate language, dysarthria emerges when muscle coordination for speech production is impaired and dysphonia is when voice is hoarse due to problems with the larynx.
+
+### 1.2. Data Processing Pipeline
+
+#### 1.2.1. Speech Tasks
+
+The human voice can be produced in various ways, such as reading text, singing or laughing. Recommendations for the technical details on how data for the acoustic assessment of voice production in a clinical setup should be recorded, are provided by Patel et al. (13). These guidelines are compiled by an expert panel from the American Speech-Language-Hearing Association (ASHA), and we strongly recommend consulting these suggestions before setting up novel data collection efforts.
+
+In research settings, participants are asked to produce specific vocalisations, which elicit distinct information for comparable analyses. Those speech tasks, which provide the basis for voice-based disorder quantification, can be grouped into certain categories for the scope of this review. Participants can be asked to produce a sustained phonation of a phone, typically the vowel /a/. Diadochokinesis is the ability to produce antagonistic movements in quick succession, these are typically rapid syllable successions in the case of speech tasks, such as pa-ta-ka. Read speech categorizes tasks, in which written material is provided to be read out aloud. Those materials can be customized for a specific research question or standardised text passages, for example ‘the north wind and the sun,' which is constructed to contain every phone in the English language. Free speech encompasses tasks, which do at most provide an initial association point, but then require the participant to associate or behave freely. Examples are clinical interviews between a physician and a patient or a ‘picture description task,' in which the patient is asked to describe a picture in their own words.
+
+#### 1.2.2. Feature Extraction
+
+With the obtained data at hand, data analysis is performed next. The typical data analysis pipeline consists of preprocessing the collected data and then applying analytical methods to obtain quantitative insights. The very first step here is to enhance the quality of the raw audio signal by applying, amongst others, denoising and dereverberation. For data preprocessing, audio recordings are often filtered for segments containing speech through voice activity detection (VAD). If multiple speakers are present in one recording, speaker diarisation can be applied to try to separate voice segments, for example, from the patient and a doctor in a clinical interview setting. To perform linguistic analysis, recent advances in automated speech recognition (ASR) enable automatic transcription of the content. With transcriptions, analysis can include, for example, aspects of the semantic structure of the recorded speech [e.g., as done by Tóth et al. (14)].
+
+To make the raw audio signal accessible for automated analysis, statistical derivatives of the signal, namely, features, are extracted. To quantify voice, several features stem from the acoustic aspects of the speech signal that account for the structure of the vocal production system. Prominent and commonly used acoustic feature sets in the community are the expert-knowledge driven Geneva Minimalistic Acoustic Parameter Set [GeMAPS, Eyben et al. (15)] on one hand and the large-scale, general-purpose driven Computational Paralinguistics Challenge [ComParE, Weninger et al. (16)] feature set. Further, there are features, which are tailored for disease-specific vocal dynamics [e.g., (8) on AD]. Low et al. (17) provide a comprehensive overview of the commonly used acoustic features derived from speech in neurological disorder quantification. They regard the GeMAPS features and provide a glossary on the regarded features [based on Cummins et al. (3) and Horwitz et al. (18)], to which we refer the interested reader.
+
+Recent additions to those ‘traditional' acoustic features were introduced at ComParE 2018 and 2019 (19, 20), and are based on representations of the audio signal found through deep neuronal networks (see 1.2.3 Analysis), as well as a high-level summary of speech segments through the Bag-of-Audio-Words (BoAWs) approach. There are out-of-the-box toolkits to extract features, most prominently Praat (21), openSMILE (22), and VOICEBOX. BoAWs can be extracted using the openXBOW framework (23), and learnt representations of the speech signal can be extracted with the DeepSpectrum (24) and AuDeep (25, 26) toolkits. Nonetheless, it is not uncommon to write custom code to perform feature extraction.
+
+#### 1.2.3. Analysis
+
+After preprocessing and feature extraction, data analysis is performed. There are two general approaches for data analysis: statistical analysis and predictive modeling.
+
+For statistical analysis, extracted features are tested with various statistical means to find significant correlations of individual features for the tested conditions, which then express changes in vocal characteristics. The sum of those identified correlating features can ideally serve as general and reliable indicators for different disorders, and are occasionally referred to as ‘vocal biomarkers.'
+
+In predictive modelling, on the other hand, machine learning approaches are used to try and build statistical models, which can discriminate between different categories or a general scale, relevant for the regarded disease at hand. Common machine learning models employed for categorical classification are, support vector machines (SVM), the k-nearest neighbors algorithm (k-NN), decision trees (DT), random forests (RF), Gaussian Mixture Models (GMMs), and Hidden Markov Models (HMM). If values from continuous scales are to be predicted, regression models, such as linear regression, logistic regression, support vector regression, and regression trees can be utilised.
+
+If sufficient data is available, artificial neural networks (ANN) can be employed as well, which promise a high performance on large data sets. For ANNs, organizational architectures of neuronal networks inspired by the dynamics in the human brain, are constructed for specific tasks in specific domains. In the field of disease recognition from voice, convolutional neural networks (CNNs) and long short-term memory (LSTM) networks are commonly used, see Cummins et al. (27) for a review of recent developments and examples in the field. Foremost, CNNs learn feature representations of input spectrograms of the audio signal or directly from the raw audio waveform. They either contain architectural elements to perform a classification decision right within the network architecture or other predictive modeling approaches are employed based on those feature representations.
+
+With ComParE 2018 and 2019 (19, 20), learnt deep representations are used as additional baseline feature sets. With the DeepSpectrum toolkit, CNNs pre-trained for image recognition tasks, are used to extract abstract representations of spectrograms from the raw audio signal. auDeep first uses spectrograms from the input audio signal to train encoder-decoder networks without providing class labels (sequence-to-sequence autoencoder), specific to the data at hand. The outputs of the trained encoder can then be used to output features in the form of abstract representations based on the spectrograms of the input signal.
+
+### 1.3. Related Work
+
+Previous reviews in the field have summarized the state of voice analysis for individual disorders and a few reviews outlined the state of research across several neurological disorders. One prominent systematic review was performed by Low et al. (17), in which they regarded a variety of psychiatric disorders (depression, PTSD, OCD, bulimia, anorexia, schizophrenia, hypomania, and anxiety). Therein, they synthesised which acoustic features are prominently changed in voice in each disorder. They further provided an overview of recent developments and guidelines for data collection. Another review was performed by Voleti et al. (28), which regarded neurological thought disorders (such as AD, schizophrenia, etc.) and created a taxonomy for speech and language features used.
+
+However, the scope of the review of Low et al. (17) was limited to psychiatric disorders and Voleti et al. (28) did not perform a systematic literature search. In this context, a comprehensive review that provides a broad overview of the field of neurological disorder recognition from voice is needed. Therefore, we extended to the scope of Low et al. (17) by also including the neurodegenerative disorders ALS, AD, MCI, MS, and PD. Further, we adopted a reproducible, systematic approach by querying bibliographic databases.
+
+### 1.4. Scope of the Review
+
+The aim of this review is to provide a general overview of the field of neurological disorder recognition from voice. The main contribution is to survey how voice data is commonly collected across psychiatric and neurodegenerative disorders, how data is frequently analysed, and to highlight emerging trends. The novel insights from this review will be helpful when setting up future data collection efforts.
+
+We do this by searching for publications on original datasets. From these retrieved publications, we extract information on the study setup, the speech tasks utilised, the analysis methods used, and particularities in the voice recording setup (to uncover emerging trends). Furthermore, we provide an overview of significantly correlating acoustic features in common psychiatric and neurodegenerative disorders by extending the work of Low et al. (17). Figure 1 presents an overview of these outlined topics addressed within this review.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## 2. Materials and Methods
+
+This systematic review was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) guidelines (29).
+
+### 2.1. Literature Screening
+
+#### 2.1.1. Information Sources/Identification
+
+The following electronic databases were searched for relevant articles: PubMed, Web of Science (Web of Science Core Collection, version 5.35), and IEEE Xplore. Those databases were queried in August 2020 with the following search term: ((speech OR voice) AND (dataset OR ‘data set') AND &lt;disorder specification&gt;). In place of &lt;disorder specification&gt;, a search term for each regarded disorder was inserted:
+
+(‘mental health' OR psychiatry OR psychiatric OR ‘affective disorder' OR ‘psychological disorder' OR ‘mental illness')
+
+(Anxiety)
+
+(Depress*)
+
+(Stress)
+
+(‘Acute stress reaction')
+
+(‘Obsessive-compulsive disorder' OR OCD)
+
+(‘Post-traumatic stress disorder' OR PTSD)
+
+(Schizophrenia)
+
+(Hypomania)
+
+(Bulimia)
+
+(Anorexia)
+
+(Alzheimer*)
+
+(Dementia)
+
+(‘Cognitive impairment*')
+
+(‘Multiple sclerosis')
+
+(Parkinson*)
+
+(Aphasia).
+
+The disorders to be regarded were primarily based on work from other reviews on individual and multiple disorders. The aim was to cover psychiatric as well as prominent neurodegenerative disorders, stress as well as speech impairments such as aphasia. No restriction on the date of publication was imposed.
+
+Google Scholar is an ambivalent source for systematic literature reviews. On one hand, it covers a broad range of publications, especially those in conference proceedings, but on the other hand, it is crawler-based instead of bibliographic and more focused on exploitative instead of systematic search behavior and does not allow bulk downloads of the returned results (30). Therefore, we decided not to use Google Scholar for the systematic search here but can recommend it as well as explicit dataset search engines such as Google Dataset Search to the interested reader to explore individual disorders and aspects of the field.
+
+#### 2.1.2. Screening
+
+Only articles published in English language were considered. After duplicate removal, the first author (P.H.) screened the title and abstract of all records. The focus was to include studies, which report a newly recorded (‘original') dataset, and whose research was primarily based on voice and speech. Emphasis was put on studies, which regraded acoustic features (omitting purely linguistic analyses to keep the scope manageable). Studies had to focus on the above-mentioned disorders and include recording voice data from patients. The exclusion criteria for screening were: (a) publications that used existing datasets (i.e., did not record data themselves), (b) publications that were not focused on the above-mentioned neurological and psychiatric disorders, studies involving children, publications, which focused on qualitative or quantitative interview analyzes as well as literature reviews. 203 duplicates were removed with the ‘check for duplicates' function in the reference manager Mendeley Desktop (version 1.19.6, Elsevier, Amsterdam, Netherlands); the other bibliography organization of this literature review was done in Zotero (version 5.0.90, Corporation for Digital Scholarship, Vienna, Virginia, USA).
+
+### 2.2. Data Extraction
+
+Data extraction was performed by P.H. with assistance of N.S. Our approach was to extract a wealth of information to assess common practices and to identify emerging trends in the field later on. Data to be extracted consisted of information on (a) the study setup (number of patients and patient assessment), (b) the voice recording setup (additional modalities, recording conditions: in everyday life or laboratory), (c) the speech tasks (elicitation protocols) used in the study (elicitation material used, if applicable: performance comparison), and (d) analysis methods employed (features extracted, analysis methods used: statistical and predictive modeling and validation schemes).
+
+In published studies, the focus is often put on analysis and it is not clearly stated in the title or abstract, whether original data was recorded or an existing dataset was used. The search term (‘dataset' or ‘data set') in this systematic review was introduced to search for original datasets However, some original studies might not have been covered. Therefore, we conducted an additional systematic search for literature reviews, which are focused on acoustic analysis of individual disorders and synthesized their identified features.
+
+### 2.3. Acoustic Features
+
+The aspect of which acoustic features are found to correlate with which neurological disorder was addressed prominently by Low et al. for psychiatric disorders (17). In the broader scope of this review, we aimed to extend their synthesis to also incorporate acoustic features of the neurodegenerative disorders addressed in this review.
+
+Several recent reviews summarized significantly correlating acoustic features in individual neurodegenerative disorders, and we systematically screened an electronic database to retrieve those. We queried Web of Science and used their ‘refine' function to retain only review articles published from 2015 on. The search terms to retrieve reviews were:
+
+TS=((ALS) AND (speech OR voice) AND (analysis))
+
+TS=((Alzheimer*) AND (speech OR voice) AND (analysis))
+
+TS=((Multiple sclerosis OR MS) AND (speech OR voice) AND (analysis))
+
+TS=((Parkinson*) AND (speech OR voice) AND (analysis))
+
+TS=((stress) AND (speech OR voice) AND (analysis)).
+
+Title and abstract were screened and full-text articles were retrieved for the matching candidates. Reviews that provided syntheses in which publications were explicitly listed that found correlating acoustic features with the respective disorder, were retained.
+
+With the publicly available source code1 and permission provided by Low et al. (17), we extended their synthesis of Figure 3 by adding data of the studies listed in the found reviews. Studies identifying a significant positive correlation received a score of 1, studies finding a significant negative correlation received a score of –1 and non-significant or contradictory studies were scored with 0. Only the most comprehensive review on each disorder (clearly stating the studies found with correlating acoustic features) was used so to cover a comparable number of studies. Reviews used to extract data for extending the figure were the following (9–12). The code to extend the figure of Low et al. (17), and to plot all figures from this review, can be found at GitHub2. The aspects of stress and speech impairments were omitted from that overview to fully focus on neurodegenerative disorders.
+
+Furthermore, stress and speech impairments were found to be very heterogeneous. Different manifestations of stress were described by Van Puyvelde et al. (7) for physical, delirious, emotional, and cognitive load and they presented an own model for Voice and Effort (MoVE) to characterize those interactions with voice. Speech impairments such as aphasia, dysarthria, and dysphonia amongst others, stem from general dysfunctions of the speech production systems, and for example, dysarthria can be the consequence of stroke as well as MS.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

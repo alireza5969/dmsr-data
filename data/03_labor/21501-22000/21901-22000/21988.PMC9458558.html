@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Girolami, Pantanowitz, Marletta, Hermsen, van der Laak, Munari, Furian, Vistoli, Zaza, Cardillo, Gesualdo, Gambaro, and Eccher: Artificial intelligence applications for pre-implantation kidney biopsy pathology practice: a systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -563,5 +586,53 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Transplant nephropathology is a highly specialized field of pathology comprising both the evaluation of organ donor biopsy for organ allocation and post-transplant graft biopsy for assessment of rejection or graft damage. Recognizing and quantifying various organ structures and subtle histopathological features, and correlating these findings with clinical parameters are required to be of use for donor or recipient management in the current era of precision medicine [1]. Added challenges in this field include the increasing demand to render complex diagnoses in kidney biopsy samples, pressure of time constraints in the case of pre-implantation biopsy for organ allocation, and the lack of specifically trained nephropathologists. Moreover, when dealing with kidney transplant pathology, a distinction should be made between pre-transplant or time-zero donor biopsy and protocol biopsy on a graft kidney as the clinical setting and related challenges of these two scenarios are quite different. In a graft biopsy, simultaneous assessment of rejection and/or chronic organ damage is made by means of a multiplicity of ancillary techniques (e.g., immunohistochemistry for C4d, special stains for fibrosis or deposits, immunofluorescence or molecular investigations) on a biopsy specimen collected in optimal conditions with an expected turn-around-time (TAT) for results of days to weeks, usually assessed by reference pathologists with expertise in the field. On the other hand, pre-implantation biopsy for organ suitability to transplantation is usually assessed via frozen section (FS) or microwave rapid processing protocols of slides with no aid of ancillary techniques or only very few, with a time-critical diagnostic TAT diagnosis rendered by a general pathologist with relatively little specific expertise in this field. The Banff group developed definitions for features to be evaluated in kidney biopsy and scoring systems, but reproducibility even among experts remains an issue [2], and studies on correlation of pre-implantation biopsy and graft outcome have highlighted that expertise is crucial in predicting the true state of an organ and subsequent outcome [3, 4].
+
+The introduction of digital pathology with whole-slide imaging (WSI) in clinical research, trials and practice has catalyzed the application of artificial intelligence (AI) in histopathology, with the development of novel machine-learning models for tissue interrogation and discovery. Such advances in technology offer the potential to improve our ability to classify disease, quantify morphological alterations more accurately, discover correlations with pathogenesis and clinical data, and predict disease outcome with new prediction models [5]. As reported in a recent review by Farris et al., interest in the application of AI algorithms towards the topic of kidney transplant has grown, as demonstrated by the increasing number of publications retrieved from PubMed with the keywords “computer &amp; pathology &amp; image &amp; analysis” [6]. As highlighted from previous work [7], most efforts have been devoted to the post-transplant graft biopsy with algorithms aiming to quantify and describe features of rejection such as immune infiltrate, or to quantify chronic organ damage in terms of interstitial fibrosis with special stains. By comparison, studies regarding the application of AI algorithms to the pre-implantation biopsy are scarce and more focused on fewer simpler tasks, such as counting glomeruli, sclerotic glomeruli, vascular structures, and quantification of interstitial fibrosis. Nevertheless, digital pathology with WSI has already been deployed in the pre-implantation setting for consultation and training [8–11].
+
+In this work we systematically reviewed the literature searching for all studies applying AI algorithms to digitized slides of pre-implantation kidney biopsy. The various AI-based algorithms developed and deployed for this purpose are discussed, as are the potential benefits and main challenges encountered.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+### Search strategy
+
+A systematic search was carried out in the electronic databases PubMed-MEDLINE and Embase until 25th September, 2021 with a combination of the key terms “kidney”, “biopsy”, “transplantation” and “artificial intelligence” and their aliases (see complete search strategy in the Supplementary Table 1). No language filters were applied. Two authors screened all retrieved items after removal of duplicates with the aid of the web-app Rayyan QRCI [12]. Briefly, the two authors screened abstracts blinded to each other’s decision and after finishing they compared the results of the screening. Disagreement was resolved by consensus. Then authors read the full text and decided on final inclusion, with consultation of a third author in case of disagreement.
+
+### PICOS analysis
+
+Pre-implantation kidney biopsy (P) employing AI algorithms coupled with WSI (I) were compared to conventional assessment (C) to determine potential concordance rates and performance of algorithms (O). Studies concerning protocol graft biopsy for rejection, not dealing with AI algorithms or not deploying WSI, together with studies represented only by abstracts were excluded. Disagreement on article screening and final inclusion was resolved with the participation of a third reviewer. References listed in the excluded but relevant articles, as well as recent reviews on the topic were checked for additional studies that might be potentially included. Full-texts of relevant studies were acquired and checked, and data from included studies were extracted and summarized. Extracted data were: author, year and country of the study, type of biopsy features investigated, number of cases, type of algorithm deployed, main results of the study in terms of diagnostic outcome, and the main limitations of the study.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

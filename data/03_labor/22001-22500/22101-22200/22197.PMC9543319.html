@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Rusanov, Hassan, Reynolds, Sabet, Kendrick, Rowshanfarzad, and Ebert: Deep learning methods for enhancing cone‐beam CT image quality toward adaptive radiation therapy: A systematic review</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="mp15840-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3185,5 +3208,99 @@ PMC942413535072752</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+Artificial intelligence (AI) is expected to both disrupt and transform standard practices in healthcare. Radiation oncology has traditionally been at the forefront of medical technology adoption, a tradition that demands expertise in both theoretical and practical aspects of a given technology.1 Hence, this review aims to broaden both clinicians’ and researchers’ understanding of state‐of‐the‐art (SoTA) deep learning (DL) methods currently employed in cone‐beam CT (CBCT) image correction, summarize clinically relevant results, and offer constructive considerations in advancing the research.
+
+Adaptive radiation therapy (ART) has shown tremendous promise in improving patient outcomes by sparing healthy tissues and escalating dose‐to‐tumor volumes.2, 3, 4, 5 CBCT‐driven dose monitoring enables the recalculation of the dose on updated patient anatomy prior to irradiation. Hence, clinicians can monitor the validity of the plan and decide to trigger an adaptive protocol if dosimetric deviations from the initial prescription are deemed clinically relevant. The irradiation parameters are then modified, either online or offline, to achieve optimal tumor coverage whilst minimizing dose to healthy tissues. Online ART has not been widely adopted into the clinical workflow due to practical limitations involving the integration of specialized tools for patient assessment, plan adoption, and quality assurance.6 Of critical importance to the first consideration is CBCT image quality. In their most rudimentary implementation, CBCT images are unable to reproduce accurate tissue density, suffer from artifacts capable of undermining subsequent clinical application, and have inferior contrast relative to diagnostic grade CT imaging.7 The focus of this investigation is to review DL methods for correcting CBCT image quality, placing emphasis on methodological novelties such as loss functions and architectural/model design.
+
+The article is divided into five parts consisting of background information, methods, results, discussion, and conclusion. Background information introduces readers to fundamental DL components necessary to understand SoTA approaches in medical image synthesis, along with detailed descriptions of the most common evaluation metrics for assessing image quality and dose accuracy. The methods section outlines what criteria were used in compiling the review. The results section summarizes the most salient trends throughout the literature, whereas the discussion section draws on these trends to make recommendations for both clinicians and DL practitioners.
+
+## BACKGROUND
+
+A theoretical understanding of the basic components that underlies SoTA algorithms provides a foundation for researchers to build on and allows clinicians to appreciate the technology that could underpin future workflows. What follows is a brief discussion introducing the concept of DL (1), convolution operations and layers (2), model optimization and the role of loss functions (3), and a description of the most popular image synthesis architectures (4). Table 1 summarizes the strengths and limitations of these architectures.
+
+### Deep learning
+
+Machine learning (ML) is a field of computer science interested in developing algorithms that accomplish complex tasks without being explicitly programed to do so by observing data. DL is a subfield of ML that specifically uses artificial neural networks—computational units inspired by biological synaptic responses—to process data into desired outputs.8 The stacking of many such neuronal hidden layers gives “depth” to the network, thus reflecting the term “deep” in DL. The convolutional neural network (CNN) is a specialized framework that excels in computer vision problems. The interested reader can refer to Yamashita et al.9 for an accessible overview of general mechanisms and building blocks comprising CNNs in the radiological context.
+
+In the context of medical image synthesis (also termed image‐to‐image translation or domain transfer), four major components are required, namely, the convolution layer, a model architecture, and the loss function and optimizer.
+
+### The convolution layer
+
+The convolution operation—not limited to DL—is a linear function used for image‐based feature extraction. For example, early attempts at modeling scatter from primary signals in radiographic systems used a convolution‐filtering method.10 Figure 1a depicts how image features are extracted by convolution between the image and filter (also known as kernel). During convolution, an element‐wise multiplication between the kernel and image is followed by a summation over each of the values. The convolution output, also known as a feature map, contains the results of all convolution operations. The spatial dimensions of the feature map depend on the image padding, size of the filter, and stride of the filter. The stride controls the distance between two adjacent convolutions (stride = 3 in Figure 1a). The filter size controls how much information is extracted per convolution, with smaller feature maps resulting from larger filters. Finally, image dimensions may be increased by applying border padding (typically zero pixels), enabling a precise control of the output feature map spatial dimension. The choice of padding, filter size, and stride are hyperparameters set by the practitioner and remain unchanged during training. Conversely, the parameters contained within the filters are learned during the optimization stage.11
+
+The convolution layer, whose task is to extract meaningful features, is defined by the application of an arbitrary number of these filters per layer, each followed by a nonlinear processing unit (or activation function). Chemical synapses activate by forming a potential difference between junctions and breaching a threshold voltage.12 So to do neurons in a CNN “activate” by satisfying a nonlinear function—the simplest being the rectified linear unit (ReLU). ReLU outputs zero (no signal) if the input is a negative value, else mapping the input as output. Each filter contained in a layer outputs a unique feature map, which is stacked into a 3D feature map volume ready to be processed by a deeper convolutional layer. Hence, deeper convolution layers extract hierarchically more complex feature representations, where each filter in deeper layers has a “depth” dimension matching the input feature map depth. The impressive expressivity of neural networks stems from the combined use of such nonlinear functions and deep network architectures.9
+
+Equally important in the image translation literature is the transposed convolution layer. Typically, a series of convolution layers will downsample the spatial dimensions of an image (by virtue of the convolution operation), whilst increasing the feature dimensions (controlled by the number of filters per layer). The role of transposed convolutions is to upsample the feature map spatial dimensions such that we may return an output image with the same dimensions as the input. In transposed convolution, each element of the kernel is multiplied by a single element in the input feature map for a given position. The result is stored in the output feature map before moving to the next input feature map element. Any overlapping regions of each transposed convolution operation are summed to form the final output feature map. Furthermore, in transposed convolution the padding decreases the output spatial dimensions, whereas the stride determines the number of zero elements inserted between each input element, hence increasing the output dimensions. Finally, a larger kernel size will form a larger transposed convolution output, thereby increasing the output feature map dimensions.11
+
+### Loss function and optimization
+
+Training a model requires discovering the optimal parameters that process the input data into a satisfactory output. Hence, the model must have a measure of how wrong its predictions are—the loss function; and a strategy to adjust its parameters to minimize this loss—gradient descent optimization. The loss function computes a distance metric between the model prediction and the ground‐truth data which it is trying to approximate. A typical loss function for paired training arrangements is the mean absolute error (MAE), also known as L1 distance. Here, the average absolute magnitude difference between predicted and ground‐truth data is computed on a per‐pixel basis. This loss is a function of the millions or billions of trainable parameters contained in the model, and each unique configuration of the parameters in turn has its own loss value. Hence, the loss with respect to each parameter can be thought of as a hyperdimensional plane, which contains local peaks and troughs and a global minimum and maximum.13
+
+In gradient descent optimization, the task is to adjust the network parameters in the direction that reduces the loss. Ideally, we stop training when model weights arrive at the global minimum, which represents the lowest achievable loss value for the given dataset and architecture. In practice, the model may not reach the global minimum but a local trough. Regardless, gradient descent operates by computing the partial derivative of each parameter with respect to the loss. This indicates the local slope of the loss with respect to that parameter. A given parameter is then updated by subtracting it with its partial derivative, which effectively moves the model state toward a lower loss state. The learning rate is a hyperparameter that controls the size of steps taken toward that minima.13
+
+#### U‐Net
+
+With the basic building blocks and optimization frameworks in mind, it becomes possible to define the most widely used medical DL architecture, U‐Net, as depicted in Figure 1b. Based on the autoencoder architecture, U‐Net is suitable for both classification or regression tasks, capable of pixel‐wise predictions (as opposed to image‐wide) by utilizing skip connections and a fully convolutional framework. The encoding portion of the network passes the input image through consecutive convolution layers with serially increasing numbers of output feature maps. The image is encoded in a compressed latent space with a reduced spatial dimension but increased feature dimension. The decoding portion of the network reassembles an output image using consecutive transpose convolution layers that restore the input spatial image dimensionality while reducing feature dimensions. U‐Net differs from autoencoders by enabling the accurate reconstruction of spatial information during upsampling by the use of skip connections from encoder‐side convolution layers to the corresponding decoder‐side layers. These connections, which concatenate encoder feature maps to the decoder side, propagate spatial and contextual information across the network to help the decoder reassemble a more accurate output using queues from the input. The fully convolutional structure of U‐Net means that no fully connected dense layers are needed at the output, drastically reducing model parameters while enabling a per‐pixel prediction. Hence, more computational resources can be directed to expanding model depth, in turn, increasing predictive capacity.14
+
+U‐Net‐based image translation tasks typically require pixel‐wise loss functions for supervision; hence, input and target domain images must be paired to achieve satisfactory results. In the medical context, perfectly aligned imaging data is only attainable through post‐processing corruption of the target domain to resemble the input domain.15 Alternatively, same‐day scans offer the best anatomical match but are logistically difficult to acquire. Else, data pairing is achieved through a rigid and deformable registration of same‐patient scans. When coupled with per‐pixel losses, anatomical discrepancies in the training data imbed an unavoidable error into the model that is propagated to future predictions typically manifesting as a loss of boundary sharpness or false anatomy artifacts.16, 17, 18, 19
+
+#### Generative adversarial networks
+
+Unlike U‐Net, which can be considered a single generator constrained by hand‐crafted loss functions, the generative adversarial network (GAN) instead consists of two networks: a generator and a discriminator that each minimizes their own loss in a competitive two‐player setting.20 In a GAN framework (shown in Figure 1c), the discriminator is a classification network whose task is to discern real from generated samples, meanwhile the generator is tasked with generating samples that can fool the discriminator. During a single pass, GAN training is performed sequentially: First, the discriminator is trained to minimize its classification loss between real and generated samples (discriminator loss). Next, the generator is trained to maximize the likelihood that a generated sample will be classified as real by the discriminator (adversarial loss). In turn, the discriminator loss and adversarial loss are dynamic as each network improves and provides impetus for the other. GAN optimality is reached when a Nash equilibrium is established: where a networks loss cannot be minimized further without altering the other networks parameters.21 At this equilibrium, the discriminator will equally classify real and generated samples with a probability of 0.5.22
+
+The GAN framework discussed so far has been purely generative in nature: synthesizing realistic outputs from input noise. For the special case of medical image synthesis, conditional GANs are introduced. They function in the same way but accept images as input rather than noise.23
+
+Compared with U‐Net, the GAN framework has several advantages. For one, the adversarial loss minimizes differences in the data distribution and deep features between the two domains. Consequently, paired training data is not required, and the resulting synthetic images are perceptually more realistic. In practice, unsupervised GAN implementations are highly unconstrained as the set of realistic generator outputs that can fool the discriminator is large. This is problematic for medical image synthesis as the patient anatomy may not be preserved, or density information may not be retained even if the style of the target image is attained. To remedy this, a GAN may be constrained using paired data and per‐pixel losses. Other issues associated with GAN optimization include difficulty balancing generator and discriminator hyperparameters for stable training, uncertainty as when to cease training as Nash equilibrium convergence rarely manifests, longer training, and higher hardware requirements.
+
+#### Cycle‐GAN
+
+Cycle‐GAN is a variant of the conditional‐GAN framework that introduces forward and backward domain synthesis to enforce a “cycle‐consistency” loss using two generators and two discriminators.24 The major benefit of cycle‐consistency is the preservation of anatomic information during synthesis for unpaired datasets. Figure 1d demonstrates the cycle‐loss for the CBCT and CT wings of the network. For a given CBCT image, generator A outputs a synthetic CT (sCT), after which generator B transforms the sCT back into a cycle‐synthetic CBCT. By enforcing a pixel‐wise loss between the original CBCT and cycle‐synthetic CBCT, anatomic preservation is encouraged during the initial generator A transformation. The same set of transformations is applied to the input CT.
+
+Cycle‐GAN achieves SoTA performance on unpaired data owing to the combination of cycle‐consistency and adversarial losses. However, cycle‐consistency is a strict regularization technique that constrains the generator to output images that can be easily inverted to the original domain. Although desirable for anatomic preservation, cycle‐consistency becomes problematic where large changes to the output are desired,25 such as in the presence of motion artifacts. In these instances, the generator preserves aspects of the artifact as a prompt to recover them during the backward synthesis cycle.26, 27 Generally, the issues that inflict GANs are present for cycle‐GAN, albeit more severely as greater computational resources are required, more precise fine‐tuning of hyperparameters is needed, and training times are further increased.
+
+### Evaluation metrics
+
+Typical evaluation metrics for assessing image quality between ground truth and corrected image sets are presented in Table 2. Ground‐truth data consists of CT images that have undergone deformable image registration (DIR) to the CBCT, or CBCT images that have been scatter corrected using Monte Carlo (MC) or a previously validated CT‐prior method.28, 29, 30 The most cited metric is MAE, which linearly compares the average absolute pixel‐wise error deviations over the entire image or within specific regions of interest (ROI) or the patient body contour. Mean error (ME) and (root) mean squared error ((R)MSE) assess the degree of systematic error shift, and prominence of large error deviations, respectively. The peak signal‐to‐noise ratio (PSNR) is a measure used to quantify the magnitude of noise relative to signal affecting the CBCT in comparison to the ground truth. Finally, the structural similarity (SSIM) index is used to assess perceptual qualities of corrected and ground‐truth images based on statistical measures of luminance, contrast, and structure.31 Recently, the Dice similarity score,32 used to quantify segmentation accuracy, has been used as a surrogate metric for image quality. The Dice score measures the area of overlap between ground truth and automated segmentations. In the context of CBCT image quality, automated segmentations performed on corrected and non‐corrected CBCT images are compared to manual or automatic segmentations performed on DIR CT.
+
+The ART process can involve the recalculation of treatment dose on the corrected CBCT images. In investigating the suitability of corrected CBCT images for ART, the dosimetric accuracy can be validated by applying the same clinical plan used during treatment planning on the ground‐truth CT and corrected CBCT images. A variety of metrics such as dose difference pass rate (DPR), dose–volume histogram (DVH) metrics, and Gamma pass rates (GPR) are commonly used. The DPR is a pixel‐wise metric that quantifies the percentage of pixels that satisfy a set dose difference threshold between corrected and ground truth images. The DVH compares the cumulative dose to different structures as a function of volume.33 Comparisons to clinically relevant criteria can be made, such as the volume of tissue receiving a given prescription dose, the percentage difference of which can be compared between corrected and ground truth volumes. Finally, the Gamma index is a composite function of dose difference and distance‐to‐agreement criteria used to gauge the similarity of two dose distributions. Calculated in either 2D or 3D, the GPR measures the percentage of points that satisfy the specified criteria.34</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## METHODS
+
+PubMed, Scopus, and Web of Science were searched using the terms and inclusion/exclusion criteria outlined in Figure 2. The goal was to review the CBCT‐specific literature and include any investigations that used DL to improve image quality suitable for ART. Criteria were narrowed to exclude CBCT acquisitions that do not comport with ART, for example: Studies using low‐dose scans that do not explicitly strive for ART, 4D scans, and C‐arm or dental modalities. We did not limit our investigation to methods that only sought to generate sCT images using DL as alternative approaches in the projection domain show promising results and are worthy of discussion. Finally, we restricted our criteria to only include peer‐reviewed journal articles.
+
+An initial selection screening was performed based on the title and abstract of the articles returned after the database search. Duplicate results or items that did not meet the inclusion criteria were removed. Post screening, the full‐text articles were retrieved for a review. The methods of each investigation were reviewed and information pertaining to model architecture, loss functions, cohort size and split, anatomical region, training configuration, augmentations, and preprocessing were extracted. When available, the corresponding results that reported image similarity metrics (MAE, (R)MSE, SSIM, ME, PSNR) and dose accuracy (GPR, DVH, DPR) were also extracted. The information is summarized in separate tables under categories “sCT generation” (Tables 3A, 3B, 3C) and “projection based” (Table 4) based on the authors’ aims. Studies defined under “sCT generation” set their target domain as CT images, whereas studies under “projection based” employ a range of DL‐driven scatter correction techniques to improve CBCT image quality.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

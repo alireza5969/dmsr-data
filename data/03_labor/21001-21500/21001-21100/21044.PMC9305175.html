@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Wang, Fan, Zhang, Li, Duan, and Yang: Performance of Machine Learning for Tissue Outcome Prediction in Acute Ischemic Stroke: A Systematic Review and Meta-Analysis</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -2086,5 +2109,67 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## Introduction
+
+Stroke is a life-threatening disease accounting for approximately 10% of all deaths and presenting an estimated lifetime risk of 25% worldwide (1). Recanalization of the occluded vessels is the only effective treatment to restore blood flow and prevent neural functional deterioration. Early studies suggested 4.5 and 6 h as the time window for intravenous thrombolysis (IVT) and endovascular thrombectomy (EVT) from symptoms onset (2–4). Recent advances in endovascular approaches have broadened the boundaries of eligible patient selection and expanded the time window to 24 h by using advanced neuroimaging (5, 6).
+
+Currently, acute stroke imaging allows estimating the ischemic core and penumbra by predefined imaging thresholds. An apparent diffusion coefficient threshold between 600 and 625 × 10−3 mm2/s remains a robust parameter for infarct core estimation, and a decreased relative cerebral blood flow (rCBF) threshold of &lt;30% has been extensively used to quantify final infarct size for CT-based method. The mismatch between infarct core and perfusion deficit identified by time to maximum of the residue function (Tmax) with a delay &gt;6s provides a delineation of tissue at risk (7, 8). Despite the easy application of using single-valued thresholds to predict ischemic tissue outcome, conventional thresholds derived from approximate linear statistic models would probably fail to capture the heterogeneity of stroke lesion development from baseline imaging. Moreover, thresholds based on a single imaging modality disregarded the complementary effect of multimodal imaging, thus limiting the reliability in delineating infarct lesions.
+
+Recent advances in machine learning (ML) offer promising applications in medical imaging by learning informative features and patterns from structured input data. It also drives the emergence of deep learning (DL) subfield, which has shown impressive results in medical image processing without prior selection for relevant features (9, 10). Given the suboptimal performance of the conventional thresholding methods, initial studies attempted to apply ML and DL-based approaches and showed clear advantages for more precise prediction of the final infarct lesion from baseline imaging (11–17). These promising results inspired investigators to propose novel model methodologies by improving algorithm architectures, combining multi-modality input parameters, and applying in different clinical scenarios.
+
+Although studies on this topic are growing, there is a lack of studies that review the general applications of the state-of-the-art ML-based approaches in ischemic core estimation. Therefore, we conducted this systematic review and meta-analysis to provide an overview of the potential advantages and remaining challenges of ML-based model methodologies for final infarct lesion prediction from acute stroke imaging, evaluate the overall performance of existing approaches, and provide suggestions for future research to potentially aid in acute ischemic stroke (AIS) management.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## Methods
+
+This systematic review and meta-analysis was performed following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) statement (18).
+
+### Literature Search and Study Selection
+
+We comprehensively searched PubMed, EMBASE, Cochrane Library, Science Direct, Springer, and IEEE Xplore Digital Library databases from inception to May 31, 2022, with the following keywords: “machine learning”, “deep learning”, “neural network”, “stroke”, “cerebrovascular event”, “cerebral infarct”, “computed tomography”, “magnetic resonance imaging”. Studies that developed ML algorithms for predicting the final infarct lesion from baseline acute stroke imaging were included. Eligible studies satisfying the following inclusion criteria were included in the meta-analysis: (1) study cohort was AIS patients; (2) study described ML algorithms for predicting ischemic core tissue from baseline CT or MR imaging; (3) reference standard (i.e., ground truth) was true infarct lesion segmented on follow-up imaging; (4) prediction performance was reported as dice similarity coefficient (DSC) score; (5) imaging sets for algorithm training and test were clearly defined; (6) published articles with full text; and (7) English language articles. Review articles, conference abstracts, letters, case reports including fewer than 10 patients, and non-human research were excluded. If studies came from the same cohort or compared different algorithms on the same dataset, we only retained the article with the largest sample size or the best-performing algorithm in the quantitative synthesis in case sample duplicate or overlapping would affect the overall pooled effect size.
+
+One investigator (XW) read the titles and abstracts of all records. After preliminary screening, potentially eligible articles were shortlisted. Two investigators (XW and YF) independently read the full-text articles to assess eligibility, with disagreements resolved by discussion and consensus.
+
+### Data Extraction and Quality Assessment
+
+Two investigators (XW and YF) independently extracted data from the included studies using a predefined data extraction sheet. Disagreements were re-evaluated and determined by a third investigator (NZ). The extracted data included: (1) first author and year; (2) source of the dataset; (3) sample size including the total patient number and numbers of the training, validation, and test sets; (4) model methodology, including algorithm types, input parameters and standard reference; (5) predictive performance, including the primary performance metric of DSC score and secondary metrics of area under the receiver operating characteristic curve (AUC), sensitivity, specificity, accuracy, precision, recall and volume error between the prediction result and the standard reference.
+
+To assess the quality of ML-based diagnostic accuracy studies, Collins and Moons initially introduced a modified version of the Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis statement specific to machine learning (TRIPOD-ML) (19). However, the TRIPOD-ML guideline was complicated and covered a broad range of ML applications. The Radiology editorial board has developed a list of nine key considerations to improve the soundness and applicability of artificial intelligence research in diagnostic imaging (20). We adapted these items as quality assessment criteria in our study. Two investigators (XW and YF) independently evaluated the risks of bias using this questionnaire, with disagreements resolved by discussion and consensus.
+
+### Statistical Assessment
+
+We estimated the overall performance of the ML models by using the DSC score, a commonly used volume-based performance metric for target segmentation. The DSC score represents the overlap between the prediction segmentation and the standard reference, ranging from 0 (indicates no overlap) to 1 (indicates complete overlap). For effect size calculation in the meta-analysis, the mean DSC score with standard deviation (SD) or 95% confidence interval (CI) was required. When study reported the DSC score as median and interquartile range (IQR), the mean and SD was converted using a quantile estimating method described by Wan et al. (21). The sample mean (X¯) and SD (S) were estimated as follows, where q1 referred to the first quartile, m referred to the median, and q3 referred to the third quartile.
+
+A random-effects model meta-analysis was performed, and forest plots were generated to depict the effect size of individual studies and overall performance. The heterogeneity across the included studies was assessed using the Cochrane Q and Higgins I2 tests, where the p-value &lt;0.05 in Cochrane Q test and Higgins I2-value &gt; 75% indicated significant heterogeneity (22). Due to the high heterogeneity observed in this study, sensitivity analysis using the one-study removed method was conducted to explain the heterogeneity of the results. Subgroup analyses were performed according to algorithm types (conventional ML classifiers and deep neural networks) and imaging modality for model input (CT and MR data). Publication bias was examined by creating a funnel plot and Egger's bias test (23). Statistical analyses were performed using the STATA 17.0 statistical package (StataCorp, Stata Statistical Software). Two-sided p-value &lt;0.05 was considered statistically significant.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>

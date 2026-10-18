@@ -4,8 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Vagliano, Chesnaye, Leopold, Jager, Abu-Hanna, and Schut: Machine learning models for predicting acute kidney injury: a systematic review and critical appraisal</title>
 <link rel="stylesheet" type="text/css" href="jats-preview.css">
-</head>
-<body>
+<!-- text-tabs:style-begin --><style>
+  .tt-bar { position: sticky; top: 0; z-index: 1000; display: flex; gap: 4px;
+            padding: 8px 12px 0; background: #2b2f36; overflow-x: auto; }
+  .tt-tab { border: 0; padding: 9px 18px; cursor: pointer; font: 14px system-ui, sans-serif;
+            white-space: nowrap; color: #cfd3da; background: #3a3f48; border-radius: 6px 6px 0 0; }
+  .tt-tab:hover { background: #454b56; }
+  .tt-tab[aria-selected="true"] { background: #fff; color: #111; font-weight: 600; }
+  /* per-tab colors: set via --tt-bg / --tt-fg on the individual button */
+  .tt-tab.tt-colored { background: var(--tt-bg); color: var(--tt-fg); opacity: .7; }
+  .tt-tab.tt-colored:hover { opacity: .9; }
+  .tt-tab.tt-colored[aria-selected="true"] { opacity: 1; box-shadow: inset 0 -3px 0 rgba(255,255,255,.9); }
+  .tt-panel { display: none; }
+  .tt-panel.tt-active { display: block; }
+  .tt-text .tt-inner { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  .tt-text pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; color: inherit;
+                 font: 16px/1.65 Georgia, "Times New Roman", serif; }
+</style><!-- text-tabs:style-end --></head>
+<body><!-- text-tabs:begin -->
+<div class="tt-bar" role="tablist">
+  <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
+  <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
+  <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+</div>
+<div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
+<!-- text-tabs:article-begin -->
 <div id="article-front" class="front">
 <div class="metadata two-column table"><div class="row">
 <div class="cell">
@@ -3128,5 +3151,67 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+<!-- text-tabs:article-end -->
+</div>
+<div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
+  <div class="tt-inner"><pre>## INTRODUCTION
+
+Acute kidney injury (AKI) has a substantial impact on the global burden of kidney disease, with a global estimate of 13.3 million cases in 2017 [1, 2] and 1.7 million deaths each year globally [3, 4]. Early recognition, risk assessment, and care of AKI are suboptimal and contribute to disease progression, high health care costs, and poor patient outcomes [5, 6]. To assist physicians with risk assessment of AKI, prediction models have been developed across various patient populations with varying degrees of predictive accuracy [7, 8]. Models being built using machine learning (ML), which are mathematical models to make decisions and predictions based on data sets, have become popular [9]. ML differs from standard regression modelling (including models that tend to be parametric and their extensions, semiparametric or with a relatively low number of parameters—e.g. logistic regression and Cox models) in the high volume of data that can be used as input and the computational effort required for analysis [9, 10].
+
+Recently, we have seen rapid growth in ML models for AKI prediction [12–30]. The sudden rise of such a novel and immediately popular modeling paradigm raises questions about how well these models perform, the soundness of their methodology, and whether the models are applicable to clinical settings (e.g. populations and availability of predictors).
+
+Systematic reviews on AKI prediction are plentiful [12–29]. We are aware of a single review of AKI prediction using ML models [30], which assessed whether ML models outperform logistic regression for predicting AKI. This review did not perform any critical appraisal. In contrast, we review and critically appraise ML models for the prediction of AKI in terms of performance, methodological soundness, and clinical applicability.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
+  <div class="tt-inner"><pre>## MATERIALS AND METHODS
+
+The protocol for this study was registered in the online PROSPERO database (CRD42022304868). We followed the Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) guidelines [31].
+
+### Study identification
+
+We used PubMed (pubmed.ncbi.nlm.nih.gov) and ArXiv (arxiv.org) for our search. We searched title or abstract with the string (Clinical OR medical) AND (predict*) AND (AKI OR AKF OR AKD OR ARI OR ARF OR ARD OR ‘acute kidney injury’ OR ‘acute kidney failure’ OR ‘acute renal failure’ OR ‘acute renal insufficiency’). The search was conducted on March 1, 2021.
+
+### Study inclusion
+
+We included studies that (i) developed or validated prediction models for AKI and (ii) used ML models. We excluded studies that focused on identifying or analyzing individual predictors instead of model development or validation. We excluded studies that used only standard regression models, gray literature, and informal publications (commentaries, letters to the editor, editorials, and meeting abstracts).
+
+### Study selection
+
+Pilot selection and extraction were conducted by I.V., N.C.C. and J.H.L. to validate and refine the research question, the inclusion criteria, and the data-extraction form. Subsequently, we selected full-text papers based on abstract screening and divided them equally among I.V., N.C.C., and J.H.L. At least two researchers reviewed a quarter of the included studies to ensure an adequate level of inter-reviewer agreement. Discrepancies between reviewers were resolved by discussion.
+
+### Data extraction
+
+We created a data-extraction form (Supplementary Table S1) based on the Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis (TRIPOD) and the Checklist for Critical Appraisal and Data Extraction for Systematic Reviews of Prediction Modelling Studies (CHARMS) checklists [32, 33]. We included items regarding specific aspects of the models (prediction time window and duration of follow-up), the type of data, the methods used for model interpretability, and the availability of data and code. I.V., N.C.C., and J.H.L. performed the data extraction.
+
+### Critical appraisal
+
+We assessed potential biases in the included studies by using the Prediction Model Risk of Bias Assessment Tool (PROBAST) [34]. PROBAST distinguishes among different aspects that may generate bias: (i) the use of unsuitable data, (ii) participant selection, (iii) definition or assessment of predictors, (iv) outcome definition and its relation to the predictors, and (v) incorrect data analysis. The latter pertains to the handling of missing data, validation, and use of proper performance measures. To define common criteria for rating bias and applicability, I.V., N.C.C., J.H.L., and A.A.H. first reviewed and discussed one study. I.V., N.C.C., and J.H.L. then completed the critical appraisal. At least two researchers reviewed a quarter of the included studies to ensure inter-reviewer agreement. Disagreement between reviewers was resolved by discussion.</pre></div>
+</div>
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tt-tab'));
+    var scroll = {};
+    function show(tab) {
+      var current = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (current) scroll[current.id] = window.scrollY;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        document.getElementById(t.getAttribute('aria-controls')).classList.toggle('tt-active', on);
+      });
+      window.scrollTo(0, scroll[tab.id] || 0);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          next.focus(); show(next);
+        }
+      });
+    });
+  })();
+</script>
+<!-- text-tabs:end -->
 </body>
 </html>
