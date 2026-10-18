@@ -26,6 +26,7 @@
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -1315,6 +1316,7 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -1420,6 +1422,9 @@ Alpha diversity (the diversity of species within an individual) was represented 
 Beta diversity is a measure of the similarity or dissimilarity of the taxonomic content between samples. Beta diversity was calculated using PERMANOVA and ANOSIM for infection status, infection type, helminth species, and age and gender. A Bray-Curtis dissimilarity matrix was calculated and plotted in a PCoA ordination to represent the variation between samples. All tests were nested for study ID to minimize the batch effect. Taxonomies that were not present at more than 0.01% relative abundance in any sample were removed prior to PCoA.
 
 To assess which taxa significantly responded to the presence of each helminth species, differential abundance analysis (DESeq2) was performed by use of negative binomial generalized linear models, which estimates the dispersion and logarithmic fold changes in taxonomic abundances. Criteria to distinguish such taxa were as follows: (i) taxonomic abundance must have a 2-fold or greater change between compared samples and (ii) the adjusted P value (Padj) must be less than 10−6. To produce the DESeq2 plots, the log relative normalization was performed on the batch-adjusted abundance for each cohort. Due to the sparsity of the collated taxonomic data, samples with zero values for the presented taxonomies were removed from the visualization of the DESeq2 results. Finally, taxonomic correlation analysis based on sparse partial least square regression was performed with the R package mixOmics (67) to determine taxa consistently correlated with helminth infection across samples; briefly, a binary abundance matrix was created to represent the presence or absence of a helminth species in a sample. This pseudomatrix was then correlated with the microbiome abundance matrix to reveal associations between specific microbiome taxa and helminth species. The log-transformed abundance matrix was used as a means of batch reduction and normalization of the microbial abundances. The top 20 most significant interactions were then visualized on a correlation circle plot including age and number of helminth species to depict their effect on the explored communities. The complete code for our meta-analysis is available in the GitHub repository (http://github.com/angelovaag/helminth_2021).</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
+  <div class="tt-inner"><pre>(No text available)</pre></div>
 </div>
 <script>
   (function () {

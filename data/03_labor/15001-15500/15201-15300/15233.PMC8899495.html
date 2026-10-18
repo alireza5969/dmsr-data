@@ -26,6 +26,7 @@
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -608,6 +609,7 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -643,6 +645,9 @@ Study quality was rated by dual assessment (CR, JH) using the Oxford quality sco
 ### Data analysis
 
 The data model employed was similar to the one used in our previous investigation [5]. Briefly, the mortality rate is modelled based on a Poisson distribution for the event counts (numbers of patient deaths in a study arm). Covariables are included in the model by assuming a linear effect on the logarithmic rate parameter, and study-specific random effects are included in order to account for between-study heterogeneity. Bayesian methods are used for inference; prior distributions for the unknown parameters are uniform (between log(0.001) and log(1000)) for the intercept, normal (mean zero and sd 10) for the slope, and half-normal (scale 1.0) for the heterogeneity sd. Models are fitted using Markov chain Monte Carlo (MCMC) methods using JAGS and the “rjags” R package. For the analysis of exacerbation rates, we used the same models as employed previously [5, 12]. In order to investigate potential correlation between exacerbation rates and mortality, we simultaneously fitted regression models for both end-points, adding a correlation parameter ρ to allow for dependence between the study-specific random effects for both end-points. Parameter estimates are given in terms of medians and 95% credible intervals (CIs). Using a Bayesian framework, two-sided posterior tail probabilities pB are quoted for the regression parameters instead of p-values; values below 5% are considered statistically significant.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
+  <div class="tt-inner"><pre>CRD42018118823</pre></div>
 </div>
 <script>
   (function () {

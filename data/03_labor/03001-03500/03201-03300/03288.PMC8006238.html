@@ -26,6 +26,7 @@
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -1155,6 +1156,7 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -1212,6 +1214,9 @@ In detail, we extracted the changes from baseline (mean change and SDs of the ch
 Finally, to compute effects in each pre-specified subgroup, the meta-analysis was based on dunb between two independent group change-from-baseline means by employing a single pooled standard deviation. The heterogeneity was evaluated by means of the diamond ratio with values approaching or exceeding 2.0, implying considerable heterogeneity. To address any substantial heterogeneity, we checked outlier effects and explored the impact of excluding studies with a standardized mean difference higher than 5 (see Appendix A), considering such big effect sizes highly influence the summary effect. Taking into account the assumption of exchangeability, a random-effect model was used. This first meta-analytic approach was performed within the Exploratory Software for Confidence Intervals (ESCI) [28].
 
 Additionally, to directly model the uncertainty (which has been found to be superior in estimating the between-study heterogeneity and pooled effect) and to produce full posterior distributions (which allows calculating actual probabilities), a Bayesian hierarchical model was used to pool effects in a Bayesian meta-analysis using “Stan” (brms) package v2.13.0 [29], within the R statistical computing environment v4.0.2 [30]. Importantly, the effect sizes used in the Bayesian meta-analysis (and displayed in the forest plot) do not correspond to the calculated effect sizes in the original studies (dunb), but the estimate of the “true” effect size (θk) of each study (obtained from the model with the mentioned function (brms). The convergence assessment, that is, if the Hamiltonian Markov chain Monte Carlo algorithm found an optimal solution, was conducted based on posterior predictive checks and with the inspection of potential scale reduction factor (Ȓ) values of the parameter estimates (meta-analytic effect size [μ] and tau [τ]). The posterior distributions of the θk for each study, the posterior mean, and the 95% credible intervals (95% CrI) were reported. This last is an interval in which there is a 95% certainty that the “true” value of the parameter lies. The τ value and its squared number (τ2) were calculated to report the estimated standard deviation and variance of underlying effects across studies with this meta-analytic approach, respectively. Based on the obtained Bayesian model, we calculated the exact probabilities that μ will be smaller/larger than a given effect size value by looking at the empirical cumulative distribution function (ECDF) of the posterior distribution for the pooled effect size. The function forest(), which is included in the brmstools package, and the ggplot2 functions were used to draw forest and density plots within R.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
+  <div class="tt-inner"><pre>(No text available)</pre></div>
 </div>
 <script>
   (function () {

@@ -26,6 +26,7 @@
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -1273,6 +1274,7 @@ Center (DRC) Grant P30DK036836-30 (MZI, MT, TX, BTT, ADK; P.I. King, George L.);
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -1312,6 +1314,9 @@ We conducted this systematic review in accordance with Preferred Reporting Items
 To identify shared and unique microbiome features (genus, species, and metabolic pathways) between autoimmune and cancer studies, we extracted genus, species, and predicted metabolic pathway data that were already analyzed in published studies. We considered all the individual studies as an independent observation and extracted the significant (false discovery rate, FDR adjusted p-value &lt; 0.05 or nominal p-value &lt; 0.05 where FDR adjusted p-value was absent) associated microbiome features found between cases and controls. This approach enabled us to exclude spurious microbiome features and to aggregate the most meaningful features from multiple studies. We first removed microbiome features that were found only once in the 82 included studies. We then defined whether a feature is “increased” or “decreased” among the cases of cancer and autoimmune studies. We defined a microbiome feature as “increased in cancer” if it was found to be significantly increased among the cancer cases in more than one cancer study and in at least 70% of the cancer studies that identify the feature as significant. On the contrary, we considered a microbiome feature as “decreased in cancer” if it was decreased among the cancer cases in more than one cancer study and in at least 70% of the cancer studies that identify the feature as significant. In the same way, we defined the microbiome features as “increased in autoimmune” and “decreased in autoimmune.”
 
 Data were synthesized and summarized in Microsoft Office Excel. Meta-analyses on the relative abundance of the bacterial genus were conducted in R version 4.0.2 [28] using R package metafor version 2.4-0 [29] and meta version 4.13-0 [30]. The relative abundance data were converted to log fold-change, and the standard error was calculated from the p-values, sample size, and log fold change using R package dmetar [31]. The standard error was calculated using “se.from.p” function [se.from.p(effect.size = log fold-change, p = pvalue, N = sample size, effect.size.type = “ratio”). Generic inverse variance random-effect meta-analysis was performed using “metagen” function [metagen(Log fold-change, standard error of fold-change, studlab, data = data, subset = genus == "genus name," byvar = disease type, comb.fixed = FALSE, comb.random = TRUE, hakn = FALSE, prediction = FALSE, print.byvar = FALSE, sm=""]. The DerSimonian-Laird random-effects method was used to combine the study estimates [32]. The forest plots were generated using the “forest” function in R metafor package [forest(Random effect model, …]. The full meta-analysis pipeline is available in a GitHub repository (https://github.com/mdzohorulislam/Cancer-autoimmunity_meta-analysis).</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
+  <div class="tt-inner"><pre>(No text available)</pre></div>
 </div>
 <script>
   (function () {

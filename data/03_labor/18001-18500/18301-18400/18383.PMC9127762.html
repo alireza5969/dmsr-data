@@ -26,6 +26,7 @@
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -1800,6 +1801,7 @@ Geneva: World Health Organization.</p></div>
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -1873,6 +1875,9 @@ Short read sequences of these isolates were downloaded from NCBI database based 
 Relative abundance of ESBL/ampC genes were estimated as the ratio of isolates carrying a particular bla gene family (e.g., blaCMY) divided by total number of isolates carrying blaCMY, blaCTX–M and/or blaSHV. Furthermore, relative abundance of subclasses of blaCTX–M genes were estimated as the ratio of isolates carrying a particular blaCTX–M subclass gene family (e.g., blaCTX–M–15) divided by total number of isolates carrying blaCTX–M genes. Relative abundances of ESBL/ampC genes (blaCMY, blaCTX–M, and blaSHV) and blaCTX–M subclasses at a global and continent level were plotted using library ggplot2 version 3.3.5 (Wickham et al., 2021).
 
 Random Forest models were built to characterize genetic features (virulence factors, plasmid replicons, chromosomal mutations, acquired resistance genes, and plasmid replicon types) that could predict the presence of blaCMY and blaCTX–M genes. Two models were built separately for blaCMY and blaCTX–M genes (dependent variables). Models were not built for blaSHV isolates as they were too few in numbers to make reasonable models that can be generalized at a local or global scale. Only one of the perfectly correlated genetic features (r &gt; 0.99) was retained for further analysis using library caret version 6.0-90 (Kuhn et al., 2021). The dataset was divided into training (65% of the dataset) and testing (35% of the dataset) data based on stratified random sampling in order to retain the same proportion of results for the dependent variables in these split datasets (presence of blaCMY or blaCTX–M depending on the model) (library caTools version 1.18.2) (Tuszynski, 2021). These models were first built for imbalanced training datasets using quantile-classifier algorithm (O’Brien and Ishwaran, 2019) in library RandomForestSRC (version 2.14.0) with the following settings: mtry = 25, number of trees = 12,000, split rule = AUC, block size = 100. Model performances were evaluated using geometric means. Training models were used to identify the top variables (i.e., variables of importance) that can predict blaCMY or blaCTX–M genes in testing data using default settings (library RandomForestSRC version 2.14.0) (Ishwaran and Kogalur, 2021). The top 10 variables of importance were extracted and plotted using library ggplot2 version 3.3.5 (Wickham et al., 2021). Unadjusted odds ratios were also estimated for the top 10 variables of importance to estimate an effect size and directionality and for ease of interpretation.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
+  <div class="tt-inner"><pre>(No text available)</pre></div>
 </div>
 <script>
   (function () {

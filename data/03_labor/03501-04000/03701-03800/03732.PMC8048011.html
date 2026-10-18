@@ -26,6 +26,7 @@
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -1180,6 +1181,7 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -1221,6 +1223,9 @@ A pretested data extraction framework in Microsoft Excel was used to extract and
 For visualisation and confirmatory analysis of the data from the included articles, text mining by R with the tidytext package was used for natural language processing,26 and both the ggplot package in R and matplotlib package in Python for the graphs. The decision to conduct these analysis was taken after the final screening phase, motivated by the high number of included articles and the nature of the data (including different underlying topics and patterns). First a test set of 20% of the data was used for writing the text mining scripts, which were refined once the full dataset was entered. The statistic ‘term frequency-inverse document frequency’ (tf-idf) in combination with n-grams was calculated for assessing the importance and structure of certain word combinations within the collection of articles (referred to as ‘corpus’). A word’s tf-idf represents the frequency of a term adjusted for how rarely it is used. The statistic tf-idf is intended to assess how important a word is to a subset of documents in a collection of documents or corpus.26
 
 Lastly, latent Dirichlet allocation (LDA) was used for Topic modelling, which is a commonly used algorithm for topic modelling in text mining, aiming at discovering a given number of topics within a set of documents (=the so-called ‘corpus’).26 An LDA algorithm automatically generates keywords per topic and their weight (or ‘importance’).27 Keywords can correspond to more than one topic, but generally with different weights (the keyword will be more or less important in one topic compared with another). This is an advantage of topic modelling as opposed to ‘hard clustering’ methods: topics used in natural language could have some overlap in terms of words.26 An essential step of the LDA algorithm is assigning each word in each article to a topic. As a consequence, each document is composed of multiple topics but typically only one of the topics is dominant.27 The more words in a document are assigned to a particular topic, generally, the more weight (also called ‘gamma probabilities’) will go on that document-topic classification.26 As such, it is possible to determine to which topic every document corresponds dominantly. LDA modelling was used in our study to identify meaningful topics within the complete set of included articles and subsequently allocate every article to one of the generated topics.</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
+  <div class="tt-inner"><pre>CRD42020169078</pre></div>
 </div>
 <script>
   (function () {

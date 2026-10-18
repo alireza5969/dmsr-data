@@ -26,6 +26,7 @@
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -1731,6 +1732,7 @@
 <hr class="part-rule">
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -1754,6 +1756,9 @@ In total 1454 articles passed all filter criteria and were then manually reviewe
 We then used the information on the validated variant’s rsID and disease trait to cross validate our data with the GWAS Catalog [5] (accessed Mar 25, 2021) to confirm that each curated variant-disease association is reported in a GWAS (Fig. 1F). Corresponding associations were identified through LD between the curated SNP and the reported GWAS Catalog SNP, and similarity between the reported GWAS trait and the traits extracted from the PubMed abstract as detailed below. Because the GWAS Catalog only reports the lead variant for each locus, and this variant is not necessarily identical to the causal variant for the association, we performed an LD expansion from each top SNP to identify additional possible causal variants. Broad ancestry as reported in the GWAS Catalog was mapped to a 1000 Genomes superpopulation following methods we described recently [23]. For each associated SNP in the GWAS Catalog, an LD expansion was performed to identify SNPs within 1 Mb with LD r2 ≥ 0.5 in the corresponding 1000 Genomes super-population. A minor allele count threshold of 5 within the corresponding superpopulation was applied to reduce the impact of high variance LD estimates for rare variants. If it was not possible to map to a single superpopulation, LD expansion was performed using the full 1000 Genomes Phase 3 GRCh38 liftover to match the build used in the GWAS Catalog [24]. When the GWAS Catalog reported a specific risk allele, our LD expansion took this into account, such that for multiallelic SNPs we would only identify variants correlated with the reported allele. The choice of LD threshold is motivated by the goal to capture GWAS associations that could plausibly be explained by the cataloged variant and has been used elsewhere[25]. Using this methodology, it was possible to perform LD expansion for 91% of variants in the GWAS Catalog. GWAS Catalog variants for which an LD expansion was not possible were still included in the analysis but could only be matched to the reported variant rather than other possible causal variants.
 
 GWAS Catalog Experimental Factor Ontology (EFO) terms and disease terms curated from the literature were mapped to the 2020 MeSH thesaurus vocabulary using the approach outlined previously [26]. To allow for inexact matches in MeSH terms (e.g., hypertension and systolic blood pressure), we use two similarity metrics: Lin-Resnik average similarity with a cutoff value of 0.75 [26, 27] and odds ratio of MeSH term co-occurrence in the same PubMed article with a cutoff of 20 [23]. We count a match between an article identified in our systematic review and a GWAS study if any GWAS Catalog association satisfies the following criteria: (1) The reported variant in the GWAS Catalog has LD R2 ≥ 0.5 to at least one curated variant, and (2) the reported trait in the GWAS Catalog has similarity to a main or manually curated disease from the PubMed abstract, meeting or exceeding the cutoff value. We excluded 347 SNPs in 311 articles from the analysis due to not being linked to a GWAS Catalog SNP. A further 292 SNPs contained within 278 articles were excluded due to a poor match between the reported GWAS trait and the trait reported in the abstract (Fig. 1G). The final curated catalog includes 286 articles (Fig. 1H) [28–313].</pre></div>
+</div>
+<div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
+  <div class="tt-inner"><pre>(No text available)</pre></div>
 </div>
 <script>
   (function () {
