@@ -48,8 +48,8 @@ res <- furrr::future_map(pmc_list, safe_annotate,
   dplyr::bind_rows()
 
 # res %>% write_rds("highlight_res.rds")
-dplyr::count(res, ok)
-dplyr::filter(res, !ok)
+# dplyr::count(res, ok)
+# dplyr::filter(res, !ok)
 
 
 future::plan(old_plan)
