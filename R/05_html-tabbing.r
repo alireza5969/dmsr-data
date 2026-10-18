@@ -1,5 +1,6 @@
 source("R/00_functions.r")
 source("R/05_html-tabbing_function.r")
+source('R/03_screening_preprocessing_extract.r')
 
 library(furrr)
 library(magrittr)
@@ -9,19 +10,29 @@ library(stringr)
 
 
 pmc_primary_extracted_address <-
-  "data/05_text-extracted/pmc_primary_extraction.rds"
+  "data/05_text-extracted/"
 
-if (file_exists(pmc_primary_extracted_address)) {
+extraction_site <- 
+  "temp/extraction_chunks/"
+
+if (!is_dir_empty(pmc_primary_extracted_address)) {
   pmcs_text_extracted <-
     read_rds(pmc_primary_extracted_address)
 } else {
-  pmcs <-
-    readr::read_rds(
-      "data/02_pmc/html_processed.rds"
-    ) %>%
-    dplyr::filter_out(
-      removable
+  
+  pmc_list <-
+    fs::dir_ls(
+      path = "data/03_labor/",
+      recurse = TRUE,
+      glob = "*.html",
     )
+  
+  pmcs <-
+    extract_articles(
+      pmc_list, 
+      checkpoint_dir = extraction_site,
+      workers = 1L
+    ) 
 
   pmcs_text_extracted <-
     pmcs %>%
@@ -38,32 +49,38 @@ if (file_exists(pmc_primary_extracted_address)) {
       #   paste(reference_n, reference_doi, sep = "\t|\t", collapse = "\n")
       # }, .progress = TRUE),
     ) %>%
-    tidyr::unnest_wider(col = ai_text, names_sep = "_")
+    tidyr::unnest_wider(col = ai_text, names_sep = "_") %>% 
+    mutate(prospero = extract_prospero_ids(paste0(abstract_text, ai_text_methods)))
 
 
   pmcs_text_extracted %>%
-    readr::write_rds(
-      pmc_primary_extracted_address,
-      compress = "gz"
+    write_rds_chunks(
+      pmc_primary_extracted_address
     )
 }
 
 
 create_tabs_replace_files <-
-  function(path, intro, method) {
+  function(path, intro, method, prospero) {
     which_is_na <-
-      c(intro, method) %>%
+      c(intro, method, prospero) %>%
       is.na() %>%
       which()
 
-    colors <- c(Introduction = NA, Methodology = NA)
+    colors <- 
+      c(
+        Introduction = NA, 
+        Methodology = NA,
+        PROSPERO = NA
+        )
 
     colors[which_is_na] <- "magenta"
 
     tab_contents <-
       c(
         Introduction = intro,
-        Methodology = method
+        Methodology = method,
+        PROSPERO = prospero
       )
 
     temp_dir <-

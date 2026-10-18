@@ -40,13 +40,14 @@ safe_annotate <- function(path, keywords) {
   )
 }
 
+
 old_plan <- future::plan(future::multicore, workers = 10)
 res <- furrr::future_map(pmc_list, safe_annotate,
   keywords = kws, .progress = TRUE
 ) |>
   dplyr::bind_rows()
 
-res %>% write_rds("highlight_res.rds")
+# res %>% write_rds("highlight_res.rds")
 dplyr::count(res, ok)
 dplyr::filter(res, !ok)
 

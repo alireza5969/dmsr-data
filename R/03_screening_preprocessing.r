@@ -1,3 +1,6 @@
+# This file reads all HTML files and creates a tibble of its content and metadata
+# The result will be saved in chunks for later use
+
 library(magrittr)
 library(dplyr)
 library(rvest)
@@ -9,7 +12,6 @@ library(htmltools)
 library(readr)
 
 source("R/00_functions.r")
-source("R/03_screening_preprocessing_annotate.r")
 source("R/03_screening_preprocessing_extract.r")
 
 pmc_list <-
@@ -25,9 +27,9 @@ extraction_site <-
 final_site <- 
   "data/02_pmc/"
 
-extraction_name <- "html_processed.rds"
+extraction_name <- "html_processed"
 
-if (!file_exists(path(final_site, extraction_name))) {
+if (fs::is_dir_empty("data/02_pmc/html_processed")) {
   
   res <-
     extract_articles(
@@ -57,15 +59,22 @@ if (!file_exists(path(final_site, extraction_name))) {
           body_tbl$paragraph_text %>%
             paste(collapse = "\n") %>%
             stringi::stri_count_words()
-        }, .progress = TRUE),
-      removable = if_else(
-        if_any(
-          no_abstract:no_pubmed_medline) | body_word_count < 1500, 
-        TRUE, 
-        FALSE
-        )
+        }, .progress = TRUE)
+      # This part was used to first remove some papers that din't meet criteria
+      # I had to remove the actual file that contained the whole dataset
+      # Therefore, this makes the reproducibility a little bit harder
+      # Those who want to reproduce the results, have to run the process from the begning
+      # and uncomment this file
+      
+      # removable = if_else(
+      #   if_any(
+      #     no_abstract:no_pubmed_medline
+      #     ) | body_word_count < 1500, 
+      #   TRUE, 
+      #   FALSE
+      #   )
     ) %>% 
-    write_rds(path(final_site, extraction_name))
+    write_rds_chunks(path(final_site, extraction_name), )
   
   file_delete(dir_ls(extraction_site))
   
@@ -77,6 +86,6 @@ if (!file_exists(path(final_site, extraction_name))) {
 }  else {
   
   res <- 
-    read_rds(path(final_site, extraction_name))
+    read_rds_chunks(path(final_site, extraction_name))
   
 }

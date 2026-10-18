@@ -520,3 +520,172 @@ split_intro_methods <- function(df, stop_type = "methods") {
   }
   
 }
+
+# Save RDS in chunks ---
+
+.rc_n    <- function(x) if (is.data.frame(x) || is.matrix(x)) nrow(x) else length(x)
+.rc_type <- function(x) {
+  if (is.data.frame(x)) "data.frame"
+  else if (is.matrix(x)) "matrix"
+  else if (is.list(x) || is.atomic(x)) "vector"
+  else stop("Unsupported object type: ", class(x)[1])
+}
+.rc_slice <- function(x, type, i) {
+  if (type %in% c("data.frame", "matrix")) x[i, , drop = FALSE] else x[i]
+}
+.rc_manifest_path <- function(dir, prefix) file.path(dir, paste0(prefix, "_manifest.rds"))
+
+# Move a finished temp file onto its final name (works on Windows too)
+.rc_commit <- function(tmp, path) {
+  if (file.exists(path)) file.remove(path)
+  if (!file.rename(tmp, path)) stop("Could not rename ", tmp, " to ", path)
+}
+
+.rc_save_manifest <- function(m, dir, prefix) {
+  path <- .rc_manifest_path(dir, prefix)
+  tmp  <- paste0(path, ".tmp")
+  saveRDS(m, tmp)
+  .rc_commit(tmp, path)
+}
+
+.rc_read_manifest <- function(dir, prefix, allow_incomplete = FALSE) {
+  path <- .rc_manifest_path(dir, prefix)
+  if (!file.exists(path)) stop("No manifest found for prefix '", prefix, "' in ", dir)
+  m <- readRDS(path)
+  if (!isTRUE(m$complete) && !allow_incomplete) {
+    stop("This chunk set is incomplete (an earlier write was interrupted). ",
+         "Re-run write_rds_chunks(..., resume = TRUE) or use allow_incomplete = TRUE.")
+  }
+  m
+}
+
+
+write_rds_chunks <- function(x, dir, prefix = "chunk", max_mb = 50,
+                             compress = "gzip", overwrite = FALSE,
+                             resume = FALSE, verbose = TRUE) {
+  type <- .rc_type(x)
+  n    <- .rc_n(x)
+  if (n == 0) stop("Nothing to write: object has length/nrow 0.")
+  
+  # "MB" = 1e6 bytes (slightly stricter than 1024^2, so it's safe either way)
+  max_bytes <- max_mb * 1e6
+  target    <- 0.9 * max_bytes   # aim a bit below the limit
+  
+  dir.create(dir, showWarnings = FALSE, recursive = TRUE)
+  mpath    <- .rc_manifest_path(dir, prefix)
+  existing <- list.files(dir, pattern = paste0("^", prefix, "_.*\\.rds(\\.tmp)?$"),
+                         full.names = TRUE)
+  fingerprint <- list(type = type, n = n, size = as.numeric(object.size(x)))
+  
+  files <- character(0)
+  rows  <- integer(0)
+  bytes_per_row <- fingerprint$size / n  # refined after the first chunk
+  
+  if (resume && file.exists(mpath)) {
+    m <- readRDS(mpath)
+    if (!identical(m$fingerprint, fingerprint)) {
+      stop("The existing chunks were written from a different object ",
+           "(type / size / row count differ). Use overwrite = TRUE to start over.")
+    }
+    if (isTRUE(m$complete)) {
+      if (verbose) message("Already complete: nothing to do.")
+      return(invisible(file.path(dir, m$files)))
+    }
+    if (!all(file.exists(file.path(dir, m$files)))) {
+      stop("Some chunk files listed in the manifest are missing. ",
+           "Use overwrite = TRUE to start over.")
+    }
+    file.remove(list.files(dir, pattern = "\\.tmp$", full.names = TRUE))  # leftovers
+    files <- m$files
+    rows  <- m$rows
+    bytes_per_row <- m$bytes_per_row
+    if (verbose) message(sprintf("Resuming after chunk %d (%s of %s rows done)",
+                                 length(files), format(sum(rows), big.mark = ","),
+                                 format(n, big.mark = ",")))
+  } else if (length(existing)) {
+    if (!(overwrite || resume)) {
+      stop("Files with prefix '", prefix, "' already exist in ", dir,
+           ". Use resume = TRUE to continue or overwrite = TRUE to start over.")
+    }
+    file.remove(existing)  # nothing usable to resume from
+  }
+  
+  i <- sum(rows) + 1L
+  k <- length(files)
+  
+  while (i <= n) {
+    k    <- k + 1L
+    path <- file.path(dir, sprintf("%s_%05d.rds", prefix, k))
+    tmp  <- paste0(path, ".tmp")
+    size <- max(1L, floor(target / bytes_per_row))
+    j    <- min(n, i + size - 1L)
+    
+    repeat {
+      saveRDS(.rc_slice(x, type, i:j), tmp, compress = compress)
+      sz <- file.size(tmp)
+      if (sz <= max_bytes) break
+      if (j == i) {
+        warning("A single row/element (index ", i, ") is ", round(sz / 1e6, 1),
+                " MB, larger than max_mb = ", max_mb, ". Written as-is.")
+        break
+      }
+      # chunk too big: shrink proportionally (and always by at least 1 row)
+      cur <- j - i + 1L
+      new <- max(1L, min(cur - 1L, floor(cur * target / sz)))
+      j   <- i + new - 1L
+    }
+    
+    .rc_commit(tmp, path)                 # chunk is now complete under its final name
+    bytes_per_row <- sz / (j - i + 1L)
+    files <- c(files, basename(path))
+    rows  <- c(rows, j - i + 1L)
+    .rc_save_manifest(list(type = type, n = n, files = files, rows = rows,
+                           max_mb = max_mb, class = class(x),
+                           fingerprint = fingerprint,
+                           bytes_per_row = bytes_per_row,
+                           complete = FALSE), dir, prefix)
+    
+    if (verbose) message(sprintf("[%d] %s: %s rows, %.1f MB",
+                                 k, basename(path), format(j - i + 1L, big.mark = ","), sz / 1e6))
+    i <- j + 1L
+  }
+  
+  .rc_save_manifest(list(type = type, n = n, files = files, rows = rows,
+                         max_mb = max_mb, class = class(x),
+                         fingerprint = fingerprint,
+                         bytes_per_row = bytes_per_row,
+                         complete = TRUE), dir, prefix)
+  invisible(file.path(dir, files))
+}
+
+
+read_rds_chunks <- function(dir, prefix = "chunk", chunks = NULL, combine = TRUE,
+                            allow_incomplete = FALSE) {
+  m <- .rc_read_manifest(dir, prefix, allow_incomplete)
+  files <- m$files
+  if (!is.null(chunks)) files <- files[chunks]
+  parts <- lapply(file.path(dir, files), readRDS)
+  if (!combine) return(parts)
+  
+  switch(m$type,
+         data.frame = , matrix = do.call(rbind, parts),
+         vector = do.call(c, parts)
+  )
+}
+
+
+extract_prospero_ids <- function(text) {
+  pattern <- "(?i)\\bCRD[\\s:\\-\u2010-\u2015]{0,3}42\\d{9}(?!\\d)"
+  
+  one <- function(x) {
+    if (is.na(x) || !nzchar(x)) return(NA_character_)
+    ids <- str_extract_all(x, pattern)[[1]]
+    if (length(ids) == 0) return(NA_character_)
+    ids |>
+      str_remove_all("[^A-Za-z0-9]") |>   # drop spaces, hyphens, colons
+      str_to_upper() |>
+      unique()
+  }
+  
+  map(text, one)
+}
