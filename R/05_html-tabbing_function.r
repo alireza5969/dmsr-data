@@ -300,31 +300,39 @@ body_after_template <- r"-(<<article_end>>
 <<end>>
 )-"
 
-# examples --------------------------------------------------------------
-# add_text_tabs(
-#   "01181_PMC7811829.html",
-#   texts = c(
-#     Abstract = "First text...",
-#     Notes    = "Second text..."
-#   )
-# )
-#
-# Color only the second tab red (others keep the default look):
-# add_text_tabs("01181_PMC7811829.html",
-#               c(Abstract = "...", Notes = "...", Summary = "..."),
-#               colors = c(Notes = "red"))
-#
-# Same thing, positional (NA = default):
-# add_text_tabs("01181_PMC7811829.html", c(Abstract = "...", Notes = "...", Summary = "..."),
-#               colors = c(NA, "red", NA))
-#
-# Color the article tab too, mix names and hex codes:
-# add_text_tabs("01181_PMC7811829.html", c(Abstract = "...", Notes = "..."),
-#               article_color = "#2c7be5",
-#               colors = c(Abstract = "seagreen", Notes = "#d9534f"))
-#
-# Run again with different texts: the old tabs are replaced, not stacked.
-# add_text_tabs("01181_PMC7811829.html", c(Summary = "New text"))
-#
-# Go back to the original file:
-# remove_text_tabs("01181_PMC7811829.html")
+
+
+add_tab_link <- function(html_path, text, href) {
+  stopifnot(
+    is.character(text), length(text) == 1, !is.na(text),
+    is.character(href), length(href) == 1, !is.na(href)
+  )
+  if (!file_exists(html_path)) {
+    stop("HTML file not found: ", html_path, call. = FALSE)
+  }
+  
+  bar_open <- '<div class="tt-bar" role="tablist">'
+  html <- read_file(html_path)
+  
+  if (!str_detect(html, fixed(bar_open))) {
+    stop("No tab bar found. Run add_text_tabs() on this file first.", call. = FALSE)
+  }
+  
+  # drop a previous link (and the line break before it), so repeats don't stack
+  html <- str_remove(html, regex('\\s*<h4 id="user-name".*?</h4>', dotall = TRUE))
+  
+  link <- str_c(
+    '<h4 id="user-name" style="margin: 0 16px 0 0; align-self: center; ',
+    'font: 600 14px system-ui, sans-serif;">',
+    '<a href="', htmlEscape(href, attribute = TRUE), '" ',
+    'style="color: #9ecbff; text-decoration: none;">',
+    htmlEscape(text), '</a></h4>'
+  )
+  
+  # insert right after the opening of the tab bar
+  bar_end <- str_locate(html, fixed(bar_open))[1, "end"]
+  html <- str_c(str_sub(html, 1, bar_end), "\n  ", link, str_sub(html, bar_end + 1))
+  
+  write_file(html, html_path)
+  invisible(html_path)
+}

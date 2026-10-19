@@ -60,7 +60,7 @@ if (!is_dir_empty(pmc_primary_extracted_address)) {
 
 
 create_tabs_replace_files <-
-  function(path, intro, method, prospero) {
+  function(path, intro, method, prospero, pmcid) {
     which_is_na <-
       c(intro, method) %>%
       is.na() %>%
@@ -95,6 +95,12 @@ create_tabs_replace_files <-
       backup = FALSE,
       colors = colors
     )
+    
+    add_tab_link(
+      path, 
+      'Open on PMC',
+      fs::path('https://pmc.ncbi.nlm.nih.gov/articles/', pmcid)
+    )
 
     # fs::file_delete(path = path)
     # fs::file_move(temp_dir, path)
@@ -109,8 +115,14 @@ old_plan <- future::plan(future::multicore, workers = 10)
 
 future_pwalk(
   pmcs_text_extracted,
-  \(path, ai_text_intro, ai_text_methods, prospero, ...)
-  create_tabs_replace_files(path, ai_text_intro, ai_text_methods, prospero),
+  \(path, ai_text_intro, ai_text_methods, prospero, pmcid, ...)
+  create_tabs_replace_files(
+    path, 
+    ai_text_intro, 
+    ai_text_methods, 
+    prospero, 
+    pmcid
+    ),
   .progress = TRUE
 )
 
