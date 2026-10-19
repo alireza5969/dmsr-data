@@ -23,10 +23,11 @@
 </style><!-- text-tabs:style-end --></head>
 <body><!-- text-tabs:begin -->
 <div class="tt-bar" role="tablist">
+  <h4 id="user-name" style="margin: 0 16px 0 0; align-self: center; font: 600 14px system-ui, sans-serif;"><a href="https:/pmc.ncbi.nlm.nih.gov/articles/PMC8541492" style="color: #9ecbff; text-decoration: none;">Open on PMC</a></h4>
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
-  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false"><mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="prospero" style="background-color: springgreen">PROSPERO</mark></button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -1514,6 +1515,7 @@
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
 
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -1568,11 +1570,11 @@ There are reliable data on the average vitamin D3 levels in the population [15,1
 These results from independent datasets, which include data from before and after the onset of the disease, also further strengthen the assumption of a causal relationship between vitamin D3 blood levels and SARS-CoV-2 death rates. Our results therefore also confirm the importance of establishing vitamin D3 supplementation as a general method to prevent severe courses of SARS-CoV-2 infections.</pre></div>
 </div>
 <div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
-  <div class="tt-inner"><pre><span data-kwa-wrap="1">## 2. Methods
+  <div class="tt-inner"><pre>## 2. Methods
 
-### 2.1. <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search strategy" style="background-color: indianred">Search Strategy</mark> and Selection Criteria
+### 2.1. Search Strategy and Selection Criteria
 
-Initially, a systematic literature review was performed to identify relevant COVID-19 studies. Included studies were observational cohort studies that grouped two or more cohorts by their vitamin D3 values and listed mortality rates for the respective cohorts. <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="pubmed" style="background-color: yellow">PubMed</mark> and the https://c19vitamind.com (accessed on 27 <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="march" style="background-color: lightgoldenrodyellow">March</mark> 2021) registry were <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark>ed according to Table 1. Subsequently, titles and abstracts were screened, and full-text articles were further analyzed for eligibility.
+Initially, a systematic literature review was performed to identify relevant COVID-19 studies. Included studies were observational cohort studies that grouped two or more cohorts by their vitamin D3 values and listed mortality rates for the respective cohorts. PubMed and the https://c19vitamind.com (accessed on 27 March 2021) registry were searched according to Table 1. Subsequently, titles and abstracts were screened, and full-text articles were further analyzed for eligibility.
 
 ### 2.2. Data Analysis
 
@@ -1580,9 +1582,9 @@ Collected studies were divided into a population study [142] and seven hospital 
 
 Several corrections for the crude mortality rates (CMRs) recorded by Ahmad were attempted to understand the underlying causes within the population study data and the outliers. In the end, none were used in the final data evaluation to avoid the risk of introducing hidden variables that also correlate with D3.
 
-Mortality rates and D3 blood levels from studies on hospitalized COVID-19 patients were assembled in a separate dataset. When no median D3 blood levels were provided for the individual study cohorts, the IQR, mean ± SD or estimated values within the grouping criteria were used in that order. Patient characteristics, including age IQR, sex and diabetes status, were used to compute expected mortality rates with a machine learning model [154], which is available online (https://www.economist.com/graphic-detail/covid-pandemic-mortality-risk-estimator (accessed on 27 <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="march" style="background-color: lightgoldenrodyellow">March</mark> 2021)). While other comorbidities from the source studies were not considered in our analysis, they also have lower impact on the model’s output, as can be easily confirmed using the online tool. Based on the expected disease mortality rate for the respective patient cohorts, the reported mortality rates from the source studies were corrected. Thereby, the relationship between the initial vitamin D levels and the resulting mortality becomes more apparent.
+Mortality rates and D3 blood levels from studies on hospitalized COVID-19 patients were assembled in a separate dataset. When no median D3 blood levels were provided for the individual study cohorts, the IQR, mean ± SD or estimated values within the grouping criteria were used in that order. Patient characteristics, including age IQR, sex and diabetes status, were used to compute expected mortality rates with a machine learning model [154], which is available online (https://www.economist.com/graphic-detail/covid-pandemic-mortality-risk-estimator (accessed on 27 March 2021)). While other comorbidities from the source studies were not considered in our analysis, they also have lower impact on the model’s output, as can be easily confirmed using the online tool. Based on the expected disease mortality rate for the respective patient cohorts, the reported mortality rates from the source studies were corrected. Thereby, the relationship between the initial vitamin D levels and the resulting mortality becomes more apparent.
 
-The two datasets were combined, and the mortality rates of the hospital studies were scaled according to the mortality range of the population studies, resulting in a uniform list of patient cohorts, their vitamin D status and dimensionless mortality coefficients. Linear regressions (OLS), Pearson and Spearman correlations of vitamin D, and the mortality values for the separate and combined datasets were generated with a Python 3.7 kernel using the scipy.stats 1.7.0 and statsmodels 0.12.2 libraries in a https://deepnote.com (accessed on 30 <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="july" style="background-color: lightgoldenrodyellow">July</mark> 2021) Jupyter notebook.</span></pre></div>
+The two datasets were combined, and the mortality rates of the hospital studies were scaled according to the mortality range of the population studies, resulting in a uniform list of patient cohorts, their vitamin D status and dimensionless mortality coefficients. Linear regressions (OLS), Pearson and Spearman correlations of vitamin D, and the mortality values for the separate and combined datasets were generated with a Python 3.7 kernel using the scipy.stats 1.7.0 and statsmodels 0.12.2 libraries in a https://deepnote.com (accessed on 30 July 2021) Jupyter notebook.</pre></div>
 </div>
 <div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
   <div class="tt-inner"><pre>(No text available)</pre></div>

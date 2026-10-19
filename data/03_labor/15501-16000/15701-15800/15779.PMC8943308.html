@@ -23,10 +23,11 @@
 </style><!-- text-tabs:style-end --></head>
 <body><!-- text-tabs:begin -->
 <div class="tt-bar" role="tablist">
+  <h4 id="user-name" style="margin: 0 16px 0 0; align-self: center; font: 600 14px system-ui, sans-serif;"><a href="https:/pmc.ncbi.nlm.nih.gov/articles/PMC8943308" style="color: #9ecbff; text-decoration: none;">Open on PMC</a></h4>
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
-  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false"><mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="prospero" style="background-color: springgreen">PROSPERO</mark></button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -2061,31 +2062,32 @@ Emails: <a href="mailto:jayendra.bhalodiya@warwick.ac.uk">jayendra.bhalodiya@war
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
 
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
-  <div class="tt-inner"><pre><span data-kwa-wrap="1">## Introduction
+  <div class="tt-inner"><pre>## Introduction
 
 Brain tumours are malignancies of brain tissues. Characterising such tissues and identifying related genes can help to estimate tumour spread, and further help to identify tumour grades for the treatment planning.1,2 Such characterisation comprises of the different tumour components assessment. Components such as tumour core, boundary of tumour core, peritumoral oedema, cellular proliferation (an increase of the number of cells), cellular infiltration (migration of cells or excessive growth) and vascular proliferation (leaky blood vessels) are of great clinical interest.1,3 Current practice involves various magnetic resonance imaging (MRI) approaches to visualise these tumour components.4 Particularly, the tumour core can be visible in T2-weighted MRI, and T1-weighted MRI, the enhanced boundary of tumour core can be seen in gadolinium-based T1-weighted MRI (T1-Gd), peritumoral oedema can be visible in fluid-attenuated inversion recovery (FLAIR) MRI, while cellular proliferation, cellular infiltration and vascular proliferation can be visualised in diffusion-weighted MRI and perfusion-weighted MRI.
 
 In the literature, MRI-based image processing methods addressed the outlining of tumour components.5 These methods can distinguish between healthy and tumour tissues. Moreover, they can distinguish among different tumour components within the tumour. Such methods are commonly known as segmentation methods,5 which can be manual, semi-automatic or automatic. With the increase of segmentation methods, the medical image analysis community has reviewed them using publicly available benchmark datasets (e.g. the brain tumour segmentation – BraTS dataset) to assess their performance.5,6 Additionally, individual reviews addressing only deep learning methods,7 only automated methods,8 classical reviews,9 and practical implications10 are reported. However, a systematic review to identify promising, and widely adapted brain tumor segmentation methods is not reported in the literature. Moreover, in the literature, individual methods, and their validation show technical advancements in most MR image-based approaches, but they are not fully explored in all MRI sequences in the imaging of brain tumours. For example, diffusion-weighted, and perfusion-weighted MRI are often overlooked or limited in brain tumor segmentation method development, and validation. In addition, a recent trend of deep learning methods has extensively contributed to the development of automatic segmentation methods, in order to avoid the subjective, and time-consuming nature of manual techniques. However, the performance of these deep learning methods relies on the data types used, single or multi-centre data collection, the number of available data samples for training, validation and testing of the approach. Therefore, it is crucial to explore the various studies in deep learning methods. Such a study can help understanding and justifying the need for further large open-access data repositories and alternative artificial intelligence (AI)-based techniques, such as transfer learning.
 
-In this systematic review, we addressed the following PICO (P: population, I: intervention, C: comparison, O: outcome) format re<mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> question:
+In this systematic review, we addressed the following PICO (P: population, I: intervention, C: comparison, O: outcome) format research question:
 
 What automated brain tumour segmentation techniques can medical imaging specialists, and clinicians use to identify tumour components, compared to manual segmentation?
 
-To answer the above question, we reviewed brain tumour segmentation methods which are based on physics or mathematics models, deep learning models, and software or semi-automatic methods. The methods, which use at least four types of MRI sequences (T1-weighted, T1-Gd, T2-weighted and FLAIR MRI), are included in the synthesis as they are common in clinical practice. Articles based on images from other MRI sequences are discussed, individually. The accuracy measures and study population of the various segmentation methods are also reviewed. Moreover, deep learning architectures are reviewed for their underlying network architecture (for example, U-Net, VGG etc.) with a list of articles that adapted such architectures in their studies. Technical specifications of such architectures are listed in the discussion.</span></pre></div>
+To answer the above question, we reviewed brain tumour segmentation methods which are based on physics or mathematics models, deep learning models, and software or semi-automatic methods. The methods, which use at least four types of MRI sequences (T1-weighted, T1-Gd, T2-weighted and FLAIR MRI), are included in the synthesis as they are common in clinical practice. Articles based on images from other MRI sequences are discussed, individually. The accuracy measures and study population of the various segmentation methods are also reviewed. Moreover, deep learning architectures are reviewed for their underlying network architecture (for example, U-Net, VGG etc.) with a list of articles that adapted such architectures in their studies. Technical specifications of such architectures are listed in the discussion.</pre></div>
 </div>
 <div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
-  <div class="tt-inner"><pre><span data-kwa-wrap="1">## Materials and methods
+  <div class="tt-inner"><pre>## Materials and methods
 
-### Study <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="protocol" style="background-color: springgreen">protocol</mark>
+### Study protocol
 
-A <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="protocol" style="background-color: springgreen">protocol</mark> for this study is prepared internally but not registered elsewhere. However, the <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="prospero" style="background-color: springgreen">PROSPERO</mark> database is checked to ensure the originality of the study.
+A protocol for this study is prepared internally but not registered elsewhere. However, the PROSPERO database is checked to ensure the originality of the study.
 
-### Article <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark>
+### Article search
 
-For source articles’ systematic identification, we have <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark>ed the following online databases: <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="pubmed" style="background-color: yellow">PubMed</mark>, Embase Ovid and Engineering Village. The different combinations of the keywords ‘glioma’, ‘medulloblastoma’, ‘brain tumour’ and ‘segmentation’ were used. After discussion among the authors, the combination, ‘glioma’, and ‘segmentation’, and ‘brain tumour’, was used for the article <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark>. The <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> duration was defined to include articles published in the period from 2015 until 2020. In <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="pubmed" style="background-color: yellow">PubMed</mark>, the specific <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> filters were full-text, humans, English and segmentation keyword must be in the article title or abstract. In Engineering Village, the specific <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> filters were that the segmentation keyword must be in the abstract, and glioma, and brain tumour keywords must be in the subject or title or abstract. All the articles were stored using Zotero11 software. After removing the duplicates, study inclusion/exclusion criteria were applied.
+For source articles’ systematic identification, we have searched the following online databases: PubMed, Embase Ovid and Engineering Village. The different combinations of the keywords ‘glioma’, ‘medulloblastoma’, ‘brain tumour’ and ‘segmentation’ were used. After discussion among the authors, the combination, ‘glioma’, and ‘segmentation’, and ‘brain tumour’, was used for the article search. The search duration was defined to include articles published in the period from 2015 until 2020. In PubMed, the specific search filters were full-text, humans, English and segmentation keyword must be in the article title or abstract. In Engineering Village, the specific search filters were that the segmentation keyword must be in the abstract, and glioma, and brain tumour keywords must be in the subject or title or abstract. All the articles were stored using Zotero11 software. After removing the duplicates, study inclusion/exclusion criteria were applied.
 
 ### Study inclusion/exclusion criteria
 
@@ -2109,7 +2111,7 @@ Studies are synthesised according to the publication year, technical methods use
 
 Benchmark review articles and particular imaging sequences studies are mentioned in the specific imaging studies’ section. Studies of segmentation methods using diffusion-weighted, and perfusion-weighted MRI, are reported individually.
 
-During the synthesis, the unavailable values of performance score measures and data samples are considered as null values.</span></pre></div>
+During the synthesis, the unavailable values of performance score measures and data samples are considered as null values.</pre></div>
 </div>
 <div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
   <div class="tt-inner"><pre>(No text available)</pre></div>

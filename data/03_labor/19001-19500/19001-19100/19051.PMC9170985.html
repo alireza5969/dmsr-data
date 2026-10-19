@@ -23,10 +23,11 @@
 </style><!-- text-tabs:style-end --></head>
 <body><!-- text-tabs:begin -->
 <div class="tt-bar" role="tablist">
+  <h4 id="user-name" style="margin: 0 16px 0 0; align-self: center; font: 600 14px system-ui, sans-serif;"><a href="https:/pmc.ncbi.nlm.nih.gov/articles/PMC9170985" style="color: #9ecbff; text-decoration: none;">Open on PMC</a></h4>
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
-  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false"><mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="prospero" style="background-color: springgreen">PROSPERO</mark></button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -2876,6 +2877,7 @@
 <div class="branding"><p>This display is generated from NISO JATS XML with <b>jats-html.xsl</b>. The XSLT engine is libxslt.</p></div>
 </div>
 
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
@@ -2892,15 +2894,15 @@ Several studies measured the concentrations of BDNF in the blood and examined it
 The present systematic review and meta-analysis aims to update the existing literature regarding circulating BDNF levels and cognitive functioning in the schizophrenia-bipolar spectrum in comparison to healthy controls, in order to conclusively demonstrate whether blood BDNF can act as a biomarker of cognitive dysfunction.</pre></div>
 </div>
 <div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
-  <div class="tt-inner"><pre><span data-kwa-wrap="1">## Methods
+  <div class="tt-inner"><pre>## Methods
 
-### <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search strategy" style="background-color: indianred">Search Strategy</mark>
+### Search Strategy
 
-Studies for the systematic review were identified by <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark>ing Embase and <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="medline" style="background-color: yellow">Medline</mark> databases for English language articles published in peer-reviewed journals between 1 <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="january" style="background-color: lightgoldenrodyellow">January</mark> 2000 and 1 <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="june" style="background-color: lightgoldenrodyellow">June</mark> 2021 according to the PRISMA guidelines (33) with <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> terms “(schizo* OR bipolar) AND (BDNF* OR ‘Brain Derived Neurotrophic Factor’) AND (‘Neurocognit*’ OR Cognit*).” <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">Search</mark>es by hand and via the reference section of published reports and previous review papers were also <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="conduct" style="background-color: lemonchiffon">conduct</mark>ed in order to identify additional relevant studies.
+Studies for the systematic review were identified by searching Embase and Medline databases for English language articles published in peer-reviewed journals between 1 January 2000 and 1 June 2021 according to the PRISMA guidelines (33) with search terms “(schizo* OR bipolar) AND (BDNF* OR ‘Brain Derived Neurotrophic Factor’) AND (‘Neurocognit*’ OR Cognit*).” Searches by hand and via the reference section of published reports and previous review papers were also conducted in order to identify additional relevant studies.
 
 ### Inclusion and Exclusion Criteria
 
-The inclusion criteria for studies were the following: (1) original re<mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="conduct" style="background-color: lemonchiffon">conduct</mark>ed with human subjects; (2) involved patients with diagnosis on the schizophrenia-bipolar spectrum; (3) included at least one cognitive assessment; (4) reported enzyme-linked immunosorbent assay (ELISA) measurement of BDNF levels in blood serum or plasma; (5) included healthy controls. Papers were excluded if they examined only genetic BDNF data or baseline blood BDNF levels were not adequately reported. Studies that did not report BDNF levels or cognitive scores for the total patient sample were excluded from the meta-analyses.
+The inclusion criteria for studies were the following: (1) original research conducted with human subjects; (2) involved patients with diagnosis on the schizophrenia-bipolar spectrum; (3) included at least one cognitive assessment; (4) reported enzyme-linked immunosorbent assay (ELISA) measurement of BDNF levels in blood serum or plasma; (5) included healthy controls. Papers were excluded if they examined only genetic BDNF data or baseline blood BDNF levels were not adequately reported. Studies that did not report BDNF levels or cognitive scores for the total patient sample were excluded from the meta-analyses.
 
 ### Statistical Analyses
 
@@ -2908,7 +2910,7 @@ Means, standard deviations (SDs), and effect sizes were calculated in Microsoft 
 
 The meta-analyses were performed using the “meta” package in R studio, with standardized mean difference used as effect size measurement. While Z statistic was calculated to determine the significance of the effect size, Q statistic was computed to provide an estimation of the degree of homogeneity of the effect sizes of the different studies. The degree of inconsistency was signalized with the I2 metric (I2 &gt; 75% indicating large heterogeneity, &gt;50% moderate heterogeneity, and &lt;50% low heterogeneity). To present the effect sizes of individual studies, a forest plot was created.
 
-Due to the heterogeneity of studies, separate analyses for schizophrenia and bipolar disorder patients were performed with three random-effects meta-analyses. The first analysis examined the difference in circulating BDNF levels between schizophrenia patients and healthy controls, the second examined the difference in circulating BDNF levels between bipolar disorder patients and healthy controls, and the third looked at the difference in cognitive functions measured by RBANS between schizophrenia patients and healthy controls. Data was scarce to <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="conduct" style="background-color: lemonchiffon">conduct</mark> an analysis for the difference between bipolar disorder patients and healthy controls in terms of cognitive functions. Similarly, <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="conduct" style="background-color: lemonchiffon">conduct</mark>ing a meta-analysis of correlation coefficients was impossible due to the scarcity and heterogeneity of data. In these cases, qualitative analyses were performed.</span></pre></div>
+Due to the heterogeneity of studies, separate analyses for schizophrenia and bipolar disorder patients were performed with three random-effects meta-analyses. The first analysis examined the difference in circulating BDNF levels between schizophrenia patients and healthy controls, the second examined the difference in circulating BDNF levels between bipolar disorder patients and healthy controls, and the third looked at the difference in cognitive functions measured by RBANS between schizophrenia patients and healthy controls. Data was scarce to conduct an analysis for the difference between bipolar disorder patients and healthy controls in terms of cognitive functions. Similarly, conducting a meta-analysis of correlation coefficients was impossible due to the scarcity and heterogeneity of data. In these cases, qualitative analyses were performed.</pre></div>
 </div>
 <div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
   <div class="tt-inner"><pre>(No text available)</pre></div>

@@ -15,6 +15,9 @@ library(stringr)
 #' All added CSS classes and ids use the `tt-` prefix to avoid clashing with
 #' the page's own styles (e.g. `jats-preview.css`).
 #'
+#' Files are written atomically (temp file + rename), so a parallel reader never
+#' sees a half-written file.
+#'
 #' @param html_path Path to the HTML file. It is modified in place.
 #' @param texts Character vector of plain texts, one per extra tab. Names are
 #'   used as tab labels: `c(Abstract = "...", Notes = "...")`. Unnamed texts are
@@ -66,7 +69,7 @@ add_text_tabs <- function(html_path,
   
   if (backup) {
     backup_path <- str_c(html_path, ".bak")
-    if (!file_exists(backup_path)) write_file(html, backup_path)
+    if (!file_exists(backup_path)) write_file_atomic(html, backup_path)
   }
   
   parts <- split_html(html)
@@ -78,7 +81,7 @@ add_text_tabs <- function(html_path,
     parts$body_close_to_end
   )
   
-  write_file(page, html_path)
+  write_file_atomic(page, html_path)
   invisible(html_path)
 }
 
@@ -89,13 +92,75 @@ remove_text_tabs <- function(html_path) {
   }
   read_file(html_path) |>
     strip_text_tabs() |>
-    write_file(html_path)
+    write_file_atomic(html_path)
+  invisible(html_path)
+}
+
+#' Put a linked text at the start of the tab bar, in place
+#'
+#' Works on a file already processed by `add_text_tabs()`. Inserts
+#' `<h4 id="user-name"><a href="...">text</a></h4>` as the first element of the
+#' tab bar. Calling it again replaces the previous link instead of adding
+#' another one. Run it *after* `add_text_tabs()` (re-running that removes the link).
+#'
+#' @param html_path Path to the tabbed HTML file (modified in place).
+#' @param text The visible text, e.g. "Open on PMC".
+#' @param href The link target.
+#'
+#' @return `html_path`, invisibly.
+add_tab_link <- function(html_path, text, href) {
+  stopifnot(
+    is.character(text), length(text) == 1, !is.na(text),
+    is.character(href), length(href) == 1, !is.na(href)
+  )
+  if (!file_exists(html_path)) {
+    stop("HTML file not found: ", html_path, call. = FALSE)
+  }
+  
+  bar_open <- '<div class="tt-bar" role="tablist">'
+  html <- read_file(html_path)
+  
+  if (!str_detect(html, fixed(bar_open))) {
+    stop("No tab bar found in ", html_path, ". Run add_text_tabs() on it first.",
+         call. = FALSE)
+  }
+  
+  # drop a previous link (and the line break before it), so repeats don't stack
+  html <- str_remove(html, regex('\\s*<h4 id="user-name".*?</h4>', dotall = TRUE))
+  
+  link <- str_c(
+    '<h4 id="user-name" style="margin: 0 16px 0 0; align-self: center; ',
+    'font: 600 14px system-ui, sans-serif;">',
+    '<a href="', htmlEscape(href, attribute = TRUE), '" ',
+    'style="color: #9ecbff; text-decoration: none;">',
+    htmlEscape(text), '</a></h4>'
+  )
+  
+  # insert right after the opening of the tab bar
+  bar_end <- str_locate(html, fixed(bar_open))[1, "end"]
+  html <- str_c(str_sub(html, 1, bar_end), "\n  ", link, str_sub(html, bar_end + 1))
+  
+  write_file_atomic(html, html_path)
   invisible(html_path)
 }
 
 # helpers ---------------------------------------------------------------
 
 `%||%` <- function(x, y) if (is.null(x)) y else x
+
+# Write to a temp file in the same folder, then rename over the target.
+# The rename is a single step, so other processes (e.g. parallel workers) see
+# either the complete old file or the complete new one, never a partial file.
+write_file_atomic <- function(x, path) {
+  tmp <- file_temp(tmp_dir = path_dir(path), pattern = ".tt-", ext = "tmp")
+  on.exit(if (file_exists(tmp)) file_delete(tmp), add = TRUE)
+  
+  write_file(x, tmp)
+  if (!file.rename(tmp, path)) {
+    stop("Could not replace file: ", path, call. = FALSE)
+  }
+  invisible(path)
+}
 
 mark <- list(
   style_begin   = "<!-- text-tabs:style-begin -->",
@@ -299,40 +364,3 @@ body_after_template <- r"-(<<article_end>>
 </script>
 <<end>>
 )-"
-
-
-
-add_tab_link <- function(html_path, text, href) {
-  stopifnot(
-    is.character(text), length(text) == 1, !is.na(text),
-    is.character(href), length(href) == 1, !is.na(href)
-  )
-  if (!file_exists(html_path)) {
-    stop("HTML file not found: ", html_path, call. = FALSE)
-  }
-  
-  bar_open <- '<div class="tt-bar" role="tablist">'
-  html <- read_file(html_path)
-  
-  if (!str_detect(html, fixed(bar_open))) {
-    stop("No tab bar found. Run add_text_tabs() on this file first.", call. = FALSE)
-  }
-  
-  # drop a previous link (and the line break before it), so repeats don't stack
-  html <- str_remove(html, regex('\\s*<h4 id="user-name".*?</h4>', dotall = TRUE))
-  
-  link <- str_c(
-    '<h4 id="user-name" style="margin: 0 16px 0 0; align-self: center; ',
-    'font: 600 14px system-ui, sans-serif;">',
-    '<a href="', htmlEscape(href, attribute = TRUE), '" ',
-    'style="color: #9ecbff; text-decoration: none;">',
-    htmlEscape(text), '</a></h4>'
-  )
-  
-  # insert right after the opening of the tab bar
-  bar_end <- str_locate(html, fixed(bar_open))[1, "end"]
-  html <- str_c(str_sub(html, 1, bar_end), "\n  ", link, str_sub(html, bar_end + 1))
-  
-  write_file(html, html_path)
-  invisible(html_path)
-}

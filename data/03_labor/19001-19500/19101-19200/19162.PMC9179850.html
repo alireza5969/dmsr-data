@@ -23,10 +23,11 @@
 </style><!-- text-tabs:style-end --></head>
 <body><!-- text-tabs:begin -->
 <div class="tt-bar" role="tablist">
+  <h4 id="user-name" style="margin: 0 16px 0 0; align-self: center; font: 600 14px system-ui, sans-serif;"><a href="https:/pmc.ncbi.nlm.nih.gov/articles/PMC9179850" style="color: #9ecbff; text-decoration: none;">Open on PMC</a></h4>
   <button class="tt-tab" role="tab" id="tt-tab-0" aria-controls="tt-panel-0" aria-selected="true">Article</button>
   <button class="tt-tab" role="tab" id="tt-tab-1" aria-controls="tt-panel-1" aria-selected="false">Introduction</button>
   <button class="tt-tab" role="tab" id="tt-tab-2" aria-controls="tt-panel-2" aria-selected="false">Methodology</button>
-  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false"><mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="prospero" style="background-color: springgreen">PROSPERO</mark></button>
+  <button class="tt-tab" role="tab" id="tt-tab-3" aria-controls="tt-panel-3" aria-selected="false">PROSPERO</button>
 </div>
 <div class="tt-panel tt-active" id="tt-panel-0" role="tabpanel" aria-labelledby="tt-tab-0">
 <!-- text-tabs:article-begin -->
@@ -1301,35 +1302,36 @@
 </div>
 
 
+
 <!-- text-tabs:article-end -->
 </div>
 <div class="tt-panel tt-text" id="tt-panel-1" role="tabpanel" aria-labelledby="tt-tab-1">
-  <div class="tt-inner"><pre><span data-kwa-wrap="1">## 1. Introduction
+  <div class="tt-inner"><pre>## 1. Introduction
 
-Whilst an increase in computational power and the development of more user-friendly software libraries have accelerated the adoption of machine learning (ML) techniques in both neuro-radiology and neuro-oncology, much of the re<mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> that is being published focuses on malignant tumor entities, such as high-grade gliomas or brain metastases [1].
+Whilst an increase in computational power and the development of more user-friendly software libraries have accelerated the adoption of machine learning (ML) techniques in both neuro-radiology and neuro-oncology, much of the research that is being published focuses on malignant tumor entities, such as high-grade gliomas or brain metastases [1].
 
 A possible explanation for this phenomenon lies in the availability of data that are required to train, validate and test ML models. While almost any hospital will have a sufficient number of cases for epidemiologically significant entities such as brain metastases, this is not the case for central nervous system (CNS) tumors with lower incidences, such as many benign brain tumors [2].
 
 In addition, most publicly available imaging datasets are comprised of malignant entities. The popular Brain Tumor Segmentation (BraTS) Challenge dataset consists exclusively of gliomas, which also applies to most of brain datasets that are available as part of The Cancer Imaging Archive (TCIA) [3,4].
 
-Despite these obstacles, there have been publications investigating the use of ML for benign CNS tumors [5,6]. This review will therefore summarize the re<mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> that has been <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="conduct" style="background-color: lemonchiffon">conduct</mark>ed on this topic in systematic fashion and assess the quality of the studies that have used ML for tumor detection and segmentation, as has been done previously for malignant CNS tumors [7,8]. The goal is to create a point of reference that other re<mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark>ers can use to identify gaps in the re<mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> that are worthy of further investigation and to identify possible shared issues regarding methodologies or their descriptions so that they can be addressed by future publications.
+Despite these obstacles, there have been publications investigating the use of ML for benign CNS tumors [5,6]. This review will therefore summarize the research that has been conducted on this topic in systematic fashion and assess the quality of the studies that have used ML for tumor detection and segmentation, as has been done previously for malignant CNS tumors [7,8]. The goal is to create a point of reference that other researchers can use to identify gaps in the research that are worthy of further investigation and to identify possible shared issues regarding methodologies or their descriptions so that they can be addressed by future publications.
 
-While there are numerous potential benefits to having machine learning techniques taking over parts of the radiology workflow or serving as automated second opinions, this requires common reporting standards to identify approaches that are worthy of being pursued further with the goal of possibly translating them into routine clinical practice someday.</span></pre></div>
+While there are numerous potential benefits to having machine learning techniques taking over parts of the radiology workflow or serving as automated second opinions, this requires common reporting standards to identify approaches that are worthy of being pursued further with the goal of possibly translating them into routine clinical practice someday.</pre></div>
 </div>
 <div class="tt-panel tt-text" id="tt-panel-2" role="tabpanel" aria-labelledby="tt-tab-2">
-  <div class="tt-inner"><pre><span data-kwa-wrap="1">## 2. Methods
+  <div class="tt-inner"><pre>## 2. Methods
 
-### 2.1. Literature <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">Search</mark>
+### 2.1. Literature Search
 
-The review was <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="conduct" style="background-color: lemonchiffon">conduct</mark>ed according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines [9]. Studies published in English after 2000 that used any kind of machine learning technique for the detection or segmentation of benign tumors of the CNS were included. Studies using semi-automatic segmentation requiring manual user input prior to creating the segmentation were not included. Since studies using segmentation only as a means to predict clinical or pathologic features frequently provide little detail on the segmentation methodology, so these studies were not included as well. No limits regarding size of the patient collective or length of follow-up were applied.
+The review was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines [9]. Studies published in English after 2000 that used any kind of machine learning technique for the detection or segmentation of benign tumors of the CNS were included. Studies using semi-automatic segmentation requiring manual user input prior to creating the segmentation were not included. Since studies using segmentation only as a means to predict clinical or pathologic features frequently provide little detail on the segmentation methodology, so these studies were not included as well. No limits regarding size of the patient collective or length of follow-up were applied.
 
-The Medical Literature Analysis and Retrieval System Online (<mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="medline" style="background-color: yellow">MEDLINE</mark>) database was <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark>ed on 14 <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="june" style="background-color: lightgoldenrodyellow">June</mark> 2021 via the <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="pubmed" style="background-color: yellow">PubMed</mark> interface. The <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="query" style="background-color: bisque">query</mark> was designed to include all studies that contained one or more words from two groups, one group comprised of words that indicate the usage of an ML technique (automated, computer aided, computer-aided, CAD, radiomic, texture analysis, deep learning, machine learning, neural network, artificial intelligence) and the other group comprised of words associated with benign brain tumors (meningioma, meningiomas, schwannoma, schwannomas, craniopharyngioma, craniopharyngiomas, ganglioglioma, gangliogliomas, glomus, pineocytoma, pineocytomas, pilocytic, pituitary, benign brain tumor, benign brain tumors).
+The Medical Literature Analysis and Retrieval System Online (MEDLINE) database was searched on 14 June 2021 via the PubMed interface. The query was designed to include all studies that contained one or more words from two groups, one group comprised of words that indicate the usage of an ML technique (automated, computer aided, computer-aided, CAD, radiomic, texture analysis, deep learning, machine learning, neural network, artificial intelligence) and the other group comprised of words associated with benign brain tumors (meningioma, meningiomas, schwannoma, schwannomas, craniopharyngioma, craniopharyngiomas, ganglioglioma, gangliogliomas, glomus, pineocytoma, pineocytomas, pilocytic, pituitary, benign brain tumor, benign brain tumors).
 
-The complete <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="search" style="background-color: bisque">search</mark> <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="query" style="background-color: bisque">query</mark> that was used was therefore:
+The complete search query that was used was therefore:
 
 “((automated[title]) OR (computer aided[title]) OR (computer-aided[title]) OR (CAD[title]) OR (radiomic[title]) OR (radiomics[title]) OR (texture analysis[title]) OR (texture analyses[title]) OR (textural analysis[title]) OR (textural analyses[title]) OR (deep learning[title]) OR (machine learning[title]) OR (ML[title]) OR (neural network[title]) OR (NN[title]) OR (artificial intelligence[title]) OR (AI[title])) AND ((meningioma[title]) OR (meningiomas[title]) OR (schwannoma[title]) OR (schwannomas[title]) OR (craniopharyngioma[title]) OR (craniopharyngiomas[title]) OR (ganglioglioma[title]) OR (gangliogliomas[title]) OR (glomus[title]) OR (glomera[title]) OR (pineocytoma[title]) OR (pineocytomas[title]) OR (pilocytic[title]) OR (pituitary[title]) OR (benign brain tumor[title]) OR (benign brain tumors[title]) OR (benign brain tumour[title]) OR (benign brain tumours[title])) AND (“2000/01/01”[Date-Create]: “2021/06/14”[Date-Create])”
 
-The review had neither been registered nor had a <mark class="kwa-mark" data-kwa-mark="1" data-kwa-keyword="protocol" style="background-color: springgreen">protocol</mark> published beforehand.
+The review had neither been registered nor had a protocol published beforehand.
 
 After exclusion of duplicates, the titles and abstracts were screened, and only relevant publications proceeded to full-text screening. The decision as to whether a study met the inclusion criteria of the review was performed by two authors (P.W. and C.K.) without the use of automated tools. A third author (C.S.) acted as a referee in case of a potential disagreement between the two authors responsible for screening. All articles that did not focus on the use of ML for detection or segmentation in patients with benign brain tumors were excluded.
 
@@ -1343,7 +1345,7 @@ Clinical parameters: tumor entity, tumor volume, treatment of tumors prior to im
 
 Imaging parameters: MRI machine, field strength, slice thickness, sequences.
 
-ML parameters: algorithm, dimensionality, training duration and hardware, libraries/frameworks/packages, data augmentation, performance measures, explainability/interpretability features, code/data availability.</span></pre></div>
+ML parameters: algorithm, dimensionality, training duration and hardware, libraries/frameworks/packages, data augmentation, performance measures, explainability/interpretability features, code/data availability.</pre></div>
 </div>
 <div class="tt-panel tt-text" id="tt-panel-3" role="tabpanel" aria-labelledby="tt-tab-3">
   <div class="tt-inner"><pre>(No text available)</pre></div>
