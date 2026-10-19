@@ -50,14 +50,14 @@ jobs:
         run: Rscript .github/scripts/annotate-html.R
 
       # `!cancelled()` so artifacts are still uploaded when some files failed
-      - name: Upload annotated HTML
-        if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v7
-        with:
-          name: annotated-html
-          path: data/03_labor/**/*.html
-          retention-days: 14
-          if-no-files-found: warn
+      #      - name: Upload annotated HTML
+      #        if: ${{ !cancelled() }}
+      #        uses: actions/upload-artifact@v7
+      #        with:
+      #          name: annotated-html
+      #          path: data/03_labor/**/*.html
+      #          retention-days: 14
+      #          if-no-files-found: warn
 
       - name: Upload results log
         if: ${{ !cancelled() }}
@@ -69,7 +69,7 @@ jobs:
           if-no-files-found: ignore
 
       - name: Commit annotated files
-        if: ${{ inputs.commit_results }}
+        if: ${{ github.event_name == 'push' || inputs.commit_results }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
