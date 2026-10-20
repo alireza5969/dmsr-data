@@ -81,7 +81,12 @@ create_tabs_replace_files <-
         prospero %>%
         paste0(collapse = "\n")
     }
-
+    
+    if (prospero != '(No text available)') {
+      prospero <- 
+        fs::path('https://www.crd.york.ac.uk/PROSPERO/view/', prospero)
+    }
+    
     tab_contents <-
       c(
         Introduction = intro,
