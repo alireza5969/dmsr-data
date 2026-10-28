@@ -52,7 +52,7 @@ function home() {
   const docs = Object.values(data).reduce((a, g) => a + countDocs(g), 0);
   document.title = 'DMSR Data';
   setCrumbs([['Home']]);
-  app.innerHTML = `<h1>Welcome to DMSR Data</h1>
+  app.innerHTML = `<h1>Hi Kimia! Welcome to DMSR Data.</h1>
     <p class="sub">A browsable archive of ${plural(docs, 'HTML document')}, organised in ${plural(groups, 'group')} of 500 records, each split into folders of 100.</p>
     <a class="btn" href="#/browse">Browse the collection →</a>`;
 }
