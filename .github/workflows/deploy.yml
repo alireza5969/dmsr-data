@@ -1,7 +1,7 @@
 name: Deploy
 on:
-  push:
-    branches: [main]
+  #  push:
+  #    branches: [main]
   workflow_dispatch:
 
 concurrency:
@@ -9,32 +9,32 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  github-build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-      - run: Rscript -e 'install.packages("jsonlite")'
-      - run: Rscript R/07_build.r github
-      - run: Rscript R/08_validate.r github
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/github
-
-  github-deploy:
-    needs: github-build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+  #  github-build:
+  #    runs-on: ubuntu-latest
+  #    steps:
+  #      - uses: actions/checkout@v4
+  #      - uses: r-lib/actions/setup-r@v2
+  #        with:
+  #          use-public-rspm: true
+  #      - run: Rscript -e 'install.packages("jsonlite")'
+  #      - run: Rscript R/07_build.r github
+  #      - run: Rscript R/08_validate.r github
+  #      - uses: actions/upload-pages-artifact@v3
+  #        with:
+  #          path: dist/github
+  #
+  #  github-deploy:
+  #    needs: github-build
+  #    runs-on: ubuntu-latest
+  #    permissions:
+  #      pages: write
+  #      id-token: write
+  #    environment:
+  #      name: github-pages
+  #      url: ${{ steps.deployment.outputs.page_url }}
+  #    steps:
+  #      - id: deployment
+  #        uses: actions/deploy-pages@v4
 
   cloudflare:
     runs-on: ubuntu-latest
