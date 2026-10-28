@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DMSR Data</title>
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb}
+@media (prefers-color-scheme:dark){:root{--bg:#161514;--fg:#f5f5f4;--muted:#a8a29e;--line:#2e2c2a;--card:#1f1d1c;--accent:#60a5fa}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--fg)}
+.wrap{max-width:960px;margin:0 auto;padding:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{font-size:.9rem;color:var(--muted);padding:.5rem 0 1rem;overflow-wrap:anywhere}
+nav a+a::before,nav a+span::before{content:" / ";color:var(--muted)}
+h1{font-size:1.6rem;margin:.2rem 0 .5rem}
+p.sub{color:var(--muted);margin:0 0 1.2rem}
+.grid{display:grid;gap:.6rem;grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+.grid.files{grid-template-columns:repeat(auto-fill,minmax(105px,1fr))}
+.card{display:block;padding:.7rem .8rem;background:var(--card);border:1px solid var(--line);border-radius:8px;color:var(--fg)}
+.card:hover{border-color:var(--accent);text-decoration:none}
+.card small{display:block;color:var(--muted)}
+.file{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem;padding:.5rem .6rem}
+.btn{display:inline-block;margin-top:1rem;padding:.6rem 1.1rem;border-radius:8px;background:var(--accent);color:#fff}
+.btn:hover{text-decoration:none;opacity:.9}
+input{width:100%;max-width:320px;padding:.5rem .7rem;margin:0 0 1rem;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font:inherit}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav id="crumbs"></nav>
+  <main id="app">Loading…</main>
+</div>
+<script>
+const app = document.getElementById('app');
+const crumbs = document.getElementById('crumbs');
+const pad = n => String(n).padStart(5, '0');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const plural = (n, w) => `${n.toLocaleString()} ${w}${n === 1 ? '' : 's'}`;
+let data = null;
+
+const countDocs = o => Object.values(o).reduce((a, v) => a + v.length, 0);
+
+function setCrumbs(items) {
+  crumbs.innerHTML = items.map(([label, href]) =>
+    href ? `<a href="${href}">${esc(label)}</a>` : `<span>${esc(label)}</span>`).join('');
+}
+
+function home() {
+  const groups = Object.keys(data).length;
+  const docs = Object.values(data).reduce((a, g) => a + countDocs(g), 0);
+  document.title = 'DMSR Data';
+  setCrumbs([['Home']]);
+  app.innerHTML = `<h1>Welcome to DMSR Data</h1>
+    <p class="sub">A browsable archive of ${plural(docs, 'HTML document')}, organised in ${plural(groups, 'group')} of 500 records, each split into folders of 100.</p>
+    <a class="btn" href="#/browse">Browse the collection →</a>`;
+}
+
+function groups() {
+  document.title = 'Browse – DMSR Data';
+  setCrumbs([['Home', '#/'], ['Browse']]);
+  app.innerHTML = `<h1>Groups</h1><div class="grid">${Object.entries(data).map(([g, subs]) =>
+    `<a class="card" href="#/browse/${g}">${g}<small>${plural(Object.keys(subs).length, 'folder')} · ${plural(countDocs(subs), 'file')}</small></a>`
+  ).join('')}</div>`;
+}
+
+function group(g) {
+  const subs = data[g];
+  if (!subs) return notFound();
+  document.title = `${g} – DMSR Data`;
+  setCrumbs([['Home', '#/'], ['Browse', '#/browse'], [g]]);
+  app.innerHTML = `<h1>${g}</h1><div class="grid">${Object.entries(subs).map(([s, nums]) =>
+    `<a class="card" href="#/browse/${g}/${s}">${s}<small>${plural(nums.length, 'file')}</small></a>`
+  ).join('')}</div>`;
+}
+
+function folder(g, s) {
+  const nums = data[g] && data[g][s];
+  if (!nums) return notFound();
+  document.title = `${s} – DMSR Data`;
+  setCrumbs([['Home', '#/'], ['Browse', '#/browse'], [g, `#/browse/${g}`], [s]]);
+  app.innerHTML = `<h1>${s}</h1><p class="sub">${plural(nums.length, 'file')}</p>
+    <input id="q" type="search" placeholder="Filter by number…" inputmode="numeric" autocomplete="off">
+    <div class="grid files" id="list"></div>`;
+  const list = document.getElementById('list');
+  const draw = q => {
+    const shown = nums.map(pad).filter(n => n.includes(q));
+    list.innerHTML = shown.length
+      ? shown.map(n => `<a class="card file" href="/${g}/${s}/${n}.html">${n}.html</a>`).join('')
+      : '<p class="sub">No matching files.</p>';
+  };
+  draw('');
+  document.getElementById('q').addEventListener('input', e => draw(e.target.value.trim()));
+}
+
+function notFound() {
+  setCrumbs([['Home', '#/'], ['Browse', '#/browse']]);
+  app.innerHTML = '<h1>Not found</h1><p class="sub">That folder does not exist.</p>';
+}
+
+function route() {
+  if (!data) return;
+  const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+  if (p[0] !== 'browse') return home();
+  if (p.length === 1) return groups();
+  if (p.length === 2) return group(p[1]);
+  return folder(p[1], p[2]);
+}
+
+window.addEventListener('hashchange', () => { route(); window.scrollTo(0, 0); });
+fetch('manifest.json')
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => { data = d; route(); })
+  .catch(() => { app.textContent = 'Could not load the index. Please try again later.'; });
+</script>
+</body>
+</html>
