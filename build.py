@@ -19,6 +19,12 @@ import shutil
 import sys
 from pathlib import Path
 
+# Source files contain malformed absolute links such as "https:/host/path"
+# (single slash). Over http(s) browsers read those as site-relative paths, so
+# repair them to "https://host/path" while copying.
+BAD_SCHEME = re.compile(rb"\b(https?):/(?!/)")
+fixed_files = 0
+
 ROOT = Path(os.environ.get("DATA_DIR", ".")).resolve()
 OUT = Path("dist")
 SITE = Path(__file__).resolve().parent / "site"
@@ -30,6 +36,15 @@ DOC = re.compile(r"^(\d{5})\.html$")
 
 def dirs(parent):
     return sorted(p for p in parent.iterdir() if p.is_dir() and RANGE.match(p.name))
+
+
+def copy_fixed(src, dst):
+    global fixed_files
+    data = src.read_bytes()
+    new = BAD_SCHEME.sub(rb"\1://", data)
+    if new != data:
+        fixed_files += 1
+    dst.write_bytes(new)
 
 
 def main():
@@ -46,7 +61,7 @@ def main():
                 if m:
                     dest = OUT / g.name / s.name
                     dest.mkdir(parents=True, exist_ok=True)
-                    shutil.copyfile(f, dest / f.name)
+                    copy_fixed(f, dest / f.name)
                     nums.append(int(m.group(1)))
                 elif f.name == CSS_NAME:
                     css_hashes.add(hashlib.md5(f.read_bytes()).hexdigest())
@@ -68,6 +83,7 @@ def main():
     total = sum(1 for p in OUT.rglob("*") if p.is_file())
     docs = sum(len(v) for g in manifest.values() for v in g.values())
     print(f"{docs} documents, {total} files in dist/ (limit {LIMIT}, headroom {LIMIT - total})")
+    print(f"Repaired malformed links in {fixed_files} files")
     if total > LIMIT:
         sys.exit("Over the Cloudflare Pages file limit")
 
